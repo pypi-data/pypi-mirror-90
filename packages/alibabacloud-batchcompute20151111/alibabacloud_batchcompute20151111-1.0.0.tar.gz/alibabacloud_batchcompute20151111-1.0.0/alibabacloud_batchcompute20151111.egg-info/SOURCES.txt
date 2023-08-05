@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_batchcompute20151111/__init__.py
+alibabacloud_batchcompute20151111/client.py
+alibabacloud_batchcompute20151111/models.py
+alibabacloud_batchcompute20151111.egg-info/PKG-INFO
+alibabacloud_batchcompute20151111.egg-info/SOURCES.txt
+alibabacloud_batchcompute20151111.egg-info/dependency_links.txt
+alibabacloud_batchcompute20151111.egg-info/requires.txt
+alibabacloud_batchcompute20151111.egg-info/top_level.txt
