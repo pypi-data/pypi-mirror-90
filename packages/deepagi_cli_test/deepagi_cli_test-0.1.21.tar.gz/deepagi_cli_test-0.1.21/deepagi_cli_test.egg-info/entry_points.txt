@@ -1,0 +1,3 @@
+[console_scripts]
+deepagi_cli = bin.deepagi_cli:entry
+
