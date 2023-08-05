@@ -1,0 +1,11 @@
+ignore/__init__.py,sha256=zsWp4T6EmTtBckPZ4zTMuOxez8NyekwkHwXk3HUhzqM,30
+ignore/ignore.py,sha256=odDFR-jmfqDYFOXhRiiEizZneJDsnCIC2XYPwxAmpBs,773
+ignore/utils.py,sha256=NF7bH6wErJV1rdSVDWc77iPKT3HJKvfzWGGUi6-7jMA,381
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=6kAYPN12cX7IFakCq8u6-9i4jPZtFI2YqHfrR1QsUVc,363
+gitignore_create-0.0.1a0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+gitignore_create-0.0.1a0.dist-info/METADATA,sha256=LXV9Ax11CrlqNsWvsGCjpi1FFRCVa4ofQWBis5G94zc,462
+gitignore_create-0.0.1a0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gitignore_create-0.0.1a0.dist-info/entry_points.txt,sha256=VZES1RdnwaqOd-_2s4sef-Xyqavg7rStVXsngPtQuPE,50
+gitignore_create-0.0.1a0.dist-info/top_level.txt,sha256=SEJ3PzWi4HO9AGBe9bNOAA22baVcguBLvfPhn2FDLRE,13
+gitignore_create-0.0.1a0.dist-info/RECORD,,

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gitignore-create
+Version: 0.0.1a0
+Summary: A CLI tool to generate gitignore files
+Home-page: https://github.com/iliailmer/gitignore-create
+Author: Ilia Ilmer
+Author-email: i.ilmer@icloud.com
+License: GNU GENERAL PUBLIC LICENSE
+Keywords: gitignore git
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# About
+
+`gitignore-create` is a tool to write `.gitignore` files for a programming language quickly using a command line.
+
