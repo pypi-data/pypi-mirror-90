@@ -1,0 +1,11 @@
+legislice/__init__.py,sha256=u_4r9Fp7OBn8RP4wyczlyX3_AzYEaGB_nseGusrsKgw,66
+legislice/citations.py,sha256=IUF-QyxmI8Qwpc03z9M_HDVZDz__gB2zlFNMZ6rMEEo,2969
+legislice/download.py,sha256=Y7N0lPiG5LNTNzDAE5jOv7gCcRjCrSeJ_0pccuE7i7s,12707
+legislice/enactments.py,sha256=nXRHRs43_pZm2f2swc0Sz8HM4EX8YR9xPVxptffEJ8M,26836
+legislice/mock_clients.py,sha256=qPqwXVnjJ6cm6ucEO39on-K8B-VtVRSLrgOKPnxvTS4,53516
+legislice/name_index.py,sha256=u6eIbEWP3qJziEjvp-iJnDrvKbw1ZUcKZG8y0lUC_Ow,5700
+legislice/schemas.py,sha256=rbUqwLgE2Qe3GIyV_JujnuYm-b1ZjC3PBFS96_nwdM4,7399
+legislice-0.4.0.dist-info/METADATA,sha256=Z-7TKtvHy_lT8mm4Rx5Bo3l4tBg1l-ZXtra9CUBRJWQ,1249
+legislice-0.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+legislice-0.4.0.dist-info/top_level.txt,sha256=Tgx0TNYSZxy4TkeViyElN_bRUOHleQwh4vqIJgHSQx8,10
+legislice-0.4.0.dist-info/RECORD,,
