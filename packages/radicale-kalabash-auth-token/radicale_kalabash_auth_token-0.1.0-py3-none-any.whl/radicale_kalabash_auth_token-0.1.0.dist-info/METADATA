@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: radicale-kalabash-auth-token
+Version: 0.1.0
+Summary: A token based authentication plugin for Radicale provided by Kalabash.
+Home-page: https://github.com/amonak/radicale-kalabash-auth-token
+Author: Alphamonak Solutions
+Author-email: amonak@alphamonak.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: POSIX
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: radicale
+Requires-Dist: requests
+
+UNKNOWN
+
+
