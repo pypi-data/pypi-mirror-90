@@ -1,0 +1,7 @@
+#!python
+
+from endi_split_pdf import main
+
+
+if __name__ == '__main__':
+    main()
