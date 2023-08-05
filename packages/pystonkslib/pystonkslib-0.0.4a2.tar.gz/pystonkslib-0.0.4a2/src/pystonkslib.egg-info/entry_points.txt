@@ -1,0 +1,4 @@
+[console_scripts]
+example_command = pystonkslib.example:main
+pslib = pystonkslib.tools.pslib:main
+

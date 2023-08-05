@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+./requirements.txt
+src/pystonkslib/__init__.py
+src/pystonkslib/config.py
+src/pystonkslib/example.py
+src/pystonkslib/tickers.py
+src/pystonkslib.egg-info/PKG-INFO
+src/pystonkslib.egg-info/SOURCES.txt
+src/pystonkslib.egg-info/dependency_links.txt
+src/pystonkslib.egg-info/entry_points.txt
+src/pystonkslib.egg-info/top_level.txt

@@ -1,0 +1,29 @@
+Metadata-Version: 1.2
+Name: pystonkslib
+Version: 0.0.4a2
+Summary: This is a stonks data pulling library
+Home-page: https://gitlab.com/bubthegreat/pystonkslib
+Author: Micheal Taylor
+Author-email: bubthegreat@gmail.com
+License: UNKNOWN
+Description: # pystonkslib
+        
+        Stonks are cool - and if you want to do your own analysis, you have to pull all the data.
+        
+        ## Installation
+        
+        ```bash
+        pip install pystonkslib
+        ```
+        
+        ## CI/CD
+        
+        This CI/CD assumes that there are two variables set for the upload of your pypy packages:
+        
+        `TWINE_PASSWORD`
+        `TWINE_USERNAME`
+        
+        For the initial CI/CD, this is set to upload to testpypy rather than the actual pypy server.  If tags are used, it will push to production pypy.  This should let you differentiate between testing your package upload and actually publishing it to the pypy index.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6.6
