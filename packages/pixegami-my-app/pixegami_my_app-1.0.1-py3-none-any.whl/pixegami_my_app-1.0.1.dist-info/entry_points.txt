@@ -1,0 +1,3 @@
+[console_scripts]
+run-my-app = my_app:main
+
