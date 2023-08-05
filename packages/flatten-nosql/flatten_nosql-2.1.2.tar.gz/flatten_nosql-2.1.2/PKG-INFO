@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: flatten_nosql
+Version: 2.1.2
+Summary: This module converts NoSQL data to plain SQL data.
+Home-page: https://github.com/proafxin/nosql-to-sql
+Author: Masum Billal
+Author-email: billalmasum93@gmail.com
+License: MIT
+Description: # NoSQL to SQL conversion 
+        
+        Check `driver-flattening` notebook inside `flattener` directory for an example usage.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
