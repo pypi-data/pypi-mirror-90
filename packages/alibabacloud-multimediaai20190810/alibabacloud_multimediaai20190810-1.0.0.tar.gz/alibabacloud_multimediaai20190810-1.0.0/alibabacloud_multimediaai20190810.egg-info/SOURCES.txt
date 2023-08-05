@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_multimediaai20190810/__init__.py
+alibabacloud_multimediaai20190810/client.py
+alibabacloud_multimediaai20190810/models.py
+alibabacloud_multimediaai20190810.egg-info/PKG-INFO
+alibabacloud_multimediaai20190810.egg-info/SOURCES.txt
+alibabacloud_multimediaai20190810.egg-info/dependency_links.txt
+alibabacloud_multimediaai20190810.egg-info/requires.txt
+alibabacloud_multimediaai20190810.egg-info/top_level.txt
