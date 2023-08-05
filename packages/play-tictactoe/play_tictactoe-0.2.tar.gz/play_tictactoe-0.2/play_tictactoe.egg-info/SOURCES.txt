@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+play_tictactoe/__init__.py
+play_tictactoe/tic_tac_toe.py
+play_tictactoe.egg-info/PKG-INFO
+play_tictactoe.egg-info/SOURCES.txt
+play_tictactoe.egg-info/dependency_links.txt
+play_tictactoe.egg-info/not-zip-safe
+play_tictactoe.egg-info/top_level.txt
