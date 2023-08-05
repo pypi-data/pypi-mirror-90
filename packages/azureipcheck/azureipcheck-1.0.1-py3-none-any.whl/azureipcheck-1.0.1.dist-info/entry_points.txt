@@ -1,0 +1,3 @@
+[console_scripts]
+azureipcheck=azureipcheck.main:app
+
