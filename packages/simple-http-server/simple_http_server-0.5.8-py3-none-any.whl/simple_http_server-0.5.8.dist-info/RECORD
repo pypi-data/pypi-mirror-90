@@ -1,0 +1,16 @@
+my_dev/__init__.py,sha256=IGJX04QFOCLsGD-I-4OhCwxe595H-5DJJMJ-Hu-Eu_M,114
+my_dev/my_controllers.py,sha256=m7zvgN59AbjmLJ2SGddryW3Ni6uvT48jjT1v72z4xpM,6571
+my_dev/sub/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_dev/sub/test_controllers_a.py,sha256=Pj9RimjrdwZPsV2PIP9gEg8Ab1MznMT6a7xIMkrACRU,116
+simple_http_server/__init__.py,sha256=fKU9aAr6EqEMXocUOywewdzaDRfv3HTvkEBsBSnDsvY,11654
+simple_http_server/_http_session_local_impl.py,sha256=sbGPwI9rs6fVN_omhn7lJbNF7JNe4oshTtAr8dpAdyM,5287
+simple_http_server/http_server.py,sha256=U4HTTtej-dfzvRuINapMwVwhEi3cnf5wxbf2XLdqa5U,35283
+simple_http_server/http_session.py,sha256=bQNELMI3HZqYasfrsTYYNK696_rgrT4Vsnf2ADeBt0E,4940
+simple_http_server/logger.py,sha256=0eOnWhkasg-4hEiivEUaXY5ucshcTMH-sPkItLKQXrk,3242
+simple_http_server/server.py,sha256=nOXdCR__wpRQissZKK9g0unrk-9K8Fte4mabcCxs-p4,5047
+simple_http_server/__pycache__/__init__.cpython-38.pyc,sha256=6b0YV_Ou-Yn0w3IC7vggtEVeDSqwj1ZJFTT_wxRJUz4,13905
+simple_http_server-0.5.8.dist-info/LICENSE,sha256=5Ua2aqkB4IebZSVVRv8QnMwWrcZwDg95sH5XUjR1eVc,1066
+simple_http_server-0.5.8.dist-info/METADATA,sha256=_oi4hUCautAOj15ZH74I1PJUOkMU-BNm6LMXJLk9wRg,11414
+simple_http_server-0.5.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+simple_http_server-0.5.8.dist-info/top_level.txt,sha256=n2VUNKhv-C8x8Gth6Bc-VLjMKb2KE3fuRdMfCGajIYs,26
+simple_http_server-0.5.8.dist-info/RECORD,,
