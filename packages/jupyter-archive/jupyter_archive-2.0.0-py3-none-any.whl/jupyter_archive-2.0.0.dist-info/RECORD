@@ -1,0 +1,12 @@
+jupyter_archive/__init__.py,sha256=7wQbB-Q5pMIVW32t-2vddOSeUyo3Xd1vxXnObVN5A0s,791
+jupyter_archive/_version.py,sha256=2P4_Zueeki5d4Aycm_BE8ok1N0O5N57GgxXHsEJoKwA,119
+jupyter_archive/handlers.py,sha256=jTBCbJfv9ErdfvcyBEibPPxunZGS6HE28ZXozDB-zuw,7424
+jupyter_archive/labextension/hadim-jupyter-archive-2.0.0.tgz,sha256=YPdZECLEoA23aqgmB7bKfCzS5ILGH6sxZC49AAhTsxM,5856
+jupyter_archive/tests/test_archive_handler.py,sha256=om7zcFzZezufcy6WwyfucjOK5hnZOQcPfVEeB2SxEw4,6323
+jupyter_archive-2.0.0.data/data/etc/jupyter/jupyter_notebook_config.d/jupyter_archive.json,sha256=b2t4lYIL5TBp3HzRUDHSDw0edLorKMI6_mrE0Guz8Uk,99
+jupyter_archive-2.0.0.data/data/share/jupyter/lab/extensions/hadim-jupyter-archive-2.0.0.tgz,sha256=YPdZECLEoA23aqgmB7bKfCzS5ILGH6sxZC49AAhTsxM,5856
+jupyter_archive-2.0.0.dist-info/LICENSE,sha256=UKxw_ZxODWEP0g8aUK32I46tGnSZM9Ar-2UVtx6zntU,1516
+jupyter_archive-2.0.0.dist-info/METADATA,sha256=1wyp2_29yCuCDjHDME6AyiRlG2jrQP6wvxipjzIt5kM,3894
+jupyter_archive-2.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jupyter_archive-2.0.0.dist-info/top_level.txt,sha256=6zShbVjm_W853yLPtUea0MZ8lJ-UmHxWIEsyxRyAYu0,16
+jupyter_archive-2.0.0.dist-info/RECORD,,
