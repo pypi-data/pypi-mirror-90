@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: librecell-layout
+Version: 0.0.6
+Summary: CMOS standard cell layout generator.
+Home-page: https://codeberg.org/tok/librecell
+Author: T. Kramer
+Author-email: code@tkramer.ch
+License: OHL-S v2.0
+Description: # LibreCell - Layout
+        CMOS Standard Cell layout generator.
+        
+        ## Getting started
+        
+        See install instructions in top-project.
+        
+        ### Generate a layout
+        Generate a layout from a SPICE netlist which includes the transistor sizes:
+        * --output-dir: Directory which will be used to store GDS and LEF of the cell
+        * --tech: Python script file containing design rules and technology related data
+        * --netlist: A SPICE netlist containing the netlist of the cell as a sub circuit (`.subckt`).
+        * --cell: Name of the cell. Must match the name of the sub circuit in the SPICE netlist.
+        
+        ```sh
+        mkdir mylibrary
+        lclayout --output-dir mylibrary --tech examples/dummy_tech.py --netlist examples/cells.sp --cell AND2X1
+        ```
+        
+        ## Adapting design rules
+        Design rulesi and technology related data need to be encoded in a Python script file as shown in `examples/dummy_tech.py`.
+        
+Keywords: cmos cell generator layout klayout vlsi asic
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
