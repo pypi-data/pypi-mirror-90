@@ -1,0 +1,20 @@
+Changelog
+=========
+
+1.1.2
+-----
+ - updated support for new "find_principals" exact match API
+
+1.1.1
+-----
+ - updated package description for Pypi upload...
+
+1.1.0
+-----
+ - added OAuth plugin configuration interface
+ - added registered OAuth providers to login view
+ - updated plugin configuration
+
+1.0.0
+-----
+ - initial release
