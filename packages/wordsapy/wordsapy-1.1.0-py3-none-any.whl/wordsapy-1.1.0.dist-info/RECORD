@@ -1,0 +1,10 @@
+wordsapy/__init__.py,sha256=R81r_z3OLu7e3c2VdIO2Vr8JLQjbpXwCgICYHNrmVXc,146
+wordsapy/dict_obj.py,sha256=MsPTwHr8VoOKc8aDpISaPNvfyoIh7hW97w_IlVL7QFk,2223
+wordsapy/dictionary.py,sha256=ntHgPNqXiXxGTaRcnSGzQ7mMJ1nq3sf5MSuyiWFb8bg,8630
+wordsapy/exceptions.py,sha256=h6fGNo7pUIYwUUo2G9pw2b6GJf6zUOk8qsuulhv2iSk,45
+wordsapy/wordsapy.py,sha256=FU03wpu-sLnw47lYyOjExaLn0sSCjExg5wt09vL5nTE,1591
+wordsapy-1.1.0.dist-info/LICENSE,sha256=UyPmbAXpkhKqJ4LXlYWMCrxnVALWsouoMN6nBETZ1x8,1110
+wordsapy-1.1.0.dist-info/METADATA,sha256=mBYR3DndXo-75qurLH8egSu6-srTYDdt9B-ijE47LV4,4014
+wordsapy-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wordsapy-1.1.0.dist-info/top_level.txt,sha256=jv8NDogCK-wvR8ooyJD2dShPxyItVSHZnlf3218bMEI,9
+wordsapy-1.1.0.dist-info/RECORD,,
