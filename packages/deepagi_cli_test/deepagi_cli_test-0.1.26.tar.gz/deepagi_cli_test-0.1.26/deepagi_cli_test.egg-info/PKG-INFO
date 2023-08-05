@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: deepagi-cli-test
+Version: 0.1.26
+Summary: Testing CLI Commands
+Home-page: UNKNOWN
+Author: delan
+Author-email: UNKNOWN
+License: MIT
+Description: DEEPAGI CLI Test
+        
+Keywords: deepagi
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Text Processing :: Linguistic

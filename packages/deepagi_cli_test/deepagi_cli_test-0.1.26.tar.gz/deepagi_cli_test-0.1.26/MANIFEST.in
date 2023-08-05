@@ -1,0 +1,2 @@
+include README.rst
+recursive-include deepagi_cli_test/templates *
