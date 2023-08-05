@@ -1,0 +1,9 @@
+setup.py
+../src/my_app/__init__.py
+../src/my_app/_version.py
+../src/my_app/my_app.py
+pixegami_my_app.egg-info/PKG-INFO
+pixegami_my_app.egg-info/SOURCES.txt
+pixegami_my_app.egg-info/dependency_links.txt
+pixegami_my_app.egg-info/entry_points.txt
+pixegami_my_app.egg-info/top_level.txt
