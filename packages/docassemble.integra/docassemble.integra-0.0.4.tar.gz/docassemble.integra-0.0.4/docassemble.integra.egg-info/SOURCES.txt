@@ -1,0 +1,8 @@
+README.md
+setup.py
+SmartDocument/SmartDocument.py
+SmartDocument/__init__.py
+docassemble.integra.egg-info/PKG-INFO
+docassemble.integra.egg-info/SOURCES.txt
+docassemble.integra.egg-info/dependency_links.txt
+docassemble.integra.egg-info/top_level.txt
