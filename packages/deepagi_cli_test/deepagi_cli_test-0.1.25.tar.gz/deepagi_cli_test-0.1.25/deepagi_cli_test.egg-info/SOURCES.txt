@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+bin/deepagi_cli
+deepagi_cli_test/__init__.py
+deepagi_cli_test/commands.py
+deepagi_cli_test/text.py
+deepagi_cli_test.egg-info/PKG-INFO
+deepagi_cli_test.egg-info/SOURCES.txt
+deepagi_cli_test.egg-info/dependency_links.txt
+deepagi_cli_test.egg-info/entry_points.txt
+deepagi_cli_test.egg-info/not-zip-safe
+deepagi_cli_test.egg-info/top_level.txt
+deepagi_cli_test/templates/crawl.py.templates
