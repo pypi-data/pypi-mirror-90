@@ -1,0 +1,9 @@
+ipython
+jupyter
+pmdarima
+pandas
+matplotlib
+seaborn
+scikit-learn
+fbprophet
+statsmodels
