@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: kiri
+Version: 0.2.1
+Summary: Kiri Natural Language Engine
+Home-page: https://github.com/kiri-ai/kiri
+Author: Kiri OÜ
+Author-email: hello@kiri.ai
+License: UNKNOWN
+Description: # Kiri Natural Language Engine
+        
+        Make distribution with: `python3 setup.py sdist bdist_wheel`
+        
+        Upload to pypi with: `python3 -m twine upload dist/*`
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
