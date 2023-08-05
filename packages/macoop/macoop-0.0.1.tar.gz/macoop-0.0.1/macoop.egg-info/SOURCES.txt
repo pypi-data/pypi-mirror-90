@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+macoop/__init__.py
+macoop/newschool.py
+macoop/school.py
+macoop.egg-info/PKG-INFO
+macoop.egg-info/SOURCES.txt
+macoop.egg-info/dependency_links.txt
+macoop.egg-info/top_level.txt
