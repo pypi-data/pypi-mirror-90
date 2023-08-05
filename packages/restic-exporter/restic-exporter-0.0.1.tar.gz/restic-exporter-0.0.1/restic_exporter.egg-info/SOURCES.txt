@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+restic_exporter/__init__.py
+restic_exporter/restic_exporter.py
+restic_exporter.egg-info/PKG-INFO
+restic_exporter.egg-info/SOURCES.txt
+restic_exporter.egg-info/dependency_links.txt
+restic_exporter.egg-info/not-zip-safe
+restic_exporter.egg-info/top_level.txt
