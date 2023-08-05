@@ -1,0 +1,12 @@
+Cargo.toml
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+glootalk/__init__.py
+glootalk.egg-info/PKG-INFO
+glootalk.egg-info/SOURCES.txt
+glootalk.egg-info/dependency_links.txt
+glootalk.egg-info/not-zip-safe
+glootalk.egg-info/top_level.txt
+src/lib.rs
