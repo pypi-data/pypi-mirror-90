@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: spm12
+Version: 1.0.4
+Summary: Statistical Parametric Mapping
+Home-page: https://github.com/AMYPAD/SPM12
+Maintainer: Casper da Costa-Luis
+Maintainer-email: casper.dcl@physics.org
+License: Apache 2.0
+Project-URL: Changelog, https://github.com/AMYPAD/SPM12/releases
+Project-URL: Documentation, https://github.com/AMYPAD/SPM12/#SPM12
+Project-URL: Upstream Project, https://www.fil.ion.ucl.ac.uk/spm
+Description: SPM12
+        =====
+        
+        |Version| |Py-Versions| |Tests| |Coverage| |DOI| |LICENCE|
+        
+        Thin Python wrappers around `Statistical Parametric Mapping <https://www.fil.ion.ucl.ac.uk/spm>`_.
+        
+        |PET-MR Coregistration|
+        
+        
+        Install
+        -------
+        
+        Currently requires MATLAB. May change in future.
+        
+        .. code:: sh
+        
+            python -m pip install -U spm12
+            python -m spm12
+        
+        
+        Examples
+        --------
+        
+        See `examples/demo.ipynb <https://github.com/AMYPAD/SPM12/blob/master/examples/demo.ipynb>`_.
+        
+        
+        Contributing
+        ------------
+        
+        See `CONTRIBUTING.md <https://github.com/AMYPAD/SPM12/blob/master/CONTRIBUTING.md>`_.
+        
+        
+        .. |PET-MR Coregistration| image:: https://raw.githubusercontent.com/AMYPAD/images/master/spm12/pet_mr_coreg.png
+        .. |Tests| image:: https://img.shields.io/github/workflow/status/AMYPAD/SPM12/Test?logo=GitHub
+           :target: https://github.com/AMYPAD/SPM12/actions
+        .. |Coverage| image:: https://codecov.io/gh/AMYPAD/SPM12/branch/master/graph/badge.svg
+           :target: https://codecov.io/gh/AMYPAD/SPM12
+        .. |Version| image:: https://img.shields.io/pypi/v/spm12.svg?logo=python&logoColor=white
+           :target: https://github.com/AMYPAD/SPM12/releases
+        .. |Py-Versions| image:: https://img.shields.io/pypi/pyversions/spm12.svg?logo=python&logoColor=white
+           :target: https://pypi.org/project/spm12
+        .. |DOI| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.4272003.svg
+           :target: https://doi.org/10.5281/zenodo.4272003
+        .. |LICENCE| image:: https://img.shields.io/pypi/l/spm12.svg
+           :target: https://raw.githubusercontent.com/AMYPAD/spm12/master/LICENCE.md
+        
+Keywords: fMRI,PET,SPECT,EEG,MEG
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Other Scripting Engines
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Installation/Setup
+Provides: spm12
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+Provides-Extra: demo
