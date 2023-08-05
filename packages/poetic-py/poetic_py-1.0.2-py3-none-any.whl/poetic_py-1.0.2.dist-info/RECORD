@@ -1,0 +1,13 @@
+poetic/__init__.py,sha256=jyqnn-TgZHluHN0z_BWvvRrb04yGHxzWf2DE4I2xL0M,1700
+poetic/__main__.py,sha256=PVbJ3uS4QNTc-SuINeCVeqZzwgvfgD6Eo3An_KnwpHw,2614
+poetic/exceptions.py,sha256=bn1KQ2EgirbAr83z_e3eUzURkHmy5m7qxz_Ngv2_tcw,2363
+poetic/gui.py,sha256=8eV00HqHuL5pr5cSUAovDU0ncr2PG3r1lxH-X0zBwqQ,10471
+poetic/predictor.py,sha256=RGOfv_3gdjNo5X3mj2JDkvpC4-tib6Aa1W6BR9WPgtY,8240
+poetic/results.py,sha256=qLTR8cwInk48BcRGvH2i2vfEgTkQepH1yz8acFJW_Ug,9696
+poetic/util.py,sha256=9_96gJLR_4WHX7PdusGIs31zZu-87t4Um0bmhbtOFe0,13206
+poetic/data/word_dictionary_complete.txt,sha256=7srx3kngQnwJCmF9X4A88Y1cKQADFUhQlNo5t7jUHfc,37432923
+poetic_py-1.0.2.dist-info/LICENSE.txt,sha256=uhWNwr6zzBt8EdLdMbcekfE899Etf8d5sgftspIiZTo,1092
+poetic_py-1.0.2.dist-info/METADATA,sha256=LvYmxZzcJOopvHV81CgsHu_r2Rd71A75JQwRrC9u7HE,891
+poetic_py-1.0.2.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+poetic_py-1.0.2.dist-info/top_level.txt,sha256=7LVCxNOSMzgjDHf3z37IFQTTK3FVsbgnrZsSAgRcyiI,7
+poetic_py-1.0.2.dist-info/RECORD,,
