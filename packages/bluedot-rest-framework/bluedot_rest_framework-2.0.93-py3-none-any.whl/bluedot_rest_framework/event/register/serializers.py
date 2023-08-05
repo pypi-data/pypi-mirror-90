@@ -1,0 +1,30 @@
+from bluedot_rest_framework.utils.serializers import CustomSerializer
+from rest_framework.serializers import SerializerMethodField, CharField, IntegerField
+from bluedot_rest_framework import import_string
+
+
+Event = import_string('EVENT.models')
+EventRegister = import_string('EVENT.register.models')
+
+
+class EventRegisterSerializer(CustomSerializer):
+    event_data = SerializerMethodField()
+    user_id = IntegerField(required=False)
+    unionid = CharField(required=False)
+    openid = CharField(required=False)
+    wechat_id = IntegerField(required=False)
+
+    class Meta:
+        model = EventRegister
+        fields = '__all__'
+
+    def get_event_data(self, queryset):
+
+        event_id = queryset.event_id
+        event_queryset = Event.objects.filter(pk=event_id).first()
+        return {
+            "title": event_queryset.title,
+            "start_time": event_queryset.start_time,
+            "end_time": event_queryset.end_time,
+            "banner": event_queryset.banner
+        }
