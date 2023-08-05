@@ -1,0 +1,17 @@
+nextmock/__init__.py,sha256=mCN1znBCalmVvR4zE6WMktfzAF1cCgfnh6hHwH0p_L4,167
+nextmock/arg.py,sha256=piZe2NhQyJWjYTaylQpLIcyOzoIZEYGFA_tvZNW8zHU,57
+nextmock/async_mock.py,sha256=6U-moUS5Xm108ifYg7sXdWP8G8yHnYyH45klCRbf6k4,145
+nextmock/fake.py,sha256=GO7l4lSFsQH_gDwC-5PnTMxYTdM1SWHHA0Jwtngcmrs,2142
+nextmock/mock.py,sha256=OGMO4o73vjACcEyqfZGYet6d9k0IhN4ZisvrEFvwexY,1383
+nextmock/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nextmock/test/test_async_mock.py,sha256=p2EObdQ4xMY50CwoHumimuXMlT_kTL7QYX4y8qtNaGM,259
+nextmock/test/test_mock_class.py,sha256=ncuraE-rqRCnH53sbIx72NzfIQklV6WcH2I4nsn-6Vc,238
+nextmock/test/test_mock_compatibility.py,sha256=rI38lyeWa5Z7UmmV_Ghv0eJBMX1DUwJLW5u1GY-sSGo,3444
+nextmock/test/test_mock_raises.py,sha256=Pjn_ccGTdifc35r6CXem3LqW7dDqi38D4CtY1tO-afc,311
+nextmock/test/test_mock_returns.py,sha256=aEpDe3iaxotJvVApTCbKTljY4xnVRNRnj6m3vdu_Y6Y,212
+nextmock/test/test_mock_with_args.py,sha256=wfR1nVH1PnZ9u4D24NLo6Bcz1EgxRcV0RCY9I3gfwEg,6743
+nextmock-0.0.0.dist-info/LICENSE,sha256=dy4KGnEUplMA2GOWJprnvKSSNo3iwNA9z6vF0w1MDGw,1115
+nextmock-0.0.0.dist-info/METADATA,sha256=T6gVHv0R5m2usBiQh12LcmX24MY-quu2TLIv3ZGwbOI,3837
+nextmock-0.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nextmock-0.0.0.dist-info/top_level.txt,sha256=l4ebH3Op5YqG7JdNCN8Y1Q_9Rcs4GvMe0vHThnHM8zw,9
+nextmock-0.0.0.dist-info/RECORD,,
