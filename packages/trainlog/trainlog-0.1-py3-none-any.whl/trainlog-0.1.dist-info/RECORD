@@ -1,0 +1,11 @@
+trainlog/__init__.py,sha256=x7o-9v00g8nSRYliWhP9oN8ZTK9bgzX9tDFhqKe0WcE,1466
+trainlog/_version.py,sha256=x6I2Vs_eRK8lbZ_49PD-fPb7QE2u9ulf3evQwZayXxo,43
+trainlog/io.py,sha256=jm2ePDFCfeoFVQ0hLkFr2IoMs6nWz_P0zdAaSUfqa4Y,7130
+trainlog/logger.py,sha256=7INZ1957k2SJ619-bo7xFousYQ7leGTXU8OFHX5vwXQ,8244
+trainlog/logs.py,sha256=xzCwt23nwJqAI_P_RA68odfJeqog-4g38dITgW7cgCM,13429
+trainlog/ops.py,sha256=SJodHJ3jOWRj6QWblDMj4m-uTzcoaqn33XXZqChe-TU,13391
+trainlog-0.1.dist-info/LICENSE,sha256=0RzOa_kXPCEKgI_Ih_DMrOYefNw9mYTM04KZqNW6LE0,1068
+trainlog-0.1.dist-info/METADATA,sha256=CrRlQvxZ_ghxAvBzb8BELlX2g6FAlEyiPqhbuwiMAGk,1368
+trainlog-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+trainlog-0.1.dist-info/top_level.txt,sha256=q9N7aVrJR-Ox3UAxVZBBAmgmRGIa6qfitE-kpS_j5_A,9
+trainlog-0.1.dist-info/RECORD,,
