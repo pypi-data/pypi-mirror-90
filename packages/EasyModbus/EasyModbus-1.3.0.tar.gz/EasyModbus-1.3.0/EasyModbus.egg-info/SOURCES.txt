@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+EasyModbus.egg-info/PKG-INFO
+EasyModbus.egg-info/SOURCES.txt
+EasyModbus.egg-info/dependency_links.txt
+EasyModbus.egg-info/requires.txt
+EasyModbus.egg-info/top_level.txt
+easymodbus/__init__.py
+easymodbus/easyModbusGUI.py
+easymodbus/modbusClient.py
+easymodbus/modbusException.py
+easymodbus/run.py
