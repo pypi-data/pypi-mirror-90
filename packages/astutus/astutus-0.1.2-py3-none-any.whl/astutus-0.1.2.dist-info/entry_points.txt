@@ -1,0 +1,3 @@
+[console_scripts]
+astutus-usb-tree = astutus.usb.tree:main
+

@@ -1,0 +1,465 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Developer Notes &mdash; Astutus 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Working with Macintosh OSX" href="macosx.html" />
+    <link rel="prev" title="Roadmap to Documentation" href="roadmap_to_documentation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Astutus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Astutus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">astutus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="roadmap_to_documentation.html">Roadmap to Documentation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Developer Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#regarding-using-the-nmap-utility">Regarding Using the nmap Utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running-flask-from-a-package">Running Flask from a package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pytest">Pytest</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#olio">Olio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#serial-communication-with-usb-relay">Serial Communication with USB Relay</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deprecation-warning">Deprecation Warning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#defining-commands-for-packages">Defining Commands for Packages</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="macosx.html">Working with Macintosh OSX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backlog.html">Backlog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documenting.html">Documenting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="packaging.html">Packaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="smakn_usb_relay.html">SMAKN LCUS-1 USB Relay</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Astutus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Developer Notes</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/source/developer_notes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="developer-notes">
+<h1>Developer Notes<a class="headerlink" href="#developer-notes" title="Permalink to this headline">¶</a></h1>
+<p>Plan:</p>
+<ul class="simple">
+<li><p>Note: To control relays, need to be able to select them by topology it turns out.
+Almost nothing that I’m interested in has a persistent unique identifier like a
+serial number attached to it.</p></li>
+<li><p><input checked=""  disabled="" type="checkbox"> Create USB utilities to understand how to USB and PCI work.</p></li>
+<li><p><input checked=""  disabled="" type="checkbox"> Create a print_tree routine to visualize topology</p></li>
+<li><p><input checked=""  disabled="" type="checkbox"> Factor out utilities to make it feasible to uniquely identify relays.</p></li>
+<li><p><input checked=""  disabled="" type="radio"> Create some REST API to drive adoption of Rasberry Pi into ecosystem.</p></li>
+<li><p><input checked=""  disabled="" type="checkbox"> This requires a persistence layer, so do SQLAlchemy next</p></li>
+<li><p>Transfer python package to RaspPi.</p></li>
+<li><p>Web inteface to control lights</p></li>
+<li><p>Pick out colors of lights with sensor</p></li>
+<li><p>Web interface - how to get styling??? Try to use Sphinx to generate styled pages
+with appropriate forms???</p></li>
+</ul>
+<div class="section" id="regarding-using-the-nmap-utility">
+<h2>Regarding Using the nmap Utility<a class="headerlink" href="#regarding-using-the-nmap-utility" title="Permalink to this headline">¶</a></h2>
+<p>To get more information from nmap, it should be run using sudo.</p>
+<p>Found this searching the web:</p>
+<blockquote>
+<div><p>While OP might have a good reason for wanting to do exactly this, it usually is a bad idea (password can be read by ps, and so on) and I wanted to provide a more secure alternative.</p>
+<p>A better solution if you want to run something with sudo without putting in your password is to allow your user to do exactly that one command without password.</p>
+<p>Open sudoers file with sudo visudo and add the following line (obviously replace the username at the beginning and the command at the end):</p>
+<p>alice ALL = NOPASSWD: /full/path/to/command</p>
+<p>This is explained more here: <a class="reference external" href="https://askubuntu.com/a/39294">https://askubuntu.com/a/39294</a></p>
+</div></blockquote>
+<p>TODO:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Capture modified version of sudoers and document change.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="running-flask-from-a-package">
+<h2>Running Flask from a package<a class="headerlink" href="#running-flask-from-a-package" title="Permalink to this headline">¶</a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span> <span class="kn">import</span> <span class="nn">astutus.web.flask_app</span>
+<span class="gp">&gt;&gt;&gt; </span> <span class="n">astutus</span><span class="o">.</span><span class="n">web</span><span class="o">.</span><span class="n">flask_app</span><span class="o">.</span><span class="n">run_with_standard_options</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This doesn’t seem to work.  Instead just use main()</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">astutus.web.flask_app</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">db</span><span class="o">.</span><span class="n">create_all</span><span class="p">()</span>
+<span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;&lt;stdin&gt;&quot;</span>, line <span class="m">1</span>, in <span class="n">&lt;module&gt;</span>
+<span class="gr">NameError</span>: <span class="n">name &#39;db&#39; is not defined</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">astutus</span><span class="o">.</span><span class="n">web</span><span class="o">.</span><span class="n">flask_app</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">create_all</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="pytest">
+<h2>Pytest<a class="headerlink" href="#pytest" title="Permalink to this headline">¶</a></h2>
+<p>pytest -s -p no:logging</p>
+<p>pytest -vv -s –log-cli-level=DEBUG –log-cli-format=”%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)” –log-cli-date-format=”%Y-%m-%d %H:%M:%S”</p>
+<p>Fix it up so path is full.</p>
+</div>
+<div class="section" id="olio">
+<h2>Olio<a class="headerlink" href="#olio" title="Permalink to this headline">¶</a></h2>
+<p>Linter rstcheck is not installed.</p>
+</div>
+<div class="section" id="serial-communication-with-usb-relay">
+<h2>Serial Communication with USB Relay<a class="headerlink" href="#serial-communication-with-usb-relay" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:~/src/github.com/rich-dobbs-13440/astutus/pytests$</span> lsusb -d 1a86:7523
+<span class="go">Bus 010 Device 022: ID 1a86:7523 QinHeng Electronics HL-340 USB-Serial adapter</span>
+<span class="go">Bus 010 Device 021: ID 1a86:7523 QinHeng Electronics HL-340 USB-Serial adapter</span>
+
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:~/src/github.com/rich-dobbs-13440/astutus/pytests$</span> sudo python3
+
+<span class="gp">&gt;</span>&gt;&gt; <span class="nv">port</span> <span class="o">=</span> serial.Serial<span class="o">(</span><span class="s2">&quot;/dev/ttyUSB1&quot;</span><span class="o">)</span>
+<span class="gp">&gt;</span>&gt;&gt; port.baudrate <span class="o">=</span> <span class="m">9600</span>
+<span class="gp">&gt;</span>&gt;&gt; port.bytesize <span class="o">=</span> <span class="m">8</span>
+<span class="gp">&gt;</span>&gt;&gt; port.parity <span class="o">=</span> <span class="s1">&#39;N&#39;</span>
+<span class="gp">&gt;</span>&gt;&gt; port.stopbits <span class="o">=</span> <span class="m">1</span>
+<span class="gp">&gt;</span>&gt;&gt; <span class="nv">off</span> <span class="o">=</span> bytearray<span class="o">(</span>b<span class="s1">&#39;\xA0\x01\x01\xA2&#39;</span><span class="o">)</span>
+<span class="gp">&gt;</span>&gt;&gt; <span class="nv">on</span> <span class="o">=</span> bytearray<span class="o">(</span>b<span class="s1">&#39;\xA0\x01\x00\xA1&#39;</span><span class="o">)</span>
+<span class="gp">&gt;</span>&gt;&gt; <span class="nv">num</span> <span class="o">=</span> port.write<span class="o">(</span>off<span class="o">)</span>
+<span class="gp">&gt;</span>&gt;&gt; <span class="nv">num</span> <span class="o">=</span> port.write<span class="o">(</span>on<span class="o">)</span>
+<span class="gp">&gt;</span>&gt;&gt; <span class="nv">num</span> <span class="o">=</span> port.write<span class="o">(</span>off<span class="o">)</span>
+<span class="gp">&gt;</span>&gt;&gt; <span class="nv">num</span> <span class="o">=</span> port.write<span class="o">(</span>on<span class="o">)</span>
+<span class="gp">&gt;</span>&gt;&gt; port.close<span class="o">()</span>
+<span class="gp">&gt;</span>&gt;&gt; exit<span class="o">()</span>
+
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:~/src/github.com/rich-dobbs-13440/astutus/pytests$</span> ls -l /dev/ttyUSB0
+<span class="go">crw-rw---- 1 root dialout 188, 0 Dec 23 14:21 /dev/ttyUSB0</span>
+
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:~/src/github.com/rich-dobbs-13440/astutus/pytests$</span> ls -l /sys/dev/char/188:0
+<span class="go">lrwxrwxrwx 1 root root 0 Dec 23 15:15 /sys/dev/char/188:0 -&gt; ../../devices/pci0000:00/0000:00:07.0/0000:05:00.0/usb10/10-1/10-1.2/10-1.2.3/10-1.2.3:1.0/ttyUSB0/tty/ttyUSB0</span>
+
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:~/src/github.com/rich-dobbs-13440/astutus/pytests$</span> ls -l /dev/ttyUSB0
+<span class="go">crw-rw---- 1 root dialout 188, 0 Dec 23 14:21 /dev/ttyUSB0</span>
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:~/src/github.com/rich-dobbs-13440/astutus/pytests$</span> ls -l /sys/dev/char/188:0
+<span class="go">lrwxrwxrwx 1 root root 0 Dec 23 15:15 /sys/dev/char/188:0 -&gt; ../../devices/pci0000:00/0000:00:07.0/0000:05:00.0/usb10/10-1/10-1.2/10-1.2.3/10-1.2.3:1.0/ttyUSB0/tty/ttyUSB0</span>
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:~/src/github.com/rich-dobbs-13440/astutus/pytests$</span> ls  ../../devices/pci0000:00/0000:00:07.0/0000:05:00.0/usb10/10-1/10-1.2/10-1.2.3/10-1.2.3:1.0/devnum
+<span class="go">ls: cannot access &#39;../../devices/pci0000:00/0000:00:07.0/0000:05:00.0/usb10/10-1/10-1.2/10-1.2.3/10-1.2.3:1.0/devnum&#39;: No such file or directory</span>
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:~/src/github.com/rich-dobbs-13440/astutus/pytests$</span> <span class="nb">cd</span> /sys/devices/pci0000:00<span class="o">(</span>venv<span class="o">)</span> rich@wendy:/sys/devices/pci0000:00$ ls
+<span class="go">0000:00:00.0  0000:00:05.0  0000:00:11.0  0000:00:13.0  0000:00:14.2  0000:00:14.5  0000:00:18.0  0000:00:18.3  firmware_node  power</span>
+<span class="go">0000:00:02.0  0000:00:06.0  0000:00:12.0  0000:00:13.2  0000:00:14.3  0000:00:16.0  0000:00:18.1  0000:00:18.4  pci_bus        uevent</span>
+<span class="go">0000:00:04.0  0000:00:07.0  0000:00:12.2  0000:00:14.0  0000:00:14.4  0000:00:16.2  0000:00:18.2  0000:00:18.5  PNP0C14:00</span>
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:/sys/devices/pci0000:00$</span> <span class="nb">cd</span> <span class="m">0000</span>:00:07.0
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:/sys/devices/pci0000:00/0000:00:07.0$</span> ls
+<span class="go">0000:05:00.0          consistent_dma_mask_bits  device           enable         local_cpus      msi_bus    remove    revision                subsystem_device</span>
+<span class="go">broken_parity_status  current_link_speed        dma_mask_bits    firmware_node  max_link_speed  numa_node  rescan    secondary_bus_number    subsystem_vendor</span>
+<span class="go">class                 current_link_width        driver           irq            max_link_width  pci_bus    reset     subordinate_bus_number  uevent</span>
+<span class="go">config                d3cold_allowed            driver_override  local_cpulist  modalias        power      resource  subsystem               vendor</span>
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:/sys/devices/pci0000:00/0000:00:07.0$</span> <span class="nb">cd</span> <span class="m">0000</span><span class="se">\:</span><span class="m">05</span><span class="se">\:</span><span class="m">00</span>.0/
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:/sys/devices/pci0000:00/0000:00:07.0/0000:05:00.0$</span> ls
+<span class="go">broken_parity_status      current_link_speed  dma_mask_bits    irq             max_link_width  numa_node  rescan     revision          uevent</span>
+<span class="go">class                     current_link_width  driver           local_cpulist   modalias        pools      reset      subsystem         usb10</span>
+<span class="go">config                    d3cold_allowed      driver_override  local_cpus      msi_bus         power      resource   subsystem_device  usb11</span>
+<span class="go">consistent_dma_mask_bits  device              enable           max_link_speed  msi_irqs        remove     resource0  subsystem_vendor  vendor</span>
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:/sys/devices/pci0000:00/0000:00:07.0/0000:05:00.0$</span> <span class="nb">cd</span> usb10
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:/sys/devices/pci0000:00/0000:00:07.0/0000:05:00.0/usb10$</span> ls
+<span class="go">10-0:1.0            bcdDevice            bmAttributes        busnum         devpath    interface_authorized_default  product    speed</span>
+<span class="go">10-1                bConfigurationValue  bMaxPacketSize0     configuration  driver     ltm_capable                   quirks     subsystem</span>
+<span class="go">authorized          bDeviceClass         bMaxPower           descriptors    ep_00      manufacturer                  removable  uevent</span>
+<span class="go">authorized_default  bDeviceProtocol      bNumConfigurations  dev            idProduct  maxchild                      remove     urbnum</span>
+<span class="go">avoid_reset_quirk   bDeviceSubClass      bNumInterfaces      devnum         idVendor   power                         serial     version</span>
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:/sys/devices/pci0000:00/0000:00:07.0/0000:05:00.0/usb10$</span> <span class="nb">cd</span> busnum
+<span class="go">bash: cd: busnum: Not a directory</span>
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:/sys/devices/pci0000:00/0000:00:07.0/0000:05:00.0/usb10$</span> cat busnum
+<span class="go">10</span>
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:/sys/devices/pci0000:00/0000:00:07.0/0000:05:00.0/usb10$</span> cat devnum
+<span class="go">1</span>
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:/sys/devices/pci0000:00/0000:00:07.0/0000:05:00.0/usb10$</span>
+
+
+<span class="gp gp-VirtualEnv">(venv)</span> <span class="gp">rich@wendy:/sys/devices$</span> grep -r . -e <span class="s2">&quot;1a86&quot;</span> <span class="m">2</span>&gt;/dev/null
+
+
+<span class="go">Bus (\d+) Device (\d+)</span>
+
+<span class="go">Bus (\d+) Device (\d+): ID ([0-9,af]{4}):([0-9,a-f]{4}) (.*)</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://askubuntu.com/questions/373096/how-do-i-permanently-change-permissions-for-dev-ttys0#373269">https://askubuntu.com/questions/373096/how-do-i-permanently-change-permissions-for-dev-ttys0#373269</a></p>
+<p>There’s no need to change system file’s permissions. The serial devices have the following default permissions:</p>
+<p>crw-rw—- 1 root dialout … /dev/ttyS0
+So all you have to do is add the user to the dialout group:</p>
+<p>sudo adduser $USER dialout</p>
+<p>Okay, it turns out busnum and devnum are not stable and can change by rebooting, plugging/unplugging devices, etc.</p>
+<p>What is stable, I think it the path:</p>
+<p>pci0000:00/0000:00:07.0/0000:05:00.0/usb10/10-1/10-1.2/10-1.2.2</p>
+<p>As long as the devices aren’t physically moved, the path stays the same.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">rich@wendy:~$</span> lsusb --tree
+<span class="go">/:  Bus 11.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 5000M</span>
+<span class="go">/:  Bus 10.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 480M</span>
+<span class="go">    |__ Port 1: Dev 2, If 0, Class=Hub, Driver=hub/4p, 480M</span>
+<span class="go">        |__ Port 1: Dev 3, If 0, Class=Human Interface Device, Driver=usbhid, 12M</span>
+<span class="go">        |__ Port 1: Dev 3, If 1, Class=Human Interface Device, Driver=usbhid, 12M</span>
+<span class="go">        |__ Port 2: Dev 4, If 0, Class=Hub, Driver=hub/4p, 480M</span>
+<span class="go">            |__ Port 1: Dev 11, If 0, Class=Vendor Specific Class, Driver=ch341, 12M</span>
+<span class="go">            |__ Port 4: Dev 9, If 0, Class=Vendor Specific Class, Driver=r8152, 480M</span>
+<span class="go">            |__ Port 2: Dev 13, If 2, Class=Audio, Driver=snd-usb-audio, 12M</span>
+<span class="go">            |__ Port 2: Dev 13, If 0, Class=Audio, Driver=snd-usb-audio, 12M</span>
+<span class="go">            |__ Port 2: Dev 13, If 3, Class=Human Interface Device, Driver=usbhid, 12M</span>
+<span class="go">            |__ Port 2: Dev 13, If 1, Class=Audio, Driver=snd-usb-audio, 12M</span>
+<span class="go">            |__ Port 3: Dev 15, If 0, Class=Imaging, Driver=usbfs, 480M</span>
+<span class="go">        |__ Port 3: Dev 14, If 0, Class=Vendor Specific Class, Driver=ch341, 12M</span>
+<span class="go">        |__ Port 4: Dev 7, If 0, Class=Audio, Driver=snd-usb-audio, 480M</span>
+<span class="go">        |__ Port 4: Dev 7, If 3, Class=Video, Driver=uvcvideo, 480M</span>
+<span class="go">        |__ Port 4: Dev 7, If 1, Class=Audio, Driver=snd-usb-audio, 480M</span>
+<span class="go">        |__ Port 4: Dev 7, If 2, Class=Video, Driver=uvcvideo, 480M</span>
+<span class="go">/:  Bus 09.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 5000M</span>
+<span class="go">/:  Bus 08.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 480M</span>
+<span class="go">    |__ Port 1: Dev 2, If 0, Class=Human Interface Device, Driver=usbhid, 12M</span>
+<span class="go">    |__ Port 1: Dev 2, If 1, Class=Human Interface Device, Driver=usbhid, 12M</span>
+<span class="go">    |__ Port 1: Dev 2, If 2, Class=Human Interface Device, Driver=usbhid, 12M</span>
+<span class="go">/:  Bus 07.Port 1: Dev 1, Class=root_hub, Driver=ohci-pci/4p, 12M</span>
+<span class="go">/:  Bus 06.Port 1: Dev 1, Class=root_hub, Driver=ohci-pci/2p, 12M</span>
+<span class="go">/:  Bus 05.Port 1: Dev 1, Class=root_hub, Driver=ohci-pci/5p, 12M</span>
+<span class="go">/:  Bus 04.Port 1: Dev 1, Class=root_hub, Driver=ohci-pci/5p, 12M</span>
+<span class="go">/:  Bus 03.Port 1: Dev 1, Class=root_hub, Driver=ehci-pci/4p, 480M</span>
+<span class="go">/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=ehci-pci/5p, 480M</span>
+<span class="go">/:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=ehci-pci/5p, 480M</span>
+
+
+<span class="gp">rich@wendy:~$</span> lsusb
+<span class="go">Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub</span>
+<span class="go">Bus 007 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub</span>
+<span class="go">Bus 006 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub</span>
+<span class="go">Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub</span>
+<span class="go">Bus 005 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub</span>
+<span class="go">Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub</span>
+<span class="go">Bus 004 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub</span>
+<span class="go">Bus 011 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub</span>
+<span class="go">Bus 010 Device 007: ID 046d:082c Logitech, Inc. HD Webcam C615</span>
+<span class="go">Bus 010 Device 014: ID 1a86:7523 QinHeng Electronics HL-340 USB-Serial adapter</span>
+<span class="go">Bus 010 Device 020: ID 0bda:8153 Realtek Semiconductor Corp. RTL8153 Gigabit Ethernet Adapter</span>
+<span class="go">Bus 010 Device 030: ID 14cd:125d Super Top</span>
+<span class="go">Bus 010 Device 022: ID 0e6f:0232 Logic3</span>
+<span class="go">Bus 010 Device 031: ID 04e8:6860 Samsung Electronics Co., Ltd Galaxy series, misc. (MTP mode)</span>
+<span class="go">Bus 010 Device 016: ID 05e3:0610 Genesys Logic, Inc. 4-port hub</span>
+<span class="go">Bus 010 Device 003: ID 046d:c52f Logitech, Inc. Unifying Receiver</span>
+<span class="go">Bus 010 Device 002: ID 05e3:0610 Genesys Logic, Inc. 4-port hub</span>
+<span class="go">Bus 010 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub</span>
+<span class="go">Bus 009 Device 003: ID 0bda:8153 Realtek Semiconductor Corp. RTL8153 Gigabit Ethernet Adapter</span>
+<span class="go">Bus 009 Device 002: ID 05e3:0612 Genesys Logic, Inc. Hub</span>
+<span class="go">Bus 009 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub</span>
+<span class="go">Bus 008 Device 007: ID 046d:c52b Logitech, Inc. Unifying Receiver</span>
+<span class="go">Bus 008 Device 006: ID 046d:c52b Logitech, Inc. Unifying Receiver</span>
+<span class="go">Bus 008 Device 003: ID 05e3:0610 Genesys Logic, Inc. 4-port hub</span>
+<span class="go">Bus 008 Device 002: ID 046d:c52b Logitech, Inc. Unifying Receiver</span>
+<span class="go">Bus 008 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub</span>
+
+
+
+<span class="go">FileNotFoundError: [Errno 2] No such file or directory: &#39;/tmp/try-astutus/astutus/packaging/dist/venv/lib/python3.8/site-packages/astutus/web/static/_docs/source/developer_notes.html&#39;</span>
+</pre></div>
+</div>
+<p>2020-12-27 21:44 Getting this error with DB:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: raspberry_pi</span>
+<span class="go">[SQL: SELECT raspberry_pi.id AS raspberry_pi_id, raspberry_pi.mac_addr AS raspberry_pi_mac_addr, raspberry_pi.ipv4 AS raspberry_pi_ipv4</span>
+<span class="go">FROM raspberry_pi]</span>
+<span class="gp gp-VirtualEnv">(Background on this error at: http://sqlalche.me/e/13/e3q8)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="deprecation-warning">
+<h2>Deprecation Warning<a class="headerlink" href="#deprecation-warning" title="Permalink to this headline">¶</a></h2>
+<p>2020-12-28 18:36 Warning showed up in Pytest with most recent venv:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">  ================================================================================================ warnings summary =================================================================================================</span>
+<span class="go">../venv/lib/python3.8/site-packages/future/standard_library/__init__.py:65</span>
+<span class="go">  /home/rich/src/github.com/rich-dobbs-13440/astutus/venv/lib/python3.8/site-packages/future/standard_library/__init__.py:65: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module&#39;s documentation for alternative uses</span>
+<span class="go">    import imp</span>
+
+<span class="go">-- Docs: https://docs.pytest.org/en/stable/warnings.html</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="defining-commands-for-packages">
+<h2>Defining Commands for Packages<a class="headerlink" href="#defining-commands-for-packages" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python3 -m astutus.usb.tree:main</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="macosx.html" class="btn btn-neutral float-right" title="Working with Macintosh OSX" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="roadmap_to_documentation.html" class="btn btn-neutral float-left" title="Roadmap to Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Rich Dobbs
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

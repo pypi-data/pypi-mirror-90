@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>astutus.raspi package &mdash; Astutus 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="astutus.usb package" href="astutus.usb.html" />
+    <link rel="prev" title="astutus.log package" href="astutus.log.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Astutus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Astutus</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">astutus</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="astutus.html">astutus package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="astutus.db.html">astutus.db package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="astutus.log.html">astutus.log package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">astutus.raspi package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-astutus.raspi.find">astutus.raspi.find module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-astutus.raspi.raspi_impl">astutus.raspi.raspi_impl module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-astutus.raspi">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="astutus.usb.html">astutus.usb package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="astutus.util.html">astutus.util package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="roadmap_to_documentation.html">Roadmap to Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer_notes.html">Developer Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="macosx.html">Working with Macintosh OSX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backlog.html">Backlog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documenting.html">Documenting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="packaging.html">Packaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="smakn_usb_relay.html">SMAKN LCUS-1 USB Relay</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Astutus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">astutus</a> &raquo;</li>
+        
+      <li>astutus.raspi package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/source/astutus.raspi.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="astutus-raspi-package">
+<h1>astutus.raspi package<a class="headerlink" href="#astutus-raspi-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-astutus.raspi.find">
+<span id="astutus-raspi-find-module"></span><h2>astutus.raspi.find module<a class="headerlink" href="#module-astutus.raspi.find" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="astutus.raspi.find.parse_section_to_dictionary">
+<code class="sig-prename descclassname">astutus.raspi.find.</code><code class="sig-name descname">parse_section_to_dictionary</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">section</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span> &#x2192; {}<a class="headerlink" href="#astutus.raspi.find.parse_section_to_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.raspi.find.search_using_nmap">
+<code class="sig-prename descclassname">astutus.raspi.find.</code><code class="sig-name descname">search_using_nmap</code><span class="sig-paren">(</span><em class="sig-param">ipv4: str, mask: int, filter: [&lt;class 'str'&gt;]</em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.raspi.find.search_using_nmap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-astutus.raspi.raspi_impl">
+<span id="astutus-raspi-raspi-impl-module"></span><h2>astutus.raspi.raspi_impl module<a class="headerlink" href="#module-astutus.raspi.raspi_impl" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="astutus.raspi.raspi_impl.RaspberryPi">
+<em class="property">class </em><code class="sig-prename descclassname">astutus.raspi.raspi_impl.</code><code class="sig-name descname">RaspberryPi</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span></em>, <em class="sig-param"><span class="n">db_data</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">ipv4</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.raspi.raspi_impl.RaspberryPi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="astutus.raspi.raspi_impl.RaspberryPi.get_ifconfig">
+<code class="sig-name descname">get_ifconfig</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.raspi.raspi_impl.RaspberryPi.get_ifconfig" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.raspi.raspi_impl.RaspberryPi.parse_ifconfig_section_to_kvs">
+<code class="sig-name descname">parse_ifconfig_section_to_kvs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">section</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.raspi.raspi_impl.RaspberryPi.parse_ifconfig_section_to_kvs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="astutus.raspi.raspi_impl.RaspberryPi.publish_wheels">
+<code class="sig-name descname">publish_wheels</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.raspi.raspi_impl.RaspberryPi.publish_wheels" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt id="astutus.raspi.raspi_impl.RaspberryPiRuntimeError">
+<em class="property">exception </em><code class="sig-prename descclassname">astutus.raspi.raspi_impl.</code><code class="sig-name descname">RaspberryPiRuntimeError</code><a class="headerlink" href="#astutus.raspi.raspi_impl.RaspberryPiRuntimeError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">RuntimeError</span></code></p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-astutus.raspi">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-astutus.raspi" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="astutus.usb.html" class="btn btn-neutral float-right" title="astutus.usb package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="astutus.log.html" class="btn btn-neutral float-left" title="astutus.log package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Rich Dobbs
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

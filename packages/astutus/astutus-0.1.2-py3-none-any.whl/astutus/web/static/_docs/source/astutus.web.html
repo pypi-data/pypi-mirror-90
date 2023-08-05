@@ -1,0 +1,333 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>astutus.web package &mdash; Astutus 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="astutus.db package" href="astutus.db.html" />
+    <link rel="prev" title="astutus package" href="astutus.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Astutus
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Astutus</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">astutus</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="astutus.html">astutus package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="astutus.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">astutus.web package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="astutus.html#module-astutus">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="astutus.db.html">astutus.db package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="astutus.log.html">astutus.log package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="astutus.raspi.html">astutus.raspi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="astutus.usb.html">astutus.usb package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="astutus.util.html">astutus.util package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="roadmap_to_documentation.html">Roadmap to Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer_notes.html">Developer Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="macosx.html">Working with Macintosh OSX</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backlog.html">Backlog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documenting.html">Documenting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="packaging.html">Packaging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="smakn_usb_relay.html">SMAKN LCUS-1 USB Relay</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Astutus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">astutus</a> &raquo;</li>
+        
+          <li><a href="astutus.html">astutus package</a> &raquo;</li>
+        
+      <li>astutus.web package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/source/astutus.web.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="astutus-web-package">
+<h1>astutus.web package<a class="headerlink" href="#astutus-web-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-astutus.web.flask_app">
+<span id="astutus-web-flask-app-module"></span><h2>astutus.web.flask_app module<a class="headerlink" href="#module-astutus.web.flask_app" title="Permalink to this headline">¶</a></h2>
+<p>This module implements the Flask web application for the package.</p>
+<p>The web application provides:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>A server for the Sphinx generated documentation.</p></li>
+<li><p>An HTML interface for interacting with the system.</p></li>
+<li><p>A REST API for interacting with the system remotely</p></li>
+<li><p>or locally for automation.</p></li>
+</ul>
+</div></blockquote>
+<p>The handle routines are all Flask endpoints.</p>
+<p>Maintainence note:</p>
+<blockquote>
+<div><p>Include the app.route decorator in the docstrings
+for the handle routines.</p>
+</div></blockquote>
+<dl class="py function">
+<dt id="astutus.web.flask_app.create_app_and_db">
+<code class="sig-prename descclassname">astutus.web.flask_app.</code><code class="sig-name descname">create_app_and_db</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.web.flask_app.create_app_and_db" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.web.flask_app.handle_astutus">
+<code class="sig-prename descclassname">astutus.web.flask_app.</code><code class="sig-name descname">handle_astutus</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.web.flask_app.handle_astutus" title="Permalink to this definition">¶</a></dt>
+<dd><p>app.route(‘/astutus’)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.web.flask_app.handle_doc">
+<code class="sig-prename descclassname">astutus.web.flask_app.</code><code class="sig-name descname">handle_doc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.web.flask_app.handle_doc" title="Permalink to this definition">¶</a></dt>
+<dd><p>&#64;app.route(‘/astutus/doc’)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.web.flask_app.handle_doc_path">
+<code class="sig-prename descclassname">astutus.web.flask_app.</code><code class="sig-name descname">handle_doc_path</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">path</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.web.flask_app.handle_doc_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>app.route(‘/astutus/doc/&lt;path:path&gt;’)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.web.flask_app.handle_doc_top">
+<code class="sig-prename descclassname">astutus.web.flask_app.</code><code class="sig-name descname">handle_doc_top</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.web.flask_app.handle_doc_top" title="Permalink to this definition">¶</a></dt>
+<dd><p>app.route(‘/astutus/doc/index.html’)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.web.flask_app.handle_raspi">
+<code class="sig-prename descclassname">astutus.web.flask_app.</code><code class="sig-name descname">handle_raspi</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.web.flask_app.handle_raspi" title="Permalink to this definition">¶</a></dt>
+<dd><p>app.route(‘/astutus/raspi’, methods=[‘POST’, ‘GET’])</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.web.flask_app.handle_raspi_item">
+<code class="sig-prename descclassname">astutus.web.flask_app.</code><code class="sig-name descname">handle_raspi_item</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.web.flask_app.handle_raspi_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>app.route(‘/astutus/raspi/&lt;int:id&gt;’, methods=[‘POST’, ‘GET’, ‘DELETE’])</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.web.flask_app.handle_raspi_item_ifconfig">
+<code class="sig-prename descclassname">astutus.web.flask_app.</code><code class="sig-name descname">handle_raspi_item_ifconfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.web.flask_app.handle_raspi_item_ifconfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>” app.route(‘/astutus/raspi/&lt;int:id&gt;/ifconfig’, methods=[‘GET’])</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.web.flask_app.handle_top">
+<code class="sig-prename descclassname">astutus.web.flask_app.</code><code class="sig-name descname">handle_top</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.web.flask_app.handle_top" title="Permalink to this definition">¶</a></dt>
+<dd><p>app.route(‘/’)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="astutus.web.flask_app.process_raspi_find_form">
+<code class="sig-prename descclassname">astutus.web.flask_app.</code><code class="sig-name descname">process_raspi_find_form</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">form</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.web.flask_app.process_raspi_find_form" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.web.flask_app.run_with_standard_options">
+<code class="sig-prename descclassname">astutus.web.flask_app.</code><code class="sig-name descname">run_with_standard_options</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#astutus.web.flask_app.run_with_standard_options" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="astutus.web.flask_app.tojson_pretty_jinja2_template_file">
+<code class="sig-prename descclassname">astutus.web.flask_app.</code><code class="sig-name descname">tojson_pretty_jinja2_template_file</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">json_text</span></em><span class="sig-paren">)</span><a class="headerlink" href="#astutus.web.flask_app.tojson_pretty_jinja2_template_file" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-astutus.web">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-astutus.web" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="astutus.db.html" class="btn btn-neutral float-right" title="astutus.db package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="astutus.html" class="btn btn-neutral float-left" title="astutus package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Rich Dobbs
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
