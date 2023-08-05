@@ -1,0 +1,8 @@
+README.rst
+setup.py
+radicale_kalabash_auth_token/__init__.py
+radicale_kalabash_auth_token.egg-info/PKG-INFO
+radicale_kalabash_auth_token.egg-info/SOURCES.txt
+radicale_kalabash_auth_token.egg-info/dependency_links.txt
+radicale_kalabash_auth_token.egg-info/requires.txt
+radicale_kalabash_auth_token.egg-info/top_level.txt
