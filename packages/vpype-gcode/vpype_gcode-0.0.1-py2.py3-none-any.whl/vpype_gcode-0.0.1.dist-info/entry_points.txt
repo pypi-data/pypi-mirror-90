@@ -1,0 +1,5 @@
+
+            [vpype.plugins]
+            gread=vpype_gcode.gread:gread
+            gwrite=vpype_gcode.gwrite:gwrite
+        
