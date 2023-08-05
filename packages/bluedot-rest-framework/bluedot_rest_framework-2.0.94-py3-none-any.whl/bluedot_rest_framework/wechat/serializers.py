@@ -1,0 +1,22 @@
+from rest_framework.serializers import SerializerMethodField
+from bluedot_rest_framework import import_string
+from bluedot_rest_framework.utils.serializers import CustomSerializer
+
+from bluedot_rest_framework.wechat.models import WeChatUser
+
+User = import_string('USER.models')
+UserSerializer = import_string('USER.serializers')
+
+
+class WeChatUserSerializer(CustomSerializer):
+    profile = SerializerMethodField()
+
+    class Meta:
+        model = WeChatUser
+        fields = '__all__'
+
+    def get_profile(self, queryset):
+        user_queryset = User.objects.filter(
+            wechat_id=queryset.pk).first()
+        serializer = UserSerializer(user_queryset)
+        return serializer.data
