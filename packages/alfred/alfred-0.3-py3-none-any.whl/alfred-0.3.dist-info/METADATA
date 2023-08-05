@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: alfred
+Version: 0.3
+Summary: Utilities for Alfred script filters.
+Home-page: http://github.com/deactivated/python-alfred
+Author: Mike Spindel
+Author-email: mike@spindel.is
+License: MIT
+Keywords: alfred alfredapp script filter
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Requires-Dist: lxml
+
+UNKNOWN
+
+
