@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: cvehound
+Version: 0.1.2
+Summary: A tool to check linux kernel source dump for known CVEs
+Home-page: http://github.com/evdenis/cvehound
+Author: Denis Efremov
+Author-email: efremov@linux.com
+License: GPLv3
+Description: # CVEhound
+        
+        CVEhound is a tool for checking linux sources for known CVEs.
+        The tool is based on [coccinelle](https://coccinelle.gitlabpages.inria.fr/website/)
+        rules and grep patterns. The tool checks sources for vulnerable
+        code patterns of known CVEs and missing fixes for them.
+        
+        ## Prerequisites
+        
+        - Python 3 (>=3.6)
+        - pip (Python package manager)
+        - grep with pcre support (-P flag)
+        - coccinelle (>= 1.0.8)
+        
+        On Fedora:
+        ``` shell
+        $ sudo dnf install python3-pip coccinelle
+        ```
+        
+        ## Installation
+        
+        To install the latest stable version just run the following command:
+        
+        ``` shell
+        $ python3 -m pip install --user cvehound
+        ```
+        
+        For development purposes you may install cvehound in "editable" mode
+        directly from the repository (clone it on your computer beforehand):
+        
+        ``` shell
+        $ pip install -e .
+        ```
+        
+        ## How to use
+        
+        The simplest way to start using CVEhound is to run the following command:
+        
+        ``` shell
+        $ cvehound --dir ~/workspace/linux --verbose
+        ```
+        
+        where *dir* should point to linux kernel sources. CVEhound will check the
+        sources for all cve patterns that you can find in [cve dir](/cvehound/cve/).
+        To check the sources for particular CVEs one can use:
+        
+        ``` shell
+        $ cvehound --dir ~/workspace/linux --cve CVE-2020-27194 CVE-2020-29371
+        ```
+        
+        
+Keywords: cve,linux,kernel,spatch,cve-scanning,coccinelle
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
