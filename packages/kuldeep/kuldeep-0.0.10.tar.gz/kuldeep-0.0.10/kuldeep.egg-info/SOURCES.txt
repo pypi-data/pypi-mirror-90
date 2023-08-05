@@ -1,0 +1,11 @@
+LICENCE.txt
+Licence.txt
+MANIFEST.in
+README.md
+README.txt
+setup.py
+kuldeep.egg-info/PKG-INFO
+kuldeep.egg-info/SOURCES.txt
+kuldeep.egg-info/dependency_links.txt
+kuldeep.egg-info/requires.txt
+kuldeep.egg-info/top_level.txt
