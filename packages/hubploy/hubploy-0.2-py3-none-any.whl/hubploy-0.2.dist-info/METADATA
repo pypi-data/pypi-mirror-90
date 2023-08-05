@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hubploy
+Version: 0.2
+Summary: UNKNOWN
+Home-page: https://github.com/yuvipanda/hubploy
+Author: Yuvi Panda
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: docker
+Requires-Dist: jupyter-repo2docker (>=0.11)
+Requires-Dist: kubernetes
+Requires-Dist: boto3
+
+UNKNOWN
+
+
