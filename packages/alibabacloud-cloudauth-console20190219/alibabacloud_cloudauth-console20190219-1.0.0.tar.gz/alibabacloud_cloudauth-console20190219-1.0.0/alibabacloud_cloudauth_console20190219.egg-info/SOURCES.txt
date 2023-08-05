@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_cloudauth_console20190219/__init__.py
+alibabacloud_cloudauth_console20190219/client.py
+alibabacloud_cloudauth_console20190219/models.py
+alibabacloud_cloudauth_console20190219.egg-info/PKG-INFO
+alibabacloud_cloudauth_console20190219.egg-info/SOURCES.txt
+alibabacloud_cloudauth_console20190219.egg-info/dependency_links.txt
+alibabacloud_cloudauth_console20190219.egg-info/requires.txt
+alibabacloud_cloudauth_console20190219.egg-info/top_level.txt
