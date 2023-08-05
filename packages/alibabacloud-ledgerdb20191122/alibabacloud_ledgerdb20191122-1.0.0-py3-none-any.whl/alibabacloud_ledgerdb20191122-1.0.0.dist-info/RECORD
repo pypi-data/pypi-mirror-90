@@ -1,0 +1,8 @@
+alibabacloud_ledgerdb20191122/__init__.py,sha256=dHuoY6voK7np1A7oRzw1xyBy7CK9_KBAc4FCKW29uRQ,21
+alibabacloud_ledgerdb20191122/client.py,sha256=e2BUdND1T0nd5jzQJBCYvmA_VADvUMyFqHEuuvLztIo,49299
+alibabacloud_ledgerdb20191122/models.py,sha256=vzhdCMvl8kRT4YSa47yLQBIkUIRkIja6Ejm8dy8lhtg,105117
+alibabacloud_ledgerdb20191122-1.0.0.dist-info/LICENSE,sha256=0CFItL6bHvxqS44T6vlLoW2R4Zaic304OO3WxN0oXF0,600
+alibabacloud_ledgerdb20191122-1.0.0.dist-info/METADATA,sha256=rKsPxSpJjOoI50gZ1JCPPyNViEiNgTKjRAZF8_nWhBk,2247
+alibabacloud_ledgerdb20191122-1.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+alibabacloud_ledgerdb20191122-1.0.0.dist-info/top_level.txt,sha256=oHD6D1Q62KRMXq_oE0D4FvobyZnQ6ey4_llQwpF84nY,30
+alibabacloud_ledgerdb20191122-1.0.0.dist-info/RECORD,,
