@@ -1,0 +1,197 @@
+Metadata-Version: 2.1
+Name: teko-export-test
+Version: 0.0.3
+Summary: export test case file and test cycle file for teko-tool push to jira
+Home-page: UNKNOWN
+Author: dungntc
+Author-email: dungntc@vnpay.vn
+License: UNKNOWN
+Description: # EXPORT TEST CASE AND TEST CYCLE TO FILE
+        
+        # Push test to Jira
+        ### 1. Requirement
+        - Python 3
+        - pytest package
+        
+        
+        
+        ### 2. Set up
+        - `pip install --upgrade teko-export-test`
+        - Add to test setting `pytest_plugins = ['export_test_jira.tool']` . Example, add to `conftest.py` :
+        
+        
+        
+        ### 3. Write test function, Example
+        
+        - To import decorator: `from export_test_jira.wraper import jira_test`
+        - To use test script STEP_BY_STEP: `from export_test_jira.models.test_step import TestStep`
+        
+        ```
+        # coding=utf-8
+        import logging
+        from export_test_jira.wraper import jira_test
+        from export_test_jira.models.test_step import TestStep
+        
+        __author__ = 'Dungntc'
+        _logger = logging.getLogger(__name__)
+        
+        
+        @jira_test(
+            issue_links=['TESTING-9'],
+            objective='Make sure that not allow create message when exists msg with same brand',
+            scripts=[
+                TestStep(
+                    description='Create a new campaign',
+                    expected_result='create fake_campaign success',
+                    test_data='None'
+                ),
+                TestStep(
+                    description='Get a template from User Notification services',
+                    expected_result='get fake_template success',
+                    test_data='None'
+                ),
+                TestStep(
+                    description='Create 2 message with a template_id and XXX brand for this campaign',
+                    expected_result='Conflict error',
+                    test_data='''campaign_id = fake_campaign.id,
+                            msg_template_id = fake_template.id ,
+                            msg_params= fixed, brand = XXX'''
+                ),
+                TestStep(
+                    description='Get a template from User Notification services',
+                    expected_result='number of msg in db is 1',
+                    test_data='message1'
+                )
+            ]
+        )
+        def test_create_campaign_msg_fail_when_duplicate_brand():
+            print('Hello everyone, test case for TESTING-9')
+            assert 409 == 409
+        
+        
+        @jira_test(
+            issue_links=['TESTING-9', 'TESTING-10'],
+            objective='Make sure that not allow create message when exists msg with same brand',
+            confluence_links=['https://confluence.teko.vn/display/EP/Archive',
+                              'https://confluence.teko.vn/display/EP/Data+Flow+Diagrams'],
+            web_links=['dungntc.com', 'google.com'],
+            folder='/Mkt Portal Test/Campaign msg test',
+            plan='Create fake campaign and get a fake template. Then call api create message'
+        )
+        def test_create_campaign_msg_success():
+            print('Hello everyone, test case for TESTING-9, TESTING-10')
+            assert 409 == 409
+        
+        ```
+        - You can be use docstring, example :
+        ```
+        
+        def test_create_campaign_msg_fail_when_duplicate_brand_docstring():
+            """
+            ::JIRA
+            issueLinks: TESTING-9
+            objective: Make sure that not allow create message when exists msg with same brand
+            precondition: Has an message template from User Notification service
+            priority: Normal
+            scripts:
+                description: Create a new campaign
+                expectedResult: create fake_campaign success
+                testData: None
+        
+                description: Get a template from User Notification services
+                expectedResult: get fake_template success
+                testData: None
+        
+                description: Create new message with VNSHOP brand for this campaign
+                expectedResult: create message with VNSHOP brand success
+                testData:  campaign_id = fake_campaign.id, msg_template_id = fake_template.id ,
+                        msg_params= fixed, brand = XXX
+        
+                description: Create other message with a template_id and VNSHOP brand for this campaign
+                expectedResult: create message fail with conflict error
+                testData:  campaign_id = fake_campaign.id, msg_template_id = fake_template.id ,
+                        msg_params= fixed, brand = XXX
+        
+                description: Make sure msg not created in database
+                expectedResult: number of msg in db is 1
+                testData:  None
+            """
+            print('Hello everyone, test case for TESTING-9')
+            assert 409 == 409
+        
+        
+        def test_create_campaign_msg_success_docstring():
+            """
+            ::JIRA
+            issueLinks: TESTING-9, TESTING-10
+            objective: Make sure that not allow create message when exists msg with same brand
+            precondition: Has an message template from User Notification service
+            confluenceLinks: https://confluence.teko.vn/display/EP/Archive, https://confluence.teko.vn/display/EP/Data+Flow+Diagrams
+            webLinks: Dungntc.com, google.com
+            folder: /Mkt Portal Test/Campaign msg test
+            priority: Normal
+            plan: Create a fake campaign and get a fake template. Then create message success. Make sure msg created in database
+            ::END_JIRA
+            other comment ....
+            """
+            print('Hello everyone, test case for TESTING-9, TESTING-10')
+            assert 409 == 409
+        ```
+        
+        
+        ### 4 Maybe you need push test to Jira with teko-tool, this is example gitlab-ci.yml
+        ```
+        test:unittest:
+          stage: test
+          ...
+          variables:
+            JIRA_TEST_CASE_ARTIFACT: test_case.json
+            JIRA_TEST_CYCLE_ARTIFACT: test_cycle.json
+          artifacts:
+            paths:
+              - $JIRA_TEST_CASE_ARTIFACT
+              - $JIRA_TEST_CYCLE_ARTIFACT
+            expire_in: 1 week
+          allow_failure: false
+        ```
+        
+        
+        - Enviroment:
+         - `$JIRA_TEST_CASE_ARTIFACT`: test_case file path, default is test_case.json
+         - `$JIRA_TEST_CYCLE_ARTIFACT`: test_cycle file path, default is test_cycle.json
+        
+        
+        
+        ```
+        report:push-test:
+          stage: report
+          image: python:3.7-slim
+          variables:
+            JIRA_TEST_CASE_ARTIFACT: test_case.json
+            JIRA_TEST_CYCLE_ARTIFACT: test_cycle.json
+            JIRA_PROJECT_KEY: TESTING
+            JIRA_SERVER: jira.teko.vn
+            #JIRA_USERNAME
+            #JIRA_PASSWORD
+          script:
+            - pip install --upgrade --cache-dir=.pip teko-cli
+            - teko jira create-tests $JIRA_TEST_CASE_ARTIFACT
+            - teko jira create-cycle $JIRA_TEST_CYCLE_ARTIFACT
+          cache:
+            key: pip-cache
+            paths: [ .pip ]
+          allow_failure: true
+          when: always
+        ```
+        
+        
+        - Enviroment:
+         - `$JIRA_TEST_CASE_ARTIFACT`: test_case file path, default is test_case.json
+         - `$JIRA_TEST_CYCLE_ARTIFACT`: test_cycle file path, default is test_cycle.json
+         - `$JIRA_SERVER`: jira.teko.vn
+         - `$JIRA_PROJECT_KEY`: TESTING
+         - `$JIRA_USERNAME`: tekobot
+         - `$JIRA_PASSWORD`: *****
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
