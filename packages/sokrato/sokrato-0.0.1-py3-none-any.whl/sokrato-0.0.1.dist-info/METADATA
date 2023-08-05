@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sokrato
+Version: 0.0.1
+Summary: Commonly used utilities
+Home-page: https://github.com/sokrato/repo
+Author: Sokrato
+Author-email: sokrato@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (<3,>=2.25.1)
+
+# Example Package
+
+A collection of commonly used utilities.
+
+
