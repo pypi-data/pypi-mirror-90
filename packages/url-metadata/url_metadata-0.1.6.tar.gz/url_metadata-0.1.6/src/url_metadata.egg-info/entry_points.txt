@@ -1,0 +1,3 @@
+[console_scripts]
+url_metadata = url_metadata.__main__:main
+
