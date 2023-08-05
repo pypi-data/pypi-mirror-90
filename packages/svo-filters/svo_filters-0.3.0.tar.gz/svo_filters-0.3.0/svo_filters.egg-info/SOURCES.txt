@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+svo_filters/__init__.py
+svo_filters/setup_package.py
+svo_filters/svo.py
+svo_filters/test_svo.py
+svo_filters.egg-info/PKG-INFO
+svo_filters.egg-info/SOURCES.txt
+svo_filters.egg-info/dependency_links.txt
+svo_filters.egg-info/not-zip-safe
+svo_filters.egg-info/requires.txt
+svo_filters.egg-info/top_level.txt
