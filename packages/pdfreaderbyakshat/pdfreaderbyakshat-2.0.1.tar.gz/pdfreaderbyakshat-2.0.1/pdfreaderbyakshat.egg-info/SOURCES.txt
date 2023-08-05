@@ -1,0 +1,6 @@
+README.md
+setup.py
+pdfreaderbyakshat.egg-info/PKG-INFO
+pdfreaderbyakshat.egg-info/SOURCES.txt
+pdfreaderbyakshat.egg-info/dependency_links.txt
+pdfreaderbyakshat.egg-info/top_level.txt
