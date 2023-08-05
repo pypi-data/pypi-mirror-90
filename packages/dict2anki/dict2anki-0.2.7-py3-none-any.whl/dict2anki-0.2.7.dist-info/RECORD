@@ -1,0 +1,15 @@
+dict2anki/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dict2anki/__main__.py,sha256=84_S8skgwpyChkXoftZHQ9Vnqq73-6ehXSx9f4CU-R8,61
+dict2anki/cli.py,sha256=WYXgnNISUlB1Hig3IyZIepqwITT6YH_WiwwskHu_BJE,2452
+dict2anki/htmls.py,sha256=-DVJDkRyl0wUQssqRrcspROHHBO4W7NzM8rUM3VojZ0,1992
+dict2anki/net.py,sha256=zMvnh7P8GheEKofcsJDv-43xVG8Vno2XyeQTlL4cW0o,7006
+dict2anki/utils.py,sha256=ZLlPKVNloh05zC0TMrd6hUQpd7ESZaZh5sUzFCEkLac,2684
+dict2anki/extractors/__init__.py,sha256=FCAu2o4nFWHgjhVxyhf0iNqBwXUjPPoApMuSIrgRNTE,201
+dict2anki/extractors/cambridge.py,sha256=5d1-kSR1Cp-P1dxJOLMrQXDgd9tD9YwcpC1p0r-9dTs,5823
+dict2anki/extractors/extractor.py,sha256=SRP78gyFcS6hxF1S5mnQ6noEnmmgXcayuExbCKNb5bU,3684
+dict2anki-0.2.7.dist-info/LICENSE,sha256=d_G6-AS2669bWX_Udwa9Zq9qrYXeAhlI_6jo3KhSBQc,1068
+dict2anki-0.2.7.dist-info/METADATA,sha256=uhNbWYsxFXsU7vVEHsMJM-cYwtgcX0ezELZwCUo42oY,2849
+dict2anki-0.2.7.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+dict2anki-0.2.7.dist-info/entry_points.txt,sha256=hGXMlu8UHjqed5BW5d3LRI8kr5YX38FuA0cg6XgPIhY,55
+dict2anki-0.2.7.dist-info/top_level.txt,sha256=zT9qD2IKRZNDnYc0YKrzMSjmVrxtzEsErDEEWzMb5wM,10
+dict2anki-0.2.7.dist-info/RECORD,,
