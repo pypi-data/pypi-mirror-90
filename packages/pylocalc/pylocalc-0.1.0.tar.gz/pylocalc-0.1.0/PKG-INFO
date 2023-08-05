@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pylocalc
+Version: 0.1.0
+Summary: Python interface for manipulating LibreOffice Calc spreadsheets
+Home-page: https://github.com/ViliamV/pylocalc
+License: MIT
+Keywords: LibreOffice,Calc,spreadsheets
+Author: Viliam Valent
+Author-email: pylocalc@viliamvalent.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/ViliamV/pylocalc
+Description-Content-Type: text/markdown
+
+# PyLOcalc
+
