@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+shelltable/__init__.py
+shelltable/__main__.py
+shelltable/table.py
+shelltable.egg-info/PKG-INFO
+shelltable.egg-info/SOURCES.txt
+shelltable.egg-info/dependency_links.txt
+shelltable.egg-info/top_level.txt
