@@ -1,0 +1,8 @@
+README.md
+setup.py
+pymoutai.egg-info/PKG-INFO
+pymoutai.egg-info/SOURCES.txt
+pymoutai.egg-info/dependency_links.txt
+pymoutai.egg-info/requires.txt
+pymoutai.egg-info/top_level.txt
+pymoutai.egg-info/zip-safe
