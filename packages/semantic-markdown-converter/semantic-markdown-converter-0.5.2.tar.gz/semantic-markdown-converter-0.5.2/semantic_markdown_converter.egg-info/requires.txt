@@ -1,0 +1,6 @@
+pyyaml
+tqdm
+py2neo
+watchdog
+markdown
+mdx-wikilink-plus
