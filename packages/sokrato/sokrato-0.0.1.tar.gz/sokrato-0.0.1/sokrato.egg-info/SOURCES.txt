@@ -1,0 +1,10 @@
+README.md
+setup.py
+sokrato/__init__.py
+sokrato/cli.py
+sokrato.egg-info/PKG-INFO
+sokrato.egg-info/SOURCES.txt
+sokrato.egg-info/dependency_links.txt
+sokrato.egg-info/entry_points.txt
+sokrato.egg-info/requires.txt
+sokrato.egg-info/top_level.txt
