@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: treeage
+Version: 0.1.0
+Summary: Lists contents of directories in a tree-like format with age metric indicated for each file
+Home-page: https://github.com/KraYmer/treeage
+Author: Fabrice Laporte
+Author-email: kraymer@gmail.com
+License: MIT
+Description: .. pypi
+        
+        treeage
+        =======
+        
+            **/ˈtreeage/**
+            
+            | 1. *n.* a process in which things are ranked in terms of importance or priority.
+            | 2. *n.* software that lists contents of directories in a tree-like format with age metric indicated for each file
+        
+        ``treeage`` display is typically used to shed some light on antiquated parts of a codebase and identify candidates for a refactoring.
+        
+        Install
+        -------
+        
+        ``treeage`` is written for Python 3.5+, install with pip via ``pip3 install treeage`` command.
+        
+        Usage
+        -----
+        
+        ::
+        
+            Usage: treeage.py [OPTIONS] DIRECTORY    
+        
+              Lists contents of directories in a tree-like format with age metric
+              indicated for each file.    
+        
+            Options:
+              --maxdepth LEVELS  Descend at most LEVELS (a non-negative integer) levels of
+                                 directories below the seed DIRECTORY    
+        
+              --include GLOB     Search only files whose base name matches GLOB (using
+                                 wildcard matching)    
+        
+              -h, --help         Show this message and exit.    
+        
+        
+        Screenshot
+        ----------
+        
+        .. image:: docs/screenshot.png
+Keywords: git
+Platform: ALL
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Environment :: Console
+Classifier: Topic :: System :: Filesystems
+Provides-Extra: test

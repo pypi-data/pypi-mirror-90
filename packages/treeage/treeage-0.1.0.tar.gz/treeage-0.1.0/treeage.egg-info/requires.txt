@@ -1,0 +1,10 @@
+arrow
+blessed
+click
+click_log
+gitpython
+
+[test]
+coverage>5
+pytest>=6
+tox>=3
