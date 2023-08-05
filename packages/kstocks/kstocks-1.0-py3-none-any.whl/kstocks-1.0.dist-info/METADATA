@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: kstocks
+Version: 1.0
+Summary: Korean Stock Module
+Home-page: https://github.com/Tim232/kstocks
+Author: Tim232
+Author-email: endbot4023@gmail.com
+License: GPL-V3
+Keywords: stocks,korean,KOSPI,KOSDAQ
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: scrapy
+Requires-Dist: asyncio
+Requires-Dist: aiohttp
+
+# kstocks
+
+Korean Stock Module
+
+⚠ 해당 프로젝트는 AGPL-3.0 License 입니다 ⚠
+
+## Download
+
+```shell
+$ pip install kstocks
+```
+
+## Example
+
+[example.py](/example.py)
+
+## Contribute
+
+Find a bug and tell it on the Issue tab or to `! Tim23#9999` on discord
+
+You can also Pull a request
+
+## Log
+
+1.0 Initial Release
+
+
