@@ -1,0 +1,6 @@
+CodeConvert
+TimeConvert
+redis>=3.0.0
+shortuuid
+verification-code
+graphic-verification-code>=1.0.3
