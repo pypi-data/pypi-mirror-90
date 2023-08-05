@@ -1,0 +1,10 @@
+README.md
+setup.py
+pythonFTP/FTPTools.py
+pythonFTP/__init__.py
+pythonFTP/ftplib2.py
+pythonFTP.egg-info/PKG-INFO
+pythonFTP.egg-info/SOURCES.txt
+pythonFTP.egg-info/dependency_links.txt
+pythonFTP.egg-info/not-zip-safe
+pythonFTP.egg-info/top_level.txt
