@@ -1,0 +1,8 @@
+alibabacloud_hitsdb20170601/__init__.py,sha256=dHuoY6voK7np1A7oRzw1xyBy7CK9_KBAc4FCKW29uRQ,21
+alibabacloud_hitsdb20170601/client.py,sha256=0M5XiwhqaZrt9RyNtkAPm8PXV0XozU28hdonw2SBO08,15325
+alibabacloud_hitsdb20170601/models.py,sha256=2hIZQ-eG0h53OsWSb-VCBtmoG9fBW0xYIDtO9fDy6oI,46564
+alibabacloud_hitsdb20170601-1.0.0.dist-info/LICENSE,sha256=0CFItL6bHvxqS44T6vlLoW2R4Zaic304OO3WxN0oXF0,600
+alibabacloud_hitsdb20170601-1.0.0.dist-info/METADATA,sha256=NfpMnZ_qUDCrY5bpf-CyaHcY7GCZfyNXmGBCCmr3-rg,2214
+alibabacloud_hitsdb20170601-1.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+alibabacloud_hitsdb20170601-1.0.0.dist-info/top_level.txt,sha256=th9J8DAjnn6Pfn-GSCv_NzB4ejraTeTCWp4n9QPBSoE,28
+alibabacloud_hitsdb20170601-1.0.0.dist-info/RECORD,,
