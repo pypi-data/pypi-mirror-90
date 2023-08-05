@@ -1,0 +1,11 @@
+faapi/__init__.py,sha256=_zCXtvHSjZqvdaUk4myZAvaTTo6QeU4FkJQWd0cq_Do,167
+faapi/__version__.py,sha256=W4Ly770aHokELX7E5GebZ5cHxiQ0Ow1XmGqCmHKpv9A,23
+faapi/base.py,sha256=F44t7qtFe3W0Kiqrq5TnP5vXvbkZsFnJEPahJo92ftw,7559
+faapi/connection.py,sha256=utDH3bV-q--yIDrQZcJcCe6Tpnoz01Spb9Hdh-C_0VE,1874
+faapi/journal.py,sha256=D1aM2WxglHN_fnTfDfAGX9HADxRPdN0DJQfLe6v5D2Y,1721
+faapi/parse.py,sha256=PhI_cIWJX70QJsbJohDfjQ9YCmZZW-gbVPAEQdAO9XY,4994
+faapi/submission.py,sha256=z5uIHajjhPJQeVSV-4I85XEGqCphUfg74fIL_Y3qHVE,3251
+faapi-2.11.2.dist-info/LICENSE,sha256=c2ntVF08uHnnUPiC857fMgIXYIsHHsm_OkGwqmYNV0o,13866
+faapi-2.11.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+faapi-2.11.2.dist-info/METADATA,sha256=5lB_JvDvvKVY9ru4M-vvDg7WqkZSkttpqkV-e97R52w,13010
+faapi-2.11.2.dist-info/RECORD,,
