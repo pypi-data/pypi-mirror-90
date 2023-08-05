@@ -1,0 +1,12 @@
+setup.py
+CryptoContainer/__init__.py
+CryptoContainer/container.py
+CryptoContainer/encryption.py
+CryptoContainer/errors.py
+CryptoContainer/options.py
+CryptoContainer/partitions.py
+CryptoContainer.egg-info/PKG-INFO
+CryptoContainer.egg-info/SOURCES.txt
+CryptoContainer.egg-info/dependency_links.txt
+CryptoContainer.egg-info/requires.txt
+CryptoContainer.egg-info/top_level.txt
