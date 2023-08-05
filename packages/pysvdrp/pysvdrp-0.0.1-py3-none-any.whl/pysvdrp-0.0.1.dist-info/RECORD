@@ -1,0 +1,11 @@
+pysvdrp/__init__.py,sha256=lr4FhyaCNsSfxv2NkEG53MkfAYpDgF7SprcMzRMdsTo,4398
+pysvdrp/channels.py,sha256=flCWtvat_p_wALsMsXibAkRB_iUjdd87mLy7W_7K_zc,6826
+pysvdrp/epg.py,sha256=MkUKwgOZXoixlrCckm-MV8ktm5uNwZEmtoXYe4H0ozI,6881
+pysvdrp/exceptions.py,sha256=uR3xYlp06ChIwZu_5rnPrz1LOteHP_lm9yB8MgeQ3dw,940
+pysvdrp/plugins.py,sha256=JnI5QG-mqpNeXXtggbxK8MUO7DigctjVAuqcOsWPTMA,1616
+pysvdrp/tools.py,sha256=pm2K5LMvAJGNVo4M7Uus6Qs-RHsfIRbokgSHXRSqJNY,3786
+pysvdrp-0.0.1.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+pysvdrp-0.0.1.dist-info/METADATA,sha256=ZsxadtSmsyPsBnVmuAUWUnB3iUF-hPqhPINJEx8PS50,564
+pysvdrp-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pysvdrp-0.0.1.dist-info/top_level.txt,sha256=GyxUXlYY-r5Y-eozRNPj2VwUfozRZLvYS7G6b3FsJ1E,8
+pysvdrp-0.0.1.dist-info/RECORD,,
