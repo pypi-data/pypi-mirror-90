@@ -1,0 +1,3 @@
+[console_scripts]
+dict2anki = dict2anki.__main__:main
+
