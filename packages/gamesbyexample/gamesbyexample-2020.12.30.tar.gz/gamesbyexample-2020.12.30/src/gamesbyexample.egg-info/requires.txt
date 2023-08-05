@@ -1,0 +1,8 @@
+pymsgbox
+bext
+pyperclip
+playsound
+pyttsx3
+
+[:platform_system == "Windows" or platform_system == "Linux"]
+pygame
