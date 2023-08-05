@@ -1,0 +1,10 @@
+pycarwings2/__init__.py,sha256=2WCj_85_co_GZIDvQ4l7PHelw3iKEJPSaNS0wyJUzt0,129
+pycarwings2/pycarwings2.py,sha256=yA9R7u9qWPial6l6mIGVKM2GGxhi90tOaBJOacVxav4,16796
+pycarwings2/responses.py,sha256=fyonML7Y9-iGh4t4IyyOKl-iQWVrq8hlV00ajBXLdSI,27641
+tests/__init__.py,sha256=4V1wUomQseyqiuTtzYBMGxGEYmG4iUHYxNcKDiWRRFc,54
+tests/test_pycarwings2.py,sha256=mLFqKVuDt17HA6e6XNFX4oT0sYTIzCp2To0EG2MG0U0,497
+pycarwings2-2.10.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+pycarwings2-2.10.dist-info/METADATA,sha256=4T1i5t6pmMwwlt-kmfUW9VYw91mVzjt-v5pKDjAYctk,3144
+pycarwings2-2.10.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pycarwings2-2.10.dist-info/top_level.txt,sha256=m4YUGtzt56goztA6xWOUYpf8THH3Y6qqQ0F-ii0p9ZY,12
+pycarwings2-2.10.dist-info/RECORD,,
