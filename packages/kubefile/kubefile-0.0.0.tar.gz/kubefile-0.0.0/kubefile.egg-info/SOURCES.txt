@@ -1,0 +1,8 @@
+README.md
+setup.py
+kubefile/__init__.py
+kubefile.egg-info/PKG-INFO
+kubefile.egg-info/SOURCES.txt
+kubefile.egg-info/dependency_links.txt
+kubefile.egg-info/not-zip-safe
+kubefile.egg-info/top_level.txt

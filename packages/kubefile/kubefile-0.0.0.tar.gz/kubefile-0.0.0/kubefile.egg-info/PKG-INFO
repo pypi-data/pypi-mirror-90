@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: kubefile
+Version: 0.0.0
+Summary: <description>
+Home-page: https://github.com/marella/kubefile
+Author: Ravindra Marella
+License: MIT
+Description: <description>
+        
+        ## Installation
+        
+        ```sh
+        pip install <name>
+        ```
+        
+        ## Usage
+        
+        ```py
+        <example>
+        ```
+        
+Keywords: kubefile
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
