@@ -1,0 +1,7 @@
+Scrapy>=1.1
+
+[gcs]
+google-cloud-storage
+
+[s3]
+boto3
