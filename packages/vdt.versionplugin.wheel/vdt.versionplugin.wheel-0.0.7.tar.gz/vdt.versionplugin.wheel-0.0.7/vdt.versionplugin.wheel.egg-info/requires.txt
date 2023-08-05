@@ -1,0 +1,6 @@
+setuptools
+vdt.version
+vdt.versionplugin.default
+mock
+wheel
+pip

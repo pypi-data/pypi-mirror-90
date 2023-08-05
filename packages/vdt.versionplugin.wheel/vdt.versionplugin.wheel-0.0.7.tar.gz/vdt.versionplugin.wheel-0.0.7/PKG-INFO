@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: vdt.versionplugin.wheel
+Version: 0.0.7
+Summary: vdt.version plugin for building python wheels.
+Home-page: UNKNOWN
+Author: Lars van de Kerkhof
+Author-email: lars@devopsconsulting.nl
+Maintainer: Lars van de Kerkhof
+Maintainer-email: lars@devopsconsulting.nl
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
