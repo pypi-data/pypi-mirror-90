@@ -1,0 +1,12 @@
+s3pipeline/__init__.py,sha256=0ZZ7xNDx26_d2l9hW25CLZPW9WzYlh3nWxoablhNOko,58
+s3pipeline/items.py,sha256=Oc_VMix3Y02ht3iu4jQtShNIrLBI9-3EA38t7H0yl-A,823
+s3pipeline/pipelines.py,sha256=O0xiLtmeY6L7SrqfVlgbD6Oz2seyiH3hleKYQFzq_KQ,4363
+s3pipeline/strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+s3pipeline/strategies/error.py,sha256=h53HDoPp8Kw79JLai585y80-BHGRDjRWe7Z9PWFCF-Q,39
+s3pipeline/strategies/gcs.py,sha256=kw_SV4NyWIZiFzv4SL0ucjf78UxicAbcyneXhAhTc1Y,977
+s3pipeline/strategies/s3.py,sha256=WuVc3IWJoJ1MPrJLV31fTZ0ioplaEZALrqsV5R333U0,727
+scrapy_s3pipeline-0.6.0.dist-info/LICENSE,sha256=4sDHG_E_X4lk3ASEpZ_FXoTQ9vamYzaVBTnhzm2gJWc,1086
+scrapy_s3pipeline-0.6.0.dist-info/METADATA,sha256=WT63HZPngL9PbyCL7KxLD-8wwWBPfU0JL6EJNjSf8uM,5852
+scrapy_s3pipeline-0.6.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+scrapy_s3pipeline-0.6.0.dist-info/top_level.txt,sha256=srlagN7Z5jU8CuhFnxcAgzy0EeOWa1Bf_RiBCwlbdFc,11
+scrapy_s3pipeline-0.6.0.dist-info/RECORD,,
