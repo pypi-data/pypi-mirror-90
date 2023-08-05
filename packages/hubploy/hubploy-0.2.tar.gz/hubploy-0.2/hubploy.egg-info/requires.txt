@@ -1,0 +1,4 @@
+docker
+jupyter-repo2docker>=0.11
+kubernetes
+boto3
