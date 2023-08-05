@@ -1,0 +1,11 @@
+setup.py
+Wsimple.egg-info/PKG-INFO
+Wsimple.egg-info/SOURCES.txt
+Wsimple.egg-info/dependency_links.txt
+Wsimple.egg-info/not-zip-safe
+Wsimple.egg-info/requires.txt
+Wsimple.egg-info/top_level.txt
+wsimple/__init__.py
+wsimple/api/__init__.py
+wsimple/api/api.py
+wsimple/api/errors.py
