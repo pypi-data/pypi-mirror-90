@@ -1,0 +1,12 @@
+README.md
+setup.py
+wordsapy/__init__.py
+wordsapy/dict_obj.py
+wordsapy/dictionary.py
+wordsapy/exceptions.py
+wordsapy/wordsapy.py
+wordsapy.egg-info/PKG-INFO
+wordsapy.egg-info/SOURCES.txt
+wordsapy.egg-info/dependency_links.txt
+wordsapy.egg-info/requires.txt
+wordsapy.egg-info/top_level.txt
