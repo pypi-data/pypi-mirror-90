@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tompy
+Version: 0.1.2
+Summary: Tompy is the powerful package for time series and statistics.
+Home-page: https://github.com/nanticj/tompy
+License: MIT
+Author: Thomas Jeong
+Author-email: nanticj@users.noreply.github.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Documentation, https://github.com/nanticj/tompy
+Project-URL: Repository, https://github.com/nanticj/tompy
+Description-Content-Type: text/markdown
+
+# tompy
