@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: vdt.versionplugin.debianize
+Version: 1.0.7
+Summary: Version Increment Plugin that builds with debianize
+Home-page: UNKNOWN
+Author: Lars van de Kerkhof
+Author-email: lars@permanentmarkers.nl
+Maintainer: Lars van de Kerkhof
+Maintainer-email: lars@permanentmarkers.nl
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
