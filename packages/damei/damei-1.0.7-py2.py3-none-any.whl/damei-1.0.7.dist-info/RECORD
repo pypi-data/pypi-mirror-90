@@ -1,0 +1,10 @@
+damei/__init__.py,sha256=o9j3SJowuvhuoa7uN0RcZvfO7YwWEt_Yjb-tJP5cs7M,111
+damei/damei2.py,sha256=xcNka-hYUUH3qzrOdieebb193nf2q3hhAUinRnu_6D4,62
+damei/controls/__init__.py,sha256=bT0AfMp3d2sEdYLGixWZBWK1yXucrse-GEi_C2vabbs,19
+damei/controls/color.py,sha256=fNTttDKzm1zSqzX5C3IbNPQq4fKHT94Le-ineHPnFlA,104
+damei/functions/__init__.py,sha256=wP8mZeKDo9tgRN51Nd4sL0cYuzwtXXV5tmieWiSnKJU,21
+damei/functions/general.py,sha256=5g3Ywnlo7laUuBdLWlZ259tmdLLdyvAD9JeSv2PpgHY,3743
+damei-1.0.7.dist-info/METADATA,sha256=Gz4FArn_2CmVpNOChT-GBO_HiIXJNDbR1e2saI69hj4,942
+damei-1.0.7.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+damei-1.0.7.dist-info/top_level.txt,sha256=5eh_roYpaueadr7CXZ_VELkHiudD8aOAylVjU74gNdY,6
+damei-1.0.7.dist-info/RECORD,,
