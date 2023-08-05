@@ -1,0 +1,7 @@
+README.md
+setup.py
+bser_client/__init__.py
+bser_python_client.egg-info/PKG-INFO
+bser_python_client.egg-info/SOURCES.txt
+bser_python_client.egg-info/dependency_links.txt
+bser_python_client.egg-info/top_level.txt
