@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_gameshield20180305/__init__.py
+alibabacloud_gameshield20180305/client.py
+alibabacloud_gameshield20180305/models.py
+alibabacloud_gameshield20180305.egg-info/PKG-INFO
+alibabacloud_gameshield20180305.egg-info/SOURCES.txt
+alibabacloud_gameshield20180305.egg-info/dependency_links.txt
+alibabacloud_gameshield20180305.egg-info/requires.txt
+alibabacloud_gameshield20180305.egg-info/top_level.txt
