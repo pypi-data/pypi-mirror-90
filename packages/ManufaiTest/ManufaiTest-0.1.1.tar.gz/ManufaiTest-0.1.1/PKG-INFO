@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: ManufaiTest
+Version: 0.1.1
+Summary: Union de proyectos anteriores
+Home-page: UNKNOWN
+Author: Wilbert Sanchez
+Author-email: wuilbertenriquechable522@gmail.com
+License: MIT
+Description: Multiple Scripts Validation For Dongle...
+        
+        
+        
+        Change Log
+        ==========
+        
+        0.1.1 (29/12/2020)
+        -------------------
+        - Primera Version
+        
+Keywords: Multiple Scripts
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

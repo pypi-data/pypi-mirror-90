@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+ManufaiTest/__init__.py
+ManufaiTest.egg-info/PKG-INFO
+ManufaiTest.egg-info/SOURCES.txt
+ManufaiTest.egg-info/dependency_links.txt
+ManufaiTest.egg-info/top_level.txt
