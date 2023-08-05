@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: qaes
+Version: 1.0.2
+Summary: 
+Author: Mohammad Jafari
+Author-email: m.jafari9877@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: cryptography (>=3.3.1,<4.0.0)
