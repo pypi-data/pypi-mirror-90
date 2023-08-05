@@ -1,0 +1,10 @@
+chdp/__init__.py,sha256=wPRJsvxO3Q0KPPcx2a95rlGRatbuwYzGDVmHgWTcjLs,83
+chdp/chdp_funcs.py,sha256=0JQtotAgwD7jwMFuSTPz_4Dy1-P_RSWY1S2GjuTOPYk,1624
+chdp/client.py,sha256=lCjQDlcEGdSJNiq98RXViC5CEXXfoF6sAfKncyWGt6A,14253
+chdp/errors.py,sha256=O8145Hp7O0NsV94NhvdFswdwjMBs7j-nvLlONo9h1jI,479
+chdp/handler.py,sha256=ORpZtgs-NYXUZVQv2M0KDNTedwRXJ4zo5v2n5sQIrkk,2455
+chdp-1.0.dist-info/LICENSE,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+chdp-1.0.dist-info/METADATA,sha256=2DshpPR2a4N9spCnqTZj_QjXQWNMWEwOHP-zUBZMYBA,1095
+chdp-1.0.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+chdp-1.0.dist-info/top_level.txt,sha256=4my3wRu4hwYLw54a_rdz4mChJJYqzct5xj3A9Iuc6Ik,5
+chdp-1.0.dist-info/RECORD,,
