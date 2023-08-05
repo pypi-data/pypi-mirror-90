@@ -1,0 +1,4 @@
+[console_scripts]
+blt_transfer = blt_funcx_toolkit.blt_transfer:cli_run
+fxsh = blt_funcx_toolkit.fxsh:cli_run
+
