@@ -1,0 +1,13 @@
+LICENCE.txt
+Licence.txt
+MANIFEST.in
+README.md
+README.txt
+setup.cfg
+setup.py
+django_kuldeep.egg-info/PKG-INFO
+django_kuldeep.egg-info/SOURCES.txt
+django_kuldeep.egg-info/dependency_links.txt
+django_kuldeep.egg-info/not-zip-safe
+django_kuldeep.egg-info/requires.txt
+django_kuldeep.egg-info/top_level.txt

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: django_kuldeep
+Version: 1.0
+Summary: database package
+Home-page: https://github.com/softprodigyofficial/sample-python-package.git
+Author: django_kuldeep khatana
+Author-email: django_kuldeep.si.softprodigy@gmail.com
+License: UNKNOWN
+Description: python-database-package
+Keywords: database-package
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
