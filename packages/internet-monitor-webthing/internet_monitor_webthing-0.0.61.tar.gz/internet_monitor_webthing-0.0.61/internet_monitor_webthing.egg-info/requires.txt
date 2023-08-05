@@ -1,0 +1,3 @@
+webthing
+speedtest-cli
+requests
