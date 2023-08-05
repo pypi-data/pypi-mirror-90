@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: bser-python-client
+Version: 0.0.3
+Summary: A Python API client for bser-open-api
+Home-page: https://github.com/myungseokang/bser-python-client
+Author: myungseokang
+Author-email: iam@myungseokang.dev
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# BSER Python API Client
+
+> [블랙서바이벌: 영원회귀 openapi](https://developer.eternalreturn.io/) 를 위한 Python API Client 입니다.
+>
+> A Python API Client for [Black Survival: Eternal Return openapi](https://developer.eternalreturn.io/).
+
+## Requirements
+
+- Python 3.6 or higher
+- [requests](https://github.com/psf/requests)
+
+## Installation
+
+```
+$ pip install bser-python-client
+```
+
+If you use pipenv,
+
+```
+$ pipenv install bser-python-client
+```
+
+## Example
+
+
+```python
+from bser_client import BserAPIClient
+
+api_client = BserAPIClient(api_key='your_token', version='v1')
+
+characters = api_client.fetch_meta_data(meta_type='Character')
+
+for character in characters:
+    print(character.get('name'))
+```
+
+[More examples](examples/)
+
+
