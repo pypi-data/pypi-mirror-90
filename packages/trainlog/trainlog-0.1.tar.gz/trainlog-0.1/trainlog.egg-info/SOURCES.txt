@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+trainlog/__init__.py
+trainlog/_version.py
+trainlog/io.py
+trainlog/logger.py
+trainlog/logs.py
+trainlog/ops.py
+trainlog.egg-info/PKG-INFO
+trainlog.egg-info/SOURCES.txt
+trainlog.egg-info/dependency_links.txt
+trainlog.egg-info/top_level.txt
