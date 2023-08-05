@@ -1,0 +1,8 @@
+alibabacloud_cassandra20190101/__init__.py,sha256=dHuoY6voK7np1A7oRzw1xyBy7CK9_KBAc4FCKW29uRQ,21
+alibabacloud_cassandra20190101/client.py,sha256=3DI3qpZ-rn5OLe2eAfrTObtoCAOGSRQmbELFLZ7Qknc,97620
+alibabacloud_cassandra20190101/models.py,sha256=FoYsqeo1OqiUOTV0gqJ3S2irH87DaI_P3n8zj15hbo0,227586
+alibabacloud_cassandra20190101-1.0.0.dist-info/LICENSE,sha256=0CFItL6bHvxqS44T6vlLoW2R4Zaic304OO3WxN0oXF0,600
+alibabacloud_cassandra20190101-1.0.0.dist-info/METADATA,sha256=-p9Vzy61J7n3788nGfSTC3iB2bL0RBcmSCTBcUlz9Mk,2195
+alibabacloud_cassandra20190101-1.0.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+alibabacloud_cassandra20190101-1.0.0.dist-info/top_level.txt,sha256=vlLNvLKS_IhtDIpjw_9aRcvnUkoLjXn1u_FqGqLRCfI,31
+alibabacloud_cassandra20190101-1.0.0.dist-info/RECORD,,
