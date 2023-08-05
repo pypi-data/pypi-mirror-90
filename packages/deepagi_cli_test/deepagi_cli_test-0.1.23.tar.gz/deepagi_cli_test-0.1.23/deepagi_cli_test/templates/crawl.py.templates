@@ -1,0 +1,7 @@
+#This is a sample from DEEPAGI CLI, you may edit this project using the DEEPAGI packages
+
+
+import deepagi_cli_test
+
+def projectname():
+    print('Templates')
