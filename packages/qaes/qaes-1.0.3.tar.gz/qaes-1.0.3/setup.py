@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup
+
+packages = \
+['qaes']
+
+package_data = \
+{'': ['*']}
+
+install_requires = \
+['cryptography==3.2.1']
+
+setup_kwargs = {
+    'name': 'qaes',
+    'version': '1.0.3',
+    'description': '',
+    'long_description': None,
+    'author': 'Mohammad Jafari',
+    'author_email': 'm.jafari9877@gmail.com',
+    'maintainer': None,
+    'maintainer_email': None,
+    'url': None,
+    'packages': packages,
+    'package_data': package_data,
+    'install_requires': install_requires,
+    'python_requires': '>=3.9,<4.0',
+}
+
+
+setup(**setup_kwargs)
