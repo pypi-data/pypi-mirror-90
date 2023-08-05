@@ -1,0 +1,9 @@
+README.md
+setup.py
+makejxl/__init__.py
+makejxl.egg-info/PKG-INFO
+makejxl.egg-info/SOURCES.txt
+makejxl.egg-info/dependency_links.txt
+makejxl.egg-info/entry_points.txt
+makejxl.egg-info/requires.txt
+makejxl.egg-info/top_level.txt
