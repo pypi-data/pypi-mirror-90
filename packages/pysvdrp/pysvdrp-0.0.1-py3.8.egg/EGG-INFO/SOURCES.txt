@@ -1,0 +1,12 @@
+README.md
+setup.py
+pysvdrp/__init__.py
+pysvdrp/channels.py
+pysvdrp/epg.py
+pysvdrp/plugins.py
+pysvdrp/tools.py
+pysvdrp.egg-info/PKG-INFO
+pysvdrp.egg-info/SOURCES.txt
+pysvdrp.egg-info/dependency_links.txt
+pysvdrp.egg-info/requires.txt
+pysvdrp.egg-info/top_level.txt
