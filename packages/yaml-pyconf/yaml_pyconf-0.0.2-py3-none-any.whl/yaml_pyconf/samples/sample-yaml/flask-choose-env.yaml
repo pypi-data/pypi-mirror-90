@@ -1,0 +1,57 @@
+# =================================================================
+# Sample config for a Flask/SQLAlchemy app using PostgreSQL, with
+# different settings for development, testing & deployment
+# environments Note that no secrets are exposed in this file.
+# Use .env or some other method to export sensitive environment
+# variables, before you initialize your deployed project
+# =================================================================
+
+defaults: &defaults
+    # Database settings
+    SQLALCHEMY_TRACK_MODIFICATIONS: false
+    SQLALCHEMY_ENGINE_OPTIONS:
+        pool_pre_ping: true
+    DB_PORT: 5432
+    SOME_RANDOM_SETTING: 1
+    SOME_RANDOM_LIST:
+        - "a"
+        - "b"
+        - "c"
+
+    # Optional: keep track of what needs to be in your .env
+    LOAD_FROM_ENV:
+        - "SECRET_KEY"
+        - "AWS_SECRET_KEY"
+        - "AWS_KEY_ID"
+        - "DB_USERNAME"
+        - "DB_PASSWORD"
+        - "DB_SERVER"
+        - "ENVIRONMENT"
+        - "SQLITE_PROJECT_DIRECTORY"
+
+development:
+    # General app settings
+    TESTING: True
+    DEBUG: True
+    # Database settings
+    DB_PREFIX: "sqlite:///"
+    DB_NAME: "app.db"
+    <<: *defaults
+
+testing:
+    # General app settings
+    TESTING: True
+    DEBUG: False
+    # Database settings
+    DB_PREFIX: "postgresql://"
+    DB_NAME: "test_db_name"
+    <<: *defaults
+
+deployment:
+    # General app settings
+    TESTING: False
+    DEBUG: False
+    # Database settings
+    DB_PREFIX: "postgresql://"
+    DB_NAME: "deploy_db_name"
+    <<: *defaults
