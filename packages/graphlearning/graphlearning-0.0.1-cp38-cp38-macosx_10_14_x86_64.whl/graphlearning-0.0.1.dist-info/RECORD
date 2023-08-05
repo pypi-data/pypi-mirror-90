@@ -1,0 +1,8 @@
+graphlearning/__init__.py,sha256=DILEFq-9HlkBi9z7hYLK8a2JybaDQSmuEP7IQlqnpOg,29
+graphlearning/cextensions.cpython-38-darwin.so,sha256=uwdpmSZsbNpWXzh5JM8fP1zBqssQ3FLffmYrIdld9rE,210824
+graphlearning/graphlearning.py,sha256=LnXOFxeA7tmPKRBjF4lvzpJbo5F6WX12PsQV1DLP_Bs,106765
+graphlearning-0.0.1.dist-info/LICENSE,sha256=jnT3MTDrQGc4e9-LYvds194TfqrhzBIRejOjMgc1gOo,1065
+graphlearning-0.0.1.dist-info/METADATA,sha256=TWNrz197rypLxquDhYyCTDSvStG15wg9j7yHspuELBM,6321
+graphlearning-0.0.1.dist-info/WHEEL,sha256=V3dP579bkkoFyEn0eRX4OUiUM3w2HVock1BmzwB7n_c,110
+graphlearning-0.0.1.dist-info/top_level.txt,sha256=piOWz-h2WllW2V5LverkSF3KCXySwhgnHX9SeU98mSQ,14
+graphlearning-0.0.1.dist-info/RECORD,,
