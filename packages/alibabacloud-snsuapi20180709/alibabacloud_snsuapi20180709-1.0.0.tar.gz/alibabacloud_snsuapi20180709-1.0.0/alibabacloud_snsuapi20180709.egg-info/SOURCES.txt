@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_snsuapi20180709/__init__.py
+alibabacloud_snsuapi20180709/client.py
+alibabacloud_snsuapi20180709/models.py
+alibabacloud_snsuapi20180709.egg-info/PKG-INFO
+alibabacloud_snsuapi20180709.egg-info/SOURCES.txt
+alibabacloud_snsuapi20180709.egg-info/dependency_links.txt
+alibabacloud_snsuapi20180709.egg-info/requires.txt
+alibabacloud_snsuapi20180709.egg-info/top_level.txt
