@@ -1,0 +1,9 @@
+PyGithub>=1.54.1
+gitpython>=3.0.6
+
+[docs]
+furo
+sphinx
+
+[testing]
+pytest
