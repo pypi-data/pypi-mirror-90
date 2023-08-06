@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: PythonJS
+Version: 0.9.0
+Summary: JS Features [like Object, Map] in python.
+Home-page: https://gitlab.com/vivinmeth/pythonjs
+Author: VivinMeth L V
+Author-email: vivinmeth@gmail.com
+License: BSD-3-Clause
+Project-URL: Documentation, https://gitlab.com/vivinmeth/pythonjs/-/wikis/home
+Project-URL: Source, https://github.com/vivinmeth/pythonjs
+Project-URL: Tracker, https://gitlab.com/vivinmeth/pythonjs/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# PythonJS
+
+JS features for Python
+
