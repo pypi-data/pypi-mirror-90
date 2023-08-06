@@ -1,0 +1,8 @@
+README.rst
+setup.py
+docscov/__init__.py
+docscov.egg-info/PKG-INFO
+docscov.egg-info/SOURCES.txt
+docscov.egg-info/dependency_links.txt
+docscov.egg-info/requires.txt
+docscov.egg-info/top_level.txt
