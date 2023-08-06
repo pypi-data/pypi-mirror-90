@@ -1,0 +1,4 @@
+{
+  "test_shipment_daily_workload.py": true,
+  "test_so_workflows_weights.py": true
+}
