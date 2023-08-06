@@ -1,0 +1,6 @@
+elasticsearch
+nltk
+scipy
+sentence_transformers
+shortuuid
+transformers>=4.0.0
