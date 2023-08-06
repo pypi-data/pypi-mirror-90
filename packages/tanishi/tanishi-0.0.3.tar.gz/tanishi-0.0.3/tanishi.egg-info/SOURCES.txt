@@ -1,0 +1,7 @@
+setup.py
+tanishi/__init__.py
+tanishi/deep.py
+tanishi.egg-info/PKG-INFO
+tanishi.egg-info/SOURCES.txt
+tanishi.egg-info/dependency_links.txt
+tanishi.egg-info/top_level.txt
