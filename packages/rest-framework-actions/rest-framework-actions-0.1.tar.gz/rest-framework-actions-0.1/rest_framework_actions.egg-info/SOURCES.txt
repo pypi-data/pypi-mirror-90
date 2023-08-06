@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+rest_framework_actions/__init__.py
+rest_framework_actions/apps.py
+rest_framework_actions/mixins.py
+rest_framework_actions/tests.py
+rest_framework_actions/viewsets.py
+rest_framework_actions.egg-info/PKG-INFO
+rest_framework_actions.egg-info/SOURCES.txt
+rest_framework_actions.egg-info/dependency_links.txt
+rest_framework_actions.egg-info/requires.txt
+rest_framework_actions.egg-info/top_level.txt
+rest_framework_actions/migrations/__init__.py

@@ -1,0 +1,57 @@
+Metadata-Version: 1.2
+Name: rest-framework-actions
+Version: 0.1
+Summary: A DRF app extension to control serializers per action.
+Home-page: https://github.com/AlexisMunera98/rest-framework-actions
+Author: John Alexis Munera
+Author-email: alexismunera98@gmail.com
+License: MIT
+Description: =======================
+        Rest framework actions
+        =======================
+        
+        Restframework actions is a DRF app extension to give you more control over the actions of
+        ModelViewSet.
+        
+        Quick start
+        -----------
+        
+        1. Add "rest_framework_actions" to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...
+                'rest_framework_actions,
+            ]
+        
+           **Note:** Please be sure to added after "rest_framework"
+        
+        2. Include the polls URLconf in your project urls.py like this::
+        
+            path('polls/', include('polls.urls')),
+        
+        3. Run ``python manage.py migrate`` to create the polls models.
+        
+        4. Start the development server and visit http://127.0.0.1:8000/admin/
+           to create a poll (you'll need the Admin app enabled).
+        
+        5. Visit http://127.0.0.1:8000/polls/ to participate in the poll.
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
