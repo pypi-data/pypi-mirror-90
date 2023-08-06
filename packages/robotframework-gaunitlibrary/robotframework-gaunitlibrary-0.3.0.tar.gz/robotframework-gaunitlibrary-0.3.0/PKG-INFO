@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: robotframework-gaunitlibrary
+Version: 0.3.0
+Summary: GAUnitLibrary is a Robot Framework library to interface with GAUnit
+Home-page: https://github.com/VinceCabs/robotframework-gaunitlibrary
+Author: Vincent Cabanis
+Author-email: touch@cabanis.fr
+License: MIT
+Description: # Robot Framework GAUnit Library
+        
+        GAUnitLibrary is a [Robot Framework](http://robotframework.org/) library to interface with [GAUnit](https://pypi.org/project/gaunit/).
+        
+        ## Installation
+        
+        ```sh
+        pip3 install robotframework-gaunitlibrary  # Linux
+        pip install robotframework-gaunitlibrary  # Windows
+        ```
+        
+        ## Run your first tests (full working samples)
+        
+        ### Automated test with a proxy
+        
+        We can use BrowserMob Proxy library to intercept Google Analytics events.
+        
+        - Download **BrowserMob Proxy** [latest release](https://github.com/lightbody/browsermob-proxy/releases) (note: install [Java](https://www.oracle.com/java/technologies/javase-jre8-downloads.html)).
+          - add `bin/` directory to your %PATH
+        
+        - Download [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+        
+        - Install these libraries :
+        
+            ```sh
+            pip install -r samples/requirements.txt
+            ```
+        
+        - Run the test
+        
+            ```sh
+            robot samples/home_engie_with_proxy.robot
+            ```
+        
+        ### Automated test with Performance Log (Chrome only)
+        
+        Intercept GA events without a proxy. More details [here](https://github.com/VinceCabs/GAUnit#automated-test-with-performance-log-chrome-only)
+        
+        ```sh
+        robot samples/home_engie_with_perf_log.robot
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Testing
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
