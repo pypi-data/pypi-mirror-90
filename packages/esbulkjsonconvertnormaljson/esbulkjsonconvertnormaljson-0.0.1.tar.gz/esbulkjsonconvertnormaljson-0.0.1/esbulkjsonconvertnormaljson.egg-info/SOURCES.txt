@@ -1,0 +1,15 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+test.py
+esbulkjsonconvertnormaljson.egg-info/PKG-INFO
+esbulkjsonconvertnormaljson.egg-info/SOURCES.txt
+esbulkjsonconvertnormaljson.egg-info/dependency_links.txt
+esbulkjsonconvertnormaljson.egg-info/top_level.txt
+esbulkjsontonormaljson.egg-info/SOURCES.txt
+esbulkjsontonormaljson.egg-info/dependency_links.txt
+esbulkjsontonormaljson.egg-info/top_level.txt
+esbulknormal/__init__.py
+esbulknormal/convert.py

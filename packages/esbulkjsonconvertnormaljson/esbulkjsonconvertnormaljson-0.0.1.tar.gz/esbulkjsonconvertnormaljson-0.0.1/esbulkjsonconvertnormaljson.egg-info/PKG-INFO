@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: esbulkjsonconvertnormaljson
+Version: 0.0.1
+Summary: A bulk es json file to normal json file
+Home-page: UNKNOWN
+Author: Jayakrishna narra
+Author-email: jknarra8@gmail.com
+License: UNKNOWN
+Description: convert es bulk to normal
+        
+        Change Log
+        =========
+        
+        0.0.1 (01/01/2020)
+        ---------------------
+        - First release
+Keywords: elasticsearch
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
