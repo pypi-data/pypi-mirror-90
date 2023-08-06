@@ -1,0 +1,3 @@
+[console_scripts]
+pykeyset = keyset.__main__:_start
+
