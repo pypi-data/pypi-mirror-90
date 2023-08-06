@@ -1,0 +1,7 @@
+chronyk
+dnspython
+fluentbit-server-py>=1.0.4
+inotify
+pyahocorasick
+pyyaml
+rethinkdb
