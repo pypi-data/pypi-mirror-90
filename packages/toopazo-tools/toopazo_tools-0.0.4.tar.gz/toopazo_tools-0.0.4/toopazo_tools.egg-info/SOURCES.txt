@@ -1,0 +1,12 @@
+README.md
+setup.py
+toopazo_tools/__init__.py
+toopazo_tools/externalProcess.py
+toopazo_tools/fileFolderTools.py
+toopazo_tools/matplotlibTools.py
+toopazo_tools/replaceDotsFromPath.py
+toopazo_tools/statistics.py
+toopazo_tools.egg-info/PKG-INFO
+toopazo_tools.egg-info/SOURCES.txt
+toopazo_tools.egg-info/dependency_links.txt
+toopazo_tools.egg-info/top_level.txt
