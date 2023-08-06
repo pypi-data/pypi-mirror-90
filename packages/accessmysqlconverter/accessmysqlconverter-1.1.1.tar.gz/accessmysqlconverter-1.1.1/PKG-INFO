@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: accessmysqlconverter
+Version: 1.1.1
+Summary: A package to convert MS Access (.mdb, .accdb) into a SQL file (Optionally with It's data)
+Home-page: https://github.com/miguel93041/accessmysqlconverter/
+Author: miguel93041
+Author-email: miguel.granel.f@gmail.com
+License: UNKNOWN
+Description: # AccessMySQLConverter
+        AccessMySQLConverter aims to provide a tool which converts MS Access database files (.mdb, .accdb) into a SQL file (and viceversa in future releases) that can be run, generating It's structure and optionally importing It's data
+        
+        ## Installation
+        To install it you must have Python 3.x installed and run in the command prompt
+        
+        **pip install --no-cache-dir --upgrade accessmysqlconverter**
+        
+        ## Run it
+        For executing the program run in the command prompt the following instruction
+        
+        **python -m accessmysqlconverter.application**
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
