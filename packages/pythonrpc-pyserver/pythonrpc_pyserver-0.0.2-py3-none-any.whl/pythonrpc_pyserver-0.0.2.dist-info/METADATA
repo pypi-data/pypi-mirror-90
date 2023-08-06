@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pythonrpc-pyserver
+Version: 0.0.2
+Summary: Call python internal in nodejs. The python server side.
+Home-page: https://github.com/repo-list-553108/pythonrpc/tree/main/pythonrpc-pyserver
+Author: ltaoist
+Author-email: ltaoist@163.com
+License: UNKNOWN
+Keywords: JavaScript rpc
+Platform: UNKNOWN
+Requires-Dist: flask
+
+UNKNOWN
+
+
