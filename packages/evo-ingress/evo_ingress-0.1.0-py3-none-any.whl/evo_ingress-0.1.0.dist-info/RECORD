@@ -1,0 +1,13 @@
+evo_ingress/config.json,sha256=8joNWXkoFzP3txSCVQ4AqAB620gJhitMYYsX-a8OGD4,243
+evo_ingress/evo-track.service,sha256=YuUOZMulofVumKDDejiNpqF9CIjscKM1pvp6uijPHZw,585
+evo_ingress/install.sh,sha256=xvxO7Ux9LUrHe5mhYUWG1bFVcx6RImeB-LccdUpof80,590
+evo_ingress/src/exec-ingress.sh,sha256=adafimGhvoTN9OjvotcOxlIsFxpaf2tiIAwlO_I6otw,1864
+evo_ingress/src/queue/hi.txt,sha256=mOpuTyFvL7S2n_-bOkSELDhobKaF8_VdxIxdP7EQe-Q,3
+evo_ingress/src/queue/hii.txt,sha256=mOpuTyFvL7S2n_-bOkSELDhobKaF8_VdxIxdP7EQe-Q,3
+evo_ingress/src/queue/hiis.txt,sha256=PTPVryhdi7DF5_Vb_1v4StcyTOPp6KoQiiY8YbIHncQ,20
+evo_ingress/src/tricks.yaml,sha256=dSvbqHVlJIWuB7rbW9ksoIuOMLfySsQj0R9U5cLq9H4,59
+evo_ingress/src/watch-directory.py,sha256=nP0WyWHCuJz0QEllntF5TNaS1oJ4ZK-0_857wEIeTZQ,816
+evo_ingress/tricks.yaml,sha256=dSvbqHVlJIWuB7rbW9ksoIuOMLfySsQj0R9U5cLq9H4,59
+evo_ingress-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+evo_ingress-0.1.0.dist-info/METADATA,sha256=VEp0Wa1rXgl-d5f7gT9VVyL30V97GCjodFop7vrwz68,468
+evo_ingress-0.1.0.dist-info/RECORD,,

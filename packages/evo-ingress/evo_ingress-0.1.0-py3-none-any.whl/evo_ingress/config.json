@@ -1,0 +1,10 @@
+{
+	"WATCH_PATH": "/home/pi/ingress/queue",
+	"QUEUE_DIR": "queue",
+	"SENT_DIR": "/var/evo-track/ingress/delivered/",
+
+	"EXEC_FILE": "/home/pi/ingress/src/exec-ingress.sh",
+
+	"URL": "10.0.0.13:3000/ingress",
+	"EVOECO_AUTH": "AWDID, CLUSTERID"
+}
