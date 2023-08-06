@@ -1,0 +1,10 @@
+README.md
+setup.py
+macApp/__init__.py
+macApp/macOS.py
+macApp/utils.py
+macApp.egg-info/PKG-INFO
+macApp.egg-info/SOURCES.txt
+macApp.egg-info/dependency_links.txt
+macApp.egg-info/requires.txt
+macApp.egg-info/top_level.txt
