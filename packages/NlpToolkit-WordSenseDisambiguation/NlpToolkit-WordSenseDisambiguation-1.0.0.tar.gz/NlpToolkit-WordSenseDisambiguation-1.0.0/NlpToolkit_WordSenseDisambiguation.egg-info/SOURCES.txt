@@ -1,0 +1,12 @@
+setup.py
+NlpToolkit_WordSenseDisambiguation.egg-info/PKG-INFO
+NlpToolkit_WordSenseDisambiguation.egg-info/SOURCES.txt
+NlpToolkit_WordSenseDisambiguation.egg-info/dependency_links.txt
+NlpToolkit_WordSenseDisambiguation.egg-info/requires.txt
+NlpToolkit_WordSenseDisambiguation.egg-info/top_level.txt
+WordSenseDisambiguation/__init__.py
+WordSenseDisambiguation/ParseTree/TreeAutoSemantic.py
+WordSenseDisambiguation/ParseTree/__init__.py
+WordSenseDisambiguation/Sentence/SentenceAutoSemantic.py
+WordSenseDisambiguation/Sentence/TurkishSentenceAutoSemantic.py
+WordSenseDisambiguation/Sentence/__init__.py
