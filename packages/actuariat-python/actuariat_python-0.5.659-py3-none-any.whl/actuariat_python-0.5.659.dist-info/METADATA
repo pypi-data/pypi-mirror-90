@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: actuariat-python
+Version: 0.5.659
+Summary: Helpers for teaching purposes (includes sqllite helpers)
+Home-page: http://www.xavierdupre.fr/app/actuariat_python/helpsphinx/index.html
+Author: Xavier Dupré
+Author-email: xavier.dupre@gmail.com
+License: MIT
+Download-URL: https://github.com/sdpython/actuariat_python/
+Keywords: actuariat_python,ENSAE,sqllite,database,teachings
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Dist: pyquickhelper (>=1.10)
+Requires-Dist: pyensae
+Requires-Dist: pymyinstall
+Requires-Dist: mlstatpy
+Requires-Dist: scikit-learn
+Requires-Dist: pyrsslocal
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: jupyter
+
+
+.. image:: https://travis-ci.org/sdpython/actuariat_python.svg?branch=master
+    :target: https://travis-ci.org/sdpython/actuariat_python
+    :alt: Build status
+
+.. image:: https://ci.appveyor.com/api/projects/status/nelemxw6md6bt95a?svg=true
+    :target: https://ci.appveyor.com/project/sdpython/actuariat-python
+    :alt: Build Status Windows
+
+.. image:: https://circleci.com/gh/sdpython/actuariat_python/tree/master.svg?style=svg
+    :target: https://circleci.com/gh/sdpython/actuariat_python/tree/master
+
+.. image:: https://badge.fury.io/py/actuariat_python.svg
+    :target: http://badge.fury.io/py/actuariat_python
+
+.. image:: http://img.shields.io/github/issues/sdpython/actuariat_python.png
+    :alt: GitHub Issues
+    :target: https://github.com/sdpython/actuariat_python/issues
+
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+    :alt: MIT License
+    :target: http://opensource.org/licenses/MIT
+
+.. image:: https://codecov.io/github/sdpython/actuariat_python/coverage.svg?branch=master
+    :target: https://codecov.io/github/sdpython/actuariat_python?branch=master
+
+.. image:: http://www.xavierdupre.fr/app/actuariat_python/helpsphinx/_images/nbcov.png
+    :target: http://www.xavierdupre.fr/app/actuariat_python/helpsphinx/all_notebooks_coverage.html
+    :alt: Notebook Coverage
+
+.. image:: https://img.shields.io/github/repo-size/sdpython/actuariat_python
+    :target: https://github.com/sdpython/actuariat_python/
+    :alt: size
+
+.. _l-README:
+
+actuariat_python
+================
+
+Materials for training sessions used at
+l'`Institut des Actuaires <http://www.institutdesactuaires.com/gene/main.php>`_.
+
+* `GitHub/actuariat_python <https://github.com/sdpython/actuariat_python/>`_
+* `documentation <http://www.xavierdupre.fr/app/actuariat_python/helpsphinx/index.html>`_
+* `Blog <http://www.xavierdupre.fr/app/actuariat_python/helpsphinx/blog/main_0000.html#ap-main-0>`_
+
+This extension is not actively developed. Most of the content is added to
+`ensae_teaching_cs <http://www.xavierdupre.fr/app/ensae_teaching_cs/helpsphinx/index.html>`_
+and `papierstat <http://www.xavierdupre.fr/app/papierstat/helpsphinx/index.html>`_.
+Most of the content is in French.
+
+.. _l-HISTORY:
+
+=======
+History
+=======
+
+current - 2021-01-05 - 0.00Mb
+=============================
+
+0.0.0 - 2021-01-05 - 0.00Mb
+===========================
+
+* `13`: move CI to python 3.9 (2021-01-05)
+* `12`: move CI to python 3.7 (2019-04-20)
+* `10`: replace basemap by cartopy (2018-08-26)
+* `11`: replace flake8 by code_style (2018-04-14)
+* `9`: écrire la correction de l'examen 2017 (2017-06-15)
+* `8`: remplacer le lien sur la table de mortalité (2017-02-25)
+* `7`: fixer le test unitaire sur sur le gerry mandering (2017-02-23)
+* `5`: concevoir un énoncé pour un examen (2017-02-23)
+* `4`: terminer la correction du gerry mandering (2017-02-23)
+* `3`: ajouter une séance sur la manipulation de grosses données avec comme exemple des statistiques d'utilisation de wikipedia (2016-12-27)
+* `1`: unit test using matplotlib is failing (2016-06-18)
+
+
