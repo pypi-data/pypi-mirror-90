@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "bergen"
+version = "0.1.1"
+readme = "README.md"
+homepage = "https://github.com/jhnnsrs/arbeider"
+description = "A python client for the Arnheim Framework"
+packages = [{include = "bergen"}]
+authors = ["jhnnsrs <jhnnsrs@gmail.com>"]
+license = "CC BY-NC 3.0"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+requests = "^2.25.1"
+requests-oauthlib = "^1.3.0"
+websockets = "^8.1"
+pydantic = "^1.7.3"
+aiostream = "^0.4.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
