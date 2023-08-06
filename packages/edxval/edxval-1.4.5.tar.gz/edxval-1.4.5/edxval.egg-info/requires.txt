@@ -1,0 +1,9 @@
+lxml
+django-fernet-fields
+django-model-utils
+Django>=1.11
+edx-toggles
+edx-drf-extensions
+django-storages
+pysrt
+boto
