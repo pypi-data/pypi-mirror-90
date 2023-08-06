@@ -1,0 +1,13 @@
+bibtextools/__init__.py,sha256=ftNN5nXOWwDiDM_b36YmI7ITdd3ZypPLtTrROktCqEs,294
+bibtextools/__main__.py,sha256=PNcpZc_hYnVxQAwfxUEX6vnt_jNCMdtVO6CuV5_j2LI,5263
+bibtextools/clean_bib_file.py,sha256=Jf8NB6P_1oW6TFsHaZkA0Yxb6HL8uV9HoAd95W_6gLM,3787
+bibtextools/combine_bib_files.py,sha256=fgc3xyiY75yWV5bM7ddVjw0LypOhKt25lWyay-u3syA,1350
+bibtextools/const.py,sha256=JysBxvNeSq51nN4429TBn0WQuT9k6H1LuyDlo6_k5b4,196
+bibtextools/modernize_bib_file.py,sha256=DxKp5n2N-jSeFF_LpMAvws24MkXHGm9LUyyCMTlxS2U,5883
+bibtextools/util.py,sha256=_VpiY2wg4-4q9FfTqIPZHyi6x5gfZXfxd9CPVfYcvt4,1298
+bibtextools-0.2.0.dist-info/LICENSE,sha256=j6iqzA2Q88xYjvZvNw4uWQ0Qg52oF2wjttL1ICNoF18,35077
+bibtextools-0.2.0.dist-info/METADATA,sha256=m68-AaL6YhNNr0g5NDBMxFa8siI8YmzBEPQ_mBtdCwg,1017
+bibtextools-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bibtextools-0.2.0.dist-info/entry_points.txt,sha256=gM9wUnoSe0gCbmxIXo9KgCVmbIJVZElhC5-uNT6T0Ho,60
+bibtextools-0.2.0.dist-info/top_level.txt,sha256=jXwl7dkuVehhOks9yp78-9V99KtVtPDWLB3IckaZ8po,12
+bibtextools-0.2.0.dist-info/RECORD,,
