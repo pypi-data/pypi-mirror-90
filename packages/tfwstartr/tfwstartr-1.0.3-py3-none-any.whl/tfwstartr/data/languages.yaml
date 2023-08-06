@@ -1,0 +1,35 @@
+---
+Python:
+  name: Python
+  repo: https://github.com/avatao-content/tutorial
+  frameworks:
+    Flask:
+      name: Flask
+      starters:
+        Hello-world:
+          name: Hello world
+          branch: master
+          dependency_file: solvable/webservice/requirements.txt
+          package_manager: pip
+        SecFlix:
+          name: SecFlix
+          branch: secflix
+          dependency_file: solvable/webservice/requirements.txt
+          package_manager: pip
+Node.js:
+  name: Node.js
+  repo: https://github.com/avatao-content/tutorial-node
+  frameworks:
+    Express.js:
+      name: Express.js
+      starters:
+        Hello-world:
+          name: Hello world
+          branch: master
+          dependency_file: solvable/webservice/package.json
+          package_manager: npm
+        Nodify:
+          name: Nodify
+          branch: nodify
+          dependency_file: solvable/webservice/package.json
+          package_manager: npm
