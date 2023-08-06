@@ -1,0 +1,8 @@
+pandas
+pdcopyist_updater
+flask
+openpyxl
+xlrd
+
+[pd read feather file]
+feather
