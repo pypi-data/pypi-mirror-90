@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+django_filemetadata.egg-info/PKG-INFO
+django_filemetadata.egg-info/SOURCES.txt
+django_filemetadata.egg-info/dependency_links.txt
+django_filemetadata.egg-info/requires.txt
+django_filemetadata.egg-info/top_level.txt
