@@ -1,0 +1,13 @@
+.gitignore
+LICENSE
+README.md
+main.py
+setup.py
+SecretChord/__init__.py
+SecretChord/_base.py
+SecretChord/_elements.py
+SecretChord.egg-info/PKG-INFO
+SecretChord.egg-info/SOURCES.txt
+SecretChord.egg-info/dependency_links.txt
+SecretChord.egg-info/requires.txt
+SecretChord.egg-info/top_level.txt
