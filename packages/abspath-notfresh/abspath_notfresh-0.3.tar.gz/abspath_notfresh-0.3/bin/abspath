@@ -1,0 +1,24 @@
+#! /usr/local/bin/python3
+import sys, os
+from abc import ABC
+
+try:
+    import pyperclip
+except:
+    print("please use `pip3 install pyperclip` to install the pyperclip module dependency")
+    sys.exit(1)
+
+arg_cnt = len(sys.argv)
+cwd = os.getcwd()
+if arg_cnt == 2:
+    file_path = sys.argv[1]
+    abs_path = os.path.join(cwd, file_path)
+elif arg_cnt > 2:
+    print('use abspath.py ONE_FILE to get abspath')
+elif arg_cnt == 1:
+    abs_path = cwd
+
+
+pyperclip.copy(abs_path)
+print(abs_path)
+print('the abspath has been copied to the clipboard')
