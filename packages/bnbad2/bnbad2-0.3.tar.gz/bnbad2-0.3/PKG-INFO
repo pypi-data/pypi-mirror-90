@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: bnbad2
+Version: 0.3
+Summary: Non-parametric optimization
+Home-page: http://menzies.us/bnbad2
+Author: Tim Menzies
+Author-email: timm@ieee.org
+License: MIT
+Description: Fun
+        
+        More fund 
+        
+        # asdas
+        
+        asdas
+        
+        - adas
+        - adassa
+        
+        
+Keywords: data mining,optimization
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
