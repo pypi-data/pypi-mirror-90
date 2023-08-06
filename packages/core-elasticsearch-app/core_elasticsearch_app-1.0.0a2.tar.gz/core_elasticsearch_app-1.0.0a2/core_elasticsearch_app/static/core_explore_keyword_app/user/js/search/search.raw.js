@@ -1,0 +1,1 @@
+var suggestionsURL = "{% url 'core_elasticsearch_keyword_suggestion_view' %}";
