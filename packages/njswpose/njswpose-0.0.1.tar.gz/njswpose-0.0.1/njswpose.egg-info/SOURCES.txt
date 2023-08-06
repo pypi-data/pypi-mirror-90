@@ -1,0 +1,6 @@
+README.md
+setup.py
+njswpose.egg-info/PKG-INFO
+njswpose.egg-info/SOURCES.txt
+njswpose.egg-info/dependency_links.txt
+njswpose.egg-info/top_level.txt
