@@ -1,0 +1,10 @@
+hspatial/__init__.py,sha256=DXxLOPSLdTy3-8rS8oYwaV8KjzOlbN6SbW2A6oUPk5Y,141
+hspatial/cli.py,sha256=3JJWQbEVgMMWmgkMgTyijuDVK3XzHsb10pxrOzjMXyU,10333
+hspatial/hspatial.py,sha256=KijAh8mQgBz2E8XM05vq-QfhN-rLQhcFoybbeJY7kTw,13933
+hspatial/test.py,sha256=CtSdcBQiAzECfvoTBxk2V74anIzYmFEQMkqMdGASGQE,901
+hspatial-2.1.1.dist-info/LICENSE,sha256=b_NA52oSVcu3x71puIW6hLGKmscCRHhNaDHnf4W5W9Y,710
+hspatial-2.1.1.dist-info/METADATA,sha256=E1juxR0Nsn4Xvq8pO6A7euGQj26ESEv9zUf41bBJ7WI,4313
+hspatial-2.1.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+hspatial-2.1.1.dist-info/entry_points.txt,sha256=j5mbN1uFcotffoUBv2SrJGzKx9cID4KKvnMH-B-rnNU,50
+hspatial-2.1.1.dist-info/top_level.txt,sha256=y6wm8QLfJ19ZbbnQ_z0Q6hbHdeWpxp47yuZjn1OM4FQ,9
+hspatial-2.1.1.dist-info/RECORD,,
