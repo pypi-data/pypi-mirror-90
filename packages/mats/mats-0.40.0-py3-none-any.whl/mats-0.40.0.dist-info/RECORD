@@ -1,0 +1,10 @@
+mats/__init__.py,sha256=8b1cMLPFbkKfwd5L7Cd9nwd0sedr2fbV_Hi3Uqk9sTc,390
+mats/archiving.py,sha256=on56zkmTuRpJY5HhoM_4r5HEwXSJgJTG1hGo7J_K-NU,5737
+mats/test.py,sha256=bD5TWk6PZrTP6azzjhayphsPLr8gnx_G0p36CN4kvdU,6113
+mats/test_sequence.py,sha256=b3bebJfiTPEHkxNSVjVDuzmDNkffHcl9c1tW5uyFQTk,9792
+mats/tkwidgets.py,sha256=znaBVgtqPPCKmwYWLRKNug3PBF_UWqFnMDrUTFjCd6g,5900
+mats/version.py,sha256=Dd98vmdfuExNZfcwTv7GU830B3vTvaSukPPI7hq8M2E,23
+mats-0.40.0.dist-info/METADATA,sha256=tKAjd_O9SJDaYwZ1NhbmvYL4_0h_0LW27oPBHu__FS8,2313
+mats-0.40.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mats-0.40.0.dist-info/top_level.txt,sha256=eoqEyeXWif79smSm0s2skvo_JwRAsxdlbYAK1wkqXgE,5
+mats-0.40.0.dist-info/RECORD,,
