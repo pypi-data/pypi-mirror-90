@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: SanyTool
+Version: 1.0.0
+Summary: Common tools for model development
+Home-page: http://gitlab.sanywind.net/sanydata/sanytool
+Author: thao
+Author-email: thao92@126.com
+License: MIT Licence
+Keywords: pip,SanyTool,thao
+Platform: any
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: arrow
+Requires-Dist: sklearn
+
+Common tools for model development
+
+
