@@ -1,0 +1,11 @@
+README.md
+setup.py
+sxm_viewer/__init__.py
+sxm_viewer/icon.png
+sxm_viewer/main.py
+sxm_viewer.egg-info/PKG-INFO
+sxm_viewer.egg-info/SOURCES.txt
+sxm_viewer.egg-info/dependency_links.txt
+sxm_viewer.egg-info/entry_points.txt
+sxm_viewer.egg-info/requires.txt
+sxm_viewer.egg-info/top_level.txt

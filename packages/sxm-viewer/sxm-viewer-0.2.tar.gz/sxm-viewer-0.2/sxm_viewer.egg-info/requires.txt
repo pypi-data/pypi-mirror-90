@@ -1,0 +1,3 @@
+pySPM
+PyQt5
+matplotlib
