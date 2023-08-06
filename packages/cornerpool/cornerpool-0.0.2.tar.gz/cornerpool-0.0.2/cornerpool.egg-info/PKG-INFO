@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: cornerpool
+Version: 0.0.2
+Summary: Cornerpooling in pytorch
+Home-page: https://github.com/bishwarup307/cornerpool
+Author: Bishwarup Bhattacharjee
+Author-email: write2bishwarup@gmail.com
+License: MIT
+Description: # Cornerpool
+        
+        ![Build](https://github.com/bishwarup307/cornerpool/workflows/Build/badge.svg)
+        
+        Cornerpool is a small python utility for *corner pooling* as originally introducted in the [CornerNet paper](https://arxiv.org/abs/1808.01244)
+        
+        ## Installation
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

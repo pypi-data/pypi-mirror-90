@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+./cornerpool/src/bottom_pool.cpp
+./cornerpool/src/left_pool.cpp
+./cornerpool/src/right_pool.cpp
+./cornerpool/src/top_pool.cpp
+cornerpool/__init__.py
+cornerpool/pool.py
+cornerpool.egg-info/PKG-INFO
+cornerpool.egg-info/SOURCES.txt
+cornerpool.egg-info/dependency_links.txt
+cornerpool.egg-info/top_level.txt
+cornerpool/libs/__init__.py
