@@ -1,0 +1,9 @@
+README.md
+setup.py
+bnb/__init__.py
+bnb/oddeven.py
+bnb/prime.py
+bnb_sheerin_bnb.egg-info/PKG-INFO
+bnb_sheerin_bnb.egg-info/SOURCES.txt
+bnb_sheerin_bnb.egg-info/dependency_links.txt
+bnb_sheerin_bnb.egg-info/top_level.txt
