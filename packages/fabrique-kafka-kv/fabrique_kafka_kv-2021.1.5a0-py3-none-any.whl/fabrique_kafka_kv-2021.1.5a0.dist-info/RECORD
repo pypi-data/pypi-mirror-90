@@ -1,0 +1,8 @@
+fabrique_kafka_kv/__init__.py,sha256=o7PBVqYR5DQ49xRPRup2TxeVQNPpQxIJCTiudUY8uEE,65
+fabrique_kafka_kv/kafka_admin.py,sha256=Ft1pqJaI-r7LlcrgRRBp5ODBrhYLW2K419u68NxCAMc,4722
+fabrique_kafka_kv/kafka_compaction.py,sha256=I_0bUlHx-yGiYUEp35pShjZ0lWAnhvr-KEuezNfkcio,6305
+fabrique_kafka_kv/kafka_db.py,sha256=AlV_2j331YXHfQciONSm_5Gne3O1yerDTs1dfY4jUwU,1634
+fabrique_kafka_kv-2021.1.5a0.dist-info/METADATA,sha256=CGq7ifFbJcnU_L5elWG3s4aJkT4lXCKkS4RDzS8in-I,508
+fabrique_kafka_kv-2021.1.5a0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fabrique_kafka_kv-2021.1.5a0.dist-info/top_level.txt,sha256=qpH2O9yA27use26fxYjnscCANl4Ao9QugqGNqS08dVA,18
+fabrique_kafka_kv-2021.1.5a0.dist-info/RECORD,,
