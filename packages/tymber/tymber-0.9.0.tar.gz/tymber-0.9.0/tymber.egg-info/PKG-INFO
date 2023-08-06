@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tymber
+Version: 0.9.0
+Summary: GUI tookit for Windows
+Home-page: https://github.com/thomasfuhringer/tymber
+Author: Thomas Führinger
+Author-email: thomasfuhringer@live.com
+License: UNKNOWN
+Description: GUI tookit for Windows
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
