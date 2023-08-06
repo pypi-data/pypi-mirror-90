@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<center>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Word</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for word in words %}
+                <tr>
+                    <td>{{ word }}</td>
+                    <td>  <a class="btn btn-primary btn-lg" href="/play/{{ word }} " role="button">Play Now</a></td>
+                    <td>  <a class="btn btn-primary btn-lg" href="/delete/{{ word }} " role="button">Delete</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+</center>
+{%  endblock content %}
