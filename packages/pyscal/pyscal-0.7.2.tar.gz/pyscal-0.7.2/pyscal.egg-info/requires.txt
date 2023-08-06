@@ -1,0 +1,16 @@
+matplotlib
+numpy
+openpyxl
+pandas
+scipy
+xlrd
+
+[tests]
+black>=20.8b0
+flake8
+hypothesis
+pytest
+rstcheck
+sphinx
+sphinx-argparse
+sphinx_rtd_theme
