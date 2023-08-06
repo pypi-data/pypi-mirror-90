@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: yw
+Version: 0.0.2
+Summary: Audio Layers
+Home-page: https://github.com/thorwhalen/ut/tree/master/sound/util.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# yw
+Audio Layers
+
+
+To install:	```pip install yw```
+
+
