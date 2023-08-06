@@ -1,0 +1,16 @@
+.dada-version
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+dada_test/__init__.py
+dada_test.egg-info/PKG-INFO
+dada_test.egg-info/SOURCES.txt
+dada_test.egg-info/dependency_links.txt
+dada_test.egg-info/top_level.txt
+dada_test/fixtures/Archive.zip
+dada_test/fixtures/eril-brinh2.mp3
+dada_test/fixtures/space-time-motion.m4a
+dada_test/fixtures/space-time-motion.mp3
+dada_test/fixtures/test-vid.mp4
+dada_test/fixtures/checksum/a-file.txt
