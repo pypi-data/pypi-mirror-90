@@ -1,0 +1,16 @@
+soup/__init__.py,sha256=I6bFS4F3EHZA9Zp-26plaqtnmznzU5NS8WtYGb2-nVI,47
+soup/_nbdev.py,sha256=yb6z2q8Q_LKdSWkATvrje6igqBTVpm5yZwfDnLJfLnA,814
+soup/cli.py,sha256=p7y5xFKFrpP-uwMCUKNCpVuNyt76vwCzDMSyhhBtgzU,2385
+soup/core.py,sha256=oCynUnhtditWcubNKztplLNOr-e8-76GhbG8gkpynB8,7737
+soup/loading.py,sha256=8nfIFsH_040hDznUyL3dfzVIVlroHS6rQc1st7T_rBg,3357
+spurs/__init__.py,sha256=I6bFS4F3EHZA9Zp-26plaqtnmznzU5NS8WtYGb2-nVI,47
+spurs/_nbdev.py,sha256=9eB4nMqTZ6BndWzHrULU6If4eUnPPlhfd6ldY0xxR44,820
+spurs/cli.py,sha256=p7y5xFKFrpP-uwMCUKNCpVuNyt76vwCzDMSyhhBtgzU,2385
+spurs/core.py,sha256=oCynUnhtditWcubNKztplLNOr-e8-76GhbG8gkpynB8,7737
+spurs/loading.py,sha256=8nfIFsH_040hDznUyL3dfzVIVlroHS6rQc1st7T_rBg,3357
+spurs-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+spurs-0.0.1.dist-info/METADATA,sha256=v4ly8XUrTdUqXvTBnRVuAXf0_AX8T__gic-OikItxRs,1724
+spurs-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+spurs-0.0.1.dist-info/entry_points.txt,sha256=soAd934rsSi_hJCJbioLHKalVcRh_PGXuyxuH7mnlm8,42
+spurs-0.0.1.dist-info/top_level.txt,sha256=LMAQEQRIqOpYS8jlf57gqZsOg86LO7tq0a2YLNP45dQ,6
+spurs-0.0.1.dist-info/RECORD,,
