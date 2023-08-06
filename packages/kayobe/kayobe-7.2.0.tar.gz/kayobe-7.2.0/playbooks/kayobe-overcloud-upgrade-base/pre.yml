@@ -1,0 +1,21 @@
+---
+- hosts: primary
+  tasks:
+    # NOTE(mgoddard): Use the name zz-overrides.yml to ensure this takes
+    # precedence over the standard config files.
+    - name: Ensure kayobe-config override config file exists
+      template:
+        src: overrides.yml.j2
+        dest: "{{ previous_kayobe_config_src_dir }}/etc/kayobe/zz-overrides.yml"
+      vars:
+        is_previous_release: true
+
+    # NOTE(mgoddard): The kayobe dev config by default expects a bridge -
+    # breth1 - to exist with an IP address of 192.168.33.3.
+    - name: Ensure all-in-one network bridge interface exists
+      command: "{{ item }}"
+      become: true
+      with_items:
+        - "ip l add breth1 type bridge"
+        - "ip l set breth1 up"
+        - "ip a add 192.168.33.3/24 dev breth1"

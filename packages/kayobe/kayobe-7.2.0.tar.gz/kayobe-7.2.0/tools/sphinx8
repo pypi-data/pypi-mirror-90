@@ -1,0 +1,35 @@
+#!/usr/bin/env python
+
+"""
+Sphinx documentation style checker.
+
+This is a very thin wrapper around doc8, that adds support for sphinx-specific
+RST directives.
+
+NOTE: We require sphinx>1.5 in order to avoid automatically registering all
+directives when any of the directives modules are imported.
+"""
+
+import sys
+
+import doc8.main
+import mock
+import sphinx.directives
+import sphinx.directives.code
+import sphinx.directives.patches
+
+
+def main():
+    # NOTE: Registering sphinx.directives.other causes a failure in parsing
+    # later.
+    # Sphinx expects an 'app' argument to these functions. Use a mock since we
+    # don't need to use the application object.
+    app = mock.Mock()
+    sphinx.directives.setup(app)
+    sphinx.directives.code.setup(app)
+    sphinx.directives.patches.setup(app)
+    return doc8.main.main()
+
+
+if __name__ == "__main__":
+    sys.exit(main())

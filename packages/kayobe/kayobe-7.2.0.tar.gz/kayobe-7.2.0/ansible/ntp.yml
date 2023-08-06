@@ -1,0 +1,12 @@
+---
+- name: Ensure NTP is installed and configured
+  hosts: seed-hypervisor:seed:overcloud
+  tags:
+    - ntp
+  roles:
+    - role: yatesr.timezone
+      become: True
+    - role: stackhpc.ntp
+      become: True
+      # The host NTP daemon is not supported on CentOS 8.
+      when: ansible_os_family != 'RedHat' or ansible_distribution_major_version | int == 7

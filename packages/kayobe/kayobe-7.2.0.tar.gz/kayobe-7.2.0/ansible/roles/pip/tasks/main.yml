@@ -1,0 +1,4 @@
+---
+- name: Ensure pip is configured
+  include_tasks: pip_local_mirror.yml
+  when: pip_local_mirror | bool

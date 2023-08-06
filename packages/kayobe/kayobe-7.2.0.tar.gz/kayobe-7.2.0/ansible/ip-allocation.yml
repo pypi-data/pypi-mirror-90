@@ -1,0 +1,50 @@
+---
+# NOTE(mgoddard): We use delegate_to rather than specify localhost in the
+# hosts list since this playbook is typically called with a limit that does
+# not include localhost. This play may be removed when CentOS 7 is no longer
+# supported.
+- name: Gather facts for localhost
+  hosts: seed-hypervisor:seed:overcloud
+  tags:
+    - ip-allocation
+  gather_facts: no
+  tasks:
+    - name: Gather facts for localhost
+      setup:
+        gather_subset: min
+      delegate_to: localhost
+      delegate_facts: true
+      run_once: true
+
+- name: Ensure IP addresses are allocated
+  hosts: seed-hypervisor:seed:overcloud
+  tags:
+    - ip-allocation
+  gather_facts: no
+  # Use serial=1 to avoid races between allocations for different hosts.
+  serial: 1
+  pre_tasks:
+    - name: Initialise the IP allocations fact
+      set_fact:
+        ip_allocations: []
+
+    - name: Update the IP allocations fact with IP allocation requests
+      set_fact:
+        ip_allocations: >
+          {{
+            ip_allocations +
+            [{
+              'net_name': item,
+              'cidr': item|net_cidr,
+              'allocation_pool_start': item|net_allocation_pool_start,
+              'allocation_pool_end': item|net_allocation_pool_end
+            }]
+          }}
+      with_items: "{{ network_interfaces }}"
+      when:
+        - item | net_cidr != None
+        - item | net_bootproto != 'dhcp'
+  roles:
+    - role: ip-allocation
+      ip_allocation_filename: "{{ kayobe_config_path }}/network-allocation.yml"
+      ip_allocation_hostname: "{{ inventory_hostname }}"
