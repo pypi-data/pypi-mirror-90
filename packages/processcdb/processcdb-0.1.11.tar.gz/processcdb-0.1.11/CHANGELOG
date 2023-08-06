@@ -1,0 +1,36 @@
+* Wed Dec 30 2020 Jani Mikkonen <jani.mikkonen@varjo.com> - 0.1.11
+- Support for clangtidy vfs overlay (rev.15c50376)
+
+* Wed Dec 30 2020 Jani Mikkonen <jani.mikkonen@varjo.com> - 0.1.10
+- Fixes to argument handling. (rev.dfc2ff9c)
+- General documentation in README (rev.23e4dad5)
+- Support for conditional arguments to tool (rev.1d7e51b5)
+
+* Mon Dec 28 2020 Jani Mikkonen <jani.mikkonen@varjo.com> - 0.1.9
+
+* Mon Dec 28 2020 Jani Mikkonen <jani.mikkonen@varjo.com> - 0.1.8
+
+* Mon Dec 28 2020 Jani Mikkonen <jani.mikkonen@varjo.com> - 0.1.7
+- Fixes for logging. (rev.f4487136)
+
+* Mon Dec 28 2020 Jani Mikkonen <jani.mikkonen@varjo.com> - 0.1.6
+
+* Mon Dec 28 2020 Jani Mikkonen <jani.mikkonen@varjo.com> - 0.1.5
+- More logging added to clang-tidy (rev.2c245c11)
+
+* Mon Dec 28 2020 Jani Mikkonen <jani.mikkonen@varjo.com> - 0.1.4
+- Uses process pool instead of threading (rev.303579e6)
+- Add support to mark include paths as -isystem (rev.931a8988)
+
+* Wed Dec 02 2020 Jani Mikkonen <jani.mikkonen@gmail.com> - 0.1.2
+- Fixed commit filtering (rev.39bec1d8)
+
+* Mon Nov 30 2020 Jani Mikkonen <jani.mikkonen@gmail.com> - 0.1.1
+- Fixed python packaging (rev.6b99ec71)
+
+* Mon Nov 30 2020 Jani Mikkonen <jani.mikkonen@gmail.com> - 0.1.0
+- Full rewrite (rev.95577501)
+- Fixing and converting everything to python3 (rev.8da3d1ec)
+- Initial import (rev.27b1b65e)
+
+
