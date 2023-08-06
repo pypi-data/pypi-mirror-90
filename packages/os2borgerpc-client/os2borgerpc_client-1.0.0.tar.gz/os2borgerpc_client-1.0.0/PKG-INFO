@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: os2borgerpc_client
+Version: 1.0.0
+Summary: Client for the OS2borgerPC system
+Home-page: https://github.com/OS2borgerPC/
+Author: Magenta ApS
+Author-email: info@magenta-aps.dk
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
