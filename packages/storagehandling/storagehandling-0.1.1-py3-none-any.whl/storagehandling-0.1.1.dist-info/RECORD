@@ -1,0 +1,8 @@
+storagehandling/__init__.py,sha256=NsIq9esyvSfo1Tpa9KuQPcR3y2Psi3FASuCv42jBUt0,45
+storagehandling/minio_handler.py,sha256=X9o2qvMOJUzGTslU_5CssQj3e0Qhh_dp6OE-nKmagug,1180
+storagehandling/s3_handler.py,sha256=LmchW2DSIzjWnkcTaEMZA2ENe2FtyWwvYysNtCScbJ0,1154
+storagehandling/storage_handler.py,sha256=yeIovEhlFHfrfrW8D_Te6od6BAdGadpJI0B81sYEGCI,420
+storagehandling-0.1.1.dist-info/METADATA,sha256=2QHHEv35FOvuviJu5CKIxXAX-mXtbUNDQMDUQdDYC_c,453
+storagehandling-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+storagehandling-0.1.1.dist-info/top_level.txt,sha256=OuIGnNsBWPGPuSFWCNH9da_M__jgZgK2V6wowXO4IVs,16
+storagehandling-0.1.1.dist-info/RECORD,,

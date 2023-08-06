@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: storagehandling
+Version: 0.1.1
+Summary: Library for storage handling
+Home-page: UNKNOWN
+Author: Shashi
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+
+It is the Library for handling Storage for Minio and S3
+
+Class MinioHandler
+    methods list_buckets, upload_object, list_objects, download_object, delete_object
+
+Class S3Handler
+    methods list_buckets, upload_object, list_objects, download_object, delete_object
+
+
+
