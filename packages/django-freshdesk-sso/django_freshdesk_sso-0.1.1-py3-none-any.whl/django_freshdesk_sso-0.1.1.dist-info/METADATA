@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: django-freshdesk-sso
+Version: 0.1.1
+Summary: Django Freshdesk SSO enables SSO for freshdesk from your django application.
+Home-page: https://github.com/soundradix-website/django-freshdesk-sso
+License: MIT
+Keywords: django,freshdesk,sso
+Author: Wout De Puysseleir
+Author-email: woutdp@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/soundradix-website/django-freshdesk-sso
+Description-Content-Type: text/x-rst
+
+====================
+Django Freshdesk SSO
+====================
+
+Django Freshdesk SSO enables SSO for freshdesk from your django application.
+
+Quick start
+-----------
+
+1. Add "freshdesk_sso" to your INSTALLED_APPS setting like this::
+
+    INSTALLED_APPS = [
+        ...
+        'freshdesk_sso',
+    ]
+
+2. Include the freshdesk SSO URLconf in your project urls.py like this::
+
+    path('accounts/login/sso/', include('freshdesk_sso.urls')),
+
+
+3. Add the required environment variables to your settings.py file::
+
+    FRESHDESK_URL = 'http://yourcompany.freshdesk.com/'
+    FRESHDESK_SECRET_KEY = 'YOUR_SECRET_GOES_HERE'
+
+
