@@ -1,0 +1,3 @@
+joblib
+segments
+attrs>=18.1
