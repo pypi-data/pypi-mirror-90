@@ -1,0 +1,8 @@
+README.md
+setup.py
+bf_gen/__init__.py
+bf_gen/preference.py
+bf_gen.egg-info/PKG-INFO
+bf_gen.egg-info/SOURCES.txt
+bf_gen.egg-info/dependency_links.txt
+bf_gen.egg-info/top_level.txt
