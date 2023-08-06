@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: PointMatcher
+Version: 1.1.1
+Summary: Correspondence Points Annotation Tool
+Home-page: https://github.com/daisatojp/PointMatcher
+Author: Dai Sato
+Author-email: dai.sato.jp@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: Image Annotation,Correspondence Points
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License

@@ -1,0 +1,3 @@
+[console_scripts]
+PointMatcher = PointMatcher.__main__:main
+
