@@ -1,0 +1,9 @@
+distro
+openpaperwork-core
+openpaperwork-gtk
+paperwork-backend>=2.0.2
+pycountry
+pyocr>=0.3.0
+python-Levenshtein
+python-dateutil
+pyxdg>=0.25
