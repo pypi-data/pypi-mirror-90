@@ -1,0 +1,9 @@
+README.md
+setup.py
+django_searchview_lib.egg-info/PKG-INFO
+django_searchview_lib.egg-info/SOURCES.txt
+django_searchview_lib.egg-info/dependency_links.txt
+django_searchview_lib.egg-info/top_level.txt
+searchview/__init__.py
+searchview/forms.py
+searchview/views.py
