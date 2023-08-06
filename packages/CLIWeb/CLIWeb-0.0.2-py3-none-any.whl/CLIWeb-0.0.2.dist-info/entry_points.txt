@@ -1,0 +1,3 @@
+[console_scripts]
+cliweb = CLIWeb.cliweb:run
+
