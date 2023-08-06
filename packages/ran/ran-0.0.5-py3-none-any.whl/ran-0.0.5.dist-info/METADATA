@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: ran
+Version: 0.0.5
+Summary: yet a library.
+Home-page: https://github.com/chenshenchao/ran
+Author: chenshenchao
+Author-email: chenshenchao@outlook.com
+License: MIT
+Keywords: ran library
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# [ran](https://github.com/chenshenchao/ran)
+
+## 安装
+
+```bash
+pip install ran
+```
+
+## 示例
+
+### fs
+
+```python
+from ran import fs
+
+# 读取文件内容
+content = fs.load('path')
+```
+
+
