@@ -1,0 +1,17 @@
+attrs>=19.2.0
+numpy
+
+[docs]
+astropy
+numpydoc
+sphinx<3.1
+sphinx_automodapi
+
+[tests]
+pytest>=3.9
+pytest-cov
+coveralls
+flake8
+mypy
+astropy
+hypothesis
