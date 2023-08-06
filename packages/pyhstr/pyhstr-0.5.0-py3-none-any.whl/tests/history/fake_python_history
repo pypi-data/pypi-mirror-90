@@ -1,0 +1,25 @@
+import math
+from math import sqrt
+from math import sin
+[x for x in range(100) if x % 2]
+import pathlib
+ord("d")
+import sys
+import re
+from math import cos
+ord("p")
+1 + 1 == 2
+from pyhstr import hh
+tau == 2 * pi
+subprocess.run(['ls', '-la'])
+"spam".encode("utf-8")
+" Hello, world ".strip()
+4 / 2
+2 ** 10
+[x for x in range(100)]
+from math import tau
+print(sys.argv)
+print(sys.executable)
+__import__("math").pi
+assert hasattr(subprocess, 'run'), "install a newer python lel"
+print("SPAM")
