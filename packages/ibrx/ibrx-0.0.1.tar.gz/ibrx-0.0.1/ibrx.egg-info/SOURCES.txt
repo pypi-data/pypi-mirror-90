@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+ibrx.egg-info/PKG-INFO
+ibrx.egg-info/SOURCES.txt
+ibrx.egg-info/dependency_links.txt
+ibrx.egg-info/top_level.txt
