@@ -1,0 +1,22 @@
+parameters:
+  databricksbundle:
+    notebook:
+      testingPath: '/foo/bar/mydatabase_e/my_table/my_table.py'
+
+services:
+  databricksbundle.dbutils.DatabricksConnectDbUtilsFactory:
+
+  databricksbundle.notebook.pathResolver:
+    class: databricksbundle.notebook.path.TestingPathResolver
+    arguments:
+      - '%databricksbundle.notebook.testingPath%'
+
+  databricksbundle.spark.ScriptSessionFactory:
+    arguments:
+      - []
+
+  pyspark.dbutils.DBUtils:
+    factory: ['@databricksbundle.dbutils.DatabricksConnectDbUtilsFactory', 'create']
+
+  pyspark.sql.session.SparkSession:
+    factory: ['@databricksbundle.spark.ScriptSessionFactory', 'create']
