@@ -1,0 +1,16 @@
+README.md
+setup.py
+timeseries_labeling.egg-info/PKG-INFO
+timeseries_labeling.egg-info/SOURCES.txt
+timeseries_labeling.egg-info/dependency_links.txt
+timeseries_labeling.egg-info/entry_points.txt
+timeseries_labeling.egg-info/not-zip-safe
+timeseries_labeling.egg-info/requires.txt
+timeseries_labeling.egg-info/top_level.txt
+tsl/__init__.py
+tsl/app.py
+tsl/tsl_pylib/__init__.py
+tsl/tsl_pylib/io/__init__.py
+tsl/tsl_pylib/io/load_csv.py
+tsl/tsl_pylib/visualization/__init__.py
+tsl/tsl_pylib/visualization/plot.py

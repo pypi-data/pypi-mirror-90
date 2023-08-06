@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: timeseries-labeling
+Version: 0.1
+Summary: Simple annotation/labeling of events in timeseries
+Home-page: https://github.com/matnil-star/timeseries_labeling
+Author: Mattias Nilsson
+Author-email: dan.mattias.nilsson@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
