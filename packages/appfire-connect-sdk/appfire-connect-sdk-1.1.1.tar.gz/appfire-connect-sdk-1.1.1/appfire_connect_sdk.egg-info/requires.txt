@@ -1,0 +1,5 @@
+click
+funcy
+PyYAML
+questionary
+coloredlogs
