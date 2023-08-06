@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: FLF
+Version: 1.1.0
+Summary: Server and Connector for RabbitMQ
+Home-page: https://github.com/DenisVASI9/FLF
+Author: DenisVASI9, evjeny
+Author-email: gkanafing@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: RabbitMQ,RPCServer,RPCConnector,pika
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
