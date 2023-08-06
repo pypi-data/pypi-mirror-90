@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: un
+Version: 0.0.2
+Summary: Analyzing classes
+Home-page: https://github.com/thorwhalen/ut/tree/master/util/class_analysis.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # un
+        Analyzing classes
+        
+        
+        To install:	```pip install un```
+        
+Platform: any
+Description-Content-Type: text/markdown
