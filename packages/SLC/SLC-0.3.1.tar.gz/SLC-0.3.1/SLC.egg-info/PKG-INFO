@@ -1,0 +1,53 @@
+Metadata-Version: 1.1
+Name: SLC
+Version: 0.3.1
+Summary: A tool that allows you to connect to and run SQL commands to an SQLite3 database easily.
+Home-page: UNKNOWN
+Author: Jonathan Wang
+Author-email: jonathanwang2018@gmail.com
+License: UNKNOWN
+Description: SQLite Connect (SLC) 
+        --------------------
+        SLC allows you to connect to an SQlite3 database file faster than if you just used the SQLite3 module.
+        
+        Usage
+        
+        - sc.run([Database_URL], [SQL_COMMAND]) # Connects to Database file and runs SQL code
+        - sc.run([Database_URL], [SQL_COMMAND], [argument]) # Using the new argument parameter, you can change what SLC does with the retrieved data.
+        - sc.RB() # Quick ROLLBACK shortcut in SQL
+        - sc.com() # Commit Changes
+        - sc.close() # Close database
+        - sc.cc() # Use this code to commit and close together
+        
+        Argument List
+        - 'fetchall' --> The fetchall argument prints out the retrieved data in Python.
+        
+        
+        Change Log
+        ===========
+        
+        v0.1.0 (1/6/2020)
+        ------------------
+        - First Release
+        
+        v0.2.0 (1/6/2020)
+        ------------------
+        - New argument parameter added in SLC.run function. (See the README.md file above)
+        
+        v0.3.0 (1/6/2020)
+        ------------------
+        - Function bug fixed.
+        
+        v0.3.1 (1/6/2020)
+        ------------------
+        - Argument selection bug fixed
+        
+        
+        
+Keywords: SQL,SQLite3,Database
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
