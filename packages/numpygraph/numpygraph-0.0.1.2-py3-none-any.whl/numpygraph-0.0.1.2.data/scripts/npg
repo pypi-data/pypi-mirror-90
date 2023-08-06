@@ -1,0 +1,5 @@
+#!python
+from colorama import Fore, Back, Style
+print(Fore.GREEN + "npg>" + Fore.RESET, end=" ")
+l = input()
+print(Fore.YELLOW + l + Fore.RESET)

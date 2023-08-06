@@ -1,0 +1,10 @@
+README.md
+setup.py
+bin/npg
+numpygraph/__init__.py
+numpygraph.egg-info/PKG-INFO
+numpygraph.egg-info/SOURCES.txt
+numpygraph.egg-info/dependency_links.txt
+numpygraph.egg-info/requires.txt
+numpygraph.egg-info/top_level.txt
+numpygraph.egg-info/.ipynb_checkpoints/dependency_links-checkpoint.txt
