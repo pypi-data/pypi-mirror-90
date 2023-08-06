@@ -1,0 +1,160 @@
+// j01.datepicker.zebra.less
+
+.Zebra_DatePicker {
+    background: @zebra-datepicker-bg;
+    border: @zebra-datepicker-border;
+    border-radius: 4px;
+    box-shadow: @zebra-datepicker-box-shadow;
+    color: @zebra-datepicker-color;
+    font-family: @zebra-datepicker-font-family;
+    font: @zebra-datepicker-font-size;
+    padding: 5px;
+    position: absolute;
+    display: table;
+    *width: 255px;
+    z-index: @zebra-datepicker-z-index;
+    table {
+        border-collapse: collapse;
+        border-radius: 4px;
+        border-spacing: 0;
+        width: 100%;
+    }
+    td,
+    th {
+        border-radius: 4px;
+        padding: 5px;
+        cursor: pointer;
+        text-align: center;
+        min-width: 25px;
+        width: 25px;
+    }
+    .dp_body .dp_not_in_month {
+        color: @zebra-datepicker-not-in-month-color;
+    }
+    .dp_body .dp_time_controls_condensed td {
+        width: 25%;
+    }
+    .dp_body .dp_current {
+        color: @zebra-datepicker-current-color;
+        background-color: @zebra-datepicker-current-bg;
+    }
+    .dp_body .dp_selected {
+        background: @zebra-datepicker-selected-bg;
+        color: @zebra-datepicker-selected-color;
+    }
+    .dp_body .dp_disabled {
+        color: @zebra-datepicker-disabled-color;
+        cursor: text;
+    }
+    .dp_body .dp_disabled.dp_current {
+        color: @zebra-datepicker-disabled-current-color;
+    }
+    .dp_body .dp_hover {
+        background: @zebra-datepicker-hover-bg;
+    }
+    .dp_body .dp_hover.dp_time_control {
+        background-color: @zebra-datepicker-hover-time-control-bg;
+    }
+    .dp_monthpicker td,
+    .dp_timepicker td,
+    .dp_yearpicker td {
+        width: 33.3333%;
+    }
+    .dp_timepicker .dp_disabled {
+        border: none;
+        color: @zebra-datepicker-timepicker-disabled-color;
+        font-size: 26px;
+        font-weight: 700;
+    }
+    .dp_time_separator div {
+        position: relative;
+    }
+    .dp_time_separator div:after {
+        content: ":";
+        color: @zebra-datepicker-time-separator-color;
+        font-size: 20px;
+        left: 100%;
+        margin-left: 2px;
+        margin-top: -13px;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+    }
+    .dp_header {
+        margin-bottom: 5px;
+    }
+    .dp_footer {
+        margin-top: 5px;
+    }
+    .dp_footer .dp_icon {
+        width: 50%;
+    }
+    .dp_actions td {
+        border-radius: 4px;
+    }
+    .dp_actions .dp_caption {
+        font-weight: 700;
+        width: 100%;
+    }
+    .dp_actions .dp_next,
+    .dp_actions .dp_previous {
+        *padding: 0 10px;
+    }
+    .dp_actions .dp_hover {
+        background-color: @zebra-datepicker-hover-bg;
+    }
+    .dp_daypicker th {
+        cursor: text;
+        font-weight: 700;
+    }
+
+    .dp_icon {
+        height: 16px;
+        background-image: url('/@@/zebraDatePickerIcon.png');
+        background-repeat: no-repeat;
+        text-indent: -9999px;
+        *text-indent: 0;
+    }
+    .dp_icon.dp_confirm {
+        background-position: center -123px;
+    }
+    .dp_icon.dp_view_toggler {
+        background-position: center -91px;
+    }
+    .dp_icon.dp_view_toggler.dp_calendar {
+        background-position: center -59px;
+    }
+}
+.Zebra_DatePicker *,
+.Zebra_DatePicker :after,
+.Zebra_DatePicker :before {
+    box-sizing: content-box !important;
+}
+.Zebra_DatePicker * {
+    padding: 0;
+}
+.Zebra_DatePicker.dp_hidden {
+    display: none;
+}
+button.Zebra_DatePicker_Icon {
+    background: url('/@@/zebraDatePickerIcon.png') center top no-repeat;
+    border: none;
+    cursor: pointer;
+    display: block;
+    height: 16px;
+    line-height: 0;
+    padding: 0;
+    position: absolute;
+    text-indent: -9000px;
+    width: 16px;
+}
+button.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Disabled {
+    background-position: center -32px;
+    cursor: default;
+}
+@supports (-ms-ime-align:auto) {
+    Zebra_DatePicker .dp_header {
+        font-family: @zebra-datepicker-ms-font-family;
+    }
+}
+

@@ -1,0 +1,59 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    xmlns:z3c="http://namespaces.zope.org/z3c"
+    i18n_domain="p01">
+
+  <class class=".widget.ZebraDatePickerWidget">
+    <require
+        permission="zope.Public"
+        interface=".interfaces.IZebraDatePickerWidget"
+        />
+  </class>
+
+  <z3c:widgetTemplate
+      mode="input"
+      widget=".interfaces.IZebraDatePickerWidget"
+      layer="z3c.form.interfaces.IFormLayer"
+      template="input.pt"
+      />
+
+  <class class=".widget.ZebraDateTimePickerWidget">
+    <require
+        permission="zope.Public"
+        interface=".interfaces.IZebraDateTimePickerWidget"
+        />
+  </class>
+
+  <z3c:widgetTemplate
+      mode="input"
+      widget=".interfaces.IZebraDateTimePickerWidget"
+      layer="z3c.form.interfaces.IFormLayer"
+      template="input.pt"
+      />
+
+
+  <adapter
+      factory=".converter.ZebraDatePickerConverter"
+      />
+
+  <adapter
+      factory=".converter.ZebraDatePickerForDatetimeConverter"
+      />
+
+  <adapter
+      factory=".converter.ZebraDateTimePickerForDatetimeConverter"
+      />
+
+  <!-- conditional IMongoDate support -->
+  <configure zcml:condition="installed m01.mongo">
+    <adapter
+        for="m01.mongo.interfaces.IMongoDate
+             .interfaces.IZebraDatePickerWidget"
+        factory=".converter.ZebraDatePickerConverter"
+        />
+  </configure>
+
+  <include file="browser.zcml" />
+
+</configure>

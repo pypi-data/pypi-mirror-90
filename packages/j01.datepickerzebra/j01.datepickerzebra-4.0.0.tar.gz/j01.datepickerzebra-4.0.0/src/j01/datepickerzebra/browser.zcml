@@ -1,0 +1,25 @@
+<configure
+    xmlns:zope="http://namespaces.zope.org/zope"
+    xmlns="http://namespaces.zope.org/browser"
+    xmlns:z3c="http://namespaces.zope.org/z3c"
+    i18n_domain="p01">
+
+  <zrt-resource
+      name="j01.datepicker.zebra.css"
+      file="css/j01.datepicker.zebra.css"
+      layer="zope.publisher.interfaces.http.IHTTPRequest"
+      />
+
+  <resource
+      name="j01.datepicker.zebra.js"
+      file="js/j01.datepicker.zebra.js"
+      layer="zope.publisher.interfaces.http.IHTTPRequest"
+      />
+
+  <resource
+      name="zebraDatePickerIcon.png"
+      file="img/zebraDatePickerIcon.png"
+      layer="zope.publisher.interfaces.http.IHTTPRequest"
+      />
+
+</configure>

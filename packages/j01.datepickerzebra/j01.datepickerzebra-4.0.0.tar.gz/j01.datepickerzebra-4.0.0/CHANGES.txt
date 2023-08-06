@@ -1,0 +1,16 @@
+=======
+CHANGES
+=======
+
+4.0.0 (2021-01-04)
+------------------
+
+- switch to new j01.form layout style concept. Replace old bootstrap 3 and 4
+  styles with new independent layout styles. See j01.form less for more
+  informations.
+
+
+1.0.0 (2020-03-26)
+------------------
+
+- initial release
