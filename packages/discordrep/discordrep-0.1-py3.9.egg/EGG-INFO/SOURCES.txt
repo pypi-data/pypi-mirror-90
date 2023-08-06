@@ -1,0 +1,8 @@
+setup.py
+discordrep/__init__.py
+discordrep/main.py
+discordrep.egg-info/PKG-INFO
+discordrep.egg-info/SOURCES.txt
+discordrep.egg-info/dependency_links.txt
+discordrep.egg-info/not-zip-safe
+discordrep.egg-info/top_level.txt
