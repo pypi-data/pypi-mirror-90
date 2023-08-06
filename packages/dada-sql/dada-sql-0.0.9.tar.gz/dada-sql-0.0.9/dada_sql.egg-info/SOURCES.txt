@@ -1,0 +1,17 @@
+.dada-version
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+dada_sql/__init__.py
+dada_sql/core.py
+dada_sql.egg-info/PKG-INFO
+dada_sql.egg-info/SOURCES.txt
+dada_sql.egg-info/dependency_links.txt
+dada_sql.egg-info/requires.txt
+dada_sql.egg-info/top_level.txt
+dada_sql/tests/__init__.py
+dada_sql/tests/test_sql.py
+dada_sql/views/__init__.py
+dada_sql/views/file_denorm.py
