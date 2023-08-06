@@ -1,0 +1,11 @@
+unrar_cffi-0.2.1.dist-info/top_level.txt,sha256=7hmZFXxdhbiBf2QeOBaoKUfy-Kqp8SdTi0g-BdSOcKo,6
+unrar_cffi-0.2.1.dist-info/RECORD,,
+unrar_cffi-0.2.1.dist-info/METADATA,sha256=M6y8G1FgedRPg38ksMO0bB6FekkXa8rELg9ATuIg7nc,2600
+unrar_cffi-0.2.1.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+unrar_cffi-0.2.1.dist-info/WHEEL,sha256=Dh4w5P6PPWbqyqoE6MHlzbFQwZXlM-voWJDf2WUsS2g,108
+unrar/cffi/_unrarlib.abi3.so,sha256=lPoeYblvbf3WcyhhM6fVHZiyTXIoIi9yR1KehvqkY_o,415524
+unrar/cffi/rarfile.py,sha256=mVdCww9zOxXzJZ85iQpkxzeSPfXe5P87jRPTWfC3e74,3599
+unrar/cffi/unrarlib_py.h,sha256=N18aUeQJUX6UmX2-Vm-L1v1uLF_nyA3lXglOqKqp48g,102
+unrar/cffi/unrarlib.py,sha256=3j7YVVvwvwgvqf9i0BiJpngB84Gm4LOcgSWGeS_FNvQ,4246
+unrar/cffi/unrarlib_ext.c,sha256=ZDeEPHuWtDinLOuNSk3-z80IiUhtMaKw4rTKf15DfRM,273
+unrar/cffi/unrarlib_ext.h,sha256=LCBSt_sjCvMeYFf6-JaTxsjGAVONPyuf2rryvWqGpfY,587
