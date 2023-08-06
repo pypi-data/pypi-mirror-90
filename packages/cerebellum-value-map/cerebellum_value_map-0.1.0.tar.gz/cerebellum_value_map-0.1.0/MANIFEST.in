@@ -1,0 +1,3 @@
+include README.md
+include LICENSE.txt
+include cerebellum_value_map/colormap.txt
