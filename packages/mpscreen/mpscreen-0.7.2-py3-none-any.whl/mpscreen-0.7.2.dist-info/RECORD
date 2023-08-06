@@ -1,0 +1,9 @@
+mpscreen/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mpscreen/components.py,sha256=qU94m-AatKkeJEYosXoFlQnRJeILtxuu-DZz7mfEh2s,9417
+mpscreen/mpelems.py,sha256=Fay3-yZuZvocUruDk-Qluh9mF8avV1-uaxeqs6yFCrQ,9103
+mpscreen/mpscreen.py,sha256=8-hT3Ohmw_sUP9nCG1nRQxQXd30FWyEZKN0YYoFZEFE,3760
+mpscreen/server.py,sha256=nJRzbrU5lkF1zydBzO8Dt9M_JjXN2w1kdjHKUAtV2D4,4259
+mpscreen-0.7.2.dist-info/METADATA,sha256=wOji_wEsz1JmPGEWPsFHo6d3dm-FESQFpJMd-N53rpk,1961
+mpscreen-0.7.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+mpscreen-0.7.2.dist-info/top_level.txt,sha256=W2jQvYWjcoZqfnDmhw2kmQrXiXEB3l--BKnQAFLQR4Q,9
+mpscreen-0.7.2.dist-info/RECORD,,
