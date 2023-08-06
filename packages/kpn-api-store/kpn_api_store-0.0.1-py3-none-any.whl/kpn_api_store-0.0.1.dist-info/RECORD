@@ -1,0 +1,14 @@
+kpnapistore/__init__.py,sha256=SSIHn76oaX9tww1x5GZaa_rmBUJQmBZh10vr8AOed8Q,986
+kpnapistore/base.py,sha256=MR_41CxYnsVQZsEYBXLKe-SJ6M5467tc0qFN8DN5auo,6553
+kpnapistore/exceptions.py,sha256=vpZ8JNHnnfURFZ3QhhNJkgyMqNTkcnF_O6xcTH-xmcA,1482
+kpnapistore/messaging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kpnapistore/messaging/sms_kpn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kpnapistore/messaging/sms_kpn/v1/__init__.py,sha256=8DAp5Sz1kKOZxTR-u_W2TAt5dZk-ylHxicEARclb1i8,1743
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_kpnapiclient.py,sha256=w0TXWrEPG1MVefWULk78vztK0nQexdS8AK9aGLI6Avo,847
+kpn_api_store-0.0.1.dist-info/COPYING,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+kpn_api_store-0.0.1.dist-info/COPYING.LESSER,sha256=pWgb-bBdsU2Gd2kwAXxketnm5W_2u8_fIeWEgojfrxs,7651
+kpn_api_store-0.0.1.dist-info/METADATA,sha256=qwG47CAQSQcmM5gXaktywHDQyOshK0A3UuNUaiTkG8E,2434
+kpn_api_store-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kpn_api_store-0.0.1.dist-info/top_level.txt,sha256=JqqtqziinDwdhgI7nsSIYSF01oSsUMF482fU0eSVOmw,18
+kpn_api_store-0.0.1.dist-info/RECORD,,
