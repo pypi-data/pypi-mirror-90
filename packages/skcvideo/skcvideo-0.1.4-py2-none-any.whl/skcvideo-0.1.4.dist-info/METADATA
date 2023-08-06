@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: skcvideo
+Version: 0.1.4
+Summary: video utils
+Home-page: UNKNOWN
+Author: SkillCorner
+Author-email: timothe.collet@skillcorner.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: click (>=7.1.2)
+Requires-Dist: numpy (>=1.18.5)
+Requires-Dist: opencv-python (>=4.4.0.46)
+Requires-Dist: imageio (>=2.9.0)
+Requires-Dist: imageio-ffmpeg (>=0.4.2)
+
+UNKNOWN
+
+
