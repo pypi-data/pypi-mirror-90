@@ -1,0 +1,3 @@
+[console_scripts]
+cmust = cmemsapi.cmemsapi:cli
+
