@@ -1,0 +1,33 @@
+*.pyc
+*.pyo
+__pycache__
+.coverage
+/.cache
+/dist
+/trio_mysql.egg-info
+||||||| merged common ancestors
+.coverage
+/dist
+/PyMySQL.egg-info
+/.tox
+/.venv
+/.vscode
+/PyMySQL.egg-info
+/build
+/tests/databases.json
+/t
+/.pytest_cache
+
+/.idea
+docs/build
+
+*.swp
+*~
+/.pybuild/
+||||||| merged common ancestors
+/pymysql/tests/databases.json
+
+/.idea
+/dist
+/docs/build
+Pipfile.lock
