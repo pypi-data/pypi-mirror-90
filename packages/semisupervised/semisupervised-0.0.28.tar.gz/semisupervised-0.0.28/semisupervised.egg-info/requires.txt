@@ -1,0 +1,12 @@
+numpy
+pandas
+sklearn
+
+[PseudoLabelSSL]
+keras
+
+[SAE_require]
+torch
+
+[keras_backend]
+tensorflow
