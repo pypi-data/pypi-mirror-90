@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: html2mallard
+Version: 0.1
+Summary: convert mkdocs´ html output to mallard/yelp xml
+Home-page: https://fossil.include-once.org/modseccfg/wiki/html2mallard
+License: Public Domain
+Keywords: mkdocs mallard
+Platform: UNKNOWN
+Classifier: License :: Public Domain
+Classifier: Topic :: Software Development :: Documentation
+Requires-Python: >= 2.7
+Description-Content-Type: text/markdown
+
+## html2mallard / mkdocs-mallard
+
+Extremely crude HTML to [mallard help](http://projectmallard.org/) conversion.
+Specifically for output from mkdocs 1.x with RTD theme. It's a very basic regex
+extraction and filtering process, that only retains some structural
+elements (headlines, paragraphs, tables, lists, notes). Doesn't even
+attempt to gather any topic relation/structure from the navigation list.
+
+Really only suitable for one-time/initial conversion, and requires some
+editing to get pages to validate. (Though they probably "work" in yelp
+as is). Links certainly require manual cleanup. And API docs are least
+convertible.
+
+
+## html2mallard
+
+Simple command line tool to convert a single .html file:
+
+
+    html2mallard site/index.html > help/index.page
+
+
+## mkdocs-mallard
+
+Converts a list of mkdocs output files to *.page files. Requires an extra
+`mallard_dir` in the `mallard.xml` config.
+
+    mkdocs-mallard
+
+Sample config:
+
+    site_name: logfmt1
+    docs_dir: docs
+    site_dir: html
+    mallard_dir: mallard
+    use_directory_urls: false
+    nav:
+      - Intro: index.md
+    theme:
+      name: readthedocs
+      highlightjs: false
+    repo_url: https://...
+    markdown_extensions:
+      - admonition
+      - codehilite
+      - attr_list
+      - def_list
+      - tables
+      - markdown.extensions.codehilite:
+          guess_lang: true
+    plugins:
+      - mkdocstrings
+
+Note the `mallard_dir` and `use_directory_urls`. The script only scans
+one level of `*.html` files.
+
+
+## Adaption
+
+The first two `rewrite` rules likely require changes for other HTML sources
+or templates. Specifically `"^.+?</nav>"` should strip the initial
+boilerplate, else might need expansion.
+
+
+### from `project` import `meta`
+
+| meta           | info                                                            |
+|:---------------|:----------------------------------------------------------------|
+| depends        | -                                                               |
+| compat         | Python ≥3.6                                                     |
+| compliancy     | !pep8, ~mallard, !doap                                          |
+| system usage   | -                                                               |
+| paths          | -                                                               |
+| testing        | `None`                                                          |
+| docs           | -                                                               |
+| activity       | abandoned                                                       |
+| state          | alpha                                                           |
+| support        | `None`                                                          |
+| contrib        | -                                                               |
+| announce       | -                                                               |
+
+
+
+
