@@ -1,0 +1,9 @@
+README.md
+setup.py
+metalogistic/__init__.py
+metalogistic/main.py
+metalogistic.egg-info/PKG-INFO
+metalogistic.egg-info/SOURCES.txt
+metalogistic.egg-info/dependency_links.txt
+metalogistic.egg-info/requires.txt
+metalogistic.egg-info/top_level.txt
