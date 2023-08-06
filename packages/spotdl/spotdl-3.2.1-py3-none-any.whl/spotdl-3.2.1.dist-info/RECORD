@@ -1,0 +1,16 @@
+spotdl/__init__.py,sha256=xqWmmUJbypcGuKb5U1-iJRcthWMOu1rSdxtj0p8WKlA,44
+spotdl/__main__.py,sha256=WKdPYL0YH9lhSwyds2zGwuKKpe-HLuskwWgF05M0ZM0,5200
+spotdl/download/__init__.py,sha256=8-GDVYUmomCF_44ajfvcjxRAPvnHiLtlrhlYN5jvriY,54
+spotdl/download/downloader.py,sha256=Iqxljtm3RSBm4ZM11Yo3gzNp1zUcqJ0v0ZpIGYWlP4o,13380
+spotdl/download/progressHandlers.py,sha256=bZ_n5rxAPWuUcOwlFEroMgvURvO_IlexWONjlP7dEbI,7473
+spotdl/search/__init__.py,sha256=FBC9nE8LEKz8agbjbocoISaavmyzPzFN3VGxa0TyfDA,307
+spotdl/search/provider.py,sha256=AFwPDeBWxyQ7oC0TdlhRRordSwL04xbTVY-mk72eQ94,9028
+spotdl/search/songObj.py,sha256=oI9cAqcThOnABLpZV7yfuGjMi8kVlDz5BMcAWBkXzEw,6924
+spotdl/search/spotifyClient.py,sha256=4D_dnt4NasKS1p_BimVKxundXkQetq2VKbcPz7BmpIc,1843
+spotdl/search/utils.py,sha256=xeeLuTjKPTBkx41KIGHtSnor5pFhIvRE40hhmIb6kP4,2967
+spotdl-3.2.1.dist-info/LICENSE,sha256=T_UEtX_XnxNom647pfDuBUsR-PURuiaRRLbxPH3GceY,1080
+spotdl-3.2.1.dist-info/METADATA,sha256=0b4EFWoorsS9z4rYI6K04VdDxDTJf84HWLhceSU_DLk,6496
+spotdl-3.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+spotdl-3.2.1.dist-info/entry_points.txt,sha256=VtPTB92_hxaEiA5A7rqNIzp9QCy5SwvMlja9fyLyKsg,64
+spotdl-3.2.1.dist-info/top_level.txt,sha256=uIFc4sn_e2D-9VAhkX3i_GrxAFbRE5ukvfvPhbudrNM,7
+spotdl-3.2.1.dist-info/RECORD,,
