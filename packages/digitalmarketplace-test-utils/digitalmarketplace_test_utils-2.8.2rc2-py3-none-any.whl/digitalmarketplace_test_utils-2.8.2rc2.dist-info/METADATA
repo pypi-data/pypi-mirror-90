@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: digitalmarketplace-test-utils
+Version: 2.8.2rc2
+Summary: Utilities for testing Digital Marketplace apps.
+Home-page: https://github.com/alphagov/digitalmarketplace-test-utils
+Author: GDS Developers
+License: MIT
+Platform: UNKNOWN
+Requires-Python: ~=3.6
+
+
+Utilities for testing Digital Marketplace apps.
+
+
