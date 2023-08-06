@@ -1,0 +1,8 @@
+pandas>=1
+numpy>=1.16
+scipy>=1
+networkx>=2
+xarray>=0.15
+soothsayer_utils>=2020.07.01
+hive_networkx>=2020.06.30
+compositional>=2020.05.19
