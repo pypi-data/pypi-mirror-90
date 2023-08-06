@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: awsc
+Version: 0.1.0
+Summary: AWS Commander
+Home-page: https://github.com/baliame/awsc
+Author: baliame
+Author-email: akos.toth@cheppers.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8, <4
