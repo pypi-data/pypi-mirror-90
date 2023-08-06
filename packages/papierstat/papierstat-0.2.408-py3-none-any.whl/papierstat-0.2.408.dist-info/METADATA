@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: papierstat
+Version: 0.2.408
+Summary: Helpers for teaching materials about machine learning.
+Home-page: http://www.xavierdupre.fr/app/papierstat/helpsphinx/index.html
+Author: Xavier Dupré
+Author-email: xavier.dupre@gmail.com
+License: MIT
+Download-URL: https://github.com/sdpython/papierstat/
+Keywords: papierstat,Xavier Dupré
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Dist: scikit-learn (>=0.21.0)
+Requires-Dist: pandas
+Requires-Dist: mlinsights
+Requires-Dist: matplotlib
+Requires-Dist: pandas-streaming
+Provides-Extra: datasets.carreau
+Requires-Dist: dbfread ; extra == 'datasets.carreau'
+Requires-Dist: geopandas ; extra == 'datasets.carreau'
+Requires-Dist: fiona ; extra == 'datasets.carreau'
+
+
+.. image:: https://travis-ci.org/sdpython/papierstat.svg?branch=master
+    :target: https://travis-ci.org/sdpython/papierstat
+    :alt: Build status
+
+.. image:: https://ci.appveyor.com/api/projects/status/34isqaj7je3u1xil?svg=true
+    :target: https://ci.appveyor.com/project/sdpython/papierstat
+    :alt: Build Status Windows
+
+.. image:: https://circleci.com/gh/sdpython/papierstat/tree/master.svg?style=svg
+    :target: https://circleci.com/gh/sdpython/papierstat/tree/master
+
+.. image:: https://badge.fury.io/py/papierstat.svg
+    :target: https://pypi.org/project/papierstat/
+
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+    :alt: MIT License
+    :target: http://opensource.org/licenses/MIT
+
+.. image:: https://requires.io/github/sdpython/papierstat/requirements.svg?branch=master
+     :target: https://requires.io/github/sdpython/papierstat/requirements/?branch=master
+     :alt: Requirements Status
+
+.. image:: https://codecov.io/github/sdpython/papierstat/coverage.svg?branch=master
+    :target: https://codecov.io/github/sdpython/papierstat?branch=master
+
+.. image:: http://img.shields.io/github/issues/sdpython/papierstat.png
+    :alt: GitHub Issues
+    :target: https://github.com/sdpython/papierstat/issues
+
+.. image:: http://www.xavierdupre.fr/app/papierstat/helpsphinx/_images/nbcov.png
+    :target: http://www.xavierdupre.fr/app/papierstat/helpsphinx/all_notebooks_coverage.html
+    :alt: Notebook Coverage
+
+.. _l-README:
+
+papierstat
+==========
+
+The module contains teaching contents in French.
+It was started to get a less chaotic content compare to
+`ensae_teaching_cs <https://github.com/sdpython/eansae_teching_cs/>`_
+mostly meant to provide exercises.
+
+Le contenu est en français car il existe déjà tellement de choses en anglais,
+et est émaillé de notebooks qui illustrent plus spécifiquement telle ou telle
+notion, parfois jusqu'à l'inutile mais séduisant intellectuellement.
+
+* `GitHub/papierstat <https://github.com/sdpython/papierstat/>`_
+* `documentation <http://www.xavierdupre.fr/app/papierstat/helpsphinx/index.html>`_
+* `Blog <http://www.xavierdupre.fr/app/papierstat/helpsphinx/blog/main_0000.html#ap-main-0>`_
+
+.. _l-HISTORY:
+
+=======
+History
+=======
+
+current - 2021-01-01 - 0.00Mb
+=============================
+
+0.2.350 - 2020-06-03 - 1.80Mb
+=============================
+
+* `31`: Moves ConstraintKMeans to mlinsights (2020-06-03)
+* `30`: pyltr does not work with scikit-learn 0.23 - remove it (2020-05-17)
+* `29`: Fix notebook using bokeh after update to 2+ (2020-04-18)
+* `28`: Implements a transformer to insert CountVectorizer in a pipelien (2020-02-07)
+* `24`: typo - sentance instead of sentence (2020-02-01)
+* `27`: Notebook adult_cat fails after catboost upgrade to 0.21 (2020-01-31)
+* `23`: fix notebook artificiel_categories_2 (2018-10-28)
+* `20`: move CI to python 3.7 (2018-08-21)
+* `22`: replaces as_matrix by values (pandas deprecated warning) (2018-07-29)
+* `21`: take a dependency on mlinsights where some code was moved (sklapi) (2018-07-29)
+* `19`: ajouter un code pour télécharger les données spacy du notebook sur word2vec (2018-06-17)
+* `17`: calculer ACP notebook word2vec (2018-06-12)
+* `15`: ajouter un notebook sur word2vec (2018-06-11)
+* `8`: ajouter un notebook sur les données carroyées (2018-06-11)
+* `11`: ajouter la définition des fichiers au format GeoJSON (2018-05-08)
+* `10`: ajouter un exemple de carte avec bokeh (2018-05-08)
+* `9`: remplacer basemap par cartopy (2018-05-08)
+* `6`: add a constraint kmeans (2018-04-04)
+* `4`: ajouter un notebook sur la prévision d'une durée (2018-04-02)
+* `5`: first resolved issue (2018-04-01)
+
+
