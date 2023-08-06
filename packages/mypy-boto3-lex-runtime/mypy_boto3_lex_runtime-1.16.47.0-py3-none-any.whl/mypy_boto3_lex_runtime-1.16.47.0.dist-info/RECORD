@@ -1,0 +1,13 @@
+mypy_boto3_lex_runtime/__init__.py,sha256=RHc95Ay5nbxCc97IURom0AXi3Um0EF0DFJqZRGCiWuU,517
+mypy_boto3_lex_runtime/__init__.pyi,sha256=rveapHUq7F_F_xNnQTIiBvWeEHc9BISUA2LtbmkG5Oc,516
+mypy_boto3_lex_runtime/__main__.py,sha256=1LChXTAheYoF0M24t95g4b3davnuL0bmmdVnuF6bzq8,408
+mypy_boto3_lex_runtime/client.py,sha256=078EcMvrkOdQrTorNOdYeIrVYCiMY2pEVNV8Hf1GsRo,4788
+mypy_boto3_lex_runtime/client.pyi,sha256=2AVTt9fPm2BPDRnNWBUA0XvERLl47l4vikhGdTfHEg4,4777
+mypy_boto3_lex_runtime/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_lex_runtime/type_defs.py,sha256=jpWNpN3ktg7vUxzvvCEIe9hk1gRALxVPkRzrB5WsLyQ,6519
+mypy_boto3_lex_runtime/type_defs.pyi,sha256=qGFx5nkMSbJ9NmhfHQs57vPw22FRHTQyz9ISsxCgcA4,6514
+mypy_boto3_lex_runtime/version.py,sha256=XY9nGV-XhEWdDc15sWcapqCZudBDNxsS__Q9u_F6Uyk,57
+mypy_boto3_lex_runtime-1.16.47.0.dist-info/METADATA,sha256=scJlpP2YvsIcQdsC0E-z2PjZU2qz0qgJRdbVMLp2Ezo,6602
+mypy_boto3_lex_runtime-1.16.47.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mypy_boto3_lex_runtime-1.16.47.0.dist-info/top_level.txt,sha256=VKqyGRjOlJokoNK0hmIzOdwUk1MIEXBeNQZU4nPLPBs,23
+mypy_boto3_lex_runtime-1.16.47.0.dist-info/RECORD,,
