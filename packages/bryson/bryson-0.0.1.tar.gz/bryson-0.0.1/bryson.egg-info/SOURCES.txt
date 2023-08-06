@@ -1,0 +1,7 @@
+README.md
+setup.py
+bryson.egg-info/PKG-INFO
+bryson.egg-info/SOURCES.txt
+bryson.egg-info/dependency_links.txt
+bryson.egg-info/top_level.txt
+example_pkg/__init__.py
