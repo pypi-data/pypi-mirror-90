@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: awslambda-python-common
+Version: 0.0.61
+Summary: AWS Lambda Python development framework
+Home-page: https://gitlab.com/lm-private/awslambda-python-common
+Author: Lawrence M
+Author-email: lawrence.mok@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: aws-lambda-powertools
+Requires-Dist: dacite
+Requires-Dist: pyjwt
+
+# awslambda-python-common
+
+This python package contains common functionality for developing aws lambdas.
+
