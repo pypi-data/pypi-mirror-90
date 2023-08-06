@@ -1,0 +1,9 @@
+generate_tiff_offsets/__init__.py,sha256=YUsVPxW3Jkc0qn4YvTvnkf_6omSO2scJ-8ZglcAhA9E,211
+generate_tiff_offsets/cli.py,sha256=dPg50TobaYYpuUGXs8s26W-P65Oe5UIg_wqm3KsCcC8,603
+generate_tiff_offsets/generate_tiff_offsets.py,sha256=e5hYsxUfaMDj9Z3C1EsZs2bKKQZimh6buC90ndHOkm0,622
+generate_tiff_offsets-0.1.6.dist-info/LICENSE,sha256=kZ9XMPzSV5F-qwulnRWHIrOZZ1eRVZJu_RSVk4TbNTE,1068
+generate_tiff_offsets-0.1.6.dist-info/METADATA,sha256=hNoHwMhM32FTwI91bUHncJQWCADRySRIxqFnTkwuaZc,1499
+generate_tiff_offsets-0.1.6.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+generate_tiff_offsets-0.1.6.dist-info/entry_points.txt,sha256=4Sj9FL_qKdEEzJIEXq-4-yMQyZtCzCjSeg0pYRAQ46E,74
+generate_tiff_offsets-0.1.6.dist-info/top_level.txt,sha256=M9kytjPktdFZG1yoWrVftaWvJpKwkuoPgHxZDRPsbT0,22
+generate_tiff_offsets-0.1.6.dist-info/RECORD,,
