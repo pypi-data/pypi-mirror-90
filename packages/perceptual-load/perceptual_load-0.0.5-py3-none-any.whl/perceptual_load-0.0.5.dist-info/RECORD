@@ -1,0 +1,17 @@
+perceptual_load/__init__.py,sha256=eB5tEg_BNHHsJgQexgmpZJr4c2VbfooQZMXAWuDHoIg,22
+perceptual_load/perceptual_load_experiment.py,sha256=ifa-77bAYz0ZPN9tVOG2-GY5rNwEGWfb9zlSodrdL_g,58119
+perceptual_load/distractors/Donaldduck.jpeg,sha256=oEOFCjnF9EeiwDwaUEhi7BweOQEKhXCtngZUfwPd0rA,80367
+perceptual_load/distractors/Mickeymouse.jpeg,sha256=Wm5rHLWnxIagelxC8CrZfMihWNLOTk7-A1XQBCRMT8M,71808
+perceptual_load/distractors/Pikachu.jpeg,sha256=L85QEsEBcWrxT7jQ29MEAhh9PyLSRrr_hjrIlBHQ8kM,55978
+perceptual_load/distractors/Spiderman.jpeg,sha256=WmZSARpVSkyXUDk5sVBpcK8f1cVD8Tqm34iPPbFL7D4,73581
+perceptual_load/distractors/Spongebob.jpeg,sha256=VXUyp7Z2o14uH-8wafDe8PXMfJqQNpFliDI3tY5dpL8,94623
+perceptual_load/distractors/Superman.jpeg,sha256=Nol0B7kdeSflJK1_wLmbBFFsr7x4Hw20NhikR1RMcn4,66898
+perceptual_load/images/Consent.jpeg,sha256=JTC3OBJsUaDXZP1JvCudhOidIX-kmNrh-og43pXUHEY,1057622
+perceptual_load/images/HighReminder.jpeg,sha256=Qq2UguYoGkXNkIlqwYJ2egaD-DSNAZTS00eF2U6kLwA,129728
+perceptual_load/images/Instructions.jpeg,sha256=mVOAfj6LufRA1Ent2C0pYp7meBGLttfnDH_8o1U7gh0,1051418
+perceptual_load/images/LowReminder.jpeg,sha256=0bDX0zLaApWNwiV4THFaHL7-OSxfyo8_dvz1DfuKzGw,110565
+perceptual_load-0.0.5.dist-info/LICENSE,sha256=njbhw2HNqjsMvoEp3piDhdzZ52nqIcgn4ZKkky9IZd0,1069
+perceptual_load-0.0.5.dist-info/METADATA,sha256=J7_cL9-nvOiUmWDcgoqhgQuUKN6JzlYF6ZH9tuM7XUY,204
+perceptual_load-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+perceptual_load-0.0.5.dist-info/top_level.txt,sha256=-K6bkBZb-gLE9CqaA2qWH7N3h0pZJR93smnCivzR0Fc,16
+perceptual_load-0.0.5.dist-info/RECORD,,
