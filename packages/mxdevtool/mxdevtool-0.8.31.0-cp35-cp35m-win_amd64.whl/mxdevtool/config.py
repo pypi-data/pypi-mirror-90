@@ -1,0 +1,1 @@
+CLASS_TYPE_NAME = 'clsnm'
