@@ -1,0 +1,11 @@
+geode_conversion/__init__.py,sha256=WMUwah02ZYTxMnxt4htI-vJGahp4OnjkjsYUXymoTFY,112
+geode_conversion/geode_conversion_py_mesh.cpython-38-x86_64-linux-gnu.so,sha256=6kyHxblBPk-YbeSZ-yKMeeYpAJl0f7cXy1HhkbUe_E0,113896
+geode_conversion/geode_conversion_py_model.cpython-38-x86_64-linux-gnu.so,sha256=PNu3uPftOP7eML9q_1L06v1vqSM4_l4Ppyo2FTW7tmQ,126336
+geode_conversion/libGeode-Conversion_mesh.so,sha256=s-uuqpKBD5LbVHL-gciP8nL3YTiYHyEn3NCRmPi4HyM,136696
+geode_conversion/libGeode-Conversion_model.so,sha256=oB4F3olnjzUJQYTytW2qWM0cAT8dnJZlTUdHqqeI8kI,537432
+geode_conversion/mesh.py,sha256=1Ua9cSP3Shn4w0ReISyX6wBNJrddJ6r-w4cNGo8cAq4,159
+geode_conversion/model.py,sha256=3LeqZ2DuNGOcAZuG-rg7Yui4WxXpbJVi2fckvp53hDs,194
+Geode_Conversion-2.9.2.dist-info/METADATA,sha256=KK18AsSP8UG9ri_8e2sKskdXIXDYfeflFSB6q2rpt5c,437
+Geode_Conversion-2.9.2.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+Geode_Conversion-2.9.2.dist-info/top_level.txt,sha256=PnM_M6Sy8psC1M_rMpCs6FAGjv7uyDWsRvR46jFUpXU,17
+Geode_Conversion-2.9.2.dist-info/RECORD,,
