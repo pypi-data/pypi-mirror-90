@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: AbundanceMatching
+Version: 0.3.0
+Summary: A Python package for subhalo abundance matching (SHAM) with scatter. It creates abundance functions and runs Peter Behroozi's fiducial deconvolution code.
+Home-page: https://github.com/yymao/abundancematching
+Author: Yao-Yuan Mao
+Author-email: yymao.astro@gmail.com
+License: MIT
+Download-URL: https://github.com/yymao/abundancematching/archive/v0.3.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Astronomy
