@@ -1,0 +1,9 @@
+gibbscorrections/__init__.py,sha256=b4EPZ6Rxw44o5ibDDgJ6Gk_UggaueIb2lwSYVkB5noI,28
+gibbscorrections/corrections.py,sha256=ARfjOnKjViOfdm9kyzlvtkeGFLDuMXBuo_Uw8Xqg_QU,8210
+gibbscorrections/molecule.py,sha256=7JO0wos5vRikQCa5jlysJ5cEcKbSFSQx0Mro5gG3zdI,2096
+gibbscorrections/orca_job.py,sha256=DHmCNHLToqjw1WHoixQPM8BKV_j2CzqDQzjjBZeaZkE,7458
+gibbscorrections-0.2.4.dist-info/METADATA,sha256=Ksre_-yWx_ODyp4_pRk_JYnib6sO_KgI8sJztzkqgpQ,459
+gibbscorrections-0.2.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gibbscorrections-0.2.4.dist-info/entry_points.txt,sha256=fIC9IPnijeELx9ISa8KYEwJGonR3SNrUa-4IfuvXK-I,60
+gibbscorrections-0.2.4.dist-info/top_level.txt,sha256=O4sPN-9lolGU5B7lJHZQUb4YG3wnmbY2Xu5JEbfm2ps,17
+gibbscorrections-0.2.4.dist-info/RECORD,,
