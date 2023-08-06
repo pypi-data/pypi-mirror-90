@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+filemark/__init__.py
+filemark/command_line.py
+filemark/filemarkutils.py
+filemark.egg-info/PKG-INFO
+filemark.egg-info/SOURCES.txt
+filemark.egg-info/dependency_links.txt
+filemark.egg-info/entry_points.txt
+filemark.egg-info/not-zip-safe
+filemark.egg-info/requires.txt
+filemark.egg-info/top_level.txt
