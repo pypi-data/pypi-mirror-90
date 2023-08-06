@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: dash_draggable
+Version: 0.0.1
+Summary: A Dash component for building draggable and resizable grid layouts. Based on the wel known react-grid-layout.
+Home-page: UNKNOWN
+Author: Mehdi Echchelh <mehdi.echel@gmail.com>
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Dash
