@@ -1,0 +1,8 @@
+sw/dbsync/__init__.py,sha256=PJUCCvagAl-XAfHbYoPJV5Bgof8gQaaE4qnuzuE1bmA,63
+sw/dbsync/dbapi.py,sha256=D9oUsiBGqkJYB0dYukP8F_TfiXV_-DAR8HaAP76v660,892
+sw/dbsync/dbsync.py,sha256=TJjptG7YiI7v5fx0EItFVzN39qHzoPLj7faUtaakQyA,7509
+sw/dbsync/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sw.dbsync-0.1.0.dist-info/LICENSE,sha256=ViNRFhGCDmLp-5P2k6exLlgAWml4O-zAh1OsMX8z1lc,1068
+sw.dbsync-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+sw.dbsync-0.1.0.dist-info/METADATA,sha256=r0UzWxEQJxvHLByd4A3Q1BZtzcSuTohbSEXCJGuFsXw,788
+sw.dbsync-0.1.0.dist-info/RECORD,,
