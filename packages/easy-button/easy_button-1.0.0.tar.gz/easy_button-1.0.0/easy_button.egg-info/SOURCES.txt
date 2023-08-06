@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+easy_button.egg-info/PKG-INFO
+easy_button.egg-info/SOURCES.txt
+easy_button.egg-info/dependency_links.txt
+easy_button.egg-info/requires.txt
+easy_button.egg-info/top_level.txt
