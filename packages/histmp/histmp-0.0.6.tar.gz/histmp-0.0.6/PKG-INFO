@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: histmp
+Version: 0.0.6
+Summary: Histogramming accelerated with OpenMP
+Home-page: https://git.sr.ht/~ddavis/histmp
+Author: Doug Davis
+Author-email: ddavis@ddavis.io
+Maintainer: Doug Davis
+Maintainer-email: ddavis@ddavis.io
+License: MIT License
+Description: # histmp
+        
+        [![builds.sr.ht status](https://builds.sr.ht/~ddavis/histmp.svg)](https://builds.sr.ht/~ddavis/histmp?)
+        ![](https://img.shields.io/pypi/pyversions/histmp.svg?colorB=blue&style=flat)
+        [![PyPI](https://img.shields.io/pypi/v/histmp?color=486b87)](https://pypi.org/project/histmp/)
+        
+        
+        A Python 3 module for calculating histograms with blazing speed.
+        
+        This software is currently alpha quality, but it is tested. The public
+        API is unstable between 0.0.x releases.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: C++
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

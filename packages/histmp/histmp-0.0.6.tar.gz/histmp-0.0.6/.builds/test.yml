@@ -1,0 +1,49 @@
+image: archlinux
+packages:
+- python
+- gcc
+sources:
+- https://git.sr.ht/~ddavis/histmp
+tasks:
+- setup_python_versions: |
+    curl https://pyenv.run | bash
+    export PATH=$HOME/.pyenv/bin:$PATH
+    eval "$(pyenv init -)"
+    pyenv install 3.8.1
+    pyenv install 3.7.6
+    pyenv install 3.6.9
+- build_and_install: |
+    export PATH=$HOME/.pyenv/bin:$PATH
+    eval "$(pyenv init -)"
+    cd histmp
+    pyenv shell 3.8.1
+    pip install pip pytest setuptools numpy pybind11 -U
+    pip install .
+    pyenv shell 3.7.6
+    pip install pip pytest setuptools numpy pybind11 -U
+    pip install .
+    pyenv shell 3.6.9
+    pip install pip pytest setuptools numpy pybind11 -U
+    pip install .
+- test_py36: |
+    export PATH=$HOME/.pyenv/bin:$PATH
+    eval "$(pyenv init -)"
+    cd histmp
+    pyenv shell 3.6.9
+    pytest
+- test_py37: |
+    export PATH=$HOME/.pyenv/bin:$PATH
+    eval "$(pyenv init -)"
+    cd histmp
+    pyenv shell 3.7.6
+    pytest
+- test_py38 : |
+    export PATH=$HOME/.pyenv/bin:$PATH
+    eval "$(pyenv init -)"
+    cd histmp
+    pyenv shell 3.8.1
+    pytest
+triggers:
+- action: email
+  condition: failure
+  to: "<ddavis@ddavis.io>"

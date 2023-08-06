@@ -1,0 +1,13 @@
+[build-system]
+requires = [
+    "setuptools>=45",
+    "wheel>=0.35",
+    "setuptools_scm[toml]>=3.4",
+    "pybind11>=2.6",
+    "numpy>=1.18",
+]
+
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "src/histmp/version.py"
