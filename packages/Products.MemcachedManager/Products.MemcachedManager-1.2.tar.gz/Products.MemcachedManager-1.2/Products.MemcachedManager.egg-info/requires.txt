@@ -1,0 +1,7 @@
+setuptools
+
+[pylibmc]
+pylibmc>=1.2.0
+
+[python-memcached]
+python-memcached
