@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: gevent-queue
+Version: 0.1.0
+Summary: A persistent multi-producer multi-consumer gevent queue
+Home-page: https://github.com/knazarov/gevent-queue
+Author: Konstantin Nazarov
+Author-email: mail@knazarov.com
+Maintainer: Konstantin Nazarov
+Maintainer-email: mail@knazarov.com
+License: BSD-3-Clause
+Project-URL: Documentation, https://github.com/knazarov/gevent-queue
+Project-URL: Code, https://github.com/knazarov/gevent-queue
+Project-URL: Issue tracker, https://github.com/knazarov/gevent-queue/issues
+Description: gevent-queue
+        ============
+        
+        gevent-queue is a lightweight, stateful multi-producer and multi-consumer queue. It was
+        designed to work inside gevent-based web apps (especially Flask) so that you only need a
+        single process. If you later wish to scale, you can easily spawn separate worker
+        processes.
+        
+        gevent-queue supports Redis to persist enqueued messages.
+        
+        Installing
+        ----------
+        
+        Install and update using `pip`_:
+        
+        .. code-block:: text
+        
+            pip install -U gevent-queue
+        
+        
+        
+        Usage Example
+        -------------
+        
+        .. code-block:: python
+        
+            import redis
+            import gevent-queue
+        
+            r = redis.Redis()
+            q = gevent_queue.Queue(r, "myqueue")
+        
+            q.put("foo")
+            q.put("bar")
+        
+            print(q.get())
+            q.task_done()
+        
+            print(q.get())
+            q.task_done()
+        
+        
+        
+        .. _pip: https://pip.pypa.io/en/stable/quickstart/
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst
