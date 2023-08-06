@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wide
+Version: 0.0.1
+Summary: decomposition tools
+Home-page: https://github.com/thorwhalen/ut/tree/master/ml/decomp
+Author: Thor Whalen
+License: mit
+Platform: any
+Description-Content-Type: text/markdown
+Requires-Dist: scikit-learn
+
+
+# wide
+decomposition tools
+
+
+To install:	```pip install wide```
+
+
