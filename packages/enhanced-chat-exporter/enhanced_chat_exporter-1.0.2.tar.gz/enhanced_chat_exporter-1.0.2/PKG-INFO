@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: enhanced_chat_exporter
+Version: 1.0.2
+Summary: A enhanced Discord chat exporter for Python Discord bots based on mahtoid's chat_exporter.
+Home-page: https://github.com/ChickenDevs/EnhancedDiscordChatExporterPy
+Author: chicc
+License: GPL
+Description: A enhanced Discord chat exporter for Python Discord bots based on mahtoid's chat_exporter.
+Keywords: chat exporter
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
