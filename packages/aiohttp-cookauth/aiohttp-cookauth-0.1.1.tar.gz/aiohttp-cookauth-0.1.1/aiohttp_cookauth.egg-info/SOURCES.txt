@@ -1,0 +1,13 @@
+README.rst
+setup.py
+aiohttp_cookauth/__init__.py
+aiohttp_cookauth/abc.py
+aiohttp_cookauth/api.py
+aiohttp_cookauth/session.py
+aiohttp_cookauth/session_identity.py
+aiohttp_cookauth/storage.py
+aiohttp_cookauth.egg-info/PKG-INFO
+aiohttp_cookauth.egg-info/SOURCES.txt
+aiohttp_cookauth.egg-info/dependency_links.txt
+aiohttp_cookauth.egg-info/requires.txt
+aiohttp_cookauth.egg-info/top_level.txt

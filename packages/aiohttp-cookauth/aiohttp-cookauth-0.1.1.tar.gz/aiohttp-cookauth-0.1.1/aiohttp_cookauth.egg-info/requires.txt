@@ -1,0 +1,4 @@
+aiohttp>=3.2.0
+
+[aioredis]
+aioredis>=1.0.0
