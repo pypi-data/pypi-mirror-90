@@ -1,0 +1,11 @@
+spaceship/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spaceship/control_center/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spaceship/control_center/dispatcher.py,sha256=aqpR_UP1u3aYZMyo6QN7HIy28V3TiJ72n1mTQJyfZ60,803
+spaceship/launchpad/__init__.py,sha256=gKlmisfXywu52wbkHKOa5E3dB9Hnf7Zs-OcLuh9z5Ec,72
+spaceship/launchpad/launcher.py,sha256=KIg8MM6qoLK298es1_u7KkxKRMRU3kP0Qi3FL7UAZSs,864
+spaceship-0.0.1.dist-info/LICENSE,sha256=JNiBQSkPK-Ly7z5F8JOhX0TSgucJT3UOkFDa9DT_nuk,1055
+spaceship-0.0.1.dist-info/METADATA,sha256=PALfMl__BKid6YuvpmCIlq2o9yvD6EaCvza65EBlMcA,938
+spaceship-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+spaceship-0.0.1.dist-info/entry_points.txt,sha256=UHh5598Io9HeWnu8NjfG8kfe0GV-qARUs8LKcj0irLQ,85
+spaceship-0.0.1.dist-info/top_level.txt,sha256=ijO7gVisIWyK_VLAaDuTKhGH7LVc11HCCS4phLFSJzg,10
+spaceship-0.0.1.dist-info/RECORD,,
