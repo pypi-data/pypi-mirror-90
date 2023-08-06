@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+KVDatastore/__init__.py
+KVDatastore.egg-info/PKG-INFO
+KVDatastore.egg-info/SOURCES.txt
+KVDatastore.egg-info/dependency_links.txt
+KVDatastore.egg-info/top_level.txt
