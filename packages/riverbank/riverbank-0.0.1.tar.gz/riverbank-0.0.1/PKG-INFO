@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: riverbank
+Version: 0.0.1
+Summary: An event logging service
+Home-page: https://github.com/acegik/riverbank
+Author: acegik
+License: GPL-3.0
+Download-URL: https://github.com/acegik/riverbank/downloads
+Description: UNKNOWN
+Keywords: sysops,devops,toolkit
+Platform: UNKNOWN
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*
