@@ -1,0 +1,6 @@
+README.md
+setup.py
+chartal.egg-info/PKG-INFO
+chartal.egg-info/SOURCES.txt
+chartal.egg-info/dependency_links.txt
+chartal.egg-info/top_level.txt
