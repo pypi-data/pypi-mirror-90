@@ -1,0 +1,3 @@
+[console_scripts]
+paradigmi = latin_paradigm_finder.__main__:find
+
