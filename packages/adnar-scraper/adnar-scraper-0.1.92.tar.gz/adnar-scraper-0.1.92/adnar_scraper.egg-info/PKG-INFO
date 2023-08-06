@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: adnar-scraper
+Version: 0.1.92
+Summary: adnar-scraper
+Home-page: https://github.com/discoverious/adnar-scraper
+Author: Mabus Kang
+Author-email: discoverious@naver.com
+License: UNKNOWN
+Download-URL: https://github.com/discoverious/adnar-scraper/archive/0.0.tar.gz
+Description: UNKNOWN
+Keywords: AdnarScraper
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
