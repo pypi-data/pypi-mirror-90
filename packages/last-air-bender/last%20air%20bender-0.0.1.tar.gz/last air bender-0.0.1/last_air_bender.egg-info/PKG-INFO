@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: last-air-bender
+Version: 0.0.1
+Summary: A package for the show, Avatar, the last air bender
+Home-page: https://github.com
+Author: DiscordDev
+Author-email: example@example.com
+License: UNKNOWN
+Description: # last_air_bender
+        To get the avatar number with name.
+        *Type the name like you would normally type it. With a capital letter at the start.*
+        ```py
+        from last_air_bender import avatar_name
+        
+        print(avatar_name("Kyoshi"))
+        ```
+        To get the avatar name by number.
+        ```py
+        from last_air_bender import avatar_number
+        
+        print(avatar_number(5))
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
