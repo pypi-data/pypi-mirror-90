@@ -1,0 +1,10 @@
+%path = "maths/linear system/blending"
+%kind = chindnum["problems"]
+%level = 10
+
+Three types of oils S1 ({{chiven.A[0][0]}} €/l), S2 ({{chiven.A[0][1]}} €/l) and S3 ({{chiven.A[0][2]}} €/l)
+shall be blended to produce an oil that costs {{"{0:.2f}".format(chiven.b[0])}} €/l,
+which is cheaper than the expensive oil S1.
+The other two oils shall make up {{int(-100*chiven.A[1][0])}}% of the volume of S1.
+What are the respective portions of the oils rounded to full percentages?
+%chq(chames=chutil.F(['S{0} = '],[1,2,3]))

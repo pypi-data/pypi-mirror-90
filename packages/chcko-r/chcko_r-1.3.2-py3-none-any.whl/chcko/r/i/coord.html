@@ -1,0 +1,24 @@
+%def graph_js():
+    <script type="text/javascript" src="/static/graph.js">
+    </script>
+%end
+%chripts['graph.js'] = graph_js
+
+%def funcscoord():
+    <script type="text/javascript">
+    %for i,f in enumerate(chiven.funcs):
+    function fun{{chumber}}{{i}}(x) { {{f[1]}}; }
+    %end
+    function drawall{{chumber}}() {
+        var cs = createCS("{{chumber}}","cs_div{{chumber}}");
+        cs.context.font = "20px sans-serif";
+        % for i,f in enumerate(chiven.funcs):
+            lastpos = cs.show(fun{{chumber}}{{i}},{{i}},2);
+            cs.context.strokeText("{{str(i+1)}}",lastpos[0],lastpos[1]);
+        %end
+    }
+    document.addEventListener("DOMContentLoaded",function(){drawall{{chumber}}();})
+    </script>
+%end
+%chripts['funcs'+str(chumber)] = funcscoord
+

@@ -1,0 +1,24 @@
+%path = "Mathe/Funktionen/Funktionsgraphen"
+%kind = chindnum["Übungen"]
+%level = 10
+
+<!-- harbors the diagram -->
+<div id="cs_div{{chumber}}">
+</div>
+
+<div>
+<table>
+    Gib die Zahl ein, die zur Funktionsgleichung passt.
+    %for i in range(len(chiven.order)):
+    <tr>
+        <td>\(y={{chiven.funcs[chiven.order[i]][0]}}\)</td>
+        <td>
+            %chq(i)
+        </td>
+    </tr>
+    %end
+</table>
+</div>
+
+%include('r/i/coord')
+

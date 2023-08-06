@@ -1,0 +1,24 @@
+%path = "maths/functions/function graphs"
+%kind = chindnum["problems"]
+%level = 10
+
+<!-- harbors the diagram -->
+<div id="cs_div{{chumber}}">
+</div>
+
+<div>
+<table>
+    Enter the number that fits to the function
+    %for i in range(len(chiven.order)):
+    <tr>
+        <td>\(y={{chiven.funcs[chiven.order[i]][0]}}\)</td>
+        <td>
+            %chq(i)
+        </td>
+    </tr>
+    %end
+</table>
+</div>
+
+%include('r/i/coord')
+

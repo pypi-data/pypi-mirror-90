@@ -1,0 +1,104 @@
+%path = "maths/differential/introduction"
+%kind = chindnum["texts"]
+%level = 12
+<!-- html --><p>We will use the concepts:</p>
+<ul class="simple">
+<li><p>variable/value</p></li>
+<li><p>change</p></li>
+<li><p>velocity</p></li>
+</ul>
+<div class="section" id="variable-value">
+<h1>Variable/Value<a class="headerlink" href="#variable-value" title="Permalink to this headline">¶</a></h1>
+<p>English is a historical mix of two languages.
+So there are two words of many things.
+<em>Change</em>, for example, can also be called <em>vary</em>.
+That’s why something, that can change, is called a <em>variable</em>.</p>
+<p>A variable assumes one <em>value</em> at a time, <em>exclusively</em>.
+It does not need to be “at a time”.
+It could also be “at a place”.</p>
+<p>As a side-note:
+The uniqueness is expressed by the word <em>function</em>:
+We can say, the value is a <em>function</em> of this or that.</p>
+<p>We can use a number to denote a <em>value</em>.
+We could also use a word, but it is easier with a number.</p>
+<p>Variable = {value1, value2, …}
+Position = {10m , 20m, …, 120m, …}</p>
+</div>
+<div class="section" id="change">
+<h1>Change<a class="headerlink" href="#change" title="Permalink to this headline">¶</a></h1>
+<p>We assume a gradual change.</p>
+<p>Large changes:</p>
+<blockquote>
+<div><p>The change is expressed with a difference: <span class="math notranslate nohighlight">\(-\)</span>.
+Difference is abbreviated with a Greek D: Δ.</p>
+<p><span class="math notranslate nohighlight">\(Δy_1 = y_1 - y_0\)</span>.</p>
+<p>The differences can be added to get the full extend of the variable.
+We basically undo the difference (subtraction) by addition.</p>
+<p><span class="math notranslate nohighlight">\(y = Σ Δy_i = Δy_1 + Δy_2 + ...\)</span>.</p>
+</div></blockquote>
+<p>Small changes:</p>
+<blockquote>
+<div><p>We use <code class="docutils literal notranslate"><span class="pre">d</span></code> instead of <code class="docutils literal notranslate"><span class="pre">Δ</span></code> for very small changes.</p>
+<p><span class="math notranslate nohighlight">\(dy = (y + dy) - y\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(d\)</span> is called <em>differential</em>.</p>
+<p>With <span class="math notranslate nohighlight">\(dy\)</span> we use <span class="math notranslate nohighlight">\(∫\)</span> for sum,
+and call it <em>integral</em>.</p>
+</div></blockquote>
+</div>
+<div class="section" id="velocity">
+<h1>Velocity<a class="headerlink" href="#velocity" title="Permalink to this headline">¶</a></h1>
+<p>How fast a value changes is again a variable.
+It is called <em>speed</em> or <em>velocity</em> of change of that variable.</p>
+<p>Velocity is relative.
+To describe velocity of change of the value of one variable
+we need <em>another variable</em> to compare it to.
+Often this other variable is <em>time</em>, but it could be something else.
+If there is no other variable specified, then it is implicitly <em>time</em>,
+or better our time feeling, given by how fast our brain thinks.</p>
+<p>Lets find the velocity by which you grow.
+We have two variables:</p>
+<ol class="arabic simple">
+<li><p>Height <span class="math notranslate nohighlight">\(y\)</span>: The distance from the floor to the top of your head.</p></li>
+<li><p>Age <span class="math notranslate nohighlight">\(x\)</span>: The number of years that have passed since your birth.</p></li>
+</ol>
+<p>Differences:</p>
+<blockquote>
+<div><p>The <em>average</em> velocity over <span class="math notranslate nohighlight">\(Δx\)</span> is found by <em>dividing</em> the differences:</p>
+<p><span class="math notranslate nohighlight">\(\tilde{v} = Δy/Δx\)</span></p>
+<p>Why <em>divide</em>?
+<em>Because</em> then you can <em>multiply</em> to get back the difference:</p>
+<p><span class="math notranslate nohighlight">\(Δy = \tilde{v} Δx\)</span></p>
+<p>And you can sum the differences to get back the height:</p>
+<p><span class="math notranslate nohighlight">\(y = Σ Δy = Σ \tilde{v} Δx\)</span></p>
+</div></blockquote>
+<p>Differentials:</p>
+<blockquote>
+<div><p>This velocity is at a specific <span class="math notranslate nohighlight">\(x\)</span> because <span class="math notranslate nohighlight">\(dx\)</span> is so small that we can neglect it.</p>
+<p><span class="math notranslate nohighlight">\(v = dy/dx\)</span></p>
+<p>and to get back y we sum the very many <span class="math notranslate nohighlight">\(v dx\)</span></p>
+<p><span class="math notranslate nohighlight">\(y = ∫ dy = ∫ v dx\)</span>.</p>
+<p>Velocity is used if <span class="math notranslate nohighlight">\(x\)</span> is time.
+More generally, one calls it <em>derivative</em>:</p>
+<ul class="simple">
+<li><p><em>derivative</em> of height <span class="math notranslate nohighlight">\(y\)</span> with respect to age <span class="math notranslate nohighlight">\(x\)</span></p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="summary">
+<h1>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h1>
+<p>Change is expressed via differences,</p>
+<ul class="simple">
+<li><p>that <span class="math notranslate nohighlight">\(Δ\)</span> means <em>difference</em></p></li>
+<li><p>that <span class="math notranslate nohighlight">\(d\)</span> means very small difference or <em>differential</em></p></li>
+</ul>
+<p>The symbol for sum is</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(Σ\)</span>, if summing differences</p></li>
+<li><p><span class="math notranslate nohighlight">\(∫\)</span>, if summing differentials</p></li>
+</ul>
+<p>Velocity is a quotient between two differences</p>
+<ul class="simple">
+<li><p>average over <span class="math notranslate nohighlight">\(Δx\)</span>: <span class="math notranslate nohighlight">\(\tilde{v}=\frac{Δy}{Δx}\)</span></p></li>
+<li><p>at <span class="math notranslate nohighlight">\(x\)</span>: <span class="math notranslate nohighlight">\(v=\frac{dy}{dx}\)</span></p></li>
+</ul>
+</div>

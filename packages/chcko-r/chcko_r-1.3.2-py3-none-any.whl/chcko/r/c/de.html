@@ -1,0 +1,18 @@
+%path = "Mathe/Finanz/Rentenrechnung/unterjährig"
+%kind = chindnum["Übungen"]
+%level = 11
+
+Es werden monatlich €{{chiven.r}} auf die Seite gelegt
+und man erhält dafür auch monatlich {{chiven.i}}% Zinsen.
+Wieviel hat man nach {{chiven.n}} Monaten angespart?<br>
+a) bei nachschüssiger Verzinsung?
+%chq(0)
+<br>
+b) bei vorschüssiger Verzinsung?
+%chq(1)
+<br>
+c) Nach wie vielen Monaten hat man nachschüssig das {{chiven.m}}-fache der Rate angespart?
+%chq(2)
+<br>
+d) Welcher konformen Jahresverzinsung entspricht dieser Zinsatz von {{chiven.i}}%?
+%chq(3,champles='(1.0-100.0)')
