@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+powerline_k8sstatus/__init__.py
+powerline_k8sstatus/segments.py
+powerline_k8sstatus.egg-info/PKG-INFO
+powerline_k8sstatus.egg-info/SOURCES.txt
+powerline_k8sstatus.egg-info/dependency_links.txt
+powerline_k8sstatus.egg-info/requires.txt
+powerline_k8sstatus.egg-info/top_level.txt
