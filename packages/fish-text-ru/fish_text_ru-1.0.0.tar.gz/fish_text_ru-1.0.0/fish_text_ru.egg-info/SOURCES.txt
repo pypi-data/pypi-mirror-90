@@ -1,0 +1,11 @@
+README.md
+setup.py
+fish_text_ru.egg-info/PKG-INFO
+fish_text_ru.egg-info/SOURCES.txt
+fish_text_ru.egg-info/dependency_links.txt
+fish_text_ru.egg-info/requires.txt
+fish_text_ru.egg-info/top_level.txt
+fishtext/__init__.py
+fishtext/api.py
+fishtext/errors.py
+fishtext/types.py
