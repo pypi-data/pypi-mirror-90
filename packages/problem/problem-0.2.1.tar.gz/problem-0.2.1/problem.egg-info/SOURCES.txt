@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+problem/__init__.py
+problem/ai.py
+problem/gservice.py
+problem/timecontrol.py
+problem.egg-info/PKG-INFO
+problem.egg-info/SOURCES.txt
+problem.egg-info/dependency_links.txt
+problem.egg-info/requires.txt
+problem.egg-info/top_level.txt
