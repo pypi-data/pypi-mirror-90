@@ -1,0 +1,49 @@
+{
+  "name": "jupyter-dataserializers",
+  "version": "2.3.0",
+  "description": "A set of widget utilities for array serialization",
+  "keywords": [
+    "jupyter",
+    "widgets"
+  ],
+  "license": "BSD-3-Clause",
+  "author": "Vidar T. Fauske",
+  "main": "lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rimraf lib && rimraf tsconfig.tsbuildinfo",
+    "test": "npm run test:firefox",
+    "test:ci": "karma start --browsers=ChromeCI tests/karma.conf.js",
+    "test:chrome": "karma start --browsers=Chrome tests/karma.conf.js",
+    "test:debug": "karma start --browsers=Chrome --singleRun=false --debug=true tests/karma.conf.js",
+    "test:firefox": "karma start --browsers=Firefox tests/karma.conf.js",
+    "watch": "tsc --build --watch"
+  },
+  "dependencies": {
+    "@jupyter-widgets/base": "^1 || ^2 || ^3 || ^4",
+    "ndarray": "^1.0.18",
+    "pako": "^1.0.6"
+  },
+  "devDependencies": {
+    "@phosphor/widgets": "^1.5.0",
+    "@types/expect.js": "^0.3.29",
+    "@types/mocha": "^8.2.0",
+    "@types/ndarray": "^1.0.6",
+    "@types/node": "^14.14.13",
+    "@types/pako": "^1.0.0",
+    "@types/webpack-env": "^1.13.6",
+    "expect.js": "^0.3.1",
+    "karma": "^5.2.3",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-coverage": "^2.0.1",
+    "karma-firefox-launcher": "^2.1.0",
+    "karma-mocha": "^2.0.1",
+    "karma-mocha-reporter": "^2.2.5",
+    "karma-typescript": "^5.2.0",
+    "karma-typescript-es6-transform": "^5.2.0",
+    "mocha": "^8.2.1",
+    "rimraf": "^3.0.2",
+    "typescript": "~3.8.3"
+  }
+}
