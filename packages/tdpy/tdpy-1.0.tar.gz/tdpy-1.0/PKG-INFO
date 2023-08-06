@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: tdpy
+Version: 1.0
+Summary: A library of MCMC and numerical routines
+Home-page: https://github.com/tdaylan/tdpy
+Author: Tansu Daylan
+Author-email: tansu.daylan@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/tdaylan/tdpy/tarball/v0.2
+Description: UNKNOWN
+Keywords: mcmc,sampling,numerical
+Platform: UNKNOWN
