@@ -1,0 +1,3 @@
+[datasette]
+css_properties = datasette_css_properties
+
