@@ -1,0 +1,14 @@
+open_biopipeline/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+open_biopipeline/blast.py,sha256=BDAFEBs_Q684l2CinAk2gqiwmfJO2jBrxUnmlTwoWuE,1779
+open_biopipeline/kegg.py,sha256=s6PssyH3jw02EtPd6QHlPkuNsLnkn6Z80ZcO6veKWHE,673
+open_biopipeline/proteinatlas.py,sha256=ewynkZ4WlgDRmWV_wcSdk_QdXvzWS_mvIydNshp24Qo,252
+open_biopipeline/uniprot.py,sha256=D2K1u6eEN25oqun1UrRwx4jMn_36ZeV-dkSIeZHWaS4,961
+open_biopipeline/webscrape.py,sha256=izfHNTK80IMUrsCoSOalpMfnTt_Dv_yfOzzPOyY7Zsc,1451
+open_biopipeline/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+open_biopipeline/util/convert_to_fasta.py,sha256=u9nCWuNve-0y14Gf-KqP6hhaLX2_b9Yz21Z7kAAiQ8U,533
+open_biopipeline/util/xml_parser.py,sha256=fNbaPFCr4Qndw5oqGyF5YdG4jnMb6kssksNgZ5aXtTY,1420
+open_biopipeline-0.0.4.dist-info/LICENSE,sha256=RBhg5hIyHCQyj9Hd6pdx4QVzRdIfplLdnbuNB0fm2H4,1093
+open_biopipeline-0.0.4.dist-info/METADATA,sha256=Ydh5RlD04GLKoh_Z43uImwH4yx_RVxA40YpTZGpRIGA,3013
+open_biopipeline-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+open_biopipeline-0.0.4.dist-info/top_level.txt,sha256=qlD-1dw-9yf6lrc7BvZaM-r3y1mo5dNwCN9otF-ferM,17
+open_biopipeline-0.0.4.dist-info/RECORD,,
