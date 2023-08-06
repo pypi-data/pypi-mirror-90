@@ -1,0 +1,10 @@
+audiolibrix/__init__.py,sha256=qDHrVd73qAtSw4mUmi9ynKb3x31CCCEUrzVakJGOg_0,448
+audiolibrix/error.py,sha256=yfwm_MVFIIjoT6ZY5gqBzauVHkacdOsQ5kRhNoigVP8,490
+audiolibrix/http_client.py,sha256=lMqJqkNBxdhsIV4sdLXpnSv9FF41uzKrMrWdIgFY6ZQ,5517
+audiolibrix/resource.py,sha256=Pgh-mBZ-ZaZaOYh59YgQKdR0zxDL-vIRPYJVprqJKLE,6576
+audiolibrix/version.py,sha256=49g4l_uwcihlhSfBc0QFb6xTMdW1PkjodrLhP69lEu8,18
+audiolibrix-0.3.2.dist-info/LICENSE,sha256=aQccuMrquKQTPI104TuT1LAQUb1fjjEAybpNp4qCzGo,1054
+audiolibrix-0.3.2.dist-info/METADATA,sha256=lsBj47hQtdYtSXU3U4w8Pi0gIqePqCBUAVlfr7UPxOw,5853
+audiolibrix-0.3.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+audiolibrix-0.3.2.dist-info/top_level.txt,sha256=CXmuODaZpuGkqy_ClSx0D_yUieeAq8xtg7snapkUIJA,12
+audiolibrix-0.3.2.dist-info/RECORD,,
