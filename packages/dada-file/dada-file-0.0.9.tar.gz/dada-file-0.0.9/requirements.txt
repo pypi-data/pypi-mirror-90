@@ -1,0 +1,10 @@
+
+# DADA #
+dada-utils>=0.0.2
+dada-types>=0.0.2
+dada-http>=0.0.2
+dada-archive>=0.0.2
+dada-serde>=0.0.2
+dada-text>=0.0.2
+dada-stor>=0.0.2
+dada-log>=0.0.2

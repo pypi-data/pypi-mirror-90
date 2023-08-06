@@ -1,0 +1,17 @@
+.dada-version
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+dada_file/__init__.py
+dada_file/core.py
+dada_file/partition.py
+dada_file/schema.py
+dada_file.egg-info/PKG-INFO
+dada_file.egg-info/SOURCES.txt
+dada_file.egg-info/dependency_links.txt
+dada_file.egg-info/requires.txt
+dada_file.egg-info/top_level.txt
+dada_file/tests/__init__.py
+dada_file/tests/test_partition.py
