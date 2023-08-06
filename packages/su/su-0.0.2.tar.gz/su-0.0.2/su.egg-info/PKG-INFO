@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: su
+Version: 0.0.2
+Summary: Debugging tools
+Home-page: https://github.com/thorwhalen/ut/tree/master/util/bugger.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # su
+        Debugging tools
+        
+        
+        To install:	```pip install su```
+        
+Platform: any
+Description-Content-Type: text/markdown
