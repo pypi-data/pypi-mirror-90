@@ -1,0 +1,10 @@
+README.md
+setup.py
+latin_paradigm_finder/__init__.py
+latin_paradigm_finder/__main__.py
+latin_paradigm_finder.egg-info/PKG-INFO
+latin_paradigm_finder.egg-info/SOURCES.txt
+latin_paradigm_finder.egg-info/dependency_links.txt
+latin_paradigm_finder.egg-info/entry_points.txt
+latin_paradigm_finder.egg-info/requires.txt
+latin_paradigm_finder.egg-info/top_level.txt
