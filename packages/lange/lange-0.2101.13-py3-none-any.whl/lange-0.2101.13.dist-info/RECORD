@@ -1,0 +1,15 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/ap.py,sha256=DlnEd4VR-UeSipjq74ZNllwlDPYpG7Xj6IQfWad-KDM,218
+examples/gp.py,sha256=CTnnbKgitKZR3gYUqNUqECoS0wMD6SveyUYZFVd2fOo,217
+lange_/__init__.py,sha256=ZG3FnVdblJ7YQ305U9YDFX-EOwW_6COHxFOKfuJGF9c,175
+lange_/ap.py,sha256=3GnOrxM6vhi_EewS9MYCCBEhqjS6v2qJopo5PjIjx38,1949
+lange_/gp.py,sha256=1h_cIGsxypTrLeaxb2S7C9Jejak0OC7s1rjsWVdFh5E,2076
+lange_/tricks.py,sha256=hh6sk5qnrXcc9MTwyOXWSKNRTJxmNFNx_Vstv0yCsnE,756
+lange_/withbrackets.py,sha256=H_8woiAYvEA5leGn700V_ThZeYdFhLAZQzlWMMZ7C2U,1069
+lange_/abs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lange_/abs/progression.py,sha256=tXOv03s7hlmXGT46kuG0b930JDXWDOXGxK9WN4xXrWg,4150
+lange-0.2101.13.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+lange-0.2101.13.dist-info/METADATA,sha256=tCngeTrrA0MlOQcV7v1yXn4SOuqwTmcrUQu6BGAUVAA,1706
+lange-0.2101.13.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+lange-0.2101.13.dist-info/top_level.txt,sha256=n5fDF02iSycirPnBciZmTpK3I61FDecHe0cmwD82gEM,16
+lange-0.2101.13.dist-info/RECORD,,

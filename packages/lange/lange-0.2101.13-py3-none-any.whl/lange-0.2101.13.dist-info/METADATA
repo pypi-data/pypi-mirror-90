@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: lange
+Version: 0.2101.13
+Summary: Haskell-like intervals for Python
+Home-page: https://github.com/davips/lange
+Author: Davi Pereira-Santos
+Author-email: dpsabc@gmail.com
+License: GPL3
+Download-URL: https://github.com/davips/lange/releases
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: forbiddenfruit
+
+![test](https://github.com/davips/lange/workflows/test/badge.svg)
+[![codecov](https://codecov.io/gh/davips/lange/branch/main/graph/badge.svg)](https://codecov.io/gh/davips/lange)
+
+# lange
+Lazy lists (i.e. Haskell-like ranges) for Python.
+
+### Features
+   * Stable floating-point range generation, e.g.: `0.8 - 0.6 == 0.2` up to 28 digits (customizable).
+   * 
+
+
+### Examples
+
+**Arithmetic Progression**
+<p>
+
+```python3
+# "Forbidden" syntax.
+import lange
+print(-[0.6, 0.8, ..., 2])
+# [0.6 0.8 1.0 1.2 1.4 1.6 1.8 2.0]
+```
+
+```python3
+# Conservative syntax.
+from lange_ import a_
+print(a_[0.6, 0.8, ..., 2])
+# [0.6 0.8 1.0 1.2 1.4 1.6 1.8 2.0]
+```
+
+```python3
+pr = a_[0.6, 0.8, ...]
+print(pr[:5])
+# [0.6 0.8 1.0 1.2 1.4]
+```
+
+
+</p>
+
+**Geometric Progression**
+<p>
+
+```python3
+# "Forbidden" syntax.
+import lange
+print(~[0.4, 0.8, ..., 2])
+# [0.4 0.8 1.6]
+```
+
+```python3
+# Conservative syntax.
+from lange_ import g_
+print(g_[0.4, 0.8, ..., 2])
+# [0.4 0.8 1.6]
+```
+
+```python3
+pr = g_[0.4, 0.8, ...]
+print(pr[:5])
+# [0.4 0.8 1.6 3.2 6.4]
+```
+
+
+</p>
+
+
