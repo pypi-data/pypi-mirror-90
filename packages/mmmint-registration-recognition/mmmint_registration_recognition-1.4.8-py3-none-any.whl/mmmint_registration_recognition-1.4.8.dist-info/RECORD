@@ -1,0 +1,9 @@
+mmmint/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mmmint/registration_recognition/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mmmint/registration_recognition/__main__.py,sha256=0qnoc9FW2fvycfjbJM06FcwjqL7BbHNFyW5uBdgHhl4,1296
+mmmint/registration_recognition/sdk.py,sha256=F-In3HbRbtBJzW0dJJmOQ-eecQL1oIOiSdhXALlWkys,7342
+mmmint/registration_recognition/test_sdk.py,sha256=J3wsh0PU8svBDbCoxYEpnuxzl8GFcPWtRqfDzjQcyus,3212
+mmmint_registration_recognition-1.4.8.dist-info/METADATA,sha256=rfnJ9qpIBblfPUm0mlgbp526iEf565zZfbbnmt8I5rM,3533
+mmmint_registration_recognition-1.4.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mmmint_registration_recognition-1.4.8.dist-info/top_level.txt,sha256=Ed3TlnbuRQGo0E90i_mGkbB1Mmyft9RU76B0QKiQx0w,7
+mmmint_registration_recognition-1.4.8.dist-info/RECORD,,
