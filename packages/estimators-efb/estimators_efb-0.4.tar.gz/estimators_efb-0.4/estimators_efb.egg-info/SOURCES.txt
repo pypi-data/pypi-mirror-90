@@ -1,0 +1,14 @@
+setup.py
+estimators_efb/CapitalLetterEstimator.py
+estimators_efb/CharacterEstimator.py
+estimators_efb/ElectricityEstimator.py
+estimators_efb/FirstPersonEstimator.py
+estimators_efb/ModalVerbEstimator.py
+estimators_efb/NumeralEstimator.py
+estimators_efb/TokenizerEstimator.py
+estimators_efb/__init__.py
+estimators_efb.egg-info/PKG-INFO
+estimators_efb.egg-info/SOURCES.txt
+estimators_efb.egg-info/dependency_links.txt
+estimators_efb.egg-info/not-zip-safe
+estimators_efb.egg-info/top_level.txt
