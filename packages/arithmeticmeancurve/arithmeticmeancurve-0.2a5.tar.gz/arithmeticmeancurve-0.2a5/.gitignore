@@ -1,0 +1,10 @@
+**/__pycache__/*pyc
+**/debug_scripts/**
+**/scratches/**
+.idea/**
+.eggs/**
+docs/_build/**
+.directory
+dist/**
+build/**
+*.egg-info/**
