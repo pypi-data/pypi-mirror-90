@@ -1,0 +1,5 @@
+hestia_earth.schema>=0.4.8
+python-Levenshtein
+habanero
+wos
+xmltodict
