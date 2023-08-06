@@ -1,0 +1,9 @@
+scanpy==1.6.0
+tensorflow==1.15.4
+anndata
+scipy
+pandas
+seaborn
+keras==2.3
+python-igraph
+louvain
