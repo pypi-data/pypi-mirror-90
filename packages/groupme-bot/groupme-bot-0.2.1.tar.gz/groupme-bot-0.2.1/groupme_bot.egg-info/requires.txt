@@ -1,0 +1,4 @@
+APScheduler>=3.6
+requests>=2.25
+starlette>=0.14
+uvicorn>=0.13
