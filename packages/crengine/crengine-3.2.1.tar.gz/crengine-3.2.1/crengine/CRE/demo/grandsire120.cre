@@ -1,0 +1,11 @@
+# grandsire120.cre - Produce an extent of Grandsire Doubles
+
+method grandsire5 "Grandsire" 5
+block extent "Extent of Grandsire Doubles" 5 10
+touch extent grandsire5 PSBS
+repeat extent
+
+set extent.tracebells 125
+set extent.nleads 3
+print extent grandsire120.html
+

@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Running commands from scripts (input, run)</title>
+</head>
+<body>
+<h1>Running commands from scripts (input, run)</h1>
+
+<h2>Synopsis</h2>
+<p>input <em>filename</em></p>
+<p>run <em>filename</em></p>
+
+<h2>Description</h2>
+<p>Both <em>input</em> and <em>run</em> read and run CRE commands from a file.</p>
+<p>
+input runs the commands in the current session; therefore any
+variable reassigments methods and blocks declared in the file will be
+available in the session after the script has completed.
+</p>
+<p>
+In contrast, <em>run</em> executes the script in a subsession. While
+the subsession inherits settings from its parent session, any
+assignments made in the subsession do not persist when transfer of
+control is returned to the original session.
+</p>
+</body>
+</html>

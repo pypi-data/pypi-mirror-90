@@ -1,0 +1,44 @@
+tower t "St Wilfrid"
+set tempo 120
+
+# I Saw Three Ships
+chime t .,2.5 T,.5
+chime t 9 9,.5 8 7,.5
+chime t 5 7,.5 8 X,.5
+chime t 7 9,.5 9 7,.5
+chime t 8 0,.5 T T,.5
+chime t 9 9,.5 8 7,.5
+chime t 5 7,.5 8 X,.5
+chime t 7 9987,.5
+chime t 8,1.5 9,1 .,.5
+chime t .,4
+
+# Good King Wenceslas
+chime t 999899 T,2 ETE0 99,2
+chime t 999899 T,2 ETE0 99,2
+chime t 5X7878 9,2 ETE0 99,2
+chime t TTE099 8,2 5X78 9X,2
+chime t T79,0 .,4
+chime t .,.4
+
+# Ding Dong Merrily on High
+chime t 99 890E,.5
+chime t T,3 T,1
+chime t E990
+chime t 99,2
+chime t 99 890E,.5
+chime t T,3 T,1
+chime t E990
+chime t 99,2
+chime t 5,1.5 X7X57,.5
+chime t X,1.5 787X8,.5
+chime t 7,1.5 89879,.5
+chime t 8,1.5 90980,.5
+chime t 9,1.5 0E09E,.5
+chime t 0,1.5 E,.5 TT
+chime t E990
+chime t 99,2
+
+
+
+

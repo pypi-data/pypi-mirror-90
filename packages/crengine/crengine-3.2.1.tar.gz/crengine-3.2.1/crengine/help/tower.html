@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Setting up sound of bells (tower)</title>
+</head>
+<body>
+<h1>Setting up sound of bells (tower)</h1>
+
+<h2>Synopsis</h2>
+<p>tower <em>tower_id</em> <em>name</em></p>
+
+<h2>Description</h2>
+<p>
+CRE has the capability to ring bells audibly using a set of bell
+samples (referred to as a tower). Each tower consists of a set of bell
+sound sample files in WAV format, to which CRE has the ability to
+sequence them to ring methods (or even tunes!).
+</p>
+<p>
+Sound rendering is platform dependent. At present it is supported
+natively on Windows (winsound) and MacOS (Objective C library). It may
+be also be made to work on other platforms, such as LINUX, using the
+third party PyGame package.
+</p>
+
+<h2>Towers</h2>
+<p>
+Each tower consists of a subfolder within the <em>bellview3</em>
+folder; for example, if Bell View is installed in
+</p>
+<pre>
+/Users/fred/bellview3
+</pre>
+<p>
+then the bell samples for <em>Harrogate St Wilfrid</em> (an 8 bell
+tower, tenor 6cwt in C) are located in
+</p>
+<pre>
+/Users/fred/bellview3/towers/Harrogate St Wilfrid
+</pre>
+<p>
+In this folder are files 1.wav to 8.wav which are the samples for
+bells 1 to 8 and a configuration file tower.csv
+</p>
+
+<h2>Using a tower</h2>
+<p>
+To use a tower in CRE, then it needs to be loaded into the workspace
+and assigned to an identifier; for example, to use Harrogate St
+Wilfrid and assign the identifier <em>wilf</em> to it:
+</p>
+<pre>
+CRE> tower wilf "Harrogate St Wilfrid"
+</pre>
+<p>
+Once a tower is loaded, it may be used by <em>ring</em> to ring
+methods or by <em>chime</em> to play tunes. The tower may be tested by
+chiming rounds on it:
+</p>
+<pre>
+CRE> chime wilf 12345678
+</pre>
+
+
+
+
+
+</body>
+</html>

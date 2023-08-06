@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Handling objects (delete, copy, rename)</title>
+</head>
+<body>
+<h1>Handling objects (delete, copy, rename)</h1>
+
+<h2>Synopsis</h2>
+<p>delete <em>object_id</em></p>
+<p>copy <em>object_id</em> <em>new_object_id</em></p>
+<p>rename <em>object_id</em> <em>new_object_id</em></p>
+
+<h2>Description</h2>
+<p>
+These commands handle user defined objects in CRE (blocks, methods, towers)
+</p>
+
+<p>
+To remove an object from the workspace, use the <em>delete</em> command; for example
+</p>
+<pre>
+CRE> delete grandsire5
+</pre>
+
+<p>
+Objects may be copied by using <em>copy</em>; for example
+</p>
+<pre>
+CRE> copy grandsire5 grandsire5b
+</pre>
+<p>
+N.B. towers are not actually copied - this command assigns an
+alternative identifier to it. However, blocks and methods are copied
+in their entirety, so making changes to one of the copies will not
+affect the other.
+</p> 
+
+<p>
+Objects can also be renamed; for example
+</p>
+<pre>
+CRE> rename fred freda
+</pre>
+
+
+</body>
+</html>

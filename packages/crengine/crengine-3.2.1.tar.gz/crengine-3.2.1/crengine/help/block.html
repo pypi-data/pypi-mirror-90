@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Defining blocks (block)</title>
+</head>
+<body>
+<h1>Defining blocks (block)</h1>
+<h2>Synopsis</h2>
+<p>block <em>id</em> <em>description</em> <em>nbells</em> [<em>leadlen</em>]</p>
+<p>clear <em>id</em></p>
+
+<h2>Description</h2>
+<p>A block is a list of rows to be rung. It is usually a true
+performance, e.g. a plain course in a method, touch, quarter peal or a
+full peal, but may be a false composition
+</p>
+
+<h2>Declaring a new block</h2>
+<p>
+The <em>block</em> comand declares a new block containing only the
+initial reference row (rounds) and to which additional rows may be
+appended. The following arguments are required:
+</p>
+<p>id: Identifier for block</p>
+<p>description: Description of block</p>
+<p>nbells: Number of bells (3-16)</p>
+<p>leadlen: Length of a plain lead (optional)</p>
+<p>
+Specifying the length of the plain lead (leadlen) ensures that the
+method is printed correctly with no leads broken across columns. By
+default it is twice the number of bells, which is suitable for
+treble-hunting methods; e.g. Plain Bob. For treble-dodging methods it
+should be changed to 4 x nbells (e.g. 24 for surprise minor). Stedman
+and Erin use a fixed lead length of 6 rows.
+</p>
+<p>
+The following example declares a block, suitable for touches of Plain Bob Minor:
+</p>
+<pre>
+CRE> block fred "Fred's Touch of Plain Bob" 6 12
+</pre>
+
+<h2>Clearing a block</h2>
+<p>
+The <em>clear</em> command removes all rows from the block, except the
+initial rounds. Block settings, such as number of bells, lead length
+and any block level variables are preserved.
+</p>
+
+
+</body>
+</html>

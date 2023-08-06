@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Setting variables (set, unset)</title>
+</head>
+<body>
+<h1>Setting variables (set, unset)</h1>
+
+<h2>Synopsis</h2>
+<p>set <em>variable</em> <em>value</em></p>
+<p>set <em>object.variable</em> <em>value</em></p>
+<p>unset <em>object.variable</em></p>
+
+<h2>Description</h2>
+<p>
+CRE uses variables to control how the program works, including how
+method are rung and printed. These variables may be set either
+globally or local to a particular method or block.
+</p>
+<p>
+Variables are set globally using the set command; for example to
+show bells 1 and 4 with trace lines on all methods:
+</p>
+<pre>CRE> set tracebells 14</pre>
+<p>
+To set a variable only for a particular method or block, then its id
+must be prefixed to the name; for example to show bells 1 and 4 with
+tracelines for just block <em>pb5</em>:
+</p>
+<pre>CRE> set pb5.tracebells 14</pre>
+<p>
+Settings for method or block level variables may be cancelled by
+using <em>unset</em>; for example to revert the trace lines of
+block <em>pb5</em> back to the global setting
+</p>
+<pre>CRE> unset pb5.tracebells</pre>
+<p>
+Unsetting a variable globally is not permitted; to do so would have
+an adverse effect on the functioning of CRE.
+</p>
+</body>
+</html>

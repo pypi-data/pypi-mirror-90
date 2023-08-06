@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Tower Mapping File (tower.csv)</title>
+</head>
+<body>
+<h1>Tower Mapping File (tower.csv)</h1>
+
+<p>
+The tower map file of a tower determines which bells are used to ring
+methods for each possible number of bells (stages). It is a CSV file
+called <em>tower.csv</em> in a tower folder and may be edited with a
+spreadsheet application e.g. Excel.
+</p>
+
+<p>
+For an 8 bell tower an sample bell map is:
+</p>
+<pre>
+key,value
+nbells,8
+bellset,12345678
+3,345
+4,1234
+5,34567
+6,345678
+7,2345678
+8,12345678
+</pre>
+
+<p>The following settings are used:</p>
+
+<p><em>nbells</em> - This is the maximum number of bells that may be
+rung on this tower. This setting must always be present.</p>
+
+<p><em>bellset</em> - These are the bell sample files which are
+available in this folder; for example 12345678 means there are files
+called 1.wav, 2.wav, all the way through to 8.wav.</p>
+
+<p><em>(number)</em> - These settings specify which bells are rung for
+methods of that number of bells. By default, a continuous sequence of
+bells ending at the tenor is rung. For example for 5 bells, 4,5,6,7,8
+would be rung, but here it is overriden by <em>5,34567</em> so that
+the minor five (3,4,5,6,7) would be rung.</p>
+
+<p><em>samples</em> - This optional setting may be used to specify
+that the sample files from another tower folder be used instead on the
+ones in this folder. This enables the same set of bell sample files to
+be used with a different configuration; for example, on a 12 bell
+tower, an option to ring a light eight using a semitone bell rather
+than the back eight.</p>
+
+
+</body>
+</html>

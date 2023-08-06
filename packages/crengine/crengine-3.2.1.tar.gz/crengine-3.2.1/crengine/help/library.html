@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>CRE Method Library (makelibrary, load, unload, list)</title>
+</head>
+<body>
+<h1>CRE Method Library (makelibrary, load, unload, list)</h1>
+
+<h2>Synopsis</h2>
+
+<p>makelibrary</p>
+<p>loadvolume <em>volume_id</em> <em>method_file</em></p>
+<p>unloadvolume <em>volume_id</em></p>
+<p>listvolumes</p>
+<p>listmethods</p>
+
+<h2>Description</h2>
+<p>
+CRE stores methods in a database. It is maintained in a number of CSV
+files, which are also called volumes (which may be edited in Excel).
+</p>
+<p>CRE comes with the following volumes:</p>
+<p><em>plain</em> - Plain methods (treble plain hunts)</p>
+<p><em>principle</em> - Principles: all bells do the same work</p>
+<p><em>trebledodging</em> - treble-bob, delight and surprise</p>
+<p>These volumes exist as CSV files in the <em>methods</em> folder of
+the CRE folder structure</p>
+
+<h2>Creating the Database</h2>
+<p>
+On the first time that CRE run, the library database is automatically
+created with the default volumes. The library is retained and
+available for subsequent runs. To recreate the library at anytime, use
+the command <em>makelibrary</em>.
+</p>
+
+<h2>Listing available volumes</h2>
+<p>
+To list volumes in the library, use the <em>listvolumes</em> command. It only
+shows the name of the volume, and not the contents. For example:
+</p>
+<pre>
+CRE> listvolumes
+default
+plain
+principle
+trebledodging
+</pre>
+
+<p>
+N.B. there is a volume called <em>default</em> which consists of plain
+hunting on all the available numbers of bells. It cannot be changed or
+removed.
+</p>
+
+<h2>Making changes to volume and reloading</h2>
+<p>
+In order to make changes, for example to add a new method, the volume
+CSV file must be edited and reloaded into the library. To reload a
+particular volume, use the <em>loadvolume</em> command; for example:
+</p>
+<pre>
+CRE> loadvolume trebledodging trebledodging.csv
+</pre>
+
+<h2>Removing a volume</h2>
+<p>
+To remove a volume, use the <em>unloadvolume</em> command; for example
+</p>
+<pre>
+CRE> unloadvolume trebledodging
+</pre>
+
+<h2>Structure of a volume</h2>
+
+<p>
+The comma separated value (CSV) file for the volume has the following
+columns, which are also used by the <em>method</em> command:
+</p>
+
+<p><em>Method Name (A)</em> - name of method, without the suffix</p>
+<p><em>Number of Bells (B)</em> - number of bells</p>
+<p><em>Plain Lead (C)</em> - place notation for a plain lead. Excel
+will output the value in quotes if it contains any commas</p>
+<p><em>Call Row (D)</em> - row of plain lead where call takes effect
+(0 is the leadend, -1 is the penultimate row etc)</p>
+<p><em>Bob (E)</em> - place notation of the rows to be substituted for a
+bob (blank if bobs not used)</p>
+<p><em>Single (F)</em> - place notation of the rows to be substituted for
+a single (blank if singles not used)</p>
+
+<p>
+Volumes can contain any number of methods, provided the method name
+(for a particular number of bells) is unique. Also the method name
+must be unique across all volumes; for example it is not possible to
+call a 6 bell method "Fred" in both the plain and trebledodging
+volumes. In this example, Plain Bob Minimus, Grandsire Doubles and
+Plain Bob Doubles are defined.
+</p>
+
+<pre>
+Method Name,Number of Bells,Plain Lead,Call Row,Bob,Single
+Plain Bob,4,"&x14x14,12",0,,
+Grandsire,5,"3,&1.5.1.5.1",-1,3.1,3.123
+Plain Bob,5,"&5.1.5.1.5,125",0,145,123
+</pre>
+
+</body>
+</html>

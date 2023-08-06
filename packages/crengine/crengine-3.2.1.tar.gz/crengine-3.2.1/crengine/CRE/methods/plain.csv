@@ -1,0 +1,96 @@
+Method Name,Number of Bells,Plain Lead,Call Row,Bob,Single
+Canterbury Place,4,"&x14.12.34,14",0,,
+Double Bob,4,"&x14x34,12",0,,
+Double Canterbury Place,4,"&34.14.12.34,12",0,,
+Double Court Place,4,"&34.14.12.14,14",0,,
+Plain Bob,4,"&x14x14,12",0,,
+Reverse Bob,4,"&x14x34,14",0,,
+Reverse Canterbury Place,4,"&34.14x14,12",0,,
+Reverse Court Place,4,"&x14.12.14,14",0,,
+Reverse St Nicholas Bob,4,"&x14.12.34,12",0,,
+Single Court Place,4,"&34.14x14,14",0,,
+St Nicholas Bob,4,"&34.14x34,12",0,,
+All Saints Place,5,"&345.1.5.1.5,123",0,145,123
+Antelope Place,5,"3,&145.5.1.5.1",-1,3.1,3.123
+Bastow Little Bob,5,"5,&1.3.1",0,,
+Bistow Little Bob,5,"&5.125,1",0,,
+Eynesbury Bob,5,"&5.1.125.123.5,125",0,145,123
+Grandsire,5,"3,&1.5.1.5.1",-1,3.1,3.123
+New Bob,5,"&3.1.5.3.5,125",0,145,123
+Plain Bob,5,"&5.1.5.1.5,125",0,145,123
+Reverse Canterbury Pleasure Place,5,"&345.1.5.1.5,125",0,145,123
+Reverse St Simon's Bob,5,"&3.1.5.1.145,1",0,145,123
+Shipway Place,5,"&3.145.5.1.5,125",0,145,123
+St Hilary Bob,5,"&3.145.125.3.5,125",0,145,123
+St Martin's Bob,5,"&5.1.5.123.5,125",0,145,123
+St Nicholas Bob,5,"&345.1.5.3.5,125",0,145,123
+St Osmund Bob,5,"&5.1.125.3.5,125",0,145,123
+St Remigius Bob,5,"&345.1.125.3.5,125",0,145,123
+St Simon's Bob,5,"&5.1.5.3.5,125",0,145,123
+Stedman Bob,5,"&5.1.5.3.125,1",0,145,123
+Union Bob,5,"&3.1.5.1.345,1",0,145,123
+Winchendon Place,5,"&345.1.5.123.5,125",0,145,123
+Canterbury Bob,6,"&x16x16.34.56,16",0,14,1234
+Childwall Bob,6,"&x16x36.12.36,12",0,14,1234
+College Bob,6,"&x16x36x36,16",0,14,1234
+Crayford Little Bob,6,"&x16x14,16",0,14,1234
+Double Bob,6,"&x16x16x56,12",0,14,1234
+Double Canterbury Pleasure Bob,6,"&34.16x16.34.56,12",0,14,1234
+Double Court Bob,6,"&x14x36x16,16",0,14,1234
+Double Dunkirk Bob,6,"&36.14x36.14.36,14",0,16,1236
+Double Oxford Bob,6,"&x14x36x56,12",0,14,1234
+Frodsham Bob,6,"&36.14x36x56,12",0,14,1234
+Grandsire,6,"36,&16x16x16x",0,36.16,36.1236
+Hereward Bob,6,"&x14x36x16,12",0,14,1234
+Little Bob,6,"&x16x14,12",0,14,1234
+Plain Bob,6,"&x16x16x16,12",0,14,1234
+Reverse Bob,6,"&x16x16x56,16",0,14,1234
+Single Canterbury Pleasure Bob,6,"&34.16x16x16,12",0,14,1234
+Single Court Bob,6,"&x14x16x16,16",0,14,1234
+Single Oxford Bob,6,"&x14x16x16,12",0,14,1234
+St Clement's College Bob,6,"&x16x36x36,12",0,14,1234
+St Lawrence Little Bob,6,"&36.14x14,12",0,14,1234
+Thelwall Bob,6,"&x14x36.12.56,12",0,14,1234
+College Bob,7,"7,&1.7.1.7.3.7.3",-1,3.1,3.123
+Croydon Bob,7,"&3.147.5.1.7.5.167,1",0,147,12347
+Double Court Bob,7,"7,&1.5.1.7.3.7.1",-1,3.1,3.123
+Double Grandsire,7,"3,&1.7.1.7.1.7.5",-1,3.1,3.123
+Double Oxford Bob,7,"3,&1.5.1.7.3.7.5",-1,3.1,3.123
+Grandsire,7,"3,&1.7.1.7.1.7.1",-1,3.1,3.123
+Hereward Bob,7,"3,&1.5.1.7.3.7.1",-1,3.1,3.123
+London Bob,7,"7,&1.5.1.7.3.7.5",-1,3.1,3.123
+Middlesex Bob,7,"&5.1.7.1.7.1.7,125",0,147,12347
+New Bob,7,"&3.1.7.3.7.3.7,127",0,147,12347
+Penning's Bob,7,"&5.147.5.3.147.3.7,127",0,147,12347
+Plain Bob,7,"&7.1.7.1.7.1.7,127",0,147,12347
+Reverse Grandsire,7,"7,&1.7.1.7.1.7.5",-1,3.1,3.123
+Single Court Bob,7,"7,&1.5.1.7.1.7.1",-1,3.1,3.123
+Single Oxford Bob,7,"3,&1.5.1.7.1.7.1",-1,3.1,3.123
+St Clement's College Bob,7,"3,&1.7.1.7.3.7.3",-1,3.1,3.123
+St Simon's Bob,7,"&7.1.7.3.7.3.7,127",0,147,12347
+Waterloo Reverse Bob,7,"&3.1.5.3.7.5.167,1",0,147,12347
+Chesterfield Bob,8,"&x18x16x58x78,12",0,14,1234
+Double Cambridge Cyclic Bob,8,x16x16x18x78x38x38x18x12,0,14,1234
+Double Coslany Court Bob,8,"&x14.58.36.14.58x18,18",0,14,1234
+Double Norwich Court Bob,8,"&x14x36x58x18,18",0,16,1678
+Double Oxford Bob,8,"&x14x36x58x78,12",0,14,1234
+Gainsborough Little Bob,8,"&x18x18x16,12",0,14,1234
+Grandsire,8,"38,&18x18x18x18x",-1,38.18,38.1238
+Little Bob,8,"&x18x14,12",0,14,1234
+Plain Bob,8,"&x18x18x18x18,12",0,14,1234
+St Clement's College Bob,8,"&x18x38x38x38,12",0,14,1234
+Truro Court Bob,8,"&x14x38.14.38.14.38,18",0,14,1234
+Double Norwich Court Bob,9,"9,&1.5.1.7.3.9.5.9.1",4,3,123
+Grandsire,9,"3,&1.9.1.9.1.9.1.9.1",-1,3.1,3.123
+Plain Bob,9,"&9.1.9.1.9.1.9.1.9,129",0,149,12349
+Double Norwich Court Bob,10,"&x14x30x18x70x10,10",0,18,1890
+Grandsire,10,"30,&10x10x10x10x10x",-1,30.10,30.1230
+Little Bob,10,"&x10x14,12",0,14,1234
+Plain Bob,10,"&x10x10x10x10x10,12",0,14,1234
+Double Norwich Court Bob,11,"E,&1.5.1.E.3.9.1.E.7.E.1",4,3,123
+Grandsire,11,"3,&1.E.1.E.1.E.1.E.1.E.1",-1,3.1,3.123
+Plain Bob,11,"&E.1.E.1.E.1.E.1.E.1.E,12E",0,14E,1234E
+Double Norwich Court Bob,12,"&x14x3Tx1Tx10x9Tx1T,1T",0,10,10ET
+Grandsire,12,"3T,&1Tx1Tx1Tx1Tx1Tx1Tx",-1,3T.1T,3T.123T
+Little Bob,12,"&x1Tx14,12",0,14,1234
+Plain Bob,12,"&x1Tx1Tx1Tx1Tx1Tx1T,12",0,14,1234

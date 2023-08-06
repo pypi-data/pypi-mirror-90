@@ -1,0 +1,21 @@
+# April Day - a variation on Plain Bob Doubles
+# Instead of the usual bob, the call is a Grandsire Single
+# i.e. it takes effect one row before the lead-end, effecting
+# that row, the lead-end and the first row of the next lead
+
+# Create method - plain bob doubles with Grandsire calls
+# Only the single will be used!
+method ad "April Day" 5 "&5.1.5.1.5,12" -1 "3.1.3" "3.123.3"
+
+# Ring a 120 - singles are called when 3rd is making 2nds
+block ad120 "120 April Day Doubles" 5 10
+touch ad120 ad sppp
+repeat ad120
+
+# print out touch
+set ad120.tracebells 123
+set ad120.nleads 4
+print ad120
+print ad120 april-day.html
+
+

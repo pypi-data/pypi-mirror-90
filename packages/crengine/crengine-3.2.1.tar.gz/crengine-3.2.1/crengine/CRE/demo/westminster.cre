@@ -1,0 +1,18 @@
+# Westminster Chimes
+
+tower sm "St Michael"
+set tempo 120
+
+
+chime sm 312 6,2
+chime sm 321 3,2
+chime sm 132 6,2
+chime sm 621 3,2
+chime sm .,8
+
+chime sm 6,8 6,8 6,8 6,8 6,8 6,8 6,8 6,8 6,8 6,8 6,8 6,8
+
+
+
+
+

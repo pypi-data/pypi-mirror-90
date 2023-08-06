@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Adding comments to blocks (comment)</title>
+</head>
+<body>
+<h1>Adding comments to blocks (comment)</h1>
+
+<h2>Synopsis</h2>
+<p>comment <em>block_id</em> <em>row_number</em> <em>text</em></p>
+<p>showcomments <em>block_id</em></p>
+<p>uncomment <em>block_id</em> <em>row_number</em></p>
+
+<h2>Description</h2>
+<p>
+Printable comments may be added to blocks; for example explanations
+useful to learners; e.g. pass treble in 2-3, dodge 4-5 up. To do this,
+the <em>comment</em> command should be used after the method has been
+rung; for example
+</p>
+<pre>
+CRE> method pb5 "Plain Bob" 5
+CRE> block plain "Plain Course of Bob Doubles" 5 10
+CRE> plaincourse plain pb5
+CRE> comment plain 8 "Pass treble in 2-3"
+CRE> comment plain 10 "Dodge 3-4 up"
+CRE> set plain.commentlen 20
+CRE> set plain.showcomments on
+CRE> print plain
+</pre>
+<p>
+N.B. The variable <em>showcomments</em> needs to be <em>on</em>
+and <em>commentlen</em> must be set to the maximum length for comments
+to be correctly printed.
+</p>
+<p>
+To list comments, use the <em>showcomment</em> command; for example
+</p>
+<pre>
+CRE> showcomments plain
+8 "pass treble 2-3"
+10 "Dodge 3-4 up"
+</pre>
+<p>
+To remove comments, the <em>uncomment</em> command may be used; for
+example to remove the comment on line 8:
+</p>
+<pre>
+CRE> uncomment plain 8
+</pre>
+
+
+</body>
+</html>

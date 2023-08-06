@@ -1,0 +1,44 @@
+# Plain Bob Doubles (Plain Course)
+
+# Cheat sheet with commentary
+
+# load method
+method pb5 "plain bob doubles"
+
+# ring a plain course
+block pc "Plain Bob Doubles (Plain Course)" 5 10
+plaincourse pc pb5
+
+# add comments
+comment pc 6 "Pass treble in 5th place"
+comment pc 10 "Dodge 3-4 down"
+comment pc 17 "Pass treble in 4th place"
+comment pc 20 "4 blows behind"
+comment pc 28 "Pass treble in 3rd place"
+comment pc 30 "Dodge 3-4 up"
+comment pc 39 "Pass treble in 2nd place"
+comment pc 40 "Make 2nds place"
+
+# text output
+set pc.commentwidth 20
+set pc.commentlen 40
+set pc.showcomments on
+set pc.traceformat ansi
+set pc.tracebells 124
+print pc
+
+# create SVG output
+# WARNING - comments not working!
+set pc.skel off
+set pc.tracebells 12
+set pc.colour1 red
+set pc.colour2 blue
+set pc.weight2 bold
+set pc.fontsize 16
+set pc.nleads 4
+print pc plainbob5-pc.html
+
+# EPS output (viewable by ghostscript)
+#print pc plainbob5-pc.eps
+
+

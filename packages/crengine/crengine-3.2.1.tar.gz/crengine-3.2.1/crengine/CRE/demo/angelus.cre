@@ -1,0 +1,45 @@
+tower sw "St Wilfrid"
+set tempo 30
+
+echo The angel of the Lord brought tidings unto Mary.
+echo And she conceived by the Holy Ghost.
+echo
+chime sw EEE
+echo Hail Mary, full of grace, the Lord is with thee.
+echo Blessed art thou amongst women and blessed is the fruit of thy womb, Jesus.
+echo Holy Mary, Mother of God, pray for us sinners now, and at the hour of our death. Amen.
+echo
+sleep 10
+
+echo Behold the handmaid of the Lord.
+echo Be it unto me according to thy word.
+echo
+chime sw EEE
+echo Hail Mary, full of grace, the Lord is with thee.
+echo Blessed art thou amongst women and blessed is the fruit of thy womb, Jesus.
+echo Holy Mary, Mother of God, pray for us sinners now, and at the hour of our death. Amen.
+echo
+sleep 10
+
+echo And the Word was made flesh.
+echo And dwelt amongst us.
+echo
+chime sw EEE
+echo Hail Mary, full of grace, the Lord is with thee.
+echo Blessed art thou amongst women and blessed is the fruit of thy womb, Jesus.
+echo Holy Mary, Mother of God, pray for us sinners now, and at the hour of our death. Amen.
+echo
+sleep 10
+
+echo Pray for us, O holy Mother of God.
+echo That we may be made worthy of the promises of Christ.
+echo
+chime sw EEEEEEEEE
+echo We beseech thee, O Lord, pour thy grace into our hearts,
+echo that as we have known the Incarnation of thy Son Jesus Christ by the message of an angel,
+echo so by his + Cross and Passion we may be brought unto the glory of his Resurrection;
+echo through the same Christ our Lord. Amen.
+echo
+
+
+
