@@ -1,0 +1,16 @@
+kubewatcher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kubewatcher/handlers.py,sha256=qSLp1oHe2fprcwlYKCu7ok01eQGXlR84K2i4znHo0Io,3409
+kubewatcher/kubewatcher.py,sha256=7ANDaI8ahiOMx6I7NoSbLQC6hsuHr_NBbVFobg80YKE,4801
+kubewatcher/path_extractor.py,sha256=oSEie6V5dss0mPAuImSi8XCUNC-GCGDxcyo-ozN5fuc,2487
+kubewatcher/thread_launcher.py,sha256=IPvzryod2fwSnnLQjC__7qMd3JnOPOfUzzzDZaSpWJw,298
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_kubewatcher__api_version_does_not_match.py,sha256=o_Q68DBx-iUEMMyYzE_sPcvuFV-1gRwAHlvVlWTy9S4,1149
+tests/test_kubewatcher__generate_message.py,sha256=s_qf2DKFRkCb8HPEcuPK9rHlPh1-aRYirjVasYCfFdw,1039
+tests/test_kubewatcher__namespace_ignored.py,sha256=aqeubu0LTat8fhp6YMUrdW-1SOSSV51WhiU69eb9kdg,952
+tests/test_kubewatcher__namespace_not_included.py,sha256=1fKHkxdyDBHI6wmALQD5dYoGWVbbNkzWoBETBrtPnHk,991
+tests/test_kubewatcher__trigger.py,sha256=uL1blI8HBvicNHMsYG47MklGX5frQp8tXYWxuxSqDuw,2762
+kubewatcher-1.6.0.dist-info/METADATA,sha256=LflZNAfcbN_E5W1sM0aRv03xpbXptqyKT13Ml0mdLEI,442
+kubewatcher-1.6.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+kubewatcher-1.6.0.dist-info/entry_points.txt,sha256=oVaLpt-vCPeloH4nhnXMKjPvWpFx3-tSPI9Ue0lwuwU,61
+kubewatcher-1.6.0.dist-info/top_level.txt,sha256=hjMwYw_owb2pqeOjqiP1nQG5JvwHRrnmnGB_w8QJA1o,18
+kubewatcher-1.6.0.dist-info/RECORD,,
