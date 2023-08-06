@@ -1,0 +1,3 @@
+[console_scripts]
+renspell=renspell.main:main
+

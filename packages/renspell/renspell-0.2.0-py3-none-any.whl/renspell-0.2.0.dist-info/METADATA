@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: renspell
+Version: 0.2.0
+Summary: A spell-checker for Ren'Py scripts
+License: GPL-3.0-only
+Author: Harlan Lieberman-Berg
+Author-email: hlieberman@setec.io
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Requires-Dist: language-tool-python (>=2.4.7,<3.0.0)
