@@ -1,0 +1,9 @@
+README.md
+setup.py
+effpdf/__init__.py
+effpdf/pdf2image.py
+effpdf/pdf2text.py
+effpdf.egg-info/PKG-INFO
+effpdf.egg-info/SOURCES.txt
+effpdf.egg-info/dependency_links.txt
+effpdf.egg-info/top_level.txt
