@@ -1,0 +1,9 @@
+README.md
+setup.py
+skoobpy/__init__.py
+skoobpy/__main__.py
+skoobpy/skoobpy.py
+skoobpy.egg-info/PKG-INFO
+skoobpy.egg-info/SOURCES.txt
+skoobpy.egg-info/dependency_links.txt
+skoobpy.egg-info/top_level.txt
