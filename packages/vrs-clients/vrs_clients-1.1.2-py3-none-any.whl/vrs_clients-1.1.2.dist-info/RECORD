@@ -1,0 +1,9 @@
+vrs_clients/__init__.py,sha256=2Os1HPZRWpqNw-1MYmJxFxNt8EKeHJOCG-NqFQ1NpP8,440
+vrs_clients/models.py,sha256=BwmXFbhzSyL8way_yMvrGG3CDaRX1f2HTCjwO5J-zLU,3536
+vrs_clients/utils.py,sha256=M-wSdaVRN_jSuJxSh0AWOOl3j8xz49NTYezT_yqUcBM,1428
+vrs_clients/vrs_clients.py,sha256=eA51OGyVVTfzf51dbeOe13l01mgaDjkNHf1qy-5Z4Fg,4231
+vrs_clients-1.1.2.dist-info/LICENSE.txt,sha256=S9X_6Wphp7hv_2oZKR6dUNq-bUvewqXeEBiDQ8CVJMY,575
+vrs_clients-1.1.2.dist-info/METADATA,sha256=PMLj6SHqfz_qMjvchHkGj-shfTihyLTQxrFmNT-aDKI,828
+vrs_clients-1.1.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+vrs_clients-1.1.2.dist-info/top_level.txt,sha256=6RG0Eci6i8XePnsx8yKpYWNg-m2YYA0sBBIWJuPTerM,12
+vrs_clients-1.1.2.dist-info/RECORD,,
