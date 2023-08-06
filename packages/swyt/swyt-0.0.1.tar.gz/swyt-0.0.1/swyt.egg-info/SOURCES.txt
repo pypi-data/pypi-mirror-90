@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+swyt/__init__.py
+swyt.egg-info/PKG-INFO
+swyt.egg-info/SOURCES.txt
+swyt.egg-info/dependency_links.txt
+swyt.egg-info/top_level.txt

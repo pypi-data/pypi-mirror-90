@@ -1,0 +1,2 @@
+def swyt():
+    return "swyt"
