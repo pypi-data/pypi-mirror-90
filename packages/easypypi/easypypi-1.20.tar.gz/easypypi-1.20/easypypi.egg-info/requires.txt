@@ -1,0 +1,7 @@
+cleverdict
+pysimplegui
+click
+requests
+twine
+keyring
+mechanicalsoup
