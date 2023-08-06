@@ -1,0 +1,2 @@
+include README.rst CHANGES.rst
+recursive-include tests/root *.rst Makefile conf.py
