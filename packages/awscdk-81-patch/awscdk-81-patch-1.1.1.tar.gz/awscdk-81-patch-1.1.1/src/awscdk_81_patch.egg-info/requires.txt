@@ -1,0 +1,4 @@
+aws-cdk.lambda-layer-awscli==1.81.0
+aws-cdk.lambda-layer-kubectl==1.81.0
+jsii<2.0.0,>=1.16.0
+publication>=0.0.3
