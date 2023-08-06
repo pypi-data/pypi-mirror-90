@@ -1,0 +1,5 @@
+trashpanda>=0.7b0
+pandas
+numpy
+matplotlib
+scipy
