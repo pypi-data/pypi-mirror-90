@@ -1,0 +1,8 @@
+README.md
+setup.py
+reSolved.egg-info/PKG-INFO
+reSolved.egg-info/SOURCES.txt
+reSolved.egg-info/dependency_links.txt
+reSolved.egg-info/top_level.txt
+resolved/__init__.py
+resolved/domlabs.py
