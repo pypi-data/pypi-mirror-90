@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: trainingbar
+Version: 0.0.1
+Summary: trainingbar
+Home-page: http://github.com/trisongz/trainingbar
+Author: Tri Songz
+Author-email: ts@scontentenginex.com
+License: UNKNOWN
+Keywords: ml training,model training,tqdm,progress bar,monitoring,google cloud,tensorflow,pytorch
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+Requires-Dist: rich
+Requires-Dist: tensorflow (>=1.15.0)
+Requires-Dist: psutil
+Requires-Dist: typer
+Requires-Dist: pysimdjson
+Requires-Dist: google-auth
+Provides-Extra: gpu
+Requires-Dist: gputil ; extra == 'gpu'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Provides-Extra: tpu
+Requires-Dist: tpunicorn ; extra == 'tpu'
+Requires-Dist: google-cloud-monitoring ; extra == 'tpu'
+
+# trainingbar
+
+ Make Training Models look a little nicer. The next evolution from TPUBar
+
+Don't download this..yet
+
