@@ -1,0 +1,4 @@
+addict
+numpy
+h5py
+filelock
