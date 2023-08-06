@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: agrc-supervisor
+Version: 1.1.0
+Summary: A watchdog module for scheduled scripts that sends notifications, including any uncaught exceptions.
+Home-page: https://github.com/agrc/supervisor
+Author: Jake Adams, AGRC
+Author-email: jdadams@utah.gov
+License: MIT
+Project-URL: Issue Tracker, https://github.com/agrc/supervisor/issues
+Keywords: gis
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Requires-Dist: requests
+Provides-Extra: tests
+Requires-Dist: pylint-quotes (==0.2.*) ; extra == 'tests'
+Requires-Dist: pylint (==2.5.*) ; extra == 'tests'
+Requires-Dist: pytest-cov (==2.9.*) ; extra == 'tests'
+Requires-Dist: pytest-instafail (==0.4.*) ; extra == 'tests'
+Requires-Dist: pytest-isort (==1.0.*) ; extra == 'tests'
+Requires-Dist: pytest-mock ; extra == 'tests'
+Requires-Dist: pytest-pylint (==0.17.*) ; extra == 'tests'
+Requires-Dist: pytest-watch (==4.2.*) ; extra == 'tests'
+Requires-Dist: pytest (==5.4.*) ; extra == 'tests'
+Requires-Dist: yapf (==0.30.*) ; extra == 'tests'
+
+UNKNOWN
+
+
