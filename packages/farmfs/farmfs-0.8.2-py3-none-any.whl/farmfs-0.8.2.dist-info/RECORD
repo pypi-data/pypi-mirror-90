@@ -1,0 +1,17 @@
+farmfs/__init__.py,sha256=fCMvuHPPWB0VkfudQPbhMZ6NVdP1S60yaeNVclyRmvE,1165
+farmfs/blobstore.py,sha256=gEC5o9x3aKkvOd518x-x7BaKOzV0cziL6rA_iFWk0ZA,5269
+farmfs/fs.py,sha256=3ZxoFZBfhDMsmzNSaIHxE3i7eieHbNNOashJxr8ipKY,12366
+farmfs/keydb.py,sha256=f48Ab2y7S5ugXo8q30-XL3W2BM_p3_RJfjJdD0PbCY0,3528
+farmfs/remote.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+farmfs/snapshot.py,sha256=I7N4xcDquHddmUemcocLBnGXhFl5wZWwb3J5snhvcFE,5070
+farmfs/transduce.py,sha256=k5AkrYDiUp4lCEByJXb1lh1A3PZTeQ6iixcwGj_Z3MQ,1869
+farmfs/ui.py,sha256=MQvmP0fsRsLXOe0osgrTJhuafavVGkDMmFg4FQfGXkQ,16567
+farmfs/util.py,sha256=vL21BpEmWrweyRlUKjeG-cMJSzE8yrql8DKyM5marFw,5286
+farmfs/volume.py,sha256=LX0XzybAdZEJx6_xmlmu98W8fs6E74Jwt21BmolS74U,10045
+farmfs-0.8.2.data/scripts/snap.sh,sha256=-sQF0xf7zEO-a8Ge0cmAMkUa7IgJJlhlUmfCX4g885Q,355
+farmfs-0.8.2.dist-info/LICENSE,sha256=cCh-STYjgUXLPUjMRHDRe2dc4T2GmB-9LlcQnGADnMY,1082
+farmfs-0.8.2.dist-info/METADATA,sha256=qo1swLRH1-XDlTUFY8rZU8vY4mmJA8WXNqm5SGcm9wE,6143
+farmfs-0.8.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+farmfs-0.8.2.dist-info/entry_points.txt,sha256=nc4ePLkd4MPFhg4ZewMRL92GORp7tDU3u85MAAFqnh8,75
+farmfs-0.8.2.dist-info/top_level.txt,sha256=sRsJ25VDTmCns7H7iuzBvu5qpAGbzRazzZkq7LDXfCM,7
+farmfs-0.8.2.dist-info/RECORD,,
