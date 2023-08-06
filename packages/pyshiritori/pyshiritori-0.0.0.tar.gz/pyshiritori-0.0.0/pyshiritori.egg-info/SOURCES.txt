@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyshiritori.egg-info/PKG-INFO
+pyshiritori.egg-info/SOURCES.txt
+pyshiritori.egg-info/dependency_links.txt
+pyshiritori.egg-info/requires.txt
+pyshiritori.egg-info/top_level.txt
