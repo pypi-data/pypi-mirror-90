@@ -1,0 +1,13 @@
+rony/__init__.py,sha256=SqMB3wnCtzOGYfP7pLrbU3OT01olabVzb_DdP4kETS0,74
+rony/_version.py,sha256=jZ5uWOiyV1Hb9rhNyo3bAgfWmHx8_xkueUWpcUrkz_w,21
+rony/cli.py,sha256=EavUwrDQDk7ouSGp4cjSWIypMyLmJfdq7LMDB5REMN0,2227
+rony/writer.py,sha256=9WG4JPSCE_lLhasVPsxAi8XTfCA_D4xRFsfe1cnqO4c,2881
+rony/base_files/requirements.txt,sha256=_H48d_QDI0X4CvxwJvQi1JesDpDJ2W4mlC8I-58KNXY,78
+rony/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rony/tests/test_cli.py,sha256=k8CBiDtcto9XzUxcbORkCHGYnn-6Uv6HeW68siofcF8,302
+rony-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rony-0.1.1.dist-info/METADATA,sha256=7RTa8jm4yOqRRvFv_b-PIK_icKu15--Mvi4lpQ3Ipas,5305
+rony-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+rony-0.1.1.dist-info/entry_points.txt,sha256=d3_EgGIQ6mLITQn7ahYqolnYVOps_VpIGTxZgqU3s_U,57
+rony-0.1.1.dist-info/top_level.txt,sha256=0aBmsFKPM5iiSPQxgjFlXPOY5RX9h4oufw1MceyPh5s,5
+rony-0.1.1.dist-info/RECORD,,
