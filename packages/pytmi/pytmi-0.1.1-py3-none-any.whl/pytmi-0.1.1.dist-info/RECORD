@@ -1,0 +1,15 @@
+p/__init__.py,sha256=TcI-kvgUW933wSe68Z01S_COQlD5Fpg2r2effazXy1c,52
+p/irc.py,sha256=p-CR0NecXfIfJzVcjGu75uqxx59nr_bAmd6-72VGXMU,1296
+p/parse.py,sha256=40m7Y5Pd-Rprgd4P8E74uB0RND-dQnMTbTlkb7kEoJ8,1484
+p/s.py,sha256=Q9UHW-7D-YlvEPDPEU_j6DL3d9pLyzgub6WC6yCkPVw,497
+p/tmi.py,sha256=EptZczNNUyT3Uf8jl4xE8PeJ-CAm2aKj9o4GtS5jqTQ,4033
+p/utils.py,sha256=KiJmbR4fiTpxVBIXXvm_l4n0fG3hIoWcuSRChC56zYc,335
+pytmi/__init__.py,sha256=_F28ruoFmBTkOtzCmm8dFXseVSQQB5BTjTFFMkqZdXM,94
+pytmi/client.py,sha256=ub6pPmEebmIoKm0uByiNn4nXUuXYT8PcxwaRbB9h8F8,6978
+pytmi/connection.py,sha256=VMiMlnTeYa3TIriiXR2xMpahSvVIre6RunDt_9GD5ko,4000
+pytmi/message.py,sha256=nytHwAKh6SkcO_cbODuQ-0b-Y2Q2vORVxrrOR2E1TGs,2501
+pytmi-0.1.1.dist-info/LICENSE,sha256=-enX7v1d-nR2y7GcGBpcmg_Vd2vUp1O44Fy9Pmiv0iM,1064
+pytmi-0.1.1.dist-info/METADATA,sha256=-aNuZ0Lh5PGTr09iEAiTqD6Bh3Gwyl1AYtEVGNaE3dI,1484
+pytmi-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytmi-0.1.1.dist-info/top_level.txt,sha256=6See2kOi0i_hOsyk4tm0CAgcJrRBqHkeoZN5MiMibVs,8
+pytmi-0.1.1.dist-info/RECORD,,
