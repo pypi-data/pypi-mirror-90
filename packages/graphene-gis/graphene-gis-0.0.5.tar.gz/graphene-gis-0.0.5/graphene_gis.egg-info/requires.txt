@@ -1,0 +1,16 @@
+graphene<3,>=2.1
+graphene-django<3,>=2.5
+graphql-core<3,>=2.1
+psycopg2<3,>=2.8
+
+[dev]
+black==19.3b0
+flake8==3.7.8
+pytest>=5.1.2
+pytest-cov==2.7.1
+pytest-django>=3.5.1
+
+[test]
+pytest>=5.1.2
+pytest-cov==2.7.1
+pytest-django>=3.5.1
