@@ -1,0 +1,9 @@
+tahoe_lti/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tahoe_lti/openedx_modules.py,sha256=u-tiq_ymDZ80-1YvWrBEo6IGPiywfj0OMxPgOBkrUnI,316
+tahoe_lti/processors.py,sha256=zi_LF4tMgZE6qrdLbYH2ArQri4htC0Hw4LMqPwS8dCY,3419
+tahoe_lti/xblock_helpers.py,sha256=Z7ou0sNceZkGzOCR32MaJAsSjAyUqn7NBlIi0C5A9TA,551
+tahoe_lti-0.3.0.dist-info/LICENSE,sha256=xiUA_M9kpldo5mhFatmRLt4pN2SwJRevDsspNbv9p1c,1067
+tahoe_lti-0.3.0.dist-info/METADATA,sha256=svExHCgMlYBpFzXa-a-4J2mipJhyflLh-BZW6zU8cbU,199
+tahoe_lti-0.3.0.dist-info/WHEEL,sha256=bK8TJl-oUKFDa18qkB68zwTZhIBCifqi4qjS_NS4aFQ,92
+tahoe_lti-0.3.0.dist-info/top_level.txt,sha256=9wAlwI9eOp-c7IPWVGkPxk_bNRwjM0sdgYuuyHCGDK0,10
+tahoe_lti-0.3.0.dist-info/RECORD,,
