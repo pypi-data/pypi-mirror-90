@@ -1,0 +1,3 @@
+[console_scripts]
+pdcoder = pdcoder.main:main
+
