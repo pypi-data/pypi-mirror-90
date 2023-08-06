@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cachesql
+Version: 0.1.0rc1
+Summary: Speed up your data analysis iterations with cached SQL queries
+Home-page: https://github.com/felipeam86/sqlcache
+Author: Felipe Aguirre Martinez
+Author-email: felipeam86@gmail.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+
