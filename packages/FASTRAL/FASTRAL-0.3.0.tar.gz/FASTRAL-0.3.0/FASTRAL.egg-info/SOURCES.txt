@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+ASTRAL-modified/__init__.py
+ASTRID/__init__.py
+FASTRAL/Sampler.py
+FASTRAL/__init__.py
+FASTRAL/fastral.py
+FASTRAL/fastral_infer.py
+FASTRAL/utils.py
+FASTRAL.egg-info/PKG-INFO
+FASTRAL.egg-info/SOURCES.txt
+FASTRAL.egg-info/dependency_links.txt
+FASTRAL.egg-info/entry_points.txt
+FASTRAL.egg-info/requires.txt
+FASTRAL.egg-info/top_level.txt
