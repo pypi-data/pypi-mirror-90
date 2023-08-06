@@ -1,0 +1,11 @@
+README.md
+setup.py
+presspy/__init__.py
+presspy/cli.py
+presspy/press.py
+presspy.egg-info/PKG-INFO
+presspy.egg-info/SOURCES.txt
+presspy.egg-info/dependency_links.txt
+presspy.egg-info/entry_points.txt
+presspy.egg-info/requires.txt
+presspy.egg-info/top_level.txt
