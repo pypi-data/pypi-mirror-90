@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: kubewatcher
+Version: 1.6.0
+Summary: Please see https://github.com/tonsV2/kubewatcher for details
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: Please see https://github.com/tonsV2/kubewatcher for details
+Platform: UNKNOWN
+Requires-Python: >=3.8
