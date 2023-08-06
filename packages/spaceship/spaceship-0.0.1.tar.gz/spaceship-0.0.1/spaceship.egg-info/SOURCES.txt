@@ -1,0 +1,12 @@
+README.md
+setup.py
+spaceship/__init__.py
+spaceship.egg-info/PKG-INFO
+spaceship.egg-info/SOURCES.txt
+spaceship.egg-info/dependency_links.txt
+spaceship.egg-info/entry_points.txt
+spaceship.egg-info/top_level.txt
+spaceship/control_center/__init__.py
+spaceship/control_center/dispatcher.py
+spaceship/launchpad/__init__.py
+spaceship/launchpad/launcher.py

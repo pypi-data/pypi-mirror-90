@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: spaceship
+Version: 0.0.1
+Summary: Cosmic web-ecosystem
+Home-page: UNKNOWN
+Author: Pavel Paranin
+Author-email: pavel@paran.in
+License: UNKNOWN
+Description: # 🚀 How to launch the project
+        1) You can choose any method to install the project into your virtual (or global) python environment
+           
+           - via `pip` from the project's root
+              > pip install .
+        
+              #### or
+           
+           - via pip from `github`
+              > pip install -U git+https://github.com/vrppaul/spaceship.git
+        
+        #### Next part is WIP
+        2) 
+            - Launch the project with `spaceship launch` (try `spaceship launch --help` for additional setup)
+            - Get the list of commands with `spaceship`
+        
+        
+        ## List of emojies to prettify commits
+        
+        > 🚀, 🔧
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
