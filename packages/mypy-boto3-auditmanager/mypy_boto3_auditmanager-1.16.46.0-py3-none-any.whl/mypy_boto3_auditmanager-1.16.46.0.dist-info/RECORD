@@ -1,0 +1,13 @@
+mypy_boto3_auditmanager/__init__.py,sha256=UwpFEs57881recmq_uAV6b7LfrkdbtDKO46Y2DcD95w,492
+mypy_boto3_auditmanager/__init__.pyi,sha256=cLiXYlKiwqUPkaeuCsasBwgQGSTw3vbhRLcZgNYpdRI,491
+mypy_boto3_auditmanager/__main__.py,sha256=gHVIgZighukR7w17fPeLl8JGmAgcykpUtEH3M_3E-rs,404
+mypy_boto3_auditmanager/client.py,sha256=JdsHYAPYD2Fpy_Flu_FbuMiO3a9Ype8u1xUENEolb5s,24275
+mypy_boto3_auditmanager/client.pyi,sha256=x351AgfiuNH1mlOq8KJ0kQJlH0yys0t4AewGeAwXYlU,24217
+mypy_boto3_auditmanager/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_auditmanager/type_defs.py,sha256=L1BbO7G6UCyskXR7C1Eay76U1A0f0PEBeJZawybG6vI,23797
+mypy_boto3_auditmanager/type_defs.pyi,sha256=BrPg62lNH718tup7wLY6QLxLCxkoDwXQTIvRDtwaz14,23796
+mypy_boto3_auditmanager/version.py,sha256=X_osWh19q1-68MnSjDBBqcY2MFc0FrBzaMG5xx2gVSM,57
+mypy_boto3_auditmanager-1.16.46.0.dist-info/METADATA,sha256=cJsmcNZ7qfLtRDz7MAQ4EY07W1HZeK2bYvmJXANakIc,9237
+mypy_boto3_auditmanager-1.16.46.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mypy_boto3_auditmanager-1.16.46.0.dist-info/top_level.txt,sha256=YZcgJ8PmYhbv6ZtRZE8skZpd9H_YmiQUjspNPfegmKM,24
+mypy_boto3_auditmanager-1.16.46.0.dist-info/RECORD,,
