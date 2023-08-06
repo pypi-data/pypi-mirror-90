@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+supermemo2/__init__.py
+supermemo2/api.py
+supermemo2/exceptions.py
+supermemo2/model.py
+supermemo2/util.py
+tests/__init__.py
+tests/conftest.py
+tests/integration/test_api.py
+tests/unit/test_sm_two.py
