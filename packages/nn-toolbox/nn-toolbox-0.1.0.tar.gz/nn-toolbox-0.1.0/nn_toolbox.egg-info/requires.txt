@@ -1,0 +1,13 @@
+torch
+tensorboard
+torchvision
+imgaug==0.2.6
+opencv-python
+torchtext==0.4.0
+spacy
+six
+numpy
+scipy
+scikit-learn
+pandas
+future
