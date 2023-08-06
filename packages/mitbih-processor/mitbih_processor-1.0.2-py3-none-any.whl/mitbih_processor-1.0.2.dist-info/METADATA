@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: mitbih-processor
+Version: 1.0.2
+Summary: Process MIT-BIH Arrhythmia Database records with PyWavelets
+Home-page: https://github.com/jorge4larcon/mitbih_processor
+Author: Jorge Alarcon
+Author-email: jorge4larcon@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: PyWavelets
+Requires-Dist: scipy
+Requires-Dist: wfdb
+Requires-Dist: scikit-learn
+Requires-Dist: flask
+
+# mitbih_processor
+
+
