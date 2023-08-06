@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: aio-goodreads
+Version: 0.1.1
+Summary: Asyncronous Python wrapper for Goodreads API
+License: MIT
+Author: Mykola Solodukha
+Author-email: mykola.soloduha@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aiohttp (>=3.7.3,<4.0.0)
+Requires-Dist: xmltodict (>=0.12.0,<0.13.0)
