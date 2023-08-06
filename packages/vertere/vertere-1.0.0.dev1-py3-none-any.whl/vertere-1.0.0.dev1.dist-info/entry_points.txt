@@ -1,0 +1,3 @@
+[console_scripts]
+vertere = vertere.vertere:cli
+
