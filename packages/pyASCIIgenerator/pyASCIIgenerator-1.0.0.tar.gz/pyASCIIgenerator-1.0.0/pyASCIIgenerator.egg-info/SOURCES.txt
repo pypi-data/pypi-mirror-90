@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.md
+setup.py
+pyASCIIgenerator/__init__.py
+pyASCIIgenerator.egg-info/PKG-INFO
+pyASCIIgenerator.egg-info/SOURCES.txt
+pyASCIIgenerator.egg-info/dependency_links.txt
+pyASCIIgenerator.egg-info/requires.txt
+pyASCIIgenerator.egg-info/top_level.txt
