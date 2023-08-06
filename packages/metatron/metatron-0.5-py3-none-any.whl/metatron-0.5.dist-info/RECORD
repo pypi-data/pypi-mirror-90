@@ -1,0 +1,10 @@
+metatron/__init__.py,sha256=UaOFg2DQKrdWNnd1qiJGZGLUaGQM3Jb_BgRuh-3dA7E,140
+metatron/metatron.py,sha256=NloDE7ltZWAaRXaoC-0ZaVnvRoC7gIZ235CyFxjmxdc,6824
+metatron/schemas.py,sha256=6CeRnkeJWimB4AabFpTIWGVw18MMx8x9HQB6YOOKZyc,719
+metatron/tests.py,sha256=kW0xNPk3UWWmmq-gs-sTN6YagEWYt30DJ1-Q4R7vqbc,8561
+metatron/version.py,sha256=4FdYq1QhEnfseFtVXCMw_8wLQbaC3UXVBIhzGsP6C-8,20
+metatron-0.5.dist-info/LICENSE.txt,sha256=26iF7wzRwUDIhnQT58qXxgzouIehQAeVBnvkcAjTDRg,1068
+metatron-0.5.dist-info/METADATA,sha256=JAPAQju3OWWPX-yAfXO25zV0GlkAiC-y88-HHgApOUg,7369
+metatron-0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+metatron-0.5.dist-info/top_level.txt,sha256=xuqvlh66zVOuc8rmX0NCSGi9HnFxMadj0aNJ1jgxYeA,9
+metatron-0.5.dist-info/RECORD,,
