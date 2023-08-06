@@ -1,0 +1,21 @@
+[package]
+name = "perceptron-rs"
+version = "0.1.1"
+authors = ["Thomas Breydo <tbreydo@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "perceptron_rs"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+
+[dependencies.pyo3]
+version = "0.13.0"
+
+[features]
+extension-module = ["pyo3/extension-module"]
+default = ["extension-module"]
+
+[dev-dependencies]
+approx = "0.4.0"
