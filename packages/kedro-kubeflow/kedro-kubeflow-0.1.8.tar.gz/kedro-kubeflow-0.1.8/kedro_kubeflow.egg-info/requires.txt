@@ -1,0 +1,13 @@
+kedro<=0.18,>=0.16
+click
+kfp
+tabulate
+
+[dev]
+pytest
+pytest-cov
+pre-commit
+
+[test]
+pytest
+pytest-cov

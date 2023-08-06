@@ -1,0 +1,6 @@
+[kedro.global_commands]
+kubeflow = kedro_kubeflow.plugin:commands
+
+[kedro.project_commands]
+kubeflow = kedro_kubeflow.plugin:commands
+
