@@ -1,0 +1,8 @@
+README.md
+setup.py
+Strive/__init__.py
+Strive/strive.py
+Strive.egg-info/PKG-INFO
+Strive.egg-info/SOURCES.txt
+Strive.egg-info/dependency_links.txt
+Strive.egg-info/top_level.txt
