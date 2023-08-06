@@ -1,0 +1,3 @@
+[console_scripts]
+docformatter=docformatter_toml.__main__:main
+
