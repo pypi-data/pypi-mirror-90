@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: kdsl
+Version: 0.0.3
+Summary: Generate Kubernetes definitions
+Home-page: https://gitlab.com/qwolphin/kdsl
+Author: Wolphin
+Author-email: q@wolph.in
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Typing :: Typed
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: attrs
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+
