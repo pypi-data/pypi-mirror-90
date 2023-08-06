@@ -1,0 +1,8 @@
+README.md
+setup.py
+Dither/__init__.py
+PyDither.egg-info/PKG-INFO
+PyDither.egg-info/SOURCES.txt
+PyDither.egg-info/dependency_links.txt
+PyDither.egg-info/requires.txt
+PyDither.egg-info/top_level.txt

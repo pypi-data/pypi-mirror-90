@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: PyDither
+Version: 0.0.1
+Summary: python - image dithering
+Home-page: https://github.com/Utkarsh-Deshmukh/image-dithering-python
+Author: utkarsh-deshmukh
+Author-email: utkarsh.deshmukh@gmail.com
+License: MIT
+Download-URL: https://github.com/Utkarsh-Deshmukh/image-dithering-python/archive/main.zip
+Description: # image-dithering-python
+        python implementation for image dithering
+        
+        
+        ## Quickstart
+        This library performs image dithering.
+        
+        ## Installation
+        
+        To install, run:
+        ```
+        $ pip install PyDither
+        ```
+        
+        ## Usage:
+        ```Python
+        	import cv2
+        	import Dither
+        	
+        	img = cv2.imread('images/img1.jpg', 0)						# read image
+        
+        	out = Dither.dither(img, 'simple2D', resize=True)			# perform image dithering
+        	cv2.imshow('dithered image', out)							# display output
+        ```
+        As easy as that!
+Keywords: image dithering
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
