@@ -1,0 +1,10 @@
+README.md
+setup.py
+newtonMethod/__init__.py
+newtonMethod/newton.py
+newtonMethod/test.py
+newtonMethod/test1.py
+newtonMethod.egg-info/PKG-INFO
+newtonMethod.egg-info/SOURCES.txt
+newtonMethod.egg-info/dependency_links.txt
+newtonMethod.egg-info/top_level.txt
