@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+entropeer/__init__.py
+entropeer/__main__.py
+entropeer/entropeer.py
+entropeer/entropy.py
+entropeer/rules.json
+entropeer.egg-info/PKG-INFO
+entropeer.egg-info/SOURCES.txt
+entropeer.egg-info/dependency_links.txt
+entropeer.egg-info/entry_points.txt
+entropeer.egg-info/top_level.txt

@@ -1,0 +1,3 @@
+[console_scripts]
+entropeer = entropeer.__main__:main
+
