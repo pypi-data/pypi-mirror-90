@@ -1,0 +1,3 @@
+[console_scripts]
+pbmsg = pushbullet_tools.push_message:main
+
