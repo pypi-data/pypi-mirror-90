@@ -1,0 +1,11 @@
+requests
+lxml
+pytz
+rdflib
+lark-parser<0.12.0,>=0.11.1
+pyld
+
+[testing]
+betamax
+nose
+coverage
