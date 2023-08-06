@@ -1,0 +1,3 @@
+[console_scripts]
+md2 = md_helper:md
+
