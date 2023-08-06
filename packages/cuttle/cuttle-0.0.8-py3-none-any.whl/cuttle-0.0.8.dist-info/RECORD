@@ -1,0 +1,12 @@
+cuttle/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cuttle/cli.py,sha256=XmBzRcuq245Vm18AminB6XlZriFJuUdcQzf5IHkYJY8,3450
+cuttle/cuttleengine.py,sha256=0pmdhNQGBxRvlF7LEPwp4m5GYt2Kokup7oJb1pEnBE4,4246
+cuttle/platform/linux/main.py,sha256=-s717hnSGsjcn88BTZZT6T6PTunuZYSGHWTXlCBVOl8,1189
+cuttle/transform/flask/main.py,sha256=TbOZElQw4rULyYnvRwDna-gIwCOD2buKP1xDDNfKybs,1409
+cuttle/transform/script/main.py,sha256=8fg8lU0nL_CkSHFT3iK1sdJAauF0oag9aevH_Lk4vzE,417
+cuttle-0.0.8.dist-info/LICENSE.txt,sha256=S1pJL407BwTTXzZK0BQPNM7ZZs57uj1pTSfVZ8Whx30,1061
+cuttle-0.0.8.dist-info/METADATA,sha256=tw7txtiUsz80Pj_kHbdFdZaDE2yxzSklV0psBAaXY4E,350
+cuttle-0.0.8.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+cuttle-0.0.8.dist-info/entry_points.txt,sha256=WguIOFvyz-rm1ik_UCI-h-6txCUE4riKodlwRZ7IiT4,61
+cuttle-0.0.8.dist-info/top_level.txt,sha256=6OHT6w-z7Q7zyhwmFNUafcIMFD7gzSuc-O26dOF258o,7
+cuttle-0.0.8.dist-info/RECORD,,
