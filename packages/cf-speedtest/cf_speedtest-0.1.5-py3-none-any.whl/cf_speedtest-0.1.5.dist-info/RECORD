@@ -1,0 +1,10 @@
+cf_speedtest/__init__.py,sha256=RXtUXiT-1dzbPuGwggBoZ0IQzp8xm8eGzf84t9lgCYk,107
+cf_speedtest/cf_speedtest.py,sha256=TQxiO-R6CDYAqG5p4TJdjiTWFQIwix1ASF88XFaZBdk,9400
+cf_speedtest/locations.py,sha256=wgQEFt6HhaPU0MRow8K2lS6rqeKXf8Xz08eDPaLAciI,26343
+cf_speedtest/options.py,sha256=uYKoEfwEQBC56nSaptxKk12fGMZqD8_rIq1TqysjSRU,1718
+cf_speedtest-0.1.5.dist-info/LICENSE,sha256=xmi3Ll237z545qetaoyOcRjAHt2mEkp-YJQnRoSbbjE,1069
+cf_speedtest-0.1.5.dist-info/METADATA,sha256=6mgQfs-pfNpeY8WqHJ1Cm14bDJeZN9iGnAkiAuuqyUc,646
+cf_speedtest-0.1.5.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+cf_speedtest-0.1.5.dist-info/entry_points.txt,sha256=KfDYrbeBOu2QIfFXVAo5OTXo_0okeCQ7i2v-woDpD6A,111
+cf_speedtest-0.1.5.dist-info/top_level.txt,sha256=82M5_oGujKihE9B0BdtD0xb4knCTd5zYr_RFkOUSJEo,13
+cf_speedtest-0.1.5.dist-info/RECORD,,
