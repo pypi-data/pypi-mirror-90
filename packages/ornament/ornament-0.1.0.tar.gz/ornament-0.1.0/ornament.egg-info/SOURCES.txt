@@ -1,0 +1,10 @@
+README.md
+setup.py
+ornament/__init__.py
+ornament/__pkginfo__.py
+ornament/patterns.py
+ornament.egg-info/PKG-INFO
+ornament.egg-info/SOURCES.txt
+ornament.egg-info/dependency_links.txt
+ornament.egg-info/top_level.txt
+tests/__init__.py
