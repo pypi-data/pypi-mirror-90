@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: zanon
+Version: 0.3.0
+Summary: A module for z-anonymity
+Home-page: https://gitlab.com/pimcity/wp2/zeta-anonymity
+Author: SmartData@PoliTO
+Author-email: s251325@studenti.polito.it
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# zanon
+
+A module to anonymize data streams with zero-delay called z-anonymity.
+
+When instantiating the *zanon* object, the constructor receives a value in seconds for **Delta_t**, the desired probability of reaching k-anonymity expressed with a value between 0 and 1 and a value for **k**.
+
+The *anonymize()* method accepts a tuple with 3 arguments **(t,u,a)** , meaning that at time **t** a user **u** exposes an attribute **a**.
+Also a tuple of kind **(t,u, latitude, longitude)** is handled. 
+
+If the tuple exposes an attribute that has not been exposed by at least other **z - 1** users in the past **Delta_t**, the tuple is simply ignored. Otherwise, the tuple is printed in the file 'output.txt'.
+
+The algorithm can handle generalization when providing the attribute with a hierarchy using \* as separator (*max_generalization\*...\*min_generalization\*attribute*).
+Whenever releasing the attribute is not possible, the algorithm will look for the most specific generalization exposed by at least other **z - 1** users in the past **Delta_t**. If none is found, nothing is print out.
+For the geolocation case, the algorithm divides in cells the territory (only Italy) with cells of differents sizes and outputs the cell with at most 5 level of details (3km, 5km, 10km, 30km, 500km).
+
+Run the *study_output.py* after the simulation to plot the distribution of z, pk and traffic during time. (You will find the plot 'z_tuning.pdf').
+
+### other methods
+
+*evaluate_output()*  offer informations about how the algorithm performed.
+
+*duration()* print the range of time covered.
+
+
+## example of usage
+```python
+from zanonymity import zanon
+
+file_in = "trace.txt"
+deltat = 3600 #in seconds
+pk = 0.8
+k = 2
+
+z = zanon.zanon(deltat, pk, k)
+
+for line in open(file_in, 'r'):
+    t,u,a = line.split(",")
+    z.anonymize((t,u,a))
+z.endFiles()
+z.duration()
+z.evaluate_output()
+
+```
+
+
