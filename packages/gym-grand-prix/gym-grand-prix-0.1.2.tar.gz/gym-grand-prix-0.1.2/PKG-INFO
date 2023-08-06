@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: gym-grand-prix
+Version: 0.1.2
+Summary: Gym GrandPrix Env
+Home-page: https://github.com/boangri/gym-grand-prix
+Author: Boris Gribovskiy
+Author-email: xinu@yandex.ru
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
