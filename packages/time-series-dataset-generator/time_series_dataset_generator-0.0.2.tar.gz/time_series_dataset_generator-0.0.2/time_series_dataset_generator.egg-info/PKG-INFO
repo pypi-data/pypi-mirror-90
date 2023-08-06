@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: time-series-dataset-generator
+Version: 0.0.2
+Summary: Generator for time-series-dataset.
+Home-page: https://github.com/krypton-unite/time_series_dataset_generator.git
+Author: Daniel Kaminski de Souza
+Author-email: daniel@kryptonunite.com
+License: The Unlicense
+Download-URL: https://pypi.org/project/time-series-dataset-generator/
+Description: # Time Series Dataset Generator
+        
+        
+Keywords: Time series dataset generator
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: docs
