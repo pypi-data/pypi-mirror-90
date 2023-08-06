@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: redorm
+Version: 0.6.9
+Summary: A simple redis ORM
+License: MIT
+Author: Jack Adamson
+Author-email: jack@mrfluffybunny.com
+Requires-Python: >=3.6
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: dataclasses-jsonschema[fast-validation] (>=2.13.0,<3.0.0)
+Requires-Dist: environs (>=9.3.0,<10.0.0)
+Requires-Dist: fakeredis (>=1.4.5,<2.0.0)
+Requires-Dist: redis (>=3.5.3,<4.0.0)
