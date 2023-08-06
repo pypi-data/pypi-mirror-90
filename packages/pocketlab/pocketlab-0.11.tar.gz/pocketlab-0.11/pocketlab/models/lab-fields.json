@@ -1,0 +1,544 @@
+{
+  "schema": {
+    "service_name": "server",
+    "service_path": "~/server",
+    "service_list": [ "server" ],
+    "service_option": [ "server" ],
+    "project_name": "website",
+    "project_option": [ "website" ],
+    "vcs_service": "git",
+    "resource_type": "services",
+    "virtualbox": "default",
+    "file_path": "images/icon.png",
+	  "container_alias": "server",
+    "image_name": "flaskserver",
+    "module_name": "pocketlab",
+    "package_name": "nginx",
+    "package_option": [ "nginx" ],
+    "platform_name": "heroku",
+    "platform_option": [ "heroku" ],
+    "license_type": "MIT",
+    "environment_type": "dev",
+    "environ_type": "test",
+    "ip_address": "127.0.0.1",
+    "url_address": "https://collectiveacuity.com",
+    "resource_tags": "20180101",
+    "region_name": "us-east-1",
+    "html_folder": "site/",
+    "php_folder": "www/",
+    "python_folder": "server/",
+    "java_folder": "server/",
+    "ruby_folder": "server/",
+    "node_folder": "app/",
+    "jingo_folder": "./",
+    "verbose": true,
+    "overwrite": true,
+    "ssl": true,
+    "resume_routine": true,
+    "all_services": true,
+    "all_info": true,
+    "init_flask": true,
+    "init_webpack": true,
+    "init_express": true,
+    "init_jquery": true,
+    "init_python": true,
+    "init_node": true,
+    "init_heroku": true,
+    "init_aws": true,
+    "init_ec2": true,
+    "init_asg": true,
+    "init_gae": true,
+    "init_docker": true,
+    "print_path": true,
+    "print_terminal": true,
+    "paginate": true,
+    "mount_volumes": true
+  },
+  "components": {
+    ".service_name": {
+      "field_description": "Name of service in lab registry",
+      "default_value": "",
+      "max_length": 64,
+      "must_not_contain": [ "[^\\w\\-_]", "^\\d", "^\\-", "\\-$" ],
+      "field_metadata": {
+        "cli_flag": [ "-s", "--service" ],
+        "cli_help": "name of service in lab registry",
+        "cli_metavar": "SERVICE"
+      }
+    },
+    ".service_path": {
+      "field_description": "Path to service root on localhost",
+      "default_value": "",
+      "field_metadata": {
+        "cli_flags": [ "--path" ],
+        "cli_help": "path to service root"
+      }
+    },
+    ".service_list": {
+      "field_description": "List of services in lab registry.",
+      "min_size": 0,
+      "field_metadata": {
+        "cli_flag": [ "-s", "--services" ],
+        "cli_help": "list of services in lab registry",
+        "cli_metavar": "SERVICES"
+      }
+    },
+    ".service_list[0]": {
+      "field_description": "Service in list of services from lab registry",
+      "default_value": "",
+      "max_length": 64,
+      "must_not_contain": [ "[^\\w\\-_]" ]
+    },
+    ".service_option": {
+      "field_description": "(Optional) service in lab registry.",
+      "min_size": 0,
+      "max_size": 1,
+      "field_metadata": {
+        "cli_flag": [ "-s", "--services" ],
+        "cli_help": "(optional) service in lab registry",
+        "cli_metavar": "SERVICE"
+      }
+    },
+    ".service_option[0]": {
+      "field_description": "Service in list of services from lab registry",
+      "default_value": "",
+      "max_length": 64,
+      "must_not_contain": [ "[^\\w\\-_]" ]
+    },
+    ".project_name": {
+      "field_description": "Name of project in lab registry",
+      "default_value": "",
+      "max_length": 64,
+      "must_not_contain": [ "[^\\w\\-_]", "^\\d", "^\\-", "\\-$" ],
+      "field_metadata": {
+        "cli_flag": [ "-p", "--project" ],
+        "cli_help": "name of project in lab registry",
+        "cli_metavar": "PROJECT"
+      }
+    },
+    ".project_option": {
+      "field_description": "(Optional) name of project in lab registry.",
+      "min_size": 0,
+      "max_size": 1,
+      "field_metadata": {
+        "cli_flag": [ "-p", "--project" ],
+        "cli_help": "(optional) project in lab registry",
+        "cli_metavar": "PROJECT"
+      }
+    },
+    ".project_option[0]": {
+      "field_description": "Project in list of projects in lab registry",
+      "default_value": "",
+      "max_length": 64,
+      "must_not_contain": [ "[^\\w\\-_]" ]
+    },
+    ".vcs_service": {
+      "field_description": "Version control system used by service",
+      "default_value": "",
+      "discrete_values": [ "", "git", "Git", "mercurial", "Mercurial" ],
+      "field_metadata": {
+        "cli_flags": [ "--vcs" ],
+        "cli_help": "VCS service to generate ignore file"
+      }
+    },
+    ".resource_type": {
+      "field_description": "Type of lab resource. eg. services, images...",
+      "default_value": "services",
+      "discrete_values": [ "services", "instances" ],
+      "field_metadata": {
+        "cli_flags": [ "--resource" ],
+        "cli_help": "type of lab resource. eg. services, images...",
+        "cli_metavar": "RESOURCE"
+      }
+    },
+    ".virtualbox": {
+      "field_description": "Name of virtualbox image in which to run service.",
+      "default_value": "default",
+      "max_length": 64,
+      "field_metadata": {
+        "cli_flags": [ "--virtualbox" ],
+        "cli_help": "name of docker virtualbox on Win7/8 (default: %(default)s)"
+      }
+    },
+    ".file_path": {
+      "field_description": "Path to file or folder",
+      "default_value": "",
+      "field_metadata": {
+        "cli_flags": [ "--path" ],
+        "cli_help": "path to file or folder",
+        "cli_metavar": "PATH"
+      }
+    },
+    ".container_alias": {
+      "field_description": "Docker container alias for service",
+      "default_value": "",
+      "max_length": 64,
+      "must_not_contain": [ "[^\\w\\-_]", "^\\d", "^\\-", "\\-$" ],
+      "field_metadata": {
+        "cli_flags": [ "--container" ],
+        "cli_help": "alias of docker container for service"
+      }
+    },
+    ".image_name": {
+      "field_description": "Docker image name for service",
+      "max_length": 64,
+      "must_contain": [ "^[a-z\\d\\-:_/]+$" ],
+      "must_not_contain": [ "^\\d", "^\\-", "\\-$" ],
+      "field_metadata": {
+        "cli_flags": [ "--image" ],
+        "cli_help": "name of docker image for service"
+      }
+    },
+    ".module_name": {
+      "field_description": "Python module name",
+      "max_length": 64,
+      "must_contain": [ "^[a-zA-Z\\d\\-]+$" ],
+      "must_not_contain": [ "^\\d", "^\\-", "\\-$" ],
+      "field_metadata": {
+        "cli_flags": [ "--module" ],
+        "cli_help": "name for python module"
+      }
+    },
+    ".package_name": {
+      "field_description": "Name of software package.",
+      "discrete_values": [ "nginx", "certbot" ],
+      "max_length": 64,
+      "must_contain": [ "^[a-zA-Z\\d\\-]+$" ],
+      "must_not_contain": [ "^\\d", "^\\-", "\\-$" ],
+      "field_metadata": {
+        "cli_flag": [ "--package" ],
+        "cli_help": "name of software package",
+        "cli_metavar": "PACKAGE"
+      }
+    },
+    ".package_option": {
+      "field_description": "(Optional) name of software package.",
+      "min_size": 0,
+      "max_size": 1,
+      "field_metadata": {
+        "cli_flag": [ "--package" ],
+        "cli_help": "(optional) name of software package",
+        "cli_metavar": "PACKAGE"
+      }
+    },
+    ".package_option[0]": {
+      "field_description": "Package in list of software packages.",
+      "discrete_values": [ "", "nginx", "certbot" ]
+    },
+    ".platform_name":{
+      "field_description": "Name of remote platform to host service.",
+      "discrete_values": [ "heroku", "ec2" ],
+      "field_metadata": {
+        "cli_flags": [ "--platform" ],
+        "cli_help": "name of remote platform",
+        "cli_metavar": "PLATFORM"
+      }
+    },
+    ".platform_option": {
+      "field_description": "(Optional) name of remote platform to host service.",
+      "min_size": 0,
+      "max_size": 1,
+      "field_metadata": {
+        "cli_flag": [ "--platform" ],
+        "cli_help": "(optional) name of remote platfrom",
+        "cli_metavar": "PLATFORM"
+      }
+    },
+    ".platform_option[0]": {
+      "field_description": "Platform in list of remote platforms to host service.",
+      "discrete_values": [ "", "heroku", "ec2" ]
+    },
+    ".license_type": {
+      "field_description": "Type of software license terms for source code.",
+      "default_value": "",
+      "discrete_values": [ "", "MIT", "mit" ],
+      "field_metadata": {
+        "cli_flags": [ "--license" ],
+        "cli_help": "name of software license type"
+      }
+    },
+    ".environment_type":{
+      "default_value": "dev",
+      "field_description": "Type of development environment.",
+      "field_metadata": {
+        "cli_flags": [ "--env" ],
+        "cli_help": "type of development environment (default: %(default)s)"
+      }
+    },
+    ".environ_type":{
+      "default_value": "test",
+      "field_description": "Type of development environment.",
+      "field_metadata": {
+        "cli_flags": [ "--env" ],
+        "cli_help": "type of development environment (default: %(default)s)"
+      }
+    },
+    ".ip_address": {
+      "contains_either": [ 
+        "\\d+\\.\\d+\\.\\d+\\.\\d+", 
+        "[0-9a-fA-F]+:[0-9a-fA-F]+:[0-9a-fA-F]+:[0-9a-fA-F:]*:[0-9a-fA-F]+$" 
+      ],
+      "field_description": "IPv4 or IPv6 Address",
+      "field_metadata": {
+        "cli_flags": [ "--ip" ],
+        "cli_help": "ipv4 or ipv6 address"
+      }
+    },
+    ".url_address": {
+      "must_contain": [ "((([A-Za-z]{3,9}:(?://)?)(?:[\\-;:&=\\+\\$,\\w]+@)?[A-Za-z0-9.\\-]+(:[0-9]+)?|(?:www.|[\\-;:&=\\+\\$,\\w]+@)[A-Za-z0-9.\\-]+)((?:/[\\+~%/.\\w\\-_]*)?\\??(?:[\\-\\+,=&;%@.\\w_]*)#?(?:[\\w]*))?)" ],
+      "field_description": "URL address",
+      "field_metadata": {
+        "cli_flags": [ "--url" ],
+        "cli_help": "url address"
+      }
+    },
+    ".resource_tags": {
+      "max_length": 255,
+      "must_not_contain": [ "aws:", "[^\\w\\-\\=\\._:/]+" ],
+      "field_description": "Tag values associated with resource.",
+      "field_metadata": {
+        "cli_flags": [ "--tags" ],
+        "cli_help": "tags associated with resource (comma sep)"
+      }
+    },
+    ".region_name": {
+      "field_description": "Name of remote host platform region.",
+      "field_metadata": {
+        "cli_flags": [ "--region" ],
+        "cli_help": "name of platform region"
+      }
+    },
+    ".html_folder": {
+      "field_description": "Path to HTML site root folder.",
+      "field_metadata": {
+        "cli_group": "runtimes",
+        "cli_flags": [ "--html" ],
+        "cli_help": "path to folder with index.html"
+      }
+    },
+    ".php_folder": {
+      "field_description": "Path to PHP app root folder.",
+      "field_metadata": {
+        "cli_group": "runtimes",
+        "cli_flags": [ "--php" ],
+        "cli_help": "path to folder with index.php"
+      }
+    },
+    ".python_folder": {
+      "field_description": "Path to Python app root folder.",
+      "field_metadata": {
+        "cli_group": "runtimes",
+        "cli_flags": [ "--python" ],
+        "cli_help": "path to folder with requirements.txt"
+      }
+    },
+    ".java_folder": {
+      "field_description": "Path to Java app root folder.",
+      "field_metadata": {
+        "cli_group": "runtimes",
+        "cli_flags": [ "--java" ],
+        "cli_help": "path to folder with Java Procfile"
+      }
+    },
+    ".ruby_folder": {
+      "field_description": "Path to Ruby app root folder.",
+      "field_metadata": {
+        "cli_group": "runtimes",
+        "cli_flags": [ "--ruby" ],
+        "cli_help": "path to folder with Ruby Procfile"
+      }
+    },
+    ".node_folder": {
+      "field_description": "Path to Node app root folder.",
+      "field_metadata": {
+        "cli_group": "runtimes",
+        "cli_flags": [ "--node" ],
+        "cli_help": "path to folder with package.json"
+      }
+    },
+    ".jingo_folder": {
+      "field_description": "Path to Jingo app root folder.",
+      "field_metadata": {
+        "cli_group": "runtimes",
+        "cli_flags": [ "--jingo" ],
+        "cli_help": "path to folder with jingo Procfile"
+      }
+    },
+    ".verbose": {
+      "field_description": "Toggle to enable/disable lab messages.",
+      "default_value": true,
+      "field_metadata": {
+          "cli_flags": [ "-q", "--quiet" ],
+          "cli_help": "turn off lab process messages"
+      }
+    },
+    ".all_services": {
+      "field_description": "Apply action to all services in registry.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "-a", "--all" ],
+        "cli_help": "apply to all services in registry"
+      }
+    },
+    ".all_info": {
+      "field_description": "Include all details in print out results.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "-a", "--all" ],
+        "cli_help": "include all details in results"
+      }
+    },
+    ".overwrite": {
+      "field_description": "Overwrites the existing resource.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "-f", "--force" ],
+        "cli_help": "overwrite the existing resource"
+      }
+    },
+    ".ssl": {
+      "field_description": "Disables SSL certificate on domains.",
+      "default_value": true,
+      "field_metadata": {
+        "cli_flags": [ "--ssl" ],
+        "cli_help": "turn off ssl everywhere"
+      }
+    },
+    ".resume_routine": {
+      "field_description": "Resumes routine from last success operation.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "--resume" ],
+        "cli_help": "resume from prior progress point"
+      }
+    },
+    ".init_flask": {
+      "field_description": "Initialize a flask service framework.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "--flask" ],
+        "cli_help": "create flask service framework"
+      }
+    },
+    ".init_webpack": {
+      "field_description": "Initialize a webpack client framework.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "--webpack" ],
+        "cli_help": "create webpack client framework"
+      }
+    },
+    ".init_express": {
+      "field_description": "Initialize an express service framework.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "--express" ],
+        "cli_help": "create express service framework"
+      }
+    },
+    ".init_python": {
+      "field_description": "Initialize python module framework.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "--pypi", "--python" ],
+        "cli_help": "create python module framework"
+      }
+    },
+    ".init_node": {
+      "field_description": "Initialize node module framework.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "--npm", "--node" ],
+        "cli_help": "create node module framework"
+      }
+    },
+    ".init_jquery": {
+      "field_description": "Initialize a jquery-webpack service framework.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "--jquery" ],
+        "cli_help": "create jquery service framework"
+      }
+    },
+    ".init_heroku": {
+      "field_description": "Add Heroku config files to working dir.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "--heroku" ],
+        "cli_help": "add heroku configs to workdir"
+      }
+    },
+    ".init_aws": {
+      "field_description": "Add an Amazon AWS config file to .lab folder.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "--aws" ],
+        "cli_help": "add aws config to .lab folder"
+      }
+    },
+    ".init_ec2": {
+      "field_description": "Add Amazon EC2 config files to working dir.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "--ec2" ],
+        "cli_help": "add ec2 configs to workdir"
+      }
+    },
+    ".init_gae": {
+      "field_description": "Add Google GAE config files to working dir.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "--gae" ],
+        "cli_help": "add gae configs to workdir"
+      }
+    },
+    ".init_asg": {
+      "field_description": "Add an Amazon ASG config file to working dir.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "--asg" ],
+        "cli_help": "add asg config to workdir"
+      }
+    },
+    ".init_docker": {
+      "field_description": "Add Docker config files to working dir.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "--docker" ],
+        "cli_help": "add docker configs to workdir"
+      }
+    },
+    ".print_path": {
+      "field_description": "Prints out path to terminal.",
+      "default_value": false,
+      "field_metadata": {
+          "cli_flags": [ "--print" ],
+          "cli_help": "prints path of service root"
+      }
+    },
+    ".print_terminal": {
+      "field_description": "Prints out command(s) to terminal.",
+      "default_value": false,
+      "field_metadata": {
+          "cli_flags": [ "--print" ],
+          "cli_help": "prints command(s) without running"
+      }
+    },
+    ".paginate": {
+      "field_description": "Break up results into separate results.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "--more" ],
+        "cli_help": "paginate results longer than console height"
+      }
+    },
+    ".mount_volumes": {
+      "field_description": "Mount volumes declared in docker-compose.",
+      "default_value": false,
+      "field_metadata": {
+        "cli_flags": [ "--mount" ],
+        "cli_help": "mount volumes onto container"
+      }
+    }
+  }
+}

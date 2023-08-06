@@ -1,0 +1,33 @@
+{
+  "name": "pocketlab",
+  "version": "0.0.1",
+  "description": "<service-description>",
+  "author": "<org-title> <<org-email>>",
+  "contributors": [
+    {
+      "name": "<user-name> <user-email>"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/<org-name>/pocketlab/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<org-name>/pocketlab"
+  },
+  "homepage": "https://github.com/<org-name>/pocketlab",
+  "dependencies": { },
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "scripts/app.js",
+  "scripts": {
+    "dev": "gulp dev; gulp watch",
+    "build": "gulp prod",
+    "setup": "npm link gulp gulp-sass gulp-concat gulp-postcss gulp-sourcemaps gulp-nodemon cssnano autoprefixer webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.2"
+  }
+}
