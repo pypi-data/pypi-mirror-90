@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: curiosity
+Version: 14872
+Summary: Python library for Curiosity
+Home-page: http://curiosity.ai
+Author: curiosity.ai
+Author-email: hello@curiosity.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.25.0)
+Requires-Dist: urllib3 (>=1.26.2)
+
+UNKNOWN
+
+
