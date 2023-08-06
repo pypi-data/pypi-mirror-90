@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: serving-agent
+Version: 0.1.0
+Summary: A middleware for model serving to speedup online inference.
+Home-page: https://github.com/HughWen/ServingAgent
+Author: wwen
+Author-email: wenwh@mail.sustech.edu.cn
+License: UNKNOWN
+Description: <h1 align="center">Serving Agent</h1>
+        
+        <p align="center">
+        A middleware for model serving to speedup online inference.
+        <a href="./README_zh.md">中文</a>
+        </p>
+        
+        <h2 align="center">What is Serving Agent</h2>
+        
+        
+        Serving Agent is designed as a middleware for model serving between web server and model server to help the server improve the GPU utilization
+        then speedup online inference.
+        For the service with machile learning model, the requests from the client are usually streaming.
+        To utilize the parallel computing capability of GPUs, we usually import a message queue/message broker to cache the request from web server then batch process with model server (the below figure shows the architecture). Serving Agent encapsulates the detial actions that such as serialize the request data, communicate with message queue (redis) and deserialization and more over. With Serving Agent, it is easy to build a scalable service with serveral codes.
+        
+        ![model serving architecture](img/architecture.png)
+Keywords: serving_agent
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
