@@ -1,0 +1,11 @@
+globmatch
+setuptools
+
+[docs]
+sphinx
+recommonmark
+sphinx_rtd_theme
+
+[test]
+pytest
+pytest-cov
