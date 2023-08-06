@@ -1,0 +1,4 @@
+boto3>=1.13.11
+dada-utils>=0.0.2
+dada-serde>=0.0.2
+dada-settings>=0.0.2
