@@ -1,0 +1,9 @@
+README.md
+setup.py
+bin/yamlcredits
+yamlcredits/main.py
+yamlcredits.egg-info/PKG-INFO
+yamlcredits.egg-info/SOURCES.txt
+yamlcredits.egg-info/dependency_links.txt
+yamlcredits.egg-info/requires.txt
+yamlcredits.egg-info/top_level.txt
