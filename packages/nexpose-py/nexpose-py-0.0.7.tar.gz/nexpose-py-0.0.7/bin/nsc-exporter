@@ -1,0 +1,188 @@
+#!/usr/bin/env python3
+
+import datetime
+import os
+
+from itertools import count
+from collections import defaultdict
+from time import sleep
+
+import configargparse
+
+import nexpose.nexpose as nexpose
+import nexpose.args as nexposeargs
+
+def get_scans(login):
+    """
+    Accept base_url, user, password, verify.
+    Return a generator of scan information.
+    """
+    for page in count(0):
+        scan_page = nexpose.scans(nlogin=login, page=page)
+        for scan in scan_page["resources"]:
+            yield scan
+        if page + 1 >= scan_page["page"]["totalPages"]:
+            break
+
+
+def get_metrics(scans):
+    """
+    Accept a list of Nexpose API v 3 scan objects.
+    Return a dict of status (dict), message (dict), and messages (int)
+    """
+
+    status = defaultdict(int)
+    message = defaultdict(int)
+    raw = defaultdict(int)
+    metrics = {"status": status, "message": message, "messages": 0, "raw": raw}
+
+    for scan in scans:
+        this_status = scan.get("status", False)
+        if this_status:
+            metrics["status"][this_status] += 1
+
+        this_message = scan.get("message", False)
+        if this_message:
+            metrics["messages"] += 1
+            if "Scan failed to start on engine" in this_message:
+                metrics["message"]["failed_to_start"] += 1
+            if "ngine is not responding" in this_message:
+                metrics["message"]["engine_not_responding"] += 1
+            if "Available resources are insufficient" in this_message:
+                metrics["message"]["insufficient_resources"] += 1
+            if "console cannot contact the scan engine" in this_message:
+                metrics["message"]["cannot_contact_engine"] += 1
+            metrics["raw"][this_message] += 1
+
+    return metrics
+
+
+def export_metrics(metrics, export_dir):
+    """
+    Accepts metrics (dict) and export_dir.
+    Write a file of those metrics to the export_dir.
+    Return True on success,
+    False on failure.
+    """
+
+    filename = "nexpose_scan_metrics.prom"
+    now = datetime.datetime.utcnow().timestamp()
+    temp_filename = filename + "." + str(now)
+    temp_file = os.path.join(export_dir, temp_filename)
+    export_file = os.path.join(export_dir, filename)
+
+    try:
+        with open(temp_file, "w+") as t:
+            # HELP node_systemd_unit_state Systemd unit
+            # TYPE node_systemd_unit_state gauge
+            t.write("# HELP nexpose_scan_status Status of Nexpose scans\n")
+            t.write("# TYPE nexpose_scan_status gauge\n")
+            for metric, value in metrics["status"].items():
+                t.write(
+                    'nexpose_scan_status{status="'
+                    + metric
+                    + '"} '
+                    + str(value)
+                    + "\n"
+                )
+            t.write("# HELP nexpose_scan_message Nexpose scans message\n")
+            t.write("# TYPE nexpose_scan_message gauge\n")
+            for metric, value in metrics["message"].items():
+                t.write(
+                    'nexpose_scan_message{message="'
+                    + metric
+                    + '"} '
+                    + str(value)
+                    + "\n"
+                )
+            t.write("# HELP nexpose_scan_messages Nexpose scans messages\n")
+            t.write("# TYPE nexpose_scan_messages gauge\n")
+            t.write("nexpose_scan_messages " + str(metrics["messages"]) + "\n")
+            t.write("# HELP nexpose_scan_metrics_last_run_time_seconds time in seconds since 1970 of last run\n")
+            t.write("# TYPE nexpose_scan_metrics_last_run_time_seconds gauge\n")
+            t.write(
+                "nexpose_scan_metrics_last_run_time_seconds "
+                + str(now)
+                + "\n"
+            )
+        os.rename(temp_file, export_file)
+        return True
+    except:
+        return False
+
+
+def main():
+    """
+    Parse arguments.
+    """
+    # We will make a new parser here in order to use configarparse,
+    # The new parser inherits from the generic parser.
+    # resolve conflicts, since both will provide a help argument.
+    parent = nexposeargs.parser
+
+    parser = configargparse.ArgumentParser(
+        parents=[parent],
+        default_config_files=["/etc/nexpose-exporter.conf"],
+        description="Export Nexpose console metrics for Prometheus.",
+        conflict_handler="resolve",
+    )
+    parser.add_argument(
+        "-e",
+        "--export-directory",
+        help="""Directory to export metrics to.
+        Default is /var/lib/node_exporter/textfile_collector.
+        Be sure this process has write access to the directory,
+        and that the reading process can read the file and list the directory.
+        """,
+        action="store",
+        default="/var/lib/node_exporter/textfile_collector",
+        dest="export_dir",
+    )
+    parser.add_argument(
+        "-s",
+        "--single-pass",
+        help="""Perform a single pass collecting data and exit,
+        instead of repeating forever.
+        """,
+        action="store_true",
+        default=False,
+    )
+    parser.add_argument(
+        "-s",
+        "--single-pass",
+        help="""Perform a single pass collecting data and exit,
+        instead of repeating forever.
+        """,
+        action="store_true",
+        default=False,
+    )
+
+    args = parser.parse_args()
+
+    base_url = ":".join([args.baseurl, args.port])
+    export_dir = args.export_dir
+    single_pass = args.single_pass
+
+    user = args.user or get_credentials.user()
+    password = args.password or get_credentials.password()
+    login = nexpose.login(
+        base_url=base_url,
+        user=user,
+        password=password,
+        verify=args.verify,
+    )
+
+    while True:
+        try:
+            scans = get_scans(login=login)
+            metrics = get_metrics(scans)
+            export_metrics(metrics, export_dir)
+        except nexpose.requests.exceptions.RequestException:
+            pass
+        if single_pass:
+            break
+        sleep(60)
+
+
+if __name__ == "__main__":
+    main()

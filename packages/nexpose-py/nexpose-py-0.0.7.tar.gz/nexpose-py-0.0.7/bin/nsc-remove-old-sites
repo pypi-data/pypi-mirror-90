@@ -1,0 +1,67 @@
+#!/usr/bin/env python3
+
+import re
+
+import nexpose.nexpose as nexpose
+import nexpose.args as nexposeargs
+
+def main():
+    """
+    Parse arguments
+    """
+    parser = nexposeargs.parser
+    parser.description = "Remove old or unscheduled Nexpose sites."
+
+    parser.add_argument(
+        "-r",
+        "--regex",
+        help="""Regex to match site names on. Do not delete site names which
+        do not match this regex.
+        Default is '.*'
+        """,
+        action="store",
+        default=".*",
+    )
+
+    args = parser.parse_args()
+
+    base_url = ":".join([args.baseurl, args.port])
+    regex = args.regex
+
+    user = args.user or get_credentials.user()
+    password = args.password or get_credentials.password()
+    login = nexpose.login(
+        base_url=base_url,
+        user=user,
+        password=password,
+        verify=args.verify,
+    )
+
+    pages = nexpose.sites(nlogin=login)["page"]["totalPages"]
+    site_count = 0
+    tried = 0
+    deleted = 0
+
+    for page in range(pages):
+        resources = nexpose.sites(nlogin=login, page=page)["resources"]
+        site_ids = [
+            resource["id"]
+            for resource in resources
+            if re.fullmatch(regex, resource['name'])
+        ]
+        for site_id in site_ids:
+            site_count += 1
+            print(f"checking site {site_id}")
+            if nexpose.site_id_older_than(nlogin=login, site_id=site_id, days=90):
+                tried += 1
+                try:
+                    print(f"deleting site {site_id}")
+                    nexpose.delete_site(nlogin=login, site_id=site_id)
+                    print(f"deleted site {site_id}")
+                    deleted += 1
+                except nexpose.ResponseNotOK as err:
+                    print(f"something went wrong with {site_id}: {err}")
+    print(f"deleted {deleted} of {tried} tried out of {site_count}")
+
+if __name__ == "__main__":
+    main()
