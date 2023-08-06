@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/sharepy.egg-info/PKG-INFO
+src/sharepy.egg-info/SOURCES.txt
+src/sharepy.egg-info/dependency_links.txt
+src/sharepy.egg-info/requires.txt
+src/sharepy.egg-info/top_level.txt
