@@ -1,0 +1,190 @@
+Metadata-Version: 2.1
+Name: imioweb.policy
+Version: 1.0b9
+Summary: Policy for the installation of buildout.imioweb
+Home-page: https://pypi.python.org/pypi/imioweb.policy
+Author: Nicolas Demonte
+Author-email: support@imio.be
+License: GPL version 2
+Description: .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+           If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+           This text does not appear on pypi or github. It is a comment.
+        
+        ==============
+        imioweb.policy
+        ==============
+        
+        Fait la glue entre différentes dépendences et passe parfois des paramètres. La liste des dépendences se trouve dans setup.py Quand on installe le module imioweb.policy dans plone, celui-ci va se charger d'installer d'autres modules à son tour.
+        
+        .. image:: https://travis-ci.com/IMIO/imioweb.policy.svg?branch=master
+            :target: https://travis-ci.com/IMIO/imioweb.policy
+        
+        .. image:: https://coveralls.io/repos/github/IMIO/imioweb.policy/badge.svg?branch=master
+            :target: https://coveralls.io/github/IMIO/imioweb.policy?branch=master
+        
+        Features
+        --------
+        
+        - à compléter
+        
+        
+        Examples
+        --------
+        
+        - à compléter
+        
+        
+        Documentation
+        -------------
+        
+        - à commpléter
+        
+        
+        Translations
+        ------------
+        
+        - à compléter
+        
+        
+        Installation
+        ------------
+        
+        Install imioweb.policy by adding it to your buildout::
+        
+            [buildout]
+        
+            ...
+        
+            eggs =
+                imioweb.policy
+        
+        
+        and then running ``bin/buildout``
+        
+        
+        Contribute
+        ----------
+        
+        - Issue Tracker: https://github.com/collective/imioweb.policy/issues
+        - Source Code: https://github.com/collective/imioweb.policy
+        - Documentation: https://docs.plone.org/foo/bar
+        
+        
+        Support
+        -------
+        
+        If you are having issues, please let us know.
+        We have a mailing list located at: project@example.com
+        
+        
+        License
+        -------
+        
+        The project is licensed under the GPLv2.
+        
+        
+        Contributors
+        ============
+        
+        - Nicolas Demonte, daggelpop@gmail.com
+        - Valentin Piret, valentin.piret@affinitic.be
+        
+        
+        Changelog
+        =========
+        
+        
+        1.0b9 (2020-04-01)
+        ------------------
+        
+        - Add imio.prometheus dependency.
+          [bsuttor]
+        
+        - Add collective.folderishtypes [dexterity] dependency.
+          [bsuttor]
+        
+        
+        1.0b8 (2020-03-25)
+        ------------------
+        
+        - Bad release.
+          [bsuttor]
+        
+        
+        1.0b7 (2020-03-25)
+        ------------------
+        
+        - Add collective.prometheus dependency.
+          [bsuttor]
+        
+        
+        1.0b6 (2020-01-29)
+        ------------------
+        
+        - Add collective.sendinblue dependency
+          [laulaz]
+        
+        
+        1.0b5 (2020-01-29)
+        ------------------
+        
+        - Add core and remove taxonomy dependency.
+          [bsuttor]
+        
+        
+        1.0b4 (2020-01-27)
+        ------------------
+        
+        - Add collective.faceted.map dependency.
+          [bsuttor]
+        
+        - Add collective.geolocationbehavior dependency.
+          [bsuttor]
+        
+        
+        1.0b3 (2019-12-16)
+        ------------------
+        
+        - Add pas.plugin.imio dependency.
+          [bsuttor]
+        
+        
+        1.0b2 (2019-11-26)
+        ------------------
+        
+        - Add buildout index
+        - Make works with py3
+          [bsuttor]
+        
+        
+        1.0b1 (2019-02-25)
+        ------------------
+        
+        - Add iaweb.mosaic dependency.
+          [bsuttor]
+        
+        
+        1.0a2 (2018-12-10)
+        ------------------
+        
+        - Upload to devpi.
+          [bsuttor]
+        
+        
+        1.0a1 (2018-12-10)
+        ------------------
+        
+        - Initial release.
+          [daggelpop]
+        
+Keywords: Python Plone
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 5.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Provides-Extra: test
