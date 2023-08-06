@@ -1,0 +1,12 @@
+turbo_allauth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turbo_allauth/apps.py,sha256=6GkxQVlsvpxe2ohVAYZT6Cvt7kyGebeU00Secj0qYSQ,109
+turbo_allauth/mixins.py,sha256=zuOeGh0WKDhbXBKHgz5jxM1gQE6GBrMlvRsvHqNa2h8,514
+turbo_allauth/urls.py,sha256=ir6mLK8Ht8AbonMd7cifAF-U9wQuuM2lz3fhPBhSqgQ,854
+turbo_allauth/views/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turbo_allauth/views/account.py,sha256=_3abt0OzOS0Pz_ypg4eiPucqWij0TODb4K5KDRk239c,968
+turbo_allauth/views/socialaccount.py,sha256=IhJ5INzJycpplmC0OUdiKwWZ_9_QbbYskyUm_pxQYsQ,240
+django_turbo_allauth-0.0.3.dist-info/LICENSE,sha256=gfwo2o77U4ZF1SkmXG4HZaluFKW1PWugPq0VwuyCdv4,1070
+django_turbo_allauth-0.0.3.dist-info/METADATA,sha256=CWXRYH-ZWG79LuIcf8tTW9-H2-UKtr36IgJo2fMQrpg,2389
+django_turbo_allauth-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_turbo_allauth-0.0.3.dist-info/top_level.txt,sha256=jVRjb4O5d1YEJ7bUyrvn1wFjey6fPHiVoY5y9I-o5yk,14
+django_turbo_allauth-0.0.3.dist-info/RECORD,,
