@@ -1,0 +1,10 @@
+scrapy_redis_bloomfilter/__init__.py,sha256=iJc9Go8K9Zd6nQUim1mvGJdeS0ObijSHm6tlX7po9jU,127
+scrapy_redis_bloomfilter/__version__.py,sha256=Jd9F7mHTiaOwkkbJMga8DQ9P-oXLFLWaN4LaLerNK6g,75
+scrapy_redis_bloomfilter/bloomfilter.py,sha256=G0uwO4eT43QMHPaOUzjuj8wojmSNNRaciAZJbUDPNls,1657
+scrapy_redis_bloomfilter/defaults.py,sha256=rYmxG86ucPlHRNPnxOTYHgfdufVqZ2mGaGq8NFyTeKI,164
+scrapy_redis_bloomfilter/dupefilter.py,sha256=ZZT8ZUl1NLFleLYOpBG484KOFlav82OEhX4Sk-FYEHU,4856
+scrapy_redis_bloomfilter/scheduler.py,sha256=QT0o95rEDAWOGY8P1h1LpxCGTq53UEqdjEkhKxxW4R0,1356
+Scrapy_Redis_BloomFilter-0.8.1.dist-info/METADATA,sha256=zetIFxOeviPfPF3eUzvN8MBIIWyPdbjD_gouPn6wmbE,3076
+Scrapy_Redis_BloomFilter-0.8.1.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+Scrapy_Redis_BloomFilter-0.8.1.dist-info/top_level.txt,sha256=02oofeaPaX4Yipt538cJPFtkDb5le1BEilG3Kpsg_2Y,25
+Scrapy_Redis_BloomFilter-0.8.1.dist-info/RECORD,,
