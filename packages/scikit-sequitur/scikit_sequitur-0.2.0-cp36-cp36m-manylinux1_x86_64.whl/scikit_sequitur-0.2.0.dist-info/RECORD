@@ -1,0 +1,8 @@
+scikit_sequitur-0.2.0.dist-info/WHEEL,sha256=IkZiJFiZiRavDHfaLV1hdVPFYe1HJNLQ8dnz1DVQgHk,109
+scikit_sequitur-0.2.0.dist-info/METADATA,sha256=xA2Xrl86qTGi6INR407iLFDSEI0L59QaraIVmEY5FsY,4563
+scikit_sequitur-0.2.0.dist-info/top_level.txt,sha256=NIGeUp7zUwIUo5DLEjUxA1b0Qj6WcJTSBNXuhyS0kDE,11
+scikit_sequitur-0.2.0.dist-info/RECORD,,
+sksequitur/core.py,sha256=Ma6leuX-EFyFXXc9uEm8EvGgFmsPtMoVObWzb_aA9gE,6565
+sksequitur/api.py,sha256=7_r6rbHUe0ZIPx5SiHFa1Uqje279EKjGKqUqo_dxgrQ,3913
+sksequitur/_core.cpython-36m-x86_64-linux-gnu.so,sha256=DWm9HXrhehEzUN8EQN-JogTxZtg_36UgtgXPuLUN4uA,683232
+sksequitur/__init__.py,sha256=WPFd_WIzKNngajLJaC2X_M6_gspxYc1yTseRZLOakZM,687
