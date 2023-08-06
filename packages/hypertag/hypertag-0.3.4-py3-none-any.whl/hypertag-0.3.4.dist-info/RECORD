@@ -1,0 +1,11 @@
+LICENSE,sha256=yXI7Gm-zmSYBvR7eYFTRhQUPLjxMbQnVOHbraW7bcds,1070
+hypertag/__init__.py,sha256=oYLGMpySamd16KLiaBTfRyrAS7_oyp-TOEHmzmeumwg,22
+hypertag/__main__.py,sha256=3Rpw7fYUSDtxV1DxfMBoIAvLxo8wnBVFoegvNXWTHM0,93
+hypertag/daemon.py,sha256=A7tYPIyNn76nUoMIZMwpWYcDvC30sgyEwnVTNVZqfYw,3314
+hypertag/graph.py,sha256=S89WgI9H1pzf-LeHkN08FTeskImbXkZ7F7Q3Q8TnaTg,1493
+hypertag/hypertag.py,sha256=qPsAQU8sELrnK0m-RoB3MtBl5ETHmlHvuL5CtvHTw5o,9794
+hypertag/persistor.py,sha256=wJqdvYO3ltPKiOvI8-vgTEKRXOP9_f8TfOyqRHhxH24,14075
+hypertag-0.3.4.dist-info/LICENSE,sha256=yXI7Gm-zmSYBvR7eYFTRhQUPLjxMbQnVOHbraW7bcds,1070
+hypertag-0.3.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+hypertag-0.3.4.dist-info/METADATA,sha256=uv0es-Fam0XXXRis2amxWliIibOvWHMJDcGhUs1hsnI,5831
+hypertag-0.3.4.dist-info/RECORD,,
