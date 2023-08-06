@@ -1,0 +1,16 @@
+sccoda/__init__.py,sha256=CIuTMS_2OX1n_OT_-I7Rx3r4fO8tR8RnOdKgt_-XFDs,366
+sccoda/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sccoda/model/dirichlet_models.py,sha256=FKkx9V0RYGn_9IKpv6O0lbEmDmz9fo4syNVBdCJk4A0,33732
+sccoda/model/other_models.py,sha256=XlSAa6ysMOuUfpGR6ZHRdES7R2f4xBfGR2L3uKn7hKs,27987
+sccoda/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sccoda/util/cell_composition_data.py,sha256=uSt9pzBzhWrE__re0azvq_C_SqN7fhgqp2Tc7gh2uQs,8536
+sccoda/util/comp_ana.py,sha256=qeW-kjzBIjbO5mTfLASrVAlbf9LrxE1nnBMEaVFYQ7I,3119
+sccoda/util/data_generation.py,sha256=E9MZFcVnkMoPkd-HPk8bwEHM6Sp15-3-lvVS1CCf44o,6839
+sccoda/util/data_visualization.py,sha256=_0gfov4157W9z8TEtvfgYN96ElFpeYTZKIlnkVGCs0s,9061
+sccoda/util/helper_functions.py,sha256=T2zp7X4rTgyfYLBcNj1aVkN4YdUel1bdQ_NYmDjTpV0,1567
+sccoda/util/result_classes.py,sha256=1g-FdLn-swrIxYM_6Q8dIj51v5a8L_GgSaKR4wJos_Y,19735
+scCODA-0.1.dist-info/LICENSE,sha256=Qsze6Wge529z1cj61dl9OxSgvUS6eavrxj5JWWjKFQM,1531
+scCODA-0.1.dist-info/METADATA,sha256=pT1GE-VfGl9rUHcl7R4xYak_XWuCteY6Rt7Zd3MHw9c,2720
+scCODA-0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+scCODA-0.1.dist-info/top_level.txt,sha256=RjoCINos2qNygZsTx0Fw9LmbRtvj5aMytO8RDehCLtA,7
+scCODA-0.1.dist-info/RECORD,,
