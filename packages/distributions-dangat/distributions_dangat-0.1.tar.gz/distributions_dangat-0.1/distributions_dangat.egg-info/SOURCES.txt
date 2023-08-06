@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+distributions_dangat/Binomialdistribution.py
+distributions_dangat/Gaussiandistribution.py
+distributions_dangat/Generaldistribution.py
+distributions_dangat/__init__.py
+distributions_dangat.egg-info/PKG-INFO
+distributions_dangat.egg-info/SOURCES.txt
+distributions_dangat.egg-info/dependency_links.txt
+distributions_dangat.egg-info/not-zip-safe
+distributions_dangat.egg-info/top_level.txt
