@@ -1,0 +1,9 @@
+README.md
+setup.py
+pydotmap/__init__.py
+pydotmap/_version.py
+pydotmap/pymap.py
+pydotmap.egg-info/PKG-INFO
+pydotmap.egg-info/SOURCES.txt
+pydotmap.egg-info/dependency_links.txt
+pydotmap.egg-info/top_level.txt
