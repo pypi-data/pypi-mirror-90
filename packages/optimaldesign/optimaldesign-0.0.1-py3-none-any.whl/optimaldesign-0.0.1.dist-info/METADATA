@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: optimaldesign
+Version: 0.0.1
+Summary: OptimalDesign
+Home-page: https://gitlab.com/maunke/optimaldesign
+Author: Markus Unkel
+Author-email: markus@unkel.io
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Optimal Design
+
+> In Setup Phase (see #1)
+
+This package provides several algorithms for finding optimal designs of (quasi-) linear models.
+
