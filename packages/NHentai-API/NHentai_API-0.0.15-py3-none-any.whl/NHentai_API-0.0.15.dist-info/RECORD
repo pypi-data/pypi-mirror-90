@@ -1,0 +1,10 @@
+NHentai/__init__.py,sha256=g2hk2w9iZLh1mwZPhaXOtwHbpe6NdyGGhZAgoDNRX9g,11009
+NHentai/entities/__init__.py,sha256=G0Z8LaPbrUINV6FNpjBprHwZPdV_PiLdYorftn9D_X4,61
+NHentai/entities/doujin.py,sha256=Md9ug7t9j__Ows9O_MXRoXr7UvcmUhF_sTXku0wiVSc,492
+NHentai/entities/links.py,sha256=-GxuS-SGtH8f8DWGcxXFuflLjFasKIkF7I_7rTkgXww,143
+NHentai/entities/page.py,sha256=Y27ZJhZ9HOk1Ceq_ewr_PZRdWgLh7BnTK7vWOQcAU1s,730
+NHentai_API-0.0.15.dist-info/LICENSE,sha256=iPLy4R7G1n55OSiN6Aj2YRq5mz8oQrmLINTc2pQDqJg,1093
+NHentai_API-0.0.15.dist-info/METADATA,sha256=Gzdy1sN0csnDzZxE9F6K53fSxS3WeX2qJbskz7aG-mo,3782
+NHentai_API-0.0.15.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+NHentai_API-0.0.15.dist-info/top_level.txt,sha256=xC4rY03pyl-0339HrFYaoyeBQ4x2l-ganUK4R6vcSos,8
+NHentai_API-0.0.15.dist-info/RECORD,,
