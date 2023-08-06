@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: mmpi
+Version: 0.0.1
+Summary: email detected library
+Home-page: https://github.com/a232319779/mmpi
+Author: ddvv
+Author-email: dadavivi512@gmail.com
+License: MIT
+Description: 
+        
+        An email detected library. It's support to detect the header, body and attachment.
+        It's support to parse the attachment type of ole, rtf, zip and so on.
+        
+        ## Insatall
+        
+        ```
+        $ pip install mmpi
+        ```
+        
+        mark：`windows` install `yara-python`，download from [here](https://github.com/VirusTotal/yara-python/releases)
+        
+        ## Usage
+        
+        ### 1. Command
+        
+        ```
+        $ mmpi-run $email_path
+        ```
+        
+        ### 2. Quick Start
+        
+        ```
+        from mmpi import mmpi
+        
+        
+        def main():
+            emp = mmpi()
+            emp.parse('test.eml')
+            report = emp.get_report()
+            print(report)
+        
+        
+        if __name__ == "__main__":
+            main()
+        
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
