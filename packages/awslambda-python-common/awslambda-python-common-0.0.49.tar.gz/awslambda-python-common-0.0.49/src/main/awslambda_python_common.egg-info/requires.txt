@@ -1,0 +1,3 @@
+pyjwt
+dacite
+aws_lambda_powertools
