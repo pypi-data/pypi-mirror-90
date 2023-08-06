@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nh
+Version: 0.0.2
+Summary: framework for data flow
+Home-page: https://github.com/thorwhalen/ut/tree/master/util/data_flow.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# nh
+framework for data flow
+
+
+To install:	```pip install nh```
+
+
