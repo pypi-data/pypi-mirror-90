@@ -1,0 +1,9 @@
+__pycache__/
+dist/
+nosemouse/models/face_model/deploy.prototxt
+nosemouse/models/face_model/opencv_face_detector.pbtxt 
+nosemouse/models/face_model/opencv_face_detector_uint8.pb
+nosemouse/models/face_model/res10_300x300_ssd_iter_140000.caffemodel
+nosemouse/models/facial_landmark_model/variables/
+nosemouse/models/facial_landmark_model/saved_model.pb
+nosemouse/models/gaze_model/shape_predictor_68_face_landmarks.dat
