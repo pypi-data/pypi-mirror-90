@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+
+		<title>Majel</title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<link href="https://fonts.googleapis.com/css?family=Oswald:500" rel="stylesheet">
+
+		<style>
+
+			/* LCARS Colours (courtesy of https://github.com/hmt3design/LCARS_CSS_Grid/blob/master/css/colors.css */
+
+			/* 2357 series */
+
+			.lc235701 {background-color: #ffff99;}
+			.lc235702 {background-color: #ffcc99;}
+			.lc235703 {background-color: #ffcc66;}
+			.lc235704 {background-color: #cc99cc;}
+			.lc235705 {background-color: #664466;}
+			.lc235706 {background-color: #99ccff;}
+			.lc235707 {background-color: #3366cc;}
+			.lc235708 {background-color: #006699;}
+
+			/* 2369 series */
+
+			.lc236901 {background-color: #9999cc;}
+			.lc236902 {background-color: #9999ff;}
+			.lc236903 {background-color: #cc99cc;}
+			.lc236904 {background-color: #cc6699;}
+			.lc236905 {background-color: #cc6666;}
+			.lc236906 {background-color: #ff9966;}
+			.lc236907 {background-color: #ff9900;}
+			.lc236908 {background-color: #ffcc66;}
+
+			/* 2375 series */
+
+			.lc237501 {background-color: #6688cc;}
+			.lc237502 {background-color: #4455bb;}
+			.lc237503 {background-color: #9977aa;}
+			.lc237504 {background-color: #774466;}
+			.lc237505 {background-color: #dd6644;}
+			.lc237506 {background-color: #aa5533;}
+			.lc237507 {background-color: #bb6622;}
+			.lc237508 {background-color: #ee9955;}
+
+			/* 2379 series */
+
+			.lc237901 {background-color: #ccddff;}
+			.lc237902 {background-color: #5599ff;}
+			.lc237903 {background-color: #3366ff;}
+			.lc237904 {background-color: #0011ee;}
+			.lc237905 {background-color: #000088;}
+			.lc237906 {background-color: #bbaa55;}
+			.lc237907 {background-color: #bb4411;}
+			.lc237908 {background-color: #882211;}
+
+			.grid {
+				display: grid;
+				grid-template-columns: repeat({{ columns }}, 1fr);
+				gap: 3rem;
+			}
+
+			.grid > a {
+				padding: 3rem;
+				border-radius: 1rem;
+				text-align: center;
+				text-decoration: none;
+				color: #000000;
+				display: block;
+				cursor: pointer;
+			}
+
+			.header {
+				color: #ffffff;
+			}
+			.header h1 {
+				margin: 0;
+			}
+
+			body {
+				font: 2rem system-ui;
+				background-color: #000000;
+				display: grid;
+				height: 100vh;
+				margin: 0 10rem;
+				place-items: center center;
+				font-family: Oswald, sans-serif;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="grid">
+			<div class="header">
+				<h1>Majel</h1>
+				<div>Choose one of the following</div>
+			</div>
+			{{ links }}
+		</div>
+	</body>
+</html>
