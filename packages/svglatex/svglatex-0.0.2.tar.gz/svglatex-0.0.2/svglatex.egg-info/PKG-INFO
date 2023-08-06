@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: svglatex
+Version: 0.0.2
+Summary: Include Inkscape graphics in LaTeX.
+Home-page: https://github.com/johnyf/svglatex
+Author: Ioannis Filippidis
+Author-email: jfilippidis@gmail.com
+License: BSD
+Description: svglatex is a package for including SVG graphics in LaTeX documents via Inkscape. A script converts an SVG file to a PDF file that contains only graphics, and a text file that includes LaTeX code for typesetting the text of the SVG file. So the script separates text from graphics, and overlays the text, typeset with LaTeX, on the PDF.More details can be found in the README at: https://github.com/johnyf/svglatex
+Keywords: svg,latex,pdf,inkscape,figure,graphics
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Classifier: Topic :: Text Processing :: Markup :: LaTeX

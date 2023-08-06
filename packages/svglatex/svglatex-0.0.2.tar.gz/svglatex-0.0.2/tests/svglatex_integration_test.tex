@@ -1,0 +1,13 @@
+% test integration of the Python package `svglatex` with
+% the LaTeX style `svglatex.sty`.
+\documentclass[10pt]{article}
+\usepackage{svglatex}
+\graphicspath{{./img/}}
+\begin{document}
+\begin{figure}
+\centering
+\includesvg[width=0.6\textwidth]{./img/beautiful}
+\caption{Nice caption.}
+\label{fig:label}
+\end{figure}
+\end{document}
