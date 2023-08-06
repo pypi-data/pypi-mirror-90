@@ -1,0 +1,12 @@
+matplotlib
+pandas
+pyyaml
+setuptools
+
+[doc]
+myst-parser
+sphinx
+sphinx-book-theme
+sphinx-copybutton
+sphinx-togglebutton
+sphinx-panels
