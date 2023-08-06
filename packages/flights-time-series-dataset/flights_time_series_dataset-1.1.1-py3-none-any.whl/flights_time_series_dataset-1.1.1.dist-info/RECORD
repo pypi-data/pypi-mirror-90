@@ -1,0 +1,9 @@
+flights_time_series_dataset/__init__.py,sha256=ne4b-2PFofpNwfFn9ATN8otdU0f1nssaBMuRP8QWqFY,162
+flights_time_series_dataset/dataset.py,sha256=UQ_U4HxNKnBX9ZscEcJbWVL6T2KphE9H6svyj5pfNcU,4501
+flights_time_series_dataset/flight_series_dataset.py,sha256=Ulaukkg-36Gplz_Y1Gh_0knImwv1Qn84DPlS6S9n-Jg,1171
+flights_time_series_dataset/flights_dataset.py,sha256=H6yRpyj73GXdrXnf2ynwfrp7kTKoF3rqPUt-1ZUqpSE,4493
+flights_time_series_dataset-1.1.1.dist-info/LICENSE,sha256=Q2ptU2E48gOsMzhYz_kqVovmJ5d1KzrblLyqD2_-fvY,1235
+flights_time_series_dataset-1.1.1.dist-info/METADATA,sha256=6QtPkmV8B1no6Ox6PGAH_rFLo_7UDN1XmSs0XJkoSxE,1804
+flights_time_series_dataset-1.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+flights_time_series_dataset-1.1.1.dist-info/top_level.txt,sha256=K1jqfZ5SPzYnkN6p1J8CM1VcnZ8_3qdIit_z-QiO_vc,28
+flights_time_series_dataset-1.1.1.dist-info/RECORD,,
