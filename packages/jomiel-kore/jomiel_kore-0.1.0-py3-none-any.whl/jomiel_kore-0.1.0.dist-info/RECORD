@@ -1,0 +1,16 @@
+jomiel_kore/__init__.py,sha256=L6zbQIZKsAP-Knhm6fBcQFPoVdIDuejxze60qX23jiw,21
+jomiel_kore/app.py,sha256=EUqSVGMopqBU2iSt-cF_IQNLgzUHP6u9VAa2eH_bPN0,13434
+jomiel_kore/file.py,sha256=8D_5jUWiU7AvG4rGaV1bpmBUR-LxlzPAJ9DFODSvgro,1483
+jomiel_kore/formatter.py,sha256=3R6_1KsM_jvdr6aE0H5yrppxUduWdm8V2EoiKqcoZZA,1125
+jomiel_kore/input.py,sha256=wzL0mPcmohXO5_lDY_yRyPRuHaRln1yVHUi1DFqzhl8,5691
+jomiel_kore/log.py,sha256=AQ3xLqbQJCJPceAPeyHDUQD9sYtEtTmjSj0cbSiVf8s,2486
+jomiel_kore/opts.py,sha256=f0nqrD2mzQ8L2H72JFijB8gDn7d4Ys4BFrjG3Nq1I-A,571
+jomiel_kore/sig.py,sha256=fuaa0GiVaZWFFRxvN9gG0SFx8N5lapbd0vFy2-1fkoI,1608
+jomiel_kore/version.py,sha256=h4Zce74VR0MGaEqZC_U94BydAd6GrBAluR436Mhjlqs,1025
+jomiel_kore-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+jomiel_kore-0.1.0.dist-info/METADATA,sha256=Acch_mKXmC6r52l9AzPCDtyWzOuxmw30rDutK5M5r14,2241
+jomiel_kore-0.1.0.dist-info/NOTICE,sha256=bX8uXgHu5K9o-_morF5zklddkN-Ebx3UIpZuHra7kDg,561
+jomiel_kore-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+jomiel_kore-0.1.0.dist-info/top_level.txt,sha256=quhlHIjqlPCnEqJSGl3wnrEADYCwuGQLaeriZKveedM,12
+jomiel_kore-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+jomiel_kore-0.1.0.dist-info/RECORD,,
