@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "qsde"
+version = "0.1.2"
+description = ""
+authors = ["Huan Nguyen <ngtrunghuan@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+google-cloud-storage = "^1.35.0"
+pandas = "^1.1.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+black = {version = "^20.8b1", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
