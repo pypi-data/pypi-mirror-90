@@ -1,0 +1,2 @@
+beancount>=2.0
+beancount_plugin_utils>=0.0.2
