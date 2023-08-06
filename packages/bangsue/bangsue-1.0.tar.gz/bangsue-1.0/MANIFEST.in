@@ -1,0 +1,2 @@
+recursive-include bangsue_codename *.csv
+recursive-include bangsue_codename *.txt
