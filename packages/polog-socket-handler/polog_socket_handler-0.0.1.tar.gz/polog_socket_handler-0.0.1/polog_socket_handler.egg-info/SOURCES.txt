@@ -1,0 +1,8 @@
+README.md
+setup.py
+polog_socket_handler.egg-info/PKG-INFO
+polog_socket_handler.egg-info/SOURCES.txt
+polog_socket_handler.egg-info/dependency_links.txt
+polog_socket_handler.egg-info/requires.txt
+polog_socket_handler.egg-info/top_level.txt
+socket_handler/__init__.py
