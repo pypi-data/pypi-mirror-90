@@ -1,0 +1,57 @@
+<script>
+$(document).ready(function() {
+    var options = JSON.parse('{{ options|escapejs  }}');
+    if (options.apiKey === '')
+        console.log('Warning: no HOCKEYDATA_API_KEY provided');
+    if (typeof(options.error) !== 'undefined') {
+        $(options.domNode).html('<p>Error: '+options.error+'</p>');
+    } else {
+        // responsive settings for widget types
+        var size = "long";
+        var mobile = false;
+        if ($(window).width() < 560) {
+            size = "short";
+            mobile = true;
+        }
+        switch(options.widgetName) {
+            case 'hockeydata.los.Standings':
+                options['columnSet'] = size;
+                break;
+            case 'hockeydata.los.Schedule':
+                options['columnSet'] = size;
+                if (mobile)
+                    options["additionalColumns"]= [{
+                        "position": 0,
+                        "column": "scheduledDate"
+                    }];
+                break;
+            default:
+        }
+        // Falls gameLinkFromCallback angegeben, gameLink nochmal überschreiben
+        // aktuell nur für GameSlider!!
+        if (options.gameLinkFromCallback === true && options.widgetName === 'hockeydata.los.GameSlider') {
+            gameLink = options['gameLink'];
+            options['gameLink'] = function(e){
+                var gameId = e[0];
+                var divisionId = e[1];
+                return gameLink.replace('%G', e[0]).replace('%D', e[1]);
+            }
+        }
+        options['$domNode'] = $(options.domNode);
+        if (options['paint']) {
+            try {
+                var paintFunctionPtr = eval(options['paint']);
+                if (typeof paintFunctionPtr === "function") {
+                    options['paint'] = paintFunctionPtr;
+                }
+            }
+            catch(err) {
+                options['paint'] = undefined;
+                console.log('Function parameter for paint does not exist!');
+            }
+
+        }
+        var standings = new hockeydata.util.Widget(options);
+    }
+});
+</script>

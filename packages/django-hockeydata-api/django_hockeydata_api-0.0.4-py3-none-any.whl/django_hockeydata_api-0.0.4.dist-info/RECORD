@@ -1,0 +1,16 @@
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/manage.py,sha256=oqWz2YLvN2Psz3PAOWPRMSvuNS1dZISg5xNOe-l1ckw,539
+example/example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/example/settings.py,sha256=adLgN9ZwYlubPwMniHeer2s7yqEDEjFkpd9xYtuvT7U,3514
+example/example/urls.py,sha256=tGnty6xANoYTd4jepPcKGUh5bZb4pdtmLrDgi_kg1b4,1700
+example/example/views.py,sha256=xFalBMarMU4drfLJ0jLYjz_4Q_rDo7ardJAoTwIZrvs,1647
+example/example/wsgi.py,sha256=93W8kzKJbTMvmiM2ZLO_0R1A_QAnyewkcJ_pCl4KSI8,389
+hockeydata_api/__init__.py,sha256=CdDhbQ40k7_ZcAl4eIveYSeHRmfErek3FU7dbVbIlwI,45
+hockeydata_api/templates/hockeydata_api/include/hockeydata_widget.html,sha256=IIntZyk-28IhgiiO0_noZIzGO4LR5ZHvm-yF4MbGrrU,2074
+hockeydata_api/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hockeydata_api/templatetags/widget_tags.py,sha256=to0Jz0i92VmnETf2moHLzUrY9yHt9Kq69Ojo7rA63fQ,2958
+django_hockeydata_api-0.0.4.dist-info/LICENSE,sha256=FZRy-WbwH9aObzgicjiMwGtO_HMtMllwV3FwTSCS5bw,1540
+django_hockeydata_api-0.0.4.dist-info/METADATA,sha256=4hFWJI9arEALLTv9GPvZ7VrB1mbJTQi1OAR6mgkQqAQ,5023
+django_hockeydata_api-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_hockeydata_api-0.0.4.dist-info/top_level.txt,sha256=nJ-szniUjfnysFZL4Fb9BPOBq-m3eJ_-VjuCohR4Dmw,23
+django_hockeydata_api-0.0.4.dist-info/RECORD,,
