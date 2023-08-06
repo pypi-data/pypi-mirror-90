@@ -1,0 +1,11 @@
+marshmallow>=3.10.0
+sqlalchemy
+sqlalchemy-utils
+pyyaml
+faker>=5.0.2
+
+# DADA # 
+dada-settings>=0.0.2
+dada-utils>=0.0.2
+dada-serde>=0.0.2
+dada-text>=0.0.2
