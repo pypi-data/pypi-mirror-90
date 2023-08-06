@@ -1,0 +1,3 @@
+[console_scripts]
+ctwrap = ctwrap.bin.ctwrap:main
+
