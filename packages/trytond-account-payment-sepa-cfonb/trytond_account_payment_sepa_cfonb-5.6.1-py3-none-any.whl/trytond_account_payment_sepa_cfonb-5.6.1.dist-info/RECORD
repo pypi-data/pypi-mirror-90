@@ -1,0 +1,14 @@
+trytond/modules/account_payment_sepa_cfonb/__init__.py,sha256=30f77AvkVNXsWvhS6C7JI0z0w8iKKXRj4ODhfgiCnO4,341
+trytond/modules/account_payment_sepa_cfonb/payment.py,sha256=d7bZLAY8zogbc5Cclq7fGFZtmiSrjX1Zbj6Euow-s7s,1709
+trytond/modules/account_payment_sepa_cfonb/tryton.cfg,sha256=PDkN1ktjRnUEgGubclyHhMNWEnt8I1DzVKYO7JEnwgo,108
+trytond/modules/account_payment_sepa_cfonb/template/base-cfonb.xml,sha256=QnRMDGX6739KzYqwPcFGlvnHtaXWx3Bdgdezg4QMwHQ,2627
+trytond/modules/account_payment_sepa_cfonb/template/pain.001.001.03-cfonb.xml,sha256=neehvuqgYzfcjmbvWkbYshvo39NcKBsqWafkQWmrUp4,4052
+trytond/modules/account_payment_sepa_cfonb/template/pain.008.001.02-cfonb.xml,sha256=We4YnPom292sMEl6XusGlnXM4us_xDc3RaCbeea5Xog,4729
+trytond/modules/account_payment_sepa_cfonb/tests/__init__.py,sha256=CzLWJUaszFko3_CIXXAaS0oDz8vfwlDoIXFH18qHUD8,363
+trytond/modules/account_payment_sepa_cfonb/tests/test_account_payment_sepa_cfonb.py,sha256=8OhkWOpqztWZngWvJUoLGHqr8ZwL4Iq6xv7WN3-orfA,1092
+trytond_account_payment_sepa_cfonb-5.6.1.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+trytond_account_payment_sepa_cfonb-5.6.1.dist-info/METADATA,sha256=ZJnN6VegoMPPj2zakpij1tyDAVnweFknsaRdDk3TGeY,2742
+trytond_account_payment_sepa_cfonb-5.6.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+trytond_account_payment_sepa_cfonb-5.6.1.dist-info/entry_points.txt,sha256=aq-NzGvnLcIeFHX3yjLnbEvgTXnrVXRn-G-tvFQkIGg,103
+trytond_account_payment_sepa_cfonb-5.6.1.dist-info/top_level.txt,sha256=1UNriCfRfjRjutJbJ_B8i13huVUoV_Otp9RlW3mCfw4,8
+trytond_account_payment_sepa_cfonb-5.6.1.dist-info/RECORD,,
