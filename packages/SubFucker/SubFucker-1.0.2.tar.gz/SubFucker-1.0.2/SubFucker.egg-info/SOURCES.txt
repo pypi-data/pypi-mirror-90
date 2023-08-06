@@ -1,0 +1,10 @@
+README.md
+SubFucker.py
+setup.py
+SubFucker.egg-info/PKG-INFO
+SubFucker.egg-info/SOURCES.txt
+SubFucker.egg-info/dependency_links.txt
+SubFucker.egg-info/entry_points.txt
+SubFucker.egg-info/not-zip-safe
+SubFucker.egg-info/requires.txt
+SubFucker.egg-info/top_level.txt
