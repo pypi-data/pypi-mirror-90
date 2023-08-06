@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ya
+Version: 0.0.2
+Summary: Make filters with the mongo language
+Home-page: https://github.com/thorwhalen/ut/tree/master/pdict/my_partial_mongoquery.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # ya
+        Make filters with the mongo language
+        
+        
+        To install:	```pip install ya```
+        
+Platform: any
+Description-Content-Type: text/markdown
