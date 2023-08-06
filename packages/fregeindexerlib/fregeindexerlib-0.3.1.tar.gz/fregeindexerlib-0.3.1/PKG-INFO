@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: fregeindexerlib
+Version: 0.3.1
+Summary: Library for a indexers in a Frege project
+Home-page: https://github.com/Software-Engineering-Jagiellonian/frege-indexer-lib
+Author: Michał Piotrowski
+Author-email: michal@piotrowski.biz.pl
+License: gpl-3.0
+Download-URL: https://github.com/Software-Engineering-Jagiellonian/frege-indexer-lib/archive/v_0.3.1.tar.gz
+Description: UNKNOWN
+Keywords: Jagiellonian University,Frege,Indexer
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
