@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dmarc-metrics-exporter
+Version: 0.2.0
+Summary: Export Prometheus metrics from DMARC reports.
+License: MIT
+Author: Jan Gosmann
+Author-email: jan@hyper-world.de
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aioimaplib (>=0.7.18,<0.8.0)
+Requires-Dist: dataclasses-serialization (>=1.3.1,<2.0.0)
+Requires-Dist: prometheus_client (>=0.9.0,<0.10.0)
+Requires-Dist: uvicorn[standard] (>=0.13.2,<0.14.0)
+Requires-Dist: xsdata (>=20.12,<21.0)
