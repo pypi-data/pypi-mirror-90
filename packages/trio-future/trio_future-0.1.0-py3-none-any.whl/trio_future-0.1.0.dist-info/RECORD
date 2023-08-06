@@ -1,0 +1,6 @@
+trio_future/__init__.py,sha256=NI8vMMF7JOsE7x1zd_FSrd6kJlA_8nG2boQoYH8yEUY,86
+trio_future/functions.py,sha256=1WIm8zbGfnyikOqnvQNLlu1JQ_zqN9F4hZQzIuUjnvI,2474
+trio_future/future.py,sha256=GTsuUUODfUSlOS7KsGAE7aKf15axIma9v6F3oPRU-Jc,695
+trio_future-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+trio_future-0.1.0.dist-info/METADATA,sha256=em1ylduFIHADdRSGUE44nzuKlxPAfbu30-1YXgL-AUs,348
+trio_future-0.1.0.dist-info/RECORD,,
