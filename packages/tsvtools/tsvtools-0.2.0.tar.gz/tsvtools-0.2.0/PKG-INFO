@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: tsvtools
+Version: 0.2.0
+Summary: Utilities for operating with tab-separated files: viewing, filtering, reordering
+Home-page: https://github.com/vladsaveliev/tsvtools
+Author: Vlad Savelyev
+Author-email: vladislav.sav@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Keywords: bioinformatics,data science
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
