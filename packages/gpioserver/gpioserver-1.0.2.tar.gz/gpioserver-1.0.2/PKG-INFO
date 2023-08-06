@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: gpioserver
+Version: 1.0.2
+Summary: A Python library with various tools to start a wolfram engine a server content.
+Home-page: UNKNOWN
+Author: Riccardo Di Virgilio
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Raspberry PI,GPIO,aiohttp,api
+Platform: UNKNOWN
+Requires-Python: >=3.5.3
