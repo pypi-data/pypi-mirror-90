@@ -1,0 +1,16 @@
+netCDF4.libs/libhdf5_hl-e51f6701.so.200.0.0,sha256=NvgwXpsw7Tdzq0SofKSXwpqGWZO47rJOYTpeV20_Zkw,235320
+netCDF4.libs/libaec-cb230bda.so.0.0.10,sha256=O5TKNo_NJv3LNbmuMv6YfqhaNj5bn3Nr3U0iW4mrctY,37696
+netCDF4.libs/libnetcdf-a8bf3014.so.18.0.0,sha256=ojIVUMLbMhxJle_qvzlD7ihvJgXpb2xBJpQgBd7tvQo,1733008
+netCDF4.libs/libsz-e7989951.so.2.0.1,sha256=-mMsO3heEkgmX1VRl5hLzgmDJY_4J47dSNfsqS9dJ3U,21220
+netCDF4.libs/libhdf5-e9bf9dd6.so.200.0.0,sha256=DaPu__yb0KhDERYXbuPUfj8GkljGXHucq8Fs6WiQKQ8,6064996
+netCDF4.libs/libz-9f7255d3.so.1.2.3,sha256=4XNTSwxidfE5u042lZe5aN7zD6WPRGesxUOkMTCi3m8,79808
+netCDF4.libs/libcurl-23676c4f.so.4.4.0,sha256=7GoynJB2xZegccs0FjD0XIIf62mlOjKVfnXAAA4Ek5k,3221092
+netCDF4/utils.py,sha256=sHcgDmVkV3IlIPb83BclWyJ6k9LOzAtlmd0a90eO26Q,37482
+netCDF4/_netCDF4.cpython-36m-i386-linux-gnu.so,sha256=O2KuPh8r2e1jvVISw7B_f1nhj-XCuzRLI1Aaw1cNtuA,1443444
+netCDF4/__init__.py,sha256=L5FNyHkqf1LDKrh8tiZQCD38Wm6wh2zC49SkKS883SM,805
+netCDF4-1.5.5.1.dist-info/top_level.txt,sha256=stYbJPcHWECrrFPwNt4TZ2dkAmjFzNd29Sc5T0FkJfs,8
+netCDF4-1.5.5.1.dist-info/RECORD,,
+netCDF4-1.5.5.1.dist-info/METADATA,sha256=GRKnPUz5MRdhXOnzxfX0964mr7KS2HsO1Yn6dKZqyTc,1599
+netCDF4-1.5.5.1.dist-info/LICENSE,sha256=f90MJkfentWqVJwhxGd4N0hneTwvh0SXtUgN8ix3eP8,1056
+netCDF4-1.5.5.1.dist-info/entry_points.txt,sha256=SOaA1ioikuEHrv2NnxYU7BBVds5ZzBNOLWA5LN3p5Yk,117
+netCDF4-1.5.5.1.dist-info/WHEEL,sha256=7JtNhRWDruRK5WHD5rpJF9GKteDJvrX2KOqcdZMEbfQ,110
