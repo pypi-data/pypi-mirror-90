@@ -1,0 +1,3 @@
+[console_scripts]
+hdock=adeweb_docker_scripts.main:app
+
