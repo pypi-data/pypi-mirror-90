@@ -1,0 +1,15 @@
+README.md
+setup.py
+bracket/__init__.py
+bracket/app.py
+bracket/configs.py
+bracket/context.py
+bracket/debug.py
+bracket/globals.py
+bracket/info.py
+bracket/pages.py
+bracket.egg-info/PKG-INFO
+bracket.egg-info/SOURCES.txt
+bracket.egg-info/dependency_links.txt
+bracket.egg-info/requires.txt
+bracket.egg-info/top_level.txt
