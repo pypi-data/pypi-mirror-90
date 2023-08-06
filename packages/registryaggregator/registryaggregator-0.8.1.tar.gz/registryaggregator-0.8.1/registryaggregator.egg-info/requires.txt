@@ -1,0 +1,8 @@
+gevent>=1.2.2
+nmoscommon>=0.20.0
+flask>=0.10.1
+cysystemd
+ws4py>=0.3.4
+requests>=0.9.3
+jsonschema
+six

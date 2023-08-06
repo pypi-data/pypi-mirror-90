@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: registryaggregator
+Version: 0.8.1
+Summary: BBC implementation of an AMWA NMOS Registration API
+Home-page: https://github.com/bbc/nmos-registration
+Author: Peter Brightwell
+Author-email: peter.brightwell@bbc.co.uk
+License: Apache 2
+Description: Provides a service implementing the NMOS Registration API
+Platform: UNKNOWN
