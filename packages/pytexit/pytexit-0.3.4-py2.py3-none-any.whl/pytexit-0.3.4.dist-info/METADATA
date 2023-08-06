@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: pytexit
+Version: 0.3.4
+Summary: Convert a Python expression to a LaTeX formula
+Home-page: http://pytexit.readthedocs.io/
+Author: Erwan Pannier
+Author-email: erwan.pannier@gmail.com
+License: CeCILL-2.1
+Keywords: latex,py2tex
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Text Processing
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: six
+
+[pytexit](https://pytexit.readthedocs.io)
+=========================================
+
+Convert a Python expression to a LaTeX formula
+
+[![PyPI](https://img.shields.io/pypi/v/pytexit.svg)](https://pypi.python.org/pypi/pytexit)
+
+[![Tests](https://img.shields.io/travis/erwanp/pytexit.svg)](https://travis-ci.com/erwanp/pytexit)
+
+[![Coverage](https://codecov.io/gh/erwanp/pytexit/branch/master/graph/badge.svg)](https://codecov.io/gh/erwanp/pytexit)
+
+Documentation
+-------------
+
+<https://pytexit.readthedocs.io>
+
+[![Documentation Status](https://readthedocs.org/projects/pytexit/badge/)](https://pytexit.readthedocs.io/en/latest/?badge=latest)
+
+Install
+-------
+
+`pytexit` is on PyPi:
+
+    pip install pytexit
+
+Use
+---
+
+`pytexit` features the `py2tex`, `for2tex` `for2py` functions.
+
+In a Terminal, use `py2tex`:
+
+    py2tex 'x = 2*sqrt(2*pi*k*T_e/m_e)*(DeltaE/(k*T_e))**2*a_0**2'
+
+In a Python console, use `py2tex`:
+
+    from pytexit import py2tex
+    py2tex('x = 2*sqrt(2*pi*k*T_e/m_e)*(DeltaE/(k*T_e))**2*a_0**2')
+
+returns the corresponding LaTeX formula (to re-use in papers):
+
+    $$x=2\\sqrt{\\frac{2\\pi k T_e}{m_e}} \\left(\\frac{\\Delta E}{k T_e}\\right)^2 a_0^2$$
+
+and (in ipython console only) prints the equation:
+
+![image](https://github.com/erwanp/pytexit/blob/master/docs/output.png)
+
+References
+----------
+
+Initial work from Geoff Reedy on StackOverflow:
+<https://stackoverflow.com/a/3874621/5622825> . Kudos.
+
+Similar projects:
+
+-   <https://github.com/iogf/lax> : \"A pythonic way of writting
+    latex.\"
+-   <https://github.com/JelteF/PyLaTeX> : \"A Python library for
+    creating LaTeX files\"
+-   sympy can also write LaTeX output.
+
+
