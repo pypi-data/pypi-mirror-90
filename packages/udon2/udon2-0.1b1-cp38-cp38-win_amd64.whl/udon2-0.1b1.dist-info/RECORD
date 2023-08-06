@@ -1,0 +1,13 @@
+udon2/__init__.py,sha256=brTifmraMhh2KMRZxiTXofeZ0kcrTGtBtzfiG4mqVCc,43
+udon2/core.cp38-win_amd64.pyd,sha256=wWLPZuE8T519R2HLP3JyWzr51H29VHE35z_l39f_cI4,516096
+udon2/kernels.cp38-win_amd64.pyd,sha256=n3ZEqNdvANNJH450a65Hy9DU-iZiCDdkBaFJGN3C7Yc,75264
+udon2/transform.cp38-win_amd64.pyd,sha256=47VphNxqqRiFluFHiOkc-Yljl3k2jIN-cUxZ-0tDWlU,52736
+udon2/visual/__init__.py,sha256=d7NPhFXOG0ZdM_raIe46ogPfgYzuqMDLWnDa6FsslwA,4779
+udon2/visual/render.py,sha256=MsjtOLZ7YkDmYUm9KLKAzxMkRvN2TCNR_MnasS57f5U,8391
+udon2/visual/templates.py,sha256=ABo0MhMV-sItH3HeKlFznLzpWR-qbERd1MMWkEOd1Hc,1975
+udon2/visual/utils.py,sha256=8ppUuaeaYk-YMk5Ski09L1SKOm0vkZcR-3X_EKub3mg,1507
+udon2-0.1b1.dist-info/LICENSE,sha256=gZaPhz3fnT2ZOjry4fkoNgMvrsiBkfxdbnPSEVB4fHQ,1062
+udon2-0.1b1.dist-info/METADATA,sha256=wDPB7ec06F7cBLeyFvJVc-xztUqz4op4vLP1RMQoujE,2203
+udon2-0.1b1.dist-info/WHEEL,sha256=HLtxc_HoM-kGM7FPJVPSnTt0Nv2G3fZEAjT3ICdG8uY,100
+udon2-0.1b1.dist-info/top_level.txt,sha256=t8x6Hpwnt94wgm9GiOuP7NarvZv_UGI6q2bIB4JwbPo,6
+udon2-0.1b1.dist-info/RECORD,,
