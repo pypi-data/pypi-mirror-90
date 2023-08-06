@@ -1,0 +1,9 @@
+<section class="m-3" i18n:domain="pyams_zmi">
+	<h3>
+		<i tal:omit-tag="" i18n:translate="">${view.table_label}</i>
+		${structure:provider:pyams.toolbar}
+	</h3>
+	<p class="m-3">
+		<i tal:omit-tag="" i18n:translate="">This table is empty.</i>
+	</p>
+</section>
