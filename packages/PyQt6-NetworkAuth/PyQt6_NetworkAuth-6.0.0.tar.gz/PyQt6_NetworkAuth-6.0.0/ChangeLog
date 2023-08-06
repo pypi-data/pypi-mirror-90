@@ -1,0 +1,35 @@
+2021-01-04  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS:
+	Released as v6.0.0.
+	[3bea86e52d28] [6.0.0]
+
+	* NEWS:
+	Updated the NEWS file.
+	[78bbe49b5787]
+
+2020-12-31  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* DevelopersNotes.txt:
+	Added DevelopersNotes.txt.
+	[92c09d1cd8e1]
+
+2020-12-29  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* pyproject.toml:
+	Fixed typos in pyproject.toml.
+	[9c7414f25d86]
+
+	* NEWS, NetworkAuth.msp, PyQt6-NetworkAuth.msp, README, project/NEWS,
+	project/README, project/pyproject.toml, pyproject.toml:
+	Updated for v6.0.0.
+	[f0f6a88f13ed]
+
+	* NetworkAuth.msp:
+	Initial update for PyQt6.
+	[24415861096c]
+
+	* .hgignore, NetworkAuth.msp, project/NEWS, project/README,
+	project/pyproject.toml, rb-product.toml:
+	The initial commit based on the PyQt5 implementation.
+	[5c074e710777]
