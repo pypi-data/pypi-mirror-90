@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pdfa-learning
+Version: 0.1.0
+Summary: A Python project template.
+License: LGPL-3.0-or-later
+Author: MarcoFavorito
+Author-email: marco.favorito@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: graphviz (>=0.16,<0.17)
+Requires-Dist: hypothesis (>=5.43.5,<6.0.0)
+Requires-Dist: mknotebooks (==0.5.0)
+Requires-Dist: numpy (>=1.19.4,<2.0.0)
