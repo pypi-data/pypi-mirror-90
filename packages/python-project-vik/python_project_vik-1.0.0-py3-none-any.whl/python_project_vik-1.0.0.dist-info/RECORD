@@ -1,0 +1,12 @@
+app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+app/api.py,sha256=MYzkmxNlztrVtz3-0jXi335ngQ0W7H2W20Su8QCxNB8,401
+sample_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sample_package/sample_module.py,sha256=svJwGd9m25KDRGV_w9kntQqmehUJm4RFTQqfle_CteU,1025
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=W2dds1fht-_dcwrQ4hDIqaJWwcxHreS4s5_k2qt4AeM,105
+tests/test_api.py,sha256=tKpZ4Eya0-i-RiJsXDNREpHCRLdrqTWWYiyqYQD8XbQ,834
+python_project_vik-1.0.0.dist-info/LICENSE,sha256=WpGGzhzIcfioHPE1JL6BXfs9RQDKjODoRUgREcVqw_s,1070
+python_project_vik-1.0.0.dist-info/METADATA,sha256=WCo8z761jUwe7OcoSYvsJwqNM19mJExSn38UuFMPeks,628
+python_project_vik-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+python_project_vik-1.0.0.dist-info/top_level.txt,sha256=cYmD6suknRMGq5QrGH9wUPXXWo7F0-g3L5bsam5BVKE,15
+python_project_vik-1.0.0.dist-info/RECORD,,
