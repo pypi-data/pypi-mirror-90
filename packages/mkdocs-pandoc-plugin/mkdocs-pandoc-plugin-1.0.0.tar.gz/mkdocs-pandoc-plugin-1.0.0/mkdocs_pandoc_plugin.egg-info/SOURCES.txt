@@ -1,0 +1,14 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+mkdocs_pandoc/__init__.py
+mkdocs_pandoc/plugin.py
+mkdocs_pandoc/renderer.py
+mkdocs_pandoc/utils.py
+mkdocs_pandoc_plugin.egg-info/PKG-INFO
+mkdocs_pandoc_plugin.egg-info/SOURCES.txt
+mkdocs_pandoc_plugin.egg-info/dependency_links.txt
+mkdocs_pandoc_plugin.egg-info/entry_points.txt
+mkdocs_pandoc_plugin.egg-info/requires.txt
+mkdocs_pandoc_plugin.egg-info/top_level.txt
