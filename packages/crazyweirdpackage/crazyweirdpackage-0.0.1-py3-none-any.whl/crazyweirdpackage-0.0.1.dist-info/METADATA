@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: crazyweirdpackage
+Version: 0.0.1
+Summary: a very very very very very very very very simle calculator.
+Home-page: https://github.com
+Author: PkgDev
+Author-email: example@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+```
+pip install crazyweirdpackage
+```
+
