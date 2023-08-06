@@ -1,0 +1,13 @@
+README.md
+setup.py
+fabricauthenticator/__init__.py
+fabricauthenticator/fabricauthenticator.py
+fabricauthenticator/vouch_proxy_authenticator.py
+fabricauthenticator.egg-info/PKG-INFO
+fabricauthenticator.egg-info/SOURCES.txt
+fabricauthenticator.egg-info/dependency_links.txt
+fabricauthenticator.egg-info/requires.txt
+fabricauthenticator.egg-info/top_level.txt
+fabricauthenticator/token/__init__.py
+fabricauthenticator/token/jwt_manager.py
+fabricauthenticator/token/vouch_helper.py
