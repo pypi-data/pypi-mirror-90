@@ -1,0 +1,8 @@
+aws_cdk/aws_kendra/__init__.py,sha256=btawLK159mZUPFqv83eUUPW4yy5wbVEN3jYI8Szv12g,216244
+aws_cdk/aws_kendra/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_kendra/_jsii/__init__.py,sha256=O8f6Ltuya_gGGyg4BaI6Brc9hM1MHAg_tg-AYbLHNwk,345
+aws_cdk/aws_kendra/_jsii/aws-kendra@1.81.0.jsii.tgz,sha256=P_-Kjlaf8YYCR4QeRKXKbs1GpRJIo5g6EJDFD5Mb8DQ,73040
+aws_cdk.aws_kendra-1.81.0.dist-info/METADATA,sha256=mUjbzwwZylCRoNYdhFyfgembSUdN9Xv9vw6OBtycQZ8,1648
+aws_cdk.aws_kendra-1.81.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_kendra-1.81.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_kendra-1.81.0.dist-info/RECORD,,
