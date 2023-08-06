@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/cdk8s_external_dns/__init__.py
+src/cdk8s_external_dns/py.typed
+src/cdk8s_external_dns.egg-info/PKG-INFO
+src/cdk8s_external_dns.egg-info/SOURCES.txt
+src/cdk8s_external_dns.egg-info/dependency_links.txt
+src/cdk8s_external_dns.egg-info/requires.txt
+src/cdk8s_external_dns.egg-info/top_level.txt
+src/cdk8s_external_dns/_jsii/__init__.py
+src/cdk8s_external_dns/_jsii/cdk8s-external-dns@0.0.2.jsii.tgz
