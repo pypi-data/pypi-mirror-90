@@ -1,0 +1,10 @@
+README.md
+setup.py
+timemachines/__init__.py
+timemachines/conventions.py
+timemachines.egg-info/PKG-INFO
+timemachines.egg-info/SOURCES.txt
+timemachines.egg-info/dependency_links.txt
+timemachines.egg-info/entry_points.txt
+timemachines.egg-info/requires.txt
+timemachines.egg-info/top_level.txt
