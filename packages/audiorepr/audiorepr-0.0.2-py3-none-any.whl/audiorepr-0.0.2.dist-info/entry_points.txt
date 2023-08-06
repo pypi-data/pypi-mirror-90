@@ -1,0 +1,3 @@
+[console_scripts]
+audiorepr = audiorepr.command:audiorepr
+

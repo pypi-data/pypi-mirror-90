@@ -1,0 +1,12 @@
+audiorepr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+audiorepr/audiolize.py,sha256=4K47ThK43OFqF6izdxb0V0-qJwfzLm9unMoGR-chEOg,3511
+audiorepr/command.py,sha256=WyVsXtFV0Klgm9MOUihQysV_-IxGEZ2xhurp_YUTV38,1945
+audiorepr/data.py,sha256=au1zWzkEZmIDLMLu3dlZgOVd4UCwq-evI3YvlblmxBw,1464
+audiorepr/mapper.py,sha256=qG0X5xR9Qj1IEPAvQ1PssQAQg6Jk3U-SQ82RROSH7no,1499
+audiorepr/version.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+audiorepr-0.0.2.dist-info/LICENSE,sha256=NsRSQg31S5r6ZBeSso78PnOzf_ork2x4FwXopvL0Nso,1063
+audiorepr-0.0.2.dist-info/METADATA,sha256=3NDsfqtTJEph7mKc8IdCPvIamBP65eHqM7JZBCe8fcA,2441
+audiorepr-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+audiorepr-0.0.2.dist-info/entry_points.txt,sha256=8jJSQI99hQCtmkPDdhCjNuB4VPzBplPA-vIlPUB5Sb8,59
+audiorepr-0.0.2.dist-info/top_level.txt,sha256=N00UWL9sNEPR0-Bddk_NJebJfGsVyIAZPaB7aYE5vWQ,10
+audiorepr-0.0.2.dist-info/RECORD,,
