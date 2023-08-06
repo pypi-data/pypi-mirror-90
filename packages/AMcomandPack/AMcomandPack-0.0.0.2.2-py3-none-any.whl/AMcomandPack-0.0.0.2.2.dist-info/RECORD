@@ -1,0 +1,14 @@
+AMcomandPack/__init__.py,sha256=DvgR_rTlpUd4VJ2FCNdKgtv7qpTkU4NBS6JoJBuggAo,282
+AMcomandPack/geo/__init__.py,sha256=2gMg611uO0Ztw9N-RrSKRkv8nLIkQQn9Mb-JaeVTSZs,98
+AMcomandPack/geo/tk.py,sha256=tupXpAj9OAIuY7GCsLn62qG-NmuGnwtG5Y0q3A9qvJk,17582
+AMcomandPack/geo/extensions/Xmas.py,sha256=U7M9_5AJ1fB8d_XvIBoVUY1pfbB9KKpJwvKR-q0doaw,9257
+AMcomandPack/geo/extensions/__init__.py,sha256=OfccFtzN3k8sCVInjZdBkjyvvrKU4B4uJ_vxf6XZhA8,89
+AMcomandPack/geo/extensions/extensionFiles.py,sha256=sCJX5iIrUvdGkuUEa5zJVWfWPVv9MVAsi5LZ9toHhkc,3601
+AMcomandPack/geo/extensions/images/Xmas/XmasTree0.png,sha256=Qea1pApKhDOqC5978CI7reTJrvmYBevOnpvM9mVTyHA,104802
+AMcomandPack/geo/extensions/images/Xmas/present0.png,sha256=F2UkghxdH5-8yvrPDTMsx60-j55ARNOWNagCkh1MuOY,48961
+AMcomandPack/geo/extensions/images/Xmas/present1.png,sha256=QRdjNUKE99rJyq-dragTYxasK6Q7yvWs_ihCdFmd-04,39773
+AMcomandPack/geo/extensions/images/Xmas/snowFlake0.png,sha256=CLMGnvjXEFRd314Fb1X7O6ZPo3xH-WBoLeYja6oosmI,103556
+AMcomandPack-0.0.0.2.2.dist-info/METADATA,sha256=xGOfuugJCG5_M1oP5o9rH_m6suoa6UTziCW1uQLpnGk,992
+AMcomandPack-0.0.0.2.2.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+AMcomandPack-0.0.0.2.2.dist-info/top_level.txt,sha256=7mLhJfbM3LB_6ECQ6dkmHcB-DIufefVnELaId4P29-E,58
+AMcomandPack-0.0.0.2.2.dist-info/RECORD,,

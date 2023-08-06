@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: AMcomandPack
+Version: 0.0.0.2.2
+Summary: clean implementation of functions from AM class at fgz
+Home-page: https://github.com/JulianWww/AMCommandPack2
+Author: Julian Wandhoven
+Author-email: julian.wandhoven@fgz.ch
+License: wtfpl
+Download-URL: https://github.com/JulianWww/AMCommandPack2/archive/Canvas.tar.gz
+Keywords: am,utils,aid
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3
+
+
+geo -= rendering =-
+    -  cleaner tkinter Canvas
+        - add a clean implementation of the Canvas addons to stuff
+    -  cleaner tkinter Tk 
+        - nothing as of yet same a tkinter.Tk
+    - extensions scripting utils
+        - Xmas egsample with falling snow flakes
+
+update:
+    added render axis to goeCanvas
+
+
