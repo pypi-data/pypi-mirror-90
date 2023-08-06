@@ -1,0 +1,3 @@
+[qiime2.plugins]
+hitac = q2_hitac.plugin_setup:plugin
+
