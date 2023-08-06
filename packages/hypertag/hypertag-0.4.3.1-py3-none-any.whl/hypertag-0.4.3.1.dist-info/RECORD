@@ -1,0 +1,12 @@
+LICENSE,sha256=yXI7Gm-zmSYBvR7eYFTRhQUPLjxMbQnVOHbraW7bcds,1070
+hypertag/__init__.py,sha256=G3jXCTdGUZGzOpT6s9M57wpOmm-0N5o5qXMqrHjl8jM,24
+hypertag/__main__.py,sha256=3Rpw7fYUSDtxV1DxfMBoIAvLxo8wnBVFoegvNXWTHM0,93
+hypertag/daemon.py,sha256=I9RmTrVOLtFZihi4mR8g3zqL6g8Q82A_YGSXnmmnvQA,4515
+hypertag/graph.py,sha256=1ZQxuetqu48L-ng-FZS83XSfjTffd17A9RXAfRU_Qvo,1482
+hypertag/hypertag.py,sha256=tmYinU9gffUNkcL7qUoTrPfviF813WGB_xs65EM93EE,14239
+hypertag/persistor.py,sha256=jmUagXeAIWzAljsAiO6azDkROKmorxCSJp98AeV3g_Y,17004
+hypertag/vectorizer.py,sha256=lSBZgpGJ1P2J8PX6A_IIWYfNMX5wEraULu9K8w5lEpk,8418
+hypertag-0.4.3.1.dist-info/LICENSE,sha256=yXI7Gm-zmSYBvR7eYFTRhQUPLjxMbQnVOHbraW7bcds,1070
+hypertag-0.4.3.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+hypertag-0.4.3.1.dist-info/METADATA,sha256=9-0ZIOqIzf7wwJC8fDCMNJkIbzLzvMKjvFj6_InKOUw,7438
+hypertag-0.4.3.1.dist-info/RECORD,,
