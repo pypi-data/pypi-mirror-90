@@ -1,0 +1,227 @@
+#!python
+
+# Copyright (C) 2017 Elena Grandi <valhalla@trueelena.org>
+# This program is free software. It comes without any warranty, to the
+# extent permitted by applicable law. You can redistribute it and/or
+# modify it under the terms of the Do What The Fuck You Want To Public
+# License, Version 2, as published by Sam Hocevar. See
+# http://www.wtfpl.net/ for more details.
+
+# Debian release dates can be found in the package distro-info-data,
+# but an hardcoded fallback is included to run this script where such
+# package is not available.
+
+import argparse
+import csv
+import datetime
+from dateutil import relativedelta, parser
+import math
+import unittest
+
+RELEASES = [
+    (datetime.date(2019, 7, 6), 'buster'),
+    (datetime.date(2017, 6, 17), 'stretch'),
+    (datetime.date(2015, 4, 25), 'jessie'),
+    (datetime.date(2013, 5, 4), 'wheezy'),
+    (datetime.date(2011, 2, 6), 'squeeze'),
+    (datetime.date(2009, 2, 14), 'lenny'),
+    (datetime.date(2007, 4, 8), 'etch'),
+    (datetime.date(2005, 6, 6), 'sarge'),
+    (datetime.date(2002, 7, 19), 'woody'),
+    (datetime.date(2000, 8, 15), 'potato'),
+    (datetime.date(1999, 3, 9), 'slink'),
+    (datetime.date(1998, 6, 24), 'hamm'),
+    (datetime.date(1997, 7, 2), 'bo'),
+    (datetime.date(1996, 12, 12), 'rex'),
+    (datetime.date(1996, 6, 17), 'buzz'),
+    ]
+MSG = "{today} is day {dody} of year {yodr} of the {release}"
+FUTURE_MSG = "{today} could be day {dody} of year {yodr} of the {release}"
+ERR_MSG = "{isodate} is in the Debianless Age"
+
+
+class DebDate:
+    def __init__(
+            self,
+            distro_info_file='/usr/share/distro-info/debian.csv',
+            nameless_age=datetime.date(1993, 8, 1)):
+        self.releases = []
+        try:
+            with open(distro_info_file) as fp:
+                releases = csv.reader(fp, delimiter=',')
+                for row in releases:
+                    if len(row) > 4:
+                        try:
+                            date = datetime.datetime.strptime(
+                                row[4],
+                                '%Y-%m-%d'
+                                )
+                        except ValueError:
+                            pass
+                        else:
+                            self.releases.append((date.date(), row[1]))
+        except FileNotFoundError:
+            releases = []
+        self.releases.sort(key=lambda x: x[0], reverse=True)
+        if not self.releases:
+            self.releases = RELEASES.copy()
+        if nameless_age:
+            self.releases.append((
+                nameless_age,
+                'Nameless Age'
+                ))
+
+    def get_release(self, day):
+        data = {}
+        today = datetime.date.today()
+        if day > today:
+            # This is just a fuzzy way to decide whether a date is
+            # likely to be after a future release.
+            data['certain'] = math.exp((today - day).days / 365.25 )
+        else:
+            data['certain'] = 1
+        if day == today:
+            data['today'] = 'Today'
+        else:
+            data['today'] = day.isoformat()
+        for r in self.releases:
+            epoch = r[0]
+            data['release'] = r[1]
+            if day > epoch:
+                break
+        if day < epoch:
+            raise OutsideTimeError(
+                "{day} happened before the beginning of time".format(
+                    day=day,
+                    )
+                )
+        if day.year == epoch.year:
+            data['dody'] = (day - epoch).days
+            data['yodr'] = 1
+        else:
+            data['dody'] = day.timetuple().tm_yday
+            data['yodr'] = day.year - epoch.year + 1
+        return data
+
+
+class OutsideTimeError(ValueError):
+    """
+    Exception raised before the beginning of time
+    """
+
+
+class TestDebDate(unittest.TestCase):
+    def setUp(self):
+        self.debdates = [
+            DebDate(),
+            DebDate(distro_info_file='/no/such/file'),
+            ]
+
+    def testFirstYearRelease(self):
+        for debdate in self.debdates:
+            r = debdate.releases[-2]
+            d = r[0] + relativedelta.relativedelta(days=10)
+            data = debdate.get_release(d)
+            self.assertEqual(data['dody'], 10)
+            self.assertEqual(data['yodr'], 1)
+            self.assertEqual(data['release'], r[1])
+            self.assertEqual(data['certain'], 1)
+
+    def testSecondYearRelease(self):
+        for debdate in self.debdates:
+            r = debdate.releases[-7]
+            d = r[0] + relativedelta.relativedelta(years=1)
+            data = debdate.get_release(d)
+            self.assertEqual(data['dody'], 227)
+            self.assertEqual(data['yodr'], 2)
+            self.assertEqual(data['release'], r[1])
+            self.assertEqual(data['certain'], 1)
+
+    def testJanuarySecondYearRelease(self):
+        for debdate in self.debdates:
+            r = debdate.releases[-7]
+            d = datetime.date(r[0].year + 1, 1, 1)
+            data = debdate.get_release(d)
+            self.assertEqual(data['dody'], 1)
+            self.assertEqual(data['yodr'], 2)
+            self.assertEqual(data['release'], r[1])
+            self.assertEqual(data['certain'], 1)
+
+    def testPastLatestRelease(self):
+        for debdate in self.debdates:
+            r = debdate.releases[0]
+            d = r[0] + relativedelta.relativedelta(years=5)
+            data = debdate.get_release(d)
+            # Day Of The Year will change depending on when is the latest
+            # release, so we do not check it
+            self.assertEqual(data['yodr'], 6)
+            self.assertEqual(data['release'], r[1])
+            self.assertLess(data['certain'], 1)
+
+    def testBeforeBeginningOfTime(self):
+        for debdate in self.debdates:
+            r = debdate.releases[-1]
+            d = r[0] + relativedelta.relativedelta(days=-1)
+            with self.assertRaises(OutsideTimeError):
+                debdate.get_release(d)
+
+
+class Command:
+    def setup_parser(self):
+        self.parser = argparse.ArgumentParser(
+            description='''
+            Convert Gregorian dates to Debian Regnal dates
+            '''
+            )
+        self.date_options = self.parser.add_mutually_exclusive_group()
+        self.date_options.add_argument(
+            '-d', '--date',
+            help='A gregorian date',
+            default=None,
+            type=parser.parse,
+            )
+        self.date_options.add_argument(
+            '-s', '--seconds',
+            help='A date as seconds from the Unix Epoch',
+            default=None,
+            type=int,
+            )
+        self.parser.set_defaults(func=self.print_date)
+        self.subparsers = self.parser.add_subparsers()
+        self.test_parser = self.subparsers.add_parser(
+            'test',
+            help='Run unit tests',
+            )
+        self.test_parser.set_defaults(func=self.run_tests)
+
+    def run_tests(self, args):
+        suite = unittest.TestLoader().loadTestsFromTestCase(TestDebDate)
+        unittest.TextTestRunner(verbosity=1).run(suite)
+
+    def print_date(self, args):
+        if args.date:
+            date = args.date.date()
+        elif args.seconds:
+            date = datetime.date.fromtimestamp(args.seconds)
+        else:
+            date = datetime.date.today()
+        debdate = DebDate()
+        try:
+            data = debdate.get_release(date)
+        except OutsideTimeError:
+            print(ERR_MSG.format(isodate=date.strftime("%Y-%m-%d")))
+        else:
+            if data['certain'] > 0.14:
+                print(MSG.format(**data))
+            else:
+                print(FUTURE_MSG.format(**data))
+
+
+    def main(self):
+        self.setup_parser()
+        args = self.parser.parse_args()
+        args.func(args)
+
+
+if __name__ == '__main__':
+    Command().main()

@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: debdate
+Version: 0.20210102
+Summary: Convert Gregorian dates to Debian Regnal dates
+Home-page: http://git.trueelena.org/software/debdate/about/
+Author: Elena ``of Valhalla'' Grandi
+Author-email: valhalla@trueelena.org
+License: WTFPLv2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: DFSG approved
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Religion
+Classifier: Topic :: Utilities
+Requires-Dist: python-dateutil
+
+UNKNOWN
+
+
