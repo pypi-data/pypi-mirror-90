@@ -1,0 +1,6 @@
+legendary-gl
+requests<3.0
+pillow
+pyqtwebengine
+setuptools
+wheel
