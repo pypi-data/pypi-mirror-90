@@ -1,0 +1,8 @@
+README.md
+setup.py
+python_project_vik.egg-info/PKG-INFO
+python_project_vik.egg-info/SOURCES.txt
+python_project_vik.egg-info/dependency_links.txt
+python_project_vik.egg-info/top_level.txt
+sample_package/__init__.py
+sample_package/sample_module.py
