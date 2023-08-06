@@ -1,0 +1,45 @@
+Metadata-Version: 1.2
+Name: biometrics
+Version: 0.1.1
+Summary: Package to generate sample based biometrics
+Home-page: https://github.com/msk-access/biometrics
+Author: Ronak Shah
+Author-email: rons.shah@gmail.com
+License: Apache Software License 2.0
+Description: # biometrics
+        
+        Package to generate sample based biometrics
+        
+        [![Build Status](https://travis-ci.com/msk-access/biometrics.svg?branch=master)](https://travis-ci.com/msk-access/biometrics) [![PyPi](https://img.shields.io/pypi/v/biometrics.svg?)](https://pypi.python.org/pypi/biometrics)
+        
+        * Free software: Apache Software License 2.0
+        * Documentation: https://msk-access.gitbook.io/biometrics/
+        
+        ## Installation
+        
+        From pypi:
+        
+        `pip install biometrics`
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-12-06)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: biometrics
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
