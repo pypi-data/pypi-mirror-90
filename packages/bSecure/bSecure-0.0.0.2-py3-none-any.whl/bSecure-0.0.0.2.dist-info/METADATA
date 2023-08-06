@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: bSecure
+Version: 0.0.0.2
+Summary: bSecure is a Universal Checkout for Pakistan (Alpha Release)
+Home-page: https://bsecure.pk
+Author: bSecure
+Author-email: tech@bsecure.pk
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# bSecure
+
+bSecure is a Universal Checkout solution for Ecommerce in Pakistan.
+This plugin allows you to integrate bSecure with your Python Application.
+It is developed with simplicity in mind.
+
+###### Here is how it works:
+1: Install using pip
+
+`pip install bsecure`
+
+2: import the package
+
+`
+from bsecure import custom_integration as ci
+`
+
+3: authenticate yourself application with bsecure server:
+
+`ci.authenticate(client_id, client_secret)`
+
+**_client_id_** and _**client_secret**_ can be optained from bsecure admin panel for your application
+This is time limited activation, and must be considered to implement in a way that traffic may not disrupt your
+ application.
+
+4: setup order in bsecure acceptable format.
+
+`
+order_details = {
+    "discount_amount": 0,
+    "sub_total_amount": 300.78,
+    "total_amount": 300.78,
+    "currency_code": "PKR",
+    "order_id": "order-id-in-your-system-0001",
+    "customer": {
+        "name": "your customer name",
+        "email": "your.customer.email@yourapplication.com",
+        "country_code": "92",
+        "phone_number": "345-6789012"
+    },
+    "products": {
+        "0": {
+            "id": "product-id-in-your-system-0001",,
+            "name": "BAZIC Asst. Size Paint Brush Set (15/Pack)",
+            "sku": "product-sku-in-your-system-123",
+            "quantity": 1,
+            "price": 25.5,
+            "sale_price": 35.5,
+            "image": "https://sc01.alicdn.com/kf/UT8ChMOXjBbXXagOFbXU.jpg",
+            "description": "product headline/short description",
+            "short_description": "Detailed description for product. Here you will share all that you know about the product."
+        }
+    }
+}
+`
+
+**Dictionary format shared above is necessary. It should be in that format for your payment gateway to be activated and
+ your order to be created.**
+
+After you have created the dictionary in above mentioned format, call:
+
+`ci.set_order(order_details)` 
+
+Above ci.set_order(order_details) should always be called if you want to 
+
+5: Create order.
+`ci.created_order()`
+You do not have to do anything extra here. But remember, to created each different order, you must call `ci.set_order
+(order_details)`
+
+6: Update order
+'ci.update_order()'
+
+Be sure to call ci.set_order(order_details) before you try this. 
+
+
+###### We also support Single Sign On Feature for your application
+
+Here is what you have to do:
+
+1: setup data as below:
+
+`sso_data = {
+  "client_id": "<your client_id for bsecure>",
+  "scope": "profile",
+  "response_type": "code",
+  "state": "string"
+}`
+
