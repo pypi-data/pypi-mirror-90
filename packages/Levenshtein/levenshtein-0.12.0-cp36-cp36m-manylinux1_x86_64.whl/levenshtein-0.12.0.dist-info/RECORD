@@ -1,0 +1,12 @@
+Levenshtein/_levenshtein.h,sha256=CL1zbSeAqG9kEzmc0Ejk7kj9SjVNOaX9kbzYWtfliXk,11227
+Levenshtein/_levenshtein.c,sha256=aF_telv3WS_yFiZ5TsvDqKRh21Q2FYRqqJA_lPltZA4,191853
+Levenshtein/_levenshtein.cpython-36m-x86_64-linux-gnu.so,sha256=q_p6zN4XS4xXt1oY8REpCgWXxWrk56nLe0XlmDM0xoo,336974
+Levenshtein/StringMatcher.py,sha256=8K6UUJ0HQUzOqrkMqEgWk9CWpZLkiSlaU5zDIMf4uC4,2198
+Levenshtein/__init__.py,sha256=HxWybJyjO0i9JCbuePePqxPhPBioUw_3DBqIiKGHUUM,112
+levenshtein-0.12.0.dist-info/WHEEL,sha256=IkZiJFiZiRavDHfaLV1hdVPFYe1HJNLQ8dnz1DVQgHk,109
+levenshtein-0.12.0.dist-info/METADATA,sha256=fZqfGA7LHVpCbbkPS12Z48bEXRtxOOt4AVcH-oI0wzE,4388
+levenshtein-0.12.0.dist-info/COPYING,sha256=h_G9SlK0ApR2toT83VH-08ayVA5GLTwtO_yb5FWLKCU,18085
+levenshtein-0.12.0.dist-info/top_level.txt,sha256=RvPuPevm_7j5S0VBmjD7AQr8RlHYl2CTA_4GqFW-gfA,12
+levenshtein-0.12.0.dist-info/entry_points.txt,sha256=cMDTxLD3IhTcL0h4wm9KRcujGVmDc5-E7pKMJVSVitE,7
+levenshtein-0.12.0.dist-info/RECORD,,
+levenshtein-0.12.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
