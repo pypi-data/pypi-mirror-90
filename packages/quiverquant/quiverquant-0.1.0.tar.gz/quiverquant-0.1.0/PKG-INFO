@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: quiverquant
+Version: 0.1.0
+Summary: Package for Quiver Quantitative Alternative Data
+Home-page: https://github.com/Quiver-Quantitative/python-api
+Author: Chris Kardatzke
+Author-email: chris@quiverquant.com
+License: UNKNOWN
+Description: # Quiver Quantitative
+        
+        Test version of Quiver Quantitative package. Go
+        [here](https://api.quiverquant.com/dashboard/)
+        for more details.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
