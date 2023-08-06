@@ -1,0 +1,8 @@
+qrcode>=6.1
+reportlab>=3.5
+six>=1.15
+
+[full]
+Pillow>=8.1.0
+pygame~=2.0.0
+pyzbar>=0.1.8
