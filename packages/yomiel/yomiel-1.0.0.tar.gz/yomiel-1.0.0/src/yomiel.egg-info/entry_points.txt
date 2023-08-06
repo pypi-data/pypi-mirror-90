@@ -1,0 +1,3 @@
+[console_scripts]
+yomiel = yomiel.__main__:main
+

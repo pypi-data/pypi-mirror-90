@@ -1,0 +1,14 @@
+[flake8]
+
+exclude =
+    .eggs/
+    .git/
+    .tox/
+    src/yomiel/kore/
+    src/yomiel/protobuf/
+    build/
+    dist/
+
+per-file-ignores =
+    # unexpected spaces around keyword / parameter equals
+    yomiel/app.py:E251
