@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+travitia_talk/__init__.py
+travitia_talk/__main__.py
+travitia_talk/chatbot.py
+travitia_talk/context.py
+travitia_talk/enums.py
+travitia_talk/errors.py
+travitia_talk/py.typed
+travitia_talk/response.py
+travitia_talk.egg-info/PKG-INFO
+travitia_talk.egg-info/SOURCES.txt
+travitia_talk.egg-info/dependency_links.txt
+travitia_talk.egg-info/requires.txt
+travitia_talk.egg-info/top_level.txt
