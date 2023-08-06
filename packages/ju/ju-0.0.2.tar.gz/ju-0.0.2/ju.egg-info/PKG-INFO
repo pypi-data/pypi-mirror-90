@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ju
+Version: 0.0.2
+Summary: Classification exploration
+Home-page: https://github.com/thorwhalen/ut/tree/master/stats/classification/explore.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # ju
+        Classification exploration
+        
+        
+        To install:	```pip install ju```
+        
+Platform: any
+Description-Content-Type: text/markdown
