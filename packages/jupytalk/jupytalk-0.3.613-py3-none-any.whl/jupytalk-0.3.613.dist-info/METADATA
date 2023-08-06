@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: jupytalk
+Version: 0.3.613
+Summary: Material for presentations. The documentation generation is using pyquickhelper.
+Home-page: http://www.xavierdupre.fr/app/jupytalk/helpsphinx/index.html
+Author: Xavier Dupré
+Author-email: xavier.dupre@gmail.com
+License: MIT
+Download-URL: https://github.com/sdpython/jupytalk
+Keywords: jupytalk,first name,last name
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Dist: pyquickhelper (>=1.9)
+Requires-Dist: jyquickhelper
+Requires-Dist: cpyquickhelper (>=0.2.226)
+
+
+.. image:: https://travis-ci.org/sdpython/jupytalk.svg?branch=master
+    :target: https://travis-ci.org/sdpython/jupytalk
+    :alt: Build status
+
+.. image:: https://ci.appveyor.com/api/projects/status/cq8d56y2o4ldi7rn?svg=true
+    :target: https://ci.appveyor.com/project/sdpython/jupytalk
+    :alt: Build Status Windows
+
+.. image:: https://circleci.com/gh/sdpython/jupytalk/tree/master.svg?style=svg
+    :target: https://circleci.com/gh/sdpython/jupytalk/tree/master
+
+.. image:: https://badge.fury.io/py/jupytalk.svg
+    :target: http://badge.fury.io/py/jupytalk
+
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg
+    :alt: MIT License
+    :target: http://opensource.org/licenses/MIT
+
+.. image:: https://requires.io/github/sdpython/jupytalk/requirements.svg?branch=master
+     :target: https://requires.io/github/sdpython/jupytalk/requirements/?branch=master
+     :alt: Requirements Status
+
+.. image:: https://codecov.io/github/sdpython/jupytalk/coverage.svg?branch=master
+    :target: https://codecov.io/github/sdpython/jupytalk?branch=master
+
+.. image:: http://img.shields.io/github/issues/sdpython/jupytalk.png
+    :alt: GitHub Issues
+    :target: https://github.com/sdpython/jupytalk/issues
+
+.. image:: http://www.xavierdupre.fr/app/jupytalk/helpsphinx/_images/nbcov.png
+    :target: http://www.xavierdupre.fr/app/jupytalk/helpsphinx/all_notebooks_coverage.html
+    :alt: Notebook Coverage
+
+.. image:: https://img.shields.io/github/repo-size/sdpython/jupytalk
+    :target: https://github.com/sdpython/jupytalk/
+    :alt: size
+
+.. _l-README:
+
+jupytalk
+========
+
+Contents used and most of the time maintained for
+presentation, talks, shows, teachings...
+
+* `GitHub/jupytalk <https://github.com/sdpython/jupytalk/>`_
+* `documentation <http://www.xavierdupre.fr/app/jupytalk/helpsphinx/index.html>`_
+* `Blog <http://www.xavierdupre.fr/app/jupytalk/helpsphinx/blog/main_0000.html#ap-main-0>`_
+
+.. _l-HISTORY:
+
+=======
+History
+=======
+
+current - 2021-01-05 - 0.00Mb
+=============================
+
+0.0.0 - 2021-01-05 - 0.00Mb
+===========================
+
+* `15`: remove ggplot (not maintained anymore) (2019-01-28)
+* `13`: add notebook on scikit-plot (2018-10-14)
+* `4`: replace basemap by cartopy (2018-07-24)
+* `9`: add notebook on pyecharts (2018-07-05)
+* `8`: try catch around ggplot (not maintained anymore) (2018-05-24)
+* `7`: split unit test on ggplot - failing on appveyor (2018-03-28)
+* `6`: fix notebook on pythreejs (update to 1.0.0) (2018-03-22)
+* `5`: fix unit test with ete3 (2017-12-20)
+
+
