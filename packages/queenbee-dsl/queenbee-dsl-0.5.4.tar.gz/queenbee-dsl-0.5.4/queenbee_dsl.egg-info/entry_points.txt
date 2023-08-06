@@ -1,0 +1,4 @@
+
+        [queenbee.plugins]
+        dsl=queenbee_dsl.cli:dsl
+    
