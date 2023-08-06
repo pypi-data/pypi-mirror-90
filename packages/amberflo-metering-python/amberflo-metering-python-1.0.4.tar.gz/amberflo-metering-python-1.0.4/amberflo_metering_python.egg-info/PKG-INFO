@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: amberflo-metering-python
+Version: 1.0.4
+Summary: Integrate amberflo into any python application.
+Home-page: https://github.com/amberflo/metering-python
+Author: Amberflo
+Author-email: friends@amberflo.com
+Maintainer: Amberflo.io
+Maintainer-email: friends@amberflo.com
+License: MIT License
+Description: 
+        Amberflo is the simplest way to integrate metering into your application.
+        
+        This is the official python client that wraps the Amberflo REST API (https://amberflo.io).
+        
+        Samples:
+        
+                # dedup is happening on a full record
+                metering.meter(options.tenant, options.meter_name,int(options.meter_value), dimensions=dimensions) 
+                # addint a timestamp
+                metering.meter(options.tenant, options.meter_name,int(options.meter_value),             dimensions=dimensions,timestamp=str(int(round(time.time() * 1000)))) 
+                # adding unique id
+                metering.meter(options.tenant, options.meter_name,int(options.meter_value), dimensions=dimensions_with_unique_id) 
+                
+        
+        Documentation and more details at https://github.com/amberflo/metering-python
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: test
