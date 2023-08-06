@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: aio-meilisearch
+Version: 0.1.0
+Summary: Async library for MeiliSearch
+Home-page: https://github.com/devtud/aio_meilisearch
+License: MIT
+Keywords: asyncio,meilisearch
+Author: devtud
+Author-email: devtud@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Dist: httpx
+Project-URL: Repository, https://github.com/devtud/aio_meilisearch
+Description-Content-Type: text/markdown
+
+[![Tests](https://github.com/devtud/aio_meilisearch/workflows/Tests/badge.svg)](https://github.com/devtud/aio_meilisearch/actions?workflow=Tests)
+![pypi](https://img.shields.io/pypi/v/aio_meilisearch.svg)
+![versions](https://img.shields.io/pypi/pyversions/aio_meilisearch.svg)
+[![](https://pypip.in/license/aio_meilisearch/badge.svg)](https://pypi.python.org/pypi/aio_meilisearch)
+
+# AIO_MEILISEARCH
+## Async HTTPX Wrapper over Meilisearch REST API
+
+### Run tests with nox and poetry
+
+**Prerequisites:**
+ - **poetry**
+ - **nox**
+ - **nox-poetry**
+
+Install them on your system:
+```bash
+pip install poetry nox nox-poetry
+```
+
+Run tests:
+```bash
+nox
+```
+
+The tests will be run against:
+ - Python 3.8
+ - Python 3.9
+
+or whichever is present on your system.
+
