@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: firestoredb
+Version: 0.1.0
+Summary: Firestore wrapper for Python
+Home-page: https://github.com/sarmadgulzar/firestoredb
+Author: Sarmad Gulzar
+Author-email: sarmadgulzar@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: google-cloud-firestore (==2.0.2)
+
+# firestoredb
+
+
