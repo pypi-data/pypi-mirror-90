@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: yp
+Version: 0.0.2
+Summary: Manipulating dicts
+Home-page: https://github.com/thorwhalen/ut/tree/master/pdict/manip.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # yp
+        Manipulating dicts
+        
+        
+        To install:	```pip install yp```
+        
+Platform: any
+Description-Content-Type: text/markdown
