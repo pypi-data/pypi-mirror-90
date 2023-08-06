@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+dbam/__init__.py
+dbam/__main__.py
+dbam/config.cfg
+dbam/viewer.py
+dbam.egg-info/PKG-INFO
+dbam.egg-info/SOURCES.txt
+dbam.egg-info/dependency_links.txt
+dbam.egg-info/entry_points.txt
+dbam.egg-info/requires.txt
+dbam.egg-info/top_level.txt

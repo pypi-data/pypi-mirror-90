@@ -1,0 +1,3 @@
+[console_scripts]
+dbam = dbam.__main__:main
+

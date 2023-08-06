@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: dbam
+Version: 0.0.2
+Summary: databamboo cli tools
+Home-page: https://github.com/databamboo/dbam
+Author: Harry Wang
+Author-email: support@databamboo.com
+License: MIT
+Description: # About
+        
+        `dbam` (short for DataBamboo) is the command line tool for services provided by DataBamboo.com. 
+        
+        ## Installation
+        
+        You can install `dbam` using `pip`:
+        
+        ```
+        pip install dbam
+        ```
+        
+        `dbam` is supported on Python 3.6 and above.
+        
+        ## How to use
+        
+        run `dbam init` to setup your local environment with API token from DataBamboo.com.
+        
+        ## Test
+        
+        ```bash
+        pip install pytest
+        python -m pytest
+        ```
+        
+        ## Packaging and Upload
+        
+        ```
+        python setup.py sdist
+        twine upload dist/*
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
