@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: pywe-subscribe-message
+Version: 1.0.0
+Summary: Wechat Subscribe Message Module for Python.
+Home-page: https://github.com/sdkwe/pywe-subscribe-message
+Author: Hackathon
+Author-email: kimi.huang@brightcells.com
+License: UNKNOWN
+Keywords: Wechat Weixin Subscribe Message
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pywe-base (>=1.0.5)
+Requires-Dist: pywe-token (>=1.0.6)
+
+======================
+pywe-subscribe-message
+======================
+
+Wechat Subscribe Message Module for Python.
+
+Sandbox
+=======
+
+* https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login
+
+Installation
+============
+
+::
+
+    pip install pywe-subscribe-message
+
+
+Usage
+=====
+
+::
+
+    from pywe_subscribe_message.subscribemsg import SubscribeMessage, send_subscribe_template_message, send_wxa_subscribe_template_message
+
+
+Method
+======
+
+::
+
+    class SubscribeMessage(BaseToken):
+        def __init__(self, appid=None, secret=None, token=None, storage=None):
+            super(SubscribeMessage, self).__init__(appid=appid, secret=secret, token=token, storage=storage)
+
+    def send_subscribe_template_message(self, user_id, template_id, data, url=None, scene=None, title=None, miniprogram=None, mini_program=None, miniappid=None, minipagepath=None, appid=None, secret=None, token=None, storage=None):
+
+    def send_wxa_subscribe_template_message(self, user_id, template_id, data, page=None, miniprogram_state=None, lang=None, appid=None, secret=None, token=None, storage=None):
+
+
+
