@@ -1,0 +1,3 @@
+[console_scripts]
+azsctl = azsctl.__main__:main
+
