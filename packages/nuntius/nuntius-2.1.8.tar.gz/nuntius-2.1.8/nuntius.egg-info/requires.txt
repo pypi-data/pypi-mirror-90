@@ -1,0 +1,3 @@
+tenacity
+pillow
+html2text
