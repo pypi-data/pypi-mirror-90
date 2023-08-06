@@ -1,0 +1,10 @@
+setup.py
+jaja_probability_dsnd/Binomialdistribution.py
+jaja_probability_dsnd/Gaussiandistribution.py
+jaja_probability_dsnd/Generaldistribution.py
+jaja_probability_dsnd/__init__.py
+jaja_probability_dsnd.egg-info/PKG-INFO
+jaja_probability_dsnd.egg-info/SOURCES.txt
+jaja_probability_dsnd.egg-info/dependency_links.txt
+jaja_probability_dsnd.egg-info/not-zip-safe
+jaja_probability_dsnd.egg-info/top_level.txt
