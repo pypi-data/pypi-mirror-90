@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+pgm1.csv
+setup.py
+mlprogram1/__init__.py
+mlprogram1.egg-info/PKG-INFO
+mlprogram1.egg-info/SOURCES.txt
+mlprogram1.egg-info/dependency_links.txt
+mlprogram1.egg-info/top_level.txt

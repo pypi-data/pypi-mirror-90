@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: mlprogram1
+Version: 0.0.1
+Summary: A Machine Learning Program
+Home-page: UNKNOWN
+Author: Machine_learning
+Author-email: eggrice9@gmail.com
+License: MIT
+Description: This is a Machine learning program
+        
+        Change Log
+        ==========
+        
+        0.0.1 (19/04/2020)
+        -------------------
+        - First Release
+        
+Keywords: Machine Learning
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
