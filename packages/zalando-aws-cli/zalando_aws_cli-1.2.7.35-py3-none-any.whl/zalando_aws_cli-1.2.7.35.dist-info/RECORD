@@ -1,0 +1,11 @@
+zalando_aws_cli/__init__.py,sha256=Bby5OHm-h8Zta3WXrV7PPISTQN9hGabZ0aanHYwcIhM,76
+zalando_aws_cli/__main__.py,sha256=SLPsjSJL7kpY0fZSqlrGO-QxUJRPBK_se9O1ydILHTg,76
+zalando_aws_cli/api.py,sha256=gAVt4nEZjjF6BsITYi6q3CEllQLTgsReNDeFPRZbjac,4153
+zalando_aws_cli/cli.py,sha256=VcbpGale_Ds5RQ8bVL6e5Vj3s9m24GkDm_3vqiOsPpY,9996
+zalando_aws_cli-1.2.7.35.dist-info/DESCRIPTION.rst,sha256=WL_CCyrlORUF-KZc3AV-5j9j3BJ_4wsvIWdwQiPn7zs,1544
+zalando_aws_cli-1.2.7.35.dist-info/METADATA,sha256=c_PrF-37YZ68XIp3AmvFXR8_bxQ5gzJ1eAYkrs5FCzM,2501
+zalando_aws_cli-1.2.7.35.dist-info/RECORD,,
+zalando_aws_cli-1.2.7.35.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+zalando_aws_cli-1.2.7.35.dist-info/entry_points.txt,sha256=Rm0WDXtwl3-b2Re-vE6vmFMnJctCxSrYo0JOYlI_NKs,51
+zalando_aws_cli-1.2.7.35.dist-info/metadata.json,sha256=4vBRHXccq3GodFzoph93qaTlusjS0Y-3_PZPPUYgVWY,1288
+zalando_aws_cli-1.2.7.35.dist-info/top_level.txt,sha256=Iv8RIpmZrbf2lcsXpdYIKLI3RVn02fbhODE6SMx0U9I,16
