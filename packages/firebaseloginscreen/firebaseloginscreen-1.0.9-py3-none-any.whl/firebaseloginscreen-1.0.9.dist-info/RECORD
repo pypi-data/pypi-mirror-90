@@ -1,0 +1,17 @@
+firebaseloginscreen/__init__.py,sha256=NnEYVaUil_jTdYxOuwzWND82IF8WLvrtzQpa_MY2ML0,977
+firebaseloginscreen/firebaseloginscreen.kv,sha256=SjxcCyQ-Ufa6_vAdo775Hq1mbG4t0yu0T5jhmbbqiAY,754
+firebaseloginscreen/firebaseloginscreen.py,sha256=IG2KoAaPAUQYhCkFdgVKj4I5JwdZKidUaUrd3LAEn0U,15222
+firebaseloginscreen/loadingpopup.kv,sha256=kxZvs5i1pKjAvuCQEsstcpifSWFESZtw0RcIY_qaSrU,289
+firebaseloginscreen/signinscreen.kv,sha256=5fb7Zf-pxBLlMoix98WZHnN9p7u54g3RPq9oHVRFiXg,1950
+firebaseloginscreen/signinscreen.py,sha256=CPHvqnO07sos2lRegk3ddlgdMdWkBwxXGvW5GKslKnc,316
+firebaseloginscreen/signupscreen.kv,sha256=shROfLFzEqfLdadTGjmT_bM1TYhliqmuW2Pc3D2DeYs,1690
+firebaseloginscreen/signupscreen.py,sha256=yxvAsGnK6Ea0pa64IIV9O8sPnTdM4Oqmnn72bcOQXyw,316
+firebaseloginscreen/transparent_image.png,sha256=qGfp-zC1oig6k7PGCYX_Io4uESOp1BOnWfpe2e7sw7k,2460
+firebaseloginscreen/welcomescreen.kv,sha256=Eayq0haX2qIaFB1e_7-YYPBB6au6hCKw5s813ymCyi0,538
+firebaseloginscreen/welcomescreen.py,sha256=ZUvsmTknkqwtICgVZv5MWeacnDG9jNjlPOpNhTTI8XI,82
+firebaseloginscreen-1.0.9.dist-info/LICENSE,sha256=lOzDXaOHVS6ScGn6TRNWUbI11-4_5EPQW2V3NKWHDzY,1070
+firebaseloginscreen-1.0.9.dist-info/METADATA,sha256=YgVuycIL6EQZ7CsLrad_Rg80UFC_2RLIrOospCdzxu4,5387
+firebaseloginscreen-1.0.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+firebaseloginscreen-1.0.9.dist-info/entry_points.txt,sha256=mDtq5fbYTdTDXA-CdbL8J4uUGDm5_js9Ys2qp_8k3q4,53
+firebaseloginscreen-1.0.9.dist-info/top_level.txt,sha256=-dKz6vKkgaqeUwrPDwlJJxcFulrjdlBGEEqWBhQSjIU,20
+firebaseloginscreen-1.0.9.dist-info/RECORD,,
