@@ -1,0 +1,9 @@
+rdflib<6.0,>=4.2
+scikit-learn==0.22.*
+
+[dev]
+codecov==2.1.*
+pytest-cov==2.8.*
+pytest-mock==1.7.*
+pytest-pycodestyle==2.2.*
+pytest==5.4.*
