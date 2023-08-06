@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: warprnnt-tensorflow
+Version: 0.1
+Summary: TensorFlow wrapper for warp-transducer
+Home-page: https://github.com/HawkAaron/warp-transducer
+Author: Mingkun Huang
+Author-email: mingkunhuang95@gmail.com
+License: Apache
+Description: This package provides TensorFlow kernels that wrap the WarpRNNT
+        library.
+Platform: UNKNOWN
