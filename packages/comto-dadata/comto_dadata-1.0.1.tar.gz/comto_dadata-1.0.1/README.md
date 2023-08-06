@@ -1,0 +1,30 @@
+# DaData Commercito
+Package for working with the "dadata.ru" service
+
+Пакет для работы с сервисом "dadata.ru"
+
+## Using
+
+### Company (Поиск компаний)
+```python
+from comto_dadata import company
+
+payload = {
+    'query': 'Иванов Александр',
+    'count': 20,
+    'status': ["ACTIVE"],
+    'locations': [{"kladr_id": "1300000100000"}],
+}
+
+res = company.suggest('your-token', payload)
+```
+
+### Profile (Личный кабинет)
+
+```python
+from comto_dadata import profile
+
+stat = profile.stat('your-token', 'your-secret')
+balance = profile.balance('your-token', 'your-secret')
+version = profile.version('your-token')
+```
