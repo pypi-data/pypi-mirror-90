@@ -1,0 +1,3 @@
+[console_scripts]
+filemark = filemark.command_line:main
+
