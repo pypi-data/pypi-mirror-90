@@ -1,0 +1,11 @@
+pyfonybundles/appConfigLoader.py,sha256=yr4tt19YbMoVqRN8kdkcsDT-33QfrlUA3lMAIti7_bg,306
+pyfonybundles/appContainerInit.py,sha256=e72IvdDEZt5X9U_A_u5XF9SAiDeSprbJPvt1GqXgyt8,553
+pyfonybundles/Bundle.py,sha256=RJ6L-ZnkZc1p99fZO_bR9nizSwVO_u5sbNlGgziEBmA,763
+pyfonybundles/BundleManager.py,sha256=CtT9w999KHTGR3FU9HCsKlZLjZtHEUNHZPEK4HK8Yv8,2895
+pyfonybundles/loader/entryPoints.py,sha256=K8YUj5HuUzgerVtNsOM9CIW0F6hWrdlcVIlsIMpnfus,626
+pyfonybundles/loader/pyfonyBundlesLoader.py,sha256=pN5P3CdXM-WDgoKUdyPkU6mZyGaJgSMC28h8v1j0-SM,315
+pyfonybundles/loader/testingScopeBundlesLoader.py,sha256=eCug5a04PFUDSLxLJ8k4bo40TW-5AZL-hQJeF3UCOK8,1152
+pyfony_bundles-0.2.5a1.dist-info/LICENSE,sha256=p9qOsNzKt71jf-HqXcPq37l1LUkod01gTPiBMc2UVOI,1060
+pyfony_bundles-0.2.5a1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pyfony_bundles-0.2.5a1.dist-info/METADATA,sha256=4h10gdy37aXOyFgF76J1gL6Q1Uqc_1RK7q8f1WKKMxk,680
+pyfony_bundles-0.2.5a1.dist-info/RECORD,,
