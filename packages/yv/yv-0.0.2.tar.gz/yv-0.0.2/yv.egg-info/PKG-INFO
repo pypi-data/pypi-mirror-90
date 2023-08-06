@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: yv
+Version: 0.0.2
+Summary: Simple utils to get stuff out of Mappings (dict-like objects).
+Home-page: https://github.com/thorwhalen/ut/tree/master/pdict/get.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # yv
+        Simple utils to get stuff out of Mappings (dict-like objects).
+        
+        
+        To install:	```pip install yv```
+        
+Platform: any
+Description-Content-Type: text/markdown
