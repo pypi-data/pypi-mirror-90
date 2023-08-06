@@ -1,0 +1,8 @@
+distillable_vision_transformer/__init__.py,sha256=UCGDvu5m8P5GJLg0MZegXBqK9Vq44ApYAU9bj7KVujI,181
+distillable_vision_transformer/model.py,sha256=UgT8t9FPeBZGFqhz6uh-5fKd9ZgyRBb-Yp-gsJ3GrB8,13532
+distillable_vision_transformer/utils.py,sha256=hNrKyva6zSMjRHs8M-O_dVZg246exthfAHxqDHI6W9k,3047
+distillable_vision_transformer-1.0.1.dist-info/LICENSE,sha256=E_YoHOtNffLJjm7qVEVVQT5i-ZfffezU5eBrl3hwpKw,11342
+distillable_vision_transformer-1.0.1.dist-info/METADATA,sha256=Mszxvpx82lFjAW-YFFDiXdB5u3i5nA4PnpT9rI7Pk-0,4569
+distillable_vision_transformer-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+distillable_vision_transformer-1.0.1.dist-info/top_level.txt,sha256=RQ1s4_65BQKfgp5jTx5yN6VouPSO8vZ57S9m2noYWWc,31
+distillable_vision_transformer-1.0.1.dist-info/RECORD,,
