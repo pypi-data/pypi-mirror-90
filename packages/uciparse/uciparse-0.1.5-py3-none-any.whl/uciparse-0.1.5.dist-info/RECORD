@@ -1,0 +1,13 @@
+LICENSE,sha256=MTYF-6xpRekyTUglRweWtbfbwBL1I_3Bgfbm_SNOuI8,11525
+scripts/install,sha256=lNRawQzcko4KHTNV1n-hwIKtB7l_diRGe04E5uKvJOE,368
+scripts/ucidiff,sha256=K-YeDmgHtwm_Uzk8sDJgFYzXeAsd6VL0tZ-AK2FIULQ,63
+scripts/uciparse,sha256=xMGe96wxICEJW7r4gHqmeWwI56QWwb-L5e102UKcIuQ,65
+uciparse/__init__.py,sha256=PVJ5WNoHMxvWq0aRi2LEflg6G9aTjLJ1ludlJ7YPyHk,30
+uciparse/cli.py,sha256=uECId7YxUnbyLnfbV5sjMdjaC_2JkWaizonvewmnTL4,1924
+uciparse/py.typed,sha256=bbnNRpwbB865VOTMVFL-t8qSYHTNu6XZ6ktImjfdgsw,69
+uciparse/uci.py,sha256=9gT1DHXNP9PwEtR5PzN0IZlg7dWSBKcnNtxxeWxww_Q,17481
+uciparse-0.1.5.dist-info/entry_points.txt,sha256=KGKbx0IdF5czAJulSgu6TyZugGVxVaEDPUUJtYqM0n4,73
+uciparse-0.1.5.dist-info/LICENSE,sha256=MTYF-6xpRekyTUglRweWtbfbwBL1I_3Bgfbm_SNOuI8,11525
+uciparse-0.1.5.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+uciparse-0.1.5.dist-info/METADATA,sha256=uiBbVTkOtpqN5OyiC_bnIlIZhp6yy3Ur3x-FFI49wmo,4687
+uciparse-0.1.5.dist-info/RECORD,,
