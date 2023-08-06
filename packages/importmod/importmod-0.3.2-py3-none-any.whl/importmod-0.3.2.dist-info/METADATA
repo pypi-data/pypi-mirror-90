@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: importmod
+Version: 0.3.2
+Summary: A CLI tool to import mods into the Portmod repository format
+Home-page: https://gitlab.com/portmod/importmod
+Author: Portmod Authors
+Author-email: UNKNOWN
+License: GPLv3
+Platform: UNKNOWN
+Requires-Dist: portmod (>=2.0rc0)
+Requires-Dist: gitpython
+Requires-Dist: requests
+Requires-Dist: patool
+Requires-Dist: redbaron
+Requires-Dist: isort (>=5.0.0)
+Requires-Dist: black
+Requires-Dist: beautifulsoup4
+
+UNKNOWN
+
+
