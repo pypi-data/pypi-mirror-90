@@ -1,0 +1,3 @@
+[pytest11]
+open_alchemy_package_database=open_alchemy.package_database.pytest_plugin
+

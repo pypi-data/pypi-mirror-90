@@ -1,0 +1,14 @@
+open_alchemy/__init__.py,sha256=xgjXOeVLAma-FqzUULAYoJuxzpX1pcgl-5ljofuXII8,29
+open_alchemy/package_database/__init__.py,sha256=hvlH5NGklARAn2FMmZ-6kQ_utBpeSjg89mh2l_N9r5A,309
+open_alchemy/package_database/config.py,sha256=nPUnFGcYgNgS_FaGAlIMkApctjiosd-x1Qp3lMgEmxc,2130
+open_alchemy/package_database/dynamodb.py,sha256=9Q0QrVPn2dd-w88XL056zXW4gpoeDw0Onh8PzgAkN8A,7749
+open_alchemy/package_database/exceptions.py,sha256=PJTaP-uUt0g6pVeQYwJpw7N465NHxaXvfUHcg7z9enE,175
+open_alchemy/package_database/factory.py,sha256=dPE3ItQLiH_BDemnObHuj_D0RRBm0tOVasYGU5Ng0nc,1735
+open_alchemy/package_database/init-database.js,sha256=TglrI2mPRctiLeERJCM8l2PA7qfsFsRLPWqwUOEv27A,232
+open_alchemy/package_database/models.py,sha256=zX_Tk0b-bO67NbogBa1Sj-h20PUMSQTOWVjQnr1kRPc,15365
+open_alchemy/package_database/pytest_plugin.py,sha256=aW8haudLb2FcybX5_7hpMILSgM2ulWAErLdbAfXasUk,2903
+open_alchemy/package_database/types.py,sha256=xXhku4PvwZnDX9sWGY1tWlR1mk-Q9_3ISMT7KqcK60o,7952
+open_alchemy.package_database-2.0.2.dist-info/entry_points.txt,sha256=fhb-QJLydeCQZHLbz0FeZoN9IDimoYXQLvyxb-KgpXc,86
+open_alchemy.package_database-2.0.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+open_alchemy.package_database-2.0.2.dist-info/METADATA,sha256=i96oLSJj8gOsIyh0td11A8wJaX-x8bdViEknamtEH4I,11079
+open_alchemy.package_database-2.0.2.dist-info/RECORD,,
