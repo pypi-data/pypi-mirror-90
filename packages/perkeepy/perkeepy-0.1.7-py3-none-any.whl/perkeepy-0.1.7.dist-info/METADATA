@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: perkeepy
+Version: 0.1.7
+Summary: Python utilities for Perkeep
+Home-page: https://github.com/aviau/perkeepy
+Author: Alexandre Viau
+Author-email: alexandre@alexandreviau.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+# perkeepy
+
+Python utilities for [Perkeep](https://perkeep.org/).
+
+I have recently started hacking on Perkeep and implementing some of the internals in Python helps me validate my understanding of the codebase. The intended purpose is at least to be able to browse a Perkeep repository without the Go implementation.
+
+
