@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: pybelieva
+Version: 0.1.0.dev5
+Summary: Python wrapper for UnbelievaBoat API
+Home-page: https://gitlab.com/dev-cats/Pybelieva
+License: MIT
+Keywords: async,discord,unbelieva,unbelievaboat,aiohttp
+Author: John Meow
+Author-email: j0hn.meow@ya.ru
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Typing :: Typed
+Requires-Dist: aiohttp (>=3.6,<4.0)
+Requires-Dist: pydantic (>=1.7,<2.0)
+Project-URL: Repository, https://gitlab.com/dev-cats/Pybelieva
+Project-URL: Source, https://gitlab.com/dev-cats/pybelieva
+Project-URL: Tracker, https://gitlab.com/dev-cats/pybelieva/-/issues
+Description-Content-Type: text/markdown
+
+# Pybelieva
+
+[![discord][discord-badge]][discord] [![api][api-badge]][api]
+![logo][logo]
+
+Pybelieva is a library providing a Python interface
+to the [UnbelievaBoat API][api]. To
+use it, you need to get a token from the official documentation page.
+
+## Dependencies
+
+- Python
+- aiohttp
+- discord.py (optional)
+
+## Roadmap
+
+- Documentation
+- Rate limit handling
+
+[logo]: https://i.imgur.com/RLRDeQw.png
+[discord-badge]: https://img.shields.io/discord/592830069806989339?color=4e5d94&label=Discord&logo=discord
+[discord]: https://discord.gg/jK8thg37mC
+[api]: https://unb.pizza/api/docs
+[api-badge]: https://img.shields.io/badge/api-v1-ff266a
+
