@@ -1,0 +1,146 @@
+[metadata]
+description-file = "README.md"
+
+[build-system]
+requires = ["poetry>=1.1,<2", "virtualenv==20.0.33", "wheel>=0.36,<1.0"]
+build-backend = "poetry.masonry.api"
+
+
+#########################################################################################
+# Poetry metadata
+#########################################################################################
+
+[tool.poetry]
+name = "decorateme"
+version = "0.2.0"
+description = "Python decorators for str/repr, equality, immutability, and more."
+keywords = ["python", "decorators", "repr"]
+authors = ["Douglas Myers-Turnbull"]
+maintainers = ["Douglas Myers-Turnbull"]
+license = "Apache-2.0"
+readme = "README.md"
+homepage = "https://github.com/dmyersturnbull/decorate-me"
+repository = "https://github.com/dmyersturnbull/decorate-me"
+documentation = "https://decorate-me.readthedocs.io"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+	"Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+include = [
+    "README.md",
+    "LICENSE.txt",
+    "CHANGELOG.md"
+]
+
+[tool.poetry.urls]
+CI = "https://github.com/dmyersturnbull/decorate-me/actions"
+Issues = "https://github.com/dmyersturnbull/decorate-me/issues"
+Download = "https://pypi.org/project/decorate-me/"
+
+
+#########################################################################################
+# Poetry build & dependencies
+#########################################################################################
+
+[tool.poetry.dependencies]
+python                   = ">=3.8, <4"
+tomlkit                  = ">=0.7, <1.0"
+
+[tool.poetry.dev-dependencies]
+pre-commit               = ">=2.9, <3.0"
+pre-commit-hooks         = ">=3.4, <4.0"
+bandit                   = ">=1.7, <2.0"
+pytest                   = ">=6.2, <7.0"
+coverage                 = {extras = ["toml"], version = ">=5.3, <6.0"}
+pytest-cov               = ">=2.10, <3.0"
+sphinx                   = ">=3.4, <4.0"
+sphinx-autoapi           = ">=1.5, <2.0"
+sphinx-rtd-theme         = ">=0.5, <1.0"
+flake8                   = ">=3.8, <4.0"
+flake8-docstrings        = ">=1.5, <2.0"
+flake8-bugbear           = ">=20"
+
+[tool.poetry.extras]
+dev = [
+        "pre-commit", "pre-commit-hooks",
+        "pytest", "coverage", "pytest-cov",
+        "sphinx", "sphinx-autoapi",
+        "flake8", "flake8-docstrings",
+        "black",
+        "bandit", "flake8-bugbear"
+]
+
+
+#########################################################################################
+# Tyrannosaurus
+#########################################################################################
+
+[tool.tyrannosaurus.options]
+align    = true
+
+[tool.tyrannosaurus.sources]
+status             = "'Development'"
+date               = "'2020-08-24'"
+copyright          = "'Copyright 2017–2021'"
+version            = "tool.poetry.version"
+release            = "tool.poetry.version"
+pyversions         = "tool.poetry.dependencies"
+devdeps            = "tool.poetry.dev-dependencies"
+linelength         = "tool.black.line-length"
+authors = [
+    "Douglas Myers-Turnbull <github:dmyersturnbull,orcid:0000-0003-3610-4808>"
+]
+contributors = []
+maintainers = "tool.tyrannosaurus.sources.authors"
+
+[tool.tyrannosuarus.paths]
+recipe             = "'recipes/decorate-me/meta.yml'"
+environment        = "'environment.yml'"
+
+[tool.tyrannosaurus.targets]
+# these are file and directory names, without filename extensions
+# they will only be synced if they exist; never created
+# to get a recipe and anaconda env, run 'tyrannosaurus recipe' and 'tyrannosaurus env'
+pyproject    = true
+init         = true
+tox          = true
+docs         = true
+recipes      = true
+license      = true
+authors      = true
+github       = true
+travis       = true
+dockerfile   = true
+readme       = true
+changelog    = true
+citation     = true
+codemeta     = true
+environment  = false
+
+
+#########################################################################################
+# Style checking
+#########################################################################################
+
+[tool.coverage.paths]
+source = ["decorateme"]
+
+[tool.coverage.run]
+source = ["decorateme"]
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.black]
+line-length = 100
+target-version = ["py38"]
+
+[mypy]
+check_untyped_defs = true
+strict_optional = true
