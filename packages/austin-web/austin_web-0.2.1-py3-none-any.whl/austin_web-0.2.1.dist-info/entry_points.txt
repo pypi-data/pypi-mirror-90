@@ -1,0 +1,3 @@
+[console_scripts]
+austin-web=austin_web.__main__:main
+
