@@ -1,0 +1,11 @@
+TycSelen/VERSION.txt,sha256=axN4nkPlSFY0Uz3hamXYup00xMl1hYi2ZYBUNfgOsRU,5
+TycSelen/__init__.py,sha256=xFn7hAgM9WLpNgZOzXUmdUIJ4147RT7QDsxibqEHPNM,169
+TycSelen/crawl.py,sha256=43knJ2_jSXkvoF60xF0RX-zC59iWtA6amk6TqgKjslU,11569
+TycSelen/info.py,sha256=e_jp08p2yusjeMQLhbX9aQ1eULtdnVVIsG5QxIrV3TM,1315
+TycSelen/selen_crawl.py,sha256=a9X2en0nJ7ShD88o2GRYRZA4aHOMxEfy10tTkHT5iMY,13416
+TycSelen/spider.py,sha256=C4ceHlChP0XjYQtCNaWodt3lSJJ_vi5suqqvu1DES_I,13222
+TycSelen/spider2.py,sha256=NHMLkE-mw4bW0BXgNpfA6f4vcAWkBgPlwDJ5s1fWHGA,6254
+tycselen-0.0.1.dist-info/METADATA,sha256=BHn7KiVOYcbTgEPnicWM7TRf1HWaxt25GGJ5zzGRzZU,2328
+tycselen-0.0.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+tycselen-0.0.1.dist-info/top_level.txt,sha256=0UdCErrnFQ13by-BdtO2Iygbl2_6M6W21Kfo1X1r2t0,9
+tycselen-0.0.1.dist-info/RECORD,,
