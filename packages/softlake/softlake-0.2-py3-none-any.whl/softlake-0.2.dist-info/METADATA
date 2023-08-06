@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: softlake
+Version: 0.2
+Summary: Primary Production: library to estimate primary production in lakes
+Home-page: https://ist-supsi.gitlab.io/softlake/
+Author: Massimiliano Cannata
+Author-email: massimiliano.cannata@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+
+# Soft Lake
+
+Authors: Massimiliano Cannata, Fabio Lepori, Camilla Capelli
+Copyright (c) 2020 IST-SUPSI (www.supsi.ch/ist)
+License: GPL v2
+version Beta-0.1
+
+[Documentation:](./build/html/index.html)
+
+Soft Lake is a model to estimate Primary Production at hourly rate from monthly profiles.
+
+## Data inputs:
+
+- monthly observations of in-situ profiles measurements along defined depths of Primary Production, Irradiance, Chlorophill-a, Water Temperature
+
+- hourly Irradiance and Wind Speed observations from Weather Station
+
+## Data Outputs:
+
+- Primary Production at hourly rate
+
