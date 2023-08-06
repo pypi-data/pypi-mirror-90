@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: FASTRAL
+Version: 0.1.0
+Summary: A hybrid summary method for reconstructing species tree from gene trees.
+Home-page: https://github.com/PayamDiba/FASTRAL
+Author: Payam Dibaeinia
+Author-email: dibaein2@illinois.edu
+License: MIT License
+Description: # FASTRAL
+        
+        ## Description
+        FASTRAL is a novel approach for running ASTRAL, a widely used and popular species tree reconstruction method. FASTRAL runs up to ~800 times faster than ASTRAL but with a similar (or sometimes better) accuracy.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
