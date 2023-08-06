@@ -1,0 +1,3 @@
+[console_scripts]
+realpython = mongodump_s3.__main__:main
+
