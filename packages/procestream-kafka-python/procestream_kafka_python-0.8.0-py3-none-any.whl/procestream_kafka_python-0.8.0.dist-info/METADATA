@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: procestream-kafka-python
+Version: 0.8.0
+Summary: Kafka stream processing microservice
+Home-page: https://github.com/nipunbalan/procstream-kafka-python
+Author: Nipun Balan Thekkummal
+Author-email: dev@technipun.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: kafka-python
+Requires-Dist: tweepy
+Requires-Dist: elasticsearch
+
+# Procstream : Python library for Stream processing microservice using Kafka
+Python library for creating stream processing pipelines using [kafka](https://kafka.apache.org)
+
+
