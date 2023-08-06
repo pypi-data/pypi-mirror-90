@@ -1,0 +1,12 @@
+bookleter/Booklet.py,sha256=QRgDiGgzqhgACAMNOh60BsQg95hakDMNY8AqDE0riA0,6434
+bookleter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bookleter/__main__.py,sha256=fvfHLF4Mi-b84TVy3_zwZyvN6TiJghci4qQ7B4puwog,1632
+bookleter/__version__.py,sha256=09hol5ovL6ArILJIJZ-MiscnOjKa6RjaETmtdgJpW2c,22
+bookleter/gui.py,sha256=BQXVI4CVdxmypU1QTPsMytKZ2uR_4bIwrLqW16XmGdw,3855
+bookleter/shuffle.py,sha256=BmO1y88g_zjFOLgsDchEkzQ8Fk8eZxSCvubVJHy_S-w,3531
+bookleter-0.7.0.dist-info/LICENSE,sha256=yR519amygeX4DIARsqbtzO_bvTtWgwYO3wxbegZo-iE,1072
+bookleter-0.7.0.dist-info/METADATA,sha256=jlC7cSV8Hx8kG2Wj_qSbIqtQgU-MlpXInwCfwtMkC5c,427
+bookleter-0.7.0.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+bookleter-0.7.0.dist-info/entry_points.txt,sha256=KXNOlXCZHFX30H_UOKeCWfxd6FCHL3Ljy3R-5kBVYwg,55
+bookleter-0.7.0.dist-info/top_level.txt,sha256=GniYK3AoJLszQPOCeDbN3nVh2NaigPCqemswBChH4r4,10
+bookleter-0.7.0.dist-info/RECORD,,
