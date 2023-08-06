@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: servicenow-cmdb-syncpack
+Version: 3.2.1.dev31
+Summary: ServiceNow CMDB SyncPack
+Home-page: https://code.eng.sciencelogic.com/projects/AIR/repos/is_syncpack_servicenow_cmdb
+Author: ScienceLogic, Inc.
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Other/Nonlisted Topic
+Requires-Python: >=3.7
+Requires-Dist: future
+Requires-Dist: ipaascommon
+Requires-Dist: base-steps-syncpack (~=1.2)
+Requires-Dist: servicenow-base-syncpack (~=3.1)
+Requires-Dist: jinja2
+Provides-Extra: dev
+Requires-Dist: bumpversion ; extra == 'dev'
+
+SyncPack for integrating SL1 to ServiceNow CMDB.
+
+

@@ -1,0 +1,25 @@
+{
+  "friendly_name": "Post Company and Organization Updates",
+  "description": "Posts Company/Org updates to ServiceNow or SL1.",
+  "configuration": "",
+  "author": "ScienceLogic, Inc.",
+  "version": "2.0.0",
+  "meta": {     
+    "hidden": true
+  },
+  "app_variables": [],
+  "steps":[
+    {
+      "name": "Post Updates",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "prefix_url": "https://${_appvar.base_url}",
+      "relative_url": "${_appvar.uri}",
+      "method": "post",
+      "payload": "${_appvar.payload}",
+      "username": "${_appvar.user}",
+      "password": "${_appvar.password}",
+      "read_timeout": "${appvar.read_timeout}"
+    }
+  ]
+}

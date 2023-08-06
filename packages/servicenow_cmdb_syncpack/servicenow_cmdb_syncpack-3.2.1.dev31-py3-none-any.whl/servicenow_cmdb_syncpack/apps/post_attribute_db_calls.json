@@ -1,0 +1,46 @@
+{
+  "friendly_name": "Post Attribute DB Calls to SL1",
+  "description": "Executes MySQL Calls for Asset updates to SL1",
+  "configuration": "",
+  "author": "ScienceLogic Inc.",
+  "version": "2.0.0",
+  "meta": {
+    "hidden":  true
+  },
+  "app_variables": [
+    {
+      "name": "sl1_db_host",
+      "description": "The SL1 host to use for DB connections",
+      "sample_value": "10.2.11.48",
+      "required": true,
+      "value": "${config.sl1_db_host}"
+    },
+    {
+      "name": "sl1_db_user",
+      "description": "the user for authenticating with the SL1 DB",
+      "value": "${config.sl1_db_user}",
+      "sample_value": "root",
+      "required": true
+    },
+    {
+      "name": "sl1_db_password",
+      "description": "the password for authenticating with the SL1 DB",
+      "value": "${config.sl1_db_password}",
+      "sample_value": "em7admin",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "name": "Execute MySQL Queries",
+      "file": "MySQLMultiple",
+      "syncpack": "servicenow_base_syncpack",
+      "host": "${appvar.sl1_db_host}",
+      "port": 7706,
+      "username": "${appvar.sl1_db_user}",
+      "password": "${appvar.sl1_db_password}",
+      "database": "master_biz",
+      "query_list": "${_appvar.queries}"
+    }
+  ]
+}

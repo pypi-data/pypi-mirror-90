@@ -1,0 +1,247 @@
+{
+  "friendly_name": "Sync Discovery Requirements",
+  "description": "Trigger all Applications required for Discovery.",
+  "configuration": "",
+  "author": "ScienceLogic Inc.",
+  "version": "3.0.0",
+  "meta": {     
+    "hidden": false
+  },
+  "app_variables":[
+    {
+      "name": "sl1_hostname",
+      "value": "${config.sl1_host}",
+      "description": "The SL1 hostname to participate in the sync",
+      "sample_value": "10.2.253.115",
+      "required": true
+    },
+    {
+      "name": "sl1_db_host",
+      "description": "The SL1 host to use for DB connections",
+      "sample_value": "10.2.11.48",
+      "required": true,
+      "value": "${config.sl1_db_host}"
+    },
+    {
+      "name": "snow_hostname",
+      "value": "${config.snow_host}",
+      "description": "The ServiceNow hostname to participate in the sync",
+      "sample_value": "10.2.253.233",
+      "required": true
+    },
+    {
+      "name": "sl1_user",
+      "value": "${config.sl1_user}",
+      "description": "The user authenticating to SL1",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "snow_user",
+      "value": "${config.snow_user}",
+      "description": "The username for authenticating to ServiceNow",
+      "sample_value": "snowadmin",
+      "required": true
+    },
+    {
+      "name": "sl1_password",
+      "value": "${config.sl1_password}",
+      "description": "the password for authenticating with SL1",
+      "sample_value": "em7password",
+      "required": true
+    },
+    {
+      "name": "snow_password",
+      "value": "${config.snow_password}",
+      "description": "The password for authenticating to ServiceNow",
+      "sample_value": "snowpassword",
+      "required": true
+    },
+    {
+      "name": "sl1_db_user",
+      "description": "the user for authenticating with the SL1 DB",
+      "value": "${config.sl1_db_user}",
+      "sample_value": "root",
+      "required": true
+    },
+    {
+      "name": "sl1_db_password",
+      "description": "the password for authenticating with the SL1 DB",
+      "value": "${config.sl1_db_password}",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "region",
+      "value": "${config.region}",
+      "description": "Unique identifier for IS+SL1",
+      "sample_value": "ScienceLogicRegion",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "name": "Sync Organizations",
+      "file": "TriggerApplication",
+      "syncpack": "base_steps_syncpack",
+      "trigger_app": "sync_organizations",
+      "wait_for_child_completion": false
+    },
+    {
+      "name": "Sync Device Groups",
+      "file": "TriggerApplication",
+      "syncpack": "base_steps_syncpack",
+      "trigger_app": "sync_device_groups",
+      "wait_for_child_completion": false
+    },
+    {
+      "name": "Pull And Process Collector Groups",
+      "file": "PullAndProcessCollectorGroups",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "region": "${appvar.region}",
+      "output_to": [
+        "Merge and Chunk payloads for ServiceNow"
+      ],
+      "method": "GET",
+      "chunk_size": 1000,
+      "chunk_name_for_pos_in_url": "offset",
+      "chunk_name_for_max_in_url": "limit",
+      "chunk_name_for_returned": "total_returned",
+      "chunk_name_for_total": "total_matched",
+      "expected_http_response": 200,
+      "prefix_url": "https://${appvar.sl1_hostname}",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "read_timeout": "${appvar.read_timeout}",
+      "relative_url": "/api/collector_group?extended_fetch=1"
+    },
+    {
+      "name": "Pull Credentials from SL1 (GQL)",
+      "file": "QueryGQL",
+      "syncpack": "base_steps_syncpack",
+      "edges_only": false,
+      "query": "query allCredentials($first: Int = 9999){basicCredentials(first: $first){edges{node{id name host}}} snmpCredentials(first: $first){edges{node{id name host}}} ldapCredentials(first: $first){edges{node{id name host}}} powerShellCredentials(first: $first){edges{node{id name host}}} dbCredentials(first: $first){edges{node{id name host}}} soapCredentials(first: $first){edges{node{id name host}}} sshCredentials(first: $first){edges{node{id name host}}}}",
+      "query_url": "https://${appvar.sl1_hostname}/gql",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "read_timeout": "${appvar.read_timeout}",
+      "output_to": ["Process Credentials"]
+    },
+    {
+      "name": "Pull Credential IDs from SL1 (MySQL)",
+      "file": "MySqlSelect",
+      "syncpack": "base_steps_syncpack",
+      "host": "${appvar.sl1_db_host}",
+      "database": "master",
+      "username": "${appvar.sl1_db_user}",
+      "password": "${appvar.sl1_db_password}",
+      "select_query": "select cred_id, cred_guid from master.system_credentials",
+      "output_to": ["Process Credentials"]
+    },
+    {
+      "name": "Process Credentials",
+      "file": "ProcessCredentials",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "region": "${appvar.region}",
+      "data_from": [
+        "Pull Credentials from SL1",
+        "Pull Credential IDs from SL1 (MySQL)"
+      ],
+      "output_to": [
+        "Merge and Chunk payloads for ServiceNow"
+      ]
+    },
+    {
+      "name": "Pull And Process Device Templates",
+      "file": "PullAndProcessDeviceTemplates",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "region": "${appvar.region}",
+      "output_to": [
+        "Merge and Chunk payloads for ServiceNow"
+      ],
+      "method": "GET",
+      "chunk_size": 1000,
+      "chunk_name_for_pos_in_url": "offset",
+      "chunk_name_for_max_in_url": "limit",
+      "chunk_name_for_returned": "total_returned",
+      "chunk_name_for_total": "total_matched",
+      "expected_http_response": 200,
+      "prefix_url": "https://${appvar.sl1_hostname}",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "read_timeout": "${appvar.read_timeout}",
+      "relative_url": "/api/device_template?extended_fetch=1&limit=100"
+    },
+    {
+      "name": "Pull And Process Virtual Device Classes",
+      "file": "PullAndProcessVirtualClasses",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "region": "${appvar.region}",
+      "output_to": [
+        "Merge and Chunk payloads for ServiceNow"
+      ],
+      "method": "GET",
+      "chunk_size": 1000,
+      "chunk_name_for_pos_in_url": "offset",
+      "chunk_name_for_max_in_url": "limit",
+      "chunk_name_for_returned": "total_returned",
+      "chunk_name_for_total": "total_matched",
+      "expected_http_response": 200,
+      "prefix_url": "https://${appvar.sl1_hostname}",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "read_timeout": "${appvar.read_timeout}",
+      "relative_url": "/api/device_class?extended_fetch=1&filter.0.virtual_type.eq=virtual"
+    },
+    {
+      "name": "Pull And Process Collectors",
+      "file": "PullAndProcessCollectors",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "region": "${appvar.region}",
+      "output_to": [
+        "Merge and Chunk payloads for ServiceNow"
+      ],
+      "method": "GET",
+      "chunk_size": 1000,
+      "chunk_name_for_pos_in_url": "offset",
+      "chunk_name_for_max_in_url": "limit",
+      "chunk_name_for_returned": "total_returned",
+      "chunk_name_for_total": "total_matched",
+      "expected_http_response": 200,
+      "prefix_url": "https://${appvar.sl1_hostname}",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "read_timeout": "${appvar.read_timeout}",
+      "relative_url": "/api/appliance?extended_fetch=1&filter.0.type.in=cu,ao&limit=100"
+    },
+    {
+      "name": "Merge and Chunk payloads for ServiceNow",
+      "file": "MergeAndChunkPayloadsForSnow",
+      "syncpack": "servicenow_base_syncpack",
+      "chunk_size": "${appvar.chunk_size}",
+      "data_from": [
+        "Pull And Process Virtual Device Classes",
+        "Pull And Process Device Templates",
+        "Pull And Process Collector Groups",
+        "Pull And Process Collectors",
+        "Process Credentials"
+      ],
+      "output_to": ["Post Objects To ServiceNow"]
+    },
+    {
+      "name": "Post Objects To ServiceNow",
+      "file": "TriggerApplication",
+      "syncpack": "base_steps_syncpack",
+      "input_iterator": true,
+      "data_from": [
+        "Merge and Chunk payloads for ServiceNow"
+      ],
+      "value_as": "entire_dict_obj",
+      "trigger_app": "post_import_discovery_dependent",
+      "wait_for_child_completion": false,
+      "app_vars": [
+        {"name": "payload", "value": "${payload}"}
+      ]
+    }
+  ]
+}

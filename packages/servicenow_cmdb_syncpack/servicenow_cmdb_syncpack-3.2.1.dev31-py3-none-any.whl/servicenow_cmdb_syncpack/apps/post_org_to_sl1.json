@@ -1,0 +1,63 @@
+{
+  "friendly_name": "Post New Organization to SL1",
+  "description": "Posts New Organizations to SL1.",
+  "configuration": "",
+  "author": "ScienceLogic, Inc.",
+  "version": "3.0.0",
+  "meta": {     
+    "hidden": true
+  },
+  "app_variables": [
+    {
+      "name": "snow_hostname",
+      "value": "${config.snow_host}",
+      "description": "The ServiceNow hostname to participate in the sync",
+      "sample_value": "10.2.253.233",
+      "required": true
+    },
+    {
+      "name": "snow_user",
+      "value": "${config.snow_user}",
+      "description": "The username for authenticating to ServiceNow",
+      "sample_value": "snowadmin",
+      "required": true
+    },
+    {
+      "name": "snow_password",
+      "value": "${config.snow_password}",
+      "description": "The password for authenticating to ServiceNow",
+      "sample_value": "snowpassword",
+      "required": true
+    }
+  ],
+  "steps":[
+    {
+      "name": "Post to ScienceLogic",
+      "file": "PostandParseSL1Org",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "prefix_url": "https://${_appvar.base_url}",
+      "relative_url": "${_appvar.uri}",
+      "method": "post",
+      "read_timeout": "${appvar.read_timeout}",
+      "headers_to_capture": ["location"],
+      "payload": "${_appvar.payload}",
+      "username": "${_appvar.user}",
+      "password": "${_appvar.password}",
+      "output_to": ["Post to ServiceNow"],
+      "slregion": "${_appvar.slregion}"
+    },
+    {
+      "name": "Post to ServiceNow",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "data_from": ["Post to ScienceLogic"],
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "relative_url": "/x_sclo_scilogic_org_ven_mfg.do?JSONv2&sysparm_action=insertMultiple",
+      "method": "post",
+      "payload_from_input": true,
+      "read_timeout": "${appvar.read_timeout}",
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}"
+    }
+  ]
+}

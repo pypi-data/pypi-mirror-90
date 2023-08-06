@@ -1,0 +1,49 @@
+{
+  "friendly_name": "Generate Required CI Relations for ServiceNow",
+  "description": "Application takes desired mappings dictionary and determines the required relationships for ServiceNow",
+  "configuration": "",
+  "author": "ScienceLogic, Inc.",
+  "version": "3.0.0",
+  "meta": {
+    "hidden": false
+  },
+  "app_variables": [
+    {
+      "name": "sl1_hostname",
+      "value": "${config.sl1_host}",
+      "description": "The SL1 hostname to participate in the sync",
+      "sample_value": "10.2.253.115",
+      "required": true
+    },
+    {
+      "name": "sl1_user",
+      "value": "${config.sl1_user}",
+      "description": "The username for ing to EM7",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "sl1_password",
+      "value": "${config.sl1_password}",
+      "description": "the password for authenticating with SL1",
+      "sample_value": "em7password",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "name": "Pull and Process Relations",
+      "file": "GenerateRelations",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "follow_cursor": true,
+      "edges_only": true,
+      "query": "fragment deviceClass on DeviceClass {class description} query DeviceRelationsFetch($search: DeviceRelationshipSearch, $order: [ConnectionOrder]){deviceRelationships(search: $search, first: 1000, after: \"\", order: $order){pageInfo{hasNextPage matchCount} edges{ cursor node{parentDevice{id deviceClass{...deviceClass}} childDevice{id deviceClass{...deviceClass}}}}}}",
+      "variables": {"search": {"deviceRelationshipType":{"has":{"id":{"eq":101}}}}},
+      "query_url": "https://${appvar.sl1_hostname}/gql",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "read_timeout": "${appvar.read_timeout}",
+      "mappings": "${appvar.mappings}"
+    }
+  ]
+}

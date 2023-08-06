@@ -1,0 +1,45 @@
+{
+  "friendly_name": "Create Discovery Session in SL1",
+  "description": "Creates and Starts Discovery Session in SL1 and Updates ServiceNow Request",
+  "configuration": "",
+  "author": "ScienceLogic Inc.",
+  "version": "3.0.0",
+  "meta": {     
+    "hidden": true
+  },
+  "app_variables": [],
+  "steps":[
+    {
+      "name": "Post to ScienceLogic",
+      "file": "PostDiscoverySession",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "prefix_url": "https://${appvar.sl1_hostname}",
+      "relative_url": "/api/discovery_session_active",
+      "method": "post",
+      "headers_to_capture": ["location"],
+      "payload": "${_appvar.payload}",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "output_to": ["Post to ServiceNow"],
+      "read_timeout": "${appvar.read_timeout}",
+      "sys_id": "${_appvar.sys_id}",
+      "In_Progress_State": "${appvar.In_Progress_State}",
+      "Closed_Failed_State": "${appvar.Closed_Failed_State}",
+      "affected_cis": "${_appvar.affected_cis}",
+      "region": "${appvar.region}"
+    },
+    {
+      "name": "Post to ServiceNow",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "data_from": ["Post to ScienceLogic"],
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "relative_url": "/x_sclo_scilogic_import_service_request.do?JSONv2&sysparm_action=insertMultiple",
+      "method": "post",
+      "payload_from_input": true,
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}",
+      "read_timeout": "${appvar.read_timeout}"
+    }
+  ]
+}

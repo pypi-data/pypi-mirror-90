@@ -1,0 +1,105 @@
+{
+  "friendly_name": "Report: Identify Unmapped Device Classes",
+  "description": "Finds devices in SL1 that do not have their classes mapped in Device Sync",
+  "configuration": "",
+  "author": "ScienceLogic, Inc.",
+  "version": "1.0.0",
+  "meta": {
+    "hidden": false
+  },
+  "app_variables": [
+    {
+      "name": "sl1_hostname",
+      "description": "the user for authenticating with the SL1",
+      "value": "${config.sl1_host}",
+      "sample_value": "10.64.70.22",
+      "required": "true"
+    },
+    {
+      "name": "sl1_user",
+      "description": "the user for authenticating with the SL1",
+      "value": "${config.sl1_user}",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "sl1_password",
+      "description": "the user for authenticating with the SL1",
+      "value": "${config.sl1_password}",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "pf_host",
+      "value": "${config.pf_host}",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "name": "Fetch Devices From SL1",
+      "file": "GetDevicesFromSL1",
+      "query_url": "https://${appvar.sl1_hostname}/gql",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "follow_cursor": true,
+      "edges_only": true,
+      "query": "query confiData{devices(first:500, after:\"\"){edges{cursor node{deviceClass{description, logicalName, class}}}pageInfo{hasNextPage}}}",
+      "output_to": [
+        "Process Device Classes"
+      ]
+    },
+    {
+      "name": "Fetch Mapping From IS Application",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "file": "FetchMappingsFromApp",
+      "output_to": [
+        "Process Device Classes"
+      ]
+    },
+    {
+      "name": "Process Device Classes",
+      "file": "ProcessDevicesClass",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "pf_host": "${appvar.pf_host}",
+      "data_from": [
+        "Fetch Devices From SL1",
+        "Fetch Mapping From IS Application"
+      ],
+      "output_to": [
+        "Mappings Reporter",
+        "Raise Event"
+      ]
+    },
+    {
+      "name": "Mappings Reporter",
+      "file": "ReportMissingMappings",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "pf_host": "${appvar.pf_host}",
+      "data_from": [
+        "Process Device Classes"
+      ]
+    },
+    {
+      "name": "Raise Event",
+      "file": "RaiseEvent",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "prefix_url": "https://${appvar.sl1_hostname}",
+      "relative_url": "/api/alert",
+      "read_timeout": "${appvar.read_timeout}",
+      "expected_http_response": 201,
+      "debug_packet": true,
+      "query_retries": "${appvar.query_retries}",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "method": "POST",
+      "payload_from_input": true,
+      "url_from_input": true,
+      "payload": "${raiseEvent}",
+      "data_from": [
+        "Process Device Classes"
+      ]
+    }
+  ]
+}

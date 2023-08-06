@@ -1,0 +1,90 @@
+{
+  "friendly_name": "Process Remove Device Requests from ServiceNow to SL1",
+  "description": "Processes Remove Device Requests from ServiceNow applies them in SL1.",
+  "configuration": "",
+  "author": "ScienceLogic Inc.",
+  "version": "2.0.0",
+  "meta": {
+    "hidden": true
+  },
+  "app_variables": [],
+  "steps": [
+    {
+      "name": "Pull Requested Device Info from SL1 And Validate Remove Requests",
+      "file": "PullDevicesAndValidateRemoveRequests",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "follow_cursor": true,
+      "edges_only": true,
+      "query": "query DeviceFetchWithChildren($search: DeviceSearch, $order: [ConnectionOrder]) { devices(first: 500, search: $search, after: \"\", order: $order) { pageInfo { hasNextPage matchCount } edges { cursor device: node { ...device } } } }fragment device on Device { id organization { id company } componentDescendants { edges { child: node { id name } } } }",
+      "variables": "${_appvar.gql_search}",
+      "query_url": "https://${appvar.sl1_hostname}/gql",
+      "read_timeout": "${appvar.read_timeout}",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "sys_id": "${_appvar.sys_id}",
+      "recursively_disable_children": "${appvar.recursively_disable_children}",
+      "In_Progress_State": "${appvar.In_Progress_State}",
+      "Closed_Failed_State": "${appvar.Closed_Failed_State}",
+      "Closed_Success_State": "${appvar.Closed_Success_State}",
+      "target_vcug": "${appvar.target_vcug}",
+      "output_to": [
+        "Post Validation Status to ServiceNow",
+        "Move Devices to VCUG in SL1"
+      ]
+    },
+    {
+      "name": "Post Validation Status to ServiceNow",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "data_from": [
+        "Pull Requested Device Info from SL1 And Validate Remove Requests"
+      ],
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "relative_url": "/x_sclo_scilogic_import_service_request.do?JSONv2&sysparm_action=insertMultiple",
+      "method": "post",
+      "payload_from_input": true,
+      "url_from_input": true,
+      "payload": "${snow_payload}",
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}",
+      "read_timeout": "${appvar.read_timeout}"
+    },
+    {
+      "name": "Move Devices to VCUG in SL1",
+      "file": "DisableDevices",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "data_from": [
+        "Pull Requested Device Info from SL1 And Validate Remove Requests"
+      ],
+      "query": "mutation UpdateDevices($ids: [ID!], $cug: ID){updateDevices(ids: $ids, collectorGroup: $cug){id collectorGroup{id name }}}",
+      "variables": "${gql_vars}",
+      "mutation": true,
+      "devices": "${devices}",
+      "query_url": "https://${appvar.sl1_hostname}/gql",
+      "read_timeout": "${appvar.read_timeout}",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "final_state": "${final_state}",
+      "sys_id": "${_appvar.sys_id}",
+      "Closed_Failed_State": "${appvar.Closed_Failed_State}",
+      "output_to": [
+        "Post Disable Status to ServiceNow"
+      ]
+    },
+    {
+      "name": "Post Disable Status to ServiceNow",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "data_from": [
+        "Move Devices to VCUG in SL1"
+      ],
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "relative_url": "/x_sclo_scilogic_import_service_request.do?JSONv2&sysparm_action=insertMultiple",
+      "method": "post",
+      "payload_from_input": true,
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}",
+      "read_timeout": "${appvar.read_timeout}"
+    }
+  ]
+}

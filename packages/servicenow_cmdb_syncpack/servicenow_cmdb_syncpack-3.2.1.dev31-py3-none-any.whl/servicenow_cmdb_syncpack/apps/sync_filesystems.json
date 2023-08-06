@@ -1,0 +1,114 @@
+{
+  "friendly_name": "Sync File Systems from SL1 to ServiceNow",
+  "description": "Pulls File Systems from SL1 DB and Syncs to ServiceNow",
+  "configuration": "",
+  "author": "ScienceLogic Inc.",
+  "version": "2.0.1",
+  "app_variables":[
+    {
+      "name": "sl1_db_host",
+      "description": "The SL1 host to use for DB connections",
+      "sample_value": "10.2.11.48",
+      "required": true,
+      "value": "${config.sl1_db_host}"
+    },
+    {
+      "name": "snow_hostname",
+      "value": "${config.snow_host}",
+      "description": "The ServiceNow hostname to participate in the sync",
+      "sample_value": "10.2.253.233",
+      "required": true
+    },
+    {
+      "name": "snow_user",
+      "value": "${config.snow_user}",
+      "description": "The username for authenticating to ServiceNow",
+      "sample_value": "snowadmin",
+      "required": true
+    },
+    {
+      "name": "snow_password",
+      "value": "${config.snow_password}",
+      "description": "The password for authenticating to ServiceNow",
+      "sample_value": "snowpassword",
+      "required": true
+    },
+    {
+      "name": "sl1_db_user",
+      "description": "the user for authenticating with the SL1 DB",
+      "value": "${config.sl1_db_user}",
+      "sample_value": "root",
+      "required": true
+    },
+    {
+      "name": "sl1_db_password",
+      "description": "the password for authenticating with the SL1 DB",
+      "value": "${config.sl1_db_password}",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "region",
+      "value": "${config.region}",
+      "description": "Unique identifier for IS+SL1",
+      "sample_value": "ScienceLogicRegion",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "name": "Fetch File Systems from SL1",
+      "file": "MySqlSelect",
+      "syncpack": "base_steps_syncpack",
+      "data_from": ["Generate SL1 Filters"],
+      "host": "${appvar.sl1_db_host}",
+      "database": "",
+      "username": "${appvar.sl1_db_user}",
+      "password": "${appvar.sl1_db_password}",
+      "select_query": "SELECT inv_id fs_id, did, name fs_name, value6 description, date_time date_create, update_time date_update, value0 fs_size, value2 fs_used, value4 fs_used_pct FROM master_dev.device_hardware WHERE comp_type = 3 AND stale = 0",
+      "output_to": ["Compare SL1 File Systems and ServiceNow CIs"]
+    },
+    {
+      "name": "Fetch File Systems from ServiceNow",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}",
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "relative_url": "/api/x_sclo_scilogic/v1/sciencelogic/file_systems?region=${appvar.region}",
+      "method": "get",
+      "chunk_size": 1000,
+      "chunk_name_for_pos_in_url": "sysparm_offset",
+      "chunk_name_for_max_in_url": "sysparm_limit",
+      "chunk_name_for_returned": "return_count",
+      "chunk_name_for_total": "total_count",
+      "read_timeout": "${appvar.read_timeout}",
+      "expected_http_response": 200,
+      "result_key": "results",
+      "output_to": ["Compare SL1 File Systems and ServiceNow CIs"]
+    },
+    {
+      "name": "Compare SL1 File Systems and ServiceNow CIs",
+      "file": "CompareFileSystems",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "data_from": [
+        "Fetch File Systems from SL1",
+        "Fetch File Systems from ServiceNow"
+      ],
+      "output_to": ["Trigger CI Uploads"],
+      "region": "${appvar.region}",
+      "Domain_Separation": "${appvar.Domain_Separation}",
+      "chunk_size": "${appvar.chunk_size}"
+    },
+    {
+      "name": "Trigger CI Uploads",
+      "file": "TriggerApplication",
+      "syncpack": "base_steps_syncpack",
+      "input_iterator": true,
+      "data_from": ["Compare SL1 File Systems and ServiceNow CIs"],
+      "value_as": "device_objs",
+      "trigger_app": "CreateServiceNowCI",
+      "wait_for_child_completion": false
+    }
+  ]
+}

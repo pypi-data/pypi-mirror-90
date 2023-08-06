@@ -1,0 +1,169 @@
+{
+  "friendly_name": "Sync Interfaces from SL1 to ServiceNow",
+  "description": "Application first collects all required data from ServiceNow and SL1. Then triggers n number of individual CI syncs for each interface to be synced",
+  "configuration": "",
+  "author": "ScienceLogic, Inc.",
+  "version": "3.0.0",
+  "meta": {
+    "hidden": false
+  },
+  "app_variables": [
+    {
+      "name": "sl1_hostname",
+      "value": "${config.sl1_host}",
+      "description": "The SL1 hostname to participate in the sync",
+      "sample_value": "10.2.253.115",
+      "required": true
+    },
+    {
+      "name": "snow_hostname",
+      "value": "${config.snow_host}",
+      "description": "The ServiceNow hostname to participate in the sync",
+      "sample_value": "10.2.253.233",
+      "required": true
+    },
+    {
+      "name": "sl1_db_host",
+      "description": "The SL1 host to use for DB connections",
+      "sample_value": "10.2.11.48",
+      "required": true,
+      "value": "${config.sl1_db_host}"
+    },
+    {
+      "name": "sl1_user",
+      "value": "${config.sl1_user}",
+      "description": "The user authenticating to SL1",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "snow_user",
+      "value": "${config.snow_user}",
+      "description": "The username for authenticating to ServiceNow",
+      "sample_value": "snowadmin",
+      "required": true
+    },
+    {
+      "name": "sl1_password",
+      "value": "${config.sl1_password}",
+      "description": "the password for authenticating with SL1",
+      "sample_value": "em7password",
+      "required": true
+    },
+    {
+      "name": "snow_password",
+      "value": "${config.snow_password}",
+      "description": "The password for authenticating to ServiceNow",
+      "sample_value": "snowpassword",
+      "required": true
+    },
+    {
+      "name": "sl1_db_user",
+      "description": "the user for authenticating with the SL1 DB",
+      "value": "${config.sl1_db_user}",
+      "sample_value": "root",
+      "required": true
+    },
+    {
+      "name": "sl1_db_password",
+      "description": "the password for authenticating with the SL1 DB",
+      "value": "${config.sl1_db_password}",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "region",
+      "value": "${config.region}",
+      "description": "Unique identifier for IS+SL1",
+      "sample_value": "ScienceLogicRegion",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "name": "Fetch Interfaces from SL1",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "output_to": [
+        "Compare Interfaces"
+      ],
+      "method": "GET",
+      "chunk_size": 1000,
+      "chunk_name_for_pos_in_url": "offset",
+      "chunk_name_for_max_in_url": "limit",
+      "chunk_name_for_returned": "total_returned",
+      "chunk_name_for_total": "total_matched",
+      "read_timeout": "${appvar.read_timeout}",
+      "expected_http_response": 200,
+      "prefix_url": "https://${appvar.sl1_hostname}",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "relative_url": "/api/interface?filter.0.device.not.eq=0&extended_fetch=1"
+    },
+    {
+      "name": "Fetch IPs/Subnets from SL1",
+      "file": "MySqlSelect",
+      "syncpack": "base_steps_syncpack",
+      "host": "${appvar.sl1_db_host}",
+      "port": 7706,
+      "username": "${appvar.sl1_db_user}",
+      "password": "${appvar.sl1_db_password}",
+      "select_query": "SELECT if_id, did, net_id, ip, netmask FROM master_dev.device_ip_addr ORDER BY if_id LIMIT 500000",
+      "database": "master_dev",
+      "output_to": [
+        "Compare Interfaces"
+      ]
+    },
+    {
+      "name": "Fetch Interfaces from ServiceNow",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}",
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "relative_url": "/api/x_sclo_scilogic/v1/sciencelogic/network_adapters?region=${appvar.region}",
+      "chunk_size": 1000,
+      "method": "get",
+      "chunk_name_for_pos_in_url": "sysparm_offset",
+      "chunk_name_for_max_in_url": "sysparm_limit",
+      "chunk_name_for_returned": "return_count",
+      "chunk_name_for_total": "total_count",
+      "read_timeout": "${appvar.read_timeout}",
+      "expected_http_response": 200,
+      "result_key": "results",
+      "output_to": [
+        "Compare Interfaces"
+      ]
+    },
+    {
+      "name": "Compare Interfaces",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "sl1_id": "${appvar.sl1_id}",
+      "region": "${appvar.region}",
+      "Domain_Separation": "${appvar.Domain_Separation}",
+      "chunk_size": "${appvar.chunk_size}",
+      "file": "SnowEm7NetworkAdapterCompare",
+      "adapter_sync": "${appvar.adapter_sync}",
+      "data_from": [
+        "Fetch Interfaces from SL1",
+        "Fetch IPs/Subnets from SL1",
+        "Fetch Interfaces from ServiceNow"
+      ],
+      "output_to": [
+        "Trigger Interface Uploads"
+      ]
+    },
+    {
+      "name": "Trigger Interface Uploads",
+      "file": "TriggerApplication",
+      "syncpack": "base_steps_syncpack",
+      "input_iterator": true,
+      "data_from": [
+        "Compare Interfaces"
+      ],
+      "value_as": "device_objs",
+      "trigger_app": "CreateServiceNowCI",
+      "wait_for_child_completion": false
+    }
+  ]
+}

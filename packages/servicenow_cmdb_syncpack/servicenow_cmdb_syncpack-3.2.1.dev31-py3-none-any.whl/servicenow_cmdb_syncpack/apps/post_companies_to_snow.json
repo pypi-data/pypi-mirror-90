@@ -1,0 +1,86 @@
+{
+  "friendly_name": "Post New Companies to ServiceNow",
+  "description": "Posts New Companies to ServiceNow.",
+  "configuration": "",
+  "author": "ScienceLogic, Inc.",
+  "version": "3.0.0",
+  "meta": {
+    "hidden": true
+  },
+  "app_variables": [
+    {
+      "name": "sl1_hostname",
+      "value": "${config.em7_host}",
+      "description": "The SL1 hostname to participate in the sync",
+      "sample_value": "10.2.253.115",
+      "required": true
+    },
+    {
+      "name": "sl1_user",
+      "value": "${config.em7_user}",
+      "description": "The username for authenticating to SL1",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "sl1_password",
+      "value": "${config.em7_password}",
+      "description": "the password for authenticating with SL1",
+      "sample_value": "em7admin",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "name": "Post to ServiceNow and Process Response",
+      "file": "PostCompaniesAndProcessResponse",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "method": "POST",
+      "read_timeout": "${appvar.read_timeout}",
+      "debug_packet": true,
+      "expected_http_response": 200,
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}",
+      "payload": "${_appvar.snow_payload}",
+      "relative_url": "/x_sclo_scilogic_org_ven_mfg.do?JSONv2&sysparm_action=insertMultiple",
+      "output_to": [
+        "Post Org Updates to ScienceLogic"
+      ]
+    },
+    {
+      "name": "Post Org Updates to ScienceLogic",
+      "file": "TriggerApplication",
+      "syncpack": "base_steps_syncpack",
+      "data_from": [
+        "Post to ServiceNow and Process Response"
+      ],
+      "value_as": "sl1Org",
+      "trigger_app": "post_org_company_updates",
+      "wait_for_child_completion": false,
+      "foreach": "${sl1Updates}",
+      "app_vars": [
+        {
+          "name": "base_url",
+          "value": "${appvar.sl1_hostname}"
+        },
+        {
+          "name": "user",
+          "value": "${appvar.sl1_user}"
+        },
+        {
+          "name": "password",
+          "value": "${appvar.sl1_password}"
+        },
+        {
+          "name": "uri",
+          "value": "${uri}"
+        },
+        {
+          "name": "payload",
+          "value": "${payload}"
+        }
+      ]
+    }
+  ]
+}

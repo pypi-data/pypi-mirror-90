@@ -1,0 +1,199 @@
+{
+  "friendly_name": "Sync Business Services from ServiceNow to SL1",
+  "description": "Syncs Business Services from ServiceNow to SL1",
+  "configuration": "",
+  "author": "ScienceLogic Inc.",
+  "version": "0.0.1",
+  "app_variables": [
+    {
+      "name": "sl1_hostname",
+      "value": "${config.sl1_host}",
+      "description": "The SL1 hostname to participate in the sync",
+      "sample_value": "10.2.253.115",
+      "required": true
+    },
+    {
+      "name": "snow_hostname",
+      "value": "${config.snow_host}",
+      "description": "The ServiceNow hostname to participate in the sync",
+      "sample_value": "10.2.253.233",
+      "required": true
+    },
+    {
+      "name": "sl1_user",
+      "value": "${config.sl1_user}",
+      "description": "The username for authenticating to SL1",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "snow_user",
+      "value": "${config.snow_user}",
+      "description": "The username for authenticating to ServiceNow",
+      "sample_value": "snowadmin",
+      "required": true
+    },
+    {
+      "name": "sl1_password",
+      "value": "${config.sl1_password}",
+      "description": "The password for authenticating with SL1",
+      "sample_value": "em7password",
+      "required": true
+    },
+    {
+      "name": "snow_password",
+      "value": "${config.snow_password}",
+      "description": "The password for authenticating to ServiceNow",
+      "sample_value": "snowpassword",
+      "required": true
+    },
+    {
+      "name": "region",
+      "value": "${config.region}",
+      "description": "Unique identifier for PF+SL1",
+      "sample_value": "ScienceLogicRegion",
+      "required": true
+    }
+  ],
+
+  "steps":[
+    {
+      "name": "Fetch Business Services from SL1",
+      "file": "QueryGQL",
+      "syncpack": "base_steps_syncpack",
+      "output_to": ["Process Business Services"],
+      "follow_cursor": true,
+      "edges_only": true,
+      "query": "query harProvidersWithConstituents($order: [ConnectionOrder]){harProviders(first: 500, after: \"\", order: $order){pageInfo {hasNextPage matchCount}edges {cursor service: node {id name dataSource type description externalId organization {id} constituents {... on DeviceConnection {edges {node {id name}}} ... on HarProviderConnection {edges {node {id dataSource name externalId organization {id}}}}}}}}}\n",
+      "query_url": "https://${appvar.sl1_hostname}/gql",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "read_timeout": "${appvar.read_timeout}"
+    },
+    {
+      "name": "Fetch Orgs from SL1",
+      "file": "PullAndProcessSL1Orgs",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "output_to": ["Process Business Services"],
+      "method": "GET",
+      "chunk_size": 1000,
+      "chunk_name_for_pos_in_url": "offset",
+      "chunk_name_for_max_in_url": "limit",
+      "chunk_name_for_returned": "total_returned",
+      "chunk_name_for_total": "total_matched",
+      "result_key": "result_set",
+      "debug_packet": true,
+      "expected_http_response": 200,
+      "prefix_url": "https://${appvar.sl1_hostname}",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "read_timeout": "${appvar.read_timeout}",
+      "relative_url": "/api/organization?extended_fetch=1"
+    },
+    {
+      "name": "Pull Business Services from ServiceNow",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "output_to": [
+        "Process Business Services"
+      ],
+      "method": "GET",
+      "chunk_size": 1000,
+      "chunk_name_for_pos_in_url": "sysparm_offset",
+      "chunk_name_for_max_in_url": "sysparm_limit",
+      "chunk_name_for_returned": "return_count",
+      "chunk_name_for_total": "total_count",
+      "read_timeout": "${appvar.read_timeout}",
+      "expected_http_response": 200,
+      "result_key": "results",
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}",
+      "relative_url": "/api/x_sclo_scilogic/v2/sciencelogic/business_service?region=${appvar.region}&action=relationships"
+
+    },
+    {
+      "name": "Process Business Services",
+      "file": "ProcessBusinessServicesSNtoSL",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "region": "${appvar.region}",
+      "attribute_map": "${appvar.attribute_map}",
+      "chunk_size": "${appvar.chunk_size}",
+      "business_service_classification": "${appvar.business_service_classification}",
+      "it_service_classification": "${appvar.it_service_classification}",
+      "device_service_classification": "${appvar.device_service_classificaiton}",
+      "data_from": [
+        "Fetch Orgs from SL1",
+        "Fetch Business Services from SL1"
+      ],
+      "output_to": ["Create Business Services", "Data Passthrough", "Delete SL1 Business Services"]
+    },
+    {
+      "data_from": ["Process Business Services"],
+      "name": "Create Business Services",
+      "file": "QueryGQL",
+      "save_errors": true,
+      "syncpack": "base_steps_syncpack",
+      "edges_only": false,
+      "mutation": true,
+      "variables": "${creates}",
+      "query": "mutation saveMultipleHarProviders($definition: JSON!){saveHarProviders(definition:$definition, externalIdEnabled: false){definition}}",
+      "query_url": "https://${appvar.sl1_hostname}/gql",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "read_timeout": "${appvar.read_timeout}",
+      "output_to": ["Process Response For New Relationships"]
+    },{
+      "name": "Data Passthrough",
+      "file": "Jinja2Template",
+      "template": "{{ Process_Business_Services.existing_data | tojson }}",
+      "output_to": ["Process Response For New Relationships"],
+      "data_from": ["process Business Services"]
+    },
+    {
+      "name": "Process Response For New Relationships",
+      "file": "ProcessServiceUpdatesSNtoSL",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "data_from": [
+          "Create Business Services", "Data Passthrough"
+      ],
+      "output_to": ["Update SL1 Business Services"]
+    },
+
+
+    {
+      "data_from": [
+        "Process Response For New Relationships"
+      ],
+      "name": "Update SL1 Business Services",
+      "file": "QueryGQL",
+      "save_errors": true,
+      "syncpack": "base_steps_syncpack",
+      "edges_only": false,
+      "mutation": true,
+      "variables": "${updates}",
+      "query": "mutation saveMultipleHarProviders($definition: JSON!){saveHarProviders(definition:$definition, externalIdEnabled: true){definition}}",
+      "query_url": "https://${appvar.sl1_hostname}/gql",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "read_timeout": "${appvar.read_timeout}"
+    },
+
+     {
+      "data_from": ["Process Business Services"],
+      "name": "Delete SL1 Business Services",
+      "file": "QueryGQL",
+      "save_errors": true,
+      "syncpack": "base_steps_syncpack",
+      "edges_only": false,
+      "mutation": true,
+      "variables": "${deletes}",
+      "query": "mutation deleteHarProviders($ids: [ID]!){deleteHarProviders(ids:$ids)}",
+      "query_url": "https://${appvar.sl1_hostname}/gql",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "read_timeout": "${appvar.read_timeout}"
+    }
+
+  ]
+}

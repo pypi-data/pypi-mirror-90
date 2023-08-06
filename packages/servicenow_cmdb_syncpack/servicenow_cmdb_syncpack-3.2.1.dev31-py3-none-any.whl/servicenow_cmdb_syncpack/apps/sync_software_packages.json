@@ -1,0 +1,75 @@
+{
+  "friendly_name": "Sync Software Packages from SL1 to ServiceNow",
+  "description": "Pulls Software Packages from SL1 DB and Syncs to ServiceNow",
+  "configuration": "",
+  "author": "ScienceLogic Inc.",
+  "version": "2.0.0",
+  "app_variables":[
+    {
+      "name": "sl1_db_host",
+      "description": "The SL1 host to use for DB connections",
+      "sample_value": "10.2.11.48",
+      "required": true,
+      "value": "${config.sl1_db_host}"
+    },
+    {
+      "name": "snow_hostname",
+      "value": "${config.snow_host}",
+      "description": "The ServiceNow hostname to participate in the sync",
+      "sample_value": "10.2.253.233",
+      "required": true
+    },
+    {
+      "name": "snow_user",
+      "value": "${config.snow_user}",
+      "description": "The username for authenticating to ServiceNow",
+      "sample_value": "snowadmin",
+      "required": true
+    },
+    {
+      "name": "snow_password",
+      "value": "${config.snow_password}",
+      "description": "The password for authenticating to ServiceNow",
+      "sample_value": "snowpassword",
+      "required": true
+    },
+    {
+      "name": "sl1_db_user",
+      "description": "the user for authenticating with the SL1 DB",
+      "value": "${config.sl1_db_user}",
+      "sample_value": "root",
+      "required": true
+    },
+    {
+      "name": "sl1_db_password",
+      "description": "the password for authenticating with the SL1 DB",
+      "value": "${config.sl1_db_password}",
+      "sample_value": "em7admin",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "name": "Pull and Process Software Packages from SL1",
+      "file": "PullAndProcessSoftwarePackages",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "host": "${appvar.sl1_db_host}",
+      "database": "",
+      "username": "${appvar.sl1_db_user}",
+      "password": "${appvar.sl1_db_password}",
+      "select_query": "SELECT distinct(title) from master_dev.device_packages",
+      "chunk_size": "${appvar.chunk_size}",
+      "output_to": ["Trigger CI Uploads"]
+    },
+    {
+      "name": "Trigger CI Uploads",
+      "file": "TriggerApplication",
+      "syncpack": "base_steps_syncpack",
+      "input_iterator": true,
+      "data_from": ["Pull and Process Software Packages from SL1"],
+      "value_as": "device_objs",
+      "trigger_app": "CreateServiceNowCI",
+      "wait_for_child_completion": false
+    }
+  ]
+}

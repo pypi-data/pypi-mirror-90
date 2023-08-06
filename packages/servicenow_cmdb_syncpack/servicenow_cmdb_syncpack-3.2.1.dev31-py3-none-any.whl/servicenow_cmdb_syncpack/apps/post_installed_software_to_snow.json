@@ -1,0 +1,27 @@
+{
+  "friendly_name": "Post Installed Software to ServiceNow",
+  "description": "Posts Installed Software Payloads to ServiceNow",
+  "configuration": "",
+  "author": "ScienceLogic Inc.",
+  "version": "3.0.0",
+  "meta": {
+    "hidden": true
+  },
+  "app_variables": [],
+  "steps": [
+    {
+      "name": "Post Software to SNOW",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "method": "POST",
+      "read_timeout": "${appvar.read_timeout}",
+      "debug_packet": true,
+      "expected_http_response": 200,
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "relative_url": "/api/x_sclo_scilogic/v1/sciencelogic/import_set?record_type=x_sclo_scilogic_import_installed_software",
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}",
+      "payload": "${_appvar.software}"
+    }
+  ]
+}

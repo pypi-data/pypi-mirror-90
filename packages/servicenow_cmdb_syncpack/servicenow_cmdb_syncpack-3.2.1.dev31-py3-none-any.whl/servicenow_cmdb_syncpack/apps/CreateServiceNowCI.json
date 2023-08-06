@@ -1,0 +1,56 @@
+{
+  "friendly_name": "Create ServiceNow CI",
+  "description": "Create a new ServiceNow device CI with with a provided dict. Will not attempt to lookup new interfaces",
+  "author": "ScienceLogic, Inc.",
+  "version": "3.1.0",
+  "meta": {
+    "hidden": true
+  },
+  "app_variables": [
+    {
+      "name": "snow_hostname",
+      "description": "The ServiceNow hostname to participate in the sync",
+      "sample_value": "10.2.253.233",
+      "required": true
+    },
+    {
+      "name": "snow_user",
+      "description": "The username for authenticating to ServiceNow",
+      "sample_value": "snowadmin",
+      "required": true
+    },
+    {
+      "name": "snow_password",
+      "description": "The password for authenticating to ServiceNow",
+      "sample_value": "snowpassword",
+      "required": true
+    },
+    {
+      "name": "device_objs",
+      "description": "The device object to post to ServiceNow",
+      "required": true,
+      "default_value": null
+    }
+  ],
+  "steps": [
+    {
+      "name": "Post CIs to SNOW",
+      "file": "PostCIsToSnow",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "method": "POST",
+      "read_timeout": "${appvar.read_timeout}",
+      "debug_packet": true,
+      "expected_http_response": 200,
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}",
+      "payload": "${_appvar.device_objs}",
+      "Domain_Separation": "${appvar.Domain_Separation}",
+      "Simulation_Mode": "${appvar.Simulation_Mode}",
+      "retry_max": "${appvar.retry_max}",
+      "retry_jitter": "${appvar.retry_jitter}",
+      "retry_backoff": "${appvar.retry_backoff}",
+      "retry_backoff_max": "${appvar.retry_backoff_max}"
+    }
+  ]
+}

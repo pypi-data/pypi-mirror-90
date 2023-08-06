@@ -1,0 +1,90 @@
+{
+  "friendly_name": "Sync Advanced Topology from SL1 to ServiceNow",
+  "description": "Sync DCM+R, CDP, Layer 2, Layer3, and LLDP relationships from SL1 to ServiceNow",
+  "configuration": "",
+  "author": "ScienceLogic Inc.",
+  "version": "3.0.0",
+  "meta": {
+    "hidden": false
+  },
+  "app_variables": [
+    {
+      "name": "sl1_hostname",
+      "value": "${config.sl1_host}",
+      "description": "The SL1 hostname to participate in the sync",
+      "sample_value": "10.2.253.115",
+      "required": true
+    },
+    {
+      "name": "snow_hostname",
+      "value": "${config.snow_host}",
+      "description": "The ServiceNow hostname to participate in the sync",
+      "sample_value": "10.2.253.233",
+      "required": true
+    },
+    {
+      "name": "sl1_user",
+      "value": "${config.sl1_user}",
+      "description": "The username for connecting to SL1",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "snow_user",
+      "value": "${config.snow_user}",
+      "description": "The username for authenticating to ServiceNow",
+      "sample_value": "snowadmin",
+      "required": true
+    },
+    {
+      "name": "sl1_password",
+      "value": "${config.sl1_password}",
+      "description": "the password for authenticating with SL1",
+      "sample_value": "em7password",
+      "required": true
+    },
+    {
+      "name": "snow_password",
+      "value": "${config.snow_password}",
+      "description": "The password for authenticating to ServiceNow",
+      "sample_value": "snowpassword",
+      "required": true
+    },
+    {
+      "name": "region",
+      "value": "${config.region}",
+      "description": "Unique identifier for IS+SL1",
+      "sample_value": "ScienceLogicRegion",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "name": "Pull and Process Advanced Topology from SL1",
+      "file": "PullAndProcessAdvancedTopology",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "output_to": ["Send Relations to ServiceNow"],
+      "follow_cursor": true,
+      "edges_only": true,
+      "query": "{deviceRelationships(search:{deviceRelationshipType:{has:{id:{in:[2, 3, 5, 6, 102]}}}}, first: 500, after:\"\"){pageInfo{hasNextPage matchCount} edges{cursor node{parentDevice{id} childDevice{id} parentInterface{id} childInterface{id} deviceRelationshipType{id type} dcmrRelationshipType{id name}}}}}",
+      "query_url": "https://${appvar.sl1_hostname}/gql",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "region": "${appvar.region}",
+      "Domain_Separation": "${appvar.Domain_Separation}",
+      "chunk_size": "${appvar.chunk_size}",
+      "read_timeout": "${appvar.read_timeout}",
+      "customer_ci_relation_overrides": "${appvar.customer_ci_relation_overrides}"
+    },
+    {
+      "name": "Send Relations to ServiceNow",
+      "file": "TriggerApplication",
+      "syncpack": "base_steps_syncpack",
+      "input_iterator": true,
+      "data_from": ["Pull and Process Advanced Topology from SL1"],
+      "value_as": "device_objs",
+      "trigger_app": "CreateServiceNowCI",
+      "wait_for_child_completion": false
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "friendly_name": "Bulk Delete Devices",
+  "description": "Deletes Devices from SL1.",
+  "configuration": "",
+  "author": "ScienceLogic, Inc.",
+  "version": "2.0.0",
+  "meta": {
+    "hidden": true
+  },
+  "app_variables": [],
+  "steps":[
+    {
+      "name": "Query ScienceLogic",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "prefix_url": "https://${appvar.sl1_hostname}",
+      "relative_url": "/api/device/${_appvar.did}",
+      "read_timeout": "${appvar.read_timeout}",
+      "method": "DELETE",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}"
+    }
+  ]
+}

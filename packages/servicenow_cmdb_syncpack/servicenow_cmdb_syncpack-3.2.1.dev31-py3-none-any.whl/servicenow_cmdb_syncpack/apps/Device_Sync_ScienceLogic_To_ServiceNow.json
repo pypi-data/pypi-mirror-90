@@ -1,0 +1,323 @@
+{
+  "friendly_name": "Sync Devices from SL1 to ServiceNow",
+  "description": "Syncs Devices and DCM Relations from SL1 to ServiceNow",
+  "configuration": "",
+  "author": "ScienceLogic, Inc.",
+  "version": "3.1.0",
+  "meta": {
+    "hidden": false
+  },
+  "generate_report": false,
+  "app_variables": [
+    {
+      "name": "sl1_hostname",
+      "value": "${config.sl1_host}",
+      "description": "The SL1 hostname to participate in the sync",
+      "sample_value": "10.2.253.115",
+      "required": true
+    },
+    {
+      "name": "sl1_db_host",
+      "description": "The SL1 host to use for DB connections",
+      "sample_value": "10.2.11.48",
+      "required": true,
+      "value": "${config.sl1_db_host}"
+    },
+    {
+      "name": "snow_hostname",
+      "value": "${config.snow_host}",
+      "description": "The ServiceNow hostname to participate in the sync",
+      "sample_value": "10.2.253.233",
+      "required": true
+    },
+    {
+      "name": "sl1_user",
+      "value": "${config.sl1_user}",
+      "description": "The username for ing to EM7",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "snow_user",
+      "value": "${config.snow_user}",
+      "description": "The username for authenticating to ServiceNow",
+      "sample_value": "snowadmin",
+      "required": true
+    },
+    {
+      "name": "sl1_password",
+      "value": "${config.sl1_password}",
+      "description": "the password for authenticating with SL1",
+      "sample_value": "em7password",
+      "required": true
+    },
+    {
+      "name": "snow_password",
+      "value": "${config.snow_password}",
+      "description": "The password for authenticating to ServiceNow",
+      "sample_value": "snowpassword",
+      "required": true
+    },
+    {
+      "name": "sl1_db_user",
+      "description": "the user for authenticating with the SL1 DB",
+      "value": "${config.sl1_db_user}",
+      "sample_value": "root",
+      "required": true
+    },
+    {
+      "name": "sl1_db_password",
+      "description": "the password for authenticating with the SL1 DB",
+      "value": "${config.sl1_db_password}",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "region",
+      "value": "${config.region}",
+      "description": "Unique identifier for IS+SL1",
+      "sample_value": "ScienceLogicRegion",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "name": "Pull and Process Hardware Models",
+      "file": "PullAndProcessHardwareModels",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "output_to": [
+        "Query ServiceNow Hardware Models"
+      ],
+      "host": "${appvar.sl1_db_host}",
+      "port": 7706,
+      "username": "${appvar.sl1_db_user}",
+      "password": "${appvar.sl1_db_password}",
+      "database": "master_biz",
+      "select_query": "SELECT make, model FROM legend_asset GROUP BY model"
+    },
+    {
+      "name": "Pull and Process Manufacturers",
+      "file": "PullAndProcessManufacturers",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "host": "${appvar.sl1_db_host}",
+      "port": 7706,
+      "username": "${appvar.sl1_db_user}",
+      "password": "${appvar.sl1_db_password}",
+      "database": "master_biz",
+      "select_query": "SELECT make, id FROM legend_asset GROUP BY make",
+      "output_to": [
+        "Query ServiceNow Manufacturers",
+        "Pull ServiceNow CIs"
+      ]
+    },
+    {
+      "name": "Query ServiceNow Hardware Models",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "data_from": [
+        "Pull and Process Hardware Models"
+      ],
+      "method": "POST",
+      "result_key": "result",
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}",
+      "relative_url": "/api/x_sclo_scilogic/sciencelogic/models",
+      "read_timeout": "${appvar.read_timeout}",
+      "payload_from_input": true,
+      "output_to": [
+        "Process SL1 Devices"
+      ]
+    },
+    {
+      "name": "Query ServiceNow Manufacturers",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "data_from": [
+        "Pull and Process Manufacturers"
+      ],
+      "method": "POST",
+      "result_key": "result",
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}",
+      "relative_url": "/api/x_sclo_scilogic/sciencelogic/manufactures",
+      "read_timeout": "${appvar.read_timeout}",
+      "payload_from_input": true,
+      "output_to": [
+        "Process SL1 Devices"
+      ]
+    },
+    {
+      "name": "Fetch Devices from SL1",
+      "file": "PullDevicesFromSL1",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "output_to": [
+        "Process SL1 Devices"
+      ],
+      "follow_cursor": true,
+      "edges_only": true,
+      "query_url": "https://${appvar.sl1_hostname}/gql",
+      "read_timeout": "${appvar.read_timeout}",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "mappings": "${appvar.mappings}",
+      "region": "${appvar.region}",
+      "Include_Orgs": "${appvar.Include_Orgs}",
+      "Include_CUGs": "${appvar.Include_CUGs}",
+      "exclude_inactive": "${appvar.exclude_inactive}",
+      "enable_device_active": "${appvar.enable_device_active}",
+      "enable_asset_networks": "${appvar.enable_asset_networks}",
+      "chunk_size": "${appvar.chunk_size}"
+    },
+    {
+      "name": "Fetch Parent Devices From SL1",
+      "file": "FetchParentDevices",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "host": "${appvar.sl1_db_host}",
+      "database": "master_dev",
+      "username": "${appvar.sl1_db_user}",
+      "password": "${appvar.sl1_db_password}",
+      "select_query": "SELECT component_did id, parent_did, unique_id, merge_did, md_ldd.device merge_name, CONCAT(m_ddc.class, \" | \", m_ddc.descript) class FROM master_dev.component_dev_map md_cdm LEFT JOIN master_dev.legend_device_del md_ldd ON md_ldd.id = md_cdm.merge_did LEFT JOIN master.definitions_dev_classes m_ddc USING (class_type)",
+      "output_to": [
+        "Process SL1 Devices"
+      ]
+    },
+    {
+      "name": "Pull ServiceNow CIs",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "data_from": [
+        "Pull and Process Manufacturers"
+      ],
+      "output_to": [
+        "Process ServiceNow CIs"
+      ],
+      "method": "GET",
+      "chunk_size": 1000,
+      "chunk_name_for_pos_in_url": "sysparm_offset",
+      "chunk_name_for_max_in_url": "sysparm_limit",
+      "chunk_name_for_returned": "return_count",
+      "chunk_name_for_total": "total_count",
+      "read_timeout": "${appvar.read_timeout}",
+      "debug_packet": true,
+      "expected_http_response": 200,
+      "result_key": "results",
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}",
+      "relative_url": "/api/x_sclo_scilogic/v1/sciencelogic/configuration_Items?region=${appvar.region}"
+    },
+    {
+      "name": "Process ServiceNow CIs",
+      "file": "ProcessSnowDevices",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "data_from": [
+        "Pull ServiceNow CIs"
+      ],
+      "output_to": [
+        "Compare SL1 Devices and ServiceNow CIs"
+      ],
+      "selected_devices": "${appvar.selected_devices}"
+    },
+    {
+      "name": "Pull and Process SL1 Organizations",
+      "file": "PullAndProcessSL1Orgs",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "output_to": [
+        "Process SL1 Devices"
+      ],
+      "method": "GET",
+      "chunk_size": 1000,
+      "chunk_name_for_pos_in_url": "offset",
+      "chunk_name_for_max_in_url": "limit",
+      "chunk_name_for_returned": "total_returned",
+      "chunk_name_for_total": "total_matched",
+      "result_key": "result_set",
+      "read_timeout": "${appvar.read_timeout}",
+      "debug_packet": true,
+      "expected_http_response": 200,
+      "prefix_url": "https://${appvar.sl1_hostname}",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "relative_url": "/api/organization?extended_fetch=1",
+      "region": "${appvar.region}"
+    },
+    {
+      "name": "Pull Companies from ServiceNow",
+      "file": "PullCompaniesFromServiceNow",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "output_to": [
+        "Process SL1 Devices"
+      ],
+      "method": "GET",
+      "chunk_size": 1000,
+      "chunk_name_for_pos_in_url": "sysparm_offset",
+      "chunk_name_for_max_in_url": "sysparm_limit",
+      "chunk_name_for_returned": "return_count",
+      "chunk_name_for_total": "total_count",
+      "read_timeout": "${appvar.read_timeout}",
+      "expected_http_response": 200,
+      "result_key": "results",
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}",
+      "relative_url": "/api/x_sclo_scilogic/v1/sciencelogic/companies?region=${appvar.region}&domainSep=${appvar.Domain_Separation}"
+    },
+    {
+      "name": "Process SL1 Devices",
+      "file": "ProcessSL1Devices",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "region": "${appvar.region}",
+      "mappings": "${appvar.mappings}",
+      "sl1_hostname": "${appvar.sl1_hostname}",
+      "sl1_url_override": "${appvar.sl1_url_override}",
+      "excluded_devices": "${appvar.excluded_devices}",
+      "selected_devices": "${appvar.selected_devices}",
+      "Domain_Separation": "${appvar.Domain_Separation}",
+      "lookup_chunk_size": "${appvar.lookup_chunk_size}",
+      "data_from": [
+        "Pull Companies from ServiceNow",
+        "Pull and Process SL1 Organizations",
+        "Fetch Parent Devices From SL1",
+        "Fetch Devices from SL1",
+        "Query ServiceNow Manufacturers",
+        "Query ServiceNow Hardware Models"
+      ],
+      "output_to": [
+        "Compare SL1 Devices and ServiceNow CIs"
+      ]
+    },
+    {
+      "name": "Compare SL1 Devices and ServiceNow CIs",
+      "file": "SL1SnowDeviceCompare",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "discovery_source": "${appvar.discovery_source}",
+      "Domain_Separation": "${appvar.Domain_Separation}",
+      "chunk_size": "${appvar.chunk_size}",
+      "drop_sys_id": "${appvar.drop_sys_id}",
+      "drop_company": "${appvar.drop_company}",
+      "attribute_mappings": "${appvar.attribute_mappings}",
+      "customer_ci_relation_overrides": "${appvar.customer_ci_relation_overrides}",
+      "data_from": [
+        "Process SL1 Devices",
+        "Process ServiceNow CIs"
+      ],
+      "output_to": [
+        "Trigger CI Uploads"
+      ]
+    },
+    {
+      "name": "Trigger CI Uploads",
+      "file": "TriggerApplication",
+      "syncpack": "base_steps_syncpack",
+      "input_iterator": true,
+      "data_from": [
+        "Compare SL1 Devices and ServiceNow CIs"
+      ],
+      "value_as": "device_objs",
+      "trigger_app": "CreateServiceNowCI",
+      "wait_for_child_completion": false
+    }
+  ]
+}

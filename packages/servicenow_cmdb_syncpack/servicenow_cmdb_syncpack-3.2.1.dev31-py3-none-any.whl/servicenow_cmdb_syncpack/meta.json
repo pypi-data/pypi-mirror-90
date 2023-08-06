@@ -1,0 +1,52 @@
+{
+  "name": "servicenow_cmdb_syncpack",
+  "version": "3.2.1.dev31",
+  "summary": "ServiceNow CMDB SyncPack",
+  "description": "SyncPack for integrating SL1 to ServiceNow CMDB.",
+  "author": "ScienceLogic, Inc.",
+  "home_page": "https://code.eng.sciencelogic.com/projects/AIR/repos/is_syncpack_servicenow_cmdb",
+  "requires_dist": [
+    "future",
+    "ipaascommon",
+    "base_steps_syncpack~=1.2",
+    "servicenow_base_syncpack~=3.1",
+    "jinja2"
+  ],
+  "schedules": [
+    {
+      "application_id": "cache_cis_and_devclasses",
+      "entry_id": "cache cis and devclasses",
+      "params": {},
+      "schedule": {
+        "schedule_info": {
+          "run_every": 3600
+        },
+        "schedule_type": "frequency"
+      }
+    },
+    {
+      "application_id": "device_sync_sciencelogic_to_servicenow",
+      "entry_id": "device sync",
+      "params": {},
+      "schedule": {
+        "schedule_info": {
+          "day_of_month": "*",
+          "day_of_week": "*",
+          "hour": "2",
+          "minute": "0",
+          "month_of_year": "*"
+        },
+        "schedule_type": "crontab"
+      }
+    }
+  ],
+  "tags": [
+    "servicenow",
+    "snow",
+    "cmdb"
+  ],
+  "critical": [
+    "device_sync_sciencelogic_to_servicenow"
+  ],
+  "requires_is_version": ">=2.0.0"
+}

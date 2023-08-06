@@ -1,0 +1,141 @@
+{
+  "friendly_name": "Sync Installed Software from SL1 to ServiceNow",
+  "description": "Sync Installed Software from SL1 to ServiceNow",
+  "configuration": "",
+  "author": "ScienceLogic Inc.",
+  "version": "2.0.0",
+  "app_variables": [
+    {
+      "name": "sl1_db_host",
+      "description": "The SL1 host to use for DB connections",
+      "sample_value": "10.2.11.48",
+      "required": true,
+      "value": "${config.sl1_db_host}"
+    },
+    {
+      "name": "snow_hostname",
+      "value": "${config.snow_host}",
+      "description": "The ServiceNow hostname to participate in the sync",
+      "sample_value": "10.2.253.233",
+      "required": true
+    },
+    {
+      "name": "snow_user",
+      "value": "${config.snow_user}",
+      "description": "The username for authenticating to ServiceNow",
+      "sample_value": "snowadmin",
+      "required": true
+    },
+    {
+      "name": "snow_password",
+      "value": "${config.snow_password}",
+      "description": "The password for authenticating to ServiceNow",
+      "sample_value": "snowpassword",
+      "required": true
+    },
+    {
+      "name": "sl1_db_user",
+      "description": "the user for authenticating with the SL1 DB",
+      "value": "${config.sl1_db_user}",
+      "sample_value": "root",
+      "required": true
+    },
+    {
+      "name": "sl1_db_password",
+      "description": "the password for authenticating with the SL1 DB",
+      "value": "${config.sl1_db_password}",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "region",
+      "value": "${config.region}",
+      "description": "Unique identifier for IS+SL1",
+      "sample_value": "ScienceLogicRegion",
+      "required": true
+    }
+  ],
+  "steps": [
+    {
+      "name": "Fetch Installed Software from SL1",
+      "file": "MySqlSelect",
+      "syncpack": "base_steps_syncpack",
+      "data_from": [
+        "Compare SL1 and ServiceNow Installed Software"
+      ],
+      "host": "${appvar.sl1_db_host}",
+      "database": "",
+      "username": "${appvar.sl1_db_user}",
+      "password": "${appvar.sl1_db_password}",
+      "select_query": "SELECT title, group_concat(did) dids FROM master_dev.device_packages GROUP BY title",
+      "output_to": [
+        "Compare SL1 and ServiceNow Installed Software"
+      ]
+    },
+    {
+      "name": "Fetch DIDs with Installed Software from SL1",
+      "file": "MySqlSelect",
+      "syncpack": "base_steps_syncpack",
+      "data_from": [
+        "Compare SL1 and ServiceNow Installed Software"
+      ],
+      "host": "${appvar.sl1_db_host}",
+      "database": "",
+      "username": "${appvar.sl1_db_user}",
+      "password": "${appvar.sl1_db_password}",
+      "select_query": "SELECT group_concat(distinct(did)) dids FROM master_dev.device_packages;",
+      "output_to": [
+        "Compare SL1 and ServiceNow Installed Software"
+      ]
+    },
+    {
+      "name": "Pull and Parse ServiceNow Software",
+      "file": "PullAndProcessSnowSoftware",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}",
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "relative_url": "/api/x_sclo_scilogic/v1/sciencelogic/installed_software?region=${appvar.region}",
+      "chunk_size": "${appvar.chunk_size}",
+      "method": "GET",
+      "chunk_name_for_pos_in_url": "sysparm_offset",
+      "chunk_name_for_max_in_url": "sysparm_limit",
+      "chunk_name_for_returned": "return_count",
+      "chunk_name_for_total": "total_count",
+      "expected_http_response": 200,
+      "read_timeout": "${appvar.read_timeout}",
+      "result_key": "results",
+      "output_to": [
+        "Compare SL1 and ServiceNow Installed Software"
+      ]
+    },
+    {
+      "name": "Compare SL1 and ServiceNow Installed Software",
+      "file": "CompareSoftware",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "data_from": [
+        "Fetch Installed Software from SL1",
+        "Pull and Parse ServiceNow Software",
+        "Fetch DIDs with Installed Software from SL1"
+      ],
+      "chunk_size": "${appvar.chunk_size}",
+      "output_to": [
+        "Trigger Installed Software Uploads"
+      ],
+      "region": "${appvar.region}"
+    },
+    {
+      "name": "Trigger Installed Software Uploads",
+      "file": "TriggerApplication",
+      "syncpack": "base_steps_syncpack",
+      "input_iterator": true,
+      "data_from": [
+        "Compare SL1 and ServiceNow Installed Software"
+      ],
+      "value_as": "software",
+      "trigger_app": "post_installed_software_to_snow",
+      "wait_for_child_completion": false
+    }
+  ]
+}
+

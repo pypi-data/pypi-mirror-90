@@ -1,0 +1,174 @@
+{
+  "friendly_name": "Sync Organizations from SL1 to ServiceNow Companies",
+  "description": "Pulls Organizations from SL1 via REST API and syncs to ServiceNow.",
+  "configuration": "",
+  "author": "ScienceLogic Inc.",
+  "version": "3.0.0",
+  "meta": {    
+    "hidden": false
+  },
+  "app_variables":[
+
+    {
+      "name": "sl1_hostname",
+      "value": "${config.sl1_host}",
+      "description": "The SL1 hostname to participate in the sync",
+      "sample_value": "10.2.253.115",
+      "required": true
+    },
+    {
+      "name": "snow_hostname",
+      "value": "${config.snow_host}",
+      "description": "The ServiceNow hostname to participate in the sync",
+      "sample_value": "10.2.253.233",
+      "required": true
+    },
+    {
+      "name": "sl1_user",
+      "value": "${config.sl1_user}",
+      "description": "The username for authenticating to SL1",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "snow_user",
+      "value": "${config.snow_user}",
+      "description": "The username for authenticating to ServiceNow",
+      "sample_value": "snowadmin",
+      "required": true
+    },
+    {
+      "name": "sl1_password",
+      "value": "${config.sl1_password}",
+      "description": "the password for authenticating with SL1",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "snow_password",
+      "value": "${config.snow_password}",
+      "description": "The password for authenticating to ServiceNow",
+      "sample_value": "snowpassword",
+      "required": true
+    },
+    {
+      "name": "region",
+      "value": "${config.region}",
+      "description": "Unique identifier for IS+SL1",
+      "sample_value": "ScienceLogicRegion",
+      "required": true
+    }
+  ],
+  "steps":[
+    {
+      "name": "Pull Organizations from SL1",
+      "file": "PullAndProcessSL1Orgs",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "output_to": ["Process Organizations"],
+      "method": "GET",
+      "chunk_size": 1000,
+      "chunk_name_for_pos_in_url": "offset",
+      "chunk_name_for_max_in_url": "limit",
+      "chunk_name_for_returned": "total_returned",
+      "chunk_name_for_total": "total_matched",
+      "read_timeout": "${appvar.read_timeout}",
+      "debug_packet": true,
+      "expected_http_response": 200,
+      "prefix_url": "https://${appvar.sl1_hostname}",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "relative_url": "/api/organization?extended_fetch=1",
+      "region": "${appvar.region}"
+    },
+    {
+      "name": "Pull Companies from ServiceNow",
+      "file": "PullAndProcessSnowCompanies",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "method": "GET",
+      "chunk_size": 1000,
+      "chunk_name_for_pos_in_url": "sysparm_offset",
+      "chunk_name_for_max_in_url": "sysparm_limit",
+      "chunk_name_for_returned": "return_count",
+      "chunk_name_for_total": "total_count",
+      "read_timeout": "${appvar.read_timeout}",
+      "debug_packet": true,
+      "expected_http_response": 200,
+      "result_key": "results",
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}",
+      "relative_url": "/api/x_sclo_scilogic/v1/sciencelogic/companies?region=${appvar.region}&domainSep=${appvar.Domain_Separation}",
+      "output_to": ["Process Organizations"]
+    },
+    {
+      "name": "Process Organizations",
+      "file": "ProcessOrganizations",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "data_from": [
+        "Pull Organizations from SL1",
+        "Pull Companies from ServiceNow"
+      ],
+      "region": "${appvar.region}",
+      "chunk_size": "${appvar.chunk_size}",
+      "Source_of_Truth": "${appvar.Source_of_Truth}",
+      "Create_Missing": "${appvar.Create_Missing}",
+      "Update_Name": "${appvar.Update_Name}",
+      "Domain_Separation": "${appvar.Domain_Separation}",
+      "attribute_mappings": "${appvar.attribute_mappings}",
+      "output_to": [
+        "Post Companies to ServiceNow",
+        "Post New Organizations to ScienceLogic",
+        "Post Org Updates to ScienceLogic"
+      ]
+    },
+    {
+      "name": "Post Companies to ServiceNow",
+      "syncpack": "base_steps_syncpack",
+      "file": "TriggerApplication",
+      "data_from": ["Process Organizations"],
+      "value_as": "snow_companies",
+      "trigger_app": "post_companies_to_snow",
+      "wait_for_child_completion": false,
+      "foreach": "${snow_payloads}",
+      "app_vars": [
+        {"name": "snow_payload", "value": "${payload}"}
+      ]
+    },
+    {
+      "name": "Post New Organizations to ScienceLogic",
+      "syncpack": "base_steps_syncpack",
+      "file": "TriggerApplication",
+      "data_from": ["Process Organizations"],
+      "value_as": "snowCompany",
+      "trigger_app": "post_org_to_sl1",
+      "wait_for_child_completion": false,
+      "foreach": "${sl1Creates}",
+      "app_vars": [
+        {"name": "action", "value": "${action}"},
+        {"name": "base_url", "value": "${base_url}"},
+        {"name": "user", "value": "${user}"},
+        {"name": "password", "value": "${password}"},
+        {"name": "uri", "value": "${uri}"},
+        {"name": "payload", "value": "${payload}"},
+        {"name": "slregion", "value": "${slregion}"}
+      ]
+    },
+    {
+      "name": "Post Org Updates to ScienceLogic",
+      "file": "TriggerApplication",
+      "syncpack": "base_steps_syncpack",
+      "data_from": ["Process Organizations"],
+      "value_as": "sl1Org",
+      "trigger_app": "post_org_company_updates",
+      "wait_for_child_completion": false,
+      "foreach": "${sl1Updates}",
+      "app_vars": [
+        {"name": "base_url", "value": "${base_url}"},
+        {"name": "user", "value": "${user}"},
+        {"name": "password", "value": "${password}"},
+        {"name": "uri", "value": "${uri}"},
+        {"name": "payload", "value": "${payload}"}
+      ]
+    }
+  ]
+}

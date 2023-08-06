@@ -1,0 +1,47 @@
+{
+  "description": "Post to x_sclo_scilogic_import_discovery_dependent table in ServiceNow.",
+  "friendly_name": "Post Discovery-dependent Data to ServiceNow",
+  "configuration": "",
+  "author": "ScienceLogic, Inc.",
+  "version": "3.0.0",
+  "meta": {     
+    "hidden": true
+  },
+  "app_variables": [
+    {
+      "name": "snow_hostname",
+      "value": "${config.snow_host}",
+      "description": "The ServiceNow hostname to participate in the sync",
+      "sample_value": "https://instance.service-now.com",
+      "required": true
+    },
+    {
+      "name": "snow_user",
+      "value": "${config.snow_user}",
+      "description": "The username for authenticating to ServiceNow",
+      "sample_value": "snowadmin",
+      "required": true
+    },
+    {
+      "name": "snow_password",
+      "value": "${config.snow_password}",
+      "description": "The password for authenticating to ServiceNow",
+      "sample_value": "snowpassword",
+      "required": true
+    }
+  ],
+  "steps":[
+    {
+      "name": "Post to ServiceNow",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "relative_url": "/x_sclo_scilogic_import_discovery_dependent.do?JSONv2&sysparm_action=insertMultiple",
+      "method": "post",
+      "payload": "${_appvar.payload}",
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}",
+      "read_timeout": "${appvar.read_timeout}"
+    }
+  ]
+}

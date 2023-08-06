@@ -1,0 +1,116 @@
+{
+  "friendly_name": "Sync Discovery Session Status from SL1 to ServiceNow",
+  "description": "Polls active Discovery sessions in SL1 and syncs current status to ServiceNow",
+  "configuration": "",
+  "author": "ScienceLogic Inc.",
+  "version": "3.0.1",
+  "meta": {     
+    "hidden": false
+  },
+  "app_variables": [
+    {
+      "name": "sl1_hostname",
+      "value": "${config.sl1_host}",
+      "description": "The SL1 hostname to participate in the sync",
+      "sample_value": "10.2.253.115",
+      "required": true
+    },
+    {
+      "name": "snow_hostname",
+      "value": "${config.snow_host}",
+      "description": "The ServiceNow hostname to participate in the sync",
+      "sample_value": "10.2.253.233",
+      "required": true
+    },
+    {
+      "name": "sl1_user",
+      "value": "${config.sl1_user}",
+      "description": "The r authenticating to SL1",
+      "sample_value": "em7admin",
+      "required": true
+    },
+    {
+      "name": "snow_user",
+      "value": "${config.snow_user}",
+      "description": "The username for authenticating to ServiceNow",
+      "sample_value": "snowadmin",
+      "required": true
+    },
+    {
+      "name": "sl1_password",
+      "value": "${config.sl1_password}",
+      "description": "the password for authenticating with SL1",
+      "sample_value": "em7password",
+      "required": true
+    },
+    {
+      "name": "snow_password",
+      "value": "${config.snow_password}",
+      "description": "The password for authenticating to ServiceNow",
+      "sample_value": "snowpassword",
+      "required": true
+    },
+    {
+      "name": "region",
+      "value": "${config.region}",
+      "description": "Unique identifier for IS+SL1",
+      "sample_value": "ScienceLogicRegion",
+      "required": true
+    }  ],
+  "steps": [
+    {
+      "name": "Load Created Sessions from Cache",
+      "file": "ReadFromCache",
+      "syncpack": "base_steps_syncpack",
+      "save_key": "disco_session_${appvar.region}_%",
+      "lookup_type": "like",
+      "merge_results": false,
+      "output_to" : ["Process Active Discovery Sessions"]
+    },
+    {
+      "name": "Pull Active Discovery Sessions from ScienceLogic",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "prefix_url": "https://${appvar.sl1_hostname}",
+      "method": "GET",
+      "chunk_size": 1000,
+      "chunk_name_for_pos_in_url": "offset",
+      "chunk_name_for_max_in_url": "limit",
+      "chunk_name_for_returned": "total_returned",
+      "chunk_name_for_total": "total_matched",
+      "result_key": "result_set",
+      "read_timeout": "${appvar.read_timeout}",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "relative_url": "/api/discovery_session_active?extended_fetch=1",
+      "output_to": ["Process Active Discovery Sessions"]
+    },
+    {
+      "name": "Process Active Discovery Sessions",
+      "file": "ProcessActiveSessions",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "data_from": [
+        "Load Created Sessions from Cache",
+        "Pull Active Discovery Sessions from ScienceLogic"
+      ],
+      "output_to": ["Pull Discovery Session Logs"],
+      "region": "${appvar.region}"
+    },
+    {
+      "name": "Pull Discovery Session Logs",
+      "file": "TriggerApplication",
+      "syncpack": "base_steps_syncpack",
+      "input_iterator": true,
+      "data_from": ["Process Active Discovery Sessions"],
+      "value_as": "entire_dict_obj",
+      "trigger_app": "pull_and_post_discovery_logs",
+      "wait_for_child_completion": false,
+      "app_vars": [
+        {"name": "uri", "value": "${uri}"},
+        {"name": "sys_id", "value": "${sys_id}"},
+        {"name": "slid", "value": "${slid}"},
+        {"name": "affected_cis", "value":  "${affected_cis}"}
+      ]
+    }
+  ]
+}

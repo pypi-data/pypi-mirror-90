@@ -1,0 +1,43 @@
+{
+  "friendly_name": "Create Virtual Device in SL1",
+  "description": "Creates Virtual Device in SL1 and Completes RITM",
+  "configuration": "",
+  "author": "ScienceLogic Inc.",
+  "version": "3.0.0",
+  "meta": {     
+    "hidden": true
+  },
+  "app_variables": [],
+  "steps":[
+    {
+      "name": "Post to ScienceLogic",
+      "file": "PostVirtualDevice",
+      "syncpack": "servicenow_cmdb_syncpack",
+      "prefix_url": "https://${appvar.sl1_hostname}",
+      "relative_url": "/api/device",
+      "method": "post",
+      "headers_to_capture": ["location"],
+      "payload": "${_appvar.payload}",
+      "username": "${appvar.sl1_user}",
+      "password": "${appvar.sl1_password}",
+      "output_to": ["Post to ServiceNow"],
+      "read_timeout": "${appvar.read_timeout}",
+      "sys_id": "${_appvar.sys_id}",
+      "Closed_Success_State": "${appvar.Closed_Success_State}",
+      "Closed_Failed_State": "${appvar.Closed_Failed_State}"
+    },
+    {
+      "name": "Post to ServiceNow",
+      "file": "QueryREST",
+      "syncpack": "base_steps_syncpack",
+      "data_from": ["Post to ScienceLogic"],
+      "prefix_url": "https://${appvar.snow_hostname}",
+      "relative_url": "/x_sclo_scilogic_import_service_request.do?JSONv2&sysparm_action=insertMultiple",
+      "method": "post",
+      "read_timeout": "${appvar.read_timeout}",
+      "payload_from_input": true,
+      "username": "${appvar.snow_user}",
+      "password": "${appvar.snow_password}"
+    }
+  ]
+}
