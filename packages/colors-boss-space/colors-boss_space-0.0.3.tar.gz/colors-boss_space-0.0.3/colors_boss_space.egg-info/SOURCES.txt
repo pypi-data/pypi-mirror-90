@@ -1,0 +1,7 @@
+README.md
+setup.py
+colors/__init__.py
+colors_boss_space.egg-info/PKG-INFO
+colors_boss_space.egg-info/SOURCES.txt
+colors_boss_space.egg-info/dependency_links.txt
+colors_boss_space.egg-info/top_level.txt
