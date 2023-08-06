@@ -1,0 +1,8 @@
+WINDOWS
+
+LINUX
+    Highlight border not appearing
+    Fixed: Widgets don't activate on Enter
+    
+DARWIN
+    Buttons (2, 4, et al ) missing border

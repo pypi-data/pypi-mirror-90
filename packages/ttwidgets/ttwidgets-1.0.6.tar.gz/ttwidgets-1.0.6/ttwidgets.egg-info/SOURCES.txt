@@ -1,0 +1,19 @@
+BUGS.txt
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+NOTICE.txt
+README.md
+setup.py
+ttwidgets/__init__.py
+ttwidgets/ttwidgets - Copy (2).py
+ttwidgets/ttwidgets - Copy (3).py
+ttwidgets/ttwidgets - Copy (4).py
+ttwidgets/ttwidgets - Copy.py
+ttwidgets/ttwidgets.py
+ttwidgets.egg-info/PKG-INFO
+ttwidgets.egg-info/SOURCES.txt
+ttwidgets.egg-info/dependency_links.txt
+ttwidgets.egg-info/top_level.txt
+ttwidgets/test/__init__.py
+ttwidgets/test/test_ttwidgets.py
