@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: kw
+Version: 0.0.2
+Summary: Utils to work with storage
+Home-page: https://github.com/thorwhalen/ut/tree/master/util/pstore.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# kw
+Utils to work with storage
+
+
+To install:	```pip install kw```
+
+
