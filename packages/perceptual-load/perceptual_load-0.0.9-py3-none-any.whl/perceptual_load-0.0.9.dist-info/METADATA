@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: perceptual-load
+Version: 0.0.9
+Summary: Perceptual Load Experiment
+Home-page: UNKNOWN
+Author: Rob Blumberg
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: numpy (>=1.18.2)
+Requires-Dist: pandas (>=1.0.3)
+Requires-Dist: psychopy (>=2020.2.10)
+
+UNKNOWN
+
+
