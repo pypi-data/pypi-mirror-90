@@ -1,0 +1,3 @@
+[console_scripts]
+tc420 = tc420.__main__:main
+

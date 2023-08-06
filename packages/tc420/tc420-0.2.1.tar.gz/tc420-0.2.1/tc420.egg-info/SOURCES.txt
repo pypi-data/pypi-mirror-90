@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+tc420/__init__.py
+tc420/__main__.py
+tc420/tc420.py
+tc420.egg-info/PKG-INFO
+tc420.egg-info/SOURCES.txt
+tc420.egg-info/dependency_links.txt
+tc420.egg-info/entry_points.txt
+tc420.egg-info/requires.txt
+tc420.egg-info/top_level.txt
