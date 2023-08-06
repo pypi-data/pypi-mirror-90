@@ -1,0 +1,12 @@
+README.md
+setup.py
+valdec/__init__.py
+valdec/data_classes.py
+valdec/dec.py
+valdec/utils.py
+valdec/val_pydantic.py
+valdec/val_validated_dc.py
+valdec.egg-info/PKG-INFO
+valdec.egg-info/SOURCES.txt
+valdec.egg-info/dependency_links.txt
+valdec.egg-info/top_level.txt
