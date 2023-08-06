@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: mzrewards
+Version: 0.0.1
+Summary: Mzaalo Rewards Utility functionalities
+Home-page: UNKNOWN
+Author: Denny
+Author-email: denny@xfinite.io
+License: MIT
+Description: This is a Mzaalo Reward Asset Utilities and Deployment Functionalities.
+        
+        
+        Change Log
+        ==========
+        
+        0.0.1 (05/01/2020)
+        -------------------
+        - First Release
+        
+Keywords: Mzaalo reward utils
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

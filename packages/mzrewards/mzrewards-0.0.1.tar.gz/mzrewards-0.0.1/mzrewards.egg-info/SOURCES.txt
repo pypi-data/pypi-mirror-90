@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+requirements.txt
+setup.py
+mzrewards/__init__.py
+mzrewards.egg-info/PKG-INFO
+mzrewards.egg-info/SOURCES.txt
+mzrewards.egg-info/dependency_links.txt
+mzrewards.egg-info/requires.txt
+mzrewards.egg-info/top_level.txt
