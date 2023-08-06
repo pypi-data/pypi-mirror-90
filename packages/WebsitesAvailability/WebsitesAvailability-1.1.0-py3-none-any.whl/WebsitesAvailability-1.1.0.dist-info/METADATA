@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: WebsitesAvailability
+Version: 1.1.0
+Summary: A production-ready Website Availability tracking system
+Home-page: https://github.com/eric-hou/webavailability
+Author: Liang Hou
+Author-email: eric.hou.liang@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: msgpack
+Requires-Dist: dnspython
+Requires-Dist: requests
+Requires-Dist: pyOpenSSL
+Requires-Dist: kafka-python
+Requires-Dist: psycopg2
+
+UNKNOWN
+
+
