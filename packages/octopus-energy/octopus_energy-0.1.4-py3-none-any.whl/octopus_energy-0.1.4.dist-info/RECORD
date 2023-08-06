@@ -1,0 +1,11 @@
+changelog.md,sha256=lZUk5niHob-x23gafiyFPmR7Hl4Hr8Eavge44sGLegg,178
+octopus_energy/__init__.py,sha256=1kbCpYsVe9HZ6dW7WnFUDgCk1cuvQGf85LxcG28aOBY,254
+octopus_energy/exceptions.py,sha256=FQJMhuCisJpumG9Wd54HNBbQy7KdZWnh3CHZhpD-K6w,534
+octopus_energy/mappers.py,sha256=f6MsravZpJI-JWjWoD4GbQ3C_ie3dwZmjKwy1NtQxSw,2112
+octopus_energy/models.py,sha256=gFX_DPZE_u82iH26ynfeb-qIY3GF63JTDof15TvF9cw,1821
+octopus_energy/rest_client.py,sha256=ccbqCxZJ-mXAsEjHOkAXoFD74I1FmGdrg8W8cft-Csg,4730
+readme.md,sha256=EtZEoBLDp6AvyfO8VH6rwAgrpryAYLnCakdwhzpAzZE,1729
+octopus_energy-0.1.4.dist-info/LICENSE,sha256=zZ6X0mzmRMpfkh5fnuSl6jH7JlJlLaipI3OFK50pn8I,1070
+octopus_energy-0.1.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+octopus_energy-0.1.4.dist-info/METADATA,sha256=NcbYiPU5mJziM3KBamq7_AqX4hI5s4AOXrzropXNK_g,2414
+octopus_energy-0.1.4.dist-info/RECORD,,
