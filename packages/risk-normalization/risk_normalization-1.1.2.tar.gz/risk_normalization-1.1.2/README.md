@@ -1,0 +1,140 @@
+# Risk normalization
+
+#### A set of procedures that evaluates a set of trades, determines the maximum safe position size, and estimates future equity growth.
+
+Copyright &copy; 2011  Dr. Howard Bandy, Blue Owl Press, Inc.
+
+Traders are willing to trust the signals of their algorithmic trading systems as long as the drawdown experienced does not exceed their personal risk tolerance.
+
+Final equity of a series of trades depends on the position size of each trade.  Greater position size leads to greater final equity (up to a point that is not reached under ordinary trading circumstances), and also leads to greater drawdowns. 
+
+The risk_normalization.py program analyzes the 'best estimate' set of trades associated with a trading system and computes the maximum position size which results in the highest equity growth while limiting the drawdown to within the trader's personal risk tolerance.
+
+As with all forecasting procedures, achieving high accuracy and high confidence from a system based on a model depends on the future data having the same distribution as that data used to develop the system.
+
+## Two systems
+
+There are two systems in play:
+- The *Trading System,* which fits the model to historical data, identifies patterns, and generates signals during the development phase. 
+- The *Trading Management System,* which analyzes recent trades during live (or paper) trading, compares recent performance to that achieved during development, determines the health of the system, and sets the best position size for the next trade.  
+
+Position size is a parameter of the *Trading Management System,* not the *Trading System.*  The *Trading Management System* monitors recent performance and adjusts position size appropriately.  If the system begins to break down, it is the *Trading Management System* that detects that problem and reduces the position size accordingly -- perhaps taking it offline completely.
+
+The *Trading System* has no way of knowing whether the recent trades are similar to those discovered during development or periods of earlier trading.  Moving position size to the *Trading System* removes the only 'knob' the trader has to systematically respond to variation in the synchronization between the model and the data.  
+
+The trader uses the risk analysis components of risk_normalization to identify and adjust for distributional drift.
+
+## Establishing the parameters
+
+The trader establishes the parameters for the risk control process by stating his or her risk tolerance as follows:
+>I am trading a $100,000 account and forecasting risk for the next two years.  I want to hold the risk of a drawdown from highest equity to date to a 5 percent chance of a 10 percent drawdown.
+
+That statement identifies the four risk tolerance parameters of the procedure:
+<pre>
+    Account size:      100000    initial account size in currency of your choice
+    Forecast horizon:     504    2 years of daily results  
+    Drawdown tolerance:  0.10    10% maximum drawdown
+    Tail risk:              5    at the 95th percentile
+</pre>
+
+Monte Carlo techniques are used to estimate the distributions of maximum drawdown and final equity with data drawn from a set of trades that represent the *best estimate* of future performance.
+
+The *best estimate* set of trades can be any of:
+* Real trades
+* Paper trades
+* Out-of-sample trades from development testing
+* In-sample trades from development testing
+* Hypothetical trades of interest
+
+The most accurate results come when marking trading performance to market daily.  Each trade is a one-day percentage change of the equity at risk that day.  A two year forecast horizon will have 504 single day trading results.  The number of trades and the number of days in the forecast will be the same.
+
+Multi-day trades can be used.  The number of trades and the number of days in the forecast will be different.  Compute the number of trades required to span the forecast period -- that will be the value passed as *number_of_trades_in_forecast.*  For a two year forecast, the *number_days_in_forecast* will be 504.  Note that the gain or loss of the trade is based on the closed trade -- the intra-trade drawdown of multi-day trades will not be observed, but it will always be greater than the reported drawdown.  Conservatively, and depending on the volatility of the issue being traded, the intra-trade (marked to market daily) drawdown you will experience will be greater than the closed trade drawdown by about 2% for trades held an average of 5 days, 3% for trades held 20 days, and 5% for trades held 60 days.  Thus, if you wish to analyze trades held an average of five trading days and hold maximum intra-trade drawdown to a limit of 10%, enter 0.08 as the desired maximum drawdown.
+
+The value of *number_of_trades_in_forecast* must be less than or equal to the value of *number_of_days_in_forecast*.  If the *number_of_trades_in_forecast* is lower, the remaining days will be filled with values of zero.  
+
+## Getting Started
+
+These programs were written in Python 3.7.
+
+The example code shows the procedures and a main program that calls them.
+
+The risk_normalization package can be installed from PyPI.
+
+>>> pip install risk_normalization
+
+Then imported within your program
+
+>>> import risk_normalization
+
+### The data in *trades* 
+
+A trade list has been created by some process. It could be live trades, validation trades, in-sample trades, or hypothetical trades. Each of the trades represents the gain from the trade for a single day.  If the trader is trading today's MOC to tomorrow's MOC, the gain would be the change in price from today's close to tomorrow's close. A gain of 1% is represented as 0.0100. A day where the position is flat has a gain of 0.00. There are about 252 trades per year The account is marked to market daily. The account is managed daily. The trader is able and willing to change position daily.
+
+Assuming the system is trading a single issue long/flat, the gain for days when the signal was to be flat will be 0.00.  You can either enter those zeros as they occur or omit them.  If you enter them as they occur, *number_of_trades_in_forecast* will be less than *number_of_days_in_forecast*.  The remaining days will automatically be filled with the necessary number of zeros.
+
+*Trades* is the set of trades being evaluated.  Internally, it is a Python list or numpy array.  There is one real value per element.  That value represents the percentage gained or lost by the funds at risk that day.
+
+If you are using a traditional trading system development platform, such as AmiBroker or TradeStation, use your trading system to produce a list of trades.  Export those to a csv file, one trade per line, which will be read, then passed as *trades* to the risk_normalization procedure.  
+
+If your trading system is written in Python, there is no need to export the data.  You can form a list or numpy array named *trades* and pass it directly to the risk_normalization procedure as part of the normal program flow.
+
+If you wish to evaluate a hypothetical set of trades, simply write them to a csv file and process them as though they are actual trades.  
+
+The data examples included in this repository are each a single csv file containing one header line followed by one data value per row.  Several csv files have been included.  They are expected to be in the directory where your risk_normalization.py file is -- or adjust the path as necessary.  Set skiprows to 1 to account for the header, or set skiprows to 0 if the file you pass has no header.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+# Overview of the program
+
+Begin with a set of trades. These are analyzed to compute safe-f, and are assumed to be the best estimate of future performance. This set does not change throughout the procedure.
+
+The simulation begins by setting the position size fraction to an initial value of 1.00. Create many equally likely equity curves, measure the maximum drawdown of each, keep them in a list. Treat the list of max drawdowns as a distribution and determine the maximum drawdown at the high risk tail -- probably at the 95th percentile. Compare the trader's personal risk tolerance with the tail risk of the distribution. If they are equal, the current value of the fraction is safe-f. If they are not equal, adjust the fraction and repeat.
+
+Safe-f has been established.  It is a fraction, typically between 0.50 and 1.00.  It is the position size that will maximize equity growth while holding the drawdown of the trading account to within the risk of the trader.
+
+Using safe-f as the fraction, create many equally likely equity curves, measure the final equity, keep that in a list. Treat the list of final equity as a distribution and determine the equity at the 25th percentile. Convert the relative gain in equity to a compound annual rate of return. That value is CAR25.  
+
+Run the analysis several times.  Return the mean and standard deviation of safe-f and CAR25.
+
+## Interpretation
+
+Fitting an algorithmic model to a set of data results in a set of relationships that are contained in the model.  When that model is supplied with a similar set of data, the model identifies patterns that precede profitable trades and informs the trader of the appropriate signals.  The system will be profitable providing the future resembles the past.  That is, the distribution of patterns and trades in the live data must come from the same distribution as was provided for the model fitting.  Safe-f is the position size associated with that model and data.  As the data changes, the patterns and profitability will change.  Adding results of recent trades to the 'best estimate set' of trades will allow the risk normalization procedure to recalibrate safe-f, which enables the trader to adjust position size during live trading to manage risk.
+
+## Use:
+<pre>
+safe_f_mean, safe_f_stdev, CAR25_mean, CAR25_stdev = risk_normalization(   
+        trades,
+        number_days_in_forecast,
+        number_trades_in_forecast, 
+        initial_capital,
+        tail_percentage,
+        drawdown_tolerance,
+        number_equity_in_CDF,
+        number_repetitions )
+</pre>
+
+Parameters: 
+* trades: The set of trades to evaluate. Expecting a numpy array with one dimension, or a Python list.
+* number_days_in_forecast: the forecast period in days. 
+* number_trades_in_forecast: The number of trades to draw for each equity sequence. 
+* initial_capital: initial amount in the trading account. Typical = 100000.00. 
+* tail_percentage: The percentage at which to measure the tail risk. Typical = 5.
+* drawdown_tolerance: The traders drawdown tolerance. Expressed as a proportion of maximum equity to date. Typical = 0.10 == a 10% drawdown. 
+* number_equity_in_CDF: The number of equity curves used to form a single CDF. Typical = 1000
+* number_repetitions: The number of simulations to combine for calculation of mean and standard deviation of CAR25 and safe-f.  An integer greater than 0.  Typical = 10.
+
+Returns: 
+* safe_f_mean: The fraction of the trading account that will be used for each trade. The mean of *number_repetitions* simulations.
+* safe_f_stdev: The standard deviation of safe_f.
+* CAR25_mean: The compound annual rate of return for the given set of trades and position size.  The mean of *number_repetitions* simulations.
+* CAR_25_stdev: The standard deviation of CAR25.
+
+
+# Program to create normally distributed trades
+
+make_trade_list.py 
+
+This program creates a list of trades drawn from a Normal distribution, and writes them to disc in a csv file readable by risk_normalization.py and useful for testing.
+
