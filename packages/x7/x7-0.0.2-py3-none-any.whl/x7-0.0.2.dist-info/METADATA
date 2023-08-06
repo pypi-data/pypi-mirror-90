@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: x7
+Version: 0.0.2
+Summary: Top level project for X7 libraries
+Home-page: https://github.com/gribbg/x7
+Author: Glenn Gribble
+Author-email: dev@gribbelus.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: x7-lib
+Requires-Dist: x7-testing
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: flake8 ; extra == 'tests'
+Requires-Dist: mypy ; extra == 'tests'
+
+X7
+==
+
+Top level project for X7 libraries.
+
+
