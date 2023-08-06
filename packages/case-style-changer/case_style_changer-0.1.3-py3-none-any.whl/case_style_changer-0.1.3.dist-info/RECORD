@@ -1,0 +1,12 @@
+CHANGELOG.md,sha256=-IvBi6or4eLXiltr99_LdcciNpBY_6yhvzX3baavLtg,374
+case_style_changer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+case_style_changer/case_changer.py,sha256=ErUlTnrCTSCmva1y2BMLCgOD2d04MJ2RjAK6gkGDn0A,1784
+case_style_changer/case_guesser.py,sha256=D2Cw0-sbkrW3bAVSPShEWsfPTft2VZvBIT8p59ppzb8,1016
+case_style_changer/case_style.py,sha256=EcQF8G8trgm5f7gVN1NYMwyadZuFl67U7Vz5bPkmuvs,2633
+case_style_changer/cli.py,sha256=2nTtLJeERbhlEX1_Exh_s_i-SyRozavUSvb7T-wcduo,1722
+case_style_changer/text_splitter.py,sha256=Bl1efSlDyqX9SfYZlBbjPCUekwVqvEZTWZeuO2UGbRE,1411
+case_style_changer-0.1.3.dist-info/entry_points.txt,sha256=DjZazGcg8LV7PYQXagyNMr75KGB1RNrIevcam5PV25g,98
+case_style_changer-0.1.3.dist-info/LICENSE,sha256=O0HQ625rvHpg0OyyGpLCeWrl9BY8ZvLSLXxM8rbqB2k,1064
+case_style_changer-0.1.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+case_style_changer-0.1.3.dist-info/METADATA,sha256=qeQCYMa4Y1QuwJ9luqV0leMypmcSdSaLA5zoFjgmVO0,3453
+case_style_changer-0.1.3.dist-info/RECORD,,
