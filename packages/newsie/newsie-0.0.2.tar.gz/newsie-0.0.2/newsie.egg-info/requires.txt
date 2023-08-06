@@ -1,0 +1,6 @@
+ambient-api
+cups
+feedparser
+image
+PyLaTeX
+qrcode
