@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: django-constance-register
+Version: 0.1.0
+Summary: Per app constance settings
+Project-URL: Repository, https://gitlab.com/cyberbudy/django-constance-register
+Author: cyberbudy
+Author-email: cyberbudy@gmail.com
+License: MIT
+Requires-Python: >=3.6
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Provides-Extra: dev
+
+
+Constance register - constance for third-party packages
+-------------------------------------------------------
+
+Features:
+^^^^^^^^^
+
+
+* Easily add settings to global constance config from third-party packages or project applications
+
+How to use it
+^^^^^^^^^^^^^
+
+Install constance and constance register
+
+.. code-block:: bash
+
+   >>> pip install django-constance django-constance-register
+
+Add constance to ``INSTALLED_APPS``
+
+.. code-block:: python
+
+   INSTALLED_APPS = (
+       ...
+       'constance',
+       'constance.backends.database',
+       'constance_register',
+       ...
+
+At the end of settings file add 
+
+.. code-block:: python
+
+   from constance_register.conf import conf
+
+   # Path to your files with configs. 
+   # NOTE: Files are loaded before apps are ready
+   CONSTANCE_REGISTRY = [
+       'library.apps.shelf.config',
+       'library.apps.staff.config'
+   ]
+   # Load settings
+   conf.load()
+
+   # Add third-party settings to global settings
+   CONSTANCE_CONFIG = {
+        'THE_ANSWER': (42, 'Answer to the Ultimate Question of Life, '
+                          'The Universe, and Everything'),
+       **conf.settings()
+   }
+   # Same with fieldsets
+   CONSTANCE_CONFIG_FIELDSETS = {
+       **conf.fieldsets()
+   }
+
+Config file example.
+
+.. code-block:: python
+
+   # library.apps.staff.config.py
+   from datetime import date
+
+   app_name = 'staff'
+
+   CONFIG = {
+       'DATE_ESTABLISHED': (date(1972, 11, 30), "the shop's first opening"),
+       'MY_SELECT_KEY': ('yes', 'select yes or no', 'yes_no_null_select'),
+       'MULTILINE': ('Line one\nLine two', 'multiline string'),
+   }
+
+   FIELDSET = {
+       'General Options': {
+           'fields': ('DATE_ESTABLISHED', 'MY_SELECT_KEY'),
+           'collapse': True
+       },
+       'Theme Options': ('MULTILINE',),
+   }
