@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "my_sensors"
+version = "0.1.0rc13"
+description = "A collection of sensors that I use with a standardized interface."
+authors = ["janjagusch <jan.jagusch@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+black = "^20.8b1"
+pylint = "^2.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
