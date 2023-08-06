@@ -1,0 +1,3 @@
+[console_scripts]
+bodega-bot = bodega_bot.bodega_bot:main
+
