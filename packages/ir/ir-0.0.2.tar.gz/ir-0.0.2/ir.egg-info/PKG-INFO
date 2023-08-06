@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ir
+Version: 0.0.2
+Summary: amazon_sender.py
+Home-page: https://github.com/thorwhalen/ut/tree/master/serialize/amazon_sender.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # ir
+        amazon_sender.py
+        
+        
+        To install:	```pip install ir```
+        
+Platform: any
+Description-Content-Type: text/markdown
