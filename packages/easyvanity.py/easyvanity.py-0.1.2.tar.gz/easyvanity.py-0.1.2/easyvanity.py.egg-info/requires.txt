@@ -1,0 +1,6 @@
+setuptools
+requests
+six
+ujson
+pymongo
+dnspython
