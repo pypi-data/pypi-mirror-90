@@ -1,0 +1,8 @@
+aiohttp
+lxml
+diskcache
+prettytable
+random-user-agent
+html-text
+completely
+click
