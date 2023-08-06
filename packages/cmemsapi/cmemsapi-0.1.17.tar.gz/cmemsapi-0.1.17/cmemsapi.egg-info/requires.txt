@@ -1,0 +1,13 @@
+dask
+fire
+funcy
+ipython
+jedi<0.18.0
+lxml
+motuclient==1.8.4
+netCDF4<=1.5.4
+pandas
+requests
+scipy
+toolz
+xarray
