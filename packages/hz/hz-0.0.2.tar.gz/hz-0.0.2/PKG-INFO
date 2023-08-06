@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hz
+Version: 0.0.2
+Summary: A collection of functions to generate synthetic data from real labeled data itself.
+Home-page: https://github.com/thorwhalen/ut/tree/master/ml/synthetic/from_labeled_data.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # hz
+        A collection of functions to generate synthetic data from real labeled data itself.
+        
+        
+        To install:	```pip install hz```
+        
+Platform: any
+Description-Content-Type: text/markdown
