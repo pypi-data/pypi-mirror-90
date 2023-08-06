@@ -1,0 +1,10 @@
+zstandard
+pandas
+xarray
+scipy
+boto3
+pydantic
+orjson
+geojson
+requests
+tethysts
