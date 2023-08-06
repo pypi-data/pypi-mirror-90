@@ -1,0 +1,7 @@
+README.md
+setup.py
+hypixelaPY/__init__.py
+hypixelaPY.egg-info/PKG-INFO
+hypixelaPY.egg-info/SOURCES.txt
+hypixelaPY.egg-info/dependency_links.txt
+hypixelaPY.egg-info/top_level.txt
