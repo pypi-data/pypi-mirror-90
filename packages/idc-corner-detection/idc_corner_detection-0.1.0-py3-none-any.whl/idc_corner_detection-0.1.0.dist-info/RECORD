@@ -1,0 +1,13 @@
+idc_corner_detection/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+idc_corner_detection/models/label_map.pbtxt,sha256=8nr8PKAO6zxhY6SrPhaiPrNenkM-KpwITAhOwvyd6P8,155
+idc_corner_detection/models/ssd_mobilenet_v2/ckpt/checkpoint,sha256=aK1l89llqwkQQba6XhS2owSshPFKDnGYs3LO5VtTPxw,614
+idc_corner_detection/models/ssd_mobilenet_v2/ckpt/ckpt-49.data-00000-of-00001,sha256=Km-_D6MUqyV_8l8E_By7zIA-AyE1_nJCrR1sj7r-wv0,20749284
+idc_corner_detection/models/ssd_mobilenet_v2/ckpt/ckpt-49.index,sha256=i_MSgAEER0VvsXsr34QK5ctBFADmNcRTTKkAshd50dE,47999
+idc_corner_detection/models/ssd_mobilenet_v2/pipeline.config,sha256=K4hYV1ZdEMpraC3s-kZAV3mchSIV8tRJktzZUC4xEdM,4559
+idc_corner_detection/models/ssd_mobilenet_v2/saved_model/saved_model.pb,sha256=o7b7lHk2BtIoSSKVx718glqyvwLFkj1qee8Y73_A6a0,7460074
+idc_corner_detection/models/ssd_mobilenet_v2/saved_model/variables/variables.data-00000-of-00001,sha256=eaWtdaMIJmwz3-FNc4FNCA-KtiLyW2T5P4tOWi9t6lI,10555705
+idc_corner_detection/models/ssd_mobilenet_v2/saved_model/variables/variables.index,sha256=XD_FjkHDS0hMTtSZIQq3b6KJ4hL4xSyAOFMfgBiva7Y,22366
+idc_corner_detection/predict.py,sha256=hMAKlJifUEjuJUyy5YP8jnW2bAr-9KenbIkBpOsvW8U,21
+idc_corner_detection-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+idc_corner_detection-0.1.0.dist-info/METADATA,sha256=igOPkssBCG7dNlMqZucaD6E0PmotLcJOg7g6LXQfro8,361
+idc_corner_detection-0.1.0.dist-info/RECORD,,
