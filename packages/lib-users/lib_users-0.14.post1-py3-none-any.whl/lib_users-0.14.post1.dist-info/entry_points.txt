@@ -1,0 +1,4 @@
+[console_scripts]
+fd_users=lib_users.fd_users:fd_users
+lib_users=lib_users.lib_users:lib_users
+
