@@ -1,0 +1,12 @@
+command_log/__init__.py,sha256=0x7b0nsJSG-34pjNpza8L85sbyubJt7UYN2xuwc_NUU,87
+command_log/admin.py,sha256=NCabDcad1QmiJgRtOI6bJaOUjeY465FUPHmGF_dvA-0,1893
+command_log/apps.py,sha256=oxqrTYAyDVKYkbgfouIaTHMUmkLXLkmAD3NSE_txcNU,156
+command_log/commands.py,sha256=pCf1bugvfT82w1zV2TGt3qHfNJlh6cr-WlSLaxw-oYo,3400
+command_log/migrations/0001_initial.py,sha256=sPdt7rMi2Fcsy2dn9cWTfFJ749dRz7_xo9nZXyUw6QI,1867
+command_log/migrations/0002_add_error_to_log.py,sha256=0dEy_TNpFNhShXSAv1rK05008p9rMUssMqcmX6d5n_c,1207
+command_log/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+command_log/models.py,sha256=7InycCFPqcteVdH7s9ozdUjjxvO_BjK5fYqUsMjlvhI,2742
+django_command_log-0.3.2.dist-info/LICENSE,sha256=bf_oOziOM15lO5vVlnxXIOQHDNlLcCnGXIMeP45Vdwc,1064
+django_command_log-0.3.2.dist-info/WHEEL,sha256=G_NFpzHmv_dUXgCUSAWL0-bLL-eMzYU6DzDeGXbRXUk,83
+django_command_log-0.3.2.dist-info/METADATA,sha256=YOTP6KMfPOd0n8goUGCnxVTDSqmlJ7XhkFQJHChmjco,2163
+django_command_log-0.3.2.dist-info/RECORD,,
