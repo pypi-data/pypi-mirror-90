@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: limeutils
+Version: 0.1.8
+Summary: A collection of my utility functions
+Home-page: https://github.com/enchance/limeutils.git
+Author: enchance
+Author-email: enchance@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: redis
+Requires-Dist: pydantic
+Requires-Dist: limeutils
+
+# limeutils
+Utility functions for basic tasks in python such as saving to redis or splitting strings. This
+ package is currently a work in progress with more methods and classes to follow as time permits.
+
+
+## Installation
+Install via `pip`
+
+    pip install limeutils
+
+Install via `pipenv`
+
+    pipenv install limeutils
+
+### Install from source
+
+To follow
+
+## Documentation
+
+View the documentation at: https://enchance.github.io/limeutils/
+
+
