@@ -1,0 +1,12 @@
+ci_ynh/__init__.py,sha256=3qMyC3MzVHGmmpr_5OFqF8YHTzwHAcrFYYG-JdKKLuI,28
+ci_ynh/admin.py,sha256=h5vWcJnqg5dydv2nPoZNiJerNdS4bZ2q4ai8YFr00Ns,651
+ci_ynh/huey_instance.py,sha256=ScO0c4ufKwfB6vjOejiihN2zVKPRjEECPTy9HUwpdG0,558
+ci_ynh/migrations/0001_initial.py,sha256=z57mmB7rhkF2rIqw6Agj5FtXYBoMBgau2rg4nWoEFjo,3232
+ci_ynh/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ci_ynh/models.py,sha256=5o73qvSzXNgUfhT03DeHc5i0dIK5k843W6QFWrGNedc,3158
+ci_ynh/tasks.py,sha256=grFhCin7bKzlLPsS8frmqkCgHPKJRn4LurLSaAIk-PQ,1211
+ci_ynh/yunohost_utils.py,sha256=QXU4nC4caS1lMgWX4nS41yyYmnGuC3Jimw_0-zflDE8,2550
+ci_ynh-0.1.0a0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ci_ynh-0.1.0a0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+ci_ynh-0.1.0a0.dist-info/METADATA,sha256=4kfxr-Kb_3KN5kBrzp4Ad8Y17EH7jzQWbNx2ZX3pgJs,4883
+ci_ynh-0.1.0a0.dist-info/RECORD,,
