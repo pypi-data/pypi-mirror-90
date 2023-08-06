@@ -1,0 +1,17 @@
+generalpackager/__init__.py,sha256=LqgaEGI3vuS13HL98od49xDSMlib_sV2-aiVF1RWt4E,253
+generalpackager/metadata.py,sha256=U0DDw0jHc8zo5XH1x518XEPqo5dPM34Y_hvt3mBkwSY,593
+generalpackager/packager.py,sha256=vKaJ6v5rXXpjcJXURkv_wWtfTwsLeYq3VuEJx_8H18o,2132
+generalpackager/packager_files.py,sha256=dFkL2eux6m2rycqeTe9oXnebfgWE0W86PKjK9c43gMI,2978
+generalpackager/packager_github.py,sha256=xrK5rlciy6oXjgDbqc92ZVN8jtBzxWhMxS7PiSa2yxs,362
+generalpackager/packager_markdown.py,sha256=FHNO1iEovL_nQ3QnaY21JXFyHyrGax7xs0QkayCybf4,5134
+generalpackager/packager_metadata.py,sha256=jPHvukyOsfxQbGSQe0EhGVyc3viW8rmjiYXaLkVwL3E,2157
+generalpackager/packager_pypi.py,sha256=O8UNIe4GYdunfJLIgg-L73vdFXlD7aMqzgXJzszol78,584
+generalpackager/api/github.py,sha256=E7LYwB7vYNtrPdCPUZiL-xlEgh689NSBneHYWm-RhA0,2730
+generalpackager/api/local_module.py,sha256=YzPOMga1Gdkq6fxtcjLPxq73hEVOejyQyA4npIivEVg,772
+generalpackager/api/local_repo.py,sha256=6KrGg743eflZdplpEK7JvYufRz2iyTS39wEk6dS9KJY,4878
+generalpackager/api/pypi.py,sha256=M5FUoeaDpeyNBJeat3RrmHB2ctK79sxiziQCn9v4zjc,220
+generalpackager-0.0.4.dist-info/LICENSE,sha256=0YPm6Cj_JsrFfp7WFWiF5PpNkEqlBUxjeX1Zy34jETQ,1093
+generalpackager-0.0.4.dist-info/METADATA,sha256=Dzva-jr0qVj2_p1cDJ6L1Z-2zoDBf0OW2BYwKny8w0k,9631
+generalpackager-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+generalpackager-0.0.4.dist-info/top_level.txt,sha256=IUThKTaP8Z2sds-HbQMneJ4sYsRNzrfZUxj6rj_NF4c,16
+generalpackager-0.0.4.dist-info/RECORD,,
