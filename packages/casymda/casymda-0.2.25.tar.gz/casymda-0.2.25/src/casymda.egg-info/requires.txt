@@ -1,0 +1,8 @@
+Pillow
+black==19.3b0
+flask
+flask-cors
+networkx
+numpy
+simpy
+xmltodict
