@@ -1,0 +1,10 @@
+LICENCE.txt
+README.rst
+mailman-public-inbox.cfg
+setup.py
+mailman_public_inbox/__init__.py
+mailman_public_inbox.egg-info/PKG-INFO
+mailman_public_inbox.egg-info/SOURCES.txt
+mailman_public_inbox.egg-info/dependency_links.txt
+mailman_public_inbox.egg-info/requires.txt
+mailman_public_inbox.egg-info/top_level.txt

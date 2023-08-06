@@ -1,0 +1,3 @@
+setuptools
+mailman
+zope.interface
