@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: pywrangle
+Version: 0.3.4
+Summary: Auxiliary functions to clean pandas data frames
+Home-page: https://github.com/jaimiles23/pywrangle
+Author: Jai Miles
+Author-email: jaimiles23@gmail.com
+License: MIT
+Description: # Pywrangle
+        
+        ## About
+        PyWrangle is an open-source Python library for data wrangling. Wikipedia defines [data wrangling](https://en.wikipedia.org/wiki/Data_wrangling) as follows:
+        > is the process of transforming and mapping data from one "raw" data form into another format with the intent of making it more appropriate and valuable for a variety of downstream purposes such as analytics
+        
+        ## Functions
+        PyWrangle currently supports:
+        - cleaning strings
+        - tracking dataframe changes
+        - identifying data entry errors
+        
+        
+        ## Documentation & Distribution
+        
+        Documentation is available [here](https://pywrangle.readthedocs.io/en/latest/)
+        
+        Distribution is available  [here](https://pypi.org/project/pywrangle/)
+        
+        
+        ## Install
+        
+        ### Requirements
+        - Python >= 3.6
+        - numpy >= 1.14.4
+        - pandas >= 1.0.3
+        - fuzzywuzzy >= 0.18.0
+        - python-levenshtein >= 0.12.0
+        - metaphone >= 0.6
+        
+        
+        ### Pip Install
+        To install pywrangle, use pip:
+        
+        ```
+        pip install pywrangle
+        ```
+        
+        
+        ## Import
+        
+        Per convention with Python libraries for data science, import pywrangle as follows:
+        ```
+        >>> import pywrangle as pw
+        ```
+        
+        ## Contributing
+        Like all developers, I _love_ open source. Please reference the contributing guidelines [here](https://github.com/jaimiles23/pywrangle/blob/master/CONTRIBUTING.md)
+        <!-- TODO: ADD LINK TO CONTRIbuTING GUIDELINES> -->
+        
+        
+        
+        # History
+        
+        ## Version = "0.3.03
+        - Removed walrus operator for Pre-3.8 compatability. Now Python 3.6+ compatable.
+        
+        ## Version = "0.3.0"
+        - Removed identify missing data from library -- too much overlap with the missingno library.
+        - Added identify_errors() function. Uses levenshtein's distance & double metaphone string matching algorithms to identify potential data entry errors in string columns.
+        - Refactored code into different sub libraries
+        - Placed documentation on ReadTheDocs.
+        
+        ## version = "0.2.40"
+        - refactored code for clarity
+        - added display info to print_df_changes
+        
+        ## version = "0.2.1"
+        - Created __init__ file for function imports
+        - Documentation on importing pywrangle
+        - Added numpy as required package.
+        - Changed package requirements to greater than or equal to.
+        
+        ## version = "0.0.1"
+        - Init
+        
+        
+Keywords: clean,wrangle,pandas,dataframe,mangle,data,numpy,text,missing
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
