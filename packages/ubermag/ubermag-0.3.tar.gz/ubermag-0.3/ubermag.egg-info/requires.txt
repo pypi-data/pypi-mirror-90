@@ -1,0 +1,2 @@
+oommfc==0.9
+micromagneticdata==0.4
