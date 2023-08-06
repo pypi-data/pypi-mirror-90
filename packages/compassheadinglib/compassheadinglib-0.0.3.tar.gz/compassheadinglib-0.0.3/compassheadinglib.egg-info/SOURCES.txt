@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+compassheadinglib/__init__.py
+compassheadinglib/__version__.py
+compassheadinglib/compassheadinglib.py
+compassheadinglib.egg-info/PKG-INFO
+compassheadinglib.egg-info/SOURCES.txt
+compassheadinglib.egg-info/dependency_links.txt
+compassheadinglib.egg-info/top_level.txt
