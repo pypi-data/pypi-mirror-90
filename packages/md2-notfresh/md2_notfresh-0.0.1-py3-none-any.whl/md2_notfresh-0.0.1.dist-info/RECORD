@@ -1,0 +1,14 @@
+md2_notfresh-0.0.1.data/data/my_data/data_file,sha256=EweZDmulyhRes16ZGCqb7EZTG8VN32VqYCx4D6AkDe4,9
+md_helper/__init__.py,sha256=oftNXTXm5vYj4s6Wv_jsQ1N0sqPtD15ThN-IGIdbGk4,638
+md_helper/question_list.py,sha256=lOqsu3VbfQU-iPk48fZrmCTUHJ_5poWuGbX68l1oJ68,5549
+md_helper/standard-readme-django-cn.template,sha256=yoqcsYFFmTDq0saDnMlZ_KhK3ezeKw3-iuOHVkQAgFs,1403
+md_helper/templite.py,sha256=qjf9K10US71hUHdCV-vTyGRkgJCEQNjTPpmvJU0Xq_0,10739
+sample/__init__.py,sha256=eJUhUcyOxh8swfmDZgrUugpBVnbIWSkbZxcmwT5GmDw,111
+sample/package_data.dat,sha256=EweZDmulyhRes16ZGCqb7EZTG8VN32VqYCx4D6AkDe4,9
+sample/simple.py,sha256=jQxgMu2wujV5-EV7SIHDYnIfEhmJAzxyn2XKqYliCB0,43
+md2_notfresh-0.0.1.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+md2_notfresh-0.0.1.dist-info/METADATA,sha256=G0Og0pBd4wUzOavRUj-dR0PGone68zSSYu9BQ3QScHs,5123
+md2_notfresh-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+md2_notfresh-0.0.1.dist-info/entry_points.txt,sha256=XAfYofzUHkyYb1X3i-vxm5bs2EKf-McHTo0gZAFgC2w,38
+md2_notfresh-0.0.1.dist-info/top_level.txt,sha256=rAV7HrY33i24CQ9JiZgpxAcczYn4kv5mXWaPzQjN7cE,17
+md2_notfresh-0.0.1.dist-info/RECORD,,
