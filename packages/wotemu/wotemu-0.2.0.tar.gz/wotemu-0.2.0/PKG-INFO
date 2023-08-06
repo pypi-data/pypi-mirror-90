@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: wotemu
+Version: 0.2.0
+Summary: A Fog-layer emulator based on Swarm Mode for Web of Things applications
+Home-page: UNKNOWN
+Author: Andres Garcia Mangas
+Author-email: andres.garcia@fundacionctic.org
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: wot iot fog emulator
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.6
+Provides-Extra: dev
