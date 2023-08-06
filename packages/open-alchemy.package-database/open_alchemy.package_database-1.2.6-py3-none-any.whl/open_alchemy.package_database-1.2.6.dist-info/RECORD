@@ -1,0 +1,11 @@
+open_alchemy/__init__.py,sha256=xgjXOeVLAma-FqzUULAYoJuxzpX1pcgl-5ljofuXII8,29
+open_alchemy/package_database/__init__.py,sha256=hvlH5NGklARAn2FMmZ-6kQ_utBpeSjg89mh2l_N9r5A,309
+open_alchemy/package_database/config.py,sha256=nPUnFGcYgNgS_FaGAlIMkApctjiosd-x1Qp3lMgEmxc,2130
+open_alchemy/package_database/dynamodb.py,sha256=21zIOmlbzhHldEckNA4g4ioAnyx0cPY0KX46T38obW4,7793
+open_alchemy/package_database/exceptions.py,sha256=PJTaP-uUt0g6pVeQYwJpw7N465NHxaXvfUHcg7z9enE,175
+open_alchemy/package_database/factory.py,sha256=vh6EPVud-__OW6-GX72DYCxvE4ZfMO7lRd5uYQxEZAI,1720
+open_alchemy/package_database/models.py,sha256=_KxZjS04y_sY4GJDVhQVfbDP0rfxh8wEhBMcfJ7UOyw,14892
+open_alchemy/package_database/types.py,sha256=YJW8peMZrgGjIh0RDFv6UFcJMcTRPsv-LkqmxKf_F5g,7964
+open_alchemy.package_database-1.2.6.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+open_alchemy.package_database-1.2.6.dist-info/METADATA,sha256=q61IdmM4-UhCTvp5U2X3BfglNMiNFqhCeGEKlBxIJBc,7964
+open_alchemy.package_database-1.2.6.dist-info/RECORD,,
