@@ -1,0 +1,9 @@
+README.md
+setup.py
+simonpdf/__init__.py
+simonpdf/pdf2image.py
+simonpdf/pdf2text.py
+simonpdf.egg-info/PKG-INFO
+simonpdf.egg-info/SOURCES.txt
+simonpdf.egg-info/dependency_links.txt
+simonpdf.egg-info/top_level.txt
