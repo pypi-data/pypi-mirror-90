@@ -1,0 +1,3 @@
+[console_scripts]
+lighthouse_garden = lighthouse_garden.__main__:main
+
