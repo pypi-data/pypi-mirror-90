@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: sonyflake-py
+Version: 1.0.0
+Summary: A distributed unique ID generator inspired by Twitter's Snowflake.
+Home-page: https://github.com/hjpotter92/sonyflake-py
+Author: hjpotter92
+Author-email: hjpotter92+pypi@gmail.com
+License: UNKNOWN
+Description: # sonyflake-py
+        
+        Sonyflake is a distributed unique ID generator inspired by [Twitter's Snowflake](https://blog.twitter.com/2010/announcing-snowflake).
+        
+        This is a python rewrite of the original [sony/sonyflake](https://github.com/sony/sonyflake) project, written in Go.
+        
+        A Sonyflake ID is composed of
+        
+            39 bits for time in units of 10 msec
+             8 bits for a sequence number
+            16 bits for a machine id
+        
+        ## Installation
+        
+        ``` shell
+        pip install sonyflake-py
+        ```
+        
+        ## License
+        
+        The MIT License (MIT).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
