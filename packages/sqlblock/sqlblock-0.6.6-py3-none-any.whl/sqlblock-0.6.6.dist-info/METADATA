@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: sqlblock
+Version: 0.6.6
+Summary: A sql block
+Home-page: https://github.com/lcgong/sqlblock
+Author: Chenggong Lyu
+Author-email: lcgong@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Utilities
+Requires-Dist: asyncpg (>=0.21.0)
+
+UNKNOWN
+
+
