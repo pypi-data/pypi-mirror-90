@@ -1,0 +1,16 @@
+README.md
+setup.py
+pyorange/__init__.py
+pyorange/anomaly.py
+pyorange/arules.py
+pyorange/classification.py
+pyorange/clustering.py
+pyorange/datasets.py
+pyorange/nlp.py
+pyorange/regression.py
+pyorange/utils.py
+pyorange.egg-info/PKG-INFO
+pyorange.egg-info/SOURCES.txt
+pyorange.egg-info/dependency_links.txt
+pyorange.egg-info/requires.txt
+pyorange.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+pycaret==2.2.0
+vaderSentiment==3.3.2
+multi-rake==0.0.1
+langid==1.1.6
