@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: flespi-gateway
+Version: 0.0.1
+Summary: The python wrapper of a gateway rest API of a flespi platform.
+Home-page: https://github.com/vlavrik/flespi-gateway
+Author: Dr. Vladimir Lavrik
+Author-email: lavrikvladimir@gmail.com
+License: BSD 3-Clause "New" or "Revised" License
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# flespi-gateway
+
+
