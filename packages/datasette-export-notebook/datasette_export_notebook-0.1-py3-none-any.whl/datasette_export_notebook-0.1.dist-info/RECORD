@@ -1,0 +1,7 @@
+datasette_export_notebook/__init__.py,sha256=fWGI_IqEvbh-X63tUBXWbfLhUW3brc-PwQeZ7k43G00,992
+datasette_export_notebook/templates/export_notebook.html,sha256=22r5QBDcF90QoN3tOx4NB8689w_-BQY6_AxqtvGIU7c,1222
+datasette_export_notebook-0.1.dist-info/METADATA,sha256=JBlkVPelEdr3YZr_1m0_HeFPbnJ4aF7SW10xeOUfJ0w,2166
+datasette_export_notebook-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+datasette_export_notebook-0.1.dist-info/entry_points.txt,sha256=iglhthbJti5lON9usWTcg9HNDDDGohdijPnHr-n8XX4,57
+datasette_export_notebook-0.1.dist-info/top_level.txt,sha256=3NtanWUJgYU9_Si06Olg0TBEFcmJkqmYkd3nfKqz1NM,26
+datasette_export_notebook-0.1.dist-info/RECORD,,
