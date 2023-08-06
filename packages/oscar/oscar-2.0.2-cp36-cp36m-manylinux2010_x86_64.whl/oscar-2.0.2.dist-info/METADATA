@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: oscar
+Version: 2.0.2
+Summary: A Python interface to OSCAR data
+Home-page: https://github.com/ssc-oscar/oscar.py
+Author: marat@cmu.edu
+Author-email: marat@cmu.edu
+License: GPL v3
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Cython
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >2.6, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*,  <4
+Description-Content-Type: text/markdown
+Requires-Dist: python-lzf
+Requires-Dist: typing
+
+# Python interface for OSCAR data
+
+
+This is a convenience library to access World of Code data
+(WoC; it was referred internally as oscar while development, hence the name). 
+Since everything is stored in local files it won't work unless you have access 
+to one of the WoC servers.
+
+### Installation
+
+Normally it is preinstalled on WoC servers. To install manually, 
+e.g. to a virtual environment not using system packages, just use pip:
+
+    pip install oscar
+
+Installing from sources requires extra tools to compile (cython, 
+manylinux docker image etc), but still possible. Refer to the 
+[Build page](https://ssc-oscar.github.io/oscar.py) in the reference.
+
+### Reference
+
+Please see <https://ssc-oscar.github.io/oscar.py> for the full reference.
+
+
+
