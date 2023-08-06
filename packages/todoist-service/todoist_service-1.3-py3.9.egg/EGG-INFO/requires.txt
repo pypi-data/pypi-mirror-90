@@ -1,0 +1,4 @@
+todoist-python
+flask
+tinydb
+requests-oauthlib
