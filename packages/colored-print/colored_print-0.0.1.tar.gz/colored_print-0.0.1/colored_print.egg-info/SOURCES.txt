@@ -1,0 +1,7 @@
+README.md
+setup.py
+colored_print.egg-info/PKG-INFO
+colored_print.egg-info/SOURCES.txt
+colored_print.egg-info/dependency_links.txt
+colored_print.egg-info/not-zip-safe
+colored_print.egg-info/top_level.txt
