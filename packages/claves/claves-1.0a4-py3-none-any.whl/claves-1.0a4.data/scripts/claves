@@ -1,0 +1,7 @@
+#!python
+import claves
+import sys
+
+
+if __name__ == "__main__":
+    claves.run(sys.argv[1:])
