@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: dactylos
+Version: 0.0.26
+Summary: Python package to interact and readout CAEN N6725 digitizers. Can access waveform information, energy values of the shapers and allows for easy configuration of the instrument.
+Home-page: https://github.com/achim1/dactylos
+Author: Achim Stoessl
+Author-email: achim.stoessl@gmail.com
+License: GPL
+Description: This is a private project, and without association of CAEN in any kind. There is no guarantee that this code is useful or working or not harmful. Please see the licensce agreement. This code needs the CAEN C libraries for communication of the digitizer via USB as well as the CAEN C interface library, see https://www.caen.it/products/n6725/.
+Keywords: digitzer,CAEN,CAEN N6725,6725,readout,physics,engineering,lab,USB
+Platform: Ubuntu 18.04
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Physics
