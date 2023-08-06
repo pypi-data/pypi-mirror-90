@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: cloudy-sql
+Version: 0.0.0.1
+Summary: This project is currently in development. DO NOT USE.
+Home-page: https://github.com/hashmapinc/sales-and-marketing/pocs/sam-kohlleffel-poc/pandas-cloudy-extension
+Author: Hashmap, Inc
+Author-email: accelerators@hashmapinc.com
+License: UNKNOWN
+Description: <!---
+        # Modifications © 2020 Hashmap, Inc
+        #
+        # Licensed under the Apache License, Version 2.0 (the "License");
+        # you may not use this file except in compliance with the License.
+        # You may obtain a copy of the License at
+        #
+        #     http://www.apache.org/licenses/LICENSE-2.0
+        #
+        # Unless required by applicable law or agreed to in writing, software
+        # distributed under the License is distributed on an "AS IS" BASIS,
+        # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+        # See the License for the specific language governing permissions and
+        # limitations under the License.
+        -->
+        # cloudy_sql
+        
+        `pip install cloudy-sql`
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
