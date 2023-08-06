@@ -1,0 +1,8 @@
+portmod>=2.0rc0
+gitpython
+requests
+patool
+redbaron
+isort>=5.0.0
+black
+beautifulsoup4
