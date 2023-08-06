@@ -1,0 +1,8 @@
+marge_pytorch/__init__.py,sha256=a3s43K5RKwJLVowCyf4_nWoJsCMGEZ07NVsrQ-lfssQ,133
+marge_pytorch/autoregressive_wrapper.py,sha256=wydd6et7fmYo_ezKxWJLjbDZ_RDdDjFI70vSGNcYT-k,3323
+marge_pytorch/marge_pytorch.py,sha256=UcPe027_CXgmd26tlPBdTLV_DhWocNyEII9-19LvDJE,20935
+marge_pytorch-0.2.3.dist-info/LICENSE,sha256=As9u198X-U-vph5noInuUfqsAG2zX_oXPHDmdjwlPPY,1066
+marge_pytorch-0.2.3.dist-info/METADATA,sha256=ndDL4nE5_xOpu3UVGp3QdE-jTN_btmFq6zr6COlS5qI,696
+marge_pytorch-0.2.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+marge_pytorch-0.2.3.dist-info/top_level.txt,sha256=cJHrBemt0panXmQOhND_e1WWymlLLnV8b5nw3em_suc,14
+marge_pytorch-0.2.3.dist-info/RECORD,,
