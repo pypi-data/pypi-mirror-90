@@ -1,0 +1,6 @@
+Change Log
+--------------------
+
+0.0.5 (01/03/2021)
+
+-> Added a new function. You can now find mean of a list of numbers.
