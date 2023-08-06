@@ -1,0 +1,5 @@
+rpyc>=4.1.0
+myhdl
+click
+cma
+plumbum
