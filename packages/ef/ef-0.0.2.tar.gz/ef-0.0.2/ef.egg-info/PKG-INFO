@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ef
+Version: 0.0.2
+Summary: An example of connecting the flush of one buffer to the push of another.
+Home-page: https://github.com/thorwhalen/ut/tree/master/dpat/buffer.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # ef
+        An example of connecting the flush of one buffer to the push of another.
+        
+        
+        To install:	```pip install ef```
+        
+Platform: any
+Description-Content-Type: text/markdown
