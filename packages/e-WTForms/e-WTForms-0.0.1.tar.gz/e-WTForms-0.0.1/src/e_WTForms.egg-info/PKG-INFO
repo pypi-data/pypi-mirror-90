@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: e-WTForms
+Version: 0.0.1
+Summary: Form validation and rendering for Python web development.
+Home-page: https://e-wtforms.readthedocs.io/
+Maintainer: ennkua
+Maintainer-email: ennkua@gmail.com
+License: BSD-3-Clause
+Project-URL: Documentation, https://e-wtforms.readthedocs.io/
+Project-URL: Code, https://github.com/ennkua/e-wtforms
+Project-URL: Issue Tracker, https://github.com/ennkua/e-wtforms/issues
+Description: e-WTForms
+        =========
+        
+        e-WTForms is an unofficial upgrade of WTForms library with more functionality.
+        
+        
+        WTForms
+        =======
+        
+        WTForms is a flexible forms validation and rendering library for Python
+        web development. It can work with whatever web framework and template
+        engine you choose. It supports data validation, CSRF protection,
+        internationalization (I18N), and more. There are various community
+        libraries that provide closer integration with popular frameworks.
+        
+        
+        Installation
+        ------------
+        
+        Install and update using pip:
+        
+        .. code-block:: text
+        
+            pip install -U e-WTForms
+        
+        
+        Links
+        -----
+        
+        -   Documentation: https://e-wtforms.readthedocs.io/
+        -   Releases: https://pypi.org/project/e-WTForms/
+        -   Code: https://github.com/ennkua/e-wtforms
+        -   Issue tracker: https://github.com/ennkua/e-wtforms/issues
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Provides-Extra: email
