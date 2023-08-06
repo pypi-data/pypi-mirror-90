@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: zodiac-sign
+Version: 0.2.4
+Summary: Zodiac Signs
+Home-page: https://github.com/crusat/python-zodiac-sign
+Author: crusat
+Author-email: crusat@yandex.ru
+License: MIT
+Provides-Extra: dev
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+# Description
+
+
