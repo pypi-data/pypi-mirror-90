@@ -1,0 +1,4 @@
+aa-memberaudit>=1.0.0b3
+allianceauth-securegroups>=0.0.1a1
+allianceauth>=2.8.0
+django-esi>=2.0.4

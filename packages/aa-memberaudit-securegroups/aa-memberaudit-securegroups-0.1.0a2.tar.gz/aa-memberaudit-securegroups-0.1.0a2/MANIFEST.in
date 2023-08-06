@@ -1,0 +1,5 @@
+include LICENSE
+include README.md
+recursive-include memberaudit_securegroups *.py
+recursive-include memberaudit_securegroups/static *
+recursive-include memberaudit_securegroups/templates *
