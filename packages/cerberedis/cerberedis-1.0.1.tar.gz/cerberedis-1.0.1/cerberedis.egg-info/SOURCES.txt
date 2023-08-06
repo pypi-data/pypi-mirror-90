@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+cerberedis/__init__.py
+cerberedis/cerberedis.py
+cerberedis.egg-info/PKG-INFO
+cerberedis.egg-info/SOURCES.txt
+cerberedis.egg-info/dependency_links.txt
+cerberedis.egg-info/requires.txt
+cerberedis.egg-info/top_level.txt
