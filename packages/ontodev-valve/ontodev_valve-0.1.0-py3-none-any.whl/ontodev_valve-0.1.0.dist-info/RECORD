@@ -1,0 +1,10 @@
+valve/__init__.py,sha256=LiwHlEdQa6gA4iMvxHBCyzZUgDQ2LgUqUcWDsChUAUI,46
+valve/parse.py,sha256=f3Z0K5_MLAQGjnV6f8h1izmUBF0JTEIZpnzf4wL5APA,11928
+valve/valve.py,sha256=35b9L5kyDI6788m_cPPb9UHbVlWoH01m2ZKbnQjzqOk,55359
+valve/resources/valve.json,sha256=cR0kPWvQfD6IG6DJ8d8bhgJv-FyV8OSOfwWAU73PR6Q,4534
+ontodev_valve-0.1.0.dist-info/LICENSE,sha256=-p15N4jFu9_nBxBWDIFZa_25RYQ0ZIHUkCmT0_jWoHY,1515
+ontodev_valve-0.1.0.dist-info/METADATA,sha256=rmdgGdn5NBVIwbGPyo5KEQQJt-_Fthbx6ToR9eic4r8,1227
+ontodev_valve-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ontodev_valve-0.1.0.dist-info/entry_points.txt,sha256=ZlCcuX-1fXPelAfJZ5oDCEeFCwIFnr1ks027Sx3dNvg,44
+ontodev_valve-0.1.0.dist-info/top_level.txt,sha256=v6MBLZt90nU8iLBpn9RW7ows5A4DDY3_Ht48uP6e6cI,6
+ontodev_valve-0.1.0.dist-info/RECORD,,
