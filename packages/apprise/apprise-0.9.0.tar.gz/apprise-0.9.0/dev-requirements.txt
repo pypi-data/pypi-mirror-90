@@ -1,0 +1,20 @@
+coverage
+flake8
+mock
+pytest
+pytest-cov
+tox
+babel
+
+#
+# Plugin Dependencies
+#
+
+# Used for test cases on spush://
+cryptography
+
+# Provides xmpp:// support
+sleekxmpp
+
+# Provides growl:// support
+gntp
