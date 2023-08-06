@@ -1,0 +1,10 @@
+setup.py
+naefdistributions/Binomialdistribution.py
+naefdistributions/Gaussiandistribution.py
+naefdistributions/Generaldistribution.py
+naefdistributions/__init__.py
+naefdistributions.egg-info/PKG-INFO
+naefdistributions.egg-info/SOURCES.txt
+naefdistributions.egg-info/dependency_links.txt
+naefdistributions.egg-info/not-zip-safe
+naefdistributions.egg-info/top_level.txt
