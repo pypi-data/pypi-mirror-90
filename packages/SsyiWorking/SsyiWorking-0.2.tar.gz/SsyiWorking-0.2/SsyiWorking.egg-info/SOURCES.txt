@@ -1,0 +1,11 @@
+setup.py
+SsyiWorking/__init__.py
+SsyiWorking/main.py
+SsyiWorking.egg-info/PKG-INFO
+SsyiWorking.egg-info/SOURCES.txt
+SsyiWorking.egg-info/dependency_links.txt
+SsyiWorking.egg-info/entry_points.txt
+SsyiWorking.egg-info/not-zip-safe
+SsyiWorking.egg-info/top_level.txt
+SsyiWorking/script/__init__.py
+SsyiWorking/script/ssyi_implement.py
