@@ -1,0 +1,16 @@
+physicslab/__init__.py,sha256=YwisLASKEDG0iGA1a8tvymoktno21GUx34XLycyFqVQ,325
+physicslab/curves.py,sha256=N0GaiSt0qhJ8Ofjcm7wo2YDsIL-FtKJIO4CfijkCrrM,3568
+physicslab/electricity.py,sha256=_-uVHGInN0wbjgDgGCmc-vynJk12ZaJ9etKVJCKztg4,2745
+physicslab/io.py,sha256=-roQTep-zIbZMZxz3sBbg9a-_lsjgZWFFVMNy5wGWbY,27
+physicslab/ui.py,sha256=z_XhPAyuDKMQANGNcxrhpOfLxAi4PnFZnVG8n9VUOeo,27
+physicslab/utility.py,sha256=L4aDrSQTr5kVPTx8IkxGfWuw36Xiz_89XPXAHV51WCA,819
+physicslab/experiment/__init__.py,sha256=JEOq0gNvMX7g9x-4P_bmLHigMklvEHiW2-IZpf4agZg,1128
+physicslab/experiment/hall.py,sha256=_dAoogeXqyuxxDZXuTJf22f6ecKl3I4DfB06StGqp6M,4608
+physicslab/experiment/van_der_pauw.py,sha256=nNJx6CVJxnev94XtqtgoeAXEDQ2mTnHJHa9GxRchaPs,11062
+tests/__init__.py,sha256=1Zzz4FKcIYrxTtzq9M-xlbijSyzY8iBt6JCNAu6cnG8,17
+tests/tests.py,sha256=kST098-gJJxr4mfwemPmbab-t82WwZgtftPY5kBThLA,3356
+physicslab-0.2.0.dist-info/LICENSE,sha256=Yp-reHwY4J6SPtu7g1NNyF_Vh6COXFyuEXOcIel52Xc,1091
+physicslab-0.2.0.dist-info/METADATA,sha256=RiuiMCLaxLmJtIIvT99nWdY0EJLPXjiWkw5L9ON4yaU,2038
+physicslab-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+physicslab-0.2.0.dist-info/top_level.txt,sha256=yA21g2Grqh1641CZDzXmdyXTzns45hiFA7WYDOiZd_c,17
+physicslab-0.2.0.dist-info/RECORD,,

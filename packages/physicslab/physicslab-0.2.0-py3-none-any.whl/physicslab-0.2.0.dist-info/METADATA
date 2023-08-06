@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: physicslab
+Version: 0.2.0
+Summary: Physics experiments evaluation.
+Home-page: https://github.com/martin-brajer/physics-lab
+Author: Martin Brajer
+Author-email: martin.brajer@seznam.cz
+License: MIT
+Keywords: physics
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+
+# Physics Lab
+
+[![GitHub](https://img.shields.io/github/license/martin-brajer/physics-lab)](https://github.com/martin-brajer/physics-lab/blob/main/LICENSE)
+[![Unittest](https://github.com/martin-brajer/physics-lab/workflows/Python%20unittest/badge.svg)](https://github.com/martin-brajer/card-assembler/actions)
+[![Documentation Status](https://readthedocs.org/projects/physics-lab/badge/?version=latest)](https://physics-lab.readthedocs.io/en/latest/?badge=latest)
+[![PyPI version](https://badge.fury.io/py/physicslab.svg)](https://pypi.org/project/physicslab/)
+
+Physics Lab is a free and open-source python package. Helps with common experiments.
+
+Documentation can be found on [Read the Docs](https://physics-lab.readthedocs.io/en/latest/).
+
+
+# Features
+
+* Van der Pauw & Hall method
+* Batch measurement evaluation
+
+
+# Installation
+
+```bash
+pip install physicslab
+```
+
+
+# How to use this package
+
+
+# Compliance
+
+Versioning follows [Semantic Versioning 2.0.0](https://semver.org/). \
+Following [PEP8 Style Guide](https://www.python.org/dev/peps/pep-0008/) coding conventions. \
+Testing with [unittest](https://docs.python.org/2.7/library/unittest.html#module-unittest)
+and [pycodestyle](https://pypi.org/project/pycodestyle/).
+
+
+# License
+
+Physics Lab is licensed under the [MIT license](LICENSE).
+
+Feel free to comment, share ideas or report bugs.
+
+
