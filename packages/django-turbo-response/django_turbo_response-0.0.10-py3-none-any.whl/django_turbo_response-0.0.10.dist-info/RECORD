@@ -1,0 +1,13 @@
+turbo_response/__init__.py,sha256=c4VZeq_1I-gdx2p1S4ZuzHS3T--4V_dgBa2uyRcyIYI,729
+turbo_response/middleware.py,sha256=LRosfxsL3SmSBQt2fKrl9yYB1Q_lsKPno5T--dPgJZU,422
+turbo_response/mixins.py,sha256=YDWQTQeJEheALk9g-M299bpz506BD7KZRI6RvBfuqCg,6932
+turbo_response/renderers.py,sha256=hGckn84pcpzp-IH1EZOvLAjFyjYqwBFSEvgUgLisEPM,1085
+turbo_response/response.py,sha256=06Q7CMDFnNdud-h4DvQoxZIm--BqvGOIoApNhmLLj2Q,2746
+turbo_response/shortcuts.py,sha256=nf7GMbFzdGcQGczWO8xU0oVoc-3AMhTFwBAH0UeIhRo,6312
+turbo_response/template.py,sha256=FJfNe87K8L4P8bxkyrZ2gyn_K5fvQMW0D-eWhQAECE0,1488
+turbo_response/views.py,sha256=v67srV5l6cQC_uNQFmCkp4yrW1Od489gDf0Ht98KtKY,2063
+django_turbo_response-0.0.10.dist-info/LICENSE,sha256=gfwo2o77U4ZF1SkmXG4HZaluFKW1PWugPq0VwuyCdv4,1070
+django_turbo_response-0.0.10.dist-info/METADATA,sha256=SpsYFtqqXSpox5WlpWlsOWx1sR8wwoaP1P-5OUkgddg,2051
+django_turbo_response-0.0.10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_turbo_response-0.0.10.dist-info/top_level.txt,sha256=rYIwOi6WGERxz2Z-26X4jH0DIrSGLCA3qMrvUZtldgI,15
+django_turbo_response-0.0.10.dist-info/RECORD,,
