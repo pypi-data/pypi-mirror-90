@@ -1,0 +1,3 @@
+[console_scripts]
+colorbar=movie_colorbar.__main__:app
+

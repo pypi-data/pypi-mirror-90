@@ -1,0 +1,9 @@
+movie_colorbar/__init__.py,sha256=JMFlS3YeBB3g_v8KS_BgTzVZBfjN101XXz3BBKbrM_o,276
+movie_colorbar/__main__.py,sha256=_S6WAKd2Kv9-FudxCQv6wWNLOpPNC10KOve3k1icpMw,2147
+movie_colorbar/color_bar.py,sha256=cS4qyls71fMGberNQ4-RQYyUE_GafCPOFPml3GYUp9Y,6897
+movie_colorbar/generative_functions.py,sha256=sQuIAgExrTsJebxXArJeGAHksbRTulP86qLoUO3crL8,11711
+movie_colorbar-0.2.0.dist-info/entry_points.txt,sha256=06YmZeYTOCYEyOjqB5JsWTvTHj_XCDkcGzh1nYMzOko,56
+movie_colorbar-0.2.0.dist-info/LICENSE,sha256=1EN2Lw4u_yAodLebKzBtPlQuCH-M9LOmq30pL9X2Nk8,1070
+movie_colorbar-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+movie_colorbar-0.2.0.dist-info/METADATA,sha256=h1ryH3ZDGybB2DP1z1dB3cJ8sfksqsXTFE_LRAeYIGk,620
+movie_colorbar-0.2.0.dist-info/RECORD,,
