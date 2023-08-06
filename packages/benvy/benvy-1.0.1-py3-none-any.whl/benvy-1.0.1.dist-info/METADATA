@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: benvy
+Version: 1.0.1
+Summary: Bricksflow framework development environment initializer
+Home-page: https://github.com/bricksflow/benvy
+License: MIT
+Author: Jiri Koutny
+Author-email: jiri.koutny@datasentics.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: penvy (>=1.0.0,<1.1.0)
+Project-URL: Repository, https://github.com/bricksflow/benvy
+Description-Content-Type: text/markdown
+
+# Development environment initialization
+
+for the [Bricksflow stack](https://github.com/bricksflow/bricksflow)
+
+### What it does:
+
+* Extends the [Pyfony dev environment initialization](https://github.com/pyfony/benvy)
+* Downloads Hadoop's `winutils.exe` and puts it into the project's `.venv` directory (Windows only) 
+* Downloads **Java 1.8** binaries and puts them into the `~/.databricks-connect-java` dir
+* Creates the empty `~/.databricks-connect` file
+
