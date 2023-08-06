@@ -1,0 +1,9 @@
+noos_tf/__init__.py,sha256=oVHN6z_Q3wmnJ0p6O9qyO7AYCQ3KADd9seoMtuiVHuI,149
+noos_tf/api.py,sha256=XFyhphfLEgthJXqzPlHRcXJndFTW0uwMMIXnMoqWfJU,1380
+noos_tf/cli.py,sha256=VHVTq189gDBz0dWqo98wxkyNlIf0i1wlnzVqQujhEV4,1325
+noos_tf/client.py,sha256=AIsbEdEmTLwIa8gXNzippyYpfddH5qGmYUJ0SyLsnVI,2783
+noos_tf-0.0.6.dist-info/entry_points.txt,sha256=KJIZ94G7jNtv31FF_k13HD4-6uRw8qHuZJseIA9oRXg,47
+noos_tf-0.0.6.dist-info/LICENSE,sha256=MN7QsgApeanl_jGHqI5nG3q9Q9jlCJwoi8jOUX2bumk,1077
+noos_tf-0.0.6.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+noos_tf-0.0.6.dist-info/METADATA,sha256=2HdZcV8XvdLDEzojOu44HUoeTBuaWrS2bWiS2Fhi3Bw,3156
+noos_tf-0.0.6.dist-info/RECORD,,
