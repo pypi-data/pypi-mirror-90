@@ -1,0 +1,10 @@
+packaging
+simple-cmd
+twine
+
+[dev]
+ipdb
+ipython
+
+[test]
+pytest-cov
