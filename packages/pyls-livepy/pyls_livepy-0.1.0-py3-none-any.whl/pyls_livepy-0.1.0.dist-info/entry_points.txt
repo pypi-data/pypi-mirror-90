@@ -1,0 +1,6 @@
+[console_scripts]
+pyls-livepy-runner=pyls_livepy.runner:run
+
+[pyls]
+pyls_livepy=pyls_livepy.plugin
+

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyls-livepy
+Version: 0.1.0
+Summary: A realtime debugging and testing plugin for Palantir's Python Language Server.
+License: AGPLv3
+Author: Andrew Phillips
+Author-email: skeledrew@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: all
+Provides-Extra: pyls
+Provides-Extra: runs
+Requires-Dist: loguru (>=0.5.3,<0.6.0)
+Requires-Dist: python-language-server (>=0.36.1,<0.37.0); extra == "pyls" or extra == "all"
+Requires-Dist: space-tracer (>=4.2.0,<5.0.0); extra == "runs" or extra == "all"
