@@ -1,0 +1,69 @@
+import logging
+from pyhocon import ConfigTree
+
+from icodeai_dev_db import Scoped
+from icodeai_dev_db.extractors import Extractor
+from icodeai_dev_db.loader import Loader
+from icodeai_dev_db.task.base_task import Task
+from icodeai_dev_db.transformer import NoopTransformer, Transformer
+from icodeai_dev_db.utils import Closer
+
+LOGGER = logging.getLogger(__name__)
+
+
+class DefaultTask(Task):
+    """
+    A default task expecting to extract, transform and load.
+    """
+
+    # Determines the frequency of the log on task progress
+    PROGRESS_REPORT_FREQUENCY = "progress_report_frequency"
+
+    def __init__(
+        self,
+        extractor: Extractor,
+        loader: Loader,
+        transformer: Transformer = NoopTransformer(),
+    ) -> None:
+        self.extractor = extractor
+        self.transformer = transformer
+        self.loader = loader
+
+        self._closer = Closer()
+        self._closer.register(self.extractor.close)
+        self._closer.register(self.transformer.close)
+        self._closer.register(self.loader.close)
+
+    def init(self, conf: ConfigTree) -> None:
+        self._progress_report_frequency = conf.get_int(
+            f"{self.get_scope()}.{DefaultTask.PROGRESS_REPORT_FREQUENCY}", 500
+        )
+
+        self.extractor.init(Scoped.get_scoped_conf(conf, self.extractor.get_scope()))
+        self.transformer.init(
+            Scoped.get_scoped_conf(conf, self.transformer.get_scope())
+        )
+        self.loader.init(Scoped.get_scoped_conf(conf, self.loader.get_scope()))
+
+    def run(self) -> None:
+        """
+        Runs a task
+        :return:
+        """
+        LOGGER.info("Running a task")
+        try:
+            record = self.extractor.extract()
+            count = 1
+            while record:
+                record = self.transformer.transform(record)
+                if not record:
+                    record = self.extractor.extract()
+                    continue
+                self.loader.load(record)
+                record = self.extractor.extract()
+                count += 1
+                if count > 0 and count % self._progress_report_frequency == 0:
+                    LOGGER.info(f"Extracted %i records so far", count)
+
+        finally:
+            self._closer.close()
