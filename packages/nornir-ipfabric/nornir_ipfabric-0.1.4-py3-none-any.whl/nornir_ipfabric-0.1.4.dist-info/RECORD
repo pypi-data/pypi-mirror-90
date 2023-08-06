@@ -1,0 +1,10 @@
+nornir_ipfabric/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nornir_ipfabric/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nornir_ipfabric/plugins/inventory/__init__.py,sha256=IBiZbSs62b9XErVleBN8IgAr8qNOwpzHm-exrwPWpUQ,141
+nornir_ipfabric/plugins/inventory/ipfabric.py,sha256=CH8UcPXK8VWwua6rARDneVqlXT695CZGZRzBq_AyJEE,6788
+nornir_ipfabric-0.1.4.dist-info/LICENSE,sha256=SbvpEU5JIU3yzMMkyzrI0dGqHDoJR_lMKGdl6GZHsy4,11558
+nornir_ipfabric-0.1.4.dist-info/METADATA,sha256=Z6fEZQ0OqWYihYLTvnQ9nODWUZ9TBXkIP6f0bJTTOOo,3790
+nornir_ipfabric-0.1.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+nornir_ipfabric-0.1.4.dist-info/entry_points.txt,sha256=FEi8o5Zkc2oedAWxUmQlVjfVPr1UNezYNST3YHktbw8,105
+nornir_ipfabric-0.1.4.dist-info/top_level.txt,sha256=WWL_1eDVyILnpx0HnfvyRwS5P0wlq6Y-SEF3BOGZzqU,16
+nornir_ipfabric-0.1.4.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+
+    [nornir.plugins.inventory]
+    IPFabricInventory=nornir_ipfabric.plugins.inventory:IPFabricInventory
