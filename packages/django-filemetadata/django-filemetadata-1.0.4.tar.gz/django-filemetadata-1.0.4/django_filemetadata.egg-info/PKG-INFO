@@ -1,0 +1,141 @@
+Metadata-Version: 1.1
+Name: django-filemetadata
+Version: 1.0.4
+Summary: Synchronize the metadata from local files in the DB
+Home-page: https://gitlab.com/rristow/django-filemetadata
+Author: Rodrigo Ristow
+Author-email: rodrigo@maxttor.com
+License: BSD
+Description: ============================
+        DJango File Metadata indexer
+        ============================
+        
+        
+        Use this app to search for local files and index some metadata information and also the
+        content of the file (text) in the database (FileMetadata model).
+        Multiple directories can be configured to be indexed (settings.FILEMETADATA_LOOKUP_DIRS).
+        With the information registered in the DB it is possible to use the features of
+        django (filters, export, etc.) or other apps to manipulate the data.
+        This app can be used, for example, as a basis for implementing protected download pages or
+        for searching the content of files in the search tool.
+        
+        * Repository: https://gitlab.com/rristow/django-filemetadata
+        * License: BSD 2-Clause
+        
+        This version is supported on Python 3.6+; and Django 2.2+.
+        
+        
+        Installation
+        ============
+        
+        Install the package with pip:
+        
+        .. code-block:: sh
+        
+            $ pip install django-filemetadata
+        
+        Add the App in the ``INSTALLED_APPS``
+        
+        .. code-block:: python
+        
+            INSTALLED_APPS=(
+                "django-filemetadata",
+            ),
+        
+        
+        Execute makemigrations/migrate.
+        
+        
+        Configuration
+        =============
+        
+        Configure the directories to look for the files in the settings:
+        
+        | FILEMETADATA_LOOKUP_DIRS=['/folder1/folder2', '/folder3/folder4']
+        
+        
+        Utilization
+        ===========
+        
+        Index the data with the management command
+        
+        .. code-block:: sh
+        
+            usage:  filemetadata_index [-f FOLDERS] [-c] [-d] [-s] [-x] [-n] [-a]
+        
+            Update the the file-metadata found in the directories into the DB.
+        
+            optional arguments:
+              -f FOLDERS            Folder(s) to index (coma separated)
+              -c                    Clear the data before reindex
+              -d                    Delete only the data from these folders and exit
+              -s                    Index the symlinks (Do not follow it)
+              -x                    Extract the content of the file (text)
+              -n                    Non-reentrant mode (Not recursive)
+              -a                    Abort on errors
+        
+        e.g.
+        
+        Reindex the files configured in settings
+        
+        | python filemetadata_index
+        
+        or inform the directories
+        
+        | python filemetadata_index  -f /folder1/folder2,/folder3
+        
+        Or just delete the data from these folders (not recursive in this case):
+        
+        | python filemetadata_index -d -n -f /folder1/folder2,/folder3
+        
+        Go to Admin and check the data in the FileMetadata model.
+        
+        
+        Customization
+        =============
+        
+        Support for .pdf files
+        This app is compatible with the 'PyPDF4' library. If it is installed it can be used to
+        extract the content from pdf files if necessary.
+        
+        Custom extractor
+        It is possible to override the function that extracts the contents of the files by a
+        more specific one if necessary. To do this, overload the function 'func_extract_text'
+        in the indexer.py module
+        
+        .. code-block:: python
+        
+            from filemetadata import indexer
+        
+            def my_extractor(posixpath_obj):
+                ...
+                return file_content
+        
+            indexer.func_extract_text = my_extractor
+        
+        
+        or the extract_text method of the FileIndexer class
+        
+        .. code-block:: python
+        
+            from filemetadata.indexer import FileIndexer
+        
+            class MyFileIndexer(FileIndexer):
+              def extract_text(self, file_obj):
+                ...
+                return file_content
+        
+        
+        Tests
+        =====
+        
+        To run the tests
+        
+        .. code-block:: sh
+        
+            python load_tests.py
+Keywords: django file metadata
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
