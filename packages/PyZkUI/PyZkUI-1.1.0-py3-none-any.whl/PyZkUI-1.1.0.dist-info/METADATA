@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: PyZkUI
+Version: 1.1.0
+Summary: A Python Zookeeper UI.
+Home-page: https://github.com/Harpsichord1207/PyZkUI
+Author: Harpsichord
+Author-email: tliu1217@163.com
+License: MPL 2.0
+Keywords: Flask Zookeeper UI
+Platform: any
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: flask
+Requires-Dist: waitress
+Requires-Dist: kazoo
+
+# PyZkUI
+
+A Zookeeper UI tool, based on Python/Flask.
+
+
+### Installation
+
+- `pip install pyzkui`
+
+
+### Run
+
+- `PyZkServer`
+- `PyZkServer --host 127.0.0.1`
+- `PyZkServer --host 127.0.0.1 --port 8088`
+
+
