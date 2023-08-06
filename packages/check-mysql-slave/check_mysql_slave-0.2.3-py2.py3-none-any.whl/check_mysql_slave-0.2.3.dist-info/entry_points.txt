@@ -1,0 +1,3 @@
+[console_scripts]
+check_mysql_slave = check_mysql_slave:main
+
