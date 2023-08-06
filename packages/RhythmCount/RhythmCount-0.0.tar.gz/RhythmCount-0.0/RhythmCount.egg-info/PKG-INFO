@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: RhythmCount
+Version: 0.0
+Summary: Python package for cosinor based rhytmometry in count data
+Home-page: https://github.com/ninavelikajne/RhythmCount
+Author: Nina Velikajne, Miha Moškon
+Author-email: nv6920@studnet.uni-lj.si, miha.moskon@fri.uni-lj.si
+License: UNKNOWN
+Download-URL: https://github.com/ninavelikajne/RhythmCount/archive/v0.0.tar.gz
+Description: UNKNOWN
+Keywords: cosinor,rhytmometry,regression,count data
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
