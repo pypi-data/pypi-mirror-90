@@ -1,0 +1,9 @@
+
+        [ckan.plugins]
+        resource_indexer=ckanext.resource_indexer.plugin:ResourceIndexerPlugin
+        pdf_resource_indexer=ckanext.resource_indexer.plugin:PdfResourceIndexerPlugin
+        plain_resource_indexer=ckanext.resource_indexer.plugin:PlainResourceIndexerPlugin
+
+        [babel.extractors]
+        ckan = ckan.lib.extract:extract_ckan
+    
