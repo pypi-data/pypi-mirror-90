@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: joby-m-anthony-iii
+Version: 0.2
+Summary: Numerical methods/techniques.
+Home-page: https://github.com/jmanthony3/joby_m_anthony_iii.git
+Author: Joby M. Anthony III
+Author-email: jmanthony1@liberty.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# joby_m_anthony_iii
+Collection of Python packages/modules.
+
+
