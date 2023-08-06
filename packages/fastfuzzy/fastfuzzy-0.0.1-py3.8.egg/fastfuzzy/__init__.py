@@ -1,0 +1,1 @@
+from .fastfuzzy import QGramIndex

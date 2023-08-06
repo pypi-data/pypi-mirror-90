@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: fastfuzzy
+Version: 0.0.1
+Summary: Fast fuzzy string matching.
+Home-page: https://gitlab.com/carschno/fastfuzzy
+Author: Carsten Schnober
+Author-email: carschno@gmail.com
+License: UNKNOWN
+Description: # FastFuzzy
+        
+        A tool for fuzzy string matching and similarity measuring with constant lookup time.
+        
+        This package works by creating an inverted index from q-grams to tokens for a quick lookup.
+        It relies on the [abydos package](https://abydos.readthedocs.io/en/latest/index.html), 
+        providing a sheer endless amount of distance metrics.
+        
+        ## Installation
+        
+            python setup.py install
+        
+        ## Usage
+        
+        ### Create Index
+        
+            from fastfuzzy import QGramIndex
+        
+            tokens = ["word1", "word2"]
+            index = QGramIndex(okens=tokens, q=2)
+        
+        Or use the class methods to read the tokens from a file:
+        
+            with open("file.txt") as f:
+                index = QGramIndex.from_file(f)
+        
+        Or:
+        
+            index = QGramIndex.from_path("file.txt")
+        
+        In both cases, the input file is expected to be a list of tokens line by line.
+        
+        ### Query for most similar token
+        
+            index.max_sim("word1")
+            ("word1", 1.0)
+        
+        If no token in the index as any overlap with the input token, it returns `(None, 0.0)`.
+        ### Merge two indices:
+        
+            index1 = QGramIndex(tokens=["token1"])
+            index2 = QGramIndex(tokens=["token2"])
+            index3 = index1 + index2
+        
+        ### Alternative distance metrics
+        
+        By default, the index uses the standard [QGram distance metric](https://abydos.readthedocs.io/en/latest/abydos.distance.html#abydos.distance.QGram).
+        Alternatively, all other metrics defined in the [abydos distance package]([https://abydos.readthedocs.io/en/latest/abydos.distance.html) can be specified with the `cmp` argument:
+        
+            QGramIndex(tokens=[...], cmp=abydos.distance.PositionalQGramDice)
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7,<3.9
+Description-Content-Type: text/markdown
+Provides-Extra: test
