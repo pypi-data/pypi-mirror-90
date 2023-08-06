@@ -1,0 +1,7 @@
+Click
+SoundFile
+numpy
+wheel
+
+[:platform_system == "Windows"]
+windows-curses
