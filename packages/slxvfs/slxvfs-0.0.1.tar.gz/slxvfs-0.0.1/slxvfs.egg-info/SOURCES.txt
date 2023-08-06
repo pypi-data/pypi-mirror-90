@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+Sx.py
+__init__.py
+setup.py
+slxvfs.egg-info/PKG-INFO
+slxvfs.egg-info/SOURCES.txt
+slxvfs.egg-info/dependency_links.txt
+slxvfs.egg-info/top_level.txt
