@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pymaf
+Version: 0.3.0
+Summary: A toolbox for extracting signals from timeseries
+License: MIT
+Author: Matz Haugen
+Author-email: matzhaugen@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: numpy (>=1.19.4,<2.0.0)
+Requires-Dist: repos (>=0.0.1,<0.0.2)
