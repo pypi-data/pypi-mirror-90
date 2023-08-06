@@ -1,0 +1,3 @@
+[console_scripts]
+buck = buck.main:main
+
