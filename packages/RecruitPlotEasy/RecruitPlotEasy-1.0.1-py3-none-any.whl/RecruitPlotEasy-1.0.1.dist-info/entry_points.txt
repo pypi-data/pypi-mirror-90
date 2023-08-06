@@ -1,0 +1,14 @@
+[console_scripts]
+add_genes_to_db = RecruitPlotEasy.RecruitPlotEasy:add_genes_to_db
+add_sample = RecruitPlotEasy.RecruitPlotEasy:add_sample
+assess_MAGs = RecruitPlotEasy.RecruitPlotEasy:assess_MAGs
+assess_samples = RecruitPlotEasy.RecruitPlotEasy:assess_samples
+check_presence_of_genes = RecruitPlotEasy.RecruitPlotEasy:check_presence_of_genes
+detect_file_format = RecruitPlotEasy.RecruitPlotEasy:detect_file_format
+extract_MAG_for_R = RecruitPlotEasy.RecruitPlotEasy:extract_MAG_for_R
+extract_genes_MAG_for_R = RecruitPlotEasy.RecruitPlotEasy:extract_genes_MAG_for_R
+get_contig_names = RecruitPlotEasy.RecruitPlotEasy:get_contig_names
+get_sys = RecruitPlotEasy.RecruitPlotEasy:get_sys
+parse_to_mags_identical = RecruitPlotEasy.RecruitPlotEasy:parse_to_mags_identical
+sqldb_creation = RecruitPlotEasy.RecruitPlotEasy:sqldb_creation
+
