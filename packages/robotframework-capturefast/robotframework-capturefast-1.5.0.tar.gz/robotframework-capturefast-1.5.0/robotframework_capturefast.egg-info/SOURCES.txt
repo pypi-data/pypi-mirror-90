@@ -1,0 +1,8 @@
+CaptureFast.py
+README.md
+__init__.py
+setup.py
+robotframework_capturefast.egg-info/PKG-INFO
+robotframework_capturefast.egg-info/SOURCES.txt
+robotframework_capturefast.egg-info/dependency_links.txt
+robotframework_capturefast.egg-info/top_level.txt
