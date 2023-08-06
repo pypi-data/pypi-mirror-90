@@ -1,0 +1,10 @@
+twitch_chat_analyzer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+twitch_chat_analyzer/analyzer.py,sha256=S1pMMV6szhvY4h_OC2VXD8vHhb8hVe2UO_b4jqBp_PU,3084
+twitch_chat_analyzer/downloader.py,sha256=e4KlYCreRlra83V4WpQcXIFlPuOuVNgeFedvIuSu1pM,1903
+twitch_chat_analyzer/kraken.py,sha256=0DVVSJ7XpiYfM_DzPdLFzHJl8Hc8x-l_6Ib0eCfRcJQ,1395
+twitch_chat_analyzer/models.py,sha256=5pMv66CKIuxDiHkwM3TMRx6QCuX--lrixLJF9TRWEX8,1072
+twitch_chat_analyzer-0.0.1.dist-info/LICENSE,sha256=jE2wrJfRBuTLg2IurO9_w4R8MWobpeJzyNm0j0T1xRE,1087
+twitch_chat_analyzer-0.0.1.dist-info/METADATA,sha256=EIkXNRQtqwRfv1nUO7e9lVJg8y2Z3X7Aum4sJT_Bw3s,613
+twitch_chat_analyzer-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+twitch_chat_analyzer-0.0.1.dist-info/top_level.txt,sha256=SwM9tIMZZ7QeakT1MyrFyx3Jv_tfG5fdVwQx553kVTI,21
+twitch_chat_analyzer-0.0.1.dist-info/RECORD,,
