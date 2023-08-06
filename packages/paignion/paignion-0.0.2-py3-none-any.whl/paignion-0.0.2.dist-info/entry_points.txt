@@ -1,0 +1,3 @@
+[console_scripts]
+paignion = paignion.__main__:paignion_main_function
+
