@@ -1,0 +1,16 @@
+anyio~=2.0
+
+[:python_version < "3.7"]
+dataclasses
+
+[doc]
+sphinx_rtd_theme
+sphinx-autodoc-typehints>=1.2.0
+
+[test]
+aiosmtpd>=1.2
+coverage>=4.5
+curio>=1.2
+pytest>=6.0
+trio>=0.16
+trustme
