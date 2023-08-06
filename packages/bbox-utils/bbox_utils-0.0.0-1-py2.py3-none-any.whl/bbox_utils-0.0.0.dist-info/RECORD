@@ -1,0 +1,12 @@
+bbox_utils/__init__.py,sha256=iN9ajfJqW3EXt3Cvx0d4KQiUZxposiy-4UmybCDl0pA,435
+bbox_utils/bbox_2d.py,sha256=6Sf8Y1vjJYKrG1MgqX3TPPDDFo2mOwwSl1gFxsJ4UvY,3077
+bbox_utils/bbox_3d.py,sha256=Fo1QhIPWnZ6mWz-aNSTwPsHJYjp88SHavYBr54jRZhw,2205
+bbox_utils/bbox_utils.py,sha256=6Sf8Y1vjJYKrG1MgqX3TPPDDFo2mOwwSl1gFxsJ4UvY,3077
+bbox_utils/skeleton.py,sha256=qhqYzhb6_Bet-JEU6zmfKDKy-LIAcRJbcNhe4d_5EDo,2764
+bbox_utils/utils.py,sha256=K2lHKo6GweXky-3r6lYb3pdYTEsMf1EWOIkuD4RWCd4,2034
+bbox_utils-0.0.0.dist-info/AUTHORS.rst,sha256=B8fJL_1kRd7ixc66W42CjRbaortITHb74sPw9zJjVGI,78
+bbox_utils-0.0.0.dist-info/LICENSE.txt,sha256=rjnnN5maf-WVscNOFSvzZYPGp8E58ETbO13ekZ5mmOU,1078
+bbox_utils-0.0.0.dist-info/METADATA,sha256=NV3-p2T9Gz6nFTel13CSU_OMoPcDoU87pIexP6jKOQA,1611
+bbox_utils-0.0.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+bbox_utils-0.0.0.dist-info/top_level.txt,sha256=N34OnYRjF0Dk0e6RKtsgNlsseqytjEwgzZBZ_9yKxlI,11
+bbox_utils-0.0.0.dist-info/RECORD,,
