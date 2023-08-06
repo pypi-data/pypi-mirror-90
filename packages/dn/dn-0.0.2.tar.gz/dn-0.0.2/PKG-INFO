@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dn
+Version: 0.0.2
+Summary: Shapley value analysis
+Home-page: https://github.com/thorwhalen/ut/tree/master/stats/bin_est/shapley.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # dn
+        Shapley value analysis
+        
+        
+        To install:	```pip install dn```
+        
+Platform: any
+Description-Content-Type: text/markdown
