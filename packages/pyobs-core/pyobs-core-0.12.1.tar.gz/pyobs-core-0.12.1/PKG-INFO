@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pyobs-core
+Version: 0.12.1
+Summary: robotic telescope software
+Home-page: UNKNOWN
+Author: Tim-Oliver Husser
+Author-email: thusser@uni-goettingen.de
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.7
+Provides-Extra: full
