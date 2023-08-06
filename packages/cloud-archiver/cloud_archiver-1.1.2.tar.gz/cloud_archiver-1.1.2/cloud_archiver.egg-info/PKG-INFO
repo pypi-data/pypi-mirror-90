@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cloud-archiver
+Version: 1.1.2
+Summary: A script to detect and archive old folders and files in a directory.
+Home-page: https://github.com/pixegami/cloud-archiver
+Author: Pixegami
+Author-email: pixegami@gmail.com
+License: UNKNOWN
+Description: # Hello World
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
