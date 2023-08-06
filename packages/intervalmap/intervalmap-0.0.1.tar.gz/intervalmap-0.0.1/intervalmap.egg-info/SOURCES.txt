@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+examples/Examples.ipynb
+intervalmap/PlotIntervalMap.py
+intervalmap/__init__.py
+intervalmap.egg-info/PKG-INFO
+intervalmap.egg-info/SOURCES.txt
+intervalmap.egg-info/dependency_links.txt
+intervalmap.egg-info/top_level.txt
+tests/test_intervalmap.py
