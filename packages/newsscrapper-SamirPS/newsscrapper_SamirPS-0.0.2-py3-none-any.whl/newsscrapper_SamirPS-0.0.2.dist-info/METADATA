@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: newsscrapper-SamirPS
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/SamirPS/News-Scrapper
+Author: SamirPS
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# News-Scrapper
+Web Scrapper for  news website get the headlines : https://pypi.org/project/newsscrapper-SamirPS/0.0.1/
+
+To import the function :
+## FR:
+```python
+from newsscrapper import fr
+```
+* LeMonde : fr.MondeSC()
+* LeParisien: fr.ParisSC()
+* MediaPart: fr.MediaPartSC()
+* BFMTV : fr.BmftvSC()
+* Libération : fr.LibeSC()
+* FranceTv INFO : fr.LibeSC()
+
+
+## EN:
+```python
+from newsscrapper import en
+```
+* CNN :  en.CNNSC()
+* FoxNews: en.FoxNewsSC()
+* AbcNews: en.ABCNewsSC()
+* TheGuardian : en.TheGuardianSC()
+
+The function return  a dict like {"1":{"link":X,"img":Y}}
+
+
