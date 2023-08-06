@@ -1,0 +1,6 @@
+numpy
+tqdm
+appdirs
+torch>=1
+pySmartDL
+torchtext
