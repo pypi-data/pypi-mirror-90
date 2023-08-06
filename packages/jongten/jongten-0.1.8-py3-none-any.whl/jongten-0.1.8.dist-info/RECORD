@@ -1,0 +1,10 @@
+jongten/__init__.py,sha256=thiQ24_r-qXKmKLvrgXNTSgF6vG12e1U8lp70OWY3-Q,2402
+jongten/__main__.py,sha256=CvNzFepgCoingJCoI__8EArulpnfKTCYWWjxCTPSi9s,67
+jongten/jongten.py,sha256=zlbrBZpt8T3_oQPrnZB8zXEoqSuoRU-MfhuGri8Nenw,2403
+jongten/question.py,sha256=sZpVL5zsjN_-0bzCxI6gp92YI1X7vTciwL0OkO08blw,596
+jongten/questions.py,sha256=5GS03Y4sQSIIk9vU7EimN2IllLKKCMe7W-DWgoEEOrM,631
+jongten/util.py,sha256=GmNHtzL0pUmXGDwHA3bo0ltc3oyaEj4S_WRt_Hpa7JU,282
+jongten-0.1.8.dist-info/entry_points.txt,sha256=ZdBq-GdDGcBe8mnwKiRsnDx4TyKFTO2R7i4RxKkMUM8,40
+jongten-0.1.8.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+jongten-0.1.8.dist-info/METADATA,sha256=SQRVit-xpFPdN0U7UgKUrVFenKYKHLE_GtyM98eo034,1361
+jongten-0.1.8.dist-info/RECORD,,
