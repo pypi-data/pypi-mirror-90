@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+import nexpose.nexpose as nexpose
+import nexpose.args as nexposeargs
+
+def main():
+    """
+    Parse arguments
+    """
+    parser = nexposeargs.parser
+    parser.description = "Get Nexpose engine pools."
+    args = parser.parse_args()
+
+    config = nexpose.config(args)
+    engine_pools = nexpose.engine_pools(nlogin=config)
+
+    print(engine_pools)
+
+
+if __name__ == "__main__":
+    main()

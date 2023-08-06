@@ -1,0 +1,4 @@
+configargparse
+requests>=2.6.0
+urllib3>=1.10.0
+wheel
