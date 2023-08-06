@@ -1,0 +1,12 @@
+README.md
+setup.py
+flatland/__init__.py
+flatland/__main__.py
+flatland/xUML/XumlClassDiagram.py
+flatland/xUML/__init__.py
+flatland_model_diagram_editor.egg-info/PKG-INFO
+flatland_model_diagram_editor.egg-info/SOURCES.txt
+flatland_model_diagram_editor.egg-info/dependency_links.txt
+flatland_model_diagram_editor.egg-info/entry_points.txt
+flatland_model_diagram_editor.egg-info/requires.txt
+flatland_model_diagram_editor.egg-info/top_level.txt
