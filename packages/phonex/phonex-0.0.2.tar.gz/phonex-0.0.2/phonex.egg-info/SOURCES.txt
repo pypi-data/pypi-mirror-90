@@ -1,0 +1,8 @@
+README.md
+setup.py
+phonex/__init__.py
+phonex.egg-info/PKG-INFO
+phonex.egg-info/SOURCES.txt
+phonex.egg-info/dependency_links.txt
+phonex.egg-info/not-zip-safe
+phonex.egg-info/top_level.txt
