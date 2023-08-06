@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: python-streak
+Version: 0.0.1
+Summary: CLI to create github streaks.
+Home-page: https://github.com/venthur/streak
+Author: Bastian Venthur
+Author-email: mail@venthur.de
+License: MIT
+Keywords: streak cli git
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
