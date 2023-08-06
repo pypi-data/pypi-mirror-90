@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: uy
+Version: 0.0.2
+Summary: Based on https://github.com/pbharrin/machinelearninginaction/blob/master/Ch12/fpGrowth.py
+Home-page: https://github.com/thorwhalen/ut/tree/master/ml/association/fptree_harrington.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# uy
+Based on https://github.com/pbharrin/machinelearninginaction/blob/master/Ch12/fpGrowth.py
+
+
+To install:	```pip install uy```
+
+
