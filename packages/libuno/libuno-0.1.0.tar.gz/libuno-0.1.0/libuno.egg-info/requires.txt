@@ -1,0 +1,14 @@
+Jinja2
+cherrypy
+docker
+importlib-resources
+lockfile
+matplotlib
+netifaces
+networkx
+python-daemon
+python-gnupg
+pyyaml>=5.1
+sh
+shyaml
+termcolor
