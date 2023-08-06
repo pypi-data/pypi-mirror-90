@@ -1,0 +1,17 @@
+spider/__init__.py,sha256=wgiLA5GU4eaBqAa3SnSuDHn2KCyUBq_otIh5J6ADdGk,167
+spider/cache.py,sha256=mMTDEfiohmkP60ZaO8ySpwV8L-kgGC8BXfceuXzlPEQ,9079
+spider/gerneric/__init__.py,sha256=O6zWphJwkE9etsudo1jlUJduHVcpi-12kNMymbuvyMw,64
+spider/gerneric/proxy.py,sha256=gKSbysLqGHNHUdoChz8m_FHm9fiyFzgYZOHWsHuiXgo,4263
+spider/item.py,sha256=oar0HU0e8eW2cc5XNDk_hvgF3Bq_y3YsG2oKEeperxk,4418
+spider/spider.py,sha256=qTegnJA1PyObI2qNgNnyAVWrfe2Yx0EqApcmqEFI7d4,19280
+spider/template.py,sha256=pGreSPVNpRotKV92umBAqGzQj9c9kIkqQHfW1iruPMI,373
+spider/templates/general_template.py,sha256=_ZtxK73mWgZZ8e9z4tLkqlooPbOn5kLu44fpnajRdQ8,553
+spider/utils/__init__.py,sha256=vc9tsM-4CkYfARY3WICg1AU0fUiLDTiQBoJC3AHjnxE,106
+spider/utils/parse/__init__.py,sha256=1oqmkJCSFwaLck7Abp3Qqwg-XfBap6p-9ksk6GVihig,84
+spider/utils/parse/html2text.py,sha256=rNwJs752EyW0oK3Xg7u2RglzUiWWMIM3-el3fGq0GCY,33698
+spider/utils/parse/parse.py,sha256=PyVu5_-Dpzl6R8tRUpWcNIgRX0XO7ZW5CC37UdAMA1I,1202
+spider/utils/utils.py,sha256=dYYgO48NVWx-QZ8Z7Z2ygzdqAUNPMvut288cjQdxwwY,1343
+lazy_spider-0.1.5.dist-info/LICENSE,sha256=26iObHnexgPWzqFYbxTbl2_fpWRGSSamg3Nw41VIPtc,1086
+lazy_spider-0.1.5.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+lazy_spider-0.1.5.dist-info/METADATA,sha256=T0nl27FDgAZ0irOO-Xa3Woo74e7prpfCEPKfGF_4TU8,587
+lazy_spider-0.1.5.dist-info/RECORD,,
