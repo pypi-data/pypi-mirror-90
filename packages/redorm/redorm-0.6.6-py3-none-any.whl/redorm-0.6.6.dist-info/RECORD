@@ -1,0 +1,10 @@
+redorm/__init__.py,sha256=Dq-V7GaiTAHJkx98bpAsudhBWBNKmwQ6VV0FwSaXUK4,300
+redorm/client.py,sha256=0p9qj2YwqOfZmEMix7y-nwqqPNEac30GtrhxMqK7QxE,1794
+redorm/exceptions.py,sha256=UG2SFo8ulDtieg7jmAPNkG5IpPr9FG5xLASxMhCaWyE,391
+redorm/model.py,sha256=BfswJJl8fbYqIbQy4yvSlNPTBA61a46hgk4Ych2sVvo,15949
+redorm/relationships.py,sha256=edCkP4uNscGxF3b5cctJxcB59Cj6f1FUNoyy3cwaY3k,8652
+redorm/settings.py,sha256=5XWTkfMXYxipna6CBKxHUEbYtOO1rvTsoW1fAeMYOMs,100
+redorm/types.py,sha256=8B82p-BDcoRCKXxjkRg1AEwe74I7Jy7C_IEitAU6cNk,1262
+redorm-0.6.6.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+redorm-0.6.6.dist-info/METADATA,sha256=USP8RV5msDkIk1H8w-5GGOqysiHwsQXmHJXocqwb-Bw,873
+redorm-0.6.6.dist-info/RECORD,,
