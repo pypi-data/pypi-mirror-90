@@ -1,0 +1,12 @@
+unix_cred/__init__.py,sha256=2PC8KuaoABYdYeTKAFcljaOmmGIJTqeri8b61ndLbaE,2671
+unix_cred/constants.py,sha256=t1u8sfha9mnDX26QV5WbOxWIcFG4wz48bt8i02_nYQc,185
+unix_cred/ffi.py,sha256=XKI09wo2Y_Q62QgVU-OeO7lmygVjhzthImf7jkjYwNc,382
+unix_cred/peerucred.py,sha256=LQ8Zn4eSAiCpQFA6Xbp5hg6KQ50sSFiFRMDT1T0d20Q,3161
+unix_cred/ucred.py,sha256=xRULwroHZx5GTbekuQhPk-lmFwFgKV-ivrFF0Xgb8sI,1137
+unix_cred/util.py,sha256=7idj_K08MbcX6KpyKgDMDf4YDmnUVTNdgfCyoyuomh0,797
+unix_cred/xucred.py,sha256=uNSZkKUn_QL60fy4ajA2eZ6b7oXgN6LfEQOEk4qvohk,2210
+unix_cred-0.2.1.dist-info/LICENSE,sha256=mLuUeePeNZEn54E3hdM-wioJPlmwix4hbEvaLrjqmOI,1064
+unix_cred-0.2.1.dist-info/METADATA,sha256=KIsnIY5-LvqEbDXCcI6nnmnVpP6sBnSL12-ojNXg5iM,2901
+unix_cred-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+unix_cred-0.2.1.dist-info/top_level.txt,sha256=ZaUrgX5naiemcHoHvFFMluazgT1ImFAZ5BNs54oFGSw,10
+unix_cred-0.2.1.dist-info/RECORD,,
