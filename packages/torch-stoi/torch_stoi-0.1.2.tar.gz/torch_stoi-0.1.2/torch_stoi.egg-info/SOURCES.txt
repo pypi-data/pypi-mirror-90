@@ -1,0 +1,9 @@
+README.md
+setup.py
+torch_stoi/__init__.py
+torch_stoi/stoi.py
+torch_stoi.egg-info/PKG-INFO
+torch_stoi.egg-info/SOURCES.txt
+torch_stoi.egg-info/dependency_links.txt
+torch_stoi.egg-info/requires.txt
+torch_stoi.egg-info/top_level.txt
