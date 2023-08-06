@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "dataknead"
+version = "0.4.0"
+description = "Fluent conversion between data formats like JSON, XML and CSV"
+authors = ["Hay Kranen"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/hay/dataknead"
+homepage = "https://hay.github.io/dataknead/"
+keywords = ["data", "json", "csv", "datascience", "conversion"]
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+toml = "^0.10.2"
+xmltodict = "^0.12.0"
+openpyxl = "^3.0.5"
+
+[tool.poetry.dev-dependencies]
+jq = "^1.1.1"
+PyYAML = "^5.3.1"
+
+[tool.poetry.scripts]
+knead = "dataknead.console:run"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
