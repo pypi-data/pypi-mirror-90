@@ -1,0 +1,10 @@
+klayout==0.26.*
+liberty-parser==0.0.8
+librecell-common==0.0.7
+networkx==2.5
+numpy==1.*
+pysmt==0.9.*
+pyspice==1.4.3
+scipy>=1.5.*
+toml==0.10.*
+z3-solver==4.8.*
