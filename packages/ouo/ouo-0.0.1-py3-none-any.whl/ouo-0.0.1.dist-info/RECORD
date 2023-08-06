@@ -1,0 +1,11 @@
+ouo/__init__.py,sha256=DZzEMr81t7pxyNbGYl5m0XpoDefWIkLfRNJ9ue1Gu7Q,618
+ouo/__main__.py,sha256=nWBEJxWXE9Y2n5D1A8XgIFUZtP3REbU9_44uaPwM9Wk,369
+ouo/_fetch.py,sha256=ODQn7nLMLXy7w0Kt6lLlrW7FBO87qmkO-6w4Kg3FNuI,4136
+ouo/_meta.py,sha256=WYl7PgC7YMj497o80UpSkt0X5lXFbF1WTXWGjzT8Xxk,1102
+ouo/_proc.py,sha256=8279Uasi1p3iKmJPH6eBeRy2E3EWP3mox3g_1zKckd0,1188
+ouo/_utils.py,sha256=HLQWJbxcHBaHwOuCv3jLLf71x0Gt2y-8L2cLe2Jw3bo,298
+ouo-0.0.1.dist-info/entry_points.txt,sha256=anQkc2qSAtrEqi2sqAmq_uckchlNpDOST2XuRp_QRbg,33
+ouo-0.0.1.dist-info/LICENSE,sha256=lnW9X2qsSU2rNpX_iS5ks4tYpNjYTASkpzB0GUBHDgo,727
+ouo-0.0.1.dist-info/WHEEL,sha256=GLESb-AiO9TFjbXrEA7UrNl4dwWlkXoKZg6N6Vg0OJg,81
+ouo-0.0.1.dist-info/METADATA,sha256=mzyNWCsUnRIK5YH0_wxSyHJeAkyg4O-KbjZEuCbHLUc,1886
+ouo-0.0.1.dist-info/RECORD,,
