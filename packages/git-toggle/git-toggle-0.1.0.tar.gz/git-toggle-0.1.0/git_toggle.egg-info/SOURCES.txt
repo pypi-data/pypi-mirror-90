@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+__pkginfo__.py
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+git_toggle/__init__.py
+git_toggle/__main__.py
+git_toggle.egg-info/PKG-INFO
+git_toggle.egg-info/SOURCES.txt
+git_toggle.egg-info/dependency_links.txt
+git_toggle.egg-info/entry_points.txt
+git_toggle.egg-info/not-zip-safe
+git_toggle.egg-info/requires.txt
+git_toggle.egg-info/top_level.txt
