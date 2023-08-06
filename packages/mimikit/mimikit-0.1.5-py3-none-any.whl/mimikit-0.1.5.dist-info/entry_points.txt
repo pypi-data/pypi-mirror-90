@@ -1,0 +1,3 @@
+[console_scripts]
+freqnet-db = mimikit.freqnet.freqnet_db:main
+
