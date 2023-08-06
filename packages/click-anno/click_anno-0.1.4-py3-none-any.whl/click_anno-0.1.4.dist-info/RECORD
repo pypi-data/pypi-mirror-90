@@ -1,0 +1,11 @@
+click_anno/__init__.py,sha256=eTmr5z-5DRErOh1QhBwWNhVNOHrZzQsJtfl7etBtt5U,260
+click_anno/core.py,sha256=oxJsR2w5Xum6OLZnW-8QjsCOdWZtDgJ3QGdvg-ZDLP8,16902
+click_anno/injectors.py,sha256=kiuSbhMyllz2Qry2-hB2vgFTtx92cTcLySe2yEhrGnQ,2325
+click_anno/snake_case.py,sha256=M_oiC72SoEylujHVtMVooYHg8rnTzvluuKB2Q3ZWqWk,459
+click_anno/types.py,sha256=2HrdXku5pZvd8nb2nWHc-EcNkHjiAU0Glx7Vgu__ErI,1338
+click_anno/utils.py,sha256=h-t7_uxt9pyDxh8lQWjobwCVhN9mi9_Dl0X2ybiSlQY,697
+click_anno-0.1.4.dist-info/LICENSE,sha256=rvq8jxw-s59rPYJSZFUEz8PmOaNk-3nuxhMsIHf1YY8,1064
+click_anno-0.1.4.dist-info/METADATA,sha256=GER77w4fZiAo76C97wPxl-gBO8ijFGWsYnof6agped0,5487
+click_anno-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+click_anno-0.1.4.dist-info/top_level.txt,sha256=ACFgWjwn_VuXtsA8dbDUhB0ix53lOeaVCcC4GHp8VxA,11
+click_anno-0.1.4.dist-info/RECORD,,
