@@ -1,0 +1,4 @@
+include LICENSE.txt
+include reame.md
+recursive-include gas/static *
+recursive-include gas/templates *

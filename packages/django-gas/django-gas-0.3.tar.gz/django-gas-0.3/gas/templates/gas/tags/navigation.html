@@ -1,0 +1,18 @@
+{% load gas_tags %}
+
+{% for entry in menu %}
+    <li>
+        {% if entry.url %}
+            <a href="{% url entry.url %}">{{ entry.label }}</a>
+        {% else %}
+            {{ entry.label }}
+        {% endif %}
+        {% with children=entry|get_children:user_roles %}
+        {% if children %}
+            <ul>
+                {% include "gas/tags/navigation.html" with menu=children %}
+            </ul>
+        {% endif %}
+        {% endwith %}
+    </li>
+{% endfor %}

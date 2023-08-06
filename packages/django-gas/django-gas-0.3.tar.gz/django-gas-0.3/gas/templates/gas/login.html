@@ -1,0 +1,18 @@
+{% load i18n static form_tags %}<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{{ gas_title }} {% trans "Login" %}</title>
+        <link href="{% static "gas/css/gas.css" %}" rel="stylesheet" type="text/css" />
+    </head>
+    <body id="login">
+        <form action="." method="POST">{% csrf_token %}
+            {% form_errors form %}
+            {% form_field form.username %}
+            {% form_field form.password %}
+            <input type="hidden" name="next" value="{{ next }}">
+            <button type="submit">{% trans "Login" %}</button>
+        </form>
+    </body>
+</html>
