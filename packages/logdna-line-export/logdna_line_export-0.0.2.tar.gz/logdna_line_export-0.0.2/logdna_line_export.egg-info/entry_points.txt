@@ -1,0 +1,3 @@
+[console_scripts]
+logdna_line_export = logdna_line_export.main:entry
+
