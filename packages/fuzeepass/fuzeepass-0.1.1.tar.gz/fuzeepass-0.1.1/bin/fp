@@ -1,0 +1,94 @@
+#!/usr/bin/env bash
+
+function show_usage() {
+  cat <<EOF
+Usage: $0 [DB_FILE]
+DB_FILE is the path of a keepass(x) database,
+  fallback to FUZEEPASS_DB env if DB_FILE is not specified.
+Optional to pre-set FUZEEPASS_KEY env to use as a key-file.
+EOF
+}
+
+[ $# -gt 1 ] && show_usage && exit 128
+[ "$1" == "-h" ] || [ "$1" == "--help" ] && show_usage && exit 0
+
+[ -n "$1" ] && export FUZEEPASS_DB="$1"
+read -r -s -p "Password: " password
+
+# FP config
+FP_FILE=/tmp/fp_file.txt
+FP_MODE=/tmp/fp_mode.txt
+if [ -z "$FP_COPY" ]
+then
+  # auto detect clipboard copy program
+  xcopy=$(which xsel 2>/dev/null || which xclip 2>/dev/null || which pbcopy 2>/dev/null)
+  FP_COPY=$(echo "$xcopy" | sed -e 's#/xclip$#/xclip -in -selection clipboard#' -e 's#/xsel#/xsel --clipboard#')
+fi
+
+# headers / screens
+HEADER_MAIN="[Main] Press Ctrl-y to copy password into clipboard"
+HEADER_UPDATE="[Update] entry or group"
+HEADER_CREATE="[Create] entry or group"
+HEADER_DELETE="[Delete] Type \'yes\' to confirm"
+
+# fpassx commands
+FPASSX_CMD="echo \"$password\" | fpassx.py"
+LS_CMD="echo $HEADER_MAIN; $FPASSX_CMD ls"
+SHOW_URI_CMD="$FPASSX_CMD show --uri {}"
+SHOW_URI_WITH_PASSWORD_CMD="$SHOW_URI_CMD +p"
+SHOW_ONLY_PASSWORD_CMD="$SHOW_URI_CMD -op"
+UPDATE_ENTRY_CMD="$FPASSX_CMD update-entry --uri"
+UPDATE_GROUP_CMD="$FPASSX_CMD update-group --uri"
+CREATE_ENTRY_CMD="$FPASSX_CMD create-entry --group-uri"
+CREATE_GROUP_CMD="$FPASSX_CMD create-group --group-uri"
+DELETE_CMD="$FPASSX_CMD delete --uri"
+
+# reset fp files
+>$FP_FILE
+>$FP_MODE
+
+
+# actions
+reload_chain="reload($LS_CMD; >$FP_FILE; >$FP_MODE)+unix-line-discard"
+reload_action="ctrl-r:$reload_chain,esc:$reload_chain"
+show_password_action="ctrl-p:preview:$SHOW_URI_WITH_PASSWORD_CMD"
+copy_chain="preview(echo copying password for {} into clipboard)+execute-silent($SHOW_ONLY_PASSWORD_CMD | $FP_COPY)+refresh-preview"
+copy_action="ctrl-y:$copy_chain"
+update_action="ctrl-u:reload(echo $HEADER_UPDATE; cat {+f}; cp {f} $FP_FILE; echo U > $FP_MODE)+unix-line-discard"
+create_action="ctrl-c:reload(echo $HEADER_CREATE; cat {+f}; cp {f} $FP_FILE; echo C > $FP_MODE)+unix-line-discard"
+delete_action="ctrl-d:reload(echo $HEADER_DELETE; cat {+f}; cp {f} $FP_FILE; echo D > $FP_MODE)+unix-line-discard"
+
+enter_update="if [[ \$uri == e:* ]];
+then eval \"$UPDATE_ENTRY_CMD \$uri \$query\";
+elif [[ \$uri == g:* ]];
+then eval \"$UPDATE_GROUP_CMD \$uri \$query\";
+fi"
+enter_create="group_uri=\`echo \$uri | sed -e 's#[^/]*\$##' -e 's#^e:#g:#'\`;
+cmd=\`echo {q} | sed -e 's#^e:##' -e 's#^g:##'\`;
+if [[ {q} == g:* ]];
+then eval \"$CREATE_GROUP_CMD \$group_uri \$cmd\";
+else eval \"$CREATE_ENTRY_CMD \$group_uri \$cmd\";
+fi"
+enter_delete="if [[ {q} == 'yes' ]];
+then echo deleting \$uri; echo \"$DELETE_CMD \$uri\";
+fi"
+enter_chain="execute-silent(query={q};
+uri=\`cat $FP_FILE\`;
+mode=\`cat $FP_MODE\`;
+case \$mode in
+U) echo updating \$uri; $enter_update; ;;
+C) echo creating; $enter_create; ;;
+D) $enter_delete; ;;
+*) echo > /dev/null; ;;
+esac)"
+enter_action="enter:$enter_chain"
+
+eval "$LS_CMD" | fzf --reverse --header-lines=1 --keep-right \
+--preview "$SHOW_URI_CMD" \
+--bind "$reload_action" \
+--bind "$show_password_action" \
+--bind "$copy_action" \
+--bind "$update_action" \
+--bind "$create_action" \
+--bind "$delete_action" \
+--bind "$enter_action"
