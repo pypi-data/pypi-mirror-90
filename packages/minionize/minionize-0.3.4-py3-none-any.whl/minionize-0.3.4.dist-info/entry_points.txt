@@ -1,0 +1,4 @@
+[console_scripts]
+minion-status=minionize.cli:status
+minionize=minionize.cli:run
+
