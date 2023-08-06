@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gym-vim
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: gym
+Requires-Dist: numpy
+Requires-Dist: pynvim
+Requires-Dist: sklearn
+
+UNKNOWN
+
+
