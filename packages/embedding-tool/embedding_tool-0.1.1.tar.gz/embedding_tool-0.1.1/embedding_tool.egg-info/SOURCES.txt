@@ -1,0 +1,15 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+embedding_tool/__init__.py
+embedding_tool/_nbdev.py
+embedding_tool/core.py
+embedding_tool.egg-info/PKG-INFO
+embedding_tool.egg-info/SOURCES.txt
+embedding_tool.egg-info/dependency_links.txt
+embedding_tool.egg-info/entry_points.txt
+embedding_tool.egg-info/not-zip-safe
+embedding_tool.egg-info/top_level.txt
