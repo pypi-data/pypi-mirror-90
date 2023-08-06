@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: colored-print
+Version: 0.0.1
+Summary: Output color messages to the terminal
+Home-page: https://github.com/TheSimonSays/c_print
+Author: Miker
+Author-email: migruzdev@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/TheSimonSays/c_print/
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Environment :: Console
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
