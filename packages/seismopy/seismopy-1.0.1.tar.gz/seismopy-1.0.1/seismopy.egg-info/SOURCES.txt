@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+seismopy.egg-info/PKG-INFO
+seismopy.egg-info/SOURCES.txt
+seismopy.egg-info/dependency_links.txt
+seismopy.egg-info/top_level.txt
+square/__init__.py
+square/__main__.py
