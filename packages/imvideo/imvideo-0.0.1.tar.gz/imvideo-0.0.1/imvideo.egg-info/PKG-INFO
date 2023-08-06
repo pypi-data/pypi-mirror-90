@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: imvideo
+Version: 0.0.1
+Summary: Imvideo: Image to video made easy. Powered by OpenCV.
+Home-page: https://xli2522.github.io/imvideo/
+Author: Xiyuan Li
+Author-email: xli2522@uwo.ca
+License: UNKNOWN
+Description: # imvideo
+        Construct your time-lapse video directly from (1) a camera-generated image folder; (2) your Matplotlib loop.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
