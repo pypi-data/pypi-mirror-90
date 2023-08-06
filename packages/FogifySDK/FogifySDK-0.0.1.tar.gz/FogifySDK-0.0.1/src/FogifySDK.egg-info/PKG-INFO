@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: FogifySDK
+Version: 0.0.1
+Summary: The fogify's SDK library
+Home-page: UNKNOWN
+Author: Moysis Symeonides
+Author-email: symeonidis.moysis@cs.ucy.ac.cy
+License: UNKNOWN
+Description: # Fogify SDK
+        
+        The fogify's SDK library
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
