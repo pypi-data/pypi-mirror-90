@@ -1,0 +1,10 @@
+README.md
+setup.py
+test/test.py
+tf2show/__init__.py
+tf2show/tf2show.py
+tf2show.egg-info/PKG-INFO
+tf2show.egg-info/SOURCES.txt
+tf2show.egg-info/dependency_links.txt
+tf2show.egg-info/requires.txt
+tf2show.egg-info/top_level.txt
