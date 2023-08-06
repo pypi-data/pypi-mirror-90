@@ -1,0 +1,3 @@
+[console_scripts]
+m3uragen = m3uragen.main:main
+
