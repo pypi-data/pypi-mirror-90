@@ -1,0 +1,17 @@
+generalpackager/__init__.py,sha256=LqgaEGI3vuS13HL98od49xDSMlib_sV2-aiVF1RWt4E,253
+generalpackager/metadata.py,sha256=U0DDw0jHc8zo5XH1x518XEPqo5dPM34Y_hvt3mBkwSY,593
+generalpackager/packager.py,sha256=qaaQCEFCKG4ujxf1rFwL1870LmubgeiaPAbqDMJ1_UM,2206
+generalpackager/packager_files.py,sha256=AOFD3obq8uaas4yc8RO0qlAiauS4vpLvP4euj_rsPIE,2973
+generalpackager/packager_github.py,sha256=be570imd9LPmWTlqsrgv23FHjnf1H2M3FeOpdfxRk08,361
+generalpackager/packager_markdown.py,sha256=ENYag3SlzIOJZt1ik5yC94ntHm70pt_Wx3tCE1pEvS4,5325
+generalpackager/packager_metadata.py,sha256=uCZ_VyWBKTv9i_NatlVFON6AIRNGAP_T5Ae5F5IlobQ,2156
+generalpackager/packager_pypi.py,sha256=O8UNIe4GYdunfJLIgg-L73vdFXlD7aMqzgXJzszol78,584
+generalpackager/api/github.py,sha256=E7LYwB7vYNtrPdCPUZiL-xlEgh689NSBneHYWm-RhA0,2730
+generalpackager/api/local_module.py,sha256=YzPOMga1Gdkq6fxtcjLPxq73hEVOejyQyA4npIivEVg,772
+generalpackager/api/local_repo.py,sha256=OROP7oCOfUjbU80FBTrdZOe6udavhQqMX7DuQgdXtbw,3821
+generalpackager/api/pypi.py,sha256=M5FUoeaDpeyNBJeat3RrmHB2ctK79sxiziQCn9v4zjc,220
+generalpackager-0.0.3.dist-info/LICENSE,sha256=0YPm6Cj_JsrFfp7WFWiF5PpNkEqlBUxjeX1Zy34jETQ,1093
+generalpackager-0.0.3.dist-info/METADATA,sha256=_oXW-LtdCQ8Az9Day3OmUlIt4oDaqPdBYKGH0ZYMlGE,9479
+generalpackager-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+generalpackager-0.0.3.dist-info/top_level.txt,sha256=IUThKTaP8Z2sds-HbQMneJ4sYsRNzrfZUxj6rj_NF4c,16
+generalpackager-0.0.3.dist-info/RECORD,,
