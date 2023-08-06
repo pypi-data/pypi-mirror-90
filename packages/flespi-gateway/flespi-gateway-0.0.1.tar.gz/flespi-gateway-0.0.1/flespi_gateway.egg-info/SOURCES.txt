@@ -1,0 +1,10 @@
+README.md
+setup.py
+flespi_gateway/__init__.py
+flespi_gateway/device.py
+flespi_gateway/utils.py
+flespi_gateway.egg-info/PKG-INFO
+flespi_gateway.egg-info/SOURCES.txt
+flespi_gateway.egg-info/dependency_links.txt
+flespi_gateway.egg-info/not-zip-safe
+flespi_gateway.egg-info/top_level.txt
