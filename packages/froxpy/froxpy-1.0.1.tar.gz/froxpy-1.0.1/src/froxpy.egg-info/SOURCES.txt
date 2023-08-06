@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/froxpy.py
+src/froxpy.egg-info/PKG-INFO
+src/froxpy.egg-info/SOURCES.txt
+src/froxpy.egg-info/dependency_links.txt
+src/froxpy.egg-info/requires.txt
+src/froxpy.egg-info/top_level.txt
+tests/froxpy_test.py
