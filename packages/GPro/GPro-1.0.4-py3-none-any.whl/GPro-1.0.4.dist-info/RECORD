@@ -1,0 +1,13 @@
+GPro/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+GPro/acquisitions.py,sha256=DLq4Jxl2rOoWFRS6Aj_8gDpS2ebmF1tpEair1CbMicA,2869
+GPro/del.py,sha256=TKXBzIzBS0vjQgguc5mYYJO2uwQcLneQLo0eq2pegLI,3648
+GPro/kernels.py,sha256=J-P2SJo6-2RsGqLrnTQrG0Rn7kHMjlICrv2nw7Gi2L0,7679
+GPro/optimization.py,sha256=yDUSwTat8-Q2nrmz0OsxtIK5goeA_VJ-mGxPbeWdpEw,13165
+GPro/posterior.py,sha256=M6-N-a2YaO56MitCZ2Ir4Z2jupN-z-5RCL3QWFPVCns,6236
+GPro/preference.py,sha256=VryRZlwdjzTaHQCw5VZoHSay2isfMaH9JBmh97Uib00,13742
+GPro/validations.py,sha256=DiIxRrDVoUZRkrEsCU2KCUvZIO1q_wu9iWE-PczbXDk,6803
+GPro-1.0.4.dist-info/LICENSE,sha256=FjjZAO8ESiw9nT1poCacaHDKfv9pi2gGFafUWTuNrmo,1091
+GPro-1.0.4.dist-info/METADATA,sha256=5KbtsSkiMbT91z7qWs5WawxJDW72SNewZqdAWniI4kE,10850
+GPro-1.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+GPro-1.0.4.dist-info/top_level.txt,sha256=pBGllnCmotcg1QgfEIVA-s49OU0BiQc-k4Al-7ltPOU,5
+GPro-1.0.4.dist-info/RECORD,,
