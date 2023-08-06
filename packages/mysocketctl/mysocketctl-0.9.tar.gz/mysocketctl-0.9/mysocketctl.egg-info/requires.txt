@@ -1,0 +1,5 @@
+Click
+requests
+pyjwt
+prettytable
+paramiko
