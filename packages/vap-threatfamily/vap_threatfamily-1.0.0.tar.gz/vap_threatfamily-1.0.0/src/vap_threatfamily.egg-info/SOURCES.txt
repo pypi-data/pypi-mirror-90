@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/vap_threatfamily.egg-info/PKG-INFO
+src/vap_threatfamily.egg-info/SOURCES.txt
+src/vap_threatfamily.egg-info/dependency_links.txt
+src/vap_threatfamily.egg-info/entry_points.txt
+src/vap_threatfamily.egg-info/requires.txt
+src/vap_threatfamily.egg-info/top_level.txt

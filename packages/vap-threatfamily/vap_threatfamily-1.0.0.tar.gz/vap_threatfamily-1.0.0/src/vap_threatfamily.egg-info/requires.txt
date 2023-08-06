@@ -1,0 +1,9 @@
+requests
+pandas
+flatten_json
+
+[dev]
+check-manifest
+
+[test]
+coverage
