@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cw
+Version: 0.0.2
+Summary: Generating binary data
+Home-page: https://github.com/thorwhalen/ut/tree/master/stats/dgen/bin.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # cw
+        Generating binary data
+        
+        
+        To install:	```pip install cw```
+        
+Platform: any
+Description-Content-Type: text/markdown
