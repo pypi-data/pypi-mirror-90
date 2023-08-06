@@ -1,0 +1,6 @@
+README.md
+setup.py
+Assignment_A_damianigrgur.egg-info/PKG-INFO
+Assignment_A_damianigrgur.egg-info/SOURCES.txt
+Assignment_A_damianigrgur.egg-info/dependency_links.txt
+Assignment_A_damianigrgur.egg-info/top_level.txt
