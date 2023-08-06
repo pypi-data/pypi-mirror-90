@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ez-qt
+Version: 1.0.4
+Summary: Helper functions and classes to work with PySide2/PyQt5
+Home-page: https://www.github.com/nielsvaes/ez_qt
+Author: Niels Vaes
+Author-email: nielsvaes@gmail.com
+License: MIT
+Description: # 🌴 EZ Qt
+        
+        EZ Qt is a simple collection of helper functions for PySide2/PyQt5
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
