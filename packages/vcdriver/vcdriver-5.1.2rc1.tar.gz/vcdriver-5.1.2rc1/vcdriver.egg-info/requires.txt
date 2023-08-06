@@ -1,0 +1,12 @@
+colorama
+Fabric3
+pyvmomi
+pywinrm2
+six
+
+[test]
+pytest
+pytest-cov
+pytest-forward-compatibility
+mock
+coverage[toml]>=5.3
