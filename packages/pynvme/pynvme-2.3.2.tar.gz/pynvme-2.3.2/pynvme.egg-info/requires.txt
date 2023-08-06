@@ -1,0 +1,6 @@
+libpci
+pylspci
+pytemperature
+pytest
+pytest-excel
+quarchpy
