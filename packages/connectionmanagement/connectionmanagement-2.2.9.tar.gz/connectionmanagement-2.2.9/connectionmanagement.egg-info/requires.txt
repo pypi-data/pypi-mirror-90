@@ -1,0 +1,10 @@
+netifaces
+flask
+jsonschema
+gevent
+mediatimestamp<2.0.0
+requests
+nmoscommon>=0.20.0
+six
+nodefacade>=0.10.1
+werkzeug<1.0.0,>=0.14.1
