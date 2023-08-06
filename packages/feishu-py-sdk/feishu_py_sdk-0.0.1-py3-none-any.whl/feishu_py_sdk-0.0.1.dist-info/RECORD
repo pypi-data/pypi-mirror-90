@@ -1,0 +1,15 @@
+feishu_sdk/__init__.py,sha256=gWZE8ccNrPU1BUPGNykIu67pby9EjUhNhdS82k6_ubM,221
+feishu_sdk/base_client.py,sha256=gZCLWE9usIGNwXeLRu1GgB0iS3iaLvP89JYyeqBCSTY,2428
+feishu_sdk/feishu_client.py,sha256=aBGxgjWObr18g1V8LAELWwEU4uz7WAVUEn8RqVD7RFA,14261
+feishu_sdk/feishu_response.py,sha256=toTn8g3PCIWCjmKGywyeBn8d-a04nNMkq3Ja-QVvVu8,1206
+feishu_sdk/feishu_server.py,sha256=ul8iuX2otqHf2o3n8j0keJRKTTwglzLBjP39GAZ9YqI,3246
+feishu_sdk/card/__init__.py,sha256=29nTDsLFVh2QOpxcnHhMsi1R53irG3oYND6jhrWrKMg,137
+feishu_sdk/card/card.py,sha256=l_owgSBUa_pwlm6geesic5uOzGEcOWbS_W-IXwFTXiQ,789
+feishu_sdk/card/elements.py,sha256=ozN4rzEsPg3h-ebwkgf6D4Yk_GQr0llkDr7NqV5lfW4,2666
+feishu_sdk/card/modules.py,sha256=ZHjK0KEXMjhE__OfoYCcWI85SDWn1GARk5fxwnhBPe0,1564
+feishu_sdk/card/objects.py,sha256=kyJgEG7IY_LkhlLxtVgjc12VPtI8Psc139UI9S64z6I,1486
+feishu_py_sdk-0.0.1.dist-info/LICENSE.txt,sha256=vqEy-_YzVUDmc5o6VG-6jSn-9-O_PbkTNPIsS-A4D_A,1068
+feishu_py_sdk-0.0.1.dist-info/METADATA,sha256=P5WzaoyGY1Jd6DvJ8VXmTieoUcPX6HFg4foC5BXzYIY,1517
+feishu_py_sdk-0.0.1.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+feishu_py_sdk-0.0.1.dist-info/top_level.txt,sha256=z8VQCK2QKFtJLo-WLmmsSbMFmFGOrT0EF-0AfySP3QU,11
+feishu_py_sdk-0.0.1.dist-info/RECORD,,
