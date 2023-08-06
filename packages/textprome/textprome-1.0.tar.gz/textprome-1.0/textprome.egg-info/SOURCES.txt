@@ -1,0 +1,13 @@
+README.md
+setup.py
+examples/blackpink_logo.py
+examples/pornhub_logo.py
+examples/thunder.py
+textprome/__init__.py
+textprome/textprome.py
+textprome.egg-info/PKG-INFO
+textprome.egg-info/SOURCES.txt
+textprome.egg-info/dependency_links.txt
+textprome.egg-info/requires.txt
+textprome.egg-info/top_level.txt
+textprome.egg-info/zip-safe
