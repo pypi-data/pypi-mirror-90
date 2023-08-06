@@ -1,0 +1,8 @@
+setup.py
+gaussian_probability/Gaussian.py
+gaussian_probability/__init__.py
+gaussian_probability.egg-info/PKG-INFO
+gaussian_probability.egg-info/SOURCES.txt
+gaussian_probability.egg-info/dependency_links.txt
+gaussian_probability.egg-info/not-zip-safe
+gaussian_probability.egg-info/top_level.txt
