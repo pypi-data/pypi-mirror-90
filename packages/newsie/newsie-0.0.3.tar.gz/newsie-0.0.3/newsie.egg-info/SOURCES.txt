@@ -1,0 +1,16 @@
+README.md
+setup.py
+newsie/__init__.py
+newsie/config.py
+newsie/deliver.py
+newsie/generate_pdf.py
+newsie/issue.py
+newsie/news.py
+newsie/util.py
+newsie/weather.py
+newsie.egg-info/PKG-INFO
+newsie.egg-info/SOURCES.txt
+newsie.egg-info/dependency_links.txt
+newsie.egg-info/entry_points.txt
+newsie.egg-info/requires.txt
+newsie.egg-info/top_level.txt
