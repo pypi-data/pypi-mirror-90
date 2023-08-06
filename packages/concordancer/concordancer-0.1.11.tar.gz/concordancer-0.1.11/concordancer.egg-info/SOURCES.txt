@@ -1,0 +1,15 @@
+README.md
+setup.py
+concordancer/__init__.py
+concordancer/concordancer.py
+concordancer/demo.py
+concordancer/indexedCorpus.py
+concordancer/kwic_print.py
+concordancer/server.py
+concordancer/utils.py
+concordancer.egg-info/PKG-INFO
+concordancer.egg-info/SOURCES.txt
+concordancer.egg-info/dependency_links.txt
+concordancer.egg-info/not-zip-safe
+concordancer.egg-info/requires.txt
+concordancer.egg-info/top_level.txt
