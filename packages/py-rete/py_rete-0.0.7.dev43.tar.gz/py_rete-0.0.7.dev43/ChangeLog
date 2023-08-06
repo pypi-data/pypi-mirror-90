@@ -1,0 +1,69 @@
+CHANGES
+=======
+
+* updated readme
+* simplifed bound facts
+* removed print
+* working version of filter and bind at root, but shifting to use beta memory
+* working version with empty productions
+* working minimal version
+* removed assert False
+* working version with fact binding with right shift operator
+* working version that supports disjuncts
+* disabled mypy to get tests running, will turn on next
+* Update .travis.yml
+* incremented to 3.8'
+* removed print
+* refactored to use production decorator class and to support adding and removing of Facts
+* updated badges
+* updating readme
+* updated readme, using facts and productions
+* updated readme from rst to md
+* extending documentation
+* extending documentation
+* extending documentation
+* extending documentation
+* extending documentation
+* extending documentation
+* extending documentation
+* added effects for productions and ability to fire them all at once
+* removed constant test node, now we use alpha hashing
+* got pep8 errors fixed. tox passes locally
+* version that passes all tests
+* fixed bug in update\_nearest\_ancestor\_with\_same\_amem, to start with parent rather than self
+* found bug in pnodes not getting their tokens removed
+* worked through final pseudocode from doorenbos thesis, still have errors though. Stuff isn't getting properly deactivated
+* still going, stuff not removing properly
+* working, still adding unlinking
+* implemented alpha hashing approach. tests passing. going throug and comparing with doorenbois thesis to implement unlinking
+* modified alpha mem to us hashing, but still in process of refactoring. Also adding unlinking
+* some refactoring, also shutting off pypy for travis
+* only running py3.7, no pypy testing
+* passing basic type hint checking on common
+* adding some type hinting/checking, finding a few issues
+* took a pass through all but network and have been making notes for changes
+* fixed what looks like a bug in negated conditions and negated conjunctive conditions around deleting descendents of tokens on negation. Also, adding more notes and comments
+
+v0.0.6
+------
+
+* refactored, to rename base module from rete to py\_rete
+* renamed, so modules available from pip
+
+v0.0.5
+------
+
+* modified license back, so that github auto detects MIT
+* updated travis, I actually think deployment to pypi was working, the skipping branch message was just for the second condition that does not apply
+* updated license to be more explicit about attribution
+* beep
+
+v0.0.4
+------
+
+* still trying to get auto deployment working right
+
+v0.0.3
+------
+
+* trying to get pypi commiting on tags and no tags, but only on master
