@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: motor-bundle
+Version: 1.1
+Summary: Motor support for applauncher
+Home-page: https://github.com/applauncher-team/motor_bundle
+Author: Alvaro Garcia Gomez
+Author-email: maxpowel@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/applauncher-team/motor_bundle/archive/master.zip
+Keywords: applauncher,motor,mongo,mongodb
+Platform: UNKNOWN
+Classifier: Topic :: Adaptive Technologies
+Classifier: Topic :: Software Development
+Classifier: Topic :: System
+Classifier: Topic :: Utilities
+Requires-Dist: applauncher (==2.0)
+Requires-Dist: motor (==2.3.0)
+
+UNKNOWN
+
+
