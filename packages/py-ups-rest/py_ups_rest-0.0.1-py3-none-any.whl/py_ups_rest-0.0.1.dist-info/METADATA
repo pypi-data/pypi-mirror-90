@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: py-ups-rest
+Version: 0.0.1
+Summary: Python wrapper around UPS REST API's
+Home-page: https://github.com/sitolo/pyUPS
+Author: Sitolo
+Author-email: admin@sitolo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+
+# pyUPS
+Python 3 wrapper around UPS REST APIs
+
+

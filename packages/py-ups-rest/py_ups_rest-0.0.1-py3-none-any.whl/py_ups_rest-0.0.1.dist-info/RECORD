@@ -1,0 +1,11 @@
+pyups/__init__.py,sha256=NRG9lMFJwIG4T1dn6ecutZv2l_0Pm1uIMPiu_y3kh8o,49
+pyups/client.py,sha256=lVDJZd0V8NH8yEQ6HBU_m9pVqx2_03LuHsFFwEtpfbE,1062
+pyups/pickup.py,sha256=tkHuR8dsdPoNX9n1SYAaD8NZVx-3UqgntgIXXIVN6JI,1847
+pyups/shipping.py,sha256=JdFrKR15dmlRlOZJTYaGa4GSCnKa7cVG5xuKyHjmSio,1224
+pyups/tracking.py,sha256=aqTl1cEjHK2ti__HCrDMG7EY4rjDsDwAVoqV5QGGmoc,460
+pyups/typings.py,sha256=J9crOGm3fLaYZkOB0o96Bf4vEWKOeRmIkyKD6KSfPEQ,535
+py_ups_rest-0.0.1.dist-info/LICENSE,sha256=ZZTbrkoMS8usJJsHQlbW0H4JJ9K7CrNf8MElMNxolIs,1063
+py_ups_rest-0.0.1.dist-info/METADATA,sha256=LBjZ1xcXqYta8yNqUgSJksAUBea3srNl0ovJCiQjKKk,297
+py_ups_rest-0.0.1.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+py_ups_rest-0.0.1.dist-info/top_level.txt,sha256=TqabQJcHeewji5knzERQSQa4Sgs1swW_x0h6jhc7-Rc,6
+py_ups_rest-0.0.1.dist-info/RECORD,,
