@@ -1,0 +1,13 @@
+README.md
+setup.py
+example/__init__.py
+flaxx/__init__.py
+flaxx/base.py
+flaxx/enum_validator.py
+flaxx/generate_project.py
+flaxx/main.py
+flaxx/pydantic_schema_generator.py
+flaxx.egg-info/PKG-INFO
+flaxx.egg-info/SOURCES.txt
+flaxx.egg-info/dependency_links.txt
+flaxx.egg-info/top_level.txt
