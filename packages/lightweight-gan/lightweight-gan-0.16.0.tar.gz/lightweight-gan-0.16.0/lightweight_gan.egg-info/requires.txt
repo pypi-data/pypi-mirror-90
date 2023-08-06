@@ -1,0 +1,12 @@
+adabelief-pytorch
+einops>=0.3
+fire
+gsa_pytorch
+kornia
+numpy
+pillow
+retry
+scipy
+torch>=1.6
+torchvision
+tqdm
