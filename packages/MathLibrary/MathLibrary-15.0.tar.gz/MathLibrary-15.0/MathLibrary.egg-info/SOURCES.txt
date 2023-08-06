@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+MathLibrary.egg-info/PKG-INFO
+MathLibrary.egg-info/SOURCES.txt
+MathLibrary.egg-info/dependency_links.txt
+MathLibrary.egg-info/top_level.txt
