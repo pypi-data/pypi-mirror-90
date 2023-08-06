@@ -1,0 +1,10 @@
+geocode/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geocode/flags.py,sha256=OJam2qMxHp54ZNhmlnoCVQwdgu6EZxtZhjtxO-K0oKg,10159
+geocode/geocode.py,sha256=UHCKFnHBmPnwd2qjgUx4CTRlzkYJ9zIjncA-7mmFLJM,15649
+geocode/data/geonames_6b64aaafc53116f.pkl,sha256=ofsH6BTjY1l3WWVSITV81lcmY4MsRguUa3sKukLIOYU,19778265
+geocode/data/geonames_keyword_processor_6b64aaafc53116f.pkl,sha256=2nS3hZycpJOgRPKOoKnplaKmU7Scukg1r93sC3LgDyk,22584939
+local_geocode-0.0.1.dist-info/LICENSE,sha256=cruXVt3UZUsPqoBZbZ3vWhuI1zuskPoD0C_TubwVFb0,1071
+local_geocode-0.0.1.dist-info/METADATA,sha256=lPoMlV6W6S2IHmYbWbp7igmbEtGjoIwDNMjzDVXxWgU,4986
+local_geocode-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+local_geocode-0.0.1.dist-info/top_level.txt,sha256=HqaJvC-1Bi_mm_3v7qmB5lwBCRW5jVoxCP7MFIyYhzg,8
+local_geocode-0.0.1.dist-info/RECORD,,
