@@ -1,0 +1,11 @@
+pyweather/__init__.py,sha256=Oh_tX7ar_V6hvIR2xUxbfWrZWjZRG0wtlNhPR1tVW5g,33
+pyweather/airpol.py,sha256=iggAR36CcYBtCaAcfnQpRUq-Ba8Eh-oMILS74mm640w,1168
+pyweather/apmodel.py,sha256=8o8zXewxrmvL8b1v0z2helI8Y5VGWIX0VykROGzT3tw,1812
+pyweather/constants.py,sha256=8wU_1TF1c1x3qVn6DJvLh1wd_ipHdOX-Gij-ikEVvDA,131
+pyweather/curweath.py,sha256=LOPHZ5jgYUG6k488exH74ffGfP5AdGLJ8EUrhb31YI8,5378
+pyweather/cwmodel.py,sha256=zW9ZKAlBzvRk1-6JGSYqwKMVzZvxWtna-TTj8SQ3bCQ,3307
+py_open_weather-0.1.3.dist-info/LICENSE.txt,sha256=aFa_aC5wcUsKWi8zSAaRGVaV4sRBOVEfQrz1b36cJvs,1086
+py_open_weather-0.1.3.dist-info/METADATA,sha256=HQzcDebGWDNmF98QO9POlGGX7Ve95oXfZzOeeRPLbkI,8815
+py_open_weather-0.1.3.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+py_open_weather-0.1.3.dist-info/top_level.txt,sha256=2Hsra1OOHfC4S7uN8Ogsl_Unq1RnTt8I3oLjZJv6zC4,10
+py_open_weather-0.1.3.dist-info/RECORD,,
