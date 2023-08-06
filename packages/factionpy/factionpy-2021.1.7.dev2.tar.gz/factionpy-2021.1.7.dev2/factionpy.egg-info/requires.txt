@@ -1,0 +1,10 @@
+bcrypt
+gql
+httpx
+kubernetes
+pydantic
+pyjwt
+python-dateutil
+
+[fastapi]
+fastapi
