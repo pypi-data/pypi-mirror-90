@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: rst-to-myst
+Version: 0.1.1
+Summary: Convert RST to MyST-Markdown.
+Home-page: https://github.com/executablebooks/rst-to-myst
+Author: Chris Sewell
+Author-email: executablebooks@gmail.com
