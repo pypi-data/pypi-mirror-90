@@ -1,0 +1,15 @@
+satip/__init__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+satip/_nbdev.py,sha256=Et5n8IjhdAjgHOk_K25pLT8gsjyM0BioixqUULqaIiw,3341
+satip/eumetsat.py,sha256=LWswoj3ZCb-NhRhD10phJL-W39IU-t9QceJEpnzYSBI,22017
+satip/gcp_helpers.py,sha256=hf3_nZDzoxVy4NPNlQlG5LJZRd4FhVwbBFJqWND8wpY,5631
+satip/io.py,sha256=6P0etWtIXWxKAKW2b49GlITlV9ZCZHZRrHrvR3tFAPM,6229
+satip/mario.py,sha256=dBqPJN7KDv7rkWC2VkeMndAdcJoVVsNuxy-eeVNDHqc,7379
+satip/reproj.py,sha256=ERvQ0Lzk--Mf3uI2P1lTPXUFRgCsC70Bv3TL5x_pqtQ,8581
+satip/usage.py,sha256=9dpngXSCL8e3BWI8QTt5yQdTOFo4HU5gaQXrP-T9mEY,227
+satip/utils.py,sha256=Sc5pTbowtxs_WxMQPktyGh-hBzXJqsMw_1isQxNs1GY,5066
+satip-1.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+satip-1.0.1.dist-info/METADATA,sha256=GvJdoDHGrdwv4pkWsiBcTWxh6yMX6IlcSKq2L3B_3Lc,5449
+satip-1.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+satip-1.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+satip-1.0.1.dist-info/top_level.txt,sha256=GZytXBjOPEvPE3pdCSzrNk8K4SmByTTl-kr7xn07W3Q,6
+satip-1.0.1.dist-info/RECORD,,
