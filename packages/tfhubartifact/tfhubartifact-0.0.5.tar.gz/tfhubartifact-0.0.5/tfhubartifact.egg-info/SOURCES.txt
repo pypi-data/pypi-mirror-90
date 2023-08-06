@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+tfhubartifact/TensorFlowHubModelArtifact.py
+tfhubartifact/__init__.py
+tfhubartifact.egg-info/PKG-INFO
+tfhubartifact.egg-info/SOURCES.txt
+tfhubartifact.egg-info/dependency_links.txt
+tfhubartifact.egg-info/top_level.txt
