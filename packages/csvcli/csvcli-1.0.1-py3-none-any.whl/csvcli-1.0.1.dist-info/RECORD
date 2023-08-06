@@ -1,0 +1,11 @@
+csvcli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+csvcli/cli.py,sha256=Gs8oewdL4Pnt6SRjTlTnlsLCl2opudUFdY-ZgUTrZRY,12440
+csvcli/functions.py,sha256=TN--JPUd8fK5PKHvEkAe1QqDIpPE8UVyYgmo46lNjis,8866
+show/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+show/show.py,sha256=KdkfyiryhRY8W835NbSjjaASUldorhlukJESTgkHcO8,6315
+csvcli-1.0.1.dist-info/METADATA,sha256=a9CkseBDexsNKiVf-YfFTP2cAOsprX9jjXdcTddExaA,10684
+csvcli-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+csvcli-1.0.1.dist-info/dependency_links.txt,sha256=LKgnH2uxkJbfYnDmYGbHQVcXjoVK_Zfk9Ua4I7TcJjU,86
+csvcli-1.0.1.dist-info/entry_points.txt,sha256=ffkKJqycW-YlZJFXsJA82TY7aR-YuhSgNem4lWonG3I,56
+csvcli-1.0.1.dist-info/top_level.txt,sha256=jISmImhoI3eEafoSRCW6SnklkxmzZrSI0uwGDzaaTiw,12
+csvcli-1.0.1.dist-info/RECORD,,
