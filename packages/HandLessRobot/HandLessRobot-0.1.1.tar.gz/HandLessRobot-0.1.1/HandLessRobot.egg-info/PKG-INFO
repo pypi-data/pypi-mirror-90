@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: HandLessRobot
+Version: 0.1.1
+Summary: A framework using machine instead of manual operation.
+Home-page: https://github.com/snakeclub/HandLessRobot
+Author: 黎慧剑
+Author-email: snakeclub@163.com
+Maintainer: 黎慧剑
+Maintainer-email: snakeclub@163.com
+License: Mozilla Public License 2.0
+Description: A framework using machine instead of manual operation.
+Keywords: Robot Operation
+Platform: all
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
