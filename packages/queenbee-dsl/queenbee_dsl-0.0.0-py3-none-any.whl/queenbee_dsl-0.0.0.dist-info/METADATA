@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: queenbee-dsl
+Version: 0.0.0
+Summary: A Python DSL for Queenbee workflow language.
+Home-page: UNKNOWN
+Author: Pollination
+Author-email: info@ladybug.tools
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: queenbee (==1.22.8)
+Requires-Dist: click-plugins (==1.1.1)
+
+UNKNOWN
+
+
