@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: Canaille
+Version: 0.0.2
+Summary: Simple OAuth2/OpenID Connect server based upon LDAP
+Home-page: https://gitlab.com/yaal/canaille
+Maintainer: Yaal
+Maintainer-email: contact@yaal.fr
+License: MIT
+Project-URL: Code, https://gitlab.com/yaal/canaille
+Project-URL: Issue Tracker, https://gitlab.com/yaal/canaille/-/issues
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory
+Classifier: Topic :: System :: Systems Administration :: Authentication/Directory :: LDAP
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: authlib
+Requires-Dist: click
+Requires-Dist: email-validator
+Requires-Dist: flask
+Requires-Dist: flask-babel
+Requires-Dist: flask-wtf
+Requires-Dist: python-ldap
+Requires-Dist: sentry-sdk[flask]
+Requires-Dist: toml
+Requires-Dist: wtforms (==3.0.0a1)
+
+<div align="center">
+    <img src="canaille/static/img/canaille-full.png" height="200" alt="Canaille" />
+</div>
+
+**Canaille** is a French word meaning *rascal*. It is roughly pronounced **Can I?**,
+as in *Can I access your data?* Canaille is a simple OpenID Connect provider based upon a LDAP database.
+
+It aims to be very light, simple to install and simple to maintain. Its main features are :
+- Authentication and user profile edition against a LDAP directory;
+- OpenID Connect support;
+- No outdated or exotic protocol support;
+- No additional database required. Everything is stored in your LDAP server;
+- The code is easy to read and easy to edit.
+
+# Screenshots
+
+<div align="center">
+    <img src="doc/_static/login.png" width="225" alt="Canaille" />
+    <img src="doc/_static/profile.png" width="225" alt="Canaille" />
+    <img src="doc/_static/consent.png" width="225" alt="Canaille" />
+</div>
+
+# Try it!
+
+```bash
+cd demo
+./run.sh
+```
+
+# Documentation
+
+⚠ Canaille is under heavy development and may not fit a production environment yet. ⚠
+
+- Please have a look on our [documentation](https://canaille.readthedocs.io);
+- To **install** canaille, just follow the [installation guide](https://canaille.readthedocs.io/en/latest/install.html);
+- To **contribute** to canaille, please read the [contribution guide](https://canaille.readthedocs.io/en/latest/contributing.html).
+
+
