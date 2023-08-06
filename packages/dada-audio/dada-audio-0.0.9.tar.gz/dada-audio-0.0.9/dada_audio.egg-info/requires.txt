@@ -1,0 +1,3 @@
+pytaglib
+dada-settings>=0.0.2
+dada-utils>=0.0.2
