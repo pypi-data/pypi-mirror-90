@@ -1,0 +1,7 @@
+open_alchemy/__init__.py,sha256=xgjXOeVLAma-FqzUULAYoJuxzpX1pcgl-5ljofuXII8,29
+open_alchemy/package_security/__init__.py,sha256=-77_dyA_2sw8We5xNMfMf-YdXXt1k5UjXOF7UAenef8,2659
+open_alchemy/package_security/config.py,sha256=91jyDALGPHFhkzxgpUhQFwzncY-pleW1MQrN_wBNCPU,1798
+open_alchemy/package_security/types.py,sha256=zHUkORsl2C9hv2J_vpTsDxTXUi5Lr749mv6iJd8gkso,578
+open_alchemy.package_security-1.0.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+open_alchemy.package_security-1.0.4.dist-info/METADATA,sha256=GCs9V-dp4hpWRl1GIj3U6yqNaGSFfwDC0jvVQ79499g,3323
+open_alchemy.package_security-1.0.4.dist-info/RECORD,,
