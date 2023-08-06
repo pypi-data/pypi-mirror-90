@@ -1,0 +1,14 @@
+README.md
+setup.py
+russian_paraphrasers/__init__.py
+russian_paraphrasers/candidates_filter_metrics.py
+russian_paraphrasers/utils.py
+russian_paraphrasers.egg-info/PKG-INFO
+russian_paraphrasers.egg-info/SOURCES.txt
+russian_paraphrasers.egg-info/dependency_links.txt
+russian_paraphrasers.egg-info/requires.txt
+russian_paraphrasers.egg-info/top_level.txt
+russian_paraphrasers/paraphrasers/__init__.py
+russian_paraphrasers/paraphrasers/core.py
+russian_paraphrasers/paraphrasers/paraphraser_gpt.py
+russian_paraphrasers/paraphrasers/paraphraser_mt5.py
