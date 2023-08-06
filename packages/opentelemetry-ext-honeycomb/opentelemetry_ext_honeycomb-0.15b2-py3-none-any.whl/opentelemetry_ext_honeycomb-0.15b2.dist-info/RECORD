@@ -1,0 +1,7 @@
+opentelemetry/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opentelemetry/ext/honeycomb/__init__.py,sha256=ZZEAfZa5clI1h9t1U0NMAbzOfMA_MH7ZQctPIpGMEJA,6420
+opentelemetry/ext/honeycomb/test_suite.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opentelemetry_ext_honeycomb-0.15b2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+opentelemetry_ext_honeycomb-0.15b2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+opentelemetry_ext_honeycomb-0.15b2.dist-info/METADATA,sha256=H1ilxTs_9nZy9itRkW3NJMrOlff1ykryUVbY7kBZDSU,838
+opentelemetry_ext_honeycomb-0.15b2.dist-info/RECORD,,
