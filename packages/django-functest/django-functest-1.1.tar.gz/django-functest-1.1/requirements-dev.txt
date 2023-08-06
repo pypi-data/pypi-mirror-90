@@ -1,0 +1,4 @@
+tox
+flake8==3.8.4
+isort==4.2.5
+check-manifest==0.46
