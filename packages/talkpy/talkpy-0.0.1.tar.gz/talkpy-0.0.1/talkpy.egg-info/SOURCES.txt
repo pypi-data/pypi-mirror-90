@@ -1,0 +1,13 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+talkpy/__init__.py
+talkpy.egg-info/PKG-INFO
+talkpy.egg-info/SOURCES.txt
+talkpy.egg-info/dependency_links.txt
+talkpy.egg-info/top_level.txt
+test/girl.py
+test/male.py
