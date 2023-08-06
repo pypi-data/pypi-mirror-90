@@ -1,0 +1,12 @@
+mflog/__init__.py,sha256=z1Z2WsTFKyu2GJXvBZwXzOtAt1rUr2ns4XuEdAx8DwM,16117
+mflog/log.py,sha256=NTOD4BBC2eecfoyXSnfiVFeLPNCik61pFm0OMn0gIeE,1197
+mflog/processors.py,sha256=Ykyld6NigWs5Mb0qHCe56mnxtybbkVQeKedUKf89JXU,2005
+mflog/syslog.py,sha256=Tmtrb7Qd7Ll0W5rnAmslm9aF4IecOp9Xs2rOBrPGxQ4,1162
+mflog/unittests.py,sha256=RbxWNoJG7v1dIaG0A9jgYPBLigCYobQPMBdqtGhiIjA,749
+mflog/utils.py,sha256=kFFPaRbuuri4vrfCQCKSKle-lZSWDbgkeZiehcu0jkc,13302
+mflog-0.1.0.dist-info/LICENSE,sha256=v1jRxquD_b-skmaP6nzVetSU2vGxxC75lW_XbIYFC0Q,1517
+mflog-0.1.0.dist-info/METADATA,sha256=8BtsIs9TooDdb-Kqyxm0PYCKNkNLWV1qpQSKohjijwU,12782
+mflog-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mflog-0.1.0.dist-info/entry_points.txt,sha256=NidZCFPpJAvTQTYNdHX8Z0tS1wSDPt4QoNPxwJ08Fc8,40
+mflog-0.1.0.dist-info/top_level.txt,sha256=jq7-1XKsY32r4_m4rxxUaFq6m8dekCfUMgMTpeJPOeM,6
+mflog-0.1.0.dist-info/RECORD,,
