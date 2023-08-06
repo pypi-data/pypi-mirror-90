@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+sane.py
+setup.py
+sane_build.egg-info/PKG-INFO
+sane_build.egg-info/SOURCES.txt
+sane_build.egg-info/dependency_links.txt
+sane_build.egg-info/top_level.txt
+tests/test.py
