@@ -1,0 +1,8 @@
+bs4
+click
+colorama
+fleep
+keyring
+pretty_errors
+requests
+tqdm
