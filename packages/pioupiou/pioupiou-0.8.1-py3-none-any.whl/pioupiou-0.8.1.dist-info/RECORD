@@ -1,0 +1,10 @@
+pioupiou/__init__.py,sha256=qyvrrcO0sdTkGDoA31qyRl_D0XeEfDodIf6fW98-mXI,264
+pioupiou/avatar_generator.py,sha256=SZwltLvj9IwRAwvuZlroqHY7ioN2mWhRrnwBL4yzyKw,9731
+pioupiou/chooser.py,sha256=EE0y1gvTfkzCtY9InI4eQJCZKfbl5dlnpRPmCXow1DQ,1655
+pioupiou/exceptions.py,sha256=Bnuk-Dsu7Fpw8TRzmkqOHRRtjOB5EnTX_yEw__8H8F8,219
+pioupiou/utils.py,sha256=MtpRpLSD9xEk-74Sz-XrKzqp_N6XIaSvtDOyNENp0eg,227
+pioupiou-0.8.1.dist-info/LICENSE,sha256=6Udh8PGLEye4sea-hNg4dAMzZacC3pjIvsy7YVyY850,1063
+pioupiou-0.8.1.dist-info/METADATA,sha256=Dg5ejup-GDcI9GHTwmxY2brjcB2Vj8PgGup7_nVZTp0,5895
+pioupiou-0.8.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pioupiou-0.8.1.dist-info/top_level.txt,sha256=kM26r6SrPuEUc1gFP3XUieSvt4x45pjzpFmD29t6FMg,9
+pioupiou-0.8.1.dist-info/RECORD,,
