@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+src/client_secret.json
+src/yt_playlist_updater.egg-info/PKG-INFO
+src/yt_playlist_updater.egg-info/SOURCES.txt
+src/yt_playlist_updater.egg-info/dependency_links.txt
+src/yt_playlist_updater.egg-info/requires.txt
+src/yt_playlist_updater.egg-info/top_level.txt
