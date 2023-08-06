@@ -1,0 +1,2 @@
+standard_precip
+standard_precip/lmoments
