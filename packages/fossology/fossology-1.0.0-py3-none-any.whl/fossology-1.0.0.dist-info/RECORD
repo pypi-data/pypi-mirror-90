@@ -1,0 +1,12 @@
+LICENSE.md,sha256=HlcwkgW34TrIiNxgR9zkq1pDjqgqYLyVBNdEOY9F2oE,1055
+fossology/__init__.py,sha256=uzNc9rxQmC-LRCrbCbi_E1sxbDyq9tx4npM0V2St9yw,12162
+fossology/exceptions.py,sha256=2WeGQMjE1sGsObDHwlOJg6RByansV4xrw7X4mw75cWE,1285
+fossology/folders.py,sha256=cTOZVO4bNQRxEti1UiZmLTmZRv4bQ5XjpZWVsttRNsg,7790
+fossology/jobs.py,sha256=s1FsuSnA_T-ftLxzlh-7VcqwD3DhC3rJIWZ8NGyV4mQ,5807
+fossology/obj.py,sha256=c6MeSMpwnAQodOQp2PkcYtjrQozYVLoSwSIn9b2k15s,15508
+fossology/report.py,sha256=mwMULxmSU9t1GxD6I_0cRjLJcAODAmET4N4bjnYC3v0,4636
+fossology/uploads.py,sha256=O_mqY_dON_Dr7K-CU3NY63ygziTjqJY-fOsd-MzxaW0,18176
+fossology-1.0.0.dist-info/LICENSE.md,sha256=HlcwkgW34TrIiNxgR9zkq1pDjqgqYLyVBNdEOY9F2oE,1055
+fossology-1.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+fossology-1.0.0.dist-info/METADATA,sha256=HQE6S6LjrQYGVzlkOuRG1pAP0O5qmCJRzrQUtz3l204,5551
+fossology-1.0.0.dist-info/RECORD,,
