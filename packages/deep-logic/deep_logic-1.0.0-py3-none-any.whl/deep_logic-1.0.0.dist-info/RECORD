@@ -1,0 +1,16 @@
+deep_logic/__init__.py,sha256=Kq53PhbOMCd11gEQOUg2nk5CexwmIjYrwNDIEjgmFoc,406
+deep_logic/_version.py,sha256=Aj77VL1d5Mdku7sgCgKQmPuYavPpAHuZuJcy6bygQZE,21
+deep_logic/prune.py,sha256=1BfQAdyyZodZMrJRTN6JSlpP8N7_RSiXDlaouU3HUD4,1603
+deep_logic/relunn.py,sha256=NKqVTeEAjH0jNlqEToNNL0T4tEfGZ0hdK5FdM6yTG7c,2140
+deep_logic/utils.py,sha256=9FQQ-UPSfbG9x6-ddpzpBEa-WKyzXkThtzZl_LRyPaI,1920
+deep_logic/fol/__init__.py,sha256=CuZZDHTJOSu0HbnLWaAR2Oy0kChFxNqGzEegTJTZv8U,320
+deep_logic/fol/_utils.py,sha256=CpMp0TlRh0wGQeLpX5k20jO5upx-F0JNcKI2fpFcrCo,2949
+deep_logic/fol/fol_extractor.py,sha256=4hG1uqc2cb8eAmzI18nQBvXURCNUyL9DmxgAOb2hi8A,3858
+deep_logic/fol/local_explanations.py,sha256=RyHdylqHIdEZmASm44c_PRNzS9MzNSAwDj9odfQmywU,2016
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_deep_logic.py,sha256=Lh5wsCgMzRAwa_5xOC3z2RfFMwNTjTlqH3K3vUAUmdA,4559
+deep_logic-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+deep_logic-1.0.0.dist-info/METADATA,sha256=qo2BCcI-jYrY2RMY2fFRPlKfGE7qTM32eB4Ejc3ttJI,11133
+deep_logic-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+deep_logic-1.0.0.dist-info/top_level.txt,sha256=FYldUclSSGL-hkcIVA9qqQlbN1FuDTb5vSammqXIx8c,17
+deep_logic-1.0.0.dist-info/RECORD,,
