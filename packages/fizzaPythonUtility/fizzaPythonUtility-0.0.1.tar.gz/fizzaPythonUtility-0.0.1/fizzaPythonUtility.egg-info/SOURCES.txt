@@ -1,0 +1,11 @@
+Basic.py
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+fizzaPythonUtility.egg-info/PKG-INFO
+fizzaPythonUtility.egg-info/SOURCES.txt
+fizzaPythonUtility.egg-info/dependency_links.txt
+fizzaPythonUtility.egg-info/top_level.txt
