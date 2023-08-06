@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+rustiql.egg-info/PKG-INFO
+rustiql.egg-info/SOURCES.txt
+rustiql.egg-info/dependency_links.txt
+rustiql.egg-info/top_level.txt
