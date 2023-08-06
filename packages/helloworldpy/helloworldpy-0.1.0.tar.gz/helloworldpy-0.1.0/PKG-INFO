@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: helloworldpy
+Version: 0.1.0
+Summary: This a basic project for learning how to make PIP(PyPI) package
+Home-page: https://github.com/Saketh-Chandra/helloworldpy
+Author: Saketh Chandra
+Author-email: b.sakethchandra9@gmail.com
+License: MIT
+Description: ![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/Saketh-Chandra/helloworldpy)  ![PyPI - Status](https://img.shields.io/pypi/status/helloworldpy) ![PyPI - License](https://img.shields.io/pypi/l/helloworldpy) ![PyPI](https://img.shields.io/pypi/v/helloworldpy)
+        # helloworldpy
+        
+        ## This is a basic project for learning how to make the PIP([PyPI]) package
+        
+        # Changelog
+        
+        Check the [changelog here](https://github.com/Saketh-Chandra/helloworldpy/releases/).
+        ### Example:
+        ```bash
+        $ helloworldpy -h
+        usage: helloworldpy [-h] [-V] [-n [NAME]]
+        
+        optional arguments:
+        -h, --help show this help message and exit -V, --version show program version -n [NAME], --name [NAME]
+        output Hello Name! or Hello World!
+        ```
+        
+        ```bash 
+        $ helloworldpy -name World
+          Hello World!
+        ```
+        ```bash 
+        $ helloworldpy -name py
+          Hello Py!
+        ```
+        
+        
+        [PyPI]: https://pypi.org/
+        
+Keywords: Hello,World,Hello-World,Hello python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
