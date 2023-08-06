@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+jpg2pdf.py
+setup.py
+jpg2pdf.egg-info/PKG-INFO
+jpg2pdf.egg-info/SOURCES.txt
+jpg2pdf.egg-info/dependency_links.txt
+jpg2pdf.egg-info/top_level.txt
