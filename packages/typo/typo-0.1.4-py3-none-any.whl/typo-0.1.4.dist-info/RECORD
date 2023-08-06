@@ -1,0 +1,10 @@
+typo/Errer.py,sha256=zDga3DPt6vLV37yMjHkygd7R0GDSD0-cnGARPzeojpU,11615
+typo/__init__.py,sha256=yYdEoIPu-qZL2cfbaCiZv6NHNGpwM5JPG0MiUSCIENo,106
+typo/version.py,sha256=K0nJliLE8urvUSONsZC4x-EeWHUpKHvT74DFSIT6PZI,21
+typo/keyboardlayouts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+typo/keyboardlayouts/en_default.py,sha256=SKiXvCNpHQo8RMvYbnAHVQdZ0uZjJ6xkAwq9ovGFpuc,4270
+typo-0.1.4.dist-info/LICENSE,sha256=bgSMXuqYbyYtg4lwUrhC7--S-d26hj9RGKhyPX36xUU,1092
+typo-0.1.4.dist-info/METADATA,sha256=-95W5OMuDgn886L-9-UgXrtmyjvmzwxdzVJmcz2DctY,3364
+typo-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+typo-0.1.4.dist-info/top_level.txt,sha256=qVuGxzifsvG5pVW3M-gNKLZv9MTctfV4Mz97TbxFaWU,5
+typo-0.1.4.dist-info/RECORD,,
