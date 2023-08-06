@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: shaner
+Version: 1.0.1
+Summary: for shaping RL agent package.
+Home-page: https://github.com/takato86/shaner
+Author: tokudo
+Author-email: okudo@nii.ac.jp
+License: MIT
+Keywords: reward shaping,reinforcement learning,
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: numpy
+Requires-Dist: gym
+
+# shaner
+
+
