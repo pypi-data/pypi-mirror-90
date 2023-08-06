@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+testly/__init__.py
+testly/__main__.py
+testly/behaviour.py
+testly/config.txt
+testly/database.py
+testly/rest.py
+testly/soap.py
+testly.egg-info/PKG-INFO
+testly.egg-info/SOURCES.txt
+testly.egg-info/dependency_links.txt
+testly.egg-info/entry_points.txt
+testly.egg-info/requires.txt
+testly.egg-info/top_level.txt
