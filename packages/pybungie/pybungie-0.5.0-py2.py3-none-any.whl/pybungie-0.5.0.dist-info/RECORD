@@ -1,0 +1,11 @@
+pybungie/OAuth2.py,sha256=YtLXujY56BjzIfQ8Q5O7rx-tH7nz0xc-jK_2EvkNotA,6943
+pybungie/__init__.py,sha256=KXzLcP_VCuNR1qnTzc8wpCAsEHIYM-xD6GD3N1OtX6s,134
+pybungie/api.py,sha256=V2jXa2F5hoGrkmuSgFn6UhLS-pVFQS8CvYaplxr8coo,6716
+pybungie/destiny_components.py,sha256=onKZ0hZw0dP1BxCxdBEGj3v0ErFYZqpqzoLXjtPQBuU,784
+pybungie/destiny_definitions.py,sha256=e7mg1z0VujWaH8rURblaJkv8GKe5H4CPJ7gjIymzLXY,122
+pybungie/destiny_enums.py,sha256=A24V2be-N-lkVk6PGbtrbh1lwiGlO5IKkbi8gEwwLwU,1188
+pybungie/destiny_vendor_hashes.py,sha256=K9ZATIF1haUZ0m1ytIv6JLe2tDQYazwERGtRkm2W5Ro,86
+pybungie-0.5.0.dist-info/METADATA,sha256=9G53HfR3xK8H309r3vAZgI0vF_IQHBUUhprdp5pPsTA,427
+pybungie-0.5.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pybungie-0.5.0.dist-info/top_level.txt,sha256=-4I3odbamPQcrKw8sDznTuqx3xSGMkjXSigi7JJSpOE,9
+pybungie-0.5.0.dist-info/RECORD,,
