@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: uo
+Version: 0.0.2
+Summary: pipeline computing
+Home-page: https://github.com/thorwhalen/ut/tree/master/util/compute.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # uo
+        pipeline computing
+        
+        
+        To install:	```pip install uo```
+        
+Platform: any
+Description-Content-Type: text/markdown
