@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: dailycovid
+Version: 1.0.9
+Summary: U.S.A daily covid information.
+License: MIT
+Author: fitzy1293
+Author-email: berkshiremind@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: matplotlib (>=3.0.0,<4.0.0)
+Requires-Dist: numpy (>=1.0.0,<2.0.0)
+Requires-Dist: requests (>=2.24.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# dailycovid - Easily get covid updates
+
+# Pypi installation
+`pip3 install dailycovid`
+
+# Usage
+
+
+## Simplest
+
+`dailycovid -s statecode`
+
+## Specific Counties in a State
+
+Three ways to do the same thing.
+
+`dailycovid -sc "California-Los Angeles"`
+
+`dailycovid -s CA -c "Los Angeles"`
+
+`dailycovid --state CA --county "Los Angeles"`
+
+## Updating Data
+
+On the first run it will download a csv file containing the most recent data.
+
+
+Use `dailycovid -g` to update the cache.
+
+
+# Examples of plots
+
+![image](https://raw.githubusercontent.com/Fitzy1293/daily-covid/master/examples/plots_los-angeles_california.png)
+
+![image](https://raw.githubusercontent.com/Fitzy1293/daily-covid/master/examples/plots_suffolk_massachusetts.png)   
+
+![image](https://raw.githubusercontent.com/Fitzy1293/daily-covid/master/examples/plots_new-york-city_new-york.png)
+
