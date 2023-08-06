@@ -1,0 +1,10 @@
+click
+pandas
+pyarrow==2.0.0
+fastparquet
+tabulate
+pandasql
+xlrd
+openpyxl
+numpy
+wcwidth
