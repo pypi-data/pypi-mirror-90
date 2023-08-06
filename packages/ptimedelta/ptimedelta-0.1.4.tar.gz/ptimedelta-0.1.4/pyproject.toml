@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "ptimedelta"
+version = "0.1.4"
+description = "Pretty Timedelta. Convert your timedelta objects to pretty strings and vice versa."
+authors = ["Anton Goy <antongoy@internet.ru>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/antongoy/ptimedelta"
+repository = "https://github.com/antongoy/ptimedelta"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Topic :: Utilities"
+]
+
+[tool.poetry.dependencies]
+python = "*"
+
+[tool.poetry.dev-dependencies]
+pytictoc = "^1.5.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
