@@ -1,0 +1,4 @@
+[rdf.plugins.store]
+OxMemory = oxrdflib:MemoryOxStore
+OxSled = oxrdflib:SledOxStore
+
