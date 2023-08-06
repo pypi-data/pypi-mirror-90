@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: sceptre-deployment-hook
+Version: 0.0.15
+Summary: Sceptre hook to measure stack deployment time
+Home-page: https://gitlab.com/verenigingcoin/open-source/sceptre-hooks/deployment-hook
+Author: Vereniging COIN
+Author-email: devops@coin.nl
+License: Apache-2.0
+Description: UNKNOWN
+Keywords: COIN,AWS,Sceptre
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
