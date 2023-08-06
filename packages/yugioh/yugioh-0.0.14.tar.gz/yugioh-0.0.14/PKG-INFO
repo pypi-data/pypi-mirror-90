@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: yugioh
+Version: 0.0.14
+Summary: Yu-Gi-Oh API Wrapper
+Home-page: https://github.com/pclt-dev/yugioh
+Author: diogenesjunior
+Author-email: diogenesjunior@protonmail.com
+License: UNKNOWN
+Description: # yugioh
+        
+        **YGOPRODECK API Wrapper**
+        
+        ## Installation
+        
+        You can install it with pip3:
+        
+            pip3 install yugioh
+        
+        ## Usage
+        
+        ### Get card by name
+        
+        ```python3
+        import yugioh
+            
+        card = yugioh.card(card_name = "The Wicked Dreadroot")
+        print(card.name) #Returns "The Wicked Dreadroot"
+        print(card.archetype) #Returns "Wicked God"
+        print(card.atk) #Returns "4000"
+        ```
+        
+        ### Getting cards by ID
+        
+        ```python3
+        import yugioh
+            
+        card = yugioh.get_card_by_id(card_id = "62180201")
+        print(card.atk) #Returns "4000"
+        print(card.name) #Returns "The Wicked Dreadroot"
+        ```
+        
+        #### Monster Attributes
+        
+        Attribute | Description
+        ------------ | -------------
+        name | The card's name
+        archetype | The card's archetype
+        atk | The card's attack points
+        attribute | The card's attribute
+        _def | The card's defense points
+        desc | The card's description
+        id | The card's ID
+        level | The card's level
+        race | The card's "race" (Still thinking about this one - Its documented in the API as "race", but is formally called "type")
+        type | Monster/Normal card
+        cardmarket_price | The card's Cardmarket price
+        tcgplayer_price | The card's Tcgplayer price
+        ebay_price | The card's eBay price
+        amazon_price | The card's Amazon price
+        coolstuffinc_price | The card's CoolStuffInc price
+        
+        #### Spell/Trap Attributes
+        
+        Attribute | Description
+        ------------ | -------------
+        desc | The card's description
+        id | The card's ID
+        name | The card's name
+        type | The card's type
+        race | The card's race
+        cardmarket_price | The card's Cardmarket price
+        tcgplayer_price | The card's Tcgplayer price
+        ebay_price | The card's eBay price
+        amazon_price | The card's Amazon price
+        coolstuffinc_price | The card's CoolStuffInc price
+        
+        <!--
+        # Command Line Tool
+        
+        The package also comes with a command line tool. Using it is simple.
+        
+        Arguments: `-m` (monster), `-s` (spell), `-t` (trap)
+        
+        Example for a monster card:
+        
+            yugioh -m "The Wicked Dreadroot"
+        
+        Example for a spell card:
+        
+            yugioh -s "Fusion Substitute"
+        
+        Example for a trap card:
+        
+            yugioh -t "Magic Cylinder"
+        -->
+        
+Keywords: Yu-Gi-Oh API
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
