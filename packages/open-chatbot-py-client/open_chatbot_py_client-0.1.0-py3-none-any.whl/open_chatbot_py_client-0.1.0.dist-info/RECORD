@@ -1,0 +1,15 @@
+openchatbotclient/__init__.py,sha256=aYUWDrdLi7wNuqxlCgSvoNOcxnzFnSKgXi6Yo_1IbS4,1675
+openchatbotclient/client.py,sha256=cEaDw_DcjEJwSXRI5wr8EddQX5HEZCTXBrOc2BPjhFA,6959
+openchatbotclient/client_group.py,sha256=FNA15gAbSC5IpTLTNsar1wrdZwK5-O2Nk9y0ccycgbs,1471
+openchatbotclient/descriptor.py,sha256=bCC9JjdDOXJIWWAG2J6KeLeLsE6DTawRwEin0VyQfbA,1912
+openchatbotclient/exception.py,sha256=FjW_cqwPECC5Ksspux6020iZJqFEN74lnZDrlRvO1oc,846
+openchatbotclient/monitor.py,sha256=v6cj_RQ8FHLvHBD7Snk8oz94njWrNpzLxClVy1nbcQM,1182
+openchatbotclient/repository.py,sha256=NvQvN7Ex6iPg5t2DVMqgMezHeW0rfVGZm0_nPAXWBhw,2704
+openchatbotclient/response.py,sha256=M015SNdNhoLOf4N_EHqSlnXLZinUNI70Wa3mHrA58gE,4659
+openchatbotclient/response_group.py,sha256=BrffM_lbBbv_YgWPxw70kXYZXFaf6LMPcDH71POla7g,1950
+openchatbotclient/test.py,sha256=wAQLzBXe7eS8vOOH99AcEeszrZ3T2PnsbcNuviHSsrY,3355
+open_chatbot_py_client-0.1.0.dist-info/LICENSE,sha256=j1q3z7v3tYab04OXkA30EblrrwjItre_qu0vIc-mOgw,1064
+open_chatbot_py_client-0.1.0.dist-info/METADATA,sha256=PhN_IoYtNjW1zBhdrl7W6zRYa1_qIHlxOqweEAlGQIU,4063
+open_chatbot_py_client-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+open_chatbot_py_client-0.1.0.dist-info/top_level.txt,sha256=qk_EHO8h3zCmSiaUwvIimkHClPns__W_k0_P67iCY-g,18
+open_chatbot_py_client-0.1.0.dist-info/RECORD,,
