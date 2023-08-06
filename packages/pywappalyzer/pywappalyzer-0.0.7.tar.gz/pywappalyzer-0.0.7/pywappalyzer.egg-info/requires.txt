@@ -1,0 +1,6 @@
+geckodriver-autoinstaller==0.1.0
+lxml==4.6.1
+selenium==3.141.0
+requests==2.24.0
+requests-toolbelt==0.9.1
+lxml==4.6.1
