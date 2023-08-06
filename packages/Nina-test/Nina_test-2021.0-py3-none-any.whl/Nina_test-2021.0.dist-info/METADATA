@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Nina-test
+Version: 2021.0
+Summary: A Python test module.
+Home-page: UNKNOWN
+Author: Hrishikesh Arun
+Author-email: hrishikesh28arun@gmail.com
+License: UNKNOWN
+Keywords: learning
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Requires: pandas
+Requires: numpy
+
+A Python test module that helps create .csv files and sets an app's version.(Actually it don't really sets an app's version, it prints the app appended with its version on the screen)
+And now it also can run numpy functions too.4th Major release of Nina-test and 1st major release of 2021.
+
