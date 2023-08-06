@@ -1,0 +1,56 @@
+repos:
+  - repo: local
+    hooks:
+      - id: black
+        entry: black
+        name: black
+        language: system
+        types: [python]
+        require_serial: true
+      - id: isort
+        entry: isort
+        name: isort
+        language: system
+        types: [python]
+        require_serial: true
+      - id: check-added-large-files
+        name: Check for added large files
+        entry: check-added-large-files
+        language: system
+      - id: check-toml
+        name: Check Toml
+        entry: check-toml
+        language: system
+        types: [toml]
+      - id: check-yaml
+        name: Check Yaml
+        entry: check-yaml
+        language: system
+        types: [yaml]
+      - id: end-of-file-fixer
+        name: Fix End of Files
+        entry: end-of-file-fixer
+        language: system
+        types: [text]
+      - id: flake8
+        name: flake8
+        entry: flake8
+        language: system
+        types: [python]
+        require_serial: true
+      - id: trailing-whitespace
+        name: Trim Trailing Whitespace
+        entry: trailing-whitespace-fixer
+        language: system
+        types: [text]
+      - id: rustfmt
+        name: Check code format with Rustfmt
+        entry: cargo fmt --all --
+        language: system
+        types: [file, rust]
+      - id: clippy
+        name: Lint Rust code with Clippy
+        entry: cargo clippy --all-targets --all-features -- -D warnings
+        pass_filenames: false
+        language: system
+        types: [file, rust]

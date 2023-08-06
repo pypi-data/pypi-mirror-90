@@ -1,0 +1,35 @@
+[package]
+name = "networkg"
+version = "0.1.4"
+readme = "README.rst"
+license = "MIT"
+homepage = "https://github.com/gustavgransbo/networkg/"
+repository = "https://github.com/gustavgransbo/networkg/"
+authors = ["Gustav Gränsbo <gustav.gransbo@gmail.com>"]
+edition = "2018"
+
+[lib]
+name = "networkg"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]
+csv = "1.1"
+pyo3 = {version = "0.12.4", features = ["extension-module"]}
+
+[features]
+test = []
+
+[package.metadata.maturin]
+requires-python = ">=3.7"
+requires-dist = ["importlib_metadata==3.3.0;python_version<\"3.8\""]
+project-url = [
+    "Repository, https://github.com/gustavgransbo/networkg/",
+    "Documentation, https://networkg.readthedocs.io/"
+]
+classifier = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9"
+]

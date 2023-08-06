@@ -1,0 +1,55 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+
+  create_wheels_manylinux:
+    name: Create wheels for manylinux
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: [3.7, 3.8, 3.9]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+
+      - name: Build wheels
+        run: |
+          docker run --rm -v $(pwd):/io konstin2/maturin build --release -i python${{ matrix.python }}
+
+
+  create_wheels_windows_mac:
+    name: Create wheels Win/Mac
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [windows-latest, macos-latest]
+        python: [3.7, 3.8, 3.9]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v1
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python }}
+        architecture: x64
+
+    - name: Install maturin
+      run: |
+        pip install maturin -c requirements-dev.txt
+
+    - name: Build wheel
+      run: |
+        maturin build -i python --release
+
+    - name: Check build with Twine
+      run: |
+        pip install twine
+        twine check target/wheels/*

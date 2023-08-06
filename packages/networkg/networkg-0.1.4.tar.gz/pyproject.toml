@@ -1,0 +1,15 @@
+[build-system]
+requires = ["maturin"]
+build-backend = "maturin"
+
+
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+line_length = 88
+include_trailing_comma = true
+multi_line_output = 3
+force_grid_wrap = 0
+use_parentheses = true
