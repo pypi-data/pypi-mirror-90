@@ -1,0 +1,9 @@
+plenty_taxhub_generator/__init__.py,sha256=67Gzp0-Z_GttPK2vGlew9mSxX3gP0G8pkC69yFgjYCA,155
+plenty_taxhub_generator/__main__.py,sha256=LGs7spCHJ7UN8EK4aMVd-MMNyzq0LCM3Rj2TueTWwr4,108
+plenty_taxhub_generator/cli.py,sha256=iCmnWDmCDkkF4DnYPSNdObNXURWFYIt86ZHb-5Q2Hi8,7539
+plenty_taxhub_generator/packages/taxhub.py,sha256=MGMNCE40xfmrLbUzod0QEP-dcpcpRsgOUB8SxSgohdk,9262
+plenty_taxhub_generator/packages/utils.py,sha256=dl0hmZknCN5Uo4vTPz-Xfrjeudtiyd1yu-qThRhMteQ,5419
+plenty_taxhub_generator-0.0.4.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+plenty_taxhub_generator-0.0.4.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+plenty_taxhub_generator-0.0.4.dist-info/METADATA,sha256=WjExEoZUEZuMyjQDMQqC8N6qxPrJE-eINWcMzE5IkPk,2432
+plenty_taxhub_generator-0.0.4.dist-info/RECORD,,
