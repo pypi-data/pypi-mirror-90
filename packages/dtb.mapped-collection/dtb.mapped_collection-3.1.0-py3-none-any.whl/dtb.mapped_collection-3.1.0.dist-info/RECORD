@@ -1,0 +1,8 @@
+dtb/mapped_collection/__init__.py,sha256=6qdPXxNEU3MReiTV6QkKns6u9ZJpy-oxqbFaRM59S4k,100
+dtb/mapped_collection/mapped_collection.py,sha256=5UH3SkkD1JI_SA7vreR7-zHG2Lk5A2s4OuFECEywvrw,1299
+dtb/mapped_collection/mapped_collection.pyi,sha256=NrIvY-Z9a9ZW7CUaFZsUgsXe8MrFSLfIJO4GR9HMUt0,771
+dtb/mapped_collection/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dtb/mapped_collection/test.py,sha256=cR6HgfPWgykIKEOvXuQJHfzotz_oSToXXvqL0glhy68,2472
+dtb.mapped_collection-3.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+dtb.mapped_collection-3.1.0.dist-info/METADATA,sha256=ts-nIyw9xkcBlq1XnH0wSSUyne8g_C0LEovWLy6yk80,319
+dtb.mapped_collection-3.1.0.dist-info/RECORD,,
