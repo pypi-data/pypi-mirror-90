@@ -1,0 +1,7 @@
+setup.py
+django-pydantic/__init__.py
+django-pydantic/main.py
+django_pydantic.egg-info/PKG-INFO
+django_pydantic.egg-info/SOURCES.txt
+django_pydantic.egg-info/dependency_links.txt
+django_pydantic.egg-info/top_level.txt
