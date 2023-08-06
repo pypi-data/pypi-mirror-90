@@ -1,0 +1,7 @@
+.coverage
+.ipynb_checkpoints/
+.mypy_cache/
+build/
+dist/
+tags
+version.py
