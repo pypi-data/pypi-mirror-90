@@ -1,0 +1,4 @@
+termcolor==1.1.0
+jsonlines==1.2.0
+tabulate
+PyYAML==5.3.1
