@@ -1,0 +1,15 @@
+outlook_mail_loader/__init__.py,sha256=esmCKHvu3285ko3PQK1tbO0tb2kH-tzOxMZcnf6GTeQ,621
+outlook_mail_loader/class_mail_dumper.py,sha256=Kn1XnfKnpENaJqRT0qyQt7Yv8hSBHKZiTy8Ufy2H3ak,9510
+outlook_mail_loader/class_mail_getter.py,sha256=JS8k2DBnlIsdwsEXCrY_EizVni98Ju_8CMZ6_dEDdT8,7671
+outlook_mail_loader/class_outlook_message.py,sha256=SSW5yDVQLOPCWZJMeEY945LRxBPyvbnXIFCUd9juBgs,5533
+outlook_mail_loader/exceptions.py,sha256=d1k3cRgiOc0Ezi6uPg1GsWmAABeKTRJ5PV11DuEncuY,165
+outlook_mail_loader/mail_listener.py,sha256=dTh0gz3OIszXZ0u2UbUWRmTnvMgSThSO8a8l3hvr7GE,6777
+outlook_mail_loader/other.py,sha256=RUBtdP5dOt6hZCY9I9yczsXvavkfdJxmLQuWJwoC_Ws,791
+outlook_mail_loader/recursive.py,sha256=VVNNwMdsuJEFtE0uuJ5OlIKXf13OAcJq1mFtyx25quw,2220
+outlook_mail_loader/tbd_class_mail_listener.py,sha256=JiCwuj2MOIfW7x6wwOsL3AXPpQ5Lzo0daGrUBK6R6uY,628
+outlook_mail_loader-0.1.7.dist-info/AUTHORS.rst,sha256=xk8rwcbcvf4ITPiPyRN4GvTCAF3g0PQTuqfOu3xhItk,226
+outlook_mail_loader-0.1.7.dist-info/LICENSE.txt,sha256=a8MTW3v1xhtFrLD0_37pb2j89NzH1NRidGc6U-IFdx0,1097
+outlook_mail_loader-0.1.7.dist-info/METADATA,sha256=u4SKNyDn-veQZHB_2bkJhRPXn5R3i5oH4gLttSTKCEs,8827
+outlook_mail_loader-0.1.7.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+outlook_mail_loader-0.1.7.dist-info/top_level.txt,sha256=_9nwZ2WftMzdNnDL7Yg4Svm5KcFkSCL0ATfDjcM3RQI,20
+outlook_mail_loader-0.1.7.dist-info/RECORD,,
