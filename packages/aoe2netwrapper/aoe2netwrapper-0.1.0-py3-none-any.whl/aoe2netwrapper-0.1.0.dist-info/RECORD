@@ -1,0 +1,8 @@
+aoe2netwrapper/__init__.py,sha256=9lsb7w4gkvVHhoEgOoyXTKDErwX7Pqgw6O_nkM9H9Zk,397
+aoe2netwrapper/api.py,sha256=AvEsyKSfPy19W5px8Oj2n-ZZmByIYz583e4abbijJ7U,16868
+aoe2netwrapper/exceptions.py,sha256=JwOM07BrXjC46wSls4JTHxpUNAXyaxWjldQVC-XXjhI,324
+aoe2netwrapper/nightbot.py,sha256=R6D8TlRjEFPcWtKLwOSWYJ3YW1yk5DsFh_cQeZ1iWqk,16360
+aoe2netwrapper-0.1.0.dist-info/LICENSE,sha256=kXpy7uN8e1dLf91TMSjShEmSTQ_z3d9SPHxwfk6ZMGw,1071
+aoe2netwrapper-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+aoe2netwrapper-0.1.0.dist-info/METADATA,sha256=kNqmtBevOCgBNh02Teqd7lRVW8_dkSDYEmdzzoe9R30,1076
+aoe2netwrapper-0.1.0.dist-info/RECORD,,
