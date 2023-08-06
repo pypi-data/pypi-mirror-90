@@ -1,0 +1,7 @@
+maurice/__init__.py,sha256=0_a3ZS0x3DDs-FU2fJr98rtr3hyOUYt3oc8oIsa6kFM,116
+maurice/core.py,sha256=nS2U-hzQ2CJJoAvpPuYCxw6EEVUCvT7RMypjgTZuWrw,133
+maurice/patchers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+maurice/patchers/sklearn.py,sha256=yJ50-tPbblkZiByg8ApbA81DAoOpVzNlF-4xQLEGeic,1462
+maurice-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+maurice-0.1.1.dist-info/METADATA,sha256=MRfPSEfQHV-Lr-Wrx4AygyqSMZk8n7YidilXjG57bRk,421
+maurice-0.1.1.dist-info/RECORD,,
