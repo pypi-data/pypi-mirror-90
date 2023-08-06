@@ -1,0 +1,17 @@
+cloud_archiver/__init__.py,sha256=Qs14IcS_wHvMdYTYI61tdoouctt1_ukGDJOp8GnUB20,118
+cloud_archiver/analyze_directory.py,sha256=w9cRTg4YsFsqczlE6gaXGtTn84-vsmAFy1DtYQ1gjw8,2602
+cloud_archiver/archive_item.py,sha256=0x0Ras8f6yxTo086A7isDJZI1emUEnVRNp_l8R2nDfk,208
+cloud_archiver/archive_path.py,sha256=J6D834rCCDpAHVWtOI48KdgL9hIbJV8cgMLn2e4a4XA,652
+cloud_archiver/cloud_archiver.py,sha256=Epyz59J2qrhSU5iJ7nQr_21qBFO5HxZWFwaGUWIwJrU,5023
+cloud_archiver/display_archive_items.py,sha256=pidnrnbcRXmtrMER7jr4UJSD-D3z8DwdXNRCrHjsoyc,2156
+cloud_archiver/display_paths.py,sha256=cSg5FWoh3NxRU83knhJsUYbcvxBUy7FICL0esBLQLk4,1974
+cloud_archiver/file_generator.py,sha256=-M8BuKCMuVsMWzzDv9UL6sT6U-aWHibqLCxfC-WGk0Q,1680
+cloud_archiver/get_items_in_archive.py,sha256=GSgQ7GM2lb3pToW-hr-M2gr3IRzTX7dHg_OnNak0cgI,836
+cloud_archiver/load_config.py,sha256=6CZx_Q8hf_LQXRvMQckwL2xL8Q2rYRqnP6LcsNk1FdA,1605
+cloud_archiver/transfer_to_achive.py,sha256=zxCxt-3C4Yxc6iYshr_MzYHtyXZIfg8jcFYR0jxoSUQ,1557
+cloud_archiver/upload_archive.py,sha256=fvZ-ovPUQMAkqxV06WPcQrbaOZZvlToqtXsZR_r-b60,891
+cloud_archiver-1.1.2.dist-info/METADATA,sha256=s4wJ7KHMUVUtsDodqJAWuUjquNSMkN21f3WQ6lteXxM,423
+cloud_archiver-1.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cloud_archiver-1.1.2.dist-info/entry_points.txt,sha256=mSFYNhy_HnlE7pKNREKOBdH7GmIU68l_b8dIxU57pCM,56
+cloud_archiver-1.1.2.dist-info/top_level.txt,sha256=kELOypyN5cfb9B5wBSlrPyuYAj2Mc4tFW4IkIh_yeC4,15
+cloud_archiver-1.1.2.dist-info/RECORD,,
