@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: ibl
+Version: 0.0.4
+Summary: Python api wrapper for infinity bot list
+Home-page: https://ibl.gitbook.io/ibl/
+Author: Andromeda
+Author-email: bots@rjbot.xyz
+License: MIT
+Description: For examples, docs, and installation, go to https://ibl.gitbook.io/ibl/
+Keywords: infinity bot list infinity-bot-list-python-api ibl
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
