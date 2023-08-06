@@ -1,0 +1,10 @@
+ensae_teaching_dl/__init__.py,sha256=9yTN5xYnEweeCdFzGh9fimNdHrfIoG_7RsR7xeiumiY,682
+ensae_teaching_dl/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ensae_teaching_dl/examples/keras_mnist.py,sha256=hq_Ib4ytk-Lq4sRpcCX6sPNq05vrziXMvTgsY-IpeWo,5571
+ensae_teaching_dl/faq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ensae_teaching_dl/faq/faq_gpu.py,sha256=xw-dXhZeFHude7URqVVF3NKTLVoMy_L1u_fFlrtGS5o,2771
+ensae_teaching_dl-0.2.162.dist-info/LICENSE.txt,sha256=44sqUf7dWouuWy9NBXS-nkj42I5eC9_twpgwg_hsyHQ,1083
+ensae_teaching_dl-0.2.162.dist-info/METADATA,sha256=SyKXiDkhUKCY8xdN69Atl5wwUIGej5PzaHIXCC9BdBo,3072
+ensae_teaching_dl-0.2.162.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ensae_teaching_dl-0.2.162.dist-info/top_level.txt,sha256=1jGEPwUdXF4zsD0YudJWpS4BkhuxHsBILWp4vuKqR9A,18
+ensae_teaching_dl-0.2.162.dist-info/RECORD,,
