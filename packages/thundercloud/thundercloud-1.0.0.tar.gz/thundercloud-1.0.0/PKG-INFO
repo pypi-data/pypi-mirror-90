@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: thundercloud
+Version: 1.0.0
+Summary: Runs python files on EC2 instance!
+Home-page: https://github.com/wtai777
+Author: William Tai
+Author-email: williamtai777@gmail.com
+License: BS
+Description: This runs your python files on an EC2 Instance!
+Platform: UNKNOWN
