@@ -1,0 +1,6 @@
+trytond_account<5.9,>=5.8
+trytond_account_invoice<5.9,>=5.8
+trytond_account_invoice_stock<5.9,>=5.8
+trytond_account_product<5.9,>=5.8
+trytond_account_stock_continental<5.9,>=5.8
+trytond<5.9,>=5.8
