@@ -1,0 +1,10 @@
+README.md
+setup.py
+justvpn/__init__.py
+justvpn/session.py
+justvpn/util.py
+justvpn.egg-info/PKG-INFO
+justvpn.egg-info/SOURCES.txt
+justvpn.egg-info/dependency_links.txt
+justvpn.egg-info/requires.txt
+justvpn.egg-info/top_level.txt
