@@ -1,0 +1,9 @@
+docopt
+pretty_midi
+mido
+numpy
+
+[test]
+coverage
+pytest
+pytest-cov
