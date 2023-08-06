@@ -1,0 +1,8 @@
+README.md
+setup.py
+TextTron/TextTron.py
+TextTron/__init__.py
+TextTron.egg-info/PKG-INFO
+TextTron.egg-info/SOURCES.txt
+TextTron.egg-info/dependency_links.txt
+TextTron.egg-info/top_level.txt
