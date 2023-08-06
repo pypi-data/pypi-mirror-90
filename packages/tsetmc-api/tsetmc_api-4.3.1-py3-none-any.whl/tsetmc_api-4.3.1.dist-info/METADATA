@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tsetmc-api
+Version: 4.3.1
+Summary: getting data from tehran stock exchange
+Home-page: https://github.com/mahs4d/tsetmc-api
+Author: Mahdi Sadeghi
+Author-email: mail2mahsad@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: lxml
+Requires-Dist: python-dateutil
+Requires-Dist: jdatetime
+Requires-Dist: schedule
+Provides-Extra: dev
+
+UNKNOWN
+
+
