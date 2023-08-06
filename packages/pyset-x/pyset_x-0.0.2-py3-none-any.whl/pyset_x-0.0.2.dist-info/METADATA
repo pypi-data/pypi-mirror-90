@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: pyset-x
+Version: 0.0.2
+Summary: Like `set -x` in bash
+Home-page: https://github.com/czinck/pyset_x
+Author: Christian Zinck
+Author-email: christian.zinck@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Requires-Dist: astroid
+
+# pyset_x
+
+This is `set -x` in Bash, but for Python. Before a line of code is executed, it will be printed. The idea is for quick debugging of actual code flow, instead of having to put `print` calls in all your `if/elif/else` blocks etc.
+
+## Example
+```python
+from pyset_x import annotate_function
+@annotate_function
+def func():
+    a = 1 + 1
+    return a
+func()
+```
+
+Will print
+
+```
+a = 1 + 1                                                                                                              
+return a 
+```
+
+
+
