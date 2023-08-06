@@ -1,0 +1,7 @@
+python-sql>=0.9
+trytond<5.9,>=5.8
+
+[data]
+pycountry
+forex-python
+proteus<5.9,>=5.8
