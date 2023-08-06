@@ -1,0 +1,2 @@
+jsonschema
+azure-storage-file-datalake
