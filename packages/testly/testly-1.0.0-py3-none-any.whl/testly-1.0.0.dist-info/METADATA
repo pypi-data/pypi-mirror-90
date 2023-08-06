@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: testly
+Version: 1.0.0
+Summary: Perform SOAP and REST test
+Home-page: https://github.com/stewiejnr/testly
+Author: Stewartium, RPhipps
+Author-email: stewartium1@gmail.com,rhadjni@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: zeep
+
+Perform SOAP, REST and UI / Feature tests
+
+
+Installation
+============
+You can download and install the latest version of this software from the Python package index (PyPI) as follows::
+
+    pip install --upgrade testly
+
+Usage
+=====
+

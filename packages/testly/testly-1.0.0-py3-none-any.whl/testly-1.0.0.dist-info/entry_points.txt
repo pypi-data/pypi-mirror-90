@@ -1,0 +1,3 @@
+[console_scripts]
+testly-man = testly.__main__:main
+
