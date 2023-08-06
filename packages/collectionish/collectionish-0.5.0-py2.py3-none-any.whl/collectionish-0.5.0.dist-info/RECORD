@@ -1,0 +1,15 @@
+collectionish/__init__.py,sha256=8fdzXRqQqOCjLhhAgYmxtAGg7Jvd_qtcmC90cqbGKdA,401
+collectionish/_ancestor_chain_map.py,sha256=bQKazi-WmlHllaJri_Esyc8i5HGrk7rEFnagH_NSlFA,1042
+collectionish/_attydict.py,sha256=6sPpYRNYmws74hupGTN7rjQtmAlhZGSSbjaNfNgepzE,3493
+collectionish/_numdict.py,sha256=2Gays3cR1BlA4WArohRzy_Knq0tMzOor3v3Lge6ZzbQ,9412
+collectionish/_sentry.py,sha256=G6vIfCA-rdtaeIQolOSCdpQz8Gj4XQqb5ZVX4isSNhk,1040
+collectionish/_uniquetuple.py,sha256=qPbm7yEajw8VP9BYpGBEO3pg5tPHrL-76g9A411mbBU,1109
+collectionish/ops.py,sha256=nvsqxq9q2I1RbRfdLFGh_HKNZYSAWEcgvJx_T9L9l8k,6350
+collectionish/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+collectionish/utils.py,sha256=GBlbVnClpWFN35RVnLuNHyBrsF3N-LHjee-sjI9kaUk,1390
+collectionish-0.5.0.dist-info/AUTHORS.md,sha256=lAE70jf_sRxTsz4U-JGdTDNPNggBm5JcGa7WanwV71U,129
+collectionish-0.5.0.dist-info/LICENSE,sha256=NLyLrZhNBn-67uYpxzL3uh2QizdAkJaQREIN9pJ7sHI,1073
+collectionish-0.5.0.dist-info/METADATA,sha256=zL0R7v5c5yUQEXp2ZmOoXn-Q_G6DiByKL5fugHNXMjc,4911
+collectionish-0.5.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+collectionish-0.5.0.dist-info/top_level.txt,sha256=NqYb8DogAUdsaPpHui8INg4lK73VpBYa3ba0aN7gmL4,14
+collectionish-0.5.0.dist-info/RECORD,,
