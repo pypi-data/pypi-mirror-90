@@ -1,0 +1,14 @@
+apm/__init__.py,sha256=e7pXc2B7DL6t5nE9do1d7dKS3myn_mS6N3rVAw5dhz4,433
+apm/__pkginfo__.py,sha256=42STGor_9nKYXumfeV5tiyD_M8VdcddX7CEexmibPBk,22
+apm/_util.py,sha256=uBe-VK8ZyfmZiTycsPfRfIzXZJwQOx-y_58JCstd-kw,636
+apm/core.py,sha256=z4uJZNk_tUQxszmOWpjtAiSvw3IRZUERPkNre8j-Ruk,7291
+apm/patterns.py,sha256=1p-_9FgstqEyNG_fPNgIpLh6tSXxuyI1Gb5anYxkEd0,4198
+tests/__init__.py,sha256=iTw_teUZxYB_s7S7Pm3oHt6-VBZ3S3gn3bnOxxMnATY,64
+tests/test_basic_usecases.py,sha256=METh6XbFkwGW5-WUEc8rryU7oL-fKHKNGLKJITW49nM,7032
+tests/test_readme.py,sha256=i-NgNrzHhKZ3rJRZupjr9FnFX01bR9g5wwxNGtBgepI,3731
+tests/test_util.py,sha256=EOF5bsHbg1Uz65LI3BRkevoevuHp8vHGvAVq_reRE9k,393
+awesome_pattern_matching-0.4.0.dist-info/LICENSE,sha256=ZeK0oK-ap2QtMPGLN6nSsBr3xAK5XjCF17som2VaCZM,1073
+awesome_pattern_matching-0.4.0.dist-info/METADATA,sha256=W5bew5n31A5Qnoo3JFjiY38QWMCUAXrkzSD2fDYJYdE,8994
+awesome_pattern_matching-0.4.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+awesome_pattern_matching-0.4.0.dist-info/top_level.txt,sha256=jcDAbtKBBXipnptigGsveZecG-tRjnXqkBCfajYMmF8,10
+awesome_pattern_matching-0.4.0.dist-info/RECORD,,
