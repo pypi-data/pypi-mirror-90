@@ -1,0 +1,12 @@
+README.rst
+setup.py
+aiodata/__init__.py
+aiodata/client.py
+aiodata/schema.psql
+aiodata/server.py
+aiodata.egg-info/PKG-INFO
+aiodata.egg-info/SOURCES.txt
+aiodata.egg-info/dependency_links.txt
+aiodata.egg-info/entry_points.txt
+aiodata.egg-info/requires.txt
+aiodata.egg-info/top_level.txt
