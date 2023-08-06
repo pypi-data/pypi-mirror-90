@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: httperf
+Version: 0.0.1
+Summary: A lightweight python API testing library
+Home-page: https://github.com/luhart/perf
+Author: Luke Hartman
+Author-email: ljhartman10@gmail.com
+License: MIT
+Description: # perf
+        
+        Python API / Web service performance testing library.
+        
+        ### Time a number of GET requests and compute the average
+        ```
+        > python main.py
+        Count:5
+        #       (s)
+        0       0.76204
+        1       0.807291
+        2       0.709676
+        3       0.550546
+        4       0.766626
+        avg     0.7192358
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
