@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: lets-debug-helper
+Version: 1.0.0
+Summary: This is a cli tool that interacts with the Let's Debug API
+Home-page: https://jediknight112.github.io/lets-debug-helper/
+Author: jediknight112
+Author-email: jediknight11206@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: argparse (==1.4.0)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: idna (==2.10)
+Requires-Dist: mock (==4.0.3)
+Requires-Dist: parameterized (==0.7.4)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: urllib3 (==1.26.2)
+
+UNKNOWN
+
+
