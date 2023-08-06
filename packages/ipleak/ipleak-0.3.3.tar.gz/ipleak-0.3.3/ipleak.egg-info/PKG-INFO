@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: ipleak
+Version: 0.3.3
+Summary: Python Tool to check your VPN.
+Home-page: https://github.com/ProfileID/ipleak
+Author: profileid
+Author-email: profileid@protonmail.com
+License: MIT
+Description: # IP Leak
+        
+        ![tests](https://github.com/ProfileID/ipleak/workflows/tests/badge.svg)
+        [![PyPI package](https://img.shields.io/pypi/v/ipleak)](https://pypi.python.org/pypi/ipleak/)
+        [![PyPI pyversions](https://img.shields.io/pypi/pyversions/ipleak.svg)](https://pypi.python.org/pypi/ipleak/)
+        [![PyPI license](https://img.shields.io/pypi/l/ipleak.svg)](https://pypi.python.org/pypi/ipleak/)
+        [![HitCount](http://hits.dwyl.com/profileid/ipleak.svg)](http://hits.dwyl.com/profileid/ipleak)
+        
+        ## About IPLeak
+        Python Tool to check your current IPv4, IPv6 and DNS Address to ensure your VPN is connected and not leaking.
+        
+        ## Install package
+        Install via pypi
+        ```bash
+        pip install ipleak
+        ```
+        
+        Update via pypi
+        ```bash
+        pip install -U ipleak
+        ```
+        
+        Install via git
+        ```bash
+        pip install git+https://github.com/ProfileID/ipleak
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
