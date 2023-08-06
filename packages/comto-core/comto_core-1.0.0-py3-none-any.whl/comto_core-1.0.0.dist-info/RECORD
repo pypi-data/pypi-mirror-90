@@ -1,0 +1,10 @@
+comto_core/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+comto_core/file.py,sha256=zqqV6C-o_14dKsQzDu9ZLldG-Y2EG1cjJUvzsiV_bEk,1390
+comto_core/path.py,sha256=sVI7ZILY-0Pjeap63yTtiad_GX0t9KyR3gIl1cjBJNI,2396
+comto_core/regexp.py,sha256=IvEZlSC7yscbAw1nUOsfyiLfLsRBQmPfye_PPnFlBZE,1003
+comto_core/time.py,sha256=m9UhevQkizryKWhdzt9xtIKOAJ_L9snLpEBILLhz8zY,1216
+comto_core-1.0.0.dist-info/LICENSE,sha256=7JsZKCiWPBf1AgCJX7OGR4ac_wUeoHqd1Z0kTEwn8l0,1098
+comto_core-1.0.0.dist-info/METADATA,sha256=to_94iyD_7ihAZuslTygFU8NPWVVJq5Khip3JPL5E5Y,2173
+comto_core-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+comto_core-1.0.0.dist-info/top_level.txt,sha256=vJj_I5bz8NhSXPcdBAQOZDPOHQ_4_z5fPO6Orva0Ug8,11
+comto_core-1.0.0.dist-info/RECORD,,
