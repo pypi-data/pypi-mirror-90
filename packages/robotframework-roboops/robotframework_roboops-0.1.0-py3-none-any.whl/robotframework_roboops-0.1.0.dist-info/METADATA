@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: robotframework-roboops
+Version: 0.1.0
+Summary: Robot Framework's library for creating and running DevOps tasks easily and efficiently.
+Home-page: https://github.com/soyacz/robotframework-roboops/
+License: Apache 2.0
+Keywords: CI,CD
+Author: Łukasz Sójka
+Author-email: soyacz@gmail.com
+Maintainer: Łukasz Sójka
+Maintainer-email: soyacz@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: robotframework (>=3.2.2,<4.0.0)
+Project-URL: Documentation, https://github.com/soyacz/robotframework-roboops/
+Project-URL: Repository, https://github.com/soyacz/robotframework-roboops/
+Project-URL: robot_framework_user_guide, https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html
+Description-Content-Type: text/markdown
+
+# robotframework-roboops
+----
+Robot Framework's library for creating, sharing and running DevOps tasks easily and efficiently
+
+# Installation instructions
+todo
+
+# Usage
+
+# running tests
+```
+coverage run --source=. -m pytest . && coverage report -m && coverage html
+firefox htmlcov/index.html
+```
