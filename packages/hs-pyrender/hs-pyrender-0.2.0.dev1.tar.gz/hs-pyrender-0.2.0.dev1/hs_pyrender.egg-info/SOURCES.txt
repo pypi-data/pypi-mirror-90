@@ -1,0 +1,12 @@
+README.md
+setup.py
+hs_pyrender.egg-info/PKG-INFO
+hs_pyrender.egg-info/SOURCES.txt
+hs_pyrender.egg-info/dependency_links.txt
+hs_pyrender.egg-info/requires.txt
+hs_pyrender.egg-info/top_level.txt
+pyrender/__init__.py
+pyrender/core.py
+pyrender/vectors.py
+pyrender/libraries/2d_drawCalls.dll
+pyrender/libraries/3d_drawCalls.dll
