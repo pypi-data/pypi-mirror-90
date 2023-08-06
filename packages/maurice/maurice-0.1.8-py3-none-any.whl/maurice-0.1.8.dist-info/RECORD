@@ -1,0 +1,11 @@
+maurice/__init__.py,sha256=jsLumzRFo5qsDyBfeKx-KRNRCiayANPrBpJo4cCNiWo,56
+maurice/caching.py,sha256=LFvY9x6VTt1MLmfWonEKb8RbdwQhtBh3hnzt-Oo6AjM,88
+maurice/patchers/__init__.py,sha256=uXwCVBwX5SGQtHR-XOUB1drh1_xjVtcytqYszCuNtkI,222
+maurice/patchers/core.py,sha256=zaOXAQ8eJ1okGtaS4ZKUhqvkbwZcQE574Lqrya9B_hA,2544
+maurice/patchers/keras.py,sha256=SEaqKwzQZbxGYe89zMzh94EtCND8jrseAvs8ZUeVaLU,316
+maurice/patchers/pandas.py,sha256=pnZza1J0Rt4cNT2q_npKEyCsOp7LVa1sZvqjgY9ILsA,412
+maurice/patchers/sklearn.py,sha256=6wD4-lgjYQ0tq12_TFyKeXmknhQ29rsveYmJksb5JS4,371
+maurice/utils.py,sha256=Nq-bIrZVD-BYdkKLAsbj8kwwJ6F6MJMzii7tf1aYmsE,136
+maurice-0.1.8.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+maurice-0.1.8.dist-info/METADATA,sha256=V6q7nSXNRHcDuZo049jAnUVbakdpMzQ5d4QtzoFek5I,932
+maurice-0.1.8.dist-info/RECORD,,
