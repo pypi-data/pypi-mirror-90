@@ -1,0 +1,13 @@
+django_linear_migrations/__init__.py,sha256=oIfpYihUWnXM62lKkeGGfN9eINu4g3I8AU9NASrKBm4,85
+django_linear_migrations/apps.py,sha256=ay28jTW_sAgtnC6sWKIQh7fZ27ygsN7KIXZBAy23t7Y,5618
+django_linear_migrations/compat.py,sha256=XRzLpamqvr3jgXZ7mB9knD3dYbm822ynTpi0Wdbz_V4,223
+django_linear_migrations/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_linear_migrations/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_linear_migrations/management/commands/create-max-migration-files.py,sha256=_lMjQvcqmCeF2V4PaL01TiLXfUZlq7_uszB23ib1Gdk,2469
+django_linear_migrations/management/commands/makemigrations.py,sha256=2ov_vHy81MQVfY1H0wM-pVXzvln_xL2ok-qXtXWMx-c,928
+django_linear_migrations/management/commands/rebase-migration.py,sha256=J-tlUR4-ZCV3t4D5Rk5x8ZY4QFJHND3Gf0v0JwcUhx4,5938
+django_linear_migrations-1.4.0.dist-info/LICENSE,sha256=SCABx5luXM0TahLbPpAy3dMBDkRxqzPKsabkfA7m3_Y,1074
+django_linear_migrations-1.4.0.dist-info/METADATA,sha256=d6OCLJyrifL1hvae_H--86EKJbA6MjMvi6K5aNZXAQ0,10619
+django_linear_migrations-1.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_linear_migrations-1.4.0.dist-info/top_level.txt,sha256=m8aZU7fxkxAs2Nb-9yExJMsps7UL8WSeMGAJthVq_zU,25
+django_linear_migrations-1.4.0.dist-info/RECORD,,
