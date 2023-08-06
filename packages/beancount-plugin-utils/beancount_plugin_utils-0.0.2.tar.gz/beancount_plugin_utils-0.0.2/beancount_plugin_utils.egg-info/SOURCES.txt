@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.py
+beancount_plugin_utils/BeancountError.py
+beancount_plugin_utils/__init__.py
+beancount_plugin_utils/common.py
+beancount_plugin_utils/example_plugin.py
+beancount_plugin_utils/marked.py
+beancount_plugin_utils/merge_postings.py
+beancount_plugin_utils/metaset.py
+beancount_plugin_utils/parse_config_string.py
+beancount_plugin_utils/test_utils.py
+beancount_plugin_utils.egg-info/PKG-INFO
+beancount_plugin_utils.egg-info/SOURCES.txt
+beancount_plugin_utils.egg-info/dependency_links.txt
+beancount_plugin_utils.egg-info/top_level.txt
+beancount_plugin_utils/../README.md
