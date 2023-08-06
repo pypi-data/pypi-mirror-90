@@ -1,0 +1,7 @@
+lipo/__init__.py,sha256=dC76CIb6VYVan1qGbiV2LxDJUPtmxs1tCygysTMlnls,135
+lipo/hyperparameter.py,sha256=XRFOpDiP3g9Bl61wY3IN-4q-g8XxumBob0WvS7Jey9k,6389
+lipo/optimizer.py,sha256=WYeGd0IA2cpGivYc5Jg7lntnvsGz919oNBrsyoz5j0k,13529
+lipo-1.2.2.dist-info/LICENSE,sha256=vEEKSL8_Hq2B6-ahiZsJe4scwYsBXNidw5q2MHjRuzg,1067
+lipo-1.2.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+lipo-1.2.2.dist-info/METADATA,sha256=ink5N_E9zUOLVgkDeOP2h1IK0AFnP3mwbJ7_AiaX5MA,3982
+lipo-1.2.2.dist-info/RECORD,,
