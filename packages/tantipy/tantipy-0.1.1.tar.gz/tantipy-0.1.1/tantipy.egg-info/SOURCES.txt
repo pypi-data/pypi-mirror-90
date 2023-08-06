@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.cfg
+tantipy/__init__.py
+tantipy/tantivy_coder.py
+tantipy/tantivy_reader.py
+tantipy.egg-info/PKG-INFO
+tantipy.egg-info/SOURCES.txt
+tantipy.egg-info/dependency_links.txt
+tantipy.egg-info/requires.txt
+tantipy.egg-info/top_level.txt
