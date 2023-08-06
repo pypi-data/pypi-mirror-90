@@ -1,0 +1,18 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "autothemewin10"
+author = "Rohit Patil"
+author-email = "rahulhimesh09@gmail.com"
+home-page = "https://github.com/raprocks/AutoThemeWin10"
+classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
+description-file = "README.md"
+requires = [
+    "typer",
+]
+requires-python= ">=3.5"
+
+[tool.flit.scripts]
+autotheme = "autothemewin10.main:app"
