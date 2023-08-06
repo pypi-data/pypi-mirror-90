@@ -1,0 +1,9 @@
+README.md
+setup.py
+pillar_youtube_upload.egg-info/PKG-INFO
+pillar_youtube_upload.egg-info/SOURCES.txt
+pillar_youtube_upload.egg-info/dependency_links.txt
+pillar_youtube_upload.egg-info/requires.txt
+pillar_youtube_upload.egg-info/top_level.txt
+youtube_upload/__init__.py
+youtube_upload/client.py
