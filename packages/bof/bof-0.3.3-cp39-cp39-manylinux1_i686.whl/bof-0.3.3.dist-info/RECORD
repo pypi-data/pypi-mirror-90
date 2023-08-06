@@ -1,0 +1,17 @@
+bof-0.3.3.dist-info/AUTHORS.rst,sha256=499jOLtO77zcA9rBgcJ25uAvgitE0EjBmt0b1EH87P0,156
+bof-0.3.3.dist-info/WHEEL,sha256=E9diJhdqYoW-Z_k18V_gCo0nZPNV0ncLHCsPAqWn_Do,106
+bof-0.3.3.dist-info/METADATA,sha256=koVuC_wIWBkCzZv3QyF9F64RmkYQbz08lYm3wpTF2Jc,4204
+bof-0.3.3.dist-info/top_level.txt,sha256=Y28-H0GqEiOlRXZFSf1U0bVaXLw_wC3N54bqXdE5o8s,10
+bof-0.3.3.dist-info/RECORD,,
+bof-0.3.3.dist-info/LICENSE,sha256=4_zoJb-lmW8sqIy1oXk-zi-Q_3N_2Gbbuf9KIFj35sA,1579
+bof/process.py,sha256=STWQ-Cv3akvivl2axp0vq7M1RR4UAnHowEwdmdED7BI,18830
+bof/factortree.py,sha256=G3eqL9h-yfH3J19g7tKPVgBlR1uyTLhAdmm-NsjdlxQ,19917
+bof/common.py,sha256=IZWd4HSKjsYRwrB8pBgC9Ut09kH8DVbrCp1DkYoNDPk,6308
+bof/feature_extraction.py,sha256=vsxTMh0g3tgmLueamOGi6qKxfECawlAH3gNh_ueb3Ig,12526
+bof/jc.py,sha256=QQj1v6a6bkx2Yo8EjSSRQIZCyGDhKGjegaLX5soZTIQ,5607
+bof/__init__.py,sha256=HKgRA5aQUcTwhRp6K0-gD7_u03VFWIbO1Sp7MMcVO_Q,132
+bof/cython/count.cpp,sha256=yps6u3amf7sHpnR1Ee7AQiVEVRwnf4is46PZ4LxQ2B4,1082100
+bof/cython/count.cpython-39-i386-linux-gnu.so,sha256=_5jDjmj4NFoapSbpymuGAowoaUyh25gywymy35GopY0,1277744
+bof/cython/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_bof.py,sha256=IRlQD_ABoTcTTPx340y8_BGwncvymX6Q3xqYDDZ2BxM,548
+tests/__init__.py,sha256=W64Vtmgb84c6JizQJxMhnomdY1OSsVMhVMjl2YiQVaM,33
