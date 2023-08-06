@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+wide/__init__.py
+wide/empca.py
+wide/fuzzy_lda.py
+wide/nca.py
+wide/sompy.py
+wide/tsne.py
+wide.egg-info/PKG-INFO
+wide.egg-info/SOURCES.txt
+wide.egg-info/dependency_links.txt
+wide.egg-info/not-zip-safe
+wide.egg-info/requires.txt
+wide.egg-info/top_level.txt
