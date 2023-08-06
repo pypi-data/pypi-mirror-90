@@ -1,0 +1,14 @@
+hypixelaPY/__init__.py,sha256=D2oJ_jWOue20n36Ui-AqBIkaVWtJldnFR5g3JPle620,161
+hypixelaPY/client.py,sha256=_2enIJuMIf0QcmVGX17XKsU3XVB2er6HsY29vO_HNoY,1398
+hypixelaPY/exceptions.py,sha256=UcGUB0EG1PHuygs76TMSDPzEN8ZxsEs3rzOv_cu6x5Q,141
+hypixelaPY/hypixel.py,sha256=mA4KlRNL0UlhZ7dlNkloWh5LF6FqVJDCnX4nB2RTcmc,587
+hypixelaPY/mojang.py,sha256=HqwQlxRo5hhl6aNQOclkx_9bREV9TRKdcymzVtDEebw,881
+hypixelaPY/utils.py,sha256=oB-bq5Ftq2iCi0zauzHal-KxQ5gaYjNkwxajHnI-xrk,3698
+hypixelaPY/objects/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hypixelaPY/objects/bedwars.py,sha256=deQhK4-ZsVKkdH8h3lBsUFPoRCO6kW6iG5hm3bRPU4E,29820
+hypixelaPY/objects/objects.py,sha256=0WcFmofnRIiKhQkRHosjU8NxsT82skRPbdTNCYBIUKw,2470
+hypixelaPY-0.0.4.dist-info/LICENSE,sha256=T93hCiIn9nbGdYQKUpB7XDUCuoY2pAH-JHWF2xPj0qQ,1082
+hypixelaPY-0.0.4.dist-info/METADATA,sha256=VF5G2Vfr0Zgle3jdvtQXi8JKtWecq8OAugB7t2YfbnY,501
+hypixelaPY-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hypixelaPY-0.0.4.dist-info/top_level.txt,sha256=8DIxkr3-yaCJevCLhBRjk0hQm16bbNzKR3g95WeUqlY,11
+hypixelaPY-0.0.4.dist-info/RECORD,,
