@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Ringing methods audibly (ring)</title>
+</head>
+<body>
+<h1>Ringing methods audibly (ring)</h1>
+
+<h2>Synopsis</h2>
+<p>ring <em>object_id</em> <em>tower_id</em></p>
+
+<h2>Description</h2>
+<p>
+To hear what a block (or a plain course of a method) sounds like, the
+ring command may be used; for example to ring a plain course of
+Grandsire Triples:
+</p>
+<pre>
+CRE> tower wilf "Harrogate St Wilfrid"
+CRE> method gs7 "Grandsire" 7
+CRE> set cover on
+CRE> ring gs7 wilf
+</pre>
+<p>
+Touches, defined in blocks, may also be rung; for example:
+</p>
+<pre>
+CRE> block gs168 "168 Grandsire Triples" 7 14
+CRE> touch gs168 gs7 PPPB
+CRE> repeat gs168
+CRE> set cover on
+CRE> ring gs168 wilf
+</pre>
+<p>
+Ringing will stop at the end of the block (or if CTRL-C is pressed).
+</p>
+<p>
+N.B. An error will occur if there are too few bells in the tower to
+ring the specified block or method.
+</p>
+
+</body>
+</html>

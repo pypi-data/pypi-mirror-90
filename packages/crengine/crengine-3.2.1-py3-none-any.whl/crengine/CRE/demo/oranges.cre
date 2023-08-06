@@ -1,0 +1,29 @@
+# Oranges and Lemons
+
+tower t "St Wilfrid"
+set tempo 150
+
+echo Oranges and lemons say the bells of St Clement's
+chime t 575 79 87,.5 X85 797
+
+echo You owe me five farthings say the bells of St Martin's
+chime t 575 79 87,.5 X85 7 9,2
+
+echo When will you pay me say the bells of Old Bailey
+chime t 808 0T E0,.5 9E8 0 T,2
+
+echo When I get rich say the bells of Shoreditch
+chime t 808 T,2 E0,.5 9E8 T,3
+
+echo When will that be say the bells of Stepney
+chime t 575 9,2 87,.5 X85 9,3
+
+echo I do not know say the great bells of Bow
+chime t 575 9,2 87,.5 X85 9,3
+
+
+
+
+
+
+

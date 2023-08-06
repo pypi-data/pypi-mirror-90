@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Ringing methods (plainlead, plaincourse, touch, repeat)</title>
+</head>
+<body>
+<h1>Ringing methods (plainlead, plaincourse, touch, repeat)</h1>
+
+<h2>Synopsis</h2>
+<p>plainlead <em>block_id</em> <em>method_id</em> [<em>nleads</em>]</p>
+<p>plaincourse <em>block_id</em> <em>method_id</em></p>
+<p>touch <em>block_id</em> <em>method_id</em> <em>calls</em></p>
+
+<h2>Description</h2>
+<p>
+Methods may be rung by adding plain leads, plain courses or touches to
+existing blocks
+</p>
+<p>
+<em>plainlead</em> generates one or more plain leads of the
+method. The optional argument <em>nleads</em> is a number to specify
+then number of plain leads (default is 1). For example:
+</p>
+<pre>
+CRE> method gs "Grandsire" 5
+CRE> block pc "2 leads of Grandsire Doubles" 5 10
+CRE> plainlead pc gs 2
+</pre>
+<p>
+<em>plaincourse</em> generates a whole plain course of the
+method. Plain leads are added until it comes round. For example:
+</p>
+<pre>
+CRE> method gs "Grandsire" 5
+CRE> block pc "Plain course of Grandsire Doubles" 5 10
+CRE> plaincourse pc gs
+</pre>
+<p>
+<em>touch</em> provides a means of generating simple touches by
+specifying whether leadends are plain (P), bob (B) or single (S); for
+example, an extent of Grandsire Doubles may be produced as follows:
+</p>
+<pre>
+CRE> method gs "Grandsire" 5
+CRE> block ext "120 Grandsire Doubles" 5 10
+CRE> touch ext gs PSBSPSBSPSBS
+</pre>
+<p>
+<em>repeat</em> enables the changes of an existing block to be
+repeated until the entire block comes round. For example, the above
+touch of Grandsire Doubles may be produced by ringing only PSBS and
+then repeating it.
+</p>
+<pre>
+CRE> method gs "Grandsire" 5
+CRE> block ext "120 Grandsire Doubles" 5 10
+CRE> touch ext gs PSBS
+CRE> repeat ext
+</pre>
+</body>
+</html>

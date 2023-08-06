@@ -1,0 +1,14 @@
+# Ring a plain course of St Clement's College Bob Minor
+
+method sc "st clement*" 6
+
+set sc.tracebells 12
+set sc.colour1 ff0000
+set sc.colour2 000080
+set sc.showpn on
+
+tower sw "St Wilfrid"
+ring sc sw
+
+
+

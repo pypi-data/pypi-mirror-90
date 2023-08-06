@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Formatting and displaying methods and blocks (print)</title>
+</head>
+<body>
+<h1>Formatting and displaying methods and blocks (print)</h1>
+
+<h2>Synopsis</h2>
+<p>print <em>id</em> [<em>filename</em>]</p>
+
+<h2>Description</h2>
+<p>
+Methods and blocks may be displayed on the screen or saved to a
+file using the print command.
+</p>
+<p>
+If the given object id is a block, then it will display all the
+rows of the block; whereas if the id is a method then it will display
+one plain course of the method.
+</p>
+
+<h2>Displaying rows</h2>
+<p>
+Using print without a filename will display the block or method on the
+screen. Trace lines on bells will not be generated; but instead the
+bells will have emphasis as determined by
+variable <em>traceformat</em>. For example:
+</p>
+<pre>CRE> print gs120</pre>
+<p>
+If the variable <em>pagerows</em> is set to <em>on</em>, then the rows
+are displayed using the system pager (e.g. <em>less</em> on macOS) as
+a single column with trace bells being displayed in bold
+overstrike. It is therefore useful on legacy VT100 terminals without
+scrolling.
+</p>
+
+<h2>Saving rows to a file</h2>
+<p>
+If a filename is supplied, then the output is written to that file. A
+variety of different formats are available, depending on the filename
+extension. For example:
+</p>
+<pre>CRE> print gs120 grandsire.html</pre>
+<p>
+The supported formats are:
+</p>
+<p>
+Plain text (.txt). Output is similar to what is printed on the screen
+</p>
+<p>
+HTML (.html). This uses scalable vector graphics to format the
+tracelines and may be opened in most modern web browsers (e.g. Chrome
+and Edge)
+</p>
+<p>
+Comma separated value (.csv). This format is for importing into a
+spreadsheet with each bell occupying a single cell. No trace lines are
+produced
+</p>
+<p>
+Postscript (.ps). Paged output is generated for postscript enabled
+printers
+</p>
+<p>
+Encapsulated Postscript (.eps). All the output is placed within a
+single figure and is suitable for inclusion in a LaTeX document.
+</p>
+<p>
+Portable Document Format (.pdf). PDF is for distribution in a
+printable format. Rendering of PDF's requires a third party utility
+Ghostscript
+</p>
+<p>
+Portable Network Graphics (.png). PNG's are bitmap images that may be
+embedded in web pages or in Microsoft Office documents. Producing
+PNG's requires Ghostscript
+</p>
+</body>
+</html>

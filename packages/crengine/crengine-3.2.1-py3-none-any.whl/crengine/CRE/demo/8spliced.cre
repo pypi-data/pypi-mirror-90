@@ -1,0 +1,52 @@
+# Touch of 8 spliced surprise major
+#
+# This demo shows that it is possible to use CRE to ring quite
+# complicated touches (including spliced methods), although
+# it is probably not the best way to produce them!. While
+# splicing is possible, tabular format of touches isn't
+# supported and the names of the methods don't appear in the
+# output.
+
+# Ring the following touch (256 WHWH)
+#
+#	W H
+# ---------
+# bc	- 
+# r	  -
+# npsy  -
+# l	  -
+
+# Load in the standard eight
+
+method b "bristol surprise major"
+method c "cambridge surprise major"
+method l "london surprise major"
+method n "lincolnshire surprise major"
+method p "pudsey surprise major"
+method r "rutland surprise major"
+method s "superlative surprise major"
+method y "yorkshire surprise major"
+
+# 8 bells, leads of 4x8 rows
+block t "Touch of 8 Spliced Surprise Major" 8 32
+
+# bc  W-
+touch t b p
+touch t c b
+
+# r   H-
+touch t r b
+
+# npsy	W-
+touch t n p
+touch t p p
+touch t s p
+touch t y b
+
+# l   H-
+touch t l b
+
+# print rows
+set t.traceformat ansi
+print t
+

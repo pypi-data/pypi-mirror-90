@@ -1,0 +1,12 @@
+name,description,samples,nbells,bellset
+St Wilfrid,"12 Bells, Tenor 6cwt in C",St_Wilfrid,12,WX1234567890ET
+St Michael,"6 Bells, Tenor 13cwt in F#",St_Michael,6,123456
+Default,Default (Major 12),St_Wilfrid,12,1234567890ET
+Dorian,Minor 10 (Dorian Mode),St_Wilfrid,10,234567890E
+Phrygian,Minor 10 (Phrygian Mode),St_Wilfrid,10,1234567890
+Middle 8,Bells 2 to 9 of 12 using flat 6,St_Wilfrid,8,2345X789
+Front 8,Bells 1 to 8 of 12 using sharp 2,St_Wilfrid,8,1W345678
+Front 5,Bells 1 to 5 of 12,St_Wilfrid,5,12345
+Odd,Odd bells of 12,St_Wilfrid,6,13579E
+Even,Even bells of 12,St_Wilfrid,6,24680T
+Westminster,Westminster Chimes,St_Michael,4,1236

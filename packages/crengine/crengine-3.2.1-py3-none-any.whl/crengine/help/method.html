@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Defining Methods (method)</title>
+</head>
+<body>
+<h1>Defining Methods (method)</h1>
+
+<h2>Synopsis</h2>
+<p>method <em>ID</em> <em>NAME</em> [<em>NBELLS</em>]</p>
+<p>method <em>ID</em> <em>NAME</em> <em>NBELLS</em> <em>PLAINLEAD</em>
+[<em>CALLPOS</em> <em>BOB</em> <em>SINGLE</em>]</p>
+
+<h2>Description</h2>
+<p>The <em>method</em> command has two forms; the first for retrieving
+a method from the CRE method library and the second for explicitly
+defining a method from place notation</p>
+<p>The first form is for using a method from the library. The method
+may be identified either by using the full name e.g. "Plain Bob Minor"
+or by specifying the root name e.g. "Plain Bob" and the number of
+bells as an additional argument. For example:</p>
+<pre>CRE> method pb5 "Plain Bob Minor"</pre>
+<p>or</p>
+<pre>CRE> method pb5 "Plain Bob" 6</pre>
+<p>It is possible to use wildcards in the method name (? represents a
+single character and * any number of characters; for example</p>
+<pre>CRE> method pb5 "pla*bob" 6</pre>
+<p>
+will find Plain Bob Minor, provided there isn't another method that
+matches this pattern, such as "Plane Bob"
+</p>
+<p>The second form is for defining a method from place notation; for
+example to define Plain Bob Minor (without bobs and singles)</p>
+<pre>CRE> method pb6 "Plain Bob" 6 &x16x16x16,12</pre>
+<p>To use bobs and singles, three additional arguments are required:
+number of row at which call takes effect (row 0 is the lead end, row
+-1 the penultimate row etc) and the place notations for the work of
+the bob and single which is substituted at this row. For example;</p>
+<pre>CRE> method pb6 "Plain Bob" 6 &x16x16x16,12 0 14 1234</pre>
+</body>
+</html>

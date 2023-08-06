@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>System Commands (cd, pwd, redirect, shell)</title>
+</head>
+<body>
+<h1>System commands (cd, pwd, redirect, shell)</h1>
+
+<h2>Synopsis</h2>
+<p>cd [<em>directory</em>]</p>
+<p>pwd</p>
+<p>writeto [<em>filename</em>]</p>
+<p>appendto [<em>filename</em>]</p>
+<p>shell [<em>command</em>]</p>
+
+<h2>Description</h2>
+<p>
+CRE provides a number of commands for interacting with the underlying
+operating system
+</p>
+
+<h2>The working directory</h2>
+<p>
+CRE uses a working directory (folder) where files are read from or
+saved to. By default, this is set by the system from where CRE was
+started from. The <em>pwd</em> command may be used to find
+the current working directory:
+</p>
+<pre>
+CRE> pwd
+/Users/fred/bellview3
+</pre>
+<p>
+To change the working directory, use the <em>cd</em> command; for
+example to go into the <em>demo</em> subdirectory:
+</p>
+<pre>
+CRE> cd demo
+CRE> pwd
+/Users/fred/bellview3/demo
+</pre>
+<p><em>cd</em> without an argument will return to the user's home
+directory</p>
+
+<h2>Redirection</h2>
+
+<p>
+Redirection of output to an external file is available in CRE for the
+following commands: <em>echo</em>, <em>list</em>, <em>print</em>,
+<em>ring</em>, <em>show</em>, <em>showcomments</em>. Error and status
+messages are not redirected, nor is displaying help.
+</p>
+<p>
+To start redirecting output to a file e.g. fred.txt
+</p>
+<pre>
+CRE> writeto fred.txt
+</pre>
+<p>
+To stop redirection and return to output on the screen,
+use <em>writeto</em> without an argument.
+</p>
+<pre>
+CRE> writeto
+</pre>
+<p>
+<em>writeto</em> always overwrites the destination file if it already
+exists. To append output onto an existing file, the <em>appendto</em>
+should be used instead.
+</p>
+
+<h2>Operating System Commands</h2>
+<p>
+The <em>shell</em> command enables operating system commands to be
+run. All arguments following it are passed to the default system
+shell; for example on UNIX, the <em>vi</em> editor may be started by
+the following:
+</p>
+<pre>
+CRE> shell vi fred.txt
+</pre>
+<p>
+To get an interactive shell; i.e. <em>/bin/bash</em> on UNIX
+or <em>cmd.exe</em> on Windows, use <em>shell</em> without arguments.
+Typing <em>exit</em> in the shell will return to CRE.
+</p>
+<pre>
+CRE> shell
+$ ls
+fred.txt freda.txt freddy.txt
+$ date
+Sat 26 Oct 2019 21:42:15 BST
+$ exit
+CRE>
+</pre>
+<p>
+N.B. <em>shell</em> may be abbreviated by typing <em>!</em>; for
+example <em>!ls</em> lists all files in the current working directory
+on UNIX.
+</p>
+
+
+</body>
+</html>

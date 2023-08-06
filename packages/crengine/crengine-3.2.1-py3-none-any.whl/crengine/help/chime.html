@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Chiming bells (chime, stop)</title>
+</head>
+<body>
+<h1>Chiming bells (chime, stop)</h1>
+
+<h2>Synopsis</h2>
+<p>chime <em>tower_id</em> <em>bells</em></p>
+<p>stop <em>tower_id</em></p>
+
+<h2>Description</h2>
+<p>
+Chiming provides a quick way to hear what bell samples and particular
+rows (changes) sound like, without having to ring methods. Simple
+tunes may even be played on them!
+</p>
+
+<h2>Chiming bells</h2>
+<p>
+In its simplest form, the a single bell may be chimed; for example to
+hear bell 7 (sample 7.wav) of St Wilfrid's Harrogate (an 8 bell tower)
+</p>
+<pre>
+CRE> tower wilf "Harrogate St Wilfrid"
+CRE> chime wilf 7
+</pre>
+<p>
+Whole rows may be played; for example, to ring the Whittingtons change
+(531246) on the back 6 of an 8 bell tower
+</p>
+<pre>
+CRE> tower wilf "Harrogate St Wilfrid"
+CRE> chime wilf 753468
+</pre>
+
+<h2>Playing tunes</h2>
+<p>
+By default, all notes played are crochets (single beat). To alter the
+duration, a duration parameter may follow the group of notes; for
+example to play the above as quavers (half beat):
+</p>
+<pre>
+CRE chime wilf 753468,0.5
+</pre>
+<p>
+Timings may be mixed, by separating groups of notes by spaces; for
+example to play the first line of <em>Oranges and Lemons</em>
+</p>
+<pre>
+CRE> tower wilf "Harrogate St Wilfrid"
+CRE> chime wilf 464 68 76,0.5 574 6 8,2
+</pre>
+<p>
+N.B. The duration of a crochet (1 beat) may be controlled by changing
+the value of <em>tempo</em> - a number in beats per minute.
+</p>
+
+<h2>Stopping bells sounding (stop)</h2>
+<p>
+When each bell strikes, it resonates until it strikes again. To stop
+all bells resonating, the stop command may be used; for example
+</p>
+<pre>
+stop wilf
+</pre>
+
+</body>
+</html>
