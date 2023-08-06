@@ -1,0 +1,16 @@
+toopazo_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+toopazo_tools/externalProcess.py,sha256=bVIiKUkEM9oKRaO_Fz3BbW6ermVbzGTKb6rtv6canbI,3620
+toopazo_tools/external_process.py,sha256=bVIiKUkEM9oKRaO_Fz3BbW6ermVbzGTKb6rtv6canbI,3620
+toopazo_tools/fileFolderTools.py,sha256=Dw8y-LXaBImpb4hSHNBsZbV6rjjefluOPyLtlgsQKRA,9835
+toopazo_tools/file_folder.py,sha256=Dw8y-LXaBImpb4hSHNBsZbV6rjjefluOPyLtlgsQKRA,9835
+toopazo_tools/matplotlib.py,sha256=ac4COZSGIh0UYAQs3QouOG0iy9TeOnDVjXtHZlGwzxY,23303
+toopazo_tools/matplotlibTools.py,sha256=ac4COZSGIh0UYAQs3QouOG0iy9TeOnDVjXtHZlGwzxY,23303
+toopazo_tools/replaceDotsFromPath.py,sha256=ZaGI2pz7qgVxk1x1wlbG9VEqmq-5azGBB7moIgYEKP4,1893
+toopazo_tools/replace_dots_from_path.py,sha256=ZaGI2pz7qgVxk1x1wlbG9VEqmq-5azGBB7moIgYEKP4,1893
+toopazo_tools/statistics.py,sha256=coPzR31wS6m-A0nX_AEs0Pxdqg4qDgTWeulJRu1NzVc,1811
+toopazo_tools/time_series.py,sha256=4ZcYi54aJApoADvLPJnoqopOmHLZIEDIjvO3556KAEs,3411
+toopazo_tools-0.0.7.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+toopazo_tools-0.0.7.dist-info/METADATA,sha256=kGBRU6MxtZma7-XnunHixE07vKZRfD37E_h3gl_948o,1539
+toopazo_tools-0.0.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+toopazo_tools-0.0.7.dist-info/top_level.txt,sha256=0YJKUPWUx4c9dfHd3FS-znsvezrv-DXwqJaDkZek4q4,14
+toopazo_tools-0.0.7.dist-info/RECORD,,
