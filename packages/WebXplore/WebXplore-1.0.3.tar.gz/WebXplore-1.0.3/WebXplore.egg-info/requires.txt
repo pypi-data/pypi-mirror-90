@@ -1,0 +1,12 @@
+nltk
+requests
+beautifulsoup4
+google
+numpy
+pandas
+textblob
+sklearn
+newsapi-python
+praw
+tweepy
+readability-lxml
