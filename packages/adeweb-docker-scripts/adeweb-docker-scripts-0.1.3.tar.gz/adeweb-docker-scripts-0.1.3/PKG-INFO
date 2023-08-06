@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: adeweb-docker-scripts
+Version: 0.1.3
+Summary: Various Docker scripts to facilitate server management and apps debugging
+Home-page: https://github.com/adeweb-be/adeweb-docker-scripts
+License: MIT
+Author: Antoine Duchene
+Author-email: antoineduchene@icloud.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: docker (>=4.4.1,<5.0.0)
+Requires-Dist: humanize (>=3.2.0,<4.0.0)
+Requires-Dist: rich (>=9.5.1,<10.0.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)
+Project-URL: Repository, https://github.com/adeweb-be/adeweb-docker-scripts
+Description-Content-Type: text/x-rst
+
+Adeweb's docker scripts
+==============================
+
+Various Docker scripts to facilitate server management and apps debugging.
+
+*Disclaimer: this is intented for internal use and may not be generic enough for you.*
+

@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "adeweb-docker-scripts"
+version = "v0.1.3"
+description = "Various Docker scripts to facilitate server management and apps debugging"
+authors = ["Antoine Duchene <antoineduchene@icloud.com>"]
+license = "MIT"
+repository = "https://github.com/adeweb-be/adeweb-docker-scripts"
+readme = "README.rst"
+
+[tool.poetry.scripts]
+hdock = "adeweb_docker_scripts.main:app"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+typer = "^0.3.2"
+humanize = "^3.2.0"
+docker = "^4.4.1"
+rich = "^9.5.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
