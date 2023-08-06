@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+hivejdbc/__init__.py
+hivejdbc/types.py
+hivejdbc.egg-info/PKG-INFO
+hivejdbc.egg-info/SOURCES.txt
+hivejdbc.egg-info/dependency_links.txt
+hivejdbc.egg-info/requires.txt
+hivejdbc.egg-info/top_level.txt
+tests/__init__.py
+tests/test_hive.py
+tests/test_hivejdbc.py
