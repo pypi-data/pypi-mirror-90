@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+notpages/Pages.py
+notpages/__init__.py
+notpages.egg-info/PKG-INFO
+notpages.egg-info/SOURCES.txt
+notpages.egg-info/dependency_links.txt
+notpages.egg-info/not-zip-safe
+notpages.egg-info/top_level.txt
