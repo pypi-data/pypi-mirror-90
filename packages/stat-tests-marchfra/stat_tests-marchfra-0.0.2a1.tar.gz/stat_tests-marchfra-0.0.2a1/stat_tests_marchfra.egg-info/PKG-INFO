@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: stat-tests-marchfra
+Version: 0.0.2a1
+Summary: A package that performs statistical tests
+Home-page: https://github.com/marchfra/stat-tests.git
+Author: marchfra
+Author-email: marchfra1@gmail.com
+License: UNKNOWN
+Description: # Statistical test package
+        
+        The aim of this package is to provide a set of functions to perform statistical tests.
+        At the moment only the Z test has been implemented, but more are on the way.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9.1
+Description-Content-Type: text/markdown
