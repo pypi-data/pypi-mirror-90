@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+mx/__init__.py
+mx/__version__.py
+mx/app.py
+mx/cli.py
+mx/config.py
+mx/notes.py
+mx_notes.egg-info/PKG-INFO
+mx_notes.egg-info/SOURCES.txt
+mx_notes.egg-info/dependency_links.txt
+mx_notes.egg-info/entry_points.txt
+mx_notes.egg-info/requires.txt
+mx_notes.egg-info/top_level.txt
