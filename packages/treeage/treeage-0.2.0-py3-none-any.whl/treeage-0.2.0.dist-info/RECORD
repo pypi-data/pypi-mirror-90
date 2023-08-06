@@ -1,0 +1,10 @@
+treeage/__init__.py,sha256=xgCVb-PIV5_oh5wZG9EJP06sOb4YO1S7rPMtbjTfv8U,1775
+treeage/__version__.py,sha256=Y3LSfRioSl2xch70pq_ULlvyECXyEtN3krVaWeGyaxk,22
+treeage/core.py,sha256=lw9904e9uIzHTXrtI1RbuUaNKm9tNCk2vlQtWrGCwDs,7239
+treeage/terminal.py,sha256=gpKBGAvat-Hq1ykh-qLh2c5LQdnkmcv6JnkwOI_35DE,230
+treeage-0.2.0.dist-info/LICENSE,sha256=CWbFyRreMxAoYLwpxgGNEIIb5gQ0b_YBx8rynn6eQ8U,1075
+treeage-0.2.0.dist-info/METADATA,sha256=XC4LddnSquAJeluFa30D4aL7AE7ZcfrDs_VnZS1ICWo,2414
+treeage-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+treeage-0.2.0.dist-info/entry_points.txt,sha256=6BaI79K9XlDqbADoiBHLv93u87FzueVkv6czB9YeiF4,49
+treeage-0.2.0.dist-info/top_level.txt,sha256=MUKtiRvWSzkzPW8XY5H143v0eowEbgJZIzva3062Nwk,8
+treeage-0.2.0.dist-info/RECORD,,
