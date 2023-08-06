@@ -1,0 +1,104 @@
+stages:
+  - test
+  - deploy
+
+py35-stretch:test:
+  image: jegopozo/linux-build:debian-stretch
+  stage: test
+  script:
+    - python3 -m pytest --junitxml=report.xml --cov=pyepisoder/
+    - python3 -m coverage xml
+  artifacts:
+    reports:
+      junit: report.xml
+      cobertura: coverage.xml
+
+py35-stretch:deploy:
+  image: jegopozo/linux-build:debian-stretch
+  stage: deploy
+  needs: ["py35-stretch:test"]
+  script:
+    - python3 setup.py install
+    - python3 setup.py sdist
+    - python3 setup.py bdist_egg
+
+py36-bionic:test:
+  image: jegopozo/linux-build:ubuntu-bionic
+  stage: test
+  script:
+    - python3 -m pytest --junitxml=report.xml --cov=pyepisoder/
+    - python3 -m coverage xml
+  artifacts:
+    reports:
+      junit: report.xml
+      cobertura: coverage.xml
+
+py36-bionic:deploy:
+  image: jegopozo/linux-build:ubuntu-bionic
+  stage: deploy
+  needs: ["py36-bionic:test"]
+  script:
+    - python3 setup.py install
+    - python3 setup.py sdist
+    - python3 setup.py bdist_egg
+
+py37-buster:test:
+  image: jegopozo/linux-build:debian-buster
+  stage: test
+  script:
+    - python3 -m pytest --junitxml=report.xml --cov=pyepisoder/
+    - python3 -m coverage xml
+  artifacts:
+    reports:
+      junit: report.xml
+      cobertura: coverage.xml
+
+py37-buster:deploy:
+  image: jegopozo/linux-build:debian-buster
+  stage: deploy
+  needs: ["py37-buster:test"]
+  script:
+    - python3 setup.py install
+    - python3 setup.py sdist
+    - python3 setup.py bdist_egg
+
+py38-focal:test:
+  image: jegopozo/linux-build:ubuntu-focal
+  stage: test
+  script:
+    - python3 -m pytest --junitxml=report.xml --cov=pyepisoder/
+    - python3 -m coverage xml
+  artifacts:
+    reports:
+      junit: report.xml
+      cobertura: coverage.xml
+
+py38-focal:deploy:
+  image: jegopozo/linux-build:ubuntu-focal
+  stage: deploy
+  needs: ["py38-focal:test"]
+  script:
+    - python3 setup.py install
+    - python3 setup.py sdist
+    - python3 setup.py bdist_egg
+
+
+py39-bullseye:test:
+  image: jegopozo/linux-build:debian-bullseye
+  stage: test
+  script:
+    - python3 -m pytest --junitxml=report.xml --cov=pyepisoder/
+    - python3 -m coverage xml
+  artifacts:
+    reports:
+      junit: report.xml
+      cobertura: coverage.xml
+
+py39-bullseye:deploy:
+  image: jegopozo/linux-build:debian-bullseye
+  stage: deploy
+  needs: ["py39-bullseye:test"]
+  script:
+    - python3 setup.py install
+    - python3 setup.py sdist
+    - python3 setup.py bdist_egg
