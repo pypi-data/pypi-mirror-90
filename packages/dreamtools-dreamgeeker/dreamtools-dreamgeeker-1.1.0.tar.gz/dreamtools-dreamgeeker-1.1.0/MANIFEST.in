@@ -1,0 +1,4 @@
+include README.md *.png
+recursive-include cfg *.yml
+exclude requirements.txt
+
