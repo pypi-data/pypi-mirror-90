@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pioneer-common
+Version: 1.0.1
+Summary: Pioneer team common utilities
+Home-page: UNKNOWN
+Author: Leddartech
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: future
+Requires-Dist: transforms3d
+Requires-Dist: scipy
+Requires-Dist: shapely
+Requires-Dist: sk-video
+Requires-Dist: ruamel.std.zipfile
+Requires-Dist: scikit-build
+Requires-Dist: open3d (==0.10)
+
+UNKNOWN
+
+
