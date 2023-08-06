@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+lib_roman/__init__.py
+lib_roman/get_roman_numbers.py
+lib_roman.egg-info/PKG-INFO
+lib_roman.egg-info/SOURCES.txt
+lib_roman.egg-info/dependency_links.txt
+lib_roman.egg-info/top_level.txt
