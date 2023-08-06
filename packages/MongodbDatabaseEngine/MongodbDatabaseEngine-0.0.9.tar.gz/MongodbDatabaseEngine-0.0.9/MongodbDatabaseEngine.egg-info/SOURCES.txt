@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+MongodbDatabaseEngine/__init__.py
+MongodbDatabaseEngine/requirements.txt
+MongodbDatabaseEngine.egg-info/PKG-INFO
+MongodbDatabaseEngine.egg-info/SOURCES.txt
+MongodbDatabaseEngine.egg-info/dependency_links.txt
+MongodbDatabaseEngine.egg-info/requires.txt
+MongodbDatabaseEngine.egg-info/top_level.txt
+MongodbDatabaseEngine/conf/soft.conf
+MongodbDatabaseEngine/db/config.json
