@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'XCharter';
+  font-style: normal;
+  font-weight: 400;
+    src: local("XCharter Roman"),
+     local("XCharter-Roman"),
+    url(./xcharter_font/XCharter-Roman.woff) format("woff");
+}
+@font-face {
+  font-family: 'XCharter';
+  font-style: italic;
+  font-weight: 400;
+    src: local("XCharter Italic"),
+     local("XCharter-Italic"),
+    url(./xcharter_font/XCharter-Italic.woff) format("woff");
+}
+@font-face {
+  font-family: 'XCharter';
+  font-style: oblique;
+  font-weight: 400;
+    src: local("XCharter Slanted"),
+     local("XCharter-Slanted"),
+    url(./xcharter_font/XCharter-Slanted.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'XCharter';
+  font-style: normal;
+  font-weight: 700;
+    src: local("XCharter Bold"),
+     local("XCharter-Bold"),
+    url(./xcharter_font/XCharter-Bold.woff) format("woff");
+}
+@font-face {
+  font-family: 'XCharter';
+  font-style: italic;
+  font-weight: 700;
+    src: local("XCharter Bold Italic"),
+     local("XCharter-BoldItalic"),
+  url(./xcharter_font/XCharter-BoldItalic.woff) format("woff");
+}
+@font-face {
+  font-family: 'XCharter';
+  font-style: italic;
+  font-weight: 700;
+    src: local("XCharter Bold Slanted"),
+     local("XCharter-BoldSlanted"),
+  url(./xcharter_font/XCharter-BoldSlanted.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Inconsolata LGC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inconsolata LGC Regular'), local('InconsolataLGC-Regular'),
+    url(./inconsolata_lgc_font/InconsolataLGC.woff)
+      format('woff2');
+}
+@font-face {
+  font-family: 'Inconsolata LGC';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Inconsolata LGC Italic'), local('InconsolataLGC-Italic'),
+    url(./inconsolata_lgc_font/InconsolataLGC-Italic.woff)
+      format('woff2');
+}
+@font-face {
+  font-family: 'Inconsolata LGC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Inconsolata LGC Bold'), local('InconsolataLGC-Bold'),
+    url(./inconsolata_lgc_font/InconsolataLGC-Bold.woff)
+      format('woff2');
+}
+@font-face {
+  font-family: 'Inconsolata LGC';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Inconsolata LGC Bold Italic'), local('InconsolataLGC-BoldItalic'),
+    url(./inconsolata_lgc_font/InconsolataLGC-BoldItalic.woff)
+      format('woff2');
+}

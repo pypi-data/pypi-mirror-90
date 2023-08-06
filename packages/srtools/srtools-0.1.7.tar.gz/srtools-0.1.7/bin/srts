@@ -1,0 +1,65 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+import argparse
+import sys
+from textwrap import dedent
+
+from srtools.transliteration import cyrillic_to_latin
+from srtools.transliteration import latin_to_cyrillic
+
+
+def create_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        description=dedent(
+            """\
+        Serbian Cyrillic ↔ Latin transliterator.
+
+        Allows transliteration of UTF-8 encoded strings between Serbian Cyrillic
+        and Latin scripts.
+            """
+        )
+    )
+
+    parser.add_argument(
+        "infile",
+        nargs="?",
+        type=argparse.FileType("r", encoding="utf-8"),
+        default=sys.stdin,
+        help="Input file. If omitted, reads STDIN.",
+    )
+    parser.add_argument(
+        "-o",
+        "--outfile",
+        type=argparse.FileType("w", encoding="ascii"),
+        default=sys.stdout,
+        help="Output file. If omitted, writes to STDOUT.",
+    )
+
+    trans_direction = parser.add_mutually_exclusive_group(required=True)
+    trans_direction.add_argument(
+        "--cl", help="Cyrillic to Latin transliteration.", action="store_true"
+    )
+    trans_direction.add_argument(
+        "--lc", help="Latin to Cyrillic transliteration.", action="store_true"
+    )
+
+    return parser
+
+
+def main():
+    parser = create_parser()
+    args = parser.parse_args()
+
+    with args.infile as infile, args.outfile as outfile:
+        if args.lc:
+            trans_function = latin_to_cyrillic
+        if args.cl:
+            trans_function = cyrillic_to_latin
+
+        for line in infile:
+            line: str
+            outfile.write(trans_function(line))
+
+
+if __name__ == "__main__":
+    main()

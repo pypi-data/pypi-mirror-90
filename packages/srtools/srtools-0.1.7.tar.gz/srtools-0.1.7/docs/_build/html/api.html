@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Interface (API) &#8212; srtools  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contributing" href="contributing.html" />
+    <link rel="prev" title="Commandline Interface (CLI)" href="cli.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-srtools">
+<span id="developer-interface-api"></span><h1>Developer Interface (API)<a class="headerlink" href="#module-srtools" title="Permalink to this headline">¶</a></h1>
+<p>Srtools provides both CLI functionality (<code class="docutils literal notranslate"><span class="pre">srts</span></code> utility) and a Python package
+you can use from your own code.
+The API intended for external use is documented in this file.</p>
+<div class="section" id="transliteration-functions">
+<h2>Transliteration functions<a class="headerlink" href="#transliteration-functions" title="Permalink to this headline">¶</a></h2>
+<p>Two simple transliteration functions are provided by the package.</p>
+<dl class="py function">
+<dt id="srtools.cyrillic_to_latin">
+<code class="sig-prename descclassname">srtools.</code><code class="sig-name descname">cyrillic_to_latin</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/srtools/transliteration.html#cyrillic_to_latin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#srtools.cyrillic_to_latin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transliterate Serbian Cyrillic string to Latin.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – input Cyrillic string to be transliterated.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Input string transliterated to Latin.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">srtools</span> <span class="kn">import</span> <span class="n">cyrillic_to_latin</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">in_str</span> <span class="o">=</span> <span class="s2">&quot;Ђаче, уштеду плаћај жаљењем због џиновских цифара.&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cyrillic_to_latin</span><span class="p">(</span><span class="n">in_str</span><span class="p">)</span>
+<span class="go">&#39;Đače, uštedu plaćaj žaljenjem zbog džinovskih cifara.&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="srtools.latin_to_cyrillic">
+<code class="sig-prename descclassname">srtools.</code><code class="sig-name descname">latin_to_cyrillic</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">text</span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/srtools/transliteration.html#latin_to_cyrillic"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#srtools.latin_to_cyrillic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transliterate Serbian Latin string to Cyrillic.</p>
+<p>You may use a special separator <code class="docutils literal notranslate"><span class="pre">!</span></code> to split digraphs <cite>lj</cite>, <cite>nj</cite>, <cite>dž</cite> to
+prevent their conversion to single Cyrillic letters like so: <cite>l!j</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code>) – input Latin string to be transliterated.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Input string transliterated to Cyrillic.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">srtools</span> <span class="kn">import</span> <span class="n">latin_to_cyrillic</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">in_str</span> <span class="o">=</span> <span class="s2">&quot;Đače, uštedu plaćaj žaljenjem zbog džinovskih cifara.&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">latin_to_cyrillic</span><span class="p">(</span><span class="n">in_str</span><span class="p">)</span>
+<span class="go">&#39;Ђаче, уштеду плаћај жаљењем због џиновских цифара.&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">latin_to_cyrillic</span><span class="p">(</span><span class="s1">&#39;N!J je skraćenica za Nju Džersi&#39;</span><span class="p">)</span>
+<span class="go">&#39;НЈ је скраћеница за Њу Џерси&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="translation-tables-and-dictionaries">
+<h2>Translation tables and dictionaries<a class="headerlink" href="#translation-tables-and-dictionaries" title="Permalink to this headline">¶</a></h2>
+<p>The dictionaries and <code class="xref py py-meth docutils literal notranslate"><span class="pre">str.translate()</span></code> translation tables used internally
+are also provided as a part of the public API.
+You’re unlikely to need these, since the mechanism for
+transliteration provided in this package is decent enough for most uses.</p>
+<dl class="py data">
+<dt id="srtools.character_dictionaries.CYR_TO_LAT_DICT">
+<code class="sig-prename descclassname">srtools.character_dictionaries.</code><code class="sig-name descname">CYR_TO_LAT_DICT</code><a class="headerlink" href="#srtools.character_dictionaries.CYR_TO_LAT_DICT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cyrillic → Latin character translation dict.</p>
+<p>Not used internally. Can be used to look up equivalent Latin letter strings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Dict[str, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data">
+<dt id="srtools.character_dictionaries.CYR_TO_LAT_TTABLE">
+<code class="sig-prename descclassname">srtools.character_dictionaries.</code><code class="sig-name descname">CYR_TO_LAT_TTABLE</code><a class="headerlink" href="#srtools.character_dictionaries.CYR_TO_LAT_TTABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cyrillic → Latin character translation table.</p>
+<p>Used internally with <code class="xref py py-meth docutils literal notranslate"><span class="pre">str.translate()</span></code> to transliterate text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Dict[int, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data">
+<dt id="srtools.character_dictionaries.LAT_TO_CYR_DICT">
+<code class="sig-prename descclassname">srtools.character_dictionaries.</code><code class="sig-name descname">LAT_TO_CYR_DICT</code><a class="headerlink" href="#srtools.character_dictionaries.LAT_TO_CYR_DICT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Latin → Cyrillic character translation dict.</p>
+<p>Not used internally. Can be used to look up equivalent Cyrillic letter strings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Dict[str, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data">
+<dt id="srtools.character_dictionaries.LAT_TO_CYR_DIGRAPHS_DICT">
+<code class="sig-prename descclassname">srtools.character_dictionaries.</code><code class="sig-name descname">LAT_TO_CYR_DIGRAPHS_DICT</code><a class="headerlink" href="#srtools.character_dictionaries.LAT_TO_CYR_DIGRAPHS_DICT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Latin → Cyrillic digraph translation dict.</p>
+<p>Covers only mappings from Latin digraphs to equivalent Cyrillic letters.
+Used internally with <code class="xref py py-meth docutils literal notranslate"><span class="pre">str.translate()</span></code> to transliterate text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Dict[str, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py data">
+<dt id="srtools.character_dictionaries.LAT_TO_CYR_TTABLE">
+<code class="sig-prename descclassname">srtools.character_dictionaries.</code><code class="sig-name descname">LAT_TO_CYR_TTABLE</code><a class="headerlink" href="#srtools.character_dictionaries.LAT_TO_CYR_TTABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Latin → Cyrillic character translation table.</p>
+<p>Covers only transitions from single-character Latin letters to equivalent
+Cyrillic letters.
+Used internally with <code class="xref py py-meth docutils literal notranslate"><span class="pre">str.translate()</span></code> to transliterate text.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>Dict[int, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">srtools</a></h1>
+
+
+
+<p class="blurb">Serbian Cyrillic ↔ Latin transliteration package</p>
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Commandline Interface (CLI)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Developer Interface (API)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#transliteration-functions">Transliteration functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#translation-tables-and-dictionaries">Translation tables and dictionaries</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Changelog</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="cli.html" title="previous chapter">Commandline Interface (CLI)</a></li>
+      <li>Next: <a href="contributing.html" title="next chapter">Contributing</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Andrej Radović.
+      
+      |
+      <a href="_sources/api.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
