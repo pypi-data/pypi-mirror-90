@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ys
+Version: 0.0.2
+Summary: Special dicts
+Home-page: https://github.com/thorwhalen/ut/tree/master/pdict/special.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # ys
+        Special dicts
+        
+        
+        To install:	```pip install ys```
+        
+Platform: any
+Description-Content-Type: text/markdown
