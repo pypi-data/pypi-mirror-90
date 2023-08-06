@@ -1,0 +1,8 @@
+searchview/__init__.py,sha256=MDjfx-rNGMfHBAlMZOdOejJR5TOuF4lFQ1p0SviYq20,35
+searchview/forms.py,sha256=j7olueaHF6plPq5AmbzsoSyLr5Tjg9oTfO3o0BcX7fk,461
+searchview/views.py,sha256=GyvLxyXVvXpzwqHqAV0xH2KFVDaRf7gHQZz5LGKt2Gg,3921
+django_searchview_lib-1.0.3.dist-info/LICENSE,sha256=x7fOBlc_oZscd60ZrwENp2DkrDhnQEwHAmC606APShc,1086
+django_searchview_lib-1.0.3.dist-info/METADATA,sha256=IVh7x8jKgfI7f4BLTr2bawwJXrXHJo2PNgjhxlYiLWk,1196
+django_searchview_lib-1.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_searchview_lib-1.0.3.dist-info/top_level.txt,sha256=CcyxH4CFKfHcQosSk4U-iJXnACD7b5OT8-Zm57LBao4,11
+django_searchview_lib-1.0.3.dist-info/RECORD,,
