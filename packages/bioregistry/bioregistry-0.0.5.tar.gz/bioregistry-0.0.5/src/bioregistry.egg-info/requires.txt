@@ -1,0 +1,9 @@
+requests
+requests_ftp
+tqdm
+matplotlib
+matplotlib_venn
+pystow
+pandas
+pyyaml
+more_itertools
