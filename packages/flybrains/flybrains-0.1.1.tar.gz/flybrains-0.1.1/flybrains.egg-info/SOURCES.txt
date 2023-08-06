@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+flybrains/__init__.py
+flybrains/__version__.py
+flybrains/converters.py
+flybrains/core.py
+flybrains/download.py
+flybrains/templates.py
+flybrains.egg-info/PKG-INFO
+flybrains.egg-info/SOURCES.txt
+flybrains.egg-info/dependency_links.txt
+flybrains.egg-info/not-zip-safe
+flybrains.egg-info/requires.txt
+flybrains.egg-info/top_level.txt
+flybrains/data/lm-em-landmarks_v14.csv
+flybrains/data/template_meta.json
