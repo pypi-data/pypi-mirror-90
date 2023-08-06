@@ -1,0 +1,11 @@
+.DS_Store,sha256=8H0tcFmZA-OKb3kXwsjVkIdTWPvWrWNfkqv-MqSLhAs,6148
+bom_logger-1.0.0-py3.9-nspkg.pth,sha256=5RlHBTSikI1gpKx5zTNPswNFibLg-8lRj69viLf7w4o,524
+bom/.DS_Store,sha256=mcgnM8jjqybe5jylhXyXGdtZJKT8iZdvrTbM3Uxa1jo,6148
+bom/logger/__init__.py,sha256=zfr88O6FoIrZ-vbzrDF8okUeomzS7FxGtqNUYZRaHfU,1295
+bom/logger/formatter.py,sha256=rr-1j1c0e-PnPXP7YsfoLodR2xWkMKbVm4siQlPM5rg,2965
+bom/logger/handler.py,sha256=wgSt2VJihmS6exaFsnP2vpahnBr2zgmYYnrESU4G3pY,1311
+bom_logger-1.0.0.dist-info/METADATA,sha256=kLo62rMug9h_4qIyYkZgOiQlBGTYvRok9XyyB01xCkE,350
+bom_logger-1.0.0.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+bom_logger-1.0.0.dist-info/namespace_packages.txt,sha256=6zytg4lnnobI96dO-ZEadPOCslrrFmf4t2Pnv-y8x0Y,4
+bom_logger-1.0.0.dist-info/top_level.txt,sha256=6zytg4lnnobI96dO-ZEadPOCslrrFmf4t2Pnv-y8x0Y,4
+bom_logger-1.0.0.dist-info/RECORD,,

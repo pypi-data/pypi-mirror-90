@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bom-logger
+Version: 1.0.0
+Summary: config
+Home-page: https://github.com/bomt1me/bomlog
+Author: Calvin Spring
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Requires-Dist: bom-configuration
+
+# bomlog
+Logging fun.
+
+
