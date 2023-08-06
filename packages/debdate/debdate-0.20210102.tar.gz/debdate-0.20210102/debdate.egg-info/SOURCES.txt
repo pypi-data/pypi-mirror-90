@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+debdate
+debdate.1.rst
+setup.py
+debdate.egg-info/PKG-INFO
+debdate.egg-info/SOURCES.txt
+debdate.egg-info/dependency_links.txt
+debdate.egg-info/requires.txt
+debdate.egg-info/top_level.txt
