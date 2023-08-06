@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+LICENSE/license.txt
+getpwd/__init__.py
+getpwd/getpwd.py
+getpwd.egg-info/PKG-INFO
+getpwd.egg-info/SOURCES.txt
+getpwd.egg-info/dependency_links.txt
+getpwd.egg-info/requires.txt
+getpwd.egg-info/top_level.txt
