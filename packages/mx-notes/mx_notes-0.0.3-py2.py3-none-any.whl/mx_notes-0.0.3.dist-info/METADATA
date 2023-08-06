@@ -1,0 +1,151 @@
+Metadata-Version: 2.1
+Name: mx-notes
+Version: 0.0.3
+Summary: Note-taking app with LaTeX math rendering.
+Home-page: https://github.com/amunger3/mx-notes
+Author: Alex Munger
+Author-email: munger.alex@gmail.com
+License: MIT License
+Keywords: notes,math,mathjax,tex,latex,browser
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Text Editors
+Classifier: Topic :: Text Processing :: Markup :: LaTeX
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: atomicwrites (>=1.4.0)
+Requires-Dist: attrs (>=20.3.0)
+Requires-Dist: bleach (>=3.2.1)
+Requires-Dist: certifi (>=2020.12.5)
+Requires-Dist: chardet (>=4.0.0)
+Requires-Dist: click (>=7.1.2)
+Requires-Dist: colorama (>=0.4.4)
+Requires-Dist: coverage (>=5.3.1)
+Requires-Dist: docutils (>=0.16)
+Requires-Dist: environs (>=9.3.0)
+Requires-Dist: Flask (>=1.1.2)
+Requires-Dist: idna (>=2.10)
+Requires-Dist: iniconfig (>=1.1.1)
+Requires-Dist: itsdangerous (>=1.1.0)
+Requires-Dist: Jinja2 (>=2.11.2)
+Requires-Dist: keyring (>=21.8.0)
+Requires-Dist: MarkupSafe (>=1.1.1)
+Requires-Dist: marshmallow (>=3.10.0)
+Requires-Dist: packaging (>=20.8)
+Requires-Dist: pkginfo (>=1.6.1)
+Requires-Dist: pluggy (>=0.13.1)
+Requires-Dist: py (>=1.10.0)
+Requires-Dist: Pygments (>=2.7.3)
+Requires-Dist: pyparsing (>=2.4.7)
+Requires-Dist: pytest (>=6.2.1)
+Requires-Dist: python-dotenv (>=0.15.0)
+Requires-Dist: pywin32-ctypes (>=0.2.0)
+Requires-Dist: readme-renderer (>=28.0)
+Requires-Dist: requests (>=2.25.1)
+Requires-Dist: requests-toolbelt (>=0.9.1)
+Requires-Dist: rfc3986 (>=1.4.0)
+Requires-Dist: six (>=1.15.0)
+Requires-Dist: toml (>=0.10.2)
+Requires-Dist: tqdm (>=4.55.1)
+Requires-Dist: twine (>=3.3.0)
+Requires-Dist: urllib3 (>=1.26.2)
+Requires-Dist: webencodings (>=0.5.1)
+Requires-Dist: Werkzeug (>=1.0.1)
+
+# MX-Notes
+
+## Installation
+
+### pip
+
+```shell
+    shell> pip install mx-notes
+```
+
+### From source
+
+```shell
+    shell> git clone https://github.com/amunger3/mx-notes.git
+    shell> cd mx-notes
+    shell> python setup.py install
+```
+
+## Usage
+
+### CLI
+
+MX-Notes can be ran from the command line with the command `mx`:
+
+```shell
+    shell> mx <notes-dir> --host <host> --port <port>
+```
+
+where `notes-dir` represents the path to your desired MX-Notes directory.
+
+#### Defaults
+
+- `notes-dir`: `~/MX-Notes` (will create directory if it doesn't exist)
+- `host`: `127.0.0.1` (localhost)
+- `port`: `5000`
+
+## Features
+
+### Creating Notes
+
+Notes are created by selecting the 'New' button. Setting the title is optional.
+Notes are saved automatically as they are edited.
+
+### Editing Notes
+
+The note editing screen allows the user to edit the note title and content. Math
+symbols and their keybindings are shown on the left panel for quick access.
+
+### Listing Notes
+
+When the app is started, the main screen is a list of notes in the specified directory.
+These notes are ordered by modification time. Clicking on a note's title will bring up its edit screen.
+
+### Notes Format
+
+Notes are saved as <note-title>.txt with a Markdown-style title followed by the note's content.
+
+## Developing
+
+### Requirements
+
+- `python`
+- `npm`
+
+
+# MX-Notes
+
+## Changelog
+
+Changelog labels are any of the following:
+
+- [BUGFIX], [CHANGE], [CODEQUALITY], [DEPENDENCY], [ENHANCEMENT], [OTHER], [TRANSLATION]
+
+### Version 0.0.3 (2021-01-04)
+
+- [DEPENDENCY] Added UIKit and Sass compiler.
+
+### Version 0.0.2 (2021-01-04)
+
+- [CODEQUALITY] `pathlib.Path` used over `os.path`.
+- [ENHANCEMENT] Altered CSS slightly.
+
+### Version 0.0.1 (2021-01-03)
+
+- [OTHER] Initialized project.
+
+
