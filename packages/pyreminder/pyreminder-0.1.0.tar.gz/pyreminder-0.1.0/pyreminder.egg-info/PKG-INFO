@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pyreminder
+Version: 0.1.0
+Summary: Python library to create iCloud Reminders through CLI
+Home-page: http://github.com/ohitssway/pyreminder
+Author: Saimun Shahee
+Author-email: saimun.shahee@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

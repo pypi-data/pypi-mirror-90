@@ -1,0 +1,14 @@
+README.md
+setup.py
+bin/pyreminder
+pyreminder/__init__.py
+pyreminder/constants.py
+pyreminder/create_remind.py
+pyreminder/pr.py
+pyreminder/reminders_io.py
+pyreminder/utils.py
+pyreminder.egg-info/PKG-INFO
+pyreminder.egg-info/SOURCES.txt
+pyreminder.egg-info/dependency_links.txt
+pyreminder.egg-info/not-zip-safe
+pyreminder.egg-info/top_level.txt
