@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: zuulfmt
+Version: 0.1.0
+Summary: A Zuul/Ansible yaml formatter/prettifier.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: ASL v2.0
+Description: # zuulfmt
+        
+        A Zuul/Ansible yaml formatter/prettifier.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
