@@ -1,0 +1,13 @@
+README.rst
+setup.py
+score.es7.egg-info/PKG-INFO
+score.es7.egg-info/SOURCES.txt
+score.es7.egg-info/dependency_links.txt
+score.es7.egg-info/namespace_packages.txt
+score.es7.egg-info/not-zip-safe
+score.es7.egg-info/requires.txt
+score.es7.egg-info/top_level.txt
+score/es7/__init__.py
+score/es7/_init.py
+score/es7/ctx.py
+score/es7/dsl.py

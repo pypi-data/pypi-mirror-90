@@ -1,0 +1,7 @@
+score.init>=0.3
+elasticsearch<7.0.0,>=6.0.0
+elasticsearch-dsl<7.0.0,>=6.0.0
+
+[dev]
+pytest
+score.ctx
