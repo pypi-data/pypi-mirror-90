@@ -1,0 +1,7 @@
+pandas_etl_pipeline/__init__.py,sha256=OLFJ6-lO63kpBXs1dGG1Cyze2rI5q0lC2-eXh4iOW8w,67
+pandas_etl_pipeline/pipeline.py,sha256=IGffKGEtePmNtW--gR__IAWOayvfLf8XeAHlGsWpJNg,3100
+pandas_etl_pipeline-0.1.0.dist-info/LICENSE,sha256=3hMx3cA8bsqguFEpMhAuW1ug2a4smG0XHsoKJQ1j2js,1060
+pandas_etl_pipeline-0.1.0.dist-info/METADATA,sha256=y_eUEeOUSSI5Na9DaGjyetk9YvOFAUmdV99cbzSgk7k,756
+pandas_etl_pipeline-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pandas_etl_pipeline-0.1.0.dist-info/top_level.txt,sha256=DFwRq2JEB8IGnrRyFGm5XTdMgjbN4tZeWfYm3_eKca0,20
+pandas_etl_pipeline-0.1.0.dist-info/RECORD,,
