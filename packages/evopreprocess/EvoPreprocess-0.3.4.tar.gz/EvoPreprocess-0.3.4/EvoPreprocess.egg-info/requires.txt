@@ -1,0 +1,5 @@
+numpy
+scipy
+scikit-learn
+imbalanced-learn
+NiaPy>=2.0.0rc11
