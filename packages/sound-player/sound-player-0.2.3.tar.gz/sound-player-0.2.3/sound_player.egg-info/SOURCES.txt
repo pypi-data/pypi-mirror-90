@@ -1,0 +1,7 @@
+README.md
+setup.py
+sound_player/__init__.py
+sound_player.egg-info/PKG-INFO
+sound_player.egg-info/SOURCES.txt
+sound_player.egg-info/dependency_links.txt
+sound_player.egg-info/top_level.txt
