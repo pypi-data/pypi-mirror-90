@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: yediemin
+Version: 0.1.5
+Summary: Bulletproof attachment serving for Django Rest Framework.
+Home-page: https://github.com/hipo/yediemin
+License: MIT
+Keywords: python,django,django rest framework,file,attachment
+Author: Efe Öge
+Author-email: efe@hipolabs.com
+Requires-Python: >=3.4,<4
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: Django (>=1.8)
+Requires-Dist: django-storages (>=1.11)
+Requires-Dist: djangorestframework (>=3.0)
+Project-URL: Repository, https://github.com/hipo/yediemin
+Description-Content-Type: text/markdown
+
+# Yediemin
+
+A package for bulletproof attachment serving in Django Rest Framework.
+
+## Getting Started
+
+### Requirements
+- Nginx
+- Django Rest Framework
+- Session Authentication
+- Django Storages (S3)
+
+### Installation Steps
+
+1) Install package from [PyPi](https://pypi.org/project/yediemin/).
+
+```sh
+pip install yediemin
+```
+
+2) Add the view to `urls.py`
+
+```python
+from yediemin import YedieminView
+
+urlpatterns = [
+    re_path(r'^yediemin/(?P<file_name>\S+)/$', YedieminView.as_view(), name='yediemin'),
+]
+```
+
+3) Configure Nginx. Place the configuration below under your server.
+
+```
+location /yediemin-files/ {
+            internal;
+            resolver 8.8.8.8;
+            set $redirect_uri "$upstream_http_redirect_uri";
+
+            proxy_buffering off;
+            proxy_pass $redirect_uri;
+}
+```
+
+4) Use ``YedieminFileField`` in serializer for `FileField`.
+
+```python
+from yediemin import YedieminFileField
+
+class AttachmentSerializer(serializers.ModelSerializer):
+    file = YedieminFileField()
+
+    class Meta:
+        model = Attachment
+        fields = (
+            "id",
+            "file",
+        )
+```
+
+5) Upload files to S3 with `YedieminFileField`. Yediemin requires [presigned object url](https://docs.aws.amazon.com/AmazonS3/latest/dev/ShareObjectPreSignedURL.html).
+
+### Settings
+
+- `YEDIEMIN_HIDDEN_REDIRECT_PATH`
+
+Default: `yediemin-files`.
+It should be same with location in nginx configuration.
+
+- `YEDIEMIN_AUTHENTICATION_CLASS`
+
+Default: `rest_framework.authentication.SessionAuthentication`
+
+- `YEDIEMIN_EXPIRE_IN`
+
+Default: `2592000` seconds which is 1 month.
