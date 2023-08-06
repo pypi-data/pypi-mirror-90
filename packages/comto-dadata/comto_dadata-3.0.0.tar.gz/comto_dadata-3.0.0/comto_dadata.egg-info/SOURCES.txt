@@ -1,0 +1,12 @@
+README.md
+setup.py
+comto_dadata/__init__.py
+comto_dadata/address.py
+comto_dadata/company.py
+comto_dadata/handbook.py
+comto_dadata/parse.py
+comto_dadata/profile.py
+comto_dadata.egg-info/PKG-INFO
+comto_dadata.egg-info/SOURCES.txt
+comto_dadata.egg-info/dependency_links.txt
+comto_dadata.egg-info/top_level.txt
