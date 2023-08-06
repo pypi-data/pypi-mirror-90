@@ -1,0 +1,8 @@
+README.md
+setup.py
+easyencode/__init__.py
+easyencode/endecoders.py
+easyencode.egg-info/PKG-INFO
+easyencode.egg-info/SOURCES.txt
+easyencode.egg-info/dependency_links.txt
+easyencode.egg-info/top_level.txt

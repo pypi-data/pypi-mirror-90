@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: easyencode
+Version: 0.1.0
+Summary: Easy Encode and Decode your own classes from and to json
+Home-page: https://github.com/hexample/easyencode
+Author: Filipe Spencer Lopes dos Santos
+Author-email: filipe@spncr.be
+License: UNKNOWN
+Description: # easyencode
+Keywords: json encode decore dictionary easy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6.8, <4
+Description-Content-Type: text/markdown
