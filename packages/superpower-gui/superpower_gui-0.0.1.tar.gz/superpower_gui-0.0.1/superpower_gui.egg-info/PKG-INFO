@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: superpower-gui
+Version: 0.0.1
+Summary: A statistical power analysis application
+Home-page: https://github.rcac.purdue.edu/superpower_gui/superpower_gui/tree/master/
+Author: Nicole Brewer
+Author-email: brewer36@purdue.edu
+License: Apache Software License 2.0
+Description: # Superpower GUI
+        > This application provides a graphical wrapper to access functions in the superpower R pacakge.
+        
+        
+        ## Install
+        
+        `git clone https://github.rcac.purdue.edu/brewer36/superpower_gui.git`
+        
+        `cd superpower_gui`
+        
+        `pip install superpower_gui`
+        
+        ## How to use
+        
+        This application runs in a single cell of a Jupyter Notebook, or an Javascript enabled IPython environment.
+        
+        ```
+        controller = Controller()
+        ```
+        
+        ```
+        controller
+        ```
+        
+Keywords: statistics power analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
