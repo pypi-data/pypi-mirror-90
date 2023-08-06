@@ -1,0 +1,6 @@
+pyyaml
+PyPDF4
+mailinglogger
+
+[dev]
+pytest

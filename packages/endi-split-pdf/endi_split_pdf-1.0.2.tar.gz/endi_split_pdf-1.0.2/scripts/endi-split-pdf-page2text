@@ -1,0 +1,33 @@
+#!/bin/bash
+# Output provided page numbers of the given pdf to stdout
+
+if [[ -z ${1+x} ]] || [[ -z ${2+x} ]]
+then
+    echo "Missing arguments"
+    echo "USAGE"
+    echo "./script_pdf2text.sh FILE PAGE"
+    echo ""
+    echo "FILE : path to the file"
+    echo "PAGE : page number to convert to text (starts with 1)"
+    exit 1
+fi
+
+set -e
+set -u
+
+FILE=$1
+PAGE=$2
+
+if hash tempfile 2>/dev/null
+then
+    # debian
+    outfile=`tempfile`
+else
+    # Fedora
+    outfile=`mktemp`
+fi
+
+pdftotext -q -layout -f $PAGE -l $PAGE "${FILE}" $outfile
+
+cat ${outfile}
+rm ${outfile}
