@@ -1,0 +1,16 @@
+README.md
+setup.py
+weblogs/__init__.py
+weblogs/web_logs.py
+weblogs/weblogs.py
+weblogs.egg-info/PKG-INFO
+weblogs.egg-info/SOURCES.txt
+weblogs.egg-info/dependency_links.txt
+weblogs.egg-info/entry_points.txt
+weblogs.egg-info/not-zip-safe
+weblogs.egg-info/requires.txt
+weblogs.egg-info/top_level.txt
+weblogs/data/app.py
+weblogs/data/index.html
+weblogs/data/json_path.txt
+weblogs/data/style.css
