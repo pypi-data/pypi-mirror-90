@@ -1,0 +1,11 @@
+README.md
+setup.py
+comto_core/__init__.py
+comto_core/file.py
+comto_core/path.py
+comto_core/regexp.py
+comto_core/time.py
+comto_core.egg-info/PKG-INFO
+comto_core.egg-info/SOURCES.txt
+comto_core.egg-info/dependency_links.txt
+comto_core.egg-info/top_level.txt
