@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: csy-memory-cache
+Version: 0.1.4
+Summary: python memory cache base python3
+Home-page: https://github.com/1278651995/python-memory-cache
+Author: chensy-jp
+Author-email: 1278651995@qq.com
+License: Apache-2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
