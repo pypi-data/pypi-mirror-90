@@ -1,0 +1,10 @@
+setup.py
+pythfinder/__init__.py
+pythfinder/character.py
+pythfinder/collections.py
+pythfinder/helpers.py
+pythfinder/vars.py
+pythfinder.egg-info/PKG-INFO
+pythfinder.egg-info/SOURCES.txt
+pythfinder.egg-info/dependency_links.txt
+pythfinder.egg-info/top_level.txt
