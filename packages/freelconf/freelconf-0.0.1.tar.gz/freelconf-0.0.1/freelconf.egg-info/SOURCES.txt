@@ -1,0 +1,13 @@
+README.md
+setup.py
+examples/__init__.py
+examples/main.py
+freelconf/__init__.py
+freelconf/parser.py
+freelconf/utils.py
+freelconf.egg-info/PKG-INFO
+freelconf.egg-info/SOURCES.txt
+freelconf.egg-info/dependency_links.txt
+freelconf.egg-info/requires.txt
+freelconf.egg-info/top_level.txt
+tests/__init__.py
