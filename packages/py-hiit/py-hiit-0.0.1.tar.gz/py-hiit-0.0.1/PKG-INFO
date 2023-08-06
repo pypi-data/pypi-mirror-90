@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: py-hiit
+Version: 0.0.1
+Summary: Functions for creating a HIIT workout.
+Home-page: https://github.com/mathewmoon/py-hiit
+Author: Mathew Moon
+Author-email: me@mathewmoon.net
+License: Apache 2.0
+Description: # Just a fun project that provides functions for creating a terminal based HIIT workout
+        
+        # For the moment only Mac is supported due to usage of the "say" program
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
