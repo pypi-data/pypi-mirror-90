@@ -1,0 +1,10 @@
+README.md
+setup.py
+planetterp/PlanetTerp.py
+planetterp/__init__.py
+planetterp/version.py
+planetterp.egg-info/PKG-INFO
+planetterp.egg-info/SOURCES.txt
+planetterp.egg-info/dependency_links.txt
+planetterp.egg-info/requires.txt
+planetterp.egg-info/top_level.txt
