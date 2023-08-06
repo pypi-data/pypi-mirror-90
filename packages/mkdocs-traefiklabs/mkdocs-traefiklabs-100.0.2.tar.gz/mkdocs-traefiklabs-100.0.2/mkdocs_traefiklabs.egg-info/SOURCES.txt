@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+requirements.txt
+setup.py
+mkdocs_traefiklabs.egg-info/PKG-INFO
+mkdocs_traefiklabs.egg-info/SOURCES.txt
+mkdocs_traefiklabs.egg-info/dependency_links.txt
+mkdocs_traefiklabs.egg-info/entry_points.txt
+mkdocs_traefiklabs.egg-info/not-zip-safe
+mkdocs_traefiklabs.egg-info/requires.txt
+mkdocs_traefiklabs.egg-info/top_level.txt
