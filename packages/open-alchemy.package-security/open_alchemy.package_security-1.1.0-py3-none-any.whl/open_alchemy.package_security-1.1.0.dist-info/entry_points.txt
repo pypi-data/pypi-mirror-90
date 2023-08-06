@@ -1,0 +1,3 @@
+[pytest11]
+open_alchemy_package_security=open_alchemy.package_security.pytest_plugin
+
