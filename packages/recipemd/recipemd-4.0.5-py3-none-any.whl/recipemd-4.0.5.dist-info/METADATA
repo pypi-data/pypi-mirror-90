@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: recipemd
+Version: 4.0.5
+Summary: Markdown recipe manager, reference implementation of RecipeMD
+Home-page: https://recipemd.org
+Author: Tilman Stehr
+Author-email: tilman@tilman.ninja
+License: UNKNOWN
+Project-URL: Documentation, https://recipemd.org/reference_implementation.html
+Project-URL: Source, https://github.com/tstehr/recipemd
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Requires-Python: >=3.7,<4
+Description-Content-Type: text/markdown
+Requires-Dist: dataclasses-json (<0.6.0,>=0.5.2)
+Requires-Dist: yarl (~=1.3.0)
+Requires-Dist: commonmark (<1.0.0,>=0.9.1)
+Requires-Dist: argcomplete (~=1.10.0)
+Requires-Dist: pyparsing (~=2.4.2)
+Provides-Extra: dev
+Requires-Dist: pytest (==5.3.1) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.8.1) ; extra == 'dev'
+Requires-Dist: tox (==3.20.1) ; extra == 'dev'
+Requires-Dist: Sphinx (==2.2.2) ; extra == 'dev'
+Requires-Dist: m2r (==0.2.1) ; extra == 'dev'
+Requires-Dist: sphinxcontrib.fulltoc (==1.2.0) ; extra == 'dev'
+Requires-Dist: sphinxcontrib.autoprogram (==0.1.5) ; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints (==1.10.3) ; extra == 'dev'
+Requires-Dist: sphinxcontrib.apidoc (==0.3.0) ; extra == 'dev'
+Requires-Dist: sphinx-autobuild (==0.7.1) ; extra == 'dev'
+Requires-Dist: twine (==3.1.1) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: Sphinx (==2.2.2) ; extra == 'docs'
+Requires-Dist: m2r (==0.2.1) ; extra == 'docs'
+Requires-Dist: sphinxcontrib.fulltoc (==1.2.0) ; extra == 'docs'
+Requires-Dist: sphinxcontrib.autoprogram (==0.1.5) ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints (==1.10.3) ; extra == 'docs'
+Requires-Dist: sphinxcontrib.apidoc (==0.3.0) ; extra == 'docs'
+Requires-Dist: sphinx-autobuild (==0.7.1) ; extra == 'docs'
+Provides-Extra: release
+Requires-Dist: twine (==3.1.1) ; extra == 'release'
+Provides-Extra: tests
+Requires-Dist: pytest (==5.3.1) ; extra == 'tests'
+Requires-Dist: pytest-cov (==2.8.1) ; extra == 'tests'
+Requires-Dist: tox (==3.20.1) ; extra == 'tests'
+
+# RecipeMD
+
+A [standard format](https://recipemd.org/specification.html) for recipes as [Markdown](https://commonmark.org) files 
+and a [python reference implementation](https://recipemd.org/reference_implementation.html). The reference 
+implementation can be used as a [CLI program](https://recipemd.org/cli.html) and as a 
+[python library](https://recipemd.org/_apidoc/recipemd.html).
+
+More info on our website: [recipemd.org](https://recipemd.org)
+
+<p>&nbsp;</p>
+
+<a href="https://recipemd.org/"><img src="https://raw.githubusercontent.com/tstehr/RecipeMD/master/logo/recipemd-mark.png" style="float:right; margin-left:5em"></a>
+
+## License
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as 
+published by the Free Software Foundation, either version 3 of the 
+License, or any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program. If not, see https://www.gnu.org/licenses/.
+
