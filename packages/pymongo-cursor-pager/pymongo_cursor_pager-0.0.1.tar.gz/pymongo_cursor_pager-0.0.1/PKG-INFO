@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pymongo_cursor_pager
+Version: 0.0.1
+Summary: Cursor-based pagination for PyMongo
+Home-page: UNKNOWN
+Author: Roman Kolpak
+Author-email: roman.kolpak@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
