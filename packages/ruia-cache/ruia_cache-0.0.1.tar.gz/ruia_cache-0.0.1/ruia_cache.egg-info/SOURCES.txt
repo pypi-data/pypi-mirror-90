@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+ruia_cache/__init__.py
+ruia_cache/request.py
+ruia_cache/response.py
+ruia_cache/serializers.py
+ruia_cache/spider.py
+ruia_cache/utils.py
+ruia_cache.egg-info/PKG-INFO
+ruia_cache.egg-info/SOURCES.txt
+ruia_cache.egg-info/dependency_links.txt
+ruia_cache.egg-info/requires.txt
+ruia_cache.egg-info/top_level.txt
+ruia_cache/cache_patch/__init__.py
+ruia_cache/cache_patch/req_cache.py
+ruia_cache/cache_patch/resp_cache.py
