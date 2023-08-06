@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-state-machine
+Version: 0.2.0
+Summary: Helper for add transitions functionality in sqlalchemy
+Home-page: https://github.com/bigbag/sqlalchemy-state-machine
+Author: Pavel Liashkov
+Author-email: pavel.liashkov@protonmail.com
+Maintainer: Pavel Liashkov
+Maintainer-email: pavel.liashkov@protonmail.com
+License: Apache License, Version 2.0
+Download-URL: https://pypi.python.org/pypi/sqlalchemy-state-machine
+Description: Helper for add transitions functionality in sqlalchemy
+        =======================================================================
+        
+        .. image:: https://github.com/bigbag/sqlalchemy-state-machine/workflows/PYPI/badge.svg
+           :target: https://github.com/bigbag/sqlalchemy-state-machine/actions?query=workflow%3APYPI
+           :alt: GitHub Actions status
+        .. image:: https://img.shields.io/pypi/v/sqlalchemy-state-machine.svg
+           :target: https://pypi.python.org/pypi/sqlalchemy-state-machine
+Platform: POSIX
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: POSIX
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst

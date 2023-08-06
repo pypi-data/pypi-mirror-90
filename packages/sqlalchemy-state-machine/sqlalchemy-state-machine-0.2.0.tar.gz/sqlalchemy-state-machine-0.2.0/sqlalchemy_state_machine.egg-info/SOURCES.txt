@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+sqlalchemy_state_machine/__init__.py
+sqlalchemy_state_machine/version.py
+sqlalchemy_state_machine.egg-info/PKG-INFO
+sqlalchemy_state_machine.egg-info/SOURCES.txt
+sqlalchemy_state_machine.egg-info/dependency_links.txt
+sqlalchemy_state_machine.egg-info/not-zip-safe
+sqlalchemy_state_machine.egg-info/requires.txt
+sqlalchemy_state_machine.egg-info/top_level.txt
