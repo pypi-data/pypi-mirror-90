@@ -1,0 +1,3 @@
+[console_scripts]
+check-untracked-migrations = hooks.check_untracked_migrations:main
+
