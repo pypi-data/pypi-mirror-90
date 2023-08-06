@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: cf-oauthlib
+Version: 3.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/oauthlib/oauthlib
+Author: The OAuthlib Community
+Author-email: idan@gazit.me
+Maintainer: Ib Lundgren
+Maintainer-email: ib.lundgren@gmail.com
+License: BSD
+Description: OAuthLib
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+Provides-Extra: rsa
+Provides-Extra: signedtoken
+Provides-Extra: signals
