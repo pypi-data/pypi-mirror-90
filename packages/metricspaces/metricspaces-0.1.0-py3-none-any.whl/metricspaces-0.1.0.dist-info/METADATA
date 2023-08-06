@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: metricspaces
+Version: 0.1.0
+Summary: A package for computing wiht metric spaces
+Home-page: https://github.com/donsheehy/metricspaces
+Author: Donald R. Sheehy
+Author-email: don.r.sheehy@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Click
+
+# metricspaces
+A Python Package for working with Metric Spaces
+
+See <a href="https://donsheehy.github.io/metricspaces/">donsheehy.github.io/metricspaces</a> for the full documentation.
+
+

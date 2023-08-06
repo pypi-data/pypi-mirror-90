@@ -1,0 +1,11 @@
+metricspaces/R1.py,sha256=xrnnX-D-iUijiuwMEChTOIcbp8_7B6xVLkuXt0uO100,77
+metricspaces/__init__.py,sha256=E_fQbGkY4Vflx8VCxPuENhZJVM4RdMG6fiEbAGWRit4,45
+metricspaces/cli.py,sha256=E9lQdKHft9zcosGiDJjBFB29wUHv4AByjqWkvIH2BZ4,172
+metricspaces/metricspace.py,sha256=nWf5pHMKUG457tk4GBpbwx1AHMtJ0cGfqtKruaYayyY,2828
+metricspaces/np_point.py,sha256=hu-3or5G-uU2pIdEHoEjTXQbijfP75njKR600BUeKcU,406
+metricspaces-0.1.0.dist-info/LICENSE,sha256=bBb5Spz5vFD_ZiMhXJR4Ucqm3t13Kb1_lEuN91aNQuY,1067
+metricspaces-0.1.0.dist-info/METADATA,sha256=kcFa4yS4VG2xOOS5pI1au8DTIRG7hwbE3GnmfbC82Ho,676
+metricspaces-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+metricspaces-0.1.0.dist-info/entry_points.txt,sha256=OydoLy1hMB4fxhk_0UoiOo5eOW8vT7ArDrIYaZfFBZ0,73
+metricspaces-0.1.0.dist-info/top_level.txt,sha256=Ww702KQS7uHUCmLKQaNjDY1Yb_bLQM5QvadbX8SxnxA,13
+metricspaces-0.1.0.dist-info/RECORD,,
