@@ -1,0 +1,16 @@
+orthogram/__init__.py,sha256=VgX1OHrmMmpsjffHTK4H72txJl7XBjHAGsW5paFMC9A,133
+orthogram/__main__.py,sha256=XhLhFhg2TU1d41QUJM1PVMM-FF0aXlnPoJxBJuGGL6g,200
+orthogram/build.py,sha256=Mn7OWNgHnkKhFQZidAvX2GDTHNzW0FvHHe9VuUJrHR8,16634
+orthogram/debug.py,sha256=HK0SAjdwARUnI37s5tufpizSUpRABxiVxgzZ2yhVi7g,363
+orthogram/diagram.py,sha256=EUiLn1TA253iJC2WJiwdlw_4wmFkbCKPSiNxKa5oAGI,26962
+orthogram/draw.py,sha256=kRjzbfSGqd3QIhV_5ketGWdHUUxloEsUdrDfv5uo7Vc,40383
+orthogram/functions.py,sha256=2kGLm1ftWOgtFS_jbLa6polqKtxBM3dakcvO8f4olF0,1949
+orthogram/geometry.py,sha256=XtN938u9Ggi-vMdS-B05in5xHoJALDYWOljjDJjotyM,6233
+orthogram/layout.py,sha256=-ANdXYpWXOmjSvGDFl3xDTzmZjAHEfz3Mtdh35RrMis,1326
+orthogram/refine.py,sha256=kaCD7w_8o9sRpdpXhnSrdxIknldC-2IlX69E7_qrS4E,33057
+orthogram/route.py,sha256=EdWJ3QeQYvlYn7DLEAGiob35cpIOAKORoU7X0ngoZI0,16821
+orthogram/util.py,sha256=22rE4a_qvqy7CJtqzY5PAxHGUsVcs-MMcn-fIqyHPjw,410
+orthogram-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+orthogram-0.3.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+orthogram-0.3.0.dist-info/METADATA,sha256=bfa0X6xBTxJsDlzU_q6YCdq-ecxvTMQl_7G4RTGlEUQ,2539
+orthogram-0.3.0.dist-info/RECORD,,
