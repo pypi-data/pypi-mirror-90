@@ -1,0 +1,14 @@
+coveragectx/__init__.py,sha256=tBL4H4WbPyZ8qlK9lvj_TROCWovJcAWMmd9wCPj1O70,644
+coveragectx/version.py,sha256=P1kRuZW02tF-ekLuBqSjV_tIKKqcbfRPDdpp9C8ftUY,21
+coveragectx/coverage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coveragectx/coverage/cli.py,sha256=NAc1PdyyL07iVpvx0HdhQb-h8QvvgLGsLc9_fVE-qUc,893
+coveragectx/coverage/plugin.py,sha256=yeE1tj9R1jl20RO2zv88vCMwUUWyHJaN3so5jqGGFd4,1846
+coveragectx/coverage/site/sitecustomize.py,sha256=klyakl0gkiRF6dRvm-UxRP2Bg64CQPt2JI5VnZ27jAU,379
+coveragectx/pytest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coveragectx/pytest/plugin.py,sha256=f-V0VezNe2NswOCZkSmciL6Ru1VMytikksj6k3gDiU4,3439
+pytest_coverage_context-0.7.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pytest_coverage_context-0.7.0.dist-info/METADATA,sha256=TJJNb8SuiaMKJlHXJzgmWDqXmU7BAOhA6SjEVMQCVAY,1181
+pytest_coverage_context-0.7.0.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+pytest_coverage_context-0.7.0.dist-info/entry_points.txt,sha256=jKlK-lSZ3qZ1CNezYd6FqwTpydvz7kVWnfdNpcT0Ogs,127
+pytest_coverage_context-0.7.0.dist-info/top_level.txt,sha256=nx-PgPdEa1ov83XzMQrAFAUoe3LqH4G7wa_eccVzpjQ,12
+pytest_coverage_context-0.7.0.dist-info/RECORD,,
