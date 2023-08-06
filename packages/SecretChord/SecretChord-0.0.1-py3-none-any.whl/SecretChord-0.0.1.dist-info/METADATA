@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: SecretChord
+Version: 0.0.1
+Summary: generate robust and beautiful Chord Diagrams
+Home-page: https://github.com/secretBiology/SecretChord
+Author: Rohit Suratekar
+Author-email: rohitsuratekar@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: SecretColors
+
+### SecretChord
+
+Generate robust and beautiful Chord Diagrams with pure matplotlib.
+
+It is `matplotlib` wrapper for [Chord](https://en.wikipedia.
+org/wiki/Chord_diagram) Diagrams. This is a part
+of [SecretPlot](https://github.com/secretBiology/SecretPlots)
+project.
+
+Check more details on [GitHub](https://github.com/secretBiology/SecretChord)
+
+
