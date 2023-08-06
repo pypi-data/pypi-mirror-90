@@ -1,0 +1,45 @@
+Metadata-Version: 1.1
+Name: vmx_editor
+Version: 0.3.2
+Summary: Read and edit .vmx configurations file programmatically
+Home-page: https://github.com/lennisthemenace/vmx_editor
+Author: lennisthemenace
+Author-email: no@email.com
+License: MIT
+Download-URL: https://github.com/lennisthemenace/vmx_editor/archive/0.3.2.tar.gz
+Description: vmx_editor
+        ==========
+        
+        Python module for safely reading and editing .vmx files for vmware
+        virtual machines. This is especially helpful if the user only has vmware
+        Player
+        
+        Example:
+        
+        .. code-block:: python
+        
+           from vmx_editor.editor import Editvmx
+           vm = Editvmx()
+        
+           vm.add_or_modify_setting(vm.find_vmx(), vm.Settings.Hardware.VIRTUAL_MEMORY, 4000)
+           vm.add_or_modify_setting(vm.find_vmx(), vm.Settings.Connection.FIRST_ETHERNET_CONNECTION_TYPE, vm.Values.Connection.BRIDGED)
+           print(vm.read_setting(vm.find_vmx(), vm.Settings.Hardware.VIRTUAL_MEMORY))
+           vm.add_or_modify_setting(vm.find_vmx(), vm.Settings.Hardware.HARDWARE_VERSION, 11)
+        
+        Install:
+        
+        .. code-block:: shell
+        
+            pip install vmx-editor
+Keywords: VMX,EDITOR,VMWARE
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
