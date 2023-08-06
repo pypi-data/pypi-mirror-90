@@ -1,0 +1,15 @@
+ansible>=2.10.3
+molecule>=3.2.0
+pyyaml<6,>=5.1
+
+[docs]
+simplejson
+Sphinx
+sphinx_ansible_theme>=0.2.2
+
+[lint]
+pre-commit>=1.21.0
+
+[test]
+molecule[test]
+pytest-helpers-namespace
