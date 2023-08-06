@@ -1,0 +1,12 @@
+README.rst
+setup.py
+fishsound_finder/__init__.py
+fishsound_finder/_version.py
+fishsound_finder/detector.py
+fishsound_finder.egg-info/PKG-INFO
+fishsound_finder.egg-info/SOURCES.txt
+fishsound_finder.egg-info/dependency_links.txt
+fishsound_finder.egg-info/entry_points.txt
+fishsound_finder.egg-info/not-zip-safe
+fishsound_finder.egg-info/requires.txt
+fishsound_finder.egg-info/top_level.txt
