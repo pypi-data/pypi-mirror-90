@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bh
+Version: 0.0.2
+Summary: Fuzzy Linear Discriminant Analysis
+Home-page: https://github.com/thorwhalen/ut/tree/master/ml/decomp/fuzzy_lda.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # bh
+        Fuzzy Linear Discriminant Analysis
+        
+        
+        To install:	```pip install bh```
+        
+Platform: any
+Description-Content-Type: text/markdown
