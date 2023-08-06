@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: SSAP
+Version: 0.0.51
+Summary: Self-Service Analytics Platform
+Home-page: https://github.com/QinYu211/SSAP
+Author: TQ
+Author-email: tqin0411@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas-profiling
+Requires-Dist: folium
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Requires-Dist: networkx
+Requires-Dist: pyvis
+
+# SSAP
+SSAP: Self Service Analytics Platform.
+
