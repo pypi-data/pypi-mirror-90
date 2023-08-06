@@ -1,0 +1,15 @@
+NERDA/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+NERDA/datasets.py,sha256=GbkoIgr6Y1RXgdoEDDhre23dagvjyOUV-Nhuf37WIF4,4410
+NERDA/models.py,sha256=ZgxnOQU3BTuGYwptBY83pI1nA7ZZtVaKwo6Ca1T5Z0g,13158
+NERDA/networks.py,sha256=Pbn69L-9jGN_d9GamcEhrwwg32U7RxbJArwJ3snGDIw,1750
+NERDA/performance.py,sha256=plm7yTVXbchxUdqSFsmUVFfz5Phk-StSEdFxGBh_whQ,1031
+NERDA/precooked.py,sha256=fJq_NbP4Ce3wLoMcqmMriqy2GaGHn7ds24v5bBHpxN8,4640
+NERDA/predictions.py,sha256=EhwKKOvpNt2EYNTZrIR-wdBeM6gU50IRKVOrJjkMViw,3083
+NERDA/preprocessing.py,sha256=KSWV3674YU1CQtQ7wu38NKVmxwT9ZkTfx8DcDbUNrWw,3865
+NERDA/training.py,sha256=gSJLFUMOg0SbBVy3BrWwxuSgiIa49Mk2301MpKNeKyc,6046
+NERDA/utils.py,sha256=NDLgQtDFDe1CdKSw8I-tNsshlxE7Rbs67Ozofap-K3w,654
+NERDA-0.0.29.dist-info/LICENSE,sha256=R9OSNC-u_MCvdKW5H9AdTGiIoq4UguoZHYLQsLk2D3c,1074
+NERDA-0.0.29.dist-info/METADATA,sha256=ttAKoZJGDzXqKGd91E4LWM0am4Tzg8Qzwrd560VE5SA,3865
+NERDA-0.0.29.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+NERDA-0.0.29.dist-info/top_level.txt,sha256=DW64I4Z08r28XyLsUnatqu-914nlSx-lfv9akrWI3lw,6
+NERDA-0.0.29.dist-info/RECORD,,
