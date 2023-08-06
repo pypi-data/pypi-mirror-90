@@ -1,0 +1,6 @@
+requests
+pyperclip
+PySide2
+PySimpleGUI
+PySimpleGUIQt
+cryptography
