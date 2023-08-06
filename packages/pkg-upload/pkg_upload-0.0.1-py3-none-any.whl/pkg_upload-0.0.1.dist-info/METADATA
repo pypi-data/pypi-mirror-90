@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: pkg-upload
+Version: 0.0.1
+Summary: A package for uploading packages. Made with setuptools
+Home-page: https://github.com
+Author: DiscordDev
+Author-email: example@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Package_Upload
+
+To Upload a package:
+Create a folder and name it
+Then add an `__init__.py`
+Add a LICENSE and a README
+Make a Setup.py
+
+For users using local computer.
+```
+pip install twine
+```
+```
+python folder/setup.py sdist bdist_wheel
+```
+```
+twine upload dist/*
+```
+```py
+pkg_upload.package(pkg_name="Url91",author="PkgDev",email="example@example.com",version="0.0.1",short_description="A simplified url package made with request and urllib",long_description="""
+#Url91
+
+'''py
+import Url91
+
+print(Url91.content("https://pypi.org"))
+'''
+""",github_url="https://github.com",python_requirment=">=3.6")
+```
+
+For repl.it users.
+
+```py
+pkg_upload.package(pkg_name="Url91",author="PkgDev",email="example@example.com",version="0.0.1",short_description="A simplified url package made with request and urllib",long_description="""
+#Url91
+
+'''py
+import Url91
+
+print(Url91.content("https://pypi.org"))
+'''
+""",github_url="https://github.com",python_requirment=">=3.6")
+```
+Then
+
+```py
+pkg_upload.upload(folder_name,type_="in_folder")
+```
+
