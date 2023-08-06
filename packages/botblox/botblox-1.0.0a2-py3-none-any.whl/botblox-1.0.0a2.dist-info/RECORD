@@ -1,0 +1,12 @@
+manager/__init__.py,sha256=xiICClWWbJfHNrvctwtx7iz65-0r_Jhanx5QkB0qI_8,75
+manager/__main__.py,sha256=ApmL3sWuOueyFeBB8KC8h7W2Gtsb74gpdPEf1y8CoL8,177
+manager/cli.py,sha256=klEs4J10rJP6fmXSgHT41qMPRg4QXD2gvQS3Dn4mxP4,5462
+manager/data_manager/__init__.py,sha256=-yooE2Z1zEr1lUaj0x2fUXvsyn9KNz7_nTCoheRJNE0,289
+manager/data_manager/portmirror_config.py,sha256=hA9DNnj08K7gQXUY3veLixYjcL-EnbnKJ8G_L0g3Sxg,9303
+manager/data_manager/vlan_config.py,sha256=9-6MYLFv4sT8l7hb5J3lkEFFan2hG8rkFPUKkzI9a8Q,7339
+botblox-1.0.0a2.dist-info/LICENSE,sha256=Qflvo03LbQJSyYfKM4er6-V1PHaU91K9jUohLNg_-8s,1064
+botblox-1.0.0a2.dist-info/METADATA,sha256=QZSdEo6U0hZ-t5L_rms-x0Ik_zgudepeHCPcRHDmVds,7913
+botblox-1.0.0a2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+botblox-1.0.0a2.dist-info/entry_points.txt,sha256=uaQbPG5sCJmKZ5v3Gsv4TibjcZWxM9AW3oENQ5TjE6s,51
+botblox-1.0.0a2.dist-info/top_level.txt,sha256=Vjef9H-ikFFgvGjodlMWZev9MDXcHSOk3yVv2mV5HwQ,8
+botblox-1.0.0a2.dist-info/RECORD,,
