@@ -1,0 +1,10 @@
+ppad/__init__.py,sha256=J2NX9qHSIWFbMDMxZ2Y6RiKLbMZeHv8D7roP5rtmWZQ,3372
+ppad/__main__.py,sha256=5BjNuyet8AY-POwoF5rGt722rHQ7tJ0Vf0UFUfzzi-I,58
+ppad/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ppad/lib/util.py,sha256=aT0_xinee3IBk5zLMqI2lBXWluTBEnXxSNkpMIH_Hnk,985
+ppad-0.0.10.dist-info/LICENSE,sha256=YRdhYPJs-YKCjmFq7KGZx1f_pcg9rrZz_AHRUypR1uo,18162
+ppad-0.0.10.dist-info/METADATA,sha256=9OOjfLoYx3hXosyyP0MB1olfC4ARyk-MuOGPyWeTde4,1883
+ppad-0.0.10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ppad-0.0.10.dist-info/entry_points.txt,sha256=RRPF7TEmzuLmZymdtS6XYtzWas31_OXMdyKGDwF4sp8,36
+ppad-0.0.10.dist-info/top_level.txt,sha256=D_Rxm8PMUipOdNZHo4RTBDJ6KVjP0uKJFG46Q-Y8gEw,5
+ppad-0.0.10.dist-info/RECORD,,
