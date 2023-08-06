@@ -1,0 +1,12 @@
+.gitattributes
+.gitignore
+LICENSE.txt
+MANIFEST.in
+README.md
+WalkSFTP.py
+setup.py
+src/walk_sftp.egg-info/PKG-INFO
+src/walk_sftp.egg-info/SOURCES.txt
+src/walk_sftp.egg-info/dependency_links.txt
+src/walk_sftp.egg-info/requires.txt
+src/walk_sftp.egg-info/top_level.txt
