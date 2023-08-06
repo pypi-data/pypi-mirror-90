@@ -1,0 +1,4 @@
+IBoxLoader: !include [
+  cloudfront.yml,
+  #cloudfront-custom-errors.yml,
+]
