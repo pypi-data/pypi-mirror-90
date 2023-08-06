@@ -1,0 +1,4 @@
+click>=7.1
+musicbrainzngs>=0.7
+mutagen>=1.45
+pillow>=8.1
