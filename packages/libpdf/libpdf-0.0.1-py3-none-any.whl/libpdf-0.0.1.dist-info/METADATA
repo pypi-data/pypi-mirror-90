@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: libpdf
+Version: 0.0.1
+Summary: Extract structured data from PDFs.
+Home-page: http://pypi.python.org/pypi/libpdf
+License: MIT
+Author: Marco Heinemann
+Author-email: marco.heinemann@useblocks.com
+Maintainer: Jui-Wen Chen
+Maintainer-email: jui-wen.chen@useblocks.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+Provides-Extra: colorama
+Provides-Extra: docs
+Provides-Extra: tqdm
+Requires-Dist: PyYAML (>=5,<6)
+Requires-Dist: chardet (>=3,<4)
+Requires-Dist: click (>=7,<8)
+Requires-Dist: colorama (>=0.4.4,<0.5.0); extra == "colorama"
+Requires-Dist: importlib-metadata (>=1.6.0,<2.0.0); python_version >= "3.6" and python_version < "3.8"
+Requires-Dist: pillow (>=8.1.0,<9.0.0)
+Requires-Dist: pycryptodome (>=3.9.9,<4.0.0)
+Requires-Dist: ruamel.yaml (>=0.16.10,<0.17.0)
+Requires-Dist: sortedcontainers (>=2.3.0,<3.0.0)
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx_rtd_theme; extra == "docs"
+Requires-Dist: sphinxcontrib-needs; extra == "docs"
+Requires-Dist: sphinxcontrib-plantuml; extra == "docs"
+Requires-Dist: tqdm (>=4.50.0,<5.0.0); extra == "tqdm"
+Requires-Dist: unicodecsv (>=0.14.1,<0.15.0)
+Requires-Dist: wand (>=0.6.5,<0.7.0)
+Project-URL: Documentation, http://libpdf.readthedocs.io/en/latest
+Project-URL: Repository, http://github.com/useblocks/libpdf
+Description-Content-Type: text/x-rst
+
+**Complete documentation** http://libpdf.readthedocs.io/en/latest/
+
+Introduction
+============
+
+``libpdf`` allows the extraction of structured data from machine readable PDFs.
+
+

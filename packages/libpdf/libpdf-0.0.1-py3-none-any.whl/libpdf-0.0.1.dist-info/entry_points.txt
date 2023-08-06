@@ -1,0 +1,3 @@
+[console_scripts]
+libpdf=libpdf.core:main_cli
+
