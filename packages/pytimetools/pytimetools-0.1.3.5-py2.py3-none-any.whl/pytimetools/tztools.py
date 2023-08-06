@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+doc:
+"""
+# import functools
+
+import pytz
+from django.utils import timezone
+
+DEFAULT_TZ_UTC = "UTC"
+DEFAULT_TZ_SH = "Asia/Shanghai"
+
+
+def get_current_timezone():
+    return timezone.get_current_timezone()
+
+
+def get_utc_timezone():
+    return pytz.UTC
+
+
+# @functools.lru_cache()
+def get_timezone(time_zone=''):
+    """
+    TIME_ZONE = 'Asia/Shanghai'
+    TIME_ZONE = 'UTC'
+    Return the default time zone as a tzinfo instance.
+
+    This is the time zone defined by settings.TIME_ZONE.
+    """
+    return pytz.timezone(time_zone)
