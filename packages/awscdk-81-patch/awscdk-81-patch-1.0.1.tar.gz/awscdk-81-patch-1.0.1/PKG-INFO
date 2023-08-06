@@ -1,0 +1,127 @@
+Metadata-Version: 2.1
+Name: awscdk-81-patch
+Version: 1.0.1
+Summary: awscdk-81-patch
+Home-page: https://github.com/eladb/awscdk-81-patch.git
+Author: Elad Ben-Israel<benisrae@amazon.com>
+License: Apache-2.0
+Project-URL: Source, https://github.com/eladb/awscdk-81-patch.git
+Description: # Patch for AWS CDK 1.81.0
+        
+        The `@aws-cdk/aws-eks` and `@aws-cdk/aws-s3-deployment` modules are broken in
+        v1.81.0 of the AWS CDK due to a missing file in the npm bundle.
+        
+        Tracking issue: [https://github.com/aws/aws-cdk/issues/12291](https://github.com/aws/aws-cdk/issues/12291)
+        
+        We apologize for this. Until we are able to release a patch, you can use this
+        tool to apply a patch to the relevant modules. This patch will only work if you
+        are using v1.81.0 and will need to get removed in the future.
+        
+        ## Usage
+        
+        This patch is provided for all CDK programming languages.
+        
+        ### JavaScript/TypeScript
+        
+        Install using npm/yarn:
+        
+        ```shell
+        npm install awscdk-81-patch
+        ```
+        
+        Add this to your main file (before the `App` construct is created):
+        
+        ```python
+        # Example automatically generated without compilation. See https://github.com/aws/jsii/issues/826
+        from awscdk_81_patch import Patch
+        Patch.apply()
+        
+        app = cdk.App()
+        ```
+        
+        ### Python
+        
+        Add this to your `requirements.txt`:
+        
+        ```txt
+        awscdk-81-patch
+        ```
+        
+        Add this to your `app.py`:
+        
+        ```py
+        from awscdk_81_patch import Patch
+        Patch.apply()
+        
+        
+        app = core.App()
+        # ...
+        ```
+        
+        ### Java
+        
+        Add this to your `pom.xml` file:
+        
+        ```xml
+        <dependencies>
+          <dependency>
+              <groupId>com.github.eladb</groupId>
+              <artifactId>awscdk-81-patch</artifactId>
+              <version>1.0.0</version>
+          </dependency>
+        </dependencies>
+        ```
+        
+        Apply first thing in your `main()` method:
+        
+        ```java
+        import com.github.eladb.awscdk81patch.Patch;
+        
+        public static void main(final String[] args) { {
+          Patch.apply();
+        
+          App app = new App();
+          // ...
+        }
+        ```
+        
+        ### .NET
+        
+        Install this module:
+        
+        ```shell
+        dotnet add package Eladb.AwsCdk81Patch
+        ```
+        
+        In `Program.cs`, add this:
+        
+        ```cs
+        using Eladb.AwsCdk81Patch;
+        
+        public static void Main(string[] args)
+        {
+            Patch.apply();
+        
+            var app = new App();
+            // ...
+        }
+        ```
+        
+        ## License
+        
+        Distributed under the [Apache 2.0](./LICENSE) license.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
