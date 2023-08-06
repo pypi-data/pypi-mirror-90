@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: drf-action-params-validator
+Version: 0.0.3
+Summary: A small validator for params in drf view actions
+Home-page: https://github.com/klymenok/drf-params-validator
+Author: Oleksii Klymenok
+Author-email: klymenok.a@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Django (>=2.2.0)
+Requires-Dist: djangorestframework (>=3.11.0)
+
+# drf-params-validator
+
+This is a simple package to validate request params on DRF viewset's actions.
+
+## usage
+
+* Install the package to your project
+
+```
+pip install drf-action-params-validator
+```
+
+* Use the decorator to return 400 when one of given parameter is missing
+
+```
+from drf_action_params_validator import validate_request_params
+
+@action(detail=True, methods=[METHOD_POST])
+@validate_request_params(params=['param_name_1', 'param_name_2'])
+def test_action(self, request, pk):
+    pass
+```
+
+
+## release notes
+
+### v 0.0.1
+
+POST data validation, default error message
+
