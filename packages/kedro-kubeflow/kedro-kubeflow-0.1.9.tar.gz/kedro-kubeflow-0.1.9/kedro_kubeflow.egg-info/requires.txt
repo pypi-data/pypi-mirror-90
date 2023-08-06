@@ -1,0 +1,17 @@
+kedro<=0.18,>=0.16
+click
+kfp
+tabulate
+semver
+
+[dev]
+pytest
+pytest-cov
+pre-commit
+
+[mlflow]
+kedro-mlflow
+
+[test]
+pytest
+pytest-cov

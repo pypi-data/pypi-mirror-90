@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+kedro_kubeflow/__init__.py
+kedro_kubeflow/hooks.py
+kedro_kubeflow/kfpclient.py
+kedro_kubeflow/plugin.py
+kedro_kubeflow/utils.py
+kedro_kubeflow.egg-info/PKG-INFO
+kedro_kubeflow.egg-info/SOURCES.txt
+kedro_kubeflow.egg-info/dependency_links.txt
+kedro_kubeflow.egg-info/entry_points.txt
+kedro_kubeflow.egg-info/not-zip-safe
+kedro_kubeflow.egg-info/requires.txt
+kedro_kubeflow.egg-info/top_level.txt
