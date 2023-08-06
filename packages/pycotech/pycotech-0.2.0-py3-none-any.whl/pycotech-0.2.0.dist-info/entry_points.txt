@@ -1,0 +1,4 @@
+[console_scripts]
+plw-player = pycotech.plw_player:main
+plw-recorder = pycotech.plw_recorder:main
+
