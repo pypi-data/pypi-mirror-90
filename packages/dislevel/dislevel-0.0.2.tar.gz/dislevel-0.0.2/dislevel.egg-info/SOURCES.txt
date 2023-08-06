@@ -1,0 +1,12 @@
+CHANGELOG.txt
+MANIFEST.in
+README.md
+setup.py
+dislevel/__init__.py
+dislevel/cog.py
+dislevel/db.py
+dislevel.egg-info/PKG-INFO
+dislevel.egg-info/SOURCES.txt
+dislevel.egg-info/dependency_links.txt
+dislevel.egg-info/requires.txt
+dislevel.egg-info/top_level.txt
