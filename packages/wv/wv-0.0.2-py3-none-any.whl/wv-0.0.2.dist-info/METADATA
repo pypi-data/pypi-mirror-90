@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: wv
+Version: 0.0.2
+Summary: Weighted Principal Component Analysis using Expectation Maximization
+Home-page: https://github.com/thorwhalen/ut/tree/master/ml/decomp/empca.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# wv
+Weighted Principal Component Analysis using Expectation Maximization
+
+
+To install:	```pip install wv```
+
+
