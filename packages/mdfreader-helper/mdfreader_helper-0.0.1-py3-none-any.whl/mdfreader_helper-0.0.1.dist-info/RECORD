@@ -1,0 +1,9 @@
+mdf_helper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mdf_helper/my_lib.py,sha256=WUTGD-sK--f4re93c9-wx6h5IPX_8OX-zrYyRnjs9jo,20908
+pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pkg/my_lib.py,sha256=WUTGD-sK--f4re93c9-wx6h5IPX_8OX-zrYyRnjs9jo,20908
+mdfreader_helper-0.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+mdfreader_helper-0.0.1.dist-info/METADATA,sha256=bO7-1QzJcrMXZvxmYmEILdt0Mii1DnwsD2jVoZkiS1E,1554
+mdfreader_helper-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mdfreader_helper-0.0.1.dist-info/top_level.txt,sha256=ICNFgvrzV5AesmiOQUxxKQzqo4Qmwbv7PsnM28XOtIU,11
+mdfreader_helper-0.0.1.dist-info/RECORD,,
