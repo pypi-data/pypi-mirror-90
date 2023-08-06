@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+steamplus/__init__.py
+steamplus/startup.py
+steamplus/statistics.py
+steamplus/steam.py
+steamplus/tools.py
+steamplus.egg-info/PKG-INFO
+steamplus.egg-info/SOURCES.txt
+steamplus.egg-info/dependency_links.txt
+steamplus.egg-info/top_level.txt

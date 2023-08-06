@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: steamplus
+Version: 0.3.0
+Summary: A library for extracting data from steam via steam storefront api and steamspy api
+Home-page: https://github.com/MartijnCBV/steamplus/wiki
+Author: Team Ster
+Author-email: martijn.business@hotmail.com
+License: GPL-3.0-only
+Download-URL: https://github.com/MartijnCBV/steamplus/archive/0.3.0.tar.gz
+Description: # Steamplus
+        _Welcome to the steamplus wiki, steamplus is a project to make data about games, tags, and genres available to developers. This can be used to see what type of game is popular for example. The project is started by students of the hu university of applied sciences, for questions you can reach out to: [Martijn](https://github.com/MartijnCBV) at [martijn.business@hotmail.com](martijn.business@hotmail.com),_
+        
+        _Thanks for reading and goodluck using steamplus,_
+        
+        _Martijn_
+Keywords: steam,statistics,valve
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Topic :: Games/Entertainment
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
