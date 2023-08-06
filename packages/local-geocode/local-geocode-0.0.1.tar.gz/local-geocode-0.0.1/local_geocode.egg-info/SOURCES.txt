@@ -1,0 +1,12 @@
+README.md
+setup.py
+geocode/__init__.py
+geocode/flags.py
+geocode/geocode.py
+geocode/data/geonames_6b64aaafc53116f.pkl
+geocode/data/geonames_keyword_processor_6b64aaafc53116f.pkl
+local_geocode.egg-info/PKG-INFO
+local_geocode.egg-info/SOURCES.txt
+local_geocode.egg-info/dependency_links.txt
+local_geocode.egg-info/requires.txt
+local_geocode.egg-info/top_level.txt
