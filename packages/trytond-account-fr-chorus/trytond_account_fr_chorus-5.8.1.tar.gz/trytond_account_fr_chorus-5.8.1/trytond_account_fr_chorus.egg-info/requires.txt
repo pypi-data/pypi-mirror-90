@@ -1,0 +1,7 @@
+requests
+trytond_account<5.9,>=5.8
+trytond_account_invoice<5.9,>=5.8
+trytond_company<5.9,>=5.8
+trytond_party<5.9,>=5.8
+trytond_party_siret<5.9,>=5.8
+trytond<5.9,>=5.8
