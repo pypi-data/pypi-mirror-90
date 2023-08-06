@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ni-python-styleguide
+Version: 0.1.2
+Summary: NI's internal and external Python linter rules and plugins
+License: MIT
+Author: NI
+Author-email: opensource@ni.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: black (>=20.8b1,<21.0)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: flake8 (>=3.8.3,<4.0.0)
+Requires-Dist: flake8-black (>=0.2.1,<0.3.0)
+Requires-Dist: toml (>=0.10.1,<0.11.0)
