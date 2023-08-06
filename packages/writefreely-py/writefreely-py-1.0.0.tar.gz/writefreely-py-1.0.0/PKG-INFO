@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: writefreely-py
+Version: 1.0.0
+Summary: A Python package wrapping the WriteFreely / Write.as API
+Home-page: https://github.com/adbenitez/writefreely-py
+Author: adbenitez
+Author-email: adbenitez@nauta.cu
+License: MIT
+Description: # WriteFreely
+        
+        A Python package that wraps the [WriteFreely](https://writefreely.org) API, for use in your Python projects.
+        
+        ## Install
+        
+        ```
+        pip install writefreely-py
+        ```
+        
+        ## Quick Start
+        
+        ```python
+        import writefreely as wf
+        
+        # default WriteFreely instance is 'https://write.as'
+        c = wf.client(user='foo', password='bar')
+        
+        # create a post
+        post = c.create_post(title='Hello World!', body='Hello from **Python**')
+        
+        print('See your post at: {}/{}'.format(c.host, post['slug']))
+        
+        # discard current session
+        c.logout()
+        ```
+        
+        Too see what extra parameters some functions accept and response structure, check:
+        https://developers.write.as/docs/api
+        
+        ## Examples
+        
+        Check the [examples folder](https://github.com/adbenitez/writefreely-py/tree/main/examples) for more code examples.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

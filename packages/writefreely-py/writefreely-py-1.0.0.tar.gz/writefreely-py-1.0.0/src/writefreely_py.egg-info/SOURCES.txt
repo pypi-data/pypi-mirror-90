@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+requirements.txt
+setup.py
+examples/authentication.py
+examples/collections.py
+examples/hello_world.py
+examples/posts.py
+src/writefreely/__init__.py
+src/writefreely/client.py
+src/writefreely_py.egg-info/PKG-INFO
+src/writefreely_py.egg-info/SOURCES.txt
+src/writefreely_py.egg-info/dependency_links.txt
+src/writefreely_py.egg-info/requires.txt
+src/writefreely_py.egg-info/top_level.txt
