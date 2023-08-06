@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: navis
+Version: 0.5.0
+Summary: Neuron Analysis and Visualization library
+Home-page: http://navis.readthedocs.io
+Author: Philipp Schlegel
+Author-email: pms70@cam.ac.uk
+License: GNU GPL V3
+Description: 
+        NAVis is a Python 3 library for analysis and visualization of neuron
+        morphology.
+        
+        Features include:
+        
+        * work with various neuron types: skeletons, meshes, dotprops
+        * 2D (matplotlib) and 3D (vispy or plotly) plotting
+        * virtual neuron surgery: cutting, stitching, pruning, rerooting, etc
+        * analyze morphology (e.g. NBLAST) and connectivity
+        * transform neurons between template brains
+        * load neurons directly from `neuPrint <https://neuprint.janelia.org>`_ and `neuromorpho.org <http://neuromorpho.org>`_
+        * interface with Blender 3D
+        * interface with R neuron libraries (e.g. nat, nat.nblast and elmr)
+        * import-export from/to SWC
+        * designed to be extensible - see for example `pymaid <https://pymaid.readthedocs.io/en/latest/>`_
+        
+        Check out the `Documentation <http://navis.readthedocs.io/>`_.
+        
+Keywords: Neuron Analysis Visualization Anatomy Connectivity Transform
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Provides-Extra: extras
