@@ -1,0 +1,10 @@
+package/__init__.py,sha256=QQcPEaS1jt11T2pYOe3q2liFQ-Fflz59hxj3Q0rHtDI,40
+package/scrap.py,sha256=r_lYNOJ3lR6bTu0dq3oNR_7Ipmy40YcRYplEovX2TNs,1688
+package/section.py,sha256=kF6zF6DidRM-FYt8z1L8tRGa5X2-HCD0c2lOy2n4_Q4,1299
+scrapper/__init__.py,sha256=n_UPzYz5Dap1qxxMf7OReM1ddElEyPCWxxW8471pnhE,41
+scrapper/scrap.py,sha256=r_lYNOJ3lR6bTu0dq3oNR_7Ipmy40YcRYplEovX2TNs,1688
+scrapper/section.py,sha256=kF6zF6DidRM-FYt8z1L8tRGa5X2-HCD0c2lOy2n4_Q4,1299
+wiki_scrapper-0.8.dist-info/METADATA,sha256=kCQbTVa8hPiCgC5b4-gZb_VhjBChIEHraRbrnb7a3zE,592
+wiki_scrapper-0.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wiki_scrapper-0.8.dist-info/top_level.txt,sha256=oBjMx0K6SKaYPvGsHHBbO2V1qpfFBdObvmmvtUoqeuQ,9
+wiki_scrapper-0.8.dist-info/RECORD,,
