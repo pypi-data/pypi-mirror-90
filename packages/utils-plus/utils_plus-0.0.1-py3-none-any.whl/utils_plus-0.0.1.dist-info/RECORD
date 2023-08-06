@@ -1,0 +1,12 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/core.py,sha256=I1G80YC-6ypXCUDupdOR07mLE24ww6AG2lxzsC2ZteU,130
+utils_plus/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils_plus/math.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils_plus/version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+utils_plus/itertools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils_plus/performance/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils_plus-0.0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils_plus-0.0.1.dist-info/METADATA,sha256=yO1euFssllYCJqLquYaJ1kag6UC34L5jvQKJ2qKrsss,326
+utils_plus-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+utils_plus-0.0.1.dist-info/top_level.txt,sha256=K7YVBGdFUIlXzlPVXhq6M0llhQfqN_9vFRe85OqY_Bs,17
+utils_plus-0.0.1.dist-info/RECORD,,
