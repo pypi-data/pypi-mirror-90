@@ -1,0 +1,5 @@
+pillow>=7.1.0
+easy-thumbnails
+feedparser
+site_config
+django-el-pagination
