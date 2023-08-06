@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: maps-cli
+Version: 0.0.1
+Summary: A CLI for maps services.
+Home-page: https://github.com/sackh/maps-cli
+License: MIT
+Author: Sachin Kharude
+Author-email: sachinkharude10@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: geopy (>=2.1.0,<3.0.0)
+Project-URL: Bug Tracker, https://github.com/sackh/maps-cli/issues
+Project-URL: Repository, https://github.com/sackh/maps-cli
+Description-Content-Type: text/markdown
+
+# Maps CLI 
+
+[comment]: <> ([![Main Actions Status]&#40;https://github.com/sackh/maps-cli/workflows/main/badge.svg&#41;]&#40;https://github.com/sackh/maps-cli/actions&#41;)
+A simple command line tool to access services of various map services providers.
+
+## Usage
+# ![demo](https://github.com/sackh/maps-cli/raw/main/gifs/demo.gif)
+
+## Installation
+```bash
+    pip install maps-cli
+```
+
+## Test Suite
+```bash
+    poetry install
+    python -m poetry run python -m pytest -v --durations=10 --cov=maps tests
+```
+
+### Commands
+
+```bash
+    maps -h
+    maps show
+```
+
+## Maps Service Providers
+Currently, this library is supporting following providers.
+
+- [OSM](https://www.openstreetmap.org/)
+- [HERE](https://www.here.com/)
+- [MapBox](https://www.mapbox.com/)
+- [TomTom](https://www.tomtom.com/)
+
+## Services
+Currently, all providers support forward and reverse geocoding services.
+
