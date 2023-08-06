@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hydra-configen
+Version: 0.9.0.dev7
+Summary: UNKNOWN
+Home-page: https://github.com/facebookresearch/hydra/tree/master/tools/configen
+Author: Omry Yadan, Rosario Scalise
+Author-email: omry@fb.com, rosario@cs.uw.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: hydra-core (>=1.1.0dev1)
+Requires-Dist: jinja2
+
+UNKNOWN
+
+
