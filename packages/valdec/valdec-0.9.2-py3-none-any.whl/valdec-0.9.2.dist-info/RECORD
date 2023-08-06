@@ -1,0 +1,11 @@
+valdec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+valdec/data_classes.py,sha256=kLlfxkYyGgpxVfbRMuOn0oVApwWBKKEkL0QCRM810Nw,2099
+valdec/dec.py,sha256=CcROkFn9a8mvuq_p_K3nkrL3iPXPFryw603WBXh0SmI,4468
+valdec/utils.py,sha256=abrUQxD-N6yrzE4qRVd8_APvfsD9cKCPWOTYxQwADSs,9232
+valdec/val_pydantic.py,sha256=3GE05KuWSRlivSY9h95wEyJ3pcz1L3TCcyUDfcyoEcI,3928
+valdec/val_validated_dc.py,sha256=p6QTrNHoZNkhsiRLu-eNGNxoS3C7DAEzjkv8IqBuKqc,3025
+valdec-0.9.2.dist-info/LICENSE,sha256=9Gu0aHsERA2IREeI5-WjhNKNGh7-juiuO_eywudp-EA,1071
+valdec-0.9.2.dist-info/METADATA,sha256=bCx6y9-wVDhFfIeYX_gvJv_3lo_ZON3Ez50ajlIWd5g,3886
+valdec-0.9.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+valdec-0.9.2.dist-info/top_level.txt,sha256=50SFatPDlxr_XkjJb32AtIvby0UMd00HO5U-Qomsa_w,7
+valdec-0.9.2.dist-info/RECORD,,
