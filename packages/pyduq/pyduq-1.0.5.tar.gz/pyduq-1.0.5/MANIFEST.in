@@ -1,0 +1,3 @@
+include pyduq/tests/*.*
+include pyduq/doc/*.*
+
