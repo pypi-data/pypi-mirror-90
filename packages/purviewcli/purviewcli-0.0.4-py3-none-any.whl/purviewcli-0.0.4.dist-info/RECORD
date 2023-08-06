@@ -1,0 +1,17 @@
+purviewcli/__init__.py,sha256=2GWffEF1rjyrveUGdfR8y3cl3JUnX0gJjr8Ryy_u4JQ,21
+purviewcli/cli.py,sha256=GXLlhp7vfZoq_5hiCnB_Cf7JROz6viTOMQqq0ihqLC0,10346
+purviewcli/common.py,sha256=LEJdjOSgfKBwwjIaYkkBPCgc98WWEWgMh-r_2e2TD60,3384
+purviewcli/entity.py,sha256=lD0oF8GtIENdcyVQnH5ph-xP-RzxPTU_y9U8OEX3sPA,3188
+purviewcli/glossary.py,sha256=EuRduGddT1NozJXwBfNzwJztYlkVrJD9fBKTzsl1qok,4873
+purviewcli/guardian.py,sha256=SztLvESAZp0OjMKywBcQT1efpjXGI9ckoCll-WinScY,4061
+purviewcli/lineage.py,sha256=Ysx59PZftr7QDGo8jfS0YZN349r9MhFClCfhmMrPYhw,781
+purviewcli/relationship.py,sha256=75_s76y2s6M9hYwxJAfK19llitbAdk5twltnGMP-5s4,291
+purviewcli/scan.py,sha256=62h6tb1FEc_aThSQRm4k_bH-nqxmxBt0bcRxkwPWYSg,1959
+purviewcli/search.py,sha256=n8fq3-WZkC2XHLCtPvA6z8dMQp59VJmTPldTLG_qIWI,332
+purviewcli/typedefs.py,sha256=PdGTaUaEzxQN1OF__4uIgG2SRy7ph8QrL7ttqUh9akI,2709
+purviewcli-0.0.4.dist-info/LICENSE,sha256=OjUkvrCxZK0VGotRblPhIC_iwVGv2vDYnOEOSSFvzrA,1068
+purviewcli-0.0.4.dist-info/METADATA,sha256=cpDdmNWX59qm9hELfT6MAFLjEqtLOJuZ1OnQv5yCEEg,6110
+purviewcli-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+purviewcli-0.0.4.dist-info/entry_points.txt,sha256=h2cuptdO35G5aXLs9Rb1N63FWK_TsBfLlqWPs2rmx8U,44
+purviewcli-0.0.4.dist-info/top_level.txt,sha256=LrADzPoKwF1xY0pGKpWauyOVruHCIWKCkT7cwIl6IuI,11
+purviewcli-0.0.4.dist-info/RECORD,,
