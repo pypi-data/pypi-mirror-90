@@ -1,0 +1,8 @@
+README.md
+setup.py
+sotaai/__init__.py
+sotaai.egg-info/PKG-INFO
+sotaai.egg-info/SOURCES.txt
+sotaai.egg-info/dependency_links.txt
+sotaai.egg-info/top_level.txt
+sotaai/cv/__init__.py

@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: sotaai
+Version: 0.0.4
+Summary: Stateoftheart AI Official Library
+Home-page: https://github.com/stateoftheartai/sotaai
+Author: Stateoftheart AI PBC
+Author-email: admin@stateoftheart.ai
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3,<3.9
