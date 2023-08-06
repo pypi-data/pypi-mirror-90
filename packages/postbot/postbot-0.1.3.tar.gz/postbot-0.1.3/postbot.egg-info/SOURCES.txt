@@ -1,0 +1,12 @@
+LICENSE
+setup.cfg
+setup.py
+postbot/__init__.py
+postbot/db.py
+postbot/postbot.py
+postbot/util.py
+postbot.egg-info/PKG-INFO
+postbot.egg-info/SOURCES.txt
+postbot.egg-info/dependency_links.txt
+postbot.egg-info/requires.txt
+postbot.egg-info/top_level.txt
