@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: factionpy
+Version: 2021.1.7.dev1
+Summary: Common Library for Python based Faction applications.
+Home-page: https://github.com/FactionC2/factionpy
+Author: The Faction Team
+Author-email: team@factionc2.com
+License: MIT
+Description: # FactionPy
+        Python Library for Faction Services
+        
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: fastapi
