@@ -1,0 +1,2 @@
+include createpypkg/static/*
+include createpypkg/template/*
