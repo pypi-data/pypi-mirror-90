@@ -1,0 +1,14 @@
+pybind11>=2.4
+numpy>=1.13.0
+
+[benchmark]
+pytest
+pytest-benchmark
+radvel
+kepler.py
+batman-package
+exoplanet==0.4.3
+
+[test]
+pytest
+pytest-cov>=2.6.1
