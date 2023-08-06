@@ -1,0 +1,11 @@
+phpypam/__init__.py,sha256=g3mB9mIydTx4aoMtrCcyE8z3rc9FnULSXpc7mh523_0,321
+phpypam/core/__init__.py,sha256=6o2cU6nb3wKtaN0NA3Lt4lz-jGHgtoxaolkOnpWL0C4,54
+phpypam/core/api.py,sha256=1jvYUnapi3HeAxkXaLaTtbkv-prqXGYQ1V-tgsWwsnw,10385
+phpypam/core/exceptions.py,sha256=WdN-S2MhSJoP_RnmJM6PO-gdL41N6ewlH7y89ir4uns,3041
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=blTujarv1Ahsee2EB10CtSz4O3TbdlmYOP0-sNNKdaA,3237
+phpypam-1.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+phpypam-1.0.1.dist-info/METADATA,sha256=zAAZieigmQipuEGvB2GpM3e6S98YcGrkGecmr-JpYFc,1460
+phpypam-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+phpypam-1.0.1.dist-info/top_level.txt,sha256=gp6-QuZ5X6CNsFPoZXnC1AQS-jJIKy2qhPA0FObZekE,14
+phpypam-1.0.1.dist-info/RECORD,,
