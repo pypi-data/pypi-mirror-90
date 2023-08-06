@@ -1,0 +1,2 @@
+include test.txt
+include version.txt
