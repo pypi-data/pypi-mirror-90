@@ -1,0 +1,16 @@
+vipcca/__init__.py,sha256=TYBN-2mf3nKSkzsLqOfmU1T7B4hvWHeIVjP2_A45VSg,194
+vipcca/vipcca.py,sha256=jOuuOKZcM96wvJM_XxmX551Lsr0HN0nYb7cxH28GzNs,6836
+vipcca/network/__init__.py,sha256=3nD9NxI76Rx6tU8dHaJYLqznPRL7o1YRLQY_WEYgt0U,103
+vipcca/network/network.py,sha256=iXyvnBLIbUeeP54HXqmQT_zBSngPCOBSsWQGQdYsMFw,20672
+vipcca/network/transferLabel.py,sha256=j27Lfu6ztRS27gCzZGTgqgWHtwaO_2wc4SrYe8lp7GQ,2248
+vipcca/plotting/__init__.py,sha256=PMr0UbIUHVLNnN7ZR8C_4ZCPVPB_d0azW9DWUGkMu5k,117
+vipcca/plotting/plotting.py,sha256=Y3_nOQQkdk8gq-I3I5U1D1FO8Fm634oKYym8DNQt5_4,6215
+vipcca/preprocessing/__init__.py,sha256=cnhQ4nSqhY3QviYWuUkHZj6uPPECR93pndbza6sKC88,270
+vipcca/preprocessing/parser.py,sha256=ah8dqMAq4E9AKd9x6CReCJWLFPONIvdTzZNsiTmhas4,2011
+vipcca/preprocessing/preprocessing.py,sha256=1D2oqryxCwJ1XIxhNF51b9lwzxYarzNdZEWWAKFBZog,12178
+vipcca/preprocessing/qqnorm.py,sha256=e2pdtGgRmAUvqmT5QFtu18sCKMLPPMFpC2w1emIVRF0,1019
+vipcca-0.1.10.dist-info/LICENSE,sha256=wVvl14pAXcrQDbF_1Le73KBJVdfAYHoy-Wt5PeNQ-DA,1063
+vipcca-0.1.10.dist-info/METADATA,sha256=bKP9SfZgfYLXZ-u_EqJnbm2C-ePg0fVCt8ektAg66R4,2812
+vipcca-0.1.10.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vipcca-0.1.10.dist-info/top_level.txt,sha256=e4_p4f-OJExRmWmM9EC9i7MEwxIrAVQ_9DCBp080i3Y,7
+vipcca-0.1.10.dist-info/RECORD,,
