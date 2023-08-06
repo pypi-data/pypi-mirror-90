@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+kaliF/__init__.py
+kalikl.egg-info/PKG-INFO
+kalikl.egg-info/SOURCES.txt
+kalikl.egg-info/dependency_links.txt
+kalikl.egg-info/top_level.txt
