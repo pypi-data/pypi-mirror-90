@@ -1,0 +1,3 @@
+[console_scripts]
+chinadaily = chinadaily.cli:main
+
