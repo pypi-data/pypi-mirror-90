@@ -1,0 +1,7 @@
+README.md
+setup.py
+abspath_notfresh.egg-info/PKG-INFO
+abspath_notfresh.egg-info/SOURCES.txt
+abspath_notfresh.egg-info/dependency_links.txt
+abspath_notfresh.egg-info/top_level.txt
+bin/abspath
