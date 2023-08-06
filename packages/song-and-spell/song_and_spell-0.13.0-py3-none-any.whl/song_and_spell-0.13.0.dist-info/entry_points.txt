@@ -1,0 +1,3 @@
+[console_scripts]
+song_and_spell = song_and_spell.app:main
+
