@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mlgeo
+Version: 0.0.1
+Summary: Repository for Machine Learning in Geotechnics
+Home-page: https://github.com/groundworkai/mlgeo
+Author: Nick Machairas
+Author-email: nick@groundwork.ai
+License: UNKNOWN
+Description: # mlr-geotechnics
+        Machine Learning Repository for Geotechnics
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

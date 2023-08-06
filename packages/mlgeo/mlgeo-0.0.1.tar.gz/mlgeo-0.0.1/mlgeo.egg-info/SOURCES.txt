@@ -1,0 +1,7 @@
+README.md
+setup.py
+mlgeo/__init__.py
+mlgeo.egg-info/PKG-INFO
+mlgeo.egg-info/SOURCES.txt
+mlgeo.egg-info/dependency_links.txt
+mlgeo.egg-info/top_level.txt
