@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: generalpackager
+Version: 0.0.1
+Summary: Tools to interface GitHub, PyPI and local modules / repos. Used for generating files to keep projects dry and synced.
+Home-page: https://github.com/ManderaGeneral/generalpackager
+Author: Rickard "Mandera" Abraham
+Author-email: rickard.abraham@gmail.com
+License: mit
+Description: # generalpackager
+        Tools to interface GitHub, PyPI and local modules / repos. Used for generating files to keep projects dry and synced.
+        
+        [![workflow Actions Status](https://github.com/ManderaGeneral/generalpackager/workflows/workflow/badge.svg)](https://github.com/ManderaGeneral/generalpackager/actions)
+        [![Total alerts](https://img.shields.io/lgtm/alerts/g/ManderaGeneral/generalpackager.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ManderaGeneral/generalpackager/alerts/)
+        ![GitHub last commit](https://img.shields.io/github/last-commit/ManderaGeneral/generalpackager)
+        [![PyPI version shields.io](https://img.shields.io/pypi/v/generalpackager.svg)](https://pypi.org/project/generalpackager/)
+        [![PyPI pyversions](https://img.shields.io/pypi/pyversions/generalpackager.svg)](https://pypi.python.org/pypi/generalpackager/)
+        [![Generic badge](https://img.shields.io/badge/platforms-Windows%20%7C%20Ubuntu%20%7C%20MacOS-blue.svg)](https://shields.io/)
+        
+        ## Contents
+        <pre>
+        <a href='#generalpackager'>generalpackager</a>
+        â”œâ”€ <a href='#Contents'>Contents</a>
+        â”œâ”€ <a href='#Installation'>Installation</a>
+        â”œâ”€ <a href='#Attributes'>Attributes</a>
+        â””â”€ <a href='#Todos'>Todos</a>
+        </pre>
+        
+        ## Installation
+        ```
+        pip install generalpackager
+        ```
+        
+        ## Attributes
+        <pre>
+        <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/__init__.py#L1'>Module: generalpackager</a>
+        â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/github.py#L7'>Class: GitHub</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/github.py#L26'>Method: api_url</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/github.py#L16'>Method: assert_url_up</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/github.py#L54'>Method: get_description</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/github.py#L41'>Method: get_topics</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/github.py#L30'>Method: get_website</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/github.py#L60'>Method: set_description</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/github.py#L47'>Method: set_topics</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/github.py#L36'>Method: set_website</a>
+        â”‚  â””â”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/github.py#L22'>Method: url</a>
+        â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/local_module.py#L5'>Class: LocalModule</a>
+        â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/local_repo.py#L9'>Class: LocalRepo</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/local_repo.py#L73'>Method: commit_and_push</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/local_repo.py#L25'>Method: get_git_exclude_path</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/local_repo.py#L37'>Method: get_local_repos</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/local_repo.py#L21'>Method: get_metadata_path</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/local_repo.py#L33'>Method: get_package_paths</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/local_repo.py#L17'>Method: get_readme_path</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/local_repo.py#L29'>Method: get_setup_path</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/local_repo.py#L53'>Method: get_todos</a>
+        â”‚  â””â”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/local_repo.py#L42'>Method: path_is_repo</a>
+        â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/packager.py#L18'>Class: Packager</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/packager_markdown.py#L40'>Method: configure_contents_markdown</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/packager_files.py#L7'>Method: generate_file</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/packager_files.py#L52'>Method: generate_git_exclude</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/packager_markdown.py#L84'>Method: generate_readme</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/packager_files.py#L15'>Method: generate_setup</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/packager_markdown.py#L69'>Method: get_attributes_markdown</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/packager_markdown.py#L9'>Method: get_badges_dict</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/packager_metadata.py#L26'>Method: get_classifiers</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/packager_markdown.py#L76'>Method: get_footnote_markdown</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/packager_markdown.py#L23'>Method: get_installation_markdown</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/packager_metadata.py#L16'>Method: get_topics</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/packager_markdown.py#L61'>Method: github_link</a>
+        â”‚  â”œâ”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/packager.py#L48'>Method: setup_all</a>
+        â”‚  â””â”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/packager_github.py#L5'>Method: sync_github_metadata</a>
+        â””â”€ <a href='https://github.com/ManderaGeneral/generalpackager/blob/master/generalpackager/api/pypi.py#L5'>Class: PyPI</a>
+        </pre>
+        
+        ## Todos
+        | Module               | Message                                                           |
+        |:---------------------|:------------------------------------------------------------------|
+        | packager.py          | Allow github, pypi or local repo not to exist in any combination. |
+        | packager_markdown.py | Inherit future crawler class for pypi and github.                 |
+        | packager_markdown.py | Use Packager.os for badges.                                       |
+        | packager_markdown.py | Add footnote to readme with date and commit if specified.         |
+        | pypi.py              | Method to upload to PyPI.                                         |
+        
+        <sup>
+        Generated 2021-01-02 16:29 CET for commit <a href='https://github.com/ManderaGeneral/generalpackager/commit/master'>master</a>.
+        </sup>
+Platform: UNKNOWN
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: ==3.8.*, ==3.9.*
+Description-Content-Type: text/markdown
