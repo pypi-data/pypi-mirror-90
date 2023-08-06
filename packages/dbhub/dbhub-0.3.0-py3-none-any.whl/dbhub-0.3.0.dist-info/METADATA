@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: dbhub
+Version: 0.3.0
+Summary: Package to create db in one-click
+Home-page: https://github.com/Noxormy/dbhub_pip
+Author: Noxormy
+Author-email: noxormy@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.2.0)
+Requires-Dist: easydict (>=1.9.0)
+
+UNKNOWN
+
+
