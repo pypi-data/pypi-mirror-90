@@ -1,0 +1,19 @@
+# =================================================================
+# Simple, agnostic example config with one level
+# =================================================================
+
+family_keys:
+  - "Salicaceae"
+  - "Ericaceae"
+  - "Rhamnaceae"
+  - "Fagaceae"
+
+
+genus_keys:
+  - "Salix"
+  - "Populus"
+
+
+base_url: "localhost"
+
+db_uri: "sqlite:///<full>/<path>/<to>/app.db"

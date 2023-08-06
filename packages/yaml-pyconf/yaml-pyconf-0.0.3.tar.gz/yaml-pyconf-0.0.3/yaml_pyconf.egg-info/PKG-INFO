@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: yaml-pyconf
+Version: 0.0.3
+Summary: Turn YAML files into python objects
+Home-page: https://github.com/gabriellesw/yaml-pyconf
+Author: Gabrielle Sloane Law
+Author-email: rockymcrockerson@gmail.com
+License: UNKNOWN
+Description: ## Yaml-Pyconf
+        A simple utility for combining yaml files
+        and dotenv files into a very basic python config object, 
+        with config options represented as key-value pairs.
+        
+        ## Current Status:
+        This was slapped together in a short amount of time to 
+        meet the need of existing projects. It has not been
+        reviewed and is not considered to be stable. Testers and
+        contributors are encouraged 
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Topic :: Utilities
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
