@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: avrcp-volume
+Version: 0.7.5
+Summary: Avrcp volume controller
+Home-page: https://gitlab.com/hxss-linux/avrcp-volume
+Author: hxss
+Author-email: hxss@ya.ru
+License: UNKNOWN
+Description: # AVRCP-VOLUME
+        
+        Avrcp volume controller.
+        
+        The service provides avrcp volume notifications and infinite avrcp and pulseaudio volume increasing.
+        
+        ## Installation
+        
+        ### aur: `avrcp-volume`
+        
+        ### pip:
+        
+        ```
+        $ pip install avrcp-volume
+        $ sudo -E avrcp-volume --install-service
+        ```
+        
+        ## Usage
+        
+        ```
+        $ systemctl --user start avrcp-volume.service
+        $ systemctl --user enable avrcp-volume.service
+        ```
+        
+        Just try to change volume on your headphones. Push avrcp volume using pulseaudio signals(default volume up keybind and other actions) and vice versa.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
