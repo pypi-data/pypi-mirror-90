@@ -1,0 +1,543 @@
+// Home page
+
+.section-bienvenue{
+    #portal-breadcrumbs{
+        display: none;
+    }
+    .slick-prev,
+    .slick-next{
+        display: none!important;
+        }
+}
+    // ---slider ---
+    .homeslider .mosaic-iaweb\.mosaic\.tile\.slider-tile {
+        .slick-slide{
+            position: relative;
+        }
+        .item{
+            .title{
+                position: absolute;
+                bottom: 5px;
+                left: 0;
+                color: #fff;
+                background:@main-color-transparent;
+                width: 90%;
+                padding: 1rem 1.5rem;
+                font-size: 24px;
+            }
+        }
+        .slick-dots{
+            justify-content: center;
+            @media screen and (min-width:1300px){
+                display: flex!important;
+                flex-direction: column!important;
+                margin-left: 1148px;
+                li{
+                margin: 5px 0;
+                }
+                button{
+                    background:transparent;
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                    padding: 0;
+                    border: solid 1px rgb(126, 126, 126);
+                    display: inline-block;
+                    vertical-align: middle;
+                    &:after, &:before{
+                        display: none;
+                    } 
+                }
+                .slick-active{
+                    background:url(../images/load.svg) no-repeat center;
+                    background-size: contain;
+                    button{
+                        background:@main-color;
+                        visibility: hidden;
+                        &:after{
+                            content: url(../images/load.svg);
+                            display: block;
+                        }
+                    }
+                } 
+            }
+        }
+        @media screen and (min-width: 479px){
+            .item{
+                .title{
+                    width: 70%;
+                    font-size: 35px;
+                }
+            }
+        }
+    
+        @media screen and (min-width: 1100px){
+         width: 100vw;
+         max-width: 2000px;
+         transform: translateX(-50%);
+         margin-left: 50%;
+         .item{
+             .title{
+                 top: 50%;
+                 transform: translateY(-50%);
+                 left: 45%;
+                 font-size: 45px;
+                 max-width: 570px;
+                 padding: 1rem 1.5rem;
+                 bottom: inherit;
+             }
+         }
+         .slick-slide{
+             position: relative;
+         }
+         @media screen and (min-width: 1023px){
+            width: 70vw;
+            margin: 0 auto;
+            transform: none;
+            & .item{
+                & .title{
+                    font-size: 29px;
+                }
+            }
+            }
+         }
+    }
+    
+    @media screen and (min-width: 2000px) {
+        .mosaic-iaweb\.mosaic\.tile\.slider-tile {
+            transform: none;
+            margin-left: 0;
+        }
+    }
+    @media screen and (min-width: 2120px) {
+        .mosaic-iaweb\.mosaic\.tile\.slider-tile {
+            margin-left: -120px;
+        }
+    }
+    .homeslider .pat-imio-slick.slick-initialized.slick-slider.slick-dotted::after {
+        @media screen and (min-width: 1000px){
+            content: "";
+            position: absolute;
+            background: #f1f1f1;
+            left: 0;
+            right: 0;
+            height: 639px;
+            width: 500px;
+            bottom: -55px;
+            left: 727px;
+            overflow: visible;
+            z-index: -1;
+        }   
+    }
+        // \slider
+    
+// Section
+    
+        .section-avantages-title {
+            margin: 0 auto;
+            padding: 1em 0;
+            color: #000;
+            h2 span:last-child {
+                color: #E6007E;
+                display: block;
+            }
+            h2 span{
+                font-weight: 500;
+            }
+        }
+    
+        .section-avantages {
+            margin: 0 auto -2em auto;
+            color: @main-color;
+            background: white;
+            z-index: 1;
+            p{
+                color: #000;
+            }
+            img {
+                height: 4em;
+            }
+            .mosaic-width-third {
+                padding: 2em;
+                text-align: center;
+                border: 1px solid #f2f2f2;
+                border-bottom: transparent;
+                min-height: 280px;
+            }
+        }
+    
+        .section-discover{
+            position: relative;
+            color: white;
+            margin: 0 auto 0 auto!important;
+            padding-top: 5em;
+            padding-bottom:3em;
+            .mosaic-tile-content:first-child h2 {
+                margin-top: -2px;
+            }
+            a{
+                line-height: 60px;
+            }
+            h2{
+                font-weight: 500;
+                color: #fff;
+            }
+            &::before{
+                display: block;
+                background: @main-color;
+                display: block;
+                position: absolute;
+                width: 100vw ;
+                left: 50% ;
+                bottom: 0;
+                height: 340px;
+                transform: translateX(-50vw);
+            }
+            p{
+                font-size:16px;
+            }
+            .mosaic-grid-cell p {
+                background: #fff;
+                border-radius: 10px;
+                img{
+                    margin-right:1em;
+                }
+            }
+            .mosaic-width-quarter:nth-child(n+2) div div {
+                background-color: #fff;
+                border-radius: 23px;
+                padding: .8em 1em .8em 1em;
+                color: @main-color;
+                display: flex;
+                justify-content: center;
+                padding: 0 !important;
+                box-shadow:
+                0 3.8px 4px rgba(0, 0, 0, 0.02),
+                0 10.7px 9.5px rgba(0, 0, 0, 0.028),
+                0 21px 17.9px rgba(0, 0, 0, 0.035),
+                0 35.4px 31.9px rgba(0, 0, 0, 0.042),
+                0 56.3px 59.7px rgba(0, 0, 0, 0.05),
+                0 108px 143px rgba(0, 0, 0, 0.07)
+                ;
+                p{
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                        img{
+                            margin-right: 1em;
+                        }
+                }
+            }
+            .mosaic-grid-cell:first-child {
+                padding-left: 0;
+            }
+            .mosaic-grid-cell:nth-child(2) {
+                margin-bottom: 1em;
+            }
+            .mosaic-width-quarter{
+                width: 278px!important;
+            }
+            @media screen and (max-width: 1200px){
+                text-align: center;
+                .mosaic-width-half{
+                    width: 100%;
+                    text-align: center;
+                    padding-bottom: 1.5em;
+                }
+                .mosaic-width-quarter{
+                    display: inline-block;
+                    float: none;
+                }
+            }
+            @media screen and (min-width: 1500px){
+                width: 80%;
+            }
+        }
+        
+        .section-nosapps {
+            background: url(../images/bubble.svg) no-repeat left center;
+            background-size: cover;
+            width: 100vw;
+            max-width: 2000px;
+            transform: translateX(-50%);
+            margin-left: 50%;
+            padding: 5em 0;
+            @media screen and (max-width: 1000px){
+                padding:  1em 0;
+            }
+            .slick-list.draggable{
+                padding: 0 100px!important;
+                @media screen and (max-width:600px){
+                    padding: 0 !important;
+                }
+            }
+            .slick-track{
+                padding: 3em 0 3em 0;
+            }
+            h2 {
+                text-align: center;
+                margin: 1em 0 1.75em;
+            }
+            a{  
+                color: #000;
+                background: #fff;
+                // min-width: 300px;
+                display: block;
+                margin: 0 20px;
+                padding: 0 2em 3em 2em;
+                box-shadow:
+                0 0.3px 0.3px rgba(66, 66, 66, 0.017),
+                0 0.6px 0.7px rgba(66, 66, 66, 0.024),
+                0 1.1px 1.2px rgba(66, 66, 66, 0.03),
+                0 1.8px 1.9px rgba(66, 66, 66, 0.035),
+                0 2.7px 2.9px rgba(66, 66, 66, 0.04),
+                0 4.2px 4.5px rgba(66, 66, 66, 0.046),
+                0 7px 7.5px rgba(66, 66, 66, 0.053),
+                0 14px 15px rgba(66, 66, 66, 0.07),
+                0 -2.2px 1px rgba(66, 66, 66, 0.02)
+                ;
+                border-radius: 20px;
+                min-height: 280px;
+                transition: all .3s ease;
+                &:hover{
+                text-decoration:none;
+                }
+                img {
+                    height: 6em;
+                    display: block;
+                    margin: 0 auto;
+                    margin-bottom: 1em;
+                    max-width: 100px;
+                    transform: translateY(-2.2em);
+                }
+                .description {
+                color: #777;
+                margin-left: 0;
+                margin-top: 1rem;
+                }
+                .title{
+                    color: #000;
+                    font-size: 18px;
+                    font-weight: 500;
+                    &:after{
+                        display: block;
+                    }
+                } 
+                .slick-image{
+                    margin-bottom: -40px!important;
+                }
+            }
+                a:hover, .slick-center a{
+                    box-shadow:
+                    0 1.1px 1.5px rgba(0, 0, 0, 0.017),
+                    0 2.4px 3.3px rgba(222,0,123,0.024),
+                    0 4.3px 5.8px rgba(0, 0, 0, 0.03),
+                    0 6.8px 9.1px rgba(222,0,123,0.035),
+                    0 10.4px 14.1px rgba(0, 0, 0, 0.04),
+                    0 16.3px 19px rgba(222,0,123,0.046),
+                    0 27px 26.5px rgba(0, 0, 0, 0.053),
+                    0 20px 73px rgba(222,0,123,0.06),
+                    0 -2.2px 1px rgba(66, 66, 66, 0.065)
+                    ;
+                    margin-top: -8px;
+                 .title{
+                     color: @main-color;
+                 }
+                }
+            a[href*="ia-delib"]{
+                .title{
+                    &:after{
+                        content: "Gestion des séances délibératives";
+                    }
+                }   
+            }
+            a[href*="ia.gpec"]{
+                .title{
+                    &:after{
+                        content: "Gestion des emplois et compétences";
+                    }
+                }   
+            }
+            a[href*="ia-bibliotheca"]{
+                .title{
+                    &:after{
+                        content: "Le patrimoine historique local";
+                    }
+                }   
+            }
+            a[href*="ia-aes"]{
+                .title{
+                    &:after{
+                        content: "Gestion des activités extrascolaires";
+                    }
+                }   
+            }
+            a[href*="ia-consult"]{
+                .title{
+                    &:after{
+                        content: "Consultance et audit informatique";
+                    }
+                }   
+            }
+            a[href*="ia-smartweb"]{
+                .title{
+                    &:after{
+                        content: "Le site web 'portail'";
+                    }
+                }   
+            }
+            a[href*="ia-tech"]{
+                .title{
+                    &:after{
+                        content: "Gestion des services techniques";
+                    }
+                }   
+            }
+            a[href*="ia-teleservices"]{
+                .title{
+                    &:after{
+                        content: "Guichet en ligne";
+                    }
+                }   
+            }
+            a[href*="ia-urban"]{
+                .title{
+                    &:after{
+                        content: "Gestion de l'urbanisme";
+                    }
+                }   
+            }
+            a[href*="ia-ideabox"]{
+                .title{
+                    &:after{
+                        content: "Consultation citoyenne";
+                    }
+                }   
+            }
+            a[href*="ia-delib"]{
+                .title{
+                    &:after{
+                        content: "Gestion des séances délibératives";
+                    }
+                }   
+            }
+            a[href*="ia-delib"]{
+                .title{
+                    &:after{
+                        content: "Gestion des séances délibératives";
+                    }
+                }   
+            }
+            a[href*="ia-pst"]{
+                .title{
+                    &:after{
+                        content: "Gestion du Plan Stratégique Transversal";
+                    }
+                }   
+            }
+            .slick-dots{
+                li{
+                    button{
+                        background:#fff;
+                        border-radius: 50%;
+                        width: 10px;
+                        height: 10px;
+                        padding: 0;
+                        border: solid 1px @main-color;
+                        &:after, &:before{
+                            display: none;
+                        }   
+                    }
+                    &.slick-active{
+                        button{
+                            background:@main-color;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .section-event{
+            text-align: center;
+            margin-top: 0!important;
+            color: #fff;
+            padding: 5em 0px;
+            h2{
+                color: #fff;
+            }
+            &::before{
+                display: block !important;
+                width: 100vw;
+                height: 100%;
+                background: url(/imio/images/event-bg.png) no-repeat center center /* /images/event-bg.png*/;
+                left: 50%;
+                bottom: 0;
+                top: 0;
+                transform: translateX(-50vw);
+                position: absolute;
+                background-size: cover;
+                filter: brightness(40%);
+                background-size: cover !important;
+            }
+            .mosaic-grid-cell div:last-child{
+                p a.bouton.blanc {
+                    background: #fff;
+                    color: #e6007e;
+                }
+            }
+            .mosaic-grid-cell div:nth-child(2){
+                max-width: 630px;
+                font-size: 18px;
+                font-weight: 500;
+                margin: 2em auto;
+            }
+            .mosaic-grid-cell:nth-child(2) .mosaic-tile-content {
+                max-width: 30em;
+                border: 1px solid #f2f2f2;
+                padding: 1.5em 1.5em 0.75em 1.5em;
+                border-radius: 1em;
+            }
+            @media screen and (min-width:991px){
+                
+            }
+        }
+    
+        .section-nosactualites {
+            .mosaic-tile{
+                margin-left: 0!important;
+            }
+            margin: 5em auto;
+            h2 {
+                text-align: center;
+                margin: 1em 0 1.75em;
+            }
+            .slick-image {
+                margin-bottom: 1.2em;
+            }
+            .title{
+                font-size: 25px;
+                margin-bottom: .3em;
+            }
+            .description{
+                color: #88888b;
+                max-width: 1004px;
+                &:after{
+                    content: "lire la suite";
+                    margin-top: .5rem;
+                    display: block;
+                    color: @main-color;
+                    font-weight: 600;
+                }
+            }
+            .all{
+                display: none;
+            }
+            @media screen and (min-width:1120px) {
+                .slick-image {
+                    float: left;
+                    margin-right: 2em;
+                }
+            }
+        }
+        //\section
+    // \Home page

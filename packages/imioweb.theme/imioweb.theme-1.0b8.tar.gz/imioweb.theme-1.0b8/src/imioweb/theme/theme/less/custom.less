@@ -1,0 +1,204 @@
+/* our custom TTW editable styles */
+
+// RESET GENERA
+h2, h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #000;
+}
+
+h1{
+    font-size: 2.5em!important;
+    margin-top: 0;
+}
+
+.plone-breadcrumb{
+    margin-top: 0;
+}
+
+.margintop{
+    &::before{
+        margin-top: -5em;
+    }
+}
+
+
+.plone-breadcrumb ol > li + li::before {
+	content: "\f054";
+	position: absolute;
+	border:none!important;
+	color: #cccccc;
+	left: -19px;
+	top: 0;
+	padding: 0 !important;
+	font-family: fontawesome;
+}
+// MEDIA GENER
+
+@media screen and (max-width: 600px){
+    h2{
+        font-size: 25px;
+    }
+}
+
+
+///////////////////////////////////////////////////
+
+body#visual-portal-wrapper a.plone-btn.plone-btn-default.plone-btn-agents {
+    color: white;
+}
+
+.mosaic-tile-content:first-child h2 {
+    margin-top: 30px;
+}
+
+body .section-support.mosaic-grid-row .mosaic-grid-cell > div {
+    padding: 0.01em 2em 2em 2em !important;
+}
+
+.mosaic-grid-row.section-blocs .existing-content-tile > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+@media screen and (min-width: 1024px){
+    .mosaic-grid-row.section-blocs .existing-content-tile > div {
+        article {
+            flex-basis: 21%;
+            margin-right: 5%;
+            &:nth-child(4n){
+                margin-right:0 ;
+            }
+            &.tileItem:nth-child(3n+2):nth-last-child(-n+3):last-child {  
+                left: -34.5% !important;    
+                position: relative;
+            }
+        }
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 1023px){
+    .mosaic-grid-row.section-blocs .existing-content-tile > div {
+        article {
+            flex-basis: 47%;
+        }
+    }
+}
+.portlet.portletNavigationTree {
+    border-width: 0px;
+    box-shadow: none;
+}
+#portal-header #portal-searchbox .searchSection {
+    display: none;
+}
+
+.section-nos-applications  .mosaic-grid-row,
+.subsection-nos-services .mosaic-grid-row{
+    &.bgmain{
+        margin-top:1em;
+        margin-bottom:2em;
+        h2{
+            margin-top:10px;
+        }
+        &::before {
+            top: 0em !important;
+        }
+    }
+    &.section-blocs .existing-content-tile article {
+        display: flex;
+        flex-flow: column;
+        margin-bottom: 4em;
+        padding: 2em;
+        box-shadow: 0 0.3px 0.3px rgba(66, 66, 66, 0.017), 0 0.6px 0.7px rgba(66, 66, 66, 0.024), 0 1.1px 1.2px rgba(66, 66, 66, 0.03), 0 1.8px 1.9px rgba(66, 66, 66, 0.035), 0 2.7px 2.9px rgba(66, 66, 66, 0.04), 0 4.2px 4.5px rgba(66, 66, 66, 0.046), 0 7px 7.5px rgba(66, 66, 66, 0.053), 0 14px 15px rgba(66, 66, 66, 0.07), 0 -2.2px 1px
+rgba(66, 66, 66, 0.02);
+        border-radius: 20px;
+        margin-top:2em;
+        .tileImage {
+            order: 1;
+            float: none;
+            text-align: center;
+            margin-top: -4em;
+            img{
+                height:5em;
+            }
+        }
+    }
+    .tileHeadline {
+        order: 2;
+    }
+    .documentByLine {
+        order: 3;
+    }
+    .tileBody {
+        order: 4;
+    }
+    .tileFooter {
+        order: 5;
+    }
+}
+#portal-searchbox .LSBox{
+    #searchGadget{
+        border-radius:4px;
+    }
+    .searchButton {
+        display: none;
+    }
+}
+body#visual-portal-wrapper a.bouton.blanc {
+    background: white;
+    color:#e6007e;
+    box-shadow: 0 3.8px 4px rgba(0, 0, 0, 0.02), 0 10.7px 9.5px rgba(0, 0, 0, 0.028), 0 21px 17.9px rgba(0, 0, 0, 0.035), 0 35.4px 31.9px rgba(0, 0, 0, 0.042), 0 56.3px 59.7px rgba(0, 0, 0, 0.05), 0 108px 143px
+    rgba(0, 0, 0, 0.07);
+    border: solid 1px#fff;
+}
+
+
+.slick-dots{
+    li{
+        button{
+            background:transparent;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            padding: 0;
+            border: solid 1px @main-color;
+            &:after, &:before{
+                display: none;
+            }   
+        }
+        &.slick-active{
+            button{
+                background:@main-color;
+            }
+        }
+    }
+}
+
+
+
+// LAST RSYNC
+
+@media screen and (min-width: 1024px){
+    .section-nos-applications .mosaic-grid-row.bgmain .mosaic-grid-cell:last-child .mosaic-tile-content,
+    .section-nos-services .mosaic-grid-row.bgmain .mosaic-grid-cell:last-child .mosaic-tile-content {
+        text-align: right;
+    }
+    .section-nos-applications .mosaic-grid-row.bgmain, .subsection-nos-services .mosaic-grid-row.bgmain {
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    }
+}
+.section-nos-applications .mosaic-grid-row.bgmain h2, .subsection-nos-services .mosaic-grid-row.bgmain h2 {
+    color: white;
+}
+.section-bienvenue h1 {
+    height: 1px;
+    width: 1px;
+    color: 
+    white;
+    overflow: hidden;
+}
+footer .doormat.row div:last-child img {
+    max-width: 8em;
+}

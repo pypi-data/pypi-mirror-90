@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: imioweb.theme
+Version: 1.0b8
+Summary: A theme add-on for Plone
+Home-page: https://pypi.python.org/pypi/imioweb.theme
+Author: Benoit Suttor
+Author-email: benoit.suttor@imio.be
+License: GPL version 2
+Description: .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+           If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+           This text does not appear on pypi or github. It is a comment.
+        
+        =============
+        imioweb.theme
+        =============
+        Actuel theme for the new IMIO website.
+        
+        Preview
+        -------
+        
+        .. image:: ./src/imioweb/theme/theme/images/thumb.png
+           :alt: Classic Theme
+           :target: http://www.affinitic.be
+        
+        
+        Installation du package
+        -----------------------
+        
+        Développer le buildout et ses dépendances::
+            $ make build-dev
+        
+        ou::
+            $ virtualenv-2.7 .
+            $ bin/pip install -I -r requirements.txt
+            $ ln -s dev.cfg buildout.cfg
+            $ bin/buildout
+        
+        Lancer l'instance::
+            $ bin/instance fg
+        
+        
+        Installer le package
+        --------------------
+        
+          - Aller sur http://localhost:8080/
+          - Créer un nouveau site plone
+          - [Aller dans le control panel section "Modules"](http://localhost:8080/Plone/prefs_install_products_form)
+          - Installer "imioweb.theme"
+        
+        Ajouter le contenu d'exemple
+        ----------------------------
+        
+          - [Aller dans le control panel section "Modules"](http://localhost:8080/Plone/prefs_install_products_form)
+          - Ajouter "affinitic.demo.content" dans les dépendances et l'installer
+        
+        
+        Le theme Classic est installé!
+        ==============================
+        
+        
+        Contributors
+        ============
+        
+        - Benoit Suttor, benoit.suttor@imio.be
+        
+        
+        Changelog
+        =========
+        
+        
+        1.0b8 (2020-02-12)
+        ------------------
+        
+        - Split less in diffents files for more structur
+          [thomlamb]
+        
+        - Style for imioweb
+          [thomlamb]
+        
+        1.0b7 (2020-02-11)
+        ------------------
+        
+        - Add styles for imioweb (theme.less)
+          [tlamb]
+        
+        - Add rules to custom favicon.
+          [tlamb]
+        
+        1.0b6 (2020-02-10)
+        ------------------
+        
+        - Add styles for imioweb (theme.less)
+          [tlamb]
+        
+        - Release for view layout in preprod
+          [tlamb]
+        
+        - Fix 404 for 'Roboto' font. Adding Roboto folder with .woff inside imioweb.theme less to fix
+          [tlamb]
+        
+        1.0b5 (2020-02-07)
+        ------------------
+        
+        - Add styles for imioweb (theme.less)
+          [tlamb]
+        
+        - Add grunt to compile less.
+          [tlamb]
+        
+        - Custom less slider
+          [tlamb]
+        
+        
+        1.0b4 (2020-02-06)
+        ------------------
+        
+        - Add images in assets folder
+          [tlamb]
+        
+        - Add styles for imioweb (theme.less)
+          [tlamb]
+        
+        
+        1.0b3 (2020-01-10)
+        ------------------
+        
+        - Add base imioweb.less file (custom.less is used for TTW modifications)
+          [laulaz]
+        
+        
+        1.0b2 (2020-01-08)
+        ------------------
+        
+        - Fix barceloneta LESS files path
+          [laulaz]
+        
+        
+        1.0b1 (2019-12-11)
+        ------------------
+        
+        - Initial release.
+          [bsuttor]
+        
+Keywords: Python Plone
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 5.2
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Provides-Extra: test

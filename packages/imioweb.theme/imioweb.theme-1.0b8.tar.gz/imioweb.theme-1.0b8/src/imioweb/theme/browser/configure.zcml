@@ -1,0 +1,28 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="imioweb.theme">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="imioweb.theme.interfaces.IImiowebThemeLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="imioweb.theme"
+      type="plone"
+      directory="static"
+      />
+
+  <browser:page
+      name="migrate_to_52"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".migrate_to_plone52.MigrationView"
+      permission="zope2.View"
+  />
+
+</configure>
