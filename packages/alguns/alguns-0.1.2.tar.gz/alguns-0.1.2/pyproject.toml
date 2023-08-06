@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "alguns"
+version = "0.1.2"
+description = "A crypto library for encrypting text data."
+authors = ["dotX12"]
+license = "Apache Software License, BSD License (BSD or Apache License, Version 2.0)"
+readme = 'README.md'
+repository = 'https://github.com/dotX12/AlgunsCrypt'
+homepage = 'https://github.com/dotX12/AlgunsCrypt'
+
+[tool.poetry.dependencies]
+python = "^3.6"
+cryptography = "^3.3.1"
+six = "^1.15.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
