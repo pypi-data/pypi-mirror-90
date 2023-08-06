@@ -1,0 +1,4 @@
+
+    [trytond.modules]
+    web_shop = trytond.modules.web_shop
+    
