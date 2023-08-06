@@ -1,0 +1,11 @@
+README.md
+setup.py
+animutils/__init__.py
+animutils/anim.py
+animutils/drumsticks.py
+animutils/midi.py
+animutils.egg-info/PKG-INFO
+animutils.egg-info/SOURCES.txt
+animutils.egg-info/dependency_links.txt
+animutils.egg-info/requires.txt
+animutils.egg-info/top_level.txt
