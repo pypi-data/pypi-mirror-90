@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: pytest-report-me
+Version: 0.0.1
+Summary: Generate Pytest reports with templates
+Home-page: https://github.com/looker53/pytest-report-me
+Author: Yuz Wang
+Author-email: looker53@sina.com
+Maintainer: Yuz Wang
+Maintainer-email: looker53@sina.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6

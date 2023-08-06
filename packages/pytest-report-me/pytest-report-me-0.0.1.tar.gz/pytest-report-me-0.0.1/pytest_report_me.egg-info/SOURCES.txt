@@ -1,0 +1,10 @@
+README.md
+setup.py
+pytest_report_me/__init__.py
+pytest_report_me/plugin.py
+pytest_report_me.egg-info/PKG-INFO
+pytest_report_me.egg-info/SOURCES.txt
+pytest_report_me.egg-info/dependency_links.txt
+pytest_report_me.egg-info/entry_points.txt
+pytest_report_me.egg-info/requires.txt
+pytest_report_me.egg-info/top_level.txt
