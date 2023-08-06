@@ -1,0 +1,3 @@
+[console_scripts]
+fastral = FASTRAL.fastral_infer:main
+
