@@ -1,0 +1,10 @@
+README.md
+setup.py
+cccpt/__init__.py
+cccpt/cli.py
+conan_cmake_cpp_project_tools.egg-info/PKG-INFO
+conan_cmake_cpp_project_tools.egg-info/SOURCES.txt
+conan_cmake_cpp_project_tools.egg-info/dependency_links.txt
+conan_cmake_cpp_project_tools.egg-info/entry_points.txt
+conan_cmake_cpp_project_tools.egg-info/requires.txt
+conan_cmake_cpp_project_tools.egg-info/top_level.txt

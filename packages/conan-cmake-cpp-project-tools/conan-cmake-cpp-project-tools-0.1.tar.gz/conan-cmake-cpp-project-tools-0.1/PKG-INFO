@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: conan-cmake-cpp-project-tools
+Version: 0.1
+Summary: A command-line to quickly configure, build, test (and more) CMake-based C/C++ projects.
+Home-page: https://github.com/CD3/cccpt
+Author: CD Clark III
+Author-email: clifton.clark@gmail.com
+License: MIT
+Download-URL: https://github.com/CD3/cccpt/archive/0.1.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
