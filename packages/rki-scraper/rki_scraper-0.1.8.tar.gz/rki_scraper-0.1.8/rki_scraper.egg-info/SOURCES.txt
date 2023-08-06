@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+rki_scraper/README.md
+rki_scraper/__init__.py
+rki_scraper/dd4580c810204019a7b8eb3e0b329dd6_0.csv
+rki_scraper/rki_data.py
+rki_scraper/test.py
+rki_scraper.egg-info/PKG-INFO
+rki_scraper.egg-info/SOURCES.txt
+rki_scraper.egg-info/dependency_links.txt
+rki_scraper.egg-info/not-zip-safe
+rki_scraper.egg-info/requires.txt
+rki_scraper.egg-info/top_level.txt
