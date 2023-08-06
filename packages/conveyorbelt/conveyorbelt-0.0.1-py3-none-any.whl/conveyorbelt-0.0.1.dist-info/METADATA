@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: conveyorbelt
+Version: 0.0.1
+Summary: Command line interface for the CONVEYOR laboratory information management system (LIMS)
+Home-page: https://github.com/sheffield-bioinformatics-core/conveyor-belt
+Author: Joe Heffer
+Author-email: j.heffer@sheffield.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Conveyor Belt
+
+A command line interface for the CONVEYOR laboratory information management system (LIMS) by the [Sheffield Bioinformatics Core Facility](https://sbc.shef.ac.uk/) and [The University of Sheffield IT Services](https://www.sheffield.ac.uk/it-services/research).
+
+
+
