@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pyappdir
+Version: 0.0.1b1
+Summary: python app lib
+Home-page: UNKNOWN
+Author: jieshao
+Author-email: 1806620741@qq.com
+License: GNU General Public License v3 (GPLv3)
+Project-URL: Documentation, https://github.com/LY1806620741/pyappdir/blob/master/README.md
+Project-URL: Release notes, https://github.com/LY1806620741/pyappdir/releases
+Project-URL: Funding, https://ly1806620741.github.io/donate-bitcoin/
+Project-URL: Source, https://github.com/LY1806620741/pyappdir
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# python应用
+
+## 安装
+```shell
+[编译版本]pip install .
+[测试版本]pip install -i https://test.pypi.org/simple/ pyappdir
+[发行版本]pip install pyappdir
+```
+
+## 运行
+``` python
+python -m app #默认运行
+```
+
+## 卸载
+```
+pip uninstall pyappdir
+```
+
+## APP list
+1) [Filetransfer](https://github.com/LY1806620741/Filetransfer)
+
+
