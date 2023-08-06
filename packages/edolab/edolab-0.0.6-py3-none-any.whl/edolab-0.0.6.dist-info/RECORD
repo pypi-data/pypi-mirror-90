@@ -1,0 +1,11 @@
+edolab/__init__.py,sha256=Ruj__Vy-Ixiylk0nKodB_9-nUs9Mbjutv9AsIdSmmB8,104
+edolab/__main__.py,sha256=hEdkdBJptKYq5X6Ot3thMF43ABj7XtfZMm3_vwLKW7g,3821
+edolab/run.py,sha256=TEUoOcZyyln6bluqt6ePGbWpSKts0g2WsiHU6no_qFs,2103
+edolab/summarise.py,sha256=5d8WJZnhihv44vlKgmahyimebGZOixozj1rUTi3D2b0,2655
+edolab/version.py,sha256=A_sNm0gJanM-YPuiuWHO2V19yUnJsqFMyLoo8t9nh4s,52
+edolab-0.0.6.dist-info/LICENSE,sha256=sSo599ynJFBHbGLhBgb1nt2yk-NFiSdtwwhA5aznqys,1068
+edolab-0.0.6.dist-info/METADATA,sha256=vvYlY2az7xAvFCYPiMvumrzErM85PEGvHOg7iqn27yI,4989
+edolab-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+edolab-0.0.6.dist-info/entry_points.txt,sha256=7pR1KzLRwrd8mWX5Dm3DV1t_cQzt6wk1_I-71b6HoWc,47
+edolab-0.0.6.dist-info/top_level.txt,sha256=mvZ0Wt4okEmFbbnnMZC4vD8JY4whSWG3J6PlvrpfGME,7
+edolab-0.0.6.dist-info/RECORD,,
