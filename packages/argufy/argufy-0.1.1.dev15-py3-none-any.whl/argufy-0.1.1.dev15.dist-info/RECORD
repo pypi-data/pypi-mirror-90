@@ -1,0 +1,10 @@
+argufy/__init__.py,sha256=FDgnuR7lEJlC4PLCXZ7gIxaS9Hd-y3X4l2SIqeFWstI,453
+argufy/__version__.py,sha256=Qu4BkKFSj8DdoZDb_EdKCcaSJ_ZB47i7XN4nqYICrJc,427
+argufy/argument.py,sha256=6SuGbOOD6itxWwvwXrGME-RtFZdp6US1zwr2kWWtXa8,7400
+argufy/exceptions.py,sha256=yXidOekc6b4IOr3m22L6RTgAM02FDhRXjXoUi5wNKS8,380
+argufy/formatter.py,sha256=ycNo25KUMAHZR0WsiwPwuNCg3tW3kHeOTSvFssk6BEc,2785
+argufy/parser.py,sha256=lHHRHyxSErMnADGO1bNsZqNMiA7rmmkmNlPhv2Z0PA8,11888
+argufy-0.1.1.dev15.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+argufy-0.1.1.dev15.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+argufy-0.1.1.dev15.dist-info/METADATA,sha256=yJ0_WCpGpK6z92xgf0RblZAM4mi1thLxNpvwpMMee1Y,633
+argufy-0.1.1.dev15.dist-info/RECORD,,
