@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pycentraldispatch/__init__.py
+pycentraldispatch/py_central_dispatch.py
+pycentraldispatch/thread_pool.py
+pycentraldispatch.egg-info/PKG-INFO
+pycentraldispatch.egg-info/SOURCES.txt
+pycentraldispatch.egg-info/dependency_links.txt
+pycentraldispatch.egg-info/top_level.txt
