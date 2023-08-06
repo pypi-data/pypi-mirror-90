@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commandline Interface (CLI) &#8212; srtools  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Developer Interface (API)" href="api.html" />
+    <link rel="prev" title="srtools" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="commandline-interface-cli">
+<h1>Commandline Interface (CLI)<a class="headerlink" href="#commandline-interface-cli" title="Permalink to this headline">¶</a></h1>
+<p>Srtools provides a commandline utility for transliterating Serbian text from
+Cyrillic to Latin and vice versa.</p>
+<p>The utility operates on <code class="docutils literal notranslate"><span class="pre">STDIN</span></code> and outputs to <code class="docutils literal notranslate"><span class="pre">STDOUT</span></code> if no arguments are
+provided.
+You can also explicitly specify you’re reading from <code class="docutils literal notranslate"><span class="pre">STDIN</span></code> in the standard
+way (<code class="docutils literal notranslate"><span class="pre">srts</span> <span class="pre">-cl</span> <span class="pre">--</span></code>).</p>
+<p>You <em>must</em> provide either <code class="docutils literal notranslate"><span class="pre">--cl</span></code> (Cyrillic → Latin) or <code class="docutils literal notranslate"><span class="pre">--lc</span></code> (Latin →
+Cyrillic) to specify the transliteration direction.</p>
+<p>The utility currently only supports UTF-8 input and output.
+I might include commandline options for picking an encoding like YUSCII (JUS
+I.B1.002), Cyrillic YUSCII (JUS_I.B1.003-serb), Windows-1250, Windows-1251,
+ISO-8859-5, ISO/IEC 8859-2 in the future.
+Until then, you may pipe the input and output into <code class="docutils literal notranslate"><span class="pre">iconv</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">usage</span><span class="p">:</span> <span class="n">srts</span> <span class="p">[</span><span class="o">-</span><span class="n">h</span><span class="p">]</span> <span class="p">[</span><span class="o">-</span><span class="n">o</span> <span class="n">OUTFILE</span><span class="p">]</span> <span class="p">(</span><span class="o">--</span><span class="n">cl</span> <span class="o">|</span> <span class="o">--</span><span class="n">lc</span><span class="p">)</span> <span class="p">[</span><span class="n">infile</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="section" id="Positional Arguments">
+<h2>Positional Arguments<a class="headerlink" href="#Positional Arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="option-list">
+<dt><kbd>infile</kbd></dt>
+<dd><p>Input file. If omitted, reads STDIN.</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="Named Arguments">
+<h2>Named Arguments<a class="headerlink" href="#Named Arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="option-list">
+<dt><kbd>-o, --outfile</kbd></dt>
+<dd><p>Output file. If omitted, writes to STDOUT.</p>
+</dd>
+<dt><kbd>--cl</kbd></dt>
+<dd><p>Cyrillic to Latin transliteration.</p>
+</dd>
+<dt><kbd>--lc</kbd></dt>
+<dd><p>Latin to Cyrillic transliteration.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">srtools</a></h1>
+
+
+
+<p class="blurb">Serbian Cyrillic ↔ Latin transliteration package</p>
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Commandline Interface (CLI)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#Positional Arguments">Positional Arguments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#Named Arguments">Named Arguments</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Developer Interface (API)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Changelog</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">srtools</a></li>
+      <li>Next: <a href="api.html" title="next chapter">Developer Interface (API)</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2020, Andrej Radović.
+      
+      |
+      <a href="_sources/cli.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

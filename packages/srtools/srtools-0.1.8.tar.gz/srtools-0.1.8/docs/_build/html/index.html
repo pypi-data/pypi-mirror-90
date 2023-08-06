@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>srtools &#8212; srtools  documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Commandline Interface (CLI)" href="cli.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="srtools">
+<h1>srtools<a class="headerlink" href="#srtools" title="Permalink to this headline">¶</a></h1>
+<a class="reference external image-reference" href="https://gitlab.com/andrejr/srtools/pipelines"><img alt="pipeline status" src="https://gitlab.com/andrejr/srtools/badges/master/pipeline.svg" /></a>
+<a class="reference external image-reference" href="https://andrejr.gitlab.io/srtools/coverage/index.html"><img alt="coverage report" src="https://gitlab.com/andrejr/srtools/badges/master/coverage.svg" /></a>
+<p>Srtools provides a CLI utility (<code class="docutils literal notranslate"><span class="pre">srts</span></code>) and a Python 3 (<code class="docutils literal notranslate"><span class="pre">^3.7</span></code>) package
+that helps you transliterate Serbian texts between Cyrillic and Latin.</p>
+<p>Here’s a demonstration of the CLI utility:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">echo</span> <span class="s2">&quot;Đače, uštedu plaćaj žaljenjem zbog džinovskih cifara.&quot;</span> <span class="p">|</span> srts --lc
+<span class="go">Ђаче, уштеду плаћај жаљењем због џиновских цифара.</span>
+<span class="gp">$</span> <span class="nb">echo</span> <span class="s2">&quot;Ђаче, уштеду плаћај жаљењем због џиновских цифара.&quot;</span> <span class="p">|</span> srts --cl
+<span class="go">Đače, uštedu plaćaj žaljenjem zbog džinovskih cifara.</span>
+</pre></div>
+</div>
+<p>Here’s how you use the Python package:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">srtools</span> <span class="kn">import</span> <span class="n">cyrillic_to_latin</span><span class="p">,</span> <span class="n">latin_to_cyrillic</span>
+
+<span class="k">assert</span> <span class="p">(</span>
+    <span class="n">latin_to_cyrillic</span><span class="p">(</span><span class="s2">&quot;Đače, uštedu plaćaj žaljenjem zbog džinovskih cifara.&quot;</span><span class="p">)</span>
+    <span class="o">==</span> <span class="s2">&quot;Ђаче, уштеду плаћај жаљењем због џиновских цифара.&quot;</span>
+<span class="p">)</span>
+
+<span class="k">assert</span> <span class="p">(</span>
+    <span class="n">cyrillic_to_latin</span><span class="p">(</span><span class="s2">&quot;Ђаче, уштеду плаћај жаљењем због џиновских цифара.&quot;</span><span class="p">)</span>
+    <span class="o">==</span> <span class="s2">&quot;Đače, uštedu plaćaj žaljenjem zbog džinovskih cifara.&quot;</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h2>
+<p>I needed a simple commandline utility I can use to pipe in some text and change
+its script.</p>
+<p>I also use this tool to transliterate strings in Serbian LaTeX localization
+packages. That way I don’t have to maintain individual sets of localization
+strings for Cyrillic and Latin.</p>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<p>Documentation (Sphinx) can be viewed on
+<a class="reference external" href="https://andrejr.gitlab.io/srtools/">GitLab pages for this package</a>.</p>
+</div>
+<div class="section" id="changelog">
+<h2>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">¶</a></h2>
+<p>The changelog can be found within the documentation,
+<a class="reference external" href="https://andrejr.gitlab.io/srtools/changes.html">here</a>.</p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">srtools</a></h1>
+
+
+
+<p class="blurb">Serbian Cyrillic ↔ Latin transliteration package</p>
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Commandline Interface (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Developer Interface (API)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changes.html">Changelog</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+      <li>Next: <a href="cli.html" title="next chapter">Commandline Interface (CLI)</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2020, Andrej Radović.
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

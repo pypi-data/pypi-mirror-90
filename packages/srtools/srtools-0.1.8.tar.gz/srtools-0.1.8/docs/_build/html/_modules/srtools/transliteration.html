@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>srtools.transliteration &#8212; srtools  documentation</title>
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for srtools.transliteration</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="c1"># srtools</span>
+<span class="c1"># Copyright (C) 2019  Andrej Radović &lt;r.andrej@gmail.com&gt;</span>
+<span class="c1">#</span>
+<span class="c1"># This program is free software: you can redistribute it and/or modify</span>
+<span class="c1"># it under the terms of the GNU General Public License as published by</span>
+<span class="c1"># the Free Software Foundation, either version 3 of the License, or</span>
+<span class="c1"># (at your option) any later version.</span>
+<span class="c1">#</span>
+<span class="c1"># This program is distributed in the hope that it will be useful,</span>
+<span class="c1"># but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c1"># MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="c1"># GNU General Public License for more details.</span>
+<span class="c1">#</span>
+<span class="c1"># You should have received a copy of the GNU General Public License</span>
+<span class="c1"># along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span>
+<span class="kn">import</span> <span class="nn">re</span>
+
+<span class="kn">from</span> <span class="nn">.character_dictionaries</span> <span class="kn">import</span> <span class="n">CYR_TO_LAT_TTABLE</span>
+<span class="kn">from</span> <span class="nn">.character_dictionaries</span> <span class="kn">import</span> <span class="n">LAT_TO_CYR_DIGRAPHS_DICT</span>
+<span class="kn">from</span> <span class="nn">.character_dictionaries</span> <span class="kn">import</span> <span class="n">LAT_TO_CYR_TTABLE</span>
+
+<span class="n">_LAT_TO_CYR_DIGRAPH_RX</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="s2">&quot;|&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">escape</span><span class="p">,</span> <span class="n">LAT_TO_CYR_DIGRAPHS_DICT</span><span class="o">.</span><span class="n">keys</span><span class="p">()))</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+<span class="p">)</span>
+<span class="n">_LAT_TO_CYR_DIGRAPH_COMP_RX</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span>
+    <span class="n">_LAT_TO_CYR_DIGRAPH_RX</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">UNICODE</span> <span class="o">|</span> <span class="n">re</span><span class="o">.</span><span class="n">MULTILINE</span>
+<span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_cyr_sub_string_from_lat_match</span><span class="p">(</span><span class="n">match</span><span class="p">:</span> <span class="n">re</span><span class="o">.</span><span class="n">Match</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="n">cyr_digraph</span> <span class="o">=</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">()</span>
+    <span class="n">lat_digraph</span> <span class="o">=</span> <span class="n">LAT_TO_CYR_DIGRAPHS_DICT</span><span class="p">[</span><span class="n">cyr_digraph</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">lat_digraph</span>
+
+
+<div class="viewcode-block" id="latin_to_cyrillic"><a class="viewcode-back" href="../../api.html#srtools.latin_to_cyrillic">[docs]</a><span class="k">def</span> <span class="nf">latin_to_cyrillic</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Transliterate Serbian Latin string to Cyrillic.</span>
+
+<span class="sd">    You may use a special separator ``!`` to split digraphs `lj`, `nj`, `dž` to</span>
+<span class="sd">    prevent their conversion to single Cyrillic letters like so: `l!j`.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        text: input Latin string to be transliterated.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: Input string transliterated to Cyrillic.</span>
+
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; from srtools import latin_to_cyrillic</span>
+<span class="sd">        &gt;&gt;&gt; in_str = &quot;Đače, uštedu plaćaj žaljenjem zbog džinovskih cifara.&quot;</span>
+<span class="sd">        &gt;&gt;&gt; latin_to_cyrillic(in_str)</span>
+<span class="sd">        &#39;Ђаче, уштеду плаћај жаљењем због џиновских цифара.&#39;</span>
+<span class="sd">        &gt;&gt;&gt; latin_to_cyrillic(&#39;N!J je skraćenica za Nju Džersi&#39;)</span>
+<span class="sd">        &#39;НЈ је скраћеница за Њу Џерси&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">text_digraphs_substituted</span> <span class="o">=</span> <span class="n">_LAT_TO_CYR_DIGRAPH_COMP_RX</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span>
+        <span class="n">_cyr_sub_string_from_lat_match</span><span class="p">,</span> <span class="n">text</span>
+    <span class="p">)</span>
+    <span class="n">text_digraphs_and_letters_substituted</span> <span class="o">=</span> <span class="n">text_digraphs_substituted</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span>
+        <span class="n">LAT_TO_CYR_TTABLE</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">text_digraphs_and_letters_substituted</span></div>
+
+
+<div class="viewcode-block" id="cyrillic_to_latin"><a class="viewcode-back" href="../../api.html#srtools.cyrillic_to_latin">[docs]</a><span class="k">def</span> <span class="nf">cyrillic_to_latin</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Transliterate Serbian Cyrillic string to Latin.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        text: input Cyrillic string to be transliterated.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: Input string transliterated to Latin.</span>
+
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; from srtools import cyrillic_to_latin</span>
+<span class="sd">        &gt;&gt;&gt; in_str = &quot;Ђаче, уштеду плаћај жаљењем због џиновских цифара.&quot;</span>
+<span class="sd">        &gt;&gt;&gt; cyrillic_to_latin(in_str)</span>
+<span class="sd">        &#39;Đače, uštedu plaćaj žaljenjem zbog džinovskih cifara.&#39;</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">text</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">CYR_TO_LAT_TTABLE</span><span class="p">)</span></div>
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">srtools</a></h1>
+
+
+
+<p class="blurb">Serbian Cyrillic ↔ Latin transliteration package</p>
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Commandline Interface (CLI)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api.html">Developer Interface (API)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes.html">Changelog</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019-2020, Andrej Radović.
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
