@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cuwais-common
+Version: 0.2.1.dev2101021
+Summary: The shared libraries for CUWAIS competitions
+Home-page: https://github.com/AI-Wars-Soc/common
+Author: Joe O'Connor
+Author-email: jo429@cam.ac.uk
+License: UNKNOWN
+Description: # common
+        The common Python code shared by the other modules
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
