@@ -1,0 +1,6 @@
+README.md
+setup.py
+avassa_client.egg-info/PKG-INFO
+avassa_client.egg-info/SOURCES.txt
+avassa_client.egg-info/dependency_links.txt
+avassa_client.egg-info/top_level.txt
