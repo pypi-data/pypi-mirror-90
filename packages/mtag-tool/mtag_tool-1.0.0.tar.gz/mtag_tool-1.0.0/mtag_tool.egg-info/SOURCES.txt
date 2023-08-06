@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+mtag_tool/__init__.py
+mtag_tool/__main__.py
+mtag_tool/__version__.py
+mtag_tool/api.py
+mtag_tool/app.py
+mtag_tool/tag.py
+mtag_tool.egg-info/PKG-INFO
+mtag_tool.egg-info/SOURCES.txt
+mtag_tool.egg-info/dependency_links.txt
+mtag_tool.egg-info/requires.txt
+mtag_tool.egg-info/top_level.txt

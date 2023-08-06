@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: mtag-tool
+Version: 1.0.0
+Summary: MP3 tag编辑器，支持从网易云补全歌曲信息.
+Home-page: https://github.com/wang0618/mtag_tool
+Author: WangWeimin
+Author-email: wang0.618@qq.com
+License: MIT
+Project-URL: Source, https://github.com/wang0618/mtag_tool
+Description: ## MP3 Tag编辑器
+        
+         - 支持编辑歌曲标题、专辑、艺术家、歌词、封面图片。
+         - 支持同步歌词和纯文本歌词
+         - 支持从网易云补全歌曲信息
+         - 支持Windows、Linux、MacOS平台
+        
+        ### 安装
+        
+        ```bash
+        pip3 install -U mtag_tool
+        ```
+        
+        ### 运行
+        
+        ```bash
+        python3 -m mtag_tool
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5.2
+Description-Content-Type: text/markdown
