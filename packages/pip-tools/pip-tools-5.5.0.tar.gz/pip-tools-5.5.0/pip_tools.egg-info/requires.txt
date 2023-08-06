@@ -1,0 +1,10 @@
+click>=7
+pip>=20.1
+
+[coverage]
+pytest-cov
+
+[testing]
+mock
+pytest
+pytest-rerunfailures
