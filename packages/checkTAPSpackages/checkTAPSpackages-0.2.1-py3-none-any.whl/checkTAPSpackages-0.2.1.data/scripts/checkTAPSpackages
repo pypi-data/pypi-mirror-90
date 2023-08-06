@@ -1,0 +1,70 @@
+#!python
+
+# Gery Casiez
+# Jan 2021
+
+import re
+import argparse
+import sys
+
+# packages listed here: https://www.acm.org/publications/taps/accepted-latex-packages 
+
+allowedPackages = ['amsmath.sty', 'array.sty', 'booktabs.sty', 'caption.sty', 'fancyvrb.sty', 'graphicx.sty', 'hypdoc.sty',\
+ 'libertine.sty', 'longtable.sty', 'newtxmath.sty', 'tabularx.sty', 'zi4.sty', 'abstract.sty', 'curves.sty', 'kvoptions.sty',\
+ 'acronym.sty', 'datenumber.sty', 'listings.sty', 'algorithm.sty', 'dcolumn.sty', 'makeidx.sty', 'algorithm2e.sty', 'decimal.sty', \
+ 'maple2e.sty', 'algorithmic.sty', 'delarray.sty', 'mapleenv.sty', 'alltt.sty', 'dirtytalk.sty', 'mapleplots.sty', 'amsbsy.sty', \
+ 'draftwatermark.sty', 'maplestyle.sty', 'amscd.sty', 'epigraph.sty', 'mapletab.sty', 'amsfonts.sty', 'esdiff.sty', 'mapleutil.sty', \
+ 'amsgen.sty', 'etex.sty', 'mathabx.sty', 'amsmath.sty', 'eucal.sty', 'mciteplus.sty', 'amsmidx.sty', 'eufrak.sty', 'multirow.sty', \
+ 'amsopn.sty', 'fancybox.sty', 'natbib.sty', 'amssymb.sty', 'fancyhdr.sty', 'newlfont.sty', 'amstext.sty', 'fancyvrb.sty', 'nomencl.sty', \
+'amsthm.sty', 'fix-cm.sty', 'nopageno.sty', 'amsxtra.sty', 'fixfoot.sty', 'oldlfont.sty', 'apacite.sty', 'fixltx2e.sty', 'overword.sty', \
+ 'appendix.sty', 'fixme.sty', 'physics.sty', 'auxhook.sty', 'flafter.sty', 'SIunits.sty', 'balance.sty', 'float.sty', 'shortvrb.sty', 'bbding.sty', \
+'fontenc.sty', 'showidx.sty', 'bm.sty', 'forloop.sty', 'stfloats.sty', 'bold-braces.sty', 'fp.sty', 'stmaryrd.sty', 'braket.sty', 'gb4e.sty', \
+'soul.sty', 'calc.sty', 'geometry.sty', 'subfigure.sty', 'cancel.sty', 'graphics.sty', 'suffix.sty', 'ccicons.sty', 'graphicx.sty', 'tabular.sty', \
+'centernot.sty', 'graphpap.sty', 'textcase.sty', 'cgloss4e.sty', 'harmony.sty', 'textcomp.sty', 'checkend.sty', 'html.sty', 'tfrupee.sty', 'CJK.sty', \
+'hyperref.sty', 'tipa.sty', 'clean.sty', 'ifpdf.sty', 'tipx.sty', 'cmap.sty', 'ifthen.sty', 'titlepage.sty', 'color.sty', 'index.sty', 'tloop.sty', \
+'comma.sty', 'inputenc.sty', 'totpages.sty', 'coollist.sty', 'iopams.sty', 'trimspaces.sty', 'coolstr.sty', 'keyval.sty', 'units.sty', 'upmath.sty']
+
+# Packages not listed above but imported by some packages listed above
+
+additionnalPackages = ['xkeyval.sty', 'xstring.sty', 'iftex.sty', 'microtype.sty', 'etoolbox.sty', 'refcount.sty', 'ltxcmds.sty', \
+     'infwarerr.sty', 'everyshi-ltx.sty', 'environ.sty', 'pdftexcmds.sty', 'kvsetkeys.sty', 'kvdefinekeys.sty', 'pdfescape.sty', \
+     'hycolor.sty', 'letltxmacro.sty', 'intcalc.sty', 'etexcmds.sty', 'url.sty', 'bitset.sty', 'bigintcalc.sty', 'atbegshi-ltx.sty', \
+     'atveryend-ltx.sty', 'rerunfilecheck.sty', 'uniquecounter.sty', 'hyperxmp.sty', 'stringenc.sty', 'ifmtarg.sty', 'ifdraft.sty', \
+     'ifluatex.sty', 'trig.sty', 'xcolor.sty', 'ifvtex.sty', 'manyfoot.sty', 'nccfoots.sty', 'ifxetex.sty', 'fontaxes.sty', 'caption3.sty', \
+     'comment.sty', 'nameref.sty', 'epstopdf-base.sty', 'upquote.sty', 'gettitlestring.sty']
+
+if __name__ == "__main__":
+
+    parser = argparse.ArgumentParser(description='Check used packages')
+    parser.add_argument('logfile', help = 'latex log file')
+    args = parser.parse_args()
+
+    print("You must first compile you tex document by adding \\listfiles below the \\documentclass")
+
+    try:
+        f = open(args.logfile, "r")
+    except:
+        print("File does not exist")
+        sys.exit(-1)
+
+    text = f.read()
+
+    pattern = re.compile(r"([^ \n/\t]*\.sty)")
+
+    allowedPackages.extend(additionnalPackages) 
+
+    packages = []
+
+    for package in re.findall(pattern, text):
+        if package not in packages:
+            packages.append(package)
+
+    everyThingOK = True
+
+    for p in packages:
+        if p not in allowedPackages:
+            everyThingOK = False
+            print("Warning: %s is not allowed"%p)
+
+    if everyThingOK:
+        print("Congratulations, everything appears in order.")
