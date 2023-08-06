@@ -1,0 +1,6 @@
+EU/TR/MENA/CIS = EU Shard
+NA = NA shard 
+LATAM = LATAM shard
+BR = BR shard
+AP = JP/OCE/SEA
+KR = Seoul shard
