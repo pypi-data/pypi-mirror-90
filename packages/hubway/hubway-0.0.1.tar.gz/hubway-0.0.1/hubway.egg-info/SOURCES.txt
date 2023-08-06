@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+hubway.egg-info/PKG-INFO
+hubway.egg-info/SOURCES.txt
+hubway.egg-info/dependency_links.txt
+hubway.egg-info/top_level.txt
