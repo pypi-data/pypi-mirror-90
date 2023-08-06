@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: buildtool
+Version: 0.0.0b175.dev21
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Rahul Arya
+Author-email: rahularya@berkeley.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: flask
+Requires-Dist: cachetools
+Requires-Dist: colorama
+Requires-Dist: requests
+Requires-Dist: tqdm
+
+## Overview
+
+This is a `make` alternative with a simpler syntax and some useful features.
+
+
