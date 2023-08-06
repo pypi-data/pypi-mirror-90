@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: jezdzenka
+Version: 1.5
+Summary: Handy wallet in your terminal, no strings attached.
+Home-page: https://naruciakk.eu/okucha/jezdzenka
+Author: Robert von Oliva (naruciakk)
+Author-email: UNKNOWN
+License: CC0 1.0 Universal
+Platform: UNKNOWN
+Requires-Dist: rich
+Requires-Dist: PyInquirer
+Requires-Dist: tinydb
+Requires-Dist: tinydb-serialization
+Requires-Dist: python-magic
+Requires-Dist: mo-installer
+
+UNKNOWN
+
+
