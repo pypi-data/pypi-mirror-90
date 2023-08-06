@@ -1,0 +1,5 @@
+click
+pandas>=0.24.2
+scispacy>=0.2.5
+spacy>=2.3.2
+textract
