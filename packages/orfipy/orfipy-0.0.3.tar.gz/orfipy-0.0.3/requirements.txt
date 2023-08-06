@@ -1,0 +1,5 @@
+cython
+psutil
+pyfastx
+pyahocorasick
+colorama
