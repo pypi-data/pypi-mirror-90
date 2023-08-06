@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: aws-lambda-typing
+Version: 0.0.16
+Summary: A package that provides type hints for AWS Lambda event, context and response objects
+Home-page: https://github.com/MousaZeidBaker/aws-lambda-typing
+Author: Mousa Zeid Baker
+Author-email: mousa.zeid.baker@gmail.com
+License: MIT
+Keywords: typing,type hints,aws,lambda,serverless,development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
