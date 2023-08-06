@@ -1,0 +1,67 @@
+version: "2"         # required to adjust maintainability checks
+
+exclude_patterns:
+  - "config/"
+  - "db/"
+  - "dist/"
+  - "features/"
+  - "**/node_modules/"
+  - "script/"
+  - "**/spec/"
+  - "**/test/"
+  - "**/tests/"
+  - "Tests/"
+  - "**/vendor/"
+  - "**/*_test.go"
+  - "**/*.d.ts"
+  - "**/*.pyc"
+  - "**/migrations/"
+  - "**/.idea/"
+  - "**/manage.py"
+  - ".pylintrc"
+
+checks:
+  argument-count:
+    config:
+      threshold: 10
+  complex-logic:
+    config:
+      threshold: 5
+  file-lines:
+    config:
+      threshold: 10000
+  method-complexity:
+    config:
+      threshold: 10
+  method-count:
+    config:
+      threshold: 50
+  method-lines:
+    config:
+      threshold: 100
+  nested-control-flow:
+    config:
+      threshold: 4
+  return-statements:
+    config:
+      threshold: 4
+
+plugins:
+  csslint:
+    enabled: true
+  duplication:
+    enabled: true
+  eslint:
+    enabled: true
+  fixme:
+    enabled: true
+  pep8:
+    enabled: true
+    checks:
+      E501:
+        enabled: false
+  radon:
+    enabled: true
+  sonar-python:
+    enabled: true
+

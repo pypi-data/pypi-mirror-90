@@ -1,0 +1,107 @@
+dist: xenial
+language: python
+cache: pip
+
+addons:
+  apt:
+    packages:
+      - ldap-utils
+      - slapd
+
+python:
+  - "3.6"
+  - "3.7"
+  - "3.8"
+  - "3.9"
+  - "nightly"
+
+env:
+  - DJANGO="Django>=2.2,<3.0"
+  - DJANGO="Django>=3.0,<3.1"
+  - DJANGO="Django>=3.1,<3.2"
+  - DJANGO="--pre Django"
+
+install:
+  - pip install -q $DJANGO
+  - python -m django --version
+  - pip install -r requirements_ci.txt
+
+script:
+  - coverage run manage.py test --settings tests.settings
+  - coverage report
+  - coveralls
+
+jobs:
+  include:
+    - stage: Linters
+      python: 3.7
+      env:
+        - DJANGO=Django==2.2
+      name: Flake8
+      script: flake8
+    - script: bandit -r .
+      name: Bandit
+    - stage: "Code Climate"
+      python: 3.7
+      env: DJANGO=Django==2.2
+      before_script:
+        - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+        - chmod +x ./cc-test-reporter
+        - ./cc-test-reporter before-build
+      script:
+        - coverage run manage.py test --settings tests.settings
+      after_script:
+        - coverage xml
+        - if [[ "$TRAVIS_PULL_REQUEST" == "false" ]]; then ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT; fi
+    - stage: deploy
+      if: tag IS present
+      python: 3.7
+      env: DJANGO=Django==2.2
+      script:
+        - echo '[![Travis](https://img.shields.io/travis/NoNameItem/cool-django-auth-ldap/'${TRAVIS_TAG}'?style=flat-square)](https://travis-ci.com/NoNameItem/cool-django-auth-ldap/builds/'${TRAVIS_BUILD_ID}') [![Read the Docs](https://img.shields.io/readthedocs/cool-django-auth-ldap/'${TRAVIS_TAG}'?style=flat-square)](https://cool-django-auth-ldap.readthedocs.io/en/'${TRAVIS_TAG}'/) [![Coveralls](https://img.shields.io/coveralls/github/NoNameItem/cool-django-auth-ldap/'${TRAVIS_TAG}'?style=flat-square)](https://coveralls.io/github/NoNameItem/cool-django-auth-ldap?branch='${TRAVIS_TAG}')' > release_notes
+        - gitchangelog >> release_notes
+      deploy:
+        - provider: pypi
+          edge: true
+          distributions: sdist bdist_wheel
+          user: NoNameItem
+          password: ${PYPI_PASSWORD}
+          cleanup: false
+          remove_build_dir: false
+          on:
+            tags: true
+        - provider: releases
+          edge: true
+          name: "$TRAVIS_TAG"
+          release_notes_file: release_notes
+          cleanup: false
+          overwrite: true
+          file:
+            - ./dist/*.whl
+            - CHANGES
+          on:
+            tags: true
+  allow_failures:
+    - python: "nightly"
+      env: DJANGO="Django>=2.2,<3.0"
+    - python: "nightly"
+      env: DJANGO="Django>=3.0,<3.1"
+    - python: "nightly"
+      env: DJANGO="Django>=3.1,<3.2"
+    - python: "3.6"
+      env: DJANGO="--pre Django"
+    - python: "3.7"
+      env: DJANGO="--pre Django"
+    - python: "3.8"
+      env: DJANGO="--pre Django"
+    - python: "3.9"
+      env: DJANGO="--pre Django"
+
+
+notifications:
+  email:
+    recipients:
+      - nonameitem@me.com
+    on_success: always
+    on_failure: always
+  webhooks: https://coveralls.io/webhook

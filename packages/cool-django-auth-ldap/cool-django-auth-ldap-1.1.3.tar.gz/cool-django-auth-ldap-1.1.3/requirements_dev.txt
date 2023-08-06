@@ -1,0 +1,7 @@
+Django>=2.2.4
+gitchangelog
+pylint
+flake8>=2.1.0
+bandit==1.5.1
+coverage
+mock>=1.0.1

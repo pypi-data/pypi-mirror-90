@@ -1,0 +1,131 @@
+CHANGES
+=======
+
+1.1.3
+-----
+
+* chg: dev: setup.cfg update
+* fix: dev: bandit version 1.5.1
+* chg: dev: deleted unsupported django versions
+* chg: dev: bumped django and python supported versions
+* fix: dev: bandit version 1.5.1
+* fix: dev: travis config fix
+* chg: dev: Set coverage version to 4.5.4 for CI
+* chg: dev: Set coverage version to 4.5.4 for CI
+* chg: dev: Set coverage version to 4.5.4 for CI
+* travis coverage config !minor
+* [skip travis] gitchangelog config !minor
+
+1.1.2
+-----
+
+* travis config !minor
+* new: Django 3.0 support
+
+1.1.1
+-----
+
+* chg: Admin app now shows content of GroupMapping instead of GroupMapping N
+* fix: updated usage docs !minor
+* new: Added normal django app name
+* new: Django Admin for Groups mapping now available to all staff (user.is\_staff) users
+
+1.1.0
+-----
+
+* fix: dev: flake8
+* new: added Group Mapping to admin
+* chg: coveralls !minor
+
+1.0.9
+-----
+
+* chg: PyPI config
+* Bump main dev version to 2.2.4
+
+1.0.8
+-----
+
+* bandit config !minor
+* bandit !minor
+* travis conf !minor
+* travis conf !minor
+* travis conf !minor
+* travis conf !minor
+
+1.0.7
+-----
+
+* travis conf !minor
+
+1.0.6
+-----
+
+* travis conf !minor
+* new badges !minor
+* coveragerc !minor
+* coveragerc !minor
+* coveragerc !minor
+* coveragerc !minor
+* travis conf !minor
+* travis conf !minor
+* travis conf !minor
+* travis conf !minor
+* travis conf !minor
+
+1.0.5
+-----
+
+* travis conf !minor
+
+1.0.4
+-----
+
+* travis conf !minor
+
+1.0.3
+-----
+
+* travis conf !minor
+* [skip travis] !minor
+* [skip travis] !minor
+* [skip travis] !minor
+
+1.0.2
+-----
+
+* travis conf !minor
+* [skip travis] travis conf !minor
+
+1.0.1
+-----
+
+* [skip travis] readme badges !minor
+* [skip travis] readme badges !minor
+* [skip travis] doc badges !minor
+* [skip travis] doc badges !minor
+
+1.0.0
+-----
+
+* [skip travis] Release 1.0.0 !minor
+* [skip travis] docs !minor
+* [skip travis] docs !minor
+* new: doc: Project documentation !minor
+* new: doc: Project documentation !minor
+* new: doc: Project documentation
+* [skip travis] docs
+* [skip travis] docs
+* Fixed tests for Django < 2.1
+* Fixed tests for Django < 2.1
+* \* Fixed migrations
+* \* Group mapping in permission find \* Group mapping in group mirroring
+* \* Delete field ldap\_group dn \* Add test for future functionality
+* Table for groups mapping
+* Pylint fixes
+* restore tests
+
+0.0.1
+-----
+
+* initial commit

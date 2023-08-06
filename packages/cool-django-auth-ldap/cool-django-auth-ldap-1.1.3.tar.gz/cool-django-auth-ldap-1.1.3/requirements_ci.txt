@@ -1,0 +1,13 @@
+coverage==4.5.4
+coveralls
+mock >= 2.0.0
+python-ldap >= 3.0
+flake8>=2.1.0
+codecov>=2.0.0
+setuptools
+wheel
+twine
+pbr
+gitchangelog
+bandit==1.5.1
+pystache
