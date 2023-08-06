@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: salt-ttp
+Version: 0.1.0
+Summary: SALTSTACK TTP Modules
+Home-page: https://github.com/dmulyalin/salt-ttp
+Author: Denis Mulyalin
+Author-email: d.mulyalin@gmail.com
+License: UNKNOWN
+Description: # SALTSTACK TTP
+        
+        Repository to store TTP based SALTSTACK modules:
+        
+        - salt-ttp execution module
+        - salt-ttp runner module
+        
+        TTP modules [pull request](https://github.com/saltstack/salt/pull/58754)
+        
+        ## Motivation
+        
+        [TTP](https://github.com/dmulyalin/ttp) is a library for parsing semi structured text using templates. 
+        
+        TTP execution and runner modules allow to run commands against minions to obtain text output, parse it using TTP templates and return structured data.
+        
+        Sample use cases that TTP can help to address:
+        
+        - reporting across several minions by parsing text output and returning text tables
+        - transforming text data in structured format for storing in mine
+        - time series data can be produced using TTP templates and pushed to databases using returners
+        - compliance testing by parsing text into structured data with further processing and analysis to detect deviations
+        - Given that text data can be transformed into structured data of arbitrary hierarchy, this modules can significantly expand functionality in the area of minions state analysis and processing.
+        
+        ## Installation
+        
+        To use TTP execution module make sure to install salt-ttp on minion, to use TTP runner module make sure to install salt-ttp on master. 
+        
+        From [PyPi distribution](https://pypi.org/project/salt-ttp/0.1.0/):
+        
+        ```
+        pip install salt-ttp
+        ```
+        
+        From GitHub repository:
+        
+        ```
+        python -m pip install git+https://github.com/dmulyalin/salt-ttp
+        ```
+        
+        To use templates from [TTP templates collection](https://github.com/dmulyalin/ttp_templates), need to install them as well:
+        
+        ```
+        pip install ttp_templates
+        ```
+        
+        # How to use
+        
+        Run commands to explore doc strings for further usage:
+        
+        ```
+        salt minion-id sys.doc ttp
+        ```
+        
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

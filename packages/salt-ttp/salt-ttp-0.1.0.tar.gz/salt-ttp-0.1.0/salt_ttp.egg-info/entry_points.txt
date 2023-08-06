@@ -1,0 +1,5 @@
+
+	[salt.loader]
+    module_dirs=salt_ttp.loader:module_dirs	
+	runner_dirs=salt_ttp.loader:runner_dirs	
+	
