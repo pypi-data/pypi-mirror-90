@@ -1,0 +1,3 @@
+[console_scripts]
+miprimerproyectoexchange = miprimerproyectoexchange.cli:main
+
