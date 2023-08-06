@@ -1,0 +1,15 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_iddata.py,sha256=iYJzA5Am6HVTVN_k32MKCItzPPMe0gUHGnSVxC6LBuw,6258
+test/test_reference.py,sha256=1DHdezn1pwTHDDw5Ds9x3ifeVW-g800rLQoMmdB_qgE,2659
+test/test_utils.py,sha256=RdaWhRXTPnAS4ZlnAu4iOH9Khmfo_EuXaTlMVmEnjoA,2872
+test/test_vrft.py,sha256=-dAqsjNgq6VS5hOBTqLO6N9ch0xbsySnfdCu5Gr9NF0,3932
+vrft/__init__.py,sha256=mRLE9I2xjh_m1jzJgpr10edmBJvom_3PQsPd247ycds,946
+vrft/extended_tf.py,sha256=KUhGc3DXS30x37xkPISoC4KJuCfWW_eflvk-35xRAaA,5040
+vrft/iddata.py,sha256=5m4A0K4oVvEeFJY3p_Tn9bZU7TFJtloxcoG5aiUqM9k,3928
+vrft/utils.py,sha256=Oag613N42RD6kBlTMgKFNADT7pDWla8UgSAT8yBGhxo,4424
+vrft/vrft_algo.py,sha256=I4fA8BfuWlbp2NckSdAZx9M2YKK_vVObJ2Wi-YYULrg,7764
+pythonvrft-0.0.5.dist-info/LICENSE,sha256=U5J70Lc504yHoKgiNv2bBwwt__EcDBGb5QNyAF1QR60,35815
+pythonvrft-0.0.5.dist-info/METADATA,sha256=sUWEXsGkMqMO4eSJRDbXwfAyizdnzVSjebn27GFFsJw,2777
+pythonvrft-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pythonvrft-0.0.5.dist-info/top_level.txt,sha256=r610fJECTPPz-viGn6UAgMl0HbHeN7xVC2zd1iMpUXk,10
+pythonvrft-0.0.5.dist-info/RECORD,,
