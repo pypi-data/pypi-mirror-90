@@ -1,0 +1,6 @@
+pint
+numpy
+matplotlib
+iapws
+scipy
+pyvisa
