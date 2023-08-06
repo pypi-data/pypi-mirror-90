@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ub
+Version: 0.0.2
+Summary: Accessing data in a consistent manner
+Home-page: https://github.com/thorwhalen/ut/tree/master/serialize/data_accessor.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # ub
+        Accessing data in a consistent manner
+        
+        
+        To install:	```pip install ub```
+        
+Platform: any
+Description-Content-Type: text/markdown
