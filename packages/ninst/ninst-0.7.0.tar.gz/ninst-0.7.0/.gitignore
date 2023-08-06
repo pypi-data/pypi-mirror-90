@@ -1,0 +1,12 @@
+*.py[co]
+*.so
+__pycache__/
+
+/niftypet/ninst/_dist_ver.py
+/.eggs/
+/build/
+/dist/
+/*.egg*/
+
+/.coverage*
+/coverage.xml
