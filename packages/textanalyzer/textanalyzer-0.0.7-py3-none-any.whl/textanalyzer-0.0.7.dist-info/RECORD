@@ -1,0 +1,10 @@
+textanalyzer/__init__.py,sha256=9DuMzW_YCbi8Wd26AP9HvO_6Q5brOQ7T_kGXJGOPcsk,415
+textanalyzer/data_utils.py,sha256=Bu0f16-s7Txiy3ZaESzv3N4j2ResOFPxzr5afAvDohI,2702
+textanalyzer/process_utils.py,sha256=gg2VZsZWDhKXtWuDNgjLkvQJopdlXvqSTzNa8RfY8mA,9621
+textanalyzer/tokenization_ko.py,sha256=KajxaQIW5slMb6J-X9Yz68Tl-JbS7tWW3bsoiObq5Zc,6400
+textanalyzer/tokenization_zh.py,sha256=1Q-SugDt3ouMRstJ81Wlhu6ceeJuVQ5rd1i-5QPgoqg,8245
+textanalyzer-0.0.7.dist-info/LICENSE,sha256=G4ncQZmbwf8JxZdJ1414x8Qq0mTG0BbsVSrcfibtETg,1069
+textanalyzer-0.0.7.dist-info/METADATA,sha256=8_pSpQidsOWB88QwHrIdXG6gzF_-zyxt5sfU_VLd-uQ,1072
+textanalyzer-0.0.7.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+textanalyzer-0.0.7.dist-info/top_level.txt,sha256=Yj1QIbXlKU1u9FGd-_rQaNsnXndgkGjngouOI1MApPk,13
+textanalyzer-0.0.7.dist-info/RECORD,,
