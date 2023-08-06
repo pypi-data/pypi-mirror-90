@@ -1,0 +1,9 @@
+pandas
+sympy
+xlrd
+matplotlib
+tqdm
+statsmodels
+
+[forecast]
+fbprophet
