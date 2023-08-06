@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: sa818
+Version: 0.1.2
+Summary: SA818 Programming Software
+Home-page: https://github.com/0x9900/SA818/
+Author: Fred C. (W6BSD)
+Author-email: w6bsd@bsdworld.org
+License: BSD
+Description: 
+        Use this software to program the frequency, ctcss, dcs and filters ont
+        the radio module SA818
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
