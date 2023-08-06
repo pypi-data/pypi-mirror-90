@@ -1,0 +1,5 @@
+Unidecode
+backoff
+nest_asyncio
+requests-html
+user_agent
