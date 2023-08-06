@@ -1,0 +1,10 @@
+README.md
+setup.py
+mpip/__init__.py
+mpip/mpip.py
+mpip.egg-info/PKG-INFO
+mpip.egg-info/SOURCES.txt
+mpip.egg-info/dependency_links.txt
+mpip.egg-info/entry_points.txt
+mpip.egg-info/requires.txt
+mpip.egg-info/top_level.txt
