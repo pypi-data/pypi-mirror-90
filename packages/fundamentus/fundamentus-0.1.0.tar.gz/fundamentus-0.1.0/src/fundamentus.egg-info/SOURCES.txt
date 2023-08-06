@@ -1,0 +1,16 @@
+README.md
+setup.py
+bin/fundamentus.csv.py
+bin/magic_formula.simple.py
+src/fundamentus/__init__.py
+src/fundamentus/detalhes.py
+src/fundamentus/logging.py
+src/fundamentus/papel.py
+src/fundamentus/resultado.py
+src/fundamentus/setor.py
+src/fundamentus/utils.py
+src/fundamentus.egg-info/PKG-INFO
+src/fundamentus.egg-info/SOURCES.txt
+src/fundamentus.egg-info/dependency_links.txt
+src/fundamentus.egg-info/requires.txt
+src/fundamentus.egg-info/top_level.txt
