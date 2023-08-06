@@ -1,0 +1,130 @@
+---
+# -*- coding: utf-8 -*-
+#
+# jomiel-kore
+#
+# Copyright
+#  2019-2020 Toni Gündoğdu
+#
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+version: 1
+
+# Formatters
+#
+formatters:
+
+    # See also,
+    #   https://docs.python.org/3/library/logging.html
+    #   https://docs.python.org/3/library/logging.html#logrecord-attributes
+
+    default_formatter:
+        format: '[%(asctime)s] %(levelname)s - %(message)s'
+        datefmt: '%FT%T%z'
+
+    chatter_formatter:
+        format: >-
+            '[%(pathname)s:%(funcName)s:%(lineno)d] %(levelname)s: %(message)s'
+
+    debug_formatter:
+        format: '[%(asctime)s.%(msecs)03d] %(levelname)s - %(message)s'
+        datefmt: '%FT%T'
+
+    syslog_formatter:
+        format: 'jomiel[%(process)s]: %(message)s'
+
+# Handlers
+#
+handlers:   # https://docs.python.org/2/library/logging.handlers.html
+
+    # Stream handlers
+    #
+    stdout_handler:
+        class: logging.StreamHandler
+        formatter: default_formatter
+        stream: ext://sys.stdout
+
+    stderr_handler:
+        class: logging.StreamHandler
+        formatter: default_formatter
+        stream: ext://sys.stderr
+
+    debug_handler:
+        class: logging.StreamHandler
+        formatter: debug_formatter
+        stream: ext://sys.stderr
+
+    chatter_handler:
+        class: logging.StreamHandler
+        formatter: chatter_formatter
+        stream: ext://sys.stderr
+
+    # File handlers
+    #
+    timed_file_handler:
+        class: logging.handlers.TimedRotatingFileHandler
+        formatter: default_formatter
+        filename: jomiel.log
+        backupCount: 4
+        interval: 1
+        when: H
+
+    file_handler:
+        class: logging.handlers.RotatingFileHandler
+        formatter: default_formatter
+        filename: jomiel.log
+        maxBytes: 1048576   # 1024x1024
+        backupCount: 4
+
+    # Syslog handler
+    #
+    syslog_handler:
+        class: logging.handlers.SysLogHandler
+        formatter: syslog_formatter
+        address: /dev/log
+
+# Logger identities
+#
+loggers:
+
+    default:
+        handlers: [stderr_handler]
+        propagate: false
+        level: INFO
+
+    debug:
+        handlers: [debug_handler]
+        propagate: false
+        level: DEBUG
+
+    chatter:    # More verbose than 'debug' above
+        handlers: [chatter_handler]
+        propagate: false
+        level: DEBUG
+
+    stderr_file:
+        handlers: [stderr_handler, file_handler]
+        propagate: false
+        level: INFO
+
+    syslog:
+        handlers: [syslog_handler]
+        propagate: false
+        level: INFO
+
+    file:
+        handlers: [file_handler]
+        propagate: false
+        level: INFO
+
+    timed_file:
+        handlers: [timed_file_handler]
+        propagate: false
+        level: INFO
+
+root:
+    handlers: [stderr_handler]
+    level: INFO
+
+# vim: set ts=4 sw=4 tw=72 expandtab:

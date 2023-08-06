@@ -1,0 +1,10 @@
+configargparse
+pyzmq
+ruamel.yaml
+ujson
+
+[:python_version < "3.7"]
+importlib-resources
+
+[:python_version < "3.8"]
+importlib-metadata

@@ -1,0 +1,9 @@
+
+global-exclude __pycache__
+global-exclude .gitignore
+global-exclude *.py[cod]
+
+prune build/
+
+include CHANGES.md
+include .mdl*
