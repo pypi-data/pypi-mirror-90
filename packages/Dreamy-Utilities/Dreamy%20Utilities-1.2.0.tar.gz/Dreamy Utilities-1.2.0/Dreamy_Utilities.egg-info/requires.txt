@@ -1,0 +1,7 @@
+babel
+bs4
+cloudscraper
+colorama
+termtables
+titlecase
+tldextract
