@@ -1,0 +1,11 @@
+safelog/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+safelog/safelog.asc,sha256=NiN8EIShg_FFJAAw4FqvNYisQsb9QOgqBa3-FM0WBA0,862
+safelog/safelog.py,sha256=UVlMrJa94nEZeONwXykbpAzD_XjtAK5ss2FdN44Vmog,10638
+safelog/safelog.service,sha256=w6Maav4AWgi9uKp3XyPA9eFESErBVKpNC1eAVZW9vNg,286
+safelog/version.py,sha256=tTqC73DBf4CNOYAvNTHHsh3XVvgVrPArgSpEcbx62MI,136
+safelog-1.7.7.data/scripts/safelog,sha256=YVC-_24Hu6-ij_KGZd5TGxcYZ-Ljnm5wS5XBodcw8RI,10627
+safelog-1.7.7.dist-info/LICENSE,sha256=7YbDjPqsBp9Y_gf_4s_cU1GngBEEKqkaBSQw3pywKnM,594
+safelog-1.7.7.dist-info/METADATA,sha256=1Syg_CQ4mWJQNxDvFmXGEV-uZ-ax_sg_BtIE7qMsMQY,1541
+safelog-1.7.7.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+safelog-1.7.7.dist-info/top_level.txt,sha256=dKeFTiqg-Zo43J-1DIHDHVfk9N4UegMlA6SgHunjJWg,8
+safelog-1.7.7.dist-info/RECORD,,
