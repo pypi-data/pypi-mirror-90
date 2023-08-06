@@ -1,0 +1,14 @@
+photomatrix/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+photomatrix/__main__.py,sha256=MIqJYj2DMsABYSiSA7WWzjOwIxv77g_EZNGA2vilda0,514
+photomatrix/arguments.py,sha256=ltBJh1yffZ4IJRejJfMDgUcI_e4rYQz3vS4SSi8Bn1A,10988
+photomatrix/exif.py,sha256=mzOSiX3BI-P_cKPkIxNaAak7WpBsk1iVjW8Z6uLwZDc,475
+photomatrix/finalize.py,sha256=Ep8jraIqaXTZHNMVVmLneClJhgjC6XxipYVqoB7KG9c,152
+photomatrix/matrix.py,sha256=qawdBT-rYN7twE8wWeoZIan8RH6GmWNdaevDI7Fbr3k,1838
+photomatrix/preprocess.py,sha256=4XaSvy77RZ22xn9es5mIToW4frpA09VhB1xMRgnSLSk,1497
+photomatrix/text.py,sha256=o4DjgI3CmoXTiTK2jEWFvyhZGPfXe6SSdgN3JTLOfck,2263
+photomatrix-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+photomatrix-0.0.4.dist-info/METADATA,sha256=8Wsp_66KSmzb0nwb_hRxt2wUwdTvdHYthWQ37HGtLYc,3072
+photomatrix-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+photomatrix-0.0.4.dist-info/entry_points.txt,sha256=LqmzYoQhdEDg3EYU1TaonT5roroIrI-VUHSwk_nRoy8,59
+photomatrix-0.0.4.dist-info/top_level.txt,sha256=8WCNpksgwGey_HdgLR_isf9h-IKmt8j0m8YWC5xzVpk,12
+photomatrix-0.0.4.dist-info/RECORD,,
