@@ -1,0 +1,7 @@
+README.md
+setup.py
+EasyDatabase/__init__.py
+EasyDatabase.egg-info/PKG-INFO
+EasyDatabase.egg-info/SOURCES.txt
+EasyDatabase.egg-info/dependency_links.txt
+EasyDatabase.egg-info/top_level.txt
