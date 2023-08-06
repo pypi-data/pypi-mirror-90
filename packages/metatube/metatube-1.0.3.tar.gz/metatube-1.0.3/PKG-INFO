@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: metatube
+Version: 1.0.3
+Summary: Download YouTube metadata for videos relating to a search query
+Home-page: https://gitlab.com/christoph.fink/metatube
+Author: Christoph Fink
+Author-email: christoph.fink@helsinki.fi
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
