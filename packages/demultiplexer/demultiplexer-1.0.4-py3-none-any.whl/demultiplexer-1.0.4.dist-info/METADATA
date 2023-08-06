@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: demultiplexer
+Version: 1.0.4
+Summary: python script to demultiplex illumina reads tagged with the leeselab tagging scheme
+Home-page: https://github.com/DominikBuchner/demultiplexer
+Author: Dominik Buchner
+Author-email: dominik.buchner524@googlemail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: PySimpleGUI (>=4.19.0)
+Requires-Dist: openpyxl (>=3.0.3)
+Requires-Dist: psutil (>=5.7.3)
+Requires-Dist: biopython (>=1.78)
+Requires-Dist: joblib (>=0.16.0)
+
+# demultiplexer
+ python script to demultiplex illumina reads tagged with the leeselab tagging scheme
+
+## Installation and startup
+To install:
+
+`pip install demultiplexer`
+
+To run open the terminal and type:
+
+`demultiplexer`
+
+## Tutorial
+To run the program download the tutorial data from the repository.  
+Load the files into demultiplexer.  
+Load the primerset containing the information for the dataset.  
+New primersets can be costumized for your needs with the create primerset button.  
+Create a new tagging scheme with the loaded files and select all combinations used in your dataset.  
+Fill in the samples in the tagging scheme.  
+Hit the demultiplex button. If needed the tags can be removed from the sequences.  
+
+
