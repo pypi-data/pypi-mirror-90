@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ej
+Version: 0.0.2
+Summary: String generation
+Home-page: https://github.com/thorwhalen/ut/tree/master/pstr/gen.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # ej
+        String generation
+        
+        
+        To install:	```pip install ej```
+        
+Platform: any
+Description-Content-Type: text/markdown
