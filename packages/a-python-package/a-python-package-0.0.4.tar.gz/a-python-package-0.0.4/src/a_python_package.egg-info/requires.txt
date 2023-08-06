@@ -1,0 +1,12 @@
+
+[docs]
+sphinx
+sphinx-rtd-theme
+
+[lint]
+pylama
+isort
+
+[test]
+pytest
+coverage
