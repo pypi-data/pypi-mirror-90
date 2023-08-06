@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pytanga
+Version: 1.0.7
+Summary: Python Library to simplify NETCONF payload creation
+Home-page: https://github.com/renatoalmeidaoliveira/Pytanga
+Author: Renato Almeida de Oliveira
+Author-email: renato.almeida.oliveira@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://pytanga.renatooliveira.eng.br
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Welcome to Pytanga’s documentation!
+Pytanga is a Python library that aims to simplify YANG payload creation, its architecture is based on the Composite and Visitor design patterns.
+
+Similar to YANG models where a container can have leaves and other containers, building a part-whole architecture. Pitanga modules define a component with attributes (leaves), and children that represent the inner containers of the module.
+
+For the data output, Pytanga implements a Visitor Pattern that is injected in each component and build the desired output, currently implemented only for NETCONF.
+
+With that architecture, it is possible to define the YANG models’ logic and syntax tests decoupled of the payload generation.
+
+Documentation link: https://pytanga.renatooliveira.eng.br/
+
+
