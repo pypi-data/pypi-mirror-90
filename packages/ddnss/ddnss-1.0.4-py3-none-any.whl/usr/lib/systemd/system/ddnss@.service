@@ -1,0 +1,9 @@
+[Unit]
+Description=Update ddnss.de entry for %i
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+User=ddnss
+Group=ddnss
+ExecStart=/usr/bin/ddnssupd %i

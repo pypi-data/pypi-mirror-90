@@ -1,0 +1,10 @@
+ddnss.py,sha256=jkrHoTIbtYCCnqdq7AbOJDR66Oip-Iz8Dvzmo2KVfUc,2680
+usr/lib/systemd/system/ddnss@.service,sha256=JZgSkYkpXyoJy-jOsNrKsf0LaX8nJlj_epwa8GAA1NQ,172
+usr/lib/systemd/system/ddnss@.timer,sha256=1YFfcsNJgJZs26SlTYZpvbUMOP3ddc6FZIOzF_R3M_o,141
+usr/lib/sysusers.d/ddnss.conf,sha256=-ec12sIC42-5j0gdJ8clxcCq8Qs5BOzOq8_yw5KufYE,103
+ddnss-1.0.4.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+ddnss-1.0.4.dist-info/METADATA,sha256=ZA99U9hAGGwzUxMTZl_oV0gQpSGsUOiymwqzPL2iuqs,1587
+ddnss-1.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ddnss-1.0.4.dist-info/entry_points.txt,sha256=S5CsEj04XZuF8fSiw3WiDPiUV9Q69t879YcUyevksJM,41
+ddnss-1.0.4.dist-info/top_level.txt,sha256=EufM2vd7FCLkV2CE63q_wJFBPheq-buc0EhvJnv5-co,6
+ddnss-1.0.4.dist-info/RECORD,,

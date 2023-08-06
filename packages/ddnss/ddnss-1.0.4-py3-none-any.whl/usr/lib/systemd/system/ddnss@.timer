@@ -1,0 +1,9 @@
+[Unit]
+Description=Hourly update ddnss.de entry for %i
+
+[Timer]
+OnCalendar=hourly
+RandomizedDelaySec=15min
+
+[Install]
+WantedBy=timers.target
