@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: esbn-pytorch
+Version: 0.0.4
+Summary: Emergent Symbol Binding Network - Pytorch
+Home-page: https://github.com/lucidrains/ESBN-pytorch
+Author: Phil Wang
+Author-email: lucidrains@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: artificial intelligence,deep learning,neuro-symbolic,abstract reasoning,memory
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
