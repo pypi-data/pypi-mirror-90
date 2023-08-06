@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: Urls34
+Version: 0.0.1
+Summary: Simple Url Tool
+Home-page: https://github.com
+Author: None
+Author-email: none@example.com
+License: UNKNOWN
+Description: ```
+        pip install Urls34
+        ```
+        Getting url content
+        ```py
+        import Urls34 as url
+        
+        r=url.urlread("https://pypi.org")
+        print("r")
+        #or if you want a file:
+        import Urls34 as url
+        
+        r=url.urlread("https://pypi.org",file=True,file_name="pypi")
+        ```
+        
+        Get response
+        
+        ```py
+        import Urls34 as url
+        r=url.get_response("https://pypi.org")
+        print(r)
+        ```
+        
+        Connecting to API
+        
+        ```py
+        import Urls34 as url
+        r=url.contact_api("https://covid19-update-api.herokuapp.com/api/v1")
+        print(r[appName])
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
