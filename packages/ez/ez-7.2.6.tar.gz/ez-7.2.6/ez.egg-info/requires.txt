@@ -1,0 +1,15 @@
+pytz
+tzlocal
+Send2Trash
+pyperclip
+gmail
+chardet
+psutil
+xlsxwriter
+xlwt
+xlrd
+PyMuPDF
+python-docx
+pynput
+gspread
+tenacity
