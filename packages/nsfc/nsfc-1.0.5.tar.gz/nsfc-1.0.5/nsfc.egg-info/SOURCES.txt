@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+nsfc/__init__.py
+nsfc.egg-info/PKG-INFO
+nsfc.egg-info/SOURCES.txt
+nsfc.egg-info/dependency_links.txt
+nsfc.egg-info/entry_points.txt
+nsfc.egg-info/requires.txt
+nsfc.egg-info/top_level.txt
+nsfc/bin/__init__.py
+nsfc/util/__init__.py
+nsfc/util/export.py
+nsfc/util/index.html
+nsfc/util/parse_captcha.py
+nsfc/version/version.json
