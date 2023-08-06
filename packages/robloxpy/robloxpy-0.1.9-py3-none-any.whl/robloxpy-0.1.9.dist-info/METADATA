@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: robloxpy
+Version: 0.1.9
+Summary: Wrapper for roblox Web API's
+Home-page: https://github.com/KristanSmout/RobloxPyOfficial
+Author: Kristan Smout
+Author-email: python@kristansmout.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Attribution Assurance License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# RobloxPyReborn
+ Remake of robloxpy
+
+Github URL can be found below
+
+https://github.com/KristanSmout/RobloxPyOfficial
+
