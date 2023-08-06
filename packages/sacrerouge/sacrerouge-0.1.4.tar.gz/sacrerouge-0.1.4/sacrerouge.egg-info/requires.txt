@@ -1,0 +1,12 @@
+googledrivedownloader
+jsons
+lxml
+nltk
+numpy
+overrides
+pytest
+requests
+scipy>=1.5.2
+networkx
+spacy==2.3.3
+matplotlib
