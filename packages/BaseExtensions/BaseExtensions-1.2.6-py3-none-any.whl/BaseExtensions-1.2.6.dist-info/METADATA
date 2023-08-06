@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: BaseExtensions
+Version: 1.2.6
+Summary: UNKNOWN
+Home-page: https://github.com/Jakar510/BaseExtensions
+Author: Tyler Stegmaier
+Author-email: tyler.stegmaier.510@gmail.com
+Maintainer: Tyler Stegmaier
+Maintainer-email: tyler.stegmaier.510@gmail.com
+License: MIT
+Keywords: BaseExtensions Base Extensions
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: Free To Use But Restricted
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: pillow (>=8.1.0)
+
+# BaseExtensions
+
+
+
+
+## Contributing
+
+Please read [CONTRIBUTING.md](.github/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+
+## Authors
+
+
+
+## License
+
+This project is licensed under the GNU GENERAL PUBLIC LICENSE Version 3 License - see the [LICENSE](LICENSE.md) file for details
+
+## Acknowledgments
+
+
+
