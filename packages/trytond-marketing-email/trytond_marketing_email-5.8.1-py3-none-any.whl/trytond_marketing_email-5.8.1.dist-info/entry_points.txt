@@ -1,0 +1,4 @@
+
+    [trytond.modules]
+    marketing_email = trytond.modules.marketing_email
+    
