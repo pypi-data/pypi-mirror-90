@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: stardustlib
+Version: 0.0.1
+Summary: Package to interact with the stardust database.
+Home-page: https://github.com/galactic-forensics/stardustlib
+License: UNKNOWN
+Author: Reto Trappitsch
+Author-email: reto@galactic-forensics.space
+Classifier: License :: OSI Approved :: MIT License
