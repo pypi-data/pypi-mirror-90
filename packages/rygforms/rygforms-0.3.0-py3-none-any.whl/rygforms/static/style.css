@@ -1,0 +1,77 @@
+.bluelib {
+    background-color: #0d193b;
+    color: #a0ccff;
+    font-family: sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    font-weight: normal;
+    text-align: center;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+a {
+    color: #00caca;
+    text-decoration: none;
+}
+
+pre, code {
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.title {
+    display: grid;
+    margin: 32px;
+    justify-content: center;
+    grid-template-columns: 256px 420px;
+    box-sizing: border-box;
+}
+
+.logo {
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    height: 256px;
+    border-radius: 128px;
+    box-sizing: border-box;
+}
+
+.logo-text {
+    grid-column: 2;
+    text-align: center;
+    grid-row: 1;
+    align-self: end;
+    font-size: 50px;
+    color: #fff;
+}
+
+.box {
+    box-sizing: border-box;
+    border: 2px solid rgba(160, 204, 255, .1);
+    color: #a0ccff;
+    background-color: rgba(160, 204, 255, .02);
+    padding: 8px;
+    border-radius: 4px;
+    margin: 4px;
+    min-width: 256px
+}
+
+.logo-subtitle {
+    grid-row: 2;
+    align-self: start;
+    font-size: medium;
+    max-width: 420px;
+    grid-column: 2;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+}

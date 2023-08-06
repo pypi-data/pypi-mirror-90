@@ -1,0 +1,34 @@
+{% extends "stampo.htm"%}
+{% block title %}Welcome{% endblock %}
+{% block content %}
+<div class="title">
+    <img class="logo" src="https://ryg.s3.fr-par.scw.cloud/logos/blue/logo.svg">
+    <div class="logo-text">Form Guardian</div>
+    <div class="logo-subtitle">Sistema per l'autenticazione pre-sondaggi RYG</div>
+</div>
+<div class="row">
+    <div class="box">
+        <h5>Cos'è questo sito?</h5>
+        Questo sito permette di creare link per form che automatizzano il processo di autenticazione pre-sondaggio, in
+        modo
+        da poter evitare contraffazioni di voto (voto da parte di membri non RYG, voti duplicati ...).
+    </div>
+    <div class="box">
+        <h5>Ho un problema con il sito. Chi posso contattare?</h5>
+        Scrivi nel gruppo! Sicuramente qualcuno con molto tempo e capacità sarà in grado di aiutarti... Anche perchè,
+        nel
+        caso ci sia un problema, molti utenti incontreranno le tue stesse difficoltà!
+    </div>
+    <div class="box">
+        <h5>Ho dei miglioramenti da proporre!</h5>
+        Grandioso! Sentiti pure libero di consultare il codice su <a
+            href="https://github.com/RYGhub/rygforms">github</a> e/o aprire una issue!
+    </div>
+</div>
+<br>
+<footer class="box" style="text-align: center">
+    Sviluppato dal team IT della RYG. Basato e rossopillato su <a href="https://github.com/LBindustries/Gestione">Gestione
+    1.05
+    Permafrost</a>.
+</footer>
+{% endblock %}
