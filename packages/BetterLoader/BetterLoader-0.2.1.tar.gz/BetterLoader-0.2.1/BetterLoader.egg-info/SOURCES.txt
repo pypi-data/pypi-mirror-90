@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+BetterLoader.egg-info/PKG-INFO
+BetterLoader.egg-info/SOURCES.txt
+BetterLoader.egg-info/dependency_links.txt
+BetterLoader.egg-info/requires.txt
+BetterLoader.egg-info/top_level.txt
+betterloader/DatasetFolder.py
+betterloader/ImageFolderCustom.py
+betterloader/__init__.py
+betterloader/defaults.py
+betterloader/standard_transforms.py
