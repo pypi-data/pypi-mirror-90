@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: scikit-mcda
+Version: 0.0.5
+Summary: Library for Multi-criteria Decision Aid Methods
+Home-page: https://gitlab.com/cybercrafter/scikit-mcda
+Author: Antonio Horta
+Author-email: horta@cybercrafter.com.br
+License: Apache License 2.0
+Description: ===========
+        scikit-mcda
+        ===========
+        
+        A python library made to provide multi-criteria decision aid for developers and operacional researchers.
+        
+        Quick start
+        -----------
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
