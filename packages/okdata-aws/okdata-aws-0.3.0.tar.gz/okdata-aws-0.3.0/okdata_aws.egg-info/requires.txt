@@ -1,0 +1,3 @@
+okdata-sdk>=0.5.1
+pydantic
+structlog
