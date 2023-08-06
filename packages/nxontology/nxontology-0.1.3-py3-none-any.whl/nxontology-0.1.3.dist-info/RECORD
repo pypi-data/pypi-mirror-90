@@ -1,0 +1,17 @@
+nxontology/__init__.py,sha256=-MXPDcqWmaC7eBcWiBMv48gJtuqUIa17KRyZaNPY7oo,117
+nxontology/examples.py,sha256=JXQCoIjGHYs1_3CdUJ_A9DumRZij1PEWDvLDDH7cyNM,1360
+nxontology/exceptions.py,sha256=7rZGvmuCW8l_PwhrRr3Vh9ry8I_9QeaVTFlyt6Srj4w,607
+nxontology/ontology.py,sha256=FVf-jkgZkjDsE4mCqdmMUibkoVmSJ53ULiimZk6ha_k,23542
+nxontology/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nxontology/viz.py,sha256=iLXAnKS5nXCGeWVkyAoRhAwmYScsDUeqcFUTXtz-xzY,6162
+nxontology/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nxontology/tests/conftest.py,sha256=MJCynHAuaUoleCvHGGNq409VlbSvQanetg85MmwcRf0,595
+nxontology/tests/ontology_test.py,sha256=GiFM64PHKjuHOFIzfPrRC-m1mqfYEoWPyHpkF4O1PLg,8765
+nxontology/tests/ontology_test_disconnected_sim.tsv,sha256=AFjXwMAptlCh6xTGgF49osnAAauqEbuoNnOvd1Vb4nQ,7468
+nxontology/tests/ontology_test_metal_sim.tsv,sha256=R5X3IjG2kSj-fRvhFsdITj5SmjfK31Jqo6j-pQ5VNLU,11232
+nxontology/tests/viz_test.py,sha256=PYQyJXBRS8rl0ilH5hQFy9EwzCCOJrpE1qKncAcUoYE,1328
+nxontology-0.1.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nxontology-0.1.3.dist-info/METADATA,sha256=BGPYX2k0SbOt-5l7uT_bBqagZHs1YRp5Jz9hTVjo1qs,13782
+nxontology-0.1.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nxontology-0.1.3.dist-info/top_level.txt,sha256=AivMDkUeWjxhFZ-BGRWJ4lsXGd_Zu-7_I7Ef_-xu3PI,11
+nxontology-0.1.3.dist-info/RECORD,,
