@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: lboxd
+Version: 1.0.0
+Summary: Letterboxd user tools.
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.8.5,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: requests (>=2.0.0,<3.0.0)
+Requires-Dist: rich (>=9.6.1,<10.0.0)
+Description-Content-Type: text/markdown
+
+
+# letterboxd
+
+![Redlettermedia example](./geta-all-example.gif)
+
+python3 movies.py
+
+Arguments
+
+  `--user USER` `-u USER`   letterboxd.com user
+
+  `--reviews` `-r`          Gets reviews
+
+  `--testing` `-t`          Testing flag - for development only
+
+  `--save-json` `-j`        Saves a JSON file of the reviews dictionary
+
+  `--save-html` `-w`          Saves an HTML document for easily viewing reviews
+
+  `--browser-open` `-b`        Opens saved HTML document in the browser
+
+  `--search SEARCH [SEARCH ...]` `-s SEARCH [SEARCH ...]`
+
