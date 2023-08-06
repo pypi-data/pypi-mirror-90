@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+lintipy.py
+setup.cfg
+setup.py
+workflow.svg
+.github/workflows/ci.yml
+.github/workflows/release.yml
+lintipy.egg-info/PKG-INFO
+lintipy.egg-info/SOURCES.txt
+lintipy.egg-info/dependency_links.txt
+lintipy.egg-info/requires.txt
+lintipy.egg-info/top_level.txt
