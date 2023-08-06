@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: xv
+Version: 0.0.2
+Summary: yboss slurping
+Home-page: https://github.com/thorwhalen/ut/tree/master/slurp/yboss.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# xv
+yboss slurping
+
+
+To install:	```pip install xv```
+
+
