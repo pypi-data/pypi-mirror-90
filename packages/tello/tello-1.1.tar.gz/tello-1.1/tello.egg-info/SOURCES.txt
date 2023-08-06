@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+tello/__init__.py
+tello/commands.py
+tello/missionpads.py
+tello.egg-info/PKG-INFO
+tello.egg-info/SOURCES.txt
+tello.egg-info/dependency_links.txt
+tello.egg-info/top_level.txt
