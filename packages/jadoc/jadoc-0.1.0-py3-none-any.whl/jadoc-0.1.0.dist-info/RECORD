@@ -1,0 +1,12 @@
+jadoc/__init__.py,sha256=kduBB_M5X52_VWbRU1DgrMyjrAUuFF-9jXK7JwA18v4,292
+jadoc/cform.py,sha256=6l9zJHBvlqjjXrEAZV7mmiH0n35B580mG75sdRjdyOc,2878
+jadoc/conj.py,sha256=EvX7d966Ldrz0BE2EYllIGvrlBDIJC6wxxjFhBnAfm0,1913
+jadoc/ctype.py,sha256=xAg_xhOHY5Kf7a0nN7sN_IqmpKeHK6Qv1SPO51co0ls,12711
+jadoc/doc.py,sha256=8yJ8hpXNf6CYzcEEokOufbeYfGz87OatSc2zpf271fY,6970
+jadoc/errors.py,sha256=-gS8wnJT_Mw7TNQcEEOn8oFNqvSrHBmEo6leJAmPkyI,538
+jadoc/pos.py,sha256=rZKp19IcsuSjfn66g6pUi9vx0CwXW1-jZ_r3GiM_Mvk,3602
+jadoc/utils.py,sha256=w4O9tpfGw7x8r-yDdbLeYMGtThXKrYarFb0qER80wI0,433
+jadoc-0.1.0.dist-info/LICENSE,sha256=1o0CwV1HJyG2swhVeX7Q3TugAPD6zUkWArTRWEUa_NE,11336
+jadoc-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+jadoc-0.1.0.dist-info/METADATA,sha256=xV5EKp2JDcxC4XvUD76qed4TelbvItsLu-ZtdJsB5-4,1924
+jadoc-0.1.0.dist-info/RECORD,,
