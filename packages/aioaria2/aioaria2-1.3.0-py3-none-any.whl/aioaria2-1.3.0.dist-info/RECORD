@@ -1,0 +1,12 @@
+aioaria2/__init__.py,sha256=0GXbiFPhkJvmAyzfxKWlApb0nWhle6bhrYRJkZD0mQc,1270
+aioaria2/client.py,sha256=Ldd1yYHAozMDaTgZuN-xgey-uoWIuCqd4mEBnUHTqGI,41715
+aioaria2/exceptions.py,sha256=DdMJZru7qFj5PD79SNh_DbQ8JoEv53JDXdutwUdzrZs,485
+aioaria2/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aioaria2/server.py,sha256=xibd3Zr_bPwkORIZfHb_cXB6t2CyQTJyFYej0WVwr28,3524
+aioaria2/typing.py,sha256=Uv-UmLxgaD30W8cMdtc6EuhCGTTQdtHXe10Kkli3Akk,672
+aioaria2/utils.py,sha256=YDsAC0XWxMPAEzePg8rwrt--xs8NfAJ-p5hCg69Ppt8,4499
+aioaria2-1.3.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+aioaria2-1.3.0.dist-info/METADATA,sha256=3LGbezupWgvAbAlVRM973alpvs7nFZRif3xd7GzaPNM,4564
+aioaria2-1.3.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+aioaria2-1.3.0.dist-info/top_level.txt,sha256=rhXZD5Wc96QhU1UULGiPLOpf93EPhDLLm0VG-fJnwgw,9
+aioaria2-1.3.0.dist-info/RECORD,,
