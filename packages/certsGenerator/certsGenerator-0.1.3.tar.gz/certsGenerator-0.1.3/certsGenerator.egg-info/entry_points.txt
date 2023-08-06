@@ -1,0 +1,3 @@
+[console_scripts]
+certsGenerator = certsGenerator.main:cli
+
