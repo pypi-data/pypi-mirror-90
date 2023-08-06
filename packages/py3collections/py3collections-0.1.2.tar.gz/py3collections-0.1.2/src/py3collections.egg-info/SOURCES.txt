@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+./scripts/converter
+./scripts/filefind
+src/py3collections.egg-info/PKG-INFO
+src/py3collections.egg-info/SOURCES.txt
+src/py3collections.egg-info/dependency_links.txt
+src/py3collections.egg-info/entry_points.txt
+src/py3collections.egg-info/top_level.txt
+src/pycollections/__init__.py
+src/pycollections/profiler.py
