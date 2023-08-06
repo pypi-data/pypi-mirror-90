@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyaudiopdf
+Version: 0.0.2
+Summary: This package can read out Pdf file..
+Home-page: UNKNOWN
+Author: Akshat Tiwari
+Author-email: thealphacoding@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyttsx3
+Requires-Dist: pyPDF2
+
+# pyaudiopdf
+It take 2 arguments i.e. pdf file name or location of pdf file and page number.
+
+## Installation
+'''pip install pyaudiopdf'''
+
+## How to use it?
+
+## pyaudiopdf.readpdf( pdf = 'ip.pdf' , page_number = 3 ) 
+
