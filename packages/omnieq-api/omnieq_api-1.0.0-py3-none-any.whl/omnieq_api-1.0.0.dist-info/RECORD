@@ -1,0 +1,10 @@
+omnieq/__init__.py,sha256=gz_xlj4E7DHonulAmPluVoYazoGcHnRpaiXNFdp6mRk,87
+omnieq/client.py,sha256=gEKU1xO7zroFdZ0YvxQ6mr8QnBcMkSzxm9Ftq1StLaQ,9846
+omnieq/httpapi.py,sha256=OcuSXoughOLZtLkdNp2pjDZM2YU3l7W-gFBfujcZqE4,4429
+omnieq/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omnieq/utils/pd_funcs.py,sha256=udxSeHbkmRxo7kCxad1_ycua2YuCoUIjMG2nY3eCjc0,5893
+omnieq/utils/symbol_funcs.py,sha256=eTeSY2NRlVc7qPbIa5QG5AloltholAIteIa_6RUYRZI,986
+omnieq_api-1.0.0.dist-info/METADATA,sha256=Bl7Zwms04tLmU91VHbJOUkhPwkrlNcQIBO3G1DgD938,2313
+omnieq_api-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+omnieq_api-1.0.0.dist-info/top_level.txt,sha256=LY2SxLaPc5-8QjJrFoudjMsnraEQ8Wxsg1YNonarsS8,7
+omnieq_api-1.0.0.dist-info/RECORD,,
