@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pheidi
+Version: 0.0.12
+Summary: High speed ring buffer messaging system using shared memory
+Home-page: https://github.com/aschi2/pheidi
+Author: Austin
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: msgpack
+Requires-Dist: msgpack-numpy
+
+# pheidi
+High speed ring buffer messaging system using shared memory
+
+See test.py for usage examples
+
+Currently supports any data serializable by msgpack and msgpack_numpy
+
+TODO:
+
+Finish consumeb implementation
+
+Add True safety using multiprocessing manager
+
+Early Stage, Backwards compatibility not guaranteed or expected
+
+MIT
+
+
