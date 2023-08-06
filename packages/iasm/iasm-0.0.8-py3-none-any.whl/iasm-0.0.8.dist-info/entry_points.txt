@@ -1,0 +1,3 @@
+[console_scripts]
+iasm = iasm.iasm:main
+
