@@ -1,0 +1,13 @@
+solari/__init__.py,sha256=oGtA8yd1iILo0BVGnF2IyGfH4YdTe6CC9ceR32269Mo,25
+solari/solari.py,sha256=l0vEgEF-M3e0HtjZqbXFRMLhcDe4EvQ77SecFAvQ8oQ,2635
+solari/untitled.py,sha256=ERXuY-ce12SNfaGRTaeGuZg1rW6qQEosBeFTmI9E_7s,521
+solari/stats/__init__.py,sha256=QwDz_qo5eNcy30GU_7i2fqEsEpYmXJ504Zpura4YsaE,347
+solari/stats/champions_rate_stats.py,sha256=NudLv9IAEQgF7qdsfP_ggOhqSqyvjbzoyWBqEXxLwmA,4859
+solari/stats/champions_stats.py,sha256=YHzqlsN1zHwLQPGGC5w60emT5ov65nJH4Rig4SBGu2k,4426
+solari/stats/items_rate_stats.py,sha256=MG4cx7ihYwcNds-JaLqvRpFVQz6SlVabO44voSKU3CI,3093
+solari/stats/stats_managers.py,sha256=huvh-0PVpjFiY23BUQ2DjiHJ5EsMg_LiRf11errfsN0,6211
+solari/stats/stats_types.py,sha256=3OAdlSNpunQKqNPUiWDTgpKwSJheEm5JRQWqS3SFFBs,2576
+solari-0.0.1a1.dist-info/METADATA,sha256=gfIIqCRTVKC6wck4Tlu6jqv_-dT5vzpDsUy0yhQfdNs,2226
+solari-0.0.1a1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+solari-0.0.1a1.dist-info/top_level.txt,sha256=lcM04E6C7H8AO3DdHLdCPSfm5y-0BzNn9rEDZR3nhLs,7
+solari-0.0.1a1.dist-info/RECORD,,
