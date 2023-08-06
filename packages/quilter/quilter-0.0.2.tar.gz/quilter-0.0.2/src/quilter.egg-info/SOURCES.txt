@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/quilter/__init__.py
+src/quilter.egg-info/PKG-INFO
+src/quilter.egg-info/SOURCES.txt
+src/quilter.egg-info/dependency_links.txt
+src/quilter.egg-info/requires.txt
+src/quilter.egg-info/top_level.txt
