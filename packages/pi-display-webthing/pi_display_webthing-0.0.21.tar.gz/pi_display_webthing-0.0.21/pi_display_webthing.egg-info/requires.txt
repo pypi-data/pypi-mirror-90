@@ -1,0 +1,3 @@
+webthing
+smbus2
+RPLCD
