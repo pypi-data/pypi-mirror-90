@@ -1,0 +1,7 @@
+README.md
+setup.py
+valdec.py
+valdec.egg-info/PKG-INFO
+valdec.egg-info/SOURCES.txt
+valdec.egg-info/dependency_links.txt
+valdec.egg-info/top_level.txt
