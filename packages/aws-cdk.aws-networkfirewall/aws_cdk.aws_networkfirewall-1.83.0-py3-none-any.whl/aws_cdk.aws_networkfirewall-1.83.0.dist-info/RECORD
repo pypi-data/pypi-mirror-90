@@ -1,0 +1,8 @@
+aws_cdk/aws_networkfirewall/__init__.py,sha256=c4WC4vdpNcUwQB0F53BbqgWRUxXe-qxKBBtFCFbhI6w,165999
+aws_cdk/aws_networkfirewall/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_networkfirewall/_jsii/__init__.py,sha256=b7B_Co6prC__zf6mzXk30ZMAaATg1uwE0n1GLSrvPVw,376
+aws_cdk/aws_networkfirewall/_jsii/aws-networkfirewall@1.83.0.jsii.tgz,sha256=zXjkH-AwgfFhYPOwtoP3vAWTZK8ebeh-zErsLiq63No,65550
+aws_cdk.aws_networkfirewall-1.83.0.dist-info/METADATA,sha256=juU1KCi7Buskz9QO4Dk0JeewuDYbPkt61dHo1wQQ2bk,1693
+aws_cdk.aws_networkfirewall-1.83.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_networkfirewall-1.83.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_networkfirewall-1.83.0.dist-info/RECORD,,
