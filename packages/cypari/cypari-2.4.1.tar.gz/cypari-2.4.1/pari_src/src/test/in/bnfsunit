@@ -1,0 +1,35 @@
+default(realprecision,38);
+default(parisize,"20M");
+bnf=bnfinit(x^3-2); S=idealfactor(bnf,2*3*5*7)[,1];
+B=bnfsunit(bnf,S);
+B[1]
+B[4]
+B[5]
+bnfissunit(bnf,B,x)
+bnfissunit(bnf,B,x+2)
+bnfissunit(bnf,B,x+100)
+bnfisunit(bnf, x+100)
+
+S=bnfsunit(bnf,[]);
+bnfissunit(bnf,S,bnf.fu[1])
+
+bnf=bnfinit(x^2+23); S=bnfsunit(bnf,idealprimedec(bnf,2)[1..1]);
+S[1]
+S[4]
+S[5]
+
+bnf=bnfinit(x^2-210); S=bnfsunit(bnf,idealprimedec(bnf,2)[1..1]);
+S[1]
+S[4]
+S[5]
+
+\\ #2207
+setrand(1);
+L=bnfinit(x^6-68463*x^4-5120808*x^3+1250774892*x^2+192368273328*x+7520491439712,1);
+S2=vecextract(idealprimedec(L,2), [3,2,1]);
+S7=idealprimedec(L,7);
+S13=vecextract(idealprimedec(L,13), [1,3,2]);
+S5=idealprimedec(L,5);
+S=concat([S2,S7,S13,S5]);
+sfu = bnfsunit(L,S);
+apply(u->bnfissunit(L,sfu,u),sfu[1])
