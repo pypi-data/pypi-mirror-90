@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: loadmydata
+Version: 0.0.3.dev0
+Summary: Collections of utility functions to download open-source data sets.
+Home-page: https://github.com/deepcharles/loadmydata
+Author: Charles T.
+Author-email: charles@doffy.net
+License: BSD-2-Clause
+Project-URL: Documentation, https://github.com/deepcharles/loadmydata/
+Project-URL: Source, https://github.com/deepcharles/loadmydata/
+Project-URL: Bug Tracker, https://github.com/deepcharles/loadmydata/issues
+Description: # loadmydata
+        Utility functions for loading data sets.
+        
+        ## UEA/UCR time series classification repository
+        
+        The list of available data sets from UEA/UCR repository is available [here](http://www.timeseriesclassification.com/dataset.php).
+        
+        ## Install
+        
+        Use `pip` to install.
+        
+        ```
+        pip install loadmydata
+        ```
+        
+        ## Usage
+        
+        ```python
+        from loadmydata.load_uea_ucr import load_uea_ucr_data
+        
+        dataset_name = "ArrowHead"  # "AbnormalHeartbeat", "ACSF1", etc. 
+        data = load_uea_ucr_data(dataset_name)
+        
+        print(data.description)
+        print(data.X_train.shape)
+        print(data.X_test.shape)
+        print(data.y_train.shape)
+        print(data.y_test.shape)
+        ```
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
