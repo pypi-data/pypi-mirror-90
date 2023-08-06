@@ -1,0 +1,11 @@
+LICENSE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+cmdb_supplement_syncpack/__init__.py
+cmdb_supplement_syncpack.egg-info/PKG-INFO
+cmdb_supplement_syncpack.egg-info/SOURCES.txt
+cmdb_supplement_syncpack.egg-info/dependency_links.txt
+cmdb_supplement_syncpack.egg-info/top_level.txt
