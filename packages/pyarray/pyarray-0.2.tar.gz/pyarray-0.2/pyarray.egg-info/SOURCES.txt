@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyarray/__init__.py
+pyarray/lists.py
+pyarray/types.py
+pyarray.egg-info/PKG-INFO
+pyarray.egg-info/SOURCES.txt
+pyarray.egg-info/dependency_links.txt
+pyarray.egg-info/top_level.txt
