@@ -1,0 +1,7 @@
+image: debian/sid
+packages:
+  - tox
+sources:
+  - https://github.com/McSinyx/anage
+tasks:
+  - test: tox -c anage
