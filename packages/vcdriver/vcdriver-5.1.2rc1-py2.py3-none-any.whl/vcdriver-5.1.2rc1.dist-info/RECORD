@@ -1,0 +1,12 @@
+vcdriver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vcdriver/config.py,sha256=jrxSYRBIg85mL3A7J2dJkjFQ9ylEeg5LfIVticBxZWc,3308
+vcdriver/exceptions.py,sha256=NnkIzPpdc_wOfq9k-7ZX_YtDmJJ-zUatdn1YXMMZ96o,2069
+vcdriver/folder.py,sha256=_UCJDaEOb2USz4GRntpOQaIVOK3-8v2Tm_o1S1MH0uA,889
+vcdriver/helpers.py,sha256=1wuk8sX1lc_Ld61LOj3ZPxQdeDt5X80WqCpG1YI4OYI,7300
+vcdriver/session.py,sha256=Ahhz5PnL5HtR0eswgB-Tz2GZq3Ys37YQg5-x_NVlsZc,1625
+vcdriver/vm.py,sha256=eCmJuvk66mdBquURErhi24M5Y4ekbTHo3RaYMp8d69g,28152
+vcdriver-5.1.2rc1.dist-info/LICENSE,sha256=ts-YmKe-h4uzWdVc8hgqtRDqJ8PEeE2jFEpPMBy-ihQ,1064
+vcdriver-5.1.2rc1.dist-info/METADATA,sha256=JEsQF8VmMNqMAquopTjPtEMaqGvdc9ZMJDLCZmBWgH4,1265
+vcdriver-5.1.2rc1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+vcdriver-5.1.2rc1.dist-info/top_level.txt,sha256=jwSjV9iSj_Nqez5gmh9-2hiqf_b9TgtCmnuuvAW5O2o,9
+vcdriver-5.1.2rc1.dist-info/RECORD,,
