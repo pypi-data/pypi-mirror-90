@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: tsetmc-webservice
+Version: 1.0.0
+Summary: api to communicate with tsetmc webservice (the paid one)
+Home-page: https://github.com/mahs4d/tsetmc-webservice/
+Author: Mahdi Sadeghi
+Author-email: mail2mahsad@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/mahs4d/tsetmc-webservice/issues
+Project-URL: Source, https://github.com/mahs4d/tsetmc-webservice/
+Keywords: sample setuptools development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: appdirs
+Requires-Dist: attrs
+Requires-Dist: cached-property
+Requires-Dist: certifi
+Requires-Dist: chardet
+Requires-Dist: defusedxml
+Requires-Dist: idna
+Requires-Dist: isodate
+Requires-Dist: lxml
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: requests
+Requires-Dist: requests-file
+Requires-Dist: requests-toolbelt
+Requires-Dist: six
+Requires-Dist: urllib3
+Requires-Dist: zeep
+Provides-Extra: dev
+Requires-Dist: appdirs ; extra == 'dev'
+Requires-Dist: attrs ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: bleach ; extra == 'dev'
+Requires-Dist: cached-property ; extra == 'dev'
+Requires-Dist: cerberus ; extra == 'dev'
+Requires-Dist: certifi ; extra == 'dev'
+Requires-Dist: cffi ; extra == 'dev'
+Requires-Dist: chardet ; extra == 'dev'
+Requires-Dist: click ; extra == 'dev'
+Requires-Dist: colorama ; extra == 'dev'
+Requires-Dist: cryptography ; extra == 'dev'
+Requires-Dist: distlib ; extra == 'dev'
+Requires-Dist: docutils ; extra == 'dev'
+Requires-Dist: idna ; extra == 'dev'
+Requires-Dist: jeepney ; extra == 'dev'
+Requires-Dist: keyring ; extra == 'dev'
+Requires-Dist: orderedmultidict ; extra == 'dev'
+Requires-Dist: packaging ; extra == 'dev'
+Requires-Dist: pathspec ; extra == 'dev'
+Requires-Dist: pep517 ; extra == 'dev'
+Requires-Dist: pip-shims ; extra == 'dev'
+Requires-Dist: pipenv-setup ; extra == 'dev'
+Requires-Dist: pipfile ; extra == 'dev'
+Requires-Dist: pkginfo ; extra == 'dev'
+Requires-Dist: plette[validation] ; extra == 'dev'
+Requires-Dist: pycparser ; extra == 'dev'
+Requires-Dist: pygments ; extra == 'dev'
+Requires-Dist: pyparsing ; extra == 'dev'
+Requires-Dist: python-dateutil ; extra == 'dev'
+Requires-Dist: readme-renderer ; extra == 'dev'
+Requires-Dist: regex ; extra == 'dev'
+Requires-Dist: requests ; extra == 'dev'
+Requires-Dist: requests-toolbelt ; extra == 'dev'
+Requires-Dist: requirementslib ; extra == 'dev'
+Requires-Dist: rfc3986 ; extra == 'dev'
+Requires-Dist: secretstorage ; extra == 'dev'
+Requires-Dist: six ; extra == 'dev'
+Requires-Dist: toml ; extra == 'dev'
+Requires-Dist: tomlkit ; extra == 'dev'
+Requires-Dist: tqdm ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: typed-ast ; extra == 'dev'
+Requires-Dist: urllib3 ; extra == 'dev'
+Requires-Dist: vistir ; extra == 'dev'
+Requires-Dist: webencodings ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+# tsetmc-webservice
+
+کتابخانه‌ای برای ارتباط با وب‌سرویس سایت tsetmc. برای استفاده از این سرویس باید یک یوزرنیم و پسورد را از شرکت بورس تهران تهیه کنید.
+
+توضیحات بیشتر در مورد توابع در سایت زیر وجود دارد:
+
+http://cdn.tsetmc.com/Site.aspx?ParTree=11141111
+
+# Installation
+
+```shell script
+pip install tsetmc-webservice
+```
+
+
