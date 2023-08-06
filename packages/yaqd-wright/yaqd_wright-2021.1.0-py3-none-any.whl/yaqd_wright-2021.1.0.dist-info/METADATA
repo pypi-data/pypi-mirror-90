@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: yaqd-wright
+Version: 2021.1.0
+Summary: yaq daemons for wright group specific hardware, collected together
+Home-page: https://yaq.fyi
+License: UNKNOWN
+Author: Wright Group
+Author-email: git@ksunden.space
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: yaqd-core>=2020.10.1
+Requires-Dist: pyserial
+Requires-Dist: numpy
+Requires-Dist: black ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Project-URL: Issues, https://github.com/wright-group/yaqd-wright/issues
+Project-URL: Source, https://github.com/wright-group/yaqd-wright
+Provides-Extra: dev
+
+# yaqd-wright
+
+[![PyPI](https://img.shields.io/pypi/v/yaqd-wright)](https://pypi.org/project/yaqd-wright)
+[![Conda](https://img.shields.io/conda/vn/conda-forge/yaqd-wright)](https://anaconda.org/conda-forge/yaqd-wright)
+[![yaq](https://img.shields.io/badge/framework-yaq-orange)](https://yaq.fyi/)
+[![black](https://img.shields.io/badge/code--style-black-black)](https://black.readthedocs.io/)
+[![ver](https://img.shields.io/badge/calver-YYYY.0M.MICRO-blue)](https://calver.org/)
+[![log](https://img.shields.io/badge/change-log-informational)](https://gitlab.com/yaq/yaqd-wright/-/blob/master/CHANGELOG.md)
+
+yaq daemons for wright group specific hardware, collected together
+
+This package contains the following daemon(s):
+
+- [wright-aerotech](https://yaq.fyi/daemons/wright-aerotech)
+    - Associated hardware and firmware [here](https://github.com/wright-group/Aerotech-101SMC2EN-Control).
+- [wright-filter-wheel](https://yaq.fyi/daemons/wright-filter-wheel)
+    - Associated hardware and firmware [here](https://github.com/wright-group/FilterWheels).
+- [wright-ingaas](https://yaq.fyi/daemons/wright-ingaas)
+    - Associated hardware and firmware [here](https://github.com/wright-group/InGaAs-array).
+- [wright-wl-motor](https://yaq.fyi/daemons/wright-wl-motor)
+    - Associated firmware [here](https://github.com/wright-group/wl-motor).
+
