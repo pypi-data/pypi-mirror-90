@@ -1,0 +1,9 @@
+cython
+argparse
+gensim
+fasttext
+numpy
+keras
+ujson
+xgboost
+hello
