@@ -1,0 +1,13 @@
+.DS_Store,sha256=I1x8BbFyW-gLX_bCmV3RHZFLO8saTy6dmUDNtHMyV54,6148
+pyswEOS/H2O.py,sha256=RQyMDsmWixgjKLxLW0CpH5AK-kci9rqoKNyl-eJ33vo,5815
+pyswEOS/H2ONaCl.py,sha256=J11z9Sb3xGELtiEwLG0LYitBOo3J48NafZivn9U_eB8,29165
+pyswEOS/PhaseDiagramSlice.py,sha256=HPSF4OQpfxRpTeNOR0pVx4f2PzaOKKWAuVvB-FgFdmY,7851
+pyswEOS/__init__.py,sha256=JPpqETGvnzNf8efBWN9q9omCRmavP7t27FbwPZ6MXiE,96
+pyswEOS/test_H2O.py,sha256=30_lThAENXkGyWBzJEBLyPXwkpsx498UoUKaLIycEPg,68
+pyswEOS/test_H2ONaCl.py,sha256=HHC9mI2PsxAoZyHIdUaFbJX--qLGFM2YMrjvROcWiEg,561
+pyswEOS/test_NaCl.py,sha256=roCBXuhz7m9VJrzyv6jhD_dzV-hRarFxHlTgHtFeHtc,113
+pyswEOS-0.0.6.dist-info/METADATA,sha256=oGTJv2H3uFkToY3raQCPh4fSVwwGjamnuKSfKevZtg8,470
+pyswEOS-0.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyswEOS-0.0.6.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+pyswEOS-0.0.6.dist-info/top_level.txt,sha256=cmgRGAg4KkswWLlweDXvPAi86Lc095FcjG5spMocfnY,8
+pyswEOS-0.0.6.dist-info/RECORD,,
