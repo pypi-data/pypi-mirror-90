@@ -1,0 +1,24 @@
+Metadata-Version: 1.0
+Name: yugioh
+Version: 0.0.0
+Summary: Yu-Gi-Oh API Wrapper
+Home-page: https://github.com/pclt-dev/yugioh
+Author: diogenesjunior
+Author-email: diogenesjunior@protonmail.com
+License: UNKNOWN
+Description: yugioh
+        ======
+        
+        **Yu-Gi-Oh API Wrapper**
+        
+        Installation
+        ------------
+        
+        You can install it with pip3, but it won't do anything:
+        
+        .. code-block:: bash
+        
+           pip3 install yugioh
+        
+Keywords: Yu-Gi-Oh API
+Platform: UNKNOWN
