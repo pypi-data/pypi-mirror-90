@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: cdk-kubesphere
+Version: 0.0.2
+Summary: cdk-kubesphere
+Home-page: https://github.com/pahud/cdk-kubesphere.git
+Author: Pahud<pahudnet@gmail.com>
+License: Apache-2.0
+Project-URL: Source, https://github.com/pahud/cdk-kubesphere.git
+Description: [![NPM version](https://badge.fury.io/js/cdk-kubesphere.svg)](https://badge.fury.io/js/cdk-kubesphere)
+        [![PyPI version](https://badge.fury.io/py/cdk-kubesphere.svg)](https://badge.fury.io/py/cdk-kubesphere)
+        ![Release](https://github.com/pahud/cdk-kubesphere/workflows/Release/badge.svg)
+        
+        # cdk-kubesphere
+        
+        **cdk-kubesphere** is a CDK construct library that allows you to create [KubeSphere](https://kubesphere.io/) on AWS with CDK in TypeScript, JavaScript or Python.
+        
+        # Sample
+        
+        ```python
+        # Example automatically generated without compilation. See https://github.com/aws/jsii/issues/826
+        imoprtKubeSpherefrom"cdk-kubesphere"
+        
+        app = cdk.App()
+        
+        stack = cdk.Stack(app, "cdk-kubesphere-demo")
+        
+        # deploy a default KubeSphere service on a new Amazon EKS cluster
+        KubeSphere(stack, "KubeSphere")
+        ```
+        
+        # Console
+        
+        Run the following command to create a `port-forward` from localhost:8888 to `ks-console:80`
+        
+        ```sh
+        kubectl -n kubesphere-system port-forward service/ks-console 8888:80
+        ```
+        
+        Open `http://localhost:8888` and enter the default username/password(`admin/P@88w0rd`) to enter the admin console.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Typing :: Typed
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
