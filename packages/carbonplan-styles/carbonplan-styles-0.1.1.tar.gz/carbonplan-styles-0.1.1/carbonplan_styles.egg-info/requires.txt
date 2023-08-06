@@ -1,0 +1,4 @@
+altair
+carbonplan
+matplotlib
+seaborn
