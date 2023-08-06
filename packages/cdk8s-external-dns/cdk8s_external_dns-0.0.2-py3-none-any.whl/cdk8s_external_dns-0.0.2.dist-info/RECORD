@@ -1,0 +1,8 @@
+cdk8s_external_dns/__init__.py,sha256=p7HRdjnUZMHLTVW4XrPGEa6rnK53rUq7ElNfsuSsDf8,10432
+cdk8s_external_dns/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cdk8s_external_dns/_jsii/__init__.py,sha256=5HQNDxEvGe2axv_buMdYqzWAKFXs4Yv6nzt9_z8nCVo,420
+cdk8s_external_dns/_jsii/cdk8s-external-dns@0.0.2.jsii.tgz,sha256=l3oUd71WIZeZE_fUlK7bOtaALNAOvWHP1wREvAfWajU,16704
+cdk8s_external_dns-0.0.2.dist-info/METADATA,sha256=FGm8ucPbq-ZhpH9g7R5bD8OZRfL65LiGsn51JP7Q1sQ,3424
+cdk8s_external_dns-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cdk8s_external_dns-0.0.2.dist-info/top_level.txt,sha256=7T4fV907AnYg-_cqB3CBwRGVa33eL_DSzCamkarSvxI,19
+cdk8s_external_dns-0.0.2.dist-info/RECORD,,
