@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: rv
+Version: 0.0.2
+Summary: Utils to work with randomness
+Home-page: https://github.com/thorwhalen/ut/tree/master/util/prand.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # rv
+        Utils to work with randomness
+        
+        
+        To install:	```pip install rv```
+        
+Platform: any
+Description-Content-Type: text/markdown
