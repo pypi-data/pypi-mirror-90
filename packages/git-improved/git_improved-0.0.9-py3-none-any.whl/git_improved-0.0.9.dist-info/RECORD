@@ -1,0 +1,17 @@
+git_improved/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_improved/changelog.py,sha256=3QtsclmWNUN5yeRb-GATsdldC-4edM95qYR5fsb-ubw,8408
+git_improved/configurations.py,sha256=an8jmFhmi1gtuKlMFNJ-BY2QC455zd7pd69EMQNNoG8,950
+git_improved/constants.py,sha256=RfzM59EEfeBR2eDJ6SM2y3yp2fiA86tx9rcTsNXmrUs,749
+git_improved/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_improved/commands/cancel.py,sha256=5Zik7VuHiC8WKTdszrt45W5MjnaohVPLYsDCTrEWodE,2559
+git_improved/commands/done.py,sha256=yPg4LkRUaKriv8IcdLaUGZ0jkH2DiEGXiRmu1c67eQ8,4486
+git_improved/commands/release.py,sha256=uYIsScfaESnNdu0JpRsxfCt7tBmrPRirw9teu801gh4,3371
+git_improved/commands/save.py,sha256=S1tkA7nufF8Ghysqy2QCoboBPm1_L_AuU_A_UeFYspY,407
+git_improved/commands/setup.py,sha256=IdTFQdNgDpY-zd7ZAaa4B3eeG5_u5D_T9ti4z06iSqs,3428
+git_improved/commands/unrelease.py,sha256=GWI7R9icqVWoE7K9kc4sBHZzh620WW8DH0as0uJYksI,1121
+git_improved/commands/wip.py,sha256=CfFyGm10Bq02UKHcgym6oZIAPU1bVLM7dZeE_qZPTW4,970
+git_improved-0.0.9.dist-info/METADATA,sha256=_aMVEY3hBjS-VR_Rroqr5tCzFYq6PfudZO0kVb6_5Z0,265
+git_improved-0.0.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+git_improved-0.0.9.dist-info/entry_points.txt,sha256=6Uv8eOw8M9MWMNLMlAdRAxpOO-SOVBSrclh6iD2mwos,420
+git_improved-0.0.9.dist-info/top_level.txt,sha256=BX92JnpzXaPZe37pF6tqsahk2vFMNVoIXLIXY9Y5wVE,13
+git_improved-0.0.9.dist-info/RECORD,,
