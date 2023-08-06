@@ -1,0 +1,3 @@
+[console_scripts]
+weDos = weDos.weDos:main
+
