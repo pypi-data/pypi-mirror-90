@@ -1,0 +1,14 @@
+spelling/.pyspelling.yml,sha256=hTsdLFGqjYngolWlmPg9JPEUp9my7-N4Pep6PaRIJ14,7650
+spelling/__init__.py,sha256=SyEH6UBkG94AI1kIl-omQic8HhxQNj05iE11dnOLSLk,96
+spelling/__main__.py,sha256=zgH6y6uqRiLfQokOUGfjPTM1nzU1ZExqHgO2trNNvDo,3356
+spelling/check.py,sha256=pNCM95cRUb6pPmr41wULW-8x0yeUyvU8-qqwdZxHkbk,4595
+spelling/config.py,sha256=9o4v6nY7lNSQbhTFVamuG0W_8MxAFh_khDhumJp-xeI,3298
+spelling/dependencies.py,sha256=JZbjhRtol2hlzv38EJCVm-wn0x8aqQpfeJ00cqK5D_M,2116
+spelling/version.py,sha256=we368pK0UTz_JTAws0dpXwda4PA5XjYGof3uEWdZKxI,61
+spelling/filters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spelling/filters/filtererr.py,sha256=VPzKAe2d6ZZEDO5RB79_nzkV__d7vO78Yp0BjjGyY3o,628
+spelling-1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+spelling-1.0.dist-info/METADATA,sha256=kBAc9BFTBro7e_9Oe0r8gWNXvhQeblqFQm7yNfbOcHM,5049
+spelling-1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+spelling-1.0.dist-info/top_level.txt,sha256=Z6lczfd9aoqsPVyamINve53fI_ir6FmEY0hVfOG1LM0,9
+spelling-1.0.dist-info/RECORD,,
