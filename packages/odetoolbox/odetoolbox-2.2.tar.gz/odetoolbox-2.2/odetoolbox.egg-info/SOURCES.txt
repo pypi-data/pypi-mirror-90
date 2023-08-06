@@ -1,0 +1,17 @@
+ode_analyzer.py
+setup.cfg
+setup.py
+odetoolbox/__init__.py
+odetoolbox/analytic_integrator.py
+odetoolbox/dependency_graph_plotter.py
+odetoolbox/integrator.py
+odetoolbox/mixed_integrator.py
+odetoolbox/shapes.py
+odetoolbox/spike_generator.py
+odetoolbox/stiffness.py
+odetoolbox/sympy_printer.py
+odetoolbox/system_of_shapes.py
+odetoolbox.egg-info/PKG-INFO
+odetoolbox.egg-info/SOURCES.txt
+odetoolbox.egg-info/dependency_links.txt
+odetoolbox.egg-info/top_level.txt
