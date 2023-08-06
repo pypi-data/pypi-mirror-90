@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: mbuslite
+Version: 0.1.0
+Summary: A small, in-process message bus implementation.
+Home-page: https://gitlab.com/francisferrell/mbuslite
+Author: Francis Ferrell
+Author-email: francisferrell@gmail.com
+License: MIT
+Description: 
+        mbuslite
+        ########
+        
+        ``mbuslite`` provides a message bus implementation embedded within the application's process.
+        
+        With it, you can loosely couple your application components. It implements the publish-subscribe
+        pattern.
+        
+        Motivation
+        ==========
+        
+        Having worked with crossbar and autobahn, as well as DBus, I like the message bus pattern. I've
+        wanted to use it in some projects to achieve the same loose coupling between internal components.
+        
+        Having also worked wih sqlite, I like the simplicity of a library instead of a remote service.
+        
+        Thus, `mbuslite`.
+        
+        
+        Installation
+        ============
+        
+        .. code-block:: bash
+        
+           pip install mbuslite
+        
+        
+        Usage
+        =====
+        
+        To get started, import ``mbuslite.Bus`` and start calling ``.subscribe()`` and ``.publish()``.
+        
+        .. code-block:: python
+        
+            from mbuslite import Bus
+        
+            class Producer:
+                def announce( self ):
+                    Bus.publish( 'topic.name', 'Hello, consumers!' )
+        
+            class Consumer:
+                def __init__( self ):
+                    Bus.subscribe( 'topic.name', self.on_message )
+                def on_message( self, msg ):
+                    print( msg )
+        
+            consumer1 = Consumer()
+            consumer2 = Consumer()
+            consumer3 = Consumer()
+            producer = Producer()
+            producer.announce()
+        
+        
+        .. code-block::
+        
+           Hello, consumers!
+           Hello, consumers!
+           Hello, consumers!
+        
+        
+        Publishers and subscribers must agree upon a call signature as the arguments are passed as-is by
+        mbuslite.
+        
+        .. code-block:: python
+        
+            def handler( one, two, three, four ):
+                pass
+            Bus.subscribe( 'foo', handler )
+            Bus.publish( 'foo', 1, 2, three = 3, four = 4 )
+        
+        See more in ``examples/``.
+        
+        
+        Logging
+        =======
+        
+        ``mbuslite`` makes use of the python ``logging`` module. To manipulate mbuslite's logging behavior,
+        use ``logging.getLogger('mbuslite')`` or import ``mbuslite`` and manipulate ``mbuslite.logger``.
+        For example, you can set that logger's level to info or debug to get additional information about
+        what mbuslite is doing.
+        
+        Note that mbuslite does not configure the ``logging`` module, so unless your application does, logs
+        from mbuslite will not be written anywhere, even those that match the default level of ``WARNING``.
+        You are encouraged to at least call ``logging.basicConfig()`` to ensure you see warning messages
+        from mbuslite. For example, unhandled exceptions from handlers you subscribe to topics are logged
+        as warnings and will not be available if you never configure logging.
+        
+        
+        Links
+        =====
+        
+        * PyPI: `https://pypi.org/project/mbuslite <https://pypi.org/project/mbuslite>`_
+        * Source: `https://gitlab.com/francisferrell/mbuslite <https://gitlab.com/francisferrell/mbuslite>`_
+        * API Docs: `https://francisferrell.gitlab.io/mbuslite <https://francisferrell.gitlab.io/mbuslite>`_
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/x-rst
