@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+demultiplexer/__init__.py
+demultiplexer/__main__.py
+demultiplexer/demultiplexing.py
+demultiplexer/file_pairs.py
+demultiplexer/save_primerset.py
+demultiplexer/scheme_generator.py
+demultiplexer.egg-info/PKG-INFO
+demultiplexer.egg-info/SOURCES.txt
+demultiplexer.egg-info/dependency_links.txt
+demultiplexer.egg-info/entry_points.txt
+demultiplexer.egg-info/requires.txt
+demultiplexer.egg-info/top_level.txt
+demultiplexer/data/primersets/Tutorial_primers.txt
+demultiplexer/data/tagging_templates/Example_scheme.xlsx
