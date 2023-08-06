@@ -1,0 +1,10 @@
+jsonschema
+matplotlib
+networkx
+numpy
+pygraphviz
+python-dateutil
+requests
+scipy
+setuptools
+pyyaml
