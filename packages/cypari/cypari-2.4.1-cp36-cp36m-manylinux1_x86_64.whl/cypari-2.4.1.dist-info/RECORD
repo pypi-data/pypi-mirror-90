@@ -1,0 +1,17 @@
+cypari/__init__.py,sha256=PK7P6U0yvs5ASWSMb5A8yATmUkxD4zkN2VwB_89BcKE,357
+cypari/_pari.cpython-36m-x86_64-linux-gnu.so,sha256=znyMoDfSWtC-gql33RI27-cnk1YvPXhoU5oo-v7CUkc,32940688
+cypari/memory.py,sha256=SojUgKr9pG88YSZTSTSm6Fvy30Kga88Vw9EK0TDwRSI,1086
+cypari/py2tests.py,sha256=PYSsu8mjLqSY6OO-cn06sfb9WZWGeBkbWVabtYNfDJU,555
+cypari/py3tests.py,sha256=ga0CYdWzzn87FmtkzbNY907o5RpVRfuxEKu5jTJZgZM,524
+cypari/test.py,sha256=yockpQiUuOe81B9OaJxRqgpMuSZ4ahrs6jii5iTo-Ys,4064
+cypari/tests.py,sha256=N5v9_4vBch2vu_v7t_pjRh3tLQN2nbWoZX3GxvoOSBU,44503
+cypari/version.py,sha256=KHJX2jC1UchjatyrdvhV-k1cn66Vr2De28-x08jXDyY,247
+cypari/__pycache__/__init__.cpython-36.pyc,sha256=yW0w78HGT3rtMGoIiWZv9HzyGOuu6gtrgruvflOGijQ,426
+cypari/__pycache__/py3tests.cpython-36.pyc,sha256=KT1ktw-l0R0HAZKqeQhvpvuMBBYmoktvFUAynkLtozk,674
+cypari/__pycache__/test.cpython-36.pyc,sha256=HyZKAEoheY0CSpkHTKKkqwdEoaekalBcYJJjHxG-ib8,3025
+cypari/__pycache__/tests.cpython-36.pyc,sha256=c7v1ednGJVZpBx2wW-NuRrt17itbHjvI2ws65cPXT2E,44648
+cypari/__pycache__/version.cpython-36.pyc,sha256=5rs_dzI-vyPtq3Si1cSReBVAxNRDqiKGS0Xa2VNqzA0,581
+cypari-2.4.1.dist-info/METADATA,sha256=xPN0ZaTKsHu43xIvnyFEF0JFwah_hjzOcIqdtskmh_w,1197
+cypari-2.4.1.dist-info/WHEEL,sha256=IkZiJFiZiRavDHfaLV1hdVPFYe1HJNLQ8dnz1DVQgHk,109
+cypari-2.4.1.dist-info/top_level.txt,sha256=lO_bsDdfiuHXQG4G9EkFEKQcjdWehl4PrL-c2VUbS9w,7
+cypari-2.4.1.dist-info/RECORD,,
