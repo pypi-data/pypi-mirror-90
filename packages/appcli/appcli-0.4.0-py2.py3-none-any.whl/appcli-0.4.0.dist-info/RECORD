@@ -1,0 +1,12 @@
+appcli/__init__.py,sha256=iMyeti0EkO_6mKoeAgAochODvViYcOu-HfhuQ6VI1QU,301
+appcli/attrs.py,sha256=trNjyIH9bb19ef4fsFowiIqyP_7z4mn_AsrS-QpNEB0,1086
+appcli/config.py,sha256=D4zUyWn2xdDyKxD38hrwZvrW-Tv-x4QXFdgcmLGvHkk,7612
+appcli/errors.py,sha256=3pc13EQtYY3LBD-uV0xKVNOyoHGd0KNkDdnCrSG0GOE,654
+appcli/layers.py,sha256=6cK344TPeUYBx9GqrW5yaBkMA18jFOx8eE9MDMcPrsc,1536
+appcli/model.py,sha256=Kj5c08-lGOJKXvmhbIqfSJaZUDb2FDC9DosR7oxxi04,5435
+appcli/params.py,sha256=grJFRT7iyuYSpCrpybab1fmxxYTt2wRBLhTtCdr2cgc,7762
+appcli/utils.py,sha256=s6oG2DhWw0IFRm3rL_PD7QC-nacZm1TIPaokb_n2BGU,750
+appcli-0.4.0.dist-info/LICENSE.txt,sha256=hV5oaBI3HIjUi61UYZf8laH_cqtaEsuXV60GtWt5Cog,1079
+appcli-0.4.0.dist-info/WHEEL,sha256=NLqmsx-ZFZ6gDavYgh2oH0ZSN-KRmpcdEXIZDnYy9Pg,99
+appcli-0.4.0.dist-info/METADATA,sha256=HSaoLTlHb-fqgQElAQVOKG2Ts34JJIcEKB4jcVBwqT0,2242
+appcli-0.4.0.dist-info/RECORD,,
