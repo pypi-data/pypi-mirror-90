@@ -1,0 +1,3 @@
+aridity>=49
+lagoon>=17
+timelyOSC>=4
