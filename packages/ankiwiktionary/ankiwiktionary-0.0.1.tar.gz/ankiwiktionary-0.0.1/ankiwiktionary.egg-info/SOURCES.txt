@@ -1,0 +1,12 @@
+README.md
+setup.py
+ankiwiktionary/__init__.py
+ankiwiktionary/cli.py
+ankiwiktionary/main.py
+ankiwiktionary/parser.py
+ankiwiktionary.egg-info/PKG-INFO
+ankiwiktionary.egg-info/SOURCES.txt
+ankiwiktionary.egg-info/dependency_links.txt
+ankiwiktionary.egg-info/entry_points.txt
+ankiwiktionary.egg-info/requires.txt
+ankiwiktionary.egg-info/top_level.txt

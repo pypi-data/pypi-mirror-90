@@ -1,0 +1,5 @@
+lxml>=4.6.2
+yarl>=1.6.3
+Jinja2>=2.11.2
+click>=7.1.2
+colorama>=0.4.4
