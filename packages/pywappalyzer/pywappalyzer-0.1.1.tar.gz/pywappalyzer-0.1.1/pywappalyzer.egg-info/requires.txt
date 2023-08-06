@@ -1,0 +1,7 @@
+geckodriver-autoinstaller
+lxml
+selenium
+requests
+requests-toolbelt
+lxml
+beautifulsoup4
