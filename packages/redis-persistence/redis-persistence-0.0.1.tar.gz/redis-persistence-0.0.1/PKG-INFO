@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: redis-persistence
+Version: 0.0.1
+Summary: A python module to make your Telegram bot persistent using Redis
+Home-page: https://github.com/Mortafix/RedisPersistence
+Author: Moris Doratiotto
+Author-email: moris.doratiotto@gmail.com
+License: UNKNOWN
+Description: # Setup
+        You can find the package, [here](https://pypi.org/project/redis-persistence/).
+        ```
+        pip3 install redis-persistence
+        ```
+        
+        # Requirements
+        * Python 3.8
+        * Redis 3.5
+        
+        # Import
+        ```python
+        from redispersistence.redispersistence import RedisPersistence
+        ```
+        
+        # Usage
+        You need to use this persistence with [pyton-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) module.
+        ```python
+        redis_instance = Redis(host='localhost', port=6379, db=0)
+        persistence = RedisPersistence(redis_instance)
+        updater = Updater(BOT_TOKEN, persistence=persistence)
+        ```
+Keywords: persistence,persistent,redis,telegram,bot
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
