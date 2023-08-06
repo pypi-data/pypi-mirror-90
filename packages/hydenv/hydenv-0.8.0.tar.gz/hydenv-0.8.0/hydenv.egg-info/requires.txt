@@ -1,0 +1,15 @@
+sqlalchemy
+geoalchemy2
+psycopg2
+flask
+flask-cors
+fire
+tabulate
+progressbar2
+barnum
+overpy
+shapely
+requests
+beautifulsoup4
+lxml
+python-dateutil
