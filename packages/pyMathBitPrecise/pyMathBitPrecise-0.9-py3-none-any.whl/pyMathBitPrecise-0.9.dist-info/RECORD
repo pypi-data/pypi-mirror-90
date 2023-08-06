@@ -1,0 +1,12 @@
+pyMathBitPrecise/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyMathBitPrecise/array3t.py,sha256=LXyxVWZTnjiG0p761g--BFfSoPpwY_ITGEcYOtlOhpM,3667
+pyMathBitPrecise/bit_utils.py,sha256=Q2HwrgWgqHGr9Nm-0JC3Ov9Po-IlZ2RTejxroxA2w7Y,6314
+pyMathBitPrecise/bits3t.py,sha256=Fce3iy_7v1IVbl3oaZ3WxoZeFNoAFhtoXz4pfgVimCQ,23329
+pyMathBitPrecise/bits3t_vld_masks.py,sha256=Vn3TiRE2eHVyL2xL_uvjeWCYZCVQoK1qyLUPNyizQ2s,585
+pyMathBitPrecise/enum3t.py,sha256=q2R1v8Ldj-jNbF7kI5cAKY3a8_Exep4VOMf0vUG0jkA,3289
+pyMathBitPrecise/utils.py,sha256=vr9hS-HTRkwZcC_ayFKw3O-oorIRjKMnLv5q0U3EcGs,240
+pyMathBitPrecise-0.9.dist-info/LICENSE,sha256=FIyFUCXI34MafbMekwzt_ma4y8jZsrHgL6BI9jUdbnc,1073
+pyMathBitPrecise-0.9.dist-info/METADATA,sha256=o0ahLMnKcCCVQ_YPOFYZm79OLgN26f9c3UQcwBRYKJg,3014
+pyMathBitPrecise-0.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyMathBitPrecise-0.9.dist-info/top_level.txt,sha256=gy827p78LJhNw26Sm2W9LxKP9aL5nuWu_QtD2ZNavVs,17
+pyMathBitPrecise-0.9.dist-info/RECORD,,
