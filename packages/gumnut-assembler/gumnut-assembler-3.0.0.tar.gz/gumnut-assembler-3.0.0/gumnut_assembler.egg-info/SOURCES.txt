@@ -1,0 +1,11 @@
+README.rst
+pyproject.toml
+setup.py
+gumnut_assembler/__init__.py
+gumnut_assembler/assembler.py
+gumnut_assembler/exceptions.py
+gumnut_assembler.egg-info/PKG-INFO
+gumnut_assembler.egg-info/SOURCES.txt
+gumnut_assembler.egg-info/dependency_links.txt
+gumnut_assembler.egg-info/entry_points.txt
+gumnut_assembler.egg-info/top_level.txt
