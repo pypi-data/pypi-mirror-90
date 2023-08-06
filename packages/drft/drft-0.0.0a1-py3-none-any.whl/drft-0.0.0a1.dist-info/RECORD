@@ -1,0 +1,16 @@
+drft/__init__.py,sha256=OC2x2suLyRmzmfF7p5Q7RHSKdga6TK4mrpTDx_-9AhM,30
+drft/authentication.py,sha256=F7fPHdyH_OZqX-F7tF3TJitHz4-3DO-jVK93OQa1ruo,986
+drft/filters.py,sha256=zLhfAoKULCG6xEClqk5wU6liVwSiZhGBp_B_DeIMCwI,8138
+drft/manage.py,sha256=htKxZ0MlDxmLdxhCPbeFCuhQWS0HLi8UQziEbYgeQBw,1089
+drft/models.py,sha256=AzoZyAGcQAhYWFpga0nM8vsfhVr3H2SqFBqO4Asc2_E,1036
+drft/pagination.py,sha256=HVupIwyMHoWhq_JrSONqClsJhypOei7q32iY00yx3vo,1229
+drft/secrets.py,sha256=VConm76S8sgywRI_tRvqu7tXJ2yu7LpPy5X10VL_kMM,1043
+drft/serializers.py,sha256=E1eTZdAdUesaYzbehZfLpeLaZHHOgTR6svya6DImHRE,1128
+drft/signing.py,sha256=K5Ub2U27xaNoWJsvR0fzjUimXGt_pfXBl_0psNUVSsA,3368
+drft/swagger.py,sha256=oGlrja99nv4_nxMI0GiVPv_xdKGgkFPm83UbbrD1Imw,528
+drft/views.py,sha256=UaDG3eZRr12bKmbP4VkclS_L7tMaa94GD8bPRXrsf-E,5123
+drft-0.0.0a1.dist-info/entry_points.txt,sha256=svmV-6yvPArYnPyIr7lOQ6pm9kNBd_JD142flBW1Lvg,40
+drft-0.0.0a1.dist-info/LICENSE,sha256=WuYjWnn0ZaKUBhQZ1dc4_nurA76zLS-wL70ZBmQ1tDo,1072
+drft-0.0.0a1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+drft-0.0.0a1.dist-info/METADATA,sha256=m0R-UT3CiQtlJnTHFbP4S0nblGBkXJaejGvQhIJrrd4,1960
+drft-0.0.0a1.dist-info/RECORD,,
