@@ -1,0 +1,11 @@
+numpy
+pandas
+scipy
+statsmodels
+tqdm
+bs4
+lxml
+methylprep
+methylcheck
+methylize
+requests
