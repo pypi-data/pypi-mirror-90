@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: choicelib
+Version: 0.1.3
+Summary: Choice a best similar-interface library from given list
+License: MIT
+Author: timoniq
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
