@@ -1,0 +1,11 @@
+ifunnyapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ifunnyapi/api.py,sha256=M-oYVMVbm2R1r-7CjAAXL_nRrCfVnrg9D1Y-bvpohEU,31727
+ifunnyapi/auth.py,sha256=Bp_gvfmnQUskZCz-y_8HmNQDgT3Ne0FYShL1LueHpkQ,350
+ifunnyapi/enums.py,sha256=7kU3mOcZVORMyaYN4fG5zSLwJUgCIZrbGjidxy7pw8c,944
+ifunnyapi/exceptions.py,sha256=VFujDe6Ujug2dJtZbUepEglNL_lEb0W6uIlJ79PXG-k,416
+ifunnyapi/utils.py,sha256=0gV870dGULtymorHMlbjwU2ColnrCh3RCUW4OoJjoe0,407
+ifunnyapi-0.0.11.dist-info/LICENSE,sha256=EugYhY0TkFzUUNymyo9KpEX4yOuiwAO416bYcpa3DQA,1054
+ifunnyapi-0.0.11.dist-info/METADATA,sha256=4EPy0B6EVfi_zTjN63bi3gHGmEn5QRAwcExHM7Bm7UI,572
+ifunnyapi-0.0.11.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+ifunnyapi-0.0.11.dist-info/top_level.txt,sha256=9D_xOejs8PbtAMbAYMlpcnN01_bY-_K-716CHBce8s4,10
+ifunnyapi-0.0.11.dist-info/RECORD,,
