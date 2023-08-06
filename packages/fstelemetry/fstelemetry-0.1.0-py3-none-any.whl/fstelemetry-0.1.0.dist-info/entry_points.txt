@@ -1,0 +1,3 @@
+[console_scripts]
+fstelemetry = fstelemetry.__main__:main
+
