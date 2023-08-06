@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: rc.io
+Version: 0.2.0
+Summary: The RC I/O layer.
+Home-page: https://www.github.com/radical-consulting/rc.io/
+Author: RADICAL-Consulting
+Author-email: andre.merzky@radical-consulting.com
+Maintainer: RADICAL-Consulting
+Maintainer-email: devel@radical-consulting.com
+License: LGPLV3 or commercial license
+Description: UNKNOWN
+Keywords: radical distributed computing
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix

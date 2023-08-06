@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+__author__    = 'RADICAL-Consulting'
+__email__     = 'devel@radical-consulting.com'
+__copyright__ = 'Copyright date 2019-2021'
+__license__   = 'LGPL.v3 *or* commercial license'
+
+
+import rc.io
+
+print("version: %s" % rc.io.version)
+print("details: %s" % rc.io.version_detail)
+
