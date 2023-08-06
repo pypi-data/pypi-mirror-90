@@ -1,0 +1,8 @@
+setup.py
+powercontrol/__init__.py
+powercontrol/shutdown.py
+powercontrol.egg-info/PKG-INFO
+powercontrol.egg-info/SOURCES.txt
+powercontrol.egg-info/dependency_links.txt
+powercontrol.egg-info/not-zip-safe
+powercontrol.egg-info/top_level.txt
