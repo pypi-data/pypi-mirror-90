@@ -1,0 +1,8 @@
+README.md
+setup.py
+perkeepy/__init__.py
+perkeepy/test_bogus.py
+perkeepy.egg-info/PKG-INFO
+perkeepy.egg-info/SOURCES.txt
+perkeepy.egg-info/dependency_links.txt
+perkeepy.egg-info/top_level.txt
