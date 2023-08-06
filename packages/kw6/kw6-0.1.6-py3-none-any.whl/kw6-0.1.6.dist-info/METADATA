@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: kw6
+Version: 0.1.6
+Summary: kw6 reader
+Home-page: UNKNOWN
+Author: "Aiwizo"
+Author-email: richard@aiwizo.com
+License: Apache-2
+Project-URL: Source Code, https://github.com/aiwizo/kw6/
+Keywords: kw6
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Other Environment
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/x-rst; charset=UTF-8
+Requires-Dist: numpy (>=1.19.2)
+Requires-Dist: Pillow (>=7.2.0)
+Requires-Dist: pydantic (>=1.6.1)
+Requires-Dist: opencv-python (>=4.5.1.48)
+
+==========
+kw6 reader
+==========
+
+.. image:: https://badge.fury.io/py/kw6.svg
+    :target: https://badge.fury.io/py/kw6
+
+Minimalistic library for reading files in the kw6 file format. See the
+`documentation <https://kw6.readthedocs.io/en/latest/>`_
+for more information on the API.
+
+Install
+=======
+
+.. code-block::
+
+    pip install kw6
+
+Usage
+=====
+
+.. code-block:: python
+
+    from pathlib import Path
+    import kw6
+
+    path = Path('...')
+
+    for position in kw6.Stream(path):
+        for camera in position.cameras:
+            camera.image.save(
+                f'{position.header.frame_index}_{camera.header.camera_index}.png'
+            )
+
+Command line tool for converting a kw6 file to a folder with png images:
+
+.. code-block::
+
+    python -m kw6.to_png path/to/kw6
+
+
+

@@ -1,0 +1,15 @@
+kw6/__init__.py,sha256=2hTufRHZFlmwwTNCzHK3kW48dPoxbT6Q7jVI4IOpNdU,335
+kw6/camera.py,sha256=Z--YCzaovke3vadp_sorUcjkclH71MHHb3AzkvH_aug,1501
+kw6/position.py,sha256=RGZuQejkQV54hF8oZLHvPDPWIQ_DOzG2EAnj1zLiqC4,1047
+kw6/stream.py,sha256=EW1GlmrM4qprx0OVL4XQHeVKpEavd29ec8a-gFL1LG4,1418
+kw6/to_png.py,sha256=w70arLVbb8JpHzjCKSale8n52Z6wqb0sLaz4k1PlifU,1159
+kw6/to_video.py,sha256=VG3X9J6PbCmUVC-LfNwmiouSKvy2H3_sWCi4B2ie2pM,2491
+kw6/types.py,sha256=ypIo3dRhtEl-9tAMEdh2XO7gtvJODO2xXjNgy5M1XKM,39
+kw6-0.1.6.dist-info/AUTHORS,sha256=J-V1Fg12rs53N4Hp_IpmwOVpvv0jVHlBHtMRfwS0O6U,28
+kw6-0.1.6.dist-info/LICENSE,sha256=XudxEgNioG8Dg7nVU3iAyWJ3RvkdeQdTblakew3WOuA,90835
+kw6-0.1.6.dist-info/METADATA,sha256=FECma72COXy73pC44p6UMlKNzn6y3XPVNY5FQlvOlwE,1464
+kw6-0.1.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+kw6-0.1.6.dist-info/entry_points.txt,sha256=ipBXrTjG1bil_B5XP2WIQIkLEEBWjfs9sD3NZKfERFU,51
+kw6-0.1.6.dist-info/pbr.json,sha256=jdhQ8PyaHhX4dWDwVW5utuPnApEV_F1K71dGotX4Hf0,47
+kw6-0.1.6.dist-info/top_level.txt,sha256=G-_iLgmksuuDUD6qLwUHN2Y_RqbkaddCVfTTsa9j-vA,4
+kw6-0.1.6.dist-info/RECORD,,
