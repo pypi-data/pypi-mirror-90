@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: tep
+Version: 0.6.0
+Summary: tep is a testing tool to help you write pytest more easily. Try Easy Pytest!
+Home-page: https://github.com/dongfanger/tep
+License: Apache-2.0
+Keywords: testing,pytest
+Author: dongfanger
+Author-email: dongfanger@outlook.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: allure-pytest (>=2.8.16,<3.0.0)
+Requires-Dist: allure-python-commons (>=2.8.16,<3.0.0)
+Requires-Dist: faker (>=4.1.1,<5.0.0)
+Requires-Dist: jmespath (>=0.10.0,<0.11.0)
+Requires-Dist: loguru (>=0.5.1,<0.6.0)
+Requires-Dist: pandas (>=1.1.0,<2.0.0)
+Requires-Dist: pymysql (>=0.10.1,<0.11.0)
+Requires-Dist: pyyaml (>=5.3.1,<6.0.0)
+Requires-Dist: requests (>=2.24.0,<3.0.0)
+Requires-Dist: sqlalchemy (>=1.3.22,<2.0.0)
+Requires-Dist: texttable (>=1.6.3,<2.0.0)
+Requires-Dist: urllib3 (>=1.25.9,<2.0.0)
+Project-URL: Repository, https://github.com/dongfanger/tep
+Description-Content-Type: text/markdown
+
+# tep
+
+tep is a testing tool to help you write pytest more easily. Try Easy Pytest!
+
+# Design Philosophy
+
+- Simple is better
+- Everyone can write automation in python
+
+# Installation
+
+`tep` is developed with Python, it supports Python `3.6+` and most operating systems.
+
+`tep` is available on [`PyPI`](https://pypi.python.org/pypi) and can be installed through `pip`.
+
+```
+$ pip install tep
+```
+
+or domestic mirror.
+
+```
+$ pip --default-timeout=600 install -i https://pypi.tuna.tsinghua.edu.cn/simple tep
+```
+
+# Check Installation
+
+When tep is installed, tep command will be added in your system.
+
+To see `tep` version:
+
+```
+$ tep -V  # tep --version
+0.2.3
+```
+
+# Usage
+
+If you want to know more usages, you can read [pytest docs](https://docs.pytest.org/).
+
+You know pytest.
+
+You know tep.
+
