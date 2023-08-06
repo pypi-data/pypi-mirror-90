@@ -1,0 +1,22 @@
+[build-system]
+requires = [
+    "flit_core >=2,<4",
+    "tensorflow ==2.2",
+    "scikit-learn",
+    "numpy",
+    "opencv_contrib_python",
+    "dlib ==19.16.0",
+    "keyboard",
+    "mouse",
+    "screeninfo"
+]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "nosemouse"
+author = "Olli Paloviita"
+author-email = "olli.paloviita@gmail.com"
+home-page = "https://github.com/ollipal/nosemouse"
+classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
+description-file = "README.md"
+
