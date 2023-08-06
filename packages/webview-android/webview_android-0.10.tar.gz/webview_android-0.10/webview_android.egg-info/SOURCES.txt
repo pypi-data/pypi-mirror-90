@@ -1,0 +1,9 @@
+README.md
+setup.py
+webview/__init__.py
+webview/webview.py
+webview_android.egg-info/PKG-INFO
+webview_android.egg-info/SOURCES.txt
+webview_android.egg-info/dependency_links.txt
+webview_android.egg-info/requires.txt
+webview_android.egg-info/top_level.txt
