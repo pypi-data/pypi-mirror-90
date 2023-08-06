@@ -1,0 +1,12 @@
+THEME_DEFAULTS_ACCEPTS_ENTITY_TYPES = [
+    "file",
+    "field",
+    "folder",
+    "desktop",
+    "user",
+    "tag",
+]
+
+
+THEME_DEFAULTS_ACCEPTS_ENTITY_TYPES_ALL = THEME_DEFAULTS_ACCEPTS_ENTITY_TYPES + ["all"]
+THEME_DEFAULTS_ACCEPTS_ENTITY_TYPES_DEFAULT = ["all"]
