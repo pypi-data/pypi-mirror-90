@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: livedoorblog
+Version: 0.0.1
+Summary: Livedoor Blog API Client
+Home-page: https://github.com/matz1ppei/livedoorblog
+Author: Ippei Matsubara
+Author-email: matz1ppei@gmail.com
+License: UNKNOWN
+Description: # livedoorblog
+        [![CircleCI](https://circleci.com/gh/matz1ppei/livedoorblog.svg?style=svg)](https://circleci.com/gh/matz1ppei/livedoorblog)  
+        Livedoor Blog Api Client for Python
+        
+        ## Dependencies
+        ・requests
+        
+        
+        ## Install
+        
+        ```bash
+        pip install livedoorblog
+        ```
+        
+        ## Usage
+        ```python
+        from livedoorblog import LivedoorBlog
+        
+        LB = LivedoorBlog('<USER_NAME>', '<API_KEY>')
+        
+        ```
+        ## Function
+        ### get articles
+        ```python
+        articles = LB.get_articles()
+        ```
+        ### get categorys
+        ```python
+        categorys = LB.get_categorys()
+        ```
+        
+        ## Developer
+        ```python
+        pytest
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
