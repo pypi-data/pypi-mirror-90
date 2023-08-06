@@ -1,0 +1,5 @@
+trytond_product<5.9,>=5.8
+trytond_production<5.9,>=5.8
+trytond_production_routing<5.9,>=5.8
+trytond_purchase<5.9,>=5.8
+trytond<5.9,>=5.8
