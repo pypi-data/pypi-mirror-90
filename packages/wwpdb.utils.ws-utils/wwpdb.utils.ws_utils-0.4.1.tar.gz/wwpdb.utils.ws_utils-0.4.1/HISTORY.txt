@@ -1,0 +1,4 @@
+# WWPDB_UTILS_WS_UTILS HISTORY
+
+ 8-Dec-2020 - V0.4   - Python 3 uid generation correction.
+30-Dec-2020 - V0.4.1 - Changes to support PyJwt 2.0.0.
