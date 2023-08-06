@@ -1,0 +1,7 @@
+python-sql
+trytond_project<5.7,>=5.6
+trytond_timesheet<5.7,>=5.6
+trytond_timesheet_cost<5.7,>=5.6
+trytond_company<5.7,>=5.6
+trytond_product<5.7,>=5.6
+trytond<5.7,>=5.6
