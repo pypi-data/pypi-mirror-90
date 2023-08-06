@@ -1,0 +1,10 @@
+README.md
+setup.py
+JWT_Bottle.egg-info/PKG-INFO
+JWT_Bottle.egg-info/SOURCES.txt
+JWT_Bottle.egg-info/dependency_links.txt
+JWT_Bottle.egg-info/requires.txt
+JWT_Bottle.egg-info/top_level.txt
+jwt_bottle/JwtPlugin.py
+jwt_bottle/__init__.py
+jwt_bottle/jwt_auth.py
