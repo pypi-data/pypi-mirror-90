@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pychangcooper
+Version: 0.6.0
+Summary: A generic chang and cooper solver for fokker-planck equations
+Home-page: https://github.com/grburgess/pychangcooper
+Author: J. Michael Burgess
+Author-email: jmichaelburgess@gmail.com
+License: GPL-2+
+Project-URL: Bug Tracker, https://github.com/grburgess/pychangcooper/issues
+Project-URL: Source Code, https://github.com/grburgess/pychangcooper
+Description: ![CI](https://github.com/grburgess/pychangcooper/workflows/CI/badge.svg?branch=master)
+        [![codecov](https://codecov.io/gh/grburgess/pychangcooper/branch/master/graph/badge.svg)](https://codecov.io/gh/grburgess/pychangcooper)
+        [![Maintainability](https://api.codeclimate.com/v1/badges/d50bfcd029c78df0c8aa/maintainability)](https://codeclimate.com/github/grburgess/pychangcooper/maintainability)
+        [![Documentation Status](https://readthedocs.org/projects/pychangcooper/badge/?version=latest)](http://pychangcooper.readthedocs.io/en/latest/?badge=latest)
+        [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1163533.svg)](https://doi.org/10.5281/zenodo.1163533)
+        
+        
+        # pychangcooper
+        ![alt text](https://raw.githubusercontent.com/grburgess/pychangcooper/master/logo.png)
+        
+        A python solver for Fokker-Planck equations via the Chang and Cooper method
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
