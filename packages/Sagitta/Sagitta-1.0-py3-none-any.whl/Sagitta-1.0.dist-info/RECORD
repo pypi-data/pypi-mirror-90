@@ -1,0 +1,13 @@
+sagitta/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sagitta/data_tools.py,sha256=fTPcwPzH8fefsJ50d40I0FZYKNBeDOExB9SFJi3hzs4,9917
+sagitta/model_code.py,sha256=uhatc66eZhspCL2XEu91UjfCIsAq497ZWGMnMB8SFnM,2474
+sagitta/sagitta.py,sha256=huGua6HEZN2OgkSzxTwwC_gkbbHeDcSFMxY5SQC5hu0,56468
+sagitta/model_state_dicts/age_model.pt,sha256=enSUKmFrNrbC5XbHRihxgXGnL4VEsuSXdj5tDULibV4,1366906
+sagitta/model_state_dicts/av_model.pt,sha256=UQwoLTAuZE8FUrucT8SWc_Es0fRyFDk9HWyBZ3MGOg4,1325602
+sagitta/model_state_dicts/pms_model.pt,sha256=GCnEZm0cD6gmTnjNgJEoITQ-OCAUl_w0S7ewGYT9fdw,1366526
+Sagitta-1.0.dist-info/LICENSE,sha256=3OO0l7U5bzr3n9a4ZwTDUWhuK6D4Wvk_AT70LwTHIM0,1070
+Sagitta-1.0.dist-info/METADATA,sha256=UIgJME1yzM7I8VKqNA14Pdx_CcOtFwgHmAUNLZkeQM8,11270
+Sagitta-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Sagitta-1.0.dist-info/entry_points.txt,sha256=RIblTuhcbmnWF7kpz3_S0E_5Xo7bOA_4lBNF_fvzfwQ,50
+Sagitta-1.0.dist-info/top_level.txt,sha256=bWbGGFsdg7YivQ4b0Pedkt7MJgLa4wNGXQVBtd3HPTk,8
+Sagitta-1.0.dist-info/RECORD,,
