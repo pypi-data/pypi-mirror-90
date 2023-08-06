@@ -1,0 +1,15 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examples/ap.py,sha256=qoLKEgi2afu53OsyLCxHA0kFYeD1bv6IX2N4A44RalI,224
+examples/gp.py,sha256=UpQ3OPcHxFPsrDwOhtvzDdeBI72eWTl_HOASRk4plik,223
+lange/__init__.py,sha256=XUmfZGK-WqIF7-4qsWS0sm2XGehZiYW4Dww6t2YfCt0,150
+lange/ap.py,sha256=__bBEEz_6Yscif97Znz1mZciKAd9PeoZdvErBrNPGes,1947
+lange/gp.py,sha256=UMjFZV-xltomR02OPIYUNCFIK4EhovpT5WtyXLAdask,2074
+lange/tricks.py,sha256=hh6sk5qnrXcc9MTwyOXWSKNRTJxmNFNx_Vstv0yCsnE,756
+lange/withbrackets.py,sha256=SgieCfgWdLRd35QICLfwntfXL_k9JFz-b0MRPa2OB-Y,1066
+lange/abs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lange/abs/progression.py,sha256=-VDm7U5JB92l1ZVVCq9_l62QNo4v9dQT-P2ryrg6f4Q,4435
+lange-0.2101.23.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+lange-0.2101.23.dist-info/METADATA,sha256=Q2VykkjZU6uBfYK7y6ZCG9HiiLxiaqKXz3VLmqKIOu4,2144
+lange-0.2101.23.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+lange-0.2101.23.dist-info/top_level.txt,sha256=lZEYAJ8VsSlDTzMBNiH6X2ZqT7AB2kF8m5N8Wnwr47s,15
+lange-0.2101.23.dist-info/RECORD,,
