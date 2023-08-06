@@ -1,0 +1,7 @@
+README.md
+setup.py
+Helsing/__init__.py
+Helsing.egg-info/PKG-INFO
+Helsing.egg-info/SOURCES.txt
+Helsing.egg-info/dependency_links.txt
+Helsing.egg-info/top_level.txt
