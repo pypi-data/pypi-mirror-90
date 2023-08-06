@@ -1,0 +1,155 @@
+%try:
+%    eval(f'from {__name__} import *')
+%except:
+%    pass
+%end
+
+%def chok(ok):
+%    if ok: #✔
+    <span class='right'>&#x2714;</span>\\
+%    else: #✘
+    <span class='wrong'>&#x2718;</span>\\
+%    end
+%end
+
+%def chq(
+%        idx=None #either not there or a (list of) number or the same as ``htmlbr``
+%        ,htmlbr='<br>' # html delimiter if no idx =/ more idx
+%        # #the following can also be defined in either __init__.py or in the language html
+%        ,**ka
+%        # ,chesults  # the result (calculated by chalc())
+%        # ,chanser   # the answer given by the user
+%        # ,chames    # input names (per idx a html/tex string, e.g. r"\(\alpha\)")
+%        # ,champles  # input examples ( " )
+%        # ,chadios   # texts for radio buttons (a tuple per idx)
+%        # ,checkos   # texts for check boxes (a tuble per idx)
+%        # ,chow      # a function to show the result (e.g. chutil.tx)
+%        ):
+%    def _get(n):
+%        if n in ka:
+%            return ka.get(n,'')
+%        else:
+%            return env.get(n,'')
+%        end
+%    end
+%    # if not defined('chesults'):
+%    #     chesults = _get('chesults')
+%    # end
+%    if idx is None:
+%        idxs = range(len(chesults))
+%    else:
+%        try:
+%           idxs = [int(i) for i in idx]
+%        except:
+%           try:
+%               idxs = [int(idx)]
+%           except:
+%               idxs = range(len(chesults))
+%               htmlbr = idx
+%           end
+%        end
+%    end
+%    more_idx = len(idxs) > 1
+%    def _getidx(n,i):
+%        nv = _get(n)
+%        try:
+%            if isinstance(nv,list) or isinstance(nv,dict):
+%                return nv[i]
+%            elif not more_idx: # use tuple for chadios and checkos
+%                return nv
+%            end
+%        except:
+%            return ''
+%        end
+%    end
+%    for idx in idxs:
+%        if more_idx:
+         {{! htmlbr}}
+%        end
+%        chame = _getidx('chames',idx)
+         {{! chame}}
+%        chample = _getidx('champles',idx)
+%        choice = _getidx('chadios',idx)
+%        checks = _getidx('checkos',idx)
+%        chowfun = _getidx('chow',idx)
+%        if choice:
+%            for i,val in enumerate(choice):
+%               answ = str(i+1)
+%            # mention answ in val to link to saved value of answer (1. 2. )
+%            # have a <br> at the end of ``val`` for vertical alignment
+             <label><input type="radio" class="chq"\\
+%                # radio box index (starting from 1)
+%                if chanswered and chorm(i+1)==chesults[idx]:
+                checked \\
+%                end
+%                if chanswered:
+                disabled \\
+%                end
+                name="{{chinputids[idx]}}" value="{{answ}}"/>{{! val}}</label>
+%            end
+%        elif checks:
+%            for i,val in enumerate(checks):
+%               answ = chr(65+i)
+             <input type="hidden" name="{{chinputids[idx]+'_'+answ}}" value="0" />
+             <label><input type="checkbox" class="chq"\\
+%                if chanswered and answ in chesults[idx]:
+                checked \\
+%                end
+%                if chanswered:
+                disabled \\
+%                end
+                name="{{chinputids[idx]+'_'+answ}}" value="1"/>{{! val}}</label>
+%            end
+%        else:
+%            if not chanswered:
+                <input type="text" class="chq" name="{{chinputids[idx]}}" size={{ka.get('size','8')}}" autocomplete="off"> {{! chample}}
+%                if choints[idx] > 0:
+                    [{{choints[idx]}}P]\\
+%                end
+%            else:
+%                if chowfun:
+                {{!chowfun(chesults[idx])}}\\
+%                else:
+                {{!chesults[idx]}}\\
+%                end
+%            end
+%        end
+%        if chanswered:
+%            if chanswers[idx].strip() != '':
+                ({{chanswers[idx]}} \\
+%                chok(bool(choks[idx]))
+                )
+%            end
+%            if choks[idx]:
+                <span class='right'>[{{choints[idx]}}P]</span>
+%            else:
+                <span class='wrong'>[0P]</span>
+%            end
+%        end
+%    end
+%end
+
+%def chinc(lnk, chumber):
+<div class="subproblem{{(chumber-1)%2}}" id="{{lnk}}" style="display:relative;overflow:auto">
+% include(lnk,withnr=str(chumber))
+</div>
+%end
+
+%if defined('withnr') and withnr:
+%    nm = __name__.replace('chcko.','')
+%    if '.' in nm:
+<div class="problem_id">
+    <span class="problem_nr">
+        {{withnr}}
+    </span>
+    <span class="problem_name">
+        {{nm}}
+    </span>
+    <span class="problem_points">
+%       if choints:
+        {{sum(choints)}}P
+%       end
+    </span>
+</div>
+    %end
+%end

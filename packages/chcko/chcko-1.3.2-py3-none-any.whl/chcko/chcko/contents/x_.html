@@ -1,0 +1,343 @@
+<script>
+    function a_lnk(alnk)
+    {
+        %# use like: <a href="#" onclick="a_lnk('{{alnk}}');return false;">{{alnk}}</a>
+        %# or {{!chutil.a('r.f')}}
+        // see chutil.a
+        // // keep for testing
+        //alnk='r.a';
+        //alnk='r.bd';
+        //alnk='r.b';
+        //href='http://localhost:8080/en/contents?r.bd&r.ba&&r.a';
+
+        href = window.location.href;
+        url = new URL(href);
+        qs = url.search.replace('?','');
+        seqs = qs.split('&&').filter(x=>x).map(x => x[0]=='&'? x.substring(1) : x)
+        //console.log(seqs)
+        iseqs = seqs.findIndex(x=>x.split('&').filter(x=>x).find(i=>i==alnk));
+        if (iseqs >= 0) {
+            if (iseqs > 0) {
+                seqs = seqs.map((e,i) => i==iseqs ? '&'+e : e);
+            }
+            newqs = seqs.join('&&');
+        } else {
+            newqs = alnk;
+        }
+        target = url.origin+url.pathname+'?'+newqs+'#'+alnk;
+        //console.log(target)
+        window.location.assign(target) // keeps history to go back to previous location in course
+    }
+</script>
+
+% depth_colors = "#FFABAB #E7FFAC #AFF8DB #FBE4FF #DCD3FF #AFCBFF #FFB5E8 #D5AAFF #FF9CEE".split()
+% if isinstance(chontent, list): #no specific content: therefore index
+
+    <div class="alpha grid_10 content_form">
+    <form action="" method="get">
+        <div class="grid_1">
+            <label for="course">
+                <input class="chq" id="course" name="course" type="checkbox">&amp;&amp;
+            </label></div>
+        <input class="grid_8 chq" name="acomposed" id="acomposed"/>
+        <input class="nbutton chq grid_1" style="text-align:center;float:right" type="submit" name="compose" value="{{tgo}}"/>
+    </form>
+    </div>
+
+    % for knd, lnks in chontent:
+    % topicdiv = False
+    <div class="alpha grid_10 content_kind">
+        <a href="/{{chelf.request.chlang}}/contents?kind={{knd}}">{{knd}}</a>
+    </div>
+       % for linktext,lnklvl,leaf,depth_a in lnks:
+          % td = chutil.topic_depth(depth_a)
+          % if td == 0:
+              % if topicdiv:
+              </div>
+              % end
+          <div class="alpha grid_10 content_field">
+          % topicdiv = True
+          % end
+          % if not leaf:
+             <span class="content_{{td}}">
+             <a href="/{{chelf.request.chlang}}/contents?path={{linktext}}">{{linktext}}</a>
+             </span>
+          % else:
+             % lnk,lvl = lnklvl
+             <span class="content_item"
+                 onclick="on_content_item('{{lnk}}');return false;">{{lnk}}</span>
+             <a href="/{{chelf.request.chlang}}/contents?{{lnk}}">{{linktext}}</a>
+             <a href="/{{chelf.request.chlang}}/contents?level={{lvl}}">{{lvl}}</a>
+             % try:
+             % authorid = lnk.split('.')[0]
+             <a href="/{{chelf.request.chlang}}/contents?link={{authorid}}">{{authorid}}</a>
+             % except: pass
+             % end
+          % end
+       % end
+       % if topicdiv:
+       </div>
+       % end
+    % end
+
+
+    <script>
+    remove_course_storage = function(){
+        var n = window.sessionStorage.length;
+        while(n--) {
+           let key = window.sessionStorage.key(n);
+           if (key.includes('&&'))
+               window.sessionStorage.removeItem(key);
+        }
+    };
+    var acomposed;
+    var course;
+    var delim;
+    $(document).ready(()=>{
+        remove_course_storage();
+        acomposed = $("#acomposed");
+        course = $("#course");
+        delim = course.is(":checked")?'&&':'&';
+        if (window.sessionStorage.getItem('chcko_delim')=='&&')
+            course.prop('checked',true);
+        else
+            course.prop('checked',false);
+        acomposed.val(window.sessionStorage.getItem('chcko_selection'));
+        acomposed.focusout(()=>window.sessionStorage.setItem('chcko_selection',acomposed.val()));
+        course.focusout(()=>window.sessionStorage.setItem('chcko_delim',course.is(':checked')?'&&':'&'));
+        });
+    function on_content_item(itm){
+        let newval = (acomposed.val()?acomposed.val()+delim:'')+itm;
+        acomposed.val(newval);
+        window.sessionStorage.setItem('chcko_selection',newval);
+    }
+    $("form").on("submit",function(e){
+            e.preventDefault();
+            // keeps history to go back to previous location in course
+            window.location.assign("/{{chelf.request.chlang}}/contents?"+acomposed.val())
+        });
+    </script>
+
+
+% else: # specific content
+
+    %if 'cheader' in chelf.request.params:
+    <p>
+        {{! chelf.request.params['cheader'] }}
+    </p>
+    %end
+
+    %cq = chelf.chuery if '&&' in chelf.chuery else choblem.chuery
+    %pe = course_labels(cq)
+    %alinks = ['/'+chelf.request.chlang+'/contents?'+x for x in [start_qs(cq),next_qs(cq,-1),cq,next_qs(cq),end_qs(cq)]]
+
+    <script>
+    $(document).ready(()=>{
+        window.sessionStorage.removeItem('chcko_selection');
+        window.sessionStorage.removeItem('chcko_delim');
+        % if pe and choblems and choblemkey:
+            %lnk2save = chutil.query_without_key(alinks[2])
+            window.sessionStorage.setItem('{{! lnk2save}}','{{choblemkey}}');
+        % end
+    });
+    function newpage(url){
+        uqs=url.split('?');
+        uqs1 = uqs[1].replace(/key=[^&]+&/g,'');
+        if (window.sessionStorage.getItem(uqs1))
+        {
+            newurl = url.replace('&&&','&&&key='+window.sessionStorage.getItem(uqs1)+'&');
+            if (newurl == url)
+                newurl = uqs[0]+'?key='+window.sessionStorage.getItem(uqs1)+'&'+uqs1;
+            window.location.href=newurl;
+        } else {
+            window.location.href=url;
+        }
+    }
+    function againpage(url){
+        uqs=url.split('?');
+        uqs1 = uqs[1].replace(/key=[^&]+&/g,'');
+        window.sessionStorage.removeItem(uqs1);
+        window.location.href=uqs[0]+'?'+uqs1;
+    }
+    </script>
+
+    %def qsnav(where,sign):
+    <button class="grid_2 nbutton chq" type="button" onclick="newpage('{{! alinks[where]}}');">{{ sign }}</button>
+    %end
+
+
+    % if choblems and not choblem.chanswered:
+    <form action="" method="post">
+    % end
+
+    % if choblems and choblem.chanswered and chummary[0].counted > 2:
+        <p> {{tsummary}}
+        {{chutil.summary(*chummary)}}
+        </p>
+    % end
+
+
+    {{! chontent }}
+
+    % if not pe and ('bare' in chelf.request.params):
+    % bhidden='display:none;'
+    % else:
+    % bhidden=''
+    % end
+
+    <div class="grid_10">
+    % bottonwidth = 'grid_10'
+    %pe2=''
+    %if pe:
+        % bottonwidth = 'grid_2'
+        %qsnav(0,'1 <<')
+        %qsnav(1,pe[1]+' <')
+        %pe2=' '+pe[2]
+    %end
+
+    % if choblems and choblem.chanswered:
+    <button class="{{bottonwidth}} nbutton chq" style="text-align:center;{{bhidden}}"
+        type="submit"
+        onclick="againpage('{{! alinks[2]}}');"> {{tagain+pe2}} </button>
+    % end
+    % if choblems and not choblem.chanswered:
+    <input class="{{bottonwidth}} nbutton chq" style="text-align:center;{{bhidden}}"
+               type="submit" name="submit" value="{{tcheck+pe2}}"/>
+    <input type="hidden" name="choblemkey" value="{{choblemkey}}">
+    %end
+
+    %if pe:
+        %qsnav(3,'> '+pe[3])
+        %qsnav(4,'>> '+pe[4])
+    %end
+    </div>
+
+    % if choblems and not choblem.chanswered:
+    </form>
+    % end
+
+    % # ASSIGN
+    % if choblems:
+    % if chelf.request.user:
+    % if 'bare' not in chelf.request.params:
+        % teacher = chelf.request.student.key.parent().parent().get()
+        % if teacher.userkey == chdb.idof(chelf.request.user): # chelf assignment is possible
+            <form class="grid_10" id="assignform" action="/{{chelf.request.chlang}}/todo" method="post">
+                % fieldset = False
+                % for ee in chdb.assignable(teacher,chelf.request.user):
+                    % e = ee.key
+                    % kind = e.kind()
+                    % if kind =='Class':
+                        % if fieldset:
+                            </fieldset>
+                        % end
+                        <fieldset>
+                        % fieldset = True
+                        <input type="hidden" name="chuery" value="{{chelf.chuery}}">
+                        <div><input type="checkbox" class="chq checkall">
+                            {{chutil.translate(kind)}} {{e.string_id()}}
+                        </div>
+                    % elif kind == 'Role':
+                        <div><input class="chq" type="checkbox" name="assignee" value="{{chdb.urlsafe(e)}}">
+                            {{e.string_id()}} </div>
+                    % end
+                % end
+                % if fieldset:
+                    </fieldset>
+                % end
+                <fieldset>
+                <script>
+                    function subtractduedays(){
+                        if(document.getElementById('duedays').value - 1 < 1)
+                            return;
+                        else
+                             document.getElementById('duedays').value--;
+                    }
+                </script>
+                {{tdue}}
+                <input class="chq" type="text" name="duedays" id="duedays" value="2"
+                    onchange="javascript:if (document.getElementById('duedays').value >= 1);
+                        else document.getElementById('duedays').value = 1;"
+                />
+                <input type="button" class="nbutton chq" name="add"
+                     onclick="javascript: document.getElementById('duedays').value++;" value="+"/>
+                <input type="button" class="nbutton chq" name="subtract"
+                     onclick="javascript: subtractduedays();" value="-" />
+                </fieldset>
+                <p><input class="nbutton grid_10 chq" style="text-align:center" type="submit" name="assign" value="{{tassign}}"></p>
+                <br>
+            </form>
+
+            <script>
+            $('.checkall').on('click', function () {
+                $(this).closest('fieldset').find(':checkbox').prop('checked', this.checked);
+            });
+            </script>
+        % end
+    % end
+    % end
+    % end
+% end
+
+<style>
+#assignform {
+    background-color: {{rolecolor}};
+    border-style:dotted;
+    padding: 1em;
+    margin: 1em 0em 0em -1em;
+}
+.content_form {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.content_kind {
+    border: solid 1px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: {{rolecolor}};
+    text-align:center;
+}
+.content_item {
+    font-weight: bold;
+}
+.content_0 {
+    font-style: italic;
+}
+%for d in range(1,10):
+.content_{{d}} {
+    background-color: {{depth_colors[d-1]}};
+}
+%end
+.content_field {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.problem_id {
+    border: solid 1px;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: {{rolecolor}};
+    text-align:center;
+}
+.problem_nr {
+    float:left;
+}
+.problem_points {
+    float:right;
+}
+.subproblem0 {
+    padding: 1em 0em 0.5em 0.5em;
+}
+.subproblem1 {
+    padding: 1em 0em 0.5em 0.5em;
+    //background-color: {{rolecolor}};
+}
+.inlined {
+    //background-color: {{rolecolor}};
+}
+.chq {
+    margin: 1px 0px 1px 0px;
+}
+</style>
+
+% include('chcko/main')
