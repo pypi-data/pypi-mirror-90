@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ModCog
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/Famous8/ModCog
+Author: Famous8
+Author-email: discordpytools@ml.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# ModCog
+A Moderation Cog for discord.py, packed with moderation commands!
+
+Commands Included:
+``kick``, ``ban``, ``unban``, ``mute``, ``unmute``
+
+INSTRUCTIONS
+1. Install the FIle
+2. Move the file into your bot directory
+3. Add this line of code ``bot.load_extension('ModCog')``
+
