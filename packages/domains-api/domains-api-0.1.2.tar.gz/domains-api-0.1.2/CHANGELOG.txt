@@ -1,0 +1,15 @@
+Change Log
+==========
+
+0.1 (03/01/2020)
+------------------
+- First Release
+
+0.1.1 (03/01/2020)
+------------------
+- Code review from:
+https://codereview.stackexchange.com/questions/254272/dynamic-dns-ip-checker-changer-for-google-domains-in-python
+
+0.1.2 (03/01/2020)
+------------------
+- Removed finally exit from IPChanger class to allow working with attributes after instantiation.
