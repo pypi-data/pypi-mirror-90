@@ -1,0 +1,12 @@
+README.md
+setup.py
+zanon.egg-info/PKG-INFO
+zanon.egg-info/SOURCES.txt
+zanon.egg-info/dependency_links.txt
+zanon.egg-info/top_level.txt
+zanonymity/__init__.py
+zanonymity/evaluate_category.py
+zanonymity/evaluate_output.py
+zanonymity/study_output.py
+zanonymity/utils.py
+zanonymity/zanon.py
