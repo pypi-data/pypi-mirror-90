@@ -1,0 +1,10 @@
+mkdocs_pandoc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocs_pandoc/plugin.py,sha256=MoMZkXdZYLnn2UoiesRYPdk0H5HB9fRwQ0yVPgCGGnw,4725
+mkdocs_pandoc/renderer.py,sha256=JbDXRzgQmBjpxaVbesV5OICdElBsZQ_Grd70BmDEtDE,2785
+mkdocs_pandoc/utils.py,sha256=BJwwjfZHxUzV0fuZgGgZcPJK1DPshp_QjMG-crpJGmA,1146
+mkdocs_pandoc_plugin-1.0.0.dist-info/LICENSE.md,sha256=E0JSGtZOjuTjqyN38dE7PB6mfuj_0uxlJsnLafav2Wo,1073
+mkdocs_pandoc_plugin-1.0.0.dist-info/METADATA,sha256=ypS8VOq-tZLqahvLhcV-Tes61Yu9legKFFWzQa8Qfy0,3833
+mkdocs_pandoc_plugin-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mkdocs_pandoc_plugin-1.0.0.dist-info/entry_points.txt,sha256=lwdFYBmVyyFUT6JLrCnxNRRU71XjSsIqWRWnHbHKE00,61
+mkdocs_pandoc_plugin-1.0.0.dist-info/top_level.txt,sha256=SqQFalBsxY4IJTWoK0jmltYD1DzaH_SQrVvLdel5jQ8,14
+mkdocs_pandoc_plugin-1.0.0.dist-info/RECORD,,

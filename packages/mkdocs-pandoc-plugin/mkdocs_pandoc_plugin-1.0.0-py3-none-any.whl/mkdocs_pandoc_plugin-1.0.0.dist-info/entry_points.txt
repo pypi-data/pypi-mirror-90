@@ -1,0 +1,3 @@
+[mkdocs.plugins]
+pandoc = mkdocs_pandoc.plugin:PandocPlugin
+
