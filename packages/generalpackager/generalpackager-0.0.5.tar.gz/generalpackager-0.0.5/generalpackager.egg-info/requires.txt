@@ -1,0 +1,7 @@
+generalfile
+generallibrary
+pandas
+requests
+gitpython
+wheel
+twine
