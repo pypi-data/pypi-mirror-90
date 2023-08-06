@@ -1,0 +1,6 @@
+numpy>=1.16.1
+pysftp>=0.2.9
+paramiko>=2.7.2
+
+[dev]
+pytest>=3.7
