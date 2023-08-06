@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: plover_better_rtf
+Version: 1.0.5
+Summary: Plover plugin for better RTF handling
+Home-page: https://github.com/sammdot/plover-better-rtf
+License: UNKNOWN
+Description: # Plover Better RTF
+        
+        [![pypi](https://img.shields.io/pypi/v/plover-better-rtf)](https://pypi.org/project/plover-better-rtf)
+        ![python](https://img.shields.io/pypi/pyversions/plover-better-rtf)
+        ![build](https://github.com/sammdot/plover-better-rtf/workflows/build/badge.svg)
+        
+        Plover plugin for better RTF dictionary handling. Powered by
+        [rtfcre](https://github.com/sammdot/rtfcre).
+        
+        Unfortunately, I can't find a way to override Plover's built-in RTF dictionary
+        plugin, so for now your RTF dictionaries will have to be named `.rtfcre` if you
+        want to use this plugin.
+        
+Keywords: plover plover_plugin
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
