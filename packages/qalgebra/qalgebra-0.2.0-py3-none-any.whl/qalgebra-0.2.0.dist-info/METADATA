@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: qalgebra
+Version: 0.2.0
+Summary: Python package for symbolic quantum algebra
+Home-page: https://github.com/qalgebra/qalgebra
+Author: Michael Goerz
+Author-email: mail@michaelgoerz.net
+License: MIT license
+Keywords: qnet,computer algebra,symbolic algebra,science,quantum computing,quantum mechanics,quantum optics,quantum networks,qutip,sympy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Natural Language :: English
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: attrs
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: sympy
+Requires-Dist: uniseg
+Requires-Dist: watermark
+Provides-Extra: dev
+Requires-Dist: better-apidoc ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: coveralls ; extra == 'dev'
+Requires-Dist: doctr ; extra == 'dev'
+Requires-Dist: doctr-versions-menu ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: gitpython ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: jupyter ; extra == 'dev'
+Requires-Dist: m2r ; extra == 'dev'
+Requires-Dist: matplotlib ; extra == 'dev'
+Requires-Dist: nbsphinx ; extra == 'dev'
+Requires-Dist: nbval ; extra == 'dev'
+Requires-Dist: pdbpp ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-xdist ; extra == 'dev'
+Requires-Dist: qutip ; extra == 'dev'
+Requires-Dist: recommonmark ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-autobuild ; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'dev'
+Requires-Dist: sphinx-copybutton ; extra == 'dev'
+Requires-Dist: sphinx-math-dollar ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: symbolic-equation (>=0.3.0) ; extra == 'dev'
+Requires-Dist: travis-encrypt ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+
+QAlgebra
+========
+
+[![Source code on Github](https://img.shields.io/badge/qalgebra-qalgebra-blue.svg?logo=github)](https://github.com/qalgebra/qalgebra)
+[![QAlgebra on the Python Package Index](https://img.shields.io/pypi/v/qalgebra.svg)](https://pypi.python.org/pypi/qalgebra)
+[![Documentation](https://img.shields.io/badge/Docs-gh--pages-blue.svg)](https://qalgebra.github.io/qalgebra/)
+[![Docs](https://github.com/QAlgebra/qalgebra/workflows/Docs/badge.svg?branch=master)](https://github.com/QAlgebra/qalgebra/actions?query=workflow%3ADocs)
+[![Tests](https://github.com/QAlgebra/qalgebra/workflows/Tests/badge.svg?branch=master)](https://github.com/QAlgebra/qalgebra/actions?query=workflow%3ATests)
+[![Coveralls](https://img.shields.io/coveralls/github/QAlgebra/qalgebra/master.svg)](https://coveralls.io/github/QAlgebra/qalgebra)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+
+
+Python package for symbolic quantum algebra.
+
+Development of QAlgebra happens on [Github](https://github.com/qalgebra/qalgebra). You can read the full documentation [online](https://qalgebra.github.io/qalgebra/).
+
+
+Installation
+------------
+
+To install the latest released version of QAlgebra, run this command in your terminal:
+
+~~~
+pip install qalgebra
+~~~
+
+This is the preferred method to install QAlgebra, as it will always install the most recent stable release.
+
+If you don't have [pip](https://pip.pypa.io) installed, the [Python installation guide](http://docs.python-guide.org/en/latest/starting/installation/), respectively the [Python Packaging User Guide](https://packaging.python.org/tutorials/installing-packages/) can guide you through the process.
+
+To install the latest development version of QAlgebra from [Github](https://github.com/qalgebra/qalgebra).
+
+~~~
+pip install git+https://github.com/qalgebra/qalgebra.git@master#egg=qalgebra
+~~~
+
+
+Usage
+-----
+
+To use QAlgebra in a project:
+
+~~~
+import qalgebra
+~~~
+
+
+History
+=======
+
+
+0.2.0 (2020-12-30)
+------------------
+
+- Initial alpha release
+
+
+0.1.0 (2018-12-06)
+------------------
+
+- Placeholder release
+
+
