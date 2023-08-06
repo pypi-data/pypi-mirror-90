@@ -1,0 +1,2 @@
+tspwplib>=0.4.1
+pytest>=3.5.0
