@@ -1,0 +1,5 @@
+[console_scripts]
+enroll = scripts.enroll:main
+remind = scripts.remind:main
+scheduler = scripts.scheduler:main
+
