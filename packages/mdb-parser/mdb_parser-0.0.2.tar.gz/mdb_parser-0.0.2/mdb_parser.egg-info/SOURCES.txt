@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+mdb_parser/__init__.py
+mdb_parser.egg-info/PKG-INFO
+mdb_parser.egg-info/SOURCES.txt
+mdb_parser.egg-info/dependency_links.txt
+mdb_parser.egg-info/top_level.txt
