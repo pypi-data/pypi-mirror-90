@@ -1,0 +1,5 @@
+dbstream>=0.0.16
+googleads==24.1.0
+pyyaml==5.3.1
+pandas>=1.0.5
+pyrror==0.0.2

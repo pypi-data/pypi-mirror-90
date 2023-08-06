@@ -1,0 +1,9 @@
+README.md
+setup.py
+pygads/GoogleAds.py
+pygads/__init__.py
+pygads.egg-info/PKG-INFO
+pygads.egg-info/SOURCES.txt
+pygads.egg-info/dependency_links.txt
+pygads.egg-info/requires.txt
+pygads.egg-info/top_level.txt
