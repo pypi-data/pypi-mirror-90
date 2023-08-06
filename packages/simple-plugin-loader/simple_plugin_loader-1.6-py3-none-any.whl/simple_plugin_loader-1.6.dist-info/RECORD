@@ -1,0 +1,8 @@
+simple_plugin_loader/__init__.py,sha256=PjKbi_w_kZahoKajr7FL2lVGRguCzTxb7XX5MmVAUFA,90
+simple_plugin_loader/loader.py,sha256=tfM7TaeNbAReS8LHRWm6tBWl9dtyAvygS_Qk_l8oH3s,5209
+simple_plugin_loader/sample_plugin.py,sha256=7QHV3WZ2fxEJ5BPD0HAw0zK3ADddpMOoC-IMMFC63XA,1779
+simple_plugin_loader-1.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+simple_plugin_loader-1.6.dist-info/METADATA,sha256=d2RTBKKA5hQRo-zbbkuJDRB-uVkPqiQ_-mOruS6Bta4,3422
+simple_plugin_loader-1.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+simple_plugin_loader-1.6.dist-info/top_level.txt,sha256=G2D7Wb2iZbi5r1-uzXpT1qE_gzdNeb05kQVf_SnionU,21
+simple_plugin_loader-1.6.dist-info/RECORD,,
