@@ -1,0 +1,3 @@
+[console_scripts]
+SsyiWorking = SsyiWorking.main:main
+
