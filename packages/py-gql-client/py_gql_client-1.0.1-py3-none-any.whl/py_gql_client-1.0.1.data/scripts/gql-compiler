@@ -1,0 +1,29 @@
+#!python
+# Copyright (c) 2004-present Facebook All rights reserved.
+# Use of this source code is governed by a BSD-style
+# license that can be found in the LICENSE file.
+
+import argparse
+from gql_client.compiler.cli import run
+from gql_client.compiler.utils_schema import compile_schema_library
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "schema_library", help="the graphql schemas storage path", type=str
+    )
+    parser.add_argument(
+        "graphql_library", help="path where all queries files are stored", type=str
+    )
+    parser.add_argument(
+        "--config_path", help="path where custom scalars are configured", type=str
+    )
+    parser.add_argument(
+        "--verify", help="verify compiled files against schema", action="store_true"
+    )
+    parser.add_argument(
+        "--allow-deprecated", help="Allow graphql queries to use deprecated fields", action="store_true"
+    )
+    args = parser.parse_args()
+    schema = compile_schema_library(args.schema_library)
+    run(schema, args.graphql_library, args.verify, args.allow_deprecated, args.config_path)
