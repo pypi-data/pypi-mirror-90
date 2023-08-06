@@ -1,0 +1,15 @@
+vsmodel/Dipole.py,sha256=W9lbt7nWmz9xmRcu8gbVoiJW-XOZAHXpGSIUslJJcng,1018
+vsmodel/ModelCart.py,sha256=7MdB_0ldFVnzckB3Mq3ReBjVCBdDQWqNDpGqzhP3B7Y,867
+vsmodel/ModelPol.py,sha256=k2TM0AeO4gzcF1WpTTrNA2_HBzCC2WtOwzu8xzwr6ew,1145
+vsmodel/PlotModelEq.py,sha256=13fa4LWxxmeWeCPGxwGt-xb7PifMZ3PbdMZNSC1Px4A,3910
+vsmodel/PlotPlanet.py,sha256=E3P7mg5CaxEVjUa-uWBdjxZBCqY5GLFM3Bf9W8fAqMI,619
+vsmodel/PotentialCart.py,sha256=htghKoYBi-ca5TOJasGBPvufgi-ovm_SrC2YxVye4KA,665
+vsmodel/PotentialPol.py,sha256=lvExwFIgCeQ7k2EDr7FaC3HLJziea4n1SyuqtSNnJk4,749
+vsmodel/VExB.py,sha256=z3vHCCtz1rD8q5Qabcd1kTjr2jc3cQHDEKwGkKAziug,820
+vsmodel/VExBModel.py,sha256=t-LpSyxZ6-5ojnc3gGvZn5SfZd2NdBrLXAHKw8tSN5k,592
+vsmodel/__init__.py,sha256=gTcDLo6j6NeuGG2sgLYobKzi-FGvKQM5FwUVKPRR-RU,267
+vsmodel-0.0.1.dist-info/LICENSE,sha256=qsB9FW21oUnBQUBYA-W4RQBLzIt73jLjotsHb7dwI7s,1070
+vsmodel-0.0.1.dist-info/METADATA,sha256=58V37maEwFfMEE9AmRLPpYbcmuXFXePgbcLhFaC06fU,5152
+vsmodel-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+vsmodel-0.0.1.dist-info/top_level.txt,sha256=0wFpcPnf9UlNTfUsLmkr26wlWwLVOwb5syOdK8hOwaE,8
+vsmodel-0.0.1.dist-info/RECORD,,
