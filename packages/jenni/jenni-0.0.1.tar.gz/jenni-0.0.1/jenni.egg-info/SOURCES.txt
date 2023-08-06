@@ -1,0 +1,7 @@
+README.md
+setup.py
+jenni/__init__.py
+jenni.egg-info/PKG-INFO
+jenni.egg-info/SOURCES.txt
+jenni.egg-info/dependency_links.txt
+jenni.egg-info/top_level.txt
