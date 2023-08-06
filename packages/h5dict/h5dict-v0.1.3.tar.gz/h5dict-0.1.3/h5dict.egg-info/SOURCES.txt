@@ -1,0 +1,10 @@
+README.md
+setup.py
+h5dict/__init__.py
+h5dict/conversions.py
+h5dict/h5dict.py
+h5dict.egg-info/PKG-INFO
+h5dict.egg-info/SOURCES.txt
+h5dict.egg-info/dependency_links.txt
+h5dict.egg-info/requires.txt
+h5dict.egg-info/top_level.txt
