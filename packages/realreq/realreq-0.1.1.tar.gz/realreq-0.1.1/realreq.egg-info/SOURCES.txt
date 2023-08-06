@@ -1,0 +1,6 @@
+README.md
+setup.py
+realreq.egg-info/PKG-INFO
+realreq.egg-info/SOURCES.txt
+realreq.egg-info/dependency_links.txt
+realreq.egg-info/top_level.txt
