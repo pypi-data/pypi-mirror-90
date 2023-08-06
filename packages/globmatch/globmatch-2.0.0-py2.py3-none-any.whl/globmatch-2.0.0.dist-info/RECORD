@@ -1,0 +1,10 @@
+globmatch/__init__.py,sha256=s5q4e-6JvMEy9Q6VNTuR03VSa3UaFUJTJX_IWoAgtgo,647
+globmatch/_version.py,sha256=BxTEmjhjMP2gE-77BhoNJFRoUGt2ujSK_Bv7-jwaQos,74
+globmatch/pathutils.py,sha256=why7qpSOK1pRmjxv2eTDKfOj55VVq2ffHx642Pop4qM,971
+globmatch/translation.py,sha256=Q4a400dCNg1wrSHBAmDHdd8hD_nm-6vOCKu6fWUTpmI,4265
+globmatch-2.0.0.dist-info/LICENSE.md,sha256=pPr8dV0J59e2on1Vaf5pGo0tinrAsyzppay9MJbsoeg,4353
+globmatch-2.0.0.dist-info/METADATA,sha256=HBd3u-TX_82vcsuCL2CNUOzJsZIpKsekcKRyusmJkPw,3530
+globmatch-2.0.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+globmatch-2.0.0.dist-info/pbr.json,sha256=DmBeh0sWICMHEBQeDBqDbsa_OKf-kBsBGC42xnXcar4,47
+globmatch-2.0.0.dist-info/top_level.txt,sha256=GZkMo_TEP49hp_PxMgyljSfpk8sX5pfpRQsmHeoq4_E,10
+globmatch-2.0.0.dist-info/RECORD,,
