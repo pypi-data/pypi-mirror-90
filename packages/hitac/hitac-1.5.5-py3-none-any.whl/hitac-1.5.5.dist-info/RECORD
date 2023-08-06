@@ -1,0 +1,11 @@
+q2_hitac/__init__.py,sha256=d5zKWf4R0ZwoIP0sVCRi4hPyF5bKj42eIsvz8V-2Usk,123
+q2_hitac/_classify.py,sha256=v7IdH9soKbFZmmidY1dwxdYLnIpBG6UWff3pgvQYKTs,8209
+q2_hitac/_version.py,sha256=NAB5YayLGhqnNslXNeR5EVoZwlGNM0sclTo4eR0-RAo,498
+q2_hitac/citations.bib,sha256=p95QgeaCDFxWClLN2JTB1n0HjKvSozOmLty9pdB3iTc,302
+q2_hitac/plugin_setup.py,sha256=wycRGeCz-WRGpDpW7tkDURt5JhMS6xh2Nvk2lt0fUYM,1322
+hitac-1.5.5.dist-info/LICENSE,sha256=mNhg37boJr2_bM6katawJzVMCoipMURk1eiRjO4I3pQ,35058
+hitac-1.5.5.dist-info/METADATA,sha256=D-ViB8R1xsmiPSp_TgnYMcPYzmujMyGSnqSv6q8QazY,4294
+hitac-1.5.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hitac-1.5.5.dist-info/entry_points.txt,sha256=1QnmHx2XKIPhiNG6LldpfOszH0yzaeUhXguuTVnyLmM,55
+hitac-1.5.5.dist-info/top_level.txt,sha256=MWZV8uJlBV57hu_bbYiNZ9uvNE-WoaRFnrUSNtyd6zY,9
+hitac-1.5.5.dist-info/RECORD,,
