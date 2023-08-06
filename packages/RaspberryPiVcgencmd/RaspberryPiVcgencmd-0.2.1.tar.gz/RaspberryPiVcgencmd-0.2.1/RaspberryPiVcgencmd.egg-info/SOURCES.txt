@@ -1,0 +1,8 @@
+README.md
+setup.py
+RaspberryPiVcgencmd/Vcgencmd.py
+RaspberryPiVcgencmd/__init__.py
+RaspberryPiVcgencmd.egg-info/PKG-INFO
+RaspberryPiVcgencmd.egg-info/SOURCES.txt
+RaspberryPiVcgencmd.egg-info/dependency_links.txt
+RaspberryPiVcgencmd.egg-info/top_level.txt
