@@ -1,0 +1,2 @@
+micromagnetictests==0.2
+ubermagtable==0.4
