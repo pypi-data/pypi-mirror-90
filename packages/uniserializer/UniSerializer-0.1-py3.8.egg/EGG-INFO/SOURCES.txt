@@ -1,0 +1,8 @@
+UniSerializer.py
+__init__.py
+setup.py
+UniSerializer.egg-info/PKG-INFO
+UniSerializer.egg-info/SOURCES.txt
+UniSerializer.egg-info/dependency_links.txt
+UniSerializer.egg-info/not-zip-safe
+UniSerializer.egg-info/top_level.txt
