@@ -1,0 +1,12 @@
+README.md
+setup.py
+sre_snapshots/__init__.py
+sre_snapshots/download_snapshots.py
+sre_snapshots/upload_snapshots.py
+sre_snapshots/utils.py
+sre_snapshots.egg-info/PKG-INFO
+sre_snapshots.egg-info/SOURCES.txt
+sre_snapshots.egg-info/dependency_links.txt
+sre_snapshots.egg-info/not-zip-safe
+sre_snapshots.egg-info/requires.txt
+sre_snapshots.egg-info/top_level.txt
