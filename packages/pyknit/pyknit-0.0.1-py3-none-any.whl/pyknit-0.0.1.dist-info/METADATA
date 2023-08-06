@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyknit
+Version: 0.0.1
+Summary: A set of tools for knitters to create charts and eventually more.
+Home-page: https://github.com/terriko/pyknit
+Author: Terri Oda
+Author-email: terri@toybox.ca
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pytest
+Requires-Dist: Pillow
+
+# pyknit
+A set of tools for knitters to create charts and eventually more.
+
+
