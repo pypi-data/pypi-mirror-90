@@ -1,0 +1,16 @@
+
+[dev]
+
+[test]
+cookiecutter
+coverage
+flake8
+gitpython
+pylint
+pytest
+pytest-cookies
+pytest-cov
+pyyaml
+safety
+tox
+yapf
