@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: exoplanet-core
+Version: 0.0.1
+Summary: The compiled backend for exoplanet
+Home-page: https://docs.exoplanet.codes
+Author: Daniel Foreman-Mackey
+Author-email: foreman.mackey@gmail.com
+Maintainer: Daniel Foreman-Mackey
+Maintainer-email: foreman.mackey@gmail.com
+License: MIT
+Requires-Dist: pybind11 (>=2.4)
+Requires-Dist: numpy (>=1.13.0)
+Provides-Extra: benchmark
+Requires-Dist: pytest ; extra == 'benchmark'
+Requires-Dist: pytest-benchmark ; extra == 'benchmark'
+Requires-Dist: radvel ; extra == 'benchmark'
+Requires-Dist: kepler.py ; extra == 'benchmark'
+Requires-Dist: batman-package ; extra == 'benchmark'
+Requires-Dist: exoplanet (==0.4.3) ; extra == 'benchmark'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.6.1) ; extra == 'test'
+
+This repository contains the compiled components for the [exoplanet](https://github.com/exoplanet-dev/exoplanet/) project.
+
+
