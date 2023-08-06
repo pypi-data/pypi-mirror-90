@@ -1,0 +1,12 @@
+clarku_youtube_crawler/US_CATE.json,sha256=6ZqFEcqC1C4Cq5cpdLFXAAfqfSEm3FnxpoVk8_Mzm6k,8713
+clarku_youtube_crawler/__init__.py,sha256=7tM12qt4EprDQFda1pEQkxtowxcaYms-bieFS6gn6lM,2851
+clarku_youtube_crawler/channelCrawler.py,sha256=mtSLodEnyI65EqXVOZluk9djJWBckHFgbcpC37OBc58,12297
+clarku_youtube_crawler/crawlerObject.py,sha256=kBUweBOA21FJFyyEJ4NKxsdG9mA5lVN7VXibie9YZn8,8592
+clarku_youtube_crawler/jSONDecoder.py,sha256=ZAgyKCxgmBxvaWdrqgIsHsz4gxZk3UFbQB4LkxyMoG8,8629
+clarku_youtube_crawler/rawCrawler.py,sha256=9bPwsuJzl0NFh2fYaMQ1IuxMkqZI-P177ECH-Elg-xM,9792
+clarku_youtube_crawler-1.0.5.dist-info/LICENSE,sha256=wnuxcnlzhHRDLDdIi0AppEtCUDByFoYq9boaL4dEXpw,1117
+clarku_youtube_crawler-1.0.5.dist-info/METADATA,sha256=L8A_lfgnPAmEjjjS5-UsKLY1Iaqsxxpok2A4e9DAxFE,2270
+clarku_youtube_crawler-1.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+clarku_youtube_crawler-1.0.5.dist-info/dependency_links.txt,sha256=YXQOA1_LWAzPH0CRtxeIOWWiG89srGB-C0lQvLzvfgI,51
+clarku_youtube_crawler-1.0.5.dist-info/top_level.txt,sha256=UVfmHSuoGCpy7u0BEeOhR8SO2nQUxJyqI7zYVoJQM5g,23
+clarku_youtube_crawler-1.0.5.dist-info/RECORD,,
