@@ -1,0 +1,13 @@
+README.md
+setup.py
+scripture_burrito/__init__.py
+scripture_burrito/catalog.py
+scripture_burrito/generate_ingredients.py
+scripture_burrito/validate.py
+scripture_burrito/validate_ingredients.py
+scripture_burrito.egg-info/PKG-INFO
+scripture_burrito.egg-info/SOURCES.txt
+scripture_burrito.egg-info/dependency_links.txt
+scripture_burrito.egg-info/entry_points.txt
+scripture_burrito.egg-info/requires.txt
+scripture_burrito.egg-info/top_level.txt
