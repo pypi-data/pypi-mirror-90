@@ -1,0 +1,5 @@
+mylogging
+numpy
+pandas==1.1.5
+sklearn
+requests
