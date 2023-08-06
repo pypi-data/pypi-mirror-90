@@ -1,0 +1,3 @@
+[paste.filter_factory]
+herodote_auth = herodote_auth.middleware:filter_factory
+
