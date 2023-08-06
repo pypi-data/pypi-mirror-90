@@ -1,0 +1,11 @@
+LICENSE
+README.md
+nanoasgi.py
+pyproject.toml
+setup.cfg
+setup.py
+NanoASGI.egg-info/PKG-INFO
+NanoASGI.egg-info/SOURCES.txt
+NanoASGI.egg-info/dependency_links.txt
+NanoASGI.egg-info/top_level.txt
+test/test_app.py
