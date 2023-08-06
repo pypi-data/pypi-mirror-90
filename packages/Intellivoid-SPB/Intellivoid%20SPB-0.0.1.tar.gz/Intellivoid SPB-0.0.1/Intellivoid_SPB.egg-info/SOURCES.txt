@@ -1,0 +1,11 @@
+README.md
+setup.py
+Intellivoid_SPB.egg-info/PKG-INFO
+Intellivoid_SPB.egg-info/SOURCES.txt
+Intellivoid_SPB.egg-info/dependency_links.txt
+Intellivoid_SPB.egg-info/requires.txt
+Intellivoid_SPB.egg-info/top_level.txt
+spamprotection/__init__.py
+spamprotection/client.py
+spamprotection/errors.py
+spamprotection/types.py
