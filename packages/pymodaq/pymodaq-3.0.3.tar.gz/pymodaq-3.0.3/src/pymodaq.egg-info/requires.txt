@@ -1,0 +1,17 @@
+pyqt5
+numpy==1.19.3
+scipy
+pyqtgraph>=0.11
+easydict
+tables
+pymodaq_plugins>=3.0.1
+pymodaq_pid_models>=0.0.2
+simple_pid
+python-dateutil
+packaging
+SQLAlchemy-Utils==0.36.6
+toml
+pymodaq_plugin_manager
+
+[:python_version < "3.8"]
+importlib_metadata
