@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pytorch-damn
+Version: 0.2.3
+Summary: Domain Attention Mixing Network: tool for domain adaptation
+Home-page: https://github.com/tilkb/damn
+Author: Bence Tilk
+Author-email: bence.tilk@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+Requires-Dist: pytorch-lightning
+Requires-Dist: torchvision
+
+Domain Attention Mixing Network(DAMN)
+
+# Method
+
+
+
+### Citation   
+```
+@article{tilk2021damn,
+  title={Domain Attention Mixing Network},
+  author={Bence Tilk},
+  journal={GitHub: https://github.com/tilkb/damn},
+  year={2021}
+}
+```   
+
