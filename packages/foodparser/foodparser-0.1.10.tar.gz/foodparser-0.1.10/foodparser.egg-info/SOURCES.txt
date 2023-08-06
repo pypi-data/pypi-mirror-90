@@ -1,0 +1,9 @@
+README.md
+setup.py
+foodparser/__init__.py
+foodparser/foodparser.py
+foodparser.egg-info/PKG-INFO
+foodparser.egg-info/SOURCES.txt
+foodparser.egg-info/dependency_links.txt
+foodparser.egg-info/top_level.txt
+foodparser/data/combined_gram_set.csv

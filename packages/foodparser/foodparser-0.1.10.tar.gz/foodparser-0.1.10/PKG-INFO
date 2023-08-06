@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: foodparser
+Version: 0.1.10
+Summary: A package to parse food logging texts.
+Home-page: https://github.com/JoeyHou/food_parser
+Author: Joey Hou
+Author-email: z9hou@ucsd.edu
+License: UNKNOWN
+Description: # Food Parser
+        Useful tools to parse food entries from users.
+        
+        # Description
+        
+        It consists of one main modules:
+        
+        - `foodparser`: tools to work with food logging parsing
+        
+        # Installation
+        
+        ## Normal installation
+        
+        ```bash
+        pip install foodparser
+        ```
+        
+        ## Development installation
+        
+        ```bash
+        git clone https://github.com/JoeyHou/food_parser.git
+        cd food_parser
+        pip install --editable .
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
