@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pyisotools
+Version: 1.0.1
+Summary: Simple python library for extracting and rebuilding ISOs
+Home-page: https://github.com/JoshuaMKW/pyisotools
+Author: JoshuaMK
+Author-email: joshuamkw2002@gmail.com
+License: GNU General Public License v3.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# pyisotools
+ISO library for extraction, rebuilding, and such
+
+# Features
+- Extract and Build ISOs
+- Custom file alignment
+- Custom ISO metadata
+
+# Limitations
+- Only supports Gamecube ISOs
+- File location on the ISO when rebuilding cannot be overridden
+
+# TODO
+- Support Wii ISOs
+- Support custom file locations when rebuilding
+- Support individual file extraction?
+
