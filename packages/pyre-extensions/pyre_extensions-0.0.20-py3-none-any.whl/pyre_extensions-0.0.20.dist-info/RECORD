@@ -1,0 +1,12 @@
+pyre_extensions/__init__.py,sha256=TXHTV4yQB9Qwz7ztMe73Mu407rXkc_HArZlHQgZ8GYY,3371
+pyre_extensions/generic.py,sha256=aUrRql3M-x3FsabFfmG68wEczhUFEtM934wNUhSIwpk,420
+pyre_extensions/safe_json.py,sha256=rj3KsQxL6BzsBr5iqt_fGmzrM7fO4GeR-R22cZaWvHc,4541
+pyre_extensions/type_variable_operators.py,sha256=DXzNb_up26lNi6F2KepWiUnUDyw6wrDyFpshG1PE7OE,693
+pyre_extensions/tests/__init__.py,sha256=1FTJSa6CPtJvYm9HXJCm3VKOozwF-PH71reWCpzrmsk,268
+pyre_extensions/tests/safe_json_test.py,sha256=ZgKc8UnaGZMSqHcSsfJnj1U7F6mVjb4evrUtG-Un_6I,5542
+pyre_extensions/tests/simple_tests.py,sha256=SxNpzR4kfOId1KFzAfy3vem8bnWu06GMuDa3JVSVNyc,2884
+pyre_extensions-0.0.20.dist-info/LICENSE,sha256=9lf5nT-5ZH25JijpYAequ0bl8E8z5JmZB1qrjiUMp84,1080
+pyre_extensions-0.0.20.dist-info/METADATA,sha256=7wGJyfvnMIcQ7pTeHQaKTpr2CFc9bMU_LUqnvinBY0U,3967
+pyre_extensions-0.0.20.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyre_extensions-0.0.20.dist-info/top_level.txt,sha256=0uoqHb2Kcyjnqdyz9R9fbixc5wtIIepi8ZecAfyjtww,16
+pyre_extensions-0.0.20.dist-info/RECORD,,
