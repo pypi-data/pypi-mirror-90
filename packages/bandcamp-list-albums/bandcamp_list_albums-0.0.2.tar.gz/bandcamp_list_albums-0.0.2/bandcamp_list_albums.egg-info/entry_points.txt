@@ -1,0 +1,3 @@
+[console_scripts]
+bandcamp_list_albums = bandcamp_list_albums:main
+

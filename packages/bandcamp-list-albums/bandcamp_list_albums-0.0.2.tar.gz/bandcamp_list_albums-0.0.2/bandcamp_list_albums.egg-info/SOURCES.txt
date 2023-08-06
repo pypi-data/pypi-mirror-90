@@ -1,0 +1,8 @@
+README.md
+bandcamp_list_albums.py
+setup.py
+bandcamp_list_albums.egg-info/PKG-INFO
+bandcamp_list_albums.egg-info/SOURCES.txt
+bandcamp_list_albums.egg-info/dependency_links.txt
+bandcamp_list_albums.egg-info/entry_points.txt
+bandcamp_list_albums.egg-info/top_level.txt
