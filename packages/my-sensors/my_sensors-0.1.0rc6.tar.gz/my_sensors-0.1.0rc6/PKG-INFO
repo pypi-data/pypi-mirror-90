@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: my-sensors
+Version: 0.1.0rc6
+Summary: A collection of sensors that I use with a standardized interface.
+License: MIT
+Author: janjagusch
+Author-email: jan.jagusch@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+# my-sensors
+A collection of sensors that I use with a standardized interface.
+
