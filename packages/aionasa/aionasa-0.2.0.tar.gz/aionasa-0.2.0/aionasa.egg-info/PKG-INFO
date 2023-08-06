@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: aionasa
+Version: 0.2.0
+Summary: An async python wrapper for NASA open APIs.
+Home-page: https://github.com/nwunderly/aionasa
+Author: nwunderly
+License: UNKNOWN
+Project-URL: Documentation, https://aionasa.rtfd.org/
+Description: # aionasa
+        An async python wrapper for NASA open APIs. ([api.nasa.gov](https://api.nasa.gov/))
+        
+        
+        #### Disclaimer
+        This module is still in the development/testing phase.
+        Bugs are still being worked out and breaking changes are common.
+        
+        
+        #### Current Progress: 5/17 APIs
+        - APOD: NASA Astronomy Picture of the Day
+            - API: **complete**
+            - CLI: **complete**
+            - Documentation: **complete**
+        - InSight: Mars Weather Data
+            - API: **complete**
+            - Documentation: **complete**
+        - EPIC: Earth Polychromatic Imaging Camera
+            - API: **complete**
+            - Documentation: **complete**
+        - Asteroids-NeoWs: Near Earth Object Web Service
+            - API: **complete**
+            - Documentation: **complete**
+        - Exoplanet: NASA Exoplanet Database
+            - API: **complete**
+            - Documentation: **complete**
+        
+        
+        #### Installing
+        aionasa can be installed from pypi with the command:
+        ```sh
+        # Linux
+        python3 -m pip install -U aionasa
+        
+        # Windows
+        python -m pip install -U aionasa
+        ```
+        
+        To install the development version of the library directly from source:
+        ```sh
+        $ git clone https://github.com/nwunderly/aionasa
+        $ cd aionasa
+        $ python3 -m pip install -U .
+        ```
+        
+        #### Quickstart
+        We'll be using IPython because it supports `await` expressions directly from the console.
+        ```sh
+        $ pip install aionasa ipython
+        $ ipython
+        ```
+        
+        ```python
+        from aionasa import APOD, InSight
+        
+        async with APOD() as apod:
+            picture = await apod.get()
+        
+        picture.url # this will be the most recent APOD image URL.
+        
+        async with InSight() as insight:
+            data = await insight.get()
+        
+        data # this will be a dict containing the JSON data returned by the API.
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Provides-Extra: docs
