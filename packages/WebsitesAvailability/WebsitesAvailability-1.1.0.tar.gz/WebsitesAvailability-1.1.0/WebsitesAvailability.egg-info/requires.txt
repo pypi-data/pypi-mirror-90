@@ -1,0 +1,6 @@
+msgpack
+dnspython
+requests
+pyOpenSSL
+kafka-python
+psycopg2
