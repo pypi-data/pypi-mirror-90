@@ -1,0 +1,9 @@
+fastapi_csv/__init__.py,sha256=wK_t90CaHOzjIprXZWV_Z2eS1Tz5q8Pjb3g-DltlQpE,61
+fastapi_csv/applications.py,sha256=vGymOTFBCXi9uYav7O1YS-6FPCUAt2JAzKogWTSLAwA,8094
+fastapi_csv/cli.py,sha256=sikC2GEBZWcblSH8U7R2k6XGcPa6zbQxS78mKflASyU,1001
+fastapi_csv-0.0.1.dist-info/LICENSE,sha256=-90t2PJkT5cHaSU0eP8YJWCBL1sYLcbPBCR1jmDzTO4,1071
+fastapi_csv-0.0.1.dist-info/METADATA,sha256=UXMAlI74WPBv17IBeZFtSWxgphQohmTDcDuDF_6Us7Y,3394
+fastapi_csv-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+fastapi_csv-0.0.1.dist-info/entry_points.txt,sha256=GCdmnl94nYxMluo-T-JE7sPltoQJuLdmJk_L2TxrTCU,59
+fastapi_csv-0.0.1.dist-info/top_level.txt,sha256=WKs3JynJ2hcUWCf73lPpd3OB12kCSZ4-xbdeADFhLP8,12
+fastapi_csv-0.0.1.dist-info/RECORD,,
