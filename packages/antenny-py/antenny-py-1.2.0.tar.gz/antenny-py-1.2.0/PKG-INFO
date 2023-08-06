@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: antenny-py
+Version: 1.2.0
+Summary: Antenny API
+Home-page: UNKNOWN
+Author: OpenAPI Generator community
+Author-email: admin@antenny.io
+License: Apache 2.0
+Description:     This is an api that allows you to interact with the Antenny platform. It allows you to manage your clients and subscriptions.  # noqa: E501
+            
+Keywords: OpenAPI,OpenAPI-Generator,Antenny API
+Platform: UNKNOWN
