@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cachetools-ext
+Version: 0.0.7
+Summary: UNKNOWN
+Home-page: https://github.com/olirice/cachetools_ext
+Author: Oliver Rice
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: dev
+Provides-Extra: test
+Provides-Extra: s3
