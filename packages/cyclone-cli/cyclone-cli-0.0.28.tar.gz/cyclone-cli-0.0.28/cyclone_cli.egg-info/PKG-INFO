@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cyclone-cli
+Version: 0.0.28
+Summary: CLI app for Cyclone.
+Home-page: https://cyclonecms.com
+Author: Pixegami
+Author-email: pixegami@gmail.com
+License: UNKNOWN
+Description: # Cyclone CMS CLI App
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown

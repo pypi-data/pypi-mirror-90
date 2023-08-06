@@ -1,0 +1,3 @@
+[console_scripts]
+cyclone = cyclone_cli:main
+
