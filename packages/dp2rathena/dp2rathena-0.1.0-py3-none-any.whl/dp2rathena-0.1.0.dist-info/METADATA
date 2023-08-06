@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: dp2rathena
+Version: 0.1.0
+Summary: Convert Divine-Pride API data to rAthena YAML
+Home-page: https://github.com/Latiosu/dp2rathena
+License: MIT
+Author: Eric Liu
+Author-email: latiosworks@gmail.com
+Requires-Python: >=3.7
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Database
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Utilities
+Requires-Dist: PyYAML (>=5.3.1,<6.0.0)
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: python-dotenv (>=0.15.0,<0.16.0)
+Requires-Dist: tortilla (>=0.5.0,<0.6.0)
+Project-URL: Repository, https://github.com/Latiosu/dp2rathena
