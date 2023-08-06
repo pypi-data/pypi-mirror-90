@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+treeage/__init__.py
+treeage/__version__.py
+treeage/core.py
+treeage/terminal.py
+treeage.egg-info/PKG-INFO
+treeage.egg-info/SOURCES.txt
+treeage.egg-info/dependency_links.txt
+treeage.egg-info/entry_points.txt
+treeage.egg-info/requires.txt
+treeage.egg-info/top_level.txt
