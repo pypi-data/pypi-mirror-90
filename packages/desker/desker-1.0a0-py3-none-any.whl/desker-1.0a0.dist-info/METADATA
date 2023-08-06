@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: desker
+Version: 1.0a0
+Summary: DESKtop Elements Recognition
+Home-page: https://gitlab.com/d3sker/desker
+Author: ['jpd', 'asr', 'ljk', 'fgy']
+Author-email: contact@amossys.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: coloredlogs
+Requires-Dist: editdistance (>=0.5.3)
+Requires-Dist: flask
+Requires-Dist: flask-restplus
+Requires-Dist: joblib
+Requires-Dist: networkx (>=2.5)
+Requires-Dist: nltk (==3.5)
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pandas
+Requires-Dist: Pillow
+Requires-Dist: pytesseract
+Requires-Dist: ruamel.yaml (>=0.16.10)
+Requires-Dist: scikit-learn (==0.23.2)
+Requires-Dist: sphinx
+Requires-Dist: tensorboard
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: werkzeug (==0.16.1)
+
+UNKNOWN
+
+

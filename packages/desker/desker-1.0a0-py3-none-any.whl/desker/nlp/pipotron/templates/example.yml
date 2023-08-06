@@ -1,0 +1,29 @@
+# Example showing all the possibilities of the templates
+
+text:
+  - ONE:
+    - "{{ ALL_OF pays }}"
+  - ONE:
+    - toto
+    - tata
+    - titi
+    - tutu
+  - ALL:
+    - 1
+    - 2
+    - 3
+  - ONE_OF: bonjour
+  - "{{ ONE_OF  bonjour }} {{ ONE_OF monsieur }}"
+  
+pays:
+  - japon
+
+bonjour:
+  - bonjour
+  - yo
+  - salut
+
+monsieur:
+  - Monsieur
+  - sieur
+  - jeune homme

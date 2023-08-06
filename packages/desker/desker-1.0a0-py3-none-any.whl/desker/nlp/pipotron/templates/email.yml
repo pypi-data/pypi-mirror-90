@@ -1,0 +1,91 @@
+text:
+  - "{{ ONE_OF  bonjour }} {{ ONE_OF destinataire }},\n\n"
+  - ONE:
+    - 's’il est vrai que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}, n’oublions pas que seul {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'en effet, {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}, mais, malgré tout {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - '{{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} de part le fait que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - '{{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} quand {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'qui pourrait expliquer que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} si nul ne sait pourquoi {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'soyez en sûr, chers collaborateurs, {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} car {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - '{{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} et {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - '{{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} sans que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'néanmoins, si {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} il est clair que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'il est vrai que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} mais on ne peut ommettre que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'c’est pourquoi il faut que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} et que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'si {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} alors {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'il suffirait pourtant que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} pour que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'malgré tout, {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} uniquement pour que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'il devient donc nécessaire que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} pour que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'comme le disait mon prédécesseur : ’{{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}’, il faut donc que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'le fait que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} ne suffit plus, l’essentiel réside dans le fait que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'je vous le dit chers collaborateurs, {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} et seul {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'certes {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} mais {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'nous devons garder en tête que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} sans oublier que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'à ce jour, deux points sont à retenir : - {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} - {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'sommes-nous sûr que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} ? non me direz-vous, seul {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'il est urgent que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} pour que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}.'
+    - 'on pense souvent que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}, cela vient du faite que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}'
+    - '{{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}, et cela nous conduit à croire que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}'
+    - 'on n’est pas surpris lorsque {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}, cependant lorsque {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} et que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} alors {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}'
+    - 'c’est en se souvenant que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}} qu’on s’assure que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}'
+    - 'on dit que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}, mais en vérité {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}'
+    - 'on dit que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}, on dit également que {{ ONE_OF nom.s}} {{ONE_OF verb.s}} {{ONE_OF nom.p}} {{ONE_OF adj.p}} {{ONE_OF cod}}. est-ce bien crédible ?'
+
+  - ONE:
+    - "\n\n{{ ONE_OF formules_politesse_amicales }},"
+    - "\n\n{{ ONE_OF formules_politesse_courtes }},"
+    - "\n\n{{ ONE_OF formules_politesse_longues}},"
+  - ONE:
+    - "\n\nPipoman"
+    - "\n\nPipowoman"
+
+bonjour:
+  - Bonjour
+  - Bonsoir
+  - Salut
+  - Hello
+  - Yo
+
+formules_politesse_amicales:
+- Veuillez croire à mon meilleur souvenir.
+- Veuillez trouver ici l’assurance de mon amitié.
+- Recevez, avec toute mon amitié, mes salutations distinguées.
+- Recevez, cher ami, mes sincères salutations
+- Amitiés
+- Amicalement
+- Croyez, Madame, Monsieur, à mes sentiments les meilleurs
+- Veuillez trouver ici l’assurance de mon amitié
+- Toutes mes amitiés
+
+formules_politesse_courtes:
+- Cordialement
+- Sincèrement
+- Sincères salutations
+- Bien cordialement
+- Bien sincèrement
+- Cordialement vôtre
+- Sincèrement vôtre
+- Bien à vous
+- En vous souhaitant cordialement une excellente journée
+- Avec mes salutations
+- Avec mes remerciements
+
+formules_politesse_longues:
+- Veuillez agréer, Madame, Monsieur, l’expression de mon profond respect
+- Veuillez agréer, Madame, Monsieur, l’expression de mes sentiments respectueux
+- Veuillez croire, cher Monsieur, à mes sentiments cordiaux et respectueux
+- Je vous prie de recevoir, Madame la Directrice, mes respectueuses salutations
+- Je vous prie d’agréer, Monsieur le Directeur, l’expression de mon profond respect
+- Je vous prie d’agréer, Monsieur, l’assurance de mon profond respect
+- Recevez, Madame, Monsieur, mes salutations respectueuses
+- Recevez, Madame, Monsieur, mes sincères salutations
+- Je vous prie d’agréer, Madame, Monsieur, mes salutations distinguées
+- Veuillez agréer, Madame, Monsieur, mes salutations distinguées
+- Veuillez agréer, Madame, Monsieur, mes meilleures salutations
+- Veuillez recevoir, Madame, Monsieur, l’assurance de ma considération distinguée
+- Je vous prie d’agréer, Madame, mes respectueux hommages
+- Recevez, Monsieur, mes salutations distinguées
+- Nous vous prions d’agréer, Monsieur, l’expression de nos sentiments respectueux et dévoués
+- Nous vous prions de croire, Monsieur, à l’expression de nos sentiments les plus dévoués
+- Avec mes respectueux hommages, je vous prie d’agréer, Monsieur, Madame, l’expression de ma considération la plus distinguée
+- Dans l’attente de votre accord, je vous prie d’agréer, Madame, Monsieur, mes salutations distinguées
