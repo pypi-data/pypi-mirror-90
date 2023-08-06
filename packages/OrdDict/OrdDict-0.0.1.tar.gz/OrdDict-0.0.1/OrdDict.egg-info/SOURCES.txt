@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+OrdDict/OrdDict.py
+OrdDict/__init__.py
+OrdDict.egg-info/PKG-INFO
+OrdDict.egg-info/SOURCES.txt
+OrdDict.egg-info/dependency_links.txt
+OrdDict.egg-info/top_level.txt
