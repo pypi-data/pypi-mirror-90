@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+academic_ads_bibtex/__init__.py
+academic_ads_bibtex/converter.py
+academic_ads_bibtex/logger.py
+academic_ads_bibtex.egg-info/PKG-INFO
+academic_ads_bibtex.egg-info/SOURCES.txt
+academic_ads_bibtex.egg-info/dependency_links.txt
+academic_ads_bibtex.egg-info/top_level.txt
+academic_ads_bibtex/database/bibtex_journals.db
+bin/academic_ads_bibtex
