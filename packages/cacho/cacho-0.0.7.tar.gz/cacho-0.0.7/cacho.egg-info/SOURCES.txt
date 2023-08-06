@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+./build/lib/cacho.so
+cacho.egg-info/PKG-INFO
+cacho.egg-info/SOURCES.txt
+cacho.egg-info/dependency_links.txt
+cacho.egg-info/top_level.txt
