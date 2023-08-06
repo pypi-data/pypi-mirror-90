@@ -1,0 +1,11 @@
+sarc/__init__.py,sha256=C_GSJXaySLHHWXZOiEjpiayTSPJJqOu_RovBo-JNLOY,113
+sarc/__main__.py,sha256=UFVpziNGzO2F0txfYh8gxY39GTvSqgRYpu3l8i6oADQ,10245
+sarc/_version.py,sha256=IIyxXLgAZEgKyrm9XhhBvJzwq1uRC3M2V0ALwkdlF1E,498
+sarc/aglenv_file_info.json,sha256=58hAs9pPNhccYP-Btur2PhmFRG3UEFuPybVTPLib62w,6943
+sarc/sarc.py,sha256=gMmGioLI0zuTVque3aDZCFiC1z4dPM4O7VVmeX_jhyw,18428
+sarc-2.0.4.dist-info/LICENSE,sha256=MVVce6oSrBFQvJpI-22FtV2c6hM2rjr6k9ZT9o_km7I,17879
+sarc-2.0.4.dist-info/METADATA,sha256=GEsQB7qnc7tpabWo_VgTghpnrvMcqXmGtgMPrWI4JH4,2926
+sarc-2.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sarc-2.0.4.dist-info/entry_points.txt,sha256=Jef4Tinvz9gYMi07pf45WwdIu6AukU_DdLcxeA8JXAs,75
+sarc-2.0.4.dist-info/top_level.txt,sha256=DrhRgGRAU5YJh-0dGpiQk2Ntk4BSb84zQd1zfw7nfC0,5
+sarc-2.0.4.dist-info/RECORD,,
