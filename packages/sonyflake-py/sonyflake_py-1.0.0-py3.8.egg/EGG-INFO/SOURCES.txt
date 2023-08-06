@@ -1,0 +1,9 @@
+README.md
+setup.py
+sonyflake/__init__.py
+sonyflake/about.py
+sonyflake/sonyflake.py
+sonyflake_py.egg-info/PKG-INFO
+sonyflake_py.egg-info/SOURCES.txt
+sonyflake_py.egg-info/dependency_links.txt
+sonyflake_py.egg-info/top_level.txt
