@@ -1,0 +1,9 @@
+README.md
+setup.py
+dalle_pytorch/__init__.py
+dalle_pytorch/dalle_pytorch.py
+dalle_pytorch_dev.egg-info/PKG-INFO
+dalle_pytorch_dev.egg-info/SOURCES.txt
+dalle_pytorch_dev.egg-info/dependency_links.txt
+dalle_pytorch_dev.egg-info/requires.txt
+dalle_pytorch_dev.egg-info/top_level.txt
