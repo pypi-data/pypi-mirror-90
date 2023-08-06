@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: royalnet-discordpy
+Version: 0.1.7
+Summary: 
+License: AGPL-3.0-or-later
+Author: Stefano Pigozzi
+Author-email: ste.pigozzi@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: discord.py (>=1.5.1,<2.0.0)
+Requires-Dist: royalnet (>=6.0.0a29,<7.0.0)
