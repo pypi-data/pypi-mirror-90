@@ -1,0 +1,4 @@
+include *.h
+recursive-include *.h *.py
+
+graft pdfresurrect/include/
