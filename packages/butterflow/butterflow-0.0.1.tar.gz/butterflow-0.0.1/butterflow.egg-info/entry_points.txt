@@ -1,0 +1,3 @@
+[console_scripts]
+butterflow = butterflow.__main__:main
+

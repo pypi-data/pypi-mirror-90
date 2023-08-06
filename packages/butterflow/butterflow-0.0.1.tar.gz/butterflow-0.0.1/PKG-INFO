@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: butterflow
+Version: 0.0.1
+Summary: Python project
+Home-page: https://john.doe.org
+Author: Kristian Boda
+Author-email: kristian.boda@babylonhealth.com
+License: MIT
+Description: The boilerplate Python project that aims to create facility for maintaining of the package
+        easily. It considering tools for building, testing and distribution.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
