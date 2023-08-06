@@ -1,0 +1,7 @@
+
+[:(python_version=='2.7')]
+backports.functools_lru_cache
+
+[test]
+pytest>=4.6
+pytest-cov
