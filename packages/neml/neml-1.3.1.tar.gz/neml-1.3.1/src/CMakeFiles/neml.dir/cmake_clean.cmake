@@ -1,0 +1,39 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/neml.dir/objects.cxx.o"
+  "CMakeFiles/neml.dir/models.cxx.o"
+  "CMakeFiles/neml.dir/solvers.cxx.o"
+  "CMakeFiles/neml.dir/surfaces.cxx.o"
+  "CMakeFiles/neml.dir/hardening.cxx.o"
+  "CMakeFiles/neml.dir/ri_flow.cxx.o"
+  "CMakeFiles/neml.dir/visco_flow.cxx.o"
+  "CMakeFiles/neml.dir/general_flow.cxx.o"
+  "CMakeFiles/neml.dir/nemlerror.cxx.o"
+  "CMakeFiles/neml.dir/elasticity.cxx.o"
+  "CMakeFiles/neml.dir/parse.cxx.o"
+  "CMakeFiles/neml.dir/cinterface.cxx.o"
+  "CMakeFiles/neml.dir/interpolate.cxx.o"
+  "CMakeFiles/neml.dir/creep.cxx.o"
+  "CMakeFiles/neml.dir/damage.cxx.o"
+  "CMakeFiles/neml.dir/history.cxx.o"
+  "CMakeFiles/neml.dir/larsonmiller.cxx.o"
+  "CMakeFiles/neml.dir/block.cxx.o"
+  "CMakeFiles/neml.dir/math/nemlmath.cxx.o"
+  "CMakeFiles/neml.dir/math/rotations.cxx.o"
+  "CMakeFiles/neml.dir/math/tensors.cxx.o"
+  "CMakeFiles/neml.dir/math/matrix.cxx.o"
+  "CMakeFiles/neml.dir/cp/crystallography.cxx.o"
+  "CMakeFiles/neml.dir/cp/inelasticity.cxx.o"
+  "CMakeFiles/neml.dir/cp/sliprules.cxx.o"
+  "CMakeFiles/neml.dir/cp/slipharden.cxx.o"
+  "CMakeFiles/neml.dir/cp/kinematics.cxx.o"
+  "CMakeFiles/neml.dir/cp/singlecrystal.cxx.o"
+  "CMakeFiles/neml.dir/cp/batch.cxx.o"
+  "CMakeFiles/neml.dir/cp/polycrystal.cxx.o"
+  "../build/lib.linux-x86_64-3.7/neml/libneml.pdb"
+  "../build/lib.linux-x86_64-3.7/neml/libneml.so"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/neml.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

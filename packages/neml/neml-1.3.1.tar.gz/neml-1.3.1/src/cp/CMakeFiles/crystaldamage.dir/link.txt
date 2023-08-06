@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -O3 -march=native -pedantic -Wextra -Wall -Wno-unused-parameter  -shared -Wl,-soname,crystaldamage.cpython-37m-x86_64-linux-gnu.so -o ../../neml/cp/crystaldamage.cpython-37m-x86_64-linux-gnu.so CMakeFiles/crystaldamage.dir/crystaldamage_wrap.cxx.o -Wl,-rpath,/home/mark/projects/neml/lib -flto ../../lib/libneml.so -lblas -llapack -lblas -llapack 
