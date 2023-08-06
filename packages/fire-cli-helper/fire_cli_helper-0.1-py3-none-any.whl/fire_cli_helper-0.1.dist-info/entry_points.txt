@@ -1,0 +1,3 @@
+[console_scripts]
+firehelper_example = example_cli.__main__:main
+
