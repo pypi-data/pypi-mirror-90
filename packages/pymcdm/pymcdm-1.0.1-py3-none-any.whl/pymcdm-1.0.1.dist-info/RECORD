@@ -1,0 +1,17 @@
+pymcdm/__init__.py,sha256=mTPvjySI2gatp4iO9ZCofAd60x4DlerWCaHyPLrFUHA,100
+pymcdm/correlations.py,sha256=nYUlKX9ryEa0qLhFCW_8Ylh1ELNwR6pabUVGNoRccwY,2905
+pymcdm/normalizations.py,sha256=QVdHUkdx6r_xu5FB0RlALsD8b5BvjuCeKUAZYKHRRIo,2699
+pymcdm/weights.py,sha256=0myTNDx3xGfvksb87g9EGuPxIKf8NX3oIeVmcR46gWk,1617
+pymcdm/methods/__init__.py,sha256=EFrbTuqjQujrzEB4_g6_aOfFGm10mgWFd-6mqmdRdeE,167
+pymcdm/methods/comet.py,sha256=fLyREm0m6WkOyhp-0AmTJbLVDU98mtzo-qVyZdaXgDI,5575
+pymcdm/methods/copras.py,sha256=6Jokeu35rnsFrzn-mbKcdwfbKxaqUY7dUswKHaV5CPY,1586
+pymcdm/methods/mcda_method.py,sha256=GpIJj4XbxgFVA8smC2sE7j4EksLb67hUqsjdh_47mdI,1056
+pymcdm/methods/promethee.py,sha256=JXtHnJCbkyoCuBo8gyrDNwamdtik-WUui7yo22ohwTc,3915
+pymcdm/methods/spotis.py,sha256=ZpifUGQcQ4uIOYoKox-ffNZetyFkBr80zGh04WuezlQ,2077
+pymcdm/methods/topsis.py,sha256=AdqfD1OVCGaytJdYx-vk7wNUyffd9xCcB6LsQlfW1bc,2367
+pymcdm/methods/vikor.py,sha256=NOCAO5d0zRHe8s7-es1bIi0gr2BRgCDZY1xhgL4IpDU,3102
+pymcdm-1.0.1.dist-info/LICENSE,sha256=VJ4JIlrwbq9sh-6h7oJ_q1F9FBf1TU2hcneFOq_-JcE,1070
+pymcdm-1.0.1.dist-info/METADATA,sha256=vYeZfIclpJSAQJovLsGmrMuXBB088yBBY6HaVpFeKYE,953
+pymcdm-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pymcdm-1.0.1.dist-info/top_level.txt,sha256=agVrWeCYXIOzAl21M-bPSnCb5DLse_1CcribenoyD4c,7
+pymcdm-1.0.1.dist-info/RECORD,,
