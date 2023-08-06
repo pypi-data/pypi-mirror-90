@@ -1,0 +1,12 @@
+README.md
+setup.py
+Gitools.egg-info/PKG-INFO
+Gitools.egg-info/SOURCES.txt
+Gitools.egg-info/dependency_links.txt
+Gitools.egg-info/entry_points.txt
+Gitools.egg-info/top_level.txt
+gitool/__init__.py
+gitool/__main__.py
+gitool/getChar.py
+gitool/gitool.py
+gitool/utils.py
