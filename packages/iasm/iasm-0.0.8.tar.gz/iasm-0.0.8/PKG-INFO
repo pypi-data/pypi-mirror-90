@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: iasm
+Version: 0.0.8
+Summary: Interactive Assembler
+Home-page: https://github.com/bad-address/iasm
+Author: Di Paola Martin
+Author-email: use-github-issues@example.com
+License: GNU GPLv3
+Description: Interactive Assembler
+Keywords: asm,assembler,assembly,x86,arm
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Assemblers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.5
