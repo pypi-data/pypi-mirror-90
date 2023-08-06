@@ -1,0 +1,8 @@
+vizplugins/__init__.py,sha256=AFngyStWXik1HyV1NwiNrI2DMGHzpmktL78dXYr0eeE,187
+vizplugins/cpu_usage.py,sha256=gFGwXiLmrF49-3eECAx3XC0os5yp9yt7G21T2xZJjc4,3683
+vizplugins-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vizplugins-0.1.0.dist-info/METADATA,sha256=TZU8kIP1eG66Mvq7wKeW7FQDvw5AsrKAmVlNQSYDdWM,2449
+vizplugins-0.1.0.dist-info/NOTICE.txt,sha256=QWhjhp67_6o5uXEJN2SNG3lzsaBiDjeZ3oKVropMVxs,550
+vizplugins-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vizplugins-0.1.0.dist-info/top_level.txt,sha256=LkNMrHee6cGZADV8NQEysklgVcrEShMB5pCc2ip7q5A,11
+vizplugins-0.1.0.dist-info/RECORD,,
