@@ -1,0 +1,3 @@
+[console_scripts]
+sxmv = sxm_viewer.main:main
+
