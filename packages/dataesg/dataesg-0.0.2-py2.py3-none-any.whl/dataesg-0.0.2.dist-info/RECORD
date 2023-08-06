@@ -1,0 +1,13 @@
+dataesg/__init__.py,sha256=xh1rjlu-RmveUA221w92-kmSBppzKtMdWKoh97CUZQM,285
+dataesg/api_config.py,sha256=7DoEw7YSzoyDkFa_U3uJ0VglJ2bDvimg8yMcg2pFnN0,898
+dataesg/api_init.py,sha256=1jI_fJ7l5qhl4kku0H7vjvaCkFmniCUzr2j9V7_1MCY,300
+dataesg/connection.py,sha256=vlxIOYfi7muwE9wuuvlAGvzkVOeTmkRBP1vlpkX2ULU,2147
+dataesg/data.py,sha256=IqIM-ABeucfRC-TAZaEJfsnalhtDkZZQTVPzuE4qM8I,1199
+dataesg/database.py,sha256=Bfv0p4Mki1okOx5Tg07WQ4DeQVi0xebN0u7RUWsWvW8,618
+dataesg/get.py,sha256=36jI_mkuAQNlGS9IMPUhxdjXhPxfYQgRuMDNMA6rqGc,4429
+dataesg/visualizations.py,sha256=1nte8HqQKYFzT-YoueUjeNdE4SAwOHzCZZrt-QjFIHw,6427
+dataesg-0.0.2.dist-info/LICENSE.txt,sha256=C6HuWaJx9vFvy8BdP4hV6sNs6myhjijZfsioy94dxEM,1050
+dataesg-0.0.2.dist-info/METADATA,sha256=4WGB0wNbxDIFcDn5e4c4TLokgxfUFQ0GD2JrV-i2ZfM,2173
+dataesg-0.0.2.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+dataesg-0.0.2.dist-info/top_level.txt,sha256=eZt1wsH6NOKU0-x0_cpKvGOlJbTwmSYVhtwH8o7cOLA,8
+dataesg-0.0.2.dist-info/RECORD,,
