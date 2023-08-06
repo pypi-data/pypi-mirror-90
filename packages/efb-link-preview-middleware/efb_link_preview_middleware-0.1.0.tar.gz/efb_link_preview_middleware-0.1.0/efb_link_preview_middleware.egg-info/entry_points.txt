@@ -1,0 +1,3 @@
+[ehforwarderbot.middleware]
+catbaron.link_preview = efb_link_preview_middleware:LinkPreviewMiddleware
+

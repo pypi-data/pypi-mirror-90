@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: efb-link-preview-middleware
+Version: 0.1.0
+Summary: WeChat Middleware of EH Forwarder Bot for link preview
+Home-page: UNKNOWN
+Author: catbaron
+Author-email: catbaron@live.cn
+License: AGPLv3+
+Description: # LinkPreview: A middleware for EFB 
+        
+        ## Notice
+        
+        **Middleware ID**: `catbaron.link_preview`
+        
+        **LinkPreview** is a middleware for EFB to generqate link preview for the first url contained by the message.
+        
+        ![example](./example.jpg)
+        
+        ![example](./img_url.png)
+        
+        * For url refering to an image, the image should be sent as preview.
+        * Add `\np` at the begining of message to avoid link preview for current message.
+        
+        You need to use **MessageBlocker** on top of [EFB](https://ehforwarderbot.readthedocs.io). Please check the document and install EFB first.
+        
+        ## Dependense
+        * Python >=3.6
+        * EFB >=2.0.0b15
+        * beautifulsoup4
+        
+        ## Install
+        
+        * Install 
+        ```
+        git clone https://github.com/catbaron0/efb-link_preview-middleware
+        cd efb-link_preview-middleware
+        sudo python setup.py install
+        ```
+        * Register to EFB
+        Following [this document](https://ehforwarderbot.readthedocs.io/en/latest/getting-started.html) to edit the config file. The config file by default is `~/.ehforwarderbot/profiles/default`. It should look like:
+        
+        ```
+        master_channel: foo.demo_master
+        slave_channels:
+        - foo.demo_slave
+        - bar.dummy
+        middlewares:
+        - foo.other_middlewares
+        - catbaron.link_preview
+        ```
+        
+        You only need to add the last line to your config file.
+        
+        * Restart EFB.
+        
+Keywords: ehforwarderbot,EH Forwarder Bot,EH Forwarder Bot Middleware,chatbot,link preview
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Communications :: Chat
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
