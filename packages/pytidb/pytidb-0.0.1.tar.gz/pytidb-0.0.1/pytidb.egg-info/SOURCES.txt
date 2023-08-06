@@ -1,0 +1,9 @@
+README.md
+setup.py
+pytidb/__init__.py
+pytidb/main.py
+pytidb.egg-info/PKG-INFO
+pytidb.egg-info/SOURCES.txt
+pytidb.egg-info/dependency_links.txt
+pytidb.egg-info/entry_points.txt
+pytidb.egg-info/top_level.txt
