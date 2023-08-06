@@ -1,0 +1,7 @@
+README.md
+setup.py
+adorad/__init__.py
+adorad.egg-info/PKG-INFO
+adorad.egg-info/SOURCES.txt
+adorad.egg-info/dependency_links.txt
+adorad.egg-info/top_level.txt
