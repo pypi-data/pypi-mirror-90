@@ -1,0 +1,9 @@
+README.md
+setup.py
+zozopdf/__init__.py
+zozopdf/pdf2image.py
+zozopdf/pdf2text.py
+zozopdf.egg-info/PKG-INFO
+zozopdf.egg-info/SOURCES.txt
+zozopdf.egg-info/dependency_links.txt
+zozopdf.egg-info/top_level.txt
