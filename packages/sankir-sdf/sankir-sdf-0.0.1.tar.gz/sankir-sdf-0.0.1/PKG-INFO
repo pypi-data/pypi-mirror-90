@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: sankir-sdf
+Version: 0.0.1
+Summary: SDF Converter
+Home-page: https://github.com/SanKirTech/sdf-converter
+Author: SanKir Technologies Pvt Ltd
+Author-email: sanjay@sankir.com
+License: UNKNOWN
+Description: # Steps to run script
+        
+        1. Install google-cloud-storage Python library with
+           
+        ```bash
+        pip install -r requirements.txt
+        ```
+        
+        2. Create a `config.json` containing following three fields:
+           
+        ```json
+        {
+            "bucket_name": "sankir-storage-prospark",
+            "input_path": "raw-retail-data/q1",
+            "output_path": "processed-retail-data/"
+        }
+        ```
+        
+        3. Set `GOOGLE_APPLICATION_CREDENTIALS` environment variable
+        ```bash
+        export GOOGLE_APPLICATION_CREDENTIALS=/path/to/creds.json
+        ```
+        
+        4. Run the script with
+        
+        ```bash
+        python3 -m sdf /path/to/config.json
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
