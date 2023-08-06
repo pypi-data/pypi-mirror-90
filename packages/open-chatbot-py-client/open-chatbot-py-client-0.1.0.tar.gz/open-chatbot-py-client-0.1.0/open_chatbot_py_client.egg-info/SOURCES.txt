@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+open_chatbot_py_client.egg-info/PKG-INFO
+open_chatbot_py_client.egg-info/SOURCES.txt
+open_chatbot_py_client.egg-info/dependency_links.txt
+open_chatbot_py_client.egg-info/top_level.txt
+openchatbotclient/__init__.py
+openchatbotclient/client.py
+openchatbotclient/client_group.py
+openchatbotclient/descriptor.py
+openchatbotclient/exception.py
+openchatbotclient/monitor.py
+openchatbotclient/repository.py
+openchatbotclient/response.py
+openchatbotclient/response_group.py
+openchatbotclient/test.py
