@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pyulib
+Version: 0.1.1
+Summary: python utility functions
+Home-page: https://github.com/robert-lieck/pyulib
+Author: Robert Lieck
+Author-email: robert.lieck@epfl.ch
+License: UNKNOWN
+Description: # pyulib
+        
+        [![PyPI version](https://badge.fury.io/py/pyulib.svg)](https://badge.fury.io/py/pyulib)
+        ![build](https://github.com/robert-lieck/pyulib/workflows/build/badge.svg)
+        ![tests](https://github.com/robert-lieck/pyulib/workflows/tests/badge.svg)
+        [![codecov](https://codecov.io/gh/robert-lieck/pyulib/branch/master/graph/badge.svg?token=RRCLBXBN74)](https://codecov.io/gh/robert-lieck/pyulib)
+        [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+        
+        A Python utility library.
+        
+        ## Installation
+        
+        ```
+        pip install pyulib
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
