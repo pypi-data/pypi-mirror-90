@@ -1,0 +1,12 @@
+click
+packaging
+pydantic
+requests
+requests-toolbelt
+rich
+tqdm
+
+[dev]
+factory_boy
+ipython
+tox

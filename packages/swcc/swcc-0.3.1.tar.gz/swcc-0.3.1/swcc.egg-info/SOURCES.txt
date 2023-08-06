@@ -1,0 +1,15 @@
+.editorconfig
+.gitignore
+pyproject.toml
+setup.py
+tox.ini
+swcc/__init__.py
+swcc/models.py
+swcc/utils.py
+swcc.egg-info/PKG-INFO
+swcc.egg-info/SOURCES.txt
+swcc.egg-info/dependency_links.txt
+swcc.egg-info/entry_points.txt
+swcc.egg-info/requires.txt
+swcc.egg-info/top_level.txt
+tests/test_list.py
