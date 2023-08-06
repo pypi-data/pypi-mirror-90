@@ -1,0 +1,11 @@
+putz/__init__.py,sha256=U7HjUA_QSwV_juBYSR19QWV1zdNZpf1tyMNojkuWEn8,73
+putz/putz.py,sha256=hxYrAtMyfjm1Mrk2uLMAj8dOYlqdcwQP5kwyPq_hW6k,646
+putz/version.py,sha256=3Lfia6cFkg04q2P2ycviBaRhI918ugcFs1FRQ8kECss,80
+putz/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+putz/cli/main.py,sha256=ONmceAN-Rz3IOHWddjjsagb5TYHrrqk6mA0P_4FyY2I,469
+putz-1.0.1.dist-info/COPYING,sha256=e0DtWWSUzLwih9UXhOz4kpmc8Dc5TlFR97QluvQo4e4,1097
+putz-1.0.1.dist-info/METADATA,sha256=lFnkY2AVMdvqW6E2sx9DRQtHSvKNiMjD4Zf_ofYaE1Y,1773
+putz-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+putz-1.0.1.dist-info/entry_points.txt,sha256=HJ5dPCuX4LN11fcwu65xKAKTuXfl7Vb6y0rhyglrTRk,67
+putz-1.0.1.dist-info/top_level.txt,sha256=WysMwk9tokVm8Nix-KaZ2WS4HbQCk-Hz9XEMpYth1qg,5
+putz-1.0.1.dist-info/RECORD,,

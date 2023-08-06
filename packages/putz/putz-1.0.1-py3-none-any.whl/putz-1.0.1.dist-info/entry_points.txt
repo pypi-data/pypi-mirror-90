@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        putz=putz.cli.main:main
+        
