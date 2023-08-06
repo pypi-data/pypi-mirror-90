@@ -1,0 +1,14 @@
+README.md
+setup.py
+snakai/__init__.py
+snakai/curses_game.py
+snakai/run.py
+snakai/snake_state_machine.py
+snakai.egg-info/PKG-INFO
+snakai.egg-info/SOURCES.txt
+snakai.egg-info/dependency_links.txt
+snakai.egg-info/entry_points.txt
+snakai.egg-info/top_level.txt
+snakai/strategy/__init__.py
+snakai/strategy/base.py
+snakai/strategy/manual_strategy.py
