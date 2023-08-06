@@ -1,0 +1,104 @@
+# abbrs
+
+Abbreviations
+
+Install with: `pip install abbrs`
+
+`abbrs/__init__.py`:
+
+```python
+def read_file(filename):
+	with open(filename, encoding='utf-8') as f:
+		return f.read()
+
+def write_file(filename, s):
+	with open(filename, 'w', encoding='utf-8') as f:
+		f.write(s)
+
+def rm_hyphen_rf(path):
+	import shutil
+	try:
+		shutil.rmtree(path)
+	except FileNotFoundError:
+		pass
+
+
+
+def get_time_str(fmt='%c'):
+	import time
+	return time.strftime(fmt)
+
+def get_yyyymmdd_time_str():
+	import time
+	return get_time_str('%Y-%m-%d %H-%M-%S')
+
+
+def json_dump(filename, a):
+	import json
+	with open(filename, 'w', encoding='utf-8') as f:
+		json.dump(a, f, ensure_ascii=False, indent='\t')
+
+def load_json(filename):
+	import json
+	with open(filename, encoding='utf-8') as f:
+		return json.load(f)
+
+def pack_dict(self, lst):
+	return { i: self.__dict__[i] for i in lst.split() }
+
+def load_helper(self, lst, loadfx):
+	for i in lst.split(): self.__dict__[i] = loadfx(i)
+
+def current_path():
+	import os.path
+	return os.path.basename(os.getcwd())
+
+def next_version(version_file='version.txt'):
+	# style: 'x.x.x', without suffixes like 'b1', 'a2'
+	version = read_file(version_file).strip().split('.')
+	if len(version) != 3:
+		raise TypeError(version)
+	version = [ int(i) for i in version ]
+	version[2] += 1
+	new_version_str = '.'.join(map(str, version))
+	write_file(version_file, new_version_str)
+	return new_version_str
+
+def pypi_setup(description, long_description_body, author='YAN Hui Hang, GDUFS', author_email='yanhuihang@126.com', github_prefix='https://gitee.com/yanhuihang/'):
+	import setuptools, sys, os
+
+	package_name = current_path()
+
+	long_description = f'''# {package_name}
+
+{description}
+
+Install with: `pip install {package_name}`
+
+{long_description_body}'''
+	write_file("README.md", long_description)
+
+	sys.argv.extend('sdist bdist_wheel'.split())
+
+	rm_hyphen_rf('dist')
+
+	setuptools.setup(
+		name=package_name,
+		version=next_version(),
+		author=author,
+		author_email=author_email,
+		description=description,
+		long_description=long_description,
+		long_description_content_type="text/markdown",
+		url=github_prefix + package_name,
+		packages=setuptools.find_packages(),
+		classifiers=[
+			"Programming Language :: Python :: 3",
+			# "License :: OSI Approved :: MIT License",
+			"Operating System :: OS Independent",
+		],
+		python_requires='>=3.6',
+	)
+
+	os.system('python -m twine upload dist/*')
+```
