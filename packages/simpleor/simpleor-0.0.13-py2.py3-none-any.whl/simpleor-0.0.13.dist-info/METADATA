@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: simpleor
+Version: 0.0.13
+Summary: Package to solve Operations Research problems.
+Home-page: https://github.com/simple-ai-opensource/simple-or
+Author: Lennart Damen
+Author-email: lennart.damen.ai@gmail.com
+License: GNU General Public License v3
+Keywords: simpleor
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Requires-Dist: Click (>=7.0)
+Requires-Dist: numpy
+Requires-Dist: pulp
+Requires-Dist: pandas
+Provides-Extra: dev
+Requires-Dist: pytest (>=3) ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: bump2version ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-panels ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: pytest (>=3) ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+========
+simpleor
+========
+
+
+.. image:: https://img.shields.io/pypi/v/simpleor.svg
+        :target: https://pypi.python.org/pypi/simpleor
+
+
+.. image:: https://readthedocs.org/projects/simpleor/badge/?version=latest
+        :target: https://simple-or.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+``simpleor`` is a package that shows how Operations Research problems
+can be solved with Python. This project primarily serves as a learning
+experiment, although the package's functionality can be used in real-life.
+
+Currently, ``simpleor`` supports:
+
+- a scheduler, which assigns tasks to agents
+- a matcher, which finds a maximum matching in fully connected graph
+
+You can use this functionality directly, or use the package as a starting point to create
+your own Operations Research solvers.
+
+* Documentation: https://simple-or.readthedocs.io/
+* Free software: GNU General Public License v3
+
+
+=======
+History
+=======
+
+0.0.4 (2020-12-12)
+------------------
+
+* First release on PyPI.
+
+0.0.5 (2020-12-19)
+------------------
+
+* Added match maker module
+* Updated docs
+* Simplified GitHub workflow
+
+0.0.13 (2020-12-23)
+-------------------
+
+* added task reward option to scheduler
+* Updated docs
+
+
