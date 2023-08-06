@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: gibberish-score
+Version: 0.1.7
+Summary: Gibberish score and non-gibberish generator
+Home-page: https://github.com/packmad/Gibberish-Score
+Author: Simone Aonzo
+Author-email: simone.aonzo@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: networkx
+
+# Gibberish-Score
+
+[https://pypi.org/project/gibberish-score/](https://pypi.org/project/gibberish-score/)
+```shell
+pip install gibberish-score
+```
+
+```python
+from gibberish_score.gibberish_score import GibberishScore, model_builder
+model = model_builder('datasets/english_words.txt')
+gs: GibberishScore(model)
+
+```
+
