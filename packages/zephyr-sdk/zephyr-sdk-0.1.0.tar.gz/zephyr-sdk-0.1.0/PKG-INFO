@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: zephyr-sdk
+Version: 0.1.0
+Summary: A package for helping use the zephyr API
+Home-page: https://github.com/byu-oit/zephyr-sdk
+Author: Mark Roth
+Author-email: mark_roth@byu.edu
+License: UNKNOWN
+Description: # Zephyr SDK
+        
+        This is a simple python library that abstracts away the Zephyr SDK. It's still under development, so not all methods are implemented yet. The main body of the documentation for the SDK is found in the [wiki](https://github.com/byu-oit/zephyr-sdk/wiki)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License 
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
