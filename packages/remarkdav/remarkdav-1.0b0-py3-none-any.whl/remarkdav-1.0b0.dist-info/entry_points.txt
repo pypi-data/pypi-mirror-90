@@ -1,0 +1,3 @@
+[console_scripts]
+remarkdav=remarkdav.cli:cli
+

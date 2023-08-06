@@ -1,0 +1,13 @@
+remarkdav/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+remarkdav/cli.py,sha256=53-7RfG-SeALmDvYWzaQGRZu4A6Ob2v51lIA-xuPUw0,7004
+remarkdav/config.py,sha256=07ahPeLHJ4cWzTRahqYydK_kPbgYD9NdPdGwMq6rqHA,138
+remarkdav/crawl.py,sha256=1CQQlZJPME16HntWwylhLitz-nvkzuAREWpFJamAt84,1651
+remarkdav/pdf.py,sha256=NZL7wSOlEMHJ6qObJ078gRuU7Jaar6SYa90hCCakjTg,1059
+remarkdav/rmapy_util.py,sha256=gSg_mzza0dj7XGQwDZvT9JsChGYijiE9R5I1TmWAohs,939
+remarkdav/sync_db.py,sha256=LfK2ui-sNyZw8VRFWpBYuNckYvUpYhj6zqsy3L9jHGk,552
+remarkdav/utils.py,sha256=TkudZDkZ6XNpTtl_xCESD5Oz9_wZUI1dktf4aimBkmY,563
+remarkdav-1.0b0.dist-info/entry_points.txt,sha256=sKpliXbSKvT32QtN4jgouQTs7YmZZrnfV_2a-tOJmw8,47
+remarkdav-1.0b0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+remarkdav-1.0b0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+remarkdav-1.0b0.dist-info/METADATA,sha256=slRt4hGiIZmOztPKGhiICOotwjENVA_O3jojEPibGic,732
+remarkdav-1.0b0.dist-info/RECORD,,
