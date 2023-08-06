@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+hw_package123/__init__.py
+hw_package123/hello.py
+hw_package123/hello_func.py
+hw_package123.egg-info/PKG-INFO
+hw_package123.egg-info/SOURCES.txt
+hw_package123.egg-info/dependency_links.txt
+hw_package123.egg-info/requires.txt
+hw_package123.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: hw-package123
+Version: 1.0
+Summary: Describe your package in one sentence
+Home-page: https://github.com/dwarakravikumar/hw_package123
+Author: dwarakravikumar
+Author-email: 
+License: Apache License 2.0
+Description: # hw_package123
+        hw_package123
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
