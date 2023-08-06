@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: aiodata
+Version: 3.0.0
+Summary: PostgREST proxy and client.
+Home-page: https://github.com/Exahilosys/aiodata
+Author: Exahilosys
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: asyncpg (<1.0)
+Requires-Dist: aiohttp (<4.0)
+Requires-Dist: yarl (<2.0)
+Requires-Dist: aiofiles (<1.0)
+Requires-Dist: pyjwt (<3.0)
+Requires-Dist: docopt (<1.0)
+Requires-Dist: ldbcache (<1.0)
+
+A lightweight ``PostgREST`` proxy that does not get in your way.
+
+Installing
+==========
+
+.. code-block:: bash
+
+  pip3 install aiodata
+
+Links
+-----
+
+- `Documentation <https://aiodata.readthedocs.io>`_
+
+.. warning::
+
+  Versions bellow ``3.0.0`` are not guaranteed to work due to dependency changes.
+
+
