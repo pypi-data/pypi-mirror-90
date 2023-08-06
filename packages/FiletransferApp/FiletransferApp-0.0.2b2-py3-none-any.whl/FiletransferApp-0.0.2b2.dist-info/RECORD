@@ -1,0 +1,10 @@
+app/filetransfer/__init__.py,sha256=C8k22EnMFCMSuKjk04OBBnNrpZ1EQUbf8zeSfQcA4iw,26
+app/filetransfer/__main__.py,sha256=_4JwW5FzeUML-dlYp5e-KDyA4ZapqDitau3B-m1RoVk,686
+app/filetransfer/settings.py,sha256=tYBcncGBjnCBcLHzle1v60IaMEsPPAL1rxaAVJIuYtI,2667
+app/filetransfer/urls.py,sha256=P-d92ucUAke1Qp-crGYfU-G2pvOB18MM8QwQgjmvp8k,938
+app/filetransfer/views.py,sha256=xKShkMI1YuJv9JdvVlolsqatuXGwPpuTUlLWCPNaZio,3108
+FiletransferApp-0.0.2b2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+FiletransferApp-0.0.2b2.dist-info/METADATA,sha256=M80MRrMr-KMWj7A_aYeGgprHXKfOAlkqOPwprwih0kw,2139
+FiletransferApp-0.0.2b2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+FiletransferApp-0.0.2b2.dist-info/top_level.txt,sha256=io9g7LCbfmTG1SFKgEOGXmCFB9uMP2H5lerm0HiHWQE,4
+FiletransferApp-0.0.2b2.dist-info/RECORD,,
