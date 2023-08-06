@@ -1,0 +1,12 @@
+package_name/__init__.py,sha256=jmwhC4izwdCT_SnyaKatmulaRaG6AszwQViTa3k_vzA,66
+package_name/db.py,sha256=s-2TZ_1Jm9tksEwKbjrLZUMjjW3lkdeIB0Isx7TA85M,66
+package_name/notebooks/plot.py,sha256=aPyWPfxUB2AclT7k_Zo6oZqgZbZgAlfK_cYbDTbmMmo,195
+package_name/sql/macros.sql,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_name/tasks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_name/tasks/clean.py,sha256=T8Rh-G_qEHBI9tkH9LU_-0HpvztjZ7N5W_znIqJoRmM,169
+package_name/tasks/interim.py,sha256=VX18Z_mt2TtZZ6btvBXFKEAKWeDnYEj8lD9ALD04FcA,162
+package_name/tasks/raw.py,sha256=gmszpt8PK5wwGKEXqrE0iFMAxefbs3gwQQTyWC2myZM,187
+package_name-0.1.dev0.dist-info/METADATA,sha256=doCCd9grReqUmN4O3tGQNfDRlM9AKidCtKAcnjQQiL4,526
+package_name-0.1.dev0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+package_name-0.1.dev0.dist-info/top_level.txt,sha256=dgB8touNYCul6yLybWD6ZCv0BmvOQyDK2A9FlmKDzMs,13
+package_name-0.1.dev0.dist-info/RECORD,,
