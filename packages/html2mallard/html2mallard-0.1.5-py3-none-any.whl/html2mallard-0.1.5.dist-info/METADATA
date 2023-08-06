@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: html2mallard
+Version: 0.1.5
+Summary: convert mkdocs´ html output to mallard/yelp xml
+Home-page: https://fossil.include-once.org/modseccfg/wiki/html2mallard
+License: Public Domain
+Keywords: mkdocs mallard
+Platform: UNKNOWN
+Classifier: License :: Public Domain
+Classifier: Topic :: Software Development :: Documentation
+Requires-Python: >= 3.6
+Description-Content-Type: text/markdown
+
+## html2mallard / mkdocs-mallard
+
+Extremely crude HTML to [mallard help](http://projectmallard.org/)
+conversion.  Specifically for output from [mkdocs 1.x](https://www.mkdocs.org/)
+with RTD theme.  It's a very basic regex extraction (→*I'm looking forward
+to your letters!*) and filtering process.  It only retains some structural
+elements (headlines, paragraphs, tables, lists, notes).  Doesn't even
+attempt to gather any topic relation/structure from the navigation list.
+
+ * Really only suitable for one-time/initial conversion.
+ * Requires some editing to get pages to validate.  (Though they probably
+   "work" in yelp as is).
+ * Links and image references certainly require manual cleanup. Nested
+   lists or tables are likely to cause issues.
+ * And API docs are least convertible (only tested mkdocstrings, source
+   dump is omitted, and there's obviously no syntax colorization in yelp;
+   alternatively try [mkgendocs](https://pypi.org/project/mkgendocs/)).
+ * Primarily designed for mkdocs´ HTML output.  But also contains some
+   cleanup rules for [fossil](https://fossil-scm.org/) wiki pages (with
+   [github](https://fossil.include-once.org/fossil-skins/wiki/GitHub) skin).
+
+
+## html2mallard
+
+Simple command line tool to convert a single .html file:
+
+
+    html2mallard site/index.html > help/index.page
+
+
+## mkdocs-mallard
+
+Converts a list of mkdocs output files to *.page files.
+
+    mkdocs-mallard
+
+Requires an extra **`mallard_dir`** in the `mkdocs.yml` config:
+
+    site_name: logfmt1
+    docs_dir: docs
+    site_dir: html
+    mallard_dir: mallard
+    use_directory_urls: false
+    nav:
+      - Intro: index.md
+    theme:
+      name: readthedocs
+      highlightjs: false
+    repo_url: https://...
+    markdown_extensions:
+      - admonition
+      - codehilite
+      - attr_list
+      - def_list
+      - tables
+      - markdown.extensions.codehilite:
+          guess_lang: true
+    plugins:
+      - mkdocstrings
+
+Also depends on `use_directory_urls: false`, since the script only `glob()`s
+one level of `*.html` files.
+
+
+## Adaption
+
+The first two `rewrite` rules likely require changes for other HTML sources
+or templates. Specifically `"^.+?</nav>"` should strip the initial
+boilerplate, else might need expansion.
+
+
+### from `project` import `meta`
+
+| meta           | info                                                            |
+|:---------------|:----------------------------------------------------------------|
+| depends        | -                                                               |
+| compat         | Python ≥3.6                                                     |
+| compliancy     | !pep8, ~mallard, !doap                                          |
+| system usage   | -                                                               |
+| paths          | -                                                               |
+| testing        | -                                                               |
+| docs           | -                                                               |
+| activity       | abandoned                                                       |
+| state          | alpha                                                           |
+| support        | -                                                               |
+| contrib        | -                                                               |
+| announce       | -                                                               |
+
+
+
+
