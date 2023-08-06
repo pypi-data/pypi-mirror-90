@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: retropass
+Version: 0.2.1
+Summary: Library and tool for generating progress passwords for old games
+Home-page: https://github.com/andrew-vant/retropass
+Author: Andrew Vant
+Author-email: ajvant@gmail.com
+License: UNKNOWN
+Keywords: rom roms nes
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: bitarray (>=1.5.0)
+Requires-Dist: bitstring (>=3.1.3)
+Requires-Dist: pyyaml (>=3.10)
+
+UNKNOWN
+
+
