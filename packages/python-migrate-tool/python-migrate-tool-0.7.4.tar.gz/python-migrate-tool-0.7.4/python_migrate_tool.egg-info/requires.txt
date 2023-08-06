@@ -1,0 +1,11 @@
+eth-hash[pycryptodome]<1.0.0,>=0.2.0
+collections2
+
+[:implementation_name == "cpython"]
+cytoolz<1.0.0,>=0.9.0
+
+[:implementation_name == "pypy"]
+toolz<1.0.0,>=0.9.0
+
+[:platform_system == "Windows"]
+pypiwin32>=223

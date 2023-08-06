@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: python-migrate-tool
+Version: 0.7.4
+Summary: PlatON alaya python tool
+Home-page: https://github.com/AlayaNetwork/python-migrate-tool
+Author: shinnng
+Author-email: shinnng@outlook.com
+License: MIT
+Description: UNKNOWN
+Keywords: platon
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6,<4
