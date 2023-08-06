@@ -1,0 +1,3 @@
+[console_scripts]
+pyvboxmanage = pyvboxmanage.cli.entrypoints:pyvboxmanage
+
