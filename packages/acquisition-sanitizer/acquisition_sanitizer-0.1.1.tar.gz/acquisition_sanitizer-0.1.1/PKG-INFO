@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: acquisition-sanitizer
+Version: 0.1.1
+Summary: Helper function for pattern matching functions
+Author: Mars Veloso
+Author-email: testmarcelino@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: html-sanitizer (>=1.9.1,<2.0.0)
