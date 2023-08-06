@@ -1,0 +1,11 @@
+README.md
+setup.py
+sdp_transform/__init__.py
+sdp_transform/__version__.py
+sdp_transform/grammar.py
+sdp_transform/parser.py
+sdp_transform/writer.py
+sdp_transform.egg-info/PKG-INFO
+sdp_transform.egg-info/SOURCES.txt
+sdp_transform.egg-info/dependency_links.txt
+sdp_transform.egg-info/top_level.txt
