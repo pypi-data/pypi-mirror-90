@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: faultmaplib
+Version: 0.0.1
+Summary: FaultMap library
+Home-page: https://github.com/faultmap/faultmaplib/tree/master/
+Author: FaultMap
+Author-email: faultmap@gmail.com
+License: Apache Software License 2.0
+Keywords: computational structure network fault detection diagnosis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: networkx
+
+# FaultMap library
+> The FaultMap library project provides modules useful for generating and analysing the computational structure of a process from data.
+
+
+This file will become your README and also the index of your documentation.
+
+## Install
+
+`pip install faultmaplib`
+
+## How to use
+
+Fill me in please! Don't forget code examples:
+
+```python
+1+1
+```
+
+
+
+
+    2
+
+
+
+
