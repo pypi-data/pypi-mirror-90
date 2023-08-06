@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: KVDatastore
+Version: 0.0.3
+Summary: File based key-value datastore
+Home-page: UNKNOWN
+Author: Jeffry Joseph
+Author-email: jeffryjoseph116@gmail.com
+License: MIT
+Description: File based key value datastore. Used to save key value pairs with ease
+Keywords: key-value datastore
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
