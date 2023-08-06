@@ -1,0 +1,154 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "definitions": {
+    "master_schema": {
+      "type": "object",
+      "description": "Indications for the master",
+      "properties": {
+        "algorithm-name": {
+          "description": "The enhancement algorithm to use over the original\nimage.\n\nAdmisible values are:\n\n- `srgan-dt-x4`: Use classic SRGAN, trained on the DIVK image\n  dataset, with 4x upscaling.\n  After that, a color correction step and a noise removal steps\n  are applied to the up-scaled image.\n  Use this value of the enumeration if you want to produce\n  up-scaled versions of images starting from a lower resolution\n  image which is the best you have available.\n- `identity`: Do not change the image, use the original value.\n  This is the algorithm to use if you are starting from a\n  high-resolution image and want to shrink it down to some\n  manegeable size.\n- `deblur`: Use deep neural network for removing artifact from\n  source image\n",
+          "enum": [
+            "srgan-dt-x4",
+            "identity",
+            "-dev-deblur-small",
+            "-dev-deblur-tiles",
+            "-dev-cloth-skin-background"
+          ],
+          "type": "string"
+        },
+        "algorithm-config": {
+          "type": "object"
+        }
+      }
+    },
+      "encoder_schema": {
+        "type": "object",
+        "description": "Indications for the Shifter",
+        "properties": {
+          "algorithm-name": {
+            "type": "string",
+            "enum": [
+              "default",
+              "alg-preserve-quality-01"
+            ]
+          },
+          "quality-measure": {
+            "type": "string",
+            "enum": [
+              "default",
+              "ssim",
+              "fsim-c",
+              "asymmetric-fsym-c",
+              "perceptual-sc"
+            ]
+          },
+          "qual-threshold": {
+            "type": "number",
+            "minimum": 0.25,
+            "maximum": 1.0
+          },
+          "max_overhead": {
+            "type": "number",
+            "minimum": 0.1,
+            "maximum": 10.0,
+            "default": 0.99
+          }
+        }
+      },
+      "shifter_schema": {
+        "properties": {
+          "steps": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "type": "object",
+                  "properties": {
+                    "scale-to": {
+                      "type": "object",
+                      "properties": {
+                        "width": {
+                          "oneOf": [
+                            {
+                              "type": "number"
+                            },
+                            {
+                              "type": "string",
+                              "pattern": "[0-9]+(\\.[0-9]+)?"
+                            }
+                          ]
+                        },
+                        "height": {
+                          "oneOf": [
+                            {
+                              "type": "number"
+                            },
+                            {
+                              "type": "string",
+                              "pattern": "[0-9]+(\\.[0-9]+)?"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "$schema": "http://json-schema.org/draft-07/schema#",
+                  "type": "object",
+                  "properties": {
+                    "scale-to": {
+                      "type": "object",
+                      "properties": {
+                        "width": {
+                          "oneOf": [
+                            {
+                              "type": "number"
+                            },
+                            {
+                              "type": "string",
+                              "pattern": "[0-9]+(\\.[0-9]+)?"
+                            }
+                          ]
+                        },
+                        "height": {
+                          "oneOf": [
+                            {
+                              "type": "number"
+                            },
+                            {
+                              "type": "string",
+                              "pattern": "[0-9]+(\\.[0-9]+)?"
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+  },
+  "anyOf": [
+    {"required": ["master"]},
+    {"required": ["shifter"]},
+    {"required": ["encoder"]}
+  ],
+  "properties": {
+    "master": {
+      "$ref": "#/definitions/master_schema"
+    },
+    "encoder": {
+      "$ref": "#/definitions/encoder_schema"
+    },
+    "shifter": {
+      "$ref": "#/definitions/encoder_schema"
+    }
+  },
+  "additionalProperties": false
+}
