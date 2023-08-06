@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: weDos
+Version: 0.1
+Summary: make it easy to attack websites ;)
+Home-page: UNKNOWN
+Author: EzzYIB
+Author-email: zezo.665.5@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: termcolor
+Requires-Dist: pyfiglet
+Requires-Dist: datetime
+Requires-Dist: html2text
+Requires-Dist: pylint
+Requires-Dist: autopep8
+
+for educational purposes only :D
+
+
