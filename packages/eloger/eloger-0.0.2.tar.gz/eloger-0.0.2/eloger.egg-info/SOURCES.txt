@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+eloger/__init__.py
+eloger/elogger.py
+eloger/mail_config.py
+eloger/mail_send.py
+eloger.egg-info/PKG-INFO
+eloger.egg-info/SOURCES.txt
+eloger.egg-info/dependency_links.txt
+eloger.egg-info/requires.txt
+eloger.egg-info/top_level.txt
