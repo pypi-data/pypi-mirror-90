@@ -1,0 +1,15 @@
+README.md
+setup.py
+pysha/__init__.py
+pysha/auth.py
+pysha/classes.py
+pysha/colors.py
+pysha/data_structures.py
+pysha/enums.py
+pysha/exceptions.py
+pysha/functions.py
+pysha/security.py
+pysha.egg-info/PKG-INFO
+pysha.egg-info/SOURCES.txt
+pysha.egg-info/dependency_links.txt
+pysha.egg-info/top_level.txt
