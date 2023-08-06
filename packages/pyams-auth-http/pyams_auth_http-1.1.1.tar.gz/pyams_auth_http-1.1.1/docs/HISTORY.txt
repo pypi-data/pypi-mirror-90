@@ -1,0 +1,18 @@
+Changelog
+=========
+
+1.1.1
+-----
+ - update plugin name and translation
+
+1.1.0
+-----
+ - use security manager to authenticate credentials
+
+1.0.1
+-----
+ - updated doctests
+
+1.0.0
+-----
+ - initial release
