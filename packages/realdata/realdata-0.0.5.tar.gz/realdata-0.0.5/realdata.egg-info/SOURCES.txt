@@ -1,0 +1,9 @@
+README.md
+setup.py
+realdata/__init__.py
+realdata.egg-info/PKG-INFO
+realdata.egg-info/SOURCES.txt
+realdata.egg-info/dependency_links.txt
+realdata.egg-info/entry_points.txt
+realdata.egg-info/requires.txt
+realdata.egg-info/top_level.txt

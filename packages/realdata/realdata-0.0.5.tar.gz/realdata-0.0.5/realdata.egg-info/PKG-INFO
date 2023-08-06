@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: realdata
+Version: 0.0.5
+Summary: Get real time series data easily for testing
+Home-page: https://github.com/microprediction/realdata
+Author: microprediction
+Author-email: pcotton@intechinvestments.com
+License: MIT
+Description: # realdata
+        
+        Tired of using fake data for testing time series? 
+        
+        ## Install
+        
+            pip install realdata
+            
+        ### Usage 
+        
+            from realdata import get_values
+            values = get_values()
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
