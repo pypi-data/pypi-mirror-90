@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+setup.py
+src/smllib/__init__.py
+src/smllib/__version__.py
+src/smllib/const.py
+src/smllib/crc.py
+src/smllib/reader.py
+src/smllib/sml_fields.py
+src/smllib/sml_frame.py
+src/smllib.egg-info/PKG-INFO
+src/smllib.egg-info/SOURCES.txt
+src/smllib.egg-info/dependency_links.txt
+src/smllib.egg-info/top_level.txt
+src/smllib/sml/__init__.py
+src/smllib/sml/time.py
