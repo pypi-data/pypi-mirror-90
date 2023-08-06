@@ -1,0 +1,11 @@
+LICENSE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+is_baseutils/__init__.py
+is_baseutils.egg-info/PKG-INFO
+is_baseutils.egg-info/SOURCES.txt
+is_baseutils.egg-info/dependency_links.txt
+is_baseutils.egg-info/top_level.txt
