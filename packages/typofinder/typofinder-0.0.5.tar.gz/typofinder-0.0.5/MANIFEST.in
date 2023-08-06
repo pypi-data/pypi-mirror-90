@@ -1,0 +1,7 @@
+include *.in
+include *.png
+include *.py
+include *.txt
+include LICENSE
+recursive-include data *.txt
+recursive-include typofinder *.html
