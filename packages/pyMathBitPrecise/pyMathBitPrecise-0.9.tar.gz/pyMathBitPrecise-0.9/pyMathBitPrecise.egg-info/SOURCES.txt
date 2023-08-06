@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pyMathBitPrecise/__init__.py
+pyMathBitPrecise/array3t.py
+pyMathBitPrecise/bit_utils.py
+pyMathBitPrecise/bits3t.py
+pyMathBitPrecise/bits3t_vld_masks.py
+pyMathBitPrecise/enum3t.py
+pyMathBitPrecise/utils.py
+pyMathBitPrecise.egg-info/PKG-INFO
+pyMathBitPrecise.egg-info/SOURCES.txt
+pyMathBitPrecise.egg-info/dependency_links.txt
+pyMathBitPrecise.egg-info/top_level.txt
