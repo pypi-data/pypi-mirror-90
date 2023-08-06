@@ -1,0 +1,13 @@
+README.md
+setup.py
+m3uragen/__init__.py
+m3uragen/image.py
+m3uragen/m3u.py
+m3uragen/main.py
+m3uragen/romset.py
+m3uragen/software.py
+m3uragen.egg-info/PKG-INFO
+m3uragen.egg-info/SOURCES.txt
+m3uragen.egg-info/dependency_links.txt
+m3uragen.egg-info/entry_points.txt
+m3uragen.egg-info/top_level.txt
