@@ -1,0 +1,47 @@
+import requests
+
+base_url = 'https://db.ygoprodeck.com/api/v7/cardinfo.php'
+
+class card:
+    def __init__(self, card_name):
+        parameters = {'name':str(card_name)}
+        card = requests.get(base_url, params=parameters).json()
+        if 'monster' in str(card['data'][0]['type']).lower():
+            self.name = card['data'][0]['name']
+            self.archetype = card['data'][0]['archetype']
+            self.atk = card['data'][0]['atk']
+            self.attribute = card['data'][0]['attribute']
+            self._def = card['data'][0]['def']
+            self.desc = card['data'][0]['desc']
+            self.id = card['data'][0]['id']
+            self.level = card['data'][0]['level']
+            self.race = card['data'][0]['race']
+            self.type = card['data'][0]['type']
+        else:
+            self.desc = card['data'][0]['desc']
+            self.id = card['data'][0]['id']
+            self.name = card['data'][0]['name']
+            self.race = card['data'][0]['race']
+            self.type = card['data'][0]['type']
+
+class get_card_by_id:
+    def __init__(self, card_id):
+        parameters = {'id':str(card_id)}
+        card = requests.get(base_url, params=parameters).json()
+        if 'monster' in str(card['data'][0]['type']).lower():
+            self.name = card['data'][0]['name']
+            self.archetype = card['data'][0]['archetype']
+            self.atk = card['data'][0]['atk']
+            self.attribute = card['data'][0]['attribute']
+            self._def = card['data'][0]['def']
+            self.desc = card['data'][0]['desc']
+            self.id = card['data'][0]['id']
+            self.level = card['data'][0]['level']
+            self.race = card['data'][0]['race']
+            self.type = card['data'][0]['type']
+        else:
+            self.desc = card['data'][0]['desc']
+            self.id = card['data'][0]['id']
+            self.name = card['data'][0]['name']
+            self.race = card['data'][0]['race']
+            self.type = card['data'][0]['type']

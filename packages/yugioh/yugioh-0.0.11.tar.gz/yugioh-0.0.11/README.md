@@ -1,0 +1,111 @@
+# yugioh
+
+**YGOPRODECK API Wrapper**
+
+## Installation
+
+You can install it with pip3:
+
+    pip3 install yugioh
+
+## Usage
+
+I'm currently still building this project.
+
+### Monsters
+
+```python3
+import yugioh
+    
+monster = yugioh.monster(card_name = "The Wicked Dreadroot")
+print(monster.name) #Returns "The Wicked Dreadroot"
+print(monster.archetype) #Returns "Wicked God"
+print(monster.atk) #Returns "4000"
+```
+
+#### Attributes
+
+Attribute | Description
+------------ | -------------
+name | The card's name
+archetype | The card's archetype
+atk | The card's attack points
+attribute | The card's attribute
+_def | The card's defense points
+desc | The card's description
+id | The card's ID
+level | The card's level
+race | The card's "race" (Still thinking about this one - Its documented in the API as "race", but is formally called "type")
+type | Monster/Normal card
+
+### Spells
+
+```python3
+import yugioh
+    
+spell = yugioh.spell(card_name = "Fusion Substitute")
+print(spell.id) #Returns "74335036"
+print(spell.type) #Returns "Spell Card"
+print(spell.race) #Returns "Normal"
+```
+
+#### Attributes
+
+Attribute | Description
+------------ | -------------
+desc | The card's description
+id | The card's ID
+name | The card's name
+type | The card's type
+race | The card's race
+
+### Traps
+
+```python3
+import yugioh
+    
+trap = yugioh.trap(card_name = "Magic Cylinder")
+print(trap.id) #Returns "62279055"
+print(trap.type) #Returns "Trap Card"
+print(trap.race) #Returns "Normal"
+```
+
+#### Attributes
+
+Attribute | Description
+------------ | -------------
+desc | The card's description
+id | The card's ID
+name | The card's name
+type | The card's type
+race | The card's race
+
+### Getting cards by ID
+
+```python3
+import yugioh
+    
+card = yugioh.get_card_by_id(card_id = "62180201")
+print(card.atk) #Returns "4000"
+print(card.name) #Returns "The Wicked Dreadroot"
+```
+
+<!--
+# Command Line Tool
+
+The package also comes with a command line tool. Using it is simple.
+
+Arguments: `-m` (monster), `-s` (spell), `-t` (trap)
+
+Example for a monster card:
+
+    yugioh -m "The Wicked Dreadroot"
+
+Example for a spell card:
+
+    yugioh -s "Fusion Substitute"
+
+Example for a trap card:
+
+    yugioh -t "Magic Cylinder"
+-->
