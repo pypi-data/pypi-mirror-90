@@ -1,0 +1,100 @@
+language: python
+
+os:
+  - linux
+
+python:
+  - "3.6"
+#  - "2.7"
+
+env:
+  - TOOL=xspec
+#  - TOOL=xspec-docker
+  - TOOL=sherpa
+
+cache:
+  directories:
+    - $HOME/Downloads
+
+# mode=download src_other_specify= arch=ubuntu_2004 general=heasptools general=heagen xanadu=xspec
+
+install:
+  - mkdir -p $HOME/Downloads
+  - pushd $HOME/Downloads
+  - |
+    if [[ "$TOOL" == "sherpa" ]]; then
+      echo "getting latest ciao installer url"; 
+      CIAO_INSTALL_URL=$(wget -q -O - https://cxc.cfa.harvard.edu/ciao/download/ciao_install.html|grep -o '[^"]*_install.cgi?standard=true');
+      echo "it is at: $CIAO_INSTALL_URL";
+    fi
+  - |
+    if [[ "$TOOL" == "sherpa" ]]; then
+      echo "getting latest ciao installer";
+      wget -O ./ciao-install -nc https://cxc.cfa.harvard.edu/$CIAO_INSTALL_URL ;
+    fi
+  - |
+    if [[ "$TOOL" == "sherpa" ]]; then
+      echo "running ciao installer";
+      echo $HOME/Downloads/ > ciao-installer-input;
+      mkdir -p $HOME/Downloads/ciao/;
+      echo $HOME/bin/ >> ciao-installer-input;
+      echo n >> ciao-installer-input;
+      echo n >> ciao-installer-input;
+      echo n >> ciao-installer-input;
+      bash ciao-install < ciao-installer-input;
+    fi
+  - |
+    if [[ "$TOOL" == "sherpa" ]]; then
+      CIAO_INSTALL_DIR=`ls -d $HOME/bin/ciao*`;
+      echo "install dir is: $CIAO_INSTALL_DIR";
+    fi
+  - |
+    if [[ "$TOOL" == "sherpa" ]]; then
+      echo "loading ciao";
+      source $CIAO_INSTALL_DIR/bin/ciao.sh;
+      source $CIAO_INSTALL_DIR/bin/ciao_setup.sh;
+    fi
+
+  - |
+    if [[ "$TOOL" == "xspec" ]]; then
+      echo "getting latest heasoft bundle";
+      tar -tzf heasoft.tar.gz >/dev/null || wget -O /tmp/heasoft.tar.gz 'https://heasarc.gsfc.nasa.gov/cgi-bin/Tools/tarit/tarit.pl?mode=download&src_other_specify=&arch=ubuntu_2004&general=heasptools&general=heagen&xanadu=xspec' --header 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0' --header 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' --header 'Accept-Language: en-US' --header 'DNT: 1' --header 'Connection: keep-alive' --header 'Referer: https://heasarc.gsfc.nasa.gov/lheasoft/download.html' --header 'Upgrade-Insecure-Requests: 1' --header 'Sec-GPC: 1' --progress=dot:mega
+    fi
+  - |
+    if [[ "$TOOL" == "xspec" ]]; then
+      echo "unpacking heasoft";
+      tar -xzf heasoft.tar.gz;
+    fi
+  - |
+    if [[ "$TOOL" == "xspec" ]]; then
+      echo "compiling xspec";
+      pushd heasoft-*/BUILD_DIR;
+      ./configure --prefix=$HOME/Downloads/xspec-install/ --with-components="Xspec" && make && make install;
+      popd;
+    fi
+  - |
+    if [[ "$TOOL" == "xspec" ]]; then
+      echo "loading xspec";
+      export HEADAS=$(ls -d ${HOME}/Downloads/xspec-install/x86_64-pc-linux-gnu-libc*/);
+      echo $HEADAS;
+      source ${HEADAS}/headas-init.sh;
+      python -c 'import xspec';
+  - popd
+
+  - pip install requests corner astropy h5py cython 
+  - pip install ultranest
+  - python setup.py install
+
+script:
+  # testing scripts
+  - pushd docker/testsrc
+  - 'echo "backend: Agg" > matplotlibrc'
+  - ls 
+  - rm *.nh
+  - python ../../fixkeywords.py combined_src.pi combined_bkg.pi combined_src.rmf combined_src.arf
+  - python ../../gal.py combined_src.pi
+  - git checkout .
+#  # testing xspec through docker
+#  - if [[ "$TOOL" == "xspec-docker" ]]; then
+#      docker run --rm -v $PWD/examples/xspec:/opt/script/ -v $PWD:/opt/BXA giacomov/xspec-docker bash /opt/script/test-docker.sh </dev/null;
+#    fi
