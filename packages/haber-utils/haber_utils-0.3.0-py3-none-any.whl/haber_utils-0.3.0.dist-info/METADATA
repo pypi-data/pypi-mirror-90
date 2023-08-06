@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: haber-utils
+Version: 0.3.0
+Summary: General utility functions that keep being rewritten
+Home-page: UNKNOWN
+Author: Ron Haber
+Author-email: UNKNOWN
+License: N/A
+Platform: UNKNOWN
+Requires-Dist: pandas
+
+UNKNOWN
+
+
