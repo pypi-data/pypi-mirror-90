@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+kpickb.egg-info/PKG-INFO
+kpickb.egg-info/SOURCES.txt
+kpickb.egg-info/dependency_links.txt
+kpickb.egg-info/top_level.txt
