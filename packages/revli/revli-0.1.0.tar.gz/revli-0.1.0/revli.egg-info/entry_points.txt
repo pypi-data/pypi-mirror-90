@@ -1,0 +1,3 @@
+[console_scripts]
+revli = revli.cli:main
+
