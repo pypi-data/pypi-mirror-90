@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: emonpy
+Version: 0.0.4
+Summary: Python library for the eMon Energy device
+Home-page: https://github.com/emonindonesai/emonpy
+Author: Jack
+Author-email: jack@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: httpx (==0.16.1)
+
+![Python package](https://github.com/emonindonesia/emonpy/workflows/Python%20package/badge.svg)
+
+# emonpy
+ Python interface for the eMon device
+
+
