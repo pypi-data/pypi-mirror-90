@@ -1,0 +1,18 @@
+
+[:python_version < "3.8"]
+typing-extensions
+
+[ba]
+bitarray>=1.5.1
+
+[bs]
+bitstruct
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[test]
+bitarray>=1.5.1
+bitstruct
+pytest
