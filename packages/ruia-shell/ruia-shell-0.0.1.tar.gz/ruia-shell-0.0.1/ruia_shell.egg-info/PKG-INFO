@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ruia-shell
+Version: 0.0.1
+Summary: A Ruia plugin for terminal debugging(IPython)
+Home-page: https://github.com/python-ruia/ruia-shell
+Author: Howie Hu
+Author-email: xiaozizayang@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

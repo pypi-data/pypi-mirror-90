@@ -1,0 +1,3 @@
+[console_scripts]
+ruia_shell = ruia_shell.cli:execute
+
