@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/awscdk_81_patch/__init__.py
+src/awscdk_81_patch/py.typed
+src/awscdk_81_patch.egg-info/PKG-INFO
+src/awscdk_81_patch.egg-info/SOURCES.txt
+src/awscdk_81_patch.egg-info/dependency_links.txt
+src/awscdk_81_patch.egg-info/requires.txt
+src/awscdk_81_patch.egg-info/top_level.txt
+src/awscdk_81_patch/_jsii/__init__.py
+src/awscdk_81_patch/_jsii/awscdk-81-patch@1.1.0.jsii.tgz
