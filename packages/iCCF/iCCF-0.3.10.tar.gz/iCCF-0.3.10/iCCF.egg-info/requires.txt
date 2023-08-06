@@ -1,0 +1,7 @@
+numpy>=1.17
+scipy
+matplotlib
+astropy
+cached_property
+paramiko
+numba
