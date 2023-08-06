@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: faros
+Version: 0.2.1
+Summary: Faros API SDK
+Home-page: https://github.com/faros-ai/faros-python-client
+Author: Faros
+Author-email: contact@faros.ai
+License: UNKNOWN
+Keywords: faros,api,graphql,sdk
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: attrs
+Requires-Dist: graphqlclient (>=0.2.4)
+Requires-Dist: termcolor
+
+# Faros API Python Client
+
+_Python client for the [Faros](https://www.faros.ai) API_
+
+## Documentation
+
+Please read the [Faros documentation][farosdocs] to learn more. See also our [apps repo][farosapps] for examples to help you get started.
+
+[farosdocs]: https://www.faros.ai/docs
+[farosapps]: https://github.com/faros-ai/faros-apps
+
+

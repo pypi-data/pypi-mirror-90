@@ -1,0 +1,12 @@
+faros/__init__.py,sha256=PmcQ2PI2oP8irnLtJLJby2YfW6sBvLAmL-VpABzTqwc,22
+faros/client.py,sha256=7OE8dHBncNMUhICE-kozbEoMEMzfsBIW8XzKeDuogqs,1761
+faros/exceptions.py,sha256=I2EOrb8JM4WooTjPBC3smw2vTVDmynr5tMJx-3tAmqw,337
+faros/utils.py,sha256=QG0jlBPePwb-dOHtUIbLwC4eLYF8azRo09Vyyb70KoA,11658
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_client.py,sha256=bxlkfB7dmZSUdQOxdNfuy59XabjShN0EwTC1w6a7LBI,1763
+tests/test_utils.py,sha256=dQHMBw6r11pgs1XtBn8eqinx0Y6-uauAqhKsaTA7y4U,8619
+faros-0.2.1.dist-info/LICENSE,sha256=lyiQQDhmU-KzYCfI8taAjtyh_ZkZ8_PxDIMKXbmqDMc,11344
+faros-0.2.1.dist-info/METADATA,sha256=b0fwY0bT7cPiO8uhr-5sl0eL_G2ZHbbw5YYgihXa5UE,1043
+faros-0.2.1.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+faros-0.2.1.dist-info/top_level.txt,sha256=w5fEiTfxcdU8G1Y5v4Y1mF6cpt9YTE93M_9J780jMxk,12
+faros-0.2.1.dist-info/RECORD,,
