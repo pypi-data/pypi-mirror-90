@@ -1,0 +1,9 @@
+pyfonycore/_config/config_test.yaml,sha256=hQZiYDw-rXhIlr9Mze50AbfvRSAYlx3K2ijPJXFFxZc,196
+pyfonycore/bootstrap.py,sha256=1wERkwshae_iTKdE42F-9Xgf7psCZqgxCINFn1O9jzo,1459
+pyfonycore/container/PyfonyHook.py,sha256=3NuVwulIKrH_2QfguB4pVMNs703L9NX188ax8kqgH8Y,2132
+pyfonycore/Kernel.py,sha256=N0Eu-XCw5zd8QhGreu9T8uA3zII30j3EMEHH60I8qpQ,2276
+pyfonycore/KernelTest.py,sha256=kbvjQa9OxetnhkeCkLfO_wiWmBaN1LfJZpvybKNydio,694
+pyfony_core-0.7.0a3.dist-info/LICENSE,sha256=p9qOsNzKt71jf-HqXcPq37l1LUkod01gTPiBMc2UVOI,1060
+pyfony_core-0.7.0a3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pyfony_core-0.7.0a3.dist-info/METADATA,sha256=C4dR5yi4C5tLYU344UGQjrXl9aRl9sMs4trJjZ4PEp4,731
+pyfony_core-0.7.0a3.dist-info/RECORD,,
