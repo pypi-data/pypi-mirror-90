@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+optimaldesign/__init__.py
+optimaldesign/helloworld.py
+optimaldesign.egg-info/PKG-INFO
+optimaldesign.egg-info/SOURCES.txt
+optimaldesign.egg-info/dependency_links.txt
+optimaldesign.egg-info/requires.txt
+optimaldesign.egg-info/top_level.txt
+optimaldesign/tests/__init__.py
+optimaldesign/tests/test_helloworld.py
