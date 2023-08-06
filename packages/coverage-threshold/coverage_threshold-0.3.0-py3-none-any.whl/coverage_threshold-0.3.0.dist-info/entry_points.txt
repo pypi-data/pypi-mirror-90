@@ -1,0 +1,3 @@
+[console_scripts]
+coverage-threshold = coverage_threshold.cli:main
+
