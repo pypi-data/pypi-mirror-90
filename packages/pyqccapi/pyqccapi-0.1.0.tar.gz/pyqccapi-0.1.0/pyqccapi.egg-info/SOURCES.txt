@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+pyqccapi/__init__.py
+pyqccapi/api_config.py
+pyqccapi/api_invoker.py
+pyqccapi/api_list.json
+pyqccapi/category_list.json
+pyqccapi/method_detail_list.json
+pyqccapi/method_list.json
+pyqccapi.egg-info/PKG-INFO
+pyqccapi.egg-info/SOURCES.txt
+pyqccapi.egg-info/dependency_links.txt
+pyqccapi.egg-info/requires.txt
+pyqccapi.egg-info/top_level.txt

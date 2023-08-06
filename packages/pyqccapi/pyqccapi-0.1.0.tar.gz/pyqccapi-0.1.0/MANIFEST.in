@@ -1,0 +1,3 @@
+include MANIFEST.in
+recursive-include pyqccapi/pyqccapi *.json
+recursive-include pyqccapi *.json
