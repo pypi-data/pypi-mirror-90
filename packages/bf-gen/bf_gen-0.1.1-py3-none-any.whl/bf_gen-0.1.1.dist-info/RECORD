@@ -1,0 +1,9 @@
+bf_gen/__init__.py,sha256=-GStlvjOzxNrutx6xty0OZbfSDDMU20Bl8yFMCR78G0,4997
+bf_gen/preference.py,sha256=SuBrXQmKGyorW7_IfNwHJADV-mDZX9FqabX7OxCp2ZQ,2186
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_builder.py,sha256=TUhv2G53XJLEV3Od07TZhT_JdXqbEFSSOZuczWjsOQw,1421
+bf_gen-0.1.1.dist-info/LICENSE,sha256=w_dF2TeXzSQdRfsIb8iegjDR5ApFqFxo_N6Y9VO6ZOs,1069
+bf_gen-0.1.1.dist-info/METADATA,sha256=pzMGxNXU_fmiyNswbJw4AqBVp0WWy-3MCQHkhYc3dh4,4222
+bf_gen-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bf_gen-0.1.1.dist-info/top_level.txt,sha256=BKUxIUKYPvv1bRpTLs4oAVZXz4mwxtKWQgTRtxtHxgc,13
+bf_gen-0.1.1.dist-info/RECORD,,
