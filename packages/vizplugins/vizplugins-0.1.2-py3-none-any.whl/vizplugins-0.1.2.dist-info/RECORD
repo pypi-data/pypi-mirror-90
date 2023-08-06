@@ -1,0 +1,11 @@
+vizplugins/__init__.py,sha256=6bzs5rYw1NZhvw9vUW5Jx2K-tUTMsv9X8XpWX1ENlaw,804
+vizplugins/cpu_usage.py,sha256=FNGdJtb5kRXBukI9nVqTSASS6zntTN-wCMqfrZwRwxY,561
+vizplugins/memory_usage.py,sha256=e0MSFO8qQjEzjSc3nxTZ1q41cHu4Y8awL0mENY8wfZE,567
+vizplugins/monitor_process.py,sha256=u7beOmuKBFTlTsncZywXAiqlpF9IMarVyhUyAbOsY0g,3416
+vizplugins/psutil_monitor.py,sha256=Lqe1fYm7o7xFibmnbgWBevSUggrOqTsb1hyDY5JuUKw,2406
+vizplugins-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vizplugins-0.1.2.dist-info/METADATA,sha256=EYuQvcFwE7eMELevqI2XSECZXAuGHRFP8kESbeSioFk,3150
+vizplugins-0.1.2.dist-info/NOTICE.txt,sha256=QWhjhp67_6o5uXEJN2SNG3lzsaBiDjeZ3oKVropMVxs,550
+vizplugins-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+vizplugins-0.1.2.dist-info/top_level.txt,sha256=LkNMrHee6cGZADV8NQEysklgVcrEShMB5pCc2ip7q5A,11
+vizplugins-0.1.2.dist-info/RECORD,,
