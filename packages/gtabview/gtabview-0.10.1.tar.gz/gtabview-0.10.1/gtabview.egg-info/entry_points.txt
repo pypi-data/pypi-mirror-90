@@ -1,0 +1,3 @@
+[console_scripts]
+gtabview = gtabview_cli.gtabview:main
+
