@@ -1,0 +1,8 @@
+trytond<5.9,>=5.8
+
+[GeoNames]
+proteus<5.9,>=5.8
+
+[data]
+pycountry
+proteus<5.9,>=5.8
