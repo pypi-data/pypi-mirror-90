@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: duplicate-images
+Version: 0.1.0
+Summary: 
+Author: Lene Preuss
+Author-email: lene.preuss@gmail.com
+Requires-Python: >=3.8.5,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: Wand (>=0.6.5,<0.7.0)
+Requires-Dist: pillow (>=8.1.0,<9.0.0)
