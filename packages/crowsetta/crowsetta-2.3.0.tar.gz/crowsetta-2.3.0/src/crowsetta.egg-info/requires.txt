@@ -1,0 +1,13 @@
+numpy
+scipy
+attrs
+evfuncs
+koumura
+
+[dev]
+coverage
+jupyterlab
+
+[docs]
+sphinx
+ipython
