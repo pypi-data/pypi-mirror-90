@@ -1,0 +1,3 @@
+[console_scripts]
+bookleter = bookleter.__main__:main
+
