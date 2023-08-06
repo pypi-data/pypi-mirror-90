@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: rayter
+Version: 1.0.0
+Summary: Game rating command line tool
+Home-page: https://github.com/peterjaric/rayter
+Author: Peter Jaric, Jonatan Heyman
+Author-email: peter@jaric.org, jonatan@heyman.info
+License: MIT
+Description: Game rating command line tool
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Games/Entertainment
