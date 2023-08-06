@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pgkit.egg-info/PKG-INFO
+pgkit.egg-info/SOURCES.txt
+pgkit.egg-info/dependency_links.txt
+pgkit.egg-info/entry_points.txt
+pgkit.egg-info/requires.txt
+pgkit.egg-info/top_level.txt
+src/__init__.py
+src/main.py
+src/cli/__init__.py
+src/cli/cli.py
