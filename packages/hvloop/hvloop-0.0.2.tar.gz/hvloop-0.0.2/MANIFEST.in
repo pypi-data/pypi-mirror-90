@@ -1,0 +1,4 @@
+recursive-include hvloop *.pyx *.pxd *.pxi *.py *.c *.h
+recursive-include vendor/libhv *
+recursive-include tests *.py
+include README.md

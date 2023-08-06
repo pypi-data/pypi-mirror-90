@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: hvloop
+Version: 0.0.2
+Summary: asyncio event loop base on libhv
+Home-page: https://github.com/xiispace/hvloop
+Author: xiispace
+Author-email: xiispace@163.com
+License: MIT License
+Description: # hvloop
+        [![PyPI](https://img.shields.io/pypi/v/hvloop.svg)](https://pypi.python.org/pypi/hvloop)
+        
+        hvloop is a asyncio event loop like [uvloop](https://github.com/MagicStack/uvloop), based on [libhv](https://github.com/ithewei/libhv).
+        
+        Note: hvloop stil in dev, DON"T use for production
+        
+        ## Installation
+        hvloop requires python3.6 or greater
+        ```shell
+        $ pip install hvloop
+        ```
+        
+        ## Quickstart
+        ```shell
+        import hvloop
+        hvloop.install()
+        
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Framework :: AsyncIO
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
