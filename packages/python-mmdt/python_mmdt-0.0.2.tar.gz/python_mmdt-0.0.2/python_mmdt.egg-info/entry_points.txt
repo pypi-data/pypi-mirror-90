@@ -1,0 +1,4 @@
+[console_scripts]
+mmdt-compare = python_mmdt.mmdt.mmdt:mmdt_compare
+mmdt-hash = python_mmdt.mmdt.mmdt:mmdt_hash
+
