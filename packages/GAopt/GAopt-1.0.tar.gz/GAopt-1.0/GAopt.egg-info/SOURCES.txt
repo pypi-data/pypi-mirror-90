@@ -1,0 +1,6 @@
+README.md
+setup.py
+GAopt.egg-info/PKG-INFO
+GAopt.egg-info/SOURCES.txt
+GAopt.egg-info/dependency_links.txt
+GAopt.egg-info/top_level.txt
