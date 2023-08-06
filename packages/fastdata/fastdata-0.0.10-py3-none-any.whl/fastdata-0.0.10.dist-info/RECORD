@@ -1,0 +1,10 @@
+fastdata/__init__.py,sha256=-nNlMKS9nph3FR78_ZG9RGKrbxseeNp2K6nMr0pVGaU,23
+fastdata/_nbdev.py,sha256=pFiQWZvxnG9BQ0pk7smMNfT3MWzWMnIT1bECInc9Ilo,1061
+fastdata/core.py,sha256=UHm1EnoGNWGXXiARpto6F0pslKlXTv41rJDQV2BBbNs,5741
+fastdata/integrations.py,sha256=y9Wpz9PFC3N_hqXzF2LqL23yT4z8Z4oY666CIxY1Dwc,1493
+fastdata-0.0.10.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fastdata-0.0.10.dist-info/METADATA,sha256=3yvf4uE99DT1Uopmti27lZ1pQhx57fUuGw8irDHBe90,1081
+fastdata-0.0.10.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+fastdata-0.0.10.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+fastdata-0.0.10.dist-info/top_level.txt,sha256=w7ly_Un9f4J7YOCrxvlCEsDgWZqtAks6sJTER6Cq6_o,9
+fastdata-0.0.10.dist-info/RECORD,,
