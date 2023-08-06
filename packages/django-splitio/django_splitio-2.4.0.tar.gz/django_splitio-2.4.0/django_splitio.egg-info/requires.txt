@@ -1,0 +1,6 @@
+
+[redis]
+splitio_client[redis]>=2.2
+
+[uwsgi]
+splitio_client[uwsgi]>=2.2
