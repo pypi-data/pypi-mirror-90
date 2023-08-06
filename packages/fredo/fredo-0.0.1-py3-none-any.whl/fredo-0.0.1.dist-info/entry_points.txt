@@ -1,0 +1,3 @@
+[console_scripts]
+fredo = fredo.main:main
+
