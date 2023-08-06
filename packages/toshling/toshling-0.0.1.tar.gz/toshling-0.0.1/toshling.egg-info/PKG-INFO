@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: toshling
+Version: 0.0.1
+Summary: a Python client library for the Toshl API
+Home-page: https://github.com/ioces/toshling
+Author: Matthew Schubert
+Author-email: ms-toshling@ioces.com
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
