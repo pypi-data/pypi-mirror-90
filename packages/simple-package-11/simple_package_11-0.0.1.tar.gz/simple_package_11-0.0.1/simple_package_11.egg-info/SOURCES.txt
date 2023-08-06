@@ -1,0 +1,10 @@
+setup.py
+simple_package_11/__init__.py
+simple_package_11.egg-info/PKG-INFO
+simple_package_11.egg-info/SOURCES.txt
+simple_package_11.egg-info/dependency_links.txt
+simple_package_11.egg-info/top_level.txt
+simple_package_11/sp1/__init__.py
+simple_package_11/sp1/a.py
+simple_package_11/sp2/__init__.py
+simple_package_11/sp2/b.py
