@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/county_adjacency/__init__.py
+src/county_adjacency/adjacency.py
+src/county_adjacency/data.py
+src/county_adjacency/data2.py
+src/county_adjacency/errors.py
+src/county_adjacency.egg-info/PKG-INFO
+src/county_adjacency.egg-info/SOURCES.txt
+src/county_adjacency.egg-info/dependency_links.txt
+src/county_adjacency.egg-info/requires.txt
+src/county_adjacency.egg-info/top_level.txt
+tests/test_adjacency.py
