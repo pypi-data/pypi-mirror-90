@@ -1,0 +1,8 @@
+README.md
+setup.py
+camect/__init__.py
+camect_py.egg-info/PKG-INFO
+camect_py.egg-info/SOURCES.txt
+camect_py.egg-info/dependency_links.txt
+camect_py.egg-info/requires.txt
+camect_py.egg-info/top_level.txt
