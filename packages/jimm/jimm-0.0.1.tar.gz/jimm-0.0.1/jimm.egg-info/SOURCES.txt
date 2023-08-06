@@ -1,0 +1,7 @@
+README.md
+setup.py
+jimm.egg-info/PKG-INFO
+jimm.egg-info/SOURCES.txt
+jimm.egg-info/dependency_links.txt
+jimm.egg-info/requires.txt
+jimm.egg-info/top_level.txt
