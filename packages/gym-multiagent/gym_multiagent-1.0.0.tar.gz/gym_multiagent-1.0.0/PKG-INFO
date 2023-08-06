@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: gym_multiagent
+Version: 1.0.0
+Summary: Sokoban-inspired multi-agent environment for OpenAI Gym
+Home-page: https://github.com/helgehatt/gym-multiagent
+Author: helgehatt
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: multiagent,openai,gym,environment
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent

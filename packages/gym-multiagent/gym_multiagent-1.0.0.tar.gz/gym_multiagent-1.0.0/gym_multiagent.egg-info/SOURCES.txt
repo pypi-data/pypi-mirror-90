@@ -1,0 +1,13 @@
+setup.py
+gym_multiagent/__init__.py
+gym_multiagent/action.py
+gym_multiagent/point.py
+gym_multiagent/render.py
+gym_multiagent/world.py
+gym_multiagent.egg-info/PKG-INFO
+gym_multiagent.egg-info/SOURCES.txt
+gym_multiagent.egg-info/dependency_links.txt
+gym_multiagent.egg-info/requires.txt
+gym_multiagent.egg-info/top_level.txt
+gym_multiagent/envs/__init__.py
+gym_multiagent/envs/multiagent_env.py
