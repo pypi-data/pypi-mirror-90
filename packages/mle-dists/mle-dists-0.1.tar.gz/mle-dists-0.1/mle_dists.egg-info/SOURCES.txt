@@ -1,0 +1,10 @@
+setup.py
+mle-dists/Binomialdistribution.py
+mle-dists/Gaussiandistribution.py
+mle-dists/Generaldistribution.py
+mle-dists/__init__.py
+mle_dists.egg-info/PKG-INFO
+mle_dists.egg-info/SOURCES.txt
+mle_dists.egg-info/dependency_links.txt
+mle_dists.egg-info/not-zip-safe
+mle_dists.egg-info/top_level.txt
