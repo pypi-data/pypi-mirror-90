@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: InquirerPy
+Version: 0.0.1
+Summary: Enhaced Python port of Inquirer.js
+Home-page: https://github.com/kazhala/InquirerPy
+Author: Kevin Zhuang
+Author-email: kevin7441@gmail.com
+License: UNKNOWN
+Description: # InquirerPy
+        
+        WIP
+        
+Keywords: cli,prompt-toolkit,commandline,inquirer,development,command-line
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Description-Content-Type: text/markdown
