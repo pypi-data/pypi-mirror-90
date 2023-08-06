@@ -1,0 +1,3 @@
+[console_scripts]
+pose = pose_cli.__main__:main
+
