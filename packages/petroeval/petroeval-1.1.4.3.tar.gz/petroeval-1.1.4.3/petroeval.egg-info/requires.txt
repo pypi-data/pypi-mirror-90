@@ -1,0 +1,6 @@
+matplotlib
+pandas
+numpy
+lasio==0.28
+xgboost
+lightgbm
