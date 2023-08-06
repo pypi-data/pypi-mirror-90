@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: fidap
+Version: 0.0.1
+Summary: Get financial data easily.
+Home-page: https://github.com/fidapco/fidap-python
+Author: Ashish Singal
+Author-email: ashish.singal1@gmail.com
+License: MIT
+Download-URL: https://pypi.org/project/fidap/
+Keywords: API,data,financial,economic,fidap
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (>=0.14)
+Requires-Dist: numpy (>=1.8)
+Requires-Dist: requests (>=2.7.0)
+
+Query financial data directly.
+
+# Description
+
+A wrapper on the Fidap API that allows users to easily query financial data.
+
+# Installation
+
+## Normal installation
+
+```bash
+pip install fidap
+```
+
+## Development installation
+
+```bash
+git clone https://github.com/fidapco/fidap-python.git
+cd fidap-python
+pip install --editable .
+```
+
+# Change log
+
+
+## [0.0.1] - 2021-01-04
+Initial version.
+
+### Added
+- `fidap.sql()` runs a query on the Fidap DB.
+
+### Changed
+
+### Removed
+
