@@ -1,0 +1,8 @@
+README.md
+setup.py
+uno_log/__init__.py
+uno_log.egg-info/PKG-INFO
+uno_log.egg-info/SOURCES.txt
+uno_log.egg-info/dependency_links.txt
+uno_log.egg-info/requires.txt
+uno_log.egg-info/top_level.txt
