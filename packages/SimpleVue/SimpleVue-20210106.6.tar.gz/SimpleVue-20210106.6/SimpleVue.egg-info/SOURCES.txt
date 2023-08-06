@@ -1,0 +1,8 @@
+setup.py
+SimpleVue/HTML.py
+SimpleVue/__init__.py
+SimpleVue/vbuild.py
+SimpleVue.egg-info/PKG-INFO
+SimpleVue.egg-info/SOURCES.txt
+SimpleVue.egg-info/dependency_links.txt
+SimpleVue.egg-info/top_level.txt
