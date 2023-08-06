@@ -1,0 +1,10 @@
+README.md
+setup.py
+clevergui/__init__.py
+clevergui/clevergui.py
+clevergui/test_clevergui.py
+clevergui.egg-info/PKG-INFO
+clevergui.egg-info/SOURCES.txt
+clevergui.egg-info/dependency_links.txt
+clevergui.egg-info/requires.txt
+clevergui.egg-info/top_level.txt
