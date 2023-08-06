@@ -1,0 +1,7 @@
+pip_modules:
+  - pip
+  - setuptools
+  - wheel
+  - black
+  - pylint
+  - commitizen
