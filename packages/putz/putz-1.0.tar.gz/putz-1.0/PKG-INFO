@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: putz
+Version: 1.0
+Summary: A module for putzing around with Python.
+Home-page: https://github.com/axfelix/putz
+Author: Alex Garnett
+Author-email: axfelix@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.5.0
