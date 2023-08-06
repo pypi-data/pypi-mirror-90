@@ -1,0 +1,4 @@
+boto3
+setuptools
+wheel
+lambda-pkg-resources
