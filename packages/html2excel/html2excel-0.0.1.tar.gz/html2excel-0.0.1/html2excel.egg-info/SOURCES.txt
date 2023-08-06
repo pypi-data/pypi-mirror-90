@@ -1,0 +1,8 @@
+README.md
+setup.py
+html2excel/__init__.py
+html2excel.egg-info/PKG-INFO
+html2excel.egg-info/SOURCES.txt
+html2excel.egg-info/dependency_links.txt
+html2excel.egg-info/requires.txt
+html2excel.egg-info/top_level.txt
