@@ -1,0 +1,2 @@
+class ENoDeliveryException(Exception):
+    pass
