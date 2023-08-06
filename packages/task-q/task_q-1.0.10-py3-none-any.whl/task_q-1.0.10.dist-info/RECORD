@@ -1,0 +1,14 @@
+taskq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taskq/__main__.py,sha256=Bu1p2QDccHw74O41-rumktiHHHJftyLsAGP3ts8aRMc,3182
+taskq/models.py,sha256=QnThoajfvhp8VbyyVz82vkBTxLu7Bd8taP3wgepi7EE,1581
+taskq/resources.py,sha256=uQNhrTJggp8ElmzVSARV2bGlarE7-84-7OFoabJZi_w,5796
+taskq/settings.py,sha256=ZPvg0txpWOEMh-E2T-BCEnvwKPGe817WJJH571Mw_Tc,16
+taskq/task-handler.py,sha256=fg3XOkVvHb-0rNqtJOgJOOjAX0GLcISAn8eT3u0WC4I,492
+taskq/taskq.py,sha256=9n5F84xqD4KQj6-bn9Ac7ZIsgXmFvKEebqZTNHz0mgM,1273
+taskq/utils.py,sha256=HjvZkigYDptgaRMoO9VuDvDSZhinWx7dWwCo34azmE8,1936
+task_q-1.0.10.dist-info/METADATA,sha256=daXlVXshUIWb2dCWLmkkLVX7jZcHXLdcOTy03BE1i4U,824
+task_q-1.0.10.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+task_q-1.0.10.dist-info/dependency_links.txt,sha256=KPhzdKWjjF3l4ItQeb3LKxPGX4Zlyu0-PWJK68o-aIM,74
+task_q-1.0.10.dist-info/entry_points.txt,sha256=aU9suYYas1jbX6GOlFB9B4JozsktlwYpKCrTRN6NOxU,65
+task_q-1.0.10.dist-info/top_level.txt,sha256=SRZ_XnnHJku_lACwu9ExPgwF8KvO-WH_e_UEFLhq04A,6
+task_q-1.0.10.dist-info/RECORD,,

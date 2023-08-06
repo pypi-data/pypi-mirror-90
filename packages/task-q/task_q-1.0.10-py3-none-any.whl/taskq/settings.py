@@ -1,0 +1,1 @@
+TASKQ_SLOTS = 1
