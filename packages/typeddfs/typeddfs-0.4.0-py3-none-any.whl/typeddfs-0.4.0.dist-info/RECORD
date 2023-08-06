@@ -1,0 +1,14 @@
+CHANGELOG.md,sha256=rRPpZStXgaoPOdeUwevpe_L0dN0G6oVyLuZ5aPeJz5g,1273
+LICENSE.txt,sha256=Fmi2NqYdgpyO7fYMqViNl1fex1p0-iYPRNcalBf3z_Q,586
+README.md,sha256=ylaeiTnq1GNMlE6EXI-Md4r-2BHwJzJzA3qf4aQMN2I,3234
+typeddfs/__init__.py,sha256=9M4JLhA8O1By4okWzac-LKvsM7zSmks8UnICo0JZV8A,4447
+typeddfs/base_dfs.py,sha256=LjjDQHknCEzSu3t7rHGa4Z44HcbQAufG3Pa4JnmyZMQ,16389
+typeddfs/builders.py,sha256=kVAgY00rWGITdY0tQ8Ssm3-Uq0Dtqm6XyCBJZQ6g2rA,6718
+typeddfs/example.csv,sha256=7Bb4DOkFhUj9yR9xDxIpOe6Qb78TqS3soZ9ueOqqprc,24
+typeddfs/example.py,sha256=rNQMltKPobbYJw4ImezNZr1qbOb0W6015-LeMC0rQDA,849
+typeddfs/typed_dfs.py,sha256=v8jo8URBpOy9q0zPPoe_sTnG2YRUgAA9SpRdqv3ajZ0,10443
+typeddfs/untyped_dfs.py,sha256=Dsar7NllNiXIbfG6FyrwtPgBf0z9oDVe7Jv2w7Yvy0k,1561
+typeddfs-0.4.0.dist-info/LICENSE.txt,sha256=Fmi2NqYdgpyO7fYMqViNl1fex1p0-iYPRNcalBf3z_Q,586
+typeddfs-0.4.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+typeddfs-0.4.0.dist-info/METADATA,sha256=AEgG02RFSmHb2XxLgoCMhmus4Sgxc3SdMtOfrxY4wvQ,4649
+typeddfs-0.4.0.dist-info/RECORD,,
