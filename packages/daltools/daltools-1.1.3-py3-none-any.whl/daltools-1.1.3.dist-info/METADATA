@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: daltools
+Version: 1.1.3
+Summary: Misc utilities for extracting data from Dalton files
+Home-page: https://github.com/vahtras/daltools
+Author: Olav Vahtras
+Author-email: olav.vahtras@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: blocked-matrix-utils
+Requires-Dist: fortran-binary
+
+UNKNOWN
+
+
