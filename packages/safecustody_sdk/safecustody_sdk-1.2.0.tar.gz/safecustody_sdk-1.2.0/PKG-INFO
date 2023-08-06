@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: safecustody_sdk
+Version: 1.2.0
+Summary: safecustody wallet api sdk
+Home-page: https://github.com/chainlife-doc/safecustody_sdk_python
+Author: wangxudong
+Author-email: 834971685@qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
