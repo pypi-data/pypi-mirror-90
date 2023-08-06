@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+pycotech/__init__.py
+pycotech/loggers.py
+pycotech/plw_player.py
+pycotech/plw_recorder.py
+pycotech/utils.py
+pycotech.egg-info/PKG-INFO
+pycotech.egg-info/SOURCES.txt
+pycotech.egg-info/dependency_links.txt
+pycotech.egg-info/entry_points.txt
+pycotech.egg-info/requires.txt
+pycotech.egg-info/top_level.txt
+pycotech/libs/usbpt104.dll
+pycotech/libs/usbpt104.lib
