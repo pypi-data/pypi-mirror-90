@@ -1,0 +1,9 @@
+oracle_kernel/__init__.py,sha256=E-vMBCr7O_L-omWJ19x3GebJ1-eCBQYRWSqIg8sPGz4,94
+oracle_kernel/__main__.py,sha256=tghCXk1lX_cPdaXB2SnDZQvkKxre7DsF7hSgyO21G48,134
+oracle_kernel/install.py,sha256=1ZPMmC7H4TxJ6dwnxCARUopGOWeXSZk5yeiLv-3dmtI,5100
+oracle_kernel/kernel.py,sha256=ZW6BxgTLDAtvT3ttlWIXyS-HdHE5STBOVgriaqS3ICA,2903
+oracle_kernel-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+oracle_kernel-0.1.0.dist-info/METADATA,sha256=Q1t_0nX3EUiRih9yMgmH7hxMeiUk63xp6aZCGq22c1U,2434
+oracle_kernel-0.1.0.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+oracle_kernel-0.1.0.dist-info/top_level.txt,sha256=tjxwJMgj0hNj7LMlUZI1cT5dOYFJQPbsrde15M1c1Ro,14
+oracle_kernel-0.1.0.dist-info/RECORD,,
