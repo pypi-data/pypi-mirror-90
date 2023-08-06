@@ -1,0 +1,11 @@
+README.md
+setup.py
+apm/__init__.py
+apm/__pkginfo__.py
+apm/patterns.py
+apm/util.py
+awesome_pattern_matching.egg-info/PKG-INFO
+awesome_pattern_matching.egg-info/SOURCES.txt
+awesome_pattern_matching.egg-info/dependency_links.txt
+awesome_pattern_matching.egg-info/top_level.txt
+tests/__init__.py
