@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: filltex
+Version: 1.4
+Summary: Automatic queries to ADS and InSPIRE databases to fill LATEX bibliography
+Home-page: https://github.com/dgerosa/filltex
+Author: Davide Gerosa and Michele Vallisneri
+Author-email: dgerosa@caltech.edu
+License: MIT
+Description: See: `github.com/dgerosa/filltex <https://github.com/dgerosa/filltex>`_.
+Platform: UNKNOWN
