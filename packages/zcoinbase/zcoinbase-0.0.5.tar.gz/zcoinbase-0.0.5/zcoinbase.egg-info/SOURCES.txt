@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+zcoinbase/__init__.py
+zcoinbase/authenticated_client.py
+zcoinbase/coinbase_auth.py
+zcoinbase/coinbase_order_book.py
+zcoinbase/historical_data_downloader.py
+zcoinbase/public_client.py
+zcoinbase/rest_client.py
+zcoinbase/util.py
+zcoinbase/websocket_client.py
+zcoinbase.egg-info/PKG-INFO
+zcoinbase.egg-info/SOURCES.txt
+zcoinbase.egg-info/dependency_links.txt
+zcoinbase.egg-info/requires.txt
+zcoinbase.egg-info/top_level.txt
