@@ -1,0 +1,12 @@
+CHANGELOG.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+tests.py
+txws.py
+version.txt
+txwebsocket.egg-info/PKG-INFO
+txwebsocket.egg-info/SOURCES.txt
+txwebsocket.egg-info/dependency_links.txt
+txwebsocket.egg-info/top_level.txt
