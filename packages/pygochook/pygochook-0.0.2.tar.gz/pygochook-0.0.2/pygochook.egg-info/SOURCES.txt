@@ -1,0 +1,9 @@
+README.md
+setup.py
+pygochook/__init__.py
+pygochook/main.py
+pygochook.egg-info/PKG-INFO
+pygochook.egg-info/SOURCES.txt
+pygochook.egg-info/dependency_links.txt
+pygochook.egg-info/requires.txt
+pygochook.egg-info/top_level.txt
