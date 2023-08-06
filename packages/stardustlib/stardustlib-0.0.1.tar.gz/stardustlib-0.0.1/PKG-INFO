@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: stardustlib
+Version: 0.0.1
+Summary: Package to interact with the stardust database.
+Home-page: https://github.com/galactic-forensics/stardustlib
+Author: Reto Trappitsch
+Author-email: reto@galactic-forensics.space
