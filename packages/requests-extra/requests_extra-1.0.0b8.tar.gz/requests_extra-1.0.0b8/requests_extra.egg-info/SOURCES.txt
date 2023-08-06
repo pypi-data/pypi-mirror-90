@@ -1,0 +1,15 @@
+README.md
+setup.py
+requests_extra/__init__.py
+requests_extra/api.py
+requests_extra/defaults.py
+requests_extra/sessions.py
+requests_extra.egg-info/PKG-INFO
+requests_extra.egg-info/SOURCES.txt
+requests_extra.egg-info/dependency_links.txt
+requests_extra.egg-info/requires.txt
+requests_extra.egg-info/top_level.txt
+requests_extra/internal/__init__.py
+requests_extra/internal/cache.py
+requests_extra/internal/session_cache.py
+requests_extra/internal/utils.py
