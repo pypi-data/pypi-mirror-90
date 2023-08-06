@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+belief/__init__.py
+belief.egg-info/PKG-INFO
+belief.egg-info/SOURCES.txt
+belief.egg-info/dependency_links.txt
+belief.egg-info/not-zip-safe
+belief.egg-info/top_level.txt
