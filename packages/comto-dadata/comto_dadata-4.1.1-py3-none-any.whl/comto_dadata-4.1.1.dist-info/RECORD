@@ -1,0 +1,11 @@
+comto_dadata/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+comto_dadata/address.py,sha256=iUbGG4goGZ7kgGWb-7N_ersPlOttGKG1OSzImWL1CU0,6092
+comto_dadata/company.py,sha256=gpAqvPCOgPVIpzrY3Isb5gc73pBCrY3HOWYBxC95tEM,2818
+comto_dadata/handbook.py,sha256=Ufloo7GMiSe4gG80YMVghX9meLzfUpRjNY1uMu9QRRY,1952
+comto_dadata/parse.py,sha256=Jg0us2-4TJTPk_ilIAh3SJn8CEBxPoOusm35u4ETOfg,3387
+comto_dadata/profile.py,sha256=kKJfX6b33TBW-4aIvQDuB44V1lVq08E9uyF5GPpbX1c,2256
+comto_dadata-4.1.1.dist-info/LICENSE,sha256=7JsZKCiWPBf1AgCJX7OGR4ac_wUeoHqd1Z0kTEwn8l0,1098
+comto_dadata-4.1.1.dist-info/METADATA,sha256=lKi7MeZbh9bgOSlKfabBNMAatE2BqaXD8gUfYwFAbPM,4815
+comto_dadata-4.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+comto_dadata-4.1.1.dist-info/top_level.txt,sha256=WF9YsSKWp5yOisUgGag0yV9aIMeu1Fb85QkW3JfrRic,13
+comto_dadata-4.1.1.dist-info/RECORD,,
