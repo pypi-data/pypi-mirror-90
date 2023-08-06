@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: MongodbDatabaseEngine
+Version: 0.0.6
+Summary: This python package is to create mongodb database, collections automatically using json file and can be integrated with API
+Home-page: https://github.com/ashishcssom/MongodbDatabaseEngine
+Author: Ashish Kumar
+Author-email: ashish.krb7@gmail.com
+License: MIT
+Download-URL: https://github.com/ashishcssom/MongodbDatabaseEngine/archive/v_006.tar.gz
+Description:  
+                          ##         #        #                        ###             #
+                          # #   #   ###   #   ##    #    ##   ##       #    ##    ##       ##    ##
+                          # #  # #   #   # #  # #  # #  ##   ###       ##   # #  # #   #   # #  ###
+                          # #  # #   #   # #  # #  # #   ##  #         #    # #   ##   #   # #  #
+                          ##    ##   #    ##  ##    ##  ##    ##       ###  # #    #   #   # #   ##
+                                                                                 ##
+        
+        # Instruction
+        This package is for creating the mongodb database and ith various collection dynamically. This can be used standalone or with integrated on API
+        
+        # Pre-requisites
+        -  [Mongodb](https://www.mongodb.com/try/download/community) installed on pc
+        -  [python 3.7.3](https://www.python.org/downloads/release/python-373/) with pip or above
+        
+        # Folder architecture
+        
+              C:.
+              │   License
+              │   README.md
+              │   requirements.txt
+              │   setup.sh
+              │   __init__.py
+              │
+              ├───conf
+              │       soft.conf
+              │
+              └───db
+                      config.json
+        
+        # How to use it?
+        
+        > use case 1
+        ```python
+        from MongodbDatabaseEngine import engine 
+        engine()
+        ```
+        It will create the Mongodb database with name mentioned on [soft.conf](https://github.com/ashishcssom/MongodbDatabaseEngine/blob/main/conf/soft.conf) file and create the collection with the name and data available on [config.json](https://github.com/ashishcssom/MongodbDatabaseEngine/blob/main/db/config.json).
+        
+        > use case 2
+        ```python
+        from MongodbDatabaseEngine import engine 
+        engine(databasename="mydatabase")
+        ```
+        This will create database with name "mydatabase" and utilize the default data mentioned on [config.json](https://github.com/ashishcssom/MongodbDatabaseEngine/blob/main/db/config.json)
+        
+        > use case 3
+        ```python
+        import json
+        userdata=json.load(open(path+r"/db/config.json",'r'))
+        from MongodbDatabaseEngine import engine 
+        engine(userdata=userdata, databasename="mydatabase")
+        ```
+        This use case is for custom database and custom collection data
+        
+        # Information on config.json | userdata
+        **engine** methods takes dictionary as input. *Key names* are used as *collection names* and *value* is used as *json array data* user want to store in respective collection.
+        
+        # Author
+           Ashish Kumar
+        # License
+        [MIT License](https://github.com/ashishcssom/MongodbDatabaseEngine/blob/main/LICENSE)
+        
+        
+Keywords: MongoDb,API,Database,python,creater
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
