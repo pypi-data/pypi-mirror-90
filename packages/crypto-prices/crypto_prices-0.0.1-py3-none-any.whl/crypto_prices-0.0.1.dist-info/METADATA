@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: crypto-prices
+Version: 0.0.1
+Summary: Get daily/hourly/minutely Crypto prices
+Home-page: https://github.com/alisiddiq/crypto_prices
+Author: Ali Siddiq
+Author-email: ali.bin.siddiq@gmail.com
+License: MIT
+Keywords: crypto,prices
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: tqdm
+
+README.md
+
+
