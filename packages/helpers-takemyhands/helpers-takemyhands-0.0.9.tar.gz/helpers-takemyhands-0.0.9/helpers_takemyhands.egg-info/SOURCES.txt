@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+helpers/__init__.py
+helpers/key_generator.py
+helpers/permissions.py
+helpers/request_manager.py
+helpers/tester_as_class.py
+helpers/tester_as_function.py
+helpers_takemyhands.egg-info/PKG-INFO
+helpers_takemyhands.egg-info/SOURCES.txt
+helpers_takemyhands.egg-info/dependency_links.txt
+helpers_takemyhands.egg-info/top_level.txt
