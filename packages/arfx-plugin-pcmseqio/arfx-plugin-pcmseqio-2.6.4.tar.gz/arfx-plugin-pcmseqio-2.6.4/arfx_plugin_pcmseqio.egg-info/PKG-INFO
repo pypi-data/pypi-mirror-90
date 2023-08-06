@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: arfx-plugin-pcmseqio
+Version: 2.6.4
+Summary: plugin for arfx to read pcmseq files
+Home-page: https://github.com/melizalab/arfx-plugin-pcmseqio
+Author: Dan Meliza
+Author-email: dan@meliza.org
+Maintainer: Dan Meliza
+Maintainer-email: dan@meliza.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Natural Language :: English
