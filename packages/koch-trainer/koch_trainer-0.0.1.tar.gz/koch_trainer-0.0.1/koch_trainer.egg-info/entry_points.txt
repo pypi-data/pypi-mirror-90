@@ -1,0 +1,3 @@
+[console_scripts]
+koch_trainer = koch_trainer.koch_trainer:main
+
