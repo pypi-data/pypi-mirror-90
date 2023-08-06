@@ -1,0 +1,3 @@
+[console_scripts]
+wotemu = wotemu.cli.main:cli
+
