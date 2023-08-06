@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: aa-opcalendar
+Version: 0.1.0
+Summary: Event calendar plugin app for Alliance Auth
+Home-page: UNKNOWN
+Author: Ikarus Cesaille
+Author-email: contact@eve-linknet.com
+License: MIT
+Description: Event calendar for Alliance Auth
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
