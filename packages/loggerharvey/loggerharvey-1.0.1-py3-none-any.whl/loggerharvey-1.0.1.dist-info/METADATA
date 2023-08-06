@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: loggerharvey
+Version: 1.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+
+Package that allows you to print to the console with the current time and with colours
+
+
