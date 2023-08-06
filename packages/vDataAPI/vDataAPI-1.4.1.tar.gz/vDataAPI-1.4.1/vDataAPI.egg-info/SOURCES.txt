@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+vDataAPI/Payments.py
+vDataAPI/__init__.py
+vDataAPI.egg-info/PKG-INFO
+vDataAPI.egg-info/SOURCES.txt
+vDataAPI.egg-info/dependency_links.txt
+vDataAPI.egg-info/requires.txt
+vDataAPI.egg-info/top_level.txt
