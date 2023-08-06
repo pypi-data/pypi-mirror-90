@@ -1,0 +1,7 @@
+telethon
+click>=6.0
+cryptg
+hachoir
+
+[:python_version < "3.6"]
+scandir
