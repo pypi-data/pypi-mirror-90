@@ -1,0 +1,11 @@
+spradius/__init__.py,sha256=BGej3ZVUUJ7jTKnPHyPk7LrdyhYR2av1k663ubns2Fw,175
+spradius/alpha_family.py,sha256=bWOIQ7D0cL0C_kTMquLeVrUZqdQYHVsks9j2om20gz4,4504
+spradius/generalised_alpha.py,sha256=eKRb44h666x2wpgv1fa2P6h8uyYFfilh0jm7KGdzCI0,1026
+spradius/hht.py,sha256=xEKtJs81MD1rF06UPFtdw3jJr9RFayLPzLpgwrpm6WI,849
+spradius/integrator.py,sha256=nvXz93vg0eSgtlb1FB0mmK0AAlHX2vEIrn3DYLDDYFc,6049
+spradius/newmark.py,sha256=dsT1tUDjaFGKbGofFhGa2lU-WiDE6eqyUp5rAiP3zj0,873
+spradius-1.0.1.dist-info/LICENSE,sha256=-tMfAq1pwApJTc6g_fe-SXJI5ZV9C1bwPVw_dvmgzaI,1074
+spradius-1.0.1.dist-info/METADATA,sha256=n7DexDi9eVVDwyK5gmNyQPPzIj6ns3v7FkVfXgoWbMc,6397
+spradius-1.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+spradius-1.0.1.dist-info/top_level.txt,sha256=xJQABOyEUhNn446FWGaWWnUryLR7a771Rs-IMGpdqpc,9
+spradius-1.0.1.dist-info/RECORD,,
