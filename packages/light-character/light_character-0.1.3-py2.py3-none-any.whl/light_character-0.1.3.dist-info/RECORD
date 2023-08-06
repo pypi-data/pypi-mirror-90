@@ -1,0 +1,13 @@
+light_character/__init__.py,sha256=8PdiwXKbNtfB7gmGtwZD2IcTEJT_hu_tGmEOwDSpsOA,90
+light_character/cli.py,sha256=u6B-fr8zWFph1stIkfcZvkaMILpXtwMR-Ft39xBrLnk,797
+light_character/light_character.py,sha256=RufJ7d9h39Oiftsh81B6zRS9V29UBfDjxMlHHMWuVOQ,10680
+light_character/lighthouses/rough_sea_ship/about.md,sha256=Lb576qY1KQ8u-LCXA7BxKmks8s-N7z0ZzDiQI01tFG4,176
+light_character/lighthouses/rough_sea_ship/off.gif,sha256=Xo4udUR0vF4jJm64SCpNsNRaGGXiOCFeXrhQ-1xJ1k8,135132
+light_character/lighthouses/rough_sea_ship/on.gif,sha256=N0HkKD5nk4eRTuTPT9xYSZl6H_2QSLSIgpGy3ifeGYQ,136741
+light_character-0.1.3.dist-info/AUTHORS.rst,sha256=nflxiIC6u7s2awQm7ryu7oHA5QJJckV_r2kLkkFx5Vw,135
+light_character-0.1.3.dist-info/LICENSE,sha256=ORbiyOgdO8p6wO0dJgHpa4CCTNZHBcqVsLuTKrGQAEQ,1071
+light_character-0.1.3.dist-info/METADATA,sha256=hMHd6-FghomTXUxqTK2un-OY7EfpyAdC-RbRMfHLhPc,1925
+light_character-0.1.3.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+light_character-0.1.3.dist-info/entry_points.txt,sha256=YsSbH-YCkOkJDO8jWVbyejGSg91oJqWJP1_V1dYsXyM,62
+light_character-0.1.3.dist-info/top_level.txt,sha256=hkS6befpl4ARmyRssfDuCrs1jUaHYGuBZFUyoN_-B-c,16
+light_character-0.1.3.dist-info/RECORD,,
