@@ -1,0 +1,36 @@
+const path = require('path');
+
+module.exports = {
+  entry: { 
+    'app': './scripts/app.js'
+    // 'helper': './scripts/helper.js' 
+  },
+  output: {
+    path: path.resolve(__dirname, 'public/scripts/'),
+    filename: (chunkData) => {
+      return chunkData.chunk.name === 'app' ? 'bundle.min.js': '[name].min.js';
+    }
+  },
+  mode: 'production',
+  externals: {
+    jquery: 'jQuery'
+    // handlebars: 'Handlebars',
+    // 'jquery-autobars': 'jquery-autobars',
+    // moment: 'moment',
+    // add external dependencies here
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: '/node_modules/',
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      }
+    ]
+  }
+};
