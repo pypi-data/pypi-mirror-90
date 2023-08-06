@@ -1,0 +1,10 @@
+fx2/__init__.py,sha256=NElJfxOpEVbpbw214rcICKXJp1QzXHzu-xaju2QPD38,13561
+fx2/boot-cypress.ihex,sha256=5pcmhQnyBX1WWN3KSbcPmfq2PxcMkZYmdOXcieU3PBM,11624
+fx2/format.py,sha256=fKdQ-nnOsQjgp6EPZiI8DjW0ZQbl9vAikCpLVmJh6Ns,8139
+fx2/fx2tool.py,sha256=YDBglv_s9vqL317E6oU0iXoNe6jXhG2qrV2aIsxEhc0,22832
+fx2/poll_wrapper.py,sha256=GVuB1bqfEY4zrha93oD3ccc8-hv4swwsfObIYQeeYa0,983
+fx2-0.9.dist-info/METADATA,sha256=u6y0u2VuPzkhdJgR8DKC9WXw6o88TkjYj2mLc7YP3Uw,943
+fx2-0.9.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+fx2-0.9.dist-info/entry_points.txt,sha256=aIX0ojzHbeSKNDHu5aptGrqGNJoFp2wQBRSbf4BALBg,46
+fx2-0.9.dist-info/top_level.txt,sha256=5uSiHzvumEIKMCG531FZfpgD023kCL90a_BNSTK-qnU,4
+fx2-0.9.dist-info/RECORD,,
