@@ -1,0 +1,6 @@
+README.txt
+setup.py
+Thing1.egg-info/PKG-INFO
+Thing1.egg-info/SOURCES.txt
+Thing1.egg-info/dependency_links.txt
+Thing1.egg-info/top_level.txt
