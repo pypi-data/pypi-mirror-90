@@ -1,0 +1,68 @@
+Metadata-Version: 1.2
+Name: biometrics
+Version: 0.1.0
+Summary: Package to generate sample based biometrics
+Home-page: https://github.com/msk-access/biometrics
+Author: Ronak Shah
+Author-email: rons.shah@gmail.com
+License: Apache Software License 2.0
+Description: ==========
+        biometrics
+        ==========
+        
+        
+        .. image:: https://img.shields.io/pypi/v/biometrics.svg
+                :target: https://pypi.python.org/pypi/biometrics
+        
+        .. image:: https://img.shields.io/travis/rhshah/biometrics.svg
+                :target: https://travis-ci.org/rhshah/biometrics
+        
+        .. image:: https://readthedocs.org/projects/biometrics/badge/?version=latest
+                :target: https://biometrics.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        Package to generate sample based biometrics
+        
+        
+        * Free software: Apache Software License 2.0
+        * Documentation: https://biometrics.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-12-06)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: biometrics
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
