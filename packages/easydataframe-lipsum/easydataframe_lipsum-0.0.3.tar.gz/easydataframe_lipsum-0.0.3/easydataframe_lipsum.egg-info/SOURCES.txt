@@ -1,0 +1,10 @@
+README.md
+setup.py
+easydataframe_lipsum.egg-info/PKG-INFO
+easydataframe_lipsum.egg-info/SOURCES.txt
+easydataframe_lipsum.egg-info/dependency_links.txt
+easydataframe_lipsum.egg-info/requires.txt
+easydataframe_lipsum.egg-info/top_level.txt
+lipsum_easydataframe/__init__.py
+lipsum_easydataframe/dataframe_helper.py
+lipsum_easydataframe/dataframe_in.py

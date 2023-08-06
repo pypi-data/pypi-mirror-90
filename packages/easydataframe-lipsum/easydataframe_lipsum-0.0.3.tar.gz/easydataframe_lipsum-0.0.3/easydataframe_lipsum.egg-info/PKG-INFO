@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: easydataframe-lipsum
+Version: 0.0.3
+Summary: A library that handles small xlsx files as a DataFrame.
+Home-page: https://gitlab.com/NilPointer/easydataframe
+Author: lipsum
+License: UNKNOWN
+Description: #   Easy Dataframe
+        
+        ##   What is this library?
+        This library is used when using the xlsx file as pandas.DataFrame.
+        
+        It is intended for use in small-scale development.
+        
+        ##  What kind of function does it have?
+        
+        * A function to judge whether it is xlsx or csv from the file path and read it as a data frame(from dataframe_in import read)
+        
+        
+        * Ability to read a specific cell(from dataframe_helper import read_cell)
+        
+        
+        * Check if there is NaN or None in the data frame
+        
+        
+        * ※ Most functions try to treat the elements of the data frame as str(from dataframe_helper import _any_to_str).
+        ##   use
+        ` pip install easydataframe-lipsum`
+        
+        python3
+        
+        `>>> import lipsum_easydataframe.dataframe_helper as helper`
+        
+        `>>> helper.example()`
+        
+        
+        ##  Required library
+        pandas
+        
+        ##  Required System
+        Windows10 == useWindows and usePython >= Python3.8
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
