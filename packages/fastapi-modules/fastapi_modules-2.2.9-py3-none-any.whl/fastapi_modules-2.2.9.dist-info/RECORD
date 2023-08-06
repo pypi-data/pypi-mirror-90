@@ -1,0 +1,14 @@
+fastapi_modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_modules/pydantic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_modules/pydantic/buonicovid.py,sha256=z0kiBM7MhYXSKXT92O9qFueYwq7PbBiTlPX7Xq8a6OM,824
+fastapi_modules/pydantic/ods.py,sha256=OJyBux6CzEE4dou6Gwwhg05kMIqVj8tm3ssjy5bgjPM,147
+fastapi_modules/pydantic/ricvolantini.py,sha256=dJlhwer5qPBFGMjvPBPadCvYJbtrr1Rnj-ovsXy54YQ,1029
+fastapi_modules/sqlalchemy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_modules/sqlalchemy/pgsql_buonicovid.py,sha256=mPx9qgACKaP3blnRm7x05toibV0pKl8frpcx066oHZM,1982
+fastapi_modules/sqlalchemy/pgsql_ods.py,sha256=KiN2e_-6dfBLYMgs7Flnq76Qn6N1V-auTvyIiCoM1bo,428
+fastapi_modules/sqlalchemy/pgsql_richiestevolantini.py,sha256=GepJibxyukC12eHpToiUTtRUoQV94DMIf4d_QiE_YBU,3168
+fastapi_modules-2.2.9.dist-info/LICENSE,sha256=9ed7Z9RJ_H6g0bFRnmaUPm94dq1gVWM1_t7hGSD3_fs,1066
+fastapi_modules-2.2.9.dist-info/METADATA,sha256=ee0KNfG-mYkdJ5JrYs-HwsjmYJBttwf0wb4LS_mTqjU,2250
+fastapi_modules-2.2.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fastapi_modules-2.2.9.dist-info/top_level.txt,sha256=yBVSXvGBFDmONB2NEPDUyd2j4bcCK-m1Bnsz1F-k46s,16
+fastapi_modules-2.2.9.dist-info/RECORD,,
