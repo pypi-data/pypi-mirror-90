@@ -1,0 +1,12 @@
+djangocms_rawhtml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangocms_rawhtml/cms_plugins.py,sha256=E1v4oQ7hy8GJC4gNu7BbLMKvvW_8F2-yK5_qoJc2DHU,708
+djangocms_rawhtml/models.py,sha256=FwbRrgMSDRyNaKp1YkQlPMDaM9YogMjWpLBfvnCYsSE,748
+djangocms_rawhtml/migrations/0001_rawhtmlplugindata.py,sha256=zmmJH9C4n3K6BkoUzDDgtuUEpzkTpTjCXofJOcDOSlM,925
+djangocms_rawhtml/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangocms_rawhtml/templates/admin/djangocms_rawhtml/change_form.html,sha256=WPQyxLf69hNEilPLfaVNPJ-Ihyjzo4NpVV2GTEFwAAo,1030
+djangocms_rawhtml/templates/djangocms_rawhtml/plugins/raw.html,sha256=YkQj5AwoGYmyVJwqL7rTQ6HShBfqPtuVqu5-bz38Wx8,64
+djangocms_rawhtml-1.0.dist-info/LICENSE,sha256=dY6vs8KRDvw_8WAAd-8hUGk4ynumwwvcf7Qz1Qo_IkE,1528
+djangocms_rawhtml-1.0.dist-info/METADATA,sha256=kEFnArmYijOs-sarKBgK_YJNzgcyGCwQLKI3ZzIIOrY,1848
+djangocms_rawhtml-1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+djangocms_rawhtml-1.0.dist-info/top_level.txt,sha256=V9IpMuR51hWcrRkWRvSgNDYpYPwnaE9WWszjmFgom7A,18
+djangocms_rawhtml-1.0.dist-info/RECORD,,
