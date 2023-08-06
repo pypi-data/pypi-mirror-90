@@ -1,0 +1,4 @@
+Genshi
+cached-property
+trytond_edocument_unece<5.7,>=5.6
+trytond<5.7,>=5.6
