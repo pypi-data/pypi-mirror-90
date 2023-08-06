@@ -1,0 +1,11 @@
+README.md
+gencmd.c
+gencmd.v.c
+pyproject.toml
+setup.cfg
+setup.py
+c/gencmd.c
+gencmd.egg-info/PKG-INFO
+gencmd.egg-info/SOURCES.txt
+gencmd.egg-info/dependency_links.txt
+gencmd.egg-info/top_level.txt
