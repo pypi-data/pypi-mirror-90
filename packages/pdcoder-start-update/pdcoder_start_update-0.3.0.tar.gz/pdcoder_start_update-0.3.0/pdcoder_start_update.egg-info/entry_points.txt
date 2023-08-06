@@ -1,0 +1,3 @@
+[console_scripts]
+pdcoder_start_update = pdcoder_start_update.main:main
+

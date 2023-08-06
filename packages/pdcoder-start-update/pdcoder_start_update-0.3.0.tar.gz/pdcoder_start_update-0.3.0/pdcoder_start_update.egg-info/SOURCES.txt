@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pdcoder_start_update/Versions.py
+pdcoder_start_update/__init__.py
+pdcoder_start_update/main.py
+pdcoder_start_update.egg-info/PKG-INFO
+pdcoder_start_update.egg-info/SOURCES.txt
+pdcoder_start_update.egg-info/dependency_links.txt
+pdcoder_start_update.egg-info/entry_points.txt
+pdcoder_start_update.egg-info/top_level.txt
