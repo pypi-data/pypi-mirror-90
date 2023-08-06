@@ -1,0 +1,17 @@
+AUTHORS.rst
+CONTRIBUTING.rst
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/pyhasse.spyout.egg-info/PKG-INFO
+src/pyhasse.spyout.egg-info/SOURCES.txt
+src/pyhasse.spyout.egg-info/dependency_links.txt
+src/pyhasse.spyout.egg-info/namespace_packages.txt
+src/pyhasse.spyout.egg-info/not-zip-safe
+src/pyhasse.spyout.egg-info/requires.txt
+src/pyhasse.spyout.egg-info/top_level.txt
+src/pyhasse/spyout/__init__.py
+src/pyhasse/spyout/calc.py

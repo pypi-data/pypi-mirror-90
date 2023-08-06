@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: pyhasse.spyout
+Version: 0.3.1
+Summary: pyhasse.spyout: First inspection of data-driven partially ordered sets.
+Home-page: https://pyhasse.org
+Author: Rainer Bruggemann
+Author-email: rainer.bruggemann@pyhasse.org
+License: MIT license
+Download-URL: https://pyhasse.org
+Description: ======================
+        Module: pyhasse.spyout
+        ======================
+        
+        * Free software: MIT license
+        * Documentation: https://pyhasse.org
+        
+        
+        Features
+        --------
+        
+        Calculate:
+        
+        - Statistical characteristics
+        - Connectivities
+        - List of chains
+        - Conflicts
+        
+        
+        =======
+        History
+        =======
+        
+        0.3.1 (2021-01-08)
+        ------------------
+        - refactored version
+        
+        
+        0.2.7 (2019-03-27)
+        ------------------
+        
+        - improved desecription for better search results with "pip search pyhasse"
+        
+        0.2.6 (2019-03-24)
+        ------------------
+        
+        - URL for repository added
+        
+        0.2.5 (2019-03-21)
+        ------------------
+        
+        - classifier added
+        - wrong pointer corrected
+        
+        
+        0.2.4 (2018-03-05)
+        ------------------
+        
+        - set long_description_content_type to text/x-rst
+        
+        
+        0.1.0 (2018-06-10)
+        ------------------
+        
+        * First version
+        
+Keywords: spyout
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst
