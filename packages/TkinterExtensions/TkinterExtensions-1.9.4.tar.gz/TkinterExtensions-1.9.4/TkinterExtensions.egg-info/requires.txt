@@ -1,0 +1,4 @@
+pillow>=8.1.0
+tk_html_widgets>=0.4.0
+PythonDebugTools>=2.2.3
+BaseExtensions>=1.2.5
