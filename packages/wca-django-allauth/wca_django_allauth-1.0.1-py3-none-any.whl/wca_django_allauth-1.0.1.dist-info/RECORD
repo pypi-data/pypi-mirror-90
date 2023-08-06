@@ -1,0 +1,10 @@
+wca_allauth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wca_allauth/apps.py,sha256=hZ_yjY7noFpkQeKxMP8_vEMPIQgSh71JmqUe77Mfqlk,96
+wca_allauth/provider.py,sha256=pJ9voX3KqtpETQK0vXef4wH8ZWj3IY3J0JatWZIf3Ks,972
+wca_allauth/urls.py,sha256=2Om1oP9l8jX-gy56ziesCW_htMv2m-vH9mAsu2cON6k,194
+wca_allauth/views.py,sha256=-unvE4GzxkuxeHG2eaD8fERPxGn9V3dbHvMUrYYo7rs,1283
+wca_django_allauth-1.0.1.dist-info/LICENSE,sha256=WDVTi2CRLI3p0MENe29gveI29f_IP8hxdzBu5zf0V5s,1074
+wca_django_allauth-1.0.1.dist-info/METADATA,sha256=d4jwAoY3_Bz6pYE2kHugosjBugndq2JLD5KEw23zCjw,1786
+wca_django_allauth-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+wca_django_allauth-1.0.1.dist-info/top_level.txt,sha256=4-So2ioTH3pSAv7teHXeAKf6eOtxtzcHxixklezo77Q,12
+wca_django_allauth-1.0.1.dist-info/RECORD,,

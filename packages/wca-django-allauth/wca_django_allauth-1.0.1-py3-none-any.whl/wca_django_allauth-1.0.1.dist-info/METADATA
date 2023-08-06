@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: wca-django-allauth
+Version: 1.0.1
+Summary: World Cube Association OAuth2 provider for django-allauth.
+Home-page: https://github.com/drfb/wca-django-allauth
+Author: Dhan-Rheb Belza
+Author-email: dhanrheb@gmail.com
+License: MIT license
+Keywords: world cube association allauth
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Requires-Dist: Django (>=1.11)
+Requires-Dist: django-allauth
+
+==================
+wca-django-allauth
+==================
+
+`World Cube Association <https://www.worldcubeassociation.org/>`__ OAuth2 provider for
+`django-allauth <https://django-allauth.readthedocs.io/en/latest/overview.html>`__.
+
+Installation
+============
+
+Install the package
+
+::
+
+    $ pip install wca-django-allauth
+
+settings.py
+
+::
+
+    INSTALLED_APPS = [
+        # ... django and allauth apps
+
+        'wca_allauth',
+    ]
+
+Callback URL
+
+::
+
+    http://example.com/accounts/worldcubeassociation/login/callback/
+
+Login URL
+
+::
+
+    http://example.com/accounts/worldcubeassociation/login
+
+
+
