@@ -1,0 +1,3 @@
+[pyfony.bundle]
+autodetect=pyfony.PyfonyBundle:PyfonyBundle.autodetect
+
