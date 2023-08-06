@@ -1,0 +1,12 @@
+README.rst
+setup.py
+src/digimat/__init__.py
+src/digimat.dyndcf.egg-info/PKG-INFO
+src/digimat.dyndcf.egg-info/SOURCES.txt
+src/digimat.dyndcf.egg-info/dependency_links.txt
+src/digimat.dyndcf.egg-info/namespace_packages.txt
+src/digimat.dyndcf.egg-info/not-zip-safe
+src/digimat.dyndcf.egg-info/requires.txt
+src/digimat.dyndcf.egg-info/top_level.txt
+src/digimat/dyndcf/__init__.py
+src/digimat/dyndcf/dyndcf.py
