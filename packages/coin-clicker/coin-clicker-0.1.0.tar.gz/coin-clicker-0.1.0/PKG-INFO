@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: coin-clicker
+Version: 0.1.0
+Summary: 
+Author: lee
+Author-email: lee@logicon.io
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyInquirer (>=1.0.3,<2.0.0)
+Requires-Dist: Telethon (>=1.18.2,<2.0.0)
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: coloredlogs (>=15.0,<16.0)
+Requires-Dist: pyfiglet (>=0.8.post1,<0.9)
+Requires-Dist: selenium (>=3.141.0,<4.0.0)
+Requires-Dist: webdriver-manager (>=3.2.2,<4.0.0)
