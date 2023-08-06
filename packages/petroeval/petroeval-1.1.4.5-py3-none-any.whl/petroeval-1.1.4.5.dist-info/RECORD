@@ -1,0 +1,17 @@
+petroeval/__init__.py,sha256=vn3e0wLf3BO420rCJ_zO8cHhkH3QFE7sbApAcwWxJH8,1232
+petroeval/evaluate_reservoir.py,sha256=EExFVO9FgGFSdh0DVykiBWxM6xObwyPcf4zUzezWUVI,10068
+petroeval/files_reader.py,sha256=I8RRykJX6po7FKKeSAWiS8bixsc8O3kKrFAIPRV9gGk,993
+petroeval/plots.py,sha256=vmdFWQSlJe-rs7tCOjHeYEZr8soL3Rv8M5-TFfxjQ1w,22096
+petroeval/preprocessing.py,sha256=jBQ0YwuZCTFPhm8tfvyNoarOLi9qYcL68pF9Dg0HGnw,2106
+petroeval/pseudomodes.py,sha256=_H4v5MlAX8xbhY17XyV7iUGgZVlpAOx0e8_7PDgOybU,31291
+petroeval/utils.py,sha256=SzXEd0PBSaKeev0DweubZIsri9HsqwbHvYNYHjEVvdM,7145
+petroeval/visualizations.py,sha256=JhptQbYN9TKOY1MCrA0FyHGMQ5lfmWQguB3N1zM8gaM,3527
+petroeval/model/formation_encoded,sha256=W1skNAJI-043PwiaXh0BGMe0skBITakiJytb0Pqd_jY,1369
+petroeval/model/group_encoded,sha256=DYYBO6v42hNV-RwhJzq2IcHNghzcP5xiMyAzCWiMnlg,298
+petroeval/model/lithofacies_model1.model,sha256=BtQuhzEzCbJyyHnEczERK-ciXCmYOcjzueQ-Zlwv-ho,21843518
+petroeval/model/lithofacies_model2.model,sha256=__b039AMzQPK26wh3Su24X8kaIPEkJY922mk9gqGX9E,21901836
+petroeval-1.1.4.5.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+petroeval-1.1.4.5.dist-info/METADATA,sha256=1aJIgzZSTmuHJ9tpq_I-Coass_AYRhfBUXNtnyWk3IQ,2124
+petroeval-1.1.4.5.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+petroeval-1.1.4.5.dist-info/top_level.txt,sha256=pkugwJCv-Chsz4vwsrlLCTfK1DAkvdqnls6DXjnOzRQ,10
+petroeval-1.1.4.5.dist-info/RECORD,,
