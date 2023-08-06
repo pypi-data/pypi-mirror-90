@@ -1,0 +1,10 @@
+README.md
+setup.py
+jsonpath/__init__.py
+jsonpath_python.egg-info/PKG-INFO
+jsonpath_python.egg-info/SOURCES.txt
+jsonpath_python.egg-info/dependency_links.txt
+jsonpath_python.egg-info/top_level.txt
+test/__init__.py
+test/conftest.py
+test/test_jsonpath.py
