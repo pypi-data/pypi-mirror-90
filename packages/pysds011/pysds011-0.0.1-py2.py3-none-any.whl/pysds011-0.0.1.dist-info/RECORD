@@ -1,0 +1,11 @@
+pysds011/__init__.py,sha256=-LGgpVzBvQsNFEbahLrAD1u9e1Ur3koil2eg54r1t7Y,23
+pysds011/__main__.py,sha256=9xCgbkOOzJW3vbvKKpDfBRBWpjJWriWD5k62smWNmRs,377
+pysds011/cli.py,sha256=TYqMr-dfT5BoS2SmznpeIWN7KTv_SJO46qVALO_-1EA,905
+pysds011/driver.py,sha256=ar58ChVBYfiErAKqgCtufhKLBpQgS5PmJOl4Klui2ZE,4298
+pysds011-0.0.1.dist-info/AUTHORS.rst,sha256=kq3IvIgDrK-jhj8xWh0jbRc4uYbsPL6Il_oRFZa2Xig,73
+pysds011-0.0.1.dist-info/LICENSE,sha256=XvLlvLcFNaQCrvrhmlGkNIS5jM7JtQyAh-DDFpX8uew,1109
+pysds011-0.0.1.dist-info/METADATA,sha256=7nNKTXqzgmwGkWAGADuSCOjH82SVLR9AkeBZxe-7MSU,1728
+pysds011-0.0.1.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+pysds011-0.0.1.dist-info/entry_points.txt,sha256=YNXNldM0c-m8f7dn6aor1HFISbEEcJVr_ERzI8Bt4gg,48
+pysds011-0.0.1.dist-info/top_level.txt,sha256=klqHgcRJrrwC1XOfc38d_qKKXw4ouB76XFGscLaeOAs,9
+pysds011-0.0.1.dist-info/RECORD,,
