@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ChETiK
+Version: 0.2
+Summary: hello pypi :)
+Home-page: UNKNOWN
+Author: EzzYIB
+Author-email: zezo.665.5@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: colorama
+Requires-Dist: colored
+Requires-Dist: requests
+
+hello pypi :)
+
+
