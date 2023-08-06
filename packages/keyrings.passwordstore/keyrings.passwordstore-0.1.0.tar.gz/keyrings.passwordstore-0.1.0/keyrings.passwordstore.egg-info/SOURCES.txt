@@ -1,0 +1,12 @@
+.gitignore
+LICENSE
+README.md
+setup.cfg
+setup.py
+keyrings/__init__.py
+keyrings.passwordstore.egg-info/PKG-INFO
+keyrings.passwordstore.egg-info/SOURCES.txt
+keyrings.passwordstore.egg-info/dependency_links.txt
+keyrings.passwordstore.egg-info/entry_points.txt
+keyrings.passwordstore.egg-info/top_level.txt
+keyrings/passwordstore/backend.py
