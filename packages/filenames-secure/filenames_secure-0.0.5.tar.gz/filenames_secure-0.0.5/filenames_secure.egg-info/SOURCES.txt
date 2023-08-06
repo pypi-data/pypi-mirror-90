@@ -1,0 +1,8 @@
+README.md
+setup.py
+filenames_secure/__init__.py
+filenames_secure.egg-info/PKG-INFO
+filenames_secure.egg-info/SOURCES.txt
+filenames_secure.egg-info/dependency_links.txt
+filenames_secure.egg-info/entry_points.txt
+filenames_secure.egg-info/top_level.txt
