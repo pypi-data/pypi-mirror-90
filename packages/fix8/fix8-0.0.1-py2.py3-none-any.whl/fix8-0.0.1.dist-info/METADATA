@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: fix8
+Version: 0.0.1
+Summary: Automatic fix for Python linting issues found by Flake8
+Home-page: https://github.com/PeterJCLaw/fix8
+Author: Peter Law
+Author-email: PeterJCLaw@gmail.com
+License: UNKNOWN
+Project-URL: Issue tracker, https://github.com/PeterJCLaw/fix8/issues
+Project-URL: Code, https://github.com/PeterJCLaw/fix8
+Project-URL: Documentation, https://github.com/PeterJCLaw/fix8/blob/master/READNE.md
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Requires-Dist: parso
+
+# Fix8
+
+[![CircleCI](https://circleci.com/gh/PeterJCLaw/fix8.svg?style=svg)](https://circleci.com/gh/PeterJCLaw/fix8)
+
+Automatic fix for Python linting issues found by [Flake8](https://flake8.pycqa.org/).
+
+
