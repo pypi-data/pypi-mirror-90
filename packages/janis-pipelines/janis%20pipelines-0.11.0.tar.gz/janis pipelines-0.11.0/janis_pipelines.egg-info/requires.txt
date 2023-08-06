@@ -1,0 +1,16 @@
+janis-pipelines.core>=v0.11.1
+janis-pipelines.runner>=v0.11.1
+janis-pipelines.unix>=v0.11.0
+janis-pipelines.bioinformatics>=v0.1.0
+janis-pipelines.pipelines>=v0.11.0
+janis-pipelines.templates>=v0.10.3
+
+[bioinformatics]
+janis-pipelines.bioinformatics>=v0.1.0
+janis-pipelines.pipelines>=v0.11.0
+
+[doc]
+docutils
+sphinx
+sphinx_rtd_theme
+recommonmark
