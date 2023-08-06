@@ -1,0 +1,12 @@
+nsfc/__init__.py,sha256=E4J4sxXaSqI9GZYnrrOKwVUgSWAR4y6-XivZqyGZIS0,6832
+nsfc/bin/__init__.py,sha256=mlaDIh8VNDXyQCmNjy-kUblfqkPMGekk120CgHsvwME,4681
+nsfc/util/__init__.py,sha256=Qf8EjpzooTwnXtuoRDTvGfuQ8RSv4nMVphLqEK8SU4k,2120
+nsfc/util/export.py,sha256=sQUYzUirIr8ClHh0nEY2WcFhE2l6ABVR7gvbDK_Depk,2825
+nsfc/util/index.html,sha256=G4qa67bLZsN6ZVNhBb8G3pxYEN8JoK6QqRHG1HwCxSk,1663
+nsfc/util/parse_captcha.py,sha256=81NpjcaKq5qO4OLQJvichfM3smXhEm-dPu40mPK-eAY,1480
+nsfc/version/version.json,sha256=2SbS0LNcYAOuEJ8S0Mnb1KS__vqUDPqarzuPkTSkLzo,128
+nsfc-1.0.5.dist-info/METADATA,sha256=z_KA0_Kj9WSyQCtLrDCZm7d4stIFFouIQYDbyQ0tbbo,3314
+nsfc-1.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+nsfc-1.0.5.dist-info/entry_points.txt,sha256=HhzqokqvKkVoKRXNdlb5j6iGC2qiAC0OcDlqiGaxo-8,48
+nsfc-1.0.5.dist-info/top_level.txt,sha256=vxTAjyqBmdcHpUUCH186Py7RwYi4F7P5YLD2ra4QYEU,5
+nsfc-1.0.5.dist-info/RECORD,,

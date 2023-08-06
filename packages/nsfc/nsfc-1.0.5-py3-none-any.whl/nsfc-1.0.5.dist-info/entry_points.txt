@@ -1,0 +1,3 @@
+[console_scripts]
+nsfc = nsfc.bin.__init__:cli
+
