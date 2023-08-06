@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+configen/__init__.py
+configen/config.py
+configen/configen.py
+configen/utils.py
+configen/samples/__init__.py
+configen/samples/my_module.py
+configen/templates/module.j2
+configen/templates/sample_config.yaml
+hydra_configen.egg-info/PKG-INFO
+hydra_configen.egg-info/SOURCES.txt
+hydra_configen.egg-info/dependency_links.txt
+hydra_configen.egg-info/entry_points.txt
+hydra_configen.egg-info/requires.txt
+hydra_configen.egg-info/top_level.txt
