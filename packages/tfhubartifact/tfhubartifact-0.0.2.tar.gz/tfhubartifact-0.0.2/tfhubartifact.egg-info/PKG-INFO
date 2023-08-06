@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: tfhubartifact
+Version: 0.0.2
+Summary: BentoML artifact framework for TensorFlow Hub models
+Home-page: https://github.com/markmo/tfhubartifact
+Author: Mark Moloney
+Author-email: m4rkmo@gmail.com
+License: UNKNOWN
+Description: # tfhubartifact
+        
+        BentoML artifact framework for TensorFlow Hub models.
+        
+        Installation:
+        
+            pip install tfhubartifact==0.0.1
+        
+        Usage example (decorate service):
+        
+            from tfhubartifact.TensorFlowHubModelArtifact import TensorFlowHubModelArtifact
+        
+            @artifacts([TensorFlowHubModelArtifact('embedder')])
+            class MyBentoService(BentoService):
+        
+        
+        Usage example (package model):
+        
+            svc = MyBentoService()
+        
+            svc.pack('embedder', my_embedding_model_path)
+        
+        Alternatively, during training:
+        
+            svc.pack('embedder', {'embedder': my_embedder})
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
