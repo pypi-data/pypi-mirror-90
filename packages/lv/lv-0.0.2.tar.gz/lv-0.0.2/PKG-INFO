@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lv
+Version: 0.0.2
+Summary: Utils to slurp stuff
+Home-page: https://github.com/thorwhalen/ut/tree/master/util/slurping.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # lv
+        Utils to slurp stuff
+        
+        
+        To install:	```pip install lv```
+        
+Platform: any
+Description-Content-Type: text/markdown
