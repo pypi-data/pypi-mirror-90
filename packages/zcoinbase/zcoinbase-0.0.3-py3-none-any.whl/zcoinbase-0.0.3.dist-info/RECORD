@@ -1,0 +1,12 @@
+zcoinbase/__init__.py,sha256=L9WfSRZz5ZEV0Gu3d-dMjN2Ec0rg7qguWrsTbYqFN5k,313
+zcoinbase/authenticated_client.py,sha256=mFH5-vD-OqULJ2YaH6hvgYRpEQ1lrk1WGqiv91QkRkM,13543
+zcoinbase/coinbase_auth.py,sha256=gD5IMPi-cOBwjE8ERJFUVJ3LWhijr5B671amhDZp1dM,1907
+zcoinbase/public_client.py,sha256=MMORp7YbU-IF2PNXmTr2BXXCDd315GIn_ciDwnMq5E8,1934
+zcoinbase/rest_client.py,sha256=QK23CT7pUOns7zdOpxm1dMXnTigYNqg0XsGDDfkZkWg,1500
+zcoinbase/util.py,sha256=Kdm2dxOXwrUzc06WH5yT2aGucQMyX9ai35k4k_tpges,1435
+zcoinbase/websocket_client.py,sha256=JLRreA4E0ANt4WuWPZPNN6nxlk8Na572IlQTnWEfzSw,6886
+zcoinbase-0.0.3.dist-info/LICENSE,sha256=nvm35JKc4Cnko_bdXKIkRDwDdwEE-DeII4ufeL4JBGg,1068
+zcoinbase-0.0.3.dist-info/METADATA,sha256=mZvdLORt_ZVaoGwk9fcznD_jXhFvri3q3e3n95PFZx0,380
+zcoinbase-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+zcoinbase-0.0.3.dist-info/top_level.txt,sha256=x_bUbYrF50bmMMKfH76qqycmBH94z1cJw7Vkixvn8wM,10
+zcoinbase-0.0.3.dist-info/RECORD,,
