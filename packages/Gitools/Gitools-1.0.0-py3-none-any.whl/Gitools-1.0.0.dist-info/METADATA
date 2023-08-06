@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Gitools
+Version: 1.0.0
+Summary: A handy tool to modify git history
+Home-page: https://github.com/AliRezaBeigy/Gitools
+Author: AliReza Beigy
+Author-email: AliRezaBeigyKhu@gmail.com
+License: MIT
+Keywords: git history filter-branch change-date git-history
+Platform: nt
+Platform: posix
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Gitools
+
+A handy tool to modify git history
+
+
