@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nornir-routeros
+Version: 0.1.0
+Summary: RouterOS API plugins for nornir
+License: Apache-2.0
+Author: Devon Mar
+Author-email: devonm@mdmm.ca
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Jinja2 (>=2.11.2,<3.0.0)
+Requires-Dist: RouterOS-api (>=0.17.0,<0.18.0)

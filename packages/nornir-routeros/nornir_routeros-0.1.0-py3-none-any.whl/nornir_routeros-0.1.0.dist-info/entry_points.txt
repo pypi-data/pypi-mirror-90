@@ -1,0 +1,3 @@
+[nornir.plugins.inventory]
+routerosapi=nornir_routeros.plugins.connections:RouterOsApi
+
