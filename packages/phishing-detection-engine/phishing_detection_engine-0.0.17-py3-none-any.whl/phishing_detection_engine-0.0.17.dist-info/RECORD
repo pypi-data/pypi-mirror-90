@@ -1,0 +1,11 @@
+phishing_detection_engine/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phishing_detection_engine/functions.py,sha256=njKKGvl6_pR4juw0ZAVbEg_pXVco3qyCcw5pBisJm_k,58380
+phishing_detection_engine/trained_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+phishing_detection_engine/trained_model/finalized_model.sav,sha256=Nl8Un2bfqDSAEWwbHttXA1ElFw5cwtMYPDcaS6_QXkA,72426226
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_functions.py,sha256=Zx2SY8WXTTIUNyrswx5C-UtxWEqTds-542UPIPaCukQ,373
+phishing_detection_engine-0.0.17.dist-info/LICENSE,sha256=3ffyZO9v00z0Bc6gpI3Q4oPrGMRuVbiKoqlhiVHgfEE,1071
+phishing_detection_engine-0.0.17.dist-info/METADATA,sha256=PWUF8BxQhkj9ZZqGNfJcyGR2l1spgYdNL1qdNwW8sdI,918
+phishing_detection_engine-0.0.17.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+phishing_detection_engine-0.0.17.dist-info/top_level.txt,sha256=iavz1NJSLLO9h1SyUH0auRRry0zAZ_3pyAWYstAWYbg,32
+phishing_detection_engine-0.0.17.dist-info/RECORD,,
