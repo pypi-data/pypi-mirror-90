@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: seismopy
+Version: 1.0.1
+Summary: A Package for Structural and Earthquake Engineering
+Home-page: https://github.com/mohsen-azimi/SeismoPy
+Author: Mohsen Azimi
+Author-email: mohsen.azimi@nevada.unr.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# SeismoPy
+A Structural and Earthquake Engineering package.
+
+## Installation
+```pip install seismopy```
+
+## How to use it?
+Open terminal and type seismopy...
+
+## License
+
+© 2021 Mohsen Azimi
+
+This repository is licensed under the MIT license. See LICENSE for details.
+
