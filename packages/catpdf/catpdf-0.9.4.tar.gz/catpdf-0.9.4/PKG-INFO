@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: catpdf
+Version: 0.9.4
+Summary: conCATenate one or more source PDF files (or pieces of) into a target PDF file
+Home-page: https://pypi.org/project/catpdf
+Author: Carlo Alessandro Verre
+Author-email: carlo.alessandro.verre@gmail.com
