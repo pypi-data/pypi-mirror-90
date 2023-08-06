@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: tmax-ims
+Version: 0.0.2
+Summary: TMAX IMS issue alert package
+Home-page: https://github.com/ZeroStrength/tmax_ims
+Author: Changyun Lee
+Author-email: brownbearpower@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: bs4
+Requires-Dist: py-notifier
+Requires-Dist: pandas
+Requires-Dist: requests
+
+# TMAX ims alert
+
+## Download
+
+```
+pip install tmax_ims
+```
+
+## Example
+
+### basic fetch example
+```
+from tmax_ims import IMS
+
+ims = IMS('your_id', 'your_password')
+
+# return type pandas.DataFrame
+print( ims.fetch() )
+
+```
+
+### extra settings
+```
+from tmax_ims import IMS
+
+ims = IMS('your_id', 'your_password')
+
+# set custom header
+ims.set_header(['Issue Number', 'Subject'])
+
+# set custom fetch url
+ims.set_issue_list_url('http://~')
+
+```
+
+## Feature
+ - IMS List fetch
+ - (TODO) new ims alert
+
