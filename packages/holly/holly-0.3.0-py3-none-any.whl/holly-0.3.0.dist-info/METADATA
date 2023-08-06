@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: holly
+Version: 0.3.0
+Summary: A blog-engine plugin for Ivy.
+Home-page: https://github.com/dmulholl/holly
+Author: Darren Mulholland
+Author-email: UNKNOWN
+License: Public Domain
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: Public Domain
+Classifier: Topic :: Text Processing :: Markup :: HTML
+
+
+Holly
+=====
+
+A blog-engine plugin for Ivy.
+
+
+
