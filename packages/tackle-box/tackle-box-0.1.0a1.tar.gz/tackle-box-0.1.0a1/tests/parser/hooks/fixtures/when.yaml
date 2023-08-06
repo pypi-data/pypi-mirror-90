@@ -1,0 +1,59 @@
+_true: true
+_false: false
+
+blah:
+  type: var
+  input: blah
+  when: "{{ _true }}"
+
+things: stuff
+
+foo:
+  type: var
+  input: blah
+  when: "{{ things != 'stuff' }}"
+
+bar:
+  type: var
+  input: blah
+  when: "{{ things == 'stuff' }}"
+
+bing:
+  type: var
+  input: blah
+  confirm: "{{ _true }}"
+  when: "{{ things == 'stuff' }}"
+
+bings:
+  type: var
+  input: blah
+  confirm: "{{ _true }}"
+  when:
+    - "{{ things == 'stuff' }}"
+    - "{{ _true }}"
+
+
+is_true:
+  type: var
+  input: this
+  when: "{{ when._true }}"
+
+is_false:
+  type: var
+  input: that
+  when: "{{ when._false }}"
+
+list_true:
+  type: var
+  input: that
+  when:
+    - "{{ when._true }}"
+    - "{{ when._true }}"
+
+list_false:
+  type: var
+  input: that
+  when:
+    - "{{ when._true }}"
+    - "{{ when._false }}"
+    - "{{ when._true }}"
