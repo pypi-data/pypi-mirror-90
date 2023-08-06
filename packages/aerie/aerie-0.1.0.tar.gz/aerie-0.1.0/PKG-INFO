@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: aerie
+Version: 0.1.0
+Summary: A database toolkit.
+Author: alex.oleshkevich
+Author-email: alex.oleshkevich@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: full
+Provides-Extra: pgsql
+Provides-Extra: sqlite
+Requires-Dist: PyPika (>=0.44.0,<0.45.0)
+Requires-Dist: aiosqlite (>=0.16.0,<0.17.0); extra == "sqlite" or extra == "full"
+Requires-Dist: asyncpg (>=0.21.0,<0.22.0); extra == "pgsql" or extra == "full"
