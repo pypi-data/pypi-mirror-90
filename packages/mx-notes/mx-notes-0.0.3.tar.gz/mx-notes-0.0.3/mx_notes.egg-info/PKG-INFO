@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: mx-notes
+Version: 0.0.3
+Summary: Note-taking app with LaTeX math rendering.
+Home-page: https://github.com/amunger3/mx-notes
+Author: Alex Munger
+Author-email: munger.alex@gmail.com
+License: MIT License
+Description: # MX-Notes
+        
+        ## Installation
+        
+        ### pip
+        
+        ```shell
+            shell> pip install mx-notes
+        ```
+        
+        ### From source
+        
+        ```shell
+            shell> git clone https://github.com/amunger3/mx-notes.git
+            shell> cd mx-notes
+            shell> python setup.py install
+        ```
+        
+        ## Usage
+        
+        ### CLI
+        
+        MX-Notes can be ran from the command line with the command `mx`:
+        
+        ```shell
+            shell> mx <notes-dir> --host <host> --port <port>
+        ```
+        
+        where `notes-dir` represents the path to your desired MX-Notes directory.
+        
+        #### Defaults
+        
+        - `notes-dir`: `~/MX-Notes` (will create directory if it doesn't exist)
+        - `host`: `127.0.0.1` (localhost)
+        - `port`: `5000`
+        
+        ## Features
+        
+        ### Creating Notes
+        
+        Notes are created by selecting the 'New' button. Setting the title is optional.
+        Notes are saved automatically as they are edited.
+        
+        ### Editing Notes
+        
+        The note editing screen allows the user to edit the note title and content. Math
+        symbols and their keybindings are shown on the left panel for quick access.
+        
+        ### Listing Notes
+        
+        When the app is started, the main screen is a list of notes in the specified directory.
+        These notes are ordered by modification time. Clicking on a note's title will bring up its edit screen.
+        
+        ### Notes Format
+        
+        Notes are saved as <note-title>.txt with a Markdown-style title followed by the note's content.
+        
+        ## Developing
+        
+        ### Requirements
+        
+        - `python`
+        - `npm`
+        
+        
+        # MX-Notes
+        
+        ## Changelog
+        
+        Changelog labels are any of the following:
+        
+        - [BUGFIX], [CHANGE], [CODEQUALITY], [DEPENDENCY], [ENHANCEMENT], [OTHER], [TRANSLATION]
+        
+        ### Version 0.0.3 (2021-01-04)
+        
+        - [DEPENDENCY] Added UIKit and Sass compiler.
+        
+        ### Version 0.0.2 (2021-01-04)
+        
+        - [CODEQUALITY] `pathlib.Path` used over `os.path`.
+        - [ENHANCEMENT] Altered CSS slightly.
+        
+        ### Version 0.0.1 (2021-01-03)
+        
+        - [OTHER] Initialized project.
+        
+Keywords: notes,math,mathjax,tex,latex,browser
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Text Editors
+Classifier: Topic :: Text Processing :: Markup :: LaTeX
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
