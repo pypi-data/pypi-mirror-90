@@ -1,0 +1,3 @@
+[console_scripts]
+jongten=src.jongten:main
+
