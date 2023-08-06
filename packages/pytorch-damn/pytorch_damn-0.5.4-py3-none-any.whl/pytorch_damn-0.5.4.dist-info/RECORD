@@ -1,0 +1,10 @@
+pytorch_damn/__init__.py,sha256=mubmn9o_Nknk-S2p6nSJ0joqYte1_EWcWFWSBWSql7A,80
+pytorch_damn/__main__.py,sha256=9E-QVon4UwRGCc2skiq7vyrdMM2fztSHR1PozPb1_-w,64
+pytorch_damn/dataset.py,sha256=gLpooynDGUkYkf83APO60tPSK7JwFg_oHWKtZs5eUOc,320
+pytorch_damn/model.py,sha256=K9HdMMIhOhSmUSS5RB5zOLz-gBnFwsKKAAAd75omr7g,2637
+pytorch_damn/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytorch_damn/examples/domain_adaptation.py,sha256=FFY5u07EU3H4aJCtYq5NmxkyFrtNdI0bcpBuh9hE8ok,5906
+pytorch_damn-0.5.4.dist-info/METADATA,sha256=ubeRMOT2WYkX0lRO-LNGh9It2UaW7SuZZJ7MTTZyZ6U,781
+pytorch_damn-0.5.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytorch_damn-0.5.4.dist-info/top_level.txt,sha256=nvHAf-SHKHaddKFc3d48cDmqluJKJIrfjfukzhooEcE,13
+pytorch_damn-0.5.4.dist-info/RECORD,,
