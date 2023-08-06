@@ -1,0 +1,10 @@
+README.md
+setup.py
+TerminalUI/CustomUrwidWidgets.py
+TerminalUI/TerminalUI.py
+TerminalUI/__init__.py
+terminalui.egg-info/PKG-INFO
+terminalui.egg-info/SOURCES.txt
+terminalui.egg-info/dependency_links.txt
+terminalui.egg-info/requires.txt
+terminalui.egg-info/top_level.txt
