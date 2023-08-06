@@ -1,0 +1,2 @@
+class EmptyCurrenciesError(ValueError):
+    pass
