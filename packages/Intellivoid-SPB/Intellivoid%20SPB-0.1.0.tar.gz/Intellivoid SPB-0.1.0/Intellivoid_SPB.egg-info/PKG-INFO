@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: Intellivoid-SPB
+Version: 0.1.0
+Summary: Unofficial SPB API Wrapper
+Home-page: https://github.com/OpenRestfulAPI/intellivoid-spam-protection
+Author: Pokurt
+Author-email: poki@pokurt.me
+License: GNU Lesser General Public License v3 (LGPLv3)
+Description: # Welcome to the unofficial intellivoid-spam-protection wiki!
+        
+        This library handles All Requests done to https://api.intellivoid.net/spamprotection/v1/lookup. To understand how this is meant to be used, please see read the following [Documentation](https://github.com/OpenRestfulAPI/intellivoid-spam-protection/wiki)
+        
+        ## Getting Started
+        - Installing the library:
+         
+            `pip install Intellivoid-SPB`
+        
+        - For those who wants to try out Development Builds:
+        
+            `pip install git+https://github.com/OpenRestfulAPI/intellivoid-spam-protection@dev`
+        
+        ## Usage
+        
+        ```
+        from spamprotection import SPBClient
+        import asyncio
+        
+        client = SPBClient()
+        
+        async def main():
+            user = input("Enter a Username or UserID to check Spam Prediction on SPB: ")
+            status = await client.check_blacklist(user)
+            if status.success:
+                print(status.private_telegram_id)
+            else:
+                print("Polish Cow did not Approve this!")
+        
+        if __name__ == "__main__":
+            loop = asyncio.get_event_loop()
+            loop.run_until_complete(main())
+            loop.close()
+        ```
+        
+        ## Examples
+        
+        All Examples are in [Examples Directory](https://github.com/OpenRestfulAPI/intellivoid-spam-protection/tree/master/examples)
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
