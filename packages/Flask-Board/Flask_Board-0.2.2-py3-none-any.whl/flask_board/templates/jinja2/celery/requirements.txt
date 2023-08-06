@@ -1,0 +1,6 @@
+flask
+click
+gunicorn
+python-dotenv
+celery
+pytest
