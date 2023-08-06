@@ -1,0 +1,9 @@
+README.md
+btrfs_quota.py
+setup.py
+btrfs_quota.egg-info/PKG-INFO
+btrfs_quota.egg-info/SOURCES.txt
+btrfs_quota.egg-info/dependency_links.txt
+btrfs_quota.egg-info/entry_points.txt
+btrfs_quota.egg-info/requires.txt
+btrfs_quota.egg-info/top_level.txt
