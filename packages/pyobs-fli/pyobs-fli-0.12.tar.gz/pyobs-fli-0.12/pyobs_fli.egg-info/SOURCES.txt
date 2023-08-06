@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyobs_fli/__init__.py
+pyobs_fli/flicamera.py
+pyobs_fli/flidriver.cpp
+pyobs_fli.egg-info/PKG-INFO
+pyobs_fli.egg-info/SOURCES.txt
+pyobs_fli.egg-info/dependency_links.txt
+pyobs_fli.egg-info/requires.txt
+pyobs_fli.egg-info/top_level.txt
