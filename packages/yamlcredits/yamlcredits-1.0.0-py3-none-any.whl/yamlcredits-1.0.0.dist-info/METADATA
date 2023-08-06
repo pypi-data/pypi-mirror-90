@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: yamlcredits
+Version: 1.0.0
+Summary: Small tool for generating a CREDITS.md from YAML files.
+Home-page: http://github.com/tribecamp/yamlcredits
+Author: Tribecamp
+Author-email: support@tribecamp.com
+License: MIT
+Keywords: tribecamp yaml credits markdown
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: PyYAML (==5.3.1)
+
+# YAMLCredits
+📜 Small tool for generating a CREDITS.md from YAML files.
+
+## License
+[MIT](./LICENSE)
+
+
