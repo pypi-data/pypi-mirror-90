@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+konfig_parser.egg-info/PKG-INFO
+konfig_parser.egg-info/SOURCES.txt
+konfig_parser.egg-info/dependency_links.txt
+konfig_parser.egg-info/not-zip-safe
+konfig_parser.egg-info/requires.txt
+konfig_parser.egg-info/top_level.txt
+src/__init__.py
+src/parser.py
+src/version.py
