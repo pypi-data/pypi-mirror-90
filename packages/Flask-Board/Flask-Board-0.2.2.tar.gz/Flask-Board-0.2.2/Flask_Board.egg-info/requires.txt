@@ -1,0 +1,5 @@
+Werkzeug>=0.15
+Jinja2>=2.10.1
+flask>=1.0
+click>=5.1
+python-dotenv>=0.12

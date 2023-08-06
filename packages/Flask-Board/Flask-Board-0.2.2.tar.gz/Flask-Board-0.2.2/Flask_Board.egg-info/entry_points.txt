@@ -1,0 +1,3 @@
+[flask.commands]
+board = flask_board.commands:cli
+
