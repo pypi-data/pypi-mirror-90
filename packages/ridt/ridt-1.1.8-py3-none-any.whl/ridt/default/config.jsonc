@@ -1,0 +1,312 @@
+{
+    // Indicated the version of ridt this file corresponds to.
+    "ridt_version": "v1.0",
+    // Determins if the eddy diffusion model will be evaluated.
+    "eddy_diffusion": true,
+    // Determins if the well mixed model will be evaluated.
+    "well_mixed": false,
+
+    // If true then all computed data will be output to csv files in addition to
+    // the numpy array binary files (*.npy)
+    "write_data_to_csv": true,
+
+    // If true the exposure will be calcualed from concenration data. The
+    // precision of this data is dependent on the temporal resolution of the
+    // concenration data.
+    "compute_exposure": true,
+
+    // Romberg will integrate each time step individually from zero time, where
+    // as cumulative trapezoidal will perfrom a cumulative integration over all
+    // evaluated time points. This allows precise evaluation of a small number
+    // of time points.
+    "integration_method": "romberg",
+
+    // The units of all concentration values.
+    "concentration_units": "kg.m-3",
+    // The units of all exposure values.
+    "exposure_units": "kg.s.m-3",
+    // The units of all mass values.
+    "mass_units": "kg",
+
+    // The units of all time values. "time_units": "s",
+    // The number of time samples between zero and the total time, inclusive.
+    "time_samples": 25,
+    // The upper bound of the time of the simulation.
+    "total_time": 100.0,
+
+    // The units of all spatial quatities.
+    "spatial_units": "m",
+
+    // The size of the cuboid bounding box.
+    "dimensions": {
+        "x": 50.0,
+        "y": 20.0,
+        "z": 3.0
+    },
+    // The number of samples between zero and the upper bound in each spatial
+    // dimension. 
+    "spatial_samples": {
+        "x": 20,
+        "y": 20,
+        "z": 10 
+    },
+
+    // The units of the fresh air flow rate.
+    "fresh_air_flow_rate_units": "m3.s-1",
+    // The fresh air flow rate.
+    "fresh_air_flow_rate": 0.0,
+
+    // The physical properties of the system. These are used to perform unit
+    // conversion from ppm, ppb, and ppt.
+    "physical_properties": {
+        "agent_molecular_weight_units": "kg.mol-1",
+        "agent_molecular_weight": 1.0,
+        "pressure_units": "Pa",
+        "pressure": 1.0,
+        "temperature_units": "K",
+        "temperature": 273.0,
+        "air_density_units": "kg.m-3",
+        "air_density": 1.292
+    },
+
+    "modes": {
+        // The instanteneous source definitions.
+        "instantaneous": {
+            // A list of source terms. If you want to remove all source terms of
+            // this type, delete all entries inside the "sources": {} object.
+            "sources":{
+                "source_1": {
+                    // The x coordinate of the source term.
+                    "x": 10.0,
+                    // The y coordinate of the source term.
+                    "y": 3.0,
+                    // The z coordinate of the source term.
+                    "z": 1.0,
+                    // The mass of material released.
+                    "mass": 1.0,
+                    // The time at which the mass is released.
+                    "time": 0.0
+                }
+            }
+        },
+
+        // The infinite duration source definitions.
+        "infinite_duration": {
+            // A list of source terms. If you want to remove all source terms of
+            // this type, delete all entries inside the "sources": {} object.
+            "sources": {
+                "source_1": {
+                    // The x coordinate of the source term.
+                    "x": 10.0,
+                    // The y coordinate of the source term.
+                    "y": 3.0,
+                    // The z coordinate of the source term.
+                    "z": 1.0,
+                    // The rate that material is released, units are determined
+                    // by the mass and time units previously defined.
+                    "rate": 0.01,
+                    // The time at which the source starts to release material.
+                    "time": 0.0
+                }
+            }
+        },
+
+        // The fixed duration source definitions.
+        "fixed_duration": {
+            // A list of source terms. If you want to remove all source terms of
+            // this type, delete all entries inside the "sources": {} object.
+            "sources": {
+                "source_1": {
+                    // The x coordinate of the source term.
+                    "x": 10.0,
+                    // The y coordinate of the source term.
+                    "y": 3.0,
+                    // The z coordinate of the source term.
+                    "z": 1.0,
+                    // The rate that material is released, units are determined
+                    // by the mass and time units previously defined.
+                    "rate": 0.01,
+                    // The time at which the source starts to release material.
+                    "start_time": 1.0,
+                    // The time at which the source stops releasing material.
+                    "end_time": 0.0
+                }
+            }
+        }
+    },
+
+    // The threshold values which are used when performing the various analyses
+    // such as time to reach a given threshold, and the percentage of domain to
+    // exceed a given threshold.
+    "thresholds": {
+        // The concentratation thresholds.
+        "concentration": [
+            1e-10,
+            1e-5,
+            1e-2,
+            1e-1,
+            1.0
+        ],
+        // The exposure thresholds.
+        "exposure": [
+            1e-10,
+            1e-5,
+            1e-2,
+            1e-1,
+            1.0
+        ]
+    },
+
+    "models":{
+        // Settings relating to the Eddy Diffusion model.
+        "eddy_diffusion": {
+            // Settings that determine the way the diffusion coefficient is
+            // calculated.
+            "coefficient": {
+                // If "EXPLICIT" then the value specified as "value" is used. if
+                // "TKEB" then the coefficient is calculated.
+                "calculation": "TKEB",
+                // The value used for  the diffusion coefficient if the
+                // "calculation" setting is "EXPLICIT"
+                "value": 0.001,
+                "tkeb": {
+                    // The bound of the TKEB term to use. (Please see user guide
+                    // for more information).
+                    "bound": "lower",
+                    // The total air flow rate. (m3.s-1)
+                    "total_air_flow_rate": 1.0,
+                    // The number of supply vents.
+                    "number_of_supply_vents": 1
+                }
+            },
+            // Settings regarding the number of image source terms to calculate.
+            "images": {
+                // If "auto" then up to 20 image sources are computed if a
+                // precision geometric variance of 1e-10 is not achieved.
+                "mode": "auto",
+                // The number of image sources to compute if the "mode" setting
+                // is "manual".
+                "quantity": 3
+            },
+            // Settings relating to the post run analysis.
+            "analysis": {
+                // If 'true' all analysis will be performed on computed data.
+                // If false, no analysis will be performed.
+                "perform_analysis": true,
+                // The percentage used when calculating the percentage threshold
+                // exceedance quantities.
+                "percentage_exceedance": 10.0,
+                // If 'true' then values within a sphere centered
+                // on each source term are excluded from the analysis. Values
+                // within this range are potentially unphysical.
+                "exclude_uncertain_values": true,
+                // The radius of the exclusion sphere around each source.
+                "exclude_radius_meters": 2.0
+            },
+            // The definitions of the locations where the model is evaluated.
+            "monitor_locations": {
+                // Settings to switch on and off the evaluation of types of
+                // monitor location.
+                "evaluate": {
+                    // Evaluate all defined points.
+                    "points": true,
+                    // Evaluate all defined lines.
+                    "lines": true,
+                    // Evaluate all defined planes.
+                    "planes": true,
+                    // Evaluate the entire domain.
+                    "domain": false 
+                },
+                // The defnitions of all point-like monitor locations.
+                "points": {
+                    "point_1": {
+                        // The x position of the monitor location.
+                        "x": 10.0,
+                        // The y position of the monitor location.
+                        "y": 5.0,
+                        // The z position of the monitor location.
+                        "z": 1.0
+                    }
+                },
+                // The defnitions of all line-like monitor locations.
+                "lines": {
+                    "line_1": {
+                        "point": {
+                            // The x intercept of the line.
+                            "x": 10.0,
+                            // The y intercept of the line.
+                            "y": 5.0,
+                            // The z intercept of the line.
+                            "z": 1.0 
+                        },
+                        // The axis parallel to the line. One of the intercepts
+                        // will be made redundant based on the choice of this
+                        // setting.
+                        "parallel_axis": "x"
+                    }
+                },
+                // The defnitions of all plane-like monitor locations.
+                "planes": {
+                    "plane_1": {
+                        // The axes parallel to the plane.
+                        "axis": "xy",
+                        // The position of the plane along the perpendicular
+                        // axis. 
+                        "distance": 1.0
+                    }
+                },
+                // The defnitions of all domains. This settings is a placeholder
+                // for future functionality. PLEASE LEAVE UNMODIFIED.
+                "domain": {
+                    "domain": true 
+                }
+            },
+            // The settings relating to the plots of the point-like monitor
+            // locations. 
+            "points_plots": {
+                // Flag to determine if any plots are generated.
+                "output": true,
+                // Choose whether the y-axis scale is 'logarithmic' or 'linear'.
+                "scale": "logarithmic",
+                // The units to display the time axis.
+                "time_axis_units": "s"
+            },
+            // The settings relating to the plots of the line-like monitor
+            // locations. 
+            "lines_plots": {
+                // Flag to determine if any plots are generated.
+                "output": true,
+                // Choose whether the y-axis scale is 'logarithmic' or 'linear'.
+                "scale": "logarithmic",
+                // Output a time-animated plot. [NOT CURRENTLY IMPLEMENTED]
+                "animate": true,
+                // The number of plots to output. These will be evenly spread
+                // over the defined time domain.
+                "number": 3 
+            },
+            // The settings relating to the plots of the plane-like monitor
+            // locations. 
+            "planes_plots": {
+                "output": true,
+                // Output a time-animated plot. [NOT CURRENTLY IMPLEMENTED]
+                "animate": true,
+                // The number of plots to output. These will be evenly spread
+                // over the defined time domain.
+                "number": 10,
+                // The number of contours to use.
+                "number_of_contours": 10,
+                // Whether to use the upper and lower  bound for the contours
+                // defined in the "contours" setting or auto compute them from
+                // the data.
+                "range": "auto",
+                // Choose whether the contour scale is 'logarithmic' or 'linear'.
+                "scale": "logarithmic",
+                // The manually defined upper and lower bounds for the contours.
+                "contours": {
+                    "min": 1e-10,
+                    "max": 1.5
+                }
+            }
+        }
+    }
+}
