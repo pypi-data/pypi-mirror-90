@@ -1,0 +1,9 @@
+README.md
+setup.py
+LootBotApi/LootBotApi.py
+LootBotApi/__init__.py
+LootBotApi.egg-info/PKG-INFO
+LootBotApi.egg-info/SOURCES.txt
+LootBotApi.egg-info/dependency_links.txt
+LootBotApi.egg-info/requires.txt
+LootBotApi.egg-info/top_level.txt
