@@ -1,0 +1,7 @@
+README.md
+setup.py
+hpcomt/__init__.py
+hpcomt.egg-info/PKG-INFO
+hpcomt.egg-info/SOURCES.txt
+hpcomt.egg-info/dependency_links.txt
+hpcomt.egg-info/top_level.txt
