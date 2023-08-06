@@ -1,0 +1,8 @@
+README.md
+setup.py
+firestoredb/__init__.py
+firestoredb.egg-info/PKG-INFO
+firestoredb.egg-info/SOURCES.txt
+firestoredb.egg-info/dependency_links.txt
+firestoredb.egg-info/requires.txt
+firestoredb.egg-info/top_level.txt
