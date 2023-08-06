@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+ankush_distributions/Binomialdistribution.py
+ankush_distributions/Gaussiandistribution.py
+ankush_distributions/Generaldistribution.py
+ankush_distributions/__init__.py
+ankush_distributions.egg-info/PKG-INFO
+ankush_distributions.egg-info/SOURCES.txt
+ankush_distributions.egg-info/dependency_links.txt
+ankush_distributions.egg-info/not-zip-safe
+ankush_distributions.egg-info/top_level.txt
