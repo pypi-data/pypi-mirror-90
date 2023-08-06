@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ix
+Version: 0.0.2
+Summary: Audio Utils
+Home-page: https://github.com/thorwhalen/ut/tree/master/sound/others/audio_tools.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# ix
+Audio Utils
+
+
+To install:	```pip install ix```
+
+
