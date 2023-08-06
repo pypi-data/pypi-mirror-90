@@ -1,0 +1,11 @@
+_generics/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+_generics/defended.py,sha256=2BX8Pa7B34LvkI5e9r6fRWNnMZe4_4Xa8r2B_Ihi6bg,112
+_generics/delegated.py,sha256=SB202Eyk8SfzR2suJQMJ9bHx_p9GLs1YwWlZ3_jiLL0,90
+_generics/exceptions.py,sha256=CipGdZ4RaeVS1TXY_qE5qreS8bAB57M23ApTbvJK4WQ,251
+_generics/private.py,sha256=UBE45Tty60zz2qYEKHKeklyOc773aaREGGHJ0ZPnAXw,4891
+generics/__init__.py,sha256=s-5-l4Gbs1ZEy_oSy9MT5zhWq-CkR17HAz_KwjgTLoo,218
+generics/exceptions.py,sha256=YleAHVzTsWUmbETM1wu9_wmjP9rBSMq1NfXMpWw8jEk,262
+generics-3.2.0.dist-info/LICENSE,sha256=LJ_rAR8NwahIXjsJ6i3aIhsncGlNu95dFkz63odksNo,1284
+generics-3.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+generics-3.2.0.dist-info/METADATA,sha256=fu_dum8lLK7V4xJi8E29y1McdJXoHMi2o2hgvpIHUnw,3772
+generics-3.2.0.dist-info/RECORD,,
