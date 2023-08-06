@@ -1,0 +1,6 @@
+trytond_carrier<5.7,>=5.6
+trytond_company<5.7,>=5.6
+trytond_currency<5.7,>=5.6
+trytond_product<5.7,>=5.6
+trytond_product_measurements<5.7,>=5.6
+trytond<5.7,>=5.6
