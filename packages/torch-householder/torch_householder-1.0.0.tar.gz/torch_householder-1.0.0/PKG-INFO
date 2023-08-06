@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: torch_householder
+Version: 1.0.0
+Summary: Efficient Householder transformation in PyTorch
+Home-page: https://www.github.com/toshas/torch-householder
+Author: Anton Obukhov
+License: BSD
+Description: 
+        This package implements the Householder transformation algorithm for calculating orthogonal matrices and Stiefel frames 
+        with differentiable bindings to PyTorch. In particular, the package provides an enhanced drop-in replacement for the 
+        `torch.orgqr` function. 
+        
+        APIs for orthogonal transformations have been around since LAPACK; however, their support in the deep learning 
+        frameworks is lacking. Recently, orthogonal constraints have become popular in deep learning as a way to regularize
+        models and improve training dynamics, and hence the need to backpropagate through orthogonal transformations arised.
+        
+        PyTorch 1.7 implements matrix exponential function `torch.matrix_exp`, which can be repurposed to performing the 
+        orthogonal transformation when the input matrix is skew-symmetric. This is the baseline we use in Speed and Precision 
+        evaluation.   
+        
+        Compared to `torch.matrix_exp`, the Householder transformation implemented in this package has the following advantages: 
+        - Orders of magnitude lower memory footprint
+        - Ability to transform non-square matrices (Stiefel frames)
+        - A significant speed-up for non-square matrices
+        - Better numerical precision for all matrix and batch sizes
+        
+        Find more details and the most up-to-date information on the project webpage:
+        https://www.github.com/toshas/torch-householder
+        
+Keywords: pytorch,householder,orgqr,efficient,differentiable,orthogonal,transformation,unitary,matrices
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
