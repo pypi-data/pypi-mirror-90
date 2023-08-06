@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: avassa-client
+Version: 0.0.1
+Summary: More to come
+Home-page: https://avassa.io
+Author: Fredrik Jansson
+Author-email: fj@avassa.io
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Placeholder
+
+
