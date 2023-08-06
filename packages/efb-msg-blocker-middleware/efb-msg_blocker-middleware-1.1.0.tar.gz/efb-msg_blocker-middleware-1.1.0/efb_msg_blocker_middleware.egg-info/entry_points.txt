@@ -1,0 +1,3 @@
+[ehforwarderbot.middleware]
+catbaron.msg_blocker = efb_msg_blocker_middleware:MessageBlockerMiddleware
+
