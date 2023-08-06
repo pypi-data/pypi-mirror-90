@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ethermine
+Version: 0.1.0
+Summary: Ethermine python wrapper
+Home-page: UNKNOWN
+Author: Chris Landa
+Author-email: stylesuxx@gmail.com
+License: MIT
+Keywords: etherium,ethermine,eth
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
