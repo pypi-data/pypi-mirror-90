@@ -1,0 +1,10 @@
+setup.py
+tmp_binomial_gaussian_dist/Binomialdistribution.py
+tmp_binomial_gaussian_dist/Gaussiandistribution.py
+tmp_binomial_gaussian_dist/Generaldistribution.py
+tmp_binomial_gaussian_dist/__init__.py
+tmp_binomial_gaussian_dist.egg-info/PKG-INFO
+tmp_binomial_gaussian_dist.egg-info/SOURCES.txt
+tmp_binomial_gaussian_dist.egg-info/dependency_links.txt
+tmp_binomial_gaussian_dist.egg-info/not-zip-safe
+tmp_binomial_gaussian_dist.egg-info/top_level.txt
