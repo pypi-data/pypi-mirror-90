@@ -1,0 +1,45 @@
+Metadata-Version: 1.1
+Name: highres
+Version: 1.0.0
+Summary: A script to download hi-resolution images using google search by image feature
+Home-page: https://dillir07.github.io/hires/
+Author: Dilli Babu R
+Author-email: dillir07@outlook.com
+License: UNKNOWN
+Description: # hires
+        ## About The Project
+        
+        'hires' script to download hi-resolution images using google search by image feature
+        
+        ### Prerequisites
+        
+        * A browser (Chrome or Firefox or Edge or Safari)
+        * Webdriver for the browser
+        
+        ### Installation
+        
+        Install hires using pip
+        ```sh
+        pip install hires
+        ```
+        
+        <!-- USAGE EXAMPLES -->
+        ## Usage
+        
+        - If not available already, install a browser such or Chrome or Firefox or Safari or Edge
+        - Download webdriver for your Browser
+          - Chrome: https://chromedriver.chromium.org/downloads
+          - Firefox: https://github.com/mozilla/geckodriver/releases
+          - Edge: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+          - Safari: https://developer.apple.com/documentation/webkit/testing_with_webdriver_in_safari
+        
+        - Add Webdrivers's folder path to system path
+        - place your images in a folder, ex: C:\users\dr\Pictures\low-res-images\
+        
+        execute as follows
+        ```bash
+        C:\>hires C:\users\dr\Pictures\low-res-images
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
