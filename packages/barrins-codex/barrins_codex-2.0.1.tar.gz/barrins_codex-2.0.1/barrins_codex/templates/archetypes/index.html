@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Section Archétypes
+{% endblock %}
+
+{% block content %}
+{% trans trimmed
+
+%}
+<h1>Archétypes</h1>
+<p>
+	Cette section complète l'introduction au {{ deckbuilding }} et propose des
+	archétypes de tournois qui ont fait leurs preuves dans des tournois d'au
+	moins 40 joueurs.
+</p>
+{% endtrans %}
+<div class="align-left">
+	<table class="wide-column">
+		<tbody>
+			<tr>
+				<td>{{ link("/archetypes/kess-dissident-mage") }}</td>
+				<td>(Contrôle)</td>
+			</tr>
+		</tbody>
+	</table>
+	<table class="wide-column">
+		<tbody>
+			<tr>
+				<td>{{ link("/archetypes/winota-joiner-of-forces") }}</td>
+				<td>(Aggro-Combo)</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<p>
+	<em>D'autres analyses à venir.</em>
+</p>
+{% endblock %}
