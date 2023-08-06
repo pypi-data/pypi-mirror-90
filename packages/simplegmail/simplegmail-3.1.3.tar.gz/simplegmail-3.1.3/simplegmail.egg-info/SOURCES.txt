@@ -1,0 +1,13 @@
+README.md
+setup.py
+simplegmail/__init__.py
+simplegmail/attachment.py
+simplegmail/gmail.py
+simplegmail/label.py
+simplegmail/message.py
+simplegmail/query.py
+simplegmail.egg-info/PKG-INFO
+simplegmail.egg-info/SOURCES.txt
+simplegmail.egg-info/dependency_links.txt
+simplegmail.egg-info/requires.txt
+simplegmail.egg-info/top_level.txt
