@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: vetting
+Version: 0.1.0
+Summary: Simple, stand-alone vetting tools for transiting signals in Keper, K2 and TESS data
+License: MIT
+Author: Christina Hedges
+Author-email: christina.l.hedges@nasa.gov
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: corner (>=2.1.0,<3.0.0)
+Requires-Dist: lightkurve (>=1.11.3,<2.0.0)
