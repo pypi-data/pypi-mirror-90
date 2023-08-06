@@ -1,0 +1,15 @@
+slippi/__init__.py,sha256=OvvB__XsBEgxepbIJJ1722TzTLTMOfjiLS09Zzn6h0s,48
+slippi/event.py,sha256=QdZhzM3cQ7xBp4qoGQlr_z4gmTHGI-N3FvzqnNEErqA,29836
+slippi/game.py,sha256=lSiznDaaX0lWPj2kU02IV_EM_AouJLvb-VUxydVkbr8,2018
+slippi/id.py,sha256=Qt0jOKjbPWh9KswjT4adMY4E23mgvP-cOm4s54A72X4,17341
+slippi/log.py,sha256=B54TC3Nty-zN-1ifffJWBer40HIl7MhvBWqDY9l8iu4,609
+slippi/metadata.py,sha256=77-GW1ulO_HLrXNdckpGVPOX1ez1nvy8ghM4Pq51JX4,4036
+slippi/parse.py,sha256=XfatkAezwNmtEkLpy8Jt8cMQob7MmHIphWDeJZVHh-0,9111
+slippi/util.py,sha256=qFMa87WU4fUk9W6WEFPcikqjMQNJ5VoAW0pN10rxXTI,2613
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/replays.py,sha256=uco2MVe3Dq2RQebTiNyph8GqE38fUj4RJFuuhJwn4uo,9845
+py_slippi-1.6.1.dist-info/LICENSE,sha256=UDZ6EBJ81W1C0SqSu28c-zm64ocWICb4MxxnpGDgWSQ,1063
+py_slippi-1.6.1.dist-info/METADATA,sha256=FU3jx9nQiRQn4yejQqdW2RYzQmThzJZ3bnW9LpfI_Lc,4352
+py_slippi-1.6.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+py_slippi-1.6.1.dist-info/top_level.txt,sha256=q4kOC1M1Hc8lSAbSWWE0OYp0tlheAb56I-9W-RqNeyk,12
+py_slippi-1.6.1.dist-info/RECORD,,
