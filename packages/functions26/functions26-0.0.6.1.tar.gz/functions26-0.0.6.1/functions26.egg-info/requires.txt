@@ -1,0 +1,14 @@
+collections-extended
+matplotlib
+nidaqmx
+numpy
+pandas
+py3-validate_email
+py3dns
+pydaqmx
+pyserial
+pyvisa
+sif-reader
+scipy
+seaborn
+windfreak
