@@ -1,0 +1,5 @@
+[console_scripts]
+docs-autobuild=scripts.docs_autobuild:main
+docs-build=scripts.docs_build:main
+tests=scripts.tests:main
+
