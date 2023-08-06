@@ -1,0 +1,109 @@
+[tool.poetry]
+name = "srtools"
+version = "0.1.4"
+description = "Serbian language Cyrillic ↔ Latin transliteration tools"
+authors = ["Andrej Radovic <r.andrej@gmail.com>"]
+license = "GPLv3+"
+readme = "README.rst"
+repository = "https://gitlab.com/andrejr/srtools"
+documentation = "https://andrejr.gitlab.io/srtools/"
+keywords = ["serbian", "latin", "cyrillic", "transliteration", "transliterate"]
+classifiers = [
+    # Trove classifiers
+    # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Natural Language :: Serbian",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Environment :: Console",
+    "Topic :: Software Development :: Localization",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: Filters",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Utilities",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Operating System :: OS Independent",
+]
+include = [
+    "LICENSE",
+]
+
+packages = [
+    {include = "srtools"},
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^19.10b0", allow-prereleases = true}
+coverage = {version = "^4.5"}
+flake8 = {version = "^3.7"}
+flake8-bugbear = {version = "^19.8"}
+flake8-builtins = {version = "^1.4"}
+flake8-comprehensions = {version = "^3.0.1"}
+flake8-polyfill = {version = "^1.0"}
+flake8-rst-docstrings = {version = "^0.0.11"}
+ipython = {version = "^7.9"}
+jedi = {version = "^0.15.1"}
+mypy = {version = "^0.740"}
+neovim = {version = "^0.3"}
+pre-commit = {version = "^1.20"}
+profilehooks = {version = "^1.11"}
+pytest = "5.2.2"
+pytest-cov = {version = "^2.8"}
+pytest-html = {version = "^2.0"}
+reorder-python-imports = {version = "^1.8.0"}
+rope = {version = "^0.14.0"}
+rstcheck = {version = "^3.3"}
+sphinx = {version = "^2.2"}
+sphinx-autodoc-typehints = {version = "^1.10"}
+sphinx-argparse = "^0.2.5"
+bumpytrack = {version = "^1.1"}
+"collective.checkdocs" = {version = "^0.2.0"}
+wheel = "^0.33.6"
+setuptools = "^41.6"
+twine = "^2.0"
+versioneer = "^0.18.0"
+
+
+[tool.black]
+line-length = 79
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.bumpytrack]
+current_version = "0.3.0"
+git_commit = true
+git_tag = true
+
+
+[[tool.bumpytrack.file_replaces]]
+path = "pyproject.toml"
+search_template = "version = \"{version}\""
+
+
+[build-system]
+requires = ["poetry>=0.12", "dunamai=^0.8.0"]
+build-backend = "poetry.masonry.api"
