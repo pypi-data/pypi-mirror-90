@@ -1,0 +1,6 @@
+airflow_postmark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_postmark/postmark.py,sha256=7u4kEhM1d5TS3qLd3gEjhCVc4UTx0tT-V7QYOwzXkLI,1922
+airflow_postmark-0.0.3.dist-info/METADATA,sha256=y2ZpXeue0VFBI-V3PXs2E262LnwLmwKZKwY8_ZL3D6c,319
+airflow_postmark-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+airflow_postmark-0.0.3.dist-info/top_level.txt,sha256=JuW9ShUmhoneV3YDxa3bQ-X-vxJlCvhWcG1r3-4MTAM,17
+airflow_postmark-0.0.3.dist-info/RECORD,,
