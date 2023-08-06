@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: eth-ape
+Version: 0.0.0a0
+Summary: UNKNOWN
+Home-page: https://apeworx.io
+Author: ApeWorX Team
+Author-email: admin@apeworx.io
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6,<4
+Provides-Extra: lint
+Provides-Extra: dev

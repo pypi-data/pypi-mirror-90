@@ -1,0 +1,9 @@
+click>=7.1.2
+pyyaml>=0.2.5
+
+[dev]
+IPython
+black
+
+[lint]
+black
