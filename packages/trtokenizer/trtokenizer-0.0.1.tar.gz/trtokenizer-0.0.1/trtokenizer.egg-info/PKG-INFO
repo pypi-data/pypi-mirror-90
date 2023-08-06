@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: trtokenizer
+Version: 0.0.1
+Summary: Turkish sentence and word tokenizers
+Home-page: https://github.com/apdullahyayik/TrTokenizer
+Author: Apdullah YAYIK
+Author-email: apdullahyayik@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: Turkish sentence tokenizer,Turkish word tokenizer
+Platform: UNKNOWN
+Requires-Python: >=3.4
