@@ -1,0 +1,7 @@
+property-cached~=1.6
+fs~=2.2
+paramiko~=2.0
+six~=1.10
+
+[:python_version < "3"]
+configparser~=3.2
