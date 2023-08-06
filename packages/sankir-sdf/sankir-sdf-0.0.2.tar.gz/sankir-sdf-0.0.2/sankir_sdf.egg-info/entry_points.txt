@@ -1,0 +1,3 @@
+[console_scripts]
+sankir-sdf = sdf.__main__:main
+

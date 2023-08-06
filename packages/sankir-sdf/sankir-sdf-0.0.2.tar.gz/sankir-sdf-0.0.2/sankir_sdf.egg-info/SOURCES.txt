@@ -1,0 +1,12 @@
+README.md
+setup.py
+sankir_sdf.egg-info/PKG-INFO
+sankir_sdf.egg-info/SOURCES.txt
+sankir_sdf.egg-info/dependency_links.txt
+sankir_sdf.egg-info/entry_points.txt
+sankir_sdf.egg-info/requires.txt
+sankir_sdf.egg-info/top_level.txt
+sdf/__init__.py
+sdf/__main__.py
+sdf/sdf.py
+sdf/utils.py
