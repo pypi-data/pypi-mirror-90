@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "django-constance-register"
+version = "0.2.0"
+description = "Per app constance settings"
+authors = ["cyberbudy <cyberbudy@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = 'https://gitlab.com/cyberbudy/django-constance-register'
+classifiers=[
+    'Development Status :: 4 - Beta',
+
+    'Programming Language :: Python :: 3',
+    'Framework :: Django',
+
+    'Intended Audience :: Developers',
+    'Topic :: Utilities',
+
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: OS Independent',
+]
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+Django = ">=3.0.0"
+django-constance = ">=2.8.0"
+
+[tool.poetry.dev-dependencies]
+django-picklefield = "==3.*,>=3.0.1"
+python-memcached = "==1.*,>=1.59.0"
+redis = "==3.*,>=3.5.3"
+
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.dephell.main]
+versioning = "semver"
+from = {format = "poetry", path = "pyproject.toml"}
