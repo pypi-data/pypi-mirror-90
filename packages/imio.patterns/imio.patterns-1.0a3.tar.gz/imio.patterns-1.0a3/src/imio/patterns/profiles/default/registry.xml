@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<registry>
+    <!-- -*- extra stuff goes here -*- -->
+    <records prefix="plone.resources/imio-patterns-slick" interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+        <value key="css"></value>
+        <value key="js">++plone++imio.patterns/pattern/pattern.slick.js</value>
+    </records>
+
+    <records prefix="plone.resources/imio-patterns-i18n" interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+        <value key="css"></value>
+        <value key="js">++plone++imio.patterns/pattern/i18n.js</value>
+    </records>
+
+    <records prefix="plone.resources/imio-patterns-bundle" interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+        <value key="url">++plone++imio.patterns/pattern</value>
+        <value key="js">++plone++imio.patterns/pattern/imio.patterns.js</value>
+        <value key="css">
+            <element>++plone++imio.patterns/less/imio.patterns.less</element>
+        </value>
+    </records>
+
+    <!-- patterns bundle -->
+    <records prefix="plone.bundles/imio-patterns-pattern-bundle" interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+        <value key="resources">
+            <element>imio-patterns-bundle</element>
+        </value>
+        <value key="merge_with">default</value>
+        <value key="depends">plone</value>
+        <value key="enabled">True</value>
+        <value key="compile">True</value>
+        <value key="jscompilation">++plone++imio.patterns/pattern/imio-patterns-bundle-compiled.js</value>
+        <value key="csscompilation">++plone++imio.patterns/css/imio-patterns-bundle-compiled.css</value>
+        <value key="last_compilation">2020-01-13 18:00:00</value>
+        <value key="stub_js_modules">
+            <element>jquery</element>
+            <element>underscore</element>
+            <element>pat-base</element>
+            <element>pat-registry</element>
+            <element>mockup-utils</element>
+            <element>translate</element>
+        </value>
+    </records>
+    
+
+    <records prefix="plone.resources/slick" interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+        <value key="css">
+            <element>++plone++imio.patterns/css/slick.css</element>
+        </value>
+        <value key="js">++plone++imio.patterns/pattern/slick.js</value>
+    </records>
+
+    <records prefix="plone.bundles/slick" interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+        <value key="resources">
+            <element>slick</element>
+        </value>
+        <value key="expression"></value>
+        <value key="merge_with"></value>
+        <value key="enabled">True</value>
+        <value key="compile">True</value>
+        <value key="jscompilation">++plone++imio.patterns/pattern/slick.js</value>
+        <value key="csscompilation">++plone++imio.patterns/css/slick.css</value>
+        <value key="last_compilation">2020-01-26 19:00:00</value>
+    </records>
+
+</registry>

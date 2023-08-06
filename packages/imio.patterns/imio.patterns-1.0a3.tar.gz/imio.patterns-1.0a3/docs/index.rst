@@ -1,0 +1,5 @@
+=============
+imio.patterns
+=============
+
+User documentation

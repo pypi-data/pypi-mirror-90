@@ -1,0 +1,1 @@
+{"version":3,"sources":["less/imio-patterns-bundle.less"],"names":[],"mappings":"AAAA;EACI,uBAAA","sourcesContent":["body{\n    background-color: green;\n}\n@isPlone:false;\n@isPlone: false;"]}
