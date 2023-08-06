@@ -1,0 +1,3 @@
+[console_scripts]
+seaport=seaport.console:seaport
+
