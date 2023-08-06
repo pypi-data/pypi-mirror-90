@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: yi
+Version: 0.0.2
+Summary: Convert dictionaries to other objects
+Home-page: https://github.com/thorwhalen/ut/tree/master/pdict/to.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # yi
+        Convert dictionaries to other objects
+        
+        
+        To install:	```pip install yi```
+        
+Platform: any
+Description-Content-Type: text/markdown
