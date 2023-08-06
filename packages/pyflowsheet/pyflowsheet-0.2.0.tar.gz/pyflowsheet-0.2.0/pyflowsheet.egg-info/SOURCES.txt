@@ -1,0 +1,7 @@
+setup.py
+pyflowsheet/__init__.py
+pyflowsheet.egg-info/PKG-INFO
+pyflowsheet.egg-info/SOURCES.txt
+pyflowsheet.egg-info/dependency_links.txt
+pyflowsheet.egg-info/requires.txt
+pyflowsheet.egg-info/top_level.txt
