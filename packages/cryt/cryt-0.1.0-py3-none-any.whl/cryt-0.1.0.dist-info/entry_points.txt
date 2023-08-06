@@ -1,0 +1,3 @@
+[console_scripts]
+cryt=cryt.main:main
+

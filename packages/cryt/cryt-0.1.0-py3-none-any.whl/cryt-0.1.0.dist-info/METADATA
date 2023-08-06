@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: cryt
+Version: 0.1.0
+Summary: 
+Author: atsuhiro-narita
+Author-email: alayashiki@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: ccxt (>=1.39.75,<2.0.0)
+Requires-Dist: fire (>=0.3.1,<0.4.0)
+Requires-Dist: rich (>=9.5.1,<10.0.0)
