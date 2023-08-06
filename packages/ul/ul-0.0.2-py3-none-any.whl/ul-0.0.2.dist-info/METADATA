@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ul
+Version: 0.0.2
+Summary: Dataframe display tewmplates
+Home-page: https://github.com/thorwhalen/ut/tree/master/daf/resources/disp_templates.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# ul
+Dataframe display tewmplates
+
+
+To install:	```pip install ul```
+
+
