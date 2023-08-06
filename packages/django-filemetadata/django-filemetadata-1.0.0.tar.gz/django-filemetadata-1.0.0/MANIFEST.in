@@ -1,0 +1,4 @@
+include *.py
+include *.cfg
+exclude __pychche__
+recursive-include filemetadata *
