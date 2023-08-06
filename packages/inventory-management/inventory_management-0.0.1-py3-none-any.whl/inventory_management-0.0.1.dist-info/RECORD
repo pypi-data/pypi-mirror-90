@@ -1,0 +1,10 @@
+inventory_management/__init__.py,sha256=wVD20PiFkDXfVoBmIOr9Wpf2oEPYLfZlpYl8-VwE6u4,48
+inventory_management/__meta__.py,sha256=Ga4ytO395vcsRQKfaF8LrSABkZamlCn4mgzI0uPElcM,386
+inventory_management/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inventory_management/models/__init__.py,sha256=5RmQXfdXgGphten6AXz5hig-jEUjETkqJ_3BpavSv_c,27
+inventory_management/models/order_up_to.py,sha256=uy-KygJotmjqZKoHI2c-r0Z03VlU6HwieZ4ueesd9mM,774
+inventory_management-0.0.1.dist-info/LICENSE,sha256=Lag7QLQs1HXMSmz3-2cbkDNTMWHVfo2cKgAWXxcUc6Q,1066
+inventory_management-0.0.1.dist-info/METADATA,sha256=M1rChl2lW4pZj9U2vCOSG62CG8ksqj3ECJ7l79gz_qo,579
+inventory_management-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+inventory_management-0.0.1.dist-info/top_level.txt,sha256=lpFCRhRm_fv6KrGHlJNrWp8H8Cxu206JSlTjeCEc7oU,21
+inventory_management-0.0.1.dist-info/RECORD,,
