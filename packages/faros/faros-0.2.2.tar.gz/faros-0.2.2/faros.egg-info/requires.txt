@@ -1,0 +1,5 @@
+attrs
+graphqlclient>=0.2.4
+termcolor
+datetime
+time-window

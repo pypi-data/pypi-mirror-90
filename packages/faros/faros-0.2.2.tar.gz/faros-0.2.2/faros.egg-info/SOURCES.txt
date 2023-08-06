@@ -1,0 +1,14 @@
+README.md
+setup.py
+faros/__init__.py
+faros/client.py
+faros/exceptions.py
+faros/utils.py
+faros.egg-info/PKG-INFO
+faros.egg-info/SOURCES.txt
+faros.egg-info/dependency_links.txt
+faros.egg-info/requires.txt
+faros.egg-info/top_level.txt
+tests/__init__.py
+tests/test_client.py
+tests/test_utils.py
