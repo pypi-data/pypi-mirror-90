@@ -1,0 +1,14 @@
+ado2hugo/__init__.py,sha256=4RI3MC6BSqsczOBE7Mq3OB8hVJB2xa3GJKsULzuLosk,47
+ado2hugo/azure_devops.py,sha256=FneWmByTIp1zpIXmnhSW0FmMmYkVAWrRR3jPDngqmag,4603
+ado2hugo/hugo.py,sha256=mPEn43bUyj3n7oXj2cZC2XKv3pdSNa3hRGTecRTScOk,4436
+ado2hugo/main.py,sha256=Xbj8vSXqRBe1pbwNu82_kJAKcdRI7RJrx1OoazDApTc,1479
+ado2hugo/page.py,sha256=EV7SEbTPzj8YkrXGROQ1kJe-oY109bQyVCMYtYdJ0EY,267
+ado2hugo/project.py,sha256=NBW3AiICRvs46OO5OWgmaRFBZn1GYOJVpeWxxbHQPoI,121
+ado2hugo/utilities.py,sha256=TAdI6OFxn8KTInvWI6R0dcx0nxjiTiTTbO8j2udQxtw,406
+ado2hugo/version.py,sha256=58eV_PiSUgw6ig-rh78pJFB00owVwC3X3mhe6Y5Bj50,302
+ado2hugo/wiki.py,sha256=ANilZxt0TJh2GyjYDiJjM-q_gP--o5g3ibkAqHznNow,118
+ado2hugo-1.0.0.dist-info/METADATA,sha256=argPzi8pRgcdGMhIo8L7oCaJGaG37domDiid6EY8ckc,1263
+ado2hugo-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ado2hugo-1.0.0.dist-info/entry_points.txt,sha256=973HsZSFCDmJjhwW9bZaz9EUxndMJeIA_3cK3NJ740A,49
+ado2hugo-1.0.0.dist-info/top_level.txt,sha256=Dy1kRynZR9V12OmcIr6MgcpLwn5p2y_HVZCCAoXJxoo,9
+ado2hugo-1.0.0.dist-info/RECORD,,
