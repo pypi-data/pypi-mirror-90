@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+dependency_algorithm/__init__.py
+dependency_algorithm/dependency_algorithm.py
+dependency_algorithm/version.py
+dependency_algorithm.egg-info/PKG-INFO
+dependency_algorithm.egg-info/SOURCES.txt
+dependency_algorithm.egg-info/dependency_links.txt
+dependency_algorithm.egg-info/requires.txt
+dependency_algorithm.egg-info/top_level.txt
