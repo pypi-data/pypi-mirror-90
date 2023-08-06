@@ -1,0 +1,4 @@
+Mopidy>=1.0
+Pykka>=1.1
+setuptools
+youtube-dl>=2020.6.16.1
