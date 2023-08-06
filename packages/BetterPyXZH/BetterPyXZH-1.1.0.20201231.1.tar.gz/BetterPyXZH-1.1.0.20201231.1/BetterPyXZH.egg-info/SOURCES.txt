@@ -1,0 +1,6 @@
+README.md
+setup.py
+BetterPyXZH.egg-info/PKG-INFO
+BetterPyXZH.egg-info/SOURCES.txt
+BetterPyXZH.egg-info/dependency_links.txt
+BetterPyXZH.egg-info/top_level.txt
