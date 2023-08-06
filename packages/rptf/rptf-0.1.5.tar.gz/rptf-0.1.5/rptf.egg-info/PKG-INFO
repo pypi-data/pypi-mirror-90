@@ -1,0 +1,174 @@
+Metadata-Version: 2.1
+Name: rptf
+Version: 0.1.5
+Summary: End-to-end pipeline test framework for GitLab
+Home-page: https://gitlab.com/sri-at-gitlab/projects/remote-pipeline-test-framework/framework
+Author: Sri
+Author-email: hello@srirangan.net
+License: UNKNOWN
+Description: ![ICON](https://assets.gitlab-static.net/uploads/-/system/project/avatar/22927059/icon-snek.png)
+        
+        # Remote Pipeline Test Framework
+        
+        End-to-end test framework for pipeline template authors. Trigger remote pipelines and make assertions.
+        
+        ## Why
+        
+        As a GitLab pipeline author, your template will be used across several projects under varying configurations. Your pipeline template understands the context and responds accordingly.
+        
+        The resultant pipeline might vary, the number of stages and jobs might be different, artifacts may or may not be produced and environments may or may not be provisioned etc.
+        
+        Should you not setup proper tests for each of these scenarios? Should these tests not be executed on every change of the pipeline template?
+        
+        ![Snek is friend](https://i.imgur.com/4RtN1zw.jpg)
+        
+        ## Table of Contents
+        
+        1. [Quickstart](#quickstart)
+        1. [Using RPTF with GitLab](#using-rptf-with-gitlab)
+        1. [Setup GitLab Access Token](#setup-gitlab-access-token)
+        1. [Authoring Tests](#authoring-tests)
+        1. [Detailed Example](#detailed-example)
+        1. [Test Output](#test-output)
+        1. [CLI Options](#cli-options)
+        1. [JUnit Reports](#junit-reports)
+        
+        ## Quickstart
+        
+        Install `rptf` locally with `pip`. Being authored in Python, `rptf` is distributed via PyPi: https://pypi.org/project/rptf/
+        
+        ```bash
+        pip install rptf
+        ```
+        
+        This makes `rptf` available for local execution:
+        
+        ```bash
+        rptf --help
+        ```
+        
+        Test cases are defined in a Yaml file, which by default is called `rptf.yml`.
+        
+        ```yaml
+        # rptf.yml
+        
+        pipeline_big:
+            trigger:
+                project_id: ...
+            assertions:
+                pipeline_status: success
+                job_count: 25
+        
+        pipeline_small_fail:
+            trigger:
+                project_id: ...
+            assertions:
+                pipeline_status: failed
+                job_count: 1
+        ```
+        
+        Each test case contains two sections: `trigger` and `assertions`. The example above shows two test project's pipelines being triggered and asserts being make expect the pipelines have `25` jobs and `1` job respectively.
+        
+        Pipeline status is also asserted and the second test case expects a failed pipeline.
+        
+        ## Using RPTF with GitLab
+        
+        We can execute `rptf` within a GitLab pipeline, thus, you have a primary test project which contains the `rptf.yml` file and includes a `.gitlab-ci.yml` definition that triggers pipelines in other GitLab projects and makes assertions.
+        
+        ```yaml
+        # .gitlab-ci.yml
+        
+        stages:
+            - test
+        
+        rptf:
+            stage: test
+            image: python:3
+            before_script:
+                - pip install rptf
+            script:
+                - rptf
+        ```
+        
+        The `rptf` job above triggers pipelines defined in `rptf.yml` as long as the `GITLAB_ACCESS_TOKEN` provided has sufficient permissions. It's advisable to set the token at the project or group level via `GitLab -> Settings -> CICD`.
+        
+        ## Setup GitLab Access Token
+        
+        The project containing the `rptf` job needs to provide `GITLAB_ACCESS_TOKEN`. This token must be authorized to execute pipelines across all projects defined in `rptf.yml`.
+        
+        ## Authoring Tests
+        
+        The Yaml specification declares the following attributes that can be used to author test cases:
+        
+        - `trigger` defines the target project where pipeline should be triggered
+            - `project_id` required
+            - `branch` defaults to `master`
+        - `assertions` defines assertions to make after pipeline finishes execution
+            - `pipeline_status` required, expected pipeline status
+            - `job_count` expected number of jobs
+            - `job_status` dict of expected job status
+            - TODO `artifact_count` expected number of artifacts
+            - TODO `environment_status` dict of expected environment status
+        
+        ## Detailed Example
+        
+        ```yaml
+        two_jobs_two_artifacts:
+            trigger:
+                project_id: 11112222
+                branch: feature-branch-abc
+            assertions:
+                pipeline_status: success
+                job_count: 2
+                job_status:
+                    artifact-one: success
+                    artifact-two: success
+                # TODO
+                # artifact_count: 2
+                # environment_status:
+                #     success: available
+                #     review_env_one: stopped
+        ```
+        
+        ## CLI Options
+        
+        - `rptf --help` shows help
+        - `rptf --target FILE` path to test definitions, by default set to `rptf.yml`
+        - `rptf --junit` or `rptf --no-junit` toggles whether JUnit test report must be produced, on by default
+        
+        ## Test Output
+        
+        ![](https://i.imgur.com/w516kEv.png)
+        
+        ## JUnit Reports
+        
+        By default, all test failures are reported in a JUnit compatible XML file called `rptf-report.junit.xml`.
+        
+        This can be integrated in the `rptf` job to enable deep integration with GitLab (or any other tool that supports JUnit reporting format).
+        
+        ```yaml
+        # .gitlab-ci.yml
+        
+        stages:
+            - test
+        
+        rptf:
+            stage: test
+            image: python:3
+            before_script:
+                - pip install rptf
+            script:
+                - rptf
+            artifacts:
+                reports:
+                    junit: rptf-report.junit.xml
+        ```
+        
+        JUnit reporting can be turned off by passing the `rptf --no-junit` flag.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
