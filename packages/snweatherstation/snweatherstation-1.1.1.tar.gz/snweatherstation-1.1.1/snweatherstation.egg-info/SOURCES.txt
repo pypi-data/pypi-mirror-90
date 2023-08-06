@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+snweatherstation/__init__.py
+snweatherstation/weatherForecastOWM.py
+snweatherstation/weatherstation.py
+snweatherstation.egg-info/PKG-INFO
+snweatherstation.egg-info/SOURCES.txt
+snweatherstation.egg-info/dependency_links.txt
+snweatherstation.egg-info/requires.txt
+snweatherstation.egg-info/top_level.txt
+snweatherstation/data/createDBtable.sql
+snweatherstation/data/loggingConfig.json
+snweatherstation/data/weatherstation.json
+snweatherstation/data/weatherstation.service
