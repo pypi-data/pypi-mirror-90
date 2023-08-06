@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: jaymap
+Version: 0
+Summary: JMAP client for asyncio
+Home-page: https://github.com/jreese/jaymap
+Author: John Reese
+Author-email: john@noswap.com
