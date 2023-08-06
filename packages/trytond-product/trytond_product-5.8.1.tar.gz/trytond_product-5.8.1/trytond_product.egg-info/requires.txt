@@ -1,0 +1,4 @@
+python-sql
+python-stdnum
+trytond_company<5.9,>=5.8
+trytond<5.9,>=5.8
