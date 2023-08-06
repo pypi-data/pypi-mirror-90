@@ -1,0 +1,9 @@
+tornapi/__init__.py,sha256=Ws6mnuzkOQbF370qWNZ3Nh5QBK6FbA_78Klpo3VH-hI,3916
+tornapi/errors.py,sha256=RoXG5wRJVGt4GwNzZMAGIsHAPFbaHfIQ-dw8s37Lzvk,592
+tornapi/items.py,sha256=vkwcNAxGUuI5PzOJLIpTlBnbkdaMdOo8gT6M3UZNepk,29245
+tornapi/stocks.py,sha256=yLFmRnqtdWC1zdZSwksOjPllcKZh5AFFJTpbXb2oLrA,1212
+phil0_tornapi-0.1.dist-info/LICENSE,sha256=iU-wqd79D70bhnhqlCxXoClJFpKzaWi6I4vLzNSBJJs,35763
+phil0_tornapi-0.1.dist-info/METADATA,sha256=9AJNyqVQ2-P-xjyh8r-uFYxJcFOvTHT95uwUfODJvAU,426
+phil0_tornapi-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+phil0_tornapi-0.1.dist-info/top_level.txt,sha256=jpPks6YUpFNj5fX0Oc9AmCb2B-sHGq-AN9W8qmNHqFI,8
+phil0_tornapi-0.1.dist-info/RECORD,,
