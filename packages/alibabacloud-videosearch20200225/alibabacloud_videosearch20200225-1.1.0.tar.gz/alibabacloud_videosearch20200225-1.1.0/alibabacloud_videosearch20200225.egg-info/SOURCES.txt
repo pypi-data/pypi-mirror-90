@@ -1,0 +1,15 @@
+ChangeLog.md
+LICENSE
+MANIFEST.in
+README-CN.md
+README.md
+setup.cfg
+setup.py
+alibabacloud_videosearch20200225/__init__.py
+alibabacloud_videosearch20200225/client.py
+alibabacloud_videosearch20200225/models.py
+alibabacloud_videosearch20200225.egg-info/PKG-INFO
+alibabacloud_videosearch20200225.egg-info/SOURCES.txt
+alibabacloud_videosearch20200225.egg-info/dependency_links.txt
+alibabacloud_videosearch20200225.egg-info/requires.txt
+alibabacloud_videosearch20200225.egg-info/top_level.txt
