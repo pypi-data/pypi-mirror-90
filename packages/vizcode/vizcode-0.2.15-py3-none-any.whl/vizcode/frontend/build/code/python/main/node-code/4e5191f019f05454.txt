@@ -1,0 +1,1 @@
+        self.publisher_street_address = publisher_street_address

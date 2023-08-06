@@ -1,0 +1,1 @@
+def sim(text):    doc2 = nlp(remove_stop_words(text))    return doc1.similarity(doc2)

@@ -1,0 +1,3 @@
+<Link to="/signup" onClick={this.moveSignup} className={classes.link} style={{fontFamily: 'Lato', fontSize: '16px'}}>
+    Don't have an account? <span style={{textDecoration: 'underline'}}>Sign up Here</span>
+</Link>

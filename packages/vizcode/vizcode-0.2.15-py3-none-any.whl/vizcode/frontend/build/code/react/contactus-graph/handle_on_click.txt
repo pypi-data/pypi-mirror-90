@@ -1,0 +1,28 @@
+handleOnClick() {
+  // console.log(this.isFormValid());
+
+  if (this.isFormValid()) {
+    // console.log("form is valid")
+
+    var data = {
+      "first_name": this.state.firstName,
+      "last_name": this.state.lastName,
+      "email": this.state.email,
+      "body": this.state.message,
+      "isPublisher": true,
+      "primaryID": this.state.username
+    }
+
+    $.ajax({
+        url: window.address.concat('contact_us'),
+        type: 'post',
+        data: data,
+        headers: {Authorization: 'Bearer ' + this.state.accessToken},
+        dataType: 'json',
+        success: function (output) {
+          window.location.reload(false);
+        }.bind(this)
+    });
+  }
+
+}

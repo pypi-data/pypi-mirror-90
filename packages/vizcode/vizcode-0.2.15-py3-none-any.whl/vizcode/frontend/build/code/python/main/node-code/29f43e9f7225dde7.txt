@@ -1,0 +1,1 @@
+        self.project_id6 = project_id6

@@ -1,0 +1,9 @@
+getPaymentCSV(){
+      axios({
+          method: 'get',
+          url: window.address.concat('get_donations_from_publisher_csv'),
+          headers: { Authorization: "Bearer " + this.state.accessToken }
+      }).then((response) => {
+          window.open(response.data.url);
+      });
+    }

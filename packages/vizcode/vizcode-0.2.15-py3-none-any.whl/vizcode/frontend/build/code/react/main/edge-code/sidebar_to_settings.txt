@@ -1,0 +1,9 @@
+<NavLink to="/settings" className={classes.navLink}
+        activeStyle={{backgroundColor: '#9DBEF5', display: 'inline-block', width: '100%'}}>
+<Button className={classes.link} block>
+    <InputAdornment>
+    <SettingsIcon className={classes.buttonStyles}/>
+    </InputAdornment>
+    SETTINGS
+</Button>
+</NavLink>

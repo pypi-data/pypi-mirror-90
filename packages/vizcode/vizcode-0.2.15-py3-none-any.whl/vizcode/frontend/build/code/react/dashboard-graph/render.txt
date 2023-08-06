@@ -1,0 +1,211 @@
+render() {
+    const {classes} = this.props;
+    const location = this.props.location;
+    var today = new Date();
+    var total = 0;
+    var total_short = 0;
+    let length = this.state.cumulativeDonations.values.length;
+    if(length !== 0){
+        // total_short = this.state.cumulativeDonations.values[length-1];
+        var i;
+        let donations = this.state.donations;
+        for (i in donations) {
+            total = total + donations[i].amount_donated
+        }
+    }
+
+    if(!this.state.validAccessToken){
+        this.setState({validAccessToken: true});
+        return(
+        <Redirect from="/fundsRaised" to='/'/>
+        );
+    }
+    const data = {
+        // labels: this.state.cumulativeDonations.labels,
+        labels: this.filter().labels,
+        datasets: [
+        {
+            fill: true,
+            fillColor : "#fff",
+            lineTension: 0.1,
+            backgroundColor: '#6CA0DC',
+            borderColor: '#6CA0DC',
+            borderCapStyle: 'butt',
+            borderDash: [],
+            borderDashOffset: 0.0,
+            borderJoinStyle: 'miter',
+            pointBorderColor: '#6CA0DC',
+            pointBackgroundColor: '#fff',
+            pointBorderWidth: 1,
+            pointHoverRadius: 5,
+            pointHoverBackgroundColor: '#6CA0DC',
+            pointHoverBorderColor: '#6CA0DC',
+            pointHoverBorderWidth: 2,
+            pointRadius: 0,
+            pointHitRadius: 10,
+            // data: this.state.cumulativeDonations.values
+            data: this.filter().values
+        }
+        ]
+    };
+
+    return (
+        <div className={classes.paper}>
+                <Container maxWidth="lg">
+                <Typography component="h1" variant="h5" style={{
+                    fontSize: '32px',
+                    fontFamily: 'Merriweather',
+                    textAlign: 'center'}}>
+                    Dashboard
+                </Typography >
+                {/*<p style={{fontSize: '16px', fontFamily: 'Merriweather', textAlign: 'center'}}>Welcome {this.state.publisherName}!</p>*/}
+                <Grid container spacing={3} className={classes.pushDown}>
+                    <Grid item xs={12} md={8} lg={9}>
+                        <Paper elevation={3} className={classes.fixedHeightPaperLarger}>
+                        <Paper elevation={0} className={classes.fixedHeightPaper}>
+                            <Line
+                            data={data}
+                            pointRadius={2}
+                            width={100}
+                                height={225}
+                                options={{
+                                maintainAspectRatio: false,
+                                title:{
+                                    display:true,
+                                    text:"Daily Cumulative Revenue",
+                                    fontSize:20
+                                },
+                                legend:{
+                                    display:false,
+                                    position:'bottom'
+                                },
+                                plugins: {
+                                    datalabels: {
+                                        display: false,
+                                        color: 'white'
+                                    }
+                                },
+                                scales: {
+                                    xAxes: [{
+                                        gridLines: {
+                                            display:false
+                                        },
+                                        ticks: {
+                                            display: false//this will remove only the label
+                                        },
+                                        scaleLabel: {
+                                        display: true,
+                                        labelString: 'Time'
+                                        }
+                                    }],
+                                    yAxes: [{
+                                        gridLines: {
+                                            display:true
+                                        },
+                                        scaleLabel: {
+                                        display: true,
+                                        labelString: 'Revenue'
+                                        }
+                                }]
+                            }}} />
+                        </Paper>
+                        <div style={{display:"flex", margin: 'auto'}} >
+                            <Typography component="p" variant="h7" style={{paddingTop: '17px', fontFamily: "Lato"}}>Filter from</Typography>
+                            <TextField
+                                style={{size:"small", paddingLeft: '10px', paddingRight: '10px'}}
+                                variant="outlined"
+                                type ='date'
+                                value={this.state.filterDates.start}
+                                onChange={this.addBounds.bind(this, 'start')}/>
+                            <Typography component="p" variant="h7" style={{paddingTop: '17px', fontFamily: "Lato"}}>to</Typography>
+                            <TextField
+                                style={{size: "small", paddingLeft: '10px', paddingRight: '10px'}}
+                                variant="outlined"
+                                type = 'date'
+                                value={this.state.filterDates.end}
+                                onChange={this.addBounds.bind(this, 'end')}/>
+                            <Button
+                                variant="contained"
+                                size='sm'
+                                style={{backgroundColor: "#448AFF", color: "#FFFFFF", height: 35, marginTop: 10}}
+                                onClick={this.filterClear}> CLEAR
+                            </Button>
+                                {/*{console.log(this.state.filterDates.start)}*/}
+                        </div>
+                        </Paper>
+                    </Grid>
+                        <Grid item xs={12} md={4} lg={3}>
+                            <Paper elevation={3} className={classes.fixedHeightPaperLarger}>
+                                <React.Fragment>
+                                    <Typography component="h1" variant="h5" style={{color: '#448AFF', fontSize: '20px', fontFamily: 'Merriweather'}}>Total Revenue</Typography>
+                                    <Typography component="p" variant="h4" style={{paddingTop: '5px', fontFamily: "Lato"}}>
+                                        {this.formatMoney(window.revenuePortion*total)}
+                                    </Typography>
+                                    <Typography color="textSecondary" className={classes.depositContext}>
+                                        on {parseInt(today.getMonth()+1) + "/"+ today.getDate() +"/"+ today.getFullYear()}
+                                    <br/>
+                                    {/*{this.formatMoney(total_short)} earned last month*/}
+                                    </Typography>
+                                    <div>
+                                    </div>
+                                </React.Fragment>
+                            </Paper>
+                        </Grid>
+                        <Grid item xs={12} className={classes.pushDown}>
+                            <Paper elevation={3} className={classes.table}>
+                                <React.Fragment>
+                                <Typography component="h1" variant="h5"
+                                            style={{color: '#448AFF', fontSize: '20px', fontFamily: 'Merriweather'}}>Donations</Typography>
+                                <br/>
+                                <Table size="small" style={{fontFamily: 'Lato'}}>
+                                    <TableHead>
+                                        <TableRow>
+                                            <TableCell align='center'>Date</TableCell>
+                                            <TableCell align='center'>Amount Donated</TableCell>
+                                            <TableCell align='center'>Revenue</TableCell>
+                                            <TableCell align='center'>Organization Name</TableCell>
+                                            {/*<TableCell align='center'>Newspaper Name</TableCell>*/}
+                                            <TableCell align='center'>Article Title</TableCell>
+                                            <TableCell align='center'>Article Link</TableCell>
+                                            {/*<TableCell align='center'>Fundraiser Name</TableCell>*/}
+                                        </TableRow>
+                                    </TableHead>
+                                    <TableBody>
+                                        {this.state.donations.slice(this.state.page * this.state.rowsPerPage,
+                                            this.state.page * this.state.rowsPerPage + this.state.rowsPerPage).map((log) => (
+                                            <TableRow>
+                                                <TableCell align='center'>{log.donation_date_time}</TableCell>
+                                                <TableCell align='center'>{this.formatMoney(log.amount_donated)}</TableCell>
+                                                <TableCell align='center'>{this.formatMoney(window.revenuePortion*log.amount_donated)}</TableCell>
+                                                <TableCell align='center'>{log.organization_name}</TableCell>
+                                                {/*<TableCell align='center'>{log.newspaper_id}</TableCell>*/}
+                                                <TableCell align='center'>{log.newspaper_article_title}</TableCell>
+                                                <TableCell align='center'>{log.newspaper_article_link}</TableCell>
+                                                {/*<TableCell align='center'>{log.project_name}</TableCell>*/}
+                                            </TableRow>
+                                        ))}
+                                    </TableBody>
+                                </Table>
+                                <TablePagination
+                                    rowsPerPageOptions={[5, 10, 25]}
+                                    component="div"
+                                    count={this.state.donations.length}
+                                    rowsPerPage={this.state.rowsPerPage}
+                                    page={this.state.page}
+                                    onChangePage={this.handleChangePage}
+                                    onChangeRowsPerPage={this.handleChangeRowsPerPage}
+                                />
+                                <div className={classes.seeMore}>
+                                    <Link color="primary"
+                                            style={{color: '#448AFF', fontFamily: 'Lato', textDecoration: 'underline'}} onClick={this.getPaymentCSV}>
+                                    Click here to download donation log
+                                    </Link>
+                                </div>
+                                </React.Fragment>
+                            </Paper>
+                        </Grid>
+                </Grid>
+                </Container>
+        </div>
+    );
+}

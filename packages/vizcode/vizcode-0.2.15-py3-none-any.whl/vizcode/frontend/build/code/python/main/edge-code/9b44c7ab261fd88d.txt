@@ -1,0 +1,1 @@
+    sim_df = pd.concat(pool.map(get_similarities, df_split))

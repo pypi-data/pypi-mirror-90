@@ -1,0 +1,8 @@
+addBounds (side, event) {
+    var bound = event.target.value;
+    var dates = this.state.filterDates;
+    dates[side] = bound;
+    this.setState({
+        filterDates: dates,
+    })
+}

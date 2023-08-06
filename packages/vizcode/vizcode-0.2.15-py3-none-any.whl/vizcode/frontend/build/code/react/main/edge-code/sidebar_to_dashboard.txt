@@ -1,0 +1,10 @@
+<NavLink to="/dashboard" className={classes.navLink}
+        activeStyle={{backgroundColor: '#9DBEF5', display: 'inline-block', width: '100%'}}>
+{/*<Link to="/home">*/}
+<Button className={classes.link}>
+    <InputAdornment>
+    <DashboardIcon className={classes.buttonStyles}/>
+    </InputAdornment>
+    DASHBOARD
+</Button>
+</NavLink>

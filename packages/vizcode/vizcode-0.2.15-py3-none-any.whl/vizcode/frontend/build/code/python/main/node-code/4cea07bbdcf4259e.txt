@@ -1,0 +1,1 @@
+        self.widget_status = widget_status

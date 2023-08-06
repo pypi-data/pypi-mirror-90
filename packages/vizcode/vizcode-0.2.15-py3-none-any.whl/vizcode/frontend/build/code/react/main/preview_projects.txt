@@ -1,0 +1,419 @@
+import React from "react";
+import Paper from "@material-ui/core/Paper";
+import {withStyles} from "@material-ui/core/styles";
+import Modal from '@material-ui/core/Modal';
+import Typography from "@material-ui/core/Typography";
+import Grid from '@material-ui/core/Grid';
+import Table from "@material-ui/core/Table";
+import TableHead from "@material-ui/core/TableHead";
+import TableRow from "@material-ui/core/TableRow";
+import TableCell from "@material-ui/core/TableCell";
+import TableBody from "@material-ui/core/TableBody";
+import TableContainer from "@material-ui/core/TableContainer";
+import TablePagination from "@material-ui/core/TablePagination";
+import Button from "@material-ui/core/Button";
+import $ from "jquery";
+import cookie from "react-cookies";
+import CharityInfo from "./CharityInfo";
+import InputAdornment from "@material-ui/core/InputAdornment";
+import CloseIcon from "@material-ui/icons/Close";
+import TextField from "@material-ui/core/TextField";
+import MenuItem from "@material-ui/core/MenuItem";
+import IconButton from "@material-ui/core/IconButton";
+
+import Dialog from "@material-ui/core/Dialog";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogActions from "@material-ui/core/DialogActions";
+
+
+function getModalStyle() {
+    const top = 50;
+    const left = 50;
+    return {
+        top: `${top}%`,
+        left: `${left}%`,
+        transform: `translate(-${top}%, -${left}%)`,
+        overflow: "scroll",
+        width: "60%",
+    };
+}
+
+const useStyles = theme => ({
+    root: {
+         marginTop: theme.spacing(10),
+    },
+    submit: {
+      margin: theme.spacing(3, 0, 2),
+    },
+    modal: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    paper: {
+      position: 'absolute',
+      backgroundColor: theme.palette.background.paper,
+      borderColor: '#448AFF',
+      boxShadow: 0,
+      padding: theme.spacing(0, 1, 1),
+    },
+    paper2:{
+      padding: theme.spacing(1),
+      textAlign: 'center',
+      color: 'black',
+      height: '100%',
+      backgroundColor: 'rgba(242.00000077486038, 242.00000077486038, 242.00000077486038, 1)',
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center"
+    },
+    container: {
+        width: 0,
+        flexGrow: 1,
+        flex: 1,
+    },
+    table: {
+        // padding: theme.spacing(6),
+        display: 'flex',
+        overflow: 'auto',
+        flexDirection: 'column'
+    },
+    preview: {
+        margin: theme.spacing(1, 0, 2),
+        backgroundColor: "#448AFF",
+        color: "#FFFFFF"
+    },
+});
+
+class PreviewProjects extends React.Component{
+  constructor(props){
+    super(props);
+    this.handleChangePage = this.handleChangePage.bind(this);
+    this.handleChangeRowsPerPage = this.handleChangeRowsPerPage.bind(this);
+    this.addProject = this.addProject.bind(this);
+    this.changeEdit = this.changeEdit.bind(this);
+    this.convertData = this.convertData.bind(this);
+    this.availableFilters = this.availableFilters.bind(this);
+    this.filterRemove = this.filterRemove.bind(this);
+    this.addFilterParams = this.addFilterParams.bind(this);
+    this.filterInputs = this.filterInputs.bind(this);
+    this.filter = this.filter.bind(this);
+
+    this.state = {
+      modalStyle: getModalStyle(),
+      rowsPerPage: 5,
+      page: 0,
+      accessToken: cookie.load('access_token'),
+      open: {},
+      availableParams: [['organization_name', 'Organization Name'],
+          ['organization_type', 'Organization Type'], ['project_name', 'Project Name']],
+      filterParams: [],
+      filterObjects: [
+          {key: "organization_name", input: null},
+          {key: "organization_type", input: null},
+          {key: "project_name", input: null},
+      ],
+    }
+
+  }
+
+    handleChangePage(event, newPage) {
+        this.setState({page: newPage});
+    }
+
+    handleChangeRowsPerPage(event) {
+        this.setState({rowsPerPage: parseInt(event.target.value, 10), page: 0})
+    }
+
+    addProject(row, index) {
+
+        let articleLink = this.props.articleLink;
+        let projectID = row.project_id;
+        let data = {
+            article_link: articleLink,
+            project_id: projectID
+        }
+
+        $.ajax({
+            url: window.address.concat('add_project_to_article'),
+            type: 'post',
+            data: data,
+            headers: {Authorization: 'Bearer ' + this.state.accessToken},
+            dataType: 'json',
+            success: function (output) {
+                this.props.changeHandler();
+                this.props.refresh(articleLink);
+            }.bind(this)
+        });
+
+    }
+
+    changeEdit(project_id){
+        let open = this.state.open;
+        open[project_id] = !open[project_id];
+        this.setState({open: open}, () => {
+            // console.log(this.state.open);
+        });
+    }
+
+    convertData () {
+      var oldData = this.props.availableProjects;
+      var newData = [];
+      var i;
+      for (i = 0; i < oldData.length; i++) {
+          newData[i] = {
+              project_id: oldData[i].project_id,
+              organization_name: oldData[i].organization_name,
+              organization_type: oldData[i].organization_type,
+              project_name: oldData[i].project_name,
+          }
+      }
+      return oldData;
+  }
+
+  availableFilters(event) {
+    var val = event.target.value;
+    var oldFilters = this.state.filterParams;
+    var oldAvailable = this.state.availableParams;
+    this.setState({
+        filterParams: oldFilters.concat([val]),
+        availableParams: oldAvailable.filter(item => item !== val),
+    })
+  }
+
+  filterRemove(fil) {
+      var filterO = this.state.filterObjects;
+      var i;
+      for (i = 0; i < filterO.length; i++){
+          if (filterO[i].key === fil[0]) {
+              if (["organization_name", "organization_type", "project_name"].includes(filterO[i].key)) {
+                  filterO[i].input = null
+              }
+          }
+      }
+
+      this.setState( {
+        filterParams: this.state.filterParams.filter(item => item !== fil),
+        availableParams: this.state.availableParams.concat([fil]),
+        filterObjects: filterO,
+    })
+  }
+
+  addFilterParams (param, fil, event) {
+    var val = event.target.value;
+    var filterO = this.state.filterObjects;
+    var i;
+    for (i = 0; i < filterO.length; i++) {
+        if (filterO[i].key === fil[0]) {
+            filterO[i][param] = val
+        }
+    }
+    this.setState({
+        filterObjects: filterO,
+    })
+  }
+
+  filterInputs (fil) {
+      if (fil[0] === "organization_name") {
+          return (
+            <div>
+                <TextField
+                    size='small'
+                    variant = 'outlined'
+                    placeholder = 'Organization Name'
+                    onChange={this.addFilterParams.bind(this, "input", fil)}/>
+            </div>
+          )
+      }
+
+      else if (fil[0] === "organization_type") {
+            return (
+            <div>
+                <TextField
+                    size='small'
+                    variant = 'outlined'
+                    placeholder = 'Organization Type'
+                    onChange={this.addFilterParams.bind(this, "input", fil)}/>
+            </div>
+          )
+      }
+
+      else {
+        return (
+            <div>
+                <TextField
+                    size='small'
+                    variant = 'outlined'
+                    placeholder = 'Project Name'
+                    onChange={this.addFilterParams.bind(this, "input", fil)}/>
+            </div>
+        )
+      }
+  }
+
+  filter () {
+    var results = this.convertData();
+    var filters = this.state.filterObjects;
+    var i;
+    for (i = 0; i < filters.length; i++) {
+        if (["organization_name", "organization_type", "project_name"].includes(filters[i].key) && filters[i].input != null) {
+            results = results.filter(v => v[filters[i].key].toLowerCase().includes(filters[i].input.toLowerCase()))
+        }
+    }
+    return results;
+  }
+
+  render(){
+
+    const {classes} = this.props;
+    var filters = this.state.availableParams;
+
+
+    return(
+      <Dialog
+        open={this.props.open}
+        onClose={() => this.props.changeHandler()}
+        maxWidth="lg"
+        >
+          <DialogContent>
+            <Grid container justify="center">
+                <Grid item xs={12} style={{textAlign: "right"}}>
+                    <Button
+                      onClick={() => {this.props.changeHandler()}}
+                    >
+                    <CloseIcon className={classes.button}/>
+                    </Button>
+                </Grid>
+            </Grid>
+
+            <Typography variant="h5" align="center" paragraph>
+                Add a Project
+            </Typography >
+
+            <Grid container spacing={2} justify="center">
+                <Grid item xs={12}>
+                    <Paper elevation={0} className={classes.table}>
+                        <React.Fragment>
+                        <Typography variant="subtitle1" style={{color: '#448AFF'}} paragraph>
+                            Available Projects
+                          </Typography>
+                        <div style={{display: 'flex', flexDirection: 'row'}}>
+                            <TextField
+                                    // value = {this.state.searchType}
+                                    select
+                                    autoComplete="filterType"
+                                    name="filterType"
+                                    variant="outlined"
+                                    required
+                                    fullWidth
+                                    style={{width: '300px'}}
+                                    id="filterType"
+                                    label="Filter By"
+                                    onChange={this.availableFilters}
+                                    autoFocus
+                                    InputProps={{
+                                      className: classes.input_style,
+                                      classes: {input: this.props.classes['input']},
+                                  }}
+                                  >
+                                {filters.map((option) => (
+                                    <MenuItem key={option} value={option}>
+                                        {option[1]}
+                                    </MenuItem>
+                                ))}
+                            </TextField>
+                        </div>
+                        <br/>
+                        <Table size="small" style={{fontFamily: 'Lato'}}>
+                            {this.state.filterParams.slice(0,this.state.filterParams.length).map((log) => (
+                                <TableRow>
+                                    <TableCell>
+                                        <div>
+                                            <IconButton style={{ color: '#448AFF' }} onClick={() => this.filterRemove(log)}>
+                                                <CloseIcon/>
+                                            </IconButton>
+                                            {log[1]} {this.filterInputs(log)}
+                                            <br/>
+                                        </div>
+                                    </TableCell>
+                                </TableRow>
+                            ))}
+                        </Table>
+                        <br/>
+                        <TableContainer>
+                            <Table size="small" style={{fontFamily: 'Lato'}}>
+                                <TableHead>
+                                    <TableRow>
+                                    <TableCell align='center'>Organization Name</TableCell>
+                                    <TableCell align='center'>Organization Type</TableCell>
+                                    <TableCell align='center'>Project Name</TableCell>
+                                    <TableCell align='center'>Project State</TableCell>
+                                    <TableCell align='center'>Preview Project</TableCell>
+                                    <TableCell align='center'>Add Project</TableCell>
+                                    </TableRow>
+                                </TableHead>
+                                <TableBody>
+                                {this.filter().slice(this.state.page * this.state.rowsPerPage,
+                                    this.state.page * this.state.rowsPerPage + this.state.rowsPerPage).map((log, index) => (
+                                    <TableRow>
+                                        <TableCell align='center'>{log.organization_name}</TableCell>
+                                        <TableCell align='center'>{log.organization_type}</TableCell>
+                                        <TableCell align='center'>{log.project_name}</TableCell>
+                                        <TableCell align='center'>{log.project_state}</TableCell>
+                                        <TableCell align='center'>
+                                            <Button
+                                                fullWidth
+                                                variant="contained"
+                                                className={classes.preview}
+                                                onClick={() => {
+                                                    this.changeEdit(log.project_id)
+                                                }
+                                                }
+                                            >
+                                                PREVIEW
+                                            </Button>
+                                            <CharityInfo
+                                                changeHandler={this.changeEdit}
+                                                charity_dic={log}
+                                                publisherName={this.props.publisherName}
+                                                open={this.state.open[log.project_id]}
+                                            />
+                                        </TableCell>
+                                        <TableCell align='center'>
+                                            <Button
+                                            fullWidth
+                                            variant="contained"
+                                            onClick={()=>{this.addProject(log, index)}}
+                                            className={classes.preview}>
+                                            ADD
+                                            </Button>
+                                        </TableCell>
+                                    </TableRow>
+                                ))}
+                                </TableBody>
+                            </Table>
+                        </TableContainer>
+                        <TablePagination
+                            rowsPerPageOptions={[5]}
+                            component="div"
+                            count={this.filter().length}
+                            rowsPerPage={this.state.rowsPerPage}
+                            page={this.state.page}
+                            onChangePage={this.handleChangePage}
+                            onChangeRowsPerPage={this.handleChangeRowsPerPage}
+                        />
+                        </React.Fragment>
+                    </Paper>
+                     <br/>
+                </Grid>
+            </Grid>
+
+            <div style={{marginTop: "24px"}}>
+            </div>
+          </DialogContent>
+        </Dialog>
+    )
+  }
+}
+
+export default withStyles(useStyles)(PreviewProjects);

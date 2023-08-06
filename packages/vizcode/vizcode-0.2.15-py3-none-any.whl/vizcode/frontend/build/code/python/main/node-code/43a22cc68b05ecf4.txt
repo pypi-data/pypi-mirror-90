@@ -1,0 +1,1 @@
+        self.organization_city = organization_city

@@ -1,0 +1,1 @@
+        self.donor_name = donor_name

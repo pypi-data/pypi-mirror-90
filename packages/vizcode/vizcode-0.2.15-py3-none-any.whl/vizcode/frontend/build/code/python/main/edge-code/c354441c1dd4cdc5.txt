@@ -1,0 +1,1 @@
+        cPickle.dump(auto, output_file)

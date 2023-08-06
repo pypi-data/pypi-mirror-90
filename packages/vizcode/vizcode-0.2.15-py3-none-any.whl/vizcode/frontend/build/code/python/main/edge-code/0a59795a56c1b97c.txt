@@ -1,0 +1,1 @@
+    sampling = random.sample(data, 5)

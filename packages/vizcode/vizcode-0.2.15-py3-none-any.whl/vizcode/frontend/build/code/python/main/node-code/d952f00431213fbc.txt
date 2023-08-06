@@ -1,0 +1,1 @@
+        self.publisher_phone_number = publisher_phone_number

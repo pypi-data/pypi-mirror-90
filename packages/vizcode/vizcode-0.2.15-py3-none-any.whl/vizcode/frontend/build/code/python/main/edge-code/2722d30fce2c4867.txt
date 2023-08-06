@@ -1,0 +1,1 @@
+        salt, new_hashed_password = secure_password(new_password)

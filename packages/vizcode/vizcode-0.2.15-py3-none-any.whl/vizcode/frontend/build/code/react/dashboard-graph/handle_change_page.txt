@@ -1,0 +1,3 @@
+handleChangePage(event, newPage) {
+    this.setState({page: newPage});
+}

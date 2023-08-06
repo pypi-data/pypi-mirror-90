@@ -1,0 +1,1 @@
+def get_similarities(df):    return df.apply(lambda row: sim(row['project_name']), axis=1)

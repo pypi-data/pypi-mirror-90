@@ -1,0 +1,3 @@
+handleChangeRowsPerPage(event) {
+    this.setState({rowsPerPage: parseInt(event.target.value, 10), page: 0})
+}

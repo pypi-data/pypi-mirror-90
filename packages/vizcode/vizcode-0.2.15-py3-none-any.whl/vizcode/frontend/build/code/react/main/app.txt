@@ -1,0 +1,33 @@
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+import Login from './Login.js';
+import SignUp from "./SignUp.js";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import SideBar from "./SideBar";
+
+window.revenuePortion = 0.04
+
+if (!process.env.NODE_ENV || process.env.NODE_ENV === 'development') {
+    window.address = 'http://0.0.0.0:5000/'
+    // window.address = 'https://newspark-staging.herokuapp.com/'
+} else {
+    window.address = 'https://newspark-chrome-extension.herokuapp.com/'
+}
+
+function App() {
+  return (
+    <main>
+      <Switch>
+          <Route path="/" component={Login} exact />
+          <Route path="/dashboard" component={SideBar} />
+          <Route path="/view_articles" component={SideBar}/>
+          <Route path="/search_article" component={SideBar}/>
+          <Route path="/settings" component={SideBar}/>
+          <Route path="/contact_us" component={SideBar}/>
+      </Switch>
+    </main>
+  );
+}
+
+export default App;

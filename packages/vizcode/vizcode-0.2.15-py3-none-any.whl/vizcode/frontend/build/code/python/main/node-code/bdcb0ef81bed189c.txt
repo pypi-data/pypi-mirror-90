@@ -1,0 +1,1 @@
+redis = redis.Redis(host=application.config['REDIS_HOST'],

@@ -1,0 +1,1 @@
+<Route exact path="/viewArticles" component={withRouter(ViewArticles)}/>

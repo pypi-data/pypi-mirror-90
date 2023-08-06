@@ -1,0 +1,1 @@
+def get_fund_info():    fund_name = request.form.get('fund_name')    print(fund_name)    fund = Fund.query.filter_by(fund_name=fund_name).first()    return jsonify(fund=fund.serialize())

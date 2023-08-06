@@ -1,0 +1,13 @@
+componentDidMount() {
+
+  axios({
+      method: 'get',
+      url: window.address.concat('get_owner'),
+      headers: { Authorization: "Bearer " + this.state.accessToken }
+  }).then((response) => {
+      let data = response.data.owner;
+      this.setState({
+          username: data.username,
+      });
+  });
+}

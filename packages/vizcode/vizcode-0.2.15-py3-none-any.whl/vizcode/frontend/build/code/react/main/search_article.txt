@@ -1,0 +1,457 @@
+import React from "react";
+import {withStyles} from "@material-ui/core/styles";
+import Grid from "@material-ui/core/Grid";
+import TextField from "@material-ui/core/TextField";
+import Button from "@material-ui/core/Button";
+import $ from "jquery";
+import cookie from "react-cookies";
+import MenuItem from "@material-ui/core/MenuItem";
+import SearchIcon from '@material-ui/icons/Search';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import Typography from "@material-ui/core/Typography";
+import Paper from "@material-ui/core/Paper";
+import Table from "@material-ui/core/Table";
+import TableHead from "@material-ui/core/TableHead";
+import TableRow from "@material-ui/core/TableRow";
+import TableCell from "@material-ui/core/TableCell";
+import TableBody from "@material-ui/core/TableBody";
+import Link from "@material-ui/core/Link";
+import CharityInfo from "./CharityInfo.js";
+import axios from "axios";
+import PreviewProjects from "./PreviewProjects";
+import Switch from "react-switch";
+
+const useStyles = theme => ({
+    form: {
+        width: '100%', // Fix IE 11 issue.
+        marginTop: theme.spacing(3),
+    },
+    paper: {
+        marginTop: theme.spacing(18),
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+    },
+    preview: {
+        margin: theme.spacing(1, 0, 2),
+        backgroundColor: "#448AFF",
+        color: "#FFFFFF"
+    },
+    remove: {
+        margin: theme.spacing(1, 0, 2),
+        backgroundColor: "#DC143C",
+        color: "#FFFFFF"
+    },
+    input_style: {
+        '&.MuiOutlinedInput-root': {
+        // '& fieldset': {
+        //   borderColor: '#448AFF',
+        // },
+        '&.Mui-focused fieldset': {
+        borderColor: '#448AFF',
+        },
+        },
+    },
+    'input': {
+        '&::placeholder': {
+            color: 'black',
+            fontWeight: '500'
+        },
+    },
+    table: {
+        padding: theme.spacing(6),
+        display: 'flex',
+        overflow: 'auto',
+        flexDirection: 'column'
+    },
+    helper_style: {
+      color: '#FF0000',
+    },
+    simpleButton: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center'
+    },
+    switched: {
+        backgroundColor: "#448AFF",
+        color: "#448AFF",
+        '&$checked': {
+          color: "#448AFF",
+          backgroundColor: "#448AFF",
+        },
+        '&$checked + $track': {
+          backgroundColor: "#448AFF",
+          color: "#448AFF",
+        },
+    }
+})
+
+class SearchArticle extends React.Component{
+
+    constructor(props) {
+        super(props);
+        this.handleOnClick = this.handleOnClick.bind(this);
+        this.changeEdit = this.changeEdit.bind(this);
+        this.changeProjectPreview = this.changeProjectPreview.bind(this);
+        this.openProjectPreview = this.openProjectPreview.bind(this);
+
+        var article_link = "";
+        if(this.props.location.state){
+          article_link = this.props.location.state.article_link;
+        }
+
+        this.state = {
+            article_link: article_link,
+            article_link_copy: "",
+            accessToken: cookie.load('access_token'),
+            articleTitle: "",
+            datePublished: "",
+            projects: [],
+            searchType: "Article Link",
+            numProjects: 0,
+            error_msg: false,
+            error_msg_text: "",
+            open: {},
+            publisherName: "",
+            openPreview: false,
+            availableProjects: [],
+            editedByNewspark: true,
+            editedByPublisher: true,
+            openWidget: false,
+        }
+    }
+
+    handleOnClick(value) {
+
+        let data = {
+            article_link: value
+        }
+
+        $.ajax({
+            url: window.address.concat('get_relevant_projects'),
+            type: 'post',
+            data: data,
+            headers: {Authorization: 'Bearer ' + this.state.accessToken},
+            dataType: 'json',
+            success: function (output) {
+                if (output.project_info !== undefined) {
+                    let projects = output.project_info;
+                    var open = {};
+                    for(var i = 0; i < projects.length; i++){
+                      open[projects[i].project_id] = false;
+                    }
+                    this.setState({
+                      projects: projects,
+                      article_link: "",
+                      article_link_copy: value,
+                      numProjects: projects.length,
+                      open: open,
+                    }, () => {
+                        console.log(this.state.projects)
+                    });
+                } else {
+                    this.setState({
+                        error_msg: true,
+                        error_msg_text: "Article does not exist",
+                    });
+                }
+            }.bind(this)
+        });
+
+        $.ajax({
+            url: window.address.concat('get_article_info'),
+            type: 'post',
+            data: data,
+            headers: {Authorization: 'Bearer ' + this.state.accessToken},
+            dataType: 'json',
+            success: function (output) {
+                let articleInfo = output.article_info;
+                this.setState({
+                  articleTitle: articleInfo.article_title,
+                  datePublished: articleInfo.date_published,
+                  openWidget: articleInfo.widget_status,
+                  publisherName: articleInfo.publisher_id,
+                  editedByNewspark: articleInfo.edited_by_newspark,
+                  editedByPublisher: articleInfo.edited_by_publisher,
+                });
+            }.bind(this)
+        });
+    }
+
+    changeEdit(project_id){
+      var open = this.state.open;
+      open[project_id] = !open[project_id];
+      this.setState({
+        open: open,
+      });
+    }
+
+    removeProject(projectInfo, rowNumber) {
+        let articleLink = projectInfo.article_link;
+        let projectID = projectInfo.project_id;
+        let data = {
+            article_link: articleLink,
+            project_id: projectID
+        }
+
+        $.ajax({
+            url: window.address.concat('remove_project_from_article'),
+            type: 'post',
+            data: data,
+            headers: {Authorization: 'Bearer ' + this.state.accessToken},
+            dataType: 'json',
+            success: function (output) {
+            }.bind(this)
+        });
+
+        this.handleOnClick(articleLink);
+
+    }
+
+    changeProjectPreview() {
+
+        var open = this.state.openPreview;
+        open = !open;
+        this.setState({openPreview: open});
+    }
+
+    openProjectPreview() {
+
+        let data = {
+            publisher_name: this.state.publisherName,
+        }
+
+        $.ajax({
+            url: window.address.concat('get_projects_for_publisher'),
+            type: 'post',
+            data: data,
+            headers: {Authorization: 'Bearer ' + this.state.accessToken},
+            dataType: 'json',
+            success: function (output) {
+                let project_ids = []
+                let projects = this.state.projects.map(log => {
+                    project_ids.push(log.project_id)
+                })
+                let availableProjects = output.project_info.filter(function(log) {
+                    return !(project_ids.includes(log.project_id))
+                });
+                this.setState({availableProjects: availableProjects});
+            }.bind(this)
+        });
+        
+        this.changeProjectPreview()
+
+    }
+
+
+    handleChange(article_link){
+        var data = {"article_link": article_link};
+
+        $.ajax({
+            url: window.address.concat('change_widget_status'),
+            type: 'post',
+            data: data,
+            headers: {Authorization: 'Bearer ' + this.state.accessToken},
+            dataType: 'json',
+            success: function (output) {
+              // console.log("SUCCESS");
+            }.bind(this)
+        });
+
+        var openWidget = this.state.openWidget;
+        this.setState({
+          openWidget: !openWidget,
+        });
+    }
+
+
+    render() {
+
+
+        const {classes} = this.props;
+
+        if(this.state.article_link !== ""){
+          this.handleOnClick(this.state.article_link);
+        }
+
+        let addProject = (<div/>);
+        if ((this.state.numProjects < 6) && (this.state.articleTitle !== '')) {
+            addProject = (<div
+                className={classes.simpleButton}>
+                <br/>
+                <br/>
+                <Button
+                    variant="contained"
+                    className={classes.preview}
+                    onClick={() => this.openProjectPreview()}
+                    style={{width: '30%'}}
+                >
+                ADD A PROJECT
+                </Button>
+                <PreviewProjects
+                    changeHandler={this.changeProjectPreview}
+                    refresh={this.handleOnClick}
+                    publisherName={this.state.publisherName}
+                    availableProjects={this.state.availableProjects}
+                    articleLink={this.state.article_link_copy}
+                    open={this.state.openPreview}
+                />
+                </div>)
+        }
+
+        let results = (<div/>);
+
+        if (this.state.articleTitle !== '') {
+            results = (
+                <Typography style={{paddingTop: '20px'}}>
+                    <span style={{fontWeight: 'bold'}}>Article Link:</span> {this.state.article_link_copy}
+                    <br/>
+                    <span style={{fontWeight: 'bold'}}>Article Title:</span> {this.state.articleTitle}
+                    <br/>
+                    <span style={{fontWeight: 'bold'}}>Date Published:</span> {this.state.datePublished}
+                    <br/>
+                    <span style={{fontWeight: 'bold'}}>Number of Recommended Projects:</span> {this.state.numProjects}
+                        <br/>
+                    {/*{window.newsparkAccount ? <span style={{fontWeight: 'bold'}}>Recommendations Modified by Newspark:</span> : <span/>}*/}
+                    {/*{window.newsparkAccount ? (this.state.editedByNewspark ? <span style={{color: '#228B22', fontWeight: '500'}}> Yes</span> :*/}
+                    {/*    <span style={{color: '#FF0000', fontWeight: '500'}}> No</span>) : <span/>}*/}
+                    {/*{window.newsparkAccount ? <br/> : <span/>}*/}
+                    {<span style={{fontWeight: 'bold'}}>Recommendations Modified by Newspark:</span>}
+                    {(this.state.editedByNewspark ? <span style={{color: '#228B22', fontWeight: '500'}}> Yes</span> :
+                        <span style={{color: '#FF0000', fontWeight: '500'}}> No</span>)}
+                    {<br/>}
+                    <span style={{fontWeight: 'bold'}}>Recommendations Modified by {this.state.publisherName}:</span>
+                    {this.state.editedByPublisher ? <span style={{color: '#228B22', fontWeight: '500'}}> Yes</span> :
+                        <span style={{color: '#FF0000', fontWeight: '500'}}> No</span>}
+                    <span style={{fontWeight: 'bold', display: 'flex', flexDirection: 'row'}}>
+                        Widget Status:
+                    {/*{this.state.widgetStatus ? <span style={{color: '#228B22', fontWeight: '500'}}> On</span> :*/}
+                    {/*    <span style={{color: '#FF0000', fontWeight: '500'}}> Off</span>}*/}
+                        <div style={{marginLeft: '5px'}}>
+                        <Switch
+                            onChange={() => this.handleChange(this.state.article_link_copy)}
+                            checked={this.state.openWidget}
+                            InputProps={{
+                              className: classes.switched,
+                              classes: {input: classes.switched},
+                            }}
+                            classes = {{input: classes.switched}}
+                        />
+                        </div>
+                    </span>
+
+                </Typography>
+            )
+        }
+
+        return (
+            <div className={classes.paper}>
+                <Typography component="h1" variant="h5" style={{
+                fontSize: '32px',
+                fontFamily: 'Merriweather',
+                textAlign: 'center'}}>
+                Search Article
+                </Typography >
+                <p style={{fontSize: '16px', fontFamily: 'Lato'}}>Enter a link to an article
+                    in order to preview Newspark's recommendations: </p>
+                <br/>
+                <Grid container spacing={2} justify="center">
+                    <Grid item xs={10} md={10} lg={10}>
+                        <TextField
+                        autoComplete="article_link"
+                        name="article_link"
+                        variant="outlined"
+                        required
+                        fullWidth
+                        id="article_link"
+                        placeholder="Article Link"
+                        autoFocus
+                        onKeyPress={(e) => {
+                            if (e.key === "Enter") {
+                                var value = e.target.value;
+                                e.preventDefault();
+                                this.handleOnClick(value);
+                            }
+                        }}
+                        InputProps={{
+                            startAdornment: (
+                            <InputAdornment position="start">
+                                <SearchIcon style={{color: '#448AFF'}}/>
+                            </InputAdornment>),
+                            className: classes.input_style,
+                            classes: {input: this.props.classes['input']},
+                        }}
+                        FormHelperTextProps={{ className: classes.helper_style }}
+                        helperText= {this.state.error_msg_text}
+                        />
+                    </Grid>
+                    <Grid item xs={10} md={10} lg={10}>
+                    {results}
+                    <br/>
+                    </Grid>
+                     <Grid item xs={10} md={10} lg={10}>
+                        <Paper elevation={3} className={classes.table}>
+                        <React.Fragment>
+                        <Typography component="h1" variant="h5" style={{color: '#448AFF', fontSize: '20px', fontFamily: 'Merriweather'}}>
+                            Recommended Projects</Typography>
+                        <br/>
+                        <Table size="small" style={{fontFamily: 'Lato'}}>
+                        <TableHead>
+                        <TableRow>
+                        <TableCell align='center'>Organization Name</TableCell>
+                        <TableCell align='center'>Organization Type</TableCell>
+                        <TableCell align='center'>Project Name</TableCell>
+                        <TableCell align='center'>Project State</TableCell>
+                        <TableCell align='center'>Preview Project</TableCell>
+                        <TableCell align='center'>Remove Project</TableCell>
+                        </TableRow>
+                        </TableHead>
+                        <TableBody>
+                        {this.state.projects.map((log, index) => (
+                            <TableRow>
+                            <TableCell align='center'>{log.organization_name}</TableCell>
+                            <TableCell align='center'>{log.organization_type}</TableCell>
+                            <TableCell align='center'>{log.project_name}</TableCell>
+                            <TableCell align='center'>{log.project_state}</TableCell>
+                            <TableCell align='center'>
+                              <Button
+                                fullWidth
+                                variant="contained"
+                                className={classes.preview}
+                                onClick={() => this.changeEdit(log.project_id)}
+                              >
+                                PREVIEW
+                              </Button>
+                              <CharityInfo
+                                changeHandler={this.changeEdit}
+                                charity_dic={log}
+                                publisherName={this.state.publisherName}
+                                open={this.state.open[log.project_id]}
+                              />
+                            </TableCell>
+                            <TableCell align='center'>
+                              <Button
+                                fullWidth
+                                variant="contained"
+                                onClick={()=>{this.removeProject(log, index)}}
+                                className={classes.remove}>
+                                REMOVE
+                              </Button>
+                            </TableCell>
+                            </TableRow>
+                        ))}
+                        </TableBody>
+                        </Table>
+                            {addProject}
+                        </React.Fragment>
+                        </Paper>
+                         <br/>
+                    </Grid>
+                </Grid>
+            </div>
+        )
+    }
+
+}
+
+export default withStyles(useStyles)(SearchArticle);

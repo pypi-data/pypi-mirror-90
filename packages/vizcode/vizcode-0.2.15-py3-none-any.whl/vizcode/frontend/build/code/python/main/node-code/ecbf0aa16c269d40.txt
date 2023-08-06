@@ -1,0 +1,1 @@
+        self.publisher_country = publisher_country

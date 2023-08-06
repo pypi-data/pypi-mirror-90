@@ -1,0 +1,1 @@
+        self.organization_state = organization_state

@@ -1,0 +1,1 @@
+        self.newspaper_article_link = newspaper_article_link

@@ -1,0 +1,1 @@
+        self.commissions_raised = commissions_raised

@@ -1,0 +1,1 @@
+        self.total_amount_raised = total_amount_raised

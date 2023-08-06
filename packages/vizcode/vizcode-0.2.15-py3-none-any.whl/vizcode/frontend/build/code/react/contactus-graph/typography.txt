@@ -1,0 +1,6 @@
+<Typography component="h1" variant="h5" style={{
+    textAlign: "center",
+    fontSize: '32px',
+    fontFamily: 'Merriweather'}}>
+  Contact Us
+</Typography >

@@ -1,0 +1,874 @@
+{
+    "title": "Newspark Python Example",
+    "main": {
+        "language": "python",
+        "nodes": {
+            "app.views.widget.get_charities": {
+                "name": "app.views.widget.get_charities",
+                "type": "Function",
+                "filePath": "code/python/main/8fdb6aae6a303b91.txt",
+                "comment": "\n    Gets the recommended projects for an article.\n    :param: request.form params: article link\n    :return: Info for each recommended project.\n     ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/widget.py",
+                "highlightedCodePath": "code/python/main/node-code/1e056e1bace5b435.txt"
+            },
+            "app.helper.misc.get_projects_from_article": {
+                "name": "app.helper.misc.get_projects_from_article",
+                "type": "Function",
+                "filePath": "code/python/main/af086f27da606f57.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/misc.py",
+                "highlightedCodePath": "code/python/main/node-code/4c8a7e7277e7f68c.txt"
+            },
+            "app.helper.scrapers.indiana_scraper": {
+                "name": "app.helper.scrapers.indiana_scraper",
+                "type": "Function",
+                "filePath": "code/python/main/d01fb580132d7c18.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/scrapers.py",
+                "highlightedCodePath": "code/python/main/node-code/e5e68f9e12d23f86.txt"
+            },
+            "datetime.datetime.strptime": {
+                "name": "datetime.datetime.strptime",
+                "type": "Function",
+                "filePath": "code/python/main/d01fb580132d7c18.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/scrapers.py",
+                "highlightedCodePath": "code/python/main/node-code/fcd9c5764de51abd.txt"
+            },
+            "app.helper.misc.save_article_data": {
+                "name": "app.helper.misc.save_article_data",
+                "type": "Function",
+                "filePath": "code/python/main/af086f27da606f57.txt",
+                "comment": " bad_chars = ['.', ',', '/']  new_article_link = str(filter(lambda i: i not in bad_chars, article_link)) ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/misc.py",
+                "highlightedCodePath": "code/python/main/node-code/049ca597ba815de0.txt"
+            },
+            "app.helper.misc.get_available_projects": {
+                "name": "app.helper.misc.get_available_projects",
+                "type": "Function",
+                "filePath": "code/python/main/af086f27da606f57.txt",
+                "comment": " select projects that are not removed and are from verified charities ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/misc.py",
+                "highlightedCodePath": "code/python/main/node-code/b93b68a1a8f69bc5.txt"
+            },
+            "app.helper.nlp.full_json_with_matching": {
+                "name": "app.helper.nlp.full_json_with_matching",
+                "type": "Function",
+                "filePath": "code/python/main/c0243415713b6636.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/nlp.py",
+                "highlightedCodePath": "code/python/main/node-code/8ea4ab04a7c2d98f.txt"
+            },
+            "app.models.Article.__init__": {
+                "name": "app.models.Article.__init__",
+                "type": "Function",
+                "filePath": "code/python/main/8feea9c481572ae1.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/models.py",
+                "highlightedCodePath": "code/python/main/node-code/08e41264fdc65111.txt"
+            },
+            "app.views.widget.update_db_after_payment": {
+                "name": "app.views.widget.update_db_after_payment",
+                "type": "Function",
+                "filePath": "code/python/main/8fdb6aae6a303b91.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/widget.py",
+                "highlightedCodePath": "code/python/main/node-code/ef38aaf1658d5afa.txt"
+            },
+            "datetime.datetime.now": {
+                "name": "datetime.datetime.now",
+                "type": "Function",
+                "filePath": "code/python/main/d01fb580132d7c18.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/scrapers.py",
+                "highlightedCodePath": "code/python/main/node-code/3e168094278c146b.txt"
+            },
+            "app.models.Donation.__init__": {
+                "name": "app.models.Donation.__init__",
+                "type": "Function",
+                "filePath": "code/python/main/8feea9c481572ae1.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/models.py",
+                "highlightedCodePath": "code/python/main/node-code/ccd3e149d86f369c.txt"
+            },
+            "app.views.blm_extension.get_blm_charities": {
+                "name": "app.views.blm_extension.get_blm_charities",
+                "type": "Function",
+                "filePath": "code/python/main/681e7b0d5a2b520f.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/blm_extension.py",
+                "highlightedCodePath": "code/python/main/node-code/74429719497afce2.txt"
+            },
+            "random.sample": {
+                "name": "random.sample",
+                "type": "Function",
+                "filePath": "code/python/main/681e7b0d5a2b520f.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/blm_extension.py",
+                "highlightedCodePath": "code/python/main/node-code/e133be714abfa771.txt"
+            },
+            "app.views.newspaper.owner_forgot_password": {
+                "name": "app.views.newspaper.owner_forgot_password",
+                "type": "Function",
+                "filePath": "code/python/main/a6cb13f16aff9ccb.txt",
+                "comment": "\n    Sends a email to a user with a new password if forgotten\n    :param: request.form params: email\n    :return: Success if email is verified, and actually sends the email, No Account Found otherwise\n     ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/newspaper.py",
+                "highlightedCodePath": "code/python/main/node-code/71121ae374502464.txt"
+            },
+            "random.choice": {
+                "name": "random.choice",
+                "type": "Function",
+                "filePath": "code/python/main/09da6fef8844f550.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/charity.py",
+                "highlightedCodePath": "code/python/main/node-code/e2aad9c5adcb6aa5.txt"
+            },
+            "app.helper.misc.secure_password": {
+                "name": "app.helper.misc.secure_password",
+                "type": "Function",
+                "filePath": "code/python/main/af086f27da606f57.txt",
+                "comment": " 32 bytes  64 bytes ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/misc.py",
+                "highlightedCodePath": "code/python/main/node-code/71845472472be83f.txt"
+            },
+            "app.views.newspaper.get_donations_from_publishers": {
+                "name": "app.views.newspaper.get_donations_from_publishers",
+                "type": "Function",
+                "filePath": "code/python/main/a6cb13f16aff9ccb.txt",
+                "comment": "\n    Queries the donations and calculates the cumulative donations that were given to charities featured\n    on any of the owner's publishing platforms.\n    :param: request.form params: username\n    :return: Donations, cumulative donations, and first and last dates that a donation took place\n    if username is verified, No Account Found otherwise\n     ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/newspaper.py",
+                "highlightedCodePath": "code/python/main/node-code/3cf61e9aa60877ea.txt"
+            },
+            "datetime.timedelta.__init__": {
+                "name": "datetime.timedelta.__init__",
+                "type": "Function",
+                "filePath": "code/python/main/09da6fef8844f550.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/charity.py",
+                "highlightedCodePath": "code/python/main/node-code/fdb70e9aab5fe6da.txt"
+            },
+            "app.views.newspaper.get_donations_from_publisher_csv": {
+                "name": "app.views.newspaper.get_donations_from_publisher_csv",
+                "type": "Function",
+                "filePath": "code/python/main/a6cb13f16aff9ccb.txt",
+                "comment": "\n    Returns the url to a CSV with the donation logs\n    :param: JWT token for a owner\n    :return: JSON object of url\n     ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/newspaper.py",
+                "highlightedCodePath": "code/python/main/node-code/0a370b26e32e68ba.txt"
+            },
+            "io.getvalue": {
+                "name": "io.getvalue",
+                "type": "Function",
+                "filePath": "code/python/main/09da6fef8844f550.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/charity.py",
+                "highlightedCodePath": "code/python/main/node-code/22315f7ca8e03e3a.txt"
+            },
+            "app.views.newspaper.get_articles_csv": {
+                "name": "app.views.newspaper.get_articles_csv",
+                "type": "Function",
+                "filePath": "code/python/main/a6cb13f16aff9ccb.txt",
+                "comment": "\n    Returns the url to a CSV with the article logs\n    :param: JWT token for a owner\n    :return: JSON object of url if owner found, Account Not Found otherwise\n     ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/newspaper.py",
+                "highlightedCodePath": "code/python/main/node-code/0aa518a95577814e.txt"
+            },
+            "app.views.newspaper.add_project_to_article": {
+                "name": "app.views.newspaper.add_project_to_article",
+                "type": "Function",
+                "filePath": "code/python/main/a6cb13f16aff9ccb.txt",
+                "comment": "\n    Adds project to this article\n    :param: JWT token for a owner, article link, project id\n    :return: Success if project added to the article\n     ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/newspaper.py",
+                "highlightedCodePath": "code/python/main/node-code/822384729066a5ba.txt"
+            },
+            "app.helper.misc.update_recommendations": {
+                "name": "app.helper.misc.update_recommendations",
+                "type": "Function",
+                "filePath": "code/python/main/af086f27da606f57.txt",
+                "comment": " bad_chars = ['.', ',', '/']  new_article_link = str(filter(lambda i: i not in bad_chars, article_link)) ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/misc.py",
+                "highlightedCodePath": "code/python/main/node-code/840018326f1fa465.txt"
+            },
+            "app.views.newspaper.remove_project_from_article": {
+                "name": "app.views.newspaper.remove_project_from_article",
+                "type": "Function",
+                "filePath": "code/python/main/a6cb13f16aff9ccb.txt",
+                "comment": "\n    Removes project from this article\n    :param: JWT token for a owner, article link, project id\n    :return: Success if project removed from this article\n     ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/newspaper.py",
+                "highlightedCodePath": "code/python/main/node-code/e3f9c13687f846f8.txt"
+            },
+            "app.views.newspaper.edit_owner": {
+                "name": "app.views.newspaper.edit_owner",
+                "type": "Function",
+                "filePath": "code/python/main/a6cb13f16aff9ccb.txt",
+                "comment": " Edits the owner's information.  ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/newspaper.py",
+                "highlightedCodePath": "code/python/main/node-code/b135a7c728274535.txt"
+            },
+            "app.views.newspaper.edit_payment_info_publisher": {
+                "name": "app.views.newspaper.edit_payment_info_publisher",
+                "type": "Function",
+                "filePath": "code/python/main/a6cb13f16aff9ccb.txt",
+                "comment": "\n    Store payment information in a s3 bucket\n    :param: JWT token for a owner, publisher name\n    :return: Success if payment information added, No Account Found if owner not found in database\n     ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/newspaper.py",
+                "highlightedCodePath": "code/python/main/node-code/c03eb5a2d3785a24.txt"
+            },
+            "app.helper.misc.save_payment_info": {
+                "name": "app.helper.misc.save_payment_info",
+                "type": "Function",
+                "filePath": "code/python/main/af086f27da606f57.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/misc.py",
+                "highlightedCodePath": "code/python/main/node-code/8972d72a3a2fe096.txt"
+            },
+            "app.views.funds.get_fund": {
+                "name": "app.views.funds.get_fund",
+                "type": "Function",
+                "filePath": "code/python/main/44256c662ad8344a.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/funds.py",
+                "highlightedCodePath": "code/python/main/node-code/52bf36b9afc92754.txt"
+            },
+            "app.helper.scrapers.emory_scraper": {
+                "name": "app.helper.scrapers.emory_scraper",
+                "type": "Function",
+                "filePath": "code/python/main/d01fb580132d7c18.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/scrapers.py",
+                "highlightedCodePath": "code/python/main/node-code/bc15de9d82deba95.txt"
+            },
+            "app.helper.fund_matching.get_best_fund": {
+                "name": "app.helper.fund_matching.get_best_fund",
+                "type": "Function",
+                "filePath": "code/python/main/7800c187666186b7.txt",
+                "comment": " Runs Aho–Corasick algorithm to search tags in an article's text.  ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/fund_matching.py",
+                "highlightedCodePath": "code/python/main/node-code/fc365a9f938426c9.txt"
+            },
+            "app.views.funds.fund_payment_update": {
+                "name": "app.views.funds.fund_payment_update",
+                "type": "Function",
+                "filePath": "code/python/main/44256c662ad8344a.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/funds.py",
+                "highlightedCodePath": "code/python/main/node-code/a6f208efc521aa7b.txt"
+            },
+            "app.views.charity.forgot_password": {
+                "name": "app.views.charity.forgot_password",
+                "type": "Function",
+                "filePath": "code/python/main/09da6fef8844f550.txt",
+                "comment": "\n    Sends a email to a user with a new password if forgotten\n    :param: request.form params: email\n    :return: Success if email is verified, and actually sends the email, No Account Found otherwise\n     ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/charity.py",
+                "highlightedCodePath": "code/python/main/node-code/e91fc8891883c5cf.txt"
+            },
+            "app.views.charity.register_organization": {
+                "name": "app.views.charity.register_organization",
+                "type": "Function",
+                "filePath": "code/python/main/09da6fef8844f550.txt",
+                "comment": " check if already in database ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/charity.py",
+                "highlightedCodePath": "code/python/main/node-code/49721ebe38051000.txt"
+            },
+            "app.models.Organization.__init__": {
+                "name": "app.models.Organization.__init__",
+                "type": "Function",
+                "filePath": "code/python/main/8feea9c481572ae1.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/models.py",
+                "highlightedCodePath": "code/python/main/node-code/9de81d998ccd580c.txt"
+            },
+            "app.views.charity.edit_organization": {
+                "name": "app.views.charity.edit_organization",
+                "type": "Function",
+                "filePath": "code/python/main/09da6fef8844f550.txt",
+                "comment": " check if already in database ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/charity.py",
+                "highlightedCodePath": "code/python/main/node-code/1c3b510fa2dc5a57.txt"
+            },
+            "app.views.charity.add_project": {
+                "name": "app.views.charity.add_project",
+                "type": "Function",
+                "filePath": "code/python/main/09da6fef8844f550.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/charity.py",
+                "highlightedCodePath": "code/python/main/node-code/978a2c68c31b991b.txt"
+            },
+            "app.models.Project.__init__": {
+                "name": "app.models.Project.__init__",
+                "type": "Function",
+                "filePath": "code/python/main/8feea9c481572ae1.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/models.py",
+                "highlightedCodePath": "code/python/main/node-code/c01f798b3902e026.txt"
+            },
+            "app.views.charity.get_payment_logs": {
+                "name": "app.views.charity.get_payment_logs",
+                "type": "Function",
+                "filePath": "code/python/main/09da6fef8844f550.txt",
+                "comment": "\n    Returns the payments logs associated with one organization\n    :param: JWT token for an organization\n    :return: JSON object of payment_logs, total_donated_this_week, intiative_totals, total_donated, total_goal\n     ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/charity.py",
+                "highlightedCodePath": "code/python/main/node-code/4077f674efd181bf.txt"
+            },
+            "app.views.charity.get_payment_csv": {
+                "name": "app.views.charity.get_payment_csv",
+                "type": "Function",
+                "filePath": "code/python/main/09da6fef8844f550.txt",
+                "comment": "\n    Returns the url to a CSV with the payment logs\n    :param: JWT token for an organization\n    :return: JSON object of url\n     ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/charity.py",
+                "highlightedCodePath": "code/python/main/node-code/24c22dede462fa7b.txt"
+            },
+            "app.views.charity.edit_payment_info_charity": {
+                "name": "app.views.charity.edit_payment_info_charity",
+                "type": "Function",
+                "filePath": "code/python/main/09da6fef8844f550.txt",
+                "comment": "\n    Store payment information in a s3 bucket\n    :param: JWT token for a owner, publisher name\n    :return: Success if payment information added, No Account Found if owner not found in database\n     ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/charity.py",
+                "highlightedCodePath": "code/python/main/node-code/9b1ec38aa9d337d6.txt"
+            },
+            "app.views.charity.add_charity_legal_record": {
+                "name": "app.views.charity.add_charity_legal_record",
+                "type": "Function",
+                "filePath": "code/python/main/09da6fef8844f550.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/charity.py",
+                "highlightedCodePath": "code/python/main/node-code/897c2f614b82a144.txt"
+            },
+            "datetime.datetime.strftime": {
+                "name": "datetime.datetime.strftime",
+                "type": "Function",
+                "filePath": "code/python/main/09da6fef8844f550.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/views/charity.py",
+                "highlightedCodePath": "code/python/main/node-code/08ba17c6a35874b0.txt"
+            },
+            "os.urandom": {
+                "name": "os.urandom",
+                "type": "Function",
+                "filePath": "code/python/main/af086f27da606f57.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/misc.py",
+                "highlightedCodePath": "code/python/main/node-code/50e86d6cded3221f.txt"
+            },
+            "app.helper.fund_matching.create_automation": {
+                "name": "app.helper.fund_matching.create_automation",
+                "type": "Function",
+                "filePath": "code/python/main/7800c187666186b7.txt",
+                "comment": " Creates a trie for Aho–Corasick algorithm from tags and stores in pickle file.  ",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/fund_matching.py",
+                "highlightedCodePath": "code/python/main/node-code/1aa6c0e2a2f76169.txt"
+            },
+            "_pickle.dump": {
+                "name": "_pickle.dump",
+                "type": "Function",
+                "filePath": "code/python/main/7800c187666186b7.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/fund_matching.py",
+                "highlightedCodePath": "code/python/main/node-code/6f95e43e0fd59a1c.txt"
+            },
+            "_pickle.load": {
+                "name": "_pickle.load",
+                "type": "Function",
+                "filePath": "code/python/main/7800c187666186b7.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/fund_matching.py",
+                "highlightedCodePath": "code/python/main/node-code/bcc073d5f4efff36.txt"
+            },
+            "app.helper.fund_matching": {
+                "name": "app.helper.fund_matching",
+                "type": "Function",
+                "filePath": "code/python/main/7800c187666186b7.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/fund_matching.py",
+                "highlightedCodePath": "code/python/main/node-code/b86443c3915dec06.txt"
+            },
+            "app.helper.nlp.sim": {
+                "name": "app.helper.nlp.sim",
+                "type": "Function",
+                "filePath": "code/python/main/c0243415713b6636.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/nlp.py",
+                "highlightedCodePath": "code/python/main/node-code/4e9af2300f767453.txt"
+            },
+            "app.helper.nlp.remove_stop_words": {
+                "name": "app.helper.nlp.remove_stop_words",
+                "type": "Function",
+                "filePath": "code/python/main/c0243415713b6636.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/nlp.py",
+                "highlightedCodePath": "code/python/main/node-code/3b87e53f9fa7ffb0.txt"
+            },
+            "app.helper.nlp.get_similarities": {
+                "name": "app.helper.nlp.get_similarities",
+                "type": "Function",
+                "filePath": "code/python/main/c0243415713b6636.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/nlp.py",
+                "highlightedCodePath": "code/python/main/node-code/71799a0e1d771e1f.txt"
+            },
+            "multiprocessing.Pool": {
+                "name": "multiprocessing.Pool",
+                "type": "Function",
+                "filePath": "code/python/main/c0243415713b6636.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/nlp.py",
+                "highlightedCodePath": "code/python/main/node-code/66040d927b361a33.txt"
+            },
+            "multiprocessing.pool.Pool.map": {
+                "name": "multiprocessing.pool.Pool.map",
+                "type": "Function",
+                "filePath": "code/python/main/c0243415713b6636.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/nlp.py",
+                "highlightedCodePath": "code/python/main/node-code/36699e0480d012e7.txt"
+            },
+            "multiprocessing.pool.Pool.close": {
+                "name": "multiprocessing.pool.Pool.close",
+                "type": "Function",
+                "filePath": "code/python/main/c0243415713b6636.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/nlp.py",
+                "highlightedCodePath": "code/python/main/node-code/8fe8470d7f091d7a.txt"
+            },
+            "multiprocessing.pool.Pool.join": {
+                "name": "multiprocessing.pool.Pool.join",
+                "type": "Function",
+                "filePath": "code/python/main/c0243415713b6636.txt",
+                "comment": "",
+                "originalFilePath": "/Users/arubin/newspark_server/app/helper/nlp.py",
+                "highlightedCodePath": "code/python/main/node-code/94c48e68e4252902.txt"
+            }
+        },
+        "edges": [
+            {
+                "from": "app.views.widget.get_charities",
+                "to": "app.helper.misc.get_projects_from_article",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/0f5f05b1dcf96efe.txt"
+            },
+            {
+                "from": "app.views.widget.get_charities",
+                "to": "app.helper.scrapers.indiana_scraper",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/891c5d0efbc41e68.txt"
+            },
+            {
+                "from": "app.views.widget.get_charities",
+                "to": "datetime.datetime.strptime",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/ffcd2a2b6ca47a46.txt"
+            },
+            {
+                "from": "app.views.widget.get_charities",
+                "to": "app.helper.misc.save_article_data",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/545fe78fabc0b0df.txt"
+            },
+            {
+                "from": "app.views.widget.get_charities",
+                "to": "app.helper.misc.get_available_projects",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/28619f95c380c061.txt"
+            },
+            {
+                "from": "app.views.widget.get_charities",
+                "to": "app.helper.nlp.full_json_with_matching",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/eaba36e7f1c662dd.txt"
+            },
+            {
+                "from": "app.views.widget.get_charities",
+                "to": "app.models.Article.__init__",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/f6232aa9ff703342.txt"
+            },
+            {
+                "from": "app.views.widget.update_db_after_payment",
+                "to": "datetime.datetime.now",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/977f8d79d4dda25b.txt"
+            },
+            {
+                "from": "app.views.widget.update_db_after_payment",
+                "to": "app.models.Donation.__init__",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/d5cc074f68004365.txt"
+            },
+            {
+                "from": "app.views.blm_extension.get_blm_charities",
+                "to": "random.sample",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/0a59795a56c1b97c.txt"
+            },
+            {
+                "from": "app.views.newspaper.owner_forgot_password",
+                "to": "random.choice",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/b4391d2a409eeaa3.txt"
+            },
+            {
+                "from": "app.views.newspaper.owner_forgot_password",
+                "to": "app.helper.misc.secure_password",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/2722d30fce2c4867.txt"
+            },
+            {
+                "from": "app.views.newspaper.get_donations_from_publishers",
+                "to": "datetime.timedelta.__init__",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/c14d3cc194afc1b1.txt"
+            },
+            {
+                "from": "app.views.newspaper.get_donations_from_publishers",
+                "to": "datetime.datetime.now",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/cf9b36fa7efaaa3f.txt"
+            },
+            {
+                "from": "app.views.newspaper.get_donations_from_publisher_csv",
+                "to": "io.getvalue",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/88264464fa5bc31b.txt"
+            },
+            {
+                "from": "app.views.newspaper.get_articles_csv",
+                "to": "io.getvalue",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/92064f15ab0a2715.txt"
+            },
+            {
+                "from": "app.views.newspaper.add_project_to_article",
+                "to": "app.helper.misc.update_recommendations",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/d5d0ab2bb79c5dae.txt"
+            },
+            {
+                "from": "app.views.newspaper.add_project_to_article",
+                "to": "app.helper.misc.get_projects_from_article",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/4fcc11f246d79f38.txt"
+            },
+            {
+                "from": "app.views.newspaper.remove_project_from_article",
+                "to": "app.helper.misc.update_recommendations",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/cc4df15d904a71ce.txt"
+            },
+            {
+                "from": "app.views.newspaper.remove_project_from_article",
+                "to": "app.helper.misc.get_projects_from_article",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/2890cad9d01560b8.txt"
+            },
+            {
+                "from": "app.views.newspaper.edit_owner",
+                "to": "app.helper.misc.secure_password",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/89c6aada09939acc.txt"
+            },
+            {
+                "from": "app.views.newspaper.edit_payment_info_publisher",
+                "to": "app.helper.misc.save_payment_info",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/5591670057861e79.txt"
+            },
+            {
+                "from": "app.views.funds.get_fund",
+                "to": "app.helper.scrapers.emory_scraper",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/8c99de1f50992392.txt"
+            },
+            {
+                "from": "app.views.funds.get_fund",
+                "to": "app.helper.scrapers.indiana_scraper",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/52daacc5a6fba097.txt"
+            },
+            {
+                "from": "app.views.funds.get_fund",
+                "to": "app.helper.fund_matching.get_best_fund",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/f4907400ffea93d3.txt"
+            },
+            {
+                "from": "app.views.funds.get_fund",
+                "to": "app.models.Article.__init__",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/14e5d267806496a3.txt"
+            },
+            {
+                "from": "app.views.funds.get_fund",
+                "to": "datetime.datetime.now",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/241465a175b84444.txt"
+            },
+            {
+                "from": "app.views.funds.fund_payment_update",
+                "to": "datetime.datetime.now",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/1c800bcc2080b329.txt"
+            },
+            {
+                "from": "app.views.funds.fund_payment_update",
+                "to": "app.models.Donation.__init__",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/9a30a228d3f256be.txt"
+            },
+            {
+                "from": "app.views.charity.forgot_password",
+                "to": "random.choice",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/07030a99ed012a5f.txt"
+            },
+            {
+                "from": "app.views.charity.forgot_password",
+                "to": "app.helper.misc.secure_password",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/1c79ba51aae5b29a.txt"
+            },
+            {
+                "from": "app.views.charity.register_organization",
+                "to": "app.helper.misc.secure_password",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/9bf5b33dac05b610.txt"
+            },
+            {
+                "from": "app.views.charity.register_organization",
+                "to": "app.models.Organization.__init__",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/1a9d14f3864aae5c.txt"
+            },
+            {
+                "from": "app.views.charity.edit_organization",
+                "to": "app.helper.misc.secure_password",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/90441868778fb561.txt"
+            },
+            {
+                "from": "app.views.charity.add_project",
+                "to": "app.models.Project.__init__",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/8b25c3e9dc58e7d7.txt"
+            },
+            {
+                "from": "app.views.charity.get_payment_logs",
+                "to": "datetime.datetime.now",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/e7897332405133fd.txt"
+            },
+            {
+                "from": "app.views.charity.get_payment_logs",
+                "to": "datetime.timedelta.__init__",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/4b0986b96f05c4f4.txt"
+            },
+            {
+                "from": "app.views.charity.get_payment_csv",
+                "to": "io.getvalue",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/d02b55f482f05d3b.txt"
+            },
+            {
+                "from": "app.views.charity.edit_payment_info_charity",
+                "to": "app.helper.misc.save_payment_info",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/9d384c41b122e25e.txt"
+            },
+            {
+                "from": "app.views.charity.add_charity_legal_record",
+                "to": "datetime.datetime.now",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/e45292bfe861266c.txt"
+            },
+            {
+                "from": "app.views.charity.add_charity_legal_record",
+                "to": "datetime.datetime.strftime",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/b984f15c5fd48b0b.txt"
+            },
+            {
+                "from": "app.helper.misc.secure_password",
+                "to": "os.urandom",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/971b2078fa891a94.txt"
+            },
+            {
+                "from": "app.helper.fund_matching.create_automation",
+                "to": "_pickle.dump",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/c354441c1dd4cdc5.txt"
+            },
+            {
+                "from": "app.helper.fund_matching.get_best_fund",
+                "to": "_pickle.load",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/5eeb8c34de8a1b30.txt"
+            },
+            {
+                "from": "app.helper.fund_matching",
+                "to": "app.helper.fund_matching.create_automation",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/3ed80330bdcce022.txt"
+            },
+            {
+                "from": "app.helper.nlp.sim",
+                "to": "app.helper.nlp.remove_stop_words",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/fab36d650e88bbba.txt"
+            },
+            {
+                "from": "app.helper.nlp.get_similarities",
+                "to": "app.helper.nlp.sim",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/e6b9913d581a4ad3.txt"
+            },
+            {
+                "from": "app.helper.nlp.full_json_with_matching",
+                "to": "app.helper.nlp.remove_stop_words",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/ba394bda41bede45.txt"
+            },
+            {
+                "from": "app.helper.nlp.full_json_with_matching",
+                "to": "multiprocessing.Pool",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/e0bbf834e83c154a.txt"
+            },
+            {
+                "from": "app.helper.nlp.full_json_with_matching",
+                "to": "multiprocessing.pool.Pool.map",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/9b44c7ab261fd88d.txt"
+            },
+            {
+                "from": "app.helper.nlp.full_json_with_matching",
+                "to": "multiprocessing.pool.Pool.close",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/145356b245db0c87.txt"
+            },
+            {
+                "from": "app.helper.nlp.full_json_with_matching",
+                "to": "multiprocessing.pool.Pool.join",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/85673894617098f1.txt"
+            },
+            {
+                "from": "app.helper.scrapers.indiana_scraper",
+                "to": "datetime.datetime.now",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/ce499f2e59a97703.txt"
+            },
+            {
+                "from": "app.helper.scrapers.indiana_scraper",
+                "to": "datetime.datetime.strptime",
+                "data": {
+                    "props": []
+                },
+                "highlightedCodePath": "code/python/main/edge-code/a6878bb03d76c089.txt"
+            }
+        ]
+    }
+}

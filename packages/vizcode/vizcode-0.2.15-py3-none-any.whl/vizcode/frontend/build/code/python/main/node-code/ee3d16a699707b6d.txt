@@ -1,0 +1,1 @@
+funds_blueprint = Blueprint('funds', __name__)

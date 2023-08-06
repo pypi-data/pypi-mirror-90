@@ -1,0 +1,67 @@
+from app.models import Fund
+import ahocorasick
+import _pickle as cPickle
+import json
+
+
+def create_automation():
+    """ Creates a trie for Aho–Corasick algorithm from tags and stores in pickle file. """
+
+    auto = ahocorasick.Automaton()
+
+    file_name = 'data/tags.json'
+    with open(file_name, 'r') as json_file:
+        data = json.load(json_file)
+        for fund_name in data.keys():
+            for tag in data[fund_name]['tags']:
+                auto.add_word(tag, (fund_name, tag))
+
+    auto.make_automaton()
+
+    file_name = 'data/tags.pickle'
+    with open(file_name, 'wb') as output_file:
+        cPickle.dump(auto, output_file)
+
+    return None
+
+
+def get_best_fund(article_title, article_text):
+    """ Runs Aho–Corasick algorithm to search tags in an article's text. """
+
+    file_name = 'data/tags.pickle'
+    with open(file_name, 'rb') as input_file:
+        auto = cPickle.load(input_file)
+
+    counts = {}
+
+    # first can article title
+    for end_ind, found in auto.iter(article_title):
+        fund_name = found[0]
+
+        if fund_name not in counts:
+            counts[fund_name] = 0
+
+        counts[fund_name] += 1
+
+    if len(counts.keys()) != 0:
+        best_fund = max(counts.items(), key=lambda x: x[1])[0]
+        return Fund.query.filter_by(fund_name=best_fund).first()
+
+    # if no matches, scan article text
+    for end_ind, found in auto.iter(article_text):
+        fund_name = found[0]
+
+        if fund_name not in counts:
+            counts[fund_name] = 0
+
+        counts[fund_name] += 1
+
+    if len(counts.keys()) == 0:
+        return Fund.query.filter_by(fund_name='Local Community Fund').first()
+
+    best_fund = max(counts.items(), key=lambda x: x[1])[0]
+    return Fund.query.filter_by(fund_name=best_fund).first()
+
+
+if __name__ == "__main__":
+    create_automation()

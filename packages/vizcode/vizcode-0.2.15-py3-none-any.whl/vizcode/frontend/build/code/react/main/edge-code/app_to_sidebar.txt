@@ -1,0 +1,5 @@
+<Route path="/dashboard" component={SideBar} />
+<Route path="/view_articles" component={SideBar}/>
+<Route path="/search_article" component={SideBar}/>
+<Route path="/settings" component={SideBar}/>
+<Route path="/contact_us" component={SideBar}/>

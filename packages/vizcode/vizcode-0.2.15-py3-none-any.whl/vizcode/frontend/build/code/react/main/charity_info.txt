@@ -1,0 +1,197 @@
+import React from "react";
+import Paper from "@material-ui/core/Paper";
+import * as classes from "eslint-config-react-app";
+import {withStyles} from "@material-ui/core/styles";
+import Button from '@material-ui/core/Button';
+import Modal from '@material-ui/core/Modal';
+import Typography from "@material-ui/core/Typography";
+import Grid from '@material-ui/core/Grid';
+import Box from "@material-ui/core/Box";
+import CloseIcon from '@material-ui/icons/Close';
+import InputAdornment from "@material-ui/core/InputAdornment";
+
+
+function getModalStyle() {
+    const top = 50;
+    const left = 50;
+    return {
+        top: `${top}%`,
+        left: `${left}%`,
+        transform: `translate(-${top}%, -${left}%)`,
+        width: "80%",
+    };
+}
+
+const useStyles = theme => ({
+    root: {
+         marginTop: theme.spacing(10),
+    },
+    submit: {
+      margin: theme.spacing(3, 0, 2),
+    },
+    modal: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    paper: {
+      position: 'absolute',
+      width: 300,
+      backgroundColor: theme.palette.background.paper,
+      borderColor: '#448AFF',
+      boxShadow: 0,
+      padding: theme.spacing(2, 4, 3),
+    },
+    paper2:{
+      padding: theme.spacing(1),
+      textAlign: 'center',
+      color: 'black',
+      height: '100%',
+      backgroundColor: 'rgba(242.00000077486038, 242.00000077486038, 242.00000077486038, 1)',
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center"
+    },
+    container: {
+        width: 0,
+        flexGrow: 1,
+        flex: 1,
+    }
+});
+
+class CharityInfo extends React.Component{
+  constructor(props){
+    super(props);
+
+    this.state = {
+      modalStyle: getModalStyle()
+    }
+  }
+
+
+  formatMoney(number) {
+    return number.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+  }
+
+  render(){
+
+    const {classes} = this.props;
+    var charity_dic = this.props.charity_dic;
+    var project_id = charity_dic.project_id;
+    var bar_style = {};
+    var raised = Number(charity_dic.project_raised.toString().replace(/[^0-9.-]+/g,""));
+    var goal = Number(charity_dic.project_goal.toString().replace(/[^0-9.-]+/g,""));
+    var percentage = raised/goal;
+    bar_style['width'] = parseInt(367 * percentage).toString().concat("px");
+    let location = charity_dic.project_state;
+
+    return(
+        <Modal
+            aria-labelledby="simple-modal-title"
+            aria-describedby="simple-modal-description"
+            open={this.props.open}
+            onClose={() => {this.props.changeHandler(project_id)}}
+        >
+        <div style={this.state.modalStyle} className={classes.paper}>
+            <div style={{float: "right"}}>
+                <Button
+                    onClick={() => {this.props.changeHandler(project_id)}}
+                >
+                <InputAdornment position="start">
+                  <CloseIcon />
+                </InputAdornment>
+                </Button>
+            </div>
+            <br/>
+            <Typography component="h1" variant="h5" style={{
+                fontSize: '24px',
+                fontFamily: 'Merriweather',
+                textAlign: 'center'}}>
+              Project Preview
+            </Typography >
+            <br/>
+            <br/>
+            <Grid container spacing={4} justify="center">
+              <Grid item sm={6} xs={12}>
+                  <Box className={classes.paper2}>
+                      <span><span style={{fontWeight: 'bold'}}>Organization Name: </span>{charity_dic.organization_name}</span></Box>
+              </Grid>
+              <Grid item sm={6} xs={12}>
+                  <Box className={classes.paper2}>
+                      <span><span style={{fontWeight: 'bold'}}>Organization Website: </span>{charity_dic.organization_website}</span></Box>
+              </Grid>
+              <Grid item sm={6} xs={12}>
+                  <Box className={classes.paper2}>
+                      <span><span style={{fontWeight: 'bold'}}>Organization Type: </span>{charity_dic.organization_type}</span></Box>
+              </Grid>
+                <Grid item sm={6} xs={12}>
+                  <Box className={classes.paper2}>
+                      <span><span style={{fontWeight: 'bold'}}>Organization EIN: </span>{charity_dic.employer_id_number}</span></Box>
+              </Grid>
+              <Grid item sm={6} xs={12}>
+                  <Box className={classes.paper2}>
+                      <span><span style={{fontWeight: 'bold'}}>Organization City: </span>{charity_dic.organization_city}</span></Box>
+              </Grid>
+              <Grid item sm={6} xs={12}>
+                  <Box className={classes.paper2}>
+                      <span><span style={{fontWeight: 'bold'}}>Organization State: </span>{charity_dic.organization_state}</span></Box>
+              </Grid>
+              <Grid item sm={12} xs={12}>
+                  <Box className={classes.paper2}>
+                      <span><span style={{fontWeight: 'bold'}}>Organization Description: </span>{charity_dic.organization_description}</span></Box>
+              </Grid>
+            </Grid>
+            <br/>
+            <br/>
+            <br/>
+            <Typography component="h2" variant="h5" style={{
+                fontSize: '18px',
+                fontFamily: 'Merriweather',
+                textAlign: 'center'}}>
+              Here is how the project will appear on the {this.props.publisherName}:
+            </Typography >
+            <br/>
+            <div className="carousel-main">
+                <div className="item-main">
+                    <div className="item-top-row">
+                        <div className="row-col">
+                            <img className="item-image" src={charity_dic.project_picture_link}/>
+                        </div>
+                        <div className="row-col">
+                            <div className="item-country">{charity_dic.organization_type.concat(' | ', location)}</div>
+                            {/*<div className="item-charity">{this.state.organization_name}</div>*/}
+                            {/*<div className="item-country">{location}</div>*/}
+                            <div className="item-name">{charity_dic.organization_name.concat(': ', charity_dic.project_name)}</div>
+                            <hr className="item-hr"/>
+                            <div className="item-description">
+                                {charity_dic.project_description}
+                            </div>
+                            <div className="item-more">
+                                LEARN MORE
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item-bottom-row">
+                        <div className="row-col-bottom align-left">
+                            <span className="item-goal">{this.formatMoney(charity_dic.project_raised)} raised of {this.formatMoney(charity_dic.project_goal)}</span>
+                        </div>
+                        <div className="row-col-bottom  align-right">
+                            <span className="item-donate">
+                              <button className="item-donate-button" id="pseudoButton">
+                                DONATE
+                              </button>
+                            </span>
+                        </div>
+                        <div className="item-box-goal">
+                            <div style={bar_style} className="item-box-raised"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </Modal>
+    )
+  }
+}
+
+export default withStyles(useStyles)(CharityInfo);

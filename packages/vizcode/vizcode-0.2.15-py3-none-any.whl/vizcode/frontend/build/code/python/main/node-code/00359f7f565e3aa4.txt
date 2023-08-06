@@ -1,0 +1,1 @@
+        self.article_link = article_link

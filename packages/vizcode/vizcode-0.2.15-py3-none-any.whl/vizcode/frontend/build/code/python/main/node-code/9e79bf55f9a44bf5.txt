@@ -1,0 +1,1 @@
+crowd_funding_blueprint = Blueprint('crowd_funding', __name__)

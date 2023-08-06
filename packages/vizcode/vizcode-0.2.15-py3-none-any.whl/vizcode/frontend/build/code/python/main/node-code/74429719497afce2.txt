@@ -1,0 +1,1 @@
+def get_blm_charities():    article_name = request.json['article_name']    with open('./data/blm_charities.json') as charity_data:        data = json.load(charity_data)    sampling = random.sample(data, 5)    return jsonify(sampling)

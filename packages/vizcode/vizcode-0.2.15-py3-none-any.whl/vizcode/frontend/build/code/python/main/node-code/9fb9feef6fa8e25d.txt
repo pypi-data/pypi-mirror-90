@@ -1,0 +1,1 @@
+blm_extension_blueprint = Blueprint('blm_extension', __name__)

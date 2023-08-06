@@ -1,0 +1,1 @@
+        self.publisher_website = publisher_website

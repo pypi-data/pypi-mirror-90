@@ -1,0 +1,1 @@
+        self.project_raised = project_raised

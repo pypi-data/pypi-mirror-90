@@ -1,0 +1,758 @@
+import React from "react";
+import {makeStyles, withStyles} from "@material-ui/core/styles";
+import cookie from "react-cookies";
+import axios from "axios";
+import Typography from "@material-ui/core/Typography";
+import Grid from "@material-ui/core/Grid";
+import Paper from "@material-ui/core/Paper";
+import ToggleButton from "./ToggleButton.js";
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+import IconButton from '@material-ui/core/IconButton';
+import MenuItem from '@material-ui/core/MenuItem';
+import {Link} from "react-router-dom";
+import Switch from "react-switch";
+import $ from "jquery";
+import Table from "@material-ui/core/Table";
+import TableHead from "@material-ui/core/TableHead";
+import TableRow from "@material-ui/core/TableRow";
+import TableCell from "@material-ui/core/TableCell";
+import TableBody from "@material-ui/core/TableBody";
+import TableContainer from '@material-ui/core/TableContainer';
+import TablePagination from '@material-ui/core/TablePagination';
+import CloseIcon from '@material-ui/icons/Close';
+
+const drawerWidth = 240;
+
+const styles = theme => ({
+  root: {
+    flexGrow: 1,
+  },
+  flex: {
+    flex: 1,
+  },
+  menuButton: {
+    marginLeft: -12,
+    marginRight: 20,
+  },
+  appBar: {
+    zIndex: theme.zIndex.drawer + 1,
+  },
+  typography: {
+    useNextVariants: true,
+  },
+})
+
+const useStyles = theme => ({
+  paper: {
+    marginTop: theme.spacing(18),
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  toolbar: {
+    paddingRight: 24, // keep right padding when drawer closed
+  },
+  toolbarIcon: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    padding: '0 8px',
+    ...theme.mixins.toolbar,
+  },
+  appBar: {
+    zIndex: theme.zIndex.drawer + 1,
+    transition: theme.transitions.create(['width', 'margin'], {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
+  },
+  appBarShift: {
+    marginLeft: drawerWidth,
+    width: `calc(100% - ${drawerWidth}px)`,
+    transition: theme.transitions.create(['width', 'margin'], {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+  },
+  menuButton: {
+    marginRight: 36,
+  },
+  menuButtonHidden: {
+    display: 'none',
+  },
+  title: {
+    flexGrow: 1,
+  },
+  drawerPaper: {
+    position: 'relative',
+    whiteSpace: 'nowrap',
+    width: drawerWidth,
+    transition: theme.transitions.create('width', {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+  },
+  drawerPaperClose: {
+    overflowX: 'hidden',
+    transition: theme.transitions.create('width', {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
+    width: theme.spacing(7),
+    [theme.breakpoints.up('sm')]: {
+      width: theme.spacing(9),
+    },
+  },
+  appBarSpacer: theme.mixins.toolbar,
+
+  content: {
+        flexGrow: 1,
+        height: '100vh',
+        overflow: 'auto',
+  },
+    table: {
+        padding: theme.spacing(6),
+        display: 'flex',
+        overflow: 'auto',
+        flexDirection: 'column'
+    },
+  paper2: {
+    display: 'flex',
+    overflow: 'auto',
+    flexDirection: 'column'
+  },
+  seeMore: {
+    marginTop: theme.spacing(1),
+  },
+  depositContext: {
+    flex: 1,
+    fontFamily: 'Lato'
+  },
+  fixedHeight: {
+    height: 240,
+  },
+  pushDown: {
+      marginTop: theme.spacing(4)
+    },
+  centerContent: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    padding: theme.spacing(3, 2),
+    height: 240,
+    fontFamily: 'Lato',
+    fontSize: '18px'
+  },
+  fixedHeightPaper: {
+    height: 240,
+    padding: theme.spacing(2),
+    display: 'flex',
+    overflow: 'auto',
+    flexDirection: 'column'
+  },
+  paperModal: {
+    position: 'absolute',
+    width: '35%',
+    backgroundColor: theme.palette.background.paper,
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(2, 4, 3),
+  },
+  form: {
+    width: '100%', // Fix IE 11 issue.
+    marginTop: theme.spacing(3),
+  },
+    input_style: {
+        '&.MuiOutlinedInput-root': {
+        // '& fieldset': {
+        //   borderColor: '#448AFF',
+        // },
+        '&.Mui-focused fieldset': {
+        borderColor: '#448AFF',
+        },
+        },
+    },
+    'input': {
+        '&::placeholder': {
+            color: 'black',
+            fontWeight: '500'
+        },
+    },
+    submit: {
+        margin: theme.spacing(1, 0, 2),
+        backgroundColor: "#448AFF",
+        color: "#FFFFFF",
+        float: 'right',
+    },
+    switched: {
+        backgroundColor: "#448AFF",
+        color: "#448AFF",
+        '&$checked': {
+          color: "#448AFF",
+          backgroundColor: "#448AFF",
+        },
+        '&$checked + $track': {
+          backgroundColor: "#448AFF",
+          color: "#448AFF",
+        },
+    },
+    // cell: {
+    //   fontSize: '13px'
+    // }
+});
+
+
+class ViewArticles extends React.Component{
+
+  constructor(props){
+    super(props);
+
+    this.searchField = this.searchField.bind(this);
+    this.changeMenu = this.changeMenu.bind(this);
+    this.getPaymentCSV = this.getPaymentCSV.bind(this);
+    this.sortArticles = this.sortArticles.bind(this);
+    this.handleChangePage = this.handleChangePage.bind(this);
+    this.handleChangeRowsPerPage = this.handleChangeRowsPerPage.bind(this);
+    this.updateSort = this.updateSort.bind(this);
+    this.changeArrows = this.changeArrows.bind(this);
+    this.convertData = this.convertData.bind(this);
+    this.availableFilters = this.availableFilters.bind(this);
+    this.filterRemove = this.filterRemove.bind(this);
+    this.addFilterParams = this.addFilterParams.bind(this);
+    this.filterInputs = this.filterInputs.bind(this);
+    this.filter = this.filter.bind(this);
+
+    this.state = {
+      accessToken: cookie.load('access_token'),
+      articles: [],
+      articleSearch: [],
+      searchParam: "article_title",
+      rowsPerPage: 5,
+      page: 0,
+      openSwitches: {revenue: false, date_published: false},
+      arrowUps: {revenue: false, date_published: true},
+      openWidget: {},
+      // availableParams: [['date_published', 'Date Published'],
+      //     ['publisher_name', 'Newspaper Name'], ['article_title', 'Article Title'],
+      //     ['article_link', 'Article Link'], ['revenue', 'Revenue']],
+      availableParams: [
+          ['date_published', 'Date Published'],
+          // ['publisher_name', 'Newspaper Name'],
+          ['article_title', 'Article Title'],
+          ['revenue', 'Revenue']],
+      filterParams: [],
+      filterObjects: [
+          {key: "date_published", low: null, high: null},
+          {key: "revenue", low: null, high: null},
+          {key: "publisher_name", input: null},
+          {key: "article_title", input: null},
+          {key: "article_link", input: null}
+      ],
+    }
+  };
+
+  componentDidMount(){
+
+    axios({
+        method: 'get',
+        url: window.address.concat('get_articles'),
+        headers: { Authorization: "Bearer " + this.state.accessToken }
+    }).then((response) => {
+        if('msg' in response.data){
+          this.setState({validAccessToken: false});
+        }
+        else{
+          let data = response.data.articles;
+          let openWidget = {};
+          for(let i = 0; i < data.length; i++){
+            openWidget[data[i].article_link] = data[i].widget_status;
+          }
+          this.setState({
+              articles: data,
+              articleSearch: data,
+              openWidget: openWidget
+          }, () => {
+              // console.log(this.state.articles[0].edited_by_newspark || this.state.articles[0].edited_by_publisher)
+          });
+        }
+    });
+
+  }
+
+  getPaymentCSV(){
+    axios({
+        method: 'get',
+        url: window.address.concat('get_articles_csv'),
+        headers: { Authorization: "Bearer " + this.state.accessToken }
+    }).then((response) => {
+        window.open(response.data.url);
+    });
+  }
+
+  searchField(event){
+    var searchParam = this.state.searchParam;
+    var string_match = event.target.value;
+    var matchedArticles = [];
+    var allArticles = this.state.articles;
+
+    if(event.target.value !== ""){
+      for(var i = 0; i < this.state.articles.length; i++){
+        if(this.state.articles[i][searchParam].toLowerCase().includes(string_match.toLowerCase())){
+          matchedArticles.push(this.state.articles[i]);
+        }
+      }
+
+      this.setState({articleSearch: matchedArticles});
+    }
+    else{
+      this.setState({articleSearch: allArticles});
+    }
+  }
+
+  changeMenu(event){
+    var param = '';
+    if(event.target.value === 'Article Link'){
+      param = 'article_link';
+    }
+    else{
+      param = 'article_title';
+    }
+    this.setState({searchParam: param});
+  }
+
+  handleChange(article_link){
+    var data = {"article_link": article_link};
+
+    $.ajax({
+        url: window.address.concat('change_widget_status'),
+        type: 'post',
+        data: data,
+        headers: {Authorization: 'Bearer ' + this.state.accessToken},
+        dataType: 'json',
+        success: function (output) {
+          // console.log("SUCCESS");
+        }.bind(this)
+    });
+
+    var openWidget = this.state.openWidget;
+    openWidget[article_link] = !openWidget[article_link];
+    this.setState({
+      openWidget: openWidget,
+    });
+  }
+
+  formatMoney(number) {
+    return number.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+  }
+
+  sortArticles (event, asc) {
+    let val = event;
+    let articles = this.state.articleSearch;
+    var sorted_articles;
+    if (asc === true) {
+        sorted_articles = articles.sort(function(a, b){
+        if (val === "date_published") {
+            return (new Date(b[val]) - new Date (a[val]))
+        }
+        else {
+            return b[val] - a[val]
+        }});
+    }
+    else {
+        sorted_articles = articles.sort(function(a, b){
+        if (val === "date_published") {
+            return (new Date(a[val]) - new Date (b[val]))
+        }
+        else {
+            return a[val] - b[val]
+        }});
+    }
+
+    this.setState({
+        articleSearch: sorted_articles,
+    });
+  }
+
+  handleChangePage(event, newPage) {
+      this.setState({page: newPage});
+  }
+
+  handleChangeRowsPerPage(event) {
+      this.setState({rowsPerPage: parseInt(event.target.value, 10), page: 0})
+  }
+
+  updateSort (event) {
+      var sorter = event.target.value;
+      var arrowDict = {revenue: false, date_published: false};
+      arrowDict[sorter] = true;
+      this.setState({
+          openSwitches: arrowDict,
+          arrowUps: {revenue: true, date_published: true},
+      })
+      this.sortArticles(sorter, true);
+  }
+
+  changeArrows(sorter) {
+    var arrowUpDict = this.state.arrowUps;
+    var arrowUp = arrowUpDict[sorter];
+    if (arrowUp === true) {
+        arrowUp = false
+    }
+    else {
+        arrowUp = true
+    }
+    arrowUpDict[sorter] = arrowUp;
+    this.setState( {
+        arrowUps: arrowUpDict,
+    });
+    this.sortArticles(sorter, arrowUp);
+  }
+
+  convertData () {
+      var oldData = this.state.articleSearch;
+      var newData = [];
+      var i;
+      for (i = 0; i < oldData.length; i++) {
+          newData[i] = {
+              amount_donations: oldData[i].amount_donations,
+              article_link: oldData[i].article_link,
+              article_title: oldData[i].article_title,
+              date_published: new Date(oldData[i].date_published),
+              publisher_name: oldData[i].publisher_name,
+              revenue: window.revenuePortion*(oldData[i].revenue),
+              widget_status: oldData[i].widget_status,
+              edited_by_newspark: oldData[i].edited_by_newspark,
+              edited_by_publisher: oldData[i].edited_by_publisher,
+          }
+      }
+      return newData;
+  }
+
+  availableFilters(event) {
+    var val = event.target.value;
+    var oldFilters = this.state.filterParams;
+    var oldAvailable = this.state.availableParams;
+    this.setState({
+        filterParams: oldFilters.concat([val]),
+        availableParams: oldAvailable.filter(item => item !== val),
+    })
+  }
+
+  filterRemove(fil) {
+      var filterO = this.state.filterObjects;
+      var i;
+      for (i = 0; i < filterO.length; i++){
+          if (filterO[i].key === fil[0]) {
+              if (["publisher_name", "article_title", "article_link"].includes(filterO[i].key)) {
+                  filterO[i].input = null
+              }
+              else {
+                  filterO[i].low = null;
+                  filterO[i].high = null;
+              }
+          }
+      }
+
+      this.setState( {
+        filterParams: this.state.filterParams.filter(item => item !== fil),
+        availableParams: this.state.availableParams.concat([fil]),
+        filterObjects: filterO,
+    })
+  }
+
+  addFilterParams (param, fil, event) {
+    var val = event.target.value;
+    var filterO = this.state.filterObjects;
+    var i;
+    if (fil[0] === "date_published"){
+        val = new Date (val)
+    }
+    for (i = 0; i < filterO.length; i++) {
+        if (filterO[i].key === fil[0]) {
+            filterO[i][param] = val
+        }
+    }
+    this.setState({
+        filterObjects: filterO,
+    })
+  }
+
+  filterInputs (fil) {
+      if (fil[0] === "revenue") {
+        return (
+            <div>
+              <TextField
+                  size="small"
+                  variant="outlined"
+                  type = 'number'
+                  placeholder={'Low'}
+                  onChange={this.addFilterParams.bind(this, 'low', fil)}/>
+              <TextField
+                  size="small"
+                  variant="outlined"
+                  type = 'number'
+                  placeholder={'High'}
+                  onChange={this.addFilterParams.bind(this, 'high', fil)}/>
+            </div>
+        )
+      }
+      else if (fil[0] === "date_published") {
+        return (
+            <div>
+                <TextField
+                    size="small"
+                    variant="outlined"
+                    type = 'date'
+                    placeholder={'Low'}
+                    onChange={this.addFilterParams.bind(this, 'low', fil)}/>
+                <TextField
+                    size="small"
+                    variant="outlined"
+                    type = 'date'
+                    placeholder={'High'}
+                    onChange={this.addFilterParams.bind(this, 'high', fil)}/>
+            </div>
+        )
+      }
+
+      else if (fil[0] === "article_title") {
+          return (
+            <div>
+                <TextField
+                    size='small'
+                    variant = 'outlined'
+                    placeholder = 'Article Title'
+                    onChange={this.addFilterParams.bind(this, "input", fil)}/>
+            </div>
+          )
+      }
+
+      else if (fil[0] === "article_link") {
+            return (
+            <div>
+                <TextField
+                    size='small'
+                    variant = 'outlined'
+                    placeholder = 'Article Link'
+                    onChange={this.addFilterParams.bind(this, "input", fil)}/>
+            </div>
+          )
+      }
+
+      else {
+        return (
+            <div>
+                <TextField
+                    size='small'
+                    variant = 'outlined'
+                    placeholder = 'Newspaper'
+                    onChange={this.addFilterParams.bind(this, "input", fil)}/>
+            </div>
+        )
+      }
+  }
+
+  filter () {
+    var results = this.convertData();
+    var filters = this.state.filterObjects;
+    var i;
+    for (i = 0; i < filters.length; i++) {
+        if (["publisher_name", "article_title", "article_link"].includes(filters[i].key) && filters[i].input != null) {
+            results = results.filter(v => v[filters[i].key].toLowerCase().includes(filters[i].input.toLowerCase()))
+        }
+        else {
+            if (filters[i].low != null) {
+                results = results.filter(v => v[filters[i].key] >= filters[i].low)
+            }
+            if (filters[i].high != null) {
+                results = results.filter(v => v[filters[i].key] <= filters[i].high)
+            }
+        }
+    }
+    return results;
+  }
+
+  render(){
+    const {classes} = this.props;
+    var open = false;
+
+    let sortParams = [{label: 'Date Published', value: 'date_published'}, {label: 'Revenue', value: 'revenue'}];
+    var filters = this.state.availableParams;
+
+    return(
+      <div className={classes.paper}>
+        <Typography component="h1" variant="h5" style={{
+            fontSize: '32px',
+            fontFamily: 'Merriweather',
+            textAlign: 'center'}}>
+          View Articles
+        </Typography >
+            <p style={{fontSize: '16px', fontFamily: 'Lato'}}>View and filter through your articles below. </p>
+          <Grid container spacing={2} justify="center">
+            <Grid item xs={10} md={10} lg={10} className={classes.pushDown}>
+            <Paper elevation={3} className={classes.table}>
+                <React.Fragment>
+                <Typography component="h1" variant="h5"
+                            style={{color: '#448AFF', fontSize: '20px', fontFamily: 'Merriweather'}}>Articles</Typography>
+                <br/>
+                <br/>
+                <div style={{display: 'flex', flexDirection: 'row'}}>
+                    <TextField
+                            // value = {this.state.searchType}
+                            select
+                            autoComplete="filterType"
+                            name="filterType"
+                            variant="outlined"
+                            required
+                            fullWidth
+                            style={{width: '300px'}}
+                            id="filterType"
+                            label="Filter By"
+                            onChange={this.availableFilters}
+                            autoFocus
+                            InputProps={{
+                              className: classes.input_style,
+                              classes: {input: this.props.classes['input']},
+                          }}
+                          >
+                        {filters.map((option) => (
+                            <MenuItem key={option} value={option}>
+                                {option[1]}
+                            </MenuItem>
+                        ))}
+                    </TextField>
+                    <div style={{marginLeft: "auto"}}>
+                      <TextField
+                        // value = {this.state.searchType}
+                        select
+                        autoComplete="sortType"
+                        name="sortType"
+                        variant="outlined"
+                        required
+                        fullWidth
+                        style={{width: '300px'}}
+                        id="sortType"
+                        label="Sort By"
+                        onChange={this.updateSort}
+                        autoFocus
+                        InputProps={{
+                          className: classes.input_style,
+                          classes: {input: this.props.classes['input']},
+                      }}
+                      >
+                          {sortParams.map((option) => (
+                          <MenuItem key={option.label} value={option.value}>
+                              {option.label}
+                          </MenuItem>
+                          ))}
+                      </TextField>
+                    </div>
+                </div>
+                <br/>
+                <Table size="small" style={{fontFamily: 'Lato'}}>
+                    {/*{console.log(this.state.filterParams)}*/}
+                    {this.state.filterParams.slice(0,this.state.filterParams.length).map((log) => (
+                        <TableRow>
+                            <TableCell>
+                                <div>
+                                    <IconButton style={{ color: '#448AFF' }} onClick={() => this.filterRemove(log)}>
+                                        <CloseIcon/>
+                                    </IconButton>
+                                    {log[1]} {this.filterInputs(log)}
+                                    <br/>
+                                </div>
+                            </TableCell>
+                        </TableRow>
+                    ))}
+                </Table>
+                <br/>
+                <TableContainer>
+                <Table size="small" style={{fontFamily: 'Lato'}}>
+                    <TableHead>
+                        <TableRow backgroun>
+                           <TableCell align='center'/>
+                            <TableCell align='center'>Date Published
+                                <IconButton  onClick={() => this.changeArrows("date_published")}>
+                                    <ToggleButton openSwitches={this.state.openSwitches.date_published} arrowUps={this.state.arrowUps.date_published}/>
+                                </IconButton>
+                            </TableCell>
+                            {/*<TableCell align='center'>Newspaper Name</TableCell>*/}
+                            <TableCell align='center'>Article Title</TableCell>
+                            {/*<TableCell align='center'>Article Link</TableCell>*/}
+                            {/*<TableCell align='center'>Number of Projects</TableCell>/*/}
+                            <TableCell align='center'>
+                                Revenue
+                                <IconButton onClick={() => this.changeArrows("revenue")}>
+                                    <ToggleButton openSwitches={this.state.openSwitches.revenue} arrowUps={this.state.arrowUps.revenue}/>
+                                </IconButton>
+                            </TableCell>
+                            {/*<TableCell align='center'>Donation Count</TableCell>*/}
+                            <TableCell align='center'>Widget Status</TableCell>
+                            <TableCell align='center'>Manage Widget</TableCell>
+                        </TableRow>
+                    </TableHead>
+                    <TableBody>
+                        {this.filter().slice(this.state.page * this.state.rowsPerPage,
+                            this.state.page * this.state.rowsPerPage + this.state.rowsPerPage).map((log) => (
+                            <TableRow >
+                                <TableCell align='center' className={classes.cell}>
+                                    <span>{(log.edited_by_newspark || log.edited_by_publisher) ? '*' : ''}</span>
+                                </TableCell>
+                                <TableCell align='center' className={classes.cell}>{(log.date_published).toLocaleDateString('en-US')}</TableCell>
+                                {/*<TableCell align='center' className={classes.cell}>{log.publisher_name}</TableCell>*/}
+                                <TableCell align='center' className={classes.cell}>{log.article_title}</TableCell>
+                                {/*<TableCell align='center' className={classes.cell}>{log.article_link}</TableCell>*/}
+                                <TableCell align='center' className={classes.cell}>{this.formatMoney(log.revenue)}</TableCell>
+                                <TableCell align='center' className={classes.cell}>
+                                  <Switch
+                                    onChange={() => this.handleChange(log.article_link)}
+                                    checked={this.state.openWidget[log.article_link]}
+                                    InputProps={{
+                                      className: classes.switched,
+                                      classes: {input: classes.switched},
+                                    }}
+                                    classes = {{input: classes.switched}}
+                                  />
+                                </TableCell>
+                                <TableCell className={classes.cell}>
+                                  <Link to={{
+                                    pathname: "/search_article",
+                                    state: {article_link: log.article_link}
+                                  }}>
+                                    <Button
+                                      fullWidth
+                                      variant="contained"
+                                      className={classes.submit}>
+                                      MANAGE
+                                    </Button>
+                                  </Link>
+                                </TableCell>
+                            </TableRow>
+                        ))}
+                    </TableBody>
+                </Table>
+                </TableContainer>
+                <TablePagination
+                    rowsPerPageOptions={[5, 10, 25]}
+                    component="div"
+                    count={this.filter().length}
+                    rowsPerPage={this.state.rowsPerPage}
+                    page={this.state.page}
+                    onChangePage={this.handleChangePage}
+                    onChangeRowsPerPage={this.handleChangeRowsPerPage}
+                />
+                </React.Fragment>
+                <div className={classes.seeMore}>
+                    <Link color="primary" style={{color: '#448AFF', fontFamily: 'Lato'}} onClick={this.getPaymentCSV}>
+                    Click here to download article log
+                    </Link>
+                </div>
+            </Paper>
+        </Grid>
+      </Grid>
+      </div>
+    )
+  }
+}
+
+export default withStyles(useStyles)(ViewArticles);

@@ -1,0 +1,1 @@
+        self.organization_description = organization_description

@@ -1,0 +1,274 @@
+import React from 'react';
+import Avatar from '@material-ui/core/Avatar';
+import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import TextField from '@material-ui/core/TextField';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import Paper from '@material-ui/core/Paper';
+import Box from '@material-ui/core/Box';
+import Grid from '@material-ui/core/Grid';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import Typography from '@material-ui/core/Typography';
+import { withStyles } from '@material-ui/core/styles';
+import $ from 'jquery';
+import cookie from 'react-cookies'
+import { Redirect, Link} from 'react-router-dom';
+import EmailIcon from '@material-ui/icons/Email';
+import LockIcon from '@material-ui/icons/Lock';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import Toolbar from "@material-ui/core/Toolbar";
+import ForgotPassword from './ForgotPassword.js';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+
+
+//Styling for the Login Component
+const useStyles = theme => ({
+  root: {
+    height: '100vh',
+  },
+  image: {
+    // backgroundImage: 'url(https://i.ibb.co/b1Vmr5V/login-with-background2.png)',
+    backgroundImage: 'url(https://images.unsplash.com/photo-1494386346843-e12284507169?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2600&q=80)',
+    backgroundRepeat: 'no-repeat',
+    backgroundColor:
+      theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  },
+  paper: {
+    margin: theme.spacing(4, 4),
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  avatar: {
+    margin: theme.spacing(1),
+    backgroundColor: theme.palette.secondary.main,
+  },
+  form: {
+    width: '100%', // Fix IE 11 issue.
+    marginTop: theme.spacing(1),
+  },
+  submit: {
+    margin: theme.spacing(3, 0, 2),
+    backgroundColor: "#448aff",
+    color: "#FFFFFF"
+  },
+  'input': {
+    '&::placeholder': {
+      color: 'black',
+      fontWeight: '500'
+    },
+  },
+  link: {
+    color: 'black',
+    textDecoration: 'none',
+    fontSize: '14px'
+  },
+  pushDown: {
+    paddingTop: theme.spacing(1)
+  },
+  logo: {
+    paddingTop: theme.spacing(8)
+  },
+  label_style: {
+    '&.Mui-focused': {
+      color: '#448AFF',
+    },
+  },
+  input_style: {
+    '&.MuiOutlinedInput-root': {
+      // '& fieldset': {
+      //   borderColor: '#448AFF',
+      // },
+      '&.Mui-focused fieldset': {
+        borderColor: '#448AFF',
+      },
+    },
+  }
+});
+
+class Login extends React.Component{
+  //Constructor for the login Page
+  constructor(props){
+    super(props);
+    this.updateInfo = this.updateInfo.bind(this);
+    this.loginToken = this.loginToken.bind(this);
+    // this.moveSignup = this.moveSignup.bind(this);
+    this.changeOpen = this.changeOpen.bind(this);
+
+    this.state = {
+      email: "",
+      username: "",
+      password: "",
+      isAuthenticated: false,
+      moveToSignUp: false,
+      open_forgot_password: false,
+      showErrorMessage: false,
+      validAccessToken: true
+    };
+  }
+
+  componentDidMount() {
+    cookie.remove('access_token');
+  }
+
+  updateInfo(event){
+    //console.log(event.target.name, event.target.value);
+    this.setState({[event.target.name]: event.target.value});
+    //console.log(this.state.email, this.state.password);
+  }
+
+  changeOpen(){
+    var currOpen = this.state.open_forgot_password;
+    this.setState({
+      open_forgot_password: !currOpen
+    });
+  }
+
+
+  loginToken(){
+    var data = {"username": this.state.username, "password": this.state.password};
+
+    $.post(window.address.concat('owner_login'), data, function(output) {
+      if(typeof output !== 'string'){
+        // console.log(output['access_token']);
+        cookie.save('access_token', output['access_token']);
+        window.newsparkAccount = data.username === 'admin'
+        this.setState({isAuthenticated: true});
+      } else{
+        this.setState({showErrorMessage: true});
+      }
+    }.bind(this));
+  }
+
+  // moveSignup(){
+  //   this.setState({moveToSignUp: true});
+  // }
+
+  render(){
+    const {classes} = this.props;
+
+    if(this.state.isAuthenticated){
+      return(
+        <Redirect from="/" to={{
+          pathname: "/dashboard",
+          state: {pastLocation: 'login'}}}/>
+      );
+    }
+
+    // if(this.state.moveToSignup){
+    //   return(
+    //     <Redirect from='/' to="/signup"/>
+    //   );
+    // }
+
+    let errorMessage = <div></div>
+
+    if(this.state.showErrorMessage) {
+      errorMessage = (
+          <div>
+            <br/>
+            <Typography style={{textAlign: 'center', color: '#ff0000'}}>Incorrect username and/or password </Typography>
+          </div>)
+    }
+
+    return (
+      <Grid container component="main" className={classes.root}>
+        <CssBaseline />
+
+        <Grid item xs={false} sm={5} md={7} className={classes.image} />
+
+        <Grid item xs={12} sm={7} md={5} component={Paper} elevation={0} square>
+          <Grid container justify="center" className={classes.logo}><img src="https://i.ibb.co/BN83vM7/antlers.png" height="150"/></Grid>
+          <div className={classes.paper}>
+            <Typography component="h1" variant="h5">
+              <Box fontWeight="fontWeightBold" style={{fontFamily: "Lato"}}>Welcome to <span style={{color: '#448AFF'}}>newspark</span>!</Box>
+            </Typography>
+            <br/>
+            {/*<Typography variant="subtitle2" align="center" style={{fontFamily: 'Lato', fontSize: '16px'}}>*/}
+            {/*  newspark helps your organization raise funds.*/}
+            {/*</Typography>*/}
+            {/*<Typography variant="subtitle2" align="center" style={{fontFamily: 'Lato', fontSize: '16px'}}>*/}
+            {/*  Sign in to add and manage your fundraisers.*/}
+            {/*</Typography>*/}
+            <br/>
+            <form className={classes.form} noValidate>
+              <TextField
+                variant="outlined"
+                margin="normal"
+                required
+                fullWidth
+                id="username"
+                placeholder="Username"
+                name="username"
+                autoComplete="username"
+                onChange={this.updateInfo}
+                autoFocus
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <AccountCircleIcon style={{ color: '#448AFF' }}/>
+                    </InputAdornment>),
+                  classes: {input: this.props.classes['input']},
+                  className: classes.input_style
+                }}/>
+              <TextField
+                variant="outlined"
+                margin="normal"
+                required
+                fullWidth
+                name="password"
+                type="password"
+                id="password"
+                autoComplete="current-password"
+                placeholder="Password"
+                onChange={this.updateInfo}
+                InputProps={{
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <LockIcon style={{ color: '#448AFF' }}/>
+                  </InputAdornment>),
+                  classes: {input: this.props.classes['input']},
+                  className: classes.input_style
+                }}/>
+              <br/>
+              {errorMessage}
+              <Grid container justify="center" className={classes.pushDown}>
+                <Grid item sm={12}>
+                  <Button
+                    fullWidth
+                    variant="contained"
+                    className={classes.submit}
+                    onClick={this.loginToken}>
+                    LOGIN
+                  </Button>
+                  </Grid>
+              </Grid>
+              <Grid container>
+                <Grid item xs>
+                  <Link href="#" variant="body2" className={classes.link} onClick={this.changeOpen} style={{fontFamily: 'Lato', fontSize: '16px'}}>
+                    Forgot password?
+                  </Link>
+                  <ForgotPassword
+                    open={this.state.open_forgot_password}
+                    changeHandler={this.changeOpen}
+                    classes={classes}
+                  />
+                </Grid>
+                <Grid item>
+                  <Link to="/signup" onClick={this.moveSignup} className={classes.link} style={{fontFamily: 'Lato', fontSize: '16px'}}>
+                    Don't have an account? <span style={{textDecoration: 'underline'}}>Sign up Here</span>
+                  </Link>
+                </Grid>
+              </Grid>
+            </form>
+          </div>
+        </Grid>
+      </Grid>
+    );
+  }
+}
+
+export default withStyles(useStyles)(Login);

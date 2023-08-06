@@ -1,0 +1,1 @@
+        self.project_short_description = project_short_description
