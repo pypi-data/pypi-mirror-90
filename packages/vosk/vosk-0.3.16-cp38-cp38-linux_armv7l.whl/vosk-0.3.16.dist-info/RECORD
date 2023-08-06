@@ -1,0 +1,7 @@
+vosk/__init__.py,sha256=ysaEVitPgA4GWu4UhQrXmltn3Jlb3ql34Zh12z0fCmM,65
+vosk/_vosk.cpython-38-arm-linux-gnueabihf.so,sha256=WbtzxD-QUW0YaNhscmeQa_3ZuNYHOG3l2Yv6UMbdCqo,7023848
+vosk/vosk.py,sha256=DsGcUqzBC7d9sSXoa2fYXfgnKO-pa-0__3U6z-UeAQk,3718
+vosk-0.3.16.dist-info/METADATA,sha256=PZyY6Cezw5mWislyPItTaDEOFJGOJ_RACX6O2cQh_0k,1637
+vosk-0.3.16.dist-info/WHEEL,sha256=y90nkiUElaIe5yy_xXjjKDSfoBdOpFVon56B1aO753s,103
+vosk-0.3.16.dist-info/top_level.txt,sha256=VyhCKFInHWKAvlbaAYoqHJ2Y35GrQNYA-Ul2CRc30Uk,5
+vosk-0.3.16.dist-info/RECORD,,
