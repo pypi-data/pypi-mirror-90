@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: echoflow
+Version: 0.0.2
+Summary: Normalizing flows for generative modeling of tabular datasets.
+Home-page: https://github.com/k15z/echoflow
+Author: Kevin Alex Zhang
+Author-email: kevalexzhang@gmail.com
+License: Proprietary
+Description: <p align="center">
+            <a href="https://k15z.github.io/EchoFlow">
+                <img width=760 src="docs/assets/header-dark.png">
+            </a>
+        </p>
+        
+        <p align="center">
+            <a href="https://github.com/k15z/echoflow/actions"><img src="https://github.com/k15z/echoflow/workflows/Build%20Main/badge.svg"></a>
+            <a href="https://k15z.github.io/EchoFlow"><img src="https://github.com/k15z/echoflow/workflows/Documentation/badge.svg"></a>
+            <a href="https://codecov.io/gh/k15z/echoflow"><img src="https://codecov.io/gh/k15z/echoflow/branch/main/graph/badge.svg"></a>
+        </p>
+        
+        ---
+        This library provides tools for generative modeling of tabular datasets using 
+        normalizing flows. Some of it's features include:
+        
+        * Density estimation.
+        * Joint + conditional sampling.
+        * Categorical + continuous values.
+        * Normalizing flows from RealNVP and MADE.
+        
+        To get started with EchoFlow, check out our documentation [here](https://k15z.github.io/EchoFlow)! Or, learn more about this project from our blog post [here](https://kevz.dev/echoflow/).
+        
+Keywords: echoflow
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: all
