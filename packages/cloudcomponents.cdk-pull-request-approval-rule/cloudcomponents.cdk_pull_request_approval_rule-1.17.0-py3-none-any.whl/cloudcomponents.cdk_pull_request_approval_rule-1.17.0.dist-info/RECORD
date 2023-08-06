@@ -1,0 +1,8 @@
+cloudcomponents/cdk_pull_request_approval_rule/__init__.py,sha256=bkQFPQQFu1dT2Ngq0l4o7vycxFIOSbiH65iOjdN59nQ,16937
+cloudcomponents/cdk_pull_request_approval_rule/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cloudcomponents/cdk_pull_request_approval_rule/_jsii/__init__.py,sha256=GaVSCKY0YyRNDr544NFFmBOu8CrRsa6srurS633zdRA,498
+cloudcomponents/cdk_pull_request_approval_rule/_jsii/cdk-pull-request-approval-rule@1.17.0.jsii.tgz,sha256=V5UZP1hunzepdeT58zMUSdRaGKBFmr0GyvpujYaENqw,14959
+cloudcomponents.cdk_pull_request_approval_rule-1.17.0.dist-info/METADATA,sha256=IUC7fax0PaiJBsTIBYx6iy7iG3mCRgjgD68Ke7kKtNM,6162
+cloudcomponents.cdk_pull_request_approval_rule-1.17.0.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+cloudcomponents.cdk_pull_request_approval_rule-1.17.0.dist-info/top_level.txt,sha256=B4EWas985OPzDPLZgw2jcOsscXpuQJyowJnB5pl9rpQ,16
+cloudcomponents.cdk_pull_request_approval_rule-1.17.0.dist-info/RECORD,,
