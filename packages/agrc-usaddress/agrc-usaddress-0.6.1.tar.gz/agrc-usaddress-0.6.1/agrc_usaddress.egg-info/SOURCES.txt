@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+agrc_usaddress.egg-info/PKG-INFO
+agrc_usaddress.egg-info/SOURCES.txt
+agrc_usaddress.egg-info/dependency_links.txt
+agrc_usaddress.egg-info/requires.txt
+agrc_usaddress.egg-info/top_level.txt
+usaddress/__init__.py
+usaddress/usaddr.crfsuite
