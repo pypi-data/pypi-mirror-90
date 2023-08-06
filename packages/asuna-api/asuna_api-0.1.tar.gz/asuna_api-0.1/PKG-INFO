@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: asuna_api
+Version: 0.1
+Summary: A python wrapper for the asuna api
+Home-page: https://github.com/JDJGInc/asuna_api
+Author: JDJGIncOfficial
+Author-email: jdjgbot@gmail.com
+License: MIT
+Download-URL: https://github.com/JDJGInc/asuna_api/archive/0.01.tar.gz
+Description: UNKNOWN
+Keywords: wrapper,api,random
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
