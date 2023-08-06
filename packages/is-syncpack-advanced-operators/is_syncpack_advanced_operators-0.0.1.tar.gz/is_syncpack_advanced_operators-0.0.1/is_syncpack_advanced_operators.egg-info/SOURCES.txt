@@ -1,0 +1,11 @@
+LICENSE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+is_syncpack_advanced_operators/__init__.py
+is_syncpack_advanced_operators.egg-info/PKG-INFO
+is_syncpack_advanced_operators.egg-info/SOURCES.txt
+is_syncpack_advanced_operators.egg-info/dependency_links.txt
+is_syncpack_advanced_operators.egg-info/top_level.txt
