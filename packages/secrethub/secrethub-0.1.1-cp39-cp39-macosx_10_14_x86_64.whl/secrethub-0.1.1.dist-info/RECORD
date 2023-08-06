@@ -1,0 +1,9 @@
+secrethub/_secrethub.cpython-39-darwin.so,sha256=K1-ANFhWR9ipUTJjw2h1qUxd1rEPU9qRW__l3uQ5v5Q,64904
+secrethub/__init__.py,sha256=3wScnPXcXeQ65bR_D0iWYiC5sYg0Blt09CUTL5vWZno,24
+secrethub/secrethub.py,sha256=1oXCIjaq1N-9I4VpnRUo7sN3Xf79LoMT3xKJEuQo5dA,5007
+secrethub/.dylibs/Client.dylib,sha256=E-0O2frhJjGXb62M7-HJGIugFkEzWrCg9fXkhT9KMVs,23017560
+secrethub-0.1.1.dist-info/RECORD,,
+secrethub-0.1.1.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+secrethub-0.1.1.dist-info/WHEEL,sha256=7vkJ3ZnexegyTUl8grQkOVww_TVBMjxMIgcotcWEQj4,110
+secrethub-0.1.1.dist-info/top_level.txt,sha256=vefqp1jSqH0k4ym2aFsWTSOBSWepWAyYweetgQTJzm8,10
+secrethub-0.1.1.dist-info/METADATA,sha256=bZ-lpAchkRYCtW1w8lPzXX0PaAqas76jo1ZOZg0Pn4k,6661
