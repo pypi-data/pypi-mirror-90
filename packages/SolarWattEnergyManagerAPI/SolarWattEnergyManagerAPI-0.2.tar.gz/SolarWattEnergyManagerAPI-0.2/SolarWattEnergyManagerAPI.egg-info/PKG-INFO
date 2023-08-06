@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: SolarWattEnergyManagerAPI
+Version: 0.2
+Summary: API wrapper for solar watt energy manager
+Home-page: https://github.com/SebastianWallat/SolarWattEnergyManagerAPI
+Author: Sebastian Wallat
+Author-email: wallatsebastian@gmail.com
+License: MIT
+Download-URL: https://github.com/SebastianWallat/SolarWattEnergyManagerAPI/archive/v_02.tar.gz
+Description: # SolarWattEnergyManagerAPI
+        A python3 library to access the data of a solar watt energy manager
+        
+        This library returns the current power data of your solar array via the local energy manager api.
+        
+        ## Installation
+        
+        ```
+        pip install SolarWattEnergyManagerAPI
+        ```
+        
+        ## Usage
+        ```
+        import SolarWattEnergyManagerAPI as energyManagerApi
+        
+        # create a new api object
+        api = EnergyManagerAPI()
+        
+        # set host or ip of energy manager device
+        api.set_host('hostname or ip')
+        
+        # optional, change log level
+        api.set_log_level('WARNING')
+        
+        # test the connection (returns bool based on success)
+        result = api.test_connection()
+        
+        # pull data from the device (retuirn dictionary with power values)
+        data = api.pull_data()
+        ```
+        
+        
+Keywords: IOT,Solar,Local
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
