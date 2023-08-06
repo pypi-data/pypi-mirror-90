@@ -1,0 +1,17 @@
+slot/__init__.py,sha256=g24AE3f80uOmnJigkC2hxdLnGGSM3TP_ROSPkMZk514,210
+slot/cli/__init__.hy,sha256=oVPyYhdFujuYhih5vWpbVuzreaZYGNVYKYqXBxtPWng,289
+slot/cli/list.hy,sha256=T1W8Dh2ArJSuO_XoiR7uR5jK-KY0z3zhU1hI4AEhX4s,684
+slot/cli/options.hy,sha256=Au-o4Kx1QopLtyMMwBrwLDQbSv02kR-JygDPqNZTGwY,499
+slot/cli/stores/__init__.hy,sha256=NWBdpzlYr-1BEA4d7obc7aMqb7kkBMec6Y46Z_aEygU,188
+slot/cli/stores/create.hy,sha256=U2QrkOpispKtk3jsZjd6LI0MO0aKiomUhTPBUvdb8bU,935
+slot/cli/stores/ingest.hy,sha256=CK20MNfoPXnWQrGvjZA_Cuv6FJymqmwNFdhwMa3-7uw,877
+slot/cli/use.hy,sha256=Dqy35iIkGrrjGMQZqcmrzplVy-0o2wkKcNvFTA_1Iac,481
+slot/config.hy,sha256=gYMO5wGmVcwyYe99adJgv7OGekc_dc46U3c8JXzzeQ0,713
+slot/constants.hy,sha256=zqf4r_nN4BNCa7Y6l7SQLqoXLkSC6ObWwcGqqZwOIQ4,144
+slot/exceptions.hy,sha256=DwlAc6oGVXHIzDHgBfxaIfzyzy5FzMbFd_J77FRXSsM,135
+slot/store.hy,sha256=4mHrBP99DtREz0mVe1EqkOgiAy7hw-qhuduF048anvk,2290
+slot/utils.hy,sha256=pIERNWbxuWEp1VmC1eCmX5dVocLi8_yM1OBcNMMD1Mw,206
+slot-0.3.0.dist-info/entry_points.txt,sha256=abyuzNIYzVjbKvLds6VUiBhRt8Jh0M2qNSOUmTSAYfw,36
+slot-0.3.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+slot-0.3.0.dist-info/METADATA,sha256=zKlp6LQ6TC_z45SBDL_wdLXjwU-ElbTrcnRuVshHZ3s,1962
+slot-0.3.0.dist-info/RECORD,,
