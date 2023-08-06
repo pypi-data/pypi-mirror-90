@@ -1,0 +1,10 @@
+my_sensors/__init__.py,sha256=jyI0jZJ8_oIAvjWRMvIGeZjjgo-8SpSuT78Kz5w1SzU,27
+my_sensors/models.py,sha256=YXRG8sgV4uNMDGwIVW3ASc6b40wBi-Ishg7Yve4u2Xc,2573
+my_sensors/sensors/__init__.py,sha256=xVdrqiFvpzfLJudE1Tci2_W9UlYzr1t60q1PAkZXAvE,25
+my_sensors/sensors/ccs811.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_sensors/sensors/dht22.py,sha256=5j6CPnLpKjIPoNxJQnoLYi8xMk13U2FdaBvlmNAWVQg,1516
+my_sensors/sensors/tsl2561.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+my_sensors-0.1.0rc2.dist-info/LICENSE,sha256=rBe6ePJnBReHoqwTs7Tc9amRhWf0P6hiL04j1rDHPmE,1077
+my_sensors-0.1.0rc2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+my_sensors-0.1.0rc2.dist-info/METADATA,sha256=sWGtiuQ_VlRLNKAg4qHQEejucQTfa6Uvfzi2XwAAbrc,477
+my_sensors-0.1.0rc2.dist-info/RECORD,,
