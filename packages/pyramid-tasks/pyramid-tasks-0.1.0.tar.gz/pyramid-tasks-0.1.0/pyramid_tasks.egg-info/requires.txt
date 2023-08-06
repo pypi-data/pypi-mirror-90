@@ -1,0 +1,6 @@
+pyramid<2,>=1.9
+celery<5,>=4
+venusian
+
+[testing]
+pytest<7,>=6
