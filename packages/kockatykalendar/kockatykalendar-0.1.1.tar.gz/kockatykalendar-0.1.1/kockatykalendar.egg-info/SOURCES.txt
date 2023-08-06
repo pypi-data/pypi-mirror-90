@@ -1,0 +1,12 @@
+README.rst
+setup.py
+kockatykalendar/__init__.py
+kockatykalendar/api.py
+kockatykalendar/django.py
+kockatykalendar/events.py
+kockatykalendar/generators.py
+kockatykalendar.egg-info/PKG-INFO
+kockatykalendar.egg-info/SOURCES.txt
+kockatykalendar.egg-info/dependency_links.txt
+kockatykalendar.egg-info/requires.txt
+kockatykalendar.egg-info/top_level.txt
