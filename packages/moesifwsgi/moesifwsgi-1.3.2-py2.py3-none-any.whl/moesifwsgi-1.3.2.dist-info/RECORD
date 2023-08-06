@@ -1,0 +1,17 @@
+moesifwsgi/__init__.py,sha256=TPCkmTs3htVIDt1KKs3M7XHtKh6iayqB80ckxO8VPCg,26
+moesifwsgi/app_config.py,sha256=CUryVfyJudzzBjRzmLiNxIV5ujMDajKdojJ1uxhqArQ,2103
+moesifwsgi/client_ip.py,sha256=awfV__H1IXJPiH2-CgRI3xq1I7JVcSr2r8VQl1JDiko,4634
+moesifwsgi/event_mapper.py,sha256=aARYAyMHmrmkkDmct39aiWS8K1zcikGqFJJGxCSIA8I,3345
+moesifwsgi/http_response_catcher.py,sha256=HBBHQTQGxfenAHYQfbt1QM0Q8um3w9kH_bJOiVJedxw,810
+moesifwsgi/logger_helper.py,sha256=40TrPbEc5mbKl2KuSQeeIguApz4yZnc5zHn1AGnhtuI,10059
+moesifwsgi/middleware.py,sha256=UtojR8_qaIDJhCvHHKDLQkXvRk9LyhmZss0VkstzbB8,9941
+moesifwsgi/moesif_data_holder.py,sha256=zMRKJaJZ0D6Ac2ljYeAYCXvwvRm6yF23VJTQv8bs2DA,2618
+moesifwsgi/parse_body.py,sha256=VXYUbgFSfByp20aeVM92sPSdy8hq1IzOcL8ILj6olsk,2344
+moesifwsgi/send_batch_events.py,sha256=QY25vOyOmiFZjApKQ9YD3Fs_jpLZzZg7op9E87u-i0o,1743
+moesifwsgi/update_companies.py,sha256=RVoRGPthHmOaDBuBDXOB8w8y8Fzma4b36YEHxP_jsMs,6638
+moesifwsgi/update_users.py,sha256=CKYwOUxow8j5irL3gH0VgSXvhgL6JvoFYOlvBit5wZs,6378
+moesifwsgi-1.3.2.dist-info/LICENSE,sha256=_d7jDA5tJayYQqjQcWeJTMK0j9uMojxPKQc_b91gfgY,11911
+moesifwsgi-1.3.2.dist-info/METADATA,sha256=jK1cBPnxSfxIxFI8IJZKRq_OhXlis_wNCEz-83sXuU0,16884
+moesifwsgi-1.3.2.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+moesifwsgi-1.3.2.dist-info/top_level.txt,sha256=FG7dSIdC-6OWPli7PFDNQoCHTwKW2i4o8fMcOWaWzP0,11
+moesifwsgi-1.3.2.dist-info/RECORD,,
