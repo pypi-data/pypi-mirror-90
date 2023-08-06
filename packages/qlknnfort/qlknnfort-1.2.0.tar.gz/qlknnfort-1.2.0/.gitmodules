@@ -1,0 +1,9 @@
+[submodule "tubs"]
+	path = tubs
+	url = https://gitlab.com/tci-dev/tubs.git
+[submodule "lib/src/fruitsh"]
+	path = lib/src/fruitsh
+	url = https://github.com/Exteris/fruitsh.git
+[submodule "lib/src/fruit"]
+	path = lib/src/fruit
+	url = https://gitlab.com/qualikiz-group/fruit.git

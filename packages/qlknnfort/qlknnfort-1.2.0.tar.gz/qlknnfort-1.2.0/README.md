@@ -1,0 +1,1 @@
+Please refer to the [wiki](https://gitlab.com/qualikiz-group/QLKNN-fortran/wikis) for more usage-type documentation. Detailed information about all methods and types defined in QLKNN-fortran can be found on the [GitLab Pages](https://qualikiz-group.gitlab.io/QLKNN-fortran/)

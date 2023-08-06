@@ -1,0 +1,13 @@
+numpy
+pandas
+f90wrap
+
+[all]
+matplotlib
+f90nml
+IPython
+
+[develop]
+matplotlib
+f90nml
+IPython

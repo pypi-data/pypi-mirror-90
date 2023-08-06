@@ -1,0 +1,284 @@
+# project-subproj.make
+#
+# Functions for defining subprojects.
+
+# FUNCTION: SUBPROJECT_open
+#
+# Begin a new subproject. All `SUBPROJECT_*`, `LOCAL_*` and related commands
+# will refer to this subproject until the subproject is closed by a call to
+# `SUBPROJECT_close`.
+#
+# Each subproject requires an unique name. Each subproject creates one output
+# defined by its kind. The following kinds are currently available:
+#   - "staticlib": creates a static library (lib<name>-<variant>.a)
+#   - "app": creates an executable (<name>-<variant>.exe)
+#
+# Multiple subprojects may be created. Subprojects may not be nested. Each
+# opened subproject must be closed using `SUBPROJECT_close`. Closed subprojects
+# may not be reopened.
+#
+# Arguments: name, kind
+define SUBPROJECT_open =
+$(eval $(call SUBPROJECT_open_impl_,$1,$2))
+endef 
+define SUBPROJECT_open_impl_ =
+PROJECT_SUB_TGT  := $(call UTIL_target_of,$1,$2)
+PROJECT_SUB_NAME := $1
+PROJECT_SUB_ROOT := $(abspath $(dir $(lastword $(MAKEFILE_LIST))))
+PROJECT_SUB_KIND := $2
+
+PROJECT_SUB_SRCS := 
+PROJECT_SUB_ARTS := 
+PROJECT_SUB_LIBS := 
+PROJECT_SUB_DEPS := 
+
+PROJECT_SUB_EXTRALNK_$(TOOLCHAIN) :=
+
+endef
+
+# FUNCTION: SUBPROJECT_close
+#
+# Close a previously opened subproject. See `SUBPROJECT_open`.
+#
+# Arguments: (none)
+define SUBPROJECT_close =
+$(eval $(call SUBPROJECT_close_impl_,$(PROJECT_SUB_NAME),$(PROJECT_SUB_KIND)))
+endef
+define SUBPROJECT_close_impl_ =
+PROJECT_SUB_$1_TGT   := $(call UTIL_target_of,$1,$2)
+PROJECT_SUB_$1_NAME  := $(PROJECT_SUB_NAME)
+PROJECT_SUB_$1_KIND  := $(PROJECT_SUB_KIND)
+PROJECT_SUB_$1_IDEN  := $(PROJECT_SUB_KIND)-$(PROJECT_SUB_NAME)
+PROJECT_SUB_$1_ROOT  := $(PROJECT_SUB_ROOT)
+PROJECT_SUB_$1_SRCS  := $(PROJECT_SUB_SRCS)
+PROJECT_SUB_$1_LIBS  := $(foreach l, $(PROJECT_SUB_LIBS),-l$l)
+PROJECT_SUB_$1_DEPS  := $(PROJECT_SUB_DEPS)
+PROJECT_SUB_$1_OBJS  := $(call UTIL_obj_of,$(PROJECT_SUB_SRCS))
+PROJECT_SUB_$1_ARTS  := $(call UTIL_mod_of,$(PROJECT_SUB_SRCS)) $(PROJECT_SUB_ARTS)
+PROJECT_SUB_$1_BARR  := $$(foreach d,$(PROJECT_SUB_DEPS),$$(if $$(PROJECT_SUB_$$d_IDEN),meta-build-$$(PROJECT_SUB_$$d_IDEN)))
+
+PROJECT_TARGETS += $$(PROJECT_SUB_$1_IDEN)
+
+$(call TARGET_add_extra_flags,$(PROJECT_SUB_TGT),$(PROJECT_SUB_EXTRALNK_$(TOOLCHAIN)))
+
+meta-build-$$(PROJECT_SUB_$1_IDEN) : $$(PROJECT_SUB_$1_BARR) $$(PROJECT_SUB_$1_TGT)
+
+meta-clean-$$(PROJECT_SUB_$1_IDEN) :
+	$$(call UTIL_clean_files,$$(PROJECT_SUB_$1_OBJS),object files,[$$(PROJECT_SUB_$1_NAME)])
+	$$(call UTIL_clean_files,$$(PROJECT_SUB_$1_ARTS),build artefacts,[$$(PROJECT_SUB_$1_NAME)])
+	$$(call UTIL_clean_file,$$(PROJECT_SUB_$1_TGT),$$(PROJECT_SUB_$1_KIND),[$$(PROJECT_SUB_$1_NAME)])
+
+$$(eval $$(call UTIL_link,$$(PROJECT_SUB_$1_KIND),$$(PROJECT_SUB_$1_TGT),$$(PROJECT_SUB_$1_OBJS),$$(PROJECT_SUB_$1_LIBS) $$(foreach d,$$(PROJECT_SUB_$1_DEPS),$$(or $$(PROJECT_SUB_$$d_TGT),-l$$d-$$(SYS))),[$$(PROJECT_SUB_$1_NAME)]))
+
+$(foreach s,$(PROJECT_SUB_SRCS),$(eval $(call UTIL_build,$s,[$$(PROJECT_SUB_$1_NAME)])))
+
+endef
+
+# FUNCTION: SUBPROJECT_depend
+#
+# Add dependency between different subprojects; i.e., the current subproject
+# will depend on the specified subprojects. For example, an "app" subproject
+# may depend on one or more "staticlibrary" subprojects.
+#
+# The targets of depended-upon subprojects are automatically added as inputs to
+# the linker.
+#
+# Arguments: list of subproject names
+define SUBPROJECT_depend =
+$(eval PROJECT_SUB_DEPS += $1)
+endef
+
+# FUNCTION: SUBPROJECT_set_linkflags
+#
+# Add custom linker flags to the current subproject. The first argument
+# specifies the toolchain for which the linker flags should be added; the
+# function is typically called once for each toolchain.
+#
+# Arguments: toolchain, linker flags
+define SUBPROJECT_set_linkflags =
+$(eval PROJECT_SUB_EXTRALNK_$(strip $1) := $2)
+endef
+
+# FUNCTION: SUBPROJECT_add
+#
+# Add source files to the subproject. `SUBPROJECT_add` expects full paths; use
+# `LOCAL_add` together with `SUBPROJECT_set_local_dir*` if relative paths are
+# more convenient.
+#
+# `SUBPROJECT_add` optionally accepts additional flags for the specified
+# source(s) as its second argument.
+#
+# Arguments: list of sources (full paths), optional extra build flags
+define SUBPROJECT_add =
+$(foreach s,$1,$(call SUBPROJECT_add_impl_,$s) $(call TARGET_add_extra_flags,$s,$2))
+endef
+define SUBPROJECT_add_impl_ =
+$(eval PROJECT_SUB_SRCS += $1)
+endef
+
+# FUNCITON: SUBPROJECT_src_dep
+# 
+# Specifiy generic dependencies. Causes the specified file to be rebuilt if
+# any of the dependencies were changed
+#
+# Arguments: source file (full path), dependencies (full path(s))
+define SUBPROJECT_src_dep =
+$(call SRC_depend_add,$1,$2)
+endef
+# FUNCTION: SUBPROJECT_mod_dep
+#
+# Specify a fortran module dependency. 
+#
+# Arguments: fortran source file (full path), generated module file name(s)
+define SUBPROJECT_mod_dep =
+$(call MOD_depend_add,$1,$2)
+endef
+# FUNCTION: SUBPROJECT_mod_out
+#
+# Specify modules generated by a fortran source file. This is useful when a 
+# fortran source file contains modules that do not share the name of the source
+# file.
+#
+# Arguments: fortran source file (full path), output module file name(s)
+define SUBPROJECT_mod_out =
+$(call MOD_output_add,$1,$2)
+endef
+# FUNCTION: SUBPROJECT_add_artefact
+#
+# Specify additional files that will be generated by the build of this
+# subproject. This ensures that the offending files are properly deleted during
+# `make clean`.
+#
+# WARNING: any files passed to this function *WILL* be deleted by `make clean`
+#
+# Arguments: full file paths
+define SUBPROJECT_add_artefact =
+$(eval PROJECT_SUB_ARTS += $1)
+endef
+
+# FUNCTION: SUBPROJECT_set_local_dir_here
+#
+# Set the current local directory to the directory of the most recently 
+# included makefile. Henceforth, all `LOCAL_*` functions will accept paths
+# relative to that directory.
+# 
+# See also `SUBPROJECT_set_local_dir`
+#
+# `SUBPROJECT_set_local_dir_here` may be called multiple times in each sub-
+# project; this is useful if source files are gathered from several different
+# directories. The most recent of either `SUBPROJECT_set_local_dir_here` or
+# `SUBPROJECT_set_local_dir` will be in effect.
+#
+# Arguments: (none)
+define SUBPROJECT_set_local_dir_here =
+$(eval SUB_LOCALDIR := $(abspath $(dir $(lastword $(MAKEFILE_LIST)))))
+endef
+# FUNCTION: SUBPROJECT_set_local_dir
+#
+# Set the current local directory to the directory specified. Henceforth, all
+# `LOCAL_*` functions will accept paths relative to the specified directory.
+#
+# `SUBPROJECT_set_local_dir` may be called multiple times in each subproject;
+# this is useful if source files are gathered from several different
+# directories. The most recent of either `SUBPROJECT_set_local_dir_here` or
+# `SUBPROJECT_set_local_dir` will be in effect.
+#
+# Arguments: full path to directory
+define SUBPROJECT_set_local_dir =
+$(eval SUB_LOCALDIR := $(abspath $1))
+endef
+
+# FUNCTION: SUBPROJECT_set_local_fflags
+#
+# Set additional compiler flags for fortran source files added via `LOCAL_*`
+# functions. The first argument determines for which toolchain the specified
+# flags should be used.
+# 
+# `SUBPROJECT_set_local_fflags` may be called multiple times for each
+# subproject. The most recent call will be in effect. 
+#
+# Arguments: toolchain, additional fortran flags
+define SUBPROJECT_set_local_fflags = 
+$(eval $(call SUBPROJECT_set_local_fflags_impl_,$1,$2))
+endef
+define SUBPROJECT_set_local_fflags_impl_ = 
+SUB_LOCALFLAGS_$(strip $1)_.f := $2
+SUB_LOCALFLAGS_$(strip $1)_.f90 := $2
+SUB_LOCALFLAGS_$(strip $1)_.F90 := $2
+endef
+
+# FUNCTION: SUBPROJECT_reset_local
+#
+# Reset "local" values, i.e., the values set by `SUBPROJECT_set_local_*`. 
+#
+# Arguments: (none)
+define SUBPROJECT_reset_local =
+$(eval $(call SUBPROJECT_reset_local_impl_))
+endef
+define SUBPROJECT_reset_local_impl_=
+SUB_LOCALDIR := 
+SUB_LOCALFLAGS_$(TOOLCHAIN)_.f := 
+SUB_LOCALFLAGS_$(TOOLCHAIN)_.f90 := 
+SUB_LOCALFLAGS_$(TOOLCHAIN)_.F90 := 
+endef
+
+# FUNCTION: LOCAL_add
+#
+# Add local source files to subproject. Source files are specified by their
+# relative paths with respect to the current local directory of the subproject,
+# as specified via `SUBPROJECT_set_local_dir*`.
+#
+# Local sources added via `LOCAL_add` will automatically use the additional
+# compiler flags specified via e.g. `SUBPROJECT_set_local_fflags`.
+#
+# Arguments: list of relative source paths
+define LOCAL_add =
+$(foreach s,$1,$(call SUBPROJECT_add,$(SUB_LOCALDIR)/$(strip $s),$(SUB_LOCALFLAGS_$(TOOLCHAIN)_$(suffix $s))))
+endef
+
+
+# FUNCITON: LOCAL_src_dep
+# 
+# Add arbitrary dependencies. This is useful to deal with source files that
+# INCLUDE/#include other sources, and must be rebuilt when the included files
+# change.
+#
+# See also `SUBPROJECT_src_dep`
+#
+# Arguments: relative path to file with #include, list of included files 
+# (relative paths)
+define LOCAL_src_dep =
+$(call SRC_depend_add,$(SUB_LOCALDIR)/$(strip $1),$(foreach d,$2,$(SUB_LOCALDIR)/$(strip $d)))
+endef
+# FUNCTION: LOCAL_mod_dep
+#
+# Specify fortran module dependency of a local fortran source file. Note that
+# fortran module file names do not use paths.
+#
+# See also `SUBPROJECT_mod_dep`.
+#
+# Arguments: fortran source relative path, list of fortran module file names
+define LOCAL_mod_dep =
+$(call SUBPROJECT_mod_dep,\
+	$(foreach src,$1,$(SUB_LOCALDIR)/$(strip $(src))),\
+	$2\
+)
+endef
+
+# FUNCTION: LOCAL_mod_out
+#
+# Specify modules defined in the local fortran soure file. Note that fortran
+# module file names do not use paths.
+#
+# See also `SUBPROJECT_mod_out`.
+#
+# Arguments: fortran source relative path, list of fortran module names.
+define LOCAL_mod_out =
+$(call SUBPROJECT_mod_out,\
+	$(SUB_LOCALDIR)/$(strip $1),\
+	$2\
+)
+endef
+
+
+#EOF vim:syntax=make:foldmethod=marker:ts=4:noexpandtab:

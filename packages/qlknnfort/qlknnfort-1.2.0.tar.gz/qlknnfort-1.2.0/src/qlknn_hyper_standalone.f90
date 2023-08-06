@@ -1,0 +1,172 @@
+! This file is part of QLKNN-fortran
+! You should have received the QLKNN-fortran LICENSE in the root of the project
+program qlknn_hyper
+#include "core/preprocessor.inc"
+  use qlknn_evaluate_nets
+#ifdef QLKNN_10D_SOURCE_NET
+  use qlknn_10d_source_net
+#else
+  use qlknn_disk_io
+#endif
+  use cla
+  use kinds
+#ifdef MPI
+  use mpi
+#endif
+  implicit none
+  integer(lli) :: n_trails, trial, verbosity, n_rho, n_in, n_out, n_outputs, n_nets, n_total_inputs
+  type (qlknn_options) :: opts
+  type (qlknn_normpars) :: qlknn_norms
+  real(qlknn_dp), dimension(:,:), allocatable :: input
+  real(qlknn_dp) :: start, finish
+  real(qlknn_dp), dimension(:,:), allocatable :: qlknn_out
+  real(qlknn_dp), dimension(:,:,:), allocatable :: dqlknn_out_dinput
+  character(len=4096) :: nn_path = '', input_path = '', output_path = ''
+  character(len=11) :: cmd_name = 'qlknn_hyper'
+  character(len=STRLEN) :: key, arg
+  logical :: calculate_jacobian, dump_to_disk
+
+#if defined(LLI) && defined(__INTEL_COMPILER)
+    integer(lli) my_world_rank
+#else
+    integer(li) my_world_rank
+#endif
+#ifdef MPI
+#if defined(LLI) && defined(__INTEL_COMPILER)
+    integer(lli) mpi_ierr, world_size
+#else
+    integer(li) mpi_ierr, world_size
+#endif
+#endif
+
+  namelist /sizes/ n_rho, n_in
+  namelist /test/ input
+  namelist /outp_sizes/ n_rho, n_in, n_out
+  namelist /outp/ qlknn_out
+  namelist /outp_jacobian/ dqlknn_out_dinput
+
+  ! Command line argument parsing
+  call cla_init
+
+
+  call cla_register('-n', '--nn-path', 'Path to NN namelist folder', cla_char, 'data/qlknn-hyper-namelists')
+  call cla_register('-i', '--input', 'Path to input namelist file', cla_char, 'tests/test.nml')
+  call cla_register('-o', '--output', 'Path to output namelist file', cla_char, 'tests/output.nml')
+  call cla_register('-d', '--dump-to-disk', 'Dump output to disk', cla_flag, 'f')
+  call cla_register('-j', '--jacobian', 'Calculate Jacobian', cla_flag, 'f')
+  call cla_register('-m', '--merge-modes', 'Merge modes (ITG/TEM) together', cla_flag, 'f')
+  call cla_register('-r', '--victor-rule', 'Apply "victor rule" rotation rule in postprocessing', cla_flag, 'f')
+  call cla_register('-t', '--trails', 'Run the network calculation the specified amount of times', cla_int, '1')
+  call cla_register('-v', '--verbosity', 'Set verbosity', cla_int, '1')
+  call cla_register('-a', '--force-evaluate-all', 'Force to calculate all networks irrespective of settings', cla_flag, 'f')
+  call cla_register('-e', '--use-effective-diffusivity', 'Use effective diffusivity instead of D and V', cla_flag, 'f')
+
+  ! Look for help-like arguments
+  call cla_get_command_argument(1, arg)
+  key = trim(arg)
+  if (cla_str_eq(trim(key),'-h')      .or. &
+      cla_str_eq(trim(key),'-?')      .or. &
+      cla_str_eq(trim(key),'/?')      .or. &
+      cla_str_eq(trim(key),'-H')      .or. &
+      cla_str_eq(trim(key),'help')    .or. &
+      cla_str_eq(trim(key),'-help')   .or. &
+      cla_str_eq(trim(key),'--help')  .or. &
+      cla_str_eq(trim(key),'--usage')      &
+      ) then
+     call cla_help(cmd_name)
+     stop
+  endif
+
+  !call cla_validate(cmd_name)
+
+  call cla_get('--nn-path', nn_path)
+  call cla_get('--input', input_path)
+  call cla_get('--output', output_path)
+  calculate_jacobian = cla_key_present('--jacobian')
+  dump_to_disk = cla_key_present('--dump-to-disk')
+  call cla_get('--trails', n_trails)
+  call cla_get('--verbosity', verbosity)
+
+  call default_qlknn_hyper_options(opts)
+
+  opts%merge_modes = cla_key_present('--merge-modes')
+  opts%apply_victor_rule = cla_key_present('--victor-rule')
+  opts%force_evaluate_all = cla_key_present('--force-evaluate-all')
+  opts%use_effective_diffusivity = cla_key_present('--use-effective-diffusivity')
+
+  ! Read input namelist
+  open(10,file=input_path,action='READ')
+  read(10,nml=sizes)
+  allocate(input(n_in, n_rho))
+  read(10,nml=test)
+  close(10)
+
+  n_outputs = 10
+  n_nets = 20
+  n_total_inputs = int(size(input, 1), li)
+
+  if (opts%merge_modes) then
+    n_out = n_outputs
+  else
+    n_out = n_nets
+  end if
+  allocate(qlknn_out(n_rho, n_out))
+  allocate(dqlknn_out_dinput(n_out, n_rho, n_total_inputs))
+
+  ! Variables for Victor rule
+  ALLOCATE(qlknn_norms%A1(n_rho))
+  qlknn_norms%A1 = 2.
+  qlknn_norms%R0 = 3.
+  qlknn_norms%a = 1.
+
+
+#ifdef QLKNN_10D_SOURCE_NET
+  call init_all_nets()
+#else
+  call load_qlknn_hyper_nets_from_disk(nn_path, verbosity)
+#endif
+
+#ifdef MPI
+    call MPI_INIT(mpi_ierr)
+    call MPI_COMM_SIZE(MPI_COMM_WORLD, world_size, mpi_ierr)
+    call MPI_COMM_RANK(MPI_COMM_WORLD, my_world_rank, mpi_ierr)
+    if (verbosity >= 1) then
+      if (my_world_rank == 0) then
+        print *, 'World size is         ', world_size
+      end if
+      print *, 'Hello world from rank ', my_world_rank
+    endif
+#else
+    my_world_rank = 0
+#endif
+
+  call cpu_time(start)
+  do trial = 1,n_trails
+    if (.not. calculate_jacobian) then
+      call evaluate_QLKNN_10D(input, nets, qlknn_out, verbosity, opts, qlknn_norms)
+    else
+      call evaluate_QLKNN_10D(input, nets, qlknn_out, verbosity, opts, qlknn_norms, dqlknn_out_dinput)
+    endif
+  end do
+  call cpu_time(finish)
+  if (my_world_rank == 0) then
+    print '("Trials = ",i9)',n_trails
+    print '("Time   = ",f9.3," milliseconds.")',1e3*(finish-start)/n_trails
+  endif
+
+  if (dump_to_disk) then
+    open(10,file=output_path,action='WRITE')
+    write(10,nml=outp_sizes)
+    write(10,nml=outp)
+    if (calculate_jacobian) then
+      write(10,nml=outp_jacobian)
+    endif
+    close(10)
+  endif
+
+#ifdef MPI
+  call MPI_FINALIZE(mpi_ierr)
+#endif
+  call all_networktype_deallocate(nets)
+
+end program qlknn_hyper

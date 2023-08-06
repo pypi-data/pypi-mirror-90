@@ -1,0 +1,12 @@
+# This file is part of QLKNN-fortran
+# You should have received the QLKNN-fortran LICENSE in the root of the project
+{
+    'real': {
+        '8': 'double',
+        'qlknn_dp': 'double',
+    },
+    'integer': {
+        'li': 'int',
+        'lli': 'long_long',
+    },
+}

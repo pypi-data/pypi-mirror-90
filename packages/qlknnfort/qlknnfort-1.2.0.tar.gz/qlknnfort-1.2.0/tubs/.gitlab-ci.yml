@@ -1,0 +1,77 @@
+image:
+  name: gcc:4.8
+variables:
+  GIT_SUBMODULE_STRATEGY: none
+
+# Build jobs
+.build_template:
+  stage: build
+  before_script:
+    - mkdir tmp
+    - wget http://ftp.gnu.org/gnu/make/make-4.1.tar.gz
+    - tar xvf make-4.1.tar.gz
+    - cd make-4.1/
+    - ./configure
+    - make
+    - make install
+    - cd ..
+    - export PATH=/usr/local/bin:$PATH
+    - whereis make
+    - make --version
+    - echo deb http://archive.debian.org/debian/ wheezy main contrib non-free > /etc/apt/sources.list
+    - apt-get update && apt-get install -y gfortran
+    - gfortran --version
+  variables:
+    TOOLCHAIN: gcc
+    BUILD: release
+    TARGET_ENV: default
+
+build_gcc:
+  extends: .build_template
+  script:
+    - make -C tests/simple_fortran_transport_module TOOLCHAIN=$TOOLCHAIN TUBSCFG_MPI=0 BUILD=release
+    - make -C tests/simple_fortran_transport_module TOOLCHAIN=$TOOLCHAIN TUBSCFG_MPI=0 BUILD=debug
+    - mv ../bin ../include ../build .
+  artifacts:
+    name: "$CI_COMMIT_REF_NAME"
+    paths:
+      - bin
+      - include
+      - build
+    when: always
+
+# Test templates
+.test_template: &test_template
+  stage: test
+  before_script:
+    - echo deb http://archive.debian.org/debian/ wheezy main contrib non-free > /etc/apt/sources.list
+    - apt-get update && apt-get install -y libgfortran3
+  script:
+    - export TOOLCHAIN=$(echo $CI_JOB_NAME | grep -o -e "intel\|gcc\|pgi")
+    - export BUILD=$(echo $CI_JOB_NAME | grep -o -e "debug\|release")
+    - export MODELS=$(echo $CI_JOB_NAME | rev | cut -d'_' -f1 | rev)
+    - export BIN_NAME=$MODELS"_standalone"-$TOOLCHAIN-$BUILD-default
+    - echo Running command "'"./bin/$BIN_NAME.exe"'"
+    - pwd
+    - ls
+    - ls bin
+    - ./bin/$BIN_NAME.exe > $CI_JOB_NAME.txt 2>&1
+    - cat $CI_JOB_NAME.txt
+    - grep "Done running binary karel_standalone" $CI_JOB_NAME.txt
+  artifacts:
+    name: "$CI_COMMIT_REF_NAME"
+    paths:
+      - bin
+      - $CI_JOB_NAME.txt
+    when: always
+
+# Test jobs
+test2_gcc_debug_karel:
+  extends: .test_template
+  needs:
+    - build_gcc
+
+test2_gcc_release_karel:
+  extends: .test_template
+  needs:
+    - build_gcc

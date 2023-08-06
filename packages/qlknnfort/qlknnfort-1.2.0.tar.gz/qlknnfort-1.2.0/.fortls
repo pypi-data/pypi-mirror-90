@@ -1,0 +1,9 @@
+{
+  "source_dirs": ["src", "src/core", "tests"],
+  "include_dirs": ["src"],
+  "ext_source_dirs": [
+      "lib/src/fruit/src",
+      "lib/src/CLAF90"
+  ],
+  "lowercase_intrinsics": true
+}

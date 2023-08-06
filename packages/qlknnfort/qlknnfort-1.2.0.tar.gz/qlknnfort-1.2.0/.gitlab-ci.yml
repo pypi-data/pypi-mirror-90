@@ -1,0 +1,580 @@
+image:
+   name: registry.gitlab.com/qualikiz-group/qualikiz
+
+stages:
+  - build
+  - test
+  - doc
+
+# Change pip's cache directory to be inside the project directory since we can
+# only cache local items.
+variables:
+    PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+    GIT_SUBMODULE_STRATEGY: recursive
+    QLKNN_HYPER_NAMELIST_DIR: data/qlknn-hyper-namelists/
+    QLKNN_JETEXP_NAMELIST_DIR: data/qlknn-jetexp-namelists/
+    QLKNN_HORNNET_NAMELIST_DIR: data/qlknn-hornnet-namelists/
+    PYTHONTOOLS_VENV_PATH: "$CI_PROJECT_DIR/venv/qualikiz"
+    HOSTFULL: "docker-debian"
+    PYTHON: "python"
+# Pip's cache doesn't store the python packages
+# https://pip.pypa.io/en/stable/reference/pip_install/#caching
+#
+# If you want to also cache the installed packages, you have to install
+# them in a virtualenv and cache it as well.
+.cache_python: &cache_python
+  paths:
+    - $PIP_CACHE_DIR
+    - $PYTHONTOOLS_VENV_PATH
+
+########################################
+# General Docker environment templates #
+########################################
+
+.prepare_env_docker: &prepare_env_docker |
+  source ~/.bashrc
+
+
+# In standalone Docker run also
+# export PYTHONTOOLS_VENV_PATH=/builds/qualikiz-group/QuaLiKiz/venv/qualikiz
+.prepare_venv_python: &prepare_venv_python |
+  # Create a python venv with access to the globally installed packages. This links to setuptools, pip and python, pkg_resources, easy_install directly.
+  $PYTHON -m venv --system-site-packages $PYTHONTOOLS_VENV_PATH
+  source $PYTHONTOOLS_VENV_PATH/bin/activate
+  # Simulate Python3.9 --upgrade-deps flag
+  #   --upgrade-deps        Upgrade core dependencies: pip setuptools to the
+  #                         latest version in PyPI
+  $PYTHON -m pip install --force-reinstall --upgrade pip setuptools wheel
+  # Give venv PYTONPATH and PATH precedence over pre-defined env ones
+  export PATH=$VIRTUAL_ENV/bin:$PATH
+  export PYTHONPATH=$VIRTUAL_ENV/lib/python`python --version | cut -d' ' -f2 | cut -d'.' -f1-2`/site-packages/:$PYTHONPATH
+  export PYTHONPATH=$PYTHONPATH:/usr/lib/python3/dist-packages/ # Add system packages
+  export LANG=en # Set language for GUIs
+
+
+##############################
+# Global tests and templates #
+##############################
+
+.install_prereq_python: &install_prereq_python |
+  pip install numpy IPython pandas
+  pip install f90wrap
+
+.install_intel_license: &install_intel_license |
+  mkdir -p $HOME/Licenses
+  echo $INTEL_LICENSE_P1 > $HOME/Licenses/intel.lic
+  echo $INTEL_LICENSE_P2 >> $HOME/Licenses/intel.lic
+
+.test_template: &test_template
+  stage: test
+  before_script:
+    - *prepare_env_docker
+    - *install_intel_license
+    - echo Running job $CI_JOB_NAME as user $(whoami)
+    - export TOOLCHAIN=$(echo $CI_JOB_NAME | grep -o -e "intel\|gcc\|pgi")
+    - export TUBSCFG_MPI=$(echo $CI_JOB_NAME | grep -cm1 mpi)
+    - export TUBSCFG_MKL=$(echo $CI_JOB_NAME | grep -cm1 mkl)
+    - export MKL=$(echo $CI_JOB_NAME | if $(grep -q mkl); then echo -mkl; fi)
+    - export MPI=$(echo $CI_JOB_NAME | if $(grep -q mpi); then echo -mpi; fi)
+    - export BUILD=${BUILD:-release}
+    - export TARGET=${TARGET:-""}
+  except:
+    - documentation
+  artifacts:
+    name: "$CI_JOB_NAME-$CI_COMMIT_REF_NAME"
+
+################
+# Python tests #
+################
+
+pages:
+  image: python:3.7
+  stage: doc
+  script:
+    - pip install ford
+    - ford ford-settings.md
+    - mv doc/ public/
+  artifacts:
+    paths:
+      - public
+  only:
+      - master
+      - documentation
+      - docs
+
+test_create_namelists_hyper:
+  stage: build
+  before_script:
+    - *prepare_venv_python
+    - *install_prereq_python
+  script:
+    - git clone --depth 1 --branch master --single-branch https://gitlab.com/qualikiz-group/qlknn-hyper.git
+    - mkdir -p $QLKNN_HYPER_NAMELIST_DIR-test
+    - $PYTHON tools/json_nn_to_namelist.py qlknn-hyper $QLKNN_HYPER_NAMELIST_DIR-test
+  cache:
+    <<: *cache_python
+    policy: push
+  artifacts:
+    paths:
+      - $QLKNN_HYPER_NAMELIST_DIR-test
+  except:
+    - documentation
+
+test_create_namelists_jetexp:
+  stage: build
+  before_script:
+    - *prepare_venv_python
+    - *install_prereq_python
+  script:
+    - git clone --depth 1 --branch master --single-branch https://gitlab.com/qualikiz-group/qlknn-jetexp.git
+    - mkdir -p $QLKNN_JETEXP_NAMELIST_DIR-test
+    - $PYTHON tools/json_nn_to_namelist.py qlknn-jetexp $QLKNN_JETEXP_NAMELIST_DIR-test
+  cache: {}
+  artifacts:
+    paths:
+      - $QLKNN_JETEXP_NAMELIST_DIR-test
+  except:
+    - documentation
+
+test_create_namelists_hornnet:
+  stage: build
+  before_script:
+    - *prepare_venv_python
+    - *install_prereq_python
+  script:
+    - git clone --depth 1 --branch master --single-branch https://gitlab.com/qualikiz-group/qlknn-hornnet.git
+    - mkdir -p $QLKNN_HORNNET_NAMELIST_DIR-test
+    - $PYTHON tools/json_nn_to_namelist.py qlknn-hornnet $QLKNN_HORNNET_NAMELIST_DIR-test --late_fusion
+  cache: {}
+  artifacts:
+    paths:
+      - $QLKNN_HORNNET_NAMELIST_DIR
+  except:
+    - documentation
+
+
+###############
+# Build tests #
+###############
+.build_template: &build_template
+  extends: .test_template
+  stage: build
+  script:
+    - echo Running command "\"make TOOLCHAIN=$TOOLCHAIN BUILD=$BUILD TUBSCFG_MPI=$TUBSCFG_MPI TUBSCFG_MKL=$TUBSCFG_MKL HOSTFULL=docker-debian VERBOSE=1 $TARGET\""
+    - make TOOLCHAIN=$TOOLCHAIN BUILD=$BUILD TUBSCFG_MPI=$TUBSCFG_MPI TUBSCFG_MKL=$TUBSCFG_MKL HOSTFULL=docker-debian VERBOSE=1 $TARGET
+  cache: {} # No cache needed for this job
+  artifacts:
+    paths:
+      - bin
+      - lib/lib*
+      - include
+      - build
+      - test.nml
+    when: always
+  except:
+    - documentation
+
+build_intel:
+  extends: .build_template
+
+build_intel_mkl:
+  extends: .build_template
+
+build_intel_mpi:
+  extends: .build_template
+
+build_intel_mpi_mkl:
+  extends: .build_template
+
+# Will be superseded by setup.py
+.build_python_gcc:
+  extends: .build_template
+  variables:
+    BUILD: release
+    TARGET: python
+    TOOLCHAIN: gcc
+    BUILD: release
+    TUBSCFG_MPI: 0
+    TUBSCFG_MKL: 0
+  cache:
+    <<: *cache_python
+    policy: pull
+  before_script:
+    - *prepare_venv_python
+    - *install_prereq_python
+
+build_gcc:
+  extends: .build_template
+
+build_gcc_mkl:
+  extends: .build_template
+
+build_gcc_mpi:
+  extends: .build_template
+
+build_gcc_mpi_mkl:
+  extends: .build_template
+
+build_pgi:
+  extends: .build_template
+
+build_pgi_mkl:
+  extends: .build_template
+
+build_pgi_mpi:
+  extends: .build_template
+
+build_pgi_mpi_mkl:
+  extends: .build_template
+
+############
+# Runtests #
+############
+
+.runtest_template: &runtest_template
+  extends: .test_template
+  script:
+    - echo "Running command '"$RUN_CMD ./bin/$TYPE-$TOOLCHAIN-$BUILD-default$MPI$MKL.exe"'"
+    - env $RUN_CMD ./bin/$TYPE-$TOOLCHAIN-$BUILD-default$MPI$MKL.exe
+  variables:
+    RUN_CMD: none
+    TYPE: none
+
+runtest_pgi_mpi:
+  extends: .runtest_template
+  dependencies:
+    - build_pgi_mpi
+  variables:
+    RUN_CMD: mpirun.pgi --allow-run-as-root
+    TYPE: qlknn_hyper
+  needs: ["build_pgi_mpi"]
+
+runtest_pgi_mpi_hornnet:
+  extends: .runtest_template
+  dependencies:
+    - build_pgi_mpi
+  variables:
+    RUN_CMD: mpirun.pgi --allow-run-as-root
+    TYPE: qlknn_hornnet
+  needs: ["build_pgi_mpi"]
+##############
+# FRUIT tests#
+##############
+
+.fruit_template: &fruit_template
+  extends: .test_template
+  script:
+    - chmod +x lib/src/fruitsh/fruit.sh
+    - export TEST_ONLY_STR=$(echo $TEST_ONLY | if $(! grep -q none); then echo -s "$TEST_ONLY"; fi)
+    - echo "Running command '"env TOOLCHAIN=$TOOLCHAIN BUILD=$BUILD TUBSCFG_MPI=$TUBSCFG_MPI TUBSCFG_MKL=$TUBSCFG_MKL HOSTFULL=docker-debian VERBOSE=1 ./lib/src/fruitsh/fruit.sh -c "'"$RUN_CMD"'" $TEST_ONLY_STR "'"$TEST_PATH"'""'"
+    - env TOOLCHAIN=$TOOLCHAIN BUILD=$BUILD TUBSCFG_MPI=$TUBSCFG_MPI TUBSCFG_MKL=$TUBSCFG_MKL HOSTFULL=docker-debian VERBOSE=1 ./lib/src/fruitsh/fruit.sh -c "$RUN_CMD" $TEST_ONLY_STR "$TEST_PATH"
+  variables:
+    TEST_PATH: none
+    RUN_CMD: none
+    TEST_ONLY: none
+  artifacts:
+    paths:
+      - test*
+    when: always
+
+# Reference implementation is MPI + MKL
+dummy_intel_mpi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_intel_mpi_mkl
+  variables:
+    TEST_PATH: tests/test_dummy.f90
+    RUN_CMD: /opt/intel/compilers_and_libraries_2018.6.288/linux/mpi/intel64/bin/mpirun -genv I_MPI_PIN=off
+  needs: ["build_intel_mpi_mkl"]
+
+regression_intel:
+  extends: .fruit_template
+  dependencies:
+    - build_intel
+  variables:
+    TEST_PATH: tests/test_regression_hyper.f90
+  needs: ["build_intel"]
+
+regression_intel_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_intel_mkl
+  variables:
+    TEST_PATH: tests/test_regression_hyper.f90
+  needs: ["build_intel_mkl"]
+
+regression_intel_mpi:
+  extends: .fruit_template
+  dependencies:
+    - build_intel_mpi
+  variables:
+    TEST_PATH: tests/test_regression_hyper.f90
+    RUN_CMD: /opt/intel/compilers_and_libraries_2018.6.288/linux/mpi/intel64/bin/mpirun -genv I_MPI_PIN=off
+  needs: ["build_intel_mpi"]
+
+regression_intel_mpi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_intel_mpi_mkl
+  variables:
+    TEST_PATH: tests/test_regression_hyper.f90
+    RUN_CMD: /opt/intel/compilers_and_libraries_2018.6.288/linux/mpi/intel64/bin/mpirun -genv I_MPI_PIN=off
+  needs: ["build_intel_mpi_mkl"]
+
+regression_gcc:
+  extends: .fruit_template
+  dependencies:
+    - build_gcc
+  variables:
+    TEST_PATH: tests/test_regression_hyper.f90
+  needs: ["build_gcc"]
+
+regression_gcc_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_gcc_mkl
+  variables:
+    TEST_PATH: tests/test_regression_hyper.f90
+  needs: ["build_gcc_mkl"]
+
+regression_gcc_mpi:
+  extends: .fruit_template
+  dependencies:
+    - build_gcc_mpi
+  variables:
+    TEST_PATH: tests/test_regression_hyper.f90
+    RUN_CMD: mpirun.openmpi --allow-run-as-root
+  needs: ["build_gcc_mpi"]
+
+regression_gcc_mpi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_gcc_mpi_mkl
+  variables:
+    TEST_PATH: tests/test_regression_hyper.f90
+    RUN_CMD: mpirun.openmpi --allow-run-as-root
+  needs: ["build_gcc_mpi_mkl"]
+
+regression_pgi:
+  extends: .fruit_template
+  dependencies:
+    - build_pgi
+  variables:
+    TEST_PATH: tests/test_regression_hyper.f90
+  needs: ["build_pgi"]
+
+regression_pgi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_pgi_mkl
+  variables:
+    TEST_PATH: tests/test_regression_hyper.f90
+  needs: ["build_pgi_mkl"]
+
+regression_pgi_mpi:
+  extends: .fruit_template
+  dependencies:
+    - build_pgi_mpi
+  variables:
+    TEST_PATH: tests/test_regression_hyper.f90
+    RUN_CMD: mpirun.pgi --allow-run-as-root
+  needs: ["build_pgi_mpi"]
+
+regression_pgi_mpi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_pgi_mpi_mkl
+  variables:
+    TEST_PATH: tests/test_regression_hyper.f90
+    RUN_CMD: mpirun.pgi --allow-run-as-root
+  needs: ["build_pgi_mpi_mkl"]
+
+jacobian_hyper_layer_intel_mpi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_intel_mpi_mkl
+  variables:
+    TEST_PATH: tests/test_jacobian_hyper.f90
+    RUN_CMD: /opt/intel/compilers_and_libraries_2018.6.288/linux/mpi/intel64/bin/mpirun -genv I_MPI_PIN=off
+    TEST_ONLY: test_jacobian_hyper_case_one
+  needs: ["build_intel_mpi_mkl"]
+
+jacobian_hyper_inp_hidden_intel_mpi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_intel_mpi_mkl
+  variables:
+    TEST_PATH: tests/test_jacobian_hyper.f90
+    RUN_CMD: /opt/intel/compilers_and_libraries_2018.6.288/linux/mpi/intel64/bin/mpirun -genv I_MPI_PIN=off
+    TEST_ONLY: test_jacobian_hyper_case_two
+  needs: ["build_intel_mpi_mkl"]
+
+jacobian_hyper_net_intel_mpi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_intel_mpi_mkl
+  variables:
+    TEST_PATH: tests/test_jacobian_hyper.f90
+    RUN_CMD: /opt/intel/compilers_and_libraries_2018.6.288/linux/mpi/intel64/bin/mpirun -genv I_MPI_PIN=off
+    TEST_ONLY: test_jacobian_hyper_case_three
+  needs: ["build_intel_mpi_mkl"]
+
+jacobian_hyper_evaluate_layers_intel_mpi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_intel_mpi_mkl
+  variables:
+    TEST_PATH: tests/test_jacobian_hyper.f90
+    RUN_CMD: /opt/intel/compilers_and_libraries_2018.6.288/linux/mpi/intel64/bin/mpirun -genv I_MPI_PIN=off
+    TEST_ONLY: test_jacobian_hyper_case_four
+  needs: ["build_intel_mpi_mkl"]
+
+jacobian_hyper_evaluate_output_layer_intel_mpi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_intel_mpi_mkl
+  variables:
+    TEST_PATH: tests/test_jacobian_hyper.f90
+    RUN_CMD: /opt/intel/compilers_and_libraries_2018.6.288/linux/mpi/intel64/bin/mpirun -genv I_MPI_PIN=off
+    TEST_ONLY: test_jacobian_hyper_case_five
+  needs: ["build_intel_mpi_mkl"]
+
+jacobian_hornnet_layer_intel_mpi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_intel_mpi_mkl
+  variables:
+    TEST_PATH: tests/test_jacobian_hornnet.f90
+    RUN_CMD: /opt/intel/compilers_and_libraries_2018.6.288/linux/mpi/intel64/bin/mpirun -genv I_MPI_PIN=off
+    TEST_ONLY: test_jacobian_hornnet_case_one
+  needs: ["build_intel_mpi_mkl"]
+
+jacobian_hornnet_constants_intel_mpi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_intel_mpi_mkl
+  variables:
+    TEST_PATH: tests/test_jacobian_hornnet.f90
+    RUN_CMD: /opt/intel/compilers_and_libraries_2018.6.288/linux/mpi/intel64/bin/mpirun -genv I_MPI_PIN=off
+    TEST_ONLY: test_jacobian_hornnet_case_two
+  needs: ["build_intel_mpi_mkl"]
+
+jacobian_hornnet_fluxes_intel_mpi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_intel_mpi_mkl
+  variables:
+    TEST_PATH: tests/test_jacobian_hornnet.f90
+    RUN_CMD: /opt/intel/compilers_and_libraries_2018.6.288/linux/mpi/intel64/bin/mpirun -genv I_MPI_PIN=off
+    TEST_ONLY: test_jacobian_hornnet_case_three
+  needs: ["build_intel_mpi_mkl"]
+
+jacobian_hornnet_constants_pfe_intel_mpi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_intel_mpi_mkl
+  variables:
+    TEST_PATH: tests/test_jacobian_hornnet.f90
+    RUN_CMD: /opt/intel/compilers_and_libraries_2018.6.288/linux/mpi/intel64/bin/mpirun -genv I_MPI_PIN=off
+    TEST_ONLY: test_jacobian_hornnet_case_four
+  needs: ["build_intel_mpi_mkl"]
+
+jacobian_hornnet_fluxes_pfe_intel_mpi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_intel_mpi_mkl
+  variables:
+    TEST_PATH: tests/test_jacobian_hornnet.f90
+    RUN_CMD: /opt/intel/compilers_and_libraries_2018.6.288/linux/mpi/intel64/bin/mpirun -genv I_MPI_PIN=off
+    TEST_ONLY: test_jacobian_hornnet_case_five
+  needs: ["build_intel_mpi_mkl"]
+
+jacobian_hornnet_merged_fluxes_intel_mpi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_intel_mpi_mkl
+  variables:
+    TEST_PATH: tests/test_jacobian_hornnet.f90
+    RUN_CMD: /opt/intel/compilers_and_libraries_2018.6.288/linux/mpi/intel64/bin/mpirun -genv I_MPI_PIN=off
+    TEST_ONLY: test_jacobian_hornnet_case_six
+  needs: ["build_intel_mpi_mkl"]
+
+imas_gcc:
+  extends: .fruit_template
+  dependencies:
+    - build_gcc
+  variables:
+    TEST_PATH: tests/test_imas.f90
+  needs: ["build_gcc"]
+
+imas_intel_mpi_mkl:
+  extends: .fruit_template
+  dependencies:
+    - build_intel_mpi_mkl
+  variables:
+    TEST_PATH: tests/test_imas.f90
+    RUN_CMD: /opt/intel/compilers_and_libraries_2018.6.288/linux/mpi/intel64/bin/mpirun -genv I_MPI_PIN=off
+  needs: ["build_intel_mpi_mkl"]
+
+
+sdist:
+  stage: build
+  script:
+    - python setup.py sdist
+  only:
+    - web
+    - tags
+  artifacts:
+    name: "$CI_JOB_NAME-$CI_COMMIT_REF_NAME"
+    paths:
+      - dist/
+    when: always
+  before_script:
+    - apt-get update && apt-get install -y git-lfs
+    - *install_prereq_python
+
+linux_wheels:
+  stage: build
+  image: python:3.8
+  # make a docker daemon available for cibuildwheel to use
+  services:
+    - name: docker:dind
+      entrypoint: ["env", "-u", "DOCKER_HOST"]
+      command: ["dockerd-entrypoint.sh"]
+  variables:
+    DOCKER_HOST: tcp://docker:2375/
+    DOCKER_DRIVER: overlay2
+    # See https://github.com/docker-library/docker/pull/166
+    DOCKER_TLS_CERTDIR: ""
+    CIBW_BUILD: "cp36-* cp37-* cp38-* cp39-*"
+    CIBW_SKIP: "*_i686"
+    # f90wrap is a build dependency, but needs numpy to build
+    CIBW_BEFORE_ALL: curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.rpm.sh | bash && yum install --skip-broken git-lfs wget -y && wget http://ftp.gnu.org/pub/gnu/make/make-4.2.tar.bz2 && tar xfj make-4.2.tar.bz2 && cd make-4.2 && ./configure && make && make install && alias make=/usr/local/bin/make
+    CIBW_BEFORE_BUILD: pip install numpy
+  script:
+    - curl -sSL https://get.docker.com/ | sh
+    - python -m pip install cibuildwheel
+    - cibuildwheel --output-dir wheelhouse
+  only:
+    - web
+    - tags
+  artifacts:
+    name: "$CI_JOB_NAME-$CI_COMMIT_REF_NAME"
+    paths:
+      - wheelhouse/
+    when: always
+
+bundle_artifacts:
+  stage: test
+  image: alpine
+  script:
+    - mv wheelhouse/* dist
+  only:
+    - web
+    - tags
+  artifacts:
+    name: "$CI_JOB_NAME-$CI_COMMIT_REF_NAME"
+    paths:
+      - dist/
+    when: always
+  needs: ["linux_wheels", "sdist"]

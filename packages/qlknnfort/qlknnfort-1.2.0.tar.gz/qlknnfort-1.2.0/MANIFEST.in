@@ -1,0 +1,9 @@
+recursive-exclude data *
+recursive-exclude lib *
+recursive-exclude tools *
+
+include lib/src/fruit/src/fruit.f90
+include lib/src/fruit/src/fruit_mpi.f90
+graft tubs
+graft lib/src/CLAF90/
+graft qlknnfort/data/qlknn-hyper-namelists
