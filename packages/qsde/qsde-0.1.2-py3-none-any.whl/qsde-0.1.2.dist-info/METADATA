@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: qsde
+Version: 0.1.2
+Summary: 
+Author: Huan Nguyen
+Author-email: ngtrunghuan@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: google-cloud-storage (>=1.35.0,<2.0.0)
+Requires-Dist: pandas (>=1.1.5,<2.0.0)
