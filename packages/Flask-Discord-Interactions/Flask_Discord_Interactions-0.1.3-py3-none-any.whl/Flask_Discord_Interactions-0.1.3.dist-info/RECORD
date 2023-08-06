@@ -1,0 +1,10 @@
+flask_discord_interactions/__init__.py,sha256=I_L4VN5r9EKD9Oo71yn6MX1EPpU-Lse0rb-ma0fCYRQ,424
+flask_discord_interactions/command.py,sha256=XElZjPbQxJj6gFAKgcV411PgrGsQ37y1OBC1d89SGPg,816
+flask_discord_interactions/context.py,sha256=oJFVLoT3VDVf75MKuMU1QPolRo_vZF91JEfqkgOeOxM,3103
+flask_discord_interactions/discord.py,sha256=qIKBnIBBGhS_Z7ztSLHJehGkfqLfi_jVOhXdowzTCs8,7907
+flask_discord_interactions/response.py,sha256=hnwv2vytaDmotizyJSSfLuLW3kp-xPg_ROkiUe5Uz2g,2612
+Flask_Discord_Interactions-0.1.3.dist-info/LICENSE,sha256=kiQiisuhD4LnolyxvRgzq-lHCGGst_NI9Nq_6kKQphQ,1059
+Flask_Discord_Interactions-0.1.3.dist-info/METADATA,sha256=qB5w8ajPS2zr8I5LacTPl2n6E3hVln7AujFECYEWUis,2218
+Flask_Discord_Interactions-0.1.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Flask_Discord_Interactions-0.1.3.dist-info/top_level.txt,sha256=gVJHyIjIE-uIdgfOKK5RqSJRYvRR7-gW9-DMH5zLLzg,27
+Flask_Discord_Interactions-0.1.3.dist-info/RECORD,,
