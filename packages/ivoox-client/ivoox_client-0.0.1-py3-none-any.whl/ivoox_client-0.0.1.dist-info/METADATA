@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: ivoox-client
+Version: 0.0.1
+Summary: Ivoox client
+Home-page: https://github.com/fernando24164/ivoox_client
+Author: fernando24164
+Author-email: fernando24164@gmail.com
+Maintainer: Fernando Cillero
+Maintainer-email: fernando24164@gmail.com
+License: MIT license
+Keywords: ivoox_client
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: beautifulsoup4 (==4.9.3)
+Requires-Dist: httpx (==0.15.5)
+
+Ivoox-client
+############
+
+Ivoox client
+
+
+Quickstart
+==========
+
+ivoox-client is available on PyPI and can be installed with `pip <https://pip.pypa.io>`_.
+
+.. code-block:: console
+
+    $ pip install ivoox_client
+
+After installing ivoox-client you can use it like any other Python module.
+
+Here is a simple example:
+
+.. code-block:: python
+
+    import asyncio
+    from ivoox_client import client
+
+    if __name__ == "__main__":
+        loop = asyncio.get_event_loop()
+        response = loop.run_until_complete(client.get_audios())
+
+
+.. _change-log-label:
+
+Change Log
+==========
+
+Version History
+---------------
+
+0.0.1
+    * Add initial version project.
+
+
