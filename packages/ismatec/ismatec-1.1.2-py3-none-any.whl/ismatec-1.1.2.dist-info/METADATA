@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: ismatec
+Version: 1.1.2
+Summary: Package to control ISMATEC products
+Home-page: https://gitlab.com/heingroup/ismatec
+Author: Veronica Lai // Hein Group
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: ftdi-serial
+
+# ismatec
+
+Python package to control ISMATEC products.
+
+We are not affiliated with ISMATEC.
+
+Supported products:
+- [Reglo-CPF Digital (software v3.0)](http://www.ismatec.com/int_e/pumps/p_reglo_cpf/reglo_cpf_drive.htm)
+- [Reglo-ICC Digital Peristaltic Pump](http://www.ismatec.com/images/pdf/manuals/14-036_E_ISMATEC_REGLO_ICC_ENGLISH_REV.%20C.pdf)
+
+## Reglo-CPF Digital
+
+The package is not fully compatible with Windows 10.
+
+Commands that don't work:
+  - `set the calibrated flow rate`
+
+
+### Getting started
+
+Check the [examples](examples) folder for example script on how to use the RegloCPF and RegloICC modules.
+
+To connect to the pump in Python, you need to know the comport of the pump when it is connected to the computer. To know this, before plugging the pump into the computer open the `Windows Device Manager` program and expand `Ports`. Then plug in the pump and see what new port appears, e.g. `COM6`. This is what you will use to create the `RegloCPF` or instance in Python to connect to and control the pump.
+
+
+### Serial settings and protocols
+
+Connection settings according to the manual are
+
+    +----------------------+---------------------------------------------+
+    | Parameter            | Comment                                     |
+    +----------------------+---------------------------------------------+
+    | Baud rate            | 9600                                        |
+    +----------------------+---------------------------------------------+
+    | Parity               | None                                        |
+    +----------------------+---------------------------------------------+
+    | Handshaking          | None                                        |
+    +----------------------+---------------------------------------------+
+    | Data bits            | 8                                           |
+    +----------------------+---------------------------------------------+
+    | Stop bits            | 1                                           |
+    +----------------------+---------------------------------------------+
+    | Address              | Between 1 and 8                             |
+    +----------------------+---------------------------------------------+
+    | Physical connection  | RS232 IN (female): 9-pin D-socket on the    |
+    |                      | the real panel of the RegloCPF, connects    |
+    |                      | to PC via standard RS232 cable.             |
+    |                      | RS232 OUT (male): used to connect to other  |
+    |                      | pumps                                       |
+    +----------------------+---------------------------------------------+
+    | Message Terminators  | Command string is completed by a carriage   |
+    |                      | return (ASCII 13, <CR>). The pump confirms  |
+    |                      | most commands with an asterix *, Yes/No     |
+    |                      | inquiries are answered by + (yes) or - (no) |
+    |                      | Multi-digit replies are concluded by a      |
+    |                      | carriage return (ASCII 13, <CR>) and a line |
+    |                      | feed (ASCII 10, <LF>)                       |
+    +----------------------+---------------------------------------------+
+
+Structure of commands:
+
+The address is followed by a character. Some commands have additional parameters that always consist of 4 or 5 figures. The command string is completed by a carriage return (ASCII 13, <CR>). The pump confirms most commands with an asterix *, Yes/No inquiries are answered by + (yes) or - (no). Multi-digit replies are concluded by a carriage return (ASCII 13, <CR>) and a line feed (ASCII 10, <LF>).
+
+Incorrect commands are answered by #. If the pump is in the state of overload, each command is responded with #. Numerical values are confirmed as 3 to 5-digit figures. 4 or 5 digits are numerals, one digit is either a decimal point or a preceding blank space
+
+For a full list of the protocols, check the operating manual: www.ismatec.com/images/pdf/manuals/REGLO_CPF_Digital_new.pdf
+
+## Reglo-ICC Digital Peristaltic Pump
+
+Legacy and channel addressing mode are both supported. Event message reading is not supported so event messaging is disabled on instantiation of a `RegloICC` instance.
+
+On testing, the following commands did not work:
+ - `set_pump_head_model_type_code`
+ - `get_actual_calibration_volume`
+
+
+ The following commands have not been implemented:
+ - `f` - Get current volume/time flow rate (mL/min) - `_GET_FLOW_RATE_VOLUME_TIME_MODE`
+ - `f` - Set RPM flow rate in volume/time mode (mL/min - `_SET_FLOW_RATE_VOLUME_TIME_MODE`
+ - `xv` - Get time to dispense at a given volume at a given mL/min flow rate.  - `_GET_TIME_TO_DISPENSE_VOLUME_AT_FLOW_RATE`
+ - `xw` - Get time to dispense at a given volume at a given RPM - `_GET_TIME_TO_DISPENSE_VOLUME_AT_RPM`
+ - `xt` - Change factory roller step volume for a particular roller count and tubing size using roller count (6,8,12) - `_SET_FACTORY_ROLLER_STEP_VOLUME`
+
+### Getting started
+
+To connect to the pump in Python, you need to know the comport of the pump when it is connected to the computer. To know this, before plugging the pump into the computer open the `Windows Device Manager` program and expand `Ports`. Then plug in the pump and see what new port appears, e.g. `COM6`. This is what you will use to create the `RegloICC` instance in Python to connect to and control the pump.
+
+
+### Serial settings and protocols
+
+Connection settings according to the manual are
+
+    +----------------------+---------------------------------------------+
+    | Parameter            | Comment                                     |
+    +----------------------+---------------------------------------------+
+    | Baud rate            | 9600                                        |
+    +----------------------+---------------------------------------------+
+    | Parity               | None                                        |
+    +----------------------+---------------------------------------------+
+    | Data bits            | 8                                           |
+    +----------------------+---------------------------------------------+
+    | Stop bits            | 1                                           |
+    +----------------------+---------------------------------------------+
+    | Address              | Between 1 and 8                             |
+    +----------------------+---------------------------------------------+
+    | Physical connection  | RS232 IN (female): 9-pin D-socket on the    |
+    |                      | the real panel of the RegloCPF, connects    |
+    |                      | to PC via standard RS232 cable.             |
+    |                      | RS232 OUT (male): used to connect to other  |
+    |                      | pumps                                       |
+    +----------------------+---------------------------------------------+
+
+
+For a full list of the protocols, check the operating manual: http://www.ismatec.com/images/pdf/manuals/14-036_E_ISMATEC_REGLO_ICC_ENGLISH_REV.%20C.pdf
+
+
