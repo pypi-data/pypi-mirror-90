@@ -1,0 +1,16 @@
+tkinterquickhelper/__init__.py,sha256=QP4SsvpTpIy7tpOFew795A1b0evlzWKdRXO5H_2M86k,1686
+tkinterquickhelper/funcwin/__init__.py,sha256=MnVPANCkcIf8Z5dB5oDvdU-BLi9S80WDbD5xJmoHAwo,658
+tkinterquickhelper/funcwin/default_functions.py,sha256=Ypi0eUKY7QmFpQBtgINBPrfM0vlhzxSoVQN64SAi6co,6636
+tkinterquickhelper/funcwin/frame_function.py,sha256=BmksOdJvg6z5-eFcK7DuEje37DGOhfZK0eoucY1CGqY,18582
+tkinterquickhelper/funcwin/frame_params.py,sha256=tskrKROQxURyHkQO2YVI2kFcR6SRC501mvzhIHy9lXg,13200
+tkinterquickhelper/funcwin/function_helper.py,sha256=OCFnlF4hSHq0sUWenbucfKz1LbWgtqqOcxGsxPK363I,6435
+tkinterquickhelper/funcwin/main_window.py,sha256=qybpxjIDz9Wdg9re12tZHIBxx6fYeb_ItWQjI2jGeFI,7231
+tkinterquickhelper/funcwin/patchs_windows.py,sha256=cC05lyLAQmU_4YC7Yyc8pmTfNqvfwSYP3TRXebVtH8g,2165
+tkinterquickhelper/funcwin/project_ico.ico,sha256=un8ipsLdgarZp8mpPkrjk4hLdA8LpZBJS1pViNTsP8I,2494
+tkinterquickhelper/funcwin/storing_functions.py,sha256=jr_4iIRgXspbUsBFcHA4bw-wE1NjTi8NKNxHygIsw1w,5298
+tkinterquickhelper/funcwin/tk_window.py,sha256=E2JIg-Jx4mVNgZ72fBKrr5nl5Qc21JSKfRFfwnXGyaU,1743
+tkinterquickhelper-1.6.103.dist-info/LICENSE.txt,sha256=HP4GbHvH2C3pSqPFJrJLkuRFdYpqeKcyUCfiq0XMkTo,1083
+tkinterquickhelper-1.6.103.dist-info/METADATA,sha256=3CX75uYYwQbkmJPnpdhEn6qNahk2FEFxOfgev2CDiec,3151
+tkinterquickhelper-1.6.103.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tkinterquickhelper-1.6.103.dist-info/top_level.txt,sha256=eNCsKkhe9g0lVnT5awu1poaHToYhBC4744lG56hX41Q,19
+tkinterquickhelper-1.6.103.dist-info/RECORD,,
