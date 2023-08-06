@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "docformatter-toml"
+version = "0.1.0"
+description = ""
+authors = ["Pedro Pablo Correa <pbcorrea@uc.cl>"]
+packages = [
+    { include = "docformatter_toml", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6.9"
+docformatter = "^1.4"
+toml = "^0.10.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.6"
+black = "^20.8b1"
+
+[tool.poetry.scripts]
+docformatter = "docformatter_toml.__main__:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.docformatter]
+in-place=true
+check=true
+recursive=true
+exclude=true
+range=[3,3]
+
+# --wrap-summaries length
+#                         wrap long summary lines at this length; set to 0 to
+#                         disable wrapping (default: 79)
+#   --wrap-descriptions length
+#                         wrap descriptions at this length; set to 0 to disable
+#                         wrapping (default: 72)
+#   --blank               add blank line after description
+#   --pre-summary-newline
+#                         add a newline before the summary of a multi-line
+#                         docstring
+#   --make-summary-multi-line
+#                         add a newline before and after the summary of a one-
+#                         line docstring
+#   --force-wrap          force descriptions to be wrapped even if it may result
+#                         in a mess
+#   --range line line 
