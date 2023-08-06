@@ -1,0 +1,7 @@
+<section class="m-3">
+	<h3>
+		<i tal:omit-tag="" i18n:translate="">${view.table_label}</i>
+		${structure:provider:pyams.toolbar}
+	</h3>
+	${view.table.render()}
+</section>
