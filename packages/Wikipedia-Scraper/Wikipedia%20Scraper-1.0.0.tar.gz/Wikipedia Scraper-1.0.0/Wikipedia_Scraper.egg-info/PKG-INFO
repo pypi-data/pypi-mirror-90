@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: Wikipedia-Scraper
+Version: 1.0.0
+Summary: Google Tasks Submission
+Home-page: UNKNOWN
+Author: Edwin Joshua Samraj
+Author-email: edwinjoshua2003@gmail.com
+License: MIT
+Download-URL: https://github.com/edwinjoshua2003/WikipediaScrapper.git
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8

@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+WikipediaScrapper/wikiscrapper.py
+Wikipedia_Scraper.egg-info/PKG-INFO
+Wikipedia_Scraper.egg-info/SOURCES.txt
+Wikipedia_Scraper.egg-info/dependency_links.txt
+Wikipedia_Scraper.egg-info/requires.txt
+Wikipedia_Scraper.egg-info/top_level.txt
