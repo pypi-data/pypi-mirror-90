@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+ipleak/__init__.py
+ipleak/__main__.py
+ipleak.egg-info/PKG-INFO
+ipleak.egg-info/SOURCES.txt
+ipleak.egg-info/dependency_links.txt
+ipleak.egg-info/entry_points.txt
+ipleak.egg-info/requires.txt
+ipleak.egg-info/top_level.txt
