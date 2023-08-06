@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+eloguru/__init__.py
+eloguru/eloguru.py
+eloguru/mail_config.py
+eloguru/mail_send.py
+eloguru.egg-info/PKG-INFO
+eloguru.egg-info/SOURCES.txt
+eloguru.egg-info/dependency_links.txt
+eloguru.egg-info/requires.txt
+eloguru.egg-info/top_level.txt
