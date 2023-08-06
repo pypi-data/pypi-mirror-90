@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+certsGenerator/__init__.py
+certsGenerator/builder.py
+certsGenerator/constructor.py
+certsGenerator/globals_conf.py
+certsGenerator/helpers.py
+certsGenerator/main.py
+certsGenerator/storage.py
+certsGenerator.egg-info/PKG-INFO
+certsGenerator.egg-info/SOURCES.txt
+certsGenerator.egg-info/dependency_links.txt
+certsGenerator.egg-info/entry_points.txt
+certsGenerator.egg-info/requires.txt
+certsGenerator.egg-info/top_level.txt
