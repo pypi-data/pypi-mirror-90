@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+app/__init__.py
+app/__main__.py
+pyappdir.egg-info/PKG-INFO
+pyappdir.egg-info/SOURCES.txt
+pyappdir.egg-info/dependency_links.txt
+pyappdir.egg-info/top_level.txt
