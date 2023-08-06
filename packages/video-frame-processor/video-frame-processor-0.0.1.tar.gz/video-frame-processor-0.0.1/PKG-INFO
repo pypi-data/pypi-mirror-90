@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: video-frame-processor
+Version: 0.0.1
+Summary: Python 3 library to make video frame processing easier.
+Home-page: https://github.com/waikato-datamining/video-frame-processor
+Author: Peter Reutemann
+Author-email: fracpete@waikato.ac.nz
+License: MIT License
+Description: Python 3 library to make video frame processing easier. 
+        
+        It allows processing video from webcams or video files, 
+        with the user only having to supply a method that processes
+        the actual video frames. Everything else is handled by the
+        library.
+        
+        For more information and examples see:
+        
+        https://github.com/waikato-datamining/video-frame-processor
+        
+        Changelog
+        =========
+        
+        0.0.1 (2021-01-05)
+        ------------------
+        
+        - initial release
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Multimedia :: Video
+Classifier: Programming Language :: Python :: 3

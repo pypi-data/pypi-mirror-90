@@ -1,0 +1,12 @@
+CHANGES.rst
+DESCRIPTION.rst
+MANIFEST.in
+README.md
+setup.py
+src/vfp/__init__.py
+src/vfp/_processor.py
+src/video_frame_processor.egg-info/PKG-INFO
+src/video_frame_processor.egg-info/SOURCES.txt
+src/video_frame_processor.egg-info/dependency_links.txt
+src/video_frame_processor.egg-info/requires.txt
+src/video_frame_processor.egg-info/top_level.txt
