@@ -1,0 +1,9 @@
+tuneup/__init__.py,sha256=735WE7uJVGGcZQza65Gswz9WktSYKJPdcSRbmwn0nhE,137
+tuneup/horserace.py,sha256=BOXQ5kUGm7Ujh6P3DPEbWE_pByJRujjjfAG4lvjWCfs,4534
+tuneup/ndimhorserace.py,sha256=_2U6LQsHK5d1WTQePTt79xw7zenTbtJR9Ar0dLLocdw,9481
+tuneup/util.py,sha256=Sh5N41GFeG3rmj3HsG5KaH5XtJVUedleJk2ZWFo0tOM,676
+tuneup-0.0.8.dist-info/METADATA,sha256=lsQSwDcAz1DES7V5Wu2MqVNrNrszlyjgViFPEcYbHXE,1297
+tuneup-0.0.8.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+tuneup-0.0.8.dist-info/entry_points.txt,sha256=IDzA230Hot_CcPSEPXchtW86zyn60pbYS4RRyMnT1FQ,49
+tuneup-0.0.8.dist-info/top_level.txt,sha256=gDZkqjH_Lp3hyJqHeECB7mUOYwq4qIpdierxaABukek,7
+tuneup-0.0.8.dist-info/RECORD,,
