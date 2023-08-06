@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pypixel-api
+Version: 0.0.8
+Summary: An asynchronous wrapper for the Hypixel API.
+Home-page: https://github.com/plun1331/PyPixel
+Author: plun1331
+License: UNKNOWN
+Description: # PyPixel
+        
+        An asynchronous wrapper for the Hypixel API.
+        
+        
+        ## Installing
+        
+        **Python 3.6 or higher is required**
+        
+        Once published, you should be able to install with the following command.
+        
+        ```sh
+        # Linux/macOS
+        python3 -m pip install -U discord.py
+        
+        # Windows
+        py -3 -m pip install -U discord.py
+        ```
+        
+        ## A quick example
+        ```py
+        import PyPixel
+        
+        hypixel = PyPixel.Hypixel(api_key='your Hypixel API key')
+        
+        player = hypixel.get_player('uuid')
+        guild = hypixel.get_guild('guild_name', 'name')
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
