@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gochan
+Version: 0.4.2
+Summary: 5ch browser which works on a terminal
+Home-page: https://github.com/morin4ga/gochan
+Author: morinaga
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: asciimatics (==1.11)
+
+UNKNOWN
+
+

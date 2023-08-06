@@ -1,0 +1,3 @@
+[console_scripts]
+gochan = gochan.__main__:main
+
