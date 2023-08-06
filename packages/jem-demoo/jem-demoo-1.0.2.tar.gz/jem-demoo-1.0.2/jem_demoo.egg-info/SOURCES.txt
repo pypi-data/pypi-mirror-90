@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+Jemish/main.py
+jem_demoo.egg-info/PKG-INFO
+jem_demoo.egg-info/SOURCES.txt
+jem_demoo.egg-info/dependency_links.txt
+jem_demoo.egg-info/top_level.txt
