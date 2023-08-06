@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ibpm-api-client
+Version: 0.1.1
+Summary: ibpm web api client
+Home-page: https://github.com/ibimec/ibpm-api-client
+Author: rgallini
+Author-email: riccardo.gallini@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: jsons
+Requires-Dist: pillow
+
+UNKNOWN
+
+
