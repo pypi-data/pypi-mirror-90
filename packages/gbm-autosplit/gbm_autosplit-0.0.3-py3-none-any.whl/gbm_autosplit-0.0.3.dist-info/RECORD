@@ -1,0 +1,13 @@
+gbm_autosplit/__init__.py,sha256=iSwM1q-u3cPCszgrPE_nTEVfeiwQ5ibitWNi75GL9KU,116
+gbm_autosplit/auto_split_logic.py,sha256=RQklTaH-Q0ezNj4J6Grt24tSA4e3l2qJPZXPYvRpPn8,1346
+gbm_autosplit/lgbm.py,sha256=qCTKNhbt6mpzFp8jP11RumA1Q0jvNtVIwAyOcup5iVw,5085
+gbm_autosplit/utils.py,sha256=nMt-9CeeL8kWOwypEEO1q2UrhqlcnnLABgBLfe6AMt8,534
+gbm_autosplit/xgb.py,sha256=RUMiD5yY5lr8JmT0_weoaypCSvlvAlPdPHJVqyi0RiI,5403
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_lgbm.py,sha256=KA8vt7IJYnMhQDOfEOEytc1wNWcgIy5pMPTiBLlaqyQ,1055
+tests/test_xgb.py,sha256=TZHfef7U0qv99SEb8JOGJ6S6bI3ykZBCuCV5nnP0tLo,1055
+tests/utils.py,sha256=LlH6-KCvUcfazz_pgDFkL_8LqwlWDGDa_gkSw1zKHtU,861
+gbm_autosplit-0.0.3.dist-info/METADATA,sha256=N5LcD2d8Mcl0dV-gFBKVWdfuErtu8TE87wzwtaj8Blg,1397
+gbm_autosplit-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gbm_autosplit-0.0.3.dist-info/top_level.txt,sha256=fIf2tF4Y2CWrMKdQoAf3HE1sk-3Vi3gX1SfDVcJel2o,20
+gbm_autosplit-0.0.3.dist-info/RECORD,,
