@@ -1,0 +1,9 @@
+README.md
+setup.py
+architpdf.egg-info/PKG-INFO
+architpdf.egg-info/SOURCES.txt
+architpdf.egg-info/dependency_links.txt
+architpdf.egg-info/top_level.txt
+moshpdf/__init__.py
+moshpdf/pdf2image.py
+moshpdf/pdf2text.py
