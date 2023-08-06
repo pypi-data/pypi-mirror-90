@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: googleDriveFileDownloader
+Version: 1.1
+Summary: Helper to download google drive files with the URL
+Home-page: http://pidugusundeep.in
+Author: PIDUGU SUNDEEP
+Author-email: pidugusundeep5@gmail.com
+License: GPLv3
+Description: 
+        # Google-Drive-File-Downloader
+        
+        <a href="https://pypi.org/project/googledrivefiledownloader/" alt="Google-Drive-File-Downloader"> <img src="https://img.shields.io/pypi/dm/googledrivefiledownloader?color=green" /></a>
+        
+        Helps to download google drive files with ease 🎉
+        
+        Installing the Package:
+        
+        `pip install googleDriveFileDownloader`
+        
+        Sample code:
+        
+        ```python
+        from googleDriveFileDownloader import googleDriveFileDownloader
+        gdownloader = googleDriveFileDownloader()
+        gdownloader.downloadFile("https://drive.google.com/uc?id=1O4x8rwGJAh8gRo8sjm0kuKFf6vCEm93G&export=download")
+        ```
+        
+        You can also provide `custom file name` : 
+        ```python
+        gdownloader.downloadFile("https://drive.google.com/uc?id=1O4x8rwGJAh8gRo8sjm0kuKFf6vCEm93G&export=download","NewFile.zip") #Make sure to use the custom file name along with the file extension if exists
+        ```
+        
+        * It will automatically save the file with the name as stored in the drive
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
