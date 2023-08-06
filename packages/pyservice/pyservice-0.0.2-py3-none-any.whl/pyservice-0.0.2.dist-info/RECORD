@@ -1,0 +1,9 @@
+pyservice/__init__.py,sha256=C6LG74vQRMT9JxkZb83t5Ku2W-X6dZILYQDe3YbxTq4,190
+pyservice/action.py,sha256=gHRsFBql2E5uURuodDbxf1ZlDpNpfe606DxXoIF69xw,1135
+pyservice/context.py,sha256=YSb0FviXjPzOwjYxZoUtYzyhVnwJ_2u-l7DZ5ywdiQc,1098
+pyservice/organizer.py,sha256=Qv7nLVFOrsgGhVWhckkh0bpLKf6NypE8fY30DaKxvc0,1702
+pyservice-0.0.2.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+pyservice-0.0.2.dist-info/METADATA,sha256=rnBRiQbdaVphFf5qZH7nm5lDS5nwOyxybl0T2NL5tvs,694
+pyservice-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyservice-0.0.2.dist-info/top_level.txt,sha256=1rOX1JAwsihXbcg5aZ5dG275Dx67yghEAGPYK3lRVyI,10
+pyservice-0.0.2.dist-info/RECORD,,
