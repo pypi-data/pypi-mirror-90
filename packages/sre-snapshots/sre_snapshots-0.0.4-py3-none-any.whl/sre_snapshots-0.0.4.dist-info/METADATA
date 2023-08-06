@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: sre-snapshots
+Version: 0.0.4
+Summary: Download SERP snapshots from the MongoDB library
+Home-page: UNKNOWN
+Author: James Wolman
+Author-email: James.Wolman@found.co.uk
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: bleach (==3.1.5)
+Requires-Dist: certifi (==2020.6.20)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: colorama (==0.4.3)
+Requires-Dist: docutils (==0.16)
+Requires-Dist: idna (==2.10)
+Requires-Dist: importlib-metadata (==1.7.0)
+Requires-Dist: keyring (==21.2.1)
+Requires-Dist: packaging (==20.4)
+Requires-Dist: pkginfo (==1.5.0.1)
+Requires-Dist: Pygments (==2.6.1)
+Requires-Dist: pymongo (==3.10.1)
+Requires-Dist: pyparsing (==2.4.7)
+Requires-Dist: pywin32-ctypes (==0.2.0)
+Requires-Dist: readme-renderer (==26.0)
+Requires-Dist: requests (==2.24.0)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: rfc3986 (==1.4.0)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: tqdm (==4.47.0)
+Requires-Dist: twine (==3.3.0)
+Requires-Dist: urllib3 (==1.25.9)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: zipp (==3.1.0)
+
+# SERP Real Estate Snapshots Package #
+
+A pure Python package to allow developers access to a SERP Real Estate snapshots library hosted on a NoSQL architecture.
+
+## Installation ##
+
+Install using pip:
+
+```bash
+pip install sre-snapshots
+```
+
+## Reading Snapshots ##
+
+You can read snapshots by:
+
+```python
+from sre_snapshots.download_snapshots import SnapshotLibrary
+
+library = SnapshotLibrary(
+    host='127.0.0.1', 
+    database_name='my_db', 
+    collection_name='my_col'
+)
+
+# First 100 snapshots
+snapshots = library.find_documents(
+    filter_criteria={}, 
+    datetime_from='2020-07-01 00:00:00',
+    datetime_to='2020-07-03 23:59:59', 
+    limit=10, 
+    include_id=True
+)
+
+# First 100 snapshots for a specific company
+snapshots_for_company = library.find_documents(
+    filter_criteria={
+        'matching_keyword.name': 'my_company'
+    },
+    datetime_from='2020-07-01 00:00:00',
+    datetime_to='2020-07-03 23:59:59',
+    limit=10,
+    include_id=True
+)
+
+# Specific snapshot using ObjectId
+specific_snapshot = library.find_documents(
+    datetime_from='2020-06-01 00:00:00',
+    object_id='5ee8b4814c74c3312a81b7b8'
+)
+```
+
+## About the Database ##
+
+The database is indexed on the following fields:
+
+* ``matching_keyword.name`` (Name of the company)
+* ``search_metadata.created_at`` (Date & time the search was performed)
+
+Therefore, querying the library filtering on these fields will be very fast but filtering on any other field may be quite slow.
+
+
+## Inserting New Snapshots ##
+
+TODO: Instructions on inserting new snapshots to the database.
+
+
