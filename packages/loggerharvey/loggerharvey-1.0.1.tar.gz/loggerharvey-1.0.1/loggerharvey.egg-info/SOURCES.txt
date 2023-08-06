@@ -1,0 +1,6 @@
+README.md
+setup.py
+loggerharvey.egg-info/PKG-INFO
+loggerharvey.egg-info/SOURCES.txt
+loggerharvey.egg-info/dependency_links.txt
+loggerharvey.egg-info/top_level.txt
