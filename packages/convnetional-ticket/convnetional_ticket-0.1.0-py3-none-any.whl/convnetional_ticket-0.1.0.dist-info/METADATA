@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: convnetional-ticket
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: commitizen
+
+Conventional commits with tickets in changelog
+
+
