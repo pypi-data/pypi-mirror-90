@@ -1,0 +1,10 @@
+.DS_Store,sha256=Z231MGphjjHz_4sbzV6kMai-QLUvQv9lZ1VJD_rhP1g,6148
+foodparser/__init__.py,sha256=eQ2JDBV1bjRWFHjZNvpRAsB6-SMy4ZpB01sXSfYuQV8,57
+foodparser/foodparser.py,sha256=HLB84slu3tFbW7QoZZneCX7ygNC0CWiIII4onzkiudI,9980
+foodparser/data/combined_gram_set.csv,sha256=btT98xEfQJg9LPddDdsjQlSaT1ctQeuJe3kz4h6uf0o,25365
+foodparser/data/test.txt,sha256=MMQIRI2zUpGQp4E8jNYdwNgyFtLQVv-pJr6Mv2b0m-Y,16
+foodparser-0.1.10.dist-info/LICENSE,sha256=pvEHrhwAC--XmkHE0KyutGpNuxPEa8r6TgdNZmirL44,1065
+foodparser-0.1.10.dist-info/METADATA,sha256=xJI2l2AU1zqtBSWwV6sZDnUq4-tQD16qbsDRcEJgg0E,782
+foodparser-0.1.10.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+foodparser-0.1.10.dist-info/top_level.txt,sha256=wImFmSjgdQhP8RE9I3SIfFBSSZ1RdYU0m7vKQp9cHwI,11
+foodparser-0.1.10.dist-info/RECORD,,
