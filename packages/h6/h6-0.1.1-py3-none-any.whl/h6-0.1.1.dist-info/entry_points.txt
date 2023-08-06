@@ -1,0 +1,3 @@
+[console_scripts]
+h6=h6.cli:send_command
+
