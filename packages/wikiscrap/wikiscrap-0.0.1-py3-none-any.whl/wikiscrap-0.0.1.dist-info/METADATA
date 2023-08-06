@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: wikiscrap
+Version: 0.0.1
+Summary: View Wikipedia on your Terminal
+Home-page: https://github.com/Mannan-Goyal
+Author: Mannan Goyal
+Author-email: mannang6@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# To Use this:
+1. Create a Python File
+2. Import this utility
+
+   ```python
+   import wikiscrap
+   ```
+3. Then run this file
+
+   ```bash
+   python {filename}.py
+   ```
+
