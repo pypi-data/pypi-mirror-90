@@ -1,0 +1,3 @@
+[console_scripts]
+ansible-vault-rekey = ansible_vault_rekey.cli:main
+
