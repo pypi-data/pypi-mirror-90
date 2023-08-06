@@ -1,0 +1,14 @@
+fundamentus/__init__.py,sha256=hZ8u04lS829ADfJZXNbGfGTEsXzCSNmkM2gcZvZNmTU,939
+fundamentus/detalhes.py,sha256=2aBdjnr-YQ4P70hyziw7vf5-n61RqSY5oMk6DRFoSKI,10856
+fundamentus/logging.py,sha256=NKEg7Qu8Vp3iz0OchD_kMjEoyCsN7NwTklAtdvzI3WU,591
+fundamentus/papel.py,sha256=KuLnSONHaJMQP5EBIJgQ2ht3ploxrsOfTthGvkJagyQ,1146
+fundamentus/resultado.py,sha256=xSf_2AW21DLVwzN164Avlkit1yX6TIYjGBjJeGKYeJM,3813
+fundamentus/setor.py,sha256=zwwwFPtCgXWHegzIi9f5s2_Omhf73Z2dDUtrxhEd9yk,4895
+fundamentus/utils.py,sha256=gCHjIdY8iJKX7MjIhRhSKur3OMmxEy-assQLGGetEGU,3522
+fundamentus-0.1.0.data/scripts/fundamentus.csv.py,sha256=OlDiOwXPCJKpwFRo73rMmoCqz-xLfIcHausNIGXlfVc,430
+fundamentus-0.1.0.data/scripts/magic_formula.simple.py,sha256=_5sCEPTfGHgtVr_3FUc3ATgA0vD0K6qi9fjHBCiAStM,2928
+fundamentus-0.1.0.dist-info/LICENSE,sha256=FcnpFWF6-84evncDjK-ohDWKN2eH4tfu7xsB_WqHMB0,1081
+fundamentus-0.1.0.dist-info/METADATA,sha256=OsMcXG3Ucz-apgMHfSksG2PZvIUyDoPTN8On88tM-Bg,5591
+fundamentus-0.1.0.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+fundamentus-0.1.0.dist-info/top_level.txt,sha256=aQxOlUf4ekAdL5hDkmS6Xb8SYc-b5Ht1sZVRO8SO0Xo,12
+fundamentus-0.1.0.dist-info/RECORD,,
