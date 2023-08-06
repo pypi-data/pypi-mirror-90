@@ -1,0 +1,35 @@
+# mkdocs.yml
+
+site_name: VARNA API
+repo_url: "https://gitlab.inria.fr/amibio/varna-api"
+repo_name: "AMIBio/VARNA-API"
+theme:
+  # name: "readthedocs"
+  name: "material"
+
+nav:
+  - Home: index.md
+  - API:
+    - VARNA Classes: varna.md
+    - Annotation: annotation.md
+    - Miscellaneous: varnaapi.md
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          selection:
+            filters:
+              - "!^_"
+              - "^__init__$"
+          rendering:
+            show_root_toc_entry: False
+      watch:
+        - varnaapi.py
+
+
+markdown_extensions:
+  - footnotes
+  - pymdownx.highlight
+  - pymdownx.superfences
