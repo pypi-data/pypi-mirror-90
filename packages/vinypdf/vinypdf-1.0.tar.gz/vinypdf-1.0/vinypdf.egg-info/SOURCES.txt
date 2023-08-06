@@ -1,0 +1,9 @@
+README.md
+setup.py
+vinypdf/__init__.py
+vinypdf/pdf2image.py
+vinypdf/pdf2text.py
+vinypdf.egg-info/PKG-INFO
+vinypdf.egg-info/SOURCES.txt
+vinypdf.egg-info/dependency_links.txt
+vinypdf.egg-info/top_level.txt
