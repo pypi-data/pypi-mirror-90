@@ -1,0 +1,14 @@
+README.md
+setup.py
+srslyumi/__init__.py
+srslyumi/bamtag.py
+srslyumi/cli.py
+srslyumi.egg-info/PKG-INFO
+srslyumi.egg-info/SOURCES.txt
+srslyumi.egg-info/dependency_links.txt
+srslyumi.egg-info/entry_points.txt
+srslyumi.egg-info/requires.txt
+srslyumi.egg-info/top_level.txt
+srslyumi/tests/__init__.py
+srslyumi/tests/test_bamtag.py
+srslyumi/tests/test_cli.py
