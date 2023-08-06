@@ -1,0 +1,6 @@
+torch
+transformers==3.5.1
+sklearn
+nltk
+pandas
+pyconll
