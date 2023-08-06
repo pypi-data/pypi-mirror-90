@@ -1,0 +1,4 @@
+include LICENSE
+include README.md
+recursive-include hockeydata_api/templates *
+recursive-include hockeydata_api/templatetags *
