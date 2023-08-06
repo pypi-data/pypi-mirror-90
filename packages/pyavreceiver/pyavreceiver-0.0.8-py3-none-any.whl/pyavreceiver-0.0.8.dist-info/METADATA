@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pyavreceiver
+Version: 0.0.8
+Summary: An async python library for controlling Audio Video Receiver devices
+Home-page: https://github.com/jphutchins/pyavreceiver
+Author: J.P. Hutchins
+Author-email: jphutchins@gmail.com
+License: ASL 2.0
+Keywords: denon marantz receiver
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Home Automation
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: PyYAML
+Requires-Dist: telnetlib3
+
+UNKNOWN
+
+
