@@ -1,0 +1,8 @@
+aws_cdk/aws_chatbot/__init__.py,sha256=-gOPedjm3-N74n8h2LraLtNAbi7JQ36zL25BNwfHfiU,45535
+aws_cdk/aws_chatbot/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_chatbot/_jsii/__init__.py,sha256=EIbCinM2F7CftdzFHc-0WPwMVvc1k3YBKBghDCUKG7Q,495
+aws_cdk/aws_chatbot/_jsii/aws-chatbot@1.82.0.jsii.tgz,sha256=Mx9v_5Md22gP_ghOyJz5VP9GE2WYBAPykg9znMpqsR8,27478
+aws_cdk.aws_chatbot-1.82.0.dist-info/METADATA,sha256=vyGiyntUfcSFzQ-8aRSLccZqrQh6_YTSf4Gy5AUu9Bw,4501
+aws_cdk.aws_chatbot-1.82.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_chatbot-1.82.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_chatbot-1.82.0.dist-info/RECORD,,
