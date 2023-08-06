@@ -1,0 +1,2 @@
+ci
+flask_swagger_generator
