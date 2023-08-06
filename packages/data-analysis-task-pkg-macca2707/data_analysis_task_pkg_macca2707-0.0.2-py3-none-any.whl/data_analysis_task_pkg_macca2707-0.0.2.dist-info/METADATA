@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: data-analysis-task-pkg-macca2707
+Version: 0.0.2
+Summary: Package containing analysis work for Halfbrick studios
+Home-page: https://github.com/lm304/data-analyst-task.git
+Author: Luke McGlashan
+Author-email: lukemcglashan1998@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# data-analyst-task
+Simple data analyst program developed for Halfbrick studios as a mini assignment
+Instructions are contained within CLI program but i will add them here aswell
+
+Commands:
+json -- Creates a json file when provided an appropriate CSV file
+data -- Makes a data summary of a provided CSV file
+sql -- Creates an SQL file when provided an appropriate CSV file, also requires a table name
+*quit -- exits the program
+
+*Note all commands except this one require a file name, file is contained within this package
+
+
