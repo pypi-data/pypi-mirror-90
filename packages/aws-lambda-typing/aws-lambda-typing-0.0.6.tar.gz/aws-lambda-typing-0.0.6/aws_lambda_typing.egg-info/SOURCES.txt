@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+aws-lambda-typing/__init__.py
+aws-lambda-typing/context.py
+aws-lambda-typing/index.py
+aws_lambda_typing.egg-info/PKG-INFO
+aws_lambda_typing.egg-info/SOURCES.txt
+aws_lambda_typing.egg-info/dependency_links.txt
+aws_lambda_typing.egg-info/top_level.txt
