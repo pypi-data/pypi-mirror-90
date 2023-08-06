@@ -1,0 +1,17 @@
+senserecord/__init__.py,sha256=PYEx26wwevuLg0gbLYRwrZvQxe8vkWCjLL4l-fZE5Y8,769
+senserecord/__main__.py,sha256=JQRXarpj_bPs4vC9Jec4UTFgYILo8s6_lRWonbOILrA,94
+senserecord/cli/__init__.py,sha256=B-IryBpu9OeGssrRyLJqonnefZfBToT7EfNbHDYiLkU,4594
+senserecord/core/__init__.py,sha256=IbwDM2UZKT2BpR2F5JgB2PI9kG6THsMdH-BccQi3McE,11027
+senserecord/gui/__init__.py,sha256=ahawXYXm0wuPQZjD2Ni5ML7u9Pxt_zsr3UCF79pYJS0,10171
+senserecord/gui/widgets.py,sha256=jUnQs_Lzm6hGVABoZ4yvteF9AGX3XwfgD_BQqJHr4Rg,14382
+senserecord/http/__init__.py,sha256=bfy_RFNWCaYqJu4xf0vSOh7E2jdPJMlkFZ2HG061u3Y,8356
+senserecord/http/static/favicon.ico,sha256=XWab-wNFFhKFHbYtS5DRA1NiNBFkH6woNJxjw8a4w58,15086
+senserecord/http/static/redoc.standalone.js,sha256=C3bclJhrOVMD4-7eTmLvvrhlxxq2nXApdEL2uimmmnY,925955
+senserecord/http/static/swagger-ui-bundle.js,sha256=cofPmBYsxpgG9KOKy51eJQS1p-lbpqiMYb3KLCYcaG0,1038437
+senserecord/http/static/swagger-ui.css,sha256=Xq-VTuYCIw_D_bWXb_X8h6FIPiSsDQdtvSgQlBOJ9MA,143074
+senserecord/main.py,sha256=-M01jof9F9QLEIBy3vH2HUcGJxjnKddKjrl7tuDyTDc,1624
+senserecord-0.1.1.dist-info/entry_points.txt,sha256=FUmeG1N32Q-UZpZeNP9dvGstdyZs6lFEQ0tQ-bZ2QHQ,132
+senserecord-0.1.1.dist-info/COPYING,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+senserecord-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+senserecord-0.1.1.dist-info/METADATA,sha256=KjCMIP6BySljxy8qL5pHd5BaCH1d5hbm5u_JijEilnQ,7195
+senserecord-0.1.1.dist-info/RECORD,,
