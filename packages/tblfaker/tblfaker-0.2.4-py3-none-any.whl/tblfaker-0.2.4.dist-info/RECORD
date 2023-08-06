@@ -1,0 +1,10 @@
+tblfaker/__init__.py,sha256=gtyvroxc5uHbRUy5vUhwqPkFNekp9KmLCpOmNFcoysY,169
+tblfaker/__version__.py,sha256=ISO-D9b9bYr5gkZYiUdrfeZAhGmt8bgXapfMuPmav6U,209
+tblfaker/_common.py,sha256=PAu7qrur9_0igao8I-fYmC1zBDcVndcCSGE8kBHtCLk,1520
+tblfaker/_tblfaker.py,sha256=iyip3azkU17YGv1F0GnXrEEWua7HgxcSWX91gy1NrN4,1830
+tblfaker/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tblfaker-0.2.4.dist-info/LICENSE,sha256=6R-rqWagXHXSlNwwxRJXP02yOuZE1EODDIshI-Qt9_w,1074
+tblfaker-0.2.4.dist-info/METADATA,sha256=GzRUkw5ieKFH_Bgf2uJD7yuuvR75Aam3upC2dMp82E4,7935
+tblfaker-0.2.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+tblfaker-0.2.4.dist-info/top_level.txt,sha256=Cwr9lDLJR2ruGYv3vLkc63Sr45o5RO4YFdb0VuvuKEE,9
+tblfaker-0.2.4.dist-info/RECORD,,
