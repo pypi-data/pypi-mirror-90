@@ -1,0 +1,9 @@
+dolreader/__init__.py,sha256=SIBN4mylH_RzPj8m3C_2THH0CR13hqX8lEhz6eck0ZQ,99
+dolreader/dol.py,sha256=x6rJ959rk4ApovbVxNGa5A69FM-GclNo9o8xg6jxYiQ,16325
+dolreader/exceptions.py,sha256=Sr9vRY3nSzgqWePEwnj1V82bAKw63papGUS3fBS1ntM,183
+dolreader/section.py,sha256=1L3cgpPr8ee3DV4sbqJgf3rZ53LM1iZw_TWfKkIGEjE,1331
+dolreader-1.0.0.dist-info/LICENSE,sha256=orYz6rAbunO5VBT1ctvgY1PuA7tJaDvJrM2mnKeFqmU,1085
+dolreader-1.0.0.dist-info/METADATA,sha256=6wMu3hmIu0uuyKOCByHJz3w7Kt9IHmmNYN_vfw92Aqg,899
+dolreader-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dolreader-1.0.0.dist-info/top_level.txt,sha256=QC1mPpNMAUjHR45gAnh7nLG_zzObz8zwcokqNZcui_w,10
+dolreader-1.0.0.dist-info/RECORD,,
