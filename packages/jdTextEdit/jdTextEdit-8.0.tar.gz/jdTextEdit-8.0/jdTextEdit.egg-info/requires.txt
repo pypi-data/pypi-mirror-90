@@ -1,0 +1,8 @@
+PyQt5
+QScintilla
+chardet
+requests
+jdTranslationHelper
+charset_normalizer
+cchardet
+EditorConfig
