@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+check_jsonschema/__init__.py
+check_jsonschema/cli.py
+check_jsonschema.egg-info/PKG-INFO
+check_jsonschema.egg-info/SOURCES.txt
+check_jsonschema.egg-info/dependency_links.txt
+check_jsonschema.egg-info/entry_points.txt
+check_jsonschema.egg-info/requires.txt
+check_jsonschema.egg-info/top_level.txt
