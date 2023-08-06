@@ -1,0 +1,12 @@
+senaite.core==2.0.0rc3
+senaite.app.listing==2.0.0rc3
+senaite.app.spotlight==2.0.0rc3
+senaite.app.supermodel==2.0.0rc3
+senaite.impress==2.0.0rc3
+setuptools
+
+[test]
+Products.PloneTestCase
+Products.SecureMailHost
+plone.app.testing
+unittest2
