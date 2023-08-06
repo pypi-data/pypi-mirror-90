@@ -1,0 +1,8 @@
+README.md
+setup.py
+shinymath/__init__.py
+shinymath/basicmath.py
+shinymath.egg-info/PKG-INFO
+shinymath.egg-info/SOURCES.txt
+shinymath.egg-info/dependency_links.txt
+shinymath.egg-info/top_level.txt
