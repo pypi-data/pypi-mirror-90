@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: chargebee-cli
+Version: 0.0.15
+Summary: cli for chargebee apis
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: click
+Requires-Dist: pyfiglet
+Requires-Dist: colorama
+Requires-Dist: configparser
+Requires-Dist: tqdm
+Requires-Dist: tabulate
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+
+# chargebee-cli
+chargebee-cli
+
+
