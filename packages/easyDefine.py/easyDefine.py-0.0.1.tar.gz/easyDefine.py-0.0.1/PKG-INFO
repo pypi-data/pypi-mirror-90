@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: easyDefine.py
+Version: 0.0.1
+Summary: The easiest functions for your app.
+Home-page: UNKNOWN
+Author: Team Wezacon
+Author-email: wezacon.com@gmail.com
+License: MIT
+Description: # easyDefine.py
+        
+        The easiest way to create an app.
+Keywords: easyDefine,easyDefine-py,wezacon
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

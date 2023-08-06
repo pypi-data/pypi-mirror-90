@@ -1,0 +1,13 @@
+README.md
+setup.py
+easyDefine/__init__.py
+easyDefine/client.py
+easyDefine.py.egg-info/PKG-INFO
+easyDefine.py.egg-info/SOURCES.txt
+easyDefine.py.egg-info/dependency_links.txt
+easyDefine.py.egg-info/requires.txt
+easyDefine.py.egg-info/top_level.txt
+easyDefine/lib/__init__.py
+easyDefine/lib/util/__init__.py
+easyDefine/lib/util/exceptions.py
+easyDefine/lib/util/objects.py
