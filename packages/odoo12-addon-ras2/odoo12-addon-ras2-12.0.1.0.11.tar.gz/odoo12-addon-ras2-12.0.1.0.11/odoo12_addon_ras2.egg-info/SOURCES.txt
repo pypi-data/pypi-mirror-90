@@ -1,0 +1,16 @@
+README.md
+setup.py
+odoo/__init__.py
+odoo/addons/__init__.py
+odoo/addons/ras2/__init__.py
+odoo/addons/ras2/__manifest__.py
+odoo/addons/ras2/models/__init__.py
+odoo/addons/ras2/models/hr_employee.py
+odoo/addons/ras2/tests/__init__.py
+odoo/addons/ras2/tests/test_t_hr_attendance_rfid_process.py
+odoo12_addon_ras2.egg-info/PKG-INFO
+odoo12_addon_ras2.egg-info/SOURCES.txt
+odoo12_addon_ras2.egg-info/dependency_links.txt
+odoo12_addon_ras2.egg-info/not-zip-safe
+odoo12_addon_ras2.egg-info/requires.txt
+odoo12_addon_ras2.egg-info/top_level.txt
