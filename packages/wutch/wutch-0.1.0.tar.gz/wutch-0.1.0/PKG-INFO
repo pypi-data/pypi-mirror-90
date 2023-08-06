@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: wutch
+Version: 0.1.0
+Summary: 
+Author: vduseev
+Author-email: vagiz@duseev.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: selenium (>=3.141.0,<4.0.0)
+Requires-Dist: watchdog (>=1.0.2,<2.0.0)
