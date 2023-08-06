@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: rustdef
+Version: 0.2.0
+Classifier: Framework :: Jupyter
+Classifier: Framework :: IPython
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Rust
+Requires-Dist: maturin
+Requires-Dist: jupyter
+Requires-External: rust
+Project-Url: Github, https://github.com/emakryo/rustdef
+Author: Ryosuke Kamesawa <emak.ryo@gmail.com>
+Author-Email: Ryosuke Kamesawa <emak.ryo@gmail.com>
+Requires-Python: >=3.6
