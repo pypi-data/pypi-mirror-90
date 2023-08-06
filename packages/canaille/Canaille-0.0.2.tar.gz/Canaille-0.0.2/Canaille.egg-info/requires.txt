@@ -1,0 +1,10 @@
+authlib
+click
+email_validator
+flask
+flask-babel
+flask-wtf
+python-ldap
+sentry-sdk[flask]
+toml
+wtforms==3.0.0a1
