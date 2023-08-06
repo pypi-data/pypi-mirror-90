@@ -1,0 +1,7 @@
+matplotlib
+networkx
+pandas
+pygraphviz
+pyyaml
+svgwrite
+yamlloader
