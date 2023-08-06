@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cit
+Version: 0.1.0
+Summary: 让github的下载速度比之前快一千倍
+Author: 中箭的吴起
+Author-email: solider245@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: sh (>=1.14.1,<2.0.0)
