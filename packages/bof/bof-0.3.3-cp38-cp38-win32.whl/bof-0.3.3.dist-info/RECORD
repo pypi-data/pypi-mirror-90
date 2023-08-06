@@ -1,0 +1,17 @@
+bof/__init__.py,sha256=gLbJ7OeXGchywDFrEbo7Xy6Q48TPswDl_Fe3B9TvRfY,137
+bof/common.py,sha256=E49lPVqFWOkL3XCzZ6hl6w-bFVJMtUsaPrC7k7-O9zA,6502
+bof/factortree.py,sha256=4Ceys_wwAQns0D5fT2TN5ZnOUrSi5B69oYyYOU-99Vg,20593
+bof/feature_extraction.py,sha256=zJFaHUQQl0C5XTjMW4AmqmaiD5FW2H-u-H5rhphMAuY,12919
+bof/jc.py,sha256=XEiFS1aT0SWrOmi9697xsCTk79PNYE-AcbepyN9iIjI,5793
+bof/process.py,sha256=wN0rD8FBMTxByPLWztTKrCAGpTxe7aWZMQ6KHFp75hE,19349
+bof/cython/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bof/cython/count.cp38-win32.pyd,sha256=Efb0mPoO7a8naHAtMc62ZkOcFbWhsgSDJJLD9qVD23g,176640
+bof/cython/count.cpp,sha256=p-P2gUJ8VJzO4a63VI-j4MW4JalHnJy4mB91I6kNuWQ,1081391
+tests/__init__.py,sha256=bqq6NLr0JmVDDzVhqveZcmzeGdZT91DCcPgrPW4e8pY,34
+tests/test_bof.py,sha256=SuPemtF3UvHMPOdSB5lWAh6N2TMz531IFmhqwpug_T4,572
+bof-0.3.3.dist-info/AUTHORS.rst,sha256=axf7rH3LnIiU_dXPswA3XCQuiUeDl6MV24m0hX1l4iM,169
+bof-0.3.3.dist-info/LICENSE,sha256=WDngn4ch-0q88-99WNLnCobyrIfDSF5lzd83ak4q9PI,1612
+bof-0.3.3.dist-info/METADATA,sha256=koVuC_wIWBkCzZv3QyF9F64RmkYQbz08lYm3wpTF2Jc,4204
+bof-0.3.3.dist-info/WHEEL,sha256=_iQIYqodxlIIeRSKaaUx61MUqAflFno6m3IasYrHq0k,96
+bof-0.3.3.dist-info/top_level.txt,sha256=Y28-H0GqEiOlRXZFSf1U0bVaXLw_wC3N54bqXdE5o8s,10
+bof-0.3.3.dist-info/RECORD,,
