@@ -1,0 +1,89 @@
+# Taken from http://www.lepipotron.com/
+text:
+  - "{{ ONE_OF  debut_phrase }} {{ ONE_OF sujet }} {{ ONE_OF nom_temporels }} {{ ONE_OF proposition }} {{ ONE_OF verbe_action }} {{ ONE_OF décrire_pluriel }} {{ ONE_OF noms_pluriel }} {{ ONE_OF noms_possibilité }}."
+  - "\n{{ ONE_OF formules_politesse_longues }}"
+
+
+debut_phrase:
+- Avec
+- Considérant
+- Où que nous mène
+- Eu égard à
+- Vu
+- En ce qui concerne
+- Dans le cas particulier de
+- Quelle que soit
+- Du fait de
+- Tant que durera
+
+sujet:
+- la situation
+- la conjoncture
+- la crise
+- l'inertie
+- l'impasse
+- l'extrémité
+- la dégradation des moeurs
+- la sinistrose
+- la dualité de la situation
+- la baisse de confiance
+
+nom_temporels:
+- présente
+- actuelle
+- qui nous occupe
+- qui est la nôtre
+- induite
+- conjoncturelle
+- contemporaine
+- de cette fin de semaine
+- de la société
+- de ces derniers temps
+
+proposition:
+- il faut
+- il convient de
+- on se doit de
+- il est préférable de
+- il serait intéréssant de
+- il ne faut pas négliger de
+- on ne peut se passer de
+- il est nécessaire de
+- il serait bon de
+- il faut de toute urgence
+
+verbe_action:
+- étudier
+- examiner
+- ne pas négliger
+- prendre en considération
+- anticiper
+- imaginer
+- se préoccuper de
+- s'intéresser à
+- avoir à l'esprit
+- se remémorer
+
+décrire_pluriel:
+- toutes les
+- chacune des
+- la majorité des
+- l'ensemble des
+- la somme des
+- la totalité des
+- la globalité des
+- certaines
+
+noms_pluriel:
+- solutions
+- issues
+- problématiques
+- voies
+- alternatives
+
+noms_possibilité:
+- envisageables
+- possibles
+- déjà en notre possesion
+- s'offrant à nous
+- de bon sens
