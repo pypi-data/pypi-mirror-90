@@ -1,0 +1,12 @@
+snweatherstation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snweatherstation/weatherForecastOWM.py,sha256=ZAu2NYgOIOT-vBnUHd8Gm8y9DtPcX_fQLmRudXWA25E,14867
+snweatherstation/weatherstation.py,sha256=eJUpO23Fd8jbXrCZyyS6Qhch_b8Z5TNO96kDCPlTLfE,29288
+snweatherstation/data/createDBtable.sql,sha256=GdYI7_HpQb79vh2J90fqh3T4WvE_wYqgIKIKJH-VY6s,3988
+snweatherstation/data/loggingConfig.json,sha256=TFTHvWlijZpzE-WX8CORsi6HKxV7RIp-Wq_-lbL6dHE,722
+snweatherstation/data/weatherstation.json,sha256=RSHJ2NgsNqgbgLr3ePr-PQfquUHvwhkKhBMht-uqiRk,1154
+snweatherstation/data/weatherstation.service,sha256=N4G5pFSAJY5HNRCaQRBOHnVOjtAeBYAvbeFuPWYFvKI,308
+snweatherstation-1.2.1.dist-info/LICENSE,sha256=cwXFbEYYVVmD1qQgIl05WKTEfrRdj9EsSCWpTji87JM,1063
+snweatherstation-1.2.1.dist-info/METADATA,sha256=97aTSRoqhcTbDodlMfiCVfD1O0NZy-aR6XlCj1--fno,13338
+snweatherstation-1.2.1.dist-info/WHEEL,sha256=gm79cMopkncyn0iSnI0vQNiDJ8t9on0H4_iz-CrpXMk,92
+snweatherstation-1.2.1.dist-info/top_level.txt,sha256=PkRDWIoaSyPcyVfCqQSNMuxzeIW_FY8Qwa1r4o_Y5us,17
+snweatherstation-1.2.1.dist-info/RECORD,,
