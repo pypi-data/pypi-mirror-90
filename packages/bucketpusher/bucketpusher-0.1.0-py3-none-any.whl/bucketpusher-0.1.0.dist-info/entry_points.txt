@@ -1,0 +1,3 @@
+[console_scripts]
+bucketpusher=bucketpusher:cli.main
+
