@@ -1,0 +1,8 @@
+README.md
+setup.py
+dojo_pkg/__init__.py
+dojo_pkg/dojo.py
+dojo_pkg_claudialorenzon.egg-info/PKG-INFO
+dojo_pkg_claudialorenzon.egg-info/SOURCES.txt
+dojo_pkg_claudialorenzon.egg-info/dependency_links.txt
+dojo_pkg_claudialorenzon.egg-info/top_level.txt
