@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: django-require-migration-name
+Version: 0.1.0
+Summary: require `name` in Django's `makemigrations`
+Home-page: https://github.com/whtsky/django-require-migration-name
+License: MIT
+Keywords: django,django-migrations,migrations
+Author: Wu Haotian
+Author-email: whtsky@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 3.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: Django (>=2.2,<4.0)
+Project-URL: Repository, https://github.com/whtsky/django-require-migration-name
+Description-Content-Type: text/markdown
+
+# django-require-migration-name
+
+[![codecov](https://codecov.io/gh/whtsky/django-require-migration-name/branch/master/graph/badge.svg?token=WXUN262JEF)](https://codecov.io/gh/whtsky/django-require-migration-name)
+
+require `name` in Django's `makemigrations`
+
+## Installation
+
+```bash
+pip install django-require-migration-name
+```
+
+## Usage
+
+Add `django-require-migration-name` into your `INSTALLED_APPS`:
+
+```python
+INSTALLED_APPS = [
+    # ...
+
+    'django-require-migration-name',
+]
+```
+
+Then you can't `makemigrations` without `name`:
+
+```bash
+>> python manage.py makemigrations
+CommandError: Please provide name for migration file(s).
+>> python manage.py makemigrations -n name_here
+No changes detected
+```
+
