@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+GsuiteToMd.egg-info/PKG-INFO
+GsuiteToMd.egg-info/SOURCES.txt
+GsuiteToMd.egg-info/dependency_links.txt
+GsuiteToMd.egg-info/requires.txt
+GsuiteToMd.egg-info/top_level.txt
+gstomd/__init__.py
+gstomd/corpus.py
+gstomd/settings.py
+gstomd/test/__init__.py
+gstomd/test/test_corpus.py
