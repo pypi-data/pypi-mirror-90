@@ -1,0 +1,7 @@
+README.md
+setup.py
+abbrs/__init__.py
+abbrs.egg-info/PKG-INFO
+abbrs.egg-info/SOURCES.txt
+abbrs.egg-info/dependency_links.txt
+abbrs.egg-info/top_level.txt
