@@ -1,0 +1,6 @@
+gitpython
+navis
+numpy
+pandas
+
+[extras]
