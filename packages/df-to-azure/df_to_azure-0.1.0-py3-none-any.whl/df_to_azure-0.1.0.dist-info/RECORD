@@ -1,0 +1,15 @@
+df_to_azure/__init__.py,sha256=sBnZAq43a_U0tf550oTadiw0hQuuPLQDGRk7GAes-RM,361
+df_to_azure/adf.py,sha256=3f60swdY98gNiGYPl6XJiz4onjiX9gA5WNsv7VI3diI,8549
+df_to_azure/db.py,sha256=l7p81dFfCwkkRnctrXHIQytJp1abUvP1pZcKOaeVB8k,2341
+df_to_azure/exceptions.py,sha256=RmtqcqfLqvgitZsIqNm76_oR5YDkm7NI7w3RSKLn078,182
+df_to_azure/export.py,sha256=j9wvW0mWzJLO04j2R-oGCNqjbsGaRgwbPooHB11WiZU,8438
+df_to_azure/functions.py,sha256=fpug6Y_N9Z7ilUIyW_o_OWMDsYTdXInzFQ7HTpGLQkg,2182
+df_to_azure/log.py,sha256=OqX52O4qjs0tlzBFfJtd4u6vJaXzz54NrXMcpo9FG2U,766
+df_to_azure/parse_settings.py,sha256=hO0A1sJI3YKxE6R3Rkqb3yLEqVBtBI6QZU6_JXvcLp0,461
+df_to_azure/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+df_to_azure/tests/test_df_to_azure.py,sha256=05t1_sjTavzcm5CE23W3es_-BWvA77q1EqAcL-fdk0A,8931
+df_to_azure-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+df_to_azure-0.1.0.dist-info/METADATA,sha256=92aL05Y4qPiuYA3sugY72V_j6vgUw7xDgRC8Rzcd90o,4027
+df_to_azure-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+df_to_azure-0.1.0.dist-info/top_level.txt,sha256=SjUy_a3FEckyP1v0vsp31QPvf6bg7m91AT0E0eWYrDU,12
+df_to_azure-0.1.0.dist-info/RECORD,,
