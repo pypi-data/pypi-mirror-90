@@ -1,0 +1,15 @@
+.dada-version
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+dada_image/__init__.py
+dada_image/exif.py
+dada_image/utils.py
+dada_image.egg-info/PKG-INFO
+dada_image.egg-info/SOURCES.txt
+dada_image.egg-info/dependency_links.txt
+dada_image.egg-info/requires.txt
+dada_image.egg-info/top_level.txt
+dada_image/tests/__init__.py
