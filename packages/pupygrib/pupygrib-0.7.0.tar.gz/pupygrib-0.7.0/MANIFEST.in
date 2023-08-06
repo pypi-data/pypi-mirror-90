@@ -1,0 +1,11 @@
+include           CHANGES.md
+include           .flake8
+include           LICENSE.txt
+include           mypy.ini
+include           noxfile.py
+include           .pre-commit-config.yaml
+include           pyproject.toml
+include           requirements/*.in
+include           requirements/*.txt
+recursive-include tests *.py
+recursive-include tests/data *

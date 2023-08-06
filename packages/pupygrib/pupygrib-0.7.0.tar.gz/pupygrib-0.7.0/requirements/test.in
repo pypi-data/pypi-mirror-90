@@ -1,0 +1,4 @@
+# Unit test requirements
+coverage[toml]
+pytest
+pytest-cov

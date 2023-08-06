@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[tool.check-manifest]
+ignore = [".gitlab-ci.yml"]
+
+[tool.coverage.run]
+source = ["pupygrib"]
+
+[tool.coverage.report]
+fail_under = 94
+
+[tool.isort]
+profile = "black"

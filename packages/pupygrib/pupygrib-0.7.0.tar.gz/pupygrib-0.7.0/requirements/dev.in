@@ -1,0 +1,10 @@
+# Useful packages for development
+black
+check-manifest
+flake8
+isort
+mypy
+pre-commit
+nox
+-r test.in
+-c test.txt
