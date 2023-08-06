@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: wildgram
+Version: 0.0.1
+Summary: wildgram tokenizes and seperates tokens into ngrams of varying size based on the natural language breaks in the text.
+Home-page: https://gitlab.com/gracekatherineturner/wildgram
+Author: Grace Turner
+Author-email: gracekatherineturner@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+wildgram tokenizes english text into "wild"-grams (tokens of varying word count)
+that match closely to the the natural pauses of conversation. I originally built
+it as the first step in an abstraction pipeline for medical language: since
+medical concepts tend to be phrases of varying lengths, bag-of-words or bigrams
+doesn't really cut it.
+
+Wildgrams works by measuring the size of the noise (stopwords, punctuation, and
+whitespace) and breaks up the text against noise of a certain size
+(it varies slightly depending on the noise).
+Some examples:
+"rats, bats, and vats" -> ["rats","bats", "vats"]
+"I dreamed a dream in time gone by" -> ["i dreamed","dream", "time gone"]
+
+Because this is originally for a medical abstraction, some of the stop words include
+words like "denied", "describe", and "patient" which tend to signify a change
+in topic in medical notes. Future work will create a set of change-of-topic words so that
+these words will show up in the output, but by themselves instead of part of a
+larger tokens.
+e.g. currently it does this:
+"patient denies consuming alcohol" -> ["consuming alcohol"]
+and eventually it will do this:
+"patient denies consuming alcohol" -> ["patient". "denies", "consuming alcohol"]
+But just buyer beware.
+
+Also note that it doesn't strictly tokenize each token like so:
+"I dreamed a dream in time gone by" -> [("i","dreamed"),("dream"), ("time","gone")]
+
+Final note: I do not include "of" in the stop word list, because there are quite a few
+medical concepts that have of in the middle (e.g. "shortness of breath").
+
+
+Example code:
+
+```python
+from wildgram import wildgram
+tokens, ranges = wildgram("and was beautiful")
+#tokens -- the wildgram tokens
+#ranges -- a list of tuples, the ith tuple has the start and end indexes for the ith wildgram
+print(tokens, ranges) #["beautiful"], [(8, 17)]
+```
+That's all folks!
+
+
