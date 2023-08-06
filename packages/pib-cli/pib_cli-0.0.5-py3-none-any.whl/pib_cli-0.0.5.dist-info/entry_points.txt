@@ -1,0 +1,4 @@
+[console_scripts]
+dev=pib_cli.cli:cli
+pib_cli=pib_cli.cli:cli
+
