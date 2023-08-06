@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Url91
+Version: 0.0.1
+Summary: A simplified url package made with request and urllib
+Home-page: https://github.com
+Author: PkgDev
+Author-email: example@example.com
+License: UNKNOWN
+Description: 
+        #Url91
+        
+        ```py
+        import Url91
+        
+        print(Url91.content("https://pypi.org"))
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
