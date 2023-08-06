@@ -1,0 +1,10 @@
+README.rst
+setup.py
+batchgit/__init__.py
+batchgit/cli.py
+batchgit.egg-info/PKG-INFO
+batchgit.egg-info/SOURCES.txt
+batchgit.egg-info/dependency_links.txt
+batchgit.egg-info/entry_points.txt
+batchgit.egg-info/requires.txt
+batchgit.egg-info/top_level.txt
