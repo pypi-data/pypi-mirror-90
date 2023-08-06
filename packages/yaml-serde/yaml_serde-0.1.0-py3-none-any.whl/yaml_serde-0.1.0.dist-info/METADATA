@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: yaml-serde
+Version: 0.1.0
+Summary: Python library for simplified YAML object serialization
+Home-page: https://github.com/asorbini/yaml-serde
+Author: Andrea Sorbini
+Author-email: as@mentalsmash.org
+License: License :: OSI Approved :: Apache Software License
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+
+# yaml-serde - Simplified YAML object serialization
+
+
