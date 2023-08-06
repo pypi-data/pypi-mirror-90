@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: luchtmeetnet
+Version: 0.0.2
+Summary: Package for luchtmeetned (Dutch)
+Home-page: https://github.com/magtimmermans/python_luchtmeetnet
+Author: Marcel Timmermans
+Author-email: marcel@timmermans.us
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# AirQuality
+
+This is a Python Package for Air Quality in Dutch Provinces from the site luchtmeetnet. 
+
+Explanation LKI
+The air quality index card (LKI) is the sum of the most important air pollutants.
+
+Dutch:
+De luchtkwaliteitsindex-kaart (LKI) is een optelsom van de belangrijkste luchtverontreinigende stoffen.
+
+The app will search for your closes station that measures your air quality. 
+
+## Installation
+
+Luchtmeetnet requires Python 3.6+ to run
+
+<pre><code class="has-line-data" data-line-start="9" data-line-end="11" class="language-bash">pip install luchtmeetnet
+</code></pre>
+
+## TO-DO 
+Several confitions 
+More measurements of different substance
+
