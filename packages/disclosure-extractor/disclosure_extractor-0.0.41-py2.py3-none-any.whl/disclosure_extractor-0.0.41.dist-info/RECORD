@@ -1,0 +1,12 @@
+disclosure_extractor/__init__.py,sha256=WOdhBFfNJ-0hdcDb6Jd8z_fRJYs08Hc01ejCXl79pH0,9118
+disclosure_extractor/calculate.py,sha256=BTQtfJURS8vjnnAkykpZESPcsXSLJybdcsRRRRi76jg,3075
+disclosure_extractor/data_processing.py,sha256=p4CD2AR8kBipA-Wnk0BAh6QHxxQA0QLaNlui3Xv2jHU,10426
+disclosure_extractor/extractor_template.json,sha256=z1LPZKrpqXpPUQZEVeb3yKdOfKMPawaesMnmZn388_o,1678
+disclosure_extractor/image_processing.py,sha256=bX9E6Fz1jsAP1iRwILo26JPrh1o_DbchNilETxXfe_g,18062
+disclosure_extractor/judicial_watch_utils.py,sha256=wPW-nISJ8YLranrlQvulW2Aj2cLPcLVKjopiqx2skJM,16145
+disclosure_extractor/post_processing.py,sha256=wTy7B_Pfb0lUew7aR_BYlNUglZtHiniy_d4tO-zu5zk,5194
+disclosure_extractor-0.0.41.dist-info/LICENSE,sha256=2yw8l0ppvZFBJXoQ2u4TgRbNBOw1TNUjnQr1K8UCV3I,1326
+disclosure_extractor-0.0.41.dist-info/METADATA,sha256=RjDNy2uCTSU-SLvYv_YQL15opKgcOe3t76lAsV-BzV8,17229
+disclosure_extractor-0.0.41.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+disclosure_extractor-0.0.41.dist-info/top_level.txt,sha256=blkxFmlj50WYo8GEXxgt_rBJIOO3eX7qSRD7Q0_pEzo,21
+disclosure_extractor-0.0.41.dist-info/RECORD,,
