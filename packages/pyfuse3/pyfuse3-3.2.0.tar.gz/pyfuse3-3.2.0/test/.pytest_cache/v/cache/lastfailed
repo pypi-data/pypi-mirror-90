@@ -1,0 +1,8 @@
+{
+  "test_foo.py::test_fd1_error": true,
+  "test_foo.py::test_fd2_error": true,
+  "test_foo.py::test_log_error": true,
+  "test_foo.py::test_log_warning": true,
+  "test_foo.py::test_stderr_error": true,
+  "test_foo.py::test_stdout_error": true
+}
