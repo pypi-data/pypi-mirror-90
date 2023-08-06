@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: url_to_image
+Version: 1.0.1
+Summary: Get image object from given url.
+Home-page: UNKNOWN
+Author: Uros Mrkobrada
+Author-email: 
+License: GNU General Public License v3
+Description: # **url_to_image**
+        
+        Get image object from given url.
+        
+        ### Installation
+        
+        ```
+        pip3 install url_to_image
+        ```
+        
+        ### Usage
+        
+        ```python
+        import url_to_image
+        image_pil = url_to_image.convert("URL","pil")
+        image_tk= url_to_image.convert("URL","tk")
+        ```
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Topic :: Utilities
+Classifier: Topic :: Desktop Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+Provides-Extra: dev
