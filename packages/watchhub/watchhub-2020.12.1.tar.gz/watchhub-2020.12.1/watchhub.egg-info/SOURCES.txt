@@ -1,0 +1,10 @@
+README.rst
+setup.py
+watchhub/__init__.py
+watchhub/__version__.py
+watchhub/api.py
+watchhub.egg-info/PKG-INFO
+watchhub.egg-info/SOURCES.txt
+watchhub.egg-info/dependency_links.txt
+watchhub.egg-info/requires.txt
+watchhub.egg-info/top_level.txt
