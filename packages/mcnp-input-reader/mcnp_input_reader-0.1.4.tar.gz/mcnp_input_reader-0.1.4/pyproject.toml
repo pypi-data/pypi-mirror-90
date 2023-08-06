@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "mcnp_input_reader"
+version = "0.1.4"
+description = "MCNP Input reader"
+authors = ["gmariano <giovanni.mariano@enea.it>"]
+readme = "README.md"
+homepage = "https://github.com/ENEA-Fusion-Neutronics/MCNP-Input-Reader.git"
+repository = "https://github.com/ENEA-Fusion-Neutronics/MCNP-Input-Reader.git"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+flake8 = "^3.8.4"
+jupyter = "^1.0.0"
+notebook = "^6.1.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_variable = [
+    "mcnp_input_reader/__init__.py:__version__",
+    "pyproject.toml:version"
+]
+branch = "main"
+upload_to_pypi = false
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
