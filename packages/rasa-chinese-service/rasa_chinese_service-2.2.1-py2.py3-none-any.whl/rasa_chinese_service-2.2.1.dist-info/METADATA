@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rasa-chinese-service
+Version: 2.2.1
+Summary: Service package for rasa_chinese
+Home-page: https://github.com/howl-anderson/rasa_chinese_service
+Author: Xiaoquan Kong
+Author-email: u1mail2me@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Dist: transformers (<4.0,>3.0)
+Requires-Dist: sanic
+
+UNKNOWN
+
+
