@@ -1,0 +1,3 @@
+[console_scripts]
+nextinspace=nextinspace.cli.console:run
+

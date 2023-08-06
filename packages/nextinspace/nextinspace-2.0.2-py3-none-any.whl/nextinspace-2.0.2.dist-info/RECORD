@@ -1,0 +1,12 @@
+LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nextinspace/__init__.py,sha256=O_UlSjvQfllO1YHc_7Ob0ae0Q4_rmQN9gmqCGpkVr-Q,13248
+nextinspace/__main__.py,sha256=L297T8OIVbYhxwkUVzuKFVzkvlZtKcF6nfQESwVhKyI,84
+nextinspace/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nextinspace/cli/console.py,sha256=h6NJFuWST4V3ruxkF4FZGbPtp1knqwZhJaXcj3WS87g,924
+nextinspace/cli/parser.py,sha256=XESiNgk-jgZUdwhDGYLUecKDDMDe9MjICrYqyVMCU0c,1961
+nextinspace/cli/viewer.py,sha256=71BY3-gTXHhGiZqF1sythxE6l_n2DhvC3HySqjzAKQA,8062
+nextinspace-2.0.2.dist-info/entry_points.txt,sha256=CbByejVtvtognRIdcfO_eUHmWdCS0ejuzDHOfs-ZXXE,59
+nextinspace-2.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nextinspace-2.0.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+nextinspace-2.0.2.dist-info/METADATA,sha256=YNwkOuFRfkkIFTl4Ac_QSDbSVMGjG-o_efmPRfay458,12173
+nextinspace-2.0.2.dist-info/RECORD,,
