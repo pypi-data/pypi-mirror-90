@@ -1,0 +1,3 @@
+[pyfony.bundle]
+autodetect=dbxdeploy.DbxDeployBundle:DbxDeployBundle.autodetect
+
