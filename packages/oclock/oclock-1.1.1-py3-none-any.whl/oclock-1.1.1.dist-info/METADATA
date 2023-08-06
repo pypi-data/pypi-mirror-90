@@ -1,0 +1,252 @@
+Metadata-Version: 2.1
+Name: oclock
+Version: 1.1.1
+Summary: Timing tools (cancellable timers, constant-duration loops, countdowns, context managers, etc.)
+Home-page: https://github.com/ovinc/oclock
+Author: Olivier Vincent
+Author-email: olivier.vincent@ens-paris-saclay.fr
+License: BSD 3-Clause License
+Keywords: timing,cancellable,countdown,context manager
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# General information
+
+**oclock** is a Python 3 module that provides timing tools :
+
+- The `Timer()` class allows for cancellable loops of constant duration.
+
+- The `countdown()` function is a GUI countdown timer based on the Timer class.
+
+- The `parse_time()` function returns a (hours, min, sec) tuple from a time string (e.g. `':2:25'`)
+
+- The `measure_time()` function is a context manager that measures the average time (unix time) and time uncertainty (+/- dt) at which the encapsulated commands occur.
+
+# Install
+
+## Method 1
+
+In a terminal:
+```bash
+pip install git+https://cameleon.univ-lyon1.fr/ovincent/oclock
+```
+
+## Method 2
+
+- Clone the project or download directly the files into a folder.
+- In a terminal, `cd` into the project or folder, where the __setup.py__ is, then
+```bash
+pip install .
+```
+
+# Quick start
+
+## Loop timer
+
+The most basic use of the `Timer()` class in Python code is
+```python
+from oclock import Timer
+timer = Timer(interval=2)  # Loops will be of total duration 2 seconds
+while condition:
+    my_function()  # can be of any duration between 0 and 2 seconds
+    timer.checkpt()
+```
+Note that if *my_function()* takes longer to execute than the required time interval, the Timer class does not try to compensate the extra time by making the next loop shorter. It just aims at making the total duration of the next loop be the requested interval again.
+
+When the timer interacts with other threads in a concurrent environment, it can also be cancelled without having to wait for the end of the *timer.checkpt()* sleeping period. See details in the *Timer Class details* section below.
+
+## Countdown GUI
+
+To use the countdown GUI, there are two methods:
+
+From a terminal:
+```bash
+python -m oclock 1:45:00   # start timer of duration 1 hour 45 minutes
+python -m oclock 1:45:     # exactly the same as above
+python -m oclock 00:02:00  # start 2-minute timer
+python -m oclock :2:       # exactly the same as above
+python -m oclock 00:00:05  # start 5-second timer
+python -m oclock ::5       # exactly the same as above
+```
+
+From a python console:
+```python
+from oclock import countdown
+countdown(1, 45)      # start timer of duration 1 hour 45 minutes
+countdown(h=1, m=45)  # exactly the same as above
+countdown(0, 2, 0)    # start 2-minute timer
+countdown(m=2)        # exactly the same as above
+countdown(0, 0, 5)    # start 5-second timer
+countdown(s=5)        # exactly the same as above
+```
+
+When countdown is finished, 'Done' is displayed for 5 seconds in the GUI while the console displays *Countdown finished* and emits a sound (if available) 5 times in a row. Then the time passed since the end of countdown is displayed as a negative value in red. The program stops when the GUI window is closed.
+
+## Parse time
+
+The `parse_time()` function is used in the argument parsing of the countdown GUI from a terminal (see above). It transforms a string in the form `'h:m:s'` into a tuple `h, m, s`. Inputs of the form e.g. `'::5'` or `:2:`, `'3:30:'` are acceptable for 5 seconds, 2 minutes, and 3.5 hours, respectively.
+
+## Measure time
+
+Example of uses as a context manager:
+```python
+from oclock import measure_time
+
+# Example where one just wants to get timing info ----------------------------
+with measure_time() as timing:
+    my_function()
+print(timing)
+# Out: {'time (unix)': 1604780958.0705943, 'dt (s)': 0.6218999624252319}
+
+# Example where the timing info is directly added to a data dictionary -------
+with measure_time() as data:
+    measurement = my_function()  # returns e.g. 3.618
+    data['measurement'] = measurement
+print(data)
+# Out: {'measurement': 3.618,
+#       'time (unix)': 1604780958.0705943,
+#       'dt (s)': 0.6218999624252319}
+```
+
+
+# Timer Class details
+
+## Methods
+
+```python
+timer.checkpt()  # Checkpoint for constant-duration loops, see above
+timer.reset()  # starts counting time from here
+timer.deactivate()  # immediate exiting of timer (see notes below)
+timer.pause()  # Simply pauses the elapsed time, but does not act on checkpt()
+timer.resume()  # restarts the elapsed time counter after pause()
+```
+
+## Properties (settable)
+
+```python
+timer.interval       # get interval (in s)
+timer.interval += 1  # increase interval by 1 second
+timer.interval = 10  # set interval to 10 seconds.
+
+timer.warnings          # get current status of warnings
+timer.warnings = True   # activate warnings if time between checkpts too short
+
+timer.name  # optional name to give to the timer with timer=Timer(name='xyz')
+timer.name = 'Countdown timer'  # can also be set during instantiation
+```
+
+## Attributes (read-only)
+
+```python
+# Most useful attributes
+timer.elapsed_time  # Time in seconds since init or last reset
+timer.pause_time    # total time (in s) the timer has been paused.
+
+# Other (moslty internal to module methods)
+timer.init_time     # Unix time at which the timer object has been intantiated
+timer.start_time    # Unix time since last reset (or init if no reset made)
+timer.interval_exceeded  # (bool) True if the contents of the loop take longerto execute than the current requested interval
+timer.target  # (float) unix time of the target time for the next loop
+timer.stop_event  # (threading.Event object): is set when timer is deactivated
+```
+
+## Notes
+
+- Methods take effect immediately, even if the timer is in a waiting phase, which can be useful if the loop is controlled by an external signal.
+
+- A change in `timer.interval` also takes effect immediately (any checkpt() that is in effect is cancelled), but does not reset the timer: in particular, `elapsed_time()` is not reset to zero.
+
+- After deactivation, the `timer.checkpt()` command becomes equivalent to a `pass`, so that all following lines will be executed immediately and without any waiting time (i.e. as fast as possible if within a loop), until `timer.reset()` is called again.
+
+
+## Examples
+
+See *example.py* file of the module for an example of the use of the `Timer()` class in an asynchronous environment; to run the example, type `python -m example` in a console from the root of the repository.
+
+
+## Accuracy test
+
+See *performance.py* file of the module for functions to test the accuracy of the timer. In particular:
+```python
+from oclock.performance import performance_test
+performance_test(dt=0.1, nloops=100, fmax=0.99)
+```
+tests the timing on 1000 loops of requested duration 0.1 second, using within the loop a function sleeping for a random amount of time between 0 and 0.99*dt.
+
+Below are some quick preliminary results on timing accuracy in an Unix Environment (MacOS) and Windows, using `n=1000`, `fmax=0.99` for various values of `dt`.
+
+- **Unix timing accuracy**
+
+|     Requested dt (s)    |   1    | 0.1  | 0.04  | 0.01 | 0.001 |
+|:-----------------------:|:------:|:----:|:-----:|:----:|:-----:|
+|Relative error in dt (%)*|< 0.0001|< 0.01| < 0.1 | 3.5  |  12   |
+|Fluctuations in dt (ms)**|   0.6  | 0.5  |   1   |  1   |  0.2  |
+
+
+- **Windows timing accuracy**
+
+|     Requested dt (s)    |   1   |  0.1  | 0.04 | 0.01 | 0.001 |
+|:-----------------------:|:-----:|:-----:|:----:|:----:|:-----:|
+|Relative error in dt (%)*|< 0.002|  0.9  | 6.1  |  62  |  833  |
+|Fluctuations in dt (ms)**|  6.5  |  7.8  | 7.7  |  6.4 |  3.2  |
+
+(*) measured by averaging all individual loop durations and comparing to the requested dt
+(**) using one standard deviation
+
+
+## Package testing
+
+Testing is done with *pytest* (`pip install pytest`) from the root of the repository. Additional testing can be done by running the example file from the root of the repository.
+```bash
+pytest
+python -m example
+```
+(**Note**: close the interactive countdown window at the end of the pytest run to finish the test.)
+
+
+# Requirements
+
+Python 3. To run some examples, Python : >= 3.6 is needed because of the use of f-strings.
+
+# Author
+
+Olivier Vincent
+olivier.vincent@ens-paris-saclay.fr
+BSD 3-Clause License
+
+Copyright (c) 2020, Olivier VINCENT
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of the copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
