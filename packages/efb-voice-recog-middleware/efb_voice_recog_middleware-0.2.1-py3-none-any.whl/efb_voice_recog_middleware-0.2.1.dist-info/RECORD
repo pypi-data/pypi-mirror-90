@@ -1,0 +1,12 @@
+efb_voice_recog_middleware/__init__.py,sha256=ferxvZwxAGF6fCwE9fkINka9ge_6CIQ7OFOd_b6iTBQ,5892
+efb_voice_recog_middleware/__version__.py,sha256=oSAmMVrAunrkX9Iewy4A6Uq1dS-mnH2EHleGxWiGBLs,39
+efb_voice_recog_middleware/engines/__init__.py,sha256=_9Kz_9_BqmZ5rI9FaCJupUaPAPhs6aCs45_H2QtyKsQ,355
+efb_voice_recog_middleware/engines/azure.py,sha256=_fH8GYXQQgtrxZXl2ZWs9GjTtkMsfQXz18lzI2e28tI,3129
+efb_voice_recog_middleware/engines/baidu.py,sha256=gX3TiGoJ4xjB6tU34I1tZPAlq4KP_MVtmGqrj2WW4U4,2363
+efb_voice_recog_middleware/engines/iflytek.py,sha256=c9CcSPNN7XkHMdsWlUUuC2YRMveyYE9_K9TincACjQM,7820
+efb_voice_recog_middleware/engines/tencent.py,sha256=yS3df3OPA5GYL8QDSKmby-yDripdD4HJ1Ad2LOKmx2g,2743
+efb_voice_recog_middleware-0.2.1.dist-info/METADATA,sha256=1o7oHtR5L--HVFSF9Hy1qWRXJJmZbQaG5gBioWMY6aw,4393
+efb_voice_recog_middleware-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+efb_voice_recog_middleware-0.2.1.dist-info/entry_points.txt,sha256=h7ijoEja_40UBBJW825e8_glDP1LBz9Qti0WldIO8EA,100
+efb_voice_recog_middleware-0.2.1.dist-info/top_level.txt,sha256=k0paBiXxDDOcsv4MfDMwNNm3-hrVYpbBi4stQlWHRfo,27
+efb_voice_recog_middleware-0.2.1.dist-info/RECORD,,
