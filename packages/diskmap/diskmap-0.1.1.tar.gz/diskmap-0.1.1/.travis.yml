@@ -1,0 +1,24 @@
+language: python
+
+dist: xenial
+
+python:
+  - 3.6
+  - 3.7
+  - 3.8
+
+install:
+  - pip install -e .
+  - pip install --upgrade -r requirements.txt
+  - pip install pytest-cov
+  - pip install coveralls
+
+script:
+  - pytest --cov=diskmap
+
+after_success:
+  - coveralls
+
+notifications:
+  - webhooks: https://coveralls.io/webhook
+  - email: false
