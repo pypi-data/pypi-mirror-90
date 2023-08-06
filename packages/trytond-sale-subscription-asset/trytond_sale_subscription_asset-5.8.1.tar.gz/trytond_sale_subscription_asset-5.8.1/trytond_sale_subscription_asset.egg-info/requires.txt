@@ -1,0 +1,3 @@
+trytond_sale_subscription<5.9,>=5.8
+trytond_stock_lot<5.9,>=5.8
+trytond<5.9,>=5.8
