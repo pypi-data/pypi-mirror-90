@@ -1,0 +1,8 @@
+README.md
+setup.py
+uno_template/__init__.py
+uno_template.egg-info/PKG-INFO
+uno_template.egg-info/SOURCES.txt
+uno_template.egg-info/dependency_links.txt
+uno_template.egg-info/requires.txt
+uno_template.egg-info/top_level.txt
