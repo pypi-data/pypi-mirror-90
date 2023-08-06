@@ -1,0 +1,11 @@
+standard_precip/base_sp.py,sha256=T_hLiZuDbXA7FIz7NTKsOlZTLKutzCjwPFu3p_2-GKM,10213
+standard_precip/spi.py,sha256=lJ4qGW2Ia9QGKt9bMcTKL_Dh5e8KApRUUSqh4Hxs4l0,137
+standard_precip/utils.py,sha256=diahhm9s91-AhgiVhmZez5fc9NJN6_siXD56AaIxExI,3427
+standard_precip/lmoments/distr.py,sha256=ZxdRMQBbY83h7UMT8NpSgzt15X3A7umA5yMu57gaRQQ,32238
+standard_precip/lmoments/lmoments_base.py,sha256=DwrrTvTIszhLPUWUL3jYlRvavn7awAuBYXUgJVvNKvU,6684
+standard_precip/lmoments/stats.py,sha256=fswPk1pqw20qDtKjkIsihoCxFW2idpqMedUXlM8hWss,1805
+standard_precip-1.0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+standard_precip-1.0.dist-info/METADATA,sha256=92hymtJwXfCcP24PmsAqn93KqksU-jKuBDjlomVio9o,423
+standard_precip-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+standard_precip-1.0.dist-info/top_level.txt,sha256=2wIxvVQDGyTT1MMdXBqiSKMEmFQIezGiXVTzx0xzkXY,41
+standard_precip-1.0.dist-info/RECORD,,
