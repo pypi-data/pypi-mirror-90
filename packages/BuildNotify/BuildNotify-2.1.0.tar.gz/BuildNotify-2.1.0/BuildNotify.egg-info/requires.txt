@@ -1,0 +1,4 @@
+pytz
+PyQt5==5.15.2
+python-dateutil
+requests
