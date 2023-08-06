@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: h4cktools
+Version: 0.0.2
+Summary: h4cktools is a python library containing usefull helpers for penetration testing and security challenges.
+Home-page: https://github.com/WhatTheSlime/h4cktools
+Author: Sélim Lanouar
+Author-email: selim.lanouar@gmail.com
+License: CeCILL
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: tests
