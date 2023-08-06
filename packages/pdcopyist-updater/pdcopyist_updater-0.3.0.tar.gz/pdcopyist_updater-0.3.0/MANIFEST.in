@@ -1,0 +1,3 @@
+include README.md LICENSE 
+recursive-include pdcopyist *.*
+prune pdcopyist/**/__pycache__
