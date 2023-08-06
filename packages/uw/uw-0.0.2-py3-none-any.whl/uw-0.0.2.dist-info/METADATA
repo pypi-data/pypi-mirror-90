@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: uw
+Version: 0.0.2
+Summary: useful decorators
+Home-page: https://github.com/thorwhalen/ut/tree/master/util/decorators.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# uw
+useful decorators
+
+
+To install:	```pip install uw```
+
+
