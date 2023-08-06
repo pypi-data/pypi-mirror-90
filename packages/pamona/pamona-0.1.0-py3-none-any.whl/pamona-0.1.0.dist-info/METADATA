@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pamona
+Version: 0.1.0
+Summary: manifold alignment method for single-cell multi-omics integration using Pamona
+Home-page: https://github.com/caokai1073/Pamona
+Author: caokai
+Author-email: caokai@amss.ac.cn
+License: MIT Licence
+Keywords: Pamona,caokai,amss
+Platform: any
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
