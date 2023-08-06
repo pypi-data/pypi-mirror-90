@@ -1,0 +1,10 @@
+mopidy_somafm/__init__.py,sha256=kJM9eddr2inGwXOs-tb1mOEimkbLZl-1aSmYKhc7x0s,878
+mopidy_somafm/backend.py,sha256=-m1kcwzcATmC33qhoi1J3RZsCrPo__vW3gGHIz1gSwc,4126
+mopidy_somafm/ext.conf,sha256=Og5gAu0Q1KsMBQpe4VbtmhHFJ5by_gdAtoMCmgATpgo,74
+mopidy_somafm/somafm.py,sha256=ApqfGyEFWuUE5YuxPIIIcA3AlnhkQ1SE4jaFY8rVpWc,5162
+Mopidy_SomaFM-2.0.1.dist-info/LICENSE,sha256=nUP7jODmRj_SSDd35cdorup2NTnMioTydJrOqa5sLxc,1086
+Mopidy_SomaFM-2.0.1.dist-info/METADATA,sha256=8OEvYiTdD2xv_DwKaPqyh7V_JlkPNDMl7_LJ3_7oUG4,3836
+Mopidy_SomaFM-2.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+Mopidy_SomaFM-2.0.1.dist-info/entry_points.txt,sha256=-zSPD7SXawpa_iKekca9-jbHhP0qfV2oevjo3jv24Cg,47
+Mopidy_SomaFM-2.0.1.dist-info/top_level.txt,sha256=UtMx6fmkue4YEoVWhaOJL8o80p87-qx0vORILK-TFpE,14
+Mopidy_SomaFM-2.0.1.dist-info/RECORD,,
