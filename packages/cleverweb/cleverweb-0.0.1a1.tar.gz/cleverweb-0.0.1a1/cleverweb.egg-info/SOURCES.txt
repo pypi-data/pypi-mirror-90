@@ -1,0 +1,10 @@
+README.md
+setup.py
+cleverweb/__init__.py
+cleverweb/cleverweb.py
+cleverweb/test_cleverweb.py
+cleverweb.egg-info/PKG-INFO
+cleverweb.egg-info/SOURCES.txt
+cleverweb.egg-info/dependency_links.txt
+cleverweb.egg-info/requires.txt
+cleverweb.egg-info/top_level.txt
