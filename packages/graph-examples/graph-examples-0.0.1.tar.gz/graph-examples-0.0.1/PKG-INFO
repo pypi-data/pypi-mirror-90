@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: graph-examples
+Version: 0.0.1
+Summary: Examples of graph theory in Pythonic code
+Home-page: https://github.com/travisjungroth/python-graph-examples
+Author: Travis Jungroth
+Author-email: jungroth@gmail.com
+License: UNKNOWN
+Description: A work in progress of demonstrating graph theory with Pythonic code.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
