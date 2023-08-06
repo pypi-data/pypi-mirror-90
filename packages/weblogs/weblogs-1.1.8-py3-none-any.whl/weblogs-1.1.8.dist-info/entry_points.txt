@@ -1,0 +1,3 @@
+[console_scripts]
+weblogsadmin = weblogs.web_logs:main
+
