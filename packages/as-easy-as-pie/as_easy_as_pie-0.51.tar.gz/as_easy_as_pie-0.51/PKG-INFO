@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: as_easy_as_pie
+Version: 0.51
+Summary: Really easy
+Home-page: https://github.com/Pfython/as_easy_as_pie
+Author: Peter
+Author-email: peter@gmail.com
+License: The Unlicense
+Download-URL: https://github.com/Pfython/as_easy_as_pie/archive/0.51.tar.gz
+Description: # `as_easy_as_pie`
+        ![Replace with your own inspirational logo here](https://github.com/PFython/easypypi/blob/main/easypypi.png?raw=true)
+        
+        # 1. OVERVIEW
+        Really easy
+        
+        # 2. INSTALLATION
+        
+            pip install as_easy_as_pie
+        
+        
+        # 3. BASIC USE
+        
+            >>> import as_easy_as_pie
+        
+        
+        # 4. UNDER THE BONNET
+        
+        # 5. CONTRIBUTING
+        
+        Contact Peter peter@gmail.com or feel free to raise Pull Requests / Issue in the normal Github way.
+        
+        # 6. CREDITS
+        
+        # 7. PAYING IT FORWARD
+        
+        
+        If `as_easy_as_pie` helps you save time and focus on more important things, please feel free to to show your appreciation by starring the repository on Github.
+        
+        I'd also be delighted if you wanted to:
+        
+        <a href="https://www.buymeacoffee.com/{self.Github_username}" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/arial-yellow.png" alt="Buy Me A Coffee" width="217px" ></a>
+        
+Keywords: as_easy_as_pie,Peter,Pfython,
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Communications :: Chat :: ICQ
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Description-Content-Type: text/markdown
