@@ -1,0 +1,8 @@
+README.md
+setup.py
+drf_action_params_validator/__init__.py
+drf_action_params_validator.egg-info/PKG-INFO
+drf_action_params_validator.egg-info/SOURCES.txt
+drf_action_params_validator.egg-info/dependency_links.txt
+drf_action_params_validator.egg-info/requires.txt
+drf_action_params_validator.egg-info/top_level.txt
