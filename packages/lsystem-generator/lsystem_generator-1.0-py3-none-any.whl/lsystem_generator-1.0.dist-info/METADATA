@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: lsystem-generator
+Version: 1.0
+Summary: Package for generating and rendering Lsystems
+Home-page: UNKNOWN
+Author: Camille Boillet
+Author-email: camille.boillet@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.19.4)
+Requires-Dist: matplotlib (>=3.3.3)
+Requires-Dist: Pillow (>=8.0.1)
+
+# Lsystem generator python lib
+
+Current version: [1.0](https://pypi.org/project/lsystem-generator/1.0/)
+
+This package enable to generate Lsystem representation by providing:
+
+* Axioms (e.g. : "F")
+* Rules of generation (e.g. F -> F+F--F+F)
+* Generation (e.g. 2 for the second generation)
+* Rules of display (using the [turtle analogy](http://mathforum.org/advanced/robertd/lsys2d.html))
+
+
+## Installation
+
+`pip install lsystem-generator==1.0`
+
+## Usage
+
+```
+from lsystem.lsys_generator import Lsystem
+
+if __name__=="__main__":
+    lsys = Lsystem("F",("F", "F-Y-F"), ("Y", "Y+F+Y"))
+
+    lsys.generate(2)
+    image = lsys.render(("+",80), ("-",-80))
+    image.show()
+
+    lsys.generate(5)
+    image = lsys.render(("+",60), ("-",-60))
+    image.show()
+```
+
+note fore the user: after declaring a Lsystem, multiple generation `generate()` can be created and different representation can be obtained `render()`
+
+`help(Lsystem)` gives a detailed documentation on how to create Lsystems, generate and render image representations
+
+## Performance limits
+
+The programm is performing at generate lsystem in the first 10-15 generation, depending on the lenght of the rule for generation and the number of axioms and rules.
+At generation n+1 the lenght of the generated sequence  will be:
+
+```
+    l_1 = number of axioms in sequence_n * lenght of the rule for generation for each axiom + characters that are not axioms in the sequence_n  
+
+    = sum(number of axiom i in sequence_n * lenght of the rule i for this axiom) + (lenght of the sequence - sum(number of axiom i in sequence_n))
+
+    = sum((l / l_rule_i * occ_a_i) * l_rule_i) + (l - sum(l / l_rule_i * occ_a_i) )  
+```
+
+with:
+* `l`: lenght of the sequence at generation n 
+* `l+1`: lenght of the sequence at generation n
+* `l_rule_i`: lenght of the rule i for generation
+* `occ_a_i`: number of occurences of the axiom i in the rule i for generation
+* `i`: index of the pair (axiom, rule) defined in the Lsystem
+
+The RAM available will depend on the system and the python installation you are running the lib with, the maximum string length that can be generated and thus the number of generation that can be produced will vary.
+If higher generation needs to be produced, a different implementation would be required.
+
+## Development
+
+After downloading the sources run `pip install -e .`
+We recommand using a virtulanv to install pip dependencies
+
+## Running unit test (in development mode)
+
+To run the tests execute from the root folder:
+`pytest --testdox`
+
+if you encounter import difficulites, make sure the root directory, lsystem and tests dir are in the $PYTHONPATH. Run `source .env` to add them
+
+## License
+
+Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+
