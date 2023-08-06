@@ -1,0 +1,8 @@
+README.md
+setup.py
+kiwiml/__init__.py
+kiwiml/autodiff.py
+kiwiml.egg-info/PKG-INFO
+kiwiml.egg-info/SOURCES.txt
+kiwiml.egg-info/dependency_links.txt
+kiwiml.egg-info/top_level.txt
