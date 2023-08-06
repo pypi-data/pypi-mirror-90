@@ -1,0 +1,13 @@
+README.md
+setup.py
+tests/__init__.py
+tests/core.py
+utils_plus/__init__.py
+utils_plus/math.py
+utils_plus/version.py
+utils_plus.egg-info/PKG-INFO
+utils_plus.egg-info/SOURCES.txt
+utils_plus.egg-info/dependency_links.txt
+utils_plus.egg-info/top_level.txt
+utils_plus/itertools/__init__.py
+utils_plus/performance/__init__.py
