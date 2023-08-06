@@ -1,0 +1,15 @@
+README.md
+setup.py
+dact/__init__.py
+dact/__main__.py
+dact/classmodule.py
+dact/createreact.py
+dact/funcmodule.py
+dact/mydatas.py
+dact/visuals.py
+dact.egg-info/PKG-INFO
+dact.egg-info/SOURCES.txt
+dact.egg-info/dependency_links.txt
+dact.egg-info/entry_points.txt
+dact.egg-info/requires.txt
+dact.egg-info/top_level.txt
