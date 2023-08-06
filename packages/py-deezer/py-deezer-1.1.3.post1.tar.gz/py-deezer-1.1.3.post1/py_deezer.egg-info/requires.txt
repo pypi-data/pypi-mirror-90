@@ -1,0 +1,7 @@
+requests
+cryptography
+mutagen
+tqdm
+click
+pyinquirer
+colorama
