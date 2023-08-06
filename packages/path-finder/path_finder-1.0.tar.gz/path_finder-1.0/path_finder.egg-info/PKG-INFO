@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: path-finder
+Version: 1.0
+Summary: interface for finding directories and files
+Home-page: https://github.com/hdsr-mid/path_finder
+Author: Renier Kramer
+Author-email: renier.kramer@hdsr.nl
+License: MIT
+Download-URL: https://github.com/hdsr-mid/path_finder/archive/v1.0.tar.gz
+Description: ## path_finder
+        
+        ### Description
+        An interface for finding directories and files by combining best of both worlds: glob/rglob (speed) and regex (flexibility).
+        
+        ### Features
+        path_finder officially supports Python 3.5–3.8. \
+        The two main features are: path_finder.DirFinder and path_finder.FileFinder (see Usage) 
+        
+        ### License 
+        [MIT][mit]
+        
+        ### Releases
+        [PyPi][pypi]
+        
+        ### Contributions
+        All contributions, bug reports, bug fixes, documentation improvements, enhancements and ideas are welcome.
+        Issues are posted on: https://github.com/hdsr-mid/path_finder/issues
+        
+        [pypi]: https://pypi.org/project/path-finder/
+        [mit]: https://github.com/hdsr-mid/path_finder/blob/main/LICENSE.txt
+        
+        
+        ### Usage
+        #### Test path_finder
+        ```
+        > cd path_finder
+        > pytest
+        ```
+        
+        #### Example FileFinder:
+        ```
+        from pathlib import Path
+        import path_finder
+        
+        start_dir1          = pathlib.Path('start_search_from_this_dir')
+        start_dir2          = pathlib.Path('and_start_search_from_this_dir')
+        limit_depth         = True
+        depth               = 2  # 2, so search in start_dir1, subdir and subsubdirs (same for start_dir2) 
+        filename_regex      = '^[0-9]{8}_blabla'
+        extension           = '.csv'  # choose from ('.jpg', '.png', '.txt', '.xml', '.csv', '.xlsx', '.pdf', '.h5', '.nc', '.zip')   
+        
+        file_finder = path_finder.FileFinder(
+            multi_start_dir=[start_dir1, start_dir2],
+            extension=extension,
+            limit_depth=True,                   
+            depth=depth,
+            filename_regex=filename_regex
+        )
+                            
+        paths = file_finder.paths  # returns a List[Path]
+        paths_empty_files = file_finder.paths_empty_file  # returns a List[Path]
+        ```
+        
+        
+        #### Example DirFinder:
+        ```
+        from pathlib import Path
+        import path_finder
+        
+        dir_finder = path_finder.DirFinder(
+            single_start_dir=pathlib.Path('start_search_from_this_dir')
+            exclude_empty_dirs=True,
+            limit_depth=True,
+            depth=0,  # so only search in single_start_dir
+        )
+        
+        paths = dir_finder.paths  # returns a List[Path]
+        paths_empty_files = dir_finder.paths_empty_file  # returns a List[Path]
+        ```
+        
+Keywords: interface,path,directory,filename,glob,regex,find
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Provides-Extra: test
