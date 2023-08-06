@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+fdmutils/__init__.py
+fdmutils/common.py
+fdmutils/config.py
+fdmutils/data_var.py
+fdmutils.egg-info/PKG-INFO
+fdmutils.egg-info/SOURCES.txt
+fdmutils.egg-info/dependency_links.txt
+fdmutils.egg-info/top_level.txt

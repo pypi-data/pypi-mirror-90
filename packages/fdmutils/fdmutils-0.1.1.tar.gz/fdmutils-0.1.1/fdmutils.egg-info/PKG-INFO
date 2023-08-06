@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: fdmutils
+Version: 0.1.1
+Summary: independent functions
+Home-page: https://github.com/fdmseven/fdmutils
+Author: fdmseven
+Author-email: wrp2003000@163.com
+License: LICENSE.txt
+Description: 
+        independent function
+        
+Platform: UNKNOWN
+Requires-Python: >=3
