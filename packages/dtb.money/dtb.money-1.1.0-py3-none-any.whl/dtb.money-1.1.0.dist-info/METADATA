@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dtb.money
+Version: 1.1.0
+Summary: Simple money implementation
+License: MIT
+Author: Dima Doroshev
+Author-email: dima@doroshev.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: dtb.currency (>=1.3.0,<2.0.0)
