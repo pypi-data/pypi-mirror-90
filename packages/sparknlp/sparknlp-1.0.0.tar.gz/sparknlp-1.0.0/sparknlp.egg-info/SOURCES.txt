@@ -1,0 +1,7 @@
+README.md
+setup.py
+sparknlp.egg-info/PKG-INFO
+sparknlp.egg-info/SOURCES.txt
+sparknlp.egg-info/dependency_links.txt
+sparknlp.egg-info/requires.txt
+sparknlp.egg-info/top_level.txt
