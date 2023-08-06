@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: atom3d
+Version: 0.1.0
+Summary: ATOM3D: Tasks On Molecules in 3 Dimensions
+Home-page: UNKNOWN
+Author: Raphael Townshend
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: argparse
+Requires-Dist: biopython
+Requires-Dist: click
+Requires-Dist: easy-parallel
+Requires-Dist: freesasa
+Requires-Dist: h5py
+Requires-Dist: lmdb
+Requires-Dist: msgpack
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: python-dotenv (>=0.5.1)
+Requires-Dist: scipy
+Requires-Dist: tables
+Requires-Dist: torch
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
