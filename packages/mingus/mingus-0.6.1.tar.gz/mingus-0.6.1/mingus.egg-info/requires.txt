@@ -1,0 +1,7 @@
+six
+
+[fft]
+numpy
+
+[fluidsynth]
+numpy
