@@ -1,0 +1,7 @@
+README.md
+setup.py
+MenuBuilder.egg-info/PKG-INFO
+MenuBuilder.egg-info/SOURCES.txt
+MenuBuilder.egg-info/dependency_links.txt
+MenuBuilder.egg-info/top_level.txt
+MenuBuilder_pkg/__init__.py
