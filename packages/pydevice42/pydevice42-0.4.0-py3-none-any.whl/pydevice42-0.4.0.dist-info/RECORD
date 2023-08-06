@@ -1,0 +1,12 @@
+pydevice42/__init__.py,sha256=nGU7yc7YOWsU2KfqfxcBxw_vzTe5tXXidyOPHNG_9Zs,58
+pydevice42/__main__.py,sha256=Ye88W6DN3-9da1cfwtNQ24GRFx7oxXoDX4HVNFw06k4,332
+pydevice42/basicrestclient.py,sha256=NLLXDy8kVob2iCbVoJOThsurP39w_npkAejigtMC4KI,2051
+pydevice42/d42client.py,sha256=y1lI09ZXnPHUq6x4P_ilgbSiU4SmsG_eeda_gz-pxQ0,7858
+pydevice42/exceptions.py,sha256=UoZU5cJ8vH4ux1-lY5RWJhT9kAnq6QPW6ED9CKD2wLE,305
+pydevice42/logger.py,sha256=t78k-bMV5HrTAzNeWgL9sv-Qk5CvzS8ngXFlbTAYEIA,53
+pydevice42/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydevice42/types.py,sha256=5LymAUdEl4eeO8fRNYuL6NT59RJX4kcQ0JqdVdFPOnw,3048
+pydevice42-0.4.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pydevice42-0.4.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pydevice42-0.4.0.dist-info/METADATA,sha256=JKsfEAp6u6VrEWErjhIB50VanLVBEDwZZ7QR91zBO8Y,1059
+pydevice42-0.4.0.dist-info/RECORD,,
