@@ -1,0 +1,20 @@
+[flake8]
+
+exclude =
+    .eggs/
+    .git/
+    .tox/
+    src/jomiel/kore/
+    src/jomiel/protobuf/
+    build/
+    dist/
+
+per-file-ignores =
+    # unexpected spaces around keyword / parameter equals
+    src/jomiel/app.py:E251
+
+    # undefined name 'plugin_handlers'
+    src/jomiel/cache.py:F821
+
+    # do not use bare 'except' (B001: flake8-bugbear)
+    src/jomiel/dispatcher/media.py:E722,B001
