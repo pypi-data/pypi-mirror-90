@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hg
+Version: 0.0.2
+Summary: Frequent itemsets -- paired counts fp-tree
+Home-page: https://github.com/thorwhalen/ut/tree/master/ml/association/paired_counts_fptree.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # hg
+        Frequent itemsets -- paired counts fp-tree
+        
+        
+        To install:	```pip install hg```
+        
+Platform: any
+Description-Content-Type: text/markdown
