@@ -1,0 +1,12 @@
+setup.py
+hmp_basic_matrix_algebra/Add.py
+hmp_basic_matrix_algebra/Division.py
+hmp_basic_matrix_algebra/GeneralOperations.py
+hmp_basic_matrix_algebra/Multiplication.py
+hmp_basic_matrix_algebra/Subtraction.py
+hmp_basic_matrix_algebra/__init__.py
+hmp_basic_matrix_algebra.egg-info/PKG-INFO
+hmp_basic_matrix_algebra.egg-info/SOURCES.txt
+hmp_basic_matrix_algebra.egg-info/dependency_links.txt
+hmp_basic_matrix_algebra.egg-info/not-zip-safe
+hmp_basic_matrix_algebra.egg-info/top_level.txt
