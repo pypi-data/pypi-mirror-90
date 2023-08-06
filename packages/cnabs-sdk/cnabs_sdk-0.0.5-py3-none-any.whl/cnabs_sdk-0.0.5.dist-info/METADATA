@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: cnabs-sdk
+Version: 0.0.5
+Summary: CNABS OPENAPI SDK
+Home-page: https://github.com/cnabs
+Author: Bo Pan
+Author-email: bo.pan@cn-abs.com
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.2.0)
+
+# CNABS Openapi Python Sdk
+
+本模块为CNABS OPENAPI的 Python SDK
+依赖包
+- Requests: pip install requests
+
+使用帮助
+1. 引入cnabssdk包
+```
+    import cnabssdk.clients
+    import cnabssdk.deals
+    import cnabssdk.securities
+
+```
+2. 初始化token
+Token 获得地址： https://www.cn-abs.com/openapi.html#/my-token
+```
+    cnabssdk.init("20200915-20210915--xxxxx8dXSMAk")
+```
+3. 获得产品列表等接口
+```
+    deals = cnabssdk.deals.get_list('建元')
+    print('Count: ' + str(len(deals)))
+    deal = cnabssdk.deals.get_detail(deals[0].id)
+    print(deal.name)
+
+    securitylist = cnabssdk.securities.get_list(year= 2020)
+    print('Security Count: ' + str(len(securitylist)))
+    sec = cnabssdk.securities.get_detail(securitylist[0].id)
+    print(sec.short_name)
+```
+
