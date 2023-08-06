@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ilcctl
+Version: 1.0.1
+Summary: Package for controlling iLC RGB Bluetooth light bulbs
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: bluepy
+Requires-Dist: click
+
+UNKNOWN
+
+
