@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        ranpass=ranpass:cli
+    
