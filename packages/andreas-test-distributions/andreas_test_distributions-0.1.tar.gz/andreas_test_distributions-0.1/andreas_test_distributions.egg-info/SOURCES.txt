@@ -1,0 +1,10 @@
+setup.py
+andreas_test_distributions/Binomialdistribution.py
+andreas_test_distributions/Gaussiandistribution.py
+andreas_test_distributions/Generaldistribution.py
+andreas_test_distributions/__init__.py
+andreas_test_distributions.egg-info/PKG-INFO
+andreas_test_distributions.egg-info/SOURCES.txt
+andreas_test_distributions.egg-info/dependency_links.txt
+andreas_test_distributions.egg-info/not-zip-safe
+andreas_test_distributions.egg-info/top_level.txt
