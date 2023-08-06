@@ -1,0 +1,10 @@
+README.md
+setup.py
+python_streak.egg-info/PKG-INFO
+python_streak.egg-info/SOURCES.txt
+python_streak.egg-info/dependency_links.txt
+python_streak.egg-info/entry_points.txt
+python_streak.egg-info/top_level.txt
+streak/__init__.py
+streak/streak.py
+streak/version.py
