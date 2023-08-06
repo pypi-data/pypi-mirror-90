@@ -1,0 +1,16 @@
+iotoolz/__init__.py,sha256=Aj6dc-9i_GLsHwHKWtZoOrz-gQESGolr8n3FyWYtJFo,155
+iotoolz/_abc.py,sha256=mvo7QWBQ_IxgaT2n-MNaUqZg9pDR0Hd4AtdstZPIZkU,30969
+iotoolz/_toolz.py,sha256=glUhRdTKoy7LFb_oJpuV3S8zndw8lIHq6O7Nbf06viI,179
+iotoolz/extensions/__init__.py,sha256=tJ3vjqNl-qTCKqMHseagDiincHkANmbTje64R7nj3RM,1102
+iotoolz/extensions/_not_implemented.py,sha256=Pcb5slBfJpk4Ic_ar-2Wd7mQbqeEstz8G8-JPfjyspM,1039
+iotoolz/extensions/minio.py,sha256=DCMREi3-qe4MLFdwOj745YuigKCFi2Dz07tjWgOqEi4,8071
+iotoolz/extensions/s3.py,sha256=TROcXqwDJ44zqPkN6s3VZDhVsYh232DxfURIIFwa21U,17262
+iotoolz/file.py,sha256=2tq4PxFJ6EjZKSBA1SSfoNwf6VDyAUVC7vLR76d_Lec,5426
+iotoolz/http.py,sha256=vI6D37VxKmkoeQ1ccjmXUxRYlHW2ludQEwfrz9JNK1Q,4625
+iotoolz/streams.py,sha256=0vEBrYMODcVZxLkqTOgFYwkTyO8o8wOHy87iqNP2hQY,12706
+iotoolz/temp.py,sha256=5DWC-hKCkuAD_iowqEPhsT4jWmtQS6i_Aih9a-t678w,7472
+iotoolz/utils.py,sha256=ZnE_8q8GOUeqF8D1l1WBtqA2FYzJkF9TSG8lEVLxO2k,2696
+iotoolz-0.1.0rc16.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+iotoolz-0.1.0rc16.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+iotoolz-0.1.0rc16.dist-info/METADATA,sha256=nlrXRqRlnJ19JW8QTaVc0_TfaDQPlLyGrR-9AP5x8BA,12819
+iotoolz-0.1.0rc16.dist-info/RECORD,,
