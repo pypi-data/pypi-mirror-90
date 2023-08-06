@@ -1,0 +1,4 @@
+[console_scripts]
+gaextract = gaunit.cli:extract_har
+gaunit = gaunit.cli:check_har
+
