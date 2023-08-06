@@ -1,0 +1,8 @@
+README.md
+setup.py
+imlazy_photo/__init__.py
+imlazy_photo/imlazy_photo.py
+imlazy_photo.egg-info/PKG-INFO
+imlazy_photo.egg-info/SOURCES.txt
+imlazy_photo.egg-info/dependency_links.txt
+imlazy_photo.egg-info/top_level.txt
