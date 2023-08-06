@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: umirobot
+Version: 21.4.3
+Summary: UMIRobot control code for Python.
+Home-page: https://github.com/mmmarinho/umirobot-py
+Author: Murilo M. Marinho
+Author-email: murilo@g.ecc.u-tokyo.ac.jp
+License: GPLv3
+Description: # umirobot-py
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
