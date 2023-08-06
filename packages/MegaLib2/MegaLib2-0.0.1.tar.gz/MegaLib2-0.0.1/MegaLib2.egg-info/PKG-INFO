@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: MegaLib2
+Version: 0.0.1
+Summary: Package that helps me with my projects feel free to use it yourself
+Home-page: https://github.com/mega145/MegaLib
+Author: Mega145
+Author-email: kacpermi@poczta.fm
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: Free For Educational Use
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Education
+Classifier: Natural Language :: Polish
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown

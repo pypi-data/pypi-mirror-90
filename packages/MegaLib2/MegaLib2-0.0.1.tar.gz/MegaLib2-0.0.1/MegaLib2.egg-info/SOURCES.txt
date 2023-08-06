@@ -1,0 +1,8 @@
+setup.py
+MegaLib2/Utils.py
+MegaLib2/__init__.py
+MegaLib2/networking.py
+MegaLib2.egg-info/PKG-INFO
+MegaLib2.egg-info/SOURCES.txt
+MegaLib2.egg-info/dependency_links.txt
+MegaLib2.egg-info/top_level.txt
