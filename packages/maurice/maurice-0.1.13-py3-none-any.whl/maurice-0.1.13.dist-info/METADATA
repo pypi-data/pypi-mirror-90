@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: maurice
+Version: 0.1.13
+Summary: Ship better machine learning projects, faster!
+Home-page: https://github.com/tpvasconcelos/maurice
+Author: Tomas Pereira de Vasconcelos
+Author-email: tomasvasconcelos1@gmail.com
+Requires-Python: >=3.7.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Provides-Extra: all
+Provides-Extra: pandas
+Provides-Extra: sklearn
+Provides-Extra: tensorflow
+Requires-Dist: dill (>=0.3.1,<0.4.0)
+Requires-Dist: pandas (>=1.0.0,<2.0.0); extra == "pandas" or extra == "all"
+Requires-Dist: scikit-learn; extra == "sklearn" or extra == "all"
+Requires-Dist: tensorflow (>=2.4.0,<3.0.0); extra == "tensorflow" or extra == "all"
+Requires-Dist: wrapt (>=1.12.1,<2.0.0)
+Project-URL: Repository, https://github.com/tpvasconcelos/maurice
+Description-Content-Type: text/markdown
+
+# Maurice
+
+
+## Installing
+
+Install and update using `pip`:
+
+```shell
+pip install -U maurice
+```
+
+## Simple Examples
+
+### Automatic caching
+
+Add any of the following patches at the top of your scripts
+
+Cache SQL queries executed from the pandas library
+```python
+from maurice.patchers import caching_patch_pandas_db; caching_patch_pandas_db()
+import pandas as pd
+
+
+df = pd.read_sql_query(con=your_connection, sql="select * from your_table")
+```
+
+Cache `.fit()` calls from any `sklearn` Estimator (...)
+```python
+from maurice.patchers import caching_patch_sklearn_estimators; caching_patch_sklearn_estimators()
+
+...
+```
