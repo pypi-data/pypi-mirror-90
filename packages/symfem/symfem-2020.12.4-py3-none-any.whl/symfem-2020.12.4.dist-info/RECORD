@@ -1,0 +1,16 @@
+symfem/VERSION,sha256=rJjsTPdwxDSBqtwKGcAty6RCGZjW3JP7Du525Ec3kgU,10
+symfem/__init__.py,sha256=ZghK2eGjRsD3ULD_CUBnivz4uw1a6iphthZSd3A8HNk,2499
+symfem/finite_element.py,sha256=bITH07K3TaMmGV1SUvoe3QKX6Wl2Q6D7hgcC5jwOfbI,5744
+symfem/functionals.py,sha256=KPh-MltWBLWF-2NhPDFK_3WFFstOsY8yDleLn4u05Ik,4709
+symfem/polynomials.py,sha256=VAimjblj5qPcSqZQxE-B52dEnygyWms88mgCl2iNJN4,8946
+symfem/references.py,sha256=dTLeb52DiqNC0frUOVcePa63p0F9447TxMrXycswqtg,7824
+symfem/simplex.py,sha256=4mbCZ-d7GXC29RXdcSs65XExO6hAJ1mpHeWKxlBZCo8,7097
+symfem/symbolic.py,sha256=vqTFyZIziImyEDFDEDBUz02CYDoUjJtpfXyyggALKJI,696
+symfem/tp.py,sha256=MucTd6JZPeavBERMa8vi656Rg-D2g6GxcH33AhYmm64,7009
+symfem/vectors.py,sha256=lKWhkEEvj2BeIcyoXYCUHiQ5KLL6ONW5RT6WUneLgbE,1259
+symfem-2020.12.4.data/data/symfem/VERSION,sha256=rJjsTPdwxDSBqtwKGcAty6RCGZjW3JP7Du525Ec3kgU,10
+symfem-2020.12.4.dist-info/LICENSE.txt,sha256=aWvhPOtIgGsqSh-NTbooItJZb3SrdEPm3l3iSNVNifM,1072
+symfem-2020.12.4.dist-info/METADATA,sha256=cLIxL81M4OEGKw_I4Ul0cu6NHIdkGi_uBIFQGM433_U,316
+symfem-2020.12.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+symfem-2020.12.4.dist-info/top_level.txt,sha256=In-i6xkvyQ3-XcF9uMD6r29KsFCPtYCNMbOAy8wfG1o,7
+symfem-2020.12.4.dist-info/RECORD,,
