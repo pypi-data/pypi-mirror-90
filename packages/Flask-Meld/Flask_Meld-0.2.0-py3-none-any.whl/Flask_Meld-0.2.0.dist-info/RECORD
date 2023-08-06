@@ -1,0 +1,16 @@
+flask_meld/__init__.py,sha256=3nBh-lWJD5wInZld8uhePq0BWwYbGwI-BtKfk2IOKgU,79
+flask_meld/component.py,sha256=1mI5dgdF7H4vmXtz-IjfYBreTGcwoufbuZQiUtNERPw,8203
+flask_meld/meld.py,sha256=3mdi4aYWeMKqprIZCamnn5lQWJ1AGWQH7IE_dI2LXds,1499
+flask_meld/message.py,sha256=SuzhXDLl7vWfif_bUv19sIyZM722hQYT4706qFA6wkM,2277
+flask_meld/tag.py,sha256=f5ojvPIyJJL_J_geWelh0tvbIWNrjNiMA5qkMxagvAs,1968
+flask_meld/static/js/attribute.js,sha256=kAzfuVFX0hpgEiA9sDrTTlKsEUNR8mmYaKo44Oi4J2Q,2360
+flask_meld/static/js/component.js,sha256=gdiDrQfFI1U4SLMEF37xjxyFoAOrVBS9dLPvEQVyins,7076
+flask_meld/static/js/element.js,sha256=c7W7p9WlBe9U7rW9nklP8JTexlYJlYXt4osjHJv_yM4,4626
+flask_meld/static/js/meld.js,sha256=1tNbRmTiQCIW31jB5QE1ndSoQNil6QTlpSTXOL0eAjU,3870
+flask_meld/static/js/morphdom-umd.js,sha256=m9dPyJSIJXkQcjxR_tYhiAJBSNIN8MQ6BUgVxeyvjDE,34045
+flask_meld/static/js/socket.io.js,sha256=TVYbK1yBfvKFK8n-2nNa8fcQExJg3fjlN_O69UkayT4,61801
+flask_meld/static/js/utils.js,sha256=7BJ8wJmTmcD6w2aBqHUbfvhVeXGdosIEx0XW71KnLMo,2672
+Flask_Meld-0.2.0.dist-info/METADATA,sha256=LOP81FzlLg9uw1SvrslmLpJPYevQX9w00OUSNd36-ck,6594
+Flask_Meld-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Flask_Meld-0.2.0.dist-info/top_level.txt,sha256=2XVFT4MmuyDXynmzhvP6kJNQWfvDoAVCJv5r5zJe5pc,11
+Flask_Meld-0.2.0.dist-info/RECORD,,
