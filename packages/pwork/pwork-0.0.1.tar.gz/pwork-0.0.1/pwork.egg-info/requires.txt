@@ -1,0 +1,12 @@
+requests==2.21.0
+
+[dev]
+autopep8
+pylint
+pytest
+mypy
+flake8
+black
+isort
+pytest-cov
+pre-commit

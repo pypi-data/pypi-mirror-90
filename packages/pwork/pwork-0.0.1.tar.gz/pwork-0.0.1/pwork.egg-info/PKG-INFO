@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pwork
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/gaianote/python-framework
+Author: gaianote
+Author-email: gaianote311@gmail.com
+License: UNKNOWN
+Description: # python-framework
+        一个简单的 python 项目脚手架，用于快速的创建简单易用的 python 项目
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Description-Content-Type: text/markdown
+Provides-Extra: dev

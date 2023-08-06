@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+pwork/__init__.py
+pwork/__main__.py
+pwork/app.py
+pwork.egg-info/PKG-INFO
+pwork.egg-info/SOURCES.txt
+pwork.egg-info/dependency_links.txt
+pwork.egg-info/entry_points.txt
+pwork.egg-info/not-zip-safe
+pwork.egg-info/requires.txt
+pwork.egg-info/top_level.txt
+test/test_main.py
