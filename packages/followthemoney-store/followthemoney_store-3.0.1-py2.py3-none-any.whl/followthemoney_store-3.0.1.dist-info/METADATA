@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: followthemoney-store
+Version: 3.0.1
+Summary: Store raw and structured FollowTheMoney data from different datasets in a data lake
+Home-page: http://github.com/alephdata/followthemoney-store
+Author: Organized Crime and Corruption Reporting Project
+Author-email: data@occrp.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: followthemoney (>=1.31.1)
+Requires-Dist: SQLAlchemy (>=1.3.1)
+Provides-Extra: postgresql
+Requires-Dist: psycopg2-binary (>=2.7) ; extra == 'postgresql'
+
+# followthemoney-store
+
+This library provides methods to store, fetch and list entities formatted as
+`followthemoney` data as datasets stored in a SQL backend.
+
+## Usage
+
+### Command-line usage
+
+```bash
+# Insert a bunch of FtM entities into a store:
+$ cat ftm-entities.ijson | ftm store write -d my_dataset
+# Re-create the entities in aggregated form:
+$ ftm store iterate -d my_dataset | alephclient write-entities -f my_dataset
+```
+
+If you don't want to keep the balkhash dataset generated above, there's a
+shortcut that combines the write and iterate functions:
+
+```bash
+$ cat ftm-entities.ijson | ftm store aggregate | alephclient write-entities -f my_dataset
+```
+
+### Python Library
+
+```python
+from ftmstore import Dataset
+
+dataset = Dataset("US-OFAC")
+dataset.put(entity, fragment='1')
+```
+
+
