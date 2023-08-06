@@ -1,0 +1,7 @@
+README.md
+setup.py
+analysis_package/__init__.py
+data_analysis_task_pkg_macca2707.egg-info/PKG-INFO
+data_analysis_task_pkg_macca2707.egg-info/SOURCES.txt
+data_analysis_task_pkg_macca2707.egg-info/dependency_links.txt
+data_analysis_task_pkg_macca2707.egg-info/top_level.txt
