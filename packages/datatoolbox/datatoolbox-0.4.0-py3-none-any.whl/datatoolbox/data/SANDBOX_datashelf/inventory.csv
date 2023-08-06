@@ -1,0 +1,9 @@
+,variable,entity,category,pathway,scenario,model,source,source_name,source_year,unit
+Emissions|CO2|Total__Historic__SOURCE_A_2020,Emissions|CO2|Total,Emissions|CO2,Total,Historic,Historic,,SOURCE_A_2020,,,Mt CO2
+Emissions|CO2|Total__Medium|Projection__SOURCE_A_2020,Emissions|CO2|Total,Emissions|CO2,Total,Medium|Projection,Medium,Projection,SOURCE_A_2020,,,Mt CO2
+Emissions|CO2|Total_excl_LULUCF__Historic__SOURCE_A_2020,Emissions|CO2|Total_excl_LULUCF,Emissions|CO2,Total_excl_LULUCF,Historic,,Historic,SOURCE_A_2020,SOURCE_A_2020,,Mt CO2
+Emissions|CO2|Total__Historic__SOURCE_B_2020,Emissions|CO2|Total,Emissions|CO2,Total,Historic,Historic,,SOURCE_B_2020,,,Mt CO2
+Emissions|CO2|Total__Medium|Projection__SOURCE_B_2020,Emissions|CO2|Total,Emissions|CO2,Total,Medium|Projection,Medium,Projection,SOURCE_B_2020,,,Mt CO2
+Emissions|CO2|Total_excl_LULUCF__Historic__SOURCE_B_2020,Emissions|CO2|Total_excl_LULUCF,Emissions|CO2,Total_excl_LULUCF,Historic,,Historic,SOURCE_B_2020,SOURCE_B_2020,,Mt CO2
+Numbers|Ones__Historic__Numbers_2020,Numbers|Ones,Numbers,Ones,Historic,Historic,,Numbers_2020,,,m
+Numbers|Fives__Historic__Numbers_2020,Numbers|Fives,Numbers,Fives,Historic,Historic,,Numbers_2020,,,m
