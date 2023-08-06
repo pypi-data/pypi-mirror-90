@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "fungeit"
+version = "0.42.10"
+description = "The edge code needed to interact with the fungeit ecosystem."
+authors = ["Scott McCallum <cto@fungeit.nz>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

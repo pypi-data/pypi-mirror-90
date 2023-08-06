@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: fungeit
+Version: 0.42.10
+Summary: The edge code needed to interact with the fungeit ecosystem.
+Author: Scott McCallum
+Author-email: cto@fungeit.nz
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
