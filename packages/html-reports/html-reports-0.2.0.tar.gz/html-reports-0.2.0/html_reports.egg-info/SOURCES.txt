@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+html_reports/__init__.py
+html_reports/reports.py
+html_reports.egg-info/PKG-INFO
+html_reports.egg-info/SOURCES.txt
+html_reports.egg-info/dependency_links.txt
+html_reports.egg-info/requires.txt
+html_reports.egg-info/top_level.txt
+html_reports/templates/simple.html
