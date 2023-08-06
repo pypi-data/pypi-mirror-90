@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: comto_dadata
+Version: 2.0.0
+Summary: Package for working with the "dadata.ru" service
+Home-page: http://commercito.ru
+Author: Pavel Vasin
+Author-email: commercito@gmail.com
+License: UNKNOWN
+Description: # DaData Commercito
+        Package for working with the "[dadata.ru](https://dadata.ru/ "Information about clients and contractors")" service
+        
+        Пакет для работы с сервисом "[dadata.ru](https://dadata.ru/ "Информация о клиентах и контрагентах")"
+        
+        ## Using
+        
+        ### Address (Поиск адресов)
+        ```python
+        from comto_dadata import address
+        
+        token = 'your-token'
+        secret = 'your-secret'
+        
+        print(address.suggest(token, 'москва твер'))
+        print(address.geocoding(token, secret, "москва сухонская 11"))
+        print(address.geocoding_reverse(token, '55.878', '37.653'))
+        print(address.by_ip(token, '46.226.227.20'))
+        print(address.by_fias(token, '9120b43f-2fae-4838-a144-85e43c2bfb29'))
+        print(address.postal_unit(token, 'дежнева 2а'))
+        print(address.delivery_uid(token, '3100400100000'))
+        print(address.dict_by_fias(token, '9120b43f-2fae-4838-a144-85e43c2bfb29'))
+        print(address.country(token, 'DE'))
+        ```
+        
+        ### Company (Поиск компаний)
+        ```python
+        from comto_dadata import company
+        
+        payload = {
+            'query': 'Иванов Александр',
+            'count': 20,
+            'status': ["ACTIVE"],
+            'locations': [{"kladr_id": "1300000100000"}],
+        }
+        
+        res = company.suggest('your-token', payload)
+        ```
+        
+        ### Profile (Личный кабинет)
+        
+        ```python
+        from comto_dadata import profile
+        
+        stat = profile.stat('your-token', 'your-secret')
+        balance = profile.balance('your-token', 'your-secret')
+        version = profile.version('your-token')
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
