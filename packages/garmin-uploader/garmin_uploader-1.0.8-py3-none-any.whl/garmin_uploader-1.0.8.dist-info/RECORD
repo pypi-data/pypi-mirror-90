@@ -1,0 +1,12 @@
+garmin_uploader/__init__.py,sha256=iQ57kmhpuLsy8cJ5Yp_SXkU56jQPCxiZmEplrnrA8_U,550
+garmin_uploader/api.py,sha256=5jmliXZgmmS4mhg68vafpgF83uI4mFIjWY8ezT_mPBs,9591
+garmin_uploader/cli.py,sha256=XTyUlMmWZGb3AG6XrIUdZVbt_7pSeUhcsgHO2u8vsQ8,2121
+garmin_uploader/help.txt,sha256=0hbM-3hVjmLfMT6RhCsH1HzjIO-hGpMkyF5Ci2Ix1l8,4550
+garmin_uploader/user.py,sha256=Rs5oJ0SslrraFrpcRhbhi1WOrl5rWs7THD1REq---ak,2812
+garmin_uploader/workflow.py,sha256=nqYeVC6c-clJWv5UXkLV6wP4AEUJrJnA5cIOb8q4i2s,8485
+garmin_uploader-1.0.8.dist-info/LICENSE.txt,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+garmin_uploader-1.0.8.dist-info/METADATA,sha256=AYCLMmUdl1acCl3zmKq82ewoI3VsGo84vSsDQfoBDnc,884
+garmin_uploader-1.0.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+garmin_uploader-1.0.8.dist-info/entry_points.txt,sha256=aBRn1ugII5ETRhoePf-j2SWbVt3ZdNVGMtoRwGh7ffM,54
+garmin_uploader-1.0.8.dist-info/top_level.txt,sha256=OGhZ7HFw6uDZHJwKr8F55pWNKjVQQzdqFxp-2Msy0nw,16
+garmin_uploader-1.0.8.dist-info/RECORD,,
