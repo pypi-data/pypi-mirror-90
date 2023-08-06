@@ -1,0 +1,36 @@
+from odoo import models, fields, api
+
+
+class MailActivity(models.Model):
+    _inherit = 'mail.activity'
+
+    reference = fields.Char(
+        string='Reference',
+        compute='_compute_reference',
+        readonly=True,
+        store=False
+    )
+    activity_type_name = fields.Char(
+        related="activity_type_id.name"
+    )
+    date_done = fields.Date(readonly=False)
+    location = fields.Char()
+    partner_id = fields.Many2one(
+        'res.partner',
+        compute='_compute_res_partner', readonly=True, store=True)
+
+    @api.depends('res_model', 'res_id')
+    def _compute_reference(self):
+        for res in self:
+            res.reference = "%s,%s" % (res.res_model, res.res_id)
+
+    @api.depends('res_model', 'res_id')
+    def _compute_res_partner(self):
+        for res in self:
+            if res.res_model == 'contract.contract':
+                contract = self.env['contract.contract'].browse(res.res_id)
+                res.partner_id = contract.partner_id
+            elif res.res_model == 'res.partner':
+                res.partner_id = self.env['res.partner'].browse(res.res_id)
+            else:
+                res.partner_id = False
