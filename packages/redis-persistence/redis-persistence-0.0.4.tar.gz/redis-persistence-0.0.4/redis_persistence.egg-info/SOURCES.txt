@@ -1,0 +1,9 @@
+README.md
+setup.py
+redis_persistence.egg-info/PKG-INFO
+redis_persistence.egg-info/SOURCES.txt
+redis_persistence.egg-info/dependency_links.txt
+redis_persistence.egg-info/requires.txt
+redis_persistence.egg-info/top_level.txt
+redispersistence/__init__.py
+redispersistence/persistence.py
