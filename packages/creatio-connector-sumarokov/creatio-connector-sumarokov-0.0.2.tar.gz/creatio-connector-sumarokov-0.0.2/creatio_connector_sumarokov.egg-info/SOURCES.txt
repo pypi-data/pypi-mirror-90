@@ -1,0 +1,7 @@
+README.md
+setup.py
+creatio_connector/__init__.py
+creatio_connector_sumarokov.egg-info/PKG-INFO
+creatio_connector_sumarokov.egg-info/SOURCES.txt
+creatio_connector_sumarokov.egg-info/dependency_links.txt
+creatio_connector_sumarokov.egg-info/top_level.txt
