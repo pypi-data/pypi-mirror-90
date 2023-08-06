@@ -1,0 +1,9 @@
+README.md
+setup.py
+winotify.py
+test/tests.py
+winotify.egg-info/PKG-INFO
+winotify.egg-info/SOURCES.txt
+winotify.egg-info/dependency_links.txt
+winotify.egg-info/entry_points.txt
+winotify.egg-info/top_level.txt
