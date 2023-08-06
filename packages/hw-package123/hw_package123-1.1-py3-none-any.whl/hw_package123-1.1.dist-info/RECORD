@@ -1,0 +1,8 @@
+hw_package123/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hw_package123/hello.py,sha256=mKxmAVr6HKbBphygT-fa6ybnj2KryZD5T6LGrlxLwyw,76
+hw_package123/hello_func.py,sha256=ewzxyZJ2vEYwNdAbBO7ABdWnMB44AUNG5pAGP4PRrwo,41
+hw_package123-1.1.dist-info/LICENSE,sha256=39a1kjjBO__nefv1VdNkmzp4_3PyT0yenwMqg2AVgnM,1072
+hw_package123-1.1.dist-info/METADATA,sha256=yXTHZodpBYQD5z6kySSjdKHtx648flMMrU_CxYx_os0,320
+hw_package123-1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hw_package123-1.1.dist-info/top_level.txt,sha256=l3O3gm93xJfTs5fxZn1eKhEeRQWzfRi-8zNSU8PkVlQ,14
+hw_package123-1.1.dist-info/RECORD,,
