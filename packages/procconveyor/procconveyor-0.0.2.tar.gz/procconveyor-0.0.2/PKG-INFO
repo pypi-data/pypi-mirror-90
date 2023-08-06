@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: procconveyor
+Version: 0.0.2
+Summary: A package to make conveyor of parallel data processing
+Home-page: https://github.com/aver007/proc-conveyor/
+Author: aver
+Author-email: a.v.e.r@mail.ru
+License: UNKNOWN
+Description: # proc-conveyor
+        make multiprocess data processing
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
