@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: antelope_core
+Version: 0.1.3rc4
+Summary: UNKNOWN
+Home-page: https://github.com/AntelopeLCA/core
+Author: Brandon Kuczenski
+Author-email: bkuczenski@ucsb.edu
+License: BSD 3-Clause
+Description: # core
+        Antelope Catalog - reference implementation
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: XML
+Provides-Extra: write_to_excel
