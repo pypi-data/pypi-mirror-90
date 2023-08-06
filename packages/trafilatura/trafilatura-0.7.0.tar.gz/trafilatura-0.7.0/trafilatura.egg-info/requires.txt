@@ -1,0 +1,26 @@
+courlan>=0.3.0
+htmldate>=0.7.3
+justext>=2.2.0
+readability-lxml>=0.8.1
+urllib3<2,>=1.25
+
+[:python_version < "3.6"]
+chardet==3.0.4
+
+[:python_version == "3.4"]
+lxml==4.3.5
+
+[:python_version > "3.4"]
+lxml>=4.6.2
+
+[:python_version >= "3.6"]
+chardet>=3.0.4
+
+[all]
+pycld3>=0.20
+
+[all:python_version == "3.4"]
+cchardet==2.1.4
+
+[all:python_version > "3.4"]
+cchardet>=2.1.7
