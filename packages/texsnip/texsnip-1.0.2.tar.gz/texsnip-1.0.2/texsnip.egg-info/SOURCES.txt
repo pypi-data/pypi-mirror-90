@@ -1,0 +1,8 @@
+README.md
+setup.py
+texsnip/__init__.py
+texsnip/texsnip.py
+texsnip.egg-info/PKG-INFO
+texsnip.egg-info/SOURCES.txt
+texsnip.egg-info/dependency_links.txt
+texsnip.egg-info/top_level.txt
