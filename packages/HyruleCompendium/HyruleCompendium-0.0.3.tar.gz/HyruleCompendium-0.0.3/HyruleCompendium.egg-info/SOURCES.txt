@@ -1,0 +1,8 @@
+README.md
+setup.py
+HyruleCompendium/__init__.py
+HyruleCompendium.egg-info/PKG-INFO
+HyruleCompendium.egg-info/SOURCES.txt
+HyruleCompendium.egg-info/dependency_links.txt
+HyruleCompendium.egg-info/requires.txt
+HyruleCompendium.egg-info/top_level.txt
