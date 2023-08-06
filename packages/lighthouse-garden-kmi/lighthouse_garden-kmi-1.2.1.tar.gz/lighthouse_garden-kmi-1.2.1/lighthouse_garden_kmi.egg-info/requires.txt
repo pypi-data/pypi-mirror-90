@@ -1,0 +1,2 @@
+future-fstrings>=1.2
+Jinja2>=2.11.2anybadge>=1.7.0
