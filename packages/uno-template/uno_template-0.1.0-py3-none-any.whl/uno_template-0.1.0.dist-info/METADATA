@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: uno-template
+Version: 0.1.0
+Summary: uno templating library
+Home-page: https://github.com/mentalsmash/uno-template.git
+Author: Andrea Sorbini
+Author-email: support@mentalsmash.org
+License: License :: OSI Approved :: Apache Software License
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: yaml-serde
+Requires-Dist: uno-log
+Requires-Dist: jinja2
+
+# uno_template - uno templating library
+
+A simple Python module.
+
+
