@@ -1,0 +1,3 @@
+[console_scripts]
+Sprezz = Sprezz.Sprezz:main
+
