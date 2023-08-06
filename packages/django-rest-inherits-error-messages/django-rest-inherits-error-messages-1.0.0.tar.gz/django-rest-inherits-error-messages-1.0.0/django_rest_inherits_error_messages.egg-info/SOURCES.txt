@@ -1,0 +1,9 @@
+README.md
+setup.py
+django_rest_inherits_error_messages.egg-info/PKG-INFO
+django_rest_inherits_error_messages.egg-info/SOURCES.txt
+django_rest_inherits_error_messages.egg-info/dependency_links.txt
+django_rest_inherits_error_messages.egg-info/requires.txt
+django_rest_inherits_error_messages.egg-info/top_level.txt
+rest_framework_miem/__init__.py
+rest_framework_miem/serializers.py
