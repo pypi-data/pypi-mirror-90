@@ -1,0 +1,11 @@
+LICENSE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+is_syncpack_servicenow_change_management/__init__.py
+is_syncpack_servicenow_change_management.egg-info/PKG-INFO
+is_syncpack_servicenow_change_management.egg-info/SOURCES.txt
+is_syncpack_servicenow_change_management.egg-info/dependency_links.txt
+is_syncpack_servicenow_change_management.egg-info/top_level.txt
