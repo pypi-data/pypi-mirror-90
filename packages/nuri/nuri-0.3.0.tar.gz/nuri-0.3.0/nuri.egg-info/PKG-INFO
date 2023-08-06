@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: nuri
+Version: 0.3.0
+Summary: Urban Magnetometry Software.
+Home-page: http://citymag.gitlab.io/nuri
+Author: Vincent Dumont
+Author-email: vincentdumont11@gmail.com
+Maintainer: Vincent Dumont
+Maintainer-email: vincentdumont11@gmail.com
+License: UNKNOWN
+Project-URL: Source Code, https://gitlab.com/citymag/nuri
+Description: # Urban Magnetometry Analysis Software
+        
+        [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](http://opensource.org/licenses/MIT)
+        [![PyPI version](https://badge.fury.io/py/nuri.svg)](https://badge.fury.io/py/nuri)
+        
+        The full documentation of the program can be accessed [here](https://citymag.gitlab.io/nuri/).
+        
+        ## License
+        
+        NURI is an open-source software available and free to use under the [MIT License](https://gitlab.com/citymag/analysis/nuri/blob/master/LICENSE).
+        
+        Copyright (c) 2019, Urban Magnetometry Group.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
