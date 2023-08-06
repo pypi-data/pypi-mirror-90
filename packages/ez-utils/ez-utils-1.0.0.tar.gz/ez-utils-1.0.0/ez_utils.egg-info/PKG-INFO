@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ez-utils
+Version: 1.0.0
+Summary: Some super simple one-liners to do common Python tasks
+Home-page: https://www.github.com/nielsvaes/ez_utils
+Author: Niels Vaes
+Author-email: nielsvaes@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
