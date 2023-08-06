@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: stringtopy
+Version: 0.4
+Summary: stringtopy is a small library to convert strings to a specified type (e.g. int, float or bool), allowing more human friendly input similar to configparser.
+Home-page: http://stringtopy.rtfd.io
+Author: James Tocknell
+Author-email: aragilar@gmail.com
+License: 3-clause BSD
+Description: [![Documentation Status](https://readthedocs.org/projects/stringtopy/badge/?version=latest)](http://stringtopy.readthedocs.org/en/latest/?badge=latest)
+        [![Build Status](https://dev.azure.com/jamestocknell/stringtopy/_apis/build/status/aragilar.stringtopy?branchName=master)](https://dev.azure.com/jamestocknell/stringtopy/_build/latest?definitionId=5&branchName=master)
+        [![Coverage Status](https://codecov.io/github/aragilar/stringtopy/coverage.svg?branch=master)](https://codecov.io/github/aragilar/stringtopy?branch=master)
+        [![Version](https://img.shields.io/pypi/v/stringtopy.svg)](https://pypi.python.org/pypi/stringtopy/)
+        [![License](https://img.shields.io/pypi/l/stringtopy.svg)](https://pypi.python.org/pypi/stringtopy/)
+        [![Wheel](https://img.shields.io/pypi/wheel/stringtopy.svg)](https://pypi.python.org/pypi/stringtopy/)
+        [![Format](https://img.shields.io/pypi/format/stringtopy.svg)](https://pypi.python.org/pypi/stringtopy/)
+        [![Supported versions](https://img.shields.io/pypi/pyversions/stringtopy.svg)](https://pypi.python.org/pypi/stringtopy/)
+        [![Supported implemntations](https://img.shields.io/pypi/implementation/stringtopy.svg)](https://pypi.python.org/pypi/stringtopy/)
+        [![PyPI](https://img.shields.io/pypi/status/stringtopy.svg)](https://pypi.python.org/pypi/stringtopy/)
+        
+        stringtopy is a utility library to convert strings to different python (stdlib)
+        objects. Examples of objects it can return include bool (converting yes/no,
+        true/false etc.), float (allowing fractions) and int (allowing floating point
+        notation to be used for large numbers).
+        
+        Bug reports and suggestions should be filed at
+        [https://github.com/aragilar/stringtopy/issues](https://github.com/aragilar/stringtopy/issues).
+        
+Keywords: strings
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
