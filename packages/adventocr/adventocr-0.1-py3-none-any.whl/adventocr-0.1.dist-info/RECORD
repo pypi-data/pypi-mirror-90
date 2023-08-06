@@ -1,0 +1,13 @@
+adventocr/__init__.py,sha256=vnk-7PeZQfKBqZW2dNGxoVi8MRJA8rRer5czJsdZsn0,32
+adventocr/mappings.py,sha256=yqKSoJzKMbB8n7kQafZDlPmqDO2g-H-n3aaVB68q3DA,906
+adventocr/parse.py,sha256=jJx83X2s4ESxkT78Gfqxj9aXct7eZJyCK9ZKwZ30-9s,1404
+aocr/__init__.py,sha256=vnk-7PeZQfKBqZW2dNGxoVi8MRJA8rRer5czJsdZsn0,32
+aocr/mappings.py,sha256=yqKSoJzKMbB8n7kQafZDlPmqDO2g-H-n3aaVB68q3DA,906
+aocr/parse.py,sha256=jJx83X2s4ESxkT78Gfqxj9aXct7eZJyCK9ZKwZ30-9s,1404
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_parse.py,sha256=P36a_mz5Tm2STBY_chPGSVkNbD-DdrLCnrOckdvwwAY,1560
+adventocr-0.1.dist-info/LICENSE,sha256=S_1FUNGJzpo48KgqCi_P2URsXocULCmawUnIjHtDi9g,1075
+adventocr-0.1.dist-info/METADATA,sha256=stvj4_S42WgEF3SnoYHF84EK1_GN3i9oDJrMgvhxU4w,1289
+adventocr-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+adventocr-0.1.dist-info/top_level.txt,sha256=kNH3Zo5f93CkHsagAftw8PXoG4LJp6Sd2GNZRRX_AFk,16
+adventocr-0.1.dist-info/RECORD,,

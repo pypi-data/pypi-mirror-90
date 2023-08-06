@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: adventocr
+Version: 0.1
+Summary: Parsing text output for Advent of Code puzzles
+Home-page: https://github.com/cqkh42/aoc_letters
+Author: cqkh42
+Author-email: jackcooper93@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
+Description-Content-Type: text/markdown
+
+# Advent of Code Optical Character Recognition (adventocr)
+
+Some Advent of Code puzzles provide visual outputs which must be 
+converted into text. This package is a helper to automate this task.
+
+## Installation
+
+```
+pip install adventocr
+```
+
+## Usage
+
+An example puzzle output may look something like
+
+```python
+word = [
+    '#', '#', '#', '#', ' ', '#', '#', '#', '#', ' ',
+    '#', ' ', ' ', ' ', ' ', '#', ' ', ' ', ' ', ' ',
+    '#', '#', '#', ' ', ' ', '#', '#', '#', ' ', ' ',
+    '#', ' ', ' ', ' ', ' ', '#', ' ', ' ', ' ', ' ',
+    '#', ' ', ' ', ' ', ' ', '#', ' ', ' ', ' ', ' ',
+    '#', '#', '#', '#', ' ', '#', ' ', ' ', ' ', ' '
+]
+```
+
+When tidied and printed, this appears to be 
+```
+#### #### 
+#    #    
+###  ###  
+#    #    
+#    #    
+#### #
+```
+
+This process can be automated through:
+
+```python
+import adventocr
+parsed = adventocr.word(word)
+parsed
+```
+
+```python
+'EF' 
+```
+
+
