@@ -1,0 +1,14 @@
+.gitignore
+LICENSE.txt
+Makefile
+README.md
+ddnss.conf
+ddnss.py
+ddnss@.service
+ddnss@.timer
+setup.py
+ddnss.egg-info/PKG-INFO
+ddnss.egg-info/SOURCES.txt
+ddnss.egg-info/dependency_links.txt
+ddnss.egg-info/entry_points.txt
+ddnss.egg-info/top_level.txt
