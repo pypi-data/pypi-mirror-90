@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: odoo12-addons-oca-maintenance
+Version: 12.0.20201230.0
+Summary: Meta package for oca-maintenance Odoo addons
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Requires-Dist: odoo12-addon-base-maintenance
+Requires-Dist: odoo12-addon-base-maintenance-group
+Requires-Dist: odoo12-addon-maintenance-equipment-always-fold
+Requires-Dist: odoo12-addon-maintenance-equipment-contract
+Requires-Dist: odoo12-addon-maintenance-equipment-custom-info
+Requires-Dist: odoo12-addon-maintenance-equipment-hierarchy
+Requires-Dist: odoo12-addon-maintenance-equipment-scrap
+Requires-Dist: odoo12-addon-maintenance-equipment-sequence
+Requires-Dist: odoo12-addon-maintenance-equipment-status
+Requires-Dist: odoo12-addon-maintenance-equipment-tags
+Requires-Dist: odoo12-addon-maintenance-plan
+Requires-Dist: odoo12-addon-maintenance-plan-activity
+Requires-Dist: odoo12-addon-maintenance-project
+Requires-Dist: odoo12-addon-maintenance-project-plan
+Requires-Dist: odoo12-addon-maintenance-remote
+Requires-Dist: odoo12-addon-maintenance-request-repair
+Requires-Dist: odoo12-addon-maintenance-request-sequence
+Requires-Dist: odoo12-addon-maintenance-request-stage-transition
+Requires-Dist: odoo12-addon-maintenance-stock
+Requires-Dist: odoo12-addon-maintenance-team-hierarchy
+Requires-Dist: odoo12-addon-maintenance-timesheet
+
+UNKNOWN
+
+
