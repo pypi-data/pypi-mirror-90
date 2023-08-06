@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: classification-reportzr
+Version: 0.0.1b1
+Summary: Automate machine learning classification task report for Pak Zuherman
+Home-page: https://github.com/khalidm31415/classification-reportzr
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: classification report,laporan klasifikasi,zuherman,zr
+Platform: UNKNOWN
+Requires-Python: >=3.6
