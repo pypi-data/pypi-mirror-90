@@ -1,0 +1,3 @@
+[console_scripts]
+gpioserver = gpioserver.__main__:main
+
