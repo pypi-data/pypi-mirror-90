@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: rkivacc
+Version: 1.0.0
+Summary: A simple python library for pulling vaccination data from the RKI
+Home-page: https://github.com/spycrab/rkivacc
+Author: spycrab0
+Author-email: spycrab@users.noreply.github.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: openpyxl
+
+# rkivacc
+
+Downloads and parses the latest Vaccination Data for Germany from the Robert Koch Institut.
+
+**This library is not made by, endorsed by or in any way related to the RKI.**
+
+## Usage
+
+See [example.py](example.py).
+
+## Requirements
+
+* At least Python3
+* request
+* openpyxl
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE.txt](LICENSE.txt).
+
