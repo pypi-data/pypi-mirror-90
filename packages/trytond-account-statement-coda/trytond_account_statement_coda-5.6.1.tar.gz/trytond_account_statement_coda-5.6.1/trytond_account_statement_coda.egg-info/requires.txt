@@ -1,0 +1,4 @@
+febelfin-coda
+trytond_account_statement<5.7,>=5.6
+trytond_bank<5.7,>=5.6
+trytond<5.7,>=5.6
