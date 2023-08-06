@@ -1,0 +1,9 @@
+fugue==0.5.0.dev1
+scikit-learn
+matplotlib
+
+[all]
+hyperopt
+
+[hyperopt]
+hyperopt
