@@ -1,0 +1,3 @@
+[console_scripts]
+dfsummarizer = dfsummarizer.dfsummarizer:main
+
