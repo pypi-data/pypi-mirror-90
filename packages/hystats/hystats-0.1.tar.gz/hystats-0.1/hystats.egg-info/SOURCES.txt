@@ -1,0 +1,7 @@
+README.txt
+setup.py
+hystats.egg-info/PKG-INFO
+hystats.egg-info/SOURCES.txt
+hystats.egg-info/dependency_links.txt
+hystats.egg-info/requires.txt
+hystats.egg-info/top_level.txt
