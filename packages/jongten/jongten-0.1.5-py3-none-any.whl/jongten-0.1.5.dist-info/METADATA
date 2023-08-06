@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: jongten
+Version: 0.1.5
+Summary: CLI trainer for calculating riichi-mahjong points
+Home-page: http://github.com/odmishien/jongten
+License: MIT
+Keywords: mahjong,CLI
+Author: odmishien
+Author-email: tmtm.yagi.007@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: mahjong (>=1.1.11,<2.0.0)
+Project-URL: Repository, http://github.com/odmishien/jongten
+Description-Content-Type: text/markdown
+
+🧮🀄️jongten🀄️🧮
+=========
+
+CLI trainer for calculating riichi-mahjong points🀄️
+
+[![PyPI version](https://badge.fury.io/py/jongten.svg)](https://badge.fury.io/py/jongten)
+[![Python Versions](https://img.shields.io/pypi/pyversions/jongten.svg)](https://pypi.org/project/jongten/)
+
+<!-- toc -->
+- [🧮🀄️jongten🀄️🧮](#️jongten️)
+- [Usage](#usage)
+<!-- tocstop -->
+
+# Usage
+<!-- usage -->
+```sh-session
+🐑🌙 jongten
+🀚 🀚 🀇 🀈 🀉 🀉 🀊 🀋 🀝 🀞 🀟 🀒 🀓 🀔
+
+ツモ:🀔 リーチ無 場風: 東 自風: 南
+親の支払う点数: 700
+子の支払う点数: 400
+
+正解!!
+```
+<!-- usagestop -->
+
