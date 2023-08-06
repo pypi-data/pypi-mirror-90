@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: nekobin
+Version: 0.0.1
+Summary: Nekobin API Wrapper
+Home-page: https://github.com/OpenRestfulAPI/nekobinpy
+Author: Pokurt
+Author-email: poki@pokurt.me
+License: GNU Lesser General Public License v3 (LGPLv3)
+Description: ## Nekobin API Wrapper
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
