@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pyStreamer
+Version: 0.4.1
+Summary: A lazy evaluating, memory friendly, chainable stream solution
+Home-page: https://github.com/Arnoldosmium/pystreamer
+Author: Arnold Lin
+Author-email: contact@arnoldlin.tech
+License: UNKNOWN
+Download-URL: https://pypi.org/project/pyStreamer/
+Description: # pystreamer
+        ![Build Status](https://travis-ci.com/Arnoldosmium/pystreamer.svg?branch=develop)
+        
+        A lazy evaluating, memory friendly, chainable stream solution.
+        
+        Inspired by the syntactical sugar of Java stream.
+        
+        ```python
+        from streamer import Stream
+        with open("myfile.txt") as f_input:
+            uniq = Stream(f_input) \
+                .map(str.strip) \
+                .flat_map(str.split) \
+                .collect(set)   # uniq tokens in a file
+        ```
+        
+Keywords: stream generator chain
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Provides-Extra: test
