@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: a10-octavia
+Version: 1.0.1
+Summary: A10 Octavia Provider Driver
+Home-page: https://github.com/a10networks/a10-octavia
+Author: A10 Networks
+Author-email: opensource@a10networks.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Description-Content-Type: text/markdown
+Requires-Dist: acos-client (>=2.1.0)
+Requires-Dist: octavia (<5.0.0.0rc1,>=4.1.1)
+Requires-Dist: octavia-lib
+Requires-Dist: keystone (<16.0.0,>=15.0.1)
+Requires-Dist: python-barbicanclient (>=4.5.2)
+Requires-Dist: python-glanceclient (>=2.8.0)
+Requires-Dist: python-novaclient (>=9.1.0)
+Requires-Dist: pyOpenSSL (>=17.1.0)
+Requires-Dist: taskflow (>=2.16.0)
+Requires-Dist: tenacity (>=4.9.0)
+
+# A10 Networks OpenStack Octavia Driver
+
+## Table of Contents
+1. [Overview](#Overview)
+
+2. [Project Resources](#Project-Resources)
+
+3. [Issues and Inquiries](#Issues-and-Inquiries)
+
+## Overview
+
+**This solution is currently in beta stage with limited support**
+
+The A10 Networks Octavia Driver allows for configuration of Thunder, vThunder, and AX Series Appliances deployed in
+an Openstack enviroment. While the default Octavia provider leverages an "Amphora per VIP" architecture,
+this provider driver uses a "Thunder per Tenant" architecture. Therefore, each tenant may only be serviced by a single
+**active** Thunder device.
+
+## Project Resources
+
+Installation and usage information is available at https://documentation.a10networks.com/Install/Software/A10_ACOS_Install/pdf/Thunder_openstack_octavia_install_guide.pdf
+
+Release notes are available at https://documentation.a10networks.com/Install/Software/A10_ACOS_Install/pdf/Thunder_openstack_octavia_RN.pdf
+
+## Issues and Inquiries
+For all issues, please send an email to support@a10networks.com 
+
+For general inquiries, please send an email to opensource@a10networks.com
+
+
+
