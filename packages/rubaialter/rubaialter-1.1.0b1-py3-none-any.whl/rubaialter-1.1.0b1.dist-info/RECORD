@@ -1,0 +1,12 @@
+rubaialter/__init__.py,sha256=6DBz3Gpqwb6PMDbhyBkQq6b6HCNCW_t1b3En-_zowbw,2948
+rubaialter/__main__.py,sha256=-rZqVdZ99EcZkv1890jeGmqvBuGmmxbq2rSKdtSUOr4,57
+rubaialter/converter.py,sha256=2dgk7SGmROnG9SbGn_v6LpPZAfBYAjufbBWng0Swir4,2155
+rubaialter/csv_to.py,sha256=yarvVFItN6M0Fuy1afN1yI9sxXwoAFlSGOFvSt8Fco4,1217
+rubaialter/sqlite_to.py,sha256=nnhkaATrRVvugseUPaAd_Z7AShj9fNDmkyrEMvu2wRo,1524
+rubaialter/xls_xlsx_to.py,sha256=p7qcmLG36BsiL1Us4JHOu-6ewc3H7tJk69U_492DpEc,2026
+rubaialter-1.1.0b1.dist-info/LICENSE.txt,sha256=btQ6VpZmbuphta8nO5ZntdiLv8E6dFPbSLR9Lyv7QQY,1074
+rubaialter-1.1.0b1.dist-info/METADATA,sha256=Ez0Y2O7UXAnlFDuCy3Pzt7cAEztvvid-xTFsNLoe75Y,3116
+rubaialter-1.1.0b1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+rubaialter-1.1.0b1.dist-info/entry_points.txt,sha256=gfTDnQ2lRtvE6o21Dy8HKPFIPexAXabRivCzOUuZUnI,48
+rubaialter-1.1.0b1.dist-info/top_level.txt,sha256=nDgLXKigv4HIfUndxDWC3LkjeKYg9C0pnaz3ZU6joro,11
+rubaialter-1.1.0b1.dist-info/RECORD,,
