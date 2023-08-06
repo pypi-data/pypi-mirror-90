@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: planfix-py
+Version: 0.2
+Summary: Python package for working with Planfix API
+Home-page: https://github.com/LD31D/planfix_py
+Author: LD31D
+Author-email: artem.12m21@gmail.com
+License: MIT
+Description: # planfix_py
+        
+        Python package for working with Planfix API
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
