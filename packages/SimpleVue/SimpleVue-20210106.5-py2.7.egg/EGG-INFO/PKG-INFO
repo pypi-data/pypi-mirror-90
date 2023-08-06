@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: SimpleVue
+Version: 20210106.5
+Summary: SimpleVue
+Home-page: https://gitee.com/lijiacai/SimpleVue.git
+Author: Lijiacai
+Author-email: 1050518702@qq.com
+License: MIT License
+Description: vue构建前端，并使用python进行组件化
+Keywords: vue,python,pyvue,simplevue
+Platform: any
