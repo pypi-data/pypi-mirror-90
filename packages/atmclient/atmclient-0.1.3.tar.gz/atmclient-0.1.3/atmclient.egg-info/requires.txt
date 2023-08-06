@@ -1,0 +1,4 @@
+requests>=2.10.0
+PyYaml>=5.2.0
+easydict>=1.8
+pydantic>=1.5.0

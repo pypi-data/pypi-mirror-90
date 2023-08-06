@@ -1,0 +1,8 @@
+setup.py
+atmclient/__init__.py
+atmclient.egg-info/PKG-INFO
+atmclient.egg-info/SOURCES.txt
+atmclient.egg-info/dependency_links.txt
+atmclient.egg-info/requires.txt
+atmclient.egg-info/top_level.txt
+atmclient/contrib/__init__.py
