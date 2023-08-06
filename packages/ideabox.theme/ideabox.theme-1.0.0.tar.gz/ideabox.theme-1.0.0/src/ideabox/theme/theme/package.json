@@ -1,0 +1,7 @@
+{
+  "name": "ideabox.theme",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

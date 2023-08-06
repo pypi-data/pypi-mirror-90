@@ -1,0 +1,5 @@
+=============
+ideabox.theme
+=============
+
+User documentation

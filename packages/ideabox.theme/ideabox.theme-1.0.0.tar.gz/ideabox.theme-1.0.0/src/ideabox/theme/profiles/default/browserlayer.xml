@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+  <layer
+      name="ideabox.theme"
+      interface="ideabox.theme.interfaces.IIdeaboxThemeLayer"
+      />
+</layers>
