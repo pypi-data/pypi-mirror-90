@@ -1,0 +1,4 @@
+django-private-storage~=2.2
+openwisp-controller~=0.8
+openwisp-utils[rest]~=0.7.1
+swapper~=1.1
