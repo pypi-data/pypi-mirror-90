@@ -1,0 +1,16 @@
+README.md
+setup.py
+v4l2ctl/__init__.py
+v4l2ctl/v4l2device.py
+v4l2ctl/v4l2format.py
+v4l2ctl/v4l2frame.py
+v4l2ctl/v4l2types.py
+v4l2ctl.egg-info/PKG-INFO
+v4l2ctl.egg-info/SOURCES.txt
+v4l2ctl.egg-info/dependency_links.txt
+v4l2ctl.egg-info/top_level.txt
+v4l2ctl/ioctls/__init__.py
+v4l2ctl/ioctls/ioctlmacros.py
+v4l2ctl/ioctls/v4l2ioctl.py
+v4l2ctl/ioctls/v4l2ioctlenums.py
+v4l2ctl/ioctls/v4l2ioctlstructs.py
