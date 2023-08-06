@@ -1,0 +1,10 @@
+pi_display_webthing/__init__.py,sha256=HufvMwL3VbcMjUGGfmmwoC-KYjqlPXivWx0mikBagGc,2497
+pi_display_webthing/app.py,sha256=BkfW0zasm7lV1sTD6DNcklEqZsZ_lE8Qk1ThxKB-Kis,5385
+pi_display_webthing/display.py,sha256=wFZQ0ZImkXoX3VwsHnrqt7Lk59KR-iBifzwKapn5Tak,2363
+pi_display_webthing/display_webthing.py,sha256=pPeefl1iHCW5OyZvWADnu4wJ0O1clgi8cKJ-OI7zRfM,5965
+pi_display_webthing-0.0.22.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pi_display_webthing-0.0.22.dist-info/METADATA,sha256=5qIH8-s3udrWT99BJpg-fJNTwaTkGporxTYWKTmwecc,3093
+pi_display_webthing-0.0.22.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pi_display_webthing-0.0.22.dist-info/entry_points.txt,sha256=-vrcICzSSCGuFp2X_0VZOszMGGvphQUuFPVM4LCQCb0,54
+pi_display_webthing-0.0.22.dist-info/top_level.txt,sha256=OZnlab0x9lS94zl87Z33LNhYpBrEoo5wA0rbxVNl7wo,20
+pi_display_webthing-0.0.22.dist-info/RECORD,,
