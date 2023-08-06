@@ -1,0 +1,8 @@
+lark-parser
+numpy
+pandas
+mlxtend
+scikit-learn
+scipy
+jsonpickle
+pyyaml
