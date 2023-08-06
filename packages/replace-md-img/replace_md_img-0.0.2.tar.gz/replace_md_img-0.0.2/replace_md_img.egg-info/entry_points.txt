@@ -1,0 +1,3 @@
+[console_scripts]
+replace_img = img_url_replace.parse_md:main
+
