@@ -1,0 +1,489 @@
+    libfunx - LIBrary of utility FUNCtionS for catpdf minmon swapdf toc2md wmtile
+###USAGE
+```
+    from libfunx import *
+```
+###FUNCTIONS
+```
+    ask(question, answers='yn')
+        return answer to terminal question
+
+```
+```
+    bad_char(string: str, jchar: int) -> str
+        return string with bad char surrounded by "(" and "?)"
+        >>> bad_char("", 0)
+        '(?)'
+        >>> for j in range(-2, 7): print("%2d -> %r" % (j, bad_char("abcde", j)))
+        -2 -> '(a?)bcde'
+        -1 -> '(a?)bcde'
+         0 -> '(a?)bcde'
+         1 -> 'a(b?)cde'
+         2 -> 'ab(c?)de'
+         3 -> 'abc(d?)e'
+         4 -> 'abcd(e?)'
+         5 -> 'abcd(e?)'
+         6 -> 'abcd(e?)'
+
+```
+```
+    char_set(which='')
+        return a frozenset of chars defined by which (see chars()):
+        >>> char_set("a-z") == frozenset(chars("a-z"))
+        True
+
+```
+```
+    chars(which='')
+        return a string defined by which
+        which is a comma-separated list of zero or more nintervals
+        each interval is:
+            a 1-char str or ...
+            ... a 3-chars str == (first char + "-" + last char)
+        >>> chars()
+        ''
+        >>> chars("")
+        ''
+        >>> chars("a-z")
+        'abcdefghijklmnopqrstuvwxyz'
+        >>> chars("z-a")
+        'zyxwvutsrqponmlkjihgfedcba'
+        >>> chars("a-z,A-Z,_")
+        'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_'
+        >>> chars("a-z,A:Z,_")
+        SyntaxError: in 'a-z,A(:?)Z,_'
+
+```
+```
+    difs(xx)
+        finite differences yy: yy[0] = xx[0], yy[i] = xx[i] - xx[i-1]
+        >>> xx = list(range(10, 20))
+        >>> difs(xx)
+        [10, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+        >>> xx == difs(sums(xx)) == sums(difs(xx))
+        True
+
+```
+```
+    drop(string, forbidden, default='')
+        drop forbidden chars from string and replace them by default
+        >>> drop("drop forbidden", "aeiou")
+        'drp frbddn'
+        >>> drop("drop forbidden", "aeiou", "->")
+        'dr->p f->rb->dd->n'
+
+```
+```
+    dupl(xx)
+        return list (with no duplicates) of duplicated x in xx
+        >>> dupl('abracadabra')
+        ['a', 'b', 'r']
+
+```
+```
+    fibonacci(n)
+        bidirectional Fibonacci numbers, f(n) == f(n-2) + f(n-1) for any integer n
+        >>> for n in range(-9, 10): print(n, fibonacci(n))
+        -9 34
+        -8 -21
+        -7 13
+        -6 -8
+        -5 5
+        -4 -3
+        -3 2
+        -2 -1
+        -1 1
+        0 0
+        1 1
+        2 1
+        3 2
+        4 3
+        5 5
+        6 8
+        7 13
+        8 21
+        9 34
+        >>> fibonacci(100) / fibonacci(99) # phi = golden ratio
+        1.618033988749895
+        >>> fibonacci(99) / fibonacci(100) # psi = inverse of golden ratio
+        0.6180339887498949
+
+```
+```
+    find(xx, y)
+        find min j such that xx[j] == y, -1 if not found
+        >>> find("abracadabra", "r")
+        2
+        >>> find("abracadabra", "z")
+        -1
+
+```
+```
+    find_dup(xx)
+        find min j such that xx[j] == xx[i] for some i < j, -1 if not found
+        >>> find_dup("abracadabra")
+        3
+        >>> find_dup("0123456789")
+        -1
+
+```
+```
+    find_in(xx, yy)
+        find min j such that xx[j] in yy, -1 if not found
+        >>> find_in("abracadabra", "pqr")
+        2
+        >>> find_in("abracadabra", "xyz")
+        -1
+
+```
+```
+    find_max(xx)
+        find min j such that xx[j] == max(xx), -1 if not xx
+        >>> find_max("abracadabra")
+        2
+        >>> find_max("")
+        -1
+
+```
+```
+    find_min(xx)
+        find min j such that xx[j] == min(xx), -1 if not xx
+        >>> find_min("abracadabra")
+        0
+        >>> find_min("")
+        -1
+
+```
+```
+    find_not_in(xx, yy)
+        find min j such that xx[j] not in yy, -1 if not found
+        >>> find_not_in("abracadabra", "pqr")
+        0
+        >>> find_not_in("abracadabra", "bra")
+        4
+        >>> find_not_in("abracadabra", "xyz")
+        0
+        >>> find_not_in("abracadabra", "abcdr")
+        -1
+
+```
+```
+    frange(start, stop, nint, first=True, last=False)
+        float range
+        >>> list(frange(0, 1, 7, last=True))
+        [0.0, 0.14285714285714285, 0.2857142857142857, 0.42857142857142855, 0.5714285714285714, 0.7142857142857142, 0.8571428571428571, 1.0]
+        >>> list(frange(1, 0, 7, last=True))
+        [1.0, 0.8571428571428572, 0.7142857142857143, 0.5714285714285714, 0.4285714285714286, 0.2857142857142858, 0.1428571428571429, 0.0]
+
+```
+```
+    freq(xx)
+        return dict of frequencies of x in xx
+        >>> freq('abracadabra')
+        {'a': 5, 'b': 2, 'r': 2, 'c': 1, 'd': 1}
+
+```
+```
+    func_fixed(f, x0=1.0)
+        return x (starting from x0) such that x == f(x)
+        >>> func_fixed(lambda x: 1.0 / x + 1.0) # phi = golden ratio
+        1.618033988749895
+        >>> func_fixed(lambda x: 1.0 / x - 1.0) # psi = 1 / golden ratio
+        ZeroDivisionError: float division by zero
+
+```
+```
+    func_zero(f, xa, xz)
+        return x between xa and xz such that f(x) == 0.0, by regula falsi
+        must be xa < xz and f(xa) * f(xz) < 0.0 and one zero only in [xa, xz] interval
+        >>> func_zero(lambda x: x * x - x - 1.0, 0.0, 2.0) # phi = golden ratio
+        1.618033988749895
+        >>> func_zero(lambda x: x * x + x - 1.0, 0.0, 2.0) # psi = 1 / golden ratio
+        0.6180339887498948
+
+```
+```
+    get_path_files(path_pattern, recursive=False)
+
+```
+```
+    get_paths(path, recursive=False)
+
+```
+```
+    get_source(source, ext='')
+        check source file and return it as absolute path
+
+```
+```
+    get_target(target, ext='', yes=False, no=False)
+        check target file and return it as absolute path
+
+```
+```
+    integral(f, xa, xz, maxerr=1e-12)
+        definite integral of f(x) between xa and xz, by Simpson's rule
+        >>> integral(lambda x: x * x, 0.0, 1.0) # == 1 / 3
+        0.3333333333333333
+
+```
+```
+    is_date_time(Y, m, d, H=0, M=0, S=0, Ymin=0, Ymax=9999)
+        is date (and time) correct?
+
+```
+```
+    leap_year(Y)
+        is Y a leap year? (proleptic gregorian calendar)
+        >>> [y for y in range(1000, 3001, 100) if leap_year(y)]
+        [1200, 1600, 2000, 2400, 2800]
+        >>> [y for y in range(1980, 2021) if leap_year(y)]
+        [1980, 1984, 1988, 1992, 1996, 2000, 2004, 2008, 2012, 2016, 2020]
+
+```
+```
+    min_qua_max(xx, n, method='inclusive')
+        return [min(xx)] + quantiles(xx, n=n, method="inclusive") + [max(xx)]
+        >>> from random import seed, random
+        >>> seed(314159)
+        >>> xx = [random() for j in range(100000)] # 100000 random floats between 0.0 and 1.0
+        >>> min_qua_max(xx, 4) # [min(xx), 1st quartile, 2nd quartile == median, 3rd quartile, max(xx)]
+        [3.2640170710696026e-06, 0.24956912051054536, 0.5016910963353665, 0.750802842987178, 0.9999873492923799]
+        >>> min_qua_max(xx, 10) # deciles
+        [3.2640170710696026e-06, 0.10118755218419968, 0.20026893496215079, 0.29966323718726284, 0.40097187287064084, 0.5016910963353665, 0.6015193723293496, 0.70106377365372, 0.8006989612789306, 0.8999854251451112, 0.9999873492923799]
+
+```
+```
+    month_days(Y, m)
+        number of days in month m of year Y (proleptic gregorian calendar)
+
+```
+```
+    moving_means(xx, n)
+        return [yy[j] = sum(xx[j+1-n:j+1]) / n]
+        >>> moving_means(list(range(10)), 7)
+        [0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 4.0, 5.0, 6.0]
+        >>> moving_means(list(range(10)), 3)
+        [0.0, 0.5, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0]
+
+```
+```
+    no_comment(string)
+        remove #-comment from string
+        >>> no_comment("echo 'pound: #' # a quoted '#' doesn't start the comment")
+        "echo 'pound: #'"
+
+```
+```
+    no_tag(string, left='<', right='>')
+        remove tags from string
+        >>> no_tag('abc<def>ghi</def>jkl')
+        'abcghijkl'
+        >>> no_tag('abc{def}ghi{/def}jkl', "{", "}")
+        'abcghijkl'
+
+```
+```
+    package_file(name)
+        get absolute path of file in package
+
+```
+```
+    replace(string, *oldsnews)
+        replace(string, old0, new0, old1, new1, ...) ==
+            string.replace(old0, new0).replace(old1, new1)...
+        >>> replace("abcdefghijklmnopqrstuvwxyz", "a", "A", "e", "E", "i", "I", "o", "O", "u", "U")
+        'AbcdEfghIjklmnOpqrstUvwxyz'
+        >>> replace("abcdefghijklmnopqrstuvwxyz", *["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"])
+        'AbcdEfghIjklmnOpqrstUvwxyz'
+        >>> replace("abcdefghijklmnopqrstuvwxyz", *"aAeEiIoOuU")
+        'AbcdEfghIjklmnOpqrstUvwxyz'
+
+```
+```
+    rfind(xx, y)
+        find max j such that xx[j] == y, -1 if not found
+        >>> rfind("abracadabra", "r")
+        9
+        >>> rfind("abracadabra", "z")
+        -1
+
+```
+```
+    rfind_in(xx, yy)
+        find last j such that xx[j] in yy, -1 if not found
+        >>> rfind_in("abracadabra", "pqr")
+        9
+        >>> rfind_in("abracadabra", "xyz")
+        -1
+
+```
+```
+    rfind_max(xx)
+        find max j such that xx[j] == max(xx), -1 if not xx
+        >>> rfind_max("abracadabra")
+        9
+        >>> rfind_max("")
+        -1
+
+```
+```
+    rfind_min(xx)
+        find max j such that xx[j] == min(xx), -1 if not xx
+        >>> rfind_min("abracadabra")
+        10
+        >>> rfind_min("")
+        -1
+
+```
+```
+    rfind_not_in(xx, yy)
+        find last j such that xx[j] not in yy, -1 if not found
+        >>> rfind_not_in("abracadabra", "pqr")
+        10
+        >>> rfind_not_in("abracadabra", "bra")
+        6
+        >>> rfind_not_in("abracadabra", "xyz")
+        10
+        >>> rfind_not_in("abracadabra", "abcdr")
+        -1
+
+```
+```
+    shell(command, out='r', err='n', echo=False)
+        if echo: print prompt and command)
+        result <-- command
+        out controls result.stdout:
+            if out="n": doN't pipe, send directly to sys.stdout, return []
+            if out="r": pipe and Return as a list of rstripped strings
+            if out="w": pipe, Write into stdout and return as a list of rstripped strings
+        err controls result.stderr:
+            if err="n": doN't pipe, send directly to sys.stderr
+            if err="w": pipe and on error Write into sys.stderr
+            if err="e": pipe and on error raise OSError(error)
+            if err="x": pipe and on error eXit(error)
+        return out_lines
+        >>> shell('''echo "isn't it?"''')
+        ["isn't it?"]
+        >>> shell('qqqq', err='e')
+        OSError: /bin/sh: 1: qqqq: not found
+
+```
+```
+    split(string, sep=None)
+        return [] if not string else string.split(sep)
+        >>> split("") == split("", None) == [] == "".split()
+        True
+        >>> split("", ",") == [] != "".split(",") == [""]
+        True
+        >>> split("a", ",") == ["a"] == "a".split(",")
+        True
+        >>> split("a,b", ",") == ["a", "b"] == "a,b".split(",")
+        True
+
+```
+```
+    sql_quote(string: str = '') -> str
+        return standard SQL quoting of string, examples:
+
+        >>> sql_quote("'")
+        "''''"
+        >>> sql_quote("isn't it?")
+        "'isn''t it?'"
+
+        example of wrong argument:
+
+        >>> sql_quote(None)
+        TypeError: NoneType (should be str)
+
+```
+```
+    sql_unquote(string: str = "''") -> str
+        return standard SQL unquoting of string, examples:
+
+        >>> sql_unquote("''''")
+        "'"
+        >>> sql_unquote("'isn''t it?'")
+        "isn't it?"
+        >>> sql_unquote(sql_quote("isn't it?")) == "isn't it?"
+        True
+
+        examples of wrong arguments:
+
+        >>> sql_unquote(None)
+        TypeError: NoneType (should be str)
+        >>> sql_unquote("isn't it?")
+        SyntaxError: in "(i?)sn't it?"
+        >>> sql_unquote("'isn't it?")
+        SyntaxError: in "'isn'(t?) it?"
+        >>> sql_unquote("'isn''t it?")
+        SyntaxError: in "'isn''t it(??)"
+
+```
+```
+    str_exception(exception)
+        message from exception:
+        >>> str_exception(ZeroDivisionError('division by zero'))
+        'ZeroDivisionError: division by zero'
+
+```
+```
+    sums(xx)
+        progressive sums yy: yy[0] == xx[0], yy[i] = yy[i-1] + xx[i]
+        >>> xx = list(range(10, 20))
+        >>> sums(xx)
+        [10, 21, 33, 46, 60, 75, 91, 108, 126, 145]
+        >>> xx == difs(sums(xx)) == sums(difs(xx))
+        True
+
+```
+```
+    syntax_error(string: str, j: int = None)
+        >>> syntax_error("abcdefgh", 3)
+        SyntaxError: in 'abc(d?)efgh'
+
+```
+```
+    take(string, allowed, default='')
+        take allowed chars from string and replace not allowed chars by default
+        >>> take("take allowed", "aeiou")
+        'aeaoe'
+        >>> take("take allowed", "aeiou", "?")
+        '?a?e?a??o?e?'
+
+```
+```
+    test_type(x, types)
+        >>> test_type(314, (int, str))
+        >>> test_type(3.14, (int, str))
+        TypeError: float (should be int or str)
+
+```
+```
+    try_func(func, args, on_error=None)
+        try: return func(*args); except: return on_error
+        >>> from math import sqrt
+        >>> try_func(sqrt, (4.0,), '???')
+        2.0
+        >>> try_func(sqrt, (-4.0,), '???')
+        '???'
+
+```
+```
+    uniq(xx)
+        return list (with no duplicates) of x in xx
+        >>> uniq('abracadabra')
+        ['a', 'b', 'r', 'c', 'd']
+
+```
+```
+    year_days(Y)
+        number of days in year Y (proleptic gregorian calendar)
+
+```
+###DATA
+    /home/xxxx/Documents/pypi/libfunx/libfunx/__init__.py
+###USAGE
+```
+    from libfunx import *
+```
