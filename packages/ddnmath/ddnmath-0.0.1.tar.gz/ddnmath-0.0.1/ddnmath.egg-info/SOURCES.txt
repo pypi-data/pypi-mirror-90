@@ -1,0 +1,6 @@
+README.md
+setup.py
+ddnmath.egg-info/PKG-INFO
+ddnmath.egg-info/SOURCES.txt
+ddnmath.egg-info/dependency_links.txt
+ddnmath.egg-info/top_level.txt
