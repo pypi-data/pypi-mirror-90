@@ -1,0 +1,15 @@
+newsie/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+newsie/config.py,sha256=iCeu4If2mM86SfgfC2aT-uTXYn_rR22ikDoDPIL9OAU,1195
+newsie/deliver.py,sha256=_EBD4yDijZrKN6XT1_NTwDkQz_BQ1JtSEb6LNgFA6K0,1197
+newsie/generate_pdf.py,sha256=8fHqdhlFfjU6Mtse1tO6xjog9JT7yGf1eK1x60pl0yU,2858
+newsie/issue.py,sha256=nmiL5MQtqsUs2ShElxzgCtTuEuKTqnBWSDYeNWYCJh8,1571
+newsie/newissue.py,sha256=tooMmRHkxkmhH3Zou2hGVLBjxw5XMUTp_ojOou6fz7I,1242
+newsie/news.py,sha256=lI4I4nDvRXjQawG34MSTnw5eSIzyiqVOhQl4ha4Gm0I,1638
+newsie/util.py,sha256=2-ZPOLe98BlMGZJrvL46Em_Z2v5D_Wsg7_sT-i6T9cA,218
+newsie/weather.py,sha256=VUuPW5FTgZ8iTjI4GJ64u_SSnXGKGDnFw9Z_vYcxe_E,976
+newsie-0.0.5.dist-info/LICENSE,sha256=LKlQPXbR_6sU9Zm0dBOC7sEfrOYK0fDXpBiXgJADooY,34470
+newsie-0.0.5.dist-info/METADATA,sha256=N7-R-j4-vM1tV5_P72v3jN-w5adlfzln6qJtdmFirdc,2486
+newsie-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+newsie-0.0.5.dist-info/entry_points.txt,sha256=QR_edNTwhwAizfQYk36ILrnxmhaKMUpfbebGb99nFEo,50
+newsie-0.0.5.dist-info/top_level.txt,sha256=bm4uBAWWGflSap5SWn7Cw8fu6ravWZO5SOoIlpc34T0,7
+newsie-0.0.5.dist-info/RECORD,,
