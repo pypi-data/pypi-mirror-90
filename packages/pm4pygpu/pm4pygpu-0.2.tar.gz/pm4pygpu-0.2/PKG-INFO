@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: pm4pygpu
+Version: 0.2
+Summary: PM4Py GPU
+Home-page: http://www.pm4py.org
+Author: PADS
+Author-email: alessandro.berti89@gmail.com
+License: GPL-3.0
+Description: # pm4pygpu
+        GPU (CUDF) support for PM4Py
+        
+Platform: UNKNOWN
