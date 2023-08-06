@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: CaMo
+Version: 0.0.1
+Summary: CaMo: A Causal Model Library
+Home-page: https://github.com/AlessioZanga/CaMo
+Author: Alessio Zanga
+Author-email: alessio.zanga@outlook.it
+License: GNU GENERAL PUBLIC LICENSE - Version 3, 29 June 2007
+Description: # CaMo
+        CaMo: A Causal Model Library
+        
+Platform: Environment :: Console
+Platform: Operating System :: POSIX :: Linux
+Platform: Operating System :: Microsoft :: Windows :: Windows 10
+Platform: Operating System :: MacOS
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
