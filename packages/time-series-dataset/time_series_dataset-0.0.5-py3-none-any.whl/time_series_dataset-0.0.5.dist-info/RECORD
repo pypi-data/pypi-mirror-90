@@ -1,0 +1,7 @@
+time_series_dataset/__init__.py,sha256=9VghXVWGYpMJu7PRzr82rTQHxtN4OORtORGINMG0_zw,75
+time_series_dataset/time_series_dataset.py,sha256=Us8LvcFGwmeZ7-1mTbLYnAEz7nBMFUjn7L63EEIHjW8,1130
+time_series_dataset-0.0.5.dist-info/LICENSE,sha256=Q2ptU2E48gOsMzhYz_kqVovmJ5d1KzrblLyqD2_-fvY,1235
+time_series_dataset-0.0.5.dist-info/METADATA,sha256=3FkvwQGdco7Ft84XH_CAXICybp-zDa7uHZqDVbWhNKM,5423
+time_series_dataset-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+time_series_dataset-0.0.5.dist-info/top_level.txt,sha256=Lxm0QCKSD2y0FwzF6bKgK6tDlBCzaV47DPt1ykT5d0I,20
+time_series_dataset-0.0.5.dist-info/RECORD,,
