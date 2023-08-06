@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: mediaalpha-exchange
+Version: 0.0.3
+Summary: MediaAlpha Exchange API access.
+Home-page: https://github.com/MediaAlpha/mediaalpha-exchange-python/
+Author: MediaAlpha Engineering
+Author-email: tech@mediaalpha.com
+License: UNKNOWN
+Description: # MediaAlpha Exchange API Client Library
+        [![PyPI](https://img.shields.io/pypi/v/mediaalpha-exchange.svg)](https://pypi.python.org/pypi/mediaalpha-exchange)
+        [![PyPI](https://img.shields.io/pypi/pyversions/mediaalpha-exchange.svg)](https://pypi.python.org/pypi/mediaalpha-exchange)
+        
+        ## Installation
+        
+        Install from PyPi using [pip](https://pip.pypa.io/en/latest/), a
+        package manager for Python.
+        
+            pip install mediaalpha-exchange
+        
+        Or you can grab the latest using git+ssh.
+        
+            python -m pip install git+ssh://git@github.com/MediaAlpha/mediaalpha-exchange-python.git
+        
+        ## Examples
+        * [restful advertiser access](examples/rest-advertiser.py)
+        * [sync campaign optimization fields](examples/sync-campaign.py)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
