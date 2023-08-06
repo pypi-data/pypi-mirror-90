@@ -1,0 +1,9 @@
+Babel>=2.0
+Pillow>=4.0
+enum34
+fpdf
+qrcode
+reportbro-fpdf>=1.7.10
+simpleeval>=0.9.10
+typing
+xlsxwriter
