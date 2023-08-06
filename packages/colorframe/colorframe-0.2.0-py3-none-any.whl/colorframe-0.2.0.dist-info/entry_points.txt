@@ -1,0 +1,3 @@
+[console_scripts]
+colorframe=colorframe.__main__:app
+
