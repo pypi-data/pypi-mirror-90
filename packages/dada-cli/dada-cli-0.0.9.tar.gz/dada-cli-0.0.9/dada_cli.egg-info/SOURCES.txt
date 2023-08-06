@@ -1,0 +1,15 @@
+.dada-version
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+dada_cli/__init__.py
+dada_cli.egg-info/PKG-INFO
+dada_cli.egg-info/SOURCES.txt
+dada_cli.egg-info/dependency_links.txt
+dada_cli.egg-info/entry_points.txt
+dada_cli.egg-info/requires.txt
+dada_cli.egg-info/top_level.txt
+dada_cli/tests/__init_.py
+dada_cli/tests/test_file_cli.py

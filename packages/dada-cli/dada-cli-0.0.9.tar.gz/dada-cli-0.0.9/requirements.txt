@@ -1,0 +1,8 @@
+
+# DADA #
+dada-settings>=0.0.2
+dada-client>=0.0.2
+dada-file>=0.0.2
+dada-types>=0.0.2
+dada-utils>=0.0.2
+dada-log>=0.0.2
