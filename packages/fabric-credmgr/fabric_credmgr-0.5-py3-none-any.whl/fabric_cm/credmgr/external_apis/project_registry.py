@@ -1,0 +1,107 @@
+#!/usr/bin/env python3
+# MIT License
+#
+# Copyright (c) 2020 FABRIC Testbed
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# Author Komal Thareja (kthare10@renci.org)
+import requests
+
+from fabric_cm.credmgr.config import CONFIG_OBJ
+from fabric_cm.credmgr.logging import LOG
+
+class ProjectRegistry:
+    """
+    Class implements functionality to interface with Project Registry
+    """
+    def __init__(self, api_server: str, cookie: str, cookie_name: str, cookie_domain: str, id_token: str):
+        self.api_server = api_server
+        self.cookie = cookie
+        self.cookie_name = cookie_name
+        self.cookie_domain = cookie_domain
+        self.id_token = id_token
+
+    def _cookies(self):
+        s = requests.Session()
+        cookie_obj = requests.cookies.create_cookie(
+            domain=self.cookie_domain,
+            name=self.cookie_name,
+            value=self.cookie
+        )
+        s.cookies.set_cookie(cookie_obj)
+        cookies = s.cookies
+        return cookies
+
+    def _headers(self) -> dict:
+        """
+        Returns the headers
+        :return dict containing header info
+        """
+        headers = {
+            'Accept': 'application/json',
+            'Content-Type': "application/json",
+            'X-Vouch-Idp-Idtoken': self.id_token
+        }
+        return headers
+
+    def get_projects_and_roles(self, sub: str):
+        """
+        Determine Role from Project Registry
+        :param sub: OIDC claim sub
+        :param returns the roles and project with tags
+
+        :returns a tuple containing user specific roles and project tags
+        """
+        if self.api_server is None or self.cookie is None:
+            raise ProjectRegistryError("Project Registry URL: {} or "
+                                       "Cookie: {} not available".format(self.api_server, self.cookie))
+
+        url = self.api_server + "/people/oidc_claim_sub?oidc_claim_sub={}".format(sub)
+        ssl_verify = CONFIG_OBJ.is_pr_ssl_verify()
+
+        response = requests.get(url, headers=self._headers(), cookies=self._cookies(), verify=ssl_verify)
+
+        if response.status_code != 200:
+            raise ProjectRegistryError("Project Registry error occurred "
+                                       "status_code: {} message: {}".format(response.status_code, response.content))
+
+        LOG.debug("Response : {}".format(response.json()))
+
+        roles = response.json().get('roles', None)
+        projects = response.json().get('projects', None)
+        project_tags = {}
+        for p in projects:
+            project_name = p.get('name', None)
+            project_uuid = p.get('uuid', None)
+            LOG.debug("Getting tags for Project: {}".format(project_name))
+            url = self.api_server + "/projects/{}".format(project_uuid)
+            response = requests.get(url, headers=self._headers(), cookies=self.cookie, verify=ssl_verify)
+            if response.status_code != 200:
+                raise ProjectRegistryError("Project Registry error occurred "
+                                           "status_code: {} message: {}".format(response.status_code, response.content))
+            project_tags[project_name] = response.json().get('tags', None)
+        return roles, project_tags
+
+
+class ProjectRegistryError(Exception):
+    """
+    Project Registry Exception
+    """
+    pass
