@@ -1,0 +1,107 @@
+# FLF
+
+RabbitMQ server and client
+
+## Installation
+
+To install execute command:
+
+```bash
+pip install FLF==1.1.0 --ignore-installed
+```
+
+Or you can install from source:
+
+```bash
+python setup.py install
+````
+
+## Documentation
+
+### RpcServer
+
+Server-node for RabbitMQ
+
+Parameters:
+
+* **host**: host of queue
+* **port**: port of queue
+* **username**: username of queue
+* **password**: password of queue
+* **procedures**: dictionary with procedures of server in format: `{ str: Callable }`. Each procedure has arguments `params` (dict of parameters) and `files` (dict of binary objects) and returns data in same format (`params, files`)
+
+Example:
+
+```python
+import io
+
+from PIL import Image
+
+import FLF
+
+
+def add(params, files):
+    result_params = {"success": True, "sum": params["a"] + params["b"]}
+    result_files = dict()
+    
+    return result_params, result_files
+
+
+def process_image(params, files):
+    pil_image = Image.frombuffer("RGB", (params["width"], params["height"]), files["image"])
+    image_gray = pil_image.convert("LA")
+    
+    buffer = io.BytesIO()
+    image_gray.save(buffer, format='PNG')
+    image_gray_bytes = buffer.getvalue()
+    
+    return {"success": True}, {"gray_image": image_gray_bytes}
+
+
+def main():
+    app = FLF.RpcServer(host="google.com", port=12345, username="mister.robot", password="ecorp.zuck",
+                        procedures={"add": add, "process_image": process_image})
+    app.begin()
+
+
+if __name__ == "__main__":
+    main()
+
+```
+
+### RpcConnector
+
+Client-node for RabbitMQ
+
+Parameters:
+
+* **host**: host of queue
+* **port**: port of queue
+* **username**: username of queue
+* **password**: password of queue
+
+Example:
+
+```python
+import FLF
+
+
+def main():
+    app = FLF.RpcConnector(host="google.com", port=12345, username="mister.robot", password="ecorp.zuck")
+    app.begin()
+    
+    params, _ = app.call_procedure("add", {"a": 22, "b": 33}, dict())
+    print("Sum is:", params["sum"])
+    
+    with open("image.jpg", "rb") as f:
+        image_bytes = f.read()
+    _, files = app.call_procedure("process_image", {"width": 500, "height": 500}, {"image": image_bytes})
+    
+    with open("image_gray.png", "wb+") as f:
+        f.write(files["gray_image"])
+
+
+if __name__ == "__main__":
+    main()
+
+```
