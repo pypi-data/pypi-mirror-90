@@ -1,0 +1,3 @@
+[console_scripts]
+price-traget-tool = pricetool.run:run_package
+
