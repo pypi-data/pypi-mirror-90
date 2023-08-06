@@ -1,0 +1,6 @@
+[crowsetta.format]
+csv = crowsetta.csv
+koumura = crowsetta.koumura
+notmat = crowsetta.notmat
+phn = crowsetta.phntextgrid = crowsetta.textgrid
+
