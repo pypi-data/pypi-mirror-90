@@ -1,0 +1,8 @@
+README.md
+setup.py
+harveyutils/__init__.py
+harveyutils/logger.py
+harveyutils.egg-info/PKG-INFO
+harveyutils.egg-info/SOURCES.txt
+harveyutils.egg-info/dependency_links.txt
+harveyutils.egg-info/top_level.txt
