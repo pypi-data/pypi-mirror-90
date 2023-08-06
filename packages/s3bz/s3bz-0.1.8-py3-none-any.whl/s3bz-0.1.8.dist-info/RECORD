@@ -1,0 +1,12 @@
+nbdev_template/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+nbdev_template/_nbdev.py,sha256=lO9wg7-HA1HzZWYe4hdvztmCk2k3EwTxmn4BrBRE3LM,317
+nbdev_template/s3bz.py,sha256=13u2dJMi6pwn6rd9I4T0bGOuM5nO_A5EHHmJpwjR7jI,2229
+s3bz/__init__.py,sha256=C69ADlbQREQlR15trneyA2sk8x0-oH4rDAX5fsv19_U,22
+s3bz/_nbdev.py,sha256=gCkwxOa4k6Zz5IzuezKvn6f2N_LSF0fhitxKuHBDok8,692
+s3bz/s3bz.py,sha256=aT200HbTrs_W__98BSO8Qgi656ww4i2XXde6dlsDdCk,8087
+s3bz-0.1.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+s3bz-0.1.8.dist-info/METADATA,sha256=NOTs5IZEVicVHBzD45w9nfxptiadhAO4A7mWe0ccV0k,4336
+s3bz-0.1.8.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+s3bz-0.1.8.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+s3bz-0.1.8.dist-info/top_level.txt,sha256=o2yCI3W5VmoYbYtH--iVuooNHsU0RsycUG_cikKBW2w,20
+s3bz-0.1.8.dist-info/RECORD,,
