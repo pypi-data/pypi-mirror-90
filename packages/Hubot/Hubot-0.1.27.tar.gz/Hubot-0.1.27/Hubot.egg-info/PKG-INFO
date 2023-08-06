@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Hubot
+Version: 0.1.27
+Summary: UNKNOWN
+Home-page: https://gitlab.com/coddity/hubot/hubot_back
+Author: Clément Kérébel
+Author-email: clement.kerebel@coddity.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
+Provides-Extra: deployment

@@ -1,0 +1,8 @@
+pandas
+
+[deployment]
+twine
+
+[test]
+pytest
+flake8
