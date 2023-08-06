@@ -1,0 +1,3 @@
+[console_scripts]
+sample_and_train = package.sample_and_train.py:main
+

@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: encdecmeta
+Version: 0.0.3
+Summary: A meta search space for encoder decoder networks.
+Home-page: UNKNOWN
+Author: Philipp Jamscikov
+Author-email: p.jamscikov@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: aiohttp (==3.7.3)
+Requires-Dist: aiohttp-cors (==0.7.0)
+Requires-Dist: aioredis (==1.3.1)
+Requires-Dist: async-timeout (==3.0.1)
+Requires-Dist: attrs (==20.3.0)
+Requires-Dist: blessings (==1.7)
+Requires-Dist: cachetools (==4.2.0)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: colorful (==0.5.4)
+Requires-Dist: filelock (==3.0.12)
+Requires-Dist: google-api-core (==1.24.1)
+Requires-Dist: google-auth (==1.24.0)
+Requires-Dist: googleapis-common-protos (==1.52.0)
+Requires-Dist: gpustat (==0.6.0)
+Requires-Dist: grpcio (==1.34.0)
+Requires-Dist: hiredis (==1.1.0)
+Requires-Dist: idna (==2.10)
+Requires-Dist: importlib-metadata (==3.3.0)
+Requires-Dist: jsonschema (==3.2.0)
+Requires-Dist: msgpack (==1.0.2)
+Requires-Dist: multidict (==5.1.0)
+Requires-Dist: numpy (==1.19.4)
+Requires-Dist: nvidia-ml-py3 (==7.352.0)
+Requires-Dist: opencensus (==0.7.11)
+Requires-Dist: opencensus-context (==0.1.2)
+Requires-Dist: pandas (==1.2.0)
+Requires-Dist: Pillow (==8.1.0)
+Requires-Dist: prettytable (==2.0.0)
+Requires-Dist: prometheus-client (==0.9.0)
+Requires-Dist: protobuf (==3.14.0)
+Requires-Dist: psutil (==5.8.0)
+Requires-Dist: py-spy (==0.3.3)
+Requires-Dist: pyasn1 (==0.4.8)
+Requires-Dist: pyasn1-modules (==0.2.8)
+Requires-Dist: pyrsistent (==0.17.3)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2020.5)
+Requires-Dist: PyYAML (==5.3.1)
+Requires-Dist: ray (==1.1.0)
+Requires-Dist: redis (==3.5.3)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: rsa (==4.6)
+Requires-Dist: six (==1.15.0)
+Requires-Dist: tabulate (==0.8.7)
+Requires-Dist: tensorboardX (==2.1)
+Requires-Dist: torch (==1.7.1)
+Requires-Dist: torchvision (==0.8.2)
+Requires-Dist: typing-extensions (==3.7.4.3)
+Requires-Dist: urllib3 (==1.26.2)
+Requires-Dist: wcwidth (==0.2.5)
+Requires-Dist: yarl (==1.6.3)
+Requires-Dist: zipp (==3.4.0)
+Provides-Extra: jupyter
+Requires-Dist: jupyterlab (==2.2.9) ; extra == 'jupyter'
+Requires-Dist: widgetsnbextension (==3.5.1) ; extra == 'jupyter'
+Provides-Extra: packaging
+Requires-Dist: twine ; extra == 'packaging'
+Requires-Dist: setuptools ; extra == 'packaging'
+Requires-Dist: wheel ; extra == 'packaging'
+
+A modular, user-centric tool to define fixed architectures analoguos to search spaces for semantic segmentation. The search strategy applied is random sampling, non-architectural hyperparameters are also covered. Builds on PyTorch (model instantiation, training) and Ray Tune (search, checkpointing).
+
+
