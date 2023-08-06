@@ -1,0 +1,3 @@
+[console_scripts]
+ecs-container-exporter = ecs_container_exporter.main:main
+
