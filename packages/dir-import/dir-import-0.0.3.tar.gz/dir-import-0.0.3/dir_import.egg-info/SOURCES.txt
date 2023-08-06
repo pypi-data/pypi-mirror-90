@@ -1,0 +1,7 @@
+README.md
+ZtjDirImport.py
+setup.py
+dir_import.egg-info/PKG-INFO
+dir_import.egg-info/SOURCES.txt
+dir_import.egg-info/dependency_links.txt
+dir_import.egg-info/top_level.txt
