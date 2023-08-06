@@ -1,0 +1,6 @@
+statsmodels
+tqdm
+numpy
+pandas
+dill
+scipy
