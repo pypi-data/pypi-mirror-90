@@ -1,0 +1,71 @@
+{
+  "name": "@hadim/jupyter-archive",
+  "version": "2.2.0",
+  "description": "A Jupyterlab extension to make, download and extract archive files.",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "homepage": "https://github.com/jupyterlab-contrib/jupyter-archive",
+  "bugs": {
+    "url": "https://github.com/jupyterlab-contrib/jupyter-archive/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": "hadim",
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}",
+    "schema/*.json"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "style": "style/index.css",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jupyterlab-contrib/jupyter-archive.git"
+  },
+  "scripts": {
+    "build": "jlpm run build:lib",
+    "build:labextension": "cd jupyter_archive && rimraf labextension && mkdirp labextension && cd labextension && npm pack ../..",
+    "build:lib": "tsc",
+    "build:all": "jlpm run build:labextension",
+    "clean": "jlpm run clean:lib",
+    "clean:lib": "rimraf lib && rimraf tsconfig.tsbuildinfo",
+    "clean:labextension": "rimraf jupyter_archive/labextension",
+    "clean:all": "jlpm run clean:lib && jlpm run clean:labextension",
+    "prepare": "jlpm run clean && jlpm run build",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^2.2.0",
+    "@jupyterlab/apputils": "^2.2.0",
+    "@jupyterlab/coreutils": "^4.2.0",
+    "@jupyterlab/filebrowser": "^2.2.0",
+    "@jupyterlab/services": "^5.2.0",
+    "@jupyterlab/settingregistry": "^2.2.0",
+    "@jupyterlab/ui-components": "^2.2.0"
+  },
+  "devDependencies": {
+    "mkdirp": "^1.0.3",
+    "rimraf": "~3.0.0",
+    "typescript": "~3.7.3"
+  },
+  "sideEffects": [
+    "style/*.css"
+  ],
+  "jupyterlab": {
+    "extension": true,
+    "schemaDir": "schema",
+    "discovery": {
+      "server": {
+        "managers": [
+          "pip"
+        ],
+        "base": {
+          "name": "jupyter-archive"
+        }
+      }
+    }
+  }
+}
