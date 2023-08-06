@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: phishing-detection-engine
+Version: 0.0.17
+Summary: Library for Detecting Phishing URLs
+Home-page: UNKNOWN
+Author: HamzaAnjum_hamzaanjum9696
+Author-email: hamzaanjum1@gmail.com
+License: MIT
+Description: The project is using different techniques to identify phishing URLs.
+                       Machine Learning and use of different APIs is done to get good results.
+                       At first, model checks the URL in databases of phishing URLs. 
+                       If URL is found in database, user is given output immediaately.
+                       If URL is not categorized at that point, then it is categorized using
+                       machine learning model whcih is trained on dataset of above 18000 Websites
+Platform: UNKNOWN

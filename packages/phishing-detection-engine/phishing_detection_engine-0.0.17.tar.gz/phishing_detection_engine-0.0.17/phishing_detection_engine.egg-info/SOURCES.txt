@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+phishing_detection_engine/__init__.py
+phishing_detection_engine/functions.py
+phishing_detection_engine.egg-info/PKG-INFO
+phishing_detection_engine.egg-info/SOURCES.txt
+phishing_detection_engine.egg-info/dependency_links.txt
+phishing_detection_engine.egg-info/requires.txt
+phishing_detection_engine.egg-info/top_level.txt
+phishing_detection_engine/trained_model/__init__.py
+phishing_detection_engine/trained_model/finalized_model.sav
+tests/__init__.py
+tests/test_functions.py
