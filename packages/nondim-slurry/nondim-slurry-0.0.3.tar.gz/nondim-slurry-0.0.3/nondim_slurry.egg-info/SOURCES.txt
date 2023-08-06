@@ -1,0 +1,14 @@
+README.md
+setup.py
+nondim_slurry.egg-info/PKG-INFO
+nondim_slurry.egg-info/SOURCES.txt
+nondim_slurry.egg-info/dependency_links.txt
+nondim_slurry.egg-info/top_level.txt
+slurpy/__init__.py
+slurpy/lookupdata/denPREM.csv
+slurpy/lookupdata/gravPREM.csv
+slurpy/lookupdata/presPREM.csv
+slurpy/lookupdata/radAK135.csv
+slurpy/lookupdata/radPREM.csv
+slurpy/lookupdata/vpAK135.csv
+slurpy/lookupdata/vpPREM.csv
