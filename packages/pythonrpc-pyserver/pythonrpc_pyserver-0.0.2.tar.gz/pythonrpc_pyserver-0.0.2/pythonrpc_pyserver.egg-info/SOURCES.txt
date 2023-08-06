@@ -1,0 +1,8 @@
+setup.py
+pythonrpc_pyserver/__init__.py
+pythonrpc_pyserver/server.py
+pythonrpc_pyserver.egg-info/PKG-INFO
+pythonrpc_pyserver.egg-info/SOURCES.txt
+pythonrpc_pyserver.egg-info/dependency_links.txt
+pythonrpc_pyserver.egg-info/requires.txt
+pythonrpc_pyserver.egg-info/top_level.txt
