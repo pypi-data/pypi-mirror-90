@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: mkbasiccalc
+Version: 0.0.1
+Summary: A basic calculator
+Home-page: UNKNOWN
+Author: mk
+Author-email: mkaja@gmail.com
+License: MIT
+Description: this is a simple calc python program
+        
+        first release
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
