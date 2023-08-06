@@ -1,0 +1,10 @@
+<!-- https://getbootstrap.com/docs/4.0/utilities/embed/#aspect-ratios -->
+
+{% if url %}
+<a href="{{ url }}">
+{% endif %}
+<img src="{{ media.get_media_path }}" class="w-100" alt="{{ media.title }}" title="{{ media.title }}" />
+{% if url %}
+</a>
+{% endif %}
+
