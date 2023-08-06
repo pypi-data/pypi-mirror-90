@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: py-i18n-countries
+Version: 0.1.1
+Summary: Mapping for ISO-3166-1 alpha-2 codes to country names and nationalities
+Home-page: https://github.com/nossrannug/py-i18n-countries
+Author: Gunnar Sv Sigurbjörnsson
+Author-email: gunnar.sigurbjornsson@gmail.com
+License: MIT
+Keywords: country nationality iso 3166-1
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+
+# py-i18n-countries
+Country names and nationalities for ISO-3166-1 alpha-2 codes: [Wiki](https://en.wikipedia.org/wiki/ISO_3166-1#Officially_assigned_code_elements)
+
+## Install
+```
+pip install py-i18n-countries
+```
+
+## Use
+```python
+from py_i18n_countries import get_country, get_nationality
+
+print(get_nationality(code="us"))
+# American
+
+print(get_country(code="us"))
+# United States of America
+```
+
