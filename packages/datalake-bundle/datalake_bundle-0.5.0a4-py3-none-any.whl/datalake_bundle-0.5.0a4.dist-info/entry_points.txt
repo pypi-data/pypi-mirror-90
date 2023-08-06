@@ -1,0 +1,7 @@
+[pyfony.bundle]
+autodetect=datalakebundle.DataLakeBundle:DataLakeBundle.autodetect
+
+[pyfony.testing_scope]
+console=datalakebundle.DataLakeBundle:DataLakeBundle.createForConsole
+notebook=datalakebundle.DataLakeBundle:DataLakeBundle.createForNotebook
+
