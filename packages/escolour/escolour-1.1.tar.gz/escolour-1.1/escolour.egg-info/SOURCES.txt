@@ -1,0 +1,8 @@
+README.md
+setup.py
+escolour/__init__.py
+escolour/colours.py
+escolour.egg-info/PKG-INFO
+escolour.egg-info/SOURCES.txt
+escolour.egg-info/dependency_links.txt
+escolour.egg-info/top_level.txt
