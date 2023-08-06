@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+./gaget/__init__.py
+./gaget/gaget.py
+gaget.egg-info/PKG-INFO
+gaget.egg-info/SOURCES.txt
+gaget.egg-info/dependency_links.txt
+gaget.egg-info/entry_points.txt
+gaget.egg-info/not-zip-safe
+gaget.egg-info/requires.txt
+gaget.egg-info/top_level.txt

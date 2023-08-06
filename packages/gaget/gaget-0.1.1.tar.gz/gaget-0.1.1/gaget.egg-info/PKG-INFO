@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gaget
+Version: 0.1.1
+Summary: Download customer data
+Home-page: https://github.com/ConductorTechnologies/gaget
+Author: Julian Mann
+Author-email: julian@conductortech.com
+License: UNKNOWN
+Description: Download customer data
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
