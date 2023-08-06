@@ -1,0 +1,3 @@
+[console_scripts]
+azkm = azkm.__main__:main
+
