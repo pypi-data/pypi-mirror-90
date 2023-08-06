@@ -1,0 +1,7 @@
+README.md
+compressed_spreadsheets.py
+setup.py
+compressed_spreadsheets.egg-info/PKG-INFO
+compressed_spreadsheets.egg-info/SOURCES.txt
+compressed_spreadsheets.egg-info/dependency_links.txt
+compressed_spreadsheets.egg-info/top_level.txt
