@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "clmutils"
+version = "0.1.5"
+description = "colab miscellaneous utils"
+authors = ["ffreemt"]
+readme = "README.md"
+repository = "https://github.com/ffreemt/colab-misc-utils"
+
+[tool.poetry.dependencies]
+python = "^3.6.1"
+logzero = "^1.6.3"
+chardet = "^4.0.0"
+psutil = "^5.8.0"
+pydantic = {extras = ["dotenv"], version = "^1.7.3"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+flake8 = "^3.8.4"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/ffreemt/colab-misc-utils/issues"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
