@@ -1,0 +1,7 @@
+<div id="ribbon">
+	<ol class="breadcrumb d-flex flex-nowrap" aria-label="breadcrumb">
+		<li class="breadcrumb-item persistent strong">
+			<a href="/admin">MyAMS.js</a>
+		</li>
+	</ol>
+</div>
