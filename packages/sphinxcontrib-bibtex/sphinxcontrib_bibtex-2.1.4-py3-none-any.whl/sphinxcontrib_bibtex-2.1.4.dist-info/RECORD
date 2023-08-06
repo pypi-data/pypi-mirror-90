@@ -1,0 +1,16 @@
+sphinxcontrib_bibtex-2.1.4-nspkg.pth,sha256=bvCbvTDhKUCTNtrCbu6HVe8TsYC4G4-hRkXeHdEJ6t4,574
+sphinxcontrib/bibtex/__init__.py,sha256=Nxl63k9phvnrAvu5MFnQgGogMyD3ylSjazN9XeR7itM,1421
+sphinxcontrib/bibtex/bibfile.py,sha256=J97VZVTzekOCMR_K3yvC7lQdzHFs0uAjvcFm1kapIB4,2903
+sphinxcontrib/bibtex/directives.py,sha256=BnuSgJjiQ-v-Rc9nzpc1SfwO8z_ScW5eeb0N059LICk,6659
+sphinxcontrib/bibtex/domain.py,sha256=fqlXA4xfdSz23veAVzKRLcmP6XbKcFa-BVJBRCrtiqI,18053
+sphinxcontrib/bibtex/foot_directives.py,sha256=Str9iWWQTqtxvkhWFxH2vtIXHUz462AXnMs9-2Yux0I,1492
+sphinxcontrib/bibtex/foot_roles.py,sha256=YEeRNdEZIogw2KX0gibZBd2lwJPd7BSVLwx3HRUeb_g,2857
+sphinxcontrib/bibtex/nodes.py,sha256=VhemLYygy9axjQe5jI84azJyEzmp8Y2hwXGk6TVnBOM,290
+sphinxcontrib/bibtex/roles.py,sha256=R42HmvuBz58b-0Q11uQ5p_zC7cJRrZHTwbxTAnkvBdY,1448
+sphinxcontrib/bibtex/transforms.py,sha256=81g0uEF5jgn3cNIMH1n6sU01WoZEQEJHSmX_4pPBPR4,5110
+sphinxcontrib_bibtex-2.1.4.dist-info/LICENSE.rst,sha256=vHmUVtfmmTJ1VZT3vUUAQmthrthhkyOyMLhqDW6iYsM,1388
+sphinxcontrib_bibtex-2.1.4.dist-info/METADATA,sha256=GI8dN1jky3-JKbqYfFVr8cxm6PtXaF1JiY6EMbbUI8Q,2844
+sphinxcontrib_bibtex-2.1.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sphinxcontrib_bibtex-2.1.4.dist-info/namespace_packages.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinxcontrib_bibtex-2.1.4.dist-info/top_level.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinxcontrib_bibtex-2.1.4.dist-info/RECORD,,
