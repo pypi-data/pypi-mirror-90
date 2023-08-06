@@ -1,0 +1,10 @@
+---
+- name: Restart rabbitmq container
+  vars:
+    service_name: "rabbitmq"
+    service: "{{ rabbitmq_services[service_name] }}"
+  include_tasks: 'restart_services.yml'
+  when:
+    - kolla_action != "config"
+    - inventory_hostname == item
+  loop: "{{ groups[service.group] }}"
