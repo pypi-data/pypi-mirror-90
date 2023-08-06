@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: oplot
+Version: 0.0.1
+Summary: Plotting tools for audio analysis
+Home-page: https://github.com/otosense/oplot
+Author: OtoSense
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# oplot
+Plotting tools for audio analysis
+
+
+To install:	```pip install oplot```
+
+
