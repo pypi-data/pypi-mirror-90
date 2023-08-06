@@ -1,0 +1,294 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>NHL API Wrapper &mdash; NHL API Wrapper  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home" alt="Documentation Home"> NHL API Wrapper
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conference.html">Conference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="division.html">Division</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schedule.html">Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="player.html">Player</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">NHL API Wrapper</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>NHL API Wrapper</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="nhl-api-wrapper">
+<h1>NHL API Wrapper<a class="headerlink" href="#nhl-api-wrapper" title="Permalink to this headline">¶</a></h1>
+<p>Ever had a project idea that looks to take advantage of the NHL API, but you don’t know where to start
+because there’s no documentation?</p>
+<p>Look no further!</p>
+<p>This api wrapper was developed to make grabbing and using that data a snap!</p>
+<p><strong>Here’s what you get:</strong></p>
+<ol class="arabic simple">
+<li><p>A few classes to make this simple</p></li>
+<li><p>Built in methods on those classes, to make the data gathering a breeze</p></li>
+</ol>
+<p>For questions or suggestions please email <strong>jbranco&#64;nd.edu</strong></p>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#requirements">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#installing-the-package">Installing the package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="conference.html">Conference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="conference.html#all-conferences">All conferences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="conference.html#details">Details</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="division.html">Division</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="division.html#all-divisions">All Divisions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="division.html#details">Details</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="schedule.html">Schedule</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="schedule.html#today">Today</a></li>
+<li class="toctree-l2"><a class="reference internal" href="schedule.html#date">Date</a></li>
+<li class="toctree-l2"><a class="reference internal" href="schedule.html#linescore">Linescore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="schedule.html#tickets">Tickets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="game.html">Game</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="game.html#boxscore">Boxscore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="game.html#live-feed-all-stats">Live Feed All Stats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="game.html#highlights-and-media">Highlights and Media</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Team</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="team.html#self-teams">self.teams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="team.html#team-info">Team Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="team.html#roster">Roster</a></li>
+<li class="toctree-l2"><a class="reference internal" href="team.html#next-game">Next Game</a></li>
+<li class="toctree-l2"><a class="reference internal" href="team.html#previous-game">Previous Game</a></li>
+<li class="toctree-l2"><a class="reference internal" href="team.html#season-stats">Season Stats</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="player.html">Player</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="player.html#player-info">Player Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="player.html#season-stats">Season Stats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="player.html#goals-by-game-situation">Goals By Game Situation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="player.html#win-loss-record">Win Loss Record</a></li>
+<li class="toctree-l2"><a class="reference internal" href="player.html#home-away-stats">Home Away Stats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="player.html#stats-split-by-month">Stats Split By Month</a></li>
+<li class="toctree-l2"><a class="reference internal" href="player.html#stats-split-by-day-of-week">Stats Split By Day of Week</a></li>
+<li class="toctree-l2"><a class="reference internal" href="player.html#stats-split-by-division">Stats Split By Division</a></li>
+<li class="toctree-l2"><a class="reference internal" href="player.html#stats-split-by-conference">Stats Split By Conference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="player.html#stats-split-by-team">Stats Split By Team</a></li>
+<li class="toctree-l2"><a class="reference internal" href="player.html#stats-split-by-game">Stats Split By Game</a></li>
+<li class="toctree-l2"><a class="reference internal" href="player.html#stats-standings">Stats Standings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="player.html#stats-on-pace-for">Stats on Pace For</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="installation.html" class="btn btn-neutral float-right" title="Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Justin Branco
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
