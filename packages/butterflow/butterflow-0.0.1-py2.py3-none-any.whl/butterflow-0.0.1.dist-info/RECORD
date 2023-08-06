@@ -1,0 +1,10 @@
+butterflow/__init__.py,sha256=nldGrweoXLDGtSQUmvxOmqIJI8FI_EQdeQ3dWl0F0Us,201
+butterflow/__main__.py,sha256=6E5T589yBTXhk3MbEWqn2ydwKd9hkqneEQLD27380Zo,291
+butterflow/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+butterflow/tests/test_butterflow.py,sha256=1W1LdE5nmxkxZw-Tzqrx6Gwsvcd7jNFaTfF4907-INQ,297
+butterflow-0.0.1.dist-info/LICENSE,sha256=iW9lHIqU4ZFWhyIpiUybGDdDM7ihEbRVaj8-MFW1rx8,1497
+butterflow-0.0.1.dist-info/METADATA,sha256=g0t5j6WoALZfxOkZPP93u5Az35d6a8Mw24dIiqmVkqA,459
+butterflow-0.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+butterflow-0.0.1.dist-info/entry_points.txt,sha256=h-Om4dcvztwlBaoEyFrn-Jxr_eatAcwELsqBsIo8eu4,57
+butterflow-0.0.1.dist-info/top_level.txt,sha256=M5VEaW1DqtaHEZE0lebRqcC0TT87Y38frHV_nIuz6l0,11
+butterflow-0.0.1.dist-info/RECORD,,
