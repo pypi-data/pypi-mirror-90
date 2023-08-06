@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+pdfresurrect/__init__.py
+pdfresurrect/main.c
+pdfresurrect/pdf.c
+pdfresurrect/wrapper.py
+pdfresurrect_python.egg-info/PKG-INFO
+pdfresurrect_python.egg-info/SOURCES.txt
+pdfresurrect_python.egg-info/dependency_links.txt
+pdfresurrect_python.egg-info/top_level.txt
