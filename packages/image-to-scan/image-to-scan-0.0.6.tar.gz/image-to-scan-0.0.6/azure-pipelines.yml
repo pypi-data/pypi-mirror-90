@@ -1,0 +1,76 @@
+# Python package
+# Create and test a Python package on multiple Python versions.
+# Add steps that analyze code, save the dist with the build record, publish to a PyPI-compatible index, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/python
+
+# see https://github.com/microsoft/azure-pipelines-yaml
+stages:
+- stage: Tests
+  jobs:
+  - job: Test
+    strategy:
+      matrix:
+        # tests
+        linuxTestPY37:
+          imageName: 'ubuntu-latest'
+          python.version: '3.7'
+          tox.env: py37
+        macTestPY37:
+          imageName: 'macOS-latest'
+          python.version: '3.7'
+          tox.env: py37
+        windowsTestPY37:
+          imageName: 'windows-latest'
+          python.version: '3.7'
+          tox.env: py37
+
+        # manifest
+        manifestTest:
+          python.version: '3.7'
+          tox.env: manifest
+          imageName: 'ubuntu-latest'
+    pool:
+      vmImage: $(imageName)
+    steps:
+    - template: azure-templates/python-steps.yml
+      parameters:
+        toxEnv: $(tox.env)
+
+- stage: Packages
+  jobs:
+  - job: Packaging
+    strategy:
+      matrix:
+        # packaging
+        linuxPackaging:
+          imageName: 'ubuntu-latest'
+          python.version: '3.7'
+          tox.env: packaging
+        macPackaging:
+          imageName: 'macOS-latest'
+          python.version: '3.7'
+          tox.env: packaging
+        windowsPackaging:
+          imageName: 'windows-latest'
+          python.version: '3.7'
+          tox.env: packaging
+    pool:
+      vmImage: $(imageName)
+    steps:
+    - template: azure-templates/python-steps.yml
+      parameters:
+        toxEnv: $(tox.env) -- -o dist/$(imageName)/image-to-scan
+
+    - publish: $(System.DefaultWorkingDirectory)/dist/$(imageName)/image-to-scan
+      condition: and(
+                  succeeded(),
+                  eq(variables['Build.SourceBranch'], 'refs/heads/master')
+                 )
+      artifact: pex-app-$(imageName)
+
+    - task: GithubRelease@0
+      displayName: 'Create GitHub Release'
+      condition: startsWith(variables['Build.SourceBranch'], 'refs/tags/v')
+      inputs:
+        gitHubConnection: image-to-scan
+        assets: $(System.DefaultWorkingDirectory)/dist/$(imageName)/image-to-scan

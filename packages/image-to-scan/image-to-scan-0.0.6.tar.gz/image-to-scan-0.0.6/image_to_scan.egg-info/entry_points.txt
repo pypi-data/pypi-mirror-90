@@ -1,0 +1,3 @@
+[console_scripts]
+image-to-scan = image_to_scan.app:app
+
