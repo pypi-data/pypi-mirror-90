@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pxdlib
+Version: 0.0.1
+Summary: Pixelmator Pro file (.pxd) library
+Home-page: https://github.com/yunruse/pxdlib
+Author: Mia yun Ruse
+Author-email: mia@yunru.se
+License: UNKNOWN
+Description: # pxdlib (Alpha 0.0.1)
+        
+        `pxdlib` is a library intended for deciphering and manipulating `.pxd` files,
+        used by the image editor [Pixelmator Pro].
+        
+        Documentation exists for the [API], and a much longer set of documentation exists
+        for the [reverse-engineering] of the `.pxd` format. Neither are feature-complete yet.
+        
+        [Pixelmator Pro]: https://pixelmator.com/pro/
+        [API]: docs/api/readme.md
+        [reverse-engineering]: docs/api/readme.md
+        
+Keywords: Pixelmator pxd file image raster vector
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Graphics :: Editors
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
