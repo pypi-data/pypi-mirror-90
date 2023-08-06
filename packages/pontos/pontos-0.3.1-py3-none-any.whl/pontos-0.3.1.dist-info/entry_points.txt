@@ -1,0 +1,4 @@
+[console_scripts]
+pontos-release=pontos.release.release:main
+pontos-version=pontos.version:main
+
