@@ -1,0 +1,11 @@
+devshell/__init__.py,sha256=WTWd5Pt8YNIOE4xKXMaTg-ptP0Ct8abyeZTWbPRqdWw,108
+devshell/__main__.py,sha256=C2qFvWhjvsY9yiL0HtzSM6CHhqIQ-rBhT_mlT6zOO2s,901
+devshell/injector.py,sha256=C0FChEmD_tbLn6dSzkmlHFs_9LVw32IrNYv8gls3aMY,12628
+devshell/newshell.py,sha256=T0MCvysYrXWcfshdL4I3ZxJwp_zM9-ldLmRf1v6LU7w,4649
+devshell/ptcmd.py,sha256=E5tTbutPEqfb-_jJA17yFUkd95H_vMjBnoliCAdvaeU,3489
+devshell/shell.py,sha256=aN9StgFvGGkihjP-vb-4ckzh-YgPRSbZffkGwJJeXew,48936
+devshell-0.0.3.dist-info/LICENSE,sha256=X8FscawJ6xt-Ppx1GEoLDKXcPG889Ya6Jez7_rry0RM,1066
+devshell-0.0.3.dist-info/METADATA,sha256=_2h26fpoSJg6Ezjzyjv2qYPvZuy9zcM36kYWdQs1tk8,10128
+devshell-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+devshell-0.0.3.dist-info/top_level.txt,sha256=4E19CjGL2kAJ2cs_0YNxV5SjA8Qi80Eule7j7FtJChk,9
+devshell-0.0.3.dist-info/RECORD,,
