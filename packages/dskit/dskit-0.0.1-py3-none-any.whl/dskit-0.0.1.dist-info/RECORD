@@ -1,0 +1,10 @@
+dskit/__init__.py,sha256=tV4lKS_D_-wpy_PpoDAhFnBvU2KYht9hHuyvV_rSHA4,43
+dskit/frame/__init__.py,sha256=gueIHHzT5QJTpP-K3fhB4okHTBbKNMOE5wcP0U9Ak1g,96
+dskit/frame/frame.py,sha256=LqIunw76rH6gtj1sfukTd2eSbepzggC3QIOSb73xa34,2095
+dskit/tensor/__init__.py,sha256=QT7qFXHwUMjuXlK3iNl03WLHSXYW71oKp_sMt0pkM_g,332
+dskit/tensor/tensor.py,sha256=x5HdWQOLiPkAIBBdrPCaT632ZIE5dnZlr1oqRywRd24,3033
+dskit-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dskit-0.0.1.dist-info/METADATA,sha256=VYxM3_ALAppCCXDeAQ1zaw0UvdNlWogluy_MXmSypzQ,9341
+dskit-0.0.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+dskit-0.0.1.dist-info/top_level.txt,sha256=prqZcIaHQpkfk74mym36XObsw_-kxaW96L-gNoOOs3U,6
+dskit-0.0.1.dist-info/RECORD,,
