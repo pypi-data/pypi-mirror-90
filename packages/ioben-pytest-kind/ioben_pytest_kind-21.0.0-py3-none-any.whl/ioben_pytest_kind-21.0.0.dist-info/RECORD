@@ -1,0 +1,8 @@
+pytest_kind/__init__.py,sha256=YVS5Sex7uE1VhQuqeJSggCvnrUw3X5OYfvyADDmhgsg,60
+pytest_kind/cluster.py,sha256=mGWgFPFG15hmCQdXEIZGoCuTvFmH9YfButVYCzZkGcE,6284
+pytest_kind/plugin.py,sha256=pdM9LoBdAsL8CHci20dvFJ2W1N76-GPCUeH80rHBz6Q,1091
+ioben_pytest_kind-21.0.0.dist-info/entry_points.txt,sha256=W4OOooU1g4JO5wQ_H7a0TUDGLG0lYEDkeGKk2tJwviU,43
+ioben_pytest_kind-21.0.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+ioben_pytest_kind-21.0.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+ioben_pytest_kind-21.0.0.dist-info/METADATA,sha256=MEQAS0HVXuYfJDAHQgGF8vb6HadaTE2s0WHgIjvmfiM,4829
+ioben_pytest_kind-21.0.0.dist-info/RECORD,,
