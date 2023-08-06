@@ -1,0 +1,3 @@
+[console_scripts]
+pytiflash = pytiflash.main:main
+

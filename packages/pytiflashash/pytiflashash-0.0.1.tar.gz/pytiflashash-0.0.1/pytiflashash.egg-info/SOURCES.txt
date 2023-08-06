@@ -1,0 +1,9 @@
+README.md
+setup.py
+pytiflash/__init__.py
+pytiflash/main.py
+pytiflashash.egg-info/PKG-INFO
+pytiflashash.egg-info/SOURCES.txt
+pytiflashash.egg-info/dependency_links.txt
+pytiflashash.egg-info/entry_points.txt
+pytiflashash.egg-info/top_level.txt
