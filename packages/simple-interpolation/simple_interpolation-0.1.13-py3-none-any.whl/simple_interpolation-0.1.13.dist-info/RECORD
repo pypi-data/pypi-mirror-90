@@ -1,0 +1,11 @@
+simple_interpolation/__init__.py,sha256=LcIlFjHZFfiF9Rd4UHoakmombOFkxIYk00I181frGBM,23
+simple_interpolation/_nbdev.py,sha256=dJsd3iMJUmEolk63yx2NkruaX23qtLmdzOa8jaBXtRg,972
+simple_interpolation/core.py,sha256=Uz5Wyv1bnDAGnfqUhv_Unp43R-BQCVaAq_5hCrUnxo4,28638
+simple_interpolation/prophet_sensibility.py,sha256=OkLkWycjtB3Mhdf2jkv1Sb3wkKEO7W88XBttFgZlC0o,6268
+simple_interpolation/simple_interpolation.py,sha256=fl3opbtW2iC_MeWPBdxHX7BmJmeqUXiTpQqbniG5C00,28704
+simple_interpolation-0.1.13.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+simple_interpolation-0.1.13.dist-info/METADATA,sha256=NRRT9RaSaDQjc_Gc5yrmreDwnS5zn_CP3od8-BsTE5w,12227
+simple_interpolation-0.1.13.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+simple_interpolation-0.1.13.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+simple_interpolation-0.1.13.dist-info/top_level.txt,sha256=foz3eCRCdSjuRc9g5RvCvkN1vY4ED4Tq32y3eQDa02g,21
+simple_interpolation-0.1.13.dist-info/RECORD,,
