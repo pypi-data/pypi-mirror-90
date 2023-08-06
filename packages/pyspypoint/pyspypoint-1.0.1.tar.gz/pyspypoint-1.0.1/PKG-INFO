@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pyspypoint
+Version: 1.0.1
+Summary: Client for SPYPOINT
+Home-page: UNKNOWN
+Author: Henry Stern
+Author-email: henry@stern.ca
+License: Apache 2.0
+Description: Python Client for SPYPOINT Cloud API
+        ====================================
+        
+        This is an unofficial client for the [SPYPOINT](https://www.spypoint.com) Cloud API. You can use it to obtain download
+        urls for recent photos uploaded by your cellular trail camera.
+        
+        Usage
+        -----
+        
+        ```python
+        import spypoint
+        c = spypoint.Client(username, password)
+        [p.url() for p in c.photos(c.cameras(), limit=1)]
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Provides-Extra: test

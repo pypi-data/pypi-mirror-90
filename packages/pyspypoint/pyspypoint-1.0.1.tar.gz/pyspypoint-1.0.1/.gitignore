@@ -1,0 +1,5 @@
+.eggs/
+dist/
+pyspypoint.egg-info/
+*.pyc
+__pycache__
