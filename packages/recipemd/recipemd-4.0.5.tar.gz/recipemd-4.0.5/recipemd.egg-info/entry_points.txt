@@ -1,0 +1,4 @@
+[console_scripts]
+recipemd = recipemd.cli.main:main
+recipemd-find = recipemd.cli.find:main
+
