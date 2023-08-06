@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: layz_spa
+Version: 0.4
+Summary: An API to control wifi based lay-z spas
+Home-page: https://github.com/rossdargan/
+Author: Ross Dargan
+Author-email: layzspa@the-dargans.co.uk
+License: MIT
+Download-URL: https://github.com/rossdargan/layz-spa-api/archive/0.4.tar.gz
+Description: Used to talk to lay-z spa wifi modules
+        
+        Uses the api figured out by https://community.home-assistant.io/t/lay-z-spa-hot-tub-wi-fi-pump-automation/229006
+Keywords: Lazy Spa,Layz Spa,Lay-z spa
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
