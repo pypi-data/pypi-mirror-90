@@ -1,0 +1,13 @@
+ipyigv/__init__.py,sha256=lztwfsZOr5YU30WozhcBOPOE5aoO-KRGagyQUOWo5G4,1021
+ipyigv/_version.py,sha256=XMzSqdx1ELssjjrpSAUjW9u6E5Gyau276IiTzT1Pjrg,221
+ipyigv/ipyigv.py,sha256=KPw7y3PzMfkqS1VK_Zvae-8TNaKZ3zT3jf0n6IJrNiI,4676
+ipyigv/options.py,sha256=HOmjbVE0uIZLjK36wPsgqEKOZZ3ufiJJYcu69aCkWdI,15645
+ipyigv/utils.py,sha256=MRy3Cdm_oIydNAc4s5C0HEsi6fZ-wjZOSYakxf1cPBQ,553
+ipyigv/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipyigv/tests/test.py,sha256=UiOxx5L_ypEoYDfHY938HweWrz1jSZ3CsqgwTwSVTzs,14
+ipyigv-0.1.2.data/data/etc/jupyter/nbconfig/notebook.d/ipyigv.json,sha256=doWk84-i2vRRFjXig_wkEk27z3Ie1rgRUwgi0c7ESYQ,60
+ipyigv-0.1.2.dist-info/LICENSE,sha256=R30Fwsl9JI2CREiLQ4RyIpkbceYtMv0PJFjW2Hz8nZY,1525
+ipyigv-0.1.2.dist-info/METADATA,sha256=q9BBSndtjBF3iy1z2YgXLqzyAq89ZhtLlbtbYU_DdUA,1057
+ipyigv-0.1.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+ipyigv-0.1.2.dist-info/top_level.txt,sha256=w2LggprW3hlK2AefDM6vy0lgf3P1T49y8tjkhpYQtEA,7
+ipyigv-0.1.2.dist-info/RECORD,,
