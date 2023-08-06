@@ -1,0 +1,11 @@
+nyaacli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nyaacli/cli/__init__.py,sha256=c84IokJ9O-F1gwrY5jdpGWkiW35I-mVIJbiL0LHVW9w,3992
+nyaacli/colors.py,sha256=vykfFlLEcfxIM-s3qExuu2kSsvHUtWUruTVXiRhCmpM,762
+nyaacli/nyaa_search.py,sha256=k0CHWfmEsPq0VdW9DLR4QcSgPoW3KrQF1jc11JJJPEo,8613
+nyaacli/torrenting.py,sha256=Z0Sv90H3oA5T7cY77YROwaAQB8zNThj8KnybRpaUZ6U,3184
+nyaacli/utils.py,sha256=KCUvuOviNiJQFEA3fdsgQf6XXfxo8e64lBrOgXhX8fo,738
+nyaacli-0.3.1.dist-info/entry_points.txt,sha256=fTvElctufj6sazceKUjcvnCrKNWewKiR-X8KaN5RRtU,67
+nyaacli-0.3.1.dist-info/LICENSE,sha256=WvaNGBu7U4iTP5DdTpo4O0ZhP-apdK4NwMr77saHElE,1068
+nyaacli-0.3.1.dist-info/WHEEL,sha256=Q99itqWYDhV793oHzqzi24q7L7Kdiz6cb55YDfTXphE,84
+nyaacli-0.3.1.dist-info/METADATA,sha256=dITiIxpgS1ghZgqjqWgzdzpmNv0v5tmCBZTcT1y2pSM,3539
+nyaacli-0.3.1.dist-info/RECORD,,
