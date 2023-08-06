@@ -1,0 +1,12 @@
+gizmos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gizmos/export.py,sha256=v4J_IFHfSaFIORLlbeAVJ38J7qn00pxP1Ew_aO8U02I,16381
+gizmos/extract.py,sha256=OadrBURCu-tuxTgkjEx_2PVYQdEnMEKf6hEkLBNwfWs,10172
+gizmos/helpers.py,sha256=otJQwcctG3yqm1dhNzapNsHOXadlHhwrQRWd5hxgAWk,2065
+gizmos/hiccup.py,sha256=M3kFCmzxXcY7IKM6DrAmZMlsFZlb-DHl3DRQ9rRTEBs,2344
+gizmos/search.py,sha256=8y65_6xARbNYpNcngklZQ9LHUJg_fyVOC-DX5MhSIcs,1706
+gizmos/tree.py,sha256=xrM1IchLDtLwZhV04-8GG_6XevLP5xGNf87zyyvhM8M,56905
+ontodev_gizmos-0.1.5.dist-info/LICENSE,sha256=6MasxbZJBSUrJEtPesiWDlyTsMe7lFBN6-TTeivsa24,1524
+ontodev_gizmos-0.1.5.dist-info/METADATA,sha256=ioAmUlXWoGmP5UZspIc2Y1CS0ahOll-VAz0Iav8Kdzg,9049
+ontodev_gizmos-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ontodev_gizmos-0.1.5.dist-info/top_level.txt,sha256=IGZSJrZisxT-D78nDqDW-HDrWCkLqpyeARgEK5CyHNo,7
+ontodev_gizmos-0.1.5.dist-info/RECORD,,
