@@ -1,0 +1,8 @@
+fastq_statistic/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+fastq_statistic/__main__.py,sha256=GQ_r-E0G4-JuWiSyp2tmvsUTHOlUyU3wB1q3kYiSDVA,27
+fastq_statistic/fastq_statistic,sha256=AaROzWBfGL7iowmh2cCNQMwboxFRQvrrjgi5fVrbfkw,4910960
+fastq_statistic/main.py,sha256=gDm9U_SO6c2N1W0aQfc3I6UCOBn3NJk-42BFCcKhhnw,9458
+fastq_statistic-0.1.3.dist-info/entry_points.txt,sha256=LTBgKunB-3yYuvO6y2yrcbhhZQcAXcXWAC9cqJJlFDw,60
+fastq_statistic-0.1.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+fastq_statistic-0.1.3.dist-info/METADATA,sha256=g0WgI-N_dOmQu6URQFOwuvyEU_rHx0JngsSvVx9AzfA,1623
+fastq_statistic-0.1.3.dist-info/RECORD,,
