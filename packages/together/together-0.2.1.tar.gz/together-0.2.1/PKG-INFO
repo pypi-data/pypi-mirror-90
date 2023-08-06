@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: together
+Version: 0.2.1
+Summary: Pluggable CLIs with click and pluggy
+License: Apache 2.0
+Author: Stephen Rosen
+Author-email: sirosen@globus.org
+Requires-Python: >=3.6,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: pluggy (>=0.13.1,<0.14.0)
