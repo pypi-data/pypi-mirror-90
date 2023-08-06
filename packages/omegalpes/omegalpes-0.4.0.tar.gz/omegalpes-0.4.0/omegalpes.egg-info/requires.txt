@@ -1,0 +1,5 @@
+PuLP>=2.1
+Matplotlib>=2.2.2
+Numpy>=1.14.2
+Pandas>=0.25.0
+lpfics>=0.0.1
