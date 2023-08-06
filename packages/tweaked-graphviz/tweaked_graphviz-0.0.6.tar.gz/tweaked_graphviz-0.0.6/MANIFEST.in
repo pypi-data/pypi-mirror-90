@@ -1,0 +1,7 @@
+include tweaked_graphviz/tweaked_graphviz.min.js
+include tweaked_graphviz/tweaked_graphviz.min.js.map
+include tweaked_graphviz/metadata.json
+include tweaked_graphviz/package-info.json
+include README.md
+include LICENSE
+include package.json

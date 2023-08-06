@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+tweaked_graphviz/DashInteractiveGraphviz.py
+tweaked_graphviz/__init__.py
+tweaked_graphviz/_imports_.py
+tweaked_graphviz/metadata.json
+tweaked_graphviz/package-info.json
+tweaked_graphviz/tweaked_graphviz.min.js
+tweaked_graphviz/tweaked_graphviz.min.js.map
+tweaked_graphviz.egg-info/PKG-INFO
+tweaked_graphviz.egg-info/SOURCES.txt
+tweaked_graphviz.egg-info/dependency_links.txt
+tweaked_graphviz.egg-info/requires.txt
+tweaked_graphviz.egg-info/top_level.txt
