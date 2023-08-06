@@ -1,0 +1,12 @@
+climatempopy/__init__.py,sha256=eJYJNUHcJ6pbEyxZ-jaJdVu_5cbPxSgS4PYS2EQKgvI,122
+climatempopy/climatempo.py,sha256=2iKzJ-fe3PqQ7h0QNrcT2JBiWAwRwG0xU57v27FHaas,2352
+climatempopy/common.py,sha256=XO-4ZwGxBb8CxIvZ5aDXv4B84HmxMAfbnCpkBRNeHNs,1197
+climatempopy/const.py,sha256=RUGmG8EnGErVv3rZnViSNbUnslnPtFdUWcaJ1JoTJZ4,373
+climatempopy-0.0.6.data/scripts/get_localeID,sha256=tmGC2tjo4UCS3dcsP4kI0gjTbqF4o7lNFkD3EDe5xr0,573
+climatempopy-0.0.6.data/scripts/get_weather_by_localeID,sha256=el3GQKgDdpFZV0wd1hTfnVPvSObWvbDvjMyDnkOqwBg,757
+climatempopy-0.0.6.data/scripts/get_weather_georeferenced,sha256=bNjwPbcuvrXwswjd02-3Ijz5eNVRSGw8Czts_wOUJE8,823
+climatempopy-0.0.6.dist-info/LICENSE,sha256=8QzbiiK3pKAFX7n4RsLtpICd7btB9hKC68TdJva5Cp0,1070
+climatempopy-0.0.6.dist-info/METADATA,sha256=tBLFcnVcGMSlILUe9VXtdKGNigfGL3Dg2OKzhvvtYXk,1494
+climatempopy-0.0.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+climatempopy-0.0.6.dist-info/top_level.txt,sha256=-WB-ynM9GGe681jZVyzYAoV3qeY3a_7MjCBpqqRmIcU,13
+climatempopy-0.0.6.dist-info/RECORD,,
