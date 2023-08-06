@@ -1,0 +1,14 @@
+imbalanced-learn
+joblib
+matplotlib
+nibabel
+numpy
+openpyxl
+xlrd==1.2.0
+pandas
+PyQt5==5.12
+PyQt5-sip
+python-dateutil
+scikit-learn
+scipy
+seaborn==0.11.0
