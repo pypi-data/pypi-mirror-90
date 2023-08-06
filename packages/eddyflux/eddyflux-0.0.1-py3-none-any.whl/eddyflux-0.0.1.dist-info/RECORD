@@ -1,0 +1,12 @@
+eddyflux/__init__.py,sha256=HwKnnMfJa5RvidZBXh9Qs2OqcKbjD-Vqn2BC9GwrK4Q,98
+eddyflux/despike.py,sha256=d6z-aLNfoUxbqfFZMhW7GtG07TEmAFuR3BixHPjd9dw,7667
+eddyflux/gas_conversion.py,sha256=OVKENXFCPUvtq3QuEvOSq0Ez-adJxwCPDgAI9_PhyMg,13477
+eddyflux/raw.py,sha256=7oUw3v7D9iAMR-20dTK00zOH-VCcDd9qBPTpVC8THZI,3737
+eddyflux/rotate_wind.py,sha256=8pK7ovPvATwp4IizIjJjyTpDrI579qj1zrtBQBfd2Do,6759
+eddyflux/rotate_wind3D_moving_platform.py,sha256=yMZdiMm9sgA02MovT0902EW1qq70aAXcFGvpZzzbDB0,20827
+eddyflux/toolbox/__init__.py,sha256=axMfMLPG0CNApKfz63BIe9k22TDO-5mJrOG5mU04e0c,53
+eddyflux/toolbox/edire.py,sha256=xp2JvkozSCFDy9_5LPNtGOOa_7a88LiD8-x5Hyo_HYs,4620
+eddyflux-0.0.1.dist-info/METADATA,sha256=g3uGMkWnrCk8WljFV3RF8zxQEBkY52Z7s9zTkHt4pG4,235
+eddyflux-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+eddyflux-0.0.1.dist-info/top_level.txt,sha256=aO0VumIz2ERLsJ9LW009cYqEP9brZDoGOUpQI-JsVsA,9
+eddyflux-0.0.1.dist-info/RECORD,,
