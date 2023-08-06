@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: monte-carlo-analysis
+Version: 0.0.1
+Summary: Package that analyses the output of a monte-carlo dropout network
+Home-page: UNKNOWN
+Author: Robin Camarasa
+Author-email: r.camarasa@erasmusmc.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pytest
+Requires-Dist: joblib
+Requires-Dist: tox
+Requires-Dist: numba
+Requires-Dist: sklearn
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+
+# Monte Carlo Analysis
+
+This python package analyses the output of a monte-carlo dropout network. The method to analyse the different uncertainty maps are described in the following article:
+```
+@inproceedings{camarasa2020quantitative,
+    title={{Quantitative Comparison of Monte-Carlo Dropout Uncertainty Measures for Multi-Class Segmentation}},
+    author={Camarasa, Robin and Bos, Daniel and Hendrikse, Jeroen and Nederkoorn, Paul and Kooi, Eline and van der Lugt, Aad and de Bruijne, Marleen},
+    note={Uncertainty for Safe Utilization of Machine Learning in Medical Imaging (UNSURE) workshop of MICCAI conference},
+    year={2020}
+    }
+```
+
+A talk a given at [UNSURE](https://unsuremiccai.github.io/) a workshop of [MICCAI conference](https://www.miccai2020.org/en/) is available at this link on Youtube:
+[![](http://img.youtube.com/vi/Uw2r1JRSxgE/0.jpg)](http://www.youtube.com/watch?v=Uw2r1JRSxgE)
+
+# Usage
+
+A documentation of the code can be found on the website [ReadTheDoc](https://monte-carlo-analysis.readthedocs.io/en/latest/) and a tutorial can be found on [google colab](https://colab.research.google.com/drive/1Sw5mnIiho8YdEkVykrRTH12KjD51OuNp?usp=sharing). In the process of re-writting the article the name of the classes might not match the code anymore but this will be changed as soon as possible.
+
+Even if the presented application in the talk and the article is made on 3D MR images of carotid artery, the code can be applied to any kind of n-d imaging data as long as they are converted to numpy arrays.
+
+# Requirements
+
+Python 3.8
+
+# Installation
+
+Install via pip
+``` bash
+$ python3 -m pip install monte_carlo_analysis
+```
+
+# Todo
+
+- Adapt the code to numba to decrease the execution time
+
+# Authors
+
+- [Robin Camarasa](https://github.com/RobinCamarasa) : [r.camarasa@erasmusmc.nl](mailto:r.camarasa@erasmusmc.nl)
+
+
