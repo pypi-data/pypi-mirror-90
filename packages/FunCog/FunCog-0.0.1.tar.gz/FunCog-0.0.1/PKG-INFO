@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: FunCog
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/Famous8/FunCog
+Author: Famous8
+Author-email: example@example.com
+License: UNKNOWN
+Description: # FunCog
+        A Cog for discord.py with fun commands!
+        
+        Commands Included:
+        ``meme``, ``facepalm``, ``8ball``, ``ko``, ``gunfight``
+        
+        INSTRUCTIONS
+        
+        1. Install the file
+        2. Move the file into your bot folder
+        3. add this line of code ``bot.load_extension('FunCog')``
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

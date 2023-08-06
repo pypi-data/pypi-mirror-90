@@ -1,0 +1,7 @@
+pyproject.toml
+FunCog/__init__.py
+FunCog/setup.py
+FunCog.egg-info/PKG-INFO
+FunCog.egg-info/SOURCES.txt
+FunCog.egg-info/dependency_links.txt
+FunCog.egg-info/top_level.txt
