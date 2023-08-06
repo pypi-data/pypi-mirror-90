@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: onegramlib
+Version: 1.0.7
+Summary: Python library for OneGram project graphene-based blockchains
+Home-page: https://gitlab.com/onegram-developers/python-onegramlib
+Author: 01People
+Author-email: info@01people.com
+Maintainer: 01People
+Maintainer-email: info@01people.com
+License: UNKNOWN
+Download-URL: https://gitlab.com/onegram-developers/python-onegramlib/-/archive/v1.0.7/python-onegramlib-v1.0.7.zip
+Keywords: onegram,api,rpc,ecdsa,secp256k1
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Requires-Dist: ecdsa
+Requires-Dist: requests
+Requires-Dist: websocket-client
+Requires-Dist: pylibscrypt
+Requires-Dist: pycryptodome
+
+Python Library for OneGram
+===========================
+
+Python 3 library for OneGram!
+
+Installation
+------------
+
+Install with `pip`:
+
+    $ sudo apt-get install libffi-dev libssl-dev python-dev
+    $ pip3 install onegramlib
+
+Manual installation:
+
+    $ git clone git@gitlab.com:onegram-developers/python-onegramlib.git
+    $ cd python-onegramlib
+    $ python3 setup.py install --user
+
+Dependencies
+------------
+
+Some dependencies are not required for parts of the library to run
+properly. However these modules require some additional libraries to be
+present:
+
+* `graphenebase.bip38`
+   * `pycrypto==2.6.1`
+   * `scrypt==0.7.1` (to speedup scrypt hashing)
+* `graphenebase.memo`
+   * `pycrypto==2.6.1`
+
+Upgrade
+-------
+
+    $ pip install --user --upgrade onegramlib
+
+Documentation
+-------------
+
+Thanks to readthedocs.io, the documentation can be viewed
+[online](http://python-graphenelib.readthedocs.io/en/latest/)
+
+Documentation is written with the help of sphinx and can be compile to
+html with:
+
+    cd docs
+    make html
+
+Licence
+-------
+
+MIT, see `LICENCE.txt`
+
+
