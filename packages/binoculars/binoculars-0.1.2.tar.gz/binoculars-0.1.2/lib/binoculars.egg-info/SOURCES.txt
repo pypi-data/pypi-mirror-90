@@ -1,0 +1,7 @@
+setup.py
+lib/binoculars/__init__.py
+lib/binoculars.egg-info/PKG-INFO
+lib/binoculars.egg-info/SOURCES.txt
+lib/binoculars.egg-info/dependency_links.txt
+lib/binoculars.egg-info/requires.txt
+lib/binoculars.egg-info/top_level.txt
