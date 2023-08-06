@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: synbio-jecalles
+Version: 0.0.1
+Summary: Tools for doing synthetic biology
+Home-page: https://github.com/jecalles/synbio
+Author: Jonathan Calles
+Author-email: callesjonathan@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >3.8
+Description-Content-Type: text/markdown
+
+# synbio: a simple python package for doing synthetic biology
+![GitHub](https://img.shields.io/github/license/jecalles/synbio)
+![Travis (.org)](https://img.shields.io/travis/jecalles/synbio)
+This is a homebrewed package for doing synthetic biology. It provides Python classes representing common primitives in biology.
+
+## Documentation
+There is none, yet. Email me (callesjonathan@gmail.com) if you have questions
+
+## Dependencies
+There are none, yet. The goal is to keep this package written in pure Python for simplicity.
+
+## Installation
+Run the following commands
+
+```bash
+git clone https://github.com/jecalles/synbio.git
+pip install ./synbio
+```
+
+
