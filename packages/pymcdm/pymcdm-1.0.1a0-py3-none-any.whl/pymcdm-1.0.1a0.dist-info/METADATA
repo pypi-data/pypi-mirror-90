@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pymcdm
+Version: 1.0.1a0
+Summary: Python library for Multi-Criteria Decision-Making
+Home-page: https://gitlab.com/shekhand/mcda
+Author: Andrii Shekhovtsov
+Author-email: andrii-shekhovtsov@zut.edu.pl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# PyMCDM
+
+This repo contains several methods which can be useful for solving MCDA problems.
+
+### MCDA methods:
+* TOPSIS
+* VIKOR
+* COPRAS
+* PROMETHEE I and II
+* COMET
+* SPOTIS
+
+### Weighting methods:
+* Equal weights
+* Entropy method
+* Std method
+
+### Normalization methods:
+* Linear
+* Max
+* Sum
+* Vector
+* Logarithmic
+
+### Correlation coefficients:
+* Spearman
+* Pearson
+* Weighted Spearman
+* Rank Similarity Coefficient
+* Kendall Tau
+* Goodman and Kruskal Gamma
+
+
