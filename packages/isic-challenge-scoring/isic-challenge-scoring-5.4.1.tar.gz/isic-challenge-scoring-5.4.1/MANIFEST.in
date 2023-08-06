@@ -1,0 +1,6 @@
+exclude .*
+exclude Dockerfile
+exclude mypy.ini
+exclude tox.ini
+prune .github
+prune tests
