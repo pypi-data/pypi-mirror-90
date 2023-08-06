@@ -1,0 +1,3 @@
+
+class RouterNotContactableError(Exception):
+    pass

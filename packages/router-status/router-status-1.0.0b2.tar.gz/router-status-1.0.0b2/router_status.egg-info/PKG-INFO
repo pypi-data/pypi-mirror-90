@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: router-status
+Version: 1.0.0b2
+Summary: A utility to extract status information from domestic Broadband routers such as WAN IP address, downstream rate, uptime, noise margin and the like.
+Home-page: https://gitlab.com/hi2meuk/router-status
+Author: Steve Beaumont
+Author-email: steve.b@hi2.me.uk
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.8
