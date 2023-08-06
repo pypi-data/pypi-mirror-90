@@ -1,0 +1,17 @@
+typing
+pytest
+pandas
+numpy
+sympy
+scipy
+matplotlib
+jupyter
+ipywidgets
+tqdm
+ffmpeg
+
+[docs]
+sphinx
+sphinx_rtd_theme
+nbsphinx
+m2r
