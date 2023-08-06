@@ -1,0 +1,2 @@
+torch_discounted_cumsum
+torch_discounted_cumsum_cpu
