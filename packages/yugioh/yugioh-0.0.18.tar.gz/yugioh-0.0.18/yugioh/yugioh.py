@@ -1,0 +1,115 @@
+import requests
+
+base_url = 'https://db.ygoprodeck.com/api/v7/cardinfo.php'
+monsters = ["Effect Monster", "Flip Effect Monster", "Flip Tuner Effect Monster", "Gemini Monster", "Normal Monster", "Normal Tuner Monster", "Pendulum Effect Monster", "Pendulum Flip Effect Monster", "Pendulum Normal Monster", "Pendulum Tuner Effect Monster", "Ritual Effect Monster", "Ritual Monster", "Spirit Monster", "Toon Monster", "Tuner Monster", "Union Effect Monster", "Fusion Monster", "Pendulum Effect Fusion Monster", "Synchro Monster", "Synchro Pendulum Effect Monster", "Synchro Tuner Monster", "XYZ Monster", "XYZ Pendulum Effect Monster"]
+magic = ["Skill Card", "Spell Card", "Trap Card"]
+link = ["Link Monster"]
+
+class card:
+    def __init__(self, card_name, user_agent):
+        headers = {'User-agent':str(user_agent)}
+        parameters = {'name':str(card_name)}
+        card = requests.get(base_url, params=parameters, headers = headers).json()
+        self.desc = card['data'][0]['desc']
+        self.id = card['data'][0]['id']
+        self.name = card['data'][0]['name']
+        self.race = card['data'][0]['race']
+        self.type = card['data'][0]['type']
+        self.cardmarket_price = card['data'][0]['card_prices'][0]['cardmarket_price']
+        self.tcgplayer_price = card['data'][0]['card_prices'][0]['tcgplayer_price']
+        self.ebay_price = card['data'][0]['card_prices'][0]['ebay_price']
+        self.amazon_price = card['data'][0]['card_prices'][0]['amazon_price']
+        self.coolstuffinc_price = card['data'][0]['card_prices'][0]['coolstuffinc_price']
+        if self.type in monsters:
+            self.name = card['data'][0]['name']
+            self.atk = card['data'][0]['atk']
+            self.attribute = card['data'][0]['attribute']
+            self._def = card['data'][0]['def']
+            self.desc = card['data'][0]['desc']
+            self.id = card['data'][0]['id']
+            self.level = card['data'][0]['level']
+            self.race = card['data'][0]['race']
+            self.type = card['data'][0]['type']
+            self.cardmarket_price = card['data'][0]['card_prices'][0]['cardmarket_price']
+            self.tcgplayer_price = card['data'][0]['card_prices'][0]['tcgplayer_price']
+            self.ebay_price = card['data'][0]['card_prices'][0]['ebay_price']
+            self.amazon_price = card['data'][0]['card_prices'][0]['amazon_price']
+            self.coolstuffinc_price = card['data'][0]['card_prices'][0]['coolstuffinc_price']
+        if 'archetype' in card:
+            self.archetype = card['data'][0]['archetype']
+        if self.type in link:
+            self.name = card['data'][0]['name']
+            self.atk = card['data'][0]['atk']
+            self.attribute = card['data'][0]['attribute']
+            self.desc = card['data'][0]['desc']
+            self.id = card['data'][0]['id']
+            self.race = card['data'][0]['race']
+            self.type = card['data'][0]['type']
+            self.cardmarket_price = card['data'][0]['card_prices'][0]['cardmarket_price']
+            self.tcgplayer_price = card['data'][0]['card_prices'][0]['tcgplayer_price']
+            self.ebay_price = card['data'][0]['card_prices'][0]['ebay_price']
+            self.amazon_price = card['data'][0]['card_prices'][0]['amazon_price']
+            self.coolstuffinc_price = card['data'][0]['card_prices'][0]['coolstuffinc_price']
+            self._def = None
+            self.linkmarkers = card['data'][0]['linkmarkers']
+            self.linkval = card['data'][0]['linkval']
+        if self.type in magic:
+            self._def = None
+
+class get_card_by_id:
+    def __init__(self, card_id):
+        headers = {'User-agent':str(user_agent)}
+        parameters = {'id':str(card_id)}
+        card = requests.get(base_url, params=parameters, headers = headers).json()
+        self.desc = card['data'][0]['desc']
+        self.id = card['data'][0]['id']
+        self.name = card['data'][0]['name']
+        self.race = card['data'][0]['race']
+        self.type = card['data'][0]['type']
+        self.cardmarket_price = card['data'][0]['card_prices'][0]['cardmarket_price']
+        self.tcgplayer_price = card['data'][0]['card_prices'][0]['tcgplayer_price']
+        self.ebay_price = card['data'][0]['card_prices'][0]['ebay_price']
+        self.amazon_price = card['data'][0]['card_prices'][0]['amazon_price']
+        self.coolstuffinc_price = card['data'][0]['card_prices'][0]['coolstuffinc_price']
+        if self.type in monsters:
+            self.name = card['data'][0]['name']
+            self.atk = card['data'][0]['atk']
+            self.attribute = card['data'][0]['attribute']
+            self._def = card['data'][0]['def']
+            self.desc = card['data'][0]['desc']
+            self.id = card['data'][0]['id']
+            self.level = card['data'][0]['level']
+            self.race = card['data'][0]['race']
+            self.type = card['data'][0]['type']
+            self.cardmarket_price = card['data'][0]['card_prices'][0]['cardmarket_price']
+            self.tcgplayer_price = card['data'][0]['card_prices'][0]['tcgplayer_price']
+            self.ebay_price = card['data'][0]['card_prices'][0]['ebay_price']
+            self.amazon_price = card['data'][0]['card_prices'][0]['amazon_price']
+            self.coolstuffinc_price = card['data'][0]['card_prices'][0]['coolstuffinc_price']
+        if 'archetype' in card:
+            self.archetype = card['data'][0]['archetype']
+        if self.type in link:
+            self.name = card['data'][0]['name']
+            self.atk = card['data'][0]['atk']
+            self.attribute = card['data'][0]['attribute']
+            self.desc = card['data'][0]['desc']
+            self.id = card['data'][0]['id']
+            self.race = card['data'][0]['race']
+            self.type = card['data'][0]['type']
+            self.cardmarket_price = card['data'][0]['card_prices'][0]['cardmarket_price']
+            self.tcgplayer_price = card['data'][0]['card_prices'][0]['tcgplayer_price']
+            self.ebay_price = card['data'][0]['card_prices'][0]['ebay_price']
+            self.amazon_price = card['data'][0]['card_prices'][0]['amazon_price']
+            self.coolstuffinc_price = card['data'][0]['card_prices'][0]['coolstuffinc_price']
+            self._def = None
+            self.linkmarkers = card['data'][0]['linkmarkers']
+            self.linkval = card['data'][0]['linkval']
+        if self.type in magic:
+            self._def = None
+
+class get_cards_by_name:
+    def __init__(self, keyword):
+        headers = {'User-agent':str(user_agent)}
+        parameters = {'fname':str(keyword)}
+        cards = requests.get(base_url, params=parameters, headers = headers).json()
+        self.list_of_cards = [card['name'] for card in cards['data']]
