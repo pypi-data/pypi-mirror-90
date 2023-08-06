@@ -1,0 +1,7 @@
+pyproject.toml
+setup.py
+UrlUsefullness/__init__.py
+UrlUsefullness.egg-info/PKG-INFO
+UrlUsefullness.egg-info/SOURCES.txt
+UrlUsefullness.egg-info/dependency_links.txt
+UrlUsefullness.egg-info/top_level.txt

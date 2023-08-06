@@ -1,0 +1,2 @@
+import pkg_upload
+pkg_upload.package(pkg_name="UrlUsefullness",author="Dev",email="example@example.com",version="0.0.1",short_description="A simple package made for URLs. Credits: Url91",long_description="",github_url="https://github.com",python_requirment=">=3.6")
