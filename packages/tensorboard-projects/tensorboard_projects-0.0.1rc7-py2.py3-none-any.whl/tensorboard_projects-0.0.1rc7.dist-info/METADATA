@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: tensorboard-projects
+Version: 0.0.1rc7
+Summary: Tensorboard Projects: A multi project UI for Tensorboard
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=2.7,!= 3.0.*,!= 3.1.*,!= 3.2.*,!= 3.3.*,!= 3.4.*,!= 3.5.*,!= 3.6.*
+Requires-Dist: click (>=7.0Flask)
+Requires-Dist: flask-cors
+Requires-Dist: gunicorn
+Requires-Dist: tensorboard
+
+UNKNOWN
+
+
