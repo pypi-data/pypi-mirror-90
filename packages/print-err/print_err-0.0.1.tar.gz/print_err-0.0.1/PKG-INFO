@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: print_err
+Version: 0.0.1
+Summary: Print to standard error optionally exiting with a code
+Home-page: https://github.com/joaompinto/print_err
+Author: João Pinto
+Author-email: lamego.pinto@gmail.com
+License: MIT
+Description: # print_err
+        
+        Command line utility and python library to print to standard error optionally exiting with a code.
+        
+        # Install
+        ```sh
+        pip install print_err
+        ```
+        
+        # Usage
+        
+        As a python function
+        ```python
+        from print_err import print_err
+        print_err("This messages goes to stderr")
+        print_err("This messages goes to stderr", exit_code=2)
+        ```
+        
+        As a command line utility
+        ```sh
+        $ print_err "print to stderr and exit() with code 2" 2
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
