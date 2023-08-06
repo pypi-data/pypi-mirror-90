@@ -1,0 +1,14 @@
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flax/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flax/generate_project.py,sha256=dUeeIlWni4OmRQlPfsGOjIKitZ03bXH999QzzSzua_Q,355
+flaxx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flaxx/base.py,sha256=OIWw_Fzk-wZSeBgIjWXx_CQJpRyvoxnzVMwhJkKLsoQ,5462
+flaxx/enum_validator.py,sha256=vHW-QpWupqxrZmk6M-2Jd6PlN-WlUSpRXDs4Xq7d-ag,809
+flaxx/generate_project.py,sha256=sPc5dw1XhJ0XJQzehFnHAVxbnRLv7xD3d6xrp5hnifM,426
+flaxx/main.py,sha256=13iHwxO7nA4BFcSEygoDuVxQDpn5Gzw9gNLHosiaqyk,558
+flaxx/pydantic_schema_generator.py,sha256=xZzheiFZlKj0F6Xo0Ml64yHiAl23qEayqZ97812fOJQ,15517
+flaxx-0.0.3.dist-info/LICENSE,sha256=_5IC0NPTZQ1YvnMzThzhfRKl2tUADYdU4z2aEv-fzQw,1069
+flaxx-0.0.3.dist-info/METADATA,sha256=_N-_2oLE2Zp2RlgyoeDwc4J-fzZeFvWC44-jAZeWVLw,5060
+flaxx-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+flaxx-0.0.3.dist-info/top_level.txt,sha256=RNDDvyWaKffrcZUfMEBdRUv0DqFAyy99XNuFngEBJBc,14
+flaxx-0.0.3.dist-info/RECORD,,
