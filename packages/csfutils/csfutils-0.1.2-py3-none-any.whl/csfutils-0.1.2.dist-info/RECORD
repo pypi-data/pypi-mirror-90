@@ -1,0 +1,14 @@
+csfutils/__init__.py,sha256=aHdKPTGrYV80dB0LWbhimaW6kSUVkpTBMeDqGmGnllw,824
+csfutils/_blob_arg.py,sha256=6R0Zwm8HzH-vxMG_MyMoBZsuaGmyMlAt9TMmQxVx1os,283
+csfutils/_client.py,sha256=_25B4hA6h7HBmSv2oJtehOldyfmTLOwr8sR4X387puk,2852
+csfutils/_const.py,sha256=c98b2TGSEBt4Mx7Jl0CtN6kB2mHZNeXtQFxEL0gKouk,66
+csfutils/_utils.py,sha256=PhAbb9ziA9ZsC_AY0iXIudX0EhAqfLrIOH1dmQVvSVE,461
+csfutils/blob/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+csfutils/blob/_access_token.py,sha256=KJAC2y_GtjTCOGyFSZbcM5OpRK39Pz4-XP8AqRosqxE,4833
+csfutils/blob/_path.py,sha256=tVmrfnI9rRypjswPOBwuUqsoJ3ryAAVq5Y4nIggJj-Y,2113
+csfutils/blob/_upload.py,sha256=7jqHSN8Z56mCd65a3hK3n2PcibWPuZx4X949l1caDxc,4816
+csfutils/url_type.py,sha256=-mD4xioh3d953MHC_ziwGf4FliMS8_x_YKUe8Nf1CKg,324
+csfutils-0.1.2.dist-info/LICENSE,sha256=dXVKLCvYnAiXutAu1QqHvRc2MjFscHFQqBaPhjrBST0,1062
+csfutils-0.1.2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+csfutils-0.1.2.dist-info/METADATA,sha256=fwFRP-WIdRi3MR4DugmfCl-Gs1tfsVaT8L9EqMD1Tks,6457
+csfutils-0.1.2.dist-info/RECORD,,
