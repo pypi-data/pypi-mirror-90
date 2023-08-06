@@ -1,0 +1,2 @@
+include templates/aws/*.yaml
+include templates/gcp/*.yaml
