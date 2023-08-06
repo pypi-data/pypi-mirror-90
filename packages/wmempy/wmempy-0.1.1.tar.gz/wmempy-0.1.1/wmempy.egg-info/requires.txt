@@ -1,0 +1,9 @@
+pywin32
+click>=6
+numpy==1.19.3
+Cython
+
+[dev]
+sphinx
+pytest
+flexmock
