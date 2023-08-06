@@ -1,0 +1,30 @@
+# SPDX-FileCopyrightText: 2020 Jens Lechtenbörger
+# SPDX-License-Identifier: CC0-1.0
+
+repos:
+-   repo: https://github.com/fsfe/reuse-tool
+    rev: v0.12.1
+    hooks:
+    - id: reuse
+-   repo: https://gitlab.com/pycqa/flake8
+    rev: '3.8.4'
+    hooks:
+    -   id: flake8
+-   repo: https://gitlab.com/pycqa/pydocstyle
+    rev: '5.1.1'
+    hooks:
+    -   id: pydocstyle
+-   repo: https://github.com/pycqa/pylint
+    rev: 'pylint-2.6.0'
+    hooks:
+    -   id: pylint
+        args:
+        - --disable=C0301,R0205,W0406
+-   repo: local
+    hooks:
+    -   id: coverage
+        name: coverage
+        entry: bash -c "coverage run functional_dependencies/functional_dependencies.py; coverage report --fail-under 100"
+        language: system
+        types: [python]
+        pass_filenames: false
