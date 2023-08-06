@@ -1,0 +1,10 @@
+[console_scripts]
+git-cancel = git_improved.commands.cancel:CancelCommand
+git-done = git_improved.commands.done:DoneCommand
+git-release = git_improved.commands.release:ReleaseCommand
+git-save = git_improved.commands.save:SaveCommand
+git-setup = git_improved.commands.setup:SetupCommand
+git-template = git_improved.commands.template:TemplateCommand
+git-unrelease = git_improved.commands.unrelease:UnreleaseCommand
+git-wip = git_improved.commands.wip:WipCommand
+
