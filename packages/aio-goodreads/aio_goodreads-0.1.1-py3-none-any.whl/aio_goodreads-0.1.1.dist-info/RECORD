@@ -1,0 +1,11 @@
+aio_goodreads/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aio_goodreads/client.py,sha256=WudbbVdSB_9celQTCiyqN1lHnCIBfnf5BvpwVoQS6sU,4299
+aio_goodreads/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aio_goodreads/types/author.py,sha256=FDv37jihMhLETKSQ_rwahtqgUjpqOEdg1dbKVdxphIQ,2267
+aio_goodreads/types/book.py,sha256=vwk-D0m-ssEyV5OYh8myleco1-qpqNErkTuLI0JqGgk,3992
+aio_goodreads/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aio_goodreads/utils/exceptions.py,sha256=gTNnyNX9qa44joPy9nbr03YNDoM_0ejclOxqSgiXntw,115
+aio_goodreads-0.1.1.dist-info/LICENSE,sha256=Ea8ZsyoKofkz_VFnf1FDg8xfmkJFqPDDbZZwEsCbx98,1094
+aio_goodreads-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+aio_goodreads-0.1.1.dist-info/METADATA,sha256=L0KVEgRIPyDLsymaTxhOjKgOc0xsW4P64zcjtb788Oc,450
+aio_goodreads-0.1.1.dist-info/RECORD,,
