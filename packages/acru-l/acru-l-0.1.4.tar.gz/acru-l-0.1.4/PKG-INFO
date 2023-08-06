@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: acru-l
+Version: 0.1.4
+Summary: 
+License: MIT
+Author: Anthony Almarza
+Author-email: anthony.almarza@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: acru-l-toolkit (>=0.1.0,<0.2.0)
+Requires-Dist: aws-cdk.aws-apigatewayv2 (==1.79.0)
+Requires-Dist: aws-cdk.aws-apigatewayv2-integrations (==1.79.0)
+Requires-Dist: aws-cdk.aws-cloudfront (==1.79.0)
+Requires-Dist: aws-cdk.aws-dynamodb (==1.79.0)
+Requires-Dist: aws-cdk.aws-events (==1.79.0)
+Requires-Dist: aws-cdk.aws-events-targets (==1.79.0)
+Requires-Dist: aws-cdk.aws-lambda (==1.79.0)
+Requires-Dist: aws-cdk.aws-lambda-nodejs (==1.79.0)
+Requires-Dist: aws-cdk.aws-lambda-python (==1.79.0)
+Requires-Dist: aws-cdk.aws-rds (==1.79.0)
+Requires-Dist: aws-cdk.aws-route53 (==1.79.0)
+Requires-Dist: aws-cdk.aws-s3 (==1.79.0)
+Requires-Dist: aws-cdk.aws-secretsmanager (==1.79.0)
+Requires-Dist: aws-cdk.core (==1.79.0)
+Requires-Dist: aws-cdk.custom-resources (==1.79.0)
+Requires-Dist: environs (>=9.2.0,<10.0.0)
+Requires-Dist: pydantic (>=1.7.3,<2.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Description-Content-Type: text/markdown
+
+# AWS Cloud Resource Utils - Library (ACRU-L)
+
+Pronounced _Ah-crew-el (*ə-kroo͞′l*)_
+
+An open source framework for collecting and reusing AWS CDK constructs and stacks.
+
+## Why?
+The problem with infrastructure as code ...
+
+Monorepos...
+Snowflake code...
+
+Confounding application source code with devops 
+
+A strict interface and reuse patterns
+
+## Installation
+
+`poetry add -D acru-l`
+
+`pip install acru-l`
+
+## Usage
+
+
+## Core Concepts
+
+* Resources - Extended constructs
+* Services - Collections of Resources that build a service interface
+* Stacks - Collections of Services
+
+### Resources
+Extended constructs with set defaults
+
+### Services
+
+TBD
+
+### Stacks
+
+TBD
+
+### Apps
+
+TBD
