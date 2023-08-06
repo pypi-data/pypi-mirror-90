@@ -1,0 +1,11 @@
+pygoogletranslation/__init__.py,sha256=fr-mXo4sH-F85FfrzmaAbUUboizS0CV60YL3zXrAhd4,260
+pygoogletranslation/constants.py,sha256=RoU1isyy3xhYtZwaTrKwNiATurVsr9xVEO1IWR1AKNE,2487
+pygoogletranslation/gauthtoken.py,sha256=fPyGLcdHQ6FJOjqItQDi00HQD_o7Ovl5di8zc7kEspI,4216
+pygoogletranslation/models.py,sha256=GQ_g7iODTr5-rd7uupuXlv9dT7VVx_-4K8UGWnaXhlE,1548
+pygoogletranslation/translate.py,sha256=wnKKOl8ShJArDSIZHtt7IUnQk2-1Xy4DgyHJucGXax8,7086
+pygoogletranslation/urls.py,sha256=eIPDAzQuWJTLnk__aLu_p23LzP2URIfF9N-E_R6qfuw,255
+pygoogletranslation/utils.py,sha256=Wf1-xPdHpXWOzen6kUgzzka-3P3KwEN_EF94EWcgzv8,1699
+pygoogletranslation-1.0.2.dist-info/METADATA,sha256=QRtc9iA6J2-zK7N-dweLTszaqK_Vys3A1nm3S2w_t-g,353
+pygoogletranslation-1.0.2.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pygoogletranslation-1.0.2.dist-info/top_level.txt,sha256=wnC78__OWNDvr5_wF8N1cG8M3l_LBCl6AGGFg_g-Zy8,20
+pygoogletranslation-1.0.2.dist-info/RECORD,,

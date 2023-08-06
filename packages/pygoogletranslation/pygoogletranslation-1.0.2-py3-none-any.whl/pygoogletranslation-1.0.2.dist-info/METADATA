@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pygoogletranslation
+Version: 1.0.2
+Summary: Free Google Translate Web API for Python. Translates totally free of charge.
+Home-page: https://github.com/Saravananslb/py-googletranslation
+Author: Saravanan N, Jenifer Singh Y S
+Author-email: saravananslb2015@gmail.com
+License: MIT
+Requires-Dist: requests
+
+PYGOOGLETRANSLATION
+
+
