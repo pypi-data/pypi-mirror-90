@@ -1,0 +1,7 @@
+setup.py
+easy_pyttsx3/__init__.py
+easy_pyttsx3.egg-info/PKG-INFO
+easy_pyttsx3.egg-info/SOURCES.txt
+easy_pyttsx3.egg-info/dependency_links.txt
+easy_pyttsx3.egg-info/requires.txt
+easy_pyttsx3.egg-info/top_level.txt

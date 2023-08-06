@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: easy-pyttsx3
+Version: 1.0.0
+Summary: This package can convert text to speeh in very easy way...
+Home-page: UNKNOWN
+Author: Akshat Tiwari
+Author-email: thealphacoding@gmail.com
+License: UNKNOWN
+Description: ---------------------------------------
+        ## only 2 lines
+        ---------------------------------------
+        
+        ## Installation
+        '''pip install easy_pyttsx3'''
+        
+        ## Intro 
+        
+        This will Easly convert text to speech in just 2 lines.
+        
+        ## How to use it?
+        -------------------------------------------------------------------------------
+        
+        ## >>> import easy_pyttsx3 as pt
+        ## >>> pt.say(text='hello') 
+        
+        --------------------------------------------------------------------------------
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
