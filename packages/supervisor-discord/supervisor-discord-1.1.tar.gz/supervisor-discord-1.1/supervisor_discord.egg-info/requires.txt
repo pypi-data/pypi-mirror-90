@@ -1,0 +1,4 @@
+pyYaml
+ratelimit
+requests
+rich

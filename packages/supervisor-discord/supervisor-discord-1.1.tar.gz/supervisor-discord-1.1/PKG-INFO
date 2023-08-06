@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: supervisor-discord
+Version: 1.1
+Summary: Connect supervisor to discord via webhooks
+Home-page: https://github.com/chaosay/supervisor-discord
+Author: chaos_a
+License: GNU GPL v3
+Download-URL: https://github.com/chaosay/supervisor-discord/archive/1.1.tar.gz
+Description: # supervisor-discord
+        Connects supervisor alerts to discord using webhooks.
+        
+        ## Install
+        ```
+        pip install supervisor-discord
+        ```
+        
+        ## Configure
+        Either run `supervisor-discord -s`, or create config.yaml manually.
+        
+        config.yaml can be in one of two locations, `/etc/supervisordiscord/config.yaml` or the location where site-packages are installed on your system.
+        
+        ```
+        example: # process name
+          alerts: # list of process states that can trigger this message
+          - STARTING
+          - RUNNING
+          - BACKOFF
+          - STOPPING
+          - FATAL
+          - EXITED
+          - STOPPED
+          - UNKNOWN
+          message_format: '{{process_name}} changed to state {{to_state}}'
+          webhookURL: # discord webhook url
+         ```
+         repeat for each process.
+         
+        `message_format` supports [strftime](https://strftime.org/) and the following formats:  
+        ```
+        {{process_name}}, {{from_state}}, {{to_state}}
+        ```
+        
+        ## Supervisor.conf
+        Ensure that supervisor-discord is on your system `PATH`.
+        ```
+        [eventlistener:supervisor-discord]
+        command=supervisor-discord
+        events=PROCESS_STATE
+        ```
+        
+        
+        
+Keywords: supervisor,discord,alerts
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: System :: Boot
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Systems Administration
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
