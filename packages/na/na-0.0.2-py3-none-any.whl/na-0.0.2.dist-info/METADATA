@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: na
+Version: 0.0.2
+Summary: Functions and script to peek into the callable/argument structure of a set of callables
+Home-page: https://github.com/thorwhalen/ut/tree/master/util/callable_arguments_peek.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# na
+Functions and script to peek into the callable/argument structure of a set of callables
+
+
+To install:	```pip install na```
+
+
