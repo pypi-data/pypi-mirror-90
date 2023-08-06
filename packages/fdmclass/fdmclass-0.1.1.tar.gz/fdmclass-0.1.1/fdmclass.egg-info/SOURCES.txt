@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+fdmclass/__init__.py
+fdmclass/add_number.py
+fdmclass.egg-info/PKG-INFO
+fdmclass.egg-info/SOURCES.txt
+fdmclass.egg-info/dependency_links.txt
+fdmclass.egg-info/requires.txt
+fdmclass.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: fdmclass
+Version: 0.1.1
+Summary: independent class
+Home-page: https://github.com/fdmseven/fdmclass
+Author: fdmseven
+Author-email: wrp2003000@163.com
+License: LICENSE.txt
+Description: 
+        independent class
+        
+        
+Platform: UNKNOWN
+Requires-Python: >=3
