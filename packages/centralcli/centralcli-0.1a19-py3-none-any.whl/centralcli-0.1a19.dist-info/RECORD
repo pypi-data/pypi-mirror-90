@@ -1,0 +1,12 @@
+centralcli/__init__.py,sha256=mqpE77MlrkYut9MZk-YyLir4Eo9qYYNwG6ZFXVHZLGQ,20967
+centralcli/central.py,sha256=57gD_xWMIneXvFE_uVdQMiQb5V5XoSnKZYNExQOyGGE,34453
+centralcli/cleaner.py,sha256=aYEfpihGGIUWkhY_fvqfnBefMT3ixdvmORwPPQ-B7Hw,3303
+centralcli/cli.py,sha256=wuUl7B-GiD9JPl-7Qks4WbonK7CRCa8HKMImh46D1dE,29625
+centralcli/config.py,sha256=CAkbQPLxAbzGP4-grqW71eI9ALrzbs0xZcMnUrNCZS0,2468
+centralcli/constants.py,sha256=6QGzZ6sqLWq2qZFVkn0ZMP6_YUa0o8O7YtoASyfvg9Y,3557
+centralcli/setup.py,sha256=ymzy9PFTrOD-VqR3c8tarzBfLbn2fnzDwaCeMFZ_W-4,96
+centralcli/utils.py,sha256=m-dWHkiWeqkl9zTiWFQ8iF3X3A_IobTlbflccjLYTOk,12537
+centralcli-0.1a19.dist-info/entry_points.txt,sha256=ru56DdDywGQUee3YtMF_pXZLFKv0E8OUdKa0nx-bnLI,45
+centralcli-0.1a19.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+centralcli-0.1a19.dist-info/METADATA,sha256=wuISR_LdNakeNDN9etYfMQQms0rTEFnM522TdvxuOxA,1681
+centralcli-0.1a19.dist-info/RECORD,,
