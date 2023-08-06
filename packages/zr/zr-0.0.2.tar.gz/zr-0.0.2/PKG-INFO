@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: zr
+Version: 0.0.2
+Summary: AdWords reporting tools
+Home-page: https://github.com/thorwhalen/ut/tree/master/aw/reporting.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # zr
+        AdWords reporting tools
+        
+        
+        To install:	```pip install zr```
+        
+Platform: any
+Description-Content-Type: text/markdown
