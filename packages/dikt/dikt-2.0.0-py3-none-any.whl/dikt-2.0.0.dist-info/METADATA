@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: dikt
+Version: 2.0.0
+Summary: Dictionary read on disk
+Home-page: https://github.com/kerighan/dikt
+Author: Maixent Chenebaux
+Author-email: max.chbx@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+Requires-Dist: numpy
+
+# Dictionary read on disk
+
+Query items out-of-memory from a dictionary that would take to long to open, or one that doesn't fit in RAM, with Dikt.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+
+### Installing
+
+You can install the method by typing:
+```
+pip install dikt
+```
+
+### Basic usage
+
+```python
+import dikt
+import random
+
+
+# generate a dictionary with 1 million entries
+N = 1000000
+data = {
+    # key can be anything you want
+    # values will be "eval"-ed by Python
+    "key_" + str(i): list(range(i, i + 100)) for i in range(N)
+}
+
+# persist to dictionary using dikt
+dikt.dump(data, "data.dikt")
+del data
+
+# load file
+data = dikt.Dikt("data.dikt")
+
+# get item without loading the whole file in RAM
+print(data["key_125"])
+
+# or get multiple items at once (here 10k)
+keys = [f"key_" + str(random.randint(0, N - 1)) for i in range(10000)]
+print(data[keys][0])
+```
+
+## Authors
+
+Maixent Chenebaux
+
