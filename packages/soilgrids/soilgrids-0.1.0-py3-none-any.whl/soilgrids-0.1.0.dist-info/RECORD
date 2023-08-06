@@ -1,0 +1,11 @@
+soilgrids/__init__.py,sha256=hrXcPBHO4iQn6FZfr7z0rbl32ufCGn2yexlawNNk1D4,290
+soilgrids/_version.py,sha256=uZ8cqbR8MY5E0UIVGsTMwkvTaRESfoXSmpuXBA5MWlU,498
+soilgrids/bmi.py,sha256=A40ZcRfd_bg56sCVN-oh0ueu51p85_giDdiQ4AxChwA,21521
+soilgrids/cli.py,sha256=aktlQa-wm-72CSvWCSwfCpX8VJHlXs9_zNUCSxCm9WU,2330
+soilgrids/soilgrids.py,sha256=1bDUaeXSO8kJG1wLLkZaBQ1Z39ywZYJDIabVhEi4M9Q,7765
+soilgrids-0.1.0.dist-info/LICENSE.txt,sha256=RB2j7Q7yo5Fj82wh-ux_ogm2xiecsc7J8hhvepCn_KI,1065
+soilgrids-0.1.0.dist-info/METADATA,sha256=7RhZfwbQOV8yBS0n7zzX2n5PEv5JaMAHROvktoRly0o,4247
+soilgrids-0.1.0.dist-info/WHEEL,sha256=gm79cMopkncyn0iSnI0vQNiDJ8t9on0H4_iz-CrpXMk,92
+soilgrids-0.1.0.dist-info/entry_points.txt,sha256=SpgR38g4S47WtaS_Fr6fSpcQRa6tcSa23fC6xyBsouY,50
+soilgrids-0.1.0.dist-info/top_level.txt,sha256=9O5NyVtjGc42dnQulr0XzyqgpJ07VYW_c5xI1PTx5GU,10
+soilgrids-0.1.0.dist-info/RECORD,,
