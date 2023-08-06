@@ -1,0 +1,16 @@
+pycalco/__init__.py,sha256=bpVV42F_MoaLyy9cw75vY_COsFfFPIocV5_vsVFWDzM,189
+pycalco/calculator.py,sha256=OP3_Ej6u1dbos-xdkACaiJD9OwQr4Kb5Se2qgdRJz1U,431
+pycalco/shell.py,sha256=yzDwl6Xrz7zfkKJ-tSzz3yH4VjE6UVqIbT4kSGlj6iU,6716
+pycalco/aux/__init__.py,sha256=C933J4C8R8fJ_5gCKXmyfuGi_IYAWABiGIXWKGF2Z00,42
+pycalco/aux/checkers.py,sha256=jLlruAzkvjdAXrs4uvofZNNPPC0ZexIHAsIlbE_cr_I,1739
+pycalco/aux/envs.py,sha256=2Ep4wUV_6A_fODboXj-js_hIOXMINbB9MyeTdYYKt7M,879
+pycalco/cmd/__init__.py,sha256=E5fF20aWh2glmU9kbrgC9wd-VavWtiz5bPv9qsRyOb8,64
+pycalco/cmd/calco.py,sha256=FY4nTODM_RZhDOirl-Nzv7zFlAqFzAS_EPc-n8bR8Fc,901
+pycalco/cmd/pyeval.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pycalco/cmd/symcalco.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pycalco-0.9.1.dist-info/LICENSE,sha256=niKT4L_3GXkpQPtGirEhXXrAtsWdd3ifHR-72wK2D3U,1541
+pycalco-0.9.1.dist-info/METADATA,sha256=NQC-F40LwYkln9rc_OabDHYJc7kySgxqjYttLiPOJLY,5268
+pycalco-0.9.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pycalco-0.9.1.dist-info/entry_points.txt,sha256=DvDUtRsrYW75CzV8Qri6juga18Ji-GQkMiacn3xI0Kw,42
+pycalco-0.9.1.dist-info/top_level.txt,sha256=IZvQpqpO9sfYXefn6aAZAbKIzgVMSjbXPaZ5XOiy434,8
+pycalco-0.9.1.dist-info/RECORD,,
