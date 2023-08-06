@@ -1,0 +1,12 @@
+check-manifest
+pytest
+pytest-cov
+pytest-sugar
+flake8
+flake8-docstrings
+flake8-isort
+pycodestyle
+sphinx
+sphinx-copybutton
+numpydoc
+isort
