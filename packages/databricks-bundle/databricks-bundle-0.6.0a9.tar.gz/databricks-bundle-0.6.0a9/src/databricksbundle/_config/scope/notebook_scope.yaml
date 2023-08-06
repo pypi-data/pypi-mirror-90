@@ -1,0 +1,24 @@
+services:
+  databricksbundle.logger:
+    class: logging.Logger
+    factory: ['@databricksbundle.notebook.logger.NotebookLoggerFactory', 'create']
+    arguments:
+      - '@databricksbundle.notebook.path'
+    tags:
+      - {name: 'databricksbundle.notebook.logger', alias: 'default'}
+
+  databricksbundle.notebook.decorator.DuplicateColumnsChecker:
+    arguments:
+      - !tagged_aliased ['databricksbundle.notebook.logger', '%databricksbundle.notebook.logger%']
+
+  databricksbundle.notebook.function.ArgumentResolver:
+    arguments:
+      - !tagged_aliased ['databricksbundle.notebook.logger', '%databricksbundle.notebook.logger%']
+
+  databricksbundle.notebook.function.ArgumentsResolver:
+
+  databricksbundle.notebook.logger.NotebookLoggerFactory:
+
+  databricksbundle.notebook.path:
+    class: pathlib.Path
+    factory: ['@databricksbundle.notebook.pathResolver', 'resolve']

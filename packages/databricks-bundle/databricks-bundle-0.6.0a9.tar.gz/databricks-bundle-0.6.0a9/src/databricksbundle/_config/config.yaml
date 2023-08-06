@@ -1,0 +1,5 @@
+parameters:
+  databricksbundle:
+    notebook:
+      logger: default # see services tagged with databricksbundle.notebook.logger
+    enableNotebookErrorHandler: True
