@@ -1,0 +1,13 @@
+cyksuid/__init__.py,sha256=iAeL2Y9VmDMQ5doWmm7Cjxr6d6orZdlKzDb81MoWBR0,80
+cyksuid/__version__.py,sha256=Ac8pSTOc_HF2qITThJw8HjL8VCXLkpqcc5FZRFrnNlU,23
+cyksuid/fast_base62.cp37-win32.pyd,sha256=z75lAuTXUP8-quXrDwEU_qpiuArIFhS_izoA259W_rU,31744
+cyksuid/fast_base62.pxd,sha256=b7o92u4_iky85Qpyxo5iwC5iTnZLyNphU0xR_YVNKaw,315
+cyksuid/fast_base62.pyx,sha256=T0L0u9aF9HllzF_2rHi3oUnzGETtn-QQ6C5HeqYXVNE,1516
+cyksuid/ksuid.cp37-win32.pyd,sha256=Jc2YX0jssXQwcVvWKsFpc2WaixSTIF9eoDiqXI8FW3c,60928
+cyksuid/ksuid.pxd,sha256=Q5Q5qde5nz4y45k6mYH8eLKNCL9bXsz7MpFP3URHrvw,279
+cyksuid/ksuid.pyx,sha256=38gpfx-qFwDYp-yhUrZLMJbhmZJG25rxoiNsWJrf8lI,4090
+cyksuid-1.1.0.dist-info/LICENSE,sha256=4tp6VhjXXSPTnBHJTQohim-YDNR_i-8PEK04r17LbXQ,1535
+cyksuid-1.1.0.dist-info/METADATA,sha256=tSeuhNQp6l0fU0ze7J1BWzSuphKHR4TovdqQnSOLO7U,2124
+cyksuid-1.1.0.dist-info/WHEEL,sha256=SYKICiw7EPrpyOeCIuAJswXTZAWXbJBHvAYcpuUpX1M,102
+cyksuid-1.1.0.dist-info/top_level.txt,sha256=xgEug5w1_xERP6cs7SmIB06l3yt4lF-MF2HUh56VRes,8
+cyksuid-1.1.0.dist-info/RECORD,,
