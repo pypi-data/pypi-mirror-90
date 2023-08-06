@@ -1,0 +1,6 @@
+README.md
+setup.py
+xshinnosuke.egg-info/PKG-INFO
+xshinnosuke.egg-info/SOURCES.txt
+xshinnosuke.egg-info/dependency_links.txt
+xshinnosuke.egg-info/top_level.txt
