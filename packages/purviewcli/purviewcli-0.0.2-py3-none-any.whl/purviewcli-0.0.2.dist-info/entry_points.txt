@@ -1,0 +1,3 @@
+[console_scripts]
+purviewcli = purviewcli.cli:main
+
