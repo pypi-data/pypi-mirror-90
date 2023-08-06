@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: OPCDataTransfer
+Version: 1.1.1
+Summary: Python ETL script for reading data from OPC-server
+Home-page: https://github.com/Shanginre/OPCDataTransfer
+Author: Roman Shangin
+Author-email: shanginre@gmail.com
+License: UNKNOWN
+Description: Python [ETL (extract-transform-load)](https://en.wikipedia.org/wiki/Extract,_transform,_load) script for reading data from OPC-server and sending it to the recipient (database, message broker, HTTP service, etc.) for further processing and storage.  The script works with OPC protocols based on Windows technologies (OLE, ActiveX, COM/DCOM), since they are the most common in the industry.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3.6-32
+Description-Content-Type: text/markdown

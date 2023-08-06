@@ -1,0 +1,4 @@
+[console_scripts]
+DataTransfer = OPCDataTransfer.DataTransfer:main
+DataWriterToOPC = OPCDataTransfer.Simulation.WrightToOPC:main
+
