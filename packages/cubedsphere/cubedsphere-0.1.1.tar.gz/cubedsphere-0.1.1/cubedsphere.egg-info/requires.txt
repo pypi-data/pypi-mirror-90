@@ -1,0 +1,6 @@
+scipy
+numpy
+matplotlib
+xesmf
+esmpy
+xgcm
