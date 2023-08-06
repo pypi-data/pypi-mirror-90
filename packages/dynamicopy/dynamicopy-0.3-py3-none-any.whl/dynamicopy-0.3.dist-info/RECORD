@@ -1,0 +1,13 @@
+dynamicopy/__init__.py,sha256=hmV7huKFxoJ2CjGC3TzS7bby0an9L3RgWT25eweeIuE,603
+dynamicopy/basins.py,sha256=OXd62owSF15rOAdlZwnQHdjxTM7l36EZxTL9TL29KPo,605
+dynamicopy/cartoplot.py,sha256=mh32N5H9h0waX5mCAP9XX0tZXLfi4NpoyXDskBkBMPs,5894
+dynamicopy/compute.py,sha256=jncbUW1k2e_x942oDcXbRuh9nyzveK3Cmuixq9dhG6Y,10170
+dynamicopy/ncload.py,sha256=9xDaFw5XSOEhEcMBS-B27HCF92p70AObZQM3f72zZDM,5460
+dynamicopy/plot.py,sha256=dtrZkzds1oKzE_095w-j9RkyJcq2_8y11jOp5lXvYy8,4488
+dynamicopy/utils.py,sha256=qHfoHvk6k82TjyhIIH00SxhADd77qTEpqUmf8LhRT10,1226
+dynamicopy/utils_geo.py,sha256=LGdQ8rpGsMXEM_xIw_woxsCyhjwIdRzzmkAOj7--g50,7917
+dynamicopy-0.3.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+dynamicopy-0.3.dist-info/METADATA,sha256=ekDbgMsOxH5YMHZQqAHECxDR8H5o__vxlQUekbGhQZk,1031
+dynamicopy-0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+dynamicopy-0.3.dist-info/top_level.txt,sha256=jsSr2nhTxg4A40NoKvREbYWrnhtWFVc9IWXyLgX7XHs,11
+dynamicopy-0.3.dist-info/RECORD,,
