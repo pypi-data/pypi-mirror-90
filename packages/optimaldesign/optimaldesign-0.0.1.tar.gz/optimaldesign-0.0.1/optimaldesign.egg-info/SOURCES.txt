@@ -1,0 +1,7 @@
+README.md
+setup.py
+optimaldesign/__init__.py
+optimaldesign.egg-info/PKG-INFO
+optimaldesign.egg-info/SOURCES.txt
+optimaldesign.egg-info/dependency_links.txt
+optimaldesign.egg-info/top_level.txt
