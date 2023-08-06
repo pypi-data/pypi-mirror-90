@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: boardwatch-models
+Version: 0.12.0
+Summary: Model classes for larger Boardwatch product
+Home-page: https://github.com/nathanalexanderpage/boardwatch_models
+Author: Nathan Alexander Page
+Author-email: nathanalexanderpage@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Games/Entertainment
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Boardwatch models
+## Splash
+A collection of modeling classes used across related projects.
+
+

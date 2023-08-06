@@ -1,0 +1,14 @@
+boardwatch_models/__init__.py,sha256=xYDUwo_pw_zunqG83uG7TLhJ9OpafXUggAgecA24P38,347
+boardwatch_models/board.py,sha256=2kAqCF3a1VG2DfEe4LGxTkmtjGPMWyw2MZpGmA6SyUQ,807
+boardwatch_models/board_maker.py,sha256=opi7AIPv6SEy6_qpXU1amCrO0jdCWzz5gty-4LkHu98,136
+boardwatch_models/game.py,sha256=OXQSxEfsGgcPcrGEJufgOyU0KSozWwfFOyuvwZXihhA,411
+boardwatch_models/listing.py,sha256=t1BpezAsikVSFiSf0hZn_38DjcKKh-RkVvKkgAETBw4,526
+boardwatch_models/platform.py,sha256=Rxr8qg-cs5nFTC134IkvQygKSm7pmXD9kmJH5Y3Apds,1176
+boardwatch_models/platform_edition.py,sha256=r3vNVxeRWSZoqZjMeX08vTM2ZEGKznlgcxWPavguiGE,631
+boardwatch_models/platform_name_group.py,sha256=Giz10c7-p-P_xQnPMO9AKap63jhwqaoJ6MZ6b7UzPdU,613
+boardwatch_models/user.py,sha256=DQEskbF2j-xmfCsaOA_lF1zq-k3L4dZuVzDnLHybzgE,461
+boardwatch_models-0.12.0.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+boardwatch_models-0.12.0.dist-info/METADATA,sha256=PEHHHlI-wxSO9fs0rySIrI6fuZkyoPYkU_RJNWt-77E,769
+boardwatch_models-0.12.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+boardwatch_models-0.12.0.dist-info/top_level.txt,sha256=AmZEGbC68_w0Dw7g8dpUtQevi5xOsTza1ysivis8sds,18
+boardwatch_models-0.12.0.dist-info/RECORD,,
