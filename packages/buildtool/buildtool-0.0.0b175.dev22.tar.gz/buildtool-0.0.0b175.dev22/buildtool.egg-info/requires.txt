@@ -1,0 +1,6 @@
+click
+flask
+cachetools
+colorama
+requests
+tqdm
