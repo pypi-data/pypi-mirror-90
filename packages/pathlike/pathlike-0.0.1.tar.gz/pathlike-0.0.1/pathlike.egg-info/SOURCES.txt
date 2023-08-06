@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+pathlike.egg-info/PKG-INFO
+pathlike.egg-info/SOURCES.txt
+pathlike.egg-info/dependency_links.txt
+pathlike.egg-info/top_level.txt
+pathlike.egg-info/zip-safe
