@@ -1,0 +1,6 @@
+click>=7.1.2
+
+# DADA #
+dada-settings>=0.0.2
+dada-utils>=0.0.2
+dada-types>=0.0.2
