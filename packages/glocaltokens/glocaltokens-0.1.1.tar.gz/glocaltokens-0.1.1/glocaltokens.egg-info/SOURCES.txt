@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+glocaltokens/__init__.py
+glocaltokens/client.py
+glocaltokens.egg-info/PKG-INFO
+glocaltokens.egg-info/SOURCES.txt
+glocaltokens.egg-info/dependency_links.txt
+glocaltokens.egg-info/requires.txt
+glocaltokens.egg-info/top_level.txt
+glocaltokens/google/internal/home/foyer/__init__.py
+glocaltokens/google/internal/home/foyer/v1.proto
+glocaltokens/google/internal/home/foyer/v1_pb2.py
+glocaltokens/google/internal/home/foyer/v1_pb2_grpc.py

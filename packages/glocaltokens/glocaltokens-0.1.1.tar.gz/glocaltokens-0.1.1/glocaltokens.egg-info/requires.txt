@@ -1,0 +1,6 @@
+gpsoauth
+grpcio
+grpcio-tools
+jq
+simplejson
+requests<=2.23.0
