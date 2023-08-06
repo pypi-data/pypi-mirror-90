@@ -1,0 +1,6 @@
+test -f btest.cfg || cp /Users/robin/bro/master/auxil/btest/testing/btest.tests.cfg btest.cfg; echo >/dev/null tests.baseline-dir-env.test (expect success)
+BTEST_BASELINE_DIR=mydir btest /Users/robin/bro/master/auxil/btest/testing/.tmp/tests.baseline-dir-env.test/baseline-dir-env.test.x (expect failure)
+test ! -e mydir/baseline-dir-env/output (expect success)
+BTEST_BASELINE_DIR=mydir btest -U /Users/robin/bro/master/auxil/btest/testing/.tmp/tests.baseline-dir-env.test/baseline-dir-env.test.x (expect success)
+test ! -e Baseline (expect success)
+test -f mydir/baseline-dir-env/output (expect success)
