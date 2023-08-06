@@ -1,0 +1,81 @@
+Metadata-Version: 1.1
+Name: XMLI
+Version: 0.2.1
+Summary: xmli module is used to manage XML files.
+Home-page: https://github.com/Kafajku/xmli
+Author: Kazafka/Kafajku/kzfka
+Author-email: caffiqu@gmail.com
+License: Custom
+Download-URL: https://github.com/Kafajku/xmli/archive/v_0.2.1.tar.gz
+Description: eXtensible Markup Lanuage Interface
+        
+        -----------------------------------
+        
+        **Opening the file/creating one**
+        
+        First of all, you have to create an instance of `xml` class. It's constructor takes 2 parameters: `path` (string, positional) and `create_only` (boolean, default [`False`]). `path` should be set to the path of XML file. If `create_only` is set to `False` (by default), the XML file is read and parsed, otherwise - no parsing is performed.
+        
+        List of methods available for `xml` class instance:
+        
+        `__str__(self: object) -> object` - Returns `xml` class representation of an XML file.
+        
+        `update(self: object) -> None` - Updates the XML file.
+        
+        `get_root_nodes(self: object, **properties: dict) -> xml_node` - If root node present, returns it as `xml_node` class instance. Available properties: `value`, `attrs`, `comms` and `name`. Properties allow you to narrow down the criteria for searching for children.
+        
+        `add_root_node(self: object, name: str, attrs: dict = {}, value: str = "") -> None` - If root node with the same name is NOT present, creates new one.
+        
+        `delete(self: object) -> None` - Deletes the XML file.
+        
+        **Managing XML nodes**
+        
+        When you've opened the file and retrieved it's root node, you can now set attributes, add children (sub-nodes) set the value of the root node or just change it's name.
+        
+        List of methods available for `xml_node` class instance:
+        
+        `__str__(self: object) -> object` - Returns `xml_node` class representation of an XML node.
+        
+        `get_name(self: object) -> str` - Returns name of the XML node.
+        
+        `set_name(self: object, name: str) -> None` - Redefines name of the XML node.
+        
+        `get_value(self: object) -> str` - Retrieves the value of an XML node.
+        
+        `set_value(self: object, value: str) -> None` - Changes the value of an XML node.
+        
+        `get_attr(self: object, name: str) -> str or None` - If an attribute is present, function retrieves it's value and returns it.
+        
+        `set_attr(self: object, name: str, value: str) -> None` - Redefines an attribute of XML node. If attribute is not present, new will be created.
+        
+        `get_comments(self: object) -> list` - Returns list of XML node comments.
+        
+        `add_comment(self: object, comment: str) -> None` - Adds a new comment.
+        
+        `del_comment(self: object, comment: str) -> None` - Deletes a comment.
+        
+        `get_child(self: object, **properties: dict) -> list` - Returns list with sub-nodes. Available properties: `value`, `attrs`, `comms` and `name`. Properties allow you to narrow down the criteria for searching for children.
+        
+        `add_child(self: object, name: str, attrs: dict = {}, value: str = "") -> None` - Adds new sub-node.
+        
+        `destroy(self: object) -> None` - Destroys the XML node.
+        
+        **Encoding**
+        
+        By default, when XML file is composed or parsed, it goes through a process of encoding. This simple method prevents from many issues when parsing an XML file. Default encoding can be found in `xmli.libs.shared` (`enc_in` - used when parsing XML file, `enc_out` - used when composing XML file).
+        
+        ---------------------------------------------------------------------------------------------------------------------
+        
+        Last changes:
+        
+        * added support for non-value XML nodes (e.g. `<user name="Guest" password="123"/>`)
+        * added functions: `get_comments`, `add_comment`, `del_comment` to class `xml_node`; added special `<br/>` tag to divide XML nodes values from XML nodes children; added support for XML nodes comments
+        * added function `add_root_node`, `add_node` and modified `get_child` function
+        * added bunch of new, useful methods to each class.
+        
+Keywords: xmli,XML,XMLI,eXtensible Markup Language
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
