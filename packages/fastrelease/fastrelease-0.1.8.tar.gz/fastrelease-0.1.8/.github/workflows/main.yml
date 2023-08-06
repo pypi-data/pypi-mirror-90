@@ -1,0 +1,30 @@
+name: CI
+on: [push, pull_request]
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+    - name: see payload
+      run: echo "$PAYLOAD"
+      env:
+        PAYLOAD: ${{ toJSON(github.event) }}
+    - name: store payload
+      uses: actions/upload-artifact@v2
+      with:
+        name: payload.json
+        path: ${{ github.event_path }}
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-python@v1
+      with:
+        python-version: '3.6'
+        architecture: 'x64'
+    - name: Install the library
+      run: |
+        pip install nbdev jupyter
+        pip install -e .
+    - uses: fastai/workflows/nb@master
+    - name: Run tests
+      run: nbdev_test_nbs
