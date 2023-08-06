@@ -1,0 +1,7 @@
+README.txt
+setup.py
+helome.egg-info/PKG-INFO
+helome.egg-info/SOURCES.txt
+helome.egg-info/dependency_links.txt
+helome.egg-info/top_level.txt
+name1/__init__.py
