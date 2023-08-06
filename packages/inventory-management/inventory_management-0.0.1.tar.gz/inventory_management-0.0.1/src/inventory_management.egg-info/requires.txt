@@ -1,0 +1,11 @@
+numpy
+
+[dev]
+twine
+wheel>=0.34.2
+
+[test]
+pytest
+check-manifest>=0.41
+mypy
+black

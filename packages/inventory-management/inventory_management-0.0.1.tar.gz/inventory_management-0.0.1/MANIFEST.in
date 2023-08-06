@@ -1,0 +1,18 @@
+include LICENSE
+include README.md
+include requirements*.txt
+include src/inventory_management/py.typed
+include *.yaml
+recursive-include src *.md
+recursive-include src *.py
+
+exclude Makefile
+
+# Include tests
+include tox.ini pytest.ini mypy.ini
+recursive-include tests *.py
+recursive-include tests *.ipynb
+
+# Include examples
+recursive-include examples *.py
+recursive-include examples *.ipynb

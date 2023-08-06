@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: inventory_management
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Ian Eaves
+Author-email: ian.k.eaves@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
+Provides-Extra: test

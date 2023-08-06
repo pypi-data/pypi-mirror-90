@@ -1,0 +1,4 @@
+pytest
+check-manifest>=0.41
+mypy
+black
