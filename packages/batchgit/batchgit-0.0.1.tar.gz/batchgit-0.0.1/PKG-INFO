@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: batchgit
+Version: 0.0.1
+Summary: Tool to manage multiple git repos
+Home-page: UNKNOWN
+Author: Hong Jiang
+Author-email: lazyseq@gmail.com
+License: UNKNOWN
+Description: bgit
+        =====
+        
+        Introduction
+        -------------
+        
+        ``bgit`` is a tool to manage multiple git repositories. It is particularly
+        useful when you have multiple repos that need to be regularly sync-ed. For
+        example, config files, org-mode files, scripts, etc.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
