@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: jprq
+Version: 1.3.0
+Summary: Get your localhost online and https - Ngrok Alternative
+Home-page: https://github.com/azimjohn/jprq
+Author: Azimjon Pulatov
+Author-email: azimjohn@yahoo.com
+Maintainer: Azimjon Pulatov
+Maintainer-email: azimjohn@yahoo.com
+License: MIT
+Description: Get your localhost online and https - Ngrok Alternative
+Keywords: jprq live localhost online https ngrok alternative
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6.1
+Description-Content-Type: text/markdown
