@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: emissionsapi-worldmap-creator
+Version: 0.3
+Summary: Emissions API's World Map image creator
+Home-page: https://github.com/emissions-api/emissionsapi-worldmap-creator
+Author: Emissions API Developers
+License: MIT
+Description: Emissions API World Map Creator
+        ===============================
+        
+        This project is a small command line tool to create beautiful world map images with data from the `Emissions API <https://emissions-api.org/>`_.
+        
+        Like this one:
+        
+        .. image:: example.png
+          :width: 400
+          :alt: https://github.com/emissions-api/emissionsapi-worldmap-creator/blob/master/example.png
+        
+        Emissions API itself gives easy access to satellite-based emission data.
+        For more information take a look at our `website <https://emissions-api.org/>`_.
+        
+        Installation
+        ------------
+        
+        Install the command line tool using::
+        
+            %> pip install emissionsapi-worldmap-creator
+        
+        Example
+        -------
+        
+        Generate an image with the ozone data from the forth of June (the image above):
+        
+        .. code-block:: bash
+        
+            emissionsapi-worldmap-creator ozone 2020-06-04
+        
+        To show all available options, run:
+        
+        .. code-block:: bash
+        
+            emissionsapi-worldmap-creator --help
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Framework :: Matplotlib
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Description-Content-Type: text/x-rst

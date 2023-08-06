@@ -1,0 +1,3 @@
+[console_scripts]
+emissionsapi-worldmap-creator = emissionsapi_worldmap_creator.__main__:main
+
