@@ -1,0 +1,34 @@
+<configure
+  xmlns="http://namespaces.zope.org/zope"
+  xmlns:browser="http://namespaces.zope.org/browser"
+  xmlns:i18n="http://namespaces.zope.org/i18n"
+  xmlns:plone="http://namespaces.plone.org/plone"
+  i18n_domain="ideabox.restapi">
+
+  <browser:page
+    for="*"
+    name="pstaction-import-form"
+    permission="zope2.View"
+    class=".pstaction.PSTActionImportFormView"
+    />
+
+  <adapter
+    factory=".action.PSTActionImportAction"
+    />
+
+  <adapter
+    factory=".pstaction.PSTActionImporter"
+    />
+
+  <adapter
+    factory=".authentication.IdeaboxAuthentication"
+    />
+
+  <utility
+    component=".vocabularies.PSTActionVocabulary"
+    name="ideabox.restapi.vocabularies:pstaction"
+    provides="zope.schema.interfaces.IVocabularyFactory"
+    />
+
+</configure>
+
