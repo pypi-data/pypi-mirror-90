@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: saturn-toolbox
+Version: 0.1.0
+Summary: A toolbox for resekkers
+Home-page: https://github.com/akavenus/saturn-toolbox
+Author: Saturn Software
+Author-email: saturn.dev@protonmail.com
+License: UNKNOWN
+Description: # SATURN TOOLBOX
+        `saturn-toolbox` is a free open source toolbox, that has many tools for resllers!
+        
+        ## Installation
+        Run `pip install saturn-toolbox`, the command `saturn-toolbox` should now be available.
+        
+        ## Contact
+        Join us on [discord](https://discord.com/invite/KNfnJzx)! 
+        ## Support
+        If you encounter a problem, please feel free to open an issue here on github.
+        
+        ## TODO
+        - [ ] Export usable API
+        - [ ] Proper CLI command
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
