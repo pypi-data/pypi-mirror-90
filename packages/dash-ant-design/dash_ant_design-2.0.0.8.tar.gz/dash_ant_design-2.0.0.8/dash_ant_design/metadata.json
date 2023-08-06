@@ -1,0 +1,825 @@
+{
+  "src/lib/components/AutoComplete.react.js": {
+    "description": "ExampleComponent is an example component.\r\nIt takes a property, `label`, and\r\ndisplays it.\r\nIt renders an input with the property `value`\r\nwhich is editable by the user.",
+    "displayName": "_AutoComplete",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks"
+      },
+      "allowClear": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "A label that will be printed when this component is rendered."
+      },
+      "autoFocus": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "backfill": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "defaultActiveFirstOption": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "defaultOpen": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "defaultValue": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "dropdownClassName": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "notFoundContent": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "open": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "options": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "label": {
+                "name": "string",
+                "description": "todo",
+                "required": false
+              },
+              "value": {
+                "name": "string",
+                "description": "todo",
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "placeholder": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "value": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The value displayed in the input"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the\r\nproperties change"
+      }
+    }
+  },
+  "src/lib/components/Button.react.js": {
+    "description": "ExampleComponent is an example component.\r\nIt takes a property, `label`, and\r\ndisplays it.\r\nIt renders an input with the property `value`\r\nwhich is editable by the user.",
+    "displayName": "_Button",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks"
+      },
+      "label": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A label that will be printed when this component is rendered."
+      },
+      "danger": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "A label that will be printed when this component is rendered.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "A label that will be printed when this component is rendered."
+      },
+      "value": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The value displayed in the input"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the\r\nproperties change"
+      }
+    }
+  },
+  "src/lib/components/DatePicker.react.js": {
+    "description": "",
+    "displayName": "_DatePicker",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "todo"
+      },
+      "showTime": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "todo"
+      },
+      "value": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "todo"
+      },
+      "defaultValue": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "moment().format('YYYY-MM-DDTHH:MM:SS.mmmmmm')",
+          "computed": true
+        }
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the\r\nproperties change"
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "changed": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "time": {
+              "name": "string",
+              "description": "todo",
+              "required": false
+            },
+            "timeString": {
+              "name": "string",
+              "description": "todo",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "todo"
+      }
+    }
+  },
+  "src/lib/components/Icon.react.js": {
+    "description": "ExampleComponent is an example component.\r\nIt takes a property, `label`, and\r\ndisplays it.\r\nIt renders an input with the property `value`\r\nwhich is editable by the user.",
+    "displayName": "_Icon",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the\r\nproperties change"
+      }
+    }
+  },
+  "src/lib/components/Tag.react.js": {
+    "description": "ExampleComponent is an example component.\r\nIt takes a property, `label`, and\r\ndisplays it.\r\nIt renders an input with the property `value`\r\nwhich is editable by the user.",
+    "displayName": "_Tag",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks"
+      },
+      "color": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "label": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the\r\nproperties change"
+      }
+    }
+  },
+  "src/lib/components/TimePicker.react.js": {
+    "description": "",
+    "displayName": "_TimePicker",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "todo"
+      },
+      "value": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "defaultValue": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "moment().format('YYYY-MM-DDTHH:MM:SS.mmmmmm')",
+          "computed": true
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the\r\nproperties change"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "changed": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "time": {
+              "name": "string",
+              "description": "todo",
+              "required": false
+            },
+            "timeString": {
+              "name": "string",
+              "description": "todo",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "src/lib/components/Tooltip.react.js": {
+    "description": "ExampleComponent is an example component.\r\nIt takes a property, `label`, and\r\ndisplays it.\r\nIt renders an input with the property `value`\r\nwhich is editable by the user.",
+    "displayName": "_Tooltip",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks"
+      },
+      "title": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "A label that will be printed when this component is rendered."
+      },
+      "arrowPointAtCenter": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "A label that will be printed when this component is rendered."
+      },
+      "autoAdjustOverflow": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "A label that will be printed when this component is rendered."
+      },
+      "color": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The value displayed in the input"
+      },
+      "defaultVisible": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "destroyTooltipOnHide": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "mouseEnterDelay": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "mouseLeaveDelay": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": ""
+      },
+      "overlayClassName": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "placement": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": ""
+      },
+      "trigger": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "visible": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the\r\nproperties change"
+      }
+    }
+  },
+  "src/lib/components/Transfer.react.js": {
+    "description": "ExampleComponent is an example component.\r\nIt takes a property, `label`, and\r\ndisplays it.\r\nIt renders an input with the property `value`\r\nwhich is editable by the user.",
+    "displayName": "_Transfer",
+    "methods": [
+      {
+        "name": "refresh",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "value",
+            "type": null
+          }
+        ],
+        "returns": null
+      },
+      {
+        "name": "changeType",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "dataSource",
+            "type": null
+          },
+          {
+            "name": "targetSelectedKeys",
+            "type": null
+          },
+          {
+            "name": "newType",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks"
+      },
+      "dataSource": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "key": {
+                "name": "string",
+                "required": false
+              },
+              "title": {
+                "name": "string",
+                "required": false
+              },
+              "description": {
+                "name": "string",
+                "required": false
+              },
+              "disabled": {
+                "name": "bool",
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "A label that will be printed when this component is rendered."
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "A label that will be printed when this component is rendered."
+      },
+      "oneWay": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "operations": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "pagination": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "selectedKeys": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "showSearch": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "showSelectAll": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "targetKeys": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "[]",
+          "computed": false
+        }
+      },
+      "listStyle": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "titles": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "changed": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "sourceSelectedKeys": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "targetSelectedKeys": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": ""
+      }
+    }
+  },
+  "src/lib/components/TreeSelect.react.js": {
+    "description": "",
+    "displayName": "_TreeSelect",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "todo"
+      },
+      "treeData": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "custom",
+            "raw": "PropTreeNode"
+          }
+        },
+        "required": false,
+        "description": "todo"
+      },
+      "showCheckedStrategy": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "todo"
+      },
+      "treeCheckable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "todo"
+      },
+      "disabled": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": ""
+      },
+      "defaultValue": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": ""
+      },
+      "treeCheckStrictly": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "todo"
+      },
+      "selected": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "todo"
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": ""
+      },
+      "expanded": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "todo"
+      },
+      "changed": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "label": {
+                "name": "string",
+                "description": "todo",
+                "required": false
+              },
+              "value": {
+                "name": "string",
+                "description": "todo",
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "todo"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the\r\nproperties change"
+      }
+    }
+  }
+}

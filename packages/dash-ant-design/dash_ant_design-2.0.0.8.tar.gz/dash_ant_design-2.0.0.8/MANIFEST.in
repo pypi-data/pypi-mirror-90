@@ -1,0 +1,5 @@
+include dash_ant_design/dash_ant_design.min.js
+include dash_ant_design/dash_ant_design.dev.js
+include dash_ant_design/metadata.json
+include dash_ant_design/package.json
+include README.md
