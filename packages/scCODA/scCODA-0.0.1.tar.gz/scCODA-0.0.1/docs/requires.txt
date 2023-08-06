@@ -1,0 +1,17 @@
+sphinx
+sphinx-autodoc-typehints
+sphinx_rtd_theme
+docutils
+numpydoc
+numpy>=1.14.0
+pandas>=1.0
+seaborn
+matplotlib
+arviz>=0.7
+scipy
+anndata
+patsy
+sklearn
+scanpy
+statsmodels
+pickle
