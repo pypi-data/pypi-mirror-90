@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: bandcamp-list-albums
+Version: 0.0.2
+Summary: List albums from bandcamp page of artist or label.
+Home-page: https://github.com/Layerex/bandcamp_list_albums
+Author: Layerex
+Author-email: layerex@dismail.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 6 - Mature
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+
+# bandcamp_list_albums
+
+List albums from bandcamp page of artist or label.
+
+## Installation
+
+```sh
+pip install bandcamp_list_albums
+```
+
+## Usage
+
+```text
+usage: bandcamp_list_albums [-h] [--artist-name artist_name] [--strict] [--titles--print-titles]
+                            [--urls--print-urls] [--json]
+                            url [artist_name]
+
+List albums from bandcamp page of artist or label.
+
+positional arguments:
+  url                   url of desired bandcamp page
+  artist_name           filter results by artist name (may be regex)
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --artist-name artist_name, -a artist_name
+                        filter results by artist name (may be regex)
+  --strict, -s          check if artist name is equal to specified one instead of searching by regex
+  --titles--print-titles, -t
+                        only output album titles
+  --urls--print-urls, -u
+                        only output album urls
+  --json, --print-json, -j
+                        output data as json
+```
+
+
