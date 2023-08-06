@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: flespi-gateway
+Version: 0.0.4
+Summary: The python wrapper of a gateway rest API of a flespi platform.
+Home-page: https://github.com/vlavrik/flespi-gateway
+Author: Vladimir Lavrik
+Author-email: lavrikvladimir@gmail.com
+License: BSD 3-Clause "New" or "Revised" License
+Description: # Flespi gateway python library
+        
+        **flespy-gateway** is a python library.
+        
+        ```python
+        >>> from flespi_gateway.gateway import Device
+        >>> dv = Device(device_number=device_number, flespi_token=flespi_token)
+        >>> telemetry = dv.get_telemetry()
+        >>> print(telemetry)
+        {'result': [{'id': xxxxxx,
+           'telemetry': {'battery.current': {'ts': 1609521935, 'value': 0},
+            'battery.voltage': {'ts': 1609521935, 'value': 4.049},
+            'can.absolute.load': {'ts': 1609327396, 'value': 23}]
+        }
+        ```
+        
+        Flespi gateway allows you to send http requests easily.
+        
+        [![PyPI](https://img.shields.io/pypi/v/flespi-gateway?color=green&label=flespi-gateway)](https://pypi.org/project/flespi-gateway/)
+        [![GitHub stars](https://img.shields.io/github/stars/vlavrik/flespi-gateway)](https://github.com/vlavrik/flespi-gateway/stargazers)
+        ![Read the Docs](https://img.shields.io/readthedocs/flespi-gateway)
+        
+        ## Installing Flespi gateway and Supported Versions
+        
+        Flespi gateway is available on PyPI:
+        
+        ```console
+        $ python3 -m pip install flespi-gateway
+        ```
+        
+        Flespi gateway supports Python 3.8+.
+        
+        ## API Reference and User Guide available on [Read the Docs](https://flespi-gateway.readthedocs.io)
+        
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
