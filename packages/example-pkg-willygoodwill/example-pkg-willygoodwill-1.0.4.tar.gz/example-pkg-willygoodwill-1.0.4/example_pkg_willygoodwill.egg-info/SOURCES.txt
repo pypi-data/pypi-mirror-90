@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+example_pkg/__init__.py
+example_pkg/__main__.py
+example_pkg/config.txt
+example_pkg/mod1.py
+example_pkg/mod2.py
+example_pkg_willygoodwill.egg-info/PKG-INFO
+example_pkg_willygoodwill.egg-info/SOURCES.txt
+example_pkg_willygoodwill.egg-info/dependency_links.txt
+example_pkg_willygoodwill.egg-info/entry_points.txt
+example_pkg_willygoodwill.egg-info/top_level.txt
