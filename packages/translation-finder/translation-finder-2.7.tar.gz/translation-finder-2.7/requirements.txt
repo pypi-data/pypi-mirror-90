@@ -1,0 +1,2 @@
+ruamel.yaml
+weblate-language-data>=2020.10
