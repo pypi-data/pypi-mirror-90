@@ -1,0 +1,5 @@
+ubermagutil==0.2.7
+pandas>=1.2
+matplotlib>=3.3
+jupyterlab==2.2
+ipywidgets>=7.6
