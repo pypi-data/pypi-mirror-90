@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: xhp-flow
+Version: 0.0.1
+Summary: This is a mini but function competed neural networks framwork
+Home-page: UNKNOWN
+Author: xiaohaipeng
+Author-email: 307153814@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+##ABOUT
+This is a mini deep learning framework created by xiaohaipeng @tianjin
+
+##Features
+
++ Define Dynamic Computing Graph
++ Define Neural Network Operator
++ Define Placeholder,Linear,Sigmoid,Relu,MSE
++ Auto-Diff Computing
++ Auto-Feedforward and Backward
+
+#Remain
++ Classification
++ Cross-Entropy
++ CNN, RNN
+
+# Connection
+wechat:18651271973
+Mail:307153814@qq.com
+
