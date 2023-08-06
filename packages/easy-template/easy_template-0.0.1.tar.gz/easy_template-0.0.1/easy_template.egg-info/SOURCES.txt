@@ -1,0 +1,7 @@
+README.md
+setup.py
+easy_template/__init__.py
+easy_template.egg-info/PKG-INFO
+easy_template.egg-info/SOURCES.txt
+easy_template.egg-info/dependency_links.txt
+easy_template.egg-info/top_level.txt
