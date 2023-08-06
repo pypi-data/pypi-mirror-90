@@ -1,0 +1,5 @@
+alibabacloud_tea_util_py2<1.0.0,>=0.0.1
+alibabacloud_oss_util_py2<1.0.0,>=0.0.1
+alibabacloud_tea_xml_py2<1.0.0,>=0.0.1
+alibabacloud_tea_fileform_py2<1.0.0,>=0.0.1
+alibabacloud_credentials_py2<1.0.0,>=0.0.1
