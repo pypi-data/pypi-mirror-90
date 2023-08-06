@@ -1,0 +1,11 @@
+alfabet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alfabet/fragment.py,sha256=9_LoU1NFvutY7PYLH-W0eLExrJX5rOQM44UlGkYLChc,3466
+alfabet/model.py,sha256=Iuyv0DxKGJMdjOwYcKbCZr-0-p5ahSsEJMIuANJZqSc,4764
+alfabet/preprocessor_utils.py,sha256=_alAzf6XQ-u4fTO3AzTG3_bg6GUT1CgO1eDDNLfwF-A,4322
+alfabet/model_files/best_model.hdf5,sha256=hPVhaf6FCzrgDv_yCPZtHOfB8sqWgwDK4rdpSiINZos,13122840
+alfabet/model_files/preprocessor.p,sha256=3V2gnb9Hm7thldS-9rTc21LZyuNRhV1AjjoTAquLQ2c,10163
+alfabet-0.0.5.dist-info/LICENSE,sha256=99Qq8ZgyyUHg7rEA-nXEyqhfDsUWpBUFV6drvPZDaGA,1733
+alfabet-0.0.5.dist-info/METADATA,sha256=3Gvd9Rd6ArYaTejyRxW2JBNmwCX7Nr5VTj5ZWtBmRvA,3368
+alfabet-0.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+alfabet-0.0.5.dist-info/top_level.txt,sha256=fBWsikTA7Qv4VxGzNIhcYweGlYR-WNaYAQa3IMtzw5A,8
+alfabet-0.0.5.dist-info/RECORD,,
