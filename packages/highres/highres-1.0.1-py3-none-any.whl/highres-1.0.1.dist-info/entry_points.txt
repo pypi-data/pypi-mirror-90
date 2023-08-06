@@ -1,0 +1,3 @@
+[console_scripts]
+hires = hiresmodule.command_line:main
+
