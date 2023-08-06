@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: mdbridge
+Version: 0.1.0
+Summary: markdown extension for bridge PBN & xinrui
+Home-page: https://github.com/larrycai/mdbridge
+Author: Larry Cai
+Author-email: larry.caiyu@gmail.com
+License: UNKNOWN
+Description: # mdbridge
+        
+        markdown extension for bridge
+        
+        è¿éæ¯ç ç©¶å¦ä½ä»markdownæ ¼å¼çæ¡¥çæç« è½¬æ¢å°HTMLï¼æ·è´å°Wordï¼åPDFï¼éè¿LaTeXæèepubï¼
+        
+        ææ°ç»æ
+        
+        * éè¿æ©å±çmarkdownæ ¼å¼è½å¤äº§çå¸æçHTMLï¼`xin2pbn`,`pbn2html`,`mdbridge`ä¸ä¸ªè½¯ä»¶åï¼
+        * éè¿`pandoc`è½¯ä»¶è½å¤äº§çepub
+        * `calibre`è½å¤è½¬æ¢åºmobiåpdfæ ¼å¼
+        
+        å­å¨çé®é¢
+        
+        * HTMLè¿ä¸å¤ªè§èï¼epubäº§çåºæ¥æéï¼mobiæ ¼å¼æççµ
+        * HTMLæ·è´å°wordè¿ä¸æ¯å¾å¥½
+        * epubå°PDFåçº¢è±çé¢è²ä¸å¯¹ï¼ç®å½æ²¡æ
+        * latex (onedownï¼è¿æ²¡è¯
+        
+        ## å¦ä½å·¥ä½
+        
+        ````
+        # sample.md
+        <pre lang="bridge">
+        deal|cards=NS|ul="<str>"|ll=<str>|ur=<str>`
+        </pre>
+        $ pip install mdbridge
+        $ mdbridge2html sample.md
+        sample.bridge is created
+        # pandoc
+        $ pandoc -f markdown+raw_attribute -t epub epub.txt sample.bridge -o sample.epub
+        # multimarkdown
+        $ multimarkdown sample.bridge > sample.html
+        ````
+        
+        ### å«ç
+        
+        <pre lang="bridge">
+        http://www.xinruibridge.com/deallog/DealLog.html?bidlog=P,2N,P%3B3C,P,3N,P%3B6N,P,P,P%3B&playlog=E:KD,3D,4D,JD%3BE:2D,5D,7D,AD%3BN:JS,6S,5S,8S%3BN:KS,4S,7S,2S%3BN:3S,TS,AS,8H%3BS:QS,TD,4C,9S%3BS:KH,JH,4H,2H%3BS:AH,TH,9H,3H%3BS:QH,9D,8C,5H%3BS:2C,JC,QC,6C%3BN:KC,9C,6D,5C%3BN:AC,7H,6H,3C%3BN:7C,QD,8D,TC%3B&deal=82.JT8.T974.JT53%20KJ3.94.AJ.AKQ874%20T964.7532.KQ2.96%20AQ75.AKQ6.8653.2&vul=All&dealer=W&contract=6N&declarer=N&wintrick=11&score=-100&str=%E7%BE%A4%E7%BB%84IMP%E8%B5%9B%2020201209%20%E7%89%8C%E5%8F%B7%204/8&dealid=995050099&pbnid=345464272
+        auction
+        </pre>
+        
+        ### ç
+        
+        `deal|cards=NS|ul="<str>"|ll=<str>|ur=<str>`
+        
+        * deal: åå®¶çï¼ä»è¥¿å¼å§SHDCï¼`-`:æ å³ç´§è¦ï¼`x`: å°ç
+        * cards: ååï¼NSï¼ï¼è¥¿åï¼WNï¼: ç¼ºçå°±æ¯åå®¶
+        * ul/ur/ll: ä¸ä¸ªè§(u=upper,r=right,l=left,l=lower)ï¼`&`ç¨æ¥æ¢è¡ ï¼ä¸å·¦è§ï¼ulï¼ç¼ºçææ¾ç¤ºï¼ç¨`" "`éè, ``
+        
+        ä¸¤å®¶ç
+        
+        <pre lang="bridge">
+        deal|cards=NS
+        </pre>
+        
+        åå®¶ç
+        
+        <pre lang="bridge">
+        deal
+        </pre>
+        
+        é¨åç
+        
+        <pre lang="bridge">
+        deal=.xxxx..xxx&.T4.A.AK87&-&.AKQ6.865.
+        </pre>
+        
+        ä¸¤å®¶ç ï¼ä¸æ¾ç¤ºå®çº¦ï¼
+        
+        <pre lang="bridge">
+        deal|cards=NS|ul=NONE 
+        </pre>
+        
+        é¨åç ï¼æ¾ç¤ºå½åèµ¢å¢©ï¼
+        
+        <pre lang="bridge">
+        deal=.xxxx..xxx&.94.A.AK87&-&.AKQ6.865.|ll="NS 4/12&EW 0"|ur="ç¾¤ç»èµ1209&çå· 4/8"
+        </pre>
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
