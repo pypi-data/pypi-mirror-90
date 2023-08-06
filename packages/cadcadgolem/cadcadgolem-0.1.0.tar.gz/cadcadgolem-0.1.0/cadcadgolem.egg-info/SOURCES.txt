@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+cadcadgolem/__init__.py
+cadcadgolem/golem_embassy.py
+cadcadgolem.egg-info/PKG-INFO
+cadcadgolem.egg-info/SOURCES.txt
+cadcadgolem.egg-info/dependency_links.txt
+cadcadgolem.egg-info/top_level.txt
+cadcadgolem/remote/Dockerfile
+cadcadgolem/remote/__init__.py
+cadcadgolem/remote/golem-diplomat.py
+cadcadgolem/remote/run-golem-diplomat.sh
