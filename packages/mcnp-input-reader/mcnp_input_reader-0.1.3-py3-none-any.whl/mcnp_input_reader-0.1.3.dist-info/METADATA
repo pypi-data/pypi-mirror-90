@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: mcnp-input-reader
+Version: 0.1.3
+Summary: MCNP Input reader
+Home-page: https://github.com/ENEA-Fusion-Neutronics/MCNP-Input-Reader.git
+Author: gmariano
+Author-email: giovanni.mariano@enea.it
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/ENEA-Fusion-Neutronics/MCNP-Input-Reader.git
+Description-Content-Type: text/markdown
+
+# MCNP Input Reader
+
+MCNP Input Reader is a python package developed in order to facilitate the modifications and the check integrity 
+of large mcnp input files.
+
+## Install
+
+```shell
+pip install mcnp-input-reader
+```
+
+## TODO
+
+A lot of things...
+
+## Example
+
+Example taken from [here](https://www.utoledo.edu/med/depts/radther/pdf/MCNP5%20practical%20examples%20lecture%207%20companion.pdf) 
+
+
