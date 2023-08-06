@@ -1,0 +1,3 @@
+[console_scripts]
+samsum = samsum.__main__:main
+
