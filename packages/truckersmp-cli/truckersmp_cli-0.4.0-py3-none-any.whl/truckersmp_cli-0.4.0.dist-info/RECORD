@@ -1,0 +1,15 @@
+truckersmp_cli/__init__.py,sha256=Yh6OK5CvOF0b4lhd9v94zc_ho2a_WUSLEAdJ4vmmgsE,68
+truckersmp_cli/args.py,sha256=LWAFx3hBKIw37-otWokBt45n3NLtLotLOX-5Z41FPqc,11568
+truckersmp_cli/main.py,sha256=zWgGaRInYH73n9paxzx389dL7A6qLXZ-Iqwyuubi3_g,11128
+truckersmp_cli/proton.json,sha256=n5lOLLOwlNPGExC5vIJEk00vw5KjUQJ6CVJ6as7OADo,70
+truckersmp_cli/steamcmd.py,sha256=glbdcuefXOFZN64M82A-xQ-UefeYbtrlU491s7O3v3w,6491
+truckersmp_cli/truckersmp-cli.exe,sha256=4h3IQKll46WynCDNAZhk878-vvXAxUijlKsZ_pvMX3U,19968
+truckersmp_cli/truckersmp.py,sha256=2QoN2gYrE0Bkp9XYOBixUH5u9akwFwyecNPH5zyBLgM,5606
+truckersmp_cli/utils.py,sha256=prKLUVpz3mqTDUVBk2aStsq3h2Arx1OOwD3ZjVLD7Ko,20696
+truckersmp_cli/variables.py,sha256=8Ld86xRf0J6SBSp1GTvDjVmwWlOnZBmVpHmgA3DVPZg,3801
+truckersmp_cli-0.4.0.data/scripts/truckersmp-cli,sha256=9wf_pCEXe_qCv51nO5G6ouBosy8KMKGNaX_QXhHOA-g,330
+truckersmp_cli-0.4.0.dist-info/LICENSE,sha256=8f0Wv-uyhsJjyPE2ZNzAvCXPopaXuHeDs9idYNg-oMQ,1098
+truckersmp_cli-0.4.0.dist-info/METADATA,sha256=h-_8W_HBKdnhFdR8AJQ3fksrHGq_Atk--M-byMHTl2I,16865
+truckersmp_cli-0.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+truckersmp_cli-0.4.0.dist-info/top_level.txt,sha256=4f8YLJUacVFAxBN1ttelJDzHq-PIP4dsROJbwWOpGag,15
+truckersmp_cli-0.4.0.dist-info/RECORD,,
