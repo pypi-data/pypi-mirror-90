@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: hypertag
+Version: 0.1.0
+Summary: File organization made easy using tags
+Home-page: https://github.com/SeanPedersen/HyperTag
+License: MIT
+Keywords: tag,file,organization
+Author: Sean
+Author-email: sean-p-96@hotmail.de
+Requires-Python: >=3.9,<4.0
+Classifier: Environment :: Console
+Classifier: Framework :: Fire
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: filetype (>=1.0.7,<2.0.0)
+Requires-Dist: fire (>=0.3.1,<0.4.0)
+Requires-Dist: tqdm (>=4.55.0,<5.0.0)
+Project-URL: Repository, https://github.com/SeanPedersen/HyperTag
