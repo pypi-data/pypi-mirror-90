@@ -1,0 +1,8 @@
+README.rst
+setup.py
+s2cell/__init__.py
+s2cell.egg-info/PKG-INFO
+s2cell.egg-info/SOURCES.txt
+s2cell.egg-info/dependency_links.txt
+s2cell.egg-info/requires.txt
+s2cell.egg-info/top_level.txt
