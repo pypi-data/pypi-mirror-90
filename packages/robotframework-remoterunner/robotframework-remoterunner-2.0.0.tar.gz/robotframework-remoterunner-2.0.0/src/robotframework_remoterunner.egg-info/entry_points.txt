@@ -1,0 +1,5 @@
+[console_scripts]
+rfagent = rfremoterunner.agent:run_agent
+rfremoterun = rfremoterunner.executor:run_executor
+rfslave = rfremoterunner.agent:run_agent_deprecated
+

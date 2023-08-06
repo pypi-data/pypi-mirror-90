@@ -1,0 +1,9 @@
+*.pyc
+*.egg-info/
+.tox/
+.idea/
+venv/
+htmlcov/
+.coverage
+/build/
+dist/
