@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: networkg
+Version: 0.1.4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: importlib_metadata==3.3.0;python_version<"3.8"
+Project-Url: Repository, https://github.com/gustavgransbo/networkg/
+Project-Url: Documentation, https://networkg.readthedocs.io/
+Home-Page: https://github.com/gustavgransbo/networkg/
+Author: Gustav Gränsbo <gustav.gransbo@gmail.com>
+Author-Email: Gustav Gränsbo <gustav.gransbo@gmail.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst; charset=UTF-8
+
+networkg
+========
+
+| |PyPI| |Python Version| |License|
+| |Tests| |Build| |Read the Docs|
+| |Black| |pre-commit|
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/networkg.svg
+   :target: https://pypi.org/project/networkg/
+   :alt: PyPI
+.. |Python Version| image:: https://img.shields.io/pypi/pyversions/networkg
+   :target: https://pypi.org/project/networkg
+   :alt: Python Version
+.. |License| image:: https://img.shields.io/pypi/l/networkg
+   :target: https://opensource.org/licenses/MIT
+   :alt: License
+.. |Tests| image:: https://github.com/gustavgransbo/networkg/workflows/Tests/badge.svg
+   :target: https://github.com/gustavgransbo/networkg/actions?workflow=Tests
+   :alt: Tests
+.. |Build| image:: https://github.com/gustavgransbo/networkg/workflows/Build/badge.svg
+   :target: https://github.com/gustavgransbo/networkg/actions?workflow=Build
+   :alt: Build
+.. |Read the Docs| image:: https://img.shields.io/readthedocs/networkg/latest.svg?label=Read%20the%20Docs
+   :target: https://networkg.readthedocs.io/
+   :alt: Read the documentation at https://networkg.readthedocs.io/
+.. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/psf/black
+   :alt: Black
+.. |pre-commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+   :target: https://github.com/pre-commit/pre-commit
+   :alt: pre-commit
+
+
+A Python graph processing library built in Rust.
+
+
+Installation
+------------
+.. code-block:: console
+
+   $ pip install networkg
+
