@@ -1,0 +1,8 @@
+mfa_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mfa_tools/login.py,sha256=TzHFbBC_9rty9vyKZRZCgjrOGQT1hxRGN_leZbJ1Udg,5666
+aws_mfa_tools-0.1.0.dist-info/LICENSE,sha256=pXCaqn_uBM7p5WRw5cGDTMRKOZupmA4YuNErn5CoWWQ,1071
+aws_mfa_tools-0.1.0.dist-info/METADATA,sha256=XJtCV0Z7ftfVHiRdo1n7_o4yz2sPv3ZplfTeKR0smUw,5242
+aws_mfa_tools-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+aws_mfa_tools-0.1.0.dist-info/entry_points.txt,sha256=HisrlbqVROvdLRK-oZl1zBdv2DH4mk2noIjoeVaAJhc,51
+aws_mfa_tools-0.1.0.dist-info/top_level.txt,sha256=itU2OTHtD4SAdq3f9TwNpEhZSlhOI4dDlwy36lkmzT0,10
+aws_mfa_tools-0.1.0.dist-info/RECORD,,
