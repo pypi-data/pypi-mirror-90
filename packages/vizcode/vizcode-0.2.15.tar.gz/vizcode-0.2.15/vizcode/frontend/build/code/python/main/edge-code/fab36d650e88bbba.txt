@@ -1,0 +1,1 @@
+    doc2 = nlp(remove_stop_words(text))

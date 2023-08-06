@@ -1,0 +1,5 @@
+filterClear() {
+    this.setState({
+        filterDates: {start: '', end: ''},
+    })
+}

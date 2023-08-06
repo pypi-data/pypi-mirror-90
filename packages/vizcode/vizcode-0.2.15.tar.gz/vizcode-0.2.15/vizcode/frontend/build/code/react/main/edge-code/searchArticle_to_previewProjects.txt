@@ -1,0 +1,8 @@
+<PreviewProjects
+    changeHandler={this.changeProjectPreview}
+    refresh={this.handleOnClick}
+    publisherName={this.state.publisherName}
+    availableProjects={this.state.availableProjects}
+    articleLink={this.state.article_link_copy}
+    open={this.state.openPreview}
+/>

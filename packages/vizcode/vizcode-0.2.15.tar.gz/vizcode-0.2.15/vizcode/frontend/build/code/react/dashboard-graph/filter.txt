@@ -1,0 +1,38 @@
+filter () {
+    var results = this.state.cumulativeRevenue;
+    var filters = this.state.filterDates;
+    if (results.labels == undefined || (filters.start == '' && filters.end == '')) {
+        return results
+    }
+    else {
+        var final = {"labels": [], "values": []};
+        var i;
+        for (i = 0; i < results.labels.length; i++) {
+            if (filters.end === '') {
+                if ((new Date (filters.start)) <= (new Date (results.labels[i]))) {
+                    final = {
+                        "labels": final.labels.concat(results.labels[i]),
+                        "values": final.values.concat(results.values[i])
+                    }
+                }
+            }
+            else if (filters.start === '') {
+                if ((new Date (results.labels[i])) <= (new Date (filters.end))) {
+                    final = {
+                        "labels": final.labels.concat(results.labels[i]),
+                        "values": final.values.concat(results.values[i])
+                    }
+                }
+            }
+            else {
+                if (((new Date (results.labels[i])) <= (new Date (filters.end))) && ((new Date (filters.start)) <= (new Date (results.labels[i])))) {
+                    final = {
+                        "labels": final.labels.concat(results.labels[i]),
+                        "values": final.values.concat(results.values[i])
+                    }
+                }
+            }
+        }
+        return final;
+    }
+}

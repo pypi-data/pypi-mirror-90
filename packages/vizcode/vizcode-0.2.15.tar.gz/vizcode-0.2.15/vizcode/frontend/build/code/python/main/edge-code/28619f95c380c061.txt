@@ -1,0 +1,1 @@
+            projects_df = get_available_projects()

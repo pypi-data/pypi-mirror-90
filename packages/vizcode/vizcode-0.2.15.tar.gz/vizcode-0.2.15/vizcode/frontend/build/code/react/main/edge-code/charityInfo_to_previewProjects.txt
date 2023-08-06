@@ -1,0 +1,7 @@
+<Button
+    onClick={() => {this.props.changeHandler(project_id)}}
+>
+<InputAdornment position="start">
+    <CloseIcon />
+</InputAdornment>
+</Button>

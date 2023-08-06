@@ -1,0 +1,1 @@
+    def __repr__(self):        return '{} @ {} ({}, {})'.format(self.publisher_name, self.school, self.publisher_city, \                                         self.publisher_state)

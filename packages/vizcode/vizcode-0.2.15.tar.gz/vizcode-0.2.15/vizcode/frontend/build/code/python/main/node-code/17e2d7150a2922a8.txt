@@ -1,0 +1,1 @@
+        self.commissions_available = commissions_available

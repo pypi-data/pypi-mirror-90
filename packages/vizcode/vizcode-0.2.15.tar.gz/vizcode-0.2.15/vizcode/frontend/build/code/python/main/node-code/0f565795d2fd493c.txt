@@ -1,0 +1,1 @@
+newsletter_blueprint = Blueprint('newsletter', __name__)

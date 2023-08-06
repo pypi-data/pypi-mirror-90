@@ -1,0 +1,1 @@
+        self.funds_available = 0.0

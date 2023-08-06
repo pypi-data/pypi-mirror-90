@@ -1,0 +1,1 @@
+            fund = get_best_fund(article_title, article_text)

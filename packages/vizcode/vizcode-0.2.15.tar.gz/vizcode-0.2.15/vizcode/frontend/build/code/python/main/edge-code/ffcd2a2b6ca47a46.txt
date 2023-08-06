@@ -1,0 +1,1 @@
+                date_cut_off = datetime.strptime('Jun 28 2020', '%b %d %Y')

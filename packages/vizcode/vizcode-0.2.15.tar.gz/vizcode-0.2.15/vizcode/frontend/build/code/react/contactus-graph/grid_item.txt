@@ -1,0 +1,14 @@
+<Grid item sm={5} xs={10}>
+      <TextField
+        required
+        variant="outlined"
+        fullWidth
+        name="firstName"
+        label="First Name"
+        onChange={this.updateInfo}
+        InputLabelProps = {{className: classes.label_style}}
+        InputProps = {{className: classes.input_style}}
+        FormHelperTextProps={{ className: classes.helper_style }}
+        helperText= {this.state.error_first}
+      />
+</Grid>

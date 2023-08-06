@@ -1,0 +1,76 @@
+<form className={classes.form} noValidate>
+  <Grid container spacing={2} justify="center">
+    <Grid item sm={5} xs={10}>
+          <TextField
+            required
+            variant="outlined"
+            fullWidth
+            name="firstName"
+            label="First Name"
+            onChange={this.updateInfo}
+            InputLabelProps = {{className: classes.label_style}}
+            InputProps = {{className: classes.input_style}}
+            FormHelperTextProps={{ className: classes.helper_style }}
+            helperText= {this.state.error_first}
+          />
+    </Grid>
+    <Grid item sm={5} xs={10}>
+          <TextField
+            required
+            variant="outlined"
+            fullWidth
+            name="lastName"
+            label="Last Name"
+            onChange={this.updateInfo}
+            InputLabelProps = {{className: classes.label_style}}
+            InputProps = {{className: classes.input_style}}
+            FormHelperTextProps={{ className: classes.helper_style }}
+            helperText= {this.state.error_last}
+          />
+    </Grid>
+    <Grid item sm={10} xs={10}>
+          <TextField
+            variant="outlined"
+            fullWidth
+            required
+            value={this.state.email}
+            name="email"
+            label="Email"
+            type="email"
+            onChange={this.updateInfo}
+            InputLabelProps = {{className: classes.label_style}}
+            InputProps = {{className: classes.input_style}}
+            FormHelperTextProps={{ className: classes.helper_style }}
+            helperText= {this.state.error_email}
+          />
+    </Grid>
+    <Grid item sm={10} xs={10}>
+      <TextField
+        variant="outlined"
+        required
+        fullWidth
+        multiline
+        rows={8}
+        name="message"
+        label="Message"
+        onChange={this.updateInfo}
+        InputLabelProps = {{className: classes.label_style}}
+        InputProps = {{className: classes.input_style}}
+        FormHelperTextProps={{ className: classes.helper_style }}
+        helperText= {this.state.error_message}
+      />
+    </Grid>
+  </Grid>
+  <Grid container justify="center">
+    <Grid item sm={3}>
+      <Button
+        fullWidth
+        variant="contained"
+        className={classes.submit}
+        onClick={this.handleOnClick}
+      >
+        SEND
+      </Button>
+    </Grid>
+  </Grid>
+</form>

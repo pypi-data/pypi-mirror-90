@@ -1,0 +1,1 @@
+        self.project_picture_link = project_picture_link

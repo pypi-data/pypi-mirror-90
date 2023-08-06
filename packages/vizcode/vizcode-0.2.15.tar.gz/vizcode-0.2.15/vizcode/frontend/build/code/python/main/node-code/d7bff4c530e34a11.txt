@@ -1,0 +1,1 @@
+        self.edited_by_publisher = edited_by_publisher

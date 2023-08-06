@@ -1,0 +1,1 @@
+    def __init__(self, owner_id, publisher_id):        self.owner_id = owner_id        self.publisher_id = publisher_id

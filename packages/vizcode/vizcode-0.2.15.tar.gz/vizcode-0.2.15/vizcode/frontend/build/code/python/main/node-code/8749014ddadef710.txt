@@ -1,0 +1,1 @@
+        self.amount_donated = amount_donated

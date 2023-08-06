@@ -1,0 +1,6 @@
+<CharityInfo
+    changeHandler={this.changeEdit}
+    charity_dic={log}
+    publisherName={this.state.publisherName}
+    open={this.state.open[log.project_id]}
+/>

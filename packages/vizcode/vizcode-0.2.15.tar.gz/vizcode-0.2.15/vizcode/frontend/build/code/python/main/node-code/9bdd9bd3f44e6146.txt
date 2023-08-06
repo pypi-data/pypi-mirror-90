@@ -1,0 +1,1 @@
+        self.newspaper_id = newspaper_id

@@ -1,0 +1,697 @@
+import React from 'react';
+import Avatar from '@material-ui/core/Avatar';
+import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import TextField from '@material-ui/core/TextField';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import Link from '@material-ui/core/Link';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import { withStyles } from '@material-ui/core/styles';
+import $ from 'jquery';
+import { BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
+import cookie from 'react-cookies'
+import MenuItem from '@material-ui/core/MenuItem';
+import countryList from 'react-select-country-list'
+import Modal from "@material-ui/core/Modal";
+
+
+//Styling for the Login Component
+const useStyles = theme => ({
+  paper: {
+    marginTop: theme.spacing(4),
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  avatar: {
+    margin: theme.spacing(1)
+  },
+  form: {
+    width: '100%', // Fix IE 11 issue.
+    marginTop: theme.spacing(3),
+  },
+  submit: {
+    margin: theme.spacing(3, 0, 2),
+    backgroundColor: "#448AFF",
+    color: "#FFFFFF"
+  },
+  img: {
+    marginBottom: theme.spacing(2),
+  },
+  label_style: {
+    '&.Mui-focused': {
+      color: '#448AFF',
+    },
+  },
+  input_style: {
+    '&.MuiOutlinedInput-root': {
+      // '& fieldset': {
+      //   borderColor: '#448AFF',
+      // },
+      '&.Mui-focused fieldset': {
+        borderColor: '#448AFF',
+      },
+    },
+  },
+  helper_style: {
+    color: '#FF0000',
+  },
+  link: {
+    color: 'black',
+    textDecoration: 'none',
+    fontSize: '14px'
+  },
+});
+
+class SignUp extends React.Component{
+  //Constructor for the login Page
+  constructor(props){
+    super(props);
+    this.updateInfo = this.updateInfo.bind(this);
+    this.loginToken = this.loginToken.bind(this);
+    this.isFormValid = this.isFormValid.bind(this);
+    this.handleOnClick = this.handleOnClick.bind(this);
+    this.moveLogin = this.moveLogin.bind(this);
+
+    this.state = {
+      email: "",
+      password: "",
+      phone_number: "",
+      organization_name: "",
+      organization_description: "",
+      organization_street_address: "",
+      organization_city: "",
+      organization_state: "",
+      organization_country: "",
+      organization_type: "",
+      organization_url: "",
+      employerIdNumber: "",
+      isRegistered: false,
+      askForMoreInfo: false,
+      error_email: "",
+      error_password: "",
+      error_phone_number: "",
+      error_organization_name: "",
+      error_organization_description: "",
+      error_organization_street_address: "",
+      error_organization_city: "",
+      error_organization_state: "",
+      error_organization_country: "",
+      error_organization_type: "",
+      error_employerIdNumber: "",
+      error_url: "",
+      error_main: false,
+      moveToLogin: false,
+      length_organization_description: 0
+    };
+  }
+
+  componentDidMount() {
+    cookie.remove('access_token');
+  }
+
+  updateInfo(event){
+
+    if (event.target.name == "organization_description"){
+      let str_length = event.target.value;
+      str_length = str_length.length;
+      this.setState({length_organization_description: str_length});
+    }
+
+    this.setState({[event.target.name]: event.target.value});
+  }
+
+  moveLogin(){
+    this.setState({moveToLogin: true});
+  }
+
+  handleOnClick() {
+
+    // console.log(this.isFormValid());
+
+    if (this.isFormValid()) {
+      this.loginToken()
+    }
+
+  }
+
+  isFormValid() {
+
+    let isValid = true;
+
+    let helperMessage = "Field Required";
+    let wrongEmail = "Please provide a valid email";
+    let wrongPassword = "Please provide a valid password (8-16 characters)";
+    let wrongName = "Please provide a valid organization name (10-50 characters)";
+    let wrongEID = "Please provide a valid EID (##-#######)";
+    let wrongPhone = "Please provide a valid US phone number (###-###-####)";
+    let wrongAddress = "Please provide a valid address";
+    let wrongCity = "Please provide a valid city";
+    let wrongDescription = "Please provide a valid Mission Statement (<1000 characters)";
+    let wrongUrl = "Please provide a valid url";
+
+    let re_mail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let re_number = /^[0-9][0-9][0-9][/-][0-9][0-9][0-9][/-][0-9][0-9][0-9][0-9]$/;
+    let re_eid = /^[0-9][0-9][/-][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$/;
+    // let re_url = /^(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$/
+    let re_url = /^((ftp|http|https):\/\/)?www\.([A-z]+)\.([A-z]{2,})$/;
+
+
+
+
+    if (this.state.email == ''){
+      this.setState({error_email: helperMessage});
+      isValid = false;
+    } else if(!re_mail.test(this.state.email)){
+      this.setState({error_email: wrongEmail});
+      isValid = false;
+    } else {
+      this.setState({error_email: ""});
+    }
+
+    if (this.state.password == ''){
+      this.setState({error_password: "Field Required"});
+      isValid = false;
+    } else if (this.state.password.length > 16 || this.state.password.length < 8){
+      this.setState({error_password: wrongPassword});
+      isValid = false;
+    } else {
+      this.setState({error_password: ""});
+    }
+
+
+    if (this.state.organization_name == ''){
+      this.setState({error_organization_name: "Field Required"});
+      isValid = false;
+    } else if (this.state.organization_name.length > 50 || this.state.organization_name.length < 10){
+      this.setState({error_organization_name: wrongName});
+      isValid = false;
+    } else {
+      this.setState({error_organization_name: ""});
+    }
+
+
+    if (this.state.organization_type == ''){
+      this.setState({error_organization_type: "Field Required"});
+      isValid = false;
+    } else {
+      this.setState({error_organization_type: ""});
+    }
+
+
+    if (this.state.employerIdNumber == ''){
+      this.setState({error_employerIdNumber: "Field Required"});
+      isValid = false;
+    } else if (!re_eid.test(this.state.employerIdNumber)){
+      this.setState({error_employerIdNumber: wrongEID});
+      isValid = false;
+    } else {
+      this.setState({error_employerIdNumber: ""});
+    }
+
+
+    if (this.state.organization_url == ''){
+      this.setState({error_url: "Field Required"});
+      isValid = false;
+    } else if (!re_url.test(this.state.organization_url)){
+      this.setState({error_url: wrongUrl});
+      isValid = false;
+    } else {
+      this.setState({error_url: ""});
+    }
+
+    if (this.state.phone_number == ''){
+      this.setState({error_phone_number: "Field Required"});
+      isValid = false;
+    } else if (!re_number.test(this.state.phone_number)){
+      this.setState({error_phone_number: wrongPhone});
+      isValid = false;
+    } else {
+      this.setState({error_phone_number: ""});
+    }
+
+    if (this.state.organization_street_address == ''){
+      this.setState({error_organization_street_address: "Field Required"});
+      isValid = false;
+    } else {
+      this.setState({error_organization_street_address: ""});
+    }
+
+    // ADD STREET ADDRESS REQS?
+
+
+    if (this.state.organization_city == ''){
+      this.setState({error_organization_city: "Field Required"});
+      isValid = false;
+    } else {
+      this.setState({error_organization_city: ""});
+    }
+
+    // ADD CITY REQS?
+
+    if (this.state.organization_state == ''){
+      this.setState({error_organization_state: "Field Required"});
+      isValid = false;
+    } else {
+      this.setState({error_organization_state: ""});
+    }
+
+
+    if (this.state.organization_country == ''){
+      this.setState({error_organization_country: "Field Required"});
+      isValid = false;
+    } else {
+      this.setState({error_organization_country: ""});
+    }
+
+
+    if (this.state.organization_description == ''){
+      this.setState({error_organization_description: "Field Required"});
+      isValid = false;
+    } else if (this.state.organization_description.length > 500){
+      this.setState({error_organization_description: wrongDescription});
+      isValid = false;
+    } else {
+      this.setState({error_organization_description: ""});
+    }
+
+    return isValid;
+  }
+
+  loginToken(){
+    // console.log(this.state);
+    var data = {
+      "email": this.state.email,
+      "password": this.state.password,
+      "phone_number": this.state.phone_number,
+      "organization_website": this.state.organization_url,
+      "organization_name": this.state.organization_name,
+      "organization_description": this.state.organization_description,
+      "organization_street_address": this.state.organization_street_address,
+      "organization_city": this.state.organization_city,
+      "organization_state": this.state.organization_state,
+      "organization_country": this.state.organization_country,
+      "organization_type": this.state.organization_type,
+      "employer_id_number": this.state.employerIdNumber};
+
+    $.post('https://newspark-chrome-extension.herokuapp.com/register_organization', data, function(output) {
+      if('access_token' in output){
+        cookie.save('access_token', output['access_token']);
+        this.setState({isRegistered: true});
+      } else {
+        this.setState({error_main: true});
+      }
+    }.bind(this));
+  }
+
+  render(){
+    const {classes} = this.props;
+
+    // let countries = countryList().getData();
+    let countries = [{label: 'United States'}];
+    let usStates = ['Alabama','Alaska','American Samoa','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District of Columbia','Federated States of Micronesia','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Marshall Islands','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Northern Mariana Islands','Ohio','Oklahoma','Oregon','Palau','Pennsylvania','Puerto Rico','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virgin Island','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
+
+    const organization_types = [
+      {
+        value: 'Non-profit',
+        label: 'Non-profit',
+      },
+      {
+        value: 'Business',
+        label: 'Business',
+      },
+      // {
+      //   value: 'Individual',
+      //   label: 'Individual',
+      // },
+      // // {
+      //   value: 'Other',
+      //   label: 'Other',
+      // },
+    ];
+
+    if(this.state.isRegistered){
+      return(
+        <Redirect from="/signup" to={{
+          pathname: "/dashboard",
+          state: {pastLocation: 'signup'}}}/>
+      );
+    }
+
+    if(this.state.moveToLogin){
+      return(
+        <Redirect from='/signup' to="/"/>
+      );
+    }
+
+    let errorMessage = <div></div>
+
+    if(this.state.error_main) {
+      errorMessage = (
+          <div>
+            <br/>
+            <Typography style={{textAlign: 'center', color: '#ff0000'}}>Account already exists</Typography>
+          </div>)
+    }
+
+    const CHARACTER_LIMIT = 1000;
+
+    // let employerNumberPrompt = (<div/>)
+    //
+    // if(this.state.askForMoreInfo) {
+    //   employerNumberPrompt = (
+    //     <Grid item sm={4}>
+    //       <TextField
+    //         variant="outlined"
+    //         required
+    //         fullWidth
+    //         name="employerIdNumber"
+    //         label="Employer Identification Number"
+    //         onChange={this.updateInfo}
+    //         autoFocus
+    //       />
+    //     </Grid>
+    //   )
+    // }
+
+
+    // const fields = {[
+    //   [}{
+    //     id: "email",
+    //     name: "email",
+    //     label: "Email Address"
+    //   }
+    //   ],
+    //   [{
+    //     id: "email",
+    //     name: "email",
+    //     label: "Email Address"
+    //   }
+    //   ],
+    // ]
+    // <Grid container spacing={4} justify="center">
+    //   fields.map( fields =>
+    //   <Grid key={fields.id} item xs={12} sm={6}>
+    //     <TextField
+    //       autoComplete= {fields.name}
+    //       name= {fields.name}
+    //       variant="outlined"
+    //       required
+    //       fullWidth
+    //       id= {fields.name}
+    //       label= {fields.label}
+    //       onChange= {this.updateInfo}
+    //       autoFocus
+          // InputLabelProps = {{className: classes.label_style}}
+          // InputProps = {{className: classes.input_style}}
+    //     />
+    //   </Grid> )}
+    // </Grid>
+
+
+    let helperMessage = "";
+
+    if(this.state.showHelper) {
+      helperMessage = "Required";
+    }
+
+
+    return (
+      <Container component="main">
+      <CssBaseline />
+      <div className={classes.paper}>
+        {/*<Avatar className={classes.avatar}>*/}
+        {/*  <LockOutlinedIcon />*/}
+        {/*</Avatar>*/}
+        <Link onClick={this.moveLogin} style={{cursor: 'pointer'}}><img src="https://i.ibb.co/jgXPdb0/logo-nobackground.png" height="35" className={classes.img} /></Link>
+        <br/>
+        <Typography component="h1" variant="h5">
+          <Box fontWeight="fontWeightBold" style={{fontFamily: 'Lato'}}>Join Us!</Box>
+        </Typography>
+        <Typography align={'center'} style={{fontFamily: 'Lato'}}>
+          Enter your information below to create an account. <br/>
+          You must be based in the United States in order to join our platform.
+        </Typography>
+        <form className={classes.form} noValidate>
+          <Grid container spacing={4} justify="center">
+            <Grid item sm={6} xs={12}>
+              <TextField
+                autoComplete="email"
+                name="email"
+                variant="outlined"
+                required
+                fullWidth
+                id="email"
+                label="Email Address"
+                onChange={this.updateInfo}
+                autoFocus
+                InputLabelProps = {{className: classes.label_style}}
+                InputProps = {{className: classes.input_style}}
+                FormHelperTextProps={{ className: classes.helper_style }}
+                helperText= {this.state.error_email}
+              />
+            </Grid>
+            <Grid item sm={6} xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                type="password"
+                id="password"
+                label="Password"
+                name="password"
+                autoComplete="password"
+                onChange={this.updateInfo}
+                InputLabelProps = {{className: classes.label_style}}
+                InputProps = {{className: classes.input_style}}
+                FormHelperTextProps={{ className: classes.helper_style }}
+                helperText= {this.state.error_password}
+              />
+            </Grid>
+            <Grid item sm={12} xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                name="organization_name"
+                label="Organization Name"
+                type="organization_name"
+                id="organization_name"
+                autoComplete="organization_name"
+                onChange={this.updateInfo}
+                InputLabelProps = {{className: classes.label_style}}
+                InputProps = {{className: classes.input_style}}
+                FormHelperTextProps={{ className: classes.helper_style }}
+                helperText= {this.state.error_organization_name}
+              />
+            </Grid>
+            <Grid item sm={6} xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                select
+                fullWidth
+                name="organization_type"
+                label="Organization Type"
+                type="organization_type"
+                id="organization_type"
+                autoComplete="organization_type"
+                onChange={this.updateInfo}
+                InputLabelProps = {{className: classes.label_style}}
+                InputProps = {{className: classes.input_style}}
+                FormHelperTextProps={{ className: classes.helper_style }}
+                helperText= {this.state.error_organization_type}
+              >
+                {organization_types.map((option) => (
+                  <MenuItem key={option.value} value={option.value}>
+                    {option.label}
+                  </MenuItem>
+                ))}
+              </TextField>
+            </Grid>
+            <Grid item sm={6} xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                name="employerIdNumber"
+                label="Employer Identification Number"
+                type="employer_id_number"
+                id="employer_id_number"
+                autoComplete="organization_name"
+                onChange={this.updateInfo}
+                InputLabelProps = {{className: classes.label_style}}
+                InputProps = {{className: classes.input_style}}
+                FormHelperTextProps={{ className: classes.helper_style }}
+                helperText= {this.state.error_employerIdNumber}
+              />
+            </Grid>
+            <Grid item sm={6} xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                type ="url"
+                id="organization_url"
+                label="Organization website"
+                name="organization_url"
+                autoComplete="url"
+                onChange={this.updateInfo}
+                InputLabelProps = {{className: classes.label_style}}
+                InputProps = {{className: classes.input_style}}
+                FormHelperTextProps={{ className: classes.helper_style }}
+                helperText= {this.state.error_url}
+              />
+            </Grid>
+            <Grid item sm={6} xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                id="phone_number"
+                label="US Phone Number"
+                name="phone_number"
+                autoComplete="phone_number"
+                onChange={this.updateInfo}
+                InputLabelProps = {{className: classes.label_style}}
+                InputProps = {{className: classes.input_style}}
+                FormHelperTextProps={{ className: classes.helper_style }}
+                helperText= {this.state.error_phone_number}
+              />
+            </Grid>
+            <Grid item sm={6} xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                name="organization_street_address"
+                label="Organization Street Address"
+                type="organization_street_address"
+                id="organization_street_address"
+                autoComplete="organization_street_address"
+                onChange={this.updateInfo}
+                InputLabelProps = {{className: classes.label_style}}
+                InputProps = {{className: classes.input_style}}
+                FormHelperTextProps={{ className: classes.helper_style }}
+                helperText= {this.state.error_organization_street_address}
+              />
+            </Grid>
+            <Grid item sm={6} xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                name="organization_city"
+                label="Organization City"
+                type="organization_city"
+                id="organization_city"
+                autoComplete="organization_city"
+                onChange={this.updateInfo}
+                InputLabelProps = {{className: classes.label_style}}
+                InputProps = {{className: classes.input_style}}
+                FormHelperTextProps={{ className: classes.helper_style }}
+                helperText= {this.state.error_organization_city}
+              />
+            </Grid>
+            <Grid item sm={6} xs={12}>
+              <TextField
+                variant="outlined"
+                fullWidth
+                select
+                required
+                name="organization_state"
+                label="Organization State"
+                type="organization_state"
+                id="organization_state"
+                autoComplete="organization_state"
+                onChange={this.updateInfo}
+                InputLabelProps = {{className: classes.label_style}}
+                InputProps = {{className: classes.input_style}}
+                FormHelperTextProps={{ className: classes.helper_style }}
+                helperText= {this.state.error_organization_state}
+              >
+                { usStates.map((option) => (
+                  <MenuItem key={option} value={option}>
+                    {option}
+                  </MenuItem>
+                ))}
+              </TextField>
+            </Grid>
+            <Grid item sm={6} xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                select
+                fullWidth
+                name="organization_country"
+                label="Organization Country"
+                type="organization_country"
+                id="organization_country"
+                onChange={this.updateInfo}
+                InputLabelProps = {{className: classes.label_style}}
+                InputProps = {{className: classes.input_style}}
+                FormHelperTextProps={{ className: classes.helper_style }}
+                helperText= {this.state.error_organization_country}
+              >
+                { countries.map((option) => (
+                  <MenuItem key={option.label} value={option.label}>
+                    {option.label}
+                  </MenuItem>
+                ))}
+              </TextField>
+            </Grid>
+            <Grid item sm={12} xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                multiline
+                rows={4}
+                name="organization_description"
+                label="Mission statement"
+                type="organization_description"
+                id="organization_description"
+                autoComplete="organization_description"
+                onChange={this.updateInfo}
+                InputLabelProps = {{className: classes.label_style}}
+                InputProps = {{
+                  maxLength: CHARACTER_LIMIT,
+                  className: classes.input_style
+                }}
+                FormHelperTextProps={{ className: classes.helper_style }}
+                helperText= {`${this.state.error_organization_description} ${this.state.length_organization_description}/${CHARACTER_LIMIT} characters`}
+              />
+            </Grid>
+          </Grid>
+          {errorMessage}
+          <Grid container justify="center">
+            <Grid item sm={4}>
+              <Button
+                fullWidth
+                variant="contained"
+                className={classes.submit}
+                onClick={() => {this.handleOnClick()}}
+              >
+                Sign Up
+              </Button>
+            </Grid>
+          </Grid>
+          <Grid container justify="center">
+            <Link to="/signup" onClick={this.moveLogin} className={classes.link} style={{fontFamily: 'Lato', fontSize: '16px'}}>
+                    Already have an account? <span style={{textDecoration: 'underline', cursor: 'pointer'}}>Login Here</span>
+            </Link>
+            </Grid>
+        </form>
+      </div>
+    </Container>
+  );
+  }
+}
+
+export default withStyles(useStyles)(SignUp)

@@ -1,0 +1,1 @@
+    salt = os.urandom(32)  # 32 bytes

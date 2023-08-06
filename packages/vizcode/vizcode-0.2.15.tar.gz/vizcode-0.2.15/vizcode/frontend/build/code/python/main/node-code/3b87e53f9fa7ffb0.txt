@@ -1,0 +1,1 @@
+def remove_stop_words(text):    doc = nlp(text.lower())    result = [token.text for token in doc if token.text not in nlp.Defaults.stop_words]    return " ".join(result)

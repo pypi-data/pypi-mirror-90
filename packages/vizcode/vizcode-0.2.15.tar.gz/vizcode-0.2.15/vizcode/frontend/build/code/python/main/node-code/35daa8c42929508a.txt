@@ -1,0 +1,1 @@
+    def __init__(self, email, username, password, salt, phone_number, admin_access):        self.email = email        self.username = username        self.password = password        self.salt = salt        self.phone_number = phone_number        self.admin_access = admin_access

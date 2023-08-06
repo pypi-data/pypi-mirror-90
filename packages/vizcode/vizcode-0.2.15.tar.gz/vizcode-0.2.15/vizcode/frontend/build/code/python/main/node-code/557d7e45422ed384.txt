@@ -1,0 +1,1 @@
+def check_charity_legal_record():    email = request.form.get('email')    bucket = "newspark-legal"    file_name = "charities/legal_records.json"    legal_records = json.load(s3.get_object(Bucket=bucket, Key=file_name)['Body'])    if email in legal_records:        return jsonify(True)    else:        return jsonify(False)

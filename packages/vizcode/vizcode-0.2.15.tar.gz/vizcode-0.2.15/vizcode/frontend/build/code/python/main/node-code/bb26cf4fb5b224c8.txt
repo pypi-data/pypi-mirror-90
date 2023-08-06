@@ -1,0 +1,1 @@
+        self.newspaper_article_title = newspaper_article_title

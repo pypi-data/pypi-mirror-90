@@ -1,0 +1,1 @@
+        self.publisher_name = publisher_name

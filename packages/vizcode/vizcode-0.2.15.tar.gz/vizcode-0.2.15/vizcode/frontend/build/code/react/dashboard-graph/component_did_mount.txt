@@ -1,0 +1,30 @@
+componentDidMount() {
+
+        axios({
+            method: 'get',
+            url: window.address.concat('get_donations_from_publishers'),
+            headers: { Authorization: "Bearer " + this.state.accessToken }
+        }).then((response) => {
+            if('msg' in response.data){
+              this.setState({validAccessToken: false});
+            }
+            else{
+              let data = response.data;
+              let start = new Date (data.first_date);
+              let end = new Date (data.last_date);
+              let cumulativeDonations = data.cumulative_donations;
+              let cumulativeRevenue = {};
+              cumulativeRevenue.labels = cumulativeDonations.labels
+              cumulativeRevenue.values = cumulativeDonations.values.map(x => window.revenuePortion*x)
+              console.log(cumulativeRevenue)
+              this.setState({
+                  donations: data.donations,
+                  cumulativeDonations: cumulativeDonations,
+                  cumulativeRevenue: cumulativeRevenue,
+                  filterDates: {start: start, end: end},
+              }, () => {
+              });
+            }
+        });
+
+    }

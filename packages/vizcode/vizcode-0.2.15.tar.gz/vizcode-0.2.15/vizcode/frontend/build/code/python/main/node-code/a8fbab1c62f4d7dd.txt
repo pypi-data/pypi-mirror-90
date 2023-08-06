@@ -1,0 +1,1 @@
+        self.publisher_city = publisher_city

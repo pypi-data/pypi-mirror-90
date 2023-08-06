@@ -1,0 +1,1 @@
+class Funding(db.Model):    __tablename__ = 'funding'    fund_id = db.Column(db.String(), db.ForeignKey('funds.fund_name'), primary_key=True)    organization_id = db.Column(db.String(), db.ForeignKey('organizations.email'), primary_key=True)    def __init__(self, fund_id, organization_id):        self.fund_id = fund_id        self.organization_id = organization_id

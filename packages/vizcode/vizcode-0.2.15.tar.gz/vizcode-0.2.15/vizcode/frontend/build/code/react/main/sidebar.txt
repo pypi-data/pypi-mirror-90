@@ -1,0 +1,290 @@
+import React from 'react';
+import clsx from 'clsx';
+import Drawer from '@material-ui/core/Drawer';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import List from '@material-ui/core/List';
+import Divider from '@material-ui/core/Divider';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import ListIcon from '@material-ui/icons/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import DashboardIcon from '@material-ui/icons/Dashboard';
+import { withStyles } from '@material-ui/core/styles';
+import { Route, Switch, Link, withRouter} from 'react-router-dom';
+import Dashboard from "./Dashboard.js";
+import Grid from "@material-ui/core/Grid";
+import { NavLink } from "react-router-dom"
+import InputAdornment from "@material-ui/core/InputAdornment";
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import Button from "@material-ui/core/Button";
+import TutorialVideo from './TutorialVideo.js';
+import TvIcon from '@material-ui/icons/Tv';
+import cookie from "react-cookies";
+import axios from "axios";
+import ContactSupportIcon from '@material-ui/icons/ContactSupport';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import SettingsIcon from '@material-ui/icons/Settings';
+import ContactUs from './ContactUs.js';
+import Login from './Login.js';
+import Settings from './Settings.js';
+import SearchArticle from './SearchArticle.js';
+import ViewArticles from './ViewArticles.js';
+import ViewListIcon from '@material-ui/icons/ViewList';
+import SearchIcon from '@material-ui/icons/Search';
+
+const drawerWidth = 240;
+
+const useStyles = theme => ({
+  root: {
+    display: 'flex',
+  },
+  toolbar: {
+    // paddingRight: 24,
+    backgroundColor: "#FFFFFF"
+  },
+  toolbarIcon: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    padding: '0 8px',
+    ...theme.mixins.toolbar,
+    backgroundColor: "#FFFFFF"
+  },
+  appBar: {
+    zIndex: theme.zIndex.drawer + 1,
+    transition: theme.transitions.create(['width', 'margin'], {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
+  },
+  appBarShift: {
+    marginLeft: drawerWidth,
+    width: `calc(100% - ${drawerWidth}px)`,
+    transition: theme.transitions.create(['width', 'margin'], {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+  },
+  // menuButton: {
+  //   marginRight: 36,
+  // },
+  menuButtonHidden: {
+    display: 'none',
+  },
+  title: {
+    flexGrow: 1,
+  },
+  drawerPaper: {
+    position: 'relative',
+    whiteSpace: 'nowrap',
+    backgroundColor: "#448AFF",
+    color: "#FFFFFF",
+    width: drawerWidth,
+    transition: theme.transitions.create('width', {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.enteringScreen,
+    }),
+  },
+  drawerPaperClose: {
+    overflowX: 'hidden',
+    transition: theme.transitions.create('width', {
+      easing: theme.transitions.easing.sharp,
+      duration: theme.transitions.duration.leavingScreen,
+    }),
+    width: theme.spacing(7),
+    // [theme.breakpoints.up('sm')]: {
+    //   width: theme.spacing(9),
+    // },
+  },
+  appBarSpacer: theme.mixins.toolbar,
+  content: {
+    flexGrow: 1,
+    height: '100vh',
+    overflow: 'auto'
+  },
+  container: {
+    paddingTop: theme.spacing(4),
+    paddingBottom: theme.spacing(4),
+  },
+  paper: {
+    padding: theme.spacing(2),
+    display: 'flex',
+    overflow: 'auto',
+    flexDirection: 'column',
+  },
+  link: {
+    color: '#FFFFFF',
+    fontSize: '16px',
+    textTransform: 'none',
+    fontFamily: 'Lato',
+    paddingLeft: 0,
+  },
+  buttonStyles: {
+    color: 'white',
+    marginLeft: theme.spacing(2),
+    marginRight: theme.spacing(4)
+  },
+  pushDown: {
+    paddingTop: theme.spacing(10),
+  },
+  navLink:
+      {textDecoration: 'none'}
+});
+
+
+class SideBar extends React.Component{
+  constructor(props){
+    super(props);
+    this.switchDrawer = this.switchDrawer.bind(this);
+    // this.updateOpenTutorial = this.updateOpenTutorial.bind(this);
+
+    this.state = {
+      open: true,
+      //openTutorial: false,
+      verified: false,
+      accessToken: cookie.load('access_token'),
+    };
+  }
+
+  switchDrawer(){
+    var currentOpen = this.state.open;
+    this.setState({open: !currentOpen});
+  }
+
+  render(){
+    const {classes} = this.props;
+
+    let sideBarItems = (
+        <div className={classes.pushDown}>
+            {/*<Button onClick={this.updateOpenTutorial} className={classes.link}>*/}
+            {/*  <InputAdornment>*/}
+            {/*    <TvIcon className={classes.buttonStyles}/>*/}
+            {/*  </InputAdornment>*/}
+            {/*  TUTORIAL*/}
+            {/*  <TutorialVideo*/}
+            {/*      open={this.state.openTutorial}*/}
+            {/*      changeHandler={this.updateOpenTutorial}*/}
+            {/*  />*/}
+            {/*</Button>*/}
+            {/*<br/>*/}
+          <NavLink to="/dashboard" className={classes.navLink}
+                   activeStyle={{backgroundColor: '#9DBEF5', display: 'inline-block', width: '100%'}}>
+            {/*<Link to="/home">*/}
+            <Button className={classes.link}>
+              <InputAdornment>
+                <DashboardIcon className={classes.buttonStyles}/>
+              </InputAdornment>
+              DASHBOARD
+            </Button>
+          </NavLink>
+          <br/>
+          <NavLink to="/view_articles" className={classes.navLink}
+                   activeStyle={{backgroundColor: '#9DBEF5', display: 'inline-block', width: '100%'}}>
+            {/*<Link to="/home">*/}
+            <Button className={classes.link}>
+              <InputAdornment>
+                <ViewListIcon className={classes.buttonStyles}/>
+              </InputAdornment>
+              VIEW ARTICLES
+            </Button>
+          </NavLink>
+          <br/>
+          <NavLink to="/search_article" className={classes.navLink}
+                   activeStyle={{backgroundColor: '#9DBEF5', display: 'inline-block', width: '100%'}}>
+            {/*<Link to="/home">*/}
+            <Button className={classes.link}>
+              <InputAdornment>
+                <SearchIcon className={classes.buttonStyles}/>
+              </InputAdornment>
+              SEARCH ARTICLE
+            </Button>
+          </NavLink>
+          <br/>
+          <NavLink to="/settings" className={classes.navLink}
+                   activeStyle={{backgroundColor: '#9DBEF5', display: 'inline-block', width: '100%'}}>
+            <Button className={classes.link} block>
+              <InputAdornment>
+                <SettingsIcon className={classes.buttonStyles}/>
+              </InputAdornment>
+              SETTINGS
+            </Button>
+          </NavLink>
+          <br/>
+          <NavLink to="/contact_us" className={classes.navLink}
+                   activeStyle={{backgroundColor: '#9DBEF5', display: 'inline-block', width: '100%'}}>
+            <Button className={classes.link} block>
+              <InputAdornment>
+                <ContactSupportIcon className={classes.buttonStyles}/>
+              </InputAdornment>
+              CONTACT US
+            </Button>
+          </NavLink>
+          <br/>
+          <NavLink to="/" exact className={classes.navLink}
+                   activeStyle={{backgroundColor: '#9DBEF5', display: 'inline-block', width: '100%'}}>
+            <Button className={classes.link} block>
+              <InputAdornment>
+                <ExitToAppIcon className={classes.buttonStyles}/>
+              </InputAdornment>
+              SIGN OUT
+            </Button>
+          </NavLink>
+        </div>
+    );
+
+    return (
+      <div className={classes.root}>
+        {/* top bar */}
+        <AppBar position="absolute" className={clsx(classes.appBar, this.state.open && classes.appBarShift)}>
+          <Toolbar className={classes.toolbar}>
+            <IconButton
+              edge="start"
+              color="inherit"
+              aria-label="open drawer"
+              onClick={this.switchDrawer}
+              className={clsx(classes.menuButton, this.state.open && classes.menuButtonHidden)}
+            >
+              <MenuIcon style={{color: "#448AFF"}}/>
+            </IconButton>
+            <Grid container justify="center">
+              <img src="https://i.ibb.co/jgXPdb0/logo-nobackground.png" style={{maxWidth: "100%"}}/>
+            </Grid>
+          </Toolbar>
+          {/*{vettingMessage}*/}
+        </AppBar>
+        {/* side bar */}
+        <Drawer
+          variant="permanent"
+          classes={{
+            paper: clsx(classes.drawerPaper, !this.state.open && classes.drawerPaperClose),
+          }}
+          open={this.state.open}
+        >
+          <div className={classes.toolbarIcon}>
+            <IconButton onClick={this.switchDrawer} style={{color: "#448AFF"}}>
+              <ChevronLeftIcon />
+            </IconButton>
+          </div>
+          <Divider />
+          <List>{sideBarItems}</List>
+        </Drawer>
+        <main className={classes.content}>
+          <Switch>
+            <Route exact path="/viewArticles" component={withRouter(ViewArticles)}/>
+            <Route exact path="/dashboard" component={withRouter(Dashboard)}/>
+            <Route exact path="/view_articles" component={withRouter(ViewArticles)}/>
+            <Route exact path="/search_article" component={withRouter(SearchArticle)}/>
+            <Route exact path="/settings" component={withRouter(Settings)}/>
+            <Route exact path="/contact_us" component={withRouter(ContactUs)}/>
+            <Route exact path="/" component={withRouter(Login)}/>
+          </Switch>
+        </main>
+      </div>
+    );
+  }
+}
+
+export default withStyles(useStyles)(SideBar);

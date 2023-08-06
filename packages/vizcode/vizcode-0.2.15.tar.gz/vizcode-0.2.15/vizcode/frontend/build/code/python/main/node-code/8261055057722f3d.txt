@@ -1,0 +1,1 @@
+    def serialize(self):        return {            'username': self.username,            'email': self.email,            'phone_number': self.phone_number,            'admin_access': self.admin_access,        }

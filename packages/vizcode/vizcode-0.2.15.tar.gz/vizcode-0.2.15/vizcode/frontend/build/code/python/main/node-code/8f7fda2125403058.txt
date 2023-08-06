@@ -1,0 +1,1 @@
+    def serialize(self):        return {            'fund_name': self.fund_name,            'fund_topic': self.fund_topic,            'fund_description': self.fund_description,            'fund_picture_link': self.fund_picture_link,        }

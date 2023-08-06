@@ -1,0 +1,1 @@
+    pool = Pool(num_of_processes)

@@ -1,0 +1,1 @@
+def get_owner():    """ Returns the owner's information. """    username = get_jwt_identity()    exists = Owner.query.filter_by(username=username).first()    if exists:        return jsonify(owner=exists.serialize())    else:        return jsonify("Publisher Does Not Exist")

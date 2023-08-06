@@ -1,0 +1,1 @@
+        new_password = ''.join([str(random.choice(string.ascii_letters)) for j in range(8)])

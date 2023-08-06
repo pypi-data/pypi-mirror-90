@@ -1,0 +1,1 @@
+        self.fund_description = fund_description

@@ -1,0 +1,1 @@
+def get_publisher_names():    """ Returns all the publisher names. """    # publisher_names = [str(p) for p in Publisher.query.all()]    publisher_names = [p.publisher_name for p in Publisher.query.all()]    return jsonify(publisher_names=publisher_names)

@@ -1,0 +1,543 @@
+import React from 'react';
+import Avatar from '@material-ui/core/Avatar';
+import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import TextField from '@material-ui/core/TextField';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import Link from '@material-ui/core/Link';
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
+import { withStyles } from '@material-ui/core/styles';
+import $ from 'jquery';
+import cookie from 'react-cookies'
+import axios from "axios";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import Paper from "@material-ui/core/Paper";
+import MenuItem from "@material-ui/core/MenuItem";
+
+//Styling for the Login Component
+const useStyles = theme => ({
+  paper: {
+    marginTop: theme.spacing(18),
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  avatar: {
+    margin: theme.spacing(1)
+  },
+  form: {
+    width: '100%', // Fix IE 11 issue.
+    marginTop: theme.spacing(3),
+  },
+  submit: {
+    margin: theme.spacing(3, 0, 2),
+    backgroundColor: "#448AFF",
+    color: "#FFFFFF"
+  },
+  label_style: {
+    '&.Mui-focused': {
+      color: '#448AFF',
+    },
+  },
+  input_style: {
+    '&.MuiOutlinedInput-root': {
+      // '& fieldset': {
+      //   borderColor: '#448AFF',
+      // },
+      '&.Mui-focused fieldset': {
+        borderColor: '#448AFF',
+      },
+    },
+  },
+  helper_style: {
+    color: '#FF0000',
+  },
+  indicator: {
+    color: '#448AFF',
+  },
+  submitted: {
+    marginTop: theme.spacing(2),
+    color: '#448AFF',
+  }
+});
+
+class Settings extends React.Component{
+
+  constructor(props){
+    super(props);
+    this.updateInfo = this.updateInfo.bind(this);
+    this.editPublisher = this.editPublisher.bind(this);
+    this.isFormValid = this.isFormValid.bind(this);
+    this.handleOnClick = this.handleOnClick.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.editPayment = this.editPayment.bind(this);
+
+    this.state = {
+      accessToken: cookie.load('access_token'),
+      email: "",
+      password: "",
+      phone_number: "",
+      publisher_name: "",
+      publisher_description: "",
+      publisher_street_address: "",
+      publisher_city: "",
+      publisher_state: "",
+      publisher_country: "",
+      publisher_url: "",
+      school: "",
+      username: "",
+      validAccessToken: true,
+      error_email: "",
+      error_password: "",
+      error_phone_number: "",
+      error_publisher_name: "",
+      error_publisher_description: "",
+      error_publisher_street_address: "",
+      error_publisher_city: "",
+      error_publisher_state: "",
+      error_publisher_country: "",
+      error_url: "",
+      error_school: "",
+      length_publisher_description: 0,
+      editPassword: true,
+      tab: 0,
+      admin_access: false,
+      accountHolder: "",
+      bankBranchAddress: "",
+      bankName: "",
+      accountType: "",
+      bankRoutingNumber: "",
+      bankAccountNumber: "",
+      bankAccountNumberConfirmed: "",
+      paymentInfoSent: false,
+    };
+  }
+
+  componentDidMount(){
+
+    axios({
+        method: 'get',
+        url: window.address.concat('get_owner'),
+        headers: { Authorization: "Bearer " + this.state.accessToken }
+    }).then((response) => {
+        let data = response.data.owner;
+        this.setState({
+            email: data.email,
+            phone_number: data.phone_number,
+            username: data.username,
+            admin_access: data.admin_access,
+        }, ()=>{
+          // console.log(data);
+        });
+    });
+  }
+
+  updateInfo(event){
+    this.setState({[event.target.name]: event.target.value});
+
+  }
+
+  editPublisher() {
+
+      let data = {
+          email: this.state.email,
+          phone_number: this.state.phone_number,
+      }
+
+      if (this.state.editPassword) {
+        data.password = this.state.password;
+      }
+      // else {console.log("not inside")}
+
+      $.ajax({
+          url: window.address.concat('edit_owner'),
+          type: 'post',
+          data: data,
+          headers: {Authorization: 'Bearer ' + this.state.accessToken},
+          dataType: 'json',
+          success: function (output) {
+              window.location.reload(false);
+          }.bind(this)
+      });
+
+  }
+
+  editPayment() {
+
+      let data = {
+        accountHolder: this.state.accountHolder,
+        bankBranchAddress: this.state.bankBranchAddress,
+        bankName: this.state.bankName,
+        accountType: this.state.accountType,
+        bankRoutingNumber: this.state.bankRoutingNumber,
+        bankAccountNumber: this.state.bankAccountNumber,
+      }
+
+      $.ajax({
+            url: window.address.concat('edit_payment_info_publisher'),
+            type: 'post',
+            data: data,
+            headers: {Authorization: 'Bearer ' + this.state.accessToken},
+            dataType: 'json',
+            success: function (output) {
+                this.setState({
+                  accountHolder: '',
+                  bankBranchAddress: '',
+                  bankName: '',
+                  accountType: '',
+                  bankRoutingNumber: '',
+                  bankAccountNumber: '',
+                  bankAccountNumberConfirmed: '',
+                  errorAccountNumber: '',
+                  paymentInfoSent: true
+                })
+            }.bind(this)
+      });
+
+  }
+
+  handleOnClick() {
+
+    if (this.state.tab === 0) {
+
+      if (this.isFormValid()) {
+        this.editPublisher()
+      } else {
+        this.setState({editPassword: true});
+      }
+    } else {
+        if (this.state.bankAccountNumber === this.state.bankAccountNumberConfirmed) {
+          this.editPayment()
+        } else {
+          this.setState({errorAccountNumber: 'Account number must match confirmed account number.'})
+        }
+    }
+  }
+
+
+  isFormValid() {
+
+    let isValid = true;
+
+    let helperMessage = "Field Required";
+    let wrongEmail = "Please provide a valid email";
+    let wrongPassword = "Please provide a valid password (8-16 characters)";
+    let wrongPhone = "Please provide a valid US phone number (###-###-####)";
+
+
+    let re_mail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let re_number = /^[0-9][0-9][0-9][/-][0-9][0-9][0-9][/-][0-9][0-9][0-9][0-9]$/;
+
+    if (this.state.email === ''){
+      this.setState({error_email: helperMessage});
+      isValid = false;
+    } else if(!re_mail.test(this.state.email)){
+      this.setState({error_email: wrongEmail});
+      isValid = false;
+    }
+
+    if (this.state.password === ''){
+      this.setState({editPassword: false});
+    } else if (this.state.password.length > 16 || this.state.password.length < 8) {
+      this.setState({error_password: wrongPassword});
+      isValid = false;
+    }
+
+    if (this.state.phone_number === ''){
+      this.setState({error_phone_number: "Field Required"});
+      isValid = false;
+    } else if (!re_number.test(this.state.phone_number)){
+      this.setState({error_phone_number: wrongPhone});
+      isValid = false;
+    }
+
+    return isValid;
+  }
+
+  handleChange(event, value) {
+    this.setState({tab: value});
+  }
+
+  render() {
+    const {classes} = this.props;
+
+    let countries = [{label: 'United States'}];
+    let usStates = ['Alabama','Alaska','American Samoa','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District of Columbia','Federated States of Micronesia','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Marshall Islands','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Northern Mariana Islands','Ohio','Oklahoma','Oregon','Palau','Pennsylvania','Puerto Rico','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virgin Island','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
+    const CHARACTER_LIMIT = 1000;
+
+    let accountTypes = ['Checking', 'Savings'];
+    let settingsPage;
+    if (this.state.tab === 0) {
+      settingsPage = (
+          <div>
+            <p
+                style={{fontSize: '16px', fontFamily: 'Lato', textAlign: 'center'}}>
+                Edit your account information below:
+            </p>
+            <form className={classes.form} noValidate>
+              <Grid container spacing={4} justify="center">
+                <Grid item sm={6} xs={12}>
+                  <TextField
+                    disabled
+                    value = {this.state.username}
+                    autoComplete="username"
+                    name="username"
+                    variant="outlined"
+                    required
+                    fullWidth
+                    id="username"
+                    label="Username"
+                    onChange={this.updateInfo}
+                    autoFocus
+                    InputLabelProps = {{className: classes.label_style}}
+                    InputProps = {{className: classes.input_style}}
+                    FormHelperTextProps={{ className: classes.helper_style }}
+                    helperText= {this.state.error_username}
+                  />
+                </Grid>
+                <Grid item sm={6} xs={12}>
+                  <TextField
+                    value = {this.state.password}
+                    autoComplete="off"
+                    variant="outlined"
+                    fullWidth
+                    type="password"
+                    id="password"
+                    label="Password"
+                    name="password"
+                    required
+                    onChange={this.updateInfo}
+                    InputLabelProps = {{className: classes.label_style}}
+                    InputProps = {{className: classes.input_style}}
+                    FormHelperTextProps={{ className: classes.helper_style }}
+                    helperText= {this.state.error_password}
+                  />
+                </Grid>
+                <Grid item sm={6} xs={12}>
+                  <TextField
+                    value = {this.state.email}
+                    autoComplete="email"
+                    name="email"
+                    variant="outlined"
+                    required
+                    fullWidth
+                    id="email"
+                    label="Email Address"
+                    onChange={this.updateInfo}
+                    autoFocus
+                    InputLabelProps = {{className: classes.label_style}}
+                    InputProps = {{className: classes.input_style}}
+                    FormHelperTextProps={{ className: classes.helper_style }}
+                    helperText= {this.state.error_email}
+                  />
+                </Grid>
+                <Grid item sm={6} xs={12}>
+                  <TextField
+                    value = {this.state.phone_number}
+                    variant="outlined"
+                    required
+                    fullWidth
+                    id="phone_number"
+                    label="Phone Number"
+                    name="phone_number"
+                    autoComplete="phone_number"
+                    onChange={this.updateInfo}
+                    InputLabelProps = {{className: classes.label_style}}
+                    InputProps = {{className: classes.input_style}}
+                    FormHelperTextProps={{ className: classes.helper_style }}
+                    helperText= {this.state.error_phone_number}
+                  />
+                </Grid>
+              </Grid>
+              <Grid container justify="center">
+                <Grid item sm={4}>
+                  <Button
+                    fullWidth
+                    variant="contained"
+                    className={classes.submit}
+                    onClick={() => {this.handleOnClick()}}
+                  >
+                    SUBMIT CHANGES
+                  </Button>
+                </Grid>
+              </Grid>
+            </form>
+          </div>);
+    }
+    else {
+      settingsPage = (
+          <div>
+            <p
+              style={{fontSize: '16px', fontFamily: 'Lato', textAlign: 'center'}}>
+              At the end of each month, we will send you money via a direct deposit.
+              Please enter the necessary information below. <br/>
+              If you have any questions/concerns, please reach out via the Contact Us page.
+            </p>
+            <form className={classes.form} noValidate>
+              <Grid container spacing={4} justify="center">
+                <Grid item sm={6} xs={12}>
+                  <TextField
+                    value = {this.state.accountHolder}
+                    name="accountHolder"
+                    variant="outlined"
+                    required
+                    fullWidth
+                    label="Full Name of Account Holder"
+                    onChange={this.updateInfo}
+                    autoFocus
+                    InputLabelProps = {{className: classes.label_style}}
+                    InputProps = {{className: classes.input_style}}
+                  />
+                </Grid>
+                <Grid item sm={6} xs={12}>
+                  <TextField
+                    value = {this.state.bankBranchAddress}
+                    variant="outlined"
+                    fullWidth
+                    label="Bank Branch Address"
+                    name="bankBranchAddress"
+                    required
+                    onChange={this.updateInfo}
+                    InputLabelProps = {{className: classes.label_style}}
+                    InputProps = {{className: classes.input_style}}
+                  />
+                </Grid>
+                <Grid item sm={6} xs={12}>
+                  <TextField
+                    value = {this.state.bankName}
+                    name="bankName"
+                    variant="outlined"
+                    required
+                    fullWidth
+                    label="Name of the Bank"
+                    onChange={this.updateInfo}
+                    autoFocus
+                    InputLabelProps = {{className: classes.label_style}}
+                    InputProps = {{className: classes.input_style}}
+                  />
+                </Grid>
+                <Grid item sm={6} xs={12}>
+                  <TextField
+                    value = {this.state.accountType}
+                    select
+                    variant="outlined"
+                    required
+                    fullWidth
+                    label="Type of Account"
+                    name="accountType"
+                    onChange={this.updateInfo}
+                    InputLabelProps = {{className: classes.label_style}}
+                    InputProps = {{className: classes.input_style}}
+                  >
+                    {accountTypes.map((option) => (
+                      <MenuItem key={option} value={option}>
+                        {option}
+                      </MenuItem>
+                    ))}
+                  </TextField>
+                </Grid>
+                <Grid item sm={6} xs={12}>
+                  <TextField
+                    value = {this.state.bankRoutingNumber}
+                    variant="outlined"
+                    required
+                    fullWidth
+                    label="Bank Routing (ABA) Number"
+                    name="bankRoutingNumber"
+                    onChange={this.updateInfo}
+                    InputLabelProps = {{className: classes.label_style}}
+                    InputProps = {{className: classes.input_style}}
+                  />
+                </Grid>
+                <Grid item sm={6} xs={12}>
+                  <TextField
+                    value = {this.state.bankAccountNumber}
+                    variant="outlined"
+                    required
+                    fullWidth
+                    label="Bank Account Number"
+                    name="bankAccountNumber"
+                    onChange={this.updateInfo}
+                    InputLabelProps = {{className: classes.label_style}}
+                    InputProps = {{className: classes.input_style}}
+                  />
+                </Grid>
+                <Grid item sm={6} xs={12}>
+                  <TextField
+                    value = {this.state.bankAccountNumberConfirmed}
+                    variant="outlined"
+                    required
+                    fullWidth
+                    label="Confirm Bank Account Number"
+                    name="bankAccountNumberConfirmed"
+                    onChange={this.updateInfo}
+                    InputLabelProps = {{className: classes.label_style}}
+                    InputProps = {{className: classes.input_style}}
+                    FormHelperTextProps={{ className: classes.helper_style }}
+                    helperText= {this.state.errorAccountNumber}
+                  />
+                </Grid>
+              </Grid>
+              <Grid container justify="center">
+                <Grid item>
+                  {this.state.paymentInfoSent && (
+                        <div className={classes.submitted} role="alert">
+                            {"Thank you! We have received your information."}
+                        </div>
+                    )}
+                </Grid>
+              </Grid>
+              <Grid container justify="center">
+                <Grid item sm={4}>
+                  <Button
+                    fullWidth
+                    variant="contained"
+                    className={classes.submit}
+                    onClick={() => {this.handleOnClick()}}
+                  >
+                    SUBMIT CHANGES
+                  </Button>
+                </Grid>
+              </Grid>
+            </form>
+          </div>);
+    }
+
+    return (
+      <Container component="main">
+        <div className={classes.paper}>
+          <Typography component="h1" variant="h5" style={{
+            fontSize: '32px',
+            fontFamily: 'Merriweather'}}>
+            Settings
+          </Typography >
+          <br/>
+          <Paper elevation={2} style={{width: '100%'}}>
+            <Tabs
+              value={this.state.tab}
+              onChange={this.handleChange}
+              indicatorColor="primary"
+              textColor="primary"
+              // className={classes.indicator}
+              centered
+            >
+              <Tab label="General Settings" />
+              <Tab label="Payment Information" disabled={!this.state.admin_access}/>
+            </Tabs>
+          </Paper>
+          <br/>
+          {settingsPage}
+        </div>
+      </Container>
+  );
+  }
+}
+
+export default withStyles(useStyles)(Settings)
