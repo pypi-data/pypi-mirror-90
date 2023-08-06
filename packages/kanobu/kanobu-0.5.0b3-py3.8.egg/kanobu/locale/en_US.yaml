@@ -1,0 +1,6 @@
+lang: English (USA)
+headers: ['#', Result, Player1, Player2]
+results:
+    - Victory
+    - Loss
+    - Draw
