@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bugyocloudclient
+Version: 0.1.1
+Summary: Bugyo Cloud Client
+Home-page: https://github.com/sengokyu/bugyo-cloud-client
+License: MIT
+Author: sengokyu
+Author-email: sengokyu+gh@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: beautifulsoup4 (>=4.9.3,<5.0.0)
+Requires-Dist: requests (>=2.25.0,<3.0.0)
+Project-URL: Repository, https://github.com/sengokyu/bugyo-cloud-client
