@@ -1,0 +1,11 @@
+README.md
+setup.py
+shaner/__init__.py
+shaner/core.py
+shaner/factory.py
+shaner/utils.py
+shaner.egg-info/PKG-INFO
+shaner.egg-info/SOURCES.txt
+shaner.egg-info/dependency_links.txt
+shaner.egg-info/requires.txt
+shaner.egg-info/top_level.txt
