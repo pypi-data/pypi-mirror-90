@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: smart-nine
+Version: 0.0.1
+Summary: smart-nine is a command-line application written in Python that generates an Instagram user's top nine photograph collage. Use responsibly.
+Home-page: https://github.com/ulysseslizarraga/instagram_smart_nine
+Author: Ulysses Lizarraga
+Author-email: ulises.lizarraga@gmail.com
+License: Public domain
+Keywords: instagram,top,nine,smart,photos,collage,year
+Platform: UNKNOWN
+Requires-Dist: instagram-scraper (==1.9.1)
+Requires-Dist: matplotlib (==3.3.3)
+Requires-Dist: numpy (==1.19.4)
+Requires-Dist: opencv-python (==4.4.0.46)
+Requires-Dist: pytz (==2020.5)
+Requires-Dist: scipy (==1.5.4)
+
+UNKNOWN
+
+
