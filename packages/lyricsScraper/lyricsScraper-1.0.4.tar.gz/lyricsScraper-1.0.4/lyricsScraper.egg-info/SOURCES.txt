@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+lyricsScraper/__init__.py
+lyricsScraper/lyricsScraper.py
+lyricsScraper.egg-info/PKG-INFO
+lyricsScraper.egg-info/SOURCES.txt
+lyricsScraper.egg-info/dependency_links.txt
+lyricsScraper.egg-info/requires.txt
+lyricsScraper.egg-info/top_level.txt
