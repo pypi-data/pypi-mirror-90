@@ -1,0 +1,10 @@
+pandas
+matplotlib
+numpy
+scipy
+pandas_profiling
+folium
+seaborn
+scikit-learn
+networkx
+pyvis
