@@ -1,0 +1,9 @@
+django_redshift_backend/__init__.py,sha256=Rvqi7XZBzKQ6EnKuurTYN66-ToyNkInntxi3BdvfrCY,192
+django_redshift_backend/base.py,sha256=loyl21UW4UhL1tZf2gR6EIQ9K-OxWq-Q0ROCJLHgrWQ,24738
+django_redshift_backend/distkey.py,sha256=xpUF8538kfNujpba1DK64SOwLsEfRjqkEytpgMXYqJQ,318
+django_redshift_backend-1.1.0.dist-info/AUTHORS.rst,sha256=58Z2ORNbV0syDMjAl_IXoDMlFMVCwTH709fwQ7SlEpk,212
+django_redshift_backend-1.1.0.dist-info/LICENSE,sha256=ctS6CckbE9DbFas-uZZjcKI2qHvzBmyW5Kud4k4Zw3Y,11359
+django_redshift_backend-1.1.0.dist-info/METADATA,sha256=EsdNkPn6yGNZboS_5RHBh4wJZNmuEcML19Be4hw_HFA,7303
+django_redshift_backend-1.1.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+django_redshift_backend-1.1.0.dist-info/top_level.txt,sha256=tWFqLSFpHr0VRCJhFlmSNvmWeA2M8TnaNNrGRg4RALs,24
+django_redshift_backend-1.1.0.dist-info/RECORD,,
