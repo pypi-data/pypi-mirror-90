@@ -1,0 +1,4 @@
+[console_scripts]
+srslyumi = srslyumi.cli:main
+srslyumi-bamtag = srslyumi.bamtag:main
+
