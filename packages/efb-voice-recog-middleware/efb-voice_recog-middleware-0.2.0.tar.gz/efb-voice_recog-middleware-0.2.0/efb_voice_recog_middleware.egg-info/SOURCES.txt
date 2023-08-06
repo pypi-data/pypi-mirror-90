@@ -1,0 +1,15 @@
+README.md
+setup.py
+efb_voice_recog_middleware/__init__.py
+efb_voice_recog_middleware/__version__.py
+efb_voice_recog_middleware.egg-info/PKG-INFO
+efb_voice_recog_middleware.egg-info/SOURCES.txt
+efb_voice_recog_middleware.egg-info/dependency_links.txt
+efb_voice_recog_middleware.egg-info/entry_points.txt
+efb_voice_recog_middleware.egg-info/requires.txt
+efb_voice_recog_middleware.egg-info/top_level.txt
+efb_voice_recog_middleware/engines/__init__.py
+efb_voice_recog_middleware/engines/azure.py
+efb_voice_recog_middleware/engines/baidu.py
+efb_voice_recog_middleware/engines/iflytek.py
+efb_voice_recog_middleware/engines/tencent.py
