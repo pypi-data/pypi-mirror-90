@@ -1,0 +1,11 @@
+xnatpytools/__init__.py,sha256=wplfcpeZu-NbA0GjmgefsqN4uw3Fy92hf26OkdX7UUs,190
+xnatpytools/utils.py,sha256=n-X5UWnIP1sXUZprYTlcmXPT77qw97-PCQHnAaVfxLY,8863
+xnatpytools/xnatpytools.py,sha256=dJI7Dn7GXjNTtLyksfLOUWF8R1Y_-ieAJ2ri3FRQfnk,182
+xnatpytools/bulksharing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xnatpytools/bulksharing/bulksharing.py,sha256=SGqoW9QneUGBIh2htyIxke2hozXWYCrP74hrjoH8Mrk,1952
+xnatpytools-0.2.0.dist-info/LICENSE,sha256=EqDYGk_0ioo-kfLixhmR8siX0dZWzk3zr1UJ_FiZMGI,1075
+xnatpytools-0.2.0.dist-info/METADATA,sha256=A1wAY9PeD727-y4MAF4Wg331vAjRWNTGAJrX3TgUpL8,1786
+xnatpytools-0.2.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+xnatpytools-0.2.0.dist-info/entry_points.txt,sha256=GzH5F0fz1_mzT0DvybIie89MEWGyS8Q1MsG6zuBkVNE,74
+xnatpytools-0.2.0.dist-info/top_level.txt,sha256=mGnkadivpmLvdUQJ7Rhm4pN1Hc_GVWQzqLHVMA5DLlQ,12
+xnatpytools-0.2.0.dist-info/RECORD,,
