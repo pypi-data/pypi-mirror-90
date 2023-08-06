@@ -1,0 +1,2227 @@
+{
+  "inputs": {
+    "web_modules/common/_commonjsHelpers-8c19dec8.js": {
+      "bytes": 838,
+      "imports": []
+    },
+    "web_modules/common/index-c1342310.js": {
+      "bytes": 8631,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        }
+      ]
+    },
+    "web_modules/react.js": {
+      "bytes": 627,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        }
+      ]
+    },
+    "web_modules/common/index-38db3f57.js": {
+      "bytes": 127488,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        }
+      ]
+    },
+    "web_modules/react-dom.js": {
+      "bytes": 204,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        },
+        {
+          "path": "web_modules/common/index-38db3f57.js"
+        },
+        {
+          "path": "web_modules/common/index-38db3f57.js"
+        }
+      ]
+    },
+    "web_modules/recoil.js": {
+      "bytes": 120954,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        },
+        {
+          "path": "web_modules/common/index-38db3f57.js"
+        }
+      ]
+    },
+    "web_modules/common/index-5be2b993.js": {
+      "bytes": 3136,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        }
+      ]
+    },
+    "web_modules/common/hoist-non-react-statics.cjs-43de917e.js": {
+      "bytes": 6111,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        }
+      ]
+    },
+    "web_modules/common/process-2545f00a.js": {
+      "bytes": 6350,
+      "imports": []
+    },
+    "web_modules/styled-components.js": {
+      "bytes": 38519,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/index-5be2b993.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        },
+        {
+          "path": "web_modules/common/hoist-non-react-statics.cjs-43de917e.js"
+        },
+        {
+          "path": "web_modules/common/process-2545f00a.js"
+        }
+      ]
+    },
+    "web_modules/common/inheritsLoose-b67f434e.js": {
+      "bytes": 223,
+      "imports": []
+    },
+    "web_modules/react-error-boundary.js": {
+      "bytes": 4022,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/inheritsLoose-b67f434e.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        }
+      ]
+    },
+    "web_modules/common/assertThisInitialized-69c07742.js": {
+      "bytes": 991,
+      "imports": []
+    },
+    "web_modules/react-spring.js": {
+      "bytes": 67370,
+      "imports": [
+        {
+          "path": "web_modules/common/assertThisInitialized-69c07742.js"
+        },
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/inheritsLoose-b67f434e.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        }
+      ]
+    },
+    "web_modules/common/index-ce016b4a.js": {
+      "bytes": 2201,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        }
+      ]
+    },
+    "web_modules/common/capitalize-5d7071c0.js": {
+      "bytes": 141999,
+      "imports": [
+        {
+          "path": "web_modules/common/assertThisInitialized-69c07742.js"
+        },
+        {
+          "path": "web_modules/common/index-ce016b4a.js"
+        },
+        {
+          "path": "web_modules/common/inheritsLoose-b67f434e.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        },
+        {
+          "path": "web_modules/common/hoist-non-react-statics.cjs-43de917e.js"
+        }
+      ]
+    },
+    "web_modules/common/createSvgIcon-05f92787.js": {
+      "bytes": 3715,
+      "imports": [
+        {
+          "path": "web_modules/common/capitalize-5d7071c0.js"
+        },
+        {
+          "path": "web_modules/common/assertThisInitialized-69c07742.js"
+        },
+        {
+          "path": "web_modules/common/index-ce016b4a.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        }
+      ]
+    },
+    "web_modules/@material-ui/icons.js": {
+      "bytes": 6855,
+      "imports": [
+        {
+          "path": "web_modules/common/capitalize-5d7071c0.js"
+        },
+        {
+          "path": "web_modules/common/assertThisInitialized-69c07742.js"
+        },
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/index-ce016b4a.js"
+        },
+        {
+          "path": "web_modules/common/inheritsLoose-b67f434e.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        },
+        {
+          "path": "web_modules/common/hoist-non-react-statics.cjs-43de917e.js"
+        },
+        {
+          "path": "web_modules/common/createSvgIcon-05f92787.js"
+        }
+      ]
+    },
+    "_dist_/components/NotificationHub/NotificationHub.js": {
+      "bytes": 4692,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/react-spring.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/@material-ui/icons.js"
+        }
+      ]
+    },
+    "_dist_/components/NotificationHub/index.js": {
+      "bytes": 86,
+      "imports": [
+        {
+          "path": "_dist_/components/NotificationHub/NotificationHub.js"
+        }
+      ]
+    },
+    "web_modules/common/CircularProgress-83972689.js": {
+      "bytes": 5852,
+      "imports": [
+        {
+          "path": "web_modules/common/capitalize-5d7071c0.js"
+        },
+        {
+          "path": "web_modules/common/assertThisInitialized-69c07742.js"
+        },
+        {
+          "path": "web_modules/common/index-ce016b4a.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        }
+      ]
+    },
+    "web_modules/common/global-5c50bad9.js": {
+      "bytes": 171,
+      "imports": []
+    },
+    "web_modules/@material-ui/core.js": {
+      "bytes": 222325,
+      "imports": [
+        {
+          "path": "web_modules/common/capitalize-5d7071c0.js"
+        },
+        {
+          "path": "web_modules/common/assertThisInitialized-69c07742.js"
+        },
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/index-ce016b4a.js"
+        },
+        {
+          "path": "web_modules/common/index-5be2b993.js"
+        },
+        {
+          "path": "web_modules/common/inheritsLoose-b67f434e.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        },
+        {
+          "path": "web_modules/common/hoist-non-react-statics.cjs-43de917e.js"
+        },
+        {
+          "path": "web_modules/common/createSvgIcon-05f92787.js"
+        },
+        {
+          "path": "web_modules/common/createSvgIcon-05f92787.js"
+        },
+        {
+          "path": "web_modules/common/index-38db3f57.js"
+        },
+        {
+          "path": "web_modules/common/CircularProgress-83972689.js"
+        },
+        {
+          "path": "web_modules/common/global-5c50bad9.js"
+        }
+      ]
+    },
+    "web_modules/react-input-autosize.js": {
+      "bytes": 10394,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/index-ce016b4a.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        }
+      ]
+    },
+    "web_modules/common/interpreter-f74e533c.js": {
+      "bytes": 79749,
+      "imports": [
+        {
+          "path": "web_modules/common/global-5c50bad9.js"
+        }
+      ]
+    },
+    "web_modules/xstate.js": {
+      "bytes": 50443,
+      "imports": [
+        {
+          "path": "web_modules/common/global-5c50bad9.js"
+        },
+        {
+          "path": "web_modules/common/interpreter-f74e533c.js"
+        },
+        {
+          "path": "web_modules/common/interpreter-f74e533c.js"
+        }
+      ]
+    },
+    "web_modules/@xstate/react.js": {
+      "bytes": 12030,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        },
+        {
+          "path": "web_modules/common/global-5c50bad9.js"
+        },
+        {
+          "path": "web_modules/common/interpreter-f74e533c.js"
+        }
+      ]
+    },
+    "web_modules/uuid-v4.js": {
+      "bytes": 751,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        }
+      ]
+    },
+    "_dist_/components/ViewBar/ViewStage/BestMatch.js": {
+      "bytes": 286,
+      "imports": [
+        {
+          "path": "web_modules/styled-components.js"
+        }
+      ]
+    },
+    "web_modules/resize-observer-polyfill.js": {
+      "bytes": 33714,
+      "imports": [
+        {
+          "path": "web_modules/common/global-5c50bad9.js"
+        }
+      ]
+    },
+    "web_modules/react-ga.js": {
+      "bytes": 32306,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/index-ce016b4a.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        }
+      ]
+    },
+    "web_modules/html2canvas.js": {
+      "bytes": 355454,
+      "imports": []
+    },
+    "_dist_/recoil/atoms.js": {
+      "bytes": 3185,
+      "imports": [
+        {
+          "path": "web_modules/recoil.js"
+        }
+      ]
+    },
+    "__snowpack__/env.js": {
+      "bytes": 73,
+      "imports": []
+    },
+    "web_modules/reconnecting-websocket.js": {
+      "bytes": 21962,
+      "imports": []
+    },
+    "web_modules/lodash.js": {
+      "bytes": 542262,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        }
+      ]
+    },
+    "web_modules/randomcolor.js": {
+      "bytes": 12213,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        }
+      ]
+    },
+    "_dist_/utils/colors.js": {
+      "bytes": 832,
+      "imports": [
+        {
+          "path": "web_modules/lodash.js"
+        },
+        {
+          "path": "web_modules/randomcolor.js"
+        }
+      ]
+    },
+    "_dist_/utils/generic.js": {
+      "bytes": 210,
+      "imports": []
+    },
+    "_dist_/utils/labels.js": {
+      "bytes": 8483,
+      "imports": []
+    },
+    "_dist_/utils/socket.js": {
+      "bytes": 400,
+      "imports": []
+    },
+    "_dist_/utils/view.js": {
+      "bytes": 446,
+      "imports": []
+    },
+    "_dist_/recoil/selectors.js": {
+      "bytes": 27611,
+      "imports": [
+        {
+          "path": "__snowpack__/env.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/reconnecting-websocket.js"
+        },
+        {
+          "path": "web_modules/uuid-v4.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "_dist_/utils/colors.js"
+        },
+        {
+          "path": "_dist_/utils/generic.js"
+        },
+        {
+          "path": "_dist_/utils/labels.js"
+        },
+        {
+          "path": "_dist_/utils/socket.js"
+        },
+        {
+          "path": "_dist_/utils/view.js"
+        }
+      ]
+    },
+    "_dist_/constants/ga.json.proxy.js": {
+      "bytes": 173,
+      "imports": []
+    },
+    "_dist_/utils/hooks.js": {
+      "bytes": 9219,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/resize-observer-polyfill.js"
+        },
+        {
+          "path": "web_modules/react-ga.js"
+        },
+        {
+          "path": "web_modules/html2canvas.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        },
+        {
+          "path": "_dist_/utils/socket.js"
+        },
+        {
+          "path": "_dist_/constants/ga.json.proxy.js"
+        }
+      ]
+    },
+    "_dist_/components/ViewBar/ViewStage/ErrorMessage.js": {
+      "bytes": 2558,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/react-spring.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/@xstate/react.js"
+        },
+        {
+          "path": "web_modules/@material-ui/icons.js"
+        },
+        {
+          "path": "_dist_/utils/hooks.js"
+        }
+      ]
+    },
+    "_dist_/components/ViewBar/ViewStage/utils.js": {
+      "bytes": 541,
+      "imports": []
+    },
+    "_dist_/components/ExternalLink.js": {
+      "bytes": 643,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "_dist_/utils/generic.js"
+        }
+      ]
+    },
+    "_dist_/icons.js": {
+      "bytes": 723,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/@material-ui/core.js"
+        }
+      ]
+    },
+    "_dist_/components/ViewBar/ViewStage/SearchResults.js": {
+      "bytes": 3093,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/react-spring.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "_dist_/utils/hooks.js"
+        }
+      ]
+    },
+    "_dist_/components/Header.js": {
+      "bytes": 18742,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/@material-ui/core.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/react-input-autosize.js"
+        },
+        {
+          "path": "web_modules/xstate.js"
+        },
+        {
+          "path": "web_modules/@xstate/react.js"
+        },
+        {
+          "path": "web_modules/uuid-v4.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/BestMatch.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/ErrorMessage.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/utils.js"
+        },
+        {
+          "path": "_dist_/utils/socket.js"
+        },
+        {
+          "path": "web_modules/react-spring.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/@material-ui/icons.js"
+        },
+        {
+          "path": "_dist_/components/ExternalLink.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        },
+        {
+          "path": "web_modules/@material-ui/icons.js"
+        },
+        {
+          "path": "_dist_/icons.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/SearchResults.js"
+        }
+      ]
+    },
+    "_dist_/components/utils.js": {
+      "bytes": 1843,
+      "imports": [
+        {
+          "path": "web_modules/styled-components.js"
+        }
+      ]
+    },
+    "_dist_/components/CellHeader.js": {
+      "bytes": 784,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "_dist_/components/utils.js"
+        }
+      ]
+    },
+    "_dist_/utils/context.js": {
+      "bytes": 108,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        }
+      ]
+    },
+    "web_modules/react-use-measure.js": {
+      "bytes": 7166,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        }
+      ]
+    },
+    "_dist_/components/RangeSlider.js": {
+      "bytes": 5132,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/@material-ui/core.js"
+        },
+        {
+          "path": "web_modules/@material-ui/core.js"
+        }
+      ]
+    },
+    "_dist_/utils/selection.js": {
+      "bytes": 1775,
+      "imports": [
+        {
+          "path": "web_modules/recoil.js"
+        }
+      ]
+    },
+    "_dist_/components/Filter.js": {
+      "bytes": 11159,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/xstate.js"
+        },
+        {
+          "path": "web_modules/@xstate/react.js"
+        },
+        {
+          "path": "web_modules/uuid-v4.js"
+        },
+        {
+          "path": "web_modules/react-spring.js"
+        },
+        {
+          "path": "web_modules/react-use-measure.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        },
+        {
+          "path": "_dist_/utils/context.js"
+        },
+        {
+          "path": "_dist_/utils/hooks.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/SearchResults.js"
+        },
+        {
+          "path": "_dist_/components/RangeSlider.js"
+        },
+        {
+          "path": "_dist_/utils/labels.js"
+        },
+        {
+          "path": "_dist_/utils/selection.js"
+        }
+      ]
+    },
+    "_dist_/components/NumericFieldFilter.js": {
+      "bytes": 1845,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        },
+        {
+          "path": "_dist_/components/RangeSlider.js"
+        },
+        {
+          "path": "web_modules/react-spring.js"
+        },
+        {
+          "path": "web_modules/react-use-measure.js"
+        }
+      ]
+    },
+    "_dist_/components/CheckboxGrid.js": {
+      "bytes": 6561,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/@material-ui/core.js"
+        },
+        {
+          "path": "web_modules/@material-ui/icons.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/react-spring.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        },
+        {
+          "path": "_dist_/utils/context.js"
+        },
+        {
+          "path": "_dist_/utils/labels.js"
+        },
+        {
+          "path": "_dist_/components/Filter.js"
+        },
+        {
+          "path": "_dist_/components/NumericFieldFilter.js"
+        }
+      ]
+    },
+    "_dist_/components/DropdownHandle.js": {
+      "bytes": 976,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/@material-ui/icons.js"
+        },
+        {
+          "path": "_dist_/components/CellHeader.js"
+        }
+      ]
+    },
+    "_dist_/components/DropdownCell.js": {
+      "bytes": 1334,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "_dist_/components/utils.js"
+        },
+        {
+          "path": "_dist_/components/DropdownHandle.js"
+        }
+      ]
+    },
+    "_dist_/components/Tags/Tag.js": {
+      "bytes": 1298,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        }
+      ]
+    },
+    "_dist_/components/Tags/SelectionTag.js": {
+      "bytes": 713,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "_dist_/components/Tags/Tag.js"
+        }
+      ]
+    },
+    "_dist_/components/FieldsSidebar.js": {
+      "bytes": 7427,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/react-spring.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/@material-ui/icons.js"
+        },
+        {
+          "path": "_dist_/components/CellHeader.js"
+        },
+        {
+          "path": "_dist_/components/CheckboxGrid.js"
+        },
+        {
+          "path": "_dist_/components/DropdownCell.js"
+        },
+        {
+          "path": "_dist_/components/Tags/SelectionTag.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        }
+      ]
+    },
+    "_dist_/components/Menu.js": {
+      "bytes": 1440,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/@material-ui/core.js"
+        }
+      ]
+    },
+    "_dist_/components/Tags/DropdownTag.js": {
+      "bytes": 2182,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/@material-ui/core.js"
+        },
+        {
+          "path": "web_modules/@material-ui/icons.js"
+        },
+        {
+          "path": "_dist_/components/Menu.js"
+        },
+        {
+          "path": "_dist_/components/Tags/SelectionTag.js"
+        }
+      ]
+    },
+    "_dist_/components/SelectionMenu.js": {
+      "bytes": 1898,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        },
+        {
+          "path": "_dist_/utils/socket.js"
+        },
+        {
+          "path": "_dist_/components/Tags/DropdownTag.js"
+        }
+      ]
+    },
+    "_dist_/components/ImageContainerHeader.js": {
+      "bytes": 1862,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "_dist_/components/DropdownHandle.js"
+        },
+        {
+          "path": "_dist_/components/SelectionMenu.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        }
+      ]
+    },
+    "web_modules/react-infinite-scroller.js": {
+      "bytes": 11094,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/index-ce016b4a.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        }
+      ]
+    },
+    "_dist_/components/Loading.js": {
+      "bytes": 1474,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/react-spring.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        }
+      ]
+    },
+    "web_modules/player51.js": {
+      "bytes": 315487,
+      "imports": [
+        {
+          "path": "web_modules/common/global-5c50bad9.js"
+        }
+      ]
+    },
+    "web_modules/mime-types.js": {
+      "bytes": 178362,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        }
+      ]
+    },
+    "web_modules/react-uuid.js": {
+      "bytes": 654,
+      "imports": []
+    },
+    "web_modules/@material-ui/core/CircularProgress.js": {
+      "bytes": 533,
+      "imports": [
+        {
+          "path": "web_modules/common/capitalize-5d7071c0.js"
+        },
+        {
+          "path": "web_modules/common/assertThisInitialized-69c07742.js"
+        },
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/index-ce016b4a.js"
+        },
+        {
+          "path": "web_modules/common/inheritsLoose-b67f434e.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        },
+        {
+          "path": "web_modules/common/hoist-non-react-statics.cjs-43de917e.js"
+        },
+        {
+          "path": "web_modules/common/CircularProgress-83972689.js"
+        },
+        {
+          "path": "web_modules/common/CircularProgress-83972689.js"
+        }
+      ]
+    },
+    "_dist_/components/Player51.js": {
+      "bytes": 5344,
+      "imports": [
+        {
+          "path": "web_modules/mime-types.js"
+        },
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/react-uuid.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/@material-ui/core/CircularProgress.js"
+        },
+        {
+          "path": "web_modules/@material-ui/icons.js"
+        },
+        {
+          "path": "_dist_/components/ExternalLink.js"
+        },
+        {
+          "path": "web_modules/player51.js"
+        },
+        {
+          "path": "_dist_/utils/hooks.js"
+        },
+        {
+          "path": "_dist_/utils/labels.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        }
+      ]
+    },
+    "_dist_/components/Sample.js": {
+      "bytes": 6925,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/react-spring.js"
+        },
+        {
+          "path": "web_modules/player51.js"
+        },
+        {
+          "path": "_dist_/components/Player51.js"
+        },
+        {
+          "path": "_dist_/components/Tags/Tag.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        },
+        {
+          "path": "_dist_/utils/labels.js"
+        },
+        {
+          "path": "_dist_/utils/socket.js"
+        },
+        {
+          "path": "_dist_/utils/hooks.js"
+        }
+      ]
+    },
+    "_dist_/utils/tile.js": {
+      "bytes": 3017,
+      "imports": []
+    },
+    "_dist_/components/Samples.hooks.js": {
+      "bytes": 1842,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "_dist_/utils/hooks.js"
+        },
+        {
+          "path": "_dist_/utils/tile.js"
+        },
+        {
+          "path": "_dist_/utils/socket.js"
+        },
+        {
+          "path": "_dist_/utils/view.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        }
+      ]
+    },
+    "_dist_/components/Samples.js": {
+      "bytes": 2652,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/react-infinite-scroller.js"
+        },
+        {
+          "path": "web_modules/react-use-measure.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "_dist_/components/Loading.js"
+        },
+        {
+          "path": "_dist_/components/Sample.js"
+        },
+        {
+          "path": "_dist_/components/Samples.hooks.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "_dist_/components/utils.js"
+        }
+      ]
+    },
+    "web_modules/react-hotkeys.js": {
+      "bytes": 79539,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/index-ce016b4a.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        }
+      ]
+    },
+    "_dist_/components/ViewBar/ViewStage/viewStageParameterMachine.js": {
+      "bytes": 9724,
+      "imports": [
+        {
+          "path": "web_modules/uuid-v4.js"
+        },
+        {
+          "path": "web_modules/xstate.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/utils.js"
+        }
+      ]
+    },
+    "_dist_/components/ViewBar/ViewStage/ViewStageParameter.js": {
+      "bytes": 11485,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/react-spring.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/@xstate/react.js"
+        },
+        {
+          "path": "web_modules/react-input-autosize.js"
+        },
+        {
+          "path": "web_modules/@material-ui/icons.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/BestMatch.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/viewStageParameterMachine.js"
+        },
+        {
+          "path": "_dist_/utils/hooks.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/ErrorMessage.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/SearchResults.js"
+        }
+      ]
+    },
+    "_dist_/components/ViewBar/ViewStage/ViewStage.js": {
+      "bytes": 9550,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/react-spring.js"
+        },
+        {
+          "path": "web_modules/@xstate/react.js"
+        },
+        {
+          "path": "web_modules/react-input-autosize.js"
+        },
+        {
+          "path": "web_modules/@material-ui/icons.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/BestMatch.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/ErrorMessage.js"
+        },
+        {
+          "path": "_dist_/components/ExternalLink.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/SearchResults.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/ViewStageParameter.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/utils.js"
+        }
+      ]
+    },
+    "_dist_/components/ViewBar/ViewStage/viewStageMachine.js": {
+      "bytes": 12387,
+      "imports": [
+        {
+          "path": "web_modules/xstate.js"
+        },
+        {
+          "path": "web_modules/uuid-v4.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/viewStageParameterMachine.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/utils.js"
+        }
+      ]
+    },
+    "_dist_/components/ViewBar/viewBarMachine.js": {
+      "bytes": 12395,
+      "imports": [
+        {
+          "path": "web_modules/xstate.js"
+        },
+        {
+          "path": "web_modules/uuid-v4.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/viewStageMachine.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/viewStageParameterMachine.js"
+        },
+        {
+          "path": "_dist_/utils/view.js"
+        }
+      ]
+    },
+    "_dist_/components/ViewBar/ViewBar.js": {
+      "bytes": 4392,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/@xstate/react.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/react-hotkeys.js"
+        },
+        {
+          "path": "web_modules/@material-ui/icons.js"
+        },
+        {
+          "path": "_dist_/utils/hooks.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        },
+        {
+          "path": "_dist_/components/ExternalLink.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewStage/ViewStage.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/viewBarMachine.js"
+        }
+      ]
+    },
+    "_dist_/containers/SamplesContainer.js": {
+      "bytes": 4475,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "_dist_/components/FieldsSidebar.js"
+        },
+        {
+          "path": "_dist_/components/ImageContainerHeader.js"
+        },
+        {
+          "path": "_dist_/components/Samples.js"
+        },
+        {
+          "path": "_dist_/components/ViewBar/ViewBar.js"
+        },
+        {
+          "path": "_dist_/components/utils.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        }
+      ]
+    },
+    "web_modules/recharts.js": {
+      "bytes": 854741,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/index-ce016b4a.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        },
+        {
+          "path": "web_modules/common/index-38db3f57.js"
+        },
+        {
+          "path": "web_modules/common/process-2545f00a.js"
+        }
+      ]
+    },
+    "_dist_/components/Distributions.js": {
+      "bytes": 4202,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/recharts.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/react-use-measure.js"
+        },
+        {
+          "path": "web_modules/lodash.js"
+        },
+        {
+          "path": "_dist_/components/utils.js"
+        },
+        {
+          "path": "_dist_/components/Loading.js"
+        },
+        {
+          "path": "_dist_/utils/generic.js"
+        },
+        {
+          "path": "_dist_/utils/hooks.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        }
+      ]
+    },
+    "web_modules/re-resizable.js": {
+      "bytes": 38071,
+      "imports": [
+        {
+          "path": "web_modules/common/_commonjsHelpers-8c19dec8.js"
+        },
+        {
+          "path": "web_modules/common/index-c1342310.js"
+        }
+      ]
+    },
+    "_dist_/components/HorizontalNav.js": {
+      "bytes": 4931,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/react-spring.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/@material-ui/icons.js"
+        },
+        {
+          "path": "_dist_/components/Distributions.js"
+        },
+        {
+          "path": "_dist_/utils/hooks.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "web_modules/re-resizable.js"
+        }
+      ]
+    },
+    "web_modules/copy-to-clipboard.js": {
+      "bytes": 4035,
+      "imports": []
+    },
+    "_dist_/components/JSONView.js": {
+      "bytes": 1932,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/copy-to-clipboard.js"
+        },
+        {
+          "path": "web_modules/@material-ui/core.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "_dist_/components/utils.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        }
+      ]
+    },
+    "_dist_/components/SelectObjectsMenu.js": {
+      "bytes": 5233,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        },
+        {
+          "path": "_dist_/utils/hooks.js"
+        },
+        {
+          "path": "_dist_/utils/labels.js"
+        },
+        {
+          "path": "_dist_/utils/selection.js"
+        },
+        {
+          "path": "_dist_/components/Menu.js"
+        },
+        {
+          "path": "_dist_/components/Tags/DropdownTag.js"
+        }
+      ]
+    },
+    "_dist_/components/SampleModal.js": {
+      "bytes": 15958,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/@material-ui/icons.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "_dist_/components/FieldsSidebar.js"
+        },
+        {
+          "path": "_dist_/components/JSONView.js"
+        },
+        {
+          "path": "_dist_/components/Player51.js"
+        },
+        {
+          "path": "_dist_/components/SelectObjectsMenu.js"
+        },
+        {
+          "path": "_dist_/components/utils.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "_dist_/utils/context.js"
+        },
+        {
+          "path": "_dist_/utils/hooks.js"
+        },
+        {
+          "path": "_dist_/utils/labels.js"
+        },
+        {
+          "path": "_dist_/utils/selection.js"
+        }
+      ]
+    },
+    "_dist_/containers/Dataset.js": {
+      "bytes": 5901,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "_dist_/containers/SamplesContainer.js"
+        },
+        {
+          "path": "_dist_/components/HorizontalNav.js"
+        },
+        {
+          "path": "_dist_/components/SampleModal.js"
+        },
+        {
+          "path": "_dist_/components/utils.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        },
+        {
+          "path": "_dist_/utils/labels.js"
+        },
+        {
+          "path": "_dist_/utils/hooks.js"
+        },
+        {
+          "path": "_dist_/components/Loading.js"
+        }
+      ]
+    },
+    "_dist_/containers/Error.js": {
+      "bytes": 1803,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        }
+      ]
+    },
+    "_dist_/containers/Setup.js": {
+      "bytes": 5628,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "web_modules/react-spring.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        }
+      ]
+    },
+    "web_modules/player51/src/css/player51.css": {
+      "bytes": 7966,
+      "imports": []
+    },
+    "_dist_/app.global.css": {
+      "bytes": 2439,
+      "imports": []
+    },
+    "_dist_/containers/App.js": {
+      "bytes": 2957,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/react-error-boundary.js"
+        },
+        {
+          "path": "_dist_/components/NotificationHub/index.js"
+        },
+        {
+          "path": "_dist_/components/Header.js"
+        },
+        {
+          "path": "_dist_/containers/Dataset.js"
+        },
+        {
+          "path": "_dist_/utils/hooks.js"
+        },
+        {
+          "path": "_dist_/recoil/atoms.js"
+        },
+        {
+          "path": "_dist_/recoil/selectors.js"
+        },
+        {
+          "path": "_dist_/utils/selection.js"
+        },
+        {
+          "path": "_dist_/containers/Error.js"
+        },
+        {
+          "path": "_dist_/containers/Setup.js"
+        },
+        {
+          "path": "web_modules/player51/src/css/player51.css"
+        },
+        {
+          "path": "_dist_/app.global.css"
+        }
+      ]
+    },
+    "_dist_/shared/global.js": {
+      "bytes": 726,
+      "imports": [
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "_dist_/components/utils.js"
+        }
+      ]
+    },
+    "_dist_/shared/colors.js": {
+      "bytes": 2339,
+      "imports": []
+    },
+    "_dist_/containers/Root.js": {
+      "bytes": 593,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/recoil.js"
+        },
+        {
+          "path": "web_modules/styled-components.js"
+        },
+        {
+          "path": "_dist_/containers/App.js"
+        },
+        {
+          "path": "_dist_/shared/global.js"
+        },
+        {
+          "path": "_dist_/shared/colors.js"
+        }
+      ]
+    },
+    "_dist_/index.js": {
+      "bytes": 357,
+      "imports": [
+        {
+          "path": "web_modules/react.js"
+        },
+        {
+          "path": "web_modules/react-dom.js"
+        },
+        {
+          "path": "_dist_/containers/Root.js"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "../../../app/node_modules/.cache/snowpack/~~bundle~~/_dist_/index.js": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "web_modules/react-use-measure.js": {
+          "bytesInOutput": 2935
+        },
+        "web_modules/common/_commonjsHelpers-8c19dec8.js": {
+          "bytesInOutput": 480
+        },
+        "web_modules/common/index-c1342310.js": {
+          "bytesInOutput": 7041
+        },
+        "web_modules/react.js": {
+          "bytesInOutput": 152
+        },
+        "web_modules/common/index-38db3f57.js": {
+          "bytesInOutput": 124636
+        },
+        "web_modules/react-dom.js": {
+          "bytesInOutput": 0
+        },
+        "web_modules/recoil.js": {
+          "bytesInOutput": 36897
+        },
+        "web_modules/common/index-5be2b993.js": {
+          "bytesInOutput": 2268
+        },
+        "web_modules/common/hoist-non-react-statics.cjs-43de917e.js": {
+          "bytesInOutput": 3433
+        },
+        "web_modules/common/process-2545f00a.js": {
+          "bytesInOutput": 2252
+        },
+        "web_modules/styled-components.js": {
+          "bytesInOutput": 30293
+        },
+        "web_modules/common/inheritsLoose-b67f434e.js": {
+          "bytesInOutput": 96
+        },
+        "web_modules/react-error-boundary.js": {
+          "bytesInOutput": 1482
+        },
+        "web_modules/common/assertThisInitialized-69c07742.js": {
+          "bytesInOutput": 480
+        },
+        "web_modules/react-spring.js": {
+          "bytesInOutput": 28031
+        },
+        "web_modules/common/index-ce016b4a.js": {
+          "bytesInOutput": 713
+        },
+        "web_modules/common/capitalize-5d7071c0.js": {
+          "bytesInOutput": 54412
+        },
+        "web_modules/common/createSvgIcon-05f92787.js": {
+          "bytesInOutput": 1436
+        },
+        "web_modules/@material-ui/icons.js": {
+          "bytesInOutput": 4783
+        },
+        "_dist_/components/NotificationHub/NotificationHub.js": {
+          "bytesInOutput": 2942
+        },
+        "_dist_/components/NotificationHub/index.js": {
+          "bytesInOutput": 6
+        },
+        "web_modules/@material-ui/core.js": {
+          "bytesInOutput": 72031
+        },
+        "web_modules/common/CircularProgress-83972689.js": {
+          "bytesInOutput": 2254
+        },
+        "web_modules/common/global-5c50bad9.js": {
+          "bytesInOutput": 108
+        },
+        "web_modules/react-input-autosize.js": {
+          "bytesInOutput": 5303
+        },
+        "web_modules/common/interpreter-f74e533c.js": {
+          "bytesInOutput": 29678
+        },
+        "web_modules/xstate.js": {
+          "bytesInOutput": 20182
+        },
+        "web_modules/@xstate/react.js": {
+          "bytesInOutput": 4805
+        },
+        "web_modules/uuid-v4.js": {
+          "bytesInOutput": 341
+        },
+        "_dist_/components/ViewBar/ViewStage/BestMatch.js": {
+          "bytesInOutput": 184
+        },
+        "web_modules/resize-observer-polyfill.js": {
+          "bytesInOutput": 7951
+        },
+        "web_modules/react-ga.js": {
+          "bytesInOutput": 15018
+        },
+        "web_modules/html2canvas.js": {
+          "bytesInOutput": 168928
+        },
+        "_dist_/recoil/atoms.js": {
+          "bytesInOutput": 1587
+        },
+        "__snowpack__/env.js": {
+          "bytesInOutput": 52
+        },
+        "web_modules/reconnecting-websocket.js": {
+          "bytesInOutput": 9285
+        },
+        "web_modules/lodash.js": {
+          "bytesInOutput": 74128
+        },
+        "web_modules/randomcolor.js": {
+          "bytesInOutput": 4754
+        },
+        "_dist_/utils/colors.js": {
+          "bytesInOutput": 355
+        },
+        "_dist_/utils/generic.js": {
+          "bytesInOutput": 122
+        },
+        "_dist_/utils/labels.js": {
+          "bytesInOutput": 3898
+        },
+        "_dist_/utils/socket.js": {
+          "bytesInOutput": 175
+        },
+        "_dist_/utils/view.js": {
+          "bytesInOutput": 191
+        },
+        "_dist_/recoil/selectors.js": {
+          "bytesInOutput": 12154
+        },
+        "_dist_/constants/ga.json.proxy.js": {
+          "bytesInOutput": 137
+        },
+        "_dist_/utils/hooks.js": {
+          "bytesInOutput": 3596
+        },
+        "_dist_/components/ViewBar/ViewStage/ErrorMessage.js": {
+          "bytesInOutput": 1231
+        },
+        "_dist_/components/ViewBar/ViewStage/utils.js": {
+          "bytesInOutput": 267
+        },
+        "_dist_/components/ExternalLink.js": {
+          "bytesInOutput": 247
+        },
+        "_dist_/icons.js": {
+          "bytesInOutput": 528
+        },
+        "_dist_/components/ViewBar/ViewStage/SearchResults.js": {
+          "bytesInOutput": 1770
+        },
+        "_dist_/components/Header.js": {
+          "bytesInOutput": 9633
+        },
+        "_dist_/components/utils.js": {
+          "bytesInOutput": 1542
+        },
+        "_dist_/components/CellHeader.js": {
+          "bytesInOutput": 384
+        },
+        "_dist_/utils/context.js": {
+          "bytesInOutput": 11
+        },
+        "_dist_/components/Filter.js": {
+          "bytesInOutput": 5299
+        },
+        "_dist_/components/RangeSlider.js": {
+          "bytesInOutput": 2912
+        },
+        "_dist_/utils/selection.js": {
+          "bytesInOutput": 639
+        },
+        "_dist_/components/NumericFieldFilter.js": {
+          "bytesInOutput": 402
+        },
+        "_dist_/components/CheckboxGrid.js": {
+          "bytesInOutput": 3512
+        },
+        "_dist_/components/DropdownHandle.js": {
+          "bytesInOutput": 350
+        },
+        "_dist_/components/DropdownCell.js": {
+          "bytesInOutput": 582
+        },
+        "_dist_/components/Tags/Tag.js": {
+          "bytesInOutput": 947
+        },
+        "_dist_/components/Tags/SelectionTag.js": {
+          "bytesInOutput": 393
+        },
+        "_dist_/components/FieldsSidebar.js": {
+          "bytesInOutput": 3623
+        },
+        "_dist_/components/Menu.js": {
+          "bytesInOutput": 872
+        },
+        "_dist_/components/Tags/DropdownTag.js": {
+          "bytesInOutput": 1025
+        },
+        "_dist_/components/SelectionMenu.js": {
+          "bytesInOutput": 678
+        },
+        "_dist_/components/ImageContainerHeader.js": {
+          "bytesInOutput": 869
+        },
+        "web_modules/react-infinite-scroller.js": {
+          "bytesInOutput": 5793
+        },
+        "_dist_/components/Samples.js": {
+          "bytesInOutput": 1154
+        },
+        "_dist_/components/Loading.js": {
+          "bytesInOutput": 821
+        },
+        "web_modules/player51.js": {
+          "bytesInOutput": 117845
+        },
+        "web_modules/mime-types.js": {
+          "bytesInOutput": 134874
+        },
+        "web_modules/react-uuid.js": {
+          "bytesInOutput": 234
+        },
+        "web_modules/@material-ui/core/CircularProgress.js": {
+          "bytesInOutput": 0
+        },
+        "_dist_/components/Player51.js": {
+          "bytesInOutput": 2487
+        },
+        "_dist_/components/Sample.js": {
+          "bytesInOutput": 3011
+        },
+        "_dist_/utils/tile.js": {
+          "bytesInOutput": 1229
+        },
+        "_dist_/components/Samples.hooks.js": {
+          "bytesInOutput": 563
+        },
+        "web_modules/react-hotkeys.js": {
+          "bytesInOutput": 65083
+        },
+        "_dist_/components/ViewBar/ViewStage/viewStageParameterMachine.js": {
+          "bytesInOutput": 4616
+        },
+        "_dist_/components/ViewBar/ViewStage/ViewStageParameter.js": {
+          "bytesInOutput": 6299
+        },
+        "_dist_/components/ViewBar/ViewStage/ViewStage.js": {
+          "bytesInOutput": 5244
+        },
+        "_dist_/components/ViewBar/ViewStage/viewStageMachine.js": {
+          "bytesInOutput": 5132
+        },
+        "_dist_/components/ViewBar/viewBarMachine.js": {
+          "bytesInOutput": 5119
+        },
+        "_dist_/components/ViewBar/ViewBar.js": {
+          "bytesInOutput": 2351
+        },
+        "_dist_/containers/SamplesContainer.js": {
+          "bytesInOutput": 1315
+        },
+        "web_modules/recharts.js": {
+          "bytesInOutput": 337549
+        },
+        "_dist_/components/Distributions.js": {
+          "bytesInOutput": 1860
+        },
+        "web_modules/re-resizable.js": {
+          "bytesInOutput": 17690
+        },
+        "_dist_/components/HorizontalNav.js": {
+          "bytesInOutput": 2477
+        },
+        "web_modules/copy-to-clipboard.js": {
+          "bytesInOutput": 2158
+        },
+        "_dist_/components/JSONView.js": {
+          "bytesInOutput": 1017
+        },
+        "_dist_/components/SelectObjectsMenu.js": {
+          "bytesInOutput": 1645
+        },
+        "_dist_/components/SampleModal.js": {
+          "bytesInOutput": 8110
+        },
+        "_dist_/containers/Dataset.js": {
+          "bytesInOutput": 2011
+        },
+        "_dist_/containers/Error.js": {
+          "bytesInOutput": 1233
+        },
+        "_dist_/containers/Setup.js": {
+          "bytesInOutput": 3643
+        },
+        "web_modules/player51/src/css/player51.css": {
+          "bytesInOutput": 0
+        },
+        "_dist_/app.global.css": {
+          "bytesInOutput": 0
+        },
+        "_dist_/containers/App.js": {
+          "bytesInOutput": 707
+        },
+        "_dist_/shared/global.js": {
+          "bytesInOutput": 502
+        },
+        "_dist_/shared/colors.js": {
+          "bytesInOutput": 1084
+        },
+        "_dist_/containers/Root.js": {
+          "bytesInOutput": 121
+        },
+        "_dist_/index.js": {
+          "bytesInOutput": 143
+        }
+      },
+      "bytes": 1528849
+    },
+    "../../../app/node_modules/.cache/snowpack/~~bundle~~/_dist_/index.css": {
+      "imports": [],
+      "inputs": {
+        "_dist_/app.global.css": {
+          "bytesInOutput": 1906
+        },
+        "web_modules/player51/src/css/player51.css": {
+          "bytesInOutput": 6038
+        }
+      },
+      "bytes": 8018
+    }
+  }
+}
