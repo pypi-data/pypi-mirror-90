@@ -1,0 +1,5 @@
+matplotlib
+PyQt5
+Markdown
+rich
+python-dotenv
