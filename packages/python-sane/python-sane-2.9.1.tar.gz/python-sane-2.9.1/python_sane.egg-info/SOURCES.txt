@@ -1,0 +1,16 @@
+CHANGES.rst
+COPYING
+MANIFEST.in
+README.rst
+_sane.c
+example.py
+sane.py
+sanedoc.txt
+setup.py
+doc/Makefile
+doc/conf.py
+doc/index.rst
+python_sane.egg-info/PKG-INFO
+python_sane.egg-info/SOURCES.txt
+python_sane.egg-info/dependency_links.txt
+python_sane.egg-info/top_level.txt

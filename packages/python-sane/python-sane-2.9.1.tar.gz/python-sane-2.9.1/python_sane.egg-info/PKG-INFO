@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: python-sane
+Version: 2.9.1
+Summary: This is the python-sane package
+Home-page: https://github.com/python-pillow/Sane
+Maintainer: Sandro Mani
+Maintainer-email: manisandro@gmail.com
+License: UNKNOWN
+Description: Python SANE module 2.9
+        ======================
+        
+        .. image:: https://github.com/python-pillow/Sane/workflows/Test/badge.svg
+            :target: https://github.com/python-pillow/Sane/actions
+        
+        Python SANE has been split from Python-Pillow as of version 2.7.0.
+        
+        
+        The SANE module provides an interface to the SANE scanner and frame grabber
+        interface for Linux.  This module was contributed by Andrew Kuchling formerly
+        maintained by Ralph Heinkel. It is currently maintained by Sandro Mani.
+        
+        Build
+        -----
+        
+        To build this module, make sure the sane development package is installed. Then, type::
+        
+        	python setup.py build
+        
+        In order to install the module type::
+        
+        	python setup.py install
+        
+        
+        For some basic documentation please look at the file sanedoc.txt
+        The example.py script gives a basic example on how to use the software.
+        
+        Documentation
+        -------------
+        
+        Available at https://python-sane.readthedocs.io/en/latest/
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Graphics :: Capture :: Scanners
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
