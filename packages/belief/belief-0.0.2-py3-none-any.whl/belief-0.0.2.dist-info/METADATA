@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: belief
+Version: 0.0.2
+Summary: Bayesian experiements and roamings
+Home-page: https://github.com/thorwhalen/ut/blob/master/ml/testing_multiple_classifiers.py
+Author: Thor Whalen
+License: mit
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# belief
+Bayesian experiements and roamings
+
+
+To install:	```pip install belief```
+
+
