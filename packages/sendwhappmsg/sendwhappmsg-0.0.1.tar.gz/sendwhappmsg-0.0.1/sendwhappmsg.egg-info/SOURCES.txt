@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+sendwhappmsg/__init__.py
+sendwhappmsg.egg-info/PKG-INFO
+sendwhappmsg.egg-info/SOURCES.txt
+sendwhappmsg.egg-info/dependency_links.txt
+sendwhappmsg.egg-info/requires.txt
+sendwhappmsg.egg-info/top_level.txt
