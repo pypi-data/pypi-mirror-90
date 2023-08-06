@@ -1,0 +1,3 @@
+class ProcedureExecutionException(Exception):
+    pass
+
