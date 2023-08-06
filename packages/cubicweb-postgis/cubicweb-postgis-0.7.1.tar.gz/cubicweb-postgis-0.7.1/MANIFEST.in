@@ -1,0 +1,14 @@
+include *.py
+include */*.py
+recursive-include cubicweb_postgis *.py
+recursive-include cubicweb_postgis *.sql
+recursive-include cubicweb_postgis/data *.gif *.png *.ico *.css *.js
+recursive-include cubicweb_postgis/i18n *.po
+recursive-include cubicweb_postgis/wdoc *
+recursive-include test/data bootstrap_cubes *.py
+include *.ini
+
+exclude cubicweb-postgis.spec
+prune debian
+include README.rst
+exclude .gitlab-ci.yml
