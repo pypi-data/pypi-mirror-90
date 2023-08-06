@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+test.py
+src/pytorchLosses.py
+src/pytorchLosses.egg-info/PKG-INFO
+src/pytorchLosses.egg-info/SOURCES.txt
+src/pytorchLosses.egg-info/dependency_links.txt
+src/pytorchLosses.egg-info/requires.txt
+src/pytorchLosses.egg-info/top_level.txt
