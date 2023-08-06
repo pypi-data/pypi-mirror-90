@@ -1,0 +1,11 @@
+hidb/__init__.py,sha256=Zjry48bWf28Mnv-dV7Cc-uJo5ZJ3iWmkNrQVXajf7CQ,37
+hidb/db.py,sha256=NdHD4wp0WWWg3KBwQ1F8UUCCJSmt_nqicDcyu7NAbFA,553
+hidb/filestoredb.py,sha256=SRzh63qby9ADl4uBz4zW8mLCy_ftAGsXW1FPGVv2alI,2280
+hidb/wrapper.py,sha256=8xgXvjNxzAcS353iCF_zdDpZCCT1AiG5MV4v6XqnklI,290
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_filestore.py,sha256=cgPkjoWWwu50lelhQF2UbOWrvhX5cWz86wnO1oBVDXQ,2396
+hidb-0.0.1.dist-info/LICENSE,sha256=0x6XcwiMgVjgo4iH2-kmLsKeHy_UoePpVrRI1MY7lek,1064
+hidb-0.0.1.dist-info/METADATA,sha256=q4OMlgDtJ0gM8a-XcPnpX6ICPJBansuJrxjoAqWAgyM,1946
+hidb-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hidb-0.0.1.dist-info/top_level.txt,sha256=Exf3kBvpOOd9AkpIJVfrnlkVMAKvAaNlRzjFvNpR2NQ,11
+hidb-0.0.1.dist-info/RECORD,,
