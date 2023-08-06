@@ -1,0 +1,10 @@
+README.md
+setup.py
+cleversession/__init__.py
+cleversession/cleversession.py
+cleversession/test_cleversession.py
+cleversession.egg-info/PKG-INFO
+cleversession.egg-info/SOURCES.txt
+cleversession.egg-info/dependency_links.txt
+cleversession.egg-info/requires.txt
+cleversession.egg-info/top_level.txt

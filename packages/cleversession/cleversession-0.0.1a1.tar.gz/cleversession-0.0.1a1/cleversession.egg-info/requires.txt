@@ -1,0 +1,6 @@
+cleverdict
+clevergui
+cleverweb
+cleverutils
+selenium
+keyring
