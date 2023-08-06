@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: aisapi
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/sviete/AIS-api
+Author: AI-Speaker
+Author-email: info@ai-speaker.com
+License: UNKNOWN
+Description: # AIS-api [![Build Status][travis_status]][travis] [![PyPI version][pypi_badge]][pypi]
+        
+        _Python wrapper package for the AIS API._
+        
+        ## Install
+        
+        ```bash
+        pip install ais-api
+        ```
+        
+        Look at the file `example.py` for a usage example.
+        
+        [travis_status]: https://travis-ci.org/sviete/ais-api.svg?branch=master
+        [travis]: https://travis-ci.org/sviete/ais-api
+        [pypi]:https://pypi.org/project/ais-api/
+        [pypi_badge]: https://badge.fury.io/py/ais-api.svg
+        
+        
+        ## Develop
+        
+        ```bash
+        pip install ais-api
+        ```
+        
+        ```bash
+        pip install ais-api
+        ```
+        
+        ```bash
+        pip install ais-api
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
