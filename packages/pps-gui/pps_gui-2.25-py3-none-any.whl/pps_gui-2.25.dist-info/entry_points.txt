@@ -1,0 +1,3 @@
+[console_scripts]
+pps_gui = pps_gui:main
+

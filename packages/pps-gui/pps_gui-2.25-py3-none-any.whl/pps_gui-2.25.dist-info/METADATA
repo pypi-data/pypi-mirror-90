@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pps-gui
+Version: 2.25
+Summary: A software based Raspberry Pi type simulator to aid in teaching Python, requires pps_emu.
+Home-page: https://github.com/chuckwhealton/pps_gui
+Author: Charles R. Whealton
+Author-email: chuck@dtcc.edu
+License: UNKNOWN
+Keywords: ITN 160
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: guizero
+Requires-Dist: pygame
+
+# pps_gui
+The emulator code to be imported into a student's program.  Works with the pps_gui simulator package.  Together, they give a student an environment where they can get readings from a simulated hardware device, maybe like a Raspberry Pi, maybe not.  Either way, students will have access to check for button pushes (4 buttons), turn LED lights on / off (red, yellow, green, and blue), detect light / dark, several sliders for temperature, humidity and pressure, and finally, they can ring an incredibly obnoxious buzzer. This application is based on work by primeteacher.
+
