@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pyshiritori
+Version: 0.0.1
+Summary: Japanese shiritori library
+Home-page: https://github.com/linuxmetel/pyshiritori
+Author: Linuxmetel & Lithops
+Author-email: linuxmetel@yandex.com
+License: GPLv3
+Description: # pyshiritori
+Keywords: Japanese shiritori
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
