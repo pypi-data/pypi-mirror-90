@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: wsl-tools
+Version: 0.2.1
+Summary: WSL utilities library
+License: MIT
+Author: Andrea Ghensi
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: pyxdg (>=0.27,<0.28)
