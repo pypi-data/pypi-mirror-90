@@ -1,0 +1,12 @@
+README.md
+setup.py
+scanforwebcams/__init__.py
+scanforwebcams/cli.py
+scanforwebcams/search.py
+scanforwebcams/universal.py
+scanforwebcams.egg-info/PKG-INFO
+scanforwebcams.egg-info/SOURCES.txt
+scanforwebcams.egg-info/dependency_links.txt
+scanforwebcams.egg-info/entry_points.txt
+scanforwebcams.egg-info/requires.txt
+scanforwebcams.egg-info/top_level.txt
