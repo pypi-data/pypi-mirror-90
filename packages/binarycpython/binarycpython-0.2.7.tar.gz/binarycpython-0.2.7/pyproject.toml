@@ -1,0 +1,7 @@
+[tool.black]
+
+target-version = ['py36']
+
+
+[tool.coverage]
+# todo
