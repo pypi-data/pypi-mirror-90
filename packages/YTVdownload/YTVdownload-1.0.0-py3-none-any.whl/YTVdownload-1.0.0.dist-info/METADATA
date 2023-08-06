@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: YTVdownload
+Version: 1.0.0
+Summary: This package can Download YouTube videos in MP3 or MP4 format....
+Home-page: https://github.com/alphacodingat/YTVdownload.git
+Author: Akshat Tiwari
+Author-email: thealphacoding@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
+Requires-Dist: pafy
+
+---------------------------------------
+## YouTube videos Download in mp3 or mp4 
+---------------------------------------
+
+## Installation
+'''pip install YTVdownload'''
+
+## Intro 
+
+This Package can download YouTube videos in mp3 or mp4.
+
+## How to use it?
+-------------------------------------------------------------------------------
+
+## >>> import YTVdownload as yt
+## >>> yt.download(url='https://youtu.be/**********' , format = mp3)  # or mp4 
+
+--------------------------------------------------------------------------------
+
+
+
