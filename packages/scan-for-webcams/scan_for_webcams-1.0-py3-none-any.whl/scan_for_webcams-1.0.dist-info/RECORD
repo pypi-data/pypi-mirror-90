@@ -1,0 +1,11 @@
+scanforwebcams/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scanforwebcams/cli.py,sha256=WNkP4nXWa_7eN16DGDZQhkwKc4VddQmLqBCm8zt4fRM,2105
+scanforwebcams/main.py,sha256=sL13VVKJNVxhsiKeQmdg96R_Sq5ieFLDvd0QEBFjoLA,2152
+scanforwebcams/search.py,sha256=IEdNi1O-HRgzO9yAaW6Eflk3fb4FiLlugpk8quLMEUg,5075
+scanforwebcams/universal.py,sha256=gPLq-L3zil7VLuJuctQiWghSGP7PTKD4_kkTAgm_b8g,64
+scan_for_webcams-1.0.dist-info/LICENSE,sha256=Ry2SoKeIPnjPQ22qNxO0Tmgb4KLy4wSr0fnBDx1grS0,1066
+scan_for_webcams-1.0.dist-info/METADATA,sha256=OhiaIm-MZwGvvHNu3brNiDThkLP-L8-NHjO2L4pGVRA,1922
+scan_for_webcams-1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+scan_for_webcams-1.0.dist-info/entry_points.txt,sha256=6jN4TAKyYwj9WarouVxOkcD20vdqT0PPXQM7kKxN4YY,55
+scan_for_webcams-1.0.dist-info/top_level.txt,sha256=K8pPc_KGqW63V_rNAABH6-Wua8scsMKEywx6NnGUKUI,15
+scan_for_webcams-1.0.dist-info/RECORD,,
