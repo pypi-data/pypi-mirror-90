@@ -1,0 +1,105 @@
+Metadata-Version: 2.1
+Name: echoflow
+Version: 0.0.2
+Summary: Normalizing flows for generative modeling of tabular datasets.
+Home-page: https://github.com/k15z/echoflow
+Author: Kevin Alex Zhang
+Author-email: kevalexzhang@gmail.com
+License: Proprietary
+Keywords: echoflow
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.19.0)
+Requires-Dist: pandas (>=1.0.0)
+Requires-Dist: scipy (>=1.5.0)
+Requires-Dist: torch (>=1.5.0)
+Provides-Extra: all
+Requires-Dist: numpy (>=1.19.0) ; extra == 'all'
+Requires-Dist: pandas (>=1.0.0) ; extra == 'all'
+Requires-Dist: scipy (>=1.5.0) ; extra == 'all'
+Requires-Dist: torch (>=1.5.0) ; extra == 'all'
+Requires-Dist: black (>=19.10b0) ; extra == 'all'
+Requires-Dist: codecov (>=2.1.4) ; extra == 'all'
+Requires-Dist: flake8 (>=3.8.3) ; extra == 'all'
+Requires-Dist: flake8-debugger (>=3.2.1) ; extra == 'all'
+Requires-Dist: pytest (>=5.4.3) ; extra == 'all'
+Requires-Dist: pytest-cov (>=2.9.0) ; extra == 'all'
+Requires-Dist: pytest-raises (>=0.11) ; extra == 'all'
+Requires-Dist: autoflake (>=1.3.0) ; extra == 'all'
+Requires-Dist: bumpversion (>=0.6.0) ; extra == 'all'
+Requires-Dist: coverage (>=5.1) ; extra == 'all'
+Requires-Dist: data-science-types (>=0.2.22) ; extra == 'all'
+Requires-Dist: ipython (>=7.15.0) ; extra == 'all'
+Requires-Dist: isort (>=5.6.0) ; extra == 'all'
+Requires-Dist: m2r (>=0.2.1) ; extra == 'all'
+Requires-Dist: mypy (>=0.79) ; extra == 'all'
+Requires-Dist: nbsphinx (>=0.6.1) ; extra == 'all'
+Requires-Dist: pytest-runner (>=5.2) ; extra == 'all'
+Requires-Dist: Sphinx (<3,>=2.0.0b1) ; extra == 'all'
+Requires-Dist: sphinx-rtd-theme (>=0.4.3) ; extra == 'all'
+Requires-Dist: tox (>=3.15.2) ; extra == 'all'
+Requires-Dist: twine (>=3.1.1) ; extra == 'all'
+Requires-Dist: wheel (>=0.34.2) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: black (>=19.10b0) ; extra == 'dev'
+Requires-Dist: codecov (>=2.1.4) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.8.3) ; extra == 'dev'
+Requires-Dist: flake8-debugger (>=3.2.1) ; extra == 'dev'
+Requires-Dist: pytest (>=5.4.3) ; extra == 'dev'
+Requires-Dist: pytest-cov (>=2.9.0) ; extra == 'dev'
+Requires-Dist: pytest-raises (>=0.11) ; extra == 'dev'
+Requires-Dist: autoflake (>=1.3.0) ; extra == 'dev'
+Requires-Dist: bumpversion (>=0.6.0) ; extra == 'dev'
+Requires-Dist: coverage (>=5.1) ; extra == 'dev'
+Requires-Dist: data-science-types (>=0.2.22) ; extra == 'dev'
+Requires-Dist: ipython (>=7.15.0) ; extra == 'dev'
+Requires-Dist: isort (>=5.6.0) ; extra == 'dev'
+Requires-Dist: m2r (>=0.2.1) ; extra == 'dev'
+Requires-Dist: mypy (>=0.79) ; extra == 'dev'
+Requires-Dist: nbsphinx (>=0.6.1) ; extra == 'dev'
+Requires-Dist: pytest-runner (>=5.2) ; extra == 'dev'
+Requires-Dist: Sphinx (<3,>=2.0.0b1) ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme (>=0.4.3) ; extra == 'dev'
+Requires-Dist: tox (>=3.15.2) ; extra == 'dev'
+Requires-Dist: twine (>=3.1.1) ; extra == 'dev'
+Requires-Dist: wheel (>=0.34.2) ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: black (>=19.10b0) ; extra == 'test'
+Requires-Dist: codecov (>=2.1.4) ; extra == 'test'
+Requires-Dist: flake8 (>=3.8.3) ; extra == 'test'
+Requires-Dist: flake8-debugger (>=3.2.1) ; extra == 'test'
+Requires-Dist: pytest (>=5.4.3) ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.9.0) ; extra == 'test'
+Requires-Dist: pytest-raises (>=0.11) ; extra == 'test'
+
+<p align="center">
+    <a href="https://k15z.github.io/EchoFlow">
+        <img width=760 src="docs/assets/header-dark.png">
+    </a>
+</p>
+
+<p align="center">
+    <a href="https://github.com/k15z/echoflow/actions"><img src="https://github.com/k15z/echoflow/workflows/Build%20Main/badge.svg"></a>
+    <a href="https://k15z.github.io/EchoFlow"><img src="https://github.com/k15z/echoflow/workflows/Documentation/badge.svg"></a>
+    <a href="https://codecov.io/gh/k15z/echoflow"><img src="https://codecov.io/gh/k15z/echoflow/branch/main/graph/badge.svg"></a>
+</p>
+
+---
+This library provides tools for generative modeling of tabular datasets using 
+normalizing flows. Some of it's features include:
+
+* Density estimation.
+* Joint + conditional sampling.
+* Categorical + continuous values.
+* Normalizing flows from RealNVP and MADE.
+
+To get started with EchoFlow, check out our documentation [here](https://k15z.github.io/EchoFlow)! Or, learn more about this project from our blog post [here](https://kevz.dev/echoflow/).
+
+

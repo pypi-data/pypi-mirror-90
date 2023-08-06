@@ -1,0 +1,17 @@
+echoflow/__init__.py,sha256=UEDrkTooUHrETtyRZ1VBWMH2zyoV4RTa8OjIgLF__RA,187
+echoflow/echoflow.py,sha256=ojPMOYghexo9DTMSFZx3uiPB6NBsjf_KLnizeHV1RLk,8812
+echoflow/transformer.py,sha256=26WpJF7nZk9au85-GCwV22DM8iPN1PwlChaQ8gXuIhY,9385
+echoflow/core/__init__.py,sha256=42_SfGKXsEL3jnrkYZC-yTV3OyOZV37vikAadzdFnZU,295
+echoflow/core/base.py,sha256=UWvs7OSjJXXzK5MUk2FjiYZsGMhuJZw3L7NFfzUSaD8,857
+echoflow/core/batch_norm.py,sha256=4c3YmoaOxwQ_HkZsIlfP8eDo9H5ATACOccP0yeaUpR0,2309
+echoflow/core/coupling.py,sha256=wnXH9j5v20kExgxrrGli5Jz6IbaZ1On9AiPuDJ6RA90,2897
+echoflow/core/made.py,sha256=2rVyKCZXNi_7Ahs4HvE3aY6dvv-m1FotoO1ehaO6ISI,2929
+echoflow/core/one_hot.py,sha256=aYt2BLF4h4wAp9YoE13BMHRAtp-Zso4X3Ilqq4MMnPQ,1214
+echoflow/core/reverse.py,sha256=xjJrta3r-QFHbSSidXzdKS1XvUh3zV-aO-fWHlCf36c,540
+echoflow/core/sequential.py,sha256=du8lFc0DoFx_BxgUuv-527C2tJOXD7fDsuWdj6EJ9WM,1024
+echoflow/demo/__init__.py,sha256=9tOpYRlWoCl58ijwlNq0wAKqXTLJjmAKoZESkUs6TMk,1192
+echoflow-0.0.2.dist-info/LICENSE,sha256=-ZJ3978F_gc1O55EQVHJCXrRcVI-E7xfu-8dasOouQg,36
+echoflow-0.0.2.dist-info/METADATA,sha256=NhFm7k3BKRkRMSRDV7Kzbhd56JOezUsjaJpNIn3t0IQ,4670
+echoflow-0.0.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+echoflow-0.0.2.dist-info/top_level.txt,sha256=CJ9ly74DcwDUP3n09JXiLHEP9NcXgvE5PLAw_40xBJA,9
+echoflow-0.0.2.dist-info/RECORD,,
