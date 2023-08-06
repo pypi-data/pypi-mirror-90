@@ -1,0 +1,9 @@
+vpos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vpos/vpos.py,sha256=PdpeX4Xtvv-g5n0lpTHGKZYVH9faBf8DxU-GrD4ZiXU,7573
+vpos/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vpos/test/test_vpos.py,sha256=hp6YaDbk4FDeI0IiG2WRrxjzAUPgs3uC82LXR2LgEjw,2776
+vpos-1.0.dist-info/LICENSE,sha256=XhOuS7onTaJIoqDHb2cohK3x6bOGksJfuT0ZaAm5UqE,1092
+vpos-1.0.dist-info/METADATA,sha256=767eJX8usknI9VujcUesMaYI4D44baQV9mshG6kWXho,3087
+vpos-1.0.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+vpos-1.0.dist-info/top_level.txt,sha256=vwoqk_uMEJiEbOs978OIRRN9UCATslIezTlI_4cudTY,5
+vpos-1.0.dist-info/RECORD,,
