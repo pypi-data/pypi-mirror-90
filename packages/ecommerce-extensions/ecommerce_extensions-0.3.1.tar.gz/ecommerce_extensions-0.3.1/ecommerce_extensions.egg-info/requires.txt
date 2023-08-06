@@ -1,0 +1,6 @@
+jsonfield2
+qrcode
+Django
+djangorestframework
+django-oscar
+sorl-thumbnail
