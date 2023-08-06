@@ -1,0 +1,8 @@
+mtgscan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mtgscan/box_text.py,sha256=bT6pFfjRYl_RlFpAXv1DU5AnotYWlhhfPbVGTb4g1yU,2858
+mtgscan/deck.py,sha256=wet6u6v6us7HqosQKfP8Rsfo6b5ds5slletMxrSe8a0,2972
+mtgscan/ocr.py,sha256=38vtE67VPLNkSYA5rEjrIBVondMmkk1bsu3mI_X0zCE,2239
+mtgscan/text.py,sha256=DsdTHFxRcwKn9U4Mg06HszipZxN0ss9WDlbr6_mauqo,7530
+mtgscan-1.0.3.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+mtgscan-1.0.3.dist-info/METADATA,sha256=IP8inmTAkfpUiOzxrrJABKqMxyeeoWlNyvBxyQVB7rQ,3883
+mtgscan-1.0.3.dist-info/RECORD,,
