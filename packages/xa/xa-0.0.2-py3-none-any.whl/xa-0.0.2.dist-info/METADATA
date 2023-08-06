@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: xa
+Version: 0.0.2
+Summary: Accessing information on population in the word.
+Home-page: https://github.com/thorwhalen/ut/tree/master/iacc/geo/geopop.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# xa
+Accessing information on population in the word.
+
+
+To install:	```pip install xa```
+
+
