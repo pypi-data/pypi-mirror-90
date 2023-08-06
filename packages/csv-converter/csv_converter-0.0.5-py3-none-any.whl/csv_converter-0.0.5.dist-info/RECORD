@@ -1,0 +1,9 @@
+__init__.py,sha256=z51NH4S4O2bXBjjadipFzdjDxYvJlpTljt6QjVErUyE,39
+csv_converter.py,sha256=Sd-VPkNxDZX1htMuhACwNRFpH4-qDF_rbHicGYZtmRQ,4553
+test_csv_converter.py,sha256=q5KBs7qi6idrto7uNup_DuE2WLsvrJ12ld6YcvKzXCo,4765
+test_funcs.py,sha256=jSjw0KtCzziNHDQ_c5QYQQiFv_ochg9StJavOOLPY4E,330
+csv_converter-0.0.5.dist-info/LICENCE,sha256=NGFu7qMvX91sLgZkqVs9T09U5Vi_b29Uf7Pv-vnhlYE,1070
+csv_converter-0.0.5.dist-info/METADATA,sha256=N4wrlY--4CLW5fQsHUo97crwDrOeYrUBlazw8Uwmqto,2573
+csv_converter-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+csv_converter-0.0.5.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+csv_converter-0.0.5.dist-info/RECORD,,
