@@ -1,0 +1,12 @@
+evolutionary_keras/__init__.py,sha256=PzBQfDzn4eAse8To8At3B-mWS53IUkqx0X3zSAcKWMA,20
+evolutionary_keras/models.py,sha256=cr1T5EF-53bP1_xPzWhAbgJ1kVyshWSypbYwuHPsTXo,5289
+evolutionary_keras/optimizers.py,sha256=hEeGIh4Bm3oijorz1F1H9bHIFFjMfAAZ99EeEUNFzw8,16164
+evolutionary_keras/utilities.py,sha256=zSCXi1XHiP1OdIxRGUG7cKSwV2fXcWum__lyUf3jyxI,1064
+evolutionary_keras/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+evolutionary_keras/tests/test_fit.py,sha256=-JFJfU9A0cTZHaE1l7G6x7xc7QXCz31cUbklruQ0Qgc,1921
+evolutionary_keras/tests/test_utilities.py,sha256=FxPzBz2F_accrmuLmzIWdFXzXPewuxNZdR2p3VlgHHI,640
+evolutionary_keras-2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+evolutionary_keras-2.1.dist-info/METADATA,sha256=8-XHSYLc16ssXoSIYaKW5TRUMXschpblkKbTI9GXp2w,2361
+evolutionary_keras-2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+evolutionary_keras-2.1.dist-info/top_level.txt,sha256=CNF4Y-5P705TV87O3zKBoEvAkYXh7Dct8WamGSYTqhU,19
+evolutionary_keras-2.1.dist-info/RECORD,,
