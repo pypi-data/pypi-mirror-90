@@ -1,0 +1,15 @@
+[run]
+branch = True
+source = gocept.jslint
+
+[report]
+precision = 2
+
+[html]
+directory = htmlcov
+
+[paths]
+source =
+   src/gocept/jslint
+   .tox/*/lib/python*/site-packages/gocept/jslint
+   .tox/pypy*/site-packages/gocept/jslint
