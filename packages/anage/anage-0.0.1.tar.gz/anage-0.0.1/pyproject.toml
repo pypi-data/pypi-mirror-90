@@ -1,0 +1,28 @@
+[build-system]
+requires = ['flit_core >=2,<4']
+build-backend = 'flit_core.buildapi'
+
+[tool.flit.metadata]
+module = 'anage'
+author = 'Nguyễn Gia Phong'
+author-email = 'mcsinyx@disroot.org'
+home-page = 'https://github.com/McSinyx/anage'
+requires = []
+description-file = 'README.md'
+classifiers = [
+    'Development Status :: 1 - Planning',
+    'Environment :: Console',
+    'Intended Audience :: End Users/Desktop',
+    'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
+    'Natural Language :: English',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Topic :: Utilities',
+    'Typing :: Typed']
+requires-python = '>=3.6'
+keywords = 'package manager'
+license = 'GPLv3+'
