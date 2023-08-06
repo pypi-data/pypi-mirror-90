@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+pyset_x/__init__.py
+pyset_x/core.py
+pyset_x.egg-info/PKG-INFO
+pyset_x.egg-info/SOURCES.txt
+pyset_x.egg-info/dependency_links.txt
+pyset_x.egg-info/requires.txt
+pyset_x.egg-info/top_level.txt
