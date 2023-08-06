@@ -1,0 +1,581 @@
+Metadata-Version: 2.1
+Name: simple_interpolation
+Version: 0.0.9
+Summary: Brownian Bridge interpolation of timeseries, built to use with Pandas.
+Home-page: https://github.com/pnmartinez/simple_interpolation/tree/master/
+Author: Pablo Navarro
+Author-email: navarro@cresmartadvisor.com
+License: Apache Software License 2.0
+Description: # `simple_interpolation`
+        
+        > A Pandas implentation of the Brownian Bridge interpolation algorithm. Wiener processes are assumed to build `std()`.
+        
+        Interpolation rocks, but doing it poorly can alter the original features of your data. **Brownian bridge preserves the volatibility of the original data**, if done well. Mixing that with a bit theory on the stock market (Wiener processes), we built a simple interpolation library.
+        
+        Read **about the algorithm in the "Brownian bridge algo" section below**.
+        
+        ## Install
+        
+        `pip install simple_interpolation`
+        
+        ## How to use
+        
+        ```python
+        # Example input dataframe, containing gaps
+        #  (i. e. X column, values 3-5)
+        df
+        ```
+        
+        <div>
+        <table border="1" class="dataframe">
+          <thead>
+            <tr style="text-align: right;">
+              <th></th>
+              <th>X</th>
+              <th>Y</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>0</th>
+              <td>0</td>
+              <td>8.089846</td>
+            </tr>
+            <tr>
+              <th>1</th>
+              <td>1</td>
+              <td>11.793489</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>2</td>
+              <td>9.026726</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>6</td>
+              <td>8.996177</td>
+            </tr>
+            <tr>
+              <th>4</th>
+              <td>7</td>
+              <td>11.221730</td>
+            </tr>
+            <tr>
+              <th>5</th>
+              <td>8</td>
+              <td>8.398122</td>
+            </tr>
+            <tr>
+              <th>6</th>
+              <td>9</td>
+              <td>8.845667</td>
+            </tr>
+            <tr>
+              <th>7</th>
+              <td>10</td>
+              <td>11.454700</td>
+            </tr>
+            <tr>
+              <th>8</th>
+              <td>11</td>
+              <td>11.431745</td>
+            </tr>
+            <tr>
+              <th>9</th>
+              <td>12</td>
+              <td>7.050733</td>
+            </tr>
+            <tr>
+              <th>10</th>
+              <td>13</td>
+              <td>10.009420</td>
+            </tr>
+            <tr>
+              <th>11</th>
+              <td>14</td>
+              <td>6.964674</td>
+            </tr>
+            <tr>
+              <th>12</th>
+              <td>15</td>
+              <td>9.541557</td>
+            </tr>
+            <tr>
+              <th>13</th>
+              <td>16</td>
+              <td>11.656722</td>
+            </tr>
+            <tr>
+              <th>14</th>
+              <td>19</td>
+              <td>11.062303</td>
+            </tr>
+            <tr>
+              <th>15</th>
+              <td>20</td>
+              <td>11.302763</td>
+            </tr>
+            <tr>
+              <th>16</th>
+              <td>21</td>
+              <td>13.042057</td>
+            </tr>
+            <tr>
+              <th>17</th>
+              <td>22</td>
+              <td>7.405670</td>
+            </tr>
+            <tr>
+              <th>18</th>
+              <td>23</td>
+              <td>8.986057</td>
+            </tr>
+            <tr>
+              <th>19</th>
+              <td>24</td>
+              <td>7.554964</td>
+            </tr>
+            <tr>
+              <th>20</th>
+              <td>25</td>
+              <td>10.467688</td>
+            </tr>
+            <tr>
+              <th>21</th>
+              <td>26</td>
+              <td>9.416683</td>
+            </tr>
+            <tr>
+              <th>22</th>
+              <td>27</td>
+              <td>10.038665</td>
+            </tr>
+            <tr>
+              <th>23</th>
+              <td>28</td>
+              <td>5.519665</td>
+            </tr>
+            <tr>
+              <th>24</th>
+              <td>45</td>
+              <td>10.184922</td>
+            </tr>
+            <tr>
+              <th>25</th>
+              <td>46</td>
+              <td>11.661662</td>
+            </tr>
+            <tr>
+              <th>26</th>
+              <td>47</td>
+              <td>9.748401</td>
+            </tr>
+            <tr>
+              <th>27</th>
+              <td>48</td>
+              <td>11.023116</td>
+            </tr>
+            <tr>
+              <th>28</th>
+              <td>49</td>
+              <td>9.298167</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        
+        
+        ```python
+        from simple_interpolation import core as si
+        
+        # Interpolation, plot is optional (default False)
+        patched_df = si.interpolate_gaps( df , plot = True )
+        patched_df
+        ```
+        
+            No datetime column: assuming first column 'X' as X-axis
+            std() built with Wiener method
+            Will interpolate if X-column interval is more than 1.7675
+            Processed 0.00% of gaps
+            Ended interpolation, starting plotting the results..
+        
+        
+        
+        ![png](output_9_1.png)
+        
+        
+            Ended execution
+        
+        
+        <div>
+        <table border="1" class="dataframe">
+          <thead>
+            <tr style="text-align: right;">
+              <th></th>
+              <th>X</th>
+              <th>Y</th>
+              <th>interpolated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>0</th>
+              <td>0.0000</td>
+              <td>8.089846</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>1</th>
+              <td>1.0000</td>
+              <td>11.793489</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>2.0000</td>
+              <td>9.026726</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>3.0000</td>
+              <td>8.291588</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>4</th>
+              <td>4.0000</td>
+              <td>8.486541</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>5</th>
+              <td>5.0000</td>
+              <td>8.736440</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>6</th>
+              <td>6.0000</td>
+              <td>8.996177</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>7</th>
+              <td>7.0000</td>
+              <td>11.221730</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>8</th>
+              <td>8.0000</td>
+              <td>8.398122</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>9</th>
+              <td>9.0000</td>
+              <td>8.845667</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>10</th>
+              <td>10.0000</td>
+              <td>11.454700</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>11</th>
+              <td>11.0000</td>
+              <td>11.431745</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>12</th>
+              <td>12.0000</td>
+              <td>7.050733</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>13</th>
+              <td>13.0000</td>
+              <td>10.009420</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>14</th>
+              <td>14.0000</td>
+              <td>6.964674</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>15</th>
+              <td>15.0000</td>
+              <td>9.541557</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>16</th>
+              <td>16.0000</td>
+              <td>11.656722</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>17</th>
+              <td>17.5000</td>
+              <td>11.359512</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>18</th>
+              <td>19.0000</td>
+              <td>11.062303</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>19</th>
+              <td>20.0000</td>
+              <td>11.302763</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>20</th>
+              <td>21.0000</td>
+              <td>13.042057</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>21</th>
+              <td>22.0000</td>
+              <td>7.405670</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>22</th>
+              <td>23.0000</td>
+              <td>8.986057</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>23</th>
+              <td>24.0000</td>
+              <td>7.554964</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>24</th>
+              <td>25.0000</td>
+              <td>10.467688</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>25</th>
+              <td>26.0000</td>
+              <td>9.416683</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>26</th>
+              <td>27.0000</td>
+              <td>10.038665</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>27</th>
+              <td>28.0000</td>
+              <td>5.519665</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>28</th>
+              <td>29.0625</td>
+              <td>6.584443</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>29</th>
+              <td>30.1250</td>
+              <td>5.504773</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>30</th>
+              <td>31.1875</td>
+              <td>5.623875</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>31</th>
+              <td>32.2500</td>
+              <td>6.275126</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>32</th>
+              <td>33.3125</td>
+              <td>6.639139</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>33</th>
+              <td>34.3750</td>
+              <td>6.394277</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>34</th>
+              <td>35.4375</td>
+              <td>6.797008</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>35</th>
+              <td>36.5000</td>
+              <td>7.885828</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>36</th>
+              <td>37.5625</td>
+              <td>8.530594</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>37</th>
+              <td>38.6250</td>
+              <td>8.921191</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>38</th>
+              <td>39.6875</td>
+              <td>8.941382</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>39</th>
+              <td>40.7500</td>
+              <td>8.900565</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>40</th>
+              <td>41.8125</td>
+              <td>9.037251</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>41</th>
+              <td>42.8750</td>
+              <td>9.360730</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>42</th>
+              <td>43.9375</td>
+              <td>9.914641</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>43</th>
+              <td>45.0000</td>
+              <td>10.184922</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>44</th>
+              <td>46.0000</td>
+              <td>11.661662</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>45</th>
+              <td>47.0000</td>
+              <td>9.748401</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>46</th>
+              <td>48.0000</td>
+              <td>11.023116</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <th>47</th>
+              <td>49.0000</td>
+              <td>9.298167</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        
+        
+        
+        ## Brownian bridge algo: the theory
+        
+        > **To render the equations on browser, install a LaTex rendering extension**. Otherwise download it and open it on Jupyer.
+        
+        Allows to interpolate large gaps **preserving volatility** of the series (as an input!). Read about it [here "Brownian bridge"](https://introcs.cs.princeton.edu/python/23recursion/).
+        
+        ##### Weiner method to obtain the relevant std()
+        
+        In a [Wiener process](https://en.wikipedia.org/wiki/Wiener_process#Basic_properties) volatility (variance) is $$var = \Delta_t$$ so $$std = \sqrt{var} = \sqrt{\Delta_t}$$This sets how the **local volatility** should be analyzed.
+        
+        So, if we have $std_{year}$ (or $std_{whole series}$), we can get the daily by: $$std_{year} = std_{day} \cdot  \sqrt{365} \Rightarrow std_{day} = \frac{std_{year}}{\sqrt{365}}$$
+        
+        So we can get the "**basic building block**" of the volatility by getting $std_{minute}$ in our case.
+        
+        Having $std_{minute}$, we then do a "bottom-up" process building the gap:
+        
+        $$ std_{gap} = std_{minute} \cdot \sqrt{number\_of\_mins\_in\_gap}$$
+        
+        
+        _(Advice from Miguel, my colleague at ING)_
+        
+        ### Fixed timesteps
+        
+        > You can use `fixed_freq` argument to make the **interpolated X points rounded to a certain timestep**. 'fixed_freq' timesteps defaults to 'min'. Valid options from Pandas, see link: https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#timeseries-offset-aliases
+        
+        ----
+        
+        **Implementation of the rounding (you probably don't need to read this)** 
+        
+        This constraint takes us **out of the brownian bridge**, because for it we only interpolate the **midpoints** through: 
+        
+        \begin{cases}
+        x_m = \frac{x_0 + x_1}{2} \\
+        y_m = \frac{y_0 + y_1}{2} + std
+        \end{cases}
+        
+        But, if we round up to mins, this midpoint $x_m$ could be different than a minute-exact timestamp (imagine the first interpolated point on a gap of 3m: it would be 1.5m). So **we round $x_m$**, and search for its **associated Y displacement** $\Delta y$:
+        
+        \begin{cases} 
+        x'_m = x_m + \Delta x_{toroundtomin} \\ 
+        y'_m = y_m + \Delta y
+        \end{cases}
+        
+        To get the associated $\Delta y$ we must use the **slope (derivative)** at that straight line between points $(x_0, y_0), (x_1, y_1)$.
+        
+        So:
+        
+        1- **Round up $x_m$ to the nearest minute** (lowest, `floor()`-like), so **we obtain**: $x'_m$, $\Delta x_{toroundtomin}$
+        
+        2- The deltas on X and Y are related by the derivative, which we are implicitly assuming linear on the brownian bridge, so it's quite straightforward to calculate $\Delta y$:
+        
+        $$ \Delta y := \frac{dy}{dx} \Delta x \Rightarrow  \Delta y \approx \frac{y_1 - y_0}{x_1 - x_0} \Delta x_{toroundtomin} $$
+        
+        So we would have everything for the Y correction.
+        
+Keywords: interpolation,Pandas,timeseries,brownian bridge,Wiener process
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
