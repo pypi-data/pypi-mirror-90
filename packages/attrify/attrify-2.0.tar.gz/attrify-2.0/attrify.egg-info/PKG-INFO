@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: attrify
+Version: 2.0
+Summary: Convert dict to access dict keys as attributes.
+Home-page: https://github.com/DragSama/attrify
+Author: DragSama
+License: MIT
+Description: # Attrify
+        **Access python dict keys as attributes**
+        
+        ## Installation
+        
+        - Install using pip:
+        ```
+        pip install attrify
+        ```
+        
+        ## Examples
+        
+        - Convert normal dict
+        ```python
+        from attrify import Attrify
+        normal_dict = {'name': 'Cool'}
+        attrified_dict = Attrify(normal_dict)
+        # or
+        attrified_dict = Attrify(**normal_dict)
+        
+        print(attrified_dict['name'], attrified_dict.name)
+        ```
+        - Convert complex nested dict
+        ```python
+        from attrify import Attrify
+        
+        complex_nested_normal_dict = {"data": {"results": [{"name": "something"}, {"name": "anything"}]}}
+        complex_nested_attrified_dict = Attrify(complex_nested_normal_dict)
+        # or
+        complex_nested_attrified_dict = Attrify(**complex_nested_normal_dict)
+        print(complex_nested_attrified_dict.data.results[0].name == complex_nested_normal_dict['data']['results'][0]['name'])
+        ```
+        - There is also a shortcut method to prettify dict, Just calls json.dumps with some args set.
+        ```python
+        print(complex_nested_attrified_dict.prettify())
+        ```
+        - Convert back to dict
+        ```python
+        from attrify import Attrify
+        normal_dict = {'name': 'Cool'}
+        attrified_dict = Attrify(normal_dict)
+        print(type(attrified_dict.to_dict()) == type(normal_dict))
+        ```
+        
+Keywords: dict python3 attrify attributes
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
