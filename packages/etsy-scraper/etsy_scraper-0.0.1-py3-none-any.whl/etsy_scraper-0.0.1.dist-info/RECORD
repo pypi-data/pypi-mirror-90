@@ -1,0 +1,8 @@
+src/__init__.py,sha256=3_U7ORcU4RbW-cx1YpZd0tCea8ifmkoabXBRfv8zBwI,92
+src/product_scraper.py,sha256=iDhPV1BSeNcqRTesqSZ3nSLs3YeO9IW-4Fyz1ox63Dk,1940
+src/vendor_scraper.py,sha256=aaSz8RYYabqdm9REo73nPlWmAcX3nhyENwzW6VTfRZs,2899
+etsy_scraper-0.0.1.dist-info/LICENSE,sha256=Re3nLXjXh2RfLVWSrUHMejLN6fqTamqXwwqS0cm6OSA,1072
+etsy_scraper-0.0.1.dist-info/METADATA,sha256=HTALHcj2u4oiIXZh5k2LNrEZQE8TO7l4PObIBi48WpU,2186
+etsy_scraper-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+etsy_scraper-0.0.1.dist-info/top_level.txt,sha256=ejogoHmqUxT0hBqpyjpM0msXqJdKDV6n0oHej96WcGU,17
+etsy_scraper-0.0.1.dist-info/RECORD,,
