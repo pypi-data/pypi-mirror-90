@@ -1,0 +1,3 @@
+PyQt5==5.12.2
+pyqtgraph>=0.10.0
+linien-python-client==0.3.2
