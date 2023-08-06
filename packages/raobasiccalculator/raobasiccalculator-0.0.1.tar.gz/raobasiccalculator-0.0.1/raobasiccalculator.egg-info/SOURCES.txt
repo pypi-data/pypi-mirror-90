@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+raobasiccalculator/__init__.py
+raobasiccalculator.egg-info/PKG-INFO
+raobasiccalculator.egg-info/SOURCES.txt
+raobasiccalculator.egg-info/dependency_links.txt
+raobasiccalculator.egg-info/top_level.txt
