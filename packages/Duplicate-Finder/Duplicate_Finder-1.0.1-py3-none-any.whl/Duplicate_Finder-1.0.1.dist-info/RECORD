@@ -1,0 +1,10 @@
+duplicates/__init__.py,sha256=wyRJAGKhmbHOkNCghJcNDu9K3MRBonEPVj_LgDJgibs,27
+duplicates/duplicates.py,sha256=llXvdgd1v-s8Haf-zcAF_Mjbi2dapUxfPREupOG1XhI,4355
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/context.py,sha256=1IB1r8Yh7fangIifqmUp6pCrZZljeGVZjUKXXOOrgI4,130
+tests/test_detect_duplicates.py,sha256=eo6TMJ6DpoqvanCvIDiFL5MG5ozEAY2CDxbYTytK-ic,5358
+Duplicate_Finder-1.0.1.dist-info/LICENSE,sha256=R-bIWqrAzDEifpymY_jVIuIi6F1CoZn0UHjIBFV5mow,1091
+Duplicate_Finder-1.0.1.dist-info/METADATA,sha256=-gDUk_Bbl5X-TziingxbkYmMMuKDD251GYK6Na6JdgM,2548
+Duplicate_Finder-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Duplicate_Finder-1.0.1.dist-info/top_level.txt,sha256=WW7cgOSp33B7GmqRWH1d3Usk_BgPd6Accv-LzUA2_5c,17
+Duplicate_Finder-1.0.1.dist-info/RECORD,,
