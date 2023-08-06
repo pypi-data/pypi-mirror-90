@@ -1,0 +1,129 @@
+%module(directors="1") PyIndi
+%{
+#include <indibase.h>
+#include <indiapi.h>
+#include <baseclient.h>
+#include <basedevice.h>
+#include <indiproperty.h>
+
+#include <stdexcept>
+%}
+
+%include "std_vector.i"
+%include "std_except.i"
+%include "std_string.i"
+%include "stdint.i"
+
+%feature("director") BaseClient;
+%feature("director:except") {
+    if( $error != NULL ) {
+        PyObject *ptype, *pvalue, *ptraceback;
+        PyErr_Fetch( &ptype, &pvalue, &ptraceback );
+        PyErr_Restore( ptype, pvalue, ptraceback );
+        PyErr_Print();
+        Py_Exit(1);
+    }
+} 
+
+%template(BaseDeviceVector) std::vector<INDI::BaseDevice *>;
+%template(PropertyVector) std::vector<INDI::Property *>;
+
+/* swig does not like optional args (format = nullptr) followed with varargs (... considered as non optional) */
+%ignore INDI::Property::apply;
+%ignore INDI::Property::define;
+/* Missng semicolon */
+#define ATTRIBUTE_FORMAT_PRINTF(A,B) ; 
+/* Macros defined in indiutility.h but other indiutility functions not present in indibaseclient library */
+template <typename T>
+static inline T *getPtrHelper(T *ptr) { return ptr; }
+
+template <typename Wrapper>
+static inline typename Wrapper::element_type *getPtrHelper(const Wrapper &p) { return p.get(); }
+
+#define DECLARE_PRIVATE(Class) \
+    inline Class##Private* d_func() { return reinterpret_cast<Class##Private *>(getPtrHelper(d_ptr)); } \
+    inline const Class##Private* d_func() const { return reinterpret_cast<const Class##Private *>(getPtrHelper(d_ptr)); } \
+    friend class Class##Private;
+/* end Macros */
+
+%include <indibasetypes.h>
+%include <indibase.h>
+%include <indiapi.h>
+%include <baseclient.h>
+%include <basedevice.h>
+%include <indiproperty.h>
+
+typedef enum {
+B_NEVER=0,
+B_ALSO,
+B_ONLY
+} BLOBHandling;
+
+%extend _ITextVectorProperty {
+  IText *__getitem__(int index) throw(std::out_of_range) {
+    if (index >= $self->ntp) throw std::out_of_range("VectorProperty index out of bounds");
+    return $self->tp + index;
+  }
+  int __len__() {
+    return $self->ntp;
+  }
+ };
+%extend _INumberVectorProperty {
+  INumber *__getitem__(int index) throw(std::out_of_range) {
+    if (index >= $self->nnp) throw std::out_of_range("VectorProperty index out of bounds");
+    return $self->np + index;
+  }
+  int __len__() {
+    return $self->nnp;
+  }
+ };
+%extend _ISwitchVectorProperty {
+  ISwitch *__getitem__(int index) throw(std::out_of_range) {
+    if (index >= $self->nsp) throw std::out_of_range("VectorProperty index out of bounds");
+    return $self->sp + index;
+  }
+  int __len__() {
+    return $self->nsp;
+  }
+ };
+%extend _ILightVectorProperty {
+  ILight *__getitem__(int index) throw(std::out_of_range) {
+    if (index >= $self->nlp) throw std::out_of_range("VectorProperty index out of bounds");
+    return $self->lp + index;
+  }
+  int __len__() {
+    return $self->nlp;
+  }
+ };
+%extend _IBLOBVectorProperty {
+  IBLOB *__getitem__(int index) throw(std::out_of_range) {
+    if (index >= $self->nbp) throw std::out_of_range("VectorProperty index out of bounds");
+    return $self->bp + index;
+  }
+  int __len__() {
+    return $self->nbp;
+  }
+ };
+
+
+%extend IBLOB {
+  PyObject *getblobdata() {
+    PyObject *result;
+
+    result = PyByteArray_FromStringAndSize((const char*) $self->blob, $self->size);
+    return result;
+  }
+ };
+
+%extend INDI::BaseClient {
+  %typemap(in) (char *data, long len) {
+    $1 = PyBytes_AsString($input);
+    $2 = PyBytes_Size($input);
+  }
+
+
+  public:
+    void sendOneBlobFromBuffer(const char *name, const char *type, char *data, long len) {
+      $self->sendOneBlob(name, len, type, (void*)(data));
+    }
+  }
