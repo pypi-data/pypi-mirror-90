@@ -1,0 +1,16 @@
+sepadd/__init__.py,sha256=UsqmY_g3t4TNpGnRiTg1pw-VsZOn_mOLoqRreEx4gBo,35
+sepaxml/__init__.py,sha256=41gSic6Y7YRPO04fJjhy7KYKae2BoS3KvQ9fDFnwxRA,96
+sepaxml/debit.py,sha256=lB9CVqYJvfse0F77tmsUk4Vzw-IBj_uG7uJwf9YAIl0,21893
+sepaxml/shared.py,sha256=XfDGxVqWzNXeQ7NLWmhhn9yicn-XndwTpYFk6CkCHqE,3355
+sepaxml/transfer.py,sha256=Z_gRhNg6v7vIncFtATBdruRZy4Sgs5YM-2rFV_QXZx4,16061
+sepaxml/utils.py,sha256=J29qgvRwCTGD4c4laU7TSF-zmYIpNA1FjsQydUSTEoM,2988
+sepaxml/validation.py,sha256=_3eHJXdCqA8CnV7xOyFvzRDcYj-uv9c2kBaxnXBrmeI,614
+sepaxml/schemas/pain.001.001.03.xsd,sha256=riu7oCpr4BGaJvSvy2XO0GdFPLG4HTiya8xWnxnsqT4,44938
+sepaxml/schemas/pain.008.001.02.xsd,sha256=CbE-kfzeh_MVOkpBfIZgCPvD2KkXBsCyT_K_Shi1ZCk,43173
+sepaxml/schemas/pain.008.002.02.xsd,sha256=HYihJ1c6bg9etyFNItH2sof9gug3Tux_kocsFOP7GRo,25187
+sepaxml/schemas/pain.008.003.02.xsd,sha256=x4y60f3IZxYx3hfqgZUy5vz0o48QXJMKTJMnmqImJxI,25321
+sepaxml-2.4.0.dist-info/LICENSE,sha256=Eok8JARSBRn9nI0U5rsqPtWcblfCgOVMiPwJ9-kRi4w,1088
+sepaxml-2.4.0.dist-info/METADATA,sha256=ODuDTZ4V0aE71JLCMtavO6Is53-86mjCJdH46c7E8Tg,3633
+sepaxml-2.4.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sepaxml-2.4.0.dist-info/top_level.txt,sha256=m3VawcePkwPWGUN4ZYLVFU6lkfnI7dXsDvqQbBkbpWQ,15
+sepaxml-2.4.0.dist-info/RECORD,,
