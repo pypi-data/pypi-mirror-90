@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: EZFNSetup
+Version: 4.1.1
+Summary: UNKNOWN
+Home-page: https://ezfn.dev
+Author: EZFN.DEV
+Author-email: admin@ezfn.dev
+License: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International Public License
+Platform: UNKNOWN
+Requires-Python: >=3.8.5
+Requires-Dist: fortnitepy (==3.3.5)
+Requires-Dist: sanic (==20.9.1)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: aiofiles (==0.6.0)
+Requires-Dist: psutil (==5.8.0)
+
+UNKNOWN
+
+
