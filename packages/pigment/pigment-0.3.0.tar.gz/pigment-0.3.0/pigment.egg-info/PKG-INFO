@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: pigment
+Version: 0.3.0
+Summary: Python utilities for colors
+Home-page: https://pigment.readthedocs.io/
+Author: Ben Soyka
+Author-email: bensoyka@icloud.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/bsoyka/pigment
+Project-URL: Changelog, https://github.com/bsoyka/pigment/releases
+Description: # Pigment
+        
+        **Pigment** is a set of Python utilities for colors.
+        
+        ```py
+        >>> red = Color(255, 0, 0)
+        >>> blue = Color(0, 0, 255)
+        >>> blend(red, blue).hsv
+        (300, 100, 50)
+        ```
+        
+        [![Downloads](https://pepy.tech/badge/pigment)](https://pepy.tech/project/pigment)
+        [![Supported Versions](https://img.shields.io/pypi/pyversions/pigment.svg)](https://pypi.org/project/pigment)
+        [![Testing](https://img.shields.io/github/workflow/status/bsoyka/pigment/Testing%20with%20pytest?label=tests)](https://github.com/bsoyka/pigment/actions?query=workflow%3A%22Testing+with+pytest%22)
+        [![License](https://img.shields.io/pypi/l/pigment)](https://github.com/bsoyka/pigment/blob/master/LICENSE)
+        [![Version](https://img.shields.io/pypi/v/pigment?label=latest)](https://pypi.org/project/pigment)
+        
+        ## Installation
+        
+        Pigment is available on PyPI:
+        
+        ```console
+        $ python -m pip install pigment
+        ```
+        
+        Pigment officially supports Python 3.7+.
+        
+        ## API Reference
+        
+        See [Read the Docs](https://pigment.readthedocs.io) for Pigment's documentation.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
