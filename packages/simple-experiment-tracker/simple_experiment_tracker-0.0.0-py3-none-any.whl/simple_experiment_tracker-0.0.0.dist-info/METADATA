@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: simple-experiment-tracker
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/jizezhang/simple-experiment-tracker
+Author: Jize Zhang
+Author-email: jizez@uw.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ~=3.7
+Requires-Dist: redis
+Requires-Dist: protobuf
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: joblib
+
+UNKNOWN
+
+
