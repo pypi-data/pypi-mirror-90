@@ -1,0 +1,17 @@
+tmuxp/__about__.py,sha256=cnQS5s8-brk8GnRFn1UdQKdgcUm5jDpswxdP8R6tIEI,434
+tmuxp/__init__.py,sha256=FABb2wHjIzX2_tfKbuF8NIJVrqqmgMeHYTcE9REwrWY,427
+tmuxp/_compat.py,sha256=dPe_Dtpy7HZVWZsJESpJtgsfqB6IfhrkMwFcROGApj0,2357
+tmuxp/cli.py,sha256=YJAU29gQMV_ygXvTe0oIRjdwyCX7DiYQSoIeapIGbM8,35928
+tmuxp/config.py,sha256=79_oqcX8EFYwJ9PWGPvIEyOOUZml61abSV7WecIx_9g,16773
+tmuxp/exc.py,sha256=MvDf8ak65DSBQXn5IAXqD20Rp-M76zJh3f3XjGMHoKE,1320
+tmuxp/log.py,sha256=0228B4qZ8MeCC8YI3F7osSf3ZHOC9j8EP-BYV7SrJrc,4019
+tmuxp/plugin.py,sha256=FYd5HKFQjaWDhW13n_PBaDx1Rsx5iR9wxav6hkotDvw,7241
+tmuxp/shell.py,sha256=nc4JPnOVVHuasldOD8Z2i5zQvlCBZhg3-m4FYZutVyE,6956
+tmuxp/util.py,sha256=hJI67U3YB54cZ-LaDudtpLQbd1TgQ4ZC50DL7st1eB0,4306
+tmuxp/workspacebuilder.py,sha256=gOGBiq6Pz6awrsm_RjtnVjyDFnqTJWbwB6-DaihtNsQ,13160
+tmuxp-1.6.4.dist-info/LICENSE,sha256=FCkeREauPSqq_A89GVYXFAma5YvcOU_r3GGFHEn9GfM,1076
+tmuxp-1.6.4.dist-info/METADATA,sha256=0vLEOXlRDVBFobVQpuNS7osaX7CVkFD68fyUpVkVuSc,9469
+tmuxp-1.6.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+tmuxp-1.6.4.dist-info/entry_points.txt,sha256=wynqWL9ZIbVRHYiZHTm0p6avCdKEEvRer6xpIEFj0Bw,41
+tmuxp-1.6.4.dist-info/top_level.txt,sha256=E6XG_R_m99-FfdXUGzKR5x1OBNBqkxQpVPa2kAUqaGA,6
+tmuxp-1.6.4.dist-info/RECORD,,
