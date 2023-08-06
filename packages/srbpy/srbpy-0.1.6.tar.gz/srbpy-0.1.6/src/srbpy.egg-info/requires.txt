@@ -1,0 +1,5 @@
+numpy
+scikit-spatial>=4.0.0
+PyAngle>=2.2.0
+pybind11>=2.6.0
+SQLAlchemy>=1.3
