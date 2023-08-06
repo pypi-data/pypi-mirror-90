@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: brt
+Version: 0.0.1b8
+Summary: Business research tools
+Home-page: https://github.com/paris0120/brt
+Author: Paris Liu
+Author-email: paris0120@gmail.com
+License: UNKNOWN
+Description: # brt
+         Business Research Tools
+        
+        Tools for business researchers with Python.
+        
+        
+        # Quick Guidance
+        
+        # Install: 
+         
+        pip install brt 
+        
+        # Usage: 
+        
+        Check 'examples' folder
+        
+        # API: API.html
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
