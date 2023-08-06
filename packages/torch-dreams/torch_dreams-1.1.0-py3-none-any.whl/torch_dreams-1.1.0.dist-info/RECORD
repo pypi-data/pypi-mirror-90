@@ -1,0 +1,15 @@
+torch_dreams/__init__.py,sha256=ZqBe77Nvw2UvyzTbCYpAwoINFZro_kCO7jCZ2aZAadE,144
+torch_dreams/constants.py,sha256=1NKCrfWKp8DvzB_teX72gPYGAxzFazBHVh9KNzAOjl0,1397
+torch_dreams/dreamer.py,sha256=aJFJNM2KHtbNcD4vncO3o59-AyFI6nZxLEJTDWZUks8,5260
+torch_dreams/dreamer_utils.py,sha256=m0WTYVt_ZG9F1x8gQmutf1qmW1t2V2GlLSO8VxjZMXQ,2510
+torch_dreams/image_transforms.py,sha256=Tzn1DtRF8VqBdELMuv6OkUr5zOcG0OL40cGtq5MS9p4,952
+torch_dreams/octave_utils.py,sha256=5KA153dlFhhf8kSIeZWXYAMldiQc4I_4eIvPCbmQL6s,7714
+torch_dreams/utils.py,sha256=c4hIuoZ-7NQIAFvIvLIO7W1K14EbjGffPIMCZV16BWI,8826
+torch_dreams/models/__init__.py,sha256=je3IK_mjmn5lCPS-3yOmza7UMC9tU4WKoUtdHaamWU4,20
+torch_dreams/models/googlenet.py,sha256=Wged6AK4BaaLzVTxjJ281wSpq7qM_RX2mBm6kugBt5Y,3021
+torch_dreams/models/vgg16.py,sha256=xRjIaGkn-GmY291A9J7nPo0UA_KNCMlgnzs2hHZOPjM,4133
+torch_dreams-1.1.0.dist-info/LICENSE,sha256=gOG8bQrXXuDBLNmqIAB_y-0UW4-GSMo0N41Xes5_lRw,1064
+torch_dreams-1.1.0.dist-info/METADATA,sha256=x9CfQOPHKCMCbJl6MZMD10_izmflU5fibCBh2ftaDys,6564
+torch_dreams-1.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+torch_dreams-1.1.0.dist-info/top_level.txt,sha256=zdIi9lH8zRVRy3fUHjLcRA1wbvsXvekxRpHCwY6lWeQ,13
+torch_dreams-1.1.0.dist-info/RECORD,,
