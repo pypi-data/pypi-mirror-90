@@ -1,0 +1,9 @@
+README.md
+setup.py
+fastpypi/__init__.py
+fastpypi/fastpypi_core.py
+fastpypi.egg-info/PKG-INFO
+fastpypi.egg-info/SOURCES.txt
+fastpypi.egg-info/dependency_links.txt
+fastpypi.egg-info/requires.txt
+fastpypi.egg-info/top_level.txt
