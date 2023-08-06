@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+README.rst
+odt_at42qt1070.py
+requirements.txt
+setup.py
+.github/workflows/python-publish.yml
+examples/touch_change_neopixel.py
+odt_at42qt1070_python.egg-info/PKG-INFO
+odt_at42qt1070_python.egg-info/SOURCES.txt
+odt_at42qt1070_python.egg-info/dependency_links.txt
+odt_at42qt1070_python.egg-info/requires.txt
+odt_at42qt1070_python.egg-info/top_level.txt
