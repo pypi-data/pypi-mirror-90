@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: django-logging-middleware
+Version: 0.0.2a4
+Summary: A small package to log django requests and responses
+Home-page: https://github.com/fearsd/django-logging-middleware
+Author: Rifat Fazlutdinov
+Author-email: rifatfazlutdinov@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: django (>=3.0)
+Requires-Dist: loguru
+
+# Django Logging Middleware
+
+The extension for [django](https://github.com/django/django) to log requests and responses using [loguru](https://github.com/Delgan/loguru)
+
