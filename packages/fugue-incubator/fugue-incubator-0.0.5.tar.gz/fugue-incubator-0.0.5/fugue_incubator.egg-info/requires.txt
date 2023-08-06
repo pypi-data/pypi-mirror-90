@@ -1,0 +1,8 @@
+fugue==0.5.0.dev1
+scikit-learn
+
+[all]
+hyperopt
+
+[hyperopt]
+hyperopt
