@@ -1,0 +1,4 @@
+Click
+beautifulsoup4
+requests
+tabulate

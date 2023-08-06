@@ -1,0 +1,11 @@
+README.md
+setup.py
+kr/__init__.py
+kr/download.py
+kr/search.py
+kr_cli.egg-info/PKG-INFO
+kr_cli.egg-info/SOURCES.txt
+kr_cli.egg-info/dependency_links.txt
+kr_cli.egg-info/entry_points.txt
+kr_cli.egg-info/requires.txt
+kr_cli.egg-info/top_level.txt
