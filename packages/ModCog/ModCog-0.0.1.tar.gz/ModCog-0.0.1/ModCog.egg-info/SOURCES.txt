@@ -1,0 +1,7 @@
+pyproject.toml
+ModCog/__init__.py
+ModCog/setup.py
+ModCog.egg-info/PKG-INFO
+ModCog.egg-info/SOURCES.txt
+ModCog.egg-info/dependency_links.txt
+ModCog.egg-info/top_level.txt
