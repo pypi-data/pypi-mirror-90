@@ -1,0 +1,6 @@
+aiohttp>=3.7
+toml>=0.10
+cryptography>=3.3
+aiohttp_devtools
+pytest
+autopep8
