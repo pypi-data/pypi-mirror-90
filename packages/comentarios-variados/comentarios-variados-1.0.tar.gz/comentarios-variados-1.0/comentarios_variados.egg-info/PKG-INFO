@@ -1,0 +1,21 @@
+Metadata-Version: 1.0
+Name: comentarios-variados
+Version: 1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Eduardo Silva de Abreu
+Author-email: edwards.s.a@hotmail.com
+License: UNKNOWN
+Description: # Comentarios Variados
+        
+        Descricao: Sao duas listas de comentarios variados, perfeito para automacao de rede sociais
+        
+        * 1 - Instalacao:
+          pip install comentarios-variados
+        * 2 - Import
+          from comentarios_variados import botfrases, botvariados
+        * 3 - Exemplos de como usar
+          comentarios = botfrases()
+          print(comentarios)
+Keywords: comentarios,listas
+Platform: UNKNOWN

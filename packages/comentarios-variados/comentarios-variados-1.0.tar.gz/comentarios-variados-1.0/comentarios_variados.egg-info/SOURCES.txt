@@ -1,0 +1,9 @@
+README.md
+setup.py
+comentarios_variados/__init__.py
+comentarios_variados/botfrases.py
+comentarios_variados/botvariados.py
+comentarios_variados.egg-info/PKG-INFO
+comentarios_variados.egg-info/SOURCES.txt
+comentarios_variados.egg-info/dependency_links.txt
+comentarios_variados.egg-info/top_level.txt
