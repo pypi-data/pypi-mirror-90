@@ -1,0 +1,10 @@
+manifix/__init__.py,sha256=FSxu9JVd_CAj94kw_N-aly6D048QOFikijCPk9cKj8Q,171
+manifix/_version.py,sha256=v-py_QqQU7Dn_-ctx28MhJEEteL-1tyGSRo5ZFhg0oQ,74
+manifix/check.py,sha256=VgSV6OITk0GQGUs9RQeVebJ7R8obhmUIklfBfSrnUeU,2278
+manifix/command.py,sha256=_wAnBCK9-nNZRqLgRTfEvjDL2q6ihZ3_5ylGXhd4ZQI,2701
+manifix-1.1.0.dist-info/LICENSE.md,sha256=7AABExaDDmZQG_1CCvFKSIf4kSaW-vUqnDEJBMe7ZPY,1684
+manifix-1.1.0.dist-info/METADATA,sha256=8s5oRJBiCnacNUF7gfLw9GkE1mTTR9MnRSc23G1I60E,1086
+manifix-1.1.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+manifix-1.1.0.dist-info/entry_points.txt,sha256=KpOBxaJnLgMHhX3ulmoj_l2rCOPLied02JPdH9ckvoc,75
+manifix-1.1.0.dist-info/top_level.txt,sha256=m1uHJDHAiYdGLL9lJnVtkdLsoABnWNPkLTvnzCRySmI,8
+manifix-1.1.0.dist-info/RECORD,,
