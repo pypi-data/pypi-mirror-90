@@ -1,0 +1,9 @@
+README.md
+setup.py
+geotiff/__init__.py
+geotiff.egg-info/PKG-INFO
+geotiff.egg-info/SOURCES.txt
+geotiff.egg-info/dependency_links.txt
+geotiff.egg-info/top_level.txt
+geotiff/utils/__init__.py
+geotiff/utils/geotiff_logging.py
