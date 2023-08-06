@@ -1,0 +1,6 @@
+README.md
+setup.py
+autobean.egg-info/PKG-INFO
+autobean.egg-info/SOURCES.txt
+autobean.egg-info/dependency_links.txt
+autobean.egg-info/top_level.txt
