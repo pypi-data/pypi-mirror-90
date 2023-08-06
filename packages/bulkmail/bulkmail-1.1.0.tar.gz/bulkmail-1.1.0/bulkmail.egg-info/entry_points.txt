@@ -1,0 +1,3 @@
+[console_scripts]
+bulkmail = bulkmail.commandline:main
+

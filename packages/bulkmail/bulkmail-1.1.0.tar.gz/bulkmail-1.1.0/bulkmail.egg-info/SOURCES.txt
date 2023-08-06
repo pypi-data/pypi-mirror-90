@@ -1,0 +1,14 @@
+README.md
+setup.py
+bulkmail/__init__.py
+bulkmail/commandline.py
+bulkmail/extras.py
+bulkmail/mailer.py
+bulkmail/mailfunctions.py
+bulkmail.egg-info/PKG-INFO
+bulkmail.egg-info/SOURCES.txt
+bulkmail.egg-info/dependency_links.txt
+bulkmail.egg-info/entry_points.txt
+bulkmail.egg-info/not-zip-safe
+bulkmail.egg-info/requires.txt
+bulkmail.egg-info/top_level.txt
