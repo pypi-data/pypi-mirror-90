@@ -1,0 +1,15 @@
+aerie/__init__.py,sha256=X9VjtvoOBReKTuSbVVjvpOWexmGMvuevWp0WwRbCI-I,55
+aerie/collections.py,sha256=VIMW1BvXIlMCM47vnIs2fbLPlFg5nJvR1YiAL6TJ3tk,7924
+aerie/connection.py,sha256=t04kveSfvbE_RAE6Ge-EYw63hUFJ79po3wGmsIf7jvk,4817
+aerie/database.py,sha256=eCZnHhPRYJabNfjc7I7btJqIwFvU_7Gjf3dMK5icG_c,7908
+aerie/drivers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aerie/drivers/postgresql.py,sha256=_38JEL4LMk9isi34-ojqeeof86ke09jlMO6g7N6YxIA,5963
+aerie/drivers/sqlite.py,sha256=YbX65eRiZ1PeGr9JkleNPtx5o1dEQO4Y_ewZM8xtMsY,11195
+aerie/exceptions.py,sha256=EeMg5PxoWN0gyqYk_ys37eqJyC-o_-sKmhZ-WyuZVv8,200
+aerie/protocols.py,sha256=ZhBTFlSELl1esH7GB-Ioc78UH5bDtOsIeOldU5p1Tho,4820
+aerie/terms.py,sha256=QlplPcaurvQzjK_WR00VO0foLFPujLcq7d6TzOPk0Nk,405
+aerie/url.py,sha256=6a92pw9V4NMFN7uVg7RIudXOscSu6NoZu6lVQRZD7YI,1476
+aerie/utils.py,sha256=OUQ65cMh5tXncInX5O1k6MC5kQpeYx21Qaj7uZkwtMQ,216
+aerie-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+aerie-0.1.0.dist-info/METADATA,sha256=qL6bs-f-X5weyHyQtwzch_1tQ1evl91BlzCEJTLbzY4,588
+aerie-0.1.0.dist-info/RECORD,,
