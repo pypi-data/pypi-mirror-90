@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: Leveler
+Version: 0.1.5
+Summary: Simple and small package to build levels of support and resistance
+Home-page: https://github.com/FuturFuturFutur/leveler.git
+Author: Futur
+Author-email: yaroviy.yaroslav@gmail.com
+License: MIT
+Keywords: algotrading trading support resistance levels
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: cython
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: zigzag
+Requires-Dist: sklearn
+
+Simple and small package to build levels of support and resistance
+
+
