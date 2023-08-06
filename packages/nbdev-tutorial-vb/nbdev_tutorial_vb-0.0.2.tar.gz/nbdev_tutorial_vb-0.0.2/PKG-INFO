@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: nbdev_tutorial_vb
+Version: 0.0.2
+Summary: A tutorial project for nbdev
+Home-page: https://github.com/vishalbakshi/nbdev_tutorial_vb/tree/master/
+Author: Vishal Bakshi
+Author-email: vdbakshi@gmail.com
+License: Apache Software License 2.0
+Description: # Welcome to nbdev_tutorial
+        > It is a tutorial about nbdev
+        
+        
+        This file will become your README and also the index of your documentation.
+        
+        ## Install
+        
+        `pip install your_project_name`
+        
+        ## How to use
+        
+        Here's a method from `nbdev_tutorial.core`:
+        
+        ```python
+        say_hello("vishal")
+        ```
+        
+        
+        
+        
+            'Hello vishal!'
+        
+        
+        
+        damn that is neat!
+        
+Keywords: fastai,nbdev
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
