@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: cert-chain-resolver
+Version: 1.0.1
+Summary: Resolve / obtain the certificate intermediates of a x509 cert
+Home-page: https://github.com/rkoopmans/python-certificate-chain-resolver
+Author: Remco Koopmans
+Author-email: me@remcokoopmans.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: cryptography (>=3.1)
+
+# Python certificate chain resolver
+
+https://github.com/PyCQA/prospector/
+
+[![Licence](https://img.shields.io/badge/licence-MIT-blue.svg)](https://tldrlegal.com/license/mit-license)
+![Build](https://github.com/rkoopmans/python-certificate-chain-resolver/workflows/CI%20tests/badge.svg?branch=v1)
+[![Docs](https://readthedocs.org/projects/certificate-resolver/badge/?version=latest)](https://certificate-resolver.readthedocs.io/en/latest/)
+[![Downloads](https://static.pepy.tech/personalized-badge/cert-chain-resolver?period=total&units=international_system&left_color=black&right_color=blue&left_text=Downloads)](https://pepy.tech/project/cert-chain-resolver)
+![Python)](https://img.shields.io/pypi/pyversions/cert-chain-resolver.svg)
+
+
+Resolve / obtain the certificate intermediates of a x509 certificate. This tool writes the full bundle to stdout. 
+
+## Support
+
+* PKCS7, PEM and DER formats
+* LetsEncrypt certificates
+
+## Dependencies
+
+* cryptography
+
+## Documentation
+
+Read more on [readthedocs](https://certificate-resolver.readthedocs.io/en/latest/)
+
+## Install
+
+[Pypi](https://pypi.org/project/cert-chain-resolver/)
+
+
+    $ pip install cert-chain-resolver
+
+
+## Usage
+
+### Installed using PIP
+
+    $ cert_chain_resolver certificate.crt > bundle.crt
+
+Or read from stdin
+
+    $ cat certificate.crt | cert_chain_resolver > bundle.crt
+
+
+### After cloning the repository
+
+Install dependencies
+
+    $ make
+
+from file:
+
+    $ python -m cert_chain_resolver.cli certificate.crt > bundle.crt
+
+from stdin:
+
+    $ cat certificate.crt | python -m cert_chain_resolver.cli > bundle.crt
+
+### Print the details of each certificate in resolved chain
+
+    $ cert_chain_resolver cert.pem --info
+
+## Development
+
+bootstrap
+
+    $ make
+
+### Testing
+
+Unit testing
+
+    $ make tests
+
+Re-run tests on file changes:
+
+    $ make tests TEST_ARGS="-- -f"
+
+
