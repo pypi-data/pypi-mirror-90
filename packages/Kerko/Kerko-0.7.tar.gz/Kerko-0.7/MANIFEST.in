@@ -1,0 +1,7 @@
+include LICENSE.txt
+include MANIFEST.in
+include *.md
+graft src
+graft tests
+global-exclude *.pot
+global-exclude *.pyc
