@@ -1,0 +1,10 @@
+hiresmodule/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hiresmodule/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hiresmodule/command_line.py,sha256=e1iM-rro67CnTDPto0wLWEBurb5_1CvwP4v6pu4ABJE,68
+hiresmodule/hires.py,sha256=DoYAv0ijXrTJTdwv9iZIREAa55juDUwkMZgw43e7Do0,7040
+highres-1.0.0.dist-info/LICENSE,sha256=tnislPRnqGNWok4c5mvxWRud1en5r6Hbo0JYuboE8gc,1068
+highres-1.0.0.dist-info/METADATA,sha256=dollakT6y-ZeIv-4jJRbrgy0ZS3fgo2-aJ-xNpwsjOk,1333
+highres-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+highres-1.0.0.dist-info/entry_points.txt,sha256=6CUbrht_kwvTVhZD6SqsFJ9vrSTsti8x6SxJOxoyEAE,57
+highres-1.0.0.dist-info/top_level.txt,sha256=kHwey74NM1_iejTFgR8DiGehz8eEtook9OBNBHmm3kg,12
+highres-1.0.0.dist-info/RECORD,,
