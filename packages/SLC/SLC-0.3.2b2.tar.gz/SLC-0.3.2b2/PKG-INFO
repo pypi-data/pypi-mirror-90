@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: SLC
+Version: 0.3.2b2
+Summary: A tool that allows you to connect to and run SQL commands to an SQLite3 database easily.
+Home-page: https://downloadSLC.jonathan2018.repl.co/dev/pr/downloads/SLC-0.3.2b2.tar.gz
+Author: Jonathan Wang
+Author-email: jonathanwang2018@gmail.com
+License: UNKNOWN
+Description: # SQLite Connect (SLC) 
+        
+        SLC allows you to connect to an SQLite3 database file faster than if you just used the SQLite3 module. Connect to a database, write to it, and commit and close it all in one line.
+        
+        ## Usage
+        - Individual argument functions won't be supported in this version because of easy mistakes and unsupported Python issues.
+        ```python
+        SLC.run([Database_URL], [SQL_COMMAND]) # Connects to Database file and runs SQL code
+        ```
+        ```python
+        SLC.run_arg([Database_URL], [SQL_COMMAND], [argument]) # Adds one new argument parameter over the original run command.
+        ```
+        ```python
+        SLC.run_args2([Database_URL], [SQL_COMMAND], [argument1], [argument2]) # Lets you input 2 arguments into run function.
+        ```
+        ```python
+        SLC.run_args3([Database_URL], [SQL_COMMAND], [argument1], [argument2], [argument3]) # Lets you input 3 arguments into run function.
+        ```
+        ```python
+        SLC.run_args4([Database_URL], [SQL_COMMAND], [argument1], [argument2], [argument3], [argument4]) # Lets you input 4 arguments into run function.
+        ```
+        ```python
+        SLC.run_args5([Database_URL], [SQL_COMMAND], [argument1], [argument2], [argument3], [argument4], [argument5]) # Lets you input 5 arguments into run function.
+        ```
+        
+        ## Argument List
+        
+        - 'fetchall' --> The fetchall argument prints out the retrieved data in Python.
+        - 'cc' --> CC will commit and close the SQLite3 file after the SQL command is run.
+        - 'com' --> This will only commit the file automatically after running SQL command.
+        - 'close' --> Will only close the SQLite3 file after SQL command is done running.
+        - 'RB' --> Will automatically rollback any SQL command you just ran. IDK why you would need this, but I added it anyway, so it would keep it consistent (and look like I have a lot of args).
+        
+        
+        # Change Log
+        
+        ## v0.1.0 (1/6/2020)
+        - First Release
+        
+        ## v0.2.0 (1/6/2020)
+        - New argument parameter added in SLC.run function. (See the README.md file above)
+        
+        ## v0.3.0 (1/6/2020)
+        - Function bug fixed.
+        
+        ## v0.3.1 (1/6/2020)
+        - Argument selection bug fixed
+        
+        ## v0.3.2b1 (Beta 1) (1/8/2020)
+        - Minor bug fixes
+        - 4 new arguments for run_arg and run_args -> (See item below)
+        - New run_args function for multiple arguments.
+        - New function calling format. Changed from sc.[argument] to SLC.[argument]
+        - New packages added
+        - README file fixed.
+        - Optimized for faster runtimes.
+        - Drawbacks: Update memory takes up 8kb
+        
+        ## v0.3.2b2 (Beta 2) (1/8/2020)
+        - New bug fixes
+        - README and CHANGELOG updated.
+        - URL metadata added
+        
+Keywords: SQL,SQLite3,Database
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
