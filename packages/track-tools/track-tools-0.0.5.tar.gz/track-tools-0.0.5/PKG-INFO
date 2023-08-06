@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: track-tools
+Version: 0.0.5
+Summary: Collection of scripts and wrappers around trackpy.
+Home-page: https://gitlab.gwdg.de/ikuhlem/track-tools
+Author: ['Ilyas Kuhlemann']
+Author-email: ikuhlem@gwdg.de
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN

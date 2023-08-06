@@ -1,0 +1,7 @@
+matplotlib
+trackpy
+pims
+pillow
+numba
+pandas
+scikit-image
