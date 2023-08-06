@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hpcomt
+Version: 0.0.1
+Summary: Detect OS Name, E.g. 'Android', 'Linux', 'Windows' or 'Java' , Etc.
+Home-page: https://github.com/honeypots0/hpcomt
+Author: Honey Pots
+Author-email: honeypots124@gmail.com
+License: UNKNOWN
+Description: Detect OS Name, E.g. 'Android', 'Linux', 'Windows' or 'Java' , Etc. Special Thing In This Module It Can Be Detect Android OS
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
