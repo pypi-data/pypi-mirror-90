@@ -1,0 +1,57 @@
+.gitignore
+.gitlab-ci.yml
+.readthedocs.yml
+LICENSE
+README.md
+environment.yml
+index.ipynb
+setup.py
+docs/Makefile
+docs/make.bat
+docs/requirements.txt
+docs/source/api.rst
+docs/source/conf.py
+docs/source/index.rst
+docs/source/user_guide.rst
+docs/source/api/misc_api.rst
+docs/source/api/plots_api.rst
+docs/source/examples/RWTH Colors.ipynb
+docs/source/examples/RWTH Misc.ipynb
+docs/source/examples/RWTH Plots.ipynb
+docs/source/examples/RWTH Template Laboratory Tasks.ipynb
+docs/source/examples/RWTH Widgets.ipynb
+examples/submission.ipynb
+js/.eslintignore
+js/.eslintrc.js
+js/.gitignore
+js/.prettierignore
+js/.prettierrc
+js/README.md
+js/Template Laboratory Tasks.ipynb
+js/package.json
+js/tsconfig.json
+js/src/index.ts
+js/style/index.css
+rwth_nb/__init__.py
+rwth_nb.egg-info/PKG-INFO
+rwth_nb.egg-info/SOURCES.txt
+rwth_nb.egg-info/dependency_links.txt
+rwth_nb.egg-info/not-zip-safe
+rwth_nb.egg-info/top_level.txt
+rwth_nb/misc/__init__.py
+rwth_nb/misc/feedback.py
+rwth_nb/misc/filters.py
+rwth_nb/misc/media.py
+rwth_nb/misc/notebook.py
+rwth_nb/misc/share.py
+rwth_nb/misc/signals.py
+rwth_nb/misc/submission.py
+rwth_nb/misc/transforms.py
+rwth_nb/plots/__init__.py
+rwth_nb/plots/colors.py
+rwth_nb/plots/mpl_decorations.py
+tests/__init__.py
+tests/notebook.py
+tests/share.py
+tests/submission.py
+tests/test_transforms.py

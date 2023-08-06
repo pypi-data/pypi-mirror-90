@@ -1,0 +1,104 @@
+/* RWTH Colors */
+
+:root {
+--rwth-blue: #00549F;
+--rwth-blue-75: #407FB7;
+--rwth-blue-50: #8EBAE5;
+--rwth-blue-25: #C7DDF2;
+--rwth-blue-10: #E8F1FA;
+--rwth-black: #000000;
+--rwth-black-75: #646567;
+--rwth-black-50: #9C9E9F;
+--rwth-black-25: #CFD1D2;
+--rwth-black-10: #ECEDED;
+--rwth-magenta: #E30066;
+--rwth-magenta-75: #E96088;
+--rwth-magenta-50: #F19EB1;
+--rwth-magenta-25: #F9D2DA;
+--rwth-magenta-10: #FDEEF0;
+--rwth-yellow: #FFED00;
+--rwth-yellow-75: #FFF055;
+--rwth-yellow-50: #FFF59B;
+--rwth-yellow-25: #FFFAD1;
+--rwth-yellow-10: #FFFDEE;
+--rwth-petrol: #006165;
+--rwth-petrol-75: #2D7F83;
+--rwth-petrol-50: #7DA4A7;
+--rwth-petrol-25: #BFD0D1;
+--rwth-petrol-10: #E6ECEC;
+--rwth-turquoise: #0098A1;
+--rwth-turquoise-75: #00B1B7;
+--rwth-turquoise-50: #89CCCF;
+--rwth-turquoise-25: #CAE7E7;
+--rwth-turquoise-10: #EBF6F6;
+--rwth-green: #57AB27;
+--rwth-green-75: #8DC060;
+--rwth-green-50: #B8D698;
+--rwth-green-25: #DDEBCE;
+--rwth-green-10: #F2F7EC;
+--rwth-maigrun: #BDCD00;
+--rwth-maigrun-75: #D0D95C;
+--rwth-maigrun-50: #E0E69A;
+--rwth-maigrun-25: #F0F3D0;
+--rwth-maigrun-10: #F9FAED;
+--rwth-orange: #F6A800;
+--rwth-orange-75: #FABE50;
+--rwth-orange-50: #FDD48F;
+--rwth-orange-25: #FEEAC9;
+--rwth-orange-10: #FFF7EA;
+--rwth-red: #CC071E;
+--rwth-red-75: #D85C41;
+--rwth-red-50: #E69679;
+--rwth-red-25: #F3CDBB;
+--rwth-red-10: #FAEBE3;
+--rwth-bordeaux: #A11035;
+--rwth-bordeaux-75: #B65256;
+--rwth-bordeaux-50: #CD8B87;
+--rwth-bordeaux-25: #E5C5C0;
+--rwth-bordeaux-10: #F5E8E5;
+--rwth-violet: #612158;
+--rwth-violet-75: #834E75;
+--rwth-violet-50: #A8859E;
+--rwth-violet-25: #D2C0CD;
+--rwth-violet-10: #EDE5EA;
+--rwth-purple: #7A6FAC;
+--rwth-purple-75: #9B91C1;
+--rwth-purple-50: #BCB5D7;
+--rwth-purple-25: #DEDAEB;
+--rwth-purple-10: #F2F0F7;
+}
+
+/* Custom Cell Styles*/
+
+.rwth-topic {
+    background-color: var(--rwth-blue-50);
+    border-color: var(--rwth-blue);
+} 
+
+
+.rwth-subtopic {
+    background-color: var(--rwth-blue-10); 
+    border-color: var(--rwth-blue-50);
+} 
+
+
+.rwth-feedback {
+    background-color: var(--rwth-green-50); 
+    border-color: var(--rwth-green);
+} 
+
+
+.rwth-subfeedback {
+    background-color: var(--rwth-green-10);  
+    border-color: var(--rwth-green-50);
+} 
+
+.rwth-question {
+    background-color: var(--rwth-purple-50);
+    border-color: var(--rwth-purple);
+}
+
+.rwth-subquestion {
+    background-color: var(--rwth-purple-10);
+    border-color: var(--rwth-purple-50);
+}
