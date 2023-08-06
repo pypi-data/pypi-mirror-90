@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: click-easylog
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/Cologler/click-easylog-python
+Author: Cologler
+Author-email: skyoflw@gmail.com
+License: MIT License
+Description: # click-easylog
+        
+        A easy way to add log on click app.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
