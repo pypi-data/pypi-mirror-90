@@ -1,0 +1,46 @@
+{
+    "twitter": {
+        "key": "xxxxxxxxxxxxxxxxxxxxx",
+        "secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "oauth_token": "xxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "oauth_secret": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    "database": {
+        "host": "localhost",
+        "port": 9200,
+        "db_name": "gazouilloire"
+    },
+    "keywords": [
+        "amour",
+        "@medialab_scpo"
+    ],
+    "url_pieces": [
+        "medialab.sciencespo.fr/fr"
+    ],
+    "time_limited_keywords": {
+        "#m6": [
+            ["2014-05-01 16:00", "2014-05-08 16:05"],
+            ["2014-05-08 16:00", "2014-05-08 16:05"],
+            ["2014-05-15 16:00", "2014-05-08 16:05"],
+            ["2014-05-22 16:00", "2014-05-08 16:05"]
+        ],
+        "bieber": [
+            ["2014-05-08 16:00", "2014-05-08 16:05"]
+        ]
+    },
+    "language": null,
+    "geolocalisation": "Paris, France",
+    "geolocalisation": [48.70908786918211, 2.1533203125, 49.00274483644453, 2.610626220703125],
+    "geolocalisation_type": "admin", "possible_values": "country/admin/city",
+    "resolve_redirected_links": true,
+    "grab_conversations": false,
+    "download_medias": {
+        "photos": false,
+        "videos": false,
+        "animated_gifs": false
+    },
+    "save_videos_as_snapshots": true,
+    "medias_directory": "medias",
+    "timezone": "Europe/Paris",
+    "debug": false
+}
