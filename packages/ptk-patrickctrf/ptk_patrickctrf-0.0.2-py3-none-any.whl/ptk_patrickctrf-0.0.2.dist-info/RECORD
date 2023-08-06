@@ -1,0 +1,10 @@
+ptk/__init__.py,sha256=uBhrJPr3X3G6P9yoxyyouoi2qAiXY5oUzULS7HiMihI,47
+ptk/timeseries/__init__.py,sha256=q3b4ZTHA8HFUHTF-d-UbVjyKIng1ldr_aBhU0uTvGq8,85
+ptk/timeseries/timeseries.py,sha256=0PAjX2JX1qGgLR1nTHXx9lQTHUToKrNMtm4ixSTYTw0,9919
+ptk/utils/__init__.py,sha256=ljgSOYrNgVmGlhowY25XFJtdP0818IOJbyjqdFY39sM,171
+ptk/utils/utils.py,sha256=55ytDrWUUrcr4OaaZAlO4_sO5K6pX0-roNXNwEnDgrA,11030
+ptk_patrickctrf-0.0.2.dist-info/LICENSE,sha256=wDndSTCZnbaOLbToewp8yHTdAmAgNUf9p6mcx_Z_QPg,1061
+ptk_patrickctrf-0.0.2.dist-info/METADATA,sha256=45DCTi3ziBYYYm50V_mUU6clr_rZ7RpQXyG5WCIT2zE,634
+ptk_patrickctrf-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ptk_patrickctrf-0.0.2.dist-info/top_level.txt,sha256=R19swdM386cjwhBQAS8okscvySGAG9vCW_LaFWn4G4g,4
+ptk_patrickctrf-0.0.2.dist-info/RECORD,,
