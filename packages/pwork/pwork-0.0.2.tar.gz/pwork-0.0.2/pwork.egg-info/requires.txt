@@ -1,0 +1,13 @@
+pipenv
+cookiecutter
+
+[dev]
+autopep8
+pylint
+pytest
+mypy
+flake8
+black
+isort
+pytest-cov
+pre-commit
