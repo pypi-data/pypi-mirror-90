@@ -1,0 +1,10 @@
+README.md
+setup.py
+LPFICS.egg-info/PKG-INFO
+LPFICS.egg-info/SOURCES.txt
+LPFICS.egg-info/dependency_links.txt
+LPFICS.egg-info/requires.txt
+LPFICS.egg-info/top_level.txt
+lpfics/__init__.py
+lpfics/lpfics.py
+lpfics/prefered_lpfics.py
