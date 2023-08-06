@@ -1,0 +1,58 @@
+from .stats import KillsDeaths, WinsLosses
+
+
+class Duels:
+    def __init__(self, data):
+        self.name = "Duels"
+        self.games_played = data.get("player", {}).get("stats", {}).get("Duels", {}).get("games_played_duels", 0)
+        self.coins = data.get("player", {}).get("stats", {}).get("Duels", {}).get("coins", 0)
+        self.winstreak = data.get("player", {}).get("stats", {}).get("Duels", {}).get("current_winstreak", 0)
+        self.kills = KillsDeaths(
+            data.get("player", {}).get("stats", {}).get("Duels", {}).get("kills", 0),
+            data.get("player", {}).get("stats", {}).get("Duels", {}).get("deaths", 0)
+        )
+        self.wins = WinsLosses(
+            data.get("player", {}).get("stats", {}).get("Duels", {}).get("wins", 0),
+            data.get("player", {}).get("stats", {}).get("Duels", {}).get("losses", 0)
+        )
+        self.bow = Bow(data)
+        self.classic = Classic(data)
+
+    def __str__(self):
+        return self.name
+
+
+class Bow:
+    def __init__(self, data):
+        self.name = "Bow"
+        self.games_played = data.get("bow_duel_rounds_played", 0)
+        self.winstreak = data.get("player", {}).get("stats", {}).get("Duels", {}).get("current_bow_winstreak", 0)
+        self.kills = KillsDeaths(
+            data.get("player", {}).get("stats", {}).get("Duels", {}).get("bow_duel_kills", 0),
+            data.get("player", {}).get("stats", {}).get("Duels", {}).get("bow_duel_deaths", 0)
+        )
+        self.wins = WinsLosses(
+            data.get("player", {}).get("stats", {}).get("Duels", {}).get("bow_duel_wins", 0),
+            data.get("player", {}).get("stats", {}).get("Duels", {}).get("bow_duel_losses", 0)
+        )
+
+    def __str__(self):
+        return self.name
+
+
+class Classic:
+    def __init__(self, data):
+        self.name = "Classic"
+        self.games_played = data.get("classic_duel_rounds_played", 0)
+        self.winstreak = data.get("player", {}).get("stats", {}).get("Duels", {}).get("current_classic_winstreak", 0)
+        self.kills = KillsDeaths(
+            data.get("player", {}).get("stats", {}).get("Duels", {}).get("classic_duel_kills", 0),
+            data.get("player", {}).get("stats", {}).get("Duels", {}).get("classic_duel_deaths", 0)
+        )
+        self.wins = WinsLosses(
+            data.get("player", {}).get("stats", {}).get("Duels", {}).get("classic_duel_wins", 0),
+            data.get("player", {}).get("stats", {}).get("Duels", {}).get("classic_duel_losses", 0)
+        )
+
+    def __str__(self):
+        return self.name
