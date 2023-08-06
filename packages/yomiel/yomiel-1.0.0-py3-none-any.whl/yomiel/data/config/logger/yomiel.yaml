@@ -1,0 +1,64 @@
+---
+# -*- coding: utf-8 -*-
+#
+# yomiel logger configuration file
+#
+
+# https://docs.python.org/3/library/logging.html
+#
+version: 1
+
+# Logger identities
+#
+# https://docs.python.org/3/howto/logging.html#loggers
+#
+loggers:
+
+    default:
+        handlers: [default_handler]
+        propagate: false
+        level: INFO
+
+    debug:
+        handlers: [debug_handler]
+        propagate: false
+        level: DEBUG
+
+# Handlers
+#
+# https://docs.python.org/3/howto/logging.html#handlers
+#
+handlers:
+
+    # Stream handlers
+    #
+    default_handler:
+        class: logging.StreamHandler
+        formatter: default_formatter
+        stream: ext://sys.stderr
+
+    debug_handler:
+        class: logging.StreamHandler
+        formatter: debug_formatter
+        stream: ext://sys.stderr
+
+# Formatters
+#
+# https://docs.python.org/3/howto/logging.html#formatters
+#
+formatters:
+
+    default_formatter:
+        format: '%(levelname)-.1s: %(message)s'
+
+    debug_formatter:
+        format: >-
+            '[%(pathname)s:%(funcName)s:%(lineno)d] %(levelname)s: %(message)s'
+
+# root logger (defaults to this)
+#
+root:
+    handlers: [default_handler]
+    level: INFO
+
+# vim: set ts=4 sw=4 tw=72 expandtab:

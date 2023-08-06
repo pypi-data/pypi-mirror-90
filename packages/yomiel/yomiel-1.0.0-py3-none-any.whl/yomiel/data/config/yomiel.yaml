@@ -1,0 +1,82 @@
+---
+# -*- coding: utf-8 -*-
+#
+# yomiel configuration file
+#
+# Place this file in one of the following locations:
+#   /etc/xdg/yomiel/yomiel.yaml
+#   ~/.config/yomiel/yomiel.yaml
+#   ./yomiel.yaml
+#
+
+# [Output]
+#
+# Print messages in the specified data serialization format.
+# Possible values: [raw|json|yaml]
+output-format: yaml
+
+# [jomiel]
+#
+# The address to the jomiel router endpoint to connect to. This is used
+# for "talking to the broker of jomiel". Examples:
+#   tcp://localhost:5514
+#   ipc:///tmp/foo
+# router-endpoint: tcp://localhost:5514
+#
+# Maximum time in seconds that the program should allow the connection
+# to the service to take.
+# connect-timeout: 60
+
+# [Logger]
+#
+# Logger configuration file
+# logger-config: config/logger/yomiel.yaml
+#
+# Logger identity
+# - See config/logger/yomiel.yaml for available identities
+# logger-ident: debug
+
+# [Debug]
+#
+# Whether the logged JSONs should be minified.
+# debug-minify-json: true
+
+# [Auth]
+#
+# Use the authentication type
+# Possible values: [none|curve|ssh]
+# auth-mode: none
+
+# [Auth: CURVE]
+#
+# Public _server_ CURVE certificate key file to use for connecting to
+# jomiel
+# curve-server-public-key-file: .curve/server.key
+#
+# Secret _client_ CURVE key file to use for connecting to jomiel
+# curve-client-key-file: .curve/client.key_secret
+
+# [Auth: SSH]
+# The SSH server to connect to, the full ssh server string will be
+# parsed. user@server:port.
+# ssh-server: user@server:port
+#
+# SSH key file to use (if any)
+# Specifies a key to be used in ssh login, default is None. Regular
+# default ssh keys will be used without specifying this argument.
+# ssh-key-file: path-to-the-key-file
+#
+# Password to the SSH server (if any)
+# If this is left None, the user  will be prompted for it if
+# passwordless key based login is unavailable.
+# ssh-password: password-to-ssh-server
+#
+# Time (in seconds) after which no activity will result in the tunnel
+# closing. This prevents orphaned tunnels from running forever. Default
+# is 60.
+# ssh-timeout: 60
+#
+# If True, use paramiko instead of pexpect, the default is True.
+# ssh-paramiko: false
+
+# vim: set ts=4 sw=4 tw=72 expandtab:
