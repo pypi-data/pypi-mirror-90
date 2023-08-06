@@ -1,0 +1,6 @@
+pkg.py
+lifeisarazberry/__init__.py
+lifeisarazberry.egg-info/PKG-INFO
+lifeisarazberry.egg-info/SOURCES.txt
+lifeisarazberry.egg-info/dependency_links.txt
+lifeisarazberry.egg-info/top_level.txt
