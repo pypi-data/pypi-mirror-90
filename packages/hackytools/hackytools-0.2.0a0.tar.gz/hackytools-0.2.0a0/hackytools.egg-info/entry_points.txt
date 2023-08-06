@@ -1,0 +1,7 @@
+[console_scripts]
+bork = hackytools.cli:main
+gifit = hackytools.cli:main
+spriteit = hackytools.cli:main
+whatsmyip = hackytools.cli:main
+whatsmyspeed = hackytools.cli:main
+

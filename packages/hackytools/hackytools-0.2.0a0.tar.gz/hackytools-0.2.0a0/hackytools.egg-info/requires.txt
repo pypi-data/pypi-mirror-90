@@ -1,0 +1,2 @@
+speedtest-cli
+pillow<=8.0.1
