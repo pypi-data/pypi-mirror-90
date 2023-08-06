@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: piano-vis
+Version: 0.0.1
+Summary: Visualize piano midi files..
+Home-page: https://github.com/HuangPatrick16777216/piano_vis
+Author: Patrick Huang
+Author-email: huangpatrick16777216@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pygame
+Requires-Dist: opencv-python
+
+# piano_vis
+Visualize piano midi files.
+
+
