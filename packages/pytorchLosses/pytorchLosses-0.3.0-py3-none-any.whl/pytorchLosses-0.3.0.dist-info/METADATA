@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pytorchLosses
+Version: 0.3.0
+Summary: Say hello
+Home-page: https://github.com/rajanlagah/pytorch-losses.git
+Author: Rajan Lagah
+Author-email: rajanlagah@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: torch (>=1.6.0)
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+
+# Download to develop 
+
+```
+pip install -e .[dev]
+
+```
+
+# Examples 
+
+```
+import torch
+
+from pytorchLosses import  LabelSmoothingCrossEntropy,GamblersLoss,SCELoss,TruncatedLoss
+
+a = torch.rand(4, 5)
+b = torch.randint(0, 2, (4,))
+
+loss_fun = LabelSmoothingCrossEntropy() 
+print(loss_fun(a,b))
+print(GamblersLoss(a,b))
+
+loss_fun = SCELoss(alpha=1.0,beta=1.0,num_classes=5).cuda()
+print(loss_fun(a.cuda(),b.cuda()))
+
+# Yet to test
+loss_fun = TruncatedLoss(q=0.7, k=0.5, trainset_size=10000).cuda()
+print(loss_fun(a.cuda(),b.cuda(),indexes=1))
+
+```
+
