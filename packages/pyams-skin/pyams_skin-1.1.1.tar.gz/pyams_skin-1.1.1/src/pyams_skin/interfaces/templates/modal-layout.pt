@@ -1,0 +1,15 @@
+<div class="modal-dialog ${view.modal_class | ''}">
+	<div class="modal-content">
+		<div class="modal-header">
+			${structure:provider:pyams.header}
+			<button type="button" class="close"
+					data-dismiss="modal" aria-label="Close">
+				<i class="far fa-times-circle" aria-hidden="true"></i>
+			</button>
+		</div>
+		<div class="modal-body p-0">
+			<i tal:omit-tag="">${structure:provider:pagelet}</i>
+			<i tal:omit-tag="">${structure:provider:pyams.footer}</i>
+		</div>
+	</div>
+</div>

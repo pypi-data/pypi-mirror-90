@@ -1,0 +1,4 @@
+<textarea id="${view.id}"
+		  name="${view.name}"
+		  class="form-control ${view.klass}"
+		  disabled>${view.value}</textarea>
