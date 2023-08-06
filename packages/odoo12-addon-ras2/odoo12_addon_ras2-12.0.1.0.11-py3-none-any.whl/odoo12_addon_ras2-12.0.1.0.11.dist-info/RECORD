@@ -1,0 +1,14 @@
+odoo/__init__.py,sha256=G-d438vPx7m_ks5e9XTtM3u7LDRO5dSSukibukWmyPM,56
+odoo/addons/__init__.py,sha256=G-d438vPx7m_ks5e9XTtM3u7LDRO5dSSukibukWmyPM,56
+odoo/addons/ras2/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/ras2/__manifest__.py,sha256=-LPpi4bWqbVey0J07jrOL25JNPHfEuyUlVUg9V_8DL0,487
+odoo/addons/ras2/models/__init__.py,sha256=61YKU9vKVzt7Lxw8yCfwYCrn_EXkETEJVBrwbsRMORE,26
+odoo/addons/ras2/models/hr_employee.py,sha256=y8KLXqcBXw2yI8W9SNaHrhHN8C3QsAQ_A8lZ12Px9T4,7705
+odoo/addons/ras2/tests/__init__.py,sha256=J43bViO79TO3_f0PF_LKJj0Q-YL574UC2IU7LMyQvRE,48
+odoo/addons/ras2/tests/test_t_hr_attendance_rfid_process.py,sha256=f80glUlUC4NPgbWftsFOzxJ4_vnFMldd58AN5WkjAZI,2287
+odoo12_addon_ras2-12.0.1.0.11.dist-info/DESCRIPTION.rst,sha256=OFLjdkq_l83shhnptXuxcZEzv2i6M7BTuP9NJKaEbHU,2095
+odoo12_addon_ras2-12.0.1.0.11.dist-info/METADATA,sha256=yyQ_WWAVYcA8LCkyg_TrWRc494XbkV0k8YxY7FvPOLg,2610
+odoo12_addon_ras2-12.0.1.0.11.dist-info/RECORD,,
+odoo12_addon_ras2-12.0.1.0.11.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+odoo12_addon_ras2-12.0.1.0.11.dist-info/metadata.json,sha256=SqUHLPvu2dF52y1Gja9keO1YoY12XP0bE0LvbWOdNP8,722
+odoo12_addon_ras2-12.0.1.0.11.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
