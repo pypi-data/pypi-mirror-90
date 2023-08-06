@@ -1,0 +1,58 @@
+python3 -m moofei.find -help
+usage: __main__.py [-h] [-basedir [BASEDIR [BASEDIR ...]]] [-words WORDS]
+                   [-fsize FSIZE] [-mtime MTIME] [-ctime CTIME] [-atime ATIME]
+                   [--debug] [--isbox] [--isdir] [-fcase {0,1}]
+                   [-wcase {0,1,2}] [-isdeep {0,1}] [-net-host NET_HOST]
+                   [-plugin-fix [PLUGIN_FIX [PLUGIN_FIX ...]]] [-bsize BSIZE]
+                   [-coding CODING]
+                   [name]
+
+Search Filename or Find same words <http://www.mufei.ltd>
+
+positional arguments:
+  name                  filename for search (Specify the search file name,
+                        which can be regular)
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -basedir [BASEDIR [BASEDIR ...]], --basedir [BASEDIR [BASEDIR ...]]
+                        Search directory; default to current CMD directory
+  -words WORDS, --words WORDS
+                        Read the file; find the string in the file; regular
+  -fsize FSIZE, --fsize FSIZE
+                        File size limit, + is greater than a certain value, -
+                        is less than a certain value;default:+1B
+  -mtime MTIME, --mtime MTIME
+                        File mtime judgment (days), the value is + 10 (before
+                        10 days) - 10 (within 10 days)
+  -ctime CTIME, --ctime CTIME
+                        File mtime judgment (days), the value is + 10 (before
+                        10 days) - 10 (within 10 days)
+  -atime ATIME, --atime ATIME
+                        File mtime judgment (days), the value is + 10 (before
+                        10 days) - 10 (within 10 days)
+  --debug               Debug mode
+  --isbox               Enter compressed packet search
+  --isdir               search only folders
+  -fcase {0,1}, --fcase {0,1}
+                        Ignore file name case;default:1
+  -wcase {0,1,2}, --wcase {0,1,2}
+                        Match content words;0:nodong;1:ignore case;2:Regular
+                        matching;default:auto
+  -isdeep {0,1}, --isdeep {0,1}
+                        Deep search subdirectories;default:1
+  -net-host NET_HOST, --net-host NET_HOST
+                        net://usr:pwd/domain:port
+  -plugin-fix [PLUGIN_FIX [PLUGIN_FIX ...]], --plugin-fix [PLUGIN_FIX [PLUGIN_FIX ...]]
+                        specific suffix file to search words with plugin
+  -plugin-box [PLUGIN_BOX [PLUGIN_BOX ...]], --plugin-box [PLUGIN_BOX [PLUGIN_BOX ...]]
+                        specific suffix file to decompression with plugin
+  -plugin-lib [PLUGIN_LIB [PLUGIN_LIB ...]], --plugin-lib [PLUGIN_LIB [PLUGIN_LIB ...]]
+                        (Python or Plugin) paths
+  -bsize BSIZE, --bsize BSIZE
+  --istry
+  -coding CODING, --coding CODING
+                        The input code is ASCII by default; it is compatible
+                        with py < 3.0 and provides values such as GBK or UTF-8
+
+QQqun: 226895834

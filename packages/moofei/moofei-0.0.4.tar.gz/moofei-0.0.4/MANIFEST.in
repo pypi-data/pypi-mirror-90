@@ -1,0 +1,10 @@
+include MANIFEST.in
+include README
+include README.md
+include LICENSE
+include *.txt
+include lib/moofei/tests/*.txt
+include lib/moofei/static/*.txt
+
+
+

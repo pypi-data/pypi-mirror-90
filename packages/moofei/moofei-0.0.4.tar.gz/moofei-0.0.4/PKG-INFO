@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: moofei
+Version: 0.0.4
+Summary: find,valid,tree,date,db,waf By mufei
+Home-page: http://www.mufei.ltd
+Author: mufei
+Author-email: ypdh@qq.com
+License: BSD
+Description: 
+        Search Filename or Find same words [link to mufei.ltd!](http://www.mufei.ltd)
+        
+        ```shell
+        python3 -m moofei.find -help
+        ```
+        
+        usage: __main__.py [-h] [-basedir [BASEDIR [BASEDIR ...]]] [-words WORDS]
+                           [-fsize FSIZE] [-mtime MTIME] [-ctime CTIME] [-atime ATIME]
+                           [--debug] [--isbox] [--isdir] [-fcase {0,1}]
+                           [-wcase {0,1,2}] [-isdeep {0,1}] [-net-host NET_HOST]
+                           [-plugin-fix [PLUGIN_FIX [PLUGIN_FIX ...]]] [-bsize BSIZE]
+                           [-coding CODING]
+                           [name]
+        
+        QQqun: 226895834
+Keywords: moofei mufei find valid tree date db waf
+Platform: UNKNOWN
+Requires: chardet
