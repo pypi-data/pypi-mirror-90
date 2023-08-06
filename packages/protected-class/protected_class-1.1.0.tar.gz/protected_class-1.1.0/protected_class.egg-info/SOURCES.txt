@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+protected_class.egg-info/PKG-INFO
+protected_class.egg-info/SOURCES.txt
+protected_class.egg-info/dependency_links.txt
+protected_class.egg-info/top_level.txt
+src/c/2/protected_class.c
+src/c/3/protected_class.c
+src/cython/protected_class.pyx
+tests/__init__.py
+tests/run_tests.sh
+tests/test_protected_class
+tests/test_protected_class.py
