@@ -1,0 +1,8 @@
+aws_cdk/aws_codegurureviewer/__init__.py,sha256=1FpSNQBgcTKlTV9vIn0xEhKFst6WDDmSudVGEk2ka2w,10938
+aws_cdk/aws_codegurureviewer/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_codegurureviewer/_jsii/__init__.py,sha256=t4d-mOb1vAvpb197_OS0sVXguJlzPTM90TboTWMYV04,378
+aws_cdk/aws_codegurureviewer/_jsii/aws-codegurureviewer@1.83.0.jsii.tgz,sha256=GT-qL23gE5-2ImtqfP0M6F_46X3ajql-8cvM_1ltvKU,15787
+aws_cdk.aws_codegurureviewer-1.83.0.dist-info/METADATA,sha256=OAiMWl6whI0oThPegGqDeO4OAqXZX9bKS49tTL7aOFg,1698
+aws_cdk.aws_codegurureviewer-1.83.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_codegurureviewer-1.83.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_codegurureviewer-1.83.0.dist-info/RECORD,,
