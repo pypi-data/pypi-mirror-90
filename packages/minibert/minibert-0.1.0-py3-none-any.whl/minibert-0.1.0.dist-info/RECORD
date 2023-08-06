@@ -1,0 +1,12 @@
+minibert/__init__.py,sha256=Lc7rIJtAPyYEpqEkRRb8B_YJfFx0Qd6FM4PdpBGUZBg,54
+minibert/activations.py,sha256=6Dyc4TpGrWbGdcqaCraxOX15vXK-p51H480doA-fl0M,212
+minibert/configuration.py,sha256=yen0ulPYgISEN2z14PYFQhAij0Ec7DFkLwVhunYt37k,2286
+minibert/modules.py,sha256=cxqmw5u_o4SwaksnK1aoz8X_MNfzMA4iWDpsvh7CwQ8,12764
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_attention.py,sha256=OLkqtqu5jVrtQTiHHMIz-CShJc8tfETVXAgTyat7OPQ,2067
+tests/test_minibert.py,sha256=rCb2sp0N30QDHRqgAyXFtsuHCN2gvhz2qhLqFs6Vjog,388
+minibert-0.1.0.dist-info/LICENSE,sha256=YkhBAIYGxKexkJ-fj_95QcfPJM9c0XOg-IpV5PfwwlU,485
+minibert-0.1.0.dist-info/METADATA,sha256=Ff8VsXZtPy10GCTgPKtmnmSsivIPqaPAIF81D7NZcbA,846
+minibert-0.1.0.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+minibert-0.1.0.dist-info/top_level.txt,sha256=G9F1mdLwgm0tiZsXuv_3Yn6WEXP7QvEoWtbtnWl3TZg,15
+minibert-0.1.0.dist-info/RECORD,,
