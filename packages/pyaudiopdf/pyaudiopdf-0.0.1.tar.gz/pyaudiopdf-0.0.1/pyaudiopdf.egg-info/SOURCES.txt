@@ -1,0 +1,7 @@
+setup.py
+pyaudiopdf/__init__.py
+pyaudiopdf.egg-info/PKG-INFO
+pyaudiopdf.egg-info/SOURCES.txt
+pyaudiopdf.egg-info/dependency_links.txt
+pyaudiopdf.egg-info/requires.txt
+pyaudiopdf.egg-info/top_level.txt
