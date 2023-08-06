@@ -1,0 +1,9 @@
+biosimulators_utils[docker] >= 0.1.31
+capturer
+cement
+docker
+natsort
+PyPDF2
+python_dateutil
+pyyaml
+termcolor
