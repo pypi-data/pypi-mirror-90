@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: frail
+Version: 0.0.2
+Summary: Create and prove equivalence of affine indexing hardware using recurrence relations encoded in scans
+Home-page: https://github.com/David-Durst/frail
+Maintainer: David Durst
+Maintainer-email: davidbdurst@gmail.com
+License: MIT
+Description: # Functional Recurrence-based Affine Indexing Language
+        Express multiple hardware implementations of the same affine indexing generator with recurrence relations. 
+        Then prove that the implementations equivalence! 
+        A mix of scans (from functional programming) and SMT make this all possible.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
