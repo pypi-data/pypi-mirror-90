@@ -1,0 +1,7 @@
+include *.rst
+include LICENSE.md
+recursive-include tools *
+recursive-exclude tools *.pyc
+recursive-include tests *
+recursive-exclude tests *.pyc
+
