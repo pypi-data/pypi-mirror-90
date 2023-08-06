@@ -1,0 +1,10 @@
+hostp2pd/__init__.py,sha256=sStLpx2jO78woUAyrwl7Z59vaWmtonU-p73rtIuHaWg,21729
+hostp2pd/__main__.py,sha256=aTW7QRS6ZRHWxvdnFeOiRK5y7lF-ezV_tUU-bzDVmwU,457
+hostp2pd/__version__.py,sha256=CjpRE9sT1AfD9Ft__Fhhop9Bh9IBCVEmm9E9TX1aV2k,21
+hostp2pd/hostp2pd.py,sha256=vIn23rCxVYcjUo5vONIfno9rC4BtnKen8Wli6RNBBhY,66345
+hostp2pd-0.1.5.post32.dist-info/LICENSE,sha256=E0mkthSEkrRPYp5k7tZ2YS4jT-moOeTzsnfBSCyISfE,20849
+hostp2pd-0.1.5.post32.dist-info/METADATA,sha256=M4U43ryfzoIUBh58R6r-b4Jlxu8Ta1RKwT1-NlZO0Ac,3309
+hostp2pd-0.1.5.post32.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hostp2pd-0.1.5.post32.dist-info/entry_points.txt,sha256=iJkdT3cXmEcV7352EE-p-s3au13RLbQR43xmYM4afd8,44
+hostp2pd-0.1.5.post32.dist-info/top_level.txt,sha256=TomLT75hQi54VyUVUJ-mj0i1eKqqxkWzu79KGOMBEko,9
+hostp2pd-0.1.5.post32.dist-info/RECORD,,
