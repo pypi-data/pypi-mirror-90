@@ -1,0 +1,28 @@
+name: Build & test py-detox-bridge-workflow
+
+on: [push]
+jobs:
+  build:
+    name: Build, test, cover
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies and build example app
+        run: |
+          curl https://www.python.org/ftp/python/3.7.9/python-3.7.9-macosx10.9.pkg > /tmp/python3.7.9.pkg && sudo installer -pkg /tmp/python3.7.9.pkg -target /
+          export CODE_SIGNING_REQUIRED=NO
+          brew tap wix/brew && brew install wix/brew/applesimutils
+          export NVM_DIR="$HOME/.nvm"
+          make app_github_requirements
+          make example_app_binary
+      - name: Lint
+        run: |
+          make lint
+      - name: Test
+        run: |
+          make test
+      - name: Build check
+        run: |
+          make build
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1

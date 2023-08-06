@@ -1,0 +1,12 @@
+language: python
+python: 3.7
+script: skip
+deploy:
+  provider: pypi
+  user: kpn-digital
+  skip_cleanup: true
+  password:
+    secure: G+EezQd+z8cZYoKOJHUxIsuAreERcTUgcDjA2zXD/lmKdk4gJI6p302XME2AyZ08XfRETGDRJOhZeNNvpzUnmh4AuhysygGLqpozcsC5pUvxJhLA9CAAe9VhzO948gheFGtV8bTgjgjSwxYtzU7ikl+SAQyWowiTPQtyWDUOIjWTLBzXyXs+/sWoUiF/6U6Xrgx9tnvaCXR0jbSEWeWBwhc1u2wj6YSo7iPtlnDdDk8V8fORXQOig2D+fqB+F4J6EyMOhelSr2Fm2G1+pk3iibNhVFNKourG0xIqnPdYAru1AZnXlZvaMbEoEoMCFPO0vAL3gj5TjxNac8XcrW+RUQzTwL2ThQhSEVEP+NX/0oC35vg8DYQgXSWLBrdIxh4gZg0MuihJMWfQLQiVsPAH/OY8KB49xapjDzS+ha/ZkQZTXpS5GMo2rGANMAcuO4BVmckvCua1fRQWEF3aENCJE0TeeoVxu4u8ZMUaK+chwqBRZlm/KiYZ1BuiEdxhTMlTsZtOMQcS+xTU/nv2OYjr+5o4I37nAgi6U9CGOYn1AL2ks5pjdm4W8/h4M8kkr8GJ7TnnLU6lgMm7tus2JCUPX1MNR11I5jzXQ2yvZRJ4/vXgcVnOMqdRPf8iMTAZMsM7Sp26CiE13IIP6ZMemMNn0SIrNu+RDOUV0jVo29lJ7OY=
+  on:
+    tags: true
+    all_branches: true
