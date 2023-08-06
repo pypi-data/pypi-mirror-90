@@ -1,0 +1,7 @@
+README.md
+setup.py
+xander/__init__.py
+xander.egg-info/PKG-INFO
+xander.egg-info/SOURCES.txt
+xander.egg-info/dependency_links.txt
+xander.egg-info/top_level.txt
