@@ -1,0 +1,10 @@
+imgflip/__init__.py,sha256=U7shHFNNJix9l1rToE2795utVvHHDv0taeFbcmSVMHs,223
+imgflip/__main__.py,sha256=HlVfdbU8QzYO5CnbSdhNWtA7Ul-LmzA2ATlMPvPHi_s,69
+imgflip/api.py,sha256=PWlMUErrm-LAPL7PQa5sdMUqF6FJdUPtIunelVEihYc,1256
+imgflip/cli.py,sha256=n33mcl7IWXCJMV700hoqHiQPeHbgYEsdxG0hYfjrKfE,1447
+imgflip/utils.py,sha256=AZglF81e_xRru8rC0b2X8mvEdd27dIB2XT9zHYIJkk8,763
+imgflip-0.1.0.dist-info/METADATA,sha256=ElUZZtAURcQ7tl1XEJKVUQL-wdUAoyruN3JMAYxOJ_8,972
+imgflip-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+imgflip-0.1.0.dist-info/entry_points.txt,sha256=rxgi7SpbwT-QLdNLRulrG2WAdzYPhF3-dDDgcCTFTO4,46
+imgflip-0.1.0.dist-info/top_level.txt,sha256=pHNsvxbMoeTe9adkk9WiymSkMqa9tqhxM9YQMLli4vw,8
+imgflip-0.1.0.dist-info/RECORD,,
