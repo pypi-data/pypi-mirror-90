@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: npyfile
+Version: 1.0.0
+Summary: NumPy File
+Home-page: https://github.com/maxstrobel/npyfile
+Author: Maximilian Strobel
+Author-email: max.strobel28@gmail.com
+Maintainer: Maximilian Strobel
+Maintainer-email: max.strobel28@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://npyfile.readthedocs.io/
+Project-URL: Source Code, https://github.com/maxstrobel/npyfile
+Project-URL: Bug Tracker, https://github.com/maxstrobel/npyfile/issues
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: coverage ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: tox ; extra == 'tests'
+
+
+
+``npyfile``: Write arrays continuously to ``.npy`` files
+========================================================
+
+``npyfile`` is a a package that allows you to continuously write arrays to a ``.npy`` file. You can use it like a
+standard Python file with the well-known context manager.
+
+*Warning*: Due to the internal structure of ``.npy`` files, the arrays must have the same ``shape`` & ``dtype``.
+
+.. teaser-end
+
+Example
+-------
+Generate some artificial dummy data, e.g. images, & write them into a temporary file. A real world scenario reflecting
+this is the continuous arrival of new images from a camera.
+
+.. code-block:: python
+
+    import pathlib
+    import tempfile
+    tmp_dir = tempfile.TemporaryDirectory()
+    outfile = pathlib.Path(tmp_dir.name) / 'images.npy'
+
+    images = np.random.randint(low=0, high=255, size=(10,640,480,3))
+
+    with NpyFile(outfile) as file:
+        for img in images:
+            file.write(img)
+
+    np.testing.assert_array_equal(images, np.load(outfile))
+
+    tmp_dir.cleanup()
+
+
+
+Credits
+-------
+
+- `attrs`_: Project & infrastructure setup
+- `numpy`_: File format
+
+
+.. _attrs:
+    https://www.attrs.org
+.. _numpy:
+    https://numpy.org/
+
