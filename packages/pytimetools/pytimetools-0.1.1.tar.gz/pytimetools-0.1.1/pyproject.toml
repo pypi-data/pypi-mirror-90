@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "pytimetools"
+version = "0.1.1"
+description = ""
+authors = ["huoyinghui <hyhlinux@163.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+django = "^2.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
