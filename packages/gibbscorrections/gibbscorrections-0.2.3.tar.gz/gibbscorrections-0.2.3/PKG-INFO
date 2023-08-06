@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: gibbscorrections
+Version: 0.2.3
+Summary: A module that automatises the tedious process of retrieving a Gaussian 16 geometry, and setting up and runninga single point Orca calculation at that geometry. Of course, for a bunch of files at the same time.
+Home-page: http://github.com/chemistry-scripts/gibbscorrections
+Author: Emmanuel Nicolas
+Author-email: latruelle@users.noreply.github.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
