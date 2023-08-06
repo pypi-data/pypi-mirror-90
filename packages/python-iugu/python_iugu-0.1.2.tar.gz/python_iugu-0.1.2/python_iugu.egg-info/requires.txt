@@ -1,0 +1,17 @@
+aiodns
+aiohttp
+async-timeout
+attrs
+brotlipy
+cchardet
+certifi
+cffi
+chardet
+deserialize
+idna
+multidict
+pycares
+pycparser
+typing-extensions
+urllib3
+yarl
