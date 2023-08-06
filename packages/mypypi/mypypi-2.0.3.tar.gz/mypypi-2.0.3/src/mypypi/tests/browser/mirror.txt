@@ -1,0 +1,342 @@
+=========
+Mirroring
+=========
+
+One of the most important features of MYPYPI is to mirror packages from PyPi.
+PyPi mostly works but when it does not, life stops.
+The solution is to store packages on our server. On our MYPYPI server.
+
+Basic tests will use the manager user for now:
+
+  >>> from zope.testbrowser.testing import Browser
+  >>> browser = Browser()
+  >>> browser.addHeader('Authorization', 'Basic mgr:mgrpw')
+  >>> browser.handleErrors = False
+
+  >>> browser.open('http://localhost')
+
+We'll add a single mirror package:
+
+  >>> browser.getLink('Mirror Package').click()
+
+We have some sample data form z3c.form, so use that package:
+
+  >>> browser.getControl(name='form.widgets.__name__').value = u'z3c.form'
+
+We could set a different source server, but we leave it now at std PyPi:
+
+  >>> browser.getControl(name="form.widgets.pypiURL").value = u'https://pypi.org/pypi'
+
+Add the mirror package:
+
+  >>> browser.getControl(name="form.buttons.add").click()
+
+MYPYPI goes and grabs the package:
+
+  >>> print browser.contents
+  <!DOCTYPE html...
+  ...X...Mirror...Published...Package...Source...Created...Modified...
+  ...Yes...http://localhost/z3c.form/releases.html...z3c.form...
+  ...https://pypi.org/pypi...link...
+
+  >>> browser.getLink('z3c.form').click()
+
+It will download all possible versions:
+
+  >>> print browser.contents
+  <!DOCTYPE html...
+  ...
+  <tr>
+     <th class="firstColumnHeader sorted-on ascending">X</th>
+     <th>Mirror</th>
+     <th>Published</th>
+     <th>Release</th>
+     <th>Files</th>
+     <th>Source</th>
+     <th>Created</th>
+     <th>Modified</th>
+   </tr>
+  ...
+  ...<a href="http://localhost/z3c.form/1.0.0/files.html">1.0.0</a>...
+  ...<a href="https://pypi.org/pypi/z3c.form/1.0.0/json">link</a>...
+  ...<a href="http://localhost/z3c.form/4.1.2/files.html">4.1.2</a>...
+  ...<a href="https://pypi.org/pypi/z3c.form/4.1.2/json">link</a>...
+  ...
+  <div class="tableButtons">
+  ...
+  </html>
+
+Let's check one specific version:
+
+  >>> browser.getLink('1.9.0').click()
+
+  >>> browser.open('http://localhost/z3c.form/1.9.0/files.html')
+  >>> print browser.contents
+  <!DOCTYPE html...
+  ...
+  ...<a href="http://localhost/z3c.form/1.9.0/z3c.form-1.9.0.tar.gz">z3c.form-1.9.0.tar.gz</a>...
+  ...<a href="https://files.pythonhosted.org/packages/60/f4/6614bb0aeb763ff665eb2e397405dd4d87dfaf0d3bbe087a014e0ab9e3de/z3c.form-1.9.0.tar.gz">link</a>...
+  ...
+  </html>
+
+Download one specific file from here:
+
+  >>> browser.getLink('z3c.form-1.9.0.tar.gz').click()
+
+  >>> print browser.contents
+  TGZ--PACKAGE-FILE_DATA--ENDTGZ
+
+Let's check the simple index:
+
+  >>> browser.open('http://localhost/simple')
+
+It has the package:
+
+  >>> print browser.contents
+  <html>
+  <head><title>PYPISite</title>
+  </head>
+  <body>
+  <h1>PYPISite</h1>
+  <a href="http://localhost/simple/z3c.form">z3c.form</a>
+  </body>
+  </html>
+  <BLANKLINE>
+
+Check the package:
+
+  >>> browser.getLink('z3c.form').click()
+  >>> print browser.contents
+  <html>
+  <head><title>z3c.form</title>
+  </head>
+  <body>
+  <h1>z3c.form</h1>
+  <a href="http://localhost/z3c.form/1.0.0/z3c.form-1.0.0-py2.4.egg">z3c.form-1.0.0-py2.4.egg</a><br />
+  <a href="http://localhost/z3c.form/1.0.0/z3c.form-1.0.0.tar.gz">z3c.form-1.0.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/1.0c1/z3c.form-1.0c1-py2.4.egg">z3c.form-1.0c1-py2.4.egg</a><br />
+  <a href="http://localhost/z3c.form/1.0c1/z3c.form-1.0c1.tar.gz">z3c.form-1.0c1.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/1.0c2/z3c.form-1.0c2-py2.4.egg">z3c.form-1.0c2-py2.4.egg</a><br />
+  <a href="http://localhost/z3c.form/1.0c2/z3c.form-1.0c2.tar.gz">z3c.form-1.0c2.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/1.1.0/z3c.form-1.1.0-py2.4.egg">z3c.form-1.1.0-py2.4.egg</a><br />
+  <a href="http://localhost/z3c.form/1.1.0/z3c.form-1.1.0.tar.gz">z3c.form-1.1.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/1.2.0/z3c.form-1.2.0-py2.4.egg">z3c.form-1.2.0-py2.4.egg</a><br />
+  <a href="http://localhost/z3c.form/1.2.0/z3c.form-1.2.0.tar.gz">z3c.form-1.2.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/1.3.0/z3c.form-1.3.0-py2.4.egg">z3c.form-1.3.0-py2.4.egg</a><br />
+  <a href="http://localhost/z3c.form/1.3.0/z3c.form-1.3.0.tar.gz">z3c.form-1.3.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/1.4.0/z3c.form-1.4.0-py2.4.egg">z3c.form-1.4.0-py2.4.egg</a><br />
+  <a href="http://localhost/z3c.form/1.4.0/z3c.form-1.4.0.tar.gz">z3c.form-1.4.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/1.4.0b1/z3c.form-1.4.0b1-py2.4.egg">z3c.form-1.4.0b1-py2.4.egg</a><br />
+  <a href="http://localhost/z3c.form/1.4.0b1/z3c.form-1.4.0b1.tar.gz">z3c.form-1.4.0b1.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/1.5.0/z3c.form-1.5.0-py2.4.egg">z3c.form-1.5.0-py2.4.egg</a><br />
+  <a href="http://localhost/z3c.form/1.5.0/z3c.form-1.5.0.tar.gz">z3c.form-1.5.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/1.5.0b1/z3c.form-1.5.0b1-py2.4.egg">z3c.form-1.5.0b1-py2.4.egg</a><br />
+  <a href="http://localhost/z3c.form/1.5.0b1/z3c.form-1.5.0b1.tar.gz">z3c.form-1.5.0b1.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/1.6.0/z3c.form-1.6.0-py2.4.egg">z3c.form-1.6.0-py2.4.egg</a><br />
+  <a href="http://localhost/z3c.form/1.6.0/z3c.form-1.6.0.tar.gz">z3c.form-1.6.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/1.7.0/z3c.form-1.7.0.tar.gz">z3c.form-1.7.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/1.8.0/z3c.form-1.8.0.tar.gz">z3c.form-1.8.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/1.8.1/z3c.form-1.8.1.tar.gz">z3c.form-1.8.1.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/1.8.2/z3c.form-1.8.2.tar.gz">z3c.form-1.8.2.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/1.9.0/z3c.form-1.9.0.tar.gz">z3c.form-1.9.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/2.0.0/z3c.form-2.0.0.tar.gz">z3c.form-2.0.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/2.1.0/z3c.form-2.1.0.tar.gz">z3c.form-2.1.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/2.2.0/z3c.form-2.2.0.tar.gz">z3c.form-2.2.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/2.3.0/z3c.form-2.3.0.tar.gz">z3c.form-2.3.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/2.3.1/z3c.form-2.3.1.tar.gz">z3c.form-2.3.1.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/2.3.2/z3c.form-2.3.2.tar.gz">z3c.form-2.3.2.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/2.3.3/z3c.form-2.3.3.tar.gz">z3c.form-2.3.3.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/2.3.4/z3c.form-2.3.4.tar.gz">z3c.form-2.3.4.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/2.4.0/z3c.form-2.4.0.tar.gz">z3c.form-2.4.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/2.4.1/z3c.form-2.4.1.tar.gz">z3c.form-2.4.1.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/2.4.2/z3c.form-2.4.2.zip">z3c.form-2.4.2.zip</a><br />
+  <a href="http://localhost/z3c.form/2.4.3/z3c.form-2.4.3.zip">z3c.form-2.4.3.zip</a><br />
+  <a href="http://localhost/z3c.form/2.4.4/z3c.form-2.4.4.tar.gz">z3c.form-2.4.4.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/2.5.0/z3c.form-2.5.0.zip">z3c.form-2.5.0.zip</a><br />
+  <a href="http://localhost/z3c.form/2.5.1/z3c.form-2.5.1.tar.gz">z3c.form-2.5.1.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/2.6.0/z3c.form-2.6.0.tar.gz">z3c.form-2.6.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/2.6.1/z3c.form-2.6.1.tar.gz">z3c.form-2.6.1.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/2.7.0/z3c.form-2.7.0.zip">z3c.form-2.7.0.zip</a><br />
+  <a href="http://localhost/z3c.form/2.8.0/z3c.form-2.8.0.zip">z3c.form-2.8.0.zip</a><br />
+  <a href="http://localhost/z3c.form/2.8.1/z3c.form-2.8.1.zip">z3c.form-2.8.1.zip</a><br />
+  <a href="http://localhost/z3c.form/2.8.2/z3c.form-2.8.2.zip">z3c.form-2.8.2.zip</a><br />
+  <a href="http://localhost/z3c.form/2.9.0/z3c.form-2.9.0.zip">z3c.form-2.9.0.zip</a><br />
+  <a href="http://localhost/z3c.form/2.9.1/z3c.form-2.9.1.zip">z3c.form-2.9.1.zip</a><br />
+  <a href="http://localhost/z3c.form/3.0/z3c.form-3.0.zip">z3c.form-3.0.zip</a><br />
+  <a href="http://localhost/z3c.form/3.0.0a1/z3c.form-3.0.0a1.zip">z3c.form-3.0.0a1.zip</a><br />
+  <a href="http://localhost/z3c.form/3.0.0a2/z3c.form-3.0.0a2.zip">z3c.form-3.0.0a2.zip</a><br />
+  <a href="http://localhost/z3c.form/3.0.0a3/z3c.form-3.0.0a3.zip">z3c.form-3.0.0a3.zip</a><br />
+  <a href="http://localhost/z3c.form/3.0.1/z3c.form-3.0.1.zip">z3c.form-3.0.1.zip</a><br />
+  <a href="http://localhost/z3c.form/3.0.2/z3c.form-3.0.2.zip">z3c.form-3.0.2.zip</a><br />
+  <a href="http://localhost/z3c.form/3.0.3/z3c.form-3.0.3.zip">z3c.form-3.0.3.zip</a><br />
+  <a href="http://localhost/z3c.form/3.0.4/z3c.form-3.0.4.zip">z3c.form-3.0.4.zip</a><br />
+  <a href="http://localhost/z3c.form/3.0.5/z3c.form-3.0.5.zip">z3c.form-3.0.5.zip</a><br />
+  <a href="http://localhost/z3c.form/3.1.0/z3c.form-3.1.0.zip">z3c.form-3.1.0.zip</a><br />
+  <a href="http://localhost/z3c.form/3.1.1/z3c.form-3.1.1.zip">z3c.form-3.1.1.zip</a><br />
+  <a href="http://localhost/z3c.form/3.2.0/z3c.form-3.2.0.zip">z3c.form-3.2.0.zip</a><br />
+  <a href="http://localhost/z3c.form/3.2.1/z3c.form-3.2.1.zip">z3c.form-3.2.1.zip</a><br />
+  <a href="http://localhost/z3c.form/3.2.10/z3c.form-3.2.10.tar.gz">z3c.form-3.2.10.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/3.2.11/z3c.form-3.2.11.tar.gz">z3c.form-3.2.11.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/3.2.2/z3c.form-3.2.2.zip">z3c.form-3.2.2.zip</a><br />
+  <a href="http://localhost/z3c.form/3.2.3/z3c.form-3.2.3.zip">z3c.form-3.2.3.zip</a><br />
+  <a href="http://localhost/z3c.form/3.2.4/z3c.form-3.2.4.tar.gz">z3c.form-3.2.4.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/3.2.5/z3c.form-3.2.5.tar.gz">z3c.form-3.2.5.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/3.2.6/z3c.form-3.2.6.tar.gz">z3c.form-3.2.6.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/3.2.7/z3c.form-3.2.7.tar.gz">z3c.form-3.2.7.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/3.2.8/z3c.form-3.2.8.tar.gz">z3c.form-3.2.8.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/3.2.9/z3c.form-3.2.9.tar.gz">z3c.form-3.2.9.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/3.3.0/z3c.form-3.3.0.tar.gz">z3c.form-3.3.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/3.4.0/z3c.form-3.4.0.tar.gz">z3c.form-3.4.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/3.5/z3c.form-3.5.tar.gz">z3c.form-3.5.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/3.6/z3c.form-3.6.tar.gz">z3c.form-3.6.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/3.7.0/z3c.form-3.7.0-py2.py3-none-any.whl">z3c.form-3.7.0-py2.py3-none-any.whl</a><br />
+  <a href="http://localhost/z3c.form/3.7.0/z3c.form-3.7.0.tar.gz">z3c.form-3.7.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/3.7.1/z3c.form-3.7.1-py2.py3-none-any.whl">z3c.form-3.7.1-py2.py3-none-any.whl</a><br />
+  <a href="http://localhost/z3c.form/3.7.1/z3c.form-3.7.1.tar.gz">z3c.form-3.7.1.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/4.0/z3c.form-4.0.tar.gz">z3c.form-4.0.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/4.1/z3c.form-4.1-py2.py3-none-any.whl">z3c.form-4.1-py2.py3-none-any.whl</a><br />
+  <a href="http://localhost/z3c.form/4.1/z3c.form-4.1.tar.gz">z3c.form-4.1.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/4.1.1/z3c.form-4.1.1-py2.py3-none-any.whl">z3c.form-4.1.1-py2.py3-none-any.whl</a><br />
+  <a href="http://localhost/z3c.form/4.1.1/z3c.form-4.1.1.tar.gz">z3c.form-4.1.1.tar.gz</a><br />
+  <a href="http://localhost/z3c.form/4.1.2/z3c.form-4.1.2-py2.py3-none-any.whl">z3c.form-4.1.2-py2.py3-none-any.whl</a><br />
+  <a href="http://localhost/z3c.form/4.1.2/z3c.form-4.1.2.tar.gz">z3c.form-4.1.2.tar.gz</a>
+  </body>
+  </html>
+  <BLANKLINE>
+
+Download one file:
+
+  >>> browser.getLink('z3c.form-1.9.0.tar.gz').click()
+
+  >>> print browser.contents
+  TGZ--PACKAGE-FILE_DATA--ENDTGZ
+
+
+
+Edge cases
+==========
+
+Delete the package first:
+
+  >>> browser.open('http://localhost')
+
+  >>> browser.getControl(name='deleteFormTable-checkbox-0-selectedItems').value = ['z3c.form']
+
+  >>> browser.getControl('Delete').click()
+
+  >>> 'z3c.form' in browser.contents
+  False
+
+  >>> from mypypi import testing
+
+
+dash vs underscore in package name
+==================================
+
+  >>> browser.open('http://localhost')
+
+We'll add a single mirror package:
+
+  >>> browser.open("http://localhost/addMirrorPackage.html")
+
+Note the package name ``wsgi-intercept`` WITH DASH
+
+  >>> browser.getControl(name="form.widgets.__name__").value = u'wsgi-intercept'
+
+We could set a different source server, but we leave it now at std PyPi:
+
+  >>> browser.getControl(name="form.widgets.pypiURL").value = u'https://pypi.org/pypi'
+
+Add the mirror package:
+
+  >>> browser.getControl(name="form.buttons.add").click()
+
+Note the added package name, WITH UNDERSCORE
+
+  >>> print browser.contents
+  <!DOCTYPE html...
+  ...<a href="http://localhost/wsgi-intercept/releases.html">wsgi-intercept</a>...
+
+Check through:
+
+  >>> browser.getLink('wsgi-intercept').click()
+  >>> print browser.url
+  http://localhost/wsgi-intercept/releases.html
+
+  >>> print browser.contents
+  <!DOCTYPE html ...
+  ...
+  ...<a href="https://pypi.org/pypi/wsgi-intercept/0.10.0/json">link</a>...
+  ...<a href="http://localhost/wsgi-intercept/0.10.1/files.html">0.10.1</a>...
+  ...<a href="https://pypi.org/pypi/wsgi-intercept/1.9.2/json">link</a></td>...
+  ...
+
+  >>> browser.getLink('0.3').click()
+  >>> print browser.contents
+  <!DOCTYPE html ...
+  ...<a href="http://localhost/wsgi-intercept" class="selected">wsgi-intercept</a> &gt;&gt; <a href="http://localhost/wsgi-intercept/0.10.3" class="selected">0.10.3</a>...
+  ...<a href="http://localhost/wsgi-intercept/0.10.3/wsgi_intercept-0.10.3.tar.gz">wsgi_intercept-0.10.3.tar.gz</a>...
+  ...<a href="https://files.pythonhosted.org/packages/ac/c1/a12bb60107ee0532f7e398e2d1879d9a0b8b5f7613b058a7e5478fa5819c/wsgi_intercept-0.10.3.tar.gz">link</a>...
+  ...
+
+  >>> browser.getLink('wsgi_intercept-0.10.3.tar.gz').click()
+  >>> print browser.contents
+  TGZ--PACKAGE-FILE_DATA--ENDTGZ
+
+
+Let's check the simple index:
+
+  >>> browser.open('http://localhost/simple')
+  >>> print browser.contents
+  <html>
+  <head><title>PYPISite</title>
+  </head>
+  <body>
+  <h1>PYPISite</h1>
+  <a href="http://localhost/simple/wsgi-intercept">wsgi-intercept</a>
+  </body>
+  </html>
+  <BLANKLINE>
+
+  >>> browser.open('http://localhost/simple/wsgi_intercept/')
+  >>> print browser.contents
+  <html>
+  <head>
+  <base href="http://localhost/simple/wsgi_intercept" />
+  <title>wsgi-intercept</title>
+  </head>
+  <body>
+  <h1>wsgi-intercept</h1>
+  <a href="http://localhost/wsgi-intercept/0.10.0/wsgi_intercept-0.10.0.tar.gz">wsgi_intercept-0.10.0.tar.gz</a><br />
+  ...
+  <a href="http://localhost/wsgi-intercept/1.9.2/wsgi_intercept-1.9.2.tar.gz">wsgi_intercept-1.9.2.tar.gz</a>
+  </body>
+  </html>
+  <BLANKLINE>
+
+  >>> browser.getLink('wsgi_intercept-0.10.0.tar.gz').click()
+  >>> print browser.contents
+  TGZ--PACKAGE-FILE_DATA--ENDTGZ
+
+Now the twist is that setuptools comes with the name ``wsgi-intercept``
+WITH DASH. But we get the same listing.
+
+  >>> browser.open('http://localhost/simple/wsgi-intercept/')
+  >>> print browser.contents
+  <html>
+  <head>
+  <base href="http://localhost/simple/wsgi-intercept" />
+  <title>wsgi-intercept</title>
+  </head>
+  <body>
+  <h1>wsgi-intercept</h1>
+  <a href="http://localhost/wsgi-intercept/0.10.0/wsgi_intercept-0.10.0.tar.gz">wsgi_intercept-0.10.0.tar.gz</a><br />
+  ...
+  <a href="http://localhost/wsgi-intercept/1.9.2/wsgi_intercept-1.9.2.tar.gz">wsgi_intercept-1.9.2.tar.gz</a>
+  </body>
+  </html>
+  <BLANKLINE>
+
+  >>> browser.getLink('wsgi_intercept-1.9.2.tar.gz').click()
+  >>> print browser.contents
+  TGZ--PACKAGE-FILE_DATA--ENDTGZ

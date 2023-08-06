@@ -1,0 +1,9 @@
+<a href="/" tal:attributes="href context/@@siteURL">
+  <div id="logo">&nbsp;</div>
+</a>
+<div id="duck">&nbsp;</div>
+<div id="jclock"></div>
+<div id="user">
+  <span i18n:translate="">User:</span>
+  <span tal:content="request/principal/title">Manager</span>
+</div>
