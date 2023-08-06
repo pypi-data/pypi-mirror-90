@@ -1,0 +1,12 @@
+trytond/modules/stock_supply_forecast/__init__.py,sha256=9V3Ox2b6-VeuwzI1lFOoVNOGjYa5onqPf-PcnZELo6k,332
+trytond/modules/stock_supply_forecast/purchase_request.py,sha256=oRRY55e4_rB6nTOkdsAiSIHdDBKadNMDjBNsuMFO_6s,728
+trytond/modules/stock_supply_forecast/tryton.cfg,sha256=iq1lhm3WZVKsXbXVu8lLWVt-OVrl6rXpGmQ1vo3d4TU,75
+trytond/modules/stock_supply_forecast/tests/__init__.py,sha256=5NmBj-ECU3WcCgtGGUFsnvIUJ2fRxy9UsUNJg-BU-k4,348
+trytond/modules/stock_supply_forecast/tests/scenario_stock_supply_forecast.rst,sha256=ZM4LVqwCZViV9EwUBauQ0TgD4sP4WAuX_igRb_V_qk4,2956
+trytond/modules/stock_supply_forecast/tests/test_stock_supply_forecast.py,sha256=T5ZmjM6pgJuAbObjKD8JbBGrU1yqnHBc_Bm9w8fzz9s,910
+trytond_stock_supply_forecast-5.8.1.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+trytond_stock_supply_forecast-5.8.1.dist-info/METADATA,sha256=vyCgZKGo5ZeyC10NlyXhxOgzsJ3W9SSZvUEm4YC2Yss,2503
+trytond_stock_supply_forecast-5.8.1.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+trytond_stock_supply_forecast-5.8.1.dist-info/entry_points.txt,sha256=xOHPIRncOaxLtVvpmJqzUXbzvzBVC_bpCfpdcpVOHuc,93
+trytond_stock_supply_forecast-5.8.1.dist-info/top_level.txt,sha256=1UNriCfRfjRjutJbJ_B8i13huVUoV_Otp9RlW3mCfw4,8
+trytond_stock_supply_forecast-5.8.1.dist-info/RECORD,,
