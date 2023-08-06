@@ -1,0 +1,14 @@
+awsflock/__init__.py,sha256=EvKwgyxxiNFf5G0bQZAguEHSN5DN38oltl4dRsWX7iU,492
+awsflock/acquire.py,sha256=1PpXzSkxGuEAeCR-EHK5JjaIyWuemK7HvLzk7JW53Bs,5155
+awsflock/common.py,sha256=p-vP7-YQzWGhOsvrU0HW9-TEq0UxxXp_Ws3JymozaqE,1665
+awsflock/create_table.py,sha256=mGEYR68V5LtVfyzMZ5htMuY2BaWuBCoMR3Z_NpcbTTw,2204
+awsflock/main.py,sha256=vOS4Bod7DmrRAxgyPZPYn9Av_u21K3C6KG3QlsTHULw,1433
+awsflock/parsing.py,sha256=UPyQkLPTjDuZYMXfawh8gvDXQ7e1CJj8_RcxFgfsHVM,1246
+awsflock/release.py,sha256=e2Ip_qYiGE-XOIuSmu1FEO6OP8dqu2cCPgGMkooFK1c,1449
+awsflock/renew.py,sha256=AAaLRDU5wHSOTKW_McDLirq8C8Iol45Kx0Wzjzrl__o,1645
+awsflock/shared_opts.py,sha256=PACG_X1DBuEsSI8cIysfdLzlcgwaJLmLbs_27kbwJY0,1501
+awsflock-0.2.0.dist-info/entry_points.txt,sha256=cpvSm49-XV9DLomsDvqkGn2Zob8sl0R4yn2K9cBhLAo,41
+awsflock-0.2.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+awsflock-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+awsflock-0.2.0.dist-info/METADATA,sha256=7ABXzE7TgPDVO6IFTdOWb3_-y2RjGdC4qh9XrjoL92I,3457
+awsflock-0.2.0.dist-info/RECORD,,
