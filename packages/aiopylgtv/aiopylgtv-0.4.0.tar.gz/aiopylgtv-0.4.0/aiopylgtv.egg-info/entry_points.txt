@@ -1,0 +1,3 @@
+[console_scripts]
+aiopylgtvcommand = aiopylgtv.utils:aiopylgtvcommand
+
