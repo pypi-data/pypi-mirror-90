@@ -1,0 +1,10 @@
+srtools/__init__.py,sha256=OyA52yCoINgddFclaDO11dseOWNdtQ1dMymZcyhyAFI,1402
+srtools/_version.py,sha256=HE37fd-Ve1vYOp-7ldF0QR7E85OGghDL9DpvunK5cxA,497
+srtools/character_dictionaries.py,sha256=SwimTwZ4s_UeWQMZ4k1dRuV1J8gUXKAg0KfuC72wVkk,5706
+srtools/transliteration.py,sha256=0y67RZaWlzgjCE99ThPWPlonw2fhNzFbNISAASlDkm8,2948
+srtools-0.1.6.data/scripts/srts,sha256=EuA6Ew1yXoFEg_amXDebrcvZbVNKZEmEHDutr9JgYwU,1670
+srtools-0.1.6.dist-info/LICENSE,sha256=8lHU1tygpjpY7Ip6bg3Ioz685OjlsWX5uXRUMWXGNuA,35094
+srtools-0.1.6.dist-info/METADATA,sha256=qkVMJwcqhhLMIZd-6ZnELGkgFDpmBja5ELaIL7pVWK0,3438
+srtools-0.1.6.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+srtools-0.1.6.dist-info/top_level.txt,sha256=22IDZyw22tSP8OFLh1E_4It5Hpgz1Dgebjnzg4j5uoA,8
+srtools-0.1.6.dist-info/RECORD,,
