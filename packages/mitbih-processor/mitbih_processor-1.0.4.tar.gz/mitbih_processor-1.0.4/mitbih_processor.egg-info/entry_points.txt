@@ -1,0 +1,3 @@
+[console_scripts]
+mitbih_processor = mitbih_processor.__main__:main
+
