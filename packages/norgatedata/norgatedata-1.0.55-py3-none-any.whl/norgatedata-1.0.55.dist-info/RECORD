@@ -1,0 +1,12 @@
+norgatedata/CHANGES.txt,sha256=O8FoDxnD2p7YlB9tPMowDq5EIuWIzX83BM6q3Z6L18w,5323
+norgatedata/LICENSE.txt,sha256=6MW6JFLECMi-sugOZe7rA9yWqgm5caDNktT3JeQ1tDg,16020
+norgatedata/__init__.py,sha256=im_GUxTTQKblzjYKYxumPuXMJ_NXHuWy8QiNIQThl6g,20
+norgatedata/api.py,sha256=yOrpdXWyD_U6xVUpU8HQhfHTKuXB5-hc1zmcK55L_I0,30153
+norgatedata/norgatedata_release_version.json,sha256=mAiebTb3jpdmyeo01ayzYR86ks2BxesQIJXZJP_H0Is,3
+norgatedata/norgatehelper.py,sha256=yLwjm8p0e0hsVgDuma-eRtcwvwZd-6HZRf1MIP6rhp0,20785
+norgatedata/version.py,sha256=dZCVH7fnto4Y0SIMtWRPtWRObxVWW0sEWwN8rtq1fWg,26
+norgatedata-1.0.55.dist-info/LICENSE.TXT,sha256=6MW6JFLECMi-sugOZe7rA9yWqgm5caDNktT3JeQ1tDg,16020
+norgatedata-1.0.55.dist-info/METADATA,sha256=qEcfIh59jratZdg681s9XATNORt65u_yKmy0wKHwmAY,39239
+norgatedata-1.0.55.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+norgatedata-1.0.55.dist-info/top_level.txt,sha256=CTIJD8yTdbDcCpCxTirWRkQqyL6YjUEc-noofp3jpps,12
+norgatedata-1.0.55.dist-info/RECORD,,
