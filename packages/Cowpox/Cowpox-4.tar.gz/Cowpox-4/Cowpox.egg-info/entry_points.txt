@@ -1,0 +1,4 @@
+[console_scripts]
+Cowpox = cowpox.cowpox:main_Cowpox
+Cowpox-servant = cowpox.servant:main_Cowpox_servant
+
