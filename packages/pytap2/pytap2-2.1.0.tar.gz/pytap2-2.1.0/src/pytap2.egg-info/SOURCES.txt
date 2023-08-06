@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/pytap2/__init__.py
+src/pytap2.egg-info/PKG-INFO
+src/pytap2.egg-info/SOURCES.txt
+src/pytap2.egg-info/dependency_links.txt
+src/pytap2.egg-info/not-zip-safe
+src/pytap2.egg-info/top_level.txt
