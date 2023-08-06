@@ -1,0 +1,16 @@
+nwe/__init__.py,sha256=xnYeSnERX7ejbuWf9Jz_P1mLmsyadqc2Qxahe9PLURE,108
+nwe/__main__.py,sha256=_N4EnkzoKMiThxUFJR2vcHJd4K50Ff_2Yw5kURJCdSs,58
+nwe/criaanki.py,sha256=WZ3rj3tkEb4BZb_3ktBxQFSbrtiGbSEJjhDWcRwZyR4,1010
+nwe/criandopdf.py,sha256=Yx7hyL-vJrJk6vyw75zOXji3lgbTmodbCCx5pNF_uv4,2118
+nwe/filecsvgoogle.py,sha256=K1L6oW-sSWvEm7jwJ47UA_HLMrgpJXzSX67V4QiHLlI,1933
+nwe/gurafikkuu.py,sha256=cDKNelAs40gtO1UVi1jUWukkuQx6NWLtDy_IOgykKB4,2617
+nwe/jisho.py,sha256=kdGl9OOLH_Kf6zvzSem34wnowI7pqsSii1E8TKqnXi4,4153
+nwe/muitoslinks.py,sha256=65Po_ZXTuynAXa2iGNTcD9sx7IHek_AV4DeAUNwad7M,5329
+nwe/newswebeasy.py,sha256=yfjHr9HKAbX6s5bLiMbvLBB3GF9XDY9D_COp8eIAz1M,621
+nwe/usandore.py,sha256=ZvvAcbYn3G2yIx963sEXxUeWb7LGXTN0DdiWDKlyBIM,1155
+nwe-1.0.3.dist-info/LICENSE,sha256=o-SfQHE5YHseSt36-n_eko3OrDjQ_abNXisAoTUmmJI,1067
+nwe-1.0.3.dist-info/METADATA,sha256=TJLr5pP19YVzA7QFLwlcfn3SdRhErkfHTYdO_KzVgd0,3133
+nwe-1.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+nwe-1.0.3.dist-info/entry_points.txt,sha256=sGSk3QU3o-pP0_2YDDGGbGUlc-HSJ3h0bAV6y63f4rg,34
+nwe-1.0.3.dist-info/top_level.txt,sha256=GH3l72BhdvnaQJ4U7rmoW2QgmTKc2j0JrS4Iv9fcD1U,4
+nwe-1.0.3.dist-info/RECORD,,
