@@ -1,0 +1,12 @@
+pyscaffoldext/travis/__init__.py,sha256=QP61eqdOKYIeCkslYufYo3C2B16LlyJBV2Yfw1Wseb8,591
+pyscaffoldext/travis/extension.py,sha256=BKBCIVWStVgbHNft7NmQVV81EJ95fBhqOk4BVuVxq5s,1356
+pyscaffoldext/travis/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyscaffoldext/travis/templates/travis.template,sha256=Re5pvnP2gZr3dpb-UjfSPqjGA8jQps0LHsyOIbCFHLI,1416
+pyscaffoldext/travis/templates/travis_install.template,sha256=wWS0cQWZUPxPNjKNoMdYW7T5qVN_6KPa7-0OJMDE3hU,2758
+pyscaffoldext_travis-0.2.dist-info/AUTHORS.rst,sha256=7U6E3T4-W39oTBmVt4-QE5o8iWuEa5PoX65QTo1n5KA,153
+pyscaffoldext_travis-0.2.dist-info/LICENSE.txt,sha256=UNDKhgBL3dsqHd-F6ndh303x_-3mIuKM3Dp0V4dvHEo,1086
+pyscaffoldext_travis-0.2.dist-info/METADATA,sha256=KoRafjo3FKIvKYJUpL9BQAljSZ_cNChkEOm9nKlHF3U,4207
+pyscaffoldext_travis-0.2.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pyscaffoldext_travis-0.2.dist-info/entry_points.txt,sha256=93flln-oqtlNe5jhfJpR2yZM_YAPQpwHpJmezeKYzlg,65
+pyscaffoldext_travis-0.2.dist-info/top_level.txt,sha256=zac9JJq83qBJe5oCWbtXhQVr8mJ5TZFW2jCFlSQ6n0Y,14
+pyscaffoldext_travis-0.2.dist-info/RECORD,,
