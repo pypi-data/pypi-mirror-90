@@ -1,0 +1,13 @@
+travitia_talk/__init__.py,sha256=-CbpWvoHQB7T_jZD3OAhOdmmvLaMGTRt0t-K5qmqyIA,1429
+travitia_talk/__main__.py,sha256=xHO-9I2hjgYxE0umNMzmcvUXn-6eMgFw_ngF6DfVpVk,1713
+travitia_talk/chatbot.py,sha256=PoRlVJ8wsxy9WUKSutCZqnobfumUbeOKxyeifFXsqIw,3582
+travitia_talk/context.py,sha256=apTG5-zmI4spOJemZX5F4A6cOCY5brJ2vFcd9WqyUWY,2650
+travitia_talk/enums.py,sha256=rbOyeIvkE2niAMwpoz4dA_CS21RgmzyZf6HjQApEw28,1219
+travitia_talk/errors.py,sha256=1NkPDzlKtP9XryLfUjU0ys2NGmJmDHhZ28R5g0Cq5po,1343
+travitia_talk/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+travitia_talk/response.py,sha256=4B28ZRtjx46SNjOcx9c2bQ7pzKSp6mDp7tn7SC3oEfo,2003
+travitia_talk-0.0.1.dist-info/LICENSE,sha256=auLFKSEBcEw8RqEmUNUrSrJSD-AU9Nug8J0kCL0kFSw,1063
+travitia_talk-0.0.1.dist-info/METADATA,sha256=CvlrxrK9oIqV2TvqUOktH2WdPXF62naAQqqyMiJvfIE,2886
+travitia_talk-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+travitia_talk-0.0.1.dist-info/top_level.txt,sha256=KDJMjVBJ9M6lNIIa2MX-LAr6nr_q4_5V45Qsn3hjVSo,14
+travitia_talk-0.0.1.dist-info/RECORD,,
