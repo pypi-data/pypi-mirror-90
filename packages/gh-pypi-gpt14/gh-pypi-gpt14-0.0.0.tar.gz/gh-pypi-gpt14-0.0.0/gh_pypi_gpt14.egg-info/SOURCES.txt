@@ -1,0 +1,7 @@
+README.md
+setup.py
+gh_pypi_gpt14.egg-info/PKG-INFO
+gh_pypi_gpt14.egg-info/SOURCES.txt
+gh_pypi_gpt14.egg-info/dependency_links.txt
+gh_pypi_gpt14.egg-info/top_level.txt
+pkg1/__init__.py
