@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: editmenu
+Version: 0.0.2
+Summary: A simple multiline edit menu for CLI
+Home-page: https://github.com/aswin4400/editmenu.git
+Author: Aswin Rajasekharan
+Author-email: aswin4400@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+
+Install the package using pip
+`pip install editmenu`
+
+Import **editmenu** module from **editmenu** package
+ `>>>from editmenu import editmenu`
+
+ Use **EditMenu** class to create an instance with a dictionary containing required values to be displayed and edited.
+ `>>>mymenu = editmenu.EditMenu({"Name:"Monty","LastName":"Python"})`
+
+Use **menu()** member function to display the menu and prompt the user to make required editing.
+ `>>>mymenu.menu()`
+
+**Notes**
+
+ 1. Grey color is used as the font color for the values and updated values will be of white. This is for distinguishing changes.
+ 2. As of now editmenu package is only tested on ubuntu terminal. If you face any issue on windows platform, please mention the issue on github page this package.
+ 3. EditMenu class, accepts only dictionary containing key:value pairs, where both key and value must be of string type.
+ 4. menu() function returns a dictionary with updated values.
+
+
+
