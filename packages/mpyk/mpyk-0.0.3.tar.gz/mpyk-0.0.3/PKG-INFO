@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: mpyk
+Version: 0.0.3
+Summary: Library for retrieving Wrocław public transportation geolocation data
+Home-page: https://github.com/emkor/mpyk
+Author: Mateusz Korzeniowski
+Author-email: emkor93@gmail.com
+License: UNKNOWN
+Description: # mpyk ![CI](https://github.com/emkor/mpyk/workflows/CI/badge.svg)
+        Simple Python 3 library for retrieving Wrocław MPK trams and buses real-time location
+        
+        
+        
+        ## prerequisites
+        - Unix, `make`, `git`, `python3` with `pip`
+        
+        ## quick start (global installation)
+        - setup:
+            - `git clone https://github.com/emkor/mpyk.git && cd mpyk`
+            - `sudo pip install -r requirements.txt && chmod u+x mpyk.py`
+        - usage:
+            - `./mpyk.py --utc --csv myData.csv --log myLogs.log`
+            - for continuous mode: `./mpyk.py --each 10 --utc --dir . --log myLogs.log`
+        
+        ## virtualenv-based setup
+        - `git clone https://github.com/emkor/mpyk.git && cd mpyk`
+        - `make venv`
+        - using virtualenv Python executable:
+            - `.venv/mpyk/bin/python mpyk.py --utc --csv myData.csv --log myLogs.log`
+        - using virtualenv session:
+            - `source .venv/mpyk/bin/activate`
+            - `./mpyk.py --utc --csv myData.csv --log myLogs.log`
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+Provides-Extra: dev
