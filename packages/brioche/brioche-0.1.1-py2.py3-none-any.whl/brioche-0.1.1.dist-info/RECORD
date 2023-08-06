@@ -1,0 +1,11 @@
+brioche/__init__.py,sha256=y-c3tcOdiX6rMMJlPq-SH-Dt-8I39VEdg_wMdXwkr1s,548
+brioche/biomization.py,sha256=9gdWemIkqUuRJNAeV-zLsRTyVIcxfT0SnPYjXQv5UQ8,3838
+brioche/helpers.py,sha256=VuyxEbf2IEGcKlVlsJlsWPIWIJBQHNfiY3ajVyq3Ils,680
+brioche/mappings.py,sha256=N8-2PBDVX4TQ8tJD6RfxlSjkiNdzJf7gTLoIesW1d_4,2734
+brioche/samples.py,sha256=pen47KOIAqTKcgJRebHTQhLTRifLaKeACDXCOxDyEMk,2624
+brioche/tool.py,sha256=77UR4Y5FkH8T11mA89NA8coS9HJ8SyUZmu7xRO2lymI,2813
+brioche-0.1.1.dist-info/entry_points.txt,sha256=T9kMLlrQhuyULOPx4qDn7AmeFiEx0b2TzgOVJ0VXIAU,45
+brioche-0.1.1.dist-info/LICENSE,sha256=dIDjCHpqyjUjD6eEtlHcVlUJrMwiRiTbKga1XFOiDW8,1073
+brioche-0.1.1.dist-info/WHEEL,sha256=NLqmsx-ZFZ6gDavYgh2oH0ZSN-KRmpcdEXIZDnYy9Pg,99
+brioche-0.1.1.dist-info/METADATA,sha256=GtxA_8i-fzE6vAamK1h23zUyQ8kv2knZAlCu6cbtHos,593
+brioche-0.1.1.dist-info/RECORD,,
