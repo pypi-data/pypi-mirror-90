@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+fgjhfg/Calc.py
+fgjhfg/__init__.py
+fgjhfg.egg-info/PKG-INFO
+fgjhfg.egg-info/SOURCES.txt
+fgjhfg.egg-info/dependency_links.txt
+fgjhfg.egg-info/not-zip-safe
+fgjhfg.egg-info/top_level.txt
