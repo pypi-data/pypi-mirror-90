@@ -1,0 +1,3 @@
+python-sql
+werkzeug
+trytond<5.9,>=5.8
