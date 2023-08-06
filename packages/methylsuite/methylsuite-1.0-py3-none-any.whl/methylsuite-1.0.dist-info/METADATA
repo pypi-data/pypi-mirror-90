@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: methylsuite
+Version: 1.0
+Summary: Python-based Illumina methylation array processing and analysis software composite package
+Home-page: https://github.com/FOXOBioScience/methylsuite
+Author: FOXO Bioscience
+Author-email: info@FOXOBioScience.com
+License: MIT
+Project-URL: Documentation, https://life-epigenetics-methylprep.readthedocs-hosted.com/en/latest/
+Project-URL: Source, https://github.com/FOXOBioScience/methylsuite/
+Project-URL: Funding, https://FOXOBioScience.com/
+Keywords: methylation dna data processing epigenetics illumina
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+Requires-Dist: tqdm
+Requires-Dist: bs4
+Requires-Dist: lxml
+Requires-Dist: methylprep
+Requires-Dist: methylcheck
+Requires-Dist: methylize
+
+This installs methylprep, methylcheck, and methylize all at once
+
+
