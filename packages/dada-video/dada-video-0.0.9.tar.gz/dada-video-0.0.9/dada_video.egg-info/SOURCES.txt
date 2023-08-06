@@ -1,0 +1,16 @@
+.dada-version
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+dada_video/__init__.py
+dada_video/core.py
+dada_video/ffmpeg_utils.py
+dada_video.egg-info/PKG-INFO
+dada_video.egg-info/SOURCES.txt
+dada_video.egg-info/dependency_links.txt
+dada_video.egg-info/requires.txt
+dada_video.egg-info/top_level.txt
+dada_video/tests/__init__.py
+dada_video/tests/test_video_edit.py
