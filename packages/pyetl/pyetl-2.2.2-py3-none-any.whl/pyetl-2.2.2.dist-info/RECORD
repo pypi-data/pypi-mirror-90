@@ -1,0 +1,15 @@
+pyetl/__init__.py,sha256=VhBXNL7Olr-ZSUbx1m9iflQ8E5KlshvAsEhKNx6pTmE,363
+pyetl/connections.py,sha256=TgIrcnnl7s90BGT-I7SPBILHDDGD_SxoAhCIeiIEN5w,958
+pyetl/dataset.py,sha256=tMdozBy5uacNuJjj3pQ_Iy2awIKUygdmwcnw9AJdgfQ,2963
+pyetl/es.py,sha256=lwQnomiIwHhWhSbLQHUcDgQJ1F9Lq__BUW2G-khxVek,4321
+pyetl/mapping.py,sha256=D0n6tFNhlQ41Kfg5XGKeuq3Tk7M9hk8EY8OsON0tMgo,1486
+pyetl/reader.py,sha256=3ZyOk3ZntNSzS76TaKE41vXnXOz1eVO4THyzUFt6Pt4,5290
+pyetl/task.py,sha256=OFhXP3Fv9l9mO_02W_CI6SwfCxWTw3w5PYOa5iCMmYo,2623
+pyetl/utils.py,sha256=oP_Rcl15OGt7KcqVobdR7MxrRIWtVvFyFNT-Jip6S-0,1479
+pyetl/writer.py,sha256=gosHZEWeYJMkEW5GGcv8ZH82n-l6TmLTBIuqW3XATR0,5470
+pyetl-2.2.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyetl-2.2.2.dist-info/METADATA,sha256=XQ1GJ5dVPNH_gq0L-yDsh-CfiJ9h11eNzeeup1JpxZM,718
+pyetl-2.2.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyetl-2.2.2.dist-info/top_level.txt,sha256=t8AbWCl725E0PsI4VklbEIQ0Y7css-KFhSFWiQkNP6k,6
+pyetl-2.2.2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyetl-2.2.2.dist-info/RECORD,,
