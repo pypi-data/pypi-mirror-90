@@ -1,0 +1,15 @@
+examples/__init__.py,sha256=dKDPiPm6HciNegOkltHINooqFJjcDWViPS3xw3ikxLY,26
+examples/async_example.py,sha256=Lue3EEkd9IOXQC70D3TjVh2NfdaiPXDH1Zal4Ki2ybQ,2133
+examples/raw_example.py,sha256=gLaXqIrxOsg5Z79ZVQ2X3Nw8X4CJv-V_7gxUthkSQg8,411
+examples/sync_example.py,sha256=-7kZny3GXiih94-Q2nI-5-5N2siPfQvczIck-OmovXY,2033
+spamprotection/__init__.py,sha256=zZdUrNzb90oxKpcnQRlL7X2qZp6PvrFJSGw7Piq5PX8,92
+spamprotection/client.py,sha256=oUaHc6mcvpYyFgJHsVkTdLVGFKtVL6miiSOJtxaaDrQ,2009
+spamprotection/errors.py,sha256=X0cSg38n7KrNlzC2nXhm2_dVg85BbWzg1F1yvjx5fc4,110
+spamprotection/sync.py,sha256=NHVBui5plKKE_rB7mCIaqQZjkQh-g9BSZne7sXqumvM,1777
+spamprotection/types.py,sha256=z6ePVhxxbT5U4_g5h89XhKGqyxEQabxFhS5yUKGBILM,927
+spamprotection/utils.py,sha256=Kb1ZQI8C2U2AzKBawiUhygB7fBDQDpI9XXUnGbnQvIc,168
+Intellivoid_SPB-0.1.0.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+Intellivoid_SPB-0.1.0.dist-info/METADATA,sha256=24uoDPN_b5NRrfF2lwVG6QuMhk7oywYJf3gYjCFLUpg,1706
+Intellivoid_SPB-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Intellivoid_SPB-0.1.0.dist-info/top_level.txt,sha256=JCH5U6gyKq-5E8ihlS9uB8iseKf6HSo40tUneD5VceY,24
+Intellivoid_SPB-0.1.0.dist-info/RECORD,,
