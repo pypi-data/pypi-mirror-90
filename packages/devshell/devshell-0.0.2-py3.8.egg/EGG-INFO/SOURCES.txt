@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/devshell/__init__.py
+src/devshell/__main__.py
+src/devshell/injector.py
+src/devshell/newshell.py
+src/devshell/ptcmd.py
+src/devshell/shell.py
+src/devshell.egg-info/PKG-INFO
+src/devshell.egg-info/SOURCES.txt
+src/devshell.egg-info/dependency_links.txt
+src/devshell.egg-info/requires.txt
+src/devshell.egg-info/top_level.txt
