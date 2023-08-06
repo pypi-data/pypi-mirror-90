@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+nornir_ipfabric/__init__.py
+nornir_ipfabric.egg-info/PKG-INFO
+nornir_ipfabric.egg-info/SOURCES.txt
+nornir_ipfabric.egg-info/dependency_links.txt
+nornir_ipfabric.egg-info/entry_points.txt
+nornir_ipfabric.egg-info/requires.txt
+nornir_ipfabric.egg-info/top_level.txt
+nornir_ipfabric/plugins/__init__.py
+nornir_ipfabric/plugins/inventory/__init__.py
+nornir_ipfabric/plugins/inventory/ipfabric.py
