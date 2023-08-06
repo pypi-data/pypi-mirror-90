@@ -1,0 +1,26 @@
+Metadata-Version: 1.2
+Name: finrl
+Version: 0.0.2
+Summary: FinRL library, a Deep Reinforcement Learning library for automated trading in quantitative finance.
+Home-page: https://github.com/finrl/finrl-library
+Author: Hongyang Yang, Xiaoyang Liu
+Author-email: hy2500@columbia.edu
+License: MIT
+Description: finrl is a Python library for that facilitates beginners to expose themselves to quantitative finance 
+            and to develop their own trading strategies, it is developed by `AI4Finance`_. 
+            
+            FinRL has been developed under three primary principles: completeness, hands-on tutorial and reproducibility. 
+            
+            .. _AI4Finance: https://github.com/AI4Finance-LLC
+            
+Keywords: Reinforcment Learning
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
