@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: kiv
+Version: 0.0.6
+Summary: Keithley IV measurements
+Home-page: https://github.com/jablevin/kiv
+Author: Jacob Blevins
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: pint
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: iapws
+Requires-Dist: scipy
+Requires-Dist: pyvisa
+
+
+# Keithley IV
+
+A short script to be utilized in IV measurements for the Keithley 6487 and 6517B instruments.
+Commands are provided to the instrument via SCPI.
+
+
