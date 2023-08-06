@@ -1,0 +1,75 @@
+#
+# SOME DESCRIPTIVE TITLE
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2020.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE 1.0\n"
+"POT-Creation-Date: 2020-12-20 14:20+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Lingua 3.10.dev0\n"
+
+#: ./src/pyams_skin/interfaces/__init__.py:43
+msgid "Inherit parent skin?"
+msgstr ""
+
+#: ./src/pyams_skin/interfaces/__init__.py:44
+msgid "Should we reuse parent skin?"
+msgstr ""
+
+#: ./src/pyams_skin/interfaces/__init__.py:48
+msgid "Don't inherit parent skin?"
+msgstr ""
+
+#: ./src/pyams_skin/interfaces/__init__.py:49
+msgid "Should we override parent skin?"
+msgstr ""
+
+#: ./src/pyams_skin/interfaces/__init__.py:55
+msgid "Custom graphic theme"
+msgstr ""
+
+#: ./src/pyams_skin/interfaces/__init__.py:56
+msgid "This theme will be used to handle graphic design (colors and images)"
+msgstr ""
+
+#: ./src/pyams_skin/interfaces/__init__.py:69
+msgid "Custom stylesheet"
+msgstr ""
+
+#: ./src/pyams_skin/interfaces/__init__.py:70
+msgid "This custom stylesheet will be used to override selected theme styles"
+msgstr ""
+
+#: ./src/pyams_skin/interfaces/__init__.py:74
+msgid "Editor stylesheet"
+msgstr ""
+
+#: ./src/pyams_skin/interfaces/__init__.py:75
+msgid "Styles defined into this stylesheet will be available into HTML editor"
+msgstr ""
+
+#: ./src/pyams_skin/interfaces/__init__.py:79
+msgid "Custom script"
+msgstr ""
+
+#: ./src/pyams_skin/interfaces/__init__.py:80
+msgid ""
+"This custom javascript file will be used to add dynamic features to selected "
+"theme"
+msgstr ""
+
+#: ./src/pyams_skin/interfaces/__init__.py:64
+msgid "You must select a custom skin or inherit from parent!"
+msgstr ""
+
+#: ./src/pyams_skin/interfaces/templates/form.pt:9
+msgid "Back to previous page"
+msgstr ""
