@@ -1,0 +1,3 @@
+[console_scripts]
+bought=bought.__main__:main
+
