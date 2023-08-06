@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: CrappyPython
+Version: 0.0.1
+Summary: Several Packages in one!
+Home-page: https://github.com/awesome/CrappyPython
+Author: pkguploaders
+Author-email: pkguploaders@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# CrappyPython
+```py
+import CrappyPython as cp
+
+evaluated = cp.CrappyPython("print(\"wowee\")")
+
+print(evaluated)
+
