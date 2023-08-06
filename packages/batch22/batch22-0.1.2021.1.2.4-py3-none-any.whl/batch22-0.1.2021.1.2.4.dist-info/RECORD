@@ -1,0 +1,10 @@
+batch22/__init__.py,sha256=DadNhyZcwcDnpMwJKaHbksy6n9fz9R7QgRFeHS-7dnw,200
+batch22/_version.py,sha256=pVnSxHPn-sSdMoWmNcwjFcg7yclRyzUV8MwsSHJpc-8,76
+batch22/eeg/__init__.py,sha256=dqHhL6QkkfSxwj5t3JfztBvbk5s_j8g0lddk0yXPK-s,119
+batch22/eeg/mne/__init__.py,sha256=L470oUYyRzBz9Tczty70jaccYpG_JVWhpI-nAgOaHMU,10
+batch22-0.1.2021.1.2.4.data/scripts/batch22-cli,sha256=AON2MnLTUIi70hzRG5ws9uhhkeeYTsEoRAmV-POnMQ8,79
+batch22-0.1.2021.1.2.4.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+batch22-0.1.2021.1.2.4.dist-info/METADATA,sha256=scss3t4sNGRh4ucuJHOTXv4CzOCQdcH9cTHlWJ1RMXo,1158
+batch22-0.1.2021.1.2.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+batch22-0.1.2021.1.2.4.dist-info/top_level.txt,sha256=h6As8DgNGMikqLcID1ba_cQaOsRbXCxxz8K40m4ac1c,12
+batch22-0.1.2021.1.2.4.dist-info/RECORD,,
