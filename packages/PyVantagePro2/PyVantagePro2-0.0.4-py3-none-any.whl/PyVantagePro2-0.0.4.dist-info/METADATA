@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: PyVantagePro2
+Version: 0.0.4
+Summary: Communication tools for the Davis VantagePro2 devices
+Home-page: UNKNOWN
+Author: 
+Author-email: 
+Maintainer: 
+Maintainer-email: 
+License: GNU GPL v3
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Topic :: Internet
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: pylink
+Requires-Dist: progressbar-latest
+
+UNKNOWN
+
+
