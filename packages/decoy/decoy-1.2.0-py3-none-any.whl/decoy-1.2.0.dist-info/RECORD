@@ -1,0 +1,12 @@
+decoy/__init__.py,sha256=vF-HaeObfWv0t4ELaTFF_g4C_fsvNwkFtVzqk64Ivn4,6732
+decoy/matchers.py,sha256=NVdtW9NEeUlyNc8vxz9lsoZWtoyhDJTs1I5IYAjvIX8,5478
+decoy/mypy.py,sha256=LLJCfYQdEEayym0S6Re3BZG4gdi3drmyoIjiFXasfw0,1358
+decoy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+decoy/registry.py,sha256=_uC87ntbQYN26DvXbij_ckd5rjiugH7guevxxoXgQag,2860
+decoy/spy.py,sha256=dV4acxqe5NoJ2l6BZiNYUG-okKoBw2TrRQUz0FW4e20,4484
+decoy/stub.py,sha256=OLZ2lVty7AZ6yBiYFzTTwEcidiCaE9kVtNhyDHSyESk,2039
+decoy/types.py,sha256=8f_xcgGRVUJJhBcfxxS4m0VqzTy32EIET_fuuoSh_E4,311
+decoy-1.2.0.dist-info/LICENSE,sha256=aIX90ancczljXC4kcT790HN8VPOo2RHAeBGA62Ywgbg,1078
+decoy-1.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+decoy-1.2.0.dist-info/METADATA,sha256=Ql_QU-NaeuqBj3vKcwNhMLA4rWhyHBlU92hT3STEl2g,8225
+decoy-1.2.0.dist-info/RECORD,,
