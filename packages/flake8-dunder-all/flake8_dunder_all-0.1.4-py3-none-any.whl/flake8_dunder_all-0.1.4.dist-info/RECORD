@@ -1,0 +1,10 @@
+flake8_dunder_all/__init__.py,sha256=iqq5PLMl3EwPM0YCPRF2Dt8zbPNNJCWuWPfFpuZie94,7711
+flake8_dunder_all/__main__.py,sha256=USzKu1Y5P0iRl1QKO4yP8bMJvGMkgCrOaaserV-8zBU,2772
+flake8_dunder_all/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_dunder_all/utils.py,sha256=x-hOi7o0tCywHZL7xx86cuYBpn2f_WM0hSO8sLHmDWc,3551
+flake8_dunder_all-0.1.4.dist-info/LICENSE,sha256=MYik5gF82NlVk4wfOWxj4huvkjpEopziuN-MIaHnE7A,1099
+flake8_dunder_all-0.1.4.dist-info/METADATA,sha256=X_shqI4SFSDRZ2woQSN3mQGqT-Op53DOnaZbBlcleCU,8036
+flake8_dunder_all-0.1.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+flake8_dunder_all-0.1.4.dist-info/entry_points.txt,sha256=qoYgtThfk_ozHMzUairjsE5G8Dm2vPBnfhiRejY7Z_s,181
+flake8_dunder_all-0.1.4.dist-info/top_level.txt,sha256=-WP2Vyvr3JAy36GccRS5rjwBMRbjKGPRzElPm3DqCNc,18
+flake8_dunder_all-0.1.4.dist-info/RECORD,,
