@@ -1,0 +1,9 @@
+README.md
+setup.py
+fthelper/Arr.py
+fthelper/Str.py
+fthelper/__init__.py
+fthelper.egg-info/PKG-INFO
+fthelper.egg-info/SOURCES.txt
+fthelper.egg-info/dependency_links.txt
+fthelper.egg-info/top_level.txt
