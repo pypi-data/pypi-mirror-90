@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: jpgdl
+Version: 0.1.4
+Summary: Just a simple script and library image downloader and saving it in JPEG format, nothing fancy.
+Home-page: https://github.com/TheBoringDude/jpgdl
+License: MIT
+Author: TheBoringDude
+Author-email: iamcoderx@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=8.0.1,<9.0.0)
+Requires-Dist: httpx (>=0.16.1,<0.17.0)
+Project-URL: Repository, https://github.com/TheBoringDude/jpgdl
+Description-Content-Type: text/markdown
+
+# jpgdl
+
+Just a simple script and library image downloader and saving it in JPEG format, nothing fancy.
+
+### Use Library
+
+```python3
+from jpgdl import JPGDL
+
+JPGDL.download(download_url='https://picsum.photos/200/300', filename='test')
+```
+
+### CLI
+
+```
+jpgdl -h
+```
+
+#### Made By:
+
+##### TheBoringDude
+
