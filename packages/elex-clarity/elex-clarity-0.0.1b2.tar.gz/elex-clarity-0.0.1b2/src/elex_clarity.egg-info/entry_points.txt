@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        elexclarity=elexclarity.cli:cli
+    
