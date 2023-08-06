@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: certsGenerator
+Version: 0.1.2
+Summary: Certs generator made it simple
+Home-page: https://github.com/t1m0t/certsGenerator
+Author: Timothée BARON
+Author-email: timothee.baron@protonmail.com
+License: MIT
+Project-URL: Code, https://github.com/t1m0t/certsGenerator
+Project-URL: Issue tracker, https://github.com/t1m0t/certsGenerator/issues
+Description: # certsGenerator
+        [![PYPI](https://img.shields.io/pypi/v/certsGenerator.svg)](https://pypi.org/project/certsGenerator/)
+        [![PYPI Python Versions](https://img.shields.io/pypi/pyversions/certsGenerator.svg)](https://pypi.org/project/certsGenerator/)
+        # About the project
+        This project:
+         - aims to generate certificates from a json configuration file automatically. Just set the configuration properly and execute the script.
+         - is built on top of https://github.com/pyca/cryptography
+        It is written in basic python (fonctionnal), but it works. I'll see wether to implement more tests and features in the future depending of the success of this project and contributions.
+        # Usage
+         - install the package `pip install certsGenerator`
+         - run the command, for example `certsGenerator --conf "example/conf.json"` (beware of relative file paths)
+        
+         # Testing
+        To run tests, run the command `pytest tests.py`
+Keywords: certs certificate x509 pyca cryptography crt
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
