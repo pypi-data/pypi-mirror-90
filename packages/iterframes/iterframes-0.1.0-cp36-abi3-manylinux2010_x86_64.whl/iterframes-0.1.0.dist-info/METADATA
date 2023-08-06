@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: iterframes
+Version: 0.1.0
+Requires-Dist: numpy>=1.16.0
+Summary: Iterate on video frames quickly
+Author: Alessio Sanfratello <sanfra90@gmail.com>
+Author-Email: Alessio Sanfratello <sanfra90@gmail.com>
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# IterFrames
+
+This should be fast!
