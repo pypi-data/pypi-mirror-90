@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+oracle_kernel/__init__.py
+oracle_kernel/__main__.py
+oracle_kernel/install.py
+oracle_kernel/kernel.py
+oracle_kernel.egg-info/PKG-INFO
+oracle_kernel.egg-info/SOURCES.txt
+oracle_kernel.egg-info/dependency_links.txt
+oracle_kernel.egg-info/not-zip-safe
+oracle_kernel.egg-info/requires.txt
+oracle_kernel.egg-info/top_level.txt

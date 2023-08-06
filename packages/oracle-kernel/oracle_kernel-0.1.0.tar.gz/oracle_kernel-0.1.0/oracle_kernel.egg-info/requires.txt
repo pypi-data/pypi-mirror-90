@@ -1,0 +1,4 @@
+cx-Oracle
+sqlalchemy
+pandas
+jupyter
