@@ -1,0 +1,12 @@
+future
+kitchen
+deprecated
+
+[dev]
+pylama
+check-manifest
+
+[test]
+mock
+pygments
+pytest
