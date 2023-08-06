@@ -1,0 +1,6 @@
+soco == 0.20
+ifaddr
+tabulate
+requests
+xmltodict
+rangehttpserver
