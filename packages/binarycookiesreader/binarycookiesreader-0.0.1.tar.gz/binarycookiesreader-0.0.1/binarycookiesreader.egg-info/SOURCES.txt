@@ -1,0 +1,9 @@
+README.md
+setup.py
+bcr/__init__.py
+bcr/main.py
+binarycookiesreader.egg-info/PKG-INFO
+binarycookiesreader.egg-info/SOURCES.txt
+binarycookiesreader.egg-info/dependency_links.txt
+binarycookiesreader.egg-info/entry_points.txt
+binarycookiesreader.egg-info/top_level.txt
