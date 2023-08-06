@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "treefrog"
+version = "0.2.0"
+description = "Organize the Slippi game files in your filesystem according to their attributes"
+authors = ["Dawson Booth <pypi@dawsonbooth.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/dawsonbooth/treefrog"
+repository = "https://github.com/dawsonbooth/treefrog"
+keywords = []
+classifiers = [
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+include = [
+    "LICENSE",
+]
+packages = [
+    { include = "treefrog" },
+]
+
+[tool.poetry.scripts]
+treefrog = 'treefrog.__main__:main'
+
+[tool.poetry.dependencies]
+python = "^3.7"
+py-slippi = "^1.6.1"
+seaborn = "^0.11.0"
+pony = "^0.7.13"
+melee = "^0.20.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.3.2"
+autopep8 = "^1.5"
+pylint = "^2.4.4"
+rope = "^0.17.0"
+mkdocs = "^1.1.2"
+pydoc-markdown = "^3.3.0"
+invoke = "^1.4.1"
+ipykernel = "^5.3.4"
+nbconvert = "^6.0.7"
+tqdm = "^4.51.0"
+pyclean = "^2.0.0"
+mypy = "^0.790"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
