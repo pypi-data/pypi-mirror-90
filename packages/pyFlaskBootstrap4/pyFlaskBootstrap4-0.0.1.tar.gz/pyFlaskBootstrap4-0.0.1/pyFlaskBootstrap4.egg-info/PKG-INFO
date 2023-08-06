@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pyFlaskBootstrap4
+Version: 0.0.1
+Summary: python flask + Bootstrap 4 static components and templates for webprojects
+Home-page: https://github.com/WolfgangFahl/pyFlaskBootstrap4
+Author: Wolfgang Fahl
+Author-email: wf@bitplan.com
+License: Apache
+Download-URL: https://github.com/WolfgangFahl/pyFlaskBootstrap4
+Project-URL: Documentation, http://wiki.bitplan.com/index.php/pyFlaskBootstrap4
+Project-URL: Code, https://github.com/WolfgangFahl/pyFlaskBootstrap4
+Project-URL: Issue tracker, https://github.com/WolfgangFahl/pyFlaskBootstrap4/issues
+Description: # pyFlaskBootstrap4
+        Flask + Bootstrap 4 static components and templates for webprojects
+        
+        [![Travis (.org)](https://img.shields.io/travis/WolfgangFahl/pyFlaskBootstrap4.svg)](https://travis-ci.org/WolfgangFahl/pyFlaskBootstrap4)
+        [![GitHub issues](https://img.shields.io/github/issues/WolfgangFahl/pyFlaskBootstrap4.svg)](https://github.com/WolfgangFahl/pyFlaskBootstrap4/issues)
+        [![GitHub issues](https://img.shields.io/github/issues-closed/WolfgangFahl/pyFlaskBootstrap4.svg)](https://github.com/WolfgangFahl/pyFlaskBootstrap4/issues/?q=is%3Aissue+is%3Aclosed)
+        [![GitHub](https://img.shields.io/github/license/WolfgangFahl/pyFlaskBootstrap4.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+        [![PyPI Status](https://img.shields.io/pypi/v/pyFlaskBootstrap4.svg)](https://pypi.python.org/pypi/pyFlaskBootstrap4/)
+        
+        [![WolfgangFahl](http://wiki.WolfgangFahl.com/images/wiki/thumb/3/38/WolfgangFahlLogoFontLessTransparent.png/198px-WolfgangFahlLogoFontLessTransparent.png)](http://www.WolfgangFahl.com)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
