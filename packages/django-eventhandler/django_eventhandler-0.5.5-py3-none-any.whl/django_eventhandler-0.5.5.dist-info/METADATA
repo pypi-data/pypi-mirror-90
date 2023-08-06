@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: django-eventhandler
+Version: 0.5.5
+Summary: RabbitMQ event handler as a Django module
+Home-page: https://github.com/ByteInternet/django-eventhandler
+Author: Byte B.V.
+Author-email: tech@byte.nl
+License: 3-clause BSD
+Keywords: amqp django rabbitmq events eventhandler
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: Django (>=1.8)
+Requires-Dist: amqpconsumer (==1.7)
+Requires-Dist: six (>=1.11.0)
+
+UNKNOWN
+
+
