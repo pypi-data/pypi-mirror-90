@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: yft
+Version: 0.1.1
+Summary: Utility functions for text processing
+Home-page: http://github.com/liao961120/yft
+Author: Yongfu Liao
+Author-email: liao961120@github.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+Requires-Dist: networkx
+
+# Miscellaneous functions for (Chinese) text processing
+
+This is my collection of some commonly used functions for NLP and text processing, packaged for easy installation and documentation.
+
+
+## Installation
+
+```bash
+pip install yft
+```
+
+
+## Build doc
+
+```bash
+cd docs
+make html
+```
+
