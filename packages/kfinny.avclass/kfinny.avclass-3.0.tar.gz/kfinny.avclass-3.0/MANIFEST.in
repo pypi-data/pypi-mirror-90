@@ -1,0 +1,2 @@
+include kfinny/avclass/data/default.aliases
+include kfinny/avclass/data/default.generics

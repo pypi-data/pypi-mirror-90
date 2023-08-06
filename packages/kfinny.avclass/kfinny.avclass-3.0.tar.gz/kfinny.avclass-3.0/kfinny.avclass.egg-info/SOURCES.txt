@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+kfinny/__init__.py
+kfinny.avclass.egg-info/PKG-INFO
+kfinny.avclass.egg-info/SOURCES.txt
+kfinny.avclass.egg-info/dependency_links.txt
+kfinny.avclass.egg-info/not-zip-safe
+kfinny.avclass.egg-info/requires.txt
+kfinny.avclass.egg-info/top_level.txt
+kfinny/avclass/__init__.py
+kfinny/avclass/avclass.py
+kfinny/avclass/labeler.py
+kfinny/avclass/stats.py
+kfinny/avclass/util.py
+kfinny/avclass/data/default.aliases
+kfinny/avclass/data/default.generics
