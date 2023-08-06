@@ -1,0 +1,2 @@
+rasa_chinese_service
+tests
