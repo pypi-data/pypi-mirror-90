@@ -1,0 +1,13 @@
+bellview/__init__.py,sha256=eS5XMB-Ez883zDjTAfGpLXJWbwZ7KhR6dYOl3ObfQSs,705
+bellview/__main__.py,sha256=mljJ2mEsLoFAzBtTrcSvFll1mcsAcmWTVrDb1tHUAzU,449
+bellview/bvapp.py,sha256=8WAgb_MWOYuqs6-IVXj2sGRFPoOF0fGkdOg4OT0BUow,23773
+bellview/bvpopup.py,sha256=ZS27I0vqKIeMfQuI7GX9y7Xzo2bROrkyQvEqGWMAT4k,13875
+bellview/bvtk.py,sha256=7r6PWdFsw7dsDxEySLomYfY5xkKytOmXINzulZn-Z5U,995
+bellview/bvwidget.py,sha256=K-2yIM6cjms-TRMvmCigP73CcfN4rfIuvDpAun2TbOg,7069
+bellview/help/help.txt,sha256=eq2ZpBRp4-_3a6H-abtOolZBCjfAro1Vl5Xv0dfStMY,270
+bellview/help/licence.txt,sha256=1u7-2ZaxYRW0tH3XUUVG_YoOpoKljzYPN4_SsVHUsMc,1125
+bellview-3.2.1.dist-info/LICENSE,sha256=1u7-2ZaxYRW0tH3XUUVG_YoOpoKljzYPN4_SsVHUsMc,1125
+bellview-3.2.1.dist-info/METADATA,sha256=XmHU57IaCF371BWJtfGOy6HzsEnAXXDZs4wy7PSY8V4,946
+bellview-3.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bellview-3.2.1.dist-info/top_level.txt,sha256=JQpM__pQIDyn0PxaXzosC8zkBo98-tryb-tekr0QhNg,9
+bellview-3.2.1.dist-info/RECORD,,
