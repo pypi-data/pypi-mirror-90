@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+fastfuzzy.egg-info/PKG-INFO
+fastfuzzy.egg-info/SOURCES.txt
+fastfuzzy.egg-info/dependency_links.txt
+fastfuzzy.egg-info/requires.txt
+fastfuzzy.egg-info/top_level.txt
+src/fastfuzzy/__init__.py
+src/fastfuzzy/fastfuzzy.py
+src/fastfuzzy/settings.py
