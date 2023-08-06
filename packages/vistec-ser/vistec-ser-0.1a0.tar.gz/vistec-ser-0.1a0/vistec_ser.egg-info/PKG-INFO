@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: vistec-ser
+Version: 0.1a0
+Summary: Speech Emotion Recognition models and training using Tensorflow 2.x
+Home-page: https://github.com/tann9949/vistec-ser
+Author: Chompakorn Chaksangchaichot
+Author-email: chompakorn.cc@gmail.com
+License: UNKNOWN
+Description: # Vistec-AIS Speech Emotion Recognition
+        ![python-badge](https://img.shields.io/badge/python-%3E%3D3.6-blue?logo=python)
+        ![tensorflow-badge](https://img.shields.io/badge/tensorflow-%3E%3D2.4.0-orange?logo=tensorflow)
+        
+        Speech Emotion Recognition Model and Inferencing using Tensorflow 2.x
+        
+        ## Installation
+        ### From Pypi
+        ```shell
+        pip install VistecSER
+        ```
+        
+        ### From source
+        ```shell
+        git clone https://github.com/tann9949/VistecSER.git
+        cd VistecSER
+        python setup.py install
+        ```
+        
+        ## Usage
+        ### Inferencing using pretrained weight
+        *TODO*
+        
+        ### Train with Your Own Data
+        *TODO*
+        
+        ## Model Description
+        *TODO*
+        
+        ## Reference
+        This repository was structured based on [TensorflowASR](https://github.com/TensorSpeech/TensorFlowASR) repository by
+        @usimarit. Please check it out!
+        
+        
+        ## Author
+        Chompakorn Chaksangchaichot
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
