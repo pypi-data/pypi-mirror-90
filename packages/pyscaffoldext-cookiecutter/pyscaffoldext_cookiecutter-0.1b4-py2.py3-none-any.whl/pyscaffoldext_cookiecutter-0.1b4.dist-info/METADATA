@@ -1,0 +1,224 @@
+Metadata-Version: 2.1
+Name: pyscaffoldext-cookiecutter
+Version: 0.1b4
+Summary: Integration of Cookiecutter project templates into PyScaffold (see: https://github.com/cookiecutter/cookiecutter)
+Home-page: https://github.com/pyscaffold/pyscaffoldext-cookiecutter/
+Author: Anderson Bravalheri
+Author-email: andersonbravalheri@gmail.com
+License: MIT
+Project-URL: Documentation, https://pyscaffoldext-custom-extension.readthedocs.io/
+Project-URL: Source, https://github.com/pyscaffold/pyscaffoldext-cookiecutter/
+Project-URL: Tracker, https://github.com/pyscaffold/pyscaffoldext-cookiecutter/issues
+Project-URL: Download, https://pypi.org/project/pyscaffoldext-cookiecutter/#files
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst; charset=UTF-8
+Requires-Dist: pyscaffold (<5.0a0,>=4.0b2)
+Requires-Dist: cookiecutter
+Requires-Dist: importlib-metadata ; python_version < "3.8"
+Provides-Extra: testing
+Requires-Dist: tox ; extra == 'testing'
+Requires-Dist: pre-commit ; extra == 'testing'
+Requires-Dist: setuptools-scm ; extra == 'testing'
+Requires-Dist: virtualenv ; extra == 'testing'
+Requires-Dist: configupdater ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: pytest-xdist ; extra == 'testing'
+
+.. image:: https://api.cirrus-ci.com/github/pyscaffold/pyscaffoldext-cookiecutter.svg?branch=master
+    :alt: Built Status
+    :target: https://cirrus-ci.com/github/pyscaffold/pyscaffoldext-cookiecutter
+.. image:: https://readthedocs.org/projects/pyscaffoldext-cookiecutter/badge/?version=latest
+    :alt: ReadTheDocs
+    :target: https://pyscaffoldext-cookiecutter.readthedocs.io/
+.. image:: https://img.shields.io/coveralls/github/pyscaffold/pyscaffoldext-cookiecutter/master.svg
+    :alt: Coveralls
+    :target: https://coveralls.io/r/pyscaffold/pyscaffoldext-cookiecutter
+.. image:: https://img.shields.io/pypi/v/pyscaffoldext-cookiecutter.svg
+    :alt: PyPI-Server
+    :target: https://pypi.org/project/pyscaffoldext-cookiecutter/
+
+
+==========================
+pyscaffoldext-cookiecutter
+==========================
+
+    Extension that combines the flexibility of **Cookiecutter** templates
+    with the power of **PyScaffold**.
+
+`Cookiecutter`_ is a flexible utility that allows the definition of templates
+for a diverse range of software projects.
+On the other hand, `PyScaffold`_ is focused in a good out-of-the-box experience
+for developing distributable Python packages (exclusively).
+Despite the different objectives, it is possible to combine the power of both
+tools to create a custom Python project setup.
+
+
+Quickstart
+==========
+
+This extension can be directly installed with ``pip``:
+
+.. code-block:: bash
+
+    $ pip install pyscaffoldext-cookiecutter
+
+Or, if you prefer ``pipx``:
+
+.. code-block:: shell
+
+   $ pipx install pyscaffold  # if you haven't installed pyscaffold yet
+   $ pipx inject pyscaffold pyscaffoldext-cookiecutter
+
+Note that, after the installation, ``putup -h`` will show a new option
+``--cookiecutter TEMPLATE``.
+Use this option to point out which template you want to use (path or url).
+The file structure created by `Cookiecutter`_ will be refined by PyScaffold
+afterwards.
+For example:
+
+.. code-block:: shell
+
+   $ putup my-proj1 --cookiecutter ~/my-templates/default
+   $ putup my-proj2 --cookiecutter gh:something/from-github
+
+Please refer to `Cookiecutter`_ documentation for more details on possible URLs
+and abbreviations.
+
+An additional option ``--cookiecutter-params`` is also added, so you can have
+more control over the values `Cookiecutter`_ uses when rendering the templates
+(PyScaffold will not run Cookiecutter's interactive prompt).
+This option takes the form of a space separated list of ``NAME=VALUE``
+arguments as showed in the example bellow:
+
+.. code-block:: bash
+
+    $ putup mypkg \
+      --cookiecutter gh:pyscaffold/cookiecutter-pypackage \
+      --cookiecutter-params command_line_interface=Argparse use_pytest=y
+
+Check the ``cookiecutter.json`` file in the repository (or directory) of the template you are
+using to see the available parameters.
+Please notice PyScaffold already add some default parameters, as indicated in
+the section **Suitable Templates** bellow.
+
+
+Cookiecutter templates with PyScaffold
+======================================
+
+The following example shows how to create a new package named ``mypkg``,
+that uses a Cookiecutter template, but is enhanced by PyScaffold's features:
+
+.. code-block:: bash
+
+    $ putup mypkg --cookiecutter gh:pyscaffold/cookiecutter-pypackage
+
+This is roughly equivalent to first create a project using the Cookiecutter
+template and convert it to PyScaffold afterwards:
+
+.. code-block:: bash
+
+    $ cookiecutter --no-input gh:pyscaffold/cookiecutter-pypackage project_name=mypkg
+    $ putup mypkg --force
+
+.. note::
+
+    For complex Cookiecutter templates calling ``cookiecutter`` and ``putup``
+    separately may be a better option, since it is possible to answer
+    specific template questions or at least set values for Cookiecutter
+    variables.
+
+.. warning::
+
+    Although using Cookiecutter templates is a viable solution to customize
+    a project that was set up with PyScaffold, the recommended way is to help
+    improve PyScaffold by contributing an `extension`_.
+
+
+.. _suitable-templates:
+
+Suitable templates
+------------------
+
+Note that PyScaffold will overwrite some files generated by Cookiecutter,
+like ``setup.py``, the ``__init__.py`` file under the package folder
+and most of the ``docs`` folder, in order to provide `setuptools_scm`_
+and `sphinx`_ integration.
+Therefore not all Cookiecutter templates are suitable for this approach.
+
+Ideally, interoperable templates should focus on the file structure inside the
+``src`` folder instead of packaging or distributing, since PyScaffold already
+handles it under-the-hood. This also means that your template should adhere to
+the src-layout if you want to generate files within your Python package.
+
+In addition, PyScaffold runs Cookiecutter with the ``--no-input`` flag
+activated and thus the user is not prompted for manual configuration. Instead,
+PyScaffold injects the following parameters::
+
+    author
+    email
+    full_name => same as author
+    project_name => the name of the folder where the project will be generated
+    repo_name => same as project_name
+    package_name => putup's --package (as in `import`)
+    namespace => putup's --namespace (if any)
+    installable_name => putup's --name (an installable name, like in PyPI/pip install)
+    project_short_description => putup's description
+    release_date => equivalent to the day you are running putup
+    year => equivalent to the year you are running putup
+
+Any extra parameter should be passed using the ``--cookiecutter-params`` option.
+
+Accordingly, the template file structure should be similar to::
+
+    cookiecutter-something/
+    └── {{cookiecutter.project_name}}/
+        └── src/
+            └── {{cookiecutter.package_name}}/
+                └── ...
+
+See `Cookiecutter`_ for more information about template creation.
+
+.. note::
+
+   PyScaffold uses Cookiecutter only for its ability to create files.
+   Pre/post hooks that perform any other kind of side effect are not
+   guaranteed to work.
+
+
+.. _pyscaffold-notes:
+
+Making Changes & Contributing
+=============================
+
+This project uses `pre-commit`_, please make sure to install it before making any
+changes::
+
+    $ pip install pre-commit
+    $ cd pyscaffoldext-cookiecutter
+    $ pre-commit install
+
+It is a good idea to update the hooks to the latest version::
+
+    pre-commit autoupdate
+
+Please also check PyScaffold's `contribution guidelines`_,
+
+Note
+====
+
+This project has been set up using PyScaffold 4.0a2. For details and usage
+information on PyScaffold see https://pyscaffold.org/.
+
+
+.. _PyScaffold: https://pyscaffold.org
+.. _Cookiecutter: https://cookiecutter.readthedocs.org
+.. _setuptools_scm: https://pypi.python.org/pypi/setuptools_scm/
+.. _sphinx: http://www.sphinx-doc.org
+.. _extension: https://pyscaffold.org/en/latest/extensions.html
+.. _pre-commit: http://pre-commit.com/
+.. _contribution guidelines: https://pyscaffold.org/en/latest/contributing.html
+
+
