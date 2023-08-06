@@ -1,0 +1,17 @@
+skytemple_tilequant/__init__.py,sha256=UqWJFO_0xX8F1e5QecuyAZFwHS3w5TwEh6ed3HGTbIE,865
+skytemple_tilequant/cli_legacy.py,sha256=tLZ_LXeTgNOzVHd18amL9D8vMsxCCAA6g9OgN2wUcis,6278
+skytemple_tilequant/image_converter.py,sha256=lidcyEC_4J6YBpVZDZD1D3l1T3lUFJQvHF7cCbEmwB8,21046
+skytemple_tilequant/palette_merger.py,sha256=AWq2G3sokI6XGsnm82fLyRGFmhn5sPAHOsrtV_63lVM,5291
+skytemple_tilequant/run.py,sha256=CZ-2kw7fIyf9q-jv_5qfVDvM5kwo1fTjA-omB8L6rMY,7953
+skytemple_tilequant/transparency_handler.py,sha256=Bc1QIHzXfe8F42ybPd-pxNRF-_XS2kg2KCQAWvyhOGg,4703
+skytemple_tilequant/util.py,sha256=MzWHQAIB01N-I-QmXcp9Dn2FQ6S3GKbEPf6JiWnTmGQ,1038
+skytemple_tilequant/aikku/__init__.py,sha256=mysnQ72URYZBchdeZ8C_3PdY06z9J4SLBFNoi2SU2ew,721
+skytemple_tilequant/aikku/cli.py,sha256=n_Xh8lenMFdDdcEW7Y3JiwnYPkqawxnSfhC8CbkGXkg,3592
+skytemple_tilequant/aikku/image_converter.py,sha256=oNuoSyquILxaoO5MtcExsw643hhTIAiRTUnKJdTNNCg,8434
+skytemple_tilequant/aikku/libtilequant.dll,sha256=i4gjYaBveZRNqtG-zxxcI3vL3ns0QRV8nvIRHDn2hDk,45242
+tilequant-0.4.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+tilequant-0.4.0.dist-info/METADATA,sha256=P6At2Gfa-jkMDLNtzhLsZtA98G62t5aBuiMOXDlOyTk,5382
+tilequant-0.4.0.dist-info/WHEEL,sha256=zMRqF9ZfHGxBPfvcWwE-LxcVkdB1hhr8hy4cOfZGPZU,101
+tilequant-0.4.0.dist-info/entry_points.txt,sha256=Fr7L46-TARZZ70O_wRDqseAcTq-RI5Gz-uZBaGhuvck,145
+tilequant-0.4.0.dist-info/top_level.txt,sha256=did7opmZWhmF5AWsQzLW8YCcrLHe7XDUILBxqAkMHX4,20
+tilequant-0.4.0.dist-info/RECORD,,
