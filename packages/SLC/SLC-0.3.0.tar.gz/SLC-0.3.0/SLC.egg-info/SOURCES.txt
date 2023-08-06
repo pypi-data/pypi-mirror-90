@@ -1,0 +1,9 @@
+CHANGELOG.txt
+MANIFEST.in
+README.txt
+setup.py
+SLC/__init__.py
+SLC.egg-info/PKG-INFO
+SLC.egg-info/SOURCES.txt
+SLC.egg-info/dependency_links.txt
+SLC.egg-info/top_level.txt

@@ -1,0 +1,16 @@
+Change Log
+===========
+
+v0.1.0 (1/6/2020)
+------------------
+- First Release
+
+v0.2.0 (1/6/2020)
+------------------
+- New argument parameter added in SLC.run function. (See the README.md file above)
+
+v0.3.0 (1/6/2020)
+------------------
+- Function bug fixed.
+
+
