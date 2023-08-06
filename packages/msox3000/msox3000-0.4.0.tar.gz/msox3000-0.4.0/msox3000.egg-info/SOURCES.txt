@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+oscope.py
+setup.py
+msox3000/MSOX3000.py
+msox3000/SCPI.py
+msox3000/__init__.py
+msox3000.egg-info/PKG-INFO
+msox3000.egg-info/SOURCES.txt
+msox3000.egg-info/dependency_links.txt
+msox3000.egg-info/not-zip-safe
+msox3000.egg-info/requires.txt
+msox3000.egg-info/top_level.txt
