@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pggui
+Version: 0.0.2
+Summary: A lib to make GUI made with PyGame
+Home-page: https://github.com/AlexisHuvier/PGGUI
+Author: LavaPower
+Author-email: lavapower84@gmail.com
+License: UNKNOWN
+Description: # PGGUI
+        
+        A lib to make GUI made with PyGame
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
