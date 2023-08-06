@@ -1,0 +1,3 @@
+[console_scripts]
+thundercloud = thundercloud.main:main
+
