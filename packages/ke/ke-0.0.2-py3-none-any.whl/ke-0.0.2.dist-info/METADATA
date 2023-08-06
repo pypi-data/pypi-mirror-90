@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ke
+Version: 0.0.2
+Summary: File access utils
+Home-page: https://github.com/thorwhalen/ut/tree/master/pfile/accessor.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# ke
+File access utils
+
+
+To install:	```pip install ke```
+
+
