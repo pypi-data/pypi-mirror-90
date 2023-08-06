@@ -1,0 +1,4 @@
+[console_scripts]
+kanobu = kanobu.__main__:main
+ropasci = kanobu.__main__:main
+

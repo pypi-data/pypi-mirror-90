@@ -1,0 +1,6 @@
+lang: Deutsch
+headers: ["#", Ergebnis, Spieler 1, Spieler 2]
+results:
+  - Sieg
+  - Verlieren
+  - Zeichnen

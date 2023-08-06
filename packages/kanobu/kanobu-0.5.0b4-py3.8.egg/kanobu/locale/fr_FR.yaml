@@ -1,0 +1,6 @@
+lang: French
+headers: ["#", Résultat, Joueur 1, Joueur 2]
+results:
+    - Victoire
+    - Perdre
+    - Tie
