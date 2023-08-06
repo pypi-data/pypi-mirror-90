@@ -1,0 +1,12 @@
+README.md
+setup.py
+yft/__init__.py
+yft/corp_readers.py
+yft/lexstats.py
+yft/string.py
+yft.egg-info/PKG-INFO
+yft.egg-info/SOURCES.txt
+yft.egg-info/dependency_links.txt
+yft.egg-info/not-zip-safe
+yft.egg-info/requires.txt
+yft.egg-info/top_level.txt
