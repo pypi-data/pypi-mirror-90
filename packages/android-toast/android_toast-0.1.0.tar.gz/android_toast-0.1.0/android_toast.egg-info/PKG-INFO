@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: android-toast
+Version: 0.1.0
+Summary: Native toast for android with python
+Home-page: UNKNOWN
+Author: Edilson Pineda
+Author-email: edilsonpineda011@gmail.com
+License: UNKNOWN
+Description: # Toast Android
+        
+        Module that allows you to create a native toast for android with python, 
+        this module must be used with pydroid3, kivy and kivymd, you can create 
+        a kivy app and use toast_android,This module allows you to change the 
+        position of the toast to wherever you want with just passing some parameters, 
+        you can also choose the duration of the toast, below you will see an example of use.
+        ## Example:
+        ```
+         from androidtoast import toast
+         from kivymd.app import MDApp
+         from kivy.lang import Builder
+         from kivy.uix.screenmanager import ScreenManager
+         from kivymd.uix.screen import MDScreen
+            
+            
+            
+            
+         Builder.load_string('''
+         <Example>
+         
+             MDFlatButton:
+                 text:"My Toast"
+                 pos_hint:{"center_x": .5, "center_y": .05}
+                 on_press:root.show_toast()
+         ''')
+         
+            
+         class Example(MDScreen):     
+             def show_toast(self):
+                 toast("hello world", True, 80, 200, 0) 
+                                
+                    
+                	
+         class Iniciar(MDApp):     
+             def build(self):
+                 pantalla = ScreenManager()
+                 screen = Example(name="one")
+                 pantalla.add_widget(screen)
+                 return pantalla
+            
+         Iniciar().run() 
+            
+        ```
+        ## Indications:
+            """
+                :param text: text to be displayed in the toast;
+                :param short_duration:  duration of the toast, if `True` the toast
+                       will last 2.3s but if it is `False` the toast will last 3.9s;
+                :param gravity: refers to the toast position, if it is 80the toast will
+                       be shown below, if it is 40 the toast will be displayed above;
+                :param y: refers to the vertical position of the toast;
+                :param x: refers to the horizontal position of the toast;
+        
+                Important: if only the text value is specified and the value of
+                the `gravity`, `y`, `x` parameters is not specified, their values ​​will
+                be 0 which means that the toast will be shown in the center.
+                """
+        
+        This example can be used in Pydroid3 and in a kivy / kivymd app
+        
+        
+        ## installation:
+        ```
+        pip3 install android-toast
+        ```
+        
+        
+Keywords: toast android kivy kivymd Android toast python-for-android python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Android
+Requires-Python: >=3
+Description-Content-Type: text/markdown
