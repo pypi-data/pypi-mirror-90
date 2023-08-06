@@ -1,0 +1,5 @@
+
+    [console_scripts]
+    buck = buck.cli:main
+    
+  
