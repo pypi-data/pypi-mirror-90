@@ -1,0 +1,12 @@
+ml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml/train.py,sha256=lkTHuDCQbq1hkZruwDea6vtYwm1b_L6iG1zkZGu66a4,1322
+ml/architectures/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ml/architectures/efficientnet.py,sha256=LMwEMl2A2hgdefN7_EmFCIjnYSgmvUYC6mvVMibo3ck,1763
+ml/datautils/__init__.py,sha256=5GGUXuRmtmQl7ijGn1BgzUTDa46_UD_J15deEVWbiN8,100
+ml/datautils/dataset_generator.py,sha256=Z1HNRnjda7Ys6eSWCDy1GJtSlq10-9gXjnmdt0pLLUE,2263
+quantum/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AutoQAI-0.0.1.dist-info/LICENSE,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+AutoQAI-0.0.1.dist-info/METADATA,sha256=qZDCvpHZrZ8Ip1bBGNq5QjlhvEM4Ki6JZDdY6Jk6ZkU,457
+AutoQAI-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+AutoQAI-0.0.1.dist-info/top_level.txt,sha256=YQ2YCiWrGVWP9GodRLQmRb_N-u8yTg9DBfJ1ay4EBFM,11
+AutoQAI-0.0.1.dist-info/RECORD,,
