@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: rubaialter
+Version: 1.1.0b1
+Summary: A module for altering numerical dataset's formats, made on top of Pandas.
+Home-page: https://github.com/TechLearnersInc/rubaialter
+Author: Muhammad Sakib Khan Inan
+Author-email: sakib.khaninan@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/TechLearnersInc/rubaialter
+Project-URL: Tracker, https://github.com/TechLearnersInc/rubaialter/issues
+Project-URL: Facebook, https://www.facebook.com/TechLearnersInc
+Project-URL: Linkedin, https://www.linkedin.com/company/techlearners/
+Project-URL: Telegram, https://t.me/TechLearners
+Description: ==========
+        Rubaialter
+        ==========
+        
+        *A module for altering numerical dataset's formats, made on top of Pandas*
+        
+        .. image:: https://img.shields.io/badge/build-beta-brightgreen
+           :target: https://github.com/TechLearnersInc/rubaialter
+        
+        .. image:: https://img.shields.io/badge/license-MIT-green
+           :target: LICENSE.txt
+        
+        .. image:: https://img.shields.io/static/v1?label=Created%20with%20%E2%9D%A4%EF%B8%8F%20by&message=TechLearners&color=red
+           :target: https://github.com/TechLearnersInc
+        
+        Introduction
+        ------------
+        This module is written on top of Pandas to alter a numerical dataset into different formats quickly. From now,  alteration of dataset formats is as exciting as writing a poem. So, write a poem and create magic with data, one step faster with this module.
+        
+        :code:`rubaialter` is a module that will perform conversions among these :code:`.csv ,.xlsx, .xls, .sqlite3` file formats using Pandas under the hood.
+        
+        Example::
+        
+            $ rubaialter dataset.xlsx --csv
+        
+        :code:`pip install rubaialter` will automatically create an
+        executable script in your :code:`Scripts/` folder, so you
+        should be able to simply::
+        
+            $ rubaialter dataset.csv --xlsx
+        
+        or even::
+        
+            $ rubaialter *.csv --xlsx
+        
+        You can type::
+        
+            $ rubaialter -h
+        
+        to obtain the following CLI::
+        
+            usage: rubaialter.py [-h] [--csv] [--xls] [--xlsx] [--sqlite]
+                                 [--force] filenames [filenames ...]
+        
+            A module for altering datasets formats made on top of Pandas
+        
+            positional arguments:
+            filenames   .csv, .xls, .xlsx, .sqlite3
+        
+            optional arguments:
+            -h, --help  show this help message and exit
+            --csv       Convert to csv
+            --xls       Convert to xls
+            --xlsx      Convert to xlsx
+            --sqlite    Convert to sqlite3
+            --force     Enable overwriting
+        
+Keywords: pandas rubaialter csv xls excel xlsx sqlite sqlite3 converter dataset
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
