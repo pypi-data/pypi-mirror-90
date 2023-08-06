@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: lh
+Version: 0.0.2
+Summary: logging functions
+Home-page: https://github.com/thorwhalen/ut/tree/master/util/log.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# lh
+logging functions
+
+
+To install:	```pip install lh```
+
+
