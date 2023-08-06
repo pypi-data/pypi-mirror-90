@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+simpledemotivators.egg-info/PKG-INFO
+simpledemotivators.egg-info/SOURCES.txt
+simpledemotivators.egg-info/dependency_links.txt
+simpledemotivators.egg-info/requires.txt
+simpledemotivators.egg-info/top_level.txt
