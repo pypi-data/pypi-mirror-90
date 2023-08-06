@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: vavista_rpc
+Version: 0.0.10
+Summary: VAVista RPC interface
+Home-page: https://github.com/vernonOber/vavista-rpc3
+Author: Conor Dowling, Kevin Gill
+Author-email: vo2521@gmail.com
+License: UNKNOWN
+Description: 
+            This is a simple Pythonic mechanism for invoking VistA RPCs.
+            The code was developed by Conor Dowling as part of the FMQL
+            project.
+            
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

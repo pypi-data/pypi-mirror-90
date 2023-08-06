@@ -1,0 +1,9 @@
+README.rst
+setup.py
+vavista_rpc/__init__.py
+vavista_rpc/brokerRPC3.py
+vavista_rpc/print_version.py
+vavista_rpc.egg-info/PKG-INFO
+vavista_rpc.egg-info/SOURCES.txt
+vavista_rpc.egg-info/dependency_links.txt
+vavista_rpc.egg-info/top_level.txt
