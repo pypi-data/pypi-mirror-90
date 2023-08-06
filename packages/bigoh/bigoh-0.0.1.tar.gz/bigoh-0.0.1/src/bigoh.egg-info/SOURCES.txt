@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/bigoh/__init__.py
+src/bigoh/hello.py
+src/bigoh.egg-info/PKG-INFO
+src/bigoh.egg-info/SOURCES.txt
+src/bigoh.egg-info/dependency_links.txt
+src/bigoh.egg-info/top_level.txt
