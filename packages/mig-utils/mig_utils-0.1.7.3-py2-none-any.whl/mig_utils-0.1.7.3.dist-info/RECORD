@@ -1,0 +1,8 @@
+mig/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mig/io/__init__.py,sha256=57PEnqPdXdSY2BYNslW8wdHKIUlqobJ2tY8OKclbV6g,129
+mig/io/_async_io.py,sha256=Yt-Up3OkaVrY5iZdWv8XKrFQ17O-otsSBYIWklPwEfE,1591
+mig/io/_io.py,sha256=ASmHNR_ohcL3Fqv0ftGj-6RifCEbDnJt55mPW4YHLjo,11539
+mig_utils-0.1.7.3.dist-info/METADATA,sha256=IGoLr19Cg-wbpuzX6z7CFwdqPSAHA4-Y-r6k0Bw6Zp0,2575
+mig_utils-0.1.7.3.dist-info/WHEEL,sha256=bK8TJl-oUKFDa18qkB68zwTZhIBCifqi4qjS_NS4aFQ,92
+mig_utils-0.1.7.3.dist-info/top_level.txt,sha256=StFqaz7Ess7EYpOdRyQksNOD3Lsn6-lOr46ljPYuUJA,4
+mig_utils-0.1.7.3.dist-info/RECORD,,
