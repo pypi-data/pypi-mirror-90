@@ -1,0 +1,7 @@
+README.md
+setup.py
+speak2mary/__init__.py
+speak2mary.egg-info/PKG-INFO
+speak2mary.egg-info/SOURCES.txt
+speak2mary.egg-info/dependency_links.txt
+speak2mary.egg-info/top_level.txt
