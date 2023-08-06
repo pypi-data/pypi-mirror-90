@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+src/gans_implementations.egg-info/PKG-INFO
+src/gans_implementations.egg-info/SOURCES.txt
+src/gans_implementations.egg-info/dependency_links.txt
+src/gans_implementations.egg-info/top_level.txt
