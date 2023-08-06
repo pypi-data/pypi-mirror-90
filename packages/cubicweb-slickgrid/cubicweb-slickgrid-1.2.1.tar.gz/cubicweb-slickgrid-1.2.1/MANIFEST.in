@@ -1,0 +1,5 @@
+include *.py *.spec
+include */*.py
+recursive-include data *.gif *.png *.ico *.css *.js *.txt README.rst
+recursive-include i18n *.po
+recursive-include wdoc *
