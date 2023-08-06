@@ -1,0 +1,17 @@
+quickbuild/__init__.py,sha256=0NDHvGzld-JNA7-jm3VBFg7skdyCQw2em-P12wguXHw,276
+quickbuild/__init__.pyi,sha256=0SFo-Z3VizKoCt7nv2TXqmeQHoBUO3OeJveXvgLPaoc,194
+quickbuild/core.py,sha256=kqVw0dRlhqnobTvYIPSZf5FQCID7ZjaKbIwpIZzy1Ss,1166
+quickbuild/core.pyi,sha256=7i2t15bQ7d7PaDJkgdRQOrWN53h1kWtW0VIFIdc-UaY,543
+quickbuild/exceptions.py,sha256=zcBymub-XLwSRpemgXwE2e6R_3xZYpq7G4Id2PvAFOM,85
+quickbuild/exceptions.pyi,sha256=_y5jNyLWGihct25XVbWqQVCEFIS9PhuWMamZl90hVd8,38
+quickbuild/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quickbuild/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quickbuild/adapters/aio.py,sha256=yKuNFSHQ7YcRXSjt7aLE5PWgsn4zj9lgOcpL6UB1SRQ,4012
+quickbuild/adapters/sync.py,sha256=m5AzUy5VqTBBgpqxLs6eAKGqmCEBM_a1dMtHRIVP-Hc,3720
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_core.py,sha256=jgzggSFriHZ22v2kFyGqJ-m0xhcuZ3HWm1WsBQ_-gpI,2866
+quickbuild-0.1.0.dist-info/LICENSE,sha256=gGqBwdTabUmZNZRFo-ACdXAWyDGU4uX4rlfQDhmobhA,1069
+quickbuild-0.1.0.dist-info/METADATA,sha256=K2kTpCHihYiM0Bti3X8QFwmnQwRuMrufuxmPDPfMkrA,2617
+quickbuild-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+quickbuild-0.1.0.dist-info/top_level.txt,sha256=bwIEvjPwoDp_7z7cHMiE7ZQOnEWgDA0EhYdisYuDMQQ,17
+quickbuild-0.1.0.dist-info/RECORD,,
