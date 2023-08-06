@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+bin/trashparse
+trashparse/Trash.py
+trashparse/__init__.py
+trashparse/_helper.py
+trashparse/_util.py
+trashparse/_version.py
+trashparse.egg-info/PKG-INFO
+trashparse.egg-info/SOURCES.txt
+trashparse.egg-info/dependency_links.txt
+trashparse.egg-info/requires.txt
+trashparse.egg-info/top_level.txt
