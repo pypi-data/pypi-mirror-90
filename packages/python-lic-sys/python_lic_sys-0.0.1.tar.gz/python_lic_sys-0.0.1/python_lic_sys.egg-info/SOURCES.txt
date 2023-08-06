@@ -1,0 +1,8 @@
+README.md
+setup.py
+python_lic_sys/__init__.py
+python_lic_sys/pyli.py
+python_lic_sys.egg-info/PKG-INFO
+python_lic_sys.egg-info/SOURCES.txt
+python_lic_sys.egg-info/dependency_links.txt
+python_lic_sys.egg-info/top_level.txt
