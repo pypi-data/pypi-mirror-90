@@ -1,0 +1,3 @@
+[console_scripts]
+ankiwiktionary = ankiwiktionary.cli:main
+
