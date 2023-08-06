@@ -1,0 +1,12 @@
+gspread
+oauth2client
+gdown
+requests
+bs4
+pandas
+numpy
+IPython
+sklearn
+time
+datetime
+pytz
