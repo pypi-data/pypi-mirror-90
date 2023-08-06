@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: youtube-dl-service
+Version: 0.0.2
+Summary: Using youtube-dl as service in python code
+Home-page: UNKNOWN
+Author: Dmitriy Pleshevskiy
+Author-email: dmitriy@ideascup.me
+License: MIT
+Description: # youtube-dl-service
+        
+        Using youtube dl lib as service in python code
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
