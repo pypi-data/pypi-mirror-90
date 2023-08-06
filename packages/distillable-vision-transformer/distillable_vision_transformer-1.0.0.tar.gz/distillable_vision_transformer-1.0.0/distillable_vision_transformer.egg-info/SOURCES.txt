@@ -1,0 +1,10 @@
+README.md
+setup.py
+distillable_vision_transformer/__init__.py
+distillable_vision_transformer/model.py
+distillable_vision_transformer/utils.py
+distillable_vision_transformer.egg-info/PKG-INFO
+distillable_vision_transformer.egg-info/SOURCES.txt
+distillable_vision_transformer.egg-info/dependency_links.txt
+distillable_vision_transformer.egg-info/requires.txt
+distillable_vision_transformer.egg-info/top_level.txt
