@@ -1,0 +1,11 @@
+.dada-version
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+dada_email/__init__.py
+dada_email.egg-info/PKG-INFO
+dada_email.egg-info/SOURCES.txt
+dada_email.egg-info/dependency_links.txt
+dada_email.egg-info/requires.txt
+dada_email.egg-info/top_level.txt
