@@ -1,0 +1,99 @@
+
+# BOMBAAT CLI
+
+Bombaat CLI enables you to access AWS Cloud accounts via awscli/boto using Azure AD single sign on service
+
+## System Requirements
+* Mac OSX
+* Python3.6+
+
+
+## Prerequisite
+
+**NOTE: If you just want to test the tool, no need to follow the below steps. It installs default drivers and sample cloud profiles.**
+
+This tool uses selenium to make SAML request using chromium headless and selenium chromdriver. If you have plan to use it in your own environment, this installation requires to host set of configuration files somewhere on the network.
+
+1. A zip file containing chrome-mac and chromedriver, zip filename should be drivers.zip
+
+  You can download the following drivers file to check the content https://bombaat.s3.ap-south-1.amazonaws.com/drivers.zip
+
+  ```shell
+    drivers.zip
+      |_chrome-mac/Chromium.app
+      |_driver/chromedriver
+  ```
+
+2. A zip file containing your AWS cloud account info, zip filename should be profiles.zip
+
+  You can download the following profiles file to check the content https://bombaat.s3.ap-south-1.amazonaws.com/profiles.zip
+
+  ```shell
+    profiles.zip
+      |_profiles/sso.yml
+  ```
+
+## Installation
+
+These steps are one time setup, which installs bombaat cli and required configuration files.
+
+#### Step 1:
+```shell
+$ python3 -m pip install git+https://github.com/ravib-geek/bombaat.git@master
+```
+
+#### Step 2:
+```shell
+$ bombaat update all
+```
+
+#### step 3:
+**Ignore this step, if you are not setting this tool in your own environment. Otherwise, run the following command to set the host where you have uploaded zip files as per the `Prerequisite` step.**
+
+Please make sure you are providing hostname without forward slash. For example if you have hosted your zip files under https://example.com/drivers.zip or https://example.com/profiles.zip, just enter https://example.com
+
+```shell
+$ bombaat init
+```
+
+## Usage
+
+#### Step 1: Configure cloud profile:
+
+Before log in any AWS cloud account, you need to configure the same as it collects login info.
+
+* Azure AD SSO Username - It should be your email ID
+* Default - It can be set True or False. [If you set True, the profile becomes your default cloud account while using `awscli` or `boto`. If you dont, it always be False.]
+
+```shell
+$ bombaat configure
+```
+**You can always come back and run the `bombaat configure` command to change the settings.**
+
+#### Step 2: To log in to a profile:
+
+Profiles which you have configured in the previous step will be shown in `login` command.
+
+```shell
+$ bombaat login
+```
+
+## Help
+
+To see help text:
+
+```shell
+$ bombaat --help
+$ bombaat <command> --help
+```
+
+## Compatibility
+
+* Compatible with Mac OSX with python3.6 or higher version.
+
+## Requirements
+* Azure AD SSO integration with Amazon Web Services. Follow [this](https://docs.microsoft.com/en-us/azure/active-directory/saas-apps/amazon-web-service-tutorial) link to setup Azure SSO with AWS Console.
+
+## Authors
+-------
+* `bombaat` was written by `Ravi Boodher<boodher@gmail.com>`.
