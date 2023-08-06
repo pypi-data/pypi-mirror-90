@@ -1,0 +1,9 @@
+dt_vl53l0x/VL53L0X.py,sha256=S7lSBpatDrgpEECjZZFSZoMWjJKkHEUuJPZifZfX0co,9066
+dt_vl53l0x/__init__.py,sha256=8aOmsqinDe37p0lrboMpv3JBkd5a-XuU0nqrTQ_XJ60,372
+dt_vl53l0x/libvl53l0x.so,sha256=i6Qrujl5NdL7Ky9sX7UOnb-NseAJWoHKM2uDAo57VJI,69656
+dt_vl53l0x-0.0.1.dist-info/DESCRIPTION.rst,sha256=BDpzHzYvoQVrkvvQe8Q46Am9bDQ0ecuuqpVEcaz9eJY,407
+dt_vl53l0x-0.0.1.dist-info/METADATA,sha256=ip0ZbcKvu8dVsbPh0alHQPkYx95xXeWUuBIVo0jEanI,629
+dt_vl53l0x-0.0.1.dist-info/RECORD,,
+dt_vl53l0x-0.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+dt_vl53l0x-0.0.1.dist-info/metadata.json,sha256=k3xIxyqEOVl-gTBVCtbBsemeh8xzinm0bJJYLDzPT70,386
+dt_vl53l0x-0.0.1.dist-info/top_level.txt,sha256=cu6QfNeuEWid3gPZbkESDMP3tISdVFxxEohyok4DNaM,11
