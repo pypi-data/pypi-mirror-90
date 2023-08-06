@@ -1,0 +1,10 @@
+nyahentai/__init__.py,sha256=5AIi165Sopko7SwBkBaViMVoX7sT6mLNS707XWUXUNg,8685
+nyahentai/entities/__init__.py,sha256=G0Z8LaPbrUINV6FNpjBprHwZPdV_PiLdYorftn9D_X4,61
+nyahentai/entities/doujin.py,sha256=Md9ug7t9j__Ows9O_MXRoXr7UvcmUhF_sTXku0wiVSc,492
+nyahentai/entities/links.py,sha256=-GxuS-SGtH8f8DWGcxXFuflLjFasKIkF7I_7rTkgXww,143
+nyahentai/entities/page.py,sha256=Y27ZJhZ9HOk1Ceq_ewr_PZRdWgLh7BnTK7vWOQcAU1s,730
+Nyahentai_API-1.0.0.dist-info/LICENSE,sha256=amqSs-HVsF5lIkPQrsXjbJVUwp_2dJxKCjxmGjO4ptA,1093
+Nyahentai_API-1.0.0.dist-info/METADATA,sha256=kF4CjlGbAXtamgkbGQZXr31nWjQHh51iuhbdoyLlYV0,3849
+Nyahentai_API-1.0.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Nyahentai_API-1.0.0.dist-info/top_level.txt,sha256=rDfdrSy2sSe78TaDmv9QGWBGvkSYgUSP0AHx4S7w0Yw,10
+Nyahentai_API-1.0.0.dist-info/RECORD,,
