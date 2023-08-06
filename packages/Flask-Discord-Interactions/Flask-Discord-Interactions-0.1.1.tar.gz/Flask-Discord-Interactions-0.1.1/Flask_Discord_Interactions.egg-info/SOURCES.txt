@@ -1,0 +1,9 @@
+README.md
+flask_discord_interactions.py
+setup.py
+Flask_Discord_Interactions.egg-info/PKG-INFO
+Flask_Discord_Interactions.egg-info/SOURCES.txt
+Flask_Discord_Interactions.egg-info/dependency_links.txt
+Flask_Discord_Interactions.egg-info/not-zip-safe
+Flask_Discord_Interactions.egg-info/requires.txt
+Flask_Discord_Interactions.egg-info/top_level.txt
