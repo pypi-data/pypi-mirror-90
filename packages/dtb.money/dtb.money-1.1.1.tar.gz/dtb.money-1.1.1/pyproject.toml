@@ -1,0 +1,36 @@
+[tool.black]
+target-version = ["py38"]
+line-length = 100
+exclude = '''
+/(
+    \.git
+    htmlcov
+    \.mypy_cache
+    \.pytest_cache
+)/
+'''
+
+[tool.poetry]
+name = "dtb.money"
+version = "1.1.1"
+description = "Simple money implementation"
+authors = ["Dima Doroshev <dima@doroshev.com>"]
+license = "MIT"
+packages = [
+    { include = "dtb" },
+]
+include = [
+    "*.pyi",
+    "py.typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+"dtb.currency" = "^1.3.0"
+
+[tool.poetry.dev-dependencies]
+"dtb.dev" = {extras = ["devtools"], version = "^1.0.3"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
