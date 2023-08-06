@@ -1,0 +1,8 @@
+cleverdict
+cleversession
+cleverweb
+clevergui
+keyring
+pyperclip
+easypypi
+selenium
