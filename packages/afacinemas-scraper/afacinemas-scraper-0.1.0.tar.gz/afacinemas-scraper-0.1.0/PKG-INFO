@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: afacinemas-scraper
+Version: 0.1.0
+Summary: Ferramenta para raspagem de dados do site da rede Afa Cinemas
+Author: Douglas Gusson
+Author-email: douglasgusson@gmail.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: requests-cache (>=0.5.2,<0.6.0)
