@@ -1,0 +1,5 @@
+PyJWT<2.0.0,>=1.7.1
+cryptography>=3.3.1
+dataclasses-json>=0.5.2
+dataclasses>=0.8
+requests>=2.23.0
