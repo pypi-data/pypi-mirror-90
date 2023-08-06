@@ -1,0 +1,15 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+manifix/__init__.py
+manifix/_version.py
+manifix/check.py
+manifix/command.py
+manifix.egg-info/PKG-INFO
+manifix.egg-info/SOURCES.txt
+manifix.egg-info/dependency_links.txt
+manifix.egg-info/entry_points.txt
+manifix.egg-info/requires.txt
+manifix.egg-info/top_level.txt

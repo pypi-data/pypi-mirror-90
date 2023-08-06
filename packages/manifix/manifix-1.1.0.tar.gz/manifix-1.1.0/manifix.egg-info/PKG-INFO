@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: manifix
+Version: 1.1.0
+Summary: Check for any extra/missing files for distribution
+Home-page: UNKNOWN
+Author: Vidar Tonaas Fauske
+Author-email: vidartf@gmail.com
+License: BSD-3
+Description: UNKNOWN
+Keywords: distribution,manifest,package
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Provides-Extra: test
+Provides-Extra: docs
