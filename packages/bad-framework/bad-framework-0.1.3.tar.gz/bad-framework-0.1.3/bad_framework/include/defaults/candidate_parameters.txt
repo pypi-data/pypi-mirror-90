@@ -1,0 +1,4 @@
+#
+# BAD candidate parameters file
+#
+k  1  100  1
