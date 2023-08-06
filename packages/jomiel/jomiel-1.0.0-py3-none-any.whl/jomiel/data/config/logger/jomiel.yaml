@@ -1,0 +1,140 @@
+---
+# -*- coding: utf-8 -*-
+#
+# jomiel logger configuration file
+#
+
+# https://docs.python.org/3/library/logging.html
+#
+version: 1
+
+# Logger identities
+#
+# https://docs.python.org/3/howto/logging.html#loggers
+#
+loggers:
+
+    default:
+        handlers: [stderr_handler]
+        propagate: false
+        level: INFO
+
+    debug:
+        handlers: [debug_handler]
+        propagate: false
+        level: DEBUG
+
+    chatter:    # More verbose than 'debug' above
+        handlers: [chatter_handler]
+        propagate: false
+        level: DEBUG
+
+    syslog:
+        handlers: [syslog_handler]
+        propagate: false
+        level: INFO
+
+    # File identities
+    #
+    # stderr_file:
+    #    handlers: [stderr_handler, file_handler]
+    #    propagate: false
+    #    level: INFO
+    #
+    # file:
+    #    handlers: [file_handler]
+    #    propagate: false
+    #    level: INFO
+    #
+    # timed_file:
+    #    handlers: [timed_file_handler]
+    #    propagate: false
+    #    level: INFO
+
+    quiet:
+        propagate: false
+
+# Handlers
+#
+# https://docs.python.org/3/howto/logging.html#handlers
+#
+handlers:
+
+    # Stream handlers
+    #
+    stdout_handler:
+        class: logging.StreamHandler
+        formatter: default_formatter
+        stream: ext://sys.stdout
+
+    stderr_handler:
+        class: logging.StreamHandler
+        formatter: default_formatter
+        stream: ext://sys.stderr
+
+    debug_handler:
+        class: logging.StreamHandler
+        formatter: debug_formatter
+        stream: ext://sys.stderr
+
+    chatter_handler:
+        class: logging.StreamHandler
+        formatter: chatter_formatter
+        stream: ext://sys.stderr
+
+    # File handlers
+    #
+    # timed_file_handler:
+    #     class: logging.handlers.TimedRotatingFileHandler
+    #     formatter: default_formatter
+    #     filename: jomiel.log
+    #     backupCount: 4
+    #     interval: 1
+    #     when: 'H'
+    #
+    # file_handler:
+    #     class: logging.handlers.RotatingFileHandler
+    #     formatter: default_formatter
+    #     filename: jomiel.log
+    #     maxBytes: 1048576   # 1024x1024
+    #     backupCount: 4
+
+    # Syslog handler
+    #
+    syslog_handler:
+        class: logging.handlers.SysLogHandler
+        formatter: syslog_formatter
+        address: /dev/log
+
+# Formatters
+#
+# https://docs.python.org/3/howto/logging.html#formatters
+#
+formatters:
+
+    # Stream and file formatters
+    #
+    default_formatter:
+        format: '[%(asctime)s] %(levelname)s - %(message)s'
+        datefmt: '%FT%T%z'
+
+    chatter_formatter:
+        format: >-
+            [%(pathname)s:%(funcName)s:%(lineno)d] %(levelname)s: %(message)s
+
+    debug_formatter:
+        format: '[%(asctime)s.%(msecs)03d] %(levelname)s - %(message)s'
+        datefmt: '%FT%T'
+
+    # Syslog formatter
+    #
+    syslog_formatter:
+        format: 'jomiel[%(process)s]: %(message)s'
+
+# root logger (defaults to this)
+#
+root:
+    handlers: [stderr_handler]
+    level: INFO
+
+# vim: set ts=4 sw=4 tw=72 expandtab:

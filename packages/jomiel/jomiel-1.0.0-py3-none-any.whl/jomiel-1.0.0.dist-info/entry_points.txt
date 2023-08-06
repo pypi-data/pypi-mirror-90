@@ -1,0 +1,4 @@
+[console_scripts]
+jomiel = jomiel.__main__:main
+jomiel-keygen = jomiel.keygen.__main__:main
+

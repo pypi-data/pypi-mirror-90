@@ -1,0 +1,82 @@
+---
+# -*- coding: utf-8 -*-
+#
+# jomiel configuration file
+#
+# Place this file in one of the following locations:
+#   /etc/xdg/jomiel/jomiel.yaml
+#   ~/.config/jomiel/jomiel.yaml
+#   ./jomiel.yaml
+#
+
+# [Debug]
+#
+# Whether the logged JSONs should be minified.
+# debug-minify-json: true
+#
+# Whether the log should include "sensitive" data, e.g. input URIs or
+# serialized messages.
+# debug-sensitive: false
+
+# [Logger]
+#
+# Logger configuration file
+# logger-config: config/logger/jomiel.yaml
+#
+# Logger identity
+# - See config/logger/jomiel.yaml for available identities
+# logger-ident: debug
+
+# [HTTP]
+#
+# Identify as UA to the HTTP servers
+# http-user-agent: Mozilla/6.0
+#
+# Follow HTTP redirections
+# http-allow-redirects: false
+#
+# Time in seconds allowed for the connection to the HTTP server to take
+# http-timeout: 10.5
+#
+# Enable verbose HTTP output
+# http-debug: true
+
+# [Broker]
+#
+# Device: Router (for talking to the clients)
+# - Examples:
+#   - ipc:///tmp/foo
+#   - tcp://*:5514
+# broker-router-endpoint: tcp://*:5514
+#
+# Device: Dealer (for talking to the workers)
+# - Examples:
+#   - ipc:///tmp/foo
+#   - inproc://foo
+# broker-dealer-endpoint: inproc://workers
+#
+# Number of worker threads that listen waiting for client connections
+broker-worker-threads: 1
+#
+# Disable input URI validation and allow the input to pass as it
+# is. By default, jomiel validates the input URI.
+# broker-input-allow-any: true
+
+# [CURVE]
+#
+# Enable CURVE
+# curve-enable: true
+#
+# Directory that holds all public client CURVE key files
+# curve-public-key-dir: .curve/
+#
+# Secret CURVE key file for the server
+# curve-server-key-file: .curve/server.key_secret
+#
+# Configure CURVE authentication for a given domain
+# curve-domain: '*'
+#
+# Allow (whitelist IP addresses)
+# curve-allow: 127.0.0.1
+
+# vim: set ts=4 sw=4 tw=72 expandtab:
