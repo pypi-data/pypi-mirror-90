@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ghflow
+Version: 0.0.5
+Summary: wrap github CLI for gitflow
+Home-page: https://github.com/devcrema/gitflow-for-github
+Author: devcrema
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
+
+UNKNOWN
+
+
