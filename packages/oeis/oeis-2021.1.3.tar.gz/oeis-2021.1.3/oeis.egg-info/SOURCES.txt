@@ -1,0 +1,11 @@
+README.md
+oeis.py
+pyproject.toml
+setup.cfg
+setup.py
+oeis.egg-info/PKG-INFO
+oeis.egg-info/SOURCES.txt
+oeis.egg-info/dependency_links.txt
+oeis.egg-info/entry_points.txt
+oeis.egg-info/requires.txt
+oeis.egg-info/top_level.txt
