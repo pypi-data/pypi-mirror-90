@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cnp-generator
+Version: 1.0.3
+Summary: Romania CNP number generator and decoder.
+Home-page: https://github.com/myshy93/cnp-generator
+Author: Mihai Dinu
+Author-email: mihai.dinu93@gmail.com
+License: MIT
+Description: # CNP generator and decoder
+        
+        ---
+        
+        ## Usage
+        
+        ## API
+        
+Keywords: cnp romania generator decoder
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
