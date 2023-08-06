@@ -1,0 +1,24 @@
+# YAML file example for the `freeflame` module
+# file specifies a parameter variation of the equivalence ratio
+strategy:
+  sequence:
+    upstream.phi: { mode: linspace, limits: [0.4, 2.6], npoints: 12 }
+  matrix:
+    upstream.phi: { mode: linspace, limits: [0.4, 2.4], npoints: 6 }
+    model.transport: ['mix', 'multi', 'soret']
+defaults:
+  upstream:
+    T: 300. kelvin # temperature
+    P: 1. atmosphere # pressure
+    phi: .55 # equivalence ratio
+    fuel: H2
+    oxidizer: O2:1,AR:5
+  model:
+    mechanism: h2o2.yaml
+    transport: mix
+  domain:
+    width: 30 millimeter # domain width
+output:
+  format: h5
+  force: True
+ctwrap: 0.3.0

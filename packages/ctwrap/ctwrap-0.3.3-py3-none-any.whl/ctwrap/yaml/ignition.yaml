@@ -1,0 +1,24 @@
+# YAML file example for the `ignition` module
+# file specifes a parameter variation of the equivalence ratio
+strategy:
+  sequence:
+    initial.phi: [0.4, 0.6, 0.8, 1.0, 1.2, 1.4, 1.6, 1.8]
+defaults:
+  initial:
+    T: 1000. kelvin # temperature
+    P: 101325. pascal # pressure
+    phi: 1. # equivalence ratio
+    fuel: H2
+    oxidizer: O2:1,AR:5
+  chemistry:
+    mechanism: h2o2.yaml
+  settings:
+    delta_t: .5e-6
+    max_time_step: .2e-9
+    n_points: 1000
+    atol: 1.e-18
+    rtol: 1.e-15
+output:
+  format: h5
+  force: True
+ctwrap: 0.3.0
