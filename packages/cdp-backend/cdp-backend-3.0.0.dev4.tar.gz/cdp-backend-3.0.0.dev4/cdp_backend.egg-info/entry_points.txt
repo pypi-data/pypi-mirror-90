@@ -1,0 +1,6 @@
+[console_scripts]
+cdp_event_gather = cdp_backend.bin.cdp_event_gather:main
+create_cdp_database_uml = cdp_backend.bin.create_cdp_database_uml:main
+create_cdp_event_gather_flow_viz = cdp_backend.bin.create_cdp_event_gather_flow_viz:main
+create_cdp_ingestion_model_doc = cdp_backend.bin.create_ingestion_model_doc:main
+
