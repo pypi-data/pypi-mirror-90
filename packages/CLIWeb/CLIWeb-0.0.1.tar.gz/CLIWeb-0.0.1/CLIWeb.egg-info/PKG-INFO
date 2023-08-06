@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: CLIWeb
+Version: 0.0.1
+Summary: A cli-tool to performe http requests and socket connections.
+Home-page: https://github.com/iiestIT/CLIWeb
+Author: iiestIT
+Author-email: it.iiest.de@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.8

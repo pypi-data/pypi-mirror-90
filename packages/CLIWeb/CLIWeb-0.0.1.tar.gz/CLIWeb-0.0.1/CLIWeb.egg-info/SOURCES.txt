@@ -1,0 +1,8 @@
+setup.py
+CLIWeb/__init__.py
+CLIWeb/cliweb.py
+CLIWeb.egg-info/PKG-INFO
+CLIWeb.egg-info/SOURCES.txt
+CLIWeb.egg-info/dependency_links.txt
+CLIWeb.egg-info/requires.txt
+CLIWeb.egg-info/top_level.txt
