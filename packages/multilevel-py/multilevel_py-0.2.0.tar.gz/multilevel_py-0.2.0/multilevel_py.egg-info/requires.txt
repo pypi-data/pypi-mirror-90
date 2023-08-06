@@ -1,0 +1,10 @@
+
+[dev]
+
+[test]
+pytest
+pytest-depends
+
+[viz]
+graphviz
+jinja2
