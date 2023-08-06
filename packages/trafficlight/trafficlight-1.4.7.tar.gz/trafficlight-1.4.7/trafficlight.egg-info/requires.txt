@@ -1,0 +1,3 @@
+setuptools
+string-color>=0.2.7
+inquirer
