@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+oplot/__init__.py
+oplot/matrix.py
+oplot/multi_plot.py
+oplot/my.py
+oplot.egg-info/PKG-INFO
+oplot.egg-info/SOURCES.txt
+oplot.egg-info/dependency_links.txt
+oplot.egg-info/not-zip-safe
+oplot.egg-info/top_level.txt
