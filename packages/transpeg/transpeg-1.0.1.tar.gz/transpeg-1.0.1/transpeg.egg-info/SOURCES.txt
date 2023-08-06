@@ -1,0 +1,10 @@
+README.md
+setup.py
+transpeg/__init__.py
+transpeg/main.py
+transpeg.egg-info/PKG-INFO
+transpeg.egg-info/SOURCES.txt
+transpeg.egg-info/dependency_links.txt
+transpeg.egg-info/entry_points.txt
+transpeg.egg-info/requires.txt
+transpeg.egg-info/top_level.txt
