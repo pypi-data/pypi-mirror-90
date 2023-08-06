@@ -1,0 +1,32 @@
+#!python
+
+from codetrace import trace,untrace
+import os
+import glob
+import sys
+
+if __name__ == "__main__":     
+    print(sys.argv)
+    if len(sys.argv)!=3 or sys.argv[1] not in ['trace','untrace'] :
+        print('codetrace [un]trace .  ==> (un)trace all py at current folder')
+        print('codetrace [un]trace **  ==> (un)trace all py recursively')
+        print('codetrace [un]trace subfolder/*  ==> (un)trace all py under subfolder recursively')
+        
+        
+        exit(1)    
+    if len(sys.argv)>=2:
+        pattern = sys.argv[2]
+        if pattern[-1] != '/':
+            pattern += '/'
+    else:
+        pattern = ''
+    all_pys = glob.glob(pattern+'*.py',recursive=True)
+    print('{} of python files listed'.format(len(all_pys)))
+    for file in all_pys:
+        if sys.argv[1] =='trace':
+            trace(file)
+        else:
+            untrace(file)
+    
+        
+        
