@@ -1,0 +1,3 @@
+[console_scripts]
+highres = hiresmodule.command_line:main
+
