@@ -1,0 +1,10 @@
+README.md
+setup.py
+tmax_ims/__init__.py
+tmax_ims/bot.py
+tmax_ims/ims.py
+tmax_ims.egg-info/PKG-INFO
+tmax_ims.egg-info/SOURCES.txt
+tmax_ims.egg-info/dependency_links.txt
+tmax_ims.egg-info/requires.txt
+tmax_ims.egg-info/top_level.txt

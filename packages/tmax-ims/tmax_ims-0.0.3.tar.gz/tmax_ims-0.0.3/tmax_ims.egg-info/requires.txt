@@ -1,0 +1,4 @@
+bs4
+py-notifier
+pandas
+requests
