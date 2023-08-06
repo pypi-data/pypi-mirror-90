@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: jrccalculator
+Version: 0.0.1
+Summary: A very basic calculator
+Home-page: UNKNOWN
+Author: John Cindrich
+Author-email: john.cindrich@outlook.com
+License: MIT
+Description: This calculator takes 2 numbers and either adds, subtracts, multiply or divide
+        
+        Change Log
+        ===========
+        
+        0.0.1 (1/1/2021)
+        ----------------------------------
+        - First Release
+        
+        
+Keywords: calculator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+__init__.py
+setup.py
+jrccalculator.egg-info/PKG-INFO
+jrccalculator.egg-info/SOURCES.txt
+jrccalculator.egg-info/dependency_links.txt
+jrccalculator.egg-info/top_level.txt
