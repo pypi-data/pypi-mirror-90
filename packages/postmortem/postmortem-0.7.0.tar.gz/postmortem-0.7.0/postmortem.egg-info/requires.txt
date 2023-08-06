@@ -1,0 +1,8 @@
+appdirs
+avendesora>=1.14
+arrow
+docopt
+inform>=1.16
+nestedtext
+python-gnupg>=0.4.4
+voluptuous
