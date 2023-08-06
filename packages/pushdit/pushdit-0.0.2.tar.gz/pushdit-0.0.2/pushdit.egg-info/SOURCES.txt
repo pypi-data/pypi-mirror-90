@@ -1,0 +1,8 @@
+README.md
+setup.py
+pushdit.egg-info/PKG-INFO
+pushdit.egg-info/SOURCES.txt
+pushdit.egg-info/dependency_links.txt
+pushdit.egg-info/top_level.txt
+pushit/__init__.py
+pushit/pushit.py
