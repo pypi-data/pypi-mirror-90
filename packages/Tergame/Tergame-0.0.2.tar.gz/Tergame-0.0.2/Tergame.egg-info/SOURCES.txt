@@ -1,0 +1,8 @@
+README.md
+setup.py
+Tergame/__init__.py
+Tergame/tergame.py
+Tergame.egg-info/PKG-INFO
+Tergame.egg-info/SOURCES.txt
+Tergame.egg-info/dependency_links.txt
+Tergame.egg-info/top_level.txt
