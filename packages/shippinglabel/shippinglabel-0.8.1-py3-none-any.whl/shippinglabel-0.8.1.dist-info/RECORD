@@ -1,0 +1,12 @@
+shippinglabel/__init__.py,sha256=yqXfYPDEdkMrrIINXvjnxKPYlziF4fenNZjGrF4fakg,2317
+shippinglabel/checksum.py,sha256=cMm6LtFeQbPEm_tBWoRsDpOcCSTCxG4yi8IGhPzNss4,3196
+shippinglabel/classifiers.py,sha256=M5e-V5w-Ff4TM9V8sgoVYIS8vsuQmfKkBsmSRWtQFFc,4340
+shippinglabel/conda.py,sha256=zrNThlsF57sOcoGh_6N_6zrBXfK0WfWAVbG0cbcCxJU,7225
+shippinglabel/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shippinglabel/pypi.py,sha256=gKE9ZhyL-YDzWt37U6-Dc5l8UrHSgNjMdAAtNrogjlw,6559
+shippinglabel/requirements.py,sha256=QYK-wEJBVPel5cMUT-c0gTJGRMsJUGa0WJ2-DyCqatQ,17300
+shippinglabel-0.8.1.dist-info/LICENSE,sha256=BigaIaJbg4wCjk6MjLC_5kuevxdEotWApzfvN8Y9LMM,1064
+shippinglabel-0.8.1.dist-info/METADATA,sha256=c8zQiJGkhSJ2abuZkaAEU5kI8Hf-vj-9U6B3K44KmDo,7022
+shippinglabel-0.8.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+shippinglabel-0.8.1.dist-info/top_level.txt,sha256=tXET7KxOxowhvhiOPEJwP5JMFga5nJF0CYnQ9aJGxZw,14
+shippinglabel-0.8.1.dist-info/RECORD,,
