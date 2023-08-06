@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: phonex
+Version: 0.0.1
+Summary: Phonex algorithm ported to python 3
+Home-page: https://github.com/damiencorpataux/phonex
+Author: Damien Corpataux
+Author-email: d@mien.ch
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
