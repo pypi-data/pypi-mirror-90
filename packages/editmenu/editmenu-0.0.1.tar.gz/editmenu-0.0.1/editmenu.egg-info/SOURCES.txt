@@ -1,0 +1,9 @@
+README.md
+setup.py
+editmenu/__init__.py
+editmenu/editmenu.py
+editmenu/getch.py
+editmenu.egg-info/PKG-INFO
+editmenu.egg-info/SOURCES.txt
+editmenu.egg-info/dependency_links.txt
+editmenu.egg-info/top_level.txt
