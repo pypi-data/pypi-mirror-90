@@ -1,0 +1,3 @@
+ankiwiktionary
+build
+dist

@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: ankiwiktionary
+Version: 0.0.1
+Summary: Anki cards generating from Wiktionary pages
+Home-page: UNKNOWN
+Author: Damir Chanyshev
+Author-email: hairygeek@yandex.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/hairygeek/ankiwiktionary
+Project-URL: Documentation, https://github.com/hairygeek/ankiwiktionary
+Project-URL: Source Code, https://github.com/hairygeek/ankiwiktionary
+Keywords: anki card generation wiktionary russian
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: lxml (>=4.6.2)
+Requires-Dist: yarl (>=1.6.3)
+Requires-Dist: Jinja2 (>=2.11.2)
+Requires-Dist: click (>=7.1.2)
+Requires-Dist: colorama (>=0.4.4)
+
+CLI for generating Anki flashcards from wiktionary.org pages. **Works only with russian words**.
+
+# ankiwiktionary
+
+```
+Usage: ankiwiktionary [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  gen-cards  Generate flashcards from passed WORDS
+  search     Search for the passed WORDS in wiktionary
+```
+
+## Features
+
+* Generating cloze cards
+* Examples processing
+
+## Usage
+
+```commandline
+➜  tmp ankiwiktionary gen-cards самоопределяться луддит дихотомия привинтивный дискурс конструктивный
+Word "самоопределяться" processed successfully
+Word "луддит" processed successfully
+Word "дихотомия" processed successfully
+[Error] Word "привинтивный" not found
+Word "дискурс" processed successfully
+Word "конструктивный" processed successfully
+➜  tmp ankiwiktionary search привинтивный
+Results for "привинтивный":
+➜  tmp ankiwiktionary search люмпед
+Results for "люмпед": люмпен, люмпен-пролетариат, люмпенизация, люмпен-пролетарий, люмпен-интеллигенция, люмпенский, люмпенизироваться, люмпенизировать, люмпенствовать, люмпен-интеллигент
+```
+
+## Important details
+
+* Generated file should be imported to Anki using "Import File" button. Set "Fields separated by" to `~` and activate the "Allow HTML in fields" checkbox.
+
