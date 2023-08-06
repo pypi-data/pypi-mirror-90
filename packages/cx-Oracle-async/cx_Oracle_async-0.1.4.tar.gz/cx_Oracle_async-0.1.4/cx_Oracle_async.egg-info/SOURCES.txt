@@ -1,0 +1,9 @@
+README.md
+setup.py
+cx_Oracle_async/__init__.py
+cx_Oracle_async/utils.py
+cx_Oracle_async.egg-info/PKG-INFO
+cx_Oracle_async.egg-info/SOURCES.txt
+cx_Oracle_async.egg-info/dependency_links.txt
+cx_Oracle_async.egg-info/requires.txt
+cx_Oracle_async.egg-info/top_level.txt
