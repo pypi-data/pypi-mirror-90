@@ -1,0 +1,11 @@
+---
+mandatory:
+  - "@avatao/tfwsdk": 1.0.3
+optional:
+  - express: 4.17.1
+  - classnames: 2.2.6
+  - downloadjs: 1.4.7
+  - next: 10.0.0
+  - react: 17.0.1
+  - react-dom: 17.0.1
+  
