@@ -1,0 +1,9 @@
+interactive_data_manipulation/__init__.py,sha256=ghPAGuYj-8-6jB8M0K5XnDKBWlGpEZ9XkZ5kxvIMx50,146
+interactive_data_manipulation/dataframe.py,sha256=ZHKFKiOUKDMjRUYpPoWHNxv7srfDRWa96f7QQPUJW0E,4157
+interactive_data_manipulation/idm.py,sha256=qAkrS6AIL0gvFr9i_a_472gTfp48JC3ccgMh0fmsm_A,6261
+interactive_data_manipulation/summary.py,sha256=DzVLUJqj6tMr2oohmXWQMUcYk-UK2NRxDIQmF8Jhgsw,224
+interactive_data_manipulation-0.0.22.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+interactive_data_manipulation-0.0.22.dist-info/METADATA,sha256=Sj0dTMFoMN8WTbiHswu1H7Agy2vuuof0-Y7mzajur2E,583
+interactive_data_manipulation-0.0.22.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+interactive_data_manipulation-0.0.22.dist-info/top_level.txt,sha256=hFOLMSxG0gJtssaqjSnQst_qWOY6PMaWi67kZ0HSqX0,30
+interactive_data_manipulation-0.0.22.dist-info/RECORD,,
