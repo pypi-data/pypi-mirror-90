@@ -1,0 +1,7 @@
+README.md
+setup.py
+soilpy/__init__.py
+soilpy.egg-info/PKG-INFO
+soilpy.egg-info/SOURCES.txt
+soilpy.egg-info/dependency_links.txt
+soilpy.egg-info/top_level.txt
