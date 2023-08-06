@@ -1,0 +1,16 @@
+jupyter_plotly_dash/__init__.py,sha256=Nr0mPSo4Ej0ernOa-2BKTfdl77OBKtBfgpNFrutePP4,919
+jupyter_plotly_dash/async_views.py,sha256=KOQG6gHInzDm2-IZzrI8jLtrGZ25B2PywfZX94yjOls,5100
+jupyter_plotly_dash/dash_wrapper.py,sha256=XLqJtOiM4BIZjE7sQf7JrxGHRQJkbfK1mUICJvMrtv8,8885
+jupyter_plotly_dash/ipython.py,sha256=dKukcMvdGMQHYvrJg_bJHnflVPWpvvj2YYsUkzWaiqE,1167
+jupyter_plotly_dash/nbkernel.py,sha256=QW_vBV_TTWfMCBWt5dIrpuNoyhgV2mJG58Ks_qKVNQQ,1930
+jupyter_plotly_dash/nbsrvext.py,sha256=4lLzbKgmT5CZmIkin-tDa53CdjNVHb-hhv552w655mk,12975
+jupyter_plotly_dash/version.py,sha256=d_T7Gv7jkEQV2fh-hyBgzQCC74LP45xenIw-MbYHQXc,867
+jupyter_plotly_dash/serverext/__init__.py,sha256=ETZyyYfYq7CQviWTFbcANhmYUc_YxEQDnMpTFN21S9U,1114
+jupyter_plotly_dash/tests/__init__.py,sha256=EiX-2KlGW_iqIxRDoUT0BU-afmZ4QO8L3LPO_4bhgqI,846
+jupyter_plotly_dash/tests/test_imports.py,sha256=HymBAAi2lWt4-kMzoeOGpsMZanAi3dp8eQxId555Q2U,1571
+jupyter_plotly_dash-0.4.3.data/data/etc/jupyter/jupyter_notebook_config.d/jupyter-plotly-dash.json,sha256=jDAr5V2WuZl5Br6NkiwG864ziyYQkgHsc9G4jdtwSqI,160
+jupyter_plotly_dash-0.4.3.dist-info/LICENSE,sha256=EO3mE8zoHcU4HsnBoI3P3NQl0qGGo--yUjHuO6MIWFo,34521
+jupyter_plotly_dash-0.4.3.dist-info/METADATA,sha256=x4x7vxu8ruMANjHoF_y3WztAbypZ1Dgz6eIHFNfsKm8,4820
+jupyter_plotly_dash-0.4.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+jupyter_plotly_dash-0.4.3.dist-info/top_level.txt,sha256=w890bkv61qzaraXaoh90x5D4jN3LN32KOuhZrZLUzFw,20
+jupyter_plotly_dash-0.4.3.dist-info/RECORD,,
