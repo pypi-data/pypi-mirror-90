@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: vessel
+Version: 3.0.0
+Summary: Dynamic data access.
+Home-page: https://github.com/Exahilosys/vessel
+Author: Exahilosys
+License: MIT
+Description: Keeping live API objects... well, alive ❤️
+        
+        Installing
+        ==========
+        
+        .. code-block:: bash
+        
+          pip3 install vessel
+        
+        Links
+        -----
+        
+        - `Documentation <https://vessel.readthedocs.io>`_
+        
+        Warnings
+        --------
+        
+        - Version ``3.0.0`` does not contain some core components. Check out `ldbcache <https://github.com/Exahilosys/ldbcache>`_ for database caching.
+        
+Platform: UNKNOWN
+Provides-Extra: docs
