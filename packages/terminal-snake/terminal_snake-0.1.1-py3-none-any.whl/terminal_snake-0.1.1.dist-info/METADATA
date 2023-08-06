@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: terminal-snake
+Version: 0.1.1
+Summary: 
+Home-page: https://github.com/ZugBahnHof/terminal-snake
+Keywords: game,commandline,terminal,utf-8,emoji
+Author: Julian Leucker
+Author-email: leuckerj@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Project-URL: Repository, https://github.com/ZugBahnHof/terminal-snake
+Description-Content-Type: text/markdown
+
+# Terminal Snake
+This is a simple snake game to play inside a shell, written in Python.
+Simply run the `__init__.py` file inside the `terminal-snake` directory.
+This project requires minimum Python 3.8. To create your own frontend you
+can import the class `Game` from `game.py`.
