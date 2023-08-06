@@ -1,0 +1,10 @@
+pelican/plugins/bibliography/__init__.py,sha256=PK0E35qi7ALSztD14PIlCQLHnCjLDeMXa6yTRM6bXi8,177
+pelican/plugins/bibliography/bibliography.py,sha256=LOYrGjLXA8DrqzsMk-bVhXHoT4oO1tfSS-zIyDzeERs,8981
+pelican/plugins/bibliography/data/templates/bibentry.html,sha256=pg7iS67S-Q6hMV05aP0vQlc7ptEHmgWG-4PLWPGlGWs,1741
+pelican/plugins/bibliography/data/templates/bibliography.html,sha256=4EQDKrS-lE2LKzq-v_wGbHUE4_NTcpjnvbs2Pg3c4zw,373
+pelican/plugins/bibliography/data/templates/citation.html,sha256=D2tKYlVEhby1MH0WN_-rSBqrOCoF9TRZzl_nO8anyUc,202
+pelican/plugins/bibliography/test_bibliography.py,sha256=dfhpyDo-EZ723W4G1I0WrKQmuow2PI1KB0197c4GOHA,115
+pelican_bibliography-0.5.1.dist-info/LICENSE,sha256=yRQuUw5Y5wnOZGBHHulpfR3ds8sz8DL4WARTSFB5LDI,1068
+pelican_bibliography-0.5.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+pelican_bibliography-0.5.1.dist-info/METADATA,sha256=Mzrn5Iltbxr47FwAvDlSNLeB-u8byiFzymF5W0CI16k,7832
+pelican_bibliography-0.5.1.dist-info/RECORD,,
