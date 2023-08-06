@@ -1,0 +1,7 @@
+cleverdict
+pysimplegui
+click
+twine
+keyring
+mechanicalsoup
+pep440_version_utils
