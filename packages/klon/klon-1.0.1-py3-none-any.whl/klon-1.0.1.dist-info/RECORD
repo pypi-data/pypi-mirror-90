@@ -1,0 +1,10 @@
+klon/__init__.py,sha256=1mrGKKm2enOPJ9zPjrCIhbxm2jbc3aXCfbWhkxd2Y0s,665
+klon/compatibility.py,sha256=QXOIRTLoQ629c5ysnQyBk-0QMwtiwo3FYEuJ-XQ5_DI,780
+klon/klon.py,sha256=VXDsR8JXV3hq5YSD7pYCVGDgpyghGwjyjizLbc3fl4Y,2652
+klon/lxml.py,sha256=BbwP6iDJNdDGcHLJpa0MC84sDh0fFMwGbRhJjIigt3M,1413
+klon/version.py,sha256=-aUDVwdoWxfG19SttD-k4N_v4Iq6Ru6rsBMViLTy0zk,336
+klon-1.0.1.dist-info/LICENSE,sha256=71cJCvVO8quHIqNw1b76JG-42vujIj9xF66owwPZG7o,1074
+klon-1.0.1.dist-info/METADATA,sha256=1SXP01HGeoIojh9qw8EHsjPnGAUZSf4GAHwb6TwXTvE,1546
+klon-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+klon-1.0.1.dist-info/top_level.txt,sha256=6fwGn88QSEHhBYF8X3D-7-p3i6uy0jmSsKX6ssumpN4,5
+klon-1.0.1.dist-info/RECORD,,
