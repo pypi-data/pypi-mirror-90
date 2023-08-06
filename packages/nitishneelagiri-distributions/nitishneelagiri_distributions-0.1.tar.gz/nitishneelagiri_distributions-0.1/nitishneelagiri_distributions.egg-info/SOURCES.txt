@@ -1,0 +1,10 @@
+setup.py
+nitishneelagiri_distributions/Binomialdistribution.py
+nitishneelagiri_distributions/Gaussiandistribution.py
+nitishneelagiri_distributions/Generaldistribution.py
+nitishneelagiri_distributions/__init__.py
+nitishneelagiri_distributions.egg-info/PKG-INFO
+nitishneelagiri_distributions.egg-info/SOURCES.txt
+nitishneelagiri_distributions.egg-info/dependency_links.txt
+nitishneelagiri_distributions.egg-info/not-zip-safe
+nitishneelagiri_distributions.egg-info/top_level.txt
