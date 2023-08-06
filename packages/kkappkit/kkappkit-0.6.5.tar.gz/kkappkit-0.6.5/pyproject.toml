@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "kkappkit"
+version = "0.6.5"
+description = "A UI library and mini-framework based on Tkinter，aiming for rapid development of small tool applications."
+authors = ["Beinan Li <li.beinan@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = ""
+repository = "https://github.com/kakyoism/kkappkit/"
+documentation = "https://github.com/kakyoism/kkappkit/README.md"
+keywords = [
+    "frontend",
+    "ui",
+]
+packages = [
+    { include = "hello_world" },
+    { include = "test_offline_params" },
+    { include = "test_realtime_params" },
+    { include = "*.py" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+Pillow = "*"
+python-osc = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.urls]
+issues = "https://github.com/kakyoism/kkappkit/issues"
