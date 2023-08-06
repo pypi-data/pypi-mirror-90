@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+import sys
+#sys.path.append("..")
+from ad import add
+
+i = int(input("First number"))
+j = int(input("Second number"))
+print(add(i,j))
+

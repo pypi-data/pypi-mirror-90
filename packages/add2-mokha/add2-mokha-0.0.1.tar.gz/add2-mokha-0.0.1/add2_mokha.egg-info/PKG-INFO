@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: add2-mokha
+Version: 0.0.1
+Summary: A small example package to add 2 numbers
+Home-page: UNKNOWN
+Author: omar
+Author-email: omar@hwtech.club
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
