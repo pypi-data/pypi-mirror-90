@@ -1,0 +1,8 @@
+django_vouch_proxy_auth/__init__.py,sha256=YvuYzWnKtqBb-IqG8HAu-nhIYAsgj9Vmc_b9o7vO-js,22
+django_vouch_proxy_auth/backends.py,sha256=gbYE5-IXUuc-Y5KIB19P-HcB5MGE3Nv08vZHaIM_Deo,340
+django_vouch_proxy_auth/middleware.py,sha256=Tdb1K_8g3Tpa-8cjMbu-F68E_vVGzlCKFrGf1ljaEXU,4125
+django_vouch_proxy_auth-0.1.2.dist-info/LICENSE,sha256=8Jw9fL1-ySm9V_8N2kibfkxPWnkDaXamAaw8b-ATgOU,1065
+django_vouch_proxy_auth-0.1.2.dist-info/METADATA,sha256=g60IFVBVz1gxnzccp7L3JsnFFMpwq992Pzxt_9CzpA8,4722
+django_vouch_proxy_auth-0.1.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+django_vouch_proxy_auth-0.1.2.dist-info/top_level.txt,sha256=PlYH20UjeGFzXQoHrzfHgettEiRAlQAvMyaO_Y168Dw,24
+django_vouch_proxy_auth-0.1.2.dist-info/RECORD,,
