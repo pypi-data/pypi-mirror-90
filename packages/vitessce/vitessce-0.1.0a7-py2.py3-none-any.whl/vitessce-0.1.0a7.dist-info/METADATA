@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: vitessce
+Version: 0.1.0a7
+Summary: Jupyter widget facilitating interactive visualization of spatial single-cell data with Vitessce
+Home-page: https://github.com/vitessce/vitessce-python
+Author: Gehlenborg Lab
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: ipython,jupyter,widgets
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: IPython
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: ipywidgets (>=7.0.0)
+Requires-Dist: hypercorn (>=0.11.0)
+Requires-Dist: ujson (>=4.0.1)
+Requires-Dist: aiofiles (>=0.6.0)
+Requires-Dist: starlette (==0.14.0)
+Requires-Dist: zarr (>=2.5.0)
+Requires-Dist: numcodecs (>=0.5.7)
+Requires-Dist: scipy (>=1.2.1)
+Requires-Dist: negspy (>=0.2.24)
+Requires-Dist: generate-tiff-offsets (>=0.1.7)
+
+Jupyter widget facilitating interactive visualization of spatial single-cell data with Vitessce
+
+
