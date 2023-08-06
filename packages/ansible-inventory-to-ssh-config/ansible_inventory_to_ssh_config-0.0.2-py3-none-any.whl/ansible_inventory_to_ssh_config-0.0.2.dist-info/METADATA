@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ansible-inventory-to-ssh-config
+Version: 0.0.2
+Summary: Generate ssh config file from Ansible inventory
+Home-page: https://github.com/yioda/ansible-inventory-to-ssh-config
+Author: Yioda
+Author-email: jyc180g@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: ansible (==2.10.5)
+Requires-Dist: sshconf (==0.2.2)
+
+UNKNOWN
+
+
