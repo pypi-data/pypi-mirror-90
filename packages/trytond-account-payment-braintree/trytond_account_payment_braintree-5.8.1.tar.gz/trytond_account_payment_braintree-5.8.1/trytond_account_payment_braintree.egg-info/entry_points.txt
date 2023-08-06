@@ -1,0 +1,4 @@
+
+    [trytond.modules]
+    account_payment_braintree = trytond.modules.account_payment_braintree
+    
