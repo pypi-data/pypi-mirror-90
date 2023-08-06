@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: msrc-appconfig-dataclasses
+Version: 0.5.5
+Summary: Plugin for msrc-appconfig.
+Home-page: https://github.com/microsoft/msrc-appconfig
+Author: Vassily Lyutsarev
+Author-email: vassilyl@microsoft.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: msrc-appconfig
+
+# msrc-appconfig-dataclasses
+
+`msrc.appconfig` extension to use [`dataclasses`](https://docs.python.org/3/library/dataclasses.html) package to declare appconfig schema. 
+
