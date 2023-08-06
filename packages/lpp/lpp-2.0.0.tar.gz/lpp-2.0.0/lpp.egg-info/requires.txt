@@ -1,0 +1,9 @@
+bs4
+numpy
+pandas
+pandas
+pyWorkFlow
+requests
+sqlalchemy
+sqlobject
+termcolor
