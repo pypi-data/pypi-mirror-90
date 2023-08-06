@@ -1,0 +1,1 @@
+Search.setIndex({docnames:["chapter","chapter-i","index"],envversion:54,filenames:["chapter.rst","chapter-i.rst","index.rst"],objects:{},objnames:{},objtypes:{},terms:{anoth:1,chapter:2,differ:1,file:1,includ:0,sourc:1,thi:[0,1,2],toctre:0},titles:["Chapter","Chapter I","Example page"],titleterms:{chapter:[0,1],exampl:2,page:2}})

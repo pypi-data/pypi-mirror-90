@@ -1,0 +1,16 @@
+Example page
+============
+
+This is an example page.
+
+
+.. toctree::
+<<<<<<< HEAD
+   :maxdepth: 1
+
+   chapter
+=======
+   :glob:
+
+   *
+>>>>>>> Tests for toctree links

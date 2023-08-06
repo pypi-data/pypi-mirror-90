@@ -1,0 +1,24 @@
+:mod:`notfound`
+===============
+
+.. py:module:: notfound
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   extension/index.rst
+   utils/index.rst
+
+
+Package Contents
+----------------
+
+.. data:: version
+   :annotation: = 0.4
+
+   
+

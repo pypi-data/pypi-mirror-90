@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>notfound.utils &mdash; sphinx-notfound-page 0.4 documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono"><link rel="stylesheet" href="../../../_static/typlog.css?v=0.7.3" type="text/css" />
+  <link rel="stylesheet" href="../../../_static/theme.css?v=0.7.3" type="text/css" /><link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="index" title="Index" href="../../../genindex.html"/>
+      <link rel="search" title="Search" href="../../../search.html"/>
+    <link rel="top" title="sphinx-notfound-page 0.4 documentation" href="../../../index.html"/>
+      <link rel="up" title="notfound" href="../index.html"/>
+      <link rel="prev" title="notfound.extension" href="../extension/index.html"/>
+  <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', '');ga('send', 'pageview');</script>
+  <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="sphinx-notfound-page">
+  <meta property="og:title" content="notfound.utils">
+  <meta name="twitter:card" content="summary">
+</head>
+<body role="document" data-page="autoapi/notfound/utils/index">
+  <header class="t-head">
+    <div class="t-head_menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 384h384v-42.666H64V384zm0-106.666h384v-42.667H64v42.667zM64 128v42.665h384V128H64z"/></svg></div>
+    <a class="t-head_logo" href="../../../index.html">sphinx-notfound-page
+    </a>
+  </header>
+  <aside class="t-sidebar">
+    <div class="t-sidebar_close">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M405 136.798L375.202 107 256 226.202 136.798 107 107 136.798 226.202 256 107 375.202 136.798 405 256 285.798 375.202 405 405 375.202 285.798 256z"/></svg>
+    </div>
+    <div class="inner">
+  <h3><a href="../../../index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><code class="docutils literal notranslate"><span class="pre">notfound.utils</span></code></a><ul>
+<li><a class="reference internal" href="#module-contents">Module Contents</a><ul>
+<li><a class="reference internal" href="#notfound.utils.replace_uris">replace_uris</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html"><code class="docutils literal notranslate"><span class="pre">notfound</span></code></a><ul>
+      <li>Previous: <a href="../extension/index.html" title="previous chapter"><code class="docutils literal notranslate"><span class="pre">notfound.extension</span></code></a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/autoapi/notfound/utils/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox">
+  <form class="search" action="../../../search.html" method="get">
+    <div class="input-group">
+      <input type="text" name="q" placeholder="Search" />
+      <button type="submit">Go</button>
+    </div>
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+    </div>
+  </aside>
+  <div class="t-content">
+    <div class="t-body yue">
+      
+  <div class="section" id="module-notfound.utils">
+<span id="notfound-utils"></span><h1><a class="reference internal" href="#module-notfound.utils" title="notfound.utils"><code class="xref py py-mod docutils literal notranslate"><span class="pre">notfound.utils</span></code></a><a class="headerlink" href="#module-notfound.utils" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="notfound.utils.replace_uris">
+<code class="descclassname">notfound.utils.</code><code class="descname">replace_uris</code><span class="sig-paren">(</span><em>app</em>, <em>doctree</em>, <em>nodetype</em>, <em>nodeattr</em><span class="sig-paren">)</span><a class="headerlink" href="#notfound.utils.replace_uris" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replace <code class="docutils literal notranslate"><span class="pre">nodetype</span></code> URIs from <code class="docutils literal notranslate"><span class="pre">doctree</span></code> to the proper one.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">nodetype</span></code> is an image (<code class="docutils literal notranslate"><span class="pre">docutils.nodes.image</span></code>), the URL is prefixed
+with <code class="docutils literal notranslate"><span class="pre">Builder.imagedir</span></code> and the original image path is added to
+<code class="docutils literal notranslate"><span class="pre">Builder.images</span></code> so it’s copied using Sphinx’s internals before
+finalizing the building.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>app</strong> (<em>sphinx.application.Sphinx</em>) – Sphinx Application</li>
+<li><strong>doctree</strong> (<em>docutils.nodes.document</em>) – doctree representing the document</li>
+<li><strong>nodetype</strong> (<em>docutils.nodes.Node</em>) – type of node to replace URIs</li>
+<li><strong>nodeattr</strong> (<em>str</em>) – node attribute to be replaced</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+  <div class="t-pagination clearfix">
+    <span>
+      ← <a href="../extension/index.html" title="<code class="docutils literal notranslate"><span class="pre">notfound.extension</span></code>"><code class="docutils...</a>
+    </span>
+  </div>
+
+    </div><footer class="t-foot">
+    &copy; Copyright 2019, Manuel Kaufmann.
+    <br>
+    A <a href="https://typlog.com/">typlog</a> <a href="https://github.com/typlog/sphinx-typlog-theme">sphinx theme</a>,
+    designed by <a href="https://lepture.com/">Hsiaoming Yang</a>.
+</footer>
+  </div>
+  <script>$(function(){$(".t-head_menu").on("click",function(){$("body").addClass("_expand")});$(".t-body").on("click",function(){$("body").removeClass("_expand")});$(".t-sidebar_close").on("click",function(){$("body").removeClass("_expand")});$("a.footnote-reference").on("click",function(e){e.preventDefault();var id=$(this).attr("href");var html=$(id).find("td.label + td").html();var w=Math.max(document.documentElement.clientWidth,window.innerWidth||0);var style="top:"+e.pageY+"px;";if(w>560){style+="width:480px;";if(e.pageX>240&&e.pageX+240<w){style+="left:"+(e.pageX-240)+"px;"}else if(e.pageX<=240){style+="left:20px;"}else{style+="right:20px;"}}showFootnote(html,style)});function showFootnote(html,style){var CONTENT_ID="typlog-footnote-content";var content=document.getElementById(CONTENT_ID);if(!content){content=document.createElement("div");content.id=CONTENT_ID;$(".t-body").append(content)}var MASK_ID="typlog-footnote-mask";var mask=document.getElementById(MASK_ID);if(!mask){mask=document.createElement("div");mask.id=MASK_ID;document.body.appendChild(mask);mask.addEventListener("click",function(){content.className="";mask.className=""})}content.innerHTML=html;content.setAttribute("style",style);content.className="_active";mask.className="_active"}function fetchGitHubRepo(repo){var url="https://api.github.com/repos/"+repo;$.getJSON(url,function(data){var counts=[+new Date,data.stargazers_count,data.forks_count];localStorage.setItem("gh:"+repo,JSON.stringify(counts));updateGitHubStats(counts[1],counts[2])})}function updateGitHubStats(stars,forks){$(".github_stars strong").text(stars);$(".github_forks strong").text(forks)}function initGitHub(url){if(!url){return}var repo=url.replace("https://github.com/","");var cache=localStorage.getItem("gh:"+repo);if(cache){try{var counts=JSON.parse(cache);updateGitHubStats(counts[1],counts[2]);var delta=new Date-counts[0];if(delta<0||delta>9e5){fetchGitHubRepo(repo)}}catch(error){fetchGitHubRepo(repo)}}else{fetchGitHubRepo(repo)}}initGitHub($(".github").attr("href"))});</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+:mod:`notfound.extension`
+=========================
+
+.. py:module:: notfound.extension
+
+
+Module Contents
+---------------
+
+
+.. py:exception:: BaseURIError(: unicode, message: Exception, orig_exc=None)
+
+   Bases: :class:`sphinx.errors.ExtensionError`
+
+   Exception for malformed base URI.
+
+
+.. function:: html_collect_pages(app)
+
+   Create a ``404.html`` page.
+
+   Uses ``notfound_template`` as a template to be rendered with
+   ``notfound_context`` for its context. The resulting file generated is
+   ``notfound_pagename``.html.
+
+   If the user already defined a page with pagename title
+   ``notfound_pagename``, we don't generate this page.
+
+   :param app: Sphinx Application
+   :type app: sphinx.application.Sphinx
+
+
+.. function:: finalize_media(app, pagename, templatename, context, doctree)
+
+   Point media files at our media server.
+
+   Generate absolute URLs for resources (js, images, css, etc) to point to the
+   right. For example, if a URL in the page is ``_static/js/custom.js`` it will
+   be replaced by ``<notfound_urls_prefix>/_static/js/custom.js``.
+
+   On the other hand, if ``notfound_no_urls_prefix`` is set, it will be
+   replaced by ``/_static/js/custom.js``.
+
+   Also, all the links from the sidebar (toctree) are replaced with their
+   absolute version. For example, ``../section/pagename.html`` will be replaced
+   by ``/section/pagename.html``.
+
+   :param app: Sphinx Application
+   :type app: sphinx.application.Sphinx
+
+   :param pagename: name of the page being rendered
+   :type pagename: str
+
+   :param templatename: template used to render the page
+   :type templatename: str
+
+   :param context: context used to render the page
+   :type context: dict
+
+   :param doctree: doctree of the page being rendered
+   :type doctree: docutils.nodes.document
+
+
+.. function:: doctree_resolved(app, doctree, docname)
+
+   Generate and override URLs for ``.. image::`` Sphinx directive.
+
+   When ``.. image::`` is used in the ``404.rst`` file, this function will
+   override the URLs to point to the right place.
+
+   :param app: Sphinx Application
+   :type app: sphinx.application.Sphinx
+   :param doctree: doctree representing the document
+   :type doctree: docutils.nodes.document
+   :param docname: name of the document
+   :type docname: str
+
+
+.. py:class:: OrphanMetadataCollector
+
+   Bases: :class:`sphinx.environment.collectors.EnvironmentCollector`
+
+   Force the 404 page to be ``orphan``.
+
+   This way we remove the WARNING that Sphinx raises saying the page is not
+   included in any toctree.
+
+   This collector has the same effect than ``:orphan:`` at the top of the page.
+
+   .. method:: clear_doc(self, app, env, docname)
+
+
+   .. method:: process_doc(self, app, doctree)
+
+
+
+.. function:: handle_config(app, config)
+
+   Handle deprecated configurations.
+
+   Looks for old deprecated configurations, define the new ones and triggers
+   warnings for old configs.
+
+
+.. function:: setup(app)
+
+
