@@ -1,0 +1,100 @@
+{
+  "blacklists": {
+    "full": [
+      "KEGG",
+      "NIST",
+      "ICD9CM_2005:<new dbxref>",
+      "XX:<new dbxref>",
+      "XX:<new xref>",
+      "STRUCTURE_Formula",
+      "United:Kingdom",
+      "South:Korea",
+      "Codex:\\:260",
+      "Europe:\\:260",
+      "BioGRID:curators",
+      "DiffAvg:",
+      "DiffFormula:",
+      "DiffMono:",
+      "Formula:",
+      "MassAvg:",
+      "MassMono:",
+      "Origin:",
+      "Source:",
+      "TermSpec:",
+      "FormalCharge:",
+      "snap:Quality",
+      "depicted:by",
+      "http:http\\://www.pacificbiosciences.com/pdf/WP_Detecting_DNA_Base_Modifications_Using_SMRT_Sequencing.pdf",
+      "XX:www.ensembl.org/info/genome/variation/predicted_data.html#consequences",
+      "http:www.ensembl.org/info/genome/variation/predicted_data.html#consequences",
+      "EBI:www.ebi.ac.uk/mutations/recommendations/mutevent.html"
+    ],
+    "prefix": [
+      "url:",
+      "Image:",
+      "Category",
+      "http://",
+      "https://",
+      "http://dbpedia.org",
+      "https://github.com",
+      "PERSON",
+      "similar to",
+      "modelled on",
+      "Wikipedia",
+      "SUBMITTER",
+      "STRUCTURE_ChemicalName_IUPAC",
+      "STRUCTURE_Formula",
+      "stedman",
+      "WebElements",
+      "From_Merriam-Webster's_Online_Dictionary_at_www.Merriam-Webster.com",
+      "value-type:",
+      "binary-data-type:MS\\",
+      "PECO_GIT",
+      "OBO_SF2_PECO"
+    ],
+    "suffix": [
+      ".jpg",
+      ".svg",
+      ".png"
+    ]
+  },
+  "remappings": {
+    "full": {
+      "CHEBI:133245 MetaCyc:quercetin 3-rhamnoside-7-rhamnoside": "CHEBI:133245",
+      "CHEBI:16531 MetaCyc:renillar luciferin": "CHEBI:16531",
+      "CHEBI:49553 PDBeChem:Copper(II) chloride": "CHEBI:49553",
+      "CHEBI:77450 MetaCyc:dicarboxylic acid monoamide \"SUBMITTER\"": "CHEBI:77450",
+      "CHEBI:84990 MetaCyc:<locant>gamma</locant>-carboxy-<stereo>L</stereo>-glutamate residue \"SUBMITTER\"": "CHEBI:84990",
+      "LIPIDMAPSLMFA01030141": "LIPIDMAPS:LMFA01030141",
+      "LIPIDMAPSLMFA01030152": "LIPIDMAPS:LMFA01030152",
+      "SNOMEDCT274897005": "SNOMEDCT:274897005"
+    },
+    "prefix": {
+      "ATCC number: ": "ATCC",
+      "ATTC: ": "ATCC",
+      "BAO_": "BAO",
+      "KEGG COMPOUND": "KEGG.COMPOUND",
+      "KEGG DRUG": "KEGG.DRUG",
+      "LIPID MAPS:": "LIPIDMAPS",
+      "MedlinePlus: ": "MedlinePlus",
+      "NIST Chemistry WebBook": "NIST",
+      "PMID: ": "PMID",
+      "SNOMEDCT: ": "SNOMEDCT",
+      "UMLS CUI:": "UMLS",
+      "URL: ": "URL",
+      "VFB:FBbt_": "FBbt",
+      "chembl target:CHEMBL": "chembl.target:CHEMBL",
+      "protein ontology:PR\\:": "PR:PR:",
+      "http://orcid.org/": "orcid:",
+      "http:http\\://en.wikipedia.org/wiki/": "wikipedia:",
+      "http://en.wikipedia.org/wiki/": "wikipedia:",
+      "http:en.wikipedia.org/wiki/": "wikipedia:",
+      "http:http\\:en.wikipedia.org/wiki/": "wikipedia:",
+      "WIKI:https\\://en.wikipedia.org/wiki/": "wikipedia:",
+      "BioRXiv:https\\://doi.org/": "doi:"
+    }
+  },
+  "wikidata_property_types": [
+    "Q42396390"
+  ]
+}
