@@ -1,0 +1,44 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import text2tree
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('texfile', type=str, help='Path to a .tex file')
+args = parser.parse_args()
+
+def new_section(section_number, depth):
+    # Increase counter at depth
+    section_number[depth] += 1
+    # Reset all child counters
+    for i in range(depth+1, len(section_number)):
+        section_number[i] = 0
+
+alphabet = ' abcdefghijklmnopqrstuvwxyz'
+
+def section_string(section_number, depth, appendix=False):
+    section_string_components = list(map(str, section_number[:depth+1]))
+    if appendix: section_string_components[0] = alphabet[section_number[0]].upper()
+    return '{:6s}'.format('.'.join(section_string_components))
+
+def main():
+    tree = text2tree.interpret_file(args.texfile, 'latex')
+
+    section_number = [ 0, 0, 0, 0, 0 ]
+
+    appendix = False
+    for node in tree.traverse():
+        if isinstance(node, text2tree.PlainBlock) and '\\appendix' in node.text:
+            appendix = True
+            section_number = [ 0, 0, 0, 0, 0 ]
+        elif isinstance(node, text2tree.LatexCommandBlock) and 'section' in node.command.lower():
+            command = node.command.lower()
+            depth = command.count('sub')
+            if command.endswith('*'):
+                print(' '*6 + '  '*depth + node.parse())
+            else:
+                new_section(section_number, depth)
+                print(section_string(section_number, depth, appendix) + '  '*depth + node.parse())
+
+if __name__ == '__main__':
+    main()
