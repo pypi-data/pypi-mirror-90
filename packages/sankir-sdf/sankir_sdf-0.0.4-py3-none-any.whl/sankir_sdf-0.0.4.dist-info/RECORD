@@ -1,0 +1,10 @@
+sdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sdf/__main__.py,sha256=gx3RnAk80PDzvRG4R8pxv-K_4ccrOMufAhaa8crp85o,1008
+sdf/_version.py,sha256=26YbYwnASEZbvyphnMHzyr6NhDnePIEDCXY-JoTmNu8,18
+sdf/sdf.py,sha256=kdrMM6h0gzdvl7kkfDmM87afNNOai0RzWt6QxtWYAuU,3212
+sdf/utils.py,sha256=TiAiFBeE78JnECwm-Wz2_OR0Aib_9poNsgBwHHeXn9Q,706
+sankir_sdf-0.0.4.dist-info/METADATA,sha256=vq2qGbuom-X-RsTW1U59599nPWwy3X9ByIMSCTIAmiI,1095
+sankir_sdf-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sankir_sdf-0.0.4.dist-info/entry_points.txt,sha256=lYpMiEA47A1_HySM0TSgegDtjyCH06bD39a5dJX-pCg,50
+sankir_sdf-0.0.4.dist-info/top_level.txt,sha256=nB-DmPWpLu5EruWNAApNwXBfnCXiloP3cwIVvBJ0z_E,4
+sankir_sdf-0.0.4.dist-info/RECORD,,
