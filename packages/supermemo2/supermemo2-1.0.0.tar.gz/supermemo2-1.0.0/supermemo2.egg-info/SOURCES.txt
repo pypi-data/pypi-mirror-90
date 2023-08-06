@@ -1,0 +1,12 @@
+README.md
+setup.py
+supermemo2/__init__.py
+supermemo2/api.py
+supermemo2/exceptions.py
+supermemo2/model.py
+supermemo2/util.py
+supermemo2.egg-info/PKG-INFO
+supermemo2.egg-info/SOURCES.txt
+supermemo2.egg-info/dependency_links.txt
+supermemo2.egg-info/requires.txt
+supermemo2.egg-info/top_level.txt
