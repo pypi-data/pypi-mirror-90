@@ -1,0 +1,6 @@
+README.md
+setup.py
+MTG_Card_Identifier.egg-info/PKG-INFO
+MTG_Card_Identifier.egg-info/SOURCES.txt
+MTG_Card_Identifier.egg-info/dependency_links.txt
+MTG_Card_Identifier.egg-info/top_level.txt
