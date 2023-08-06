@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: picqer_client_python
+Version: 1.1
+Summary: Picqer client for python
+Home-page: https://github.com/jordyvanraalte/picqer-client-python
+Author: Jordy van Raalte
+Author-email: j.j.c.van.raalte@gmail.com
+License: MIT
+Download-URL: https://github.com/jordyvanraalte/picqer-client-python/archive/1.1.tar.gz
+Description: UNKNOWN
+Keywords: piqcer,piqcer-client,picqer-client-python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
