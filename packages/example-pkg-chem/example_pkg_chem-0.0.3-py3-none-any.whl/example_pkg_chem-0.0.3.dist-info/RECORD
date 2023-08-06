@@ -1,0 +1,8 @@
+example_pkg_chem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example_pkg_chem/example_project.py,sha256=njrFiDlFAJG8kRWJvS_Bcxd1_7nPSd2kZMKPKXKDP_g,288
+example_pkg_chem/example_project_pip.py,sha256=lyeQ7qB1J9OUh-CxiGOBHH-bWdqzT9ZZ1csgdDthIyo,132
+example_pkg_chem-0.0.3.dist-info/LICENSE.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+example_pkg_chem-0.0.3.dist-info/METADATA,sha256=--uCiFVj4QyWoaoN40DWwA1C57d-XDQlB5zmlSWvU1w,609
+example_pkg_chem-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+example_pkg_chem-0.0.3.dist-info/top_level.txt,sha256=iiFm9LV_vx7AXK-ta45PVY5lo0Ym3iLOhmegUsGzHFQ,17
+example_pkg_chem-0.0.3.dist-info/RECORD,,
