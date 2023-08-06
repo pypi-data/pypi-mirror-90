@@ -1,0 +1,4 @@
+[console_scripts]
+cfgcaddy=cfgcaddy.__main__:main
+publish=cfgcaddy.publish:publish
+
