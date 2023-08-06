@@ -1,0 +1,9 @@
+datadict/__init__.py,sha256=E54u3_-lGLw7luNkLgDgu8MrVfDLBLDChwOzhBujrPE,23
+datadict/datadict.py,sha256=qC2D3WJtAIWhatywxJcoTsP5havpxverQS8BxRmuqeE,19496
+datadict/jupyter/__init__.py,sha256=9w4M-_AOY7bg3LHDhkmvi3-VzVUVjZScKwnliiKWOnA,22
+datadict/jupyter/jupyter.py,sha256=B0XqYH9VUx1W-l8o8AMj9d2qzkVtq8XK5HcMrezxYSA,3467
+pandas_datadict-0.2.3.dist-info/LICENSE,sha256=KgtBqsGa_3MyPLSvGylwKr5qYK_78jPeEVMNCfjXuD4,1088
+pandas_datadict-0.2.3.dist-info/METADATA,sha256=nAdXqxeaS0_QSlGNfkTXfpQSFSFh_eDUp2GCuwsiEBk,3385
+pandas_datadict-0.2.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pandas_datadict-0.2.3.dist-info/top_level.txt,sha256=DY4Fzvg_ZB-2I57A40tFu-UTpbRLInqBATqUN8OJU94,9
+pandas_datadict-0.2.3.dist-info/RECORD,,
