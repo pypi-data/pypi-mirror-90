@@ -1,0 +1,8 @@
+click
+pyfiglet
+colorama
+configparser
+tqdm
+tabulate
+requests
+beautifultable
