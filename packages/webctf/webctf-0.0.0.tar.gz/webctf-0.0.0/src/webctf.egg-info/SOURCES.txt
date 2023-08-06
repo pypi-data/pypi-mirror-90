@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+src/modules/__init__.py
+src/modules/comment_find.py
+src/modules/headers_view.py
+src/modules/img_source_find.py
+src/modules/script_source_find.py
+src/webctf.egg-info/PKG-INFO
+src/webctf.egg-info/SOURCES.txt
+src/webctf.egg-info/dependency_links.txt
+src/webctf.egg-info/entry_points.txt
+src/webctf.egg-info/top_level.txt
