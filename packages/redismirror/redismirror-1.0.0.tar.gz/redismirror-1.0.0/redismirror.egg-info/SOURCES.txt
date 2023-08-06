@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+redismirror/__init__.py
+redismirror/main.py
+redismirror.egg-info/PKG-INFO
+redismirror.egg-info/SOURCES.txt
+redismirror.egg-info/dependency_links.txt
+redismirror.egg-info/entry_points.txt
+redismirror.egg-info/requires.txt
+redismirror.egg-info/top_level.txt
