@@ -1,0 +1,15 @@
+pyjdbc/__init__.py,sha256=TF7QpwTSxtAjmsObn610sHTBZ71bjLT9OAyOJngViLk,22
+pyjdbc/connect.py,sha256=DaSLpIRtpd8J7AhrC_9YKT8qOjZ_VY9AT7F7NKUJ2Fc,26306
+pyjdbc/dbapi.py,sha256=VEwfknY7iXYXsMZIv8N2HK-qrp3UZ1t3CH8zbIvlP8U,17354
+pyjdbc/exceptions.py,sha256=_42POFNdhA629Pu9_gLrL1lmux4nmUEv4JUIjqiXkEE,646
+pyjdbc/helpers.py,sha256=Gj36TUh17Vb0kSHMrA12orX_7RihkgQKRXiJPOJ8fqg,297
+pyjdbc/java.py,sha256=ZbZSvIGaagRUNt7hoWBHh00tI6HPs6dRpUb8u6XLJXE,4878
+pyjdbc/jdbc.py,sha256=e-N4ylEibx0mYo9_BF0dgwRireDxl0ZbnmT3VQ93Q8Q,3922
+pyjdbc/kerberos.py,sha256=vbvDiPapCasXc5MMdOmcgy_ptDWa216X0Gl1pMel-xc,8394
+pyjdbc/sqlite.py,sha256=UkD3pSECj5stSw4bXwcTUzL_R84X8d3Q6wtq3NPGEkA,1694
+pyjdbc/types.py,sha256=FQi5vth2PHmZ1ffKh-g59DQOndLvRrQTPJO3zlwkA1I,13256
+pyjdbc-0.2.1.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+pyjdbc-0.2.1.dist-info/METADATA,sha256=gmGNotXD-9fLskSu5NaU0fgCGqGgU0RUxqLeAZUQPqM,1387
+pyjdbc-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyjdbc-0.2.1.dist-info/top_level.txt,sha256=tLXnJxMtXBtyDY1g2Z3fUtbugV8jni0o2jPKabV_fYU,7
+pyjdbc-0.2.1.dist-info/RECORD,,
