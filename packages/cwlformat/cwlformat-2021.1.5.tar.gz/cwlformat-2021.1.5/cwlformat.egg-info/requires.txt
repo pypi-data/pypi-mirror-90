@@ -1,0 +1,4 @@
+ruamel.yaml==0.16.12
+
+[:python_version<"3.7"]
+importlib-resources
