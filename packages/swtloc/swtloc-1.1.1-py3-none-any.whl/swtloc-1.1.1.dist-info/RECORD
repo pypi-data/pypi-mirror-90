@@ -1,0 +1,10 @@
+swtloc/__init__.py,sha256=gPOzRwRUWzEOHo3-1Y46LWRVjNPhYQ4oeRpko1nlr9s,67
+swtloc/bubble_bbox.py,sha256=xFkWqAlO4g0WoRQ_NL5_ZchQFretl5bd0v45ADUY3_Q,7559
+swtloc/swt.py,sha256=ct2-1TsQBs7Bnu_ndg1eCO3htI5kemQEgyZL4O_ijx0,4182
+swtloc/swtlocalizer.py,sha256=ateupy57PvjzHTrPpJZxsMQOSXh_dPC9VdnbV0HNHy0,36909
+swtloc/utils.py,sha256=QvrpELugC7Fhx_DDm1TI72o9O1NR8FGEtUvDfXUZ2dg,8257
+swtloc-1.1.1.dist-info/LICENSE,sha256=BrBuT6fR7dTNJ8yAr-oJfXHT17EOUgWxubZ0dxqL1Oc,1520
+swtloc-1.1.1.dist-info/METADATA,sha256=YSnyQDn6ojUw3oUO6K94aG9d6LTAOzVJR9N07EhCO_w,5341
+swtloc-1.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+swtloc-1.1.1.dist-info/top_level.txt,sha256=ZCyZwdCH_xCRnjz4Mg_ySrPqKJ7_WTIhqFGpvY6uK6s,7
+swtloc-1.1.1.dist-info/RECORD,,
