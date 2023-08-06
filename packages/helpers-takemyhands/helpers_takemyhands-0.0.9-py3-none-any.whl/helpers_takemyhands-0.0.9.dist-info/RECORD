@@ -1,0 +1,12 @@
+helpers/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+helpers/key_generator.py,sha256=MiScIZWeEQnDLM8peORXFn5sBaBHV-pfeutzle7sZ34,381
+helpers/permissions.py,sha256=L15drgWm8z6sMdNj32ir3a7C5N20tDbM0S_EOFmeICI,404
+helpers/request_manager.py,sha256=_6rmHYtbpJvZIVJwQC_M3q-KBOAF0zYlUBav8CVmO3Q,1266
+helpers/tester_as_class.py,sha256=3bP9N8e4VrzI7tJdBlonf9lFn3gLkxn83nBWBeAAv84,59
+helpers/tester_as_function.py,sha256=8eefonfxqg4OFWcOijb8OjhjpH_qTTIUeF_u4Jn-zMU,32
+helpers_takemyhands-0.0.9.dist-info/LICENSE,sha256=t3vs25J2lduEZl4xj1sTRtvu70fs2_HqZ0KbOE9mW-c,1050
+helpers_takemyhands-0.0.9.dist-info/METADATA,sha256=pn9XUeZ-qKiwh1eUn_Sug5sE8AMzSvRV3ly19eEmAPE,996
+helpers_takemyhands-0.0.9.dist-info/NOTICES.txt,sha256=GrK47UwX2YUe3cXO946Lzslm_bkKdTiLvnCXZYZA3D0,543
+helpers_takemyhands-0.0.9.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+helpers_takemyhands-0.0.9.dist-info/top_level.txt,sha256=_d3GKyOc-29K_yBxLbI4wnWCIZ2fb4UhBdnTvyoWvnE,8
+helpers_takemyhands-0.0.9.dist-info/RECORD,,
