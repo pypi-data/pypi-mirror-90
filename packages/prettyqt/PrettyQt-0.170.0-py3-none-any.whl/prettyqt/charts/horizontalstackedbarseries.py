@@ -1,0 +1,9 @@
+from prettyqt import charts
+from prettyqt.qt.QtCharts import QtCharts
+
+
+QtCharts.QHorizontalStackedBarSeries.__bases__ = (charts.AbstractBarSeries,)
+
+
+class HorizontalStackedBarSeries(QtCharts.QHorizontalStackedBarSeries):
+    pass
