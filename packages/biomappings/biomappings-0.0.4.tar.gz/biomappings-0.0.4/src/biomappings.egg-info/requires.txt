@@ -1,0 +1,16 @@
+networkx
+requests
+click
+pyyaml
+tqdm
+pystow
+
+[ndex]
+ndex2
+
+[tests]
+nose
+
+[web]
+flask
+bootstrap-flask
