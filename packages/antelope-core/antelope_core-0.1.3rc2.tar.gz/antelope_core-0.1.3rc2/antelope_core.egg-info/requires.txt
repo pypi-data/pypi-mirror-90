@@ -1,0 +1,7 @@
+antelope-interface
+xlrd
+six
+python-magic
+
+[XML]
+lxml>=1.2.0
