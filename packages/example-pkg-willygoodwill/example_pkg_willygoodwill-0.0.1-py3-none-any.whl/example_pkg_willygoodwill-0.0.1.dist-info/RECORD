@@ -1,0 +1,12 @@
+example_pkg/__init__.py,sha256=IRtV7sOd7B8gS1CGm7grYXGX_C0caJAYTnmN9cmkIIE,122
+example_pkg/__main__.py,sha256=XGnlCJr_a2Rrc4lX6A1mBLGvWngD7iVBudrKCf__LAc,665
+example_pkg/config.txt,sha256=h1a4nb_8BRHCq0Evcs-LCDI36QlDGtDF1LBik62_c7E,74
+example_pkg/mod1.py,sha256=jc9bWgYLgITSQF5Sx-SXDX7_3ucDHZNBmyNaIsHV21c,308
+example_pkg/mod2.py,sha256=l5h-QW0J7-GmQN2Inmq3dipgXQWLRnOsU6KDEbkzqnQ,86
+example_pkg_willygoodwill-0.0.1.dist-info/DESCRIPTION.rst,sha256=9Vs6q6xuiH05bCZkoqZOYBm9TQfQLFQby86AOwP-qRA,172
+example_pkg_willygoodwill-0.0.1.dist-info/METADATA,sha256=R67lNnLxhckzo6ljxvm2h37qL0JJVvo3iI5MNNDls5g,595
+example_pkg_willygoodwill-0.0.1.dist-info/RECORD,,
+example_pkg_willygoodwill-0.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+example_pkg_willygoodwill-0.0.1.dist-info/entry_points.txt,sha256=ptm4MB26ex7rUB-0gL-FJ390h_qbXlycAKDRGstUx2g,73
+example_pkg_willygoodwill-0.0.1.dist-info/metadata.json,sha256=GwI0a7zMNZfRUVBH3I3h6jPrx0fR4JhwjP67gXVshhU,765
+example_pkg_willygoodwill-0.0.1.dist-info/top_level.txt,sha256=6z5BxHpE17rpY8UuF_FwZjTIbkRc7f6jXImHpIXC7gw,12
