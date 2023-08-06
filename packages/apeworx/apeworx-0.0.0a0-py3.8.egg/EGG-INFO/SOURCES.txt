@@ -1,0 +1,5 @@
+setup.py
+apeworx.egg-info/PKG-INFO
+apeworx.egg-info/SOURCES.txt
+apeworx.egg-info/dependency_links.txt
+apeworx.egg-info/top_level.txt
