@@ -1,0 +1,13 @@
+#!python
+import argparse
+import os
+from django_easy_drf.main import create_all
+
+
+parser = argparse.ArgumentParser(description='A command line tool to avoid the boring process of creating Serializers, Views and URLs for django rest framework.')
+parser.add_argument('-f', '--force', action='store_true', help='force the creation of specified file without user prompt')
+parser.add_argument('--files', nargs='*', choices=['v', 's', 'u'], default=['v', 's', 'u'], help='allows user to specify files to be created. Use v for ViewSets, s for Serializers and/or u for URLs')
+
+args = parser.parse_args()
+
+create_all(os.getcwd(), args.files, force=args.force)
