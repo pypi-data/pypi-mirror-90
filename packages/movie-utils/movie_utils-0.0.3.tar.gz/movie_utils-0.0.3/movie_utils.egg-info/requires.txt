@@ -1,0 +1,5 @@
+librosa
+numpy
+scenedetect
+moviepy
+opencv-python
