@@ -1,0 +1,3 @@
+[console_scripts]
+mkdocs-multirepo=mkdocs_multirepo:cli
+

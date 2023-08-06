@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mkdocs-multirepo
+Version: 0.4.2
+Summary: 
+License: MIT
+Author: Lars Wilhelmer
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: beautifulsoup4 (>=4.9,<5.0)
+Requires-Dist: click (>=7.1,<8.0)
+Requires-Dist: pyyaml (>=5.3,<6.0)
