@@ -1,0 +1,165 @@
+Metadata-Version: 1.0
+Name: ethermine
+Version: 0.2.0
+Summary: Ethermine API python wrapper
+Home-page: https://github.com/stylesuxx/python-ethermine
+Author: Chris Landa
+Author-email: stylesuxx@gmail.com
+License: MIT
+Description: Python API wrapper for ehermine.org
+        ===================================
+        
+        `Build Status <https://travis-ci.org/stylesuxx/python-ethermine>`__
+        
+           Access Etherium related mining data in the `Ethermine mining
+           pool <https://ethermine.org>`__.
+        
+        All publicly `available Ethermine API
+        endpoints <https://ethermine.org/api/pool>`__ are wrapped. All endpoints
+        return dicts containing the API data or **None** if response status code
+        was not 200. Check the tests or API documentation to see all available
+        fields.
+        
+        Installation
+        ------------
+        
+        Install via PIP:
+        
+        .. code:: bash
+        
+           pip install ethermine
+        
+        Usage
+        -----
+        
+        .. code:: python
+        
+           from ethermine import Ethermine
+        
+           ethermine = Ethermine()
+        
+        Pool
+        ~~~~
+        
+        /poolStats
+        ^^^^^^^^^^
+        
+        .. code:: python
+        
+           stats = ethermine.pool_stats()
+        
+        /blocks/history
+        ^^^^^^^^^^^^^^^
+        
+        .. code:: python
+        
+           history = ethermine.blocks_history()
+        
+        /networkStats
+        ^^^^^^^^^^^^^
+        
+        .. code:: python
+        
+           stats = ethermine.network_stats()
+        
+        /server/history
+        ^^^^^^^^^^^^^^^
+        
+        .. code:: python
+        
+           history = ethermine.server_history()
+        
+        Miner
+        ~~~~~
+        
+        /miner/:miner/dashboard
+        ^^^^^^^^^^^^^^^^^^^^^^^
+        
+        .. code:: python
+        
+           dashboard = ethermine.miner_dashboard("address")
+        
+        /miner/:miner/history
+        ^^^^^^^^^^^^^^^^^^^^^
+        
+        .. code:: python
+        
+           history = ethermine.miner_history("address")
+        
+        /miner/:miner/payouts
+        ^^^^^^^^^^^^^^^^^^^^^
+        
+        .. code:: python
+        
+           payouts = ethermine.miner_payouts("address")
+        
+        /miner/:miner/rounds
+        ^^^^^^^^^^^^^^^^^^^^
+        
+        .. code:: python
+        
+           rounds = ethermine.miner_rounds("address")
+        
+        /miner/:miner/settings
+        ^^^^^^^^^^^^^^^^^^^^^^
+        
+        .. code:: python
+        
+           settings = ethermine.miner_settings("address")
+        
+        /miner/:miner/currentStats
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        
+        .. code:: python
+        
+           stats = ethermine.miner_current_stats("address")
+        
+        Worker
+        ~~~~~~
+        
+        /miner/:miner/workers
+        ^^^^^^^^^^^^^^^^^^^^^
+        
+        .. code:: python
+        
+           workers = ethermine.miner_workers("address")
+        
+        /miner/:miner/worker/:worker/history
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        
+        .. code:: python
+        
+           history = ethermine.miner_worker("address", "worker")
+        
+        /miner/:miner/worker/:worker/currentStats
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        
+        .. code:: python
+        
+           stats = ethermine.miner_worker_current_stats("address", "worker")
+        
+        /miner/:miner/worker/:worker/monitor
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        
+        .. code:: python
+        
+           monitors = ethermine.miner_worker_monitor("address", "worker")
+        
+        Development
+        -----------
+        
+        PR’s are welcome - especially should the API change. Please also add
+        tests - the tests should always represent the current state of the API
+        including all fields.
+        
+        Building Dist Package
+        ---------------------
+        
+        To build a distributable package run:
+        
+        .. code:: bash
+        
+           python setup.py sdist
+        
+Keywords: ethermine,etherium,eth
+Platform: UNKNOWN
