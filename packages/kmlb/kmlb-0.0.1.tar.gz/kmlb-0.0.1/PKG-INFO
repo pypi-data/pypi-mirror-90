@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kmlb
+Version: 0.0.1
+Summary: Google Earth KML Builder
+Home-page: https://github.com/HFM3/kmlb
+Author: HFM3
+License: UNKNOWN
+Description: Google Earth KML Builder
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
