@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: azkm
+Version: 0.2.4
+Summary: azure knowledge mining cli
+Home-page: https://github.com/frogrammer/azure-knowledgemining-cli
+Author: Luke Vinton
+Author-email: luke0vinton@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: fire
+Requires-Dist: fire-cli-helper
+Requires-Dist: cdktf
+Requires-Dist: tabulate
+Requires-Dist: azure-cli (==2.14.0)
+Requires-Dist: azure-mgmt-core (==1.2.0)
+Requires-Dist: azure-storage-blob
+Requires-Dist: clint
+
+# azure-knowledgemining-cli
+azkm is a cli tool to deploy azure knowledge mining solutions with cognitive skills and applicable datasets.
+
+ # commands
+```bash
+azkm [cmd] [sub-cmd] [parameters]
+
+```
+|cmd|sub-cmd|parameters|description|
+|---|---|---|---|
+|init||km_id: environment name</br>region: environment region||
+|destroy||km_id: environment name||
+|state|read|km_id: environment name||
+|state|list|||
+
+# installation
+To use on azure cloud shell:
+```bash
+curl https://raw.githubusercontent.com/frogrammer/azure-knowledgemining-cli/main/cloudshell-install.sh | bash --
+```
+## pre-requisites
+ - kubectl 
+ - terraform
+ - nodejs > 0.1.15 or a nodejs virtual environment
+ - cdktf [OPTIONAL to generate azurerm provider CDK]
+ - az cli
+
