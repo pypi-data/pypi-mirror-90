@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: dir-import
+Version: 0.0.2
+Summary: python directory module import package
+Home-page: https://github.com/ztj1993/py-dir-import
+Author: ZhangTianJie
+Author-email: ztj1993@gmail.com
+License: MIT License
+Keywords: directory module import
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Python 目录模块加载
+
+### 说明
+目录下模块导入类，用于动态加载解析器。
+
+## 安装
+```
+pip install dir-import
+```
+
+## 使用
+```
+from ZtjDirImport import DirImport
+
+print(DirImport('routes').all())
+```
+
+
