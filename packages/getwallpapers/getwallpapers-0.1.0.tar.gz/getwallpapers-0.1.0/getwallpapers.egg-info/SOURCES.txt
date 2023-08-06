@@ -1,0 +1,10 @@
+README.md
+setup.py
+getwallpapers/__init__.py
+getwallpapers/__main__.py
+getwallpapers/getwallpapers.py
+getwallpapers.egg-info/PKG-INFO
+getwallpapers.egg-info/SOURCES.txt
+getwallpapers.egg-info/dependency_links.txt
+getwallpapers.egg-info/requires.txt
+getwallpapers.egg-info/top_level.txt
