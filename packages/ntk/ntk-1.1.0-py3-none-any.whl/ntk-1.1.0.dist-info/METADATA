@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ntk
+Version: 1.1.0
+Summary: Build higher application with combination of base tk,ttk
+Home-page: https://github.com/njNafir/ntk
+Author: Nj Nafir
+Author-email: njnafir@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# ntk
+Build higher application with combination of base tk,ttk
+
+
