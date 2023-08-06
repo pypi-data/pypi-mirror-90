@@ -1,0 +1,9 @@
+joblib>=0.14
+liberty-parser==0.0.8
+librecell-common==0.0.7
+matplotlib==3.*
+networkx==2.5
+numpy==1.*
+pyspice==1.4.3
+scipy>=1.5.*
+sympy==1.6.*
