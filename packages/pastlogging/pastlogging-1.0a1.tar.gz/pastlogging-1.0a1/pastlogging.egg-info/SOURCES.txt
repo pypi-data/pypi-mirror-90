@@ -1,0 +1,8 @@
+README.md
+setup.py
+pastlogging/__init__.py
+pastlogging.egg-info/PKG-INFO
+pastlogging.egg-info/SOURCES.txt
+pastlogging.egg-info/dependency_links.txt
+pastlogging.egg-info/requires.txt
+pastlogging.egg-info/top_level.txt
