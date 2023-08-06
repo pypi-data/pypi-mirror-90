@@ -1,0 +1,8 @@
+README.md
+setup.py
+P2T.egg-info/PKG-INFO
+P2T.egg-info/SOURCES.txt
+P2T.egg-info/dependency_links.txt
+P2T.egg-info/top_level.txt
+sunpdf/__init__.py
+sunpdf/pdf2txt.py
