@@ -1,0 +1,6 @@
+biopython>=1.70
+numpy>=1.18.1
+pandas>=1.0.3
+
+[:python_version < "3.7.0"]
+importlib_resources
