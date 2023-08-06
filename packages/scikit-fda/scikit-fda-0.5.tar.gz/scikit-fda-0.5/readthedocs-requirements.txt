@@ -1,0 +1,16 @@
+matplotlib
+numpy
+scipy
+Cython
+sklearn
+Sphinx>=3
+sphinx_rtd_theme
+sphinx-gallery
+pillow
+matplotlib
+mpldatacursor
+setuptools>=41.2
+multimethod>=1.2
+findiff
+jupyter-sphinx
+pytest
