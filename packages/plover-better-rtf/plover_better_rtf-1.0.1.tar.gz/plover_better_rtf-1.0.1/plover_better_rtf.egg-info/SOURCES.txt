@@ -1,0 +1,11 @@
+README.md
+better_rtf.py
+setup.cfg
+setup.py
+plover_better_rtf.egg-info/PKG-INFO
+plover_better_rtf.egg-info/SOURCES.txt
+plover_better_rtf.egg-info/dependency_links.txt
+plover_better_rtf.egg-info/entry_points.txt
+plover_better_rtf.egg-info/requires.txt
+plover_better_rtf.egg-info/top_level.txt
+plover_better_rtf.egg-info/zip-safe
