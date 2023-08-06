@@ -1,0 +1,8 @@
+README.md
+setup.py
+scutlogin/__init__.py
+scutlogin/login.py
+scutlogin.egg-info/PKG-INFO
+scutlogin.egg-info/SOURCES.txt
+scutlogin.egg-info/dependency_links.txt
+scutlogin.egg-info/top_level.txt
