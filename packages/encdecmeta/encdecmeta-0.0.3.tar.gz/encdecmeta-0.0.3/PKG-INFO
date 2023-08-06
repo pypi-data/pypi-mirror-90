@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: encdecmeta
+Version: 0.0.3
+Summary: A meta search space for encoder decoder networks.
+Home-page: UNKNOWN
+Author: Philipp Jamscikov
+Author-email: p.jamscikov@gmail.com
+License: UNKNOWN
+Description: A modular, user-centric tool to define fixed architectures analoguos to search spaces for semantic segmentation. The search strategy applied is random sampling, non-architectural hyperparameters are also covered. Builds on PyTorch (model instantiation, training) and Ray Tune (search, checkpointing).
+Platform: UNKNOWN
+Provides-Extra: jupyter
+Provides-Extra: packaging
