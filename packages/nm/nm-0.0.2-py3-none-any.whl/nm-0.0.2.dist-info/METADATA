@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nm
+Version: 0.0.2
+Summary: SOM utils
+Home-page: https://github.com/thorwhalen/ut/tree/master/ml/decomp/sompy.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# nm
+SOM utils
+
+
+To install:	```pip install nm```
+
+
