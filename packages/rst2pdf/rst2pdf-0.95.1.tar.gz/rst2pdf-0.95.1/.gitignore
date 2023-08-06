@@ -1,0 +1,13 @@
+*.pyc
+__pycache__
+*.egg-info
+.coverage
+*.build_temp
+tmp*.svg
+log.txt
+rst2pdf/tests/output/*.pdf
+rst2pdf/tests/output/*.log
+.vscode/
+.python-version
+.venv/
+dist/
