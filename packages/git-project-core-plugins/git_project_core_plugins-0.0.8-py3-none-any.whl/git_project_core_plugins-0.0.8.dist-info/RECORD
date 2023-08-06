@@ -1,0 +1,17 @@
+git_project_core_plugins/__init__.py,sha256=Jb1WfzWu0vbm1cAA1tn63fjOJ0oO7vT9sd2sC0EoZkI,951
+git_project_core_plugins/artifact.py,sha256=c-oSpMLDoIqQaiILCR3vb42bBB7iumbFAeCR7yQtOCc,8785
+git_project_core_plugins/branch.py,sha256=Mm97pfIh5_3o5Z5CYGzkJ-g5t-_9PGyd7FYI_MYO-gw,7553
+git_project_core_plugins/build.py,sha256=Joy9LV2mSGGDwxBfUruaWDM0CdtWPJ5WPi8Tegdl7EM,7065
+git_project_core_plugins/clone.py,sha256=6-YdE85zyGaR1WOKekgtLYegOKgftmF5rWgzxWIhH8o,2668
+git_project_core_plugins/config.py,sha256=PL8H28BmjjcJ1T3lV1EQlgQ3Y77NwDfa0OTF9Bq1c3M,4956
+git_project_core_plugins/configure.py,sha256=k9TWtX2bPakk2faj5TkMC-ndXtofu1CyyC8PMNaXsoo,5885
+git_project_core_plugins/help.py,sha256=3qumuSnF08Sc8-mLfLkrSckVjBB15hmVT4MiQ6wZbTg,9873
+git_project_core_plugins/install.py,sha256=1HpZ_86nwGaR2sPpk8x0RD1PdXELffUq8kVbdpmCAC8,6134
+git_project_core_plugins/run.py,sha256=oR3sg8GKciW1Cwd1l06OXilTFz5GLC1UoYJAY8nwagc,11517
+git_project_core_plugins/worktree.py,sha256=HEAlpnqqScfEA6l6qpOuqNMQypMx8VmITtPb4BfLQHo,16024
+git_project_core_plugins-0.0.8.dist-info/COPYING,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+git_project_core_plugins-0.0.8.dist-info/METADATA,sha256=8aIbKSMyyVlocfeiFIKhCDV455Y4MQiuqlFXtfabdfg,3006
+git_project_core_plugins-0.0.8.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+git_project_core_plugins-0.0.8.dist-info/entry_points.txt,sha256=hrJGFW97aPbl3pVbAr0-QuGzDVCwLjLl-Il5CahRlCM,395
+git_project_core_plugins-0.0.8.dist-info/top_level.txt,sha256=ADGhXqzPHoz0qIXGlfQG6cBTc1fmmz_Rd_mH5NFRmdQ,25
+git_project_core_plugins-0.0.8.dist-info/RECORD,,
