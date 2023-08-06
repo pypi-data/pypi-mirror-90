@@ -1,0 +1,153 @@
+def read_file(filename):
+	with open(filename, encoding='utf-8') as f:
+		return f.read()
+
+def write_file(filename, s):
+	with open(filename, 'w', encoding='utf-8') as f:
+		f.write(s)
+
+def rm_hyphen_rf(path):
+	import shutil
+	try:
+		shutil.rmtree(path)
+	except FileNotFoundError:
+		pass
+
+
+
+def hash(x):
+	from zlib import crc32
+	return crc32(bytes(str(x), encoding='utf-8'))
+
+def cool_hash(x):
+	return hex(hash(x)).strip('0x')
+
+def hash_dir(x, hash=hash):
+    return { i: hash(x.__getattribute__(i)) for i in dir(x) }
+		# if '_' not in i }
+
+
+def get_time_str(fmt='%c'):
+	import time
+	return time.strftime(fmt)
+
+def get_yyyymmdd_time_str():
+	import time
+	return get_time_str('%Y-%m-%d %H-%M-%S')
+
+
+def json_dump(filename, a):
+	import json
+	dat = json.dumps(a, ensure_ascii=False, indent='\t')
+		# so that json.decoder.JSONDecodeError won't damage the destination file
+	with open(filename, 'w', encoding='utf-8') as f:
+		f.write(dat)
+		# json.dump(a, f, ensure_ascii=False, indent='\t')
+		
+dump_json = json_dump
+
+def load_json(filename):
+	import json
+	with open(filename, encoding='utf-8') as f:
+		return json.load(f)
+
+
+
+def prepare_list(l):
+	if isinstance(l, str):
+		l = l.strip().split()
+	return l
+
+def pack_dict(self, lst):
+	lst = prepare_list(lst)
+	return { i: self.__dict__[i] for i in lst }
+
+def load_helper(self, lst, loadfx):
+	lst = prepare_list(lst)
+	for i in lst: self.__dict__[i] = loadfx(i)
+
+
+def current_path():
+	import os.path
+	return os.path.basename(os.getcwd())
+
+
+def next_version(version_file='version.txt'):
+	# style: 'x.x.x', without suffixes like 'b1', 'a2'
+	version = read_file(version_file).strip().split('.')
+	if len(version) != 3:
+		raise TypeError(version)
+	version = [ int(i) for i in version ]
+	version[2] += 1
+	new_version_str = '.'.join(map(str, version))
+	write_file(version_file, new_version_str)
+	return new_version_str
+
+def pypi_setup(description, long_description_body, author='YAN Hui Hang, GDUFS', author_email='yanhuihang@126.com', github_prefix='https://gitee.com/yanhuihang/'):
+	import setuptools, sys, os
+	package_name = current_path()
+	long_description = f'''# {package_name}
+
+{description}
+
+Install with: `pip install {package_name}`
+
+{long_description_body}'''
+	write_file("README.md", long_description)
+
+	sys.argv.extend('sdist bdist_wheel'.split())
+
+	rm_hyphen_rf('dist')
+
+	setuptools.setup(
+		name=package_name,
+		version=next_version(),
+		author=author,
+		author_email=author_email,
+		description=description,
+		long_description=long_description,
+		long_description_content_type="text/markdown",
+		url=github_prefix + package_name,
+		packages=setuptools.find_packages(),
+		classifiers=[
+			"Programming Language :: Python :: 3",
+			# "License :: OSI Approved :: MIT License",
+			"Operating System :: OS Independent",
+		],
+		python_requires='>=3.6'
+	)
+
+	os.system('python -m twine upload dist/*')
+
+
+
+DEFAULT_SHELVE_FILENAME = 'shelve.out'
+DEFAULT_ENV_VARIABLE_STOPWORDS = '__builtin__ __builtins__ exit get_ipython json np quit shelve time'.split() # __builtins__, my_shelf, modules, etc. can not be shelved.
+
+def shelve_restore(globals, filename=DEFAULT_SHELVE_FILENAME): # call with globals()
+	import shelve
+
+	# WARNING: default open mode of shelve is not 'r', but 'c'
+	# (read & write, create if not present)
+	with shelve.open(filename, 'r') as my_shelf:
+		for key in my_shelf:
+			try:
+				print("'{}'".format(key))
+				globals[key] = my_shelf[key]
+			except:
+				print('ERROR shelving: {0}'.format(key))
+				raise
+
+# call with dir()
+def save_shelve(dir, globals, filename=DEFAULT_SHELVE_FILENAME, stopwords=DEFAULT_ENV_VARIABLE_STOPWORDS):
+	import shelve
+
+	with shelve.open(filename, 'n') as my_shelf: # 'n' for new
+		for key in dir:
+			try:
+				my_shelf[key] = globals[key]
+				# print('Shelving {} success'.format(key))
+			# except:
+			except TypeError:
+				if key not in stopwords:
+					print('ERROR shelving: {0}'.format(key))
