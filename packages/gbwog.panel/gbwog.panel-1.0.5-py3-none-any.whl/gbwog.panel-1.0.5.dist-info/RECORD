@@ -1,0 +1,16 @@
+gbwog/panel/.git-easy-crypt-key,sha256=NajY-8SOaI9PvZw-3qoOtSjTcFtbIRZbbZxyj_86ukQ,30
+gbwog/panel/CurrencyRoulette.py,sha256=2czEX2w2V3CgB5zNF7IgNnje-bvOwz9oD6q3n0MG114,7771
+gbwog/panel/Game.py,sha256=Tecalq9_kPsF97DDX679eSRK3nJAiB2JWREczLDYDvU,5160
+gbwog/panel/GuessGame.py,sha256=CjyM-C4J6dSRDbzUrh5DgmTTr-fF75Kr4g2hfA-ZUR4,5451
+gbwog/panel/Live.py,sha256=itt5leqwXby-hi4BX3vnOmTgxSj9uFWTFbgkjHVndQ8,3964
+gbwog/panel/MainGame.py,sha256=LsPOVHy1DKy3WDn1iANWQJpH2rwOAGMZhhjD-T45gDY,399
+gbwog/panel/MemoryGame.py,sha256=X3LiRqCnPgrivOPR34A3gtAlyC7Zw8aNtBKLjroaTlI,5525
+gbwog/panel/Score.py,sha256=Pgw60lmbw_6bQXxCgXhOdcXfgRzjVBVJlq_4ei_61Ic,1358
+gbwog/panel/Utils.py,sha256=CHV-7j-YqdzdjwWpNgw7ak7uTr2IMnpfb_UikiVOMWk,466
+gbwog/panel/__init__.py,sha256=5fuR084Eq_JWb-r3nTP29hXjARPHwTvjwbRzB_2xRSc,27
+gbwog/panel/curr.key.sec,sha256=i7vqvh5Kjp0oftZoKjmeVa2adQ3VWcsdo3LQ5lxKVho,165
+gbwog.panel-1.0.5.dist-info/LICENSE,sha256=JAPgdRYTcxm4yl2rVbUW2nWlxrhYGRUzYOwCGjOFC5k,1087
+gbwog.panel-1.0.5.dist-info/METADATA,sha256=r5iB_zortCscheWMfxgtggXGTF_Eq9r5joND-oexdEk,960
+gbwog.panel-1.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+gbwog.panel-1.0.5.dist-info/top_level.txt,sha256=ajeXoxWl-pmF1x_cOp2h_0-LQcZjkSAgv9wwtK1paU4,6
+gbwog.panel-1.0.5.dist-info/RECORD,,
