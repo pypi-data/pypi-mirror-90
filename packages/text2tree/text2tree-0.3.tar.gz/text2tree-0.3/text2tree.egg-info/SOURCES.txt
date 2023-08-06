@@ -1,0 +1,8 @@
+setup.py
+text2tree.py
+bin/texhelp-toc
+text2tree.egg-info/PKG-INFO
+text2tree.egg-info/SOURCES.txt
+text2tree.egg-info/dependency_links.txt
+text2tree.egg-info/not-zip-safe
+text2tree.egg-info/top_level.txt
