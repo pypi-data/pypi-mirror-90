@@ -1,0 +1,3 @@
+[console_scripts]
+scrypter = scrypter.__main__:main
+

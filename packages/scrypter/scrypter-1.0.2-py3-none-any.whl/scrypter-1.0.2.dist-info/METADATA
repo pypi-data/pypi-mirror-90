@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: scrypter
+Version: 1.0.2
+Summary: An translator.
+Home-page: https://github.com/sevenc-nanashi/scrypter
+Author: sevenc_nanashi
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: readchar
+
+# scrypter
+An encrypter.
+
+## Use with arguments
+
+```
+usage: scrypter [-h] [-e | -d] [-k KEY] [text]
+
+this script will encrypt/decrypt text.
+
+positional arguments:
+  text               Text to encrypt/decrypt.
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -e, --encrypt      do encrypting.
+  -d, --decrypt      do decrypting.
+  -k KEY, --key KEY  key for encrypting/decrypting.
+```
+
+
+
