@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: ezcad
+Version: 0.2.6
+Summary: Easy computer-aided design
+Home-page: http://ezcad.org
+Author: ezcad team
+Author-email: ezcad.dev@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: chardet
+Requires-Dist: cycler
+Requires-Dist: freetype-py
+Requires-Dist: joblib
+Requires-Dist: kiwisolver
+Requires-Dist: lxml
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: PyOpenGL
+Requires-Dist: pyparsing
+Requires-Dist: PyQt5
+Requires-Dist: pyqtgraph (>=0.11.0rc0)
+Requires-Dist: python-dateutil
+Requires-Dist: python-dotenv
+Requires-Dist: pytz
+Requires-Dist: QtAwesome
+Requires-Dist: QtPy
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: vispy
+Requires-Dist: Yapsy
+
+EZCAD
+=====
+
+A tool for data visualization and analysis, geophysical and beyond.
+
+<https://ezcad.org>
+
+![main window](examples/mainwindow.png)
+
+Maintainer
+----------
+
+  * Ezcad Team  <ezcad.dev@gmail.com>
+
+Installation
+------------
+* From PyPI: `pip install ezcad`
+
+The pip install should work in Windows and Mac.
+In Linux, you may download the built tarball
+and unpack to the site-packages folder of your python installation path,
+you may install the dependencies by `pip install -r requirements.txt`.
+The download address is <https://pypi.org/project/ezcad/>
+
+Documentation
+-------------
+
+<https://ezcad.org/documentation/>
+
+Support
+-------
+
+<https://ezcad.org/support/>
+
+

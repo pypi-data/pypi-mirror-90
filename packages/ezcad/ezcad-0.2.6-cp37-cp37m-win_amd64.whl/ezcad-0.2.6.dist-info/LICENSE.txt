@@ -1,0 +1,20 @@
+
+Copyright (c) 2020, Ezcad Development Team.
+Copyright (c) 2019, Ezcad Development Team.
+All rights reserved.
+
+The source code is dual licensed. It is open and free for academic
+education and research. It is closed and proprietary for commercial
+usage. The former is non-profit while the latter is for-profit.
+
+
+Copyright (c) 2019, Xinfa Zhu.
+Copyright (c) 2018, Xinfa Zhu.
+Copyright (c) 2017, Xinfa Zhu.
+Copyright (c) 2016, Xinfa Zhu.
+All rights reserved. This program is proprietary and confidential.
+
+Any copying distribution, transmission, decompiling, or use of this program
+is strictly prohibited without the written consent of the owner.
+
+If you have received this program in error, please delete immediately.
