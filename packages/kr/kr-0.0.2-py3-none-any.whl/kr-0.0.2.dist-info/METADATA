@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: kr
+Version: 0.0.2
+Summary: Utils to work with json
+Home-page: https://github.com/thorwhalen/ut/tree/master/util/ujson.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# kr
+Utils to work with json
+
+
+To install:	```pip install kr```
+
+
