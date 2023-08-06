@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: justgood
+Version: 1.0.0
+Summary: Sample request for api.imjustgood.com please visit webpage imjustgood.com for more details
+Home-page: https://github.com/goodop/api-imjustgood.com
+Author: Yoshino
+Author-email: admin@imjustgood.com
+License: MIT
+Description: # api.imjustgood.com
+        Sample request for api.imjustgood.com
+        please visit webpage imjustgood.com for more details.
+        
+        
+        ## Example:
+        ```python
+        from justgood import imjustgood
+        
+        media = imjustgood("YOUR_APIKEY")
+        
+        if text.startswith("cinema "):
+            query = ' '.join(text.split()[1:]).lstrip().rstrip()
+            data = media.cinema(query)
+            print(data)
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
