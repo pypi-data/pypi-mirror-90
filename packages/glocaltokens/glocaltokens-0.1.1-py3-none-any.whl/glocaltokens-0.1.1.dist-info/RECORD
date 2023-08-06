@@ -1,0 +1,11 @@
+glocaltokens/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+glocaltokens/client.py,sha256=pUpIMGBX1DOy9yAeOSI7LjyWV0bbRGDpAX6IOOcQByc,4849
+glocaltokens/google/internal/home/foyer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+glocaltokens/google/internal/home/foyer/v1.proto,sha256=0GQGSYWy05pnQoasBa4utdmbWrF49_4H0Y_EghDYTgc,8748
+glocaltokens/google/internal/home/foyer/v1_pb2.py,sha256=UVlnODh-pXcbtxIeqkxBb4bM9OMLq35xdJUEfe7XZ_4,192820
+glocaltokens/google/internal/home/foyer/v1_pb2_grpc.py,sha256=LYhjJx-15oLbyyqARnysfBi5c0UV4tCCyR3w9Fvh3PU,7894
+glocaltokens-0.1.1.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+glocaltokens-0.1.1.dist-info/METADATA,sha256=du25F-rW9FXbT6ZURS-nBMhZIiVuGkeID9Uqmj0kssQ,2291
+glocaltokens-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+glocaltokens-0.1.1.dist-info/top_level.txt,sha256=X60Ao7pKyIsv4uC8NyfKpsufSYh6wcyvkDaHkP-vpdg,13
+glocaltokens-0.1.1.dist-info/RECORD,,
