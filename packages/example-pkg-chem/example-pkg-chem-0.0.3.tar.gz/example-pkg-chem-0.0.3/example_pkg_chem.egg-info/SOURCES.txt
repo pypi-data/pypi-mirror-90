@@ -1,0 +1,9 @@
+README.md
+setup.py
+example_pkg_chem/__init__.py
+example_pkg_chem/example_project.py
+example_pkg_chem/example_project_pip.py
+example_pkg_chem.egg-info/PKG-INFO
+example_pkg_chem.egg-info/SOURCES.txt
+example_pkg_chem.egg-info/dependency_links.txt
+example_pkg_chem.egg-info/top_level.txt
