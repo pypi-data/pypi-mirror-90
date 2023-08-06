@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: yt-playlist-updater
+Version: 0.0.2
+Summary: Youtube playlist updater using voice recognition
+Home-page: https://github.com/blablamukul/yt-playlist-updater
+Author: Mukul GUpta
+Author-email: blablamukul@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Requires-Dist: SpeechRecognition
+Requires-Dist: pyttsx3
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-oauthlib
+Requires-Dist: google-auth-httplib2
+
+UNKNOWN
+
+
