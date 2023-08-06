@@ -1,0 +1,3 @@
+[console_scripts]
+x = xtimetracker.cli:cli
+
