@@ -1,0 +1,9 @@
+numpy
+pytest
+joblib
+tox
+numba
+sklearn
+pandas
+matplotlib
+seaborn
