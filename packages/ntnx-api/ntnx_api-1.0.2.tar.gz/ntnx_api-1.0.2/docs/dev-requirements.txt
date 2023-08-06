@@ -1,0 +1,6 @@
+setuptools
+wheel
+flake8
+tox
+sphinx
+sphinx-rtd-theme

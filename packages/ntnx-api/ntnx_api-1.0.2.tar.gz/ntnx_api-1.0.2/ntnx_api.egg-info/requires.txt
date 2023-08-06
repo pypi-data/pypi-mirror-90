@@ -1,0 +1,10 @@
+urllib3
+requests
+paramiko
+
+[pytest]
+tox
+pytest
+
+[testing]
+tox
