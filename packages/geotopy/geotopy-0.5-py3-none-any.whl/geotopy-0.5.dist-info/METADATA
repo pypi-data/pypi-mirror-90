@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: geotopy
+Version: 0.5
+Summary: Paper-thin wrapper to work with GEOtop from Python
+Home-page: https://github.com/stefanocampanella/GEOtoPy
+Author: Stefano Campanella
+Author-email: scampane@sissa.it
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# GEOtoPy
+
+Dead simple, paper-thin wrapper to work with GEOtop from Python.
+
+
+
