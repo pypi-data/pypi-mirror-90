@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: gsm-message
+Version: 0.0.8
+Summary: A small package for sending message using gsm
+Home-page: UNKNOWN
+Author: Zeeshan Iqbal
+Author-email: zeeshan.iqbal.cs@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Helper module for sending message using a gsm module
+Automatically detects the port to be used for the gsm module
+
+from gsm_message.send_sms send_sms import send_sms
+send_sms("+92XXXXXXXXXX", "Text Message to send")
+
+
