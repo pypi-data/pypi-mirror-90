@@ -1,0 +1,11 @@
+hidb/__init__.py,sha256=Zjry48bWf28Mnv-dV7Cc-uJo5ZJ3iWmkNrQVXajf7CQ,37
+hidb/db.py,sha256=NdHD4wp0WWWg3KBwQ1F8UUCCJSmt_nqicDcyu7NAbFA,553
+hidb/filestoredb.py,sha256=fZj_0xxs01PmP2IEU_9uvm_qZI65QkbPdK6OxaUoSqY,2888
+hidb/wrapper.py,sha256=M_XKOSN2MjgAu3sNFiXZGsBfYIjN6JfUaSKi_w4e5_o,488
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_filestore.py,sha256=r6S_cvNUeFev1qaObzYS7qc7U9cApi-qVwp_pxlArZg,3032
+hidb-0.0.2.dist-info/LICENSE,sha256=0x6XcwiMgVjgo4iH2-kmLsKeHy_UoePpVrRI1MY7lek,1064
+hidb-0.0.2.dist-info/METADATA,sha256=TLFmdyAIj_Br9UXIB7ETIItMNEjyo4pNEbl1Uj5AdnI,2213
+hidb-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hidb-0.0.2.dist-info/top_level.txt,sha256=Exf3kBvpOOd9AkpIJVfrnlkVMAKvAaNlRzjFvNpR2NQ,11
+hidb-0.0.2.dist-info/RECORD,,
