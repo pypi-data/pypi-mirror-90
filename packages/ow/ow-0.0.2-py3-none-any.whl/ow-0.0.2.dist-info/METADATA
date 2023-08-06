@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ow
+Version: 0.0.2
+Summary: functions that work on soup
+Home-page: https://github.com/thorwhalen/ut/tree/master/parse/bsoup.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# ow
+functions that work on soup
+
+
+To install:	```pip install ow```
+
+
