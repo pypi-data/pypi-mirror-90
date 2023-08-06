@@ -1,0 +1,192 @@
+Metadata-Version: 2.1
+Name: rptf
+Version: 0.1.1
+Summary: End-to-end pipeline test framework for GitLab
+Home-page: https://gitlab.com/sri-at-gitlab/projects/remote-pipeline-test-framework/framework
+Author: Sri
+Author-email: hello@srirangan.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cerberus (==1.3.2)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: colorama (==0.4.4)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: pyyaml (==5.3.1)
+Requires-Dist: junitparser (==1.6.3)
+
+![ICON](https://assets.gitlab-static.net/uploads/-/system/project/avatar/22927059/icon-snek.png)
+
+# Remote Pipeline Test Framework
+
+End-to-end test framework for pipeline template authors. Trigger remote pipelines and make assertions.
+
+## Why
+
+As a pipeline author, your template will be used across several projects under varying configurations. Your pipeline template will understand these different configurations and respond accordingly.
+
+The pipeline result might vary, the number of stages and jobs might change, artifacts may or may not be produced and environments may or may not be provisioned.
+
+Should you not setup proper tests for each of these scenarios? Should these tests not be executed on every change to the pipeline template?
+
+![Snek is friend](https://i.imgur.com/4RtN1zw.jpg)
+
+## Table of Contents
+
+1. [Quickstart](#quickstart)
+1. [Setup GitLab Access Token](#setup-gitlab-access-token)
+1. [Local Usage](#local-usage)
+1. [Authoring Tests](#authoring-tests)
+1. [Detailed Example](#detailed-example)
+1. [Test Output](#test-output)
+1. [CLI Options](#cli-options)
+1. [JUnit Reports](#junit-reports)
+
+## Quickstart
+
+Test cases are defined in a Yaml file, which by default is called `rptf.yml`.
+
+```yaml
+# rptf.yml
+
+pipeline_big:
+    trigger:
+        project_id: ...
+    assertions:
+        pipeline_status: success
+        job_count: 25
+
+pipeline_small_fail:
+    trigger:
+        project_id: ...
+    assertions:
+        pipeline_status: failed
+        job_count: 1
+```
+
+The example above shows two test cases. Two test projects are configured such that their pipelines have `25` jobs and `1` job respectively. The second case expects a failed pipeline.
+
+We execute `rptf` in a GitLab pipeline, thus, a job to execute the tests is defined in `.gitlab-ci.yml`.
+
+```yaml
+# .gitlab-ci.yml
+
+stages:
+    - test
+
+rptf:
+    stage: test
+    image: registry.gitlab.com/sri-at-gitlab/projects/remote-pipeline-test-framework/framework/master
+    script: rptf
+    artifacts:
+        reports:
+            junit: rptf-report.junit.xml
+```
+
+Then a job is added in the`.gitlab-ci.yml`to execute these tests. It is common have several test-case projects across multiple groups / subgroups. The``rptf``tests can reside in the main project where the pipeline template is authored, although there is no hard requirement.
+
+`rptf` triggers pipelines (regardless of their location) as long as the token provided has sufficient permissions.
+
+## Setup GitLab Access Token
+
+The project containing the `rptf` job needs to provide `GITLAB_ACCESS_TOKEN`. This token must be authorized to execute pipelines across all projects defined in `rptf.yml`.
+
+A project hierarchy pattern that meets the above requirement is:
+```
+- Project Template Group
+    - CICD var {GITLAB_ACCESS_TOKEN}    # with relevant permissions
+    - Template Project
+        - .gitlab-ci.yml                # with rptf job
+        - rptf.yml                      # with test case definitions
+    - Test Cases Subgroup
+        - Test Project 1
+        - Test Project 2
+        - Test Project 3
+```
+
+## Local Usage
+
+Being authored in Python, `rptf` is distributed via PyPi: https://pypi.org/project/rptf/
+
+You can install it with: 
+
+```bash
+pip install rptf
+```
+
+This makes `rptf` available for local execution:
+
+```bash
+rptf --help
+```
+
+## Authoring Tests
+
+The Yaml specification declares the following attributes that can be used to author test cases:
+
+- `trigger` defines the target project where pipeline should be triggered
+    - `project_id` required
+    - `branch` defaults to `master`
+- `assertions` defines assertions to make after pipeline finishes execution
+    - `pipeline_status` required, expected pipeline status
+    - `job_count` expected number of jobs
+    - `job_status` dict of expected job status
+    - TODO `artifact_count` expected number of artifacts
+    - TODO `environment_status` dict of expected environment status
+
+## Detailed Example
+
+```yaml
+two_jobs_two_artifacts:
+    trigger:
+        project_id: 11112222
+    assertions:
+        pipeline_status: success
+        job_count: 2
+        job_status:
+            artifact-one: success
+            artifact-two: success
+        artifact_count: 2
+        environment_status:
+            success: available
+            review_env_one: stopped
+```
+
+## CLI Options
+
+- `rptf --help ` shows help
+- `rptf --target FILE` path to test definitions, by default set to `rptf.yml`
+- `rptf --junit` or `rptf --no-junit` toggles whether JUnit test report must be produced, on by default
+
+## Test Output
+
+![](https://i.imgur.com/w516kEv.png)
+
+## JUnit Reports
+
+By default, all test failures are reported in a JUnit compatible XML file called `rptf-report.junit.xml`.
+
+This can be integrated in the `rptf` job to enable deep integration with GitLab (or any other tool that supports JUnit reporting format).
+
+```yaml
+# .gitlab-ci.yml
+
+stages:
+    - test
+
+rptf:
+    stage: test
+    image: registry.gitlab.com/sri-at-gitlab/projects/remote-pipeline-test-framework/framework/master
+    script: rptf
+    artifacts:
+        reports:
+            junit: rptf-report.junit.xml
+```
+
+JUnit reporting can be turned off by passing the `rptf --no-junit` flag.
+
+
