@@ -1,0 +1,17 @@
+README.md
+setup.py
+rcon/__init__.py
+rcon/config.py
+rcon/console.py
+rcon/errorhandler.py
+rcon/gui.py
+rcon/proto.py
+rcon/rconclt.py
+rcon/rconshell.py
+rcon/readline.py
+rcon.egg-info/PKG-INFO
+rcon.egg-info/SOURCES.txt
+rcon.egg-info/dependency_links.txt
+rcon.egg-info/entry_points.txt
+rcon.egg-info/requires.txt
+rcon.egg-info/top_level.txt
