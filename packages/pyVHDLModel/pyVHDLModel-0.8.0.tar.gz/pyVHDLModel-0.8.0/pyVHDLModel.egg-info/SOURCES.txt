@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyVHDLModel/VHDLModel.py
+pyVHDLModel/__init__.py
+pyVHDLModel.egg-info/PKG-INFO
+pyVHDLModel.egg-info/SOURCES.txt
+pyVHDLModel.egg-info/dependency_links.txt
+pyVHDLModel.egg-info/requires.txt
+pyVHDLModel.egg-info/top_level.txt
