@@ -1,0 +1,61 @@
+# FastFuzzy
+
+A Python module for fuzzy string matching and similarity measuring with constant lookup time
+by building an in-memory index.
+
+This package relies on [abydos](https://abydos.readthedocs.io/en/latest/index.html), 
+providing a sheer endless amount of [distance metrics](https://abydos.readthedocs.io/en/latest/abydos.distance.html).
+
+## Installation
+
+    pip install fuzzyfast
+
+## Usage
+
+### Create Index
+
+    from fastfuzzy import QGramIndex
+
+    index = QGramIndex(tokens=["word1", "word2"], q=2)
+
+Or use the class methods to read the tokens from a file:
+
+    with open("file.txt") as f:
+        index = QGramIndex.from_file(f)
+
+Or:
+
+    index = QGramIndex.from_path("file.txt")
+
+In both cases, the input file is expected to be a list of tokens line by line.
+
+### Query for most similar token
+
+    index.max_sim("word1")
+    ("word1", 1.0)
+
+If no token in the index as any overlap with the input token, it returns `(None, 0.0)`.
+### Merge two indices
+
+    index1 = QGramIndex(tokens=["token1"])
+    index2 = QGramIndex(tokens=["token2"])
+    index3 = index1 + index2
+
+### Alternative distance metrics
+
+By default, the index uses the standard [QGram distance metric](https://abydos.readthedocs.io/en/latest/abydos.distance.html#abydos.distance.QGram).
+Alternatively, all other metrics defined in the [abydos distance package]([https://abydos.readthedocs.io/en/latest/abydos.distance.html) can be specified with the `cmp` argument:
+
+    QGramIndex(tokens=[...], cmp=abydos.distance.PositionalQGramDice)
+
+
+## Testing
+
+In order to run the tests locally, install the test dependencies:
+
+    pip install -e .
+    pip install -e .[test]
+
+And run the tests:
+
+    pytest -v --cov=src tests/
