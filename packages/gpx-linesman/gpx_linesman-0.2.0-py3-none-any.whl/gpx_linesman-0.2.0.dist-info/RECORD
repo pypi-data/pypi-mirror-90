@@ -1,0 +1,9 @@
+gpx_linesman/__init__.py,sha256=9kZTZSlL_JnpNQsa9k_K54Nv4U2CIXlYrhddEx4xv3A,21
+gpx_linesman/cli.py,sha256=Rd_IyDcVyohpOgwrLWwa9bWpebfWodFttAoUoonV8kk,3633
+gpx_linesman/measure.py,sha256=DOvO8eJzcI_HGTOYNT3wkqBs3Jf_fa7P88oWFPKRiD4,2144
+gpx_linesman/util.py,sha256=5Q429oyOpxm478E-QeCVR612CfqudGcka-scVyJKKsA,437
+gpx_linesman-0.2.0.dist-info/entry_points.txt,sha256=gWMxkh1reoL-R2A_uH4RNQhXLQAYSetWZYBrH-NgRBo,45
+gpx_linesman-0.2.0.dist-info/LICENSE,sha256=uG74LqDVaD5w2zRwjZDaHp8p2rSGYN-8HF5jsVURlmc,1066
+gpx_linesman-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+gpx_linesman-0.2.0.dist-info/METADATA,sha256=EnbJUD7MIZgOYceS_mwaNrZnDjmeWXgM8z9KMxu8WB8,2145
+gpx_linesman-0.2.0.dist-info/RECORD,,

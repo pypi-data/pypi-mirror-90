@@ -1,0 +1,3 @@
+[console_scripts]
+linesman=gpx_linesman:run
+
