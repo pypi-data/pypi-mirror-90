@@ -1,0 +1,9 @@
+_primitives/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+_primitives/callable.py,sha256=vcXpLDUb_jzLvlZk39-6oVCrn2KfMJOJP8iAfZ9U0rU,316
+_primitives/exceptions.py,sha256=yCcbMe3kra4ivUZytaaVxgvzRZkzasKe6rRGkNpoofM,90
+primitives/__init__.py,sha256=VeLoRUdduZEy7WK_JXOseIK4S9P84h1swf2TLiUjg1M,113
+primitives/exceptions.py,sha256=mVKpKu2YZeJm0NRq_Kk8gCi9Dn3BqWC7ZgJJa7Bev2Q,120
+primitives-1.1.0.dist-info/LICENSE,sha256=LJ_rAR8NwahIXjsJ6i3aIhsncGlNu95dFkz63odksNo,1284
+primitives-1.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+primitives-1.1.0.dist-info/METADATA,sha256=hL6ZWxW-J02yJnsNQHJaTzo2FnjT34_z0VwLCWTjN9k,3077
+primitives-1.1.0.dist-info/RECORD,,
