@@ -1,0 +1,8 @@
+ipython
+vtk
+opencv-python
+tqdm
+h5py
+matplotlib
+scipy
+pytube
