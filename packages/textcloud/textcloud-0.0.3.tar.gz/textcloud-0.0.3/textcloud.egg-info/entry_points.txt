@@ -1,0 +1,3 @@
+[console_scripts]
+textcloud_cli = textcloud.__main__:main
+
