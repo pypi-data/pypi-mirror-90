@@ -1,0 +1,5 @@
+node2vec
+scipy
+numpy
+networkx
+scikit-learn
