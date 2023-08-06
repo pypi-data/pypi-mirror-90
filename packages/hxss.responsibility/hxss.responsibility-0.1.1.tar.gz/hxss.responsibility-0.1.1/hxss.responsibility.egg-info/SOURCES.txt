@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+hxss/__init__.py
+hxss.responsibility.egg-info/PKG-INFO
+hxss.responsibility.egg-info/SOURCES.txt
+hxss.responsibility.egg-info/dependency_links.txt
+hxss.responsibility.egg-info/top_level.txt
+hxss/responsibility/__init__.py
+hxss/responsibility/link.py
+hxss/responsibility/request.py
+hxss/responsibility/response.py
+hxss/responsibility/smart_self_static_factory.py
+test/__init__.py
+test/responsibility/__init__.py
+test/responsibility/test_chain.py
