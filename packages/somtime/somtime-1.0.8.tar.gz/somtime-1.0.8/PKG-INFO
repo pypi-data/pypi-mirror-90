@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: somtime
+Version: 1.0.8
+Summary: Python implementation of Self Organizing Map with capability to use Dynamic Time Warping (DTW) as a distance measure.
+Home-page: https://github.com/ali-javed/somtime
+Author: A. Javed
+Author-email: alijaved@live.com
+License: UNKNOWN
+Download-URL: https://github.com/ali-javed/somtime/archive/1.0.8.tar.gz
+Description: Self Organizing Map with capability to use Dynamic Time Warping (DTW) as a distance measure for time series based data. For non time-series data Euclidean distance can be used by setting window size to 0. The SOM can be used for both univariate time series data and multi-variate time series data.
+Platform: UNKNOWN

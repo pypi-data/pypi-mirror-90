@@ -1,0 +1,10 @@
+README.md
+setup.py
+somtime/SelfOrganizingMap.py
+somtime/__init__.py
+somtime.egg-info/PKG-INFO
+somtime.egg-info/SOURCES.txt
+somtime.egg-info/dependency_links.txt
+somtime.egg-info/requires.txt
+somtime.egg-info/top_level.txt
+somtime.egg-info/zip-safe
