@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+nw/__init__.py
+nw.egg-info/PKG-INFO
+nw.egg-info/SOURCES.txt
+nw.egg-info/dependency_links.txt
+nw.egg-info/not-zip-safe
+nw.egg-info/top_level.txt
