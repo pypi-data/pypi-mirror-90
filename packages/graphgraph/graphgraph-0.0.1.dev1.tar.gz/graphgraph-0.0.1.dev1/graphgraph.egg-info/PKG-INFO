@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: graphgraph
+Version: 0.0.1.dev1
+Summary: A Python library for graph learning from data
+Home-page: https://github.com/mirca/graphgraph.py
+Author: Ze Vinicius
+Author-email: jvmirca@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.0
