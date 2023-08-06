@@ -1,0 +1,3 @@
+[console_scripts]
+example_pkg_willygoodwill = example_pkg.__main__:main
+

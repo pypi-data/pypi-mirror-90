@@ -1,0 +1,3 @@
+#config.txt
+[mod1]
+url = https://www.ikea.com/ru/ru/cat/tovary-products/
