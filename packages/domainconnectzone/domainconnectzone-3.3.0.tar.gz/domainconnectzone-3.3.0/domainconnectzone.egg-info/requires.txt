@@ -1,0 +1,3 @@
+cryptography>=1.8
+dnspython>=1.16
+IPy>=1.0
