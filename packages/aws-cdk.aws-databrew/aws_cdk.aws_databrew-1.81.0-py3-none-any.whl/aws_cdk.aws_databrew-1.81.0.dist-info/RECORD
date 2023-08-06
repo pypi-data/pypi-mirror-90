@@ -1,0 +1,8 @@
+aws_cdk/aws_databrew/__init__.py,sha256=VRwZ9CbsBeldjTNG7KytDSMrDmqBgaD72msh93AXfXk,157250
+aws_cdk/aws_databrew/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_databrew/_jsii/__init__.py,sha256=bZFhBNRtIITriddvLgxz9qotWLnKOrVtdaPPrtm3Fds,349
+aws_cdk/aws_databrew/_jsii/aws-databrew@1.81.0.jsii.tgz,sha256=Y4J8B3KzW0VSSJ4Q-b79lRqwTmwx08aOmK3tTv4HP6I,63786
+aws_cdk.aws_databrew-1.81.0.dist-info/METADATA,sha256=sdNAYIceSIMMs9HEPJv03URs9pxyjLfFOJlpp1WvrLI,1658
+aws_cdk.aws_databrew-1.81.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_databrew-1.81.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_databrew-1.81.0.dist-info/RECORD,,
