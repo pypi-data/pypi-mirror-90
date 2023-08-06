@@ -1,0 +1,154 @@
+Metadata-Version: 2.1
+Name: forecastga
+Version: 0.1.4
+Summary: A Python tool to forecast GA data using several popular timeseries models
+Home-page: https://github.com/jroakes/ForecastGA
+License: MIT
+Keywords: google analytics,forecasting,python
+Author: JR Oakes
+Author-email: jroakes@gmail.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: PyYAML (>=5.3.1,<6.0.0)
+Requires-Dist: Werkzeug (>=1.0.1,<2.0.0)
+Requires-Dist: addressable (>=1.4.2,<2.0.0)
+Requires-Dist: colorama (>=0.4.4,<0.5.0)
+Requires-Dist: fbprophet (>=0.7.1,<0.8.0)
+Requires-Dist: gluonts (>=0.6.4,<0.7.0)
+Requires-Dist: google-api-core (>=1.24.1,<2.0.0)
+Requires-Dist: google-api-python-client (>=1.12.8,<2.0.0)
+Requires-Dist: google-auth (>=1.24.0,<2.0.0)
+Requires-Dist: google-auth-httplib2 (>=0.0.4,<0.0.5)
+Requires-Dist: holidays (>=0.10.4,<0.11.0)
+Requires-Dist: httplib2 (>=0.18.1,<0.19.0)
+Requires-Dist: inspect-it (>=0.3.2,<0.4.0)
+Requires-Dist: keyring (>=21.8.0,<22.0.0)
+Requires-Dist: lightgbm (>=3.1.1,<4.0.0)
+Requires-Dist: matplotlib (>=3.3.3,<4.0.0)
+Requires-Dist: mxnet (>=1.7.0,<2.0.0)
+Requires-Dist: nbeats-pytorch (>=1.3.1,<2.0.0)
+Requires-Dist: numpy (==1.19.3)
+Requires-Dist: oauth2client (>=4.1.3,<5.0.0)
+Requires-Dist: pandas (==1.1.0)
+Requires-Dist: pmdarima (>=1.8.0,<2.0.0)
+Requires-Dist: prettytable (>=2.0.0,<3.0.0)
+Requires-Dist: pylev (>=1.3.0,<2.0.0)
+Requires-Dist: pystan (>=2.19.1,<3.0.0)
+Requires-Dist: python-dateutil (>=2.8.1,<3.0.0)
+Requires-Dist: requests (>=2.25.1,<3.0.0)
+Requires-Dist: rsa (>=4.6,<5.0)
+Requires-Dist: scikit-learn (>=0.24.0,<0.25.0)
+Requires-Dist: scipy (==1.5.0)
+Requires-Dist: seasonal (>=0.3.1,<0.4.0)
+Requires-Dist: snakify (>=1.1.1,<2.0.0)
+Requires-Dist: statsmodels (>=0.12.1,<0.13.0)
+Requires-Dist: tbats (>=1.1.0,<2.0.0)
+Requires-Dist: torch (>=1.7.1,<2.0.0)
+Requires-Dist: tqdm (>=4.55.1,<5.0.0)
+Requires-Dist: tsfresh (>=0.17.0,<0.18.0)
+Project-URL: Repository, https://github.com/jroakes/ForecastGA
+Description-Content-Type: text/markdown
+
+# ForecastGA
+A Python tool to forecast GA data using several popular timeseries models.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1nmcu37MY02dfMdUbinrwwg7gA9ya3eud?usp=sharing)
+
+
+## About
+
+### Welcome to ForecastGA
+
+ForecastGA is a tool that combines a couple of popular libraries, [Atspy](https://github.com/firmai/atspy) and [googleanalytics](https://github.com/debrouwere/google-analytics), with a few enhancements.
+
+* The models are made more intuitive to upgrade and add by having the tool logic separate from the model training and prediction.
+* When calling `am.forecast_insample()`, any kwargs included (e.g. `learning_rate`) are passed to the train method of the model.
+* Google Analytics profiles are specified by simply passing the URL (e.g. https://analytics.google.com/analytics/web/?authuser=2#/report-home/aXXXXXwXXXXXpXXXXXX).
+* You can provide a `data` dict with GA config options or a Pandas Series as the input data.
+* Multiple log levels.
+* Auto GPU detection (via Torch).
+* List all available models, with descriptions, by calling `forecastga.print_model_info()`.
+* Google API info can be passed in the `data` dict or uploaded as a JSON file named `identity.json`.
+* Created a companion Google Colab notebook to easily run on GPU.
+* A handy plot function for Colab, `forecastga.plot_colab(forecast_in, title="Insample FOrecast", dark_mode=True)` that formats nicely and also handles Dark Mode!
+
+To use:
+
+#### Find Model Info:
+`forecastga.print_model_info()`
+
+#### Initialize Model:
+
+##### Google Analytics:
+
+```
+data = { 'client_id': '<google api client_id>',
+         'client_secret': '<google api client_secret>',
+         'identity': '<google api identity>',
+         'ga_start_date': '2018-01-01',
+         'ga_end_date': '2019-12-31',
+         'ga_metric': 'sessions',
+         'ga_segment': 'organic traffic',
+         'ga_url': 'https://analytics.google.com/analytics/web/?authuser=2#/report-home/aXXXXXwXXXXXpXXXXXX',
+         'omit_values_over': 2000000
+        }
+
+model_list = ["TATS", "TBATS1", "TBATP1", "TBATS2", "ARIMA"]
+am = forecastga.AutomatedModel(data , model_list=model_list, forecast_len=30 )
+```
+
+##### Pandas DataFrame:
+
+```
+data = pd.read_csv('ts.csv').sessions
+
+model_list = ["TATS", "TBATS1", "TBATP1", "TBATS2", "ARIMA"]
+am = forecastga.AutomatedModel(data , model_list=model_list, forecast_len=30 )
+```
+
+#### Forecast Insample:
+`forecast_in, performance = am.forecast_insample()`
+
+#### Forecast Outsample:
+`forecast_out = am.forecast_outsample()`
+
+#### Ensemble Performance:
+`all_ensemble_in, all_ensemble_out, all_performance = am.ensemble(forecast_in, forecast_out)`
+
+#### Pretty Plot in Google Colab
+`forecastga.plot_colab(forecast_in, title="Insample FOrecast", dark_mode=True)`
+
+
+# Installation
+Windows users may need to manually install the two items below via conda :
+1. `conda install pystan`
+1. `conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch`
+1. `!pip install --upgrade git+https://github.com/jroakes/ForecastGA.git`
+
+otherwise,
+`!pip install --upgrade git+https://github.com/jroakes/ForecastGA.git`
+
+This repo support GPU training. Below are a few libraries that may have to be manually installed to support.
+`pip install --upgrade mxnet-cu101==1.7.0`
+
+
+## Acknowledgements
+
+1. Majority of forecasting code taken from https://github.com/firmai/atspy and refactored heavily.
+1. Google Analytics based off of: https://github.com/debrouwere/google-analytics
+
+## Contribute
+The goal of this repo is to grow the list of available models to test.  If you would like to contribute one please read on.  Feel free to have fun naming your models.
+
+1. Fork the repo.
+2. In the `/src/forecastga/models` folder there is a model called `template.py`.  You can use this as a template for creating your new model.  All available variables are there. Forecastga ensures each model has the right data and calls only the `train` and `forecast` methods for each model. Feel free to add additional methods that your model requires.
+3. Edit the `/src/forecastga/models/__init__.py` file to add your model's information.  Follow the format of the other entries.  Forecastga relies on `loc` to find the model and `class` to find the class to use.
+4. Edit `requirments.txt` with any additional libraries needed to run your model.  Keep in mind that this repo should support GPU training if available and some libraries have separate GPU-enabled versions.
+5. Issue a pull request.
+
+If you enjoyed this tool consider buying me some beer at: [Paypalme](https://www.paypal.com/paypalme/codeseo)
+
