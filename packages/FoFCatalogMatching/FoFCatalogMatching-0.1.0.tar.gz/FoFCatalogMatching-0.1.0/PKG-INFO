@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: FoFCatalogMatching
+Version: 0.1.0
+Summary: Using friends-of-friends method to iteratively match multiple sky catalogs without the need of specifying the main catalog.
+Home-page: https://github.com/yymao/FoFCatalogMatching
+Author: Yao-Yuan Mao
+Author-email: yymao.astro@gmail.com
+Maintainer: Yao-Yuan Mao
+Maintainer-email: yymao.astro@gmail.com
+License: MIT
+Download-URL: https://github.com/yymao/FoFCatalogMatching/archive/v0.1.0.zip
+Description: UNKNOWN
+Keywords: fof catalog matching merging
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
