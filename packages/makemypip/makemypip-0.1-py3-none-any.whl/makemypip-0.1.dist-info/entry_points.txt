@@ -1,0 +1,3 @@
+[console_scripts]
+makemypip = makemypip.makemypip:main
+
