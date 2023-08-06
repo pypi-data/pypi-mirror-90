@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: nmt
+Version: 0.0.3
+Summary: Neural Machine Translation for NLPIA 2nd Edition
+Home-page: https://github.com/pyscaffold/pyscaffold/
+Author: Man Wai Winnie Yeung and Hobson Lane
+Author-email: nlpia@totalgood.com
+License: mit
+Project-URL: Documentation, https://pyscaffold.org/
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst; charset=UTF-8
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: editdistance
+Requires-Dist: h5py
+Requires-Dist: ipython
+Requires-Dist: jupyter (==1.0.0)
+Requires-Dist: pre-commit
+Requires-Dist: pyOpenSSL (==19.1.0)
+Requires-Dist: PyScaffold (==3.2.3)
+Requires-Dist: pytest (==6.0.2)
+Requires-Dist: pytest-cov
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2020.1)
+Requires-Dist: PyYAML (==5.3.1)
+Requires-Dist: pyzmq (==19.0.2)
+Requires-Dist: regex
+Requires-Dist: seaborn
+Requires-Dist: spacy
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+# Mahcine Translation Project
+
+## Instal Dependencies
+
+- ```conda update -y -n base -c defaults conda```
+- ```conda create -y -n machine-translation 'python>=3.6.5,<3.9'```
+- ```conda env update -n machine-translation -f environment.yml```
+- ```source activate machine-translation```
+
+## Release on PyPI
+
+
