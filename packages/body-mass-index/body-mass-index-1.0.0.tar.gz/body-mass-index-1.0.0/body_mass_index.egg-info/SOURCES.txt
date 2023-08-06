@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+bmi/__init__.py
+bmi/__main__.py
+bmi/bmi.py
+bmi/logging_config.ini
+body_mass_index.egg-info/PKG-INFO
+body_mass_index.egg-info/SOURCES.txt
+body_mass_index.egg-info/dependency_links.txt
+body_mass_index.egg-info/top_level.txt
+tests/__init__.py
+tests/test_bmi.py
