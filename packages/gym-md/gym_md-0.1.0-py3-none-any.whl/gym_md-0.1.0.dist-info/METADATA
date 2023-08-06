@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gym-md
+Version: 0.1.0
+Summary: OpenAI Gym Environment for MiniDungeons
+Home-page: https://github.com/Ganariya/gym-md
+Author: ganariya
+Author-email: ganariya2525@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: gym
+Requires-Dist: matplotlib
+
+hello, world
+
+
