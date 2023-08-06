@@ -1,0 +1,7 @@
+colorama~=0.4.3
+ansiwrap~=0.8.2
+toml~=0.10.1
+recordclass~=0.14.0
+
+[:python_version < "3.7"]
+importlib_resources~=4.0.0
