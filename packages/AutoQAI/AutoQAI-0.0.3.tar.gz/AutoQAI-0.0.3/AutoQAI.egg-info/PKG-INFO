@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: AutoQAI
+Version: 0.0.3
+Summary: A Quantum Artificial Intelligence Workplace
+Home-page: https://github.com/vamshi-rvk/AutoQAI
+Author: rvk
+Author-email: rvk.vamshi@gmail.com
+License: UNKNOWN
+Description: # AutoQAI
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
