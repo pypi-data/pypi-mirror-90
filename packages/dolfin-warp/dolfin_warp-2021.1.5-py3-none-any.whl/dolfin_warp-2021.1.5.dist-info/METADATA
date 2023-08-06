@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: dolfin-warp
+Version: 2021.1.5
+Summary: A set of FEniCS- and VTK-based python tools for Finite Element Digital Image Correlation, basically implementing the method described in [[Genet et al., 2018, Medical Image Analysis]](https://www.medicalimageanalysisjournal.com/article/S1361-8415(18)30534-6/fulltext).
+Home-page: https://gitlab.inria.fr/mgenet/dolfin_warp
+Author: Martin Genet
+Author-email: martin.genet@polytechnique.edu
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: vtk
+Requires-Dist: myPythonLibrary
+Requires-Dist: myVTKPythonLibrary
+Requires-Dist: vtkpython-cbl
+Requires-Dist: dolfin-mech
+
+# dolfin_warp
+A set of FEniCS- and VTK-based python tools for Finite Element Digital Image Correlation, basically implementing the method described in [[Genet et al., 2018, Medical Image Analysis]](https://www.medicalimageanalysisjournal.com/article/S1361-8415(18)30534-6/fulltext).
+### Requirements
+You need a working installation of FEniCS (including DOLFIN python interface) & VTK (also including python interface).
+### Installation
+```
+pip install dolfin_warp
+```
+
+
