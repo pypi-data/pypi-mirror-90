@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+bin/get_localeID
+bin/get_weather_by_localeID
+bin/get_weather_georeferenced
+climatempopy/__init__.py
+climatempopy/climatempo.py
+climatempopy/common.py
+climatempopy/const.py
+climatempopy.egg-info/PKG-INFO
+climatempopy.egg-info/SOURCES.txt
+climatempopy.egg-info/dependency_links.txt
+climatempopy.egg-info/requires.txt
+climatempopy.egg-info/top_level.txt
