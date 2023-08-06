@@ -1,0 +1,10 @@
+chonker/__init__.py,sha256=1OtrHohREzGkUClc1f0mA4mJ0ZnfaRdukhTWyL4nJ7A,73
+chonker/compute.py,sha256=LvsbF_i6xLvgUAYjhTTtfyWZgoxprjHQbX7VdAJ0u28,1263
+chonker/wrangle.py,sha256=5SYXSYuH9tl2WM1mZHQYTdrMKkJIsdSfXRzK-3b-tIU,8421
+chonker/chonktorch/__init__.py,sha256=4AluMIwiaYYZaX4BJEjtbxR2PhPZhMjDTFu-WmXmRnk,67
+chonker/chonktorch/functions.py,sha256=TAjSoc_da3uayPN0uq4-LdjPuNZh8vY_Ymk2tYOYmC8,6755
+chonker-1.0.2.dist-info/LICENSE.txt,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+chonker-1.0.2.dist-info/METADATA,sha256=76nnrbdxNpt5Lo7rMDkSfapOynyWI93L7bn53pjvHJs,1848
+chonker-1.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+chonker-1.0.2.dist-info/top_level.txt,sha256=jJxQqiSSdxXOPITSdNiYAdjZq8iw6McrFaxZfxfPUVY,8
+chonker-1.0.2.dist-info/RECORD,,
