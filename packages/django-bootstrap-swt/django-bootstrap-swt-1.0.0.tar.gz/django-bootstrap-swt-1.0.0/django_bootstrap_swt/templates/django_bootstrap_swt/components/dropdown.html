@@ -1,0 +1,11 @@
+<div class="dropdown">
+  {{button|safe}}
+  <div class="dropdown-menu" aria-labelledby="{{ dropdown_id }}">
+    {% if header %}
+      <h6 class="dropdown-header">{{ header }}</h6>
+    {% endif %}
+    {% for item in items %}
+      {{ item|safe }}
+    {% endfor %}
+  </div>
+</div>
