@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fourinsight-campaigns
+Version: 0.1.4
+Summary: 4insight campaigns
+Home-page: https://4insight.io/
+Author: 4Subsea
+Author-email: support@4subsea.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: fourinsight-api
+Requires-Dist: pandas
+
+UNKNOWN
+
+
