@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cc-nbdev-template
+Version: 0.0.2
+Summary: A description of your project
+Home-page: https://github.com/feihuidiqiu/cc_nbdev_template/tree/master/
+Author: feihuidiqiu
+Author-email: 1366975075@qq.com
+License: Apache Software License 2.0
+Keywords: some keywords
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# nbdev template
+
+Use this template to more easily create your nbdev project.
+
+
+
