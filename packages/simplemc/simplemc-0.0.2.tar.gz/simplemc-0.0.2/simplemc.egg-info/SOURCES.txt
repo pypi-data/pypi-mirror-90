@@ -1,0 +1,6 @@
+README.md
+setup.py
+simplemc.egg-info/PKG-INFO
+simplemc.egg-info/SOURCES.txt
+simplemc.egg-info/dependency_links.txt
+simplemc.egg-info/top_level.txt
