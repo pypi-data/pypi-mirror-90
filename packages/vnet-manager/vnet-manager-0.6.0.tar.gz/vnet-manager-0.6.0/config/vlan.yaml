@@ -1,0 +1,62 @@
+#                  /-- vnet-veth0 ------- vnet-veth1 ---\
+#   host10 ---- vnet-br0 - vnet-veth2 --- vnet-veth3- vnet-br1 ----- host20
+#                  \-- vnet-veth4 ------- vnet-veth5 ---/
+
+switches: 3
+
+veths:
+  # Peer should only be defined once for a veth pair. But each veth needs a bridge to attach to.
+  # Enabling STP can be done per vnet-br. It doesn't matter to duplicate, as the operation is idempotent
+  vnet-veth0:
+    peer: vnet-veth1
+    bridge: vnet-br0
+    stp: true
+  vnet-veth1:
+    bridge: vnet-br1
+  vnet-veth2:
+    peer: vnet-veth3
+    bridge: vnet-br0
+  vnet-veth3:
+    bridge: vnet-br1
+    stp: true
+  vnet-veth4:
+    peer: vnet-veth5
+    bridge: vnet-br0
+  vnet-veth5:
+    bridge: vnet-br1
+
+machines:
+  host10:
+    type: host
+    interfaces:
+      eth1:
+        ipv4: 10.0.101.1/24
+        mac: 00:00:00:00:11:11
+        bridge: 0
+      eth1.10:
+        ipv4: 10.0.10.1/24
+        mac: 00:00:00:00:10:11
+        bridge: 0
+      eth1.30:
+        ipv4: 10.0.30.1/24
+        mac: 00:00:00:00:30:11
+        bridge: 0
+  host20:
+    type: host
+    interfaces:
+      eth2:
+        ipv4: 10.0.202.2/24
+        mac: 00:00:00:00:22:22
+        bridge: 1
+      eth2.10:
+        ipv4: 10.0.10.2/24
+        mac: 00:00:00:00:10:22
+        bridge: 1
+      eth2.20:
+        ipv4: 10.0.20.2/24
+        mac: 00:00:00:00:20:22
+        bridge: 1
+      eth2.30:
+        ipv4: 10.0.30.2/24
+        mac: 00:00:00:00:30:22
+        bridge: 1

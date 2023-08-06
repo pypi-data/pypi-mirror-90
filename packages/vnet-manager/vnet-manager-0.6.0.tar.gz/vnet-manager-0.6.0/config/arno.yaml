@@ -1,0 +1,38 @@
+---
+
+#
+#  router1 -aa- router2 -bb- router3
+#
+
+switches: 2
+
+machines:
+  router1:
+    type: router
+    interfaces:
+      eth12:
+        ipv4: 192.168.0.1/24   # Artefact
+        ipv6: 2001:0db8:ffff:00aa::1/64
+        mac: 00:00:00:00:01:11
+        bridge: 0
+  router2:
+    type: router
+    interfaces:
+      eth12:
+        ipv4: 192.168.0.2/24   # Artefact
+        ipv6: 2001:0db8:ffff:00aa::2/64
+        mac: 00:00:00:00:02:12
+        bridge: 0
+      eth23:
+        ipv4: 10.0.0.2/24       # Artefact
+        ipv6: 2001:0db8:ffff:00bb::2/64
+        mac: 00:00:00:00:02:23
+        bridge: 1
+  router3:
+    type: router
+    interfaces:
+      eth23:
+        ipv4: 10.0.0.3/24      # Artefact
+        ipv6: 2001:0db8:ffff:00bb::3/64
+        mac: 00:00:00:00:03:23
+        bridge: 1
