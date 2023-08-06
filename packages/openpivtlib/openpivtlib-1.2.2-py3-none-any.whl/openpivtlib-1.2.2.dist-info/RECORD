@@ -1,0 +1,10 @@
+openpivtlib/__init__.py,sha256=Y_sPt2SoLvB46oeWoFKd22UqCMtcrDf_nQqHVxPHvLk,57
+openpivtlib/plugin.py,sha256=crHEwcyTfoKeQSuvFKtGddtU7gzbW9cLtYy4ZQ3dnoI,2921
+openpivtlib/util.py,sha256=VJZJa5ok41LgfmUr4em506-J8_KRYr0rSHix7qJGDO0,354
+unittests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unittests/test_plugin.py,sha256=eSmiNOSDBf3yQDieeokVtB37JA3eemw3XQsiIBsl1gA,1505
+unittests/test_util.py,sha256=oqbeexttoehVdRmuTKib5DvVIPs0-lqf9PIymEeyJ_Q,313
+openpivtlib-1.2.2.dist-info/METADATA,sha256=TzAGtixdxNrn5EU5ZXwYhjDrobnILY1O2iJCRiVNml8,757
+openpivtlib-1.2.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+openpivtlib-1.2.2.dist-info/top_level.txt,sha256=utbvTD-XNMRtbizPb86Ys3WHwbClFnuQo91v6GXrFWI,22
+openpivtlib-1.2.2.dist-info/RECORD,,
