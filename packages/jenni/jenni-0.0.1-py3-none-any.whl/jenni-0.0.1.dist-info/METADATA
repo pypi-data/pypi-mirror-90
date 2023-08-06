@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jenni
+Version: 0.0.1
+Summary: Placeholder for jenni package
+Home-page: https://pypi.org/project/jenni
+Author: Wouter Batelaan
+Author-email: wbjrpub@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+
+
+Placeholder for jenni package
+
+
