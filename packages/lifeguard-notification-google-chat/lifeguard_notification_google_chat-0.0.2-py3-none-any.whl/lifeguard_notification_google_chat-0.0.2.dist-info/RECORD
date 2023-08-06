@@ -1,0 +1,7 @@
+lifeguard_notification_google_chat/__init__.py,sha256=WL84qchzdjsfqQbbSHj0Vo3vm1VOUr1o6ZnSRGaz5jE,496
+lifeguard_notification_google_chat/notifications.py,sha256=LGVIg-TUpbS3yAmjPTbokI0FfdiaylfKlAjA7dsH8bM,1466
+lifeguard_notification_google_chat/settings.py,sha256=Inig6AzgjgS9Q9RB6dPGi4CqZwZDP2P6Co3x7Eawh4o,373
+lifeguard_notification_google_chat-0.0.2.dist-info/METADATA,sha256=X4DdVEusLDHlH-7eoSCJnKCzCYbybGsItBsqSGsncoo,376
+lifeguard_notification_google_chat-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+lifeguard_notification_google_chat-0.0.2.dist-info/top_level.txt,sha256=dGqjyNezXZaze_Ak577T1t02zN-9uQF1ohyciZqaPMM,35
+lifeguard_notification_google_chat-0.0.2.dist-info/RECORD,,
