@@ -1,0 +1,3 @@
+[console_scripts]
+lil-pwny = lil_pwny:main
+
