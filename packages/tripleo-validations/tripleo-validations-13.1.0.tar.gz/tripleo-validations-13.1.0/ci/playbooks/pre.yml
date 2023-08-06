@@ -1,0 +1,41 @@
+---
+- hosts: all
+  pre_tasks:
+    - name: Ensure output dirs
+      file:
+        path: "{{ ansible_user_dir }}/zuul-output/logs"
+        state: directory
+
+    - name: Ensure virtualenv is available
+      include_role:
+        name: ensure-virtualenv
+
+    - name: Setup bindep
+      pip:
+        name: "bindep"
+        virtualenv: "{{ ansible_user_dir }}/test-python"
+        virtualenv_site_packages: true
+
+    - name: Run bindep
+      shell: |-
+        . {{ ansible_user_dir }}/test-python/bin/activate
+        {{ ansible_user_dir }}/{{ zuul.project.src_dir }}/scripts/bindep-install
+      become: true
+      changed_when: false
+
+    - name: Setup test-python
+      pip:
+        requirements: "{{ ansible_user_dir }}/{{ zuul.project.src_dir }}/molecule-requirements.txt"
+        virtualenv: "{{ ansible_user_dir }}/test-python"
+        virtualenv_site_packages: true
+
+  tasks:
+    - name: Get necessary git repos
+      git:
+        repo: https://opendev.org/openstack/{{ item }}
+        dest: "{{ ansible_user_dir}}/{{ zuul.project.src_dir }}/roles/roles.galaxy/{{ item }}"
+        version: master
+        force: true
+      with_items:
+        - tripleo-ansible
+        - validations-common
