@@ -1,0 +1,3 @@
+[console_scripts]
+pdcopyist_updater = pdcopyist_updater.main:main
+

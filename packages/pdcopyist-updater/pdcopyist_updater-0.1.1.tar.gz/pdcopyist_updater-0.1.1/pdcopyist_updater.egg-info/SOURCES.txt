@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pdcopyist_updater/Versions.py
+pdcopyist_updater/__init__.py
+pdcopyist_updater/main.py
+pdcopyist_updater.egg-info/PKG-INFO
+pdcopyist_updater.egg-info/SOURCES.txt
+pdcopyist_updater.egg-info/dependency_links.txt
+pdcopyist_updater.egg-info/entry_points.txt
+pdcopyist_updater.egg-info/requires.txt
+pdcopyist_updater.egg-info/top_level.txt
