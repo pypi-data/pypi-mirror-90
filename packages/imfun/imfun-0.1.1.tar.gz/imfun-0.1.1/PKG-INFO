@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: imfun
+Version: 0.1.1
+Summary: Convert an image to cartoon
+Home-page: https://github.com/matyama/imfun
+License: MIT
+Keywords: image-processing,opencv,for-fun
+Author: Martin Matyášek
+Author-email: martin.matyasek@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Multimedia
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Classifier: Topic :: Utilities
+Requires-Dist: click (>=7.1.2,<8.0.0)
+Requires-Dist: numpy (>=1.19.4,<2.0.0)
+Requires-Dist: opencv-python (>=4.5.1,<5.0.0)
+Project-URL: Repository, https://github.com/matyama/imfun
+Description-Content-Type: text/markdown
+
+![ImFun](https://github.com/matyama/imfun/workflows/ImFun/badge.svg) [![PyPI version](https://badge.fury.io/py/imfun.svg)](https://badge.fury.io/py/imfun) [![PyPI status](https://img.shields.io/pypi/status/imfun.svg)](https://pypi.python.org/pypi/imfun/) [![PyPI pyversions](https://img.shields.io/pypi/pyversions/imfun.svg)](https://pypi.python.org/pypi/imfun/)
+
+# ImFun
+Convert an image to cartoon!
+
+## Installation
+This application (package) is available on *PyPI*, so it can be installed using `pip` or `pipx`.
+```
+$ pipx install imfun
+  installed package imfun 0.1.0, Python 3.8.5
+  These apps are now globally available
+    - imfun
+done! ✨ 🌟 ✨
+```
+
+## Usage
+One can run the `imfun` app to convert an image to a cartoon like this
+```
+$ imfun -i examples/prague-castle.jpg -o examples/prague-castle-cartoon.jpg
+Converting image 'examples/prague-castle.jpg'
+Cartoon image saved as 'examples/prague-castle-cartoon.jpg'
+```
+assuming that `examples/prague-castle.jpg` exists - or try it on any other image ;)
+
+## Examples
+<img src="./examples/prague.jpg" alt="Prague castle (original)" title="Original Image" width="250">
+<img src="./examples/prague-cartoon.jpg" alt="Prague castle (cartoon)" title="Cartoon Image" width="250">
+
+## Development
+Development setup requires [Poetry](https://python-poetry.org/) to be installed.
+Once the repository is cloned, one can setup everything with
+```bash
+make setup
+```
+
