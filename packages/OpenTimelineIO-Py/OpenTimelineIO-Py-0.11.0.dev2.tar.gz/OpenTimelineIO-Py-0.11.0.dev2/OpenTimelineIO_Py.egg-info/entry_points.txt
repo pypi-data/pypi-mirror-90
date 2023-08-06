@@ -1,0 +1,6 @@
+[console_scripts]
+otioautogen_serialized_schema_docs = opentimelineio_py.console.autogen_serialized_datamodel:main
+otiocat = opentimelineio_py.console.otiocat:main
+otioconvert = opentimelineio_py.console.otioconvert:main
+otiostat = opentimelineio_py.console.otiostat:main
+
