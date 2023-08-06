@@ -1,0 +1,3 @@
+[console_scripts]
+argscall = argscall.__main__:main
+
