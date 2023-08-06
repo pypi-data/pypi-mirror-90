@@ -1,0 +1,3 @@
+[ehforwarderbot.middleware]
+catbaron.search_msg = efb_search_msg_middleware:SearchMessageMiddleware
+
