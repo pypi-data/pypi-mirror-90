@@ -1,0 +1,4 @@
+[console_scripts]
+f-decrypt = fencrypt.entrypoint:decrypt
+f-encrypt = fencrypt.entrypoint:encrypt
+
