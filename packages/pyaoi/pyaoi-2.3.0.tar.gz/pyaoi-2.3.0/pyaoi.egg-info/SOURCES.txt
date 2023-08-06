@@ -1,0 +1,8 @@
+README.md
+pyaoi.py
+pyproject.toml
+setup.py
+pyaoi.egg-info/PKG-INFO
+pyaoi.egg-info/SOURCES.txt
+pyaoi.egg-info/dependency_links.txt
+pyaoi.egg-info/top_level.txt
