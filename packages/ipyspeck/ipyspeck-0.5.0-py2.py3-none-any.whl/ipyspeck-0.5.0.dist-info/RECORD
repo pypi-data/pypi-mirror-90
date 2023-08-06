@@ -1,0 +1,14 @@
+ipyspeck/__init__.py,sha256=g0TJP31L0NBrsAo8RDwvtT1jWbUGgkQhEOvh_e-tNX8,1024
+ipyspeck/_version.py,sha256=HVcAevqIxFYnWaBqCFwtCP6sRed1P4CTHcw-CnD_d_w,284
+ipyspeck/speck.py,sha256=sTxJ1LoY0OAag6Z_ryzYPAXJZ6me51Lm9K_cZZiLvCQ,1901
+ipyspeck/static/extension.js,sha256=cj_7_WwYpaGE-19pEEC2wKZ7u8XS2L8yXhJpc_QoXCo,3330
+ipyspeck/static/index.js,sha256=-lQSy_2fCrznS3AjcGKnKeA6y85tXxnyB3tG9vCiEzk,758913
+ipyspeck/static/index.js.map,sha256=qwZaMVUeGzoxGJxjnung19JFy4Zo2AJSz2urOyV912s,936371
+ipyspeck-0.5.0.data/data/etc/jupyter/nbconfig/notebook.d/ipyspeck.json,sha256=eb1INXC6p0Dyq_X2E0ZJrqUUU23AR-yru0fdb3M-mMk,62
+ipyspeck-0.5.0.data/data/share/jupyter/nbextensions/ipyspeck/extension.js,sha256=cj_7_WwYpaGE-19pEEC2wKZ7u8XS2L8yXhJpc_QoXCo,3330
+ipyspeck-0.5.0.data/data/share/jupyter/nbextensions/ipyspeck/index.js,sha256=-lQSy_2fCrznS3AjcGKnKeA6y85tXxnyB3tG9vCiEzk,758913
+ipyspeck-0.5.0.data/data/share/jupyter/nbextensions/ipyspeck/index.js.map,sha256=qwZaMVUeGzoxGJxjnung19JFy4Zo2AJSz2urOyV912s,936371
+ipyspeck-0.5.0.dist-info/METADATA,sha256=XMmXKAveCFqCjappcYgr3uYD3PGHVJb1IA4XfXIYKss,3904
+ipyspeck-0.5.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+ipyspeck-0.5.0.dist-info/top_level.txt,sha256=FLXkf3d9sG7-nZMk1RhEsbFu8ITIS75byu6aTXI2rWY,9
+ipyspeck-0.5.0.dist-info/RECORD,,
