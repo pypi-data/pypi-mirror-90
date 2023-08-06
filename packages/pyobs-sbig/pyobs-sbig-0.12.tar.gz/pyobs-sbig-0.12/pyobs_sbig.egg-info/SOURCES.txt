@@ -1,0 +1,14 @@
+README.md
+setup.py
+pyobs_sbig/__init__.py
+pyobs_sbig/sbig6303e.py
+pyobs_sbig/sbigcamera.py
+pyobs_sbig/sbigfiltercamera.py
+pyobs_sbig/sbigudrv.cpp
+pyobs_sbig.egg-info/PKG-INFO
+pyobs_sbig.egg-info/SOURCES.txt
+pyobs_sbig.egg-info/dependency_links.txt
+pyobs_sbig.egg-info/requires.txt
+pyobs_sbig.egg-info/top_level.txt
+src/csbigcam.cpp
+src/csbigimg.cpp
