@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: geoint
+Version: 0.1a4
+Summary: Simple python module for geospatial intelligence workflows.
+Home-page: https://github.com/gisfromscratch/geoint-py
+Author: Jan Tschada
+Author-email: gisfromscratch@live.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: arcgis (>=1.8.0)
+Requires-Dist: pandas (>=1.0.0)
+
+# geoint-py
+A bunch of geospatial intelligence workflows implemented using Python.
+
+## Features
+- Create a rectangular spatial grid for binning
+
+![spatial_binning](https://github.com/gisfromscratch/geoint-py/raw/main/spatial_bin.png)
+© GDI-TH, Esri, HERE, Garmin, FAO, NOAA, USGS - Powered by Esri
+
+## Usage
+Take a look at the [sample](https://github.com/gisfromscratch/geoint-py/blob/main/Samples.ipynb) jupyter notebook.
+
+## References
+- [ArcGIS API for Python](https://developers.arcgis.com/python/)
+
+### Geospatial Intelligence Publications
+- [Geospatial Intelligence @ Medium](https://medium.com/geospatial-intelligence)
+
+
