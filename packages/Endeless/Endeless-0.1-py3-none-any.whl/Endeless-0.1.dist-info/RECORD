@@ -1,0 +1,22 @@
+Endeless/Songs-dataset.csv,sha256=Zbz1VkkvcGr-Od2_ScbYBd0fU5GmZGg7JJraJhAFcpg,84
+Endeless/__init__.py,sha256=cFXQcueX4Q0lBoWLrQa_eB45t3YNTJLWOx0aYQGHUU4,45
+Endeless/__main__.py,sha256=yIBfHWGm48ycQ_ARBw5l3-LYFWyoxGusk94U0xCabYo,3675
+Endeless/chord_recognition.py,sha256=nr4SCDsbKQIVO_6xpa7GpGkM2FAqQkZrr1in6H_05o8,5973
+Endeless/dataset_path.txt,sha256=JUA16rB1b3TRFDzLvxyq76yDcFdB0rEYksvp7gFkSCg,62
+Endeless/dataset_update.py,sha256=-8Pr_4CEPGMQIFNmHmaspoCABlwPL0wn-um7vnD4IXQ,7915
+Endeless/endeless.py,sha256=EYo8z8Awbq4Rs3F2lDv0ZCyeAm1YStRr9XSFFGPZUM4,2491
+Endeless/endeless_worker.py,sha256=1Xc4Nu66eBQo0VJIpaWQ8mS6CTM4ntiRpcWaFT2DHe4,8388
+Endeless/dataset/Songs-dataset.csv,sha256=Zbz1VkkvcGr-Od2_ScbYBd0fU5GmZGg7JJraJhAFcpg,84
+Endeless/dataset/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Endeless/dataset/dataset_path.txt,sha256=ggGmIJrY7cMRzsaxFK-aR_741hBM9SCaTdhQMT1kvWw,6
+Endeless/dataset/dataset_update.py,sha256=3E1bs9xr4ENUMtGqHu-CRWaxczqfMiM6a_iFBo13hng,7850
+Endeless/songs/PLACE SONGS HERE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Endeless/workers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Endeless/workers/chord_recognition.py,sha256=nr4SCDsbKQIVO_6xpa7GpGkM2FAqQkZrr1in6H_05o8,5973
+Endeless/workers/endeless_worker.py,sha256=1Xc4Nu66eBQo0VJIpaWQ8mS6CTM4ntiRpcWaFT2DHe4,8388
+Endeless-0.1.dist-info/LICENSE,sha256=oFh2LSwf6vdZrhsObqSrK0DmeBFnLT6ZCF9OtYfT_Hs,1083
+Endeless-0.1.dist-info/METADATA,sha256=UVY7dbJN4yd8EsW4fxMXMou53o8_fGn_kILARztP9oo,3858
+Endeless-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Endeless-0.1.dist-info/entry_points.txt,sha256=GjREqIhREYLuUYybvnBQsuT8Z14xsylQyJqA-5wbgRE,68
+Endeless-0.1.dist-info/top_level.txt,sha256=qMvaRrVqEJNiG-sd6mK588KtYRaJeOgnU5LW7L0XJy8,9
+Endeless-0.1.dist-info/RECORD,,
