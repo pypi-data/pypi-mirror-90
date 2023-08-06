@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+scrapy_headless/__init__.py
+scrapy_headless/http.py
+scrapy_headless/middlewares.py
+scrapy_headless/uBlock0@raymondhill.net.xpi
+scrapy_headless_selenium.egg-info/PKG-INFO
+scrapy_headless_selenium.egg-info/SOURCES.txt
+scrapy_headless_selenium.egg-info/dependency_links.txt
+scrapy_headless_selenium.egg-info/requires.txt
+scrapy_headless_selenium.egg-info/top_level.txt

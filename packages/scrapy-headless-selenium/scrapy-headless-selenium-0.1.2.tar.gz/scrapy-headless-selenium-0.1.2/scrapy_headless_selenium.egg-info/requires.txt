@@ -1,0 +1,8 @@
+Scrapy
+selenium
+
+[tests]
+pytest
+pytest-cov
+coveralls
+flaky
