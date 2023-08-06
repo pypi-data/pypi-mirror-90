@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: choicenet
+Version: 0.0.2
+Summary: A library that incoporate discrete choice and deep learning
+Home-page: https://github.com/danhphan/choicenet/tree/master/
+Author: Danh Phan
+Author-email: danhphan@gmail.com
+License: Apache Software License 2.0
+Keywords: discrete choice,deep learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Wellcome to Choice Net
+> Choice Net is a combination of discrete choice models and deep neural networks.
+
+
+This file will become your README and also the index of your documentation.
+
+## Install
+
+`pip install choicenet`
+
+## How to use
+
+Fill me in please! Don't forget code examples:
+
+```python
+1+1
+```
+
+
+
+
+    2
+
+
+
+Test if it work
+
+```python
+say_hello("Dan")
+```
+
+
+
+
+    'Hello Dan!'
+
+
+
+
