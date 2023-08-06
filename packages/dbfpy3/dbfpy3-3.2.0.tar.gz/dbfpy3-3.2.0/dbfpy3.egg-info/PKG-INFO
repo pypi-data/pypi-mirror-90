@@ -1,0 +1,73 @@
+Metadata-Version: 1.2
+Name: dbfpy3
+Version: 3.2.0
+Summary: Port to Python 3 and released at PyPi by Frank Xu.
+ dbfpy is a python-only module for reading and writing DBF-files.
+ It was created by Jeff Kunce and then modified by Hans Fiby
+ and Yaroslav Samchuk.  Dbfpy was ported to Python 3.x by James Douglass. 
+Home-page: https://github.com/frankyxhl/dbfpy3
+Author: Frank Xu
+Author-email: franky.xhl@gmail.com
+License: MIT license
+Description: Python 3 modules for accessing .dbf files
+        ------------------------------------------
+        
+        Port to Python 3 and released at PyPi by Frank Xu.
+        
+        ### Features
+        
+        * Support FoxPro
+        * Support memo
+        * Code page
+        
+        ### TODO
+        
+        * Write test
+        * dBase compatible
+        
+        ### Install
+        
+        Run `python -m pip install dbfpy3`
+        
+        
+        ---
+        
+        ### NOT FULLY TEST YET
+        
+        ### USE AT YOUR OWN RISK
+        
+        ### NO WARRANTIES WHATSOEVER
+        
+        ---
+        
+        steelywing <https://github.com/steelywing/dbfpy>
+        
+        Jeff Kunce <kuncej@mail.conservation.state.mo.us>
+        
+        http://starship.python.net/crew/jjkunce/
+        
+        Hans Fiby <hans@fiby.at>
+        
+        http://www.fiby.at
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2020-12-26)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: dbfpy3
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
