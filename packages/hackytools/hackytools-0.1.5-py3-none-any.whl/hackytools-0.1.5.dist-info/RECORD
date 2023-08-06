@@ -1,0 +1,13 @@
+hackytools/__init__.py,sha256=EnB4jJ-SY7VRjYrMT6upJKryJ-PmNHugsm2EG6uN_MU,47
+hackytools/bork.py,sha256=dKY8ql8QuHN8gLl4HNA3lQCtMYf-qwMQ7uywGhnilKo,2346
+hackytools/cli.py,sha256=4NjpMSnLFdGaRFXykF9P46VU4eubD1HbxlwFJsRvNqw,2085
+hackytools/gifit.py,sha256=Hefh2MN0pMV7M6o0ccTiuE-mu-k7KXXrk5bT7bCN1uo,1078
+hackytools/sliceit.py,sha256=qe7EwZ80_KJm-cRKorZQSUU31_V5vRU1xVwf5QFww6s,2216
+hackytools/spriteit.py,sha256=U7zaz_h2dXtAVjzp4NEUSGl0cTTLZl0_60VjYuCjK18,4723
+hackytools/utils.py,sha256=4e6zS37MxgA2AF8_1W8qvBQo70eY3ph58Yp3MWGmX6I,4022
+hackytools-0.1.5.dist-info/LICENSE,sha256=fvTiXrI8htfM7bua26h_gzU6TJcDFCDru4oxMcaXSK4,1086
+hackytools-0.1.5.dist-info/METADATA,sha256=Qub8IDsmbKBt6fX8eVKyisBHaEAysqv0nym_zkhMRK0,2602
+hackytools-0.1.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+hackytools-0.1.5.dist-info/entry_points.txt,sha256=W8HNCEfDM1UlaxGeqX8CH-BNJhwdLafkBd7wcPL97Og,161
+hackytools-0.1.5.dist-info/top_level.txt,sha256=6qPhlF9E_eMcgs3-VeahhXCN5MtQP3prPi2llaDgb1Y,11
+hackytools-0.1.5.dist-info/RECORD,,
