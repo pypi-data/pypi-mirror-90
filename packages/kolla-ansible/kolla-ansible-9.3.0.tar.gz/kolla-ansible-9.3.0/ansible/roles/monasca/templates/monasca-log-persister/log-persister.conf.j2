@@ -1,0 +1,34 @@
+# Persist transformed logs to Elasticsearch
+
+{% if monasca_logstash_use_v6 | bool %}
+input {
+    kafka {
+        bootstrap_servers => "{{ monasca_kafka_servers }}"
+        topics => ["{{ monasca_transformed_logs_topic }}"]
+        group_id => "log_persister"
+        consumer_threads => "{{ monasca_log_pipeline_threads }}"
+        codec => json
+    }
+}
+{% else %}
+{# Logstash 2 #}
+input {
+    kafka {
+        zk_connect => "{{ monasca_zookeeper_servers }}"
+        topic_id => "{{ monasca_transformed_logs_topic }}"
+        group_id => "log_persister"
+        consumer_id => "log_persister_{{ ansible_hostname }}"
+        consumer_threads => "{{ monasca_log_pipeline_threads }}"
+    }
+}
+{% endif %}
+
+output {
+    elasticsearch {
+        index => "monasca-%{[meta][tenantId]}-%{+YYYY.MM.dd}"
+        hosts => [{{ monasca_elasticsearch_servers }}]
+        document_type => "log"
+        template_name => "monasca"
+        template => "/etc/logstash/elasticsearch-template.json"
+    }
+}
