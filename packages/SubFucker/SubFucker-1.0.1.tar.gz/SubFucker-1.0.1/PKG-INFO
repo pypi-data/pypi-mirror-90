@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: SubFucker
+Version: 1.0.1
+Summary: SubFucker is simple tool designed to help bughunters with enumerating subdomain status codes
+Home-page: https://github.com/TheXerr0r/SubFucker
+Author: Scorpion Shiled
+Author-email: support@scorpion-shield.com
+License: UNKNOWN
+Description: SubFucker is simple tool designed to help bughunters with enumerating subdomain status codes
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
