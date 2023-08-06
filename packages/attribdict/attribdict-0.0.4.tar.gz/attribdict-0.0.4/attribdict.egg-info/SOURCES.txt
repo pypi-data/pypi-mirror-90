@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+attribdict/AttribDict.py
+attribdict/__init__.py
+attribdict.egg-info/PKG-INFO
+attribdict.egg-info/SOURCES.txt
+attribdict.egg-info/dependency_links.txt
+attribdict.egg-info/top_level.txt
