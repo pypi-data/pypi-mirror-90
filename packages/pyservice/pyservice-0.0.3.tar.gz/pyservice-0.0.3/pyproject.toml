@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "pyservice"
+version = "0.0.3"
+description = "A light-service like project in Python"
+authors = ["Attila Domokos <adomokos@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+Mypy = "^0.782"
+flake8 = "^3.8.3"
+coverage = "^5.3"
+black = "^20.8b1"
+pytest = "^6.2.1"
+pytest-cov = "^2.10.1"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "test",
+]
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
