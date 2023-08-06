@@ -1,0 +1,7 @@
+fugue==0.5.0.dev1
+
+[all]
+hyperopt
+
+[hyperopt]
+hyperopt
