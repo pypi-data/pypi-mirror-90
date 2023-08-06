@@ -1,0 +1,11 @@
+README.md
+setup.py
+Duplicate_Finder.egg-info/PKG-INFO
+Duplicate_Finder.egg-info/SOURCES.txt
+Duplicate_Finder.egg-info/dependency_links.txt
+Duplicate_Finder.egg-info/top_level.txt
+duplicates/__init__.py
+duplicates/duplicates.py
+tests/__init__.py
+tests/context.py
+tests/test_detect_duplicates.py
