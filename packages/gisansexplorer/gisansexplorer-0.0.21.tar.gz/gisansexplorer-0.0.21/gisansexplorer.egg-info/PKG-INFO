@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: gisansexplorer
+Version: 0.0.21
+Summary: Nicos data reduction and visualisation tool
+Home-page: https://github.com/juanmcloaiza/gisansexplorer
+Author: Juan M. Carmona Loaiza
+Author-email: j.carmona.loaiza@fz-juelich.de
+License: UNKNOWN
+Description: # GisansExplorer
+        
+        Simple **GUI** that interactively helps in the reduction of [NICOS](https://nicos-controls.org/) [GISANS](http://www.gisaxs.de/theory.html) data.
+        
+        ![Screenshot](./Screenshot.png)
+        
+        # Install (Windows, Mac, Linux):
+        [**Use Python 3.6**](https://realpython.com/installing-python/)
+        
+        ```
+         $ pip install gisansexplorer
+         ```
+        
+        # Run:
+        ```
+         $ gisansexplorer
+        ```
+        
+         ---
+        
+        Developed and maintained by the [MLZ Scientific Computing Group](http://apps.jcns.fz-juelich.de/doku/sc/start) in collaboration with [Alexandros Koutsioumpas](https://alexandros-koutsioumpas.weebly.com/index.html)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
