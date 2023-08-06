@@ -1,0 +1,5 @@
+pathlib
+
+[test]
+unittest2
+python-magic
