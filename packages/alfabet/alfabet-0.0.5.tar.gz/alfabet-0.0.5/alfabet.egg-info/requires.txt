@@ -1,0 +1,6 @@
+pandas
+nfp<0.1.0,>=0.0.9
+keras<2.4.0,>=2.3.0
+tensorflow<2.0
+joblib
+tqdm
