@@ -1,0 +1,11 @@
+omnigraffle_stencil/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omnigraffle_stencil/__main__.py,sha256=xY28qEdPtFFnVtxZlCkk37bC9_MMdgPkxmWNPS4ziuE,91
+omnigraffle_stencil/converter.py,sha256=_rQz1ZVNPR5NiM0enSW5bf_FdqtDgMzysCWo6377qbo,10074
+omnigraffle_stencil/templates/data.plist,sha256=CKsnE9C_JBfZo33TkST4VobUhiYK3svgNtG3DRXPGfo,5387
+omnigraffle_stencil/templates/image.plist,sha256=arRwAtIkSmwCQzfIkrvyO-bzDuYFVyD-_VrfDzV802Q,1006
+omnigraffle_stencil/templates/sheet.plist,sha256=0vgsT4vf1TjJO2zLpN3d0V5HdXWBxW69GGElwAz-_PM,3982
+omnigraffle_stencil-1.1.0.dist-info/entry_points.txt,sha256=w0wYMGwrc1szj9SZpZB-C9C8QW3SHJjTe93zsghKfL0,74
+omnigraffle_stencil-1.1.0.dist-info/LICENSE,sha256=mKnFya2P4-mcogqb04J4wc2CUx7_80mV9MA4iQ-6aFQ,1075
+omnigraffle_stencil-1.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+omnigraffle_stencil-1.1.0.dist-info/METADATA,sha256=vX1r02m-WEk8p13V39FLGpBl3lWLzP1wQt-Yjj1AmmU,4736
+omnigraffle_stencil-1.1.0.dist-info/RECORD,,
