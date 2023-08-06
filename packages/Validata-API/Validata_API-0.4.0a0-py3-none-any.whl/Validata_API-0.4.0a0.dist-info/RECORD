@@ -1,0 +1,10 @@
+validata_api/__init__.py,sha256=q0hAOP-zVfTFKwEAkV5Brx_lotN_F4hxY8w-CvsNQZA,2546
+validata_api/config.py,sha256=EX4aEsFslSh-HVtcCmyfRTJfCCUFR2PE2gUtIGWIJ4Q,1203
+validata_api/json_errors.py,sha256=QOSsB08KuIf1pO9yYmGr-Wxkda0pJR0FTR2Y4bVq4sM,2885
+validata_api/route_handlers.py,sha256=HDc6XBK6Kbbqub7Hq1dggzv3C-Cukcjm6T8v7Sfmof4,3758
+Validata_API-0.4.0a0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+Validata_API-0.4.0a0.dist-info/METADATA,sha256=blHkDQAVgfB7sIJgYG99k9b_8CWgCPtmF5xRBGC-5qs,1768
+Validata_API-0.4.0a0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Validata_API-0.4.0a0.dist-info/top_level.txt,sha256=SZ6Fq1WhX-g_VOddQ1ugCVjqpWAvypvivleaVaXCMJ0,13
+Validata_API-0.4.0a0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+Validata_API-0.4.0a0.dist-info/RECORD,,
