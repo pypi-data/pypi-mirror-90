@@ -1,0 +1,4 @@
+[console_scripts]
+marksman = marksman.cli:main
+mm = marksman.cli:main
+
