@@ -1,0 +1,17 @@
+.dada-version
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+dada_text/__init__.py
+dada_text/core.py
+dada_text/emoticon.py
+dada_text/md.py
+dada_text.egg-info/PKG-INFO
+dada_text.egg-info/SOURCES.txt
+dada_text.egg-info/dependency_links.txt
+dada_text.egg-info/requires.txt
+dada_text.egg-info/top_level.txt
+dada_text/tests/__init__.py
+dada_text/tests/test_text.py
