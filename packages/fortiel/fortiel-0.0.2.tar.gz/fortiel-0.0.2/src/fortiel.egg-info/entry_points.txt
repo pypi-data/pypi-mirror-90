@@ -1,0 +1,4 @@
+[console_scripts]
+fortiel = fortiel:tielMain
+gfortiel = gfortiel:gfortielMain
+

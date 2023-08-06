@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: fortiel
+Version: 0.0.2
+Summary: Fortiel Compiler / Fortran Preprocessor
+Home-page: https://github.com/Jhuighuy/fortiel
+Author: Oleg Butakov
+Author-email: butakovoleg@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: fortran fortiel metaprogramming pre-processor
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
