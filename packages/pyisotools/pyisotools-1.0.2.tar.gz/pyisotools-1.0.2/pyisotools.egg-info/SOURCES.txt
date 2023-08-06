@@ -1,0 +1,16 @@
+README.md
+setup.py
+pyisotools/__init__.py
+pyisotools/__main__.py
+pyisotools/apploader.py
+pyisotools/bi2.py
+pyisotools/bnrparser.py
+pyisotools/boot.py
+pyisotools/dolreader.py
+pyisotools/fst.py
+pyisotools/iohelper.py
+pyisotools/iso.py
+pyisotools.egg-info/PKG-INFO
+pyisotools.egg-info/SOURCES.txt
+pyisotools.egg-info/dependency_links.txt
+pyisotools.egg-info/top_level.txt
