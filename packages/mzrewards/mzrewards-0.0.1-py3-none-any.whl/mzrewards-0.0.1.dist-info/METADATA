@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: mzrewards
+Version: 0.0.1
+Summary: Mzaalo Rewards Utility functionalities
+Home-page: UNKNOWN
+Author: Denny
+Author-email: denny@xfinite.io
+License: MIT
+Keywords: Mzaalo reward utils
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: backcall (==0.2.0)
+Requires-Dist: certifi (==2020.12.5)
+Requires-Dist: cffi (==1.14.4)
+Requires-Dist: chardet (==4.0.0)
+Requires-Dist: click (==7.1.2)
+Requires-Dist: cryptography (==3.2.1)
+Requires-Dist: decorator (==4.4.2)
+Requires-Dist: Flask (==1.1.2)
+Requires-Dist: Flask-API (==2.0)
+Requires-Dist: idna (==2.10)
+Requires-Dist: ipdb (==0.13.4)
+Requires-Dist: ipython (==7.19.0)
+Requires-Dist: ipython-genutils (==0.2.0)
+Requires-Dist: itsdangerous (==1.1.0)
+Requires-Dist: jedi (==0.18.0)
+Requires-Dist: Jinja2 (==2.11.2)
+Requires-Dist: MarkupSafe (==1.1.1)
+Requires-Dist: mccabe (==0.6.1)
+Requires-Dist: msgpack (==1.0.2)
+Requires-Dist: parso (==0.8.1)
+Requires-Dist: pexpect (==4.8.0)
+Requires-Dist: pickleshare (==0.7.5)
+Requires-Dist: prompt-toolkit (==3.0.8)
+Requires-Dist: psycopg2-binary (==2.8.6)
+Requires-Dist: ptyprocess (==0.6.0)
+Requires-Dist: py-algorand-sdk (==1.4.1)
+Requires-Dist: pycparser (==2.20)
+Requires-Dist: pycryptodomex (==3.9.9)
+Requires-Dist: Pygments (==2.7.3)
+Requires-Dist: PyJWT (==2.0.0)
+Requires-Dist: PyNaCl (==1.4.0)
+Requires-Dist: pyteal (==0.6.1)
+Requires-Dist: requests (==2.25.1)
+Requires-Dist: traitlets (==5.0.5)
+Requires-Dist: urllib3 (==1.26.2)
+Requires-Dist: wcwidth (==0.2.5)
+Requires-Dist: Werkzeug (==1.0.1)
+Requires-Dist: wrapt (==1.11.2)
+
+This is a Mzaalo Reward Asset Utilities and Deployment Functionalities.
+
+
+Change Log
+==========
+
+0.0.1 (05/01/2020)
+-------------------
+- First Release
+
+
