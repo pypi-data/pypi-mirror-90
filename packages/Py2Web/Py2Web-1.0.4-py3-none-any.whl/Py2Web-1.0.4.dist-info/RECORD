@@ -1,0 +1,13 @@
+Py2Web/__init__.py,sha256=y6vGMRydrXZPSQH46JbW50KJRV9zKiPIpkS2JMIjRUk,68
+Py2Web/browser.py,sha256=9Ov6OpUbbpaVl6hKeaDM7XFcfNjs965wTdL9W9yoUOU,3791
+Py2Web/config.py,sha256=CsnAiF7I_RXQLTXuLMImxuqt1QzKQYTvdI56OWXcv2E,1424
+Py2Web/main.py,sha256=QizKXZtY3P2aNPtTUjl854pDoEWddMisfPy5eKpX-ok,738
+Py2Web/engine/Py2WebProfile.py,sha256=o1YtR5zh8jq_vdLfJgBC8UV9dBbLvnQBiiPiu5xUveg,1855
+Py2Web/engine/__init__.py,sha256=ZqTKzLzZMj1_w4oz9K8MTzQ1gYmtOATPq0Xi16vzokw,42
+Py2Web/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Py2Web/utils/xvfb.py,sha256=5shpTviwn4z3NxamwUcQjLEQhDlw_Y7S-3l1N5743eg,480
+Py2Web-1.0.4.dist-info/LICENSE,sha256=oLtzZpm5M4YTcM6fWsckVsipNVQRcQZIkZfnPTYszms,35761
+Py2Web-1.0.4.dist-info/METADATA,sha256=xfv-VSQHIT0PMYVJ7AZdZZQEFnPmfuqW1jWLl-wK7Sw,719
+Py2Web-1.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Py2Web-1.0.4.dist-info/top_level.txt,sha256=3lgTUwxeK1wiZFEINaPxJJGzj-FKUZWCnwpPWdcPyKA,7
+Py2Web-1.0.4.dist-info/RECORD,,
