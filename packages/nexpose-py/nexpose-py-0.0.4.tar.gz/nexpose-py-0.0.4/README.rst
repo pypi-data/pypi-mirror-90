@@ -1,0 +1,69 @@
+nexpose-py
+==========
+
+Python3 bindings and CLI tools for the Nexpose API version 3
+
+cli programs
+------------
+
+nsc-exporter
+~~~~~~~~~~~~
+
+A Prometheus https://prometheus.io/ exporter for Nexpose scan console metrics.
+
+A `systemd` service file is provided in `extras`.
+
+nsc-remove-old-reports
+~~~~~~~~~~~~~~~~~~~~~~
+
+nsc-remove-old-sites
+~~~~~~~~~~~~~~~~~~~~
+
+library usage
+~~~~~~~~~~~~~
+
+Basic usage:
+
+.. code-block:: python
+
+    import nexpose.nexpose as nexpose
+
+    login = nexpose.login(
+        base_url='https://localhost:3780',
+        user='some_nexpose_user',
+        password='secure_nexpose_password',
+    )
+
+    nexpose.engines(nlogin=login)
+
+For argument parsing:
+
+.. code-block:: python
+
+    parser = nexposeargs.parser
+    parser.description = "My nexpose script"
+    parser.add_argument(
+        "-f",
+        "--foo",
+        help="foo argument",
+        action="store",
+    )
+
+    args = parser.parse_args()
+
+    base_url = ':'.join([args.baseurl, args.port])
+
+    login = nexpose.login(
+        base_url=base_url,
+        user=args.user,
+        password=args.password,
+        verify=args.verify,
+    )
+
+alternatives
+------------
+
+`nexpose` is the official python binding for Nexpose API versions 1.1 and 1.2
+
+`nexpose-rest` is unofficial. It is auto-generated and thus far more 
+comprehensive than `nexpose-py`.
