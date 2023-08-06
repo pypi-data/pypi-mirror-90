@@ -1,0 +1,7 @@
+protobuf
+pyyaml
+aiohttp
+geoip2
+tlds
+cachetools
+fstrm
