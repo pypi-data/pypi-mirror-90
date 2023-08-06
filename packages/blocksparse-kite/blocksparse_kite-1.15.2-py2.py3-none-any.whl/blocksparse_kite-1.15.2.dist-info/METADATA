@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: blocksparse-kite
+Version: 1.15.2
+Summary: Tensorflow ops for blocksparse matmul, transformer, convolution and related operations.
+Home-page: https://github.com/kiteco/blocksparse
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+UNKNOWN
+
+
