@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: goldpot
+Version: 0.0.2
+Summary: A thin convenience layer on top of OpenAI's GPT-3 Python library
+Home-page: https://github.com/ssenge/Goldpot
+Author: Sebastian Senge
+Author-email: mail@sebastian-senge.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Goldpot
+A thin convenience layer on top of OpenAI's GPT-3 Python library
+
+

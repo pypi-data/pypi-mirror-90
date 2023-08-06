@@ -1,0 +1,13 @@
+goldpot/CompletionEnginesConfig.py,sha256=sHQq_l3ZOGbed0anW9eI2alw7MwEuR9vOwewyxPLwCI,1134
+goldpot/CompletionPromptConfig.py,sha256=suB7D9g7tNrsZKL_BrHGQuaqcWgD-o4-S6id10z261M,438
+goldpot/Config.py,sha256=99Cve8Fq2DWz55rokfvf7BtkJSTcKAFEAoQcbVyfSHc,848
+goldpot/DefaultConfig.py,sha256=7lhPh18SkdIv5tmaefayFbBxzY8zChuOa_WFLBvCqRQ,579
+goldpot/Goldpot.py,sha256=TzL2FMegBxAkRqzvrJkjtflQm74RX92CsJX5WD-BgZM,1315
+goldpot/Model.py,sha256=XyoVIgRCae-xmizZCENfr36MP3fxTwMLog-r_8EJbi8,2816
+goldpot/Utils.py,sha256=5zaYAWlTU-L4_VdZcPPzEJn3FcByuABVA52DFOngBdw,966
+goldpot/__init__.py,sha256=TReyIol9WvjG_YKQF7Is3h9PfFwc-dtyezuyBhgHW-M,61
+goldpot-0.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+goldpot-0.0.2.dist-info/METADATA,sha256=41Ym3BFJeifqLQqKPUOb0nLVLENk4qcZJOnYzKNjuzg,580
+goldpot-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+goldpot-0.0.2.dist-info/top_level.txt,sha256=J76BPrPCjzWRObqZmeSeM9RbylN_fsvQQaAAQQhef_4,8
+goldpot-0.0.2.dist-info/RECORD,,
