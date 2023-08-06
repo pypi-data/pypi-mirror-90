@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: logdna-line-export
+Version: 0.0.2
+Summary: logdna_line_export - Just a simple webhook test app
+Home-page: https://github.com/jondkelley/logdna_line_export_cli
+Author: Jonathan Kelley
+Author-email: jonathan.kelley@logdna.com
+License: Copyleft
+Platform: UNKNOWN
+Requires-Dist: Click
+Requires-Dist: requests
+Requires-Dist: python-dateutil
+
+UNKNOWN
+
+
