@@ -1,0 +1,11 @@
+stylegan2_pytorch/__init__.py,sha256=pgggoY29j4zvbxL5FHabo7p7HjoTbgqsJYIRgZyHY3A,94
+stylegan2_pytorch/cli.py,sha256=qPrLcYq8lbr5ID5xzdrpQbqqBUaIdp8yGufhw7snbec,5256
+stylegan2_pytorch/diff_augment.py,sha256=ajznH69LtBNuKgys01Fp9XTgoRnQvFbMMoNtDMa7rT8,2644
+stylegan2_pytorch/stylegan2_pytorch.py,sha256=hhUQNOb4POSa5WZDSMS4PqADoGp14aRuOJVp0bG-ZFg,47433
+stylegan2_pytorch/version.py,sha256=oKhMXXYDYyUlXxA7d728aBMIIVuoq7Fb4bw7nwV8SO4,21
+stylegan2_pytorch-1.5.9.dist-info/LICENSE,sha256=As9u198X-U-vph5noInuUfqsAG2zX_oXPHDmdjwlPPY,1066
+stylegan2_pytorch-1.5.9.dist-info/METADATA,sha256=pLPBDd0EqscQfafimrCDVqxkCu_aDj-ZtYGvPKOFP7w,998
+stylegan2_pytorch-1.5.9.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+stylegan2_pytorch-1.5.9.dist-info/entry_points.txt,sha256=UuTmem2KhpJFeGGgE8jwxJaWOC-r50ksto7z8WQ9wPA,66
+stylegan2_pytorch-1.5.9.dist-info/top_level.txt,sha256=IQHteHpHkUyCLiJbfzHN_9KVbKWMS0FeDTswoWL66HA,18
+stylegan2_pytorch-1.5.9.dist-info/RECORD,,
