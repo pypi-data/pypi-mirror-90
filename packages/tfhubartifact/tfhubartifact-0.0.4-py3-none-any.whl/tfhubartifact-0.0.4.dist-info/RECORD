@@ -1,0 +1,6 @@
+tfhubartifact/TensorFlowHubModelArtifact.py,sha256=t7EWGAWkuUlF-MbTOjGSeO15E2oWn1zoUqE-ZffG1iM,2159
+tfhubartifact/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tfhubartifact-0.0.4.dist-info/METADATA,sha256=ZDoh5PsiZP8F5dpNCitBBdWHeOdXKK6uGVV9VaP1Ilc,1119
+tfhubartifact-0.0.4.dist-info/WHEEL,sha256=gm79cMopkncyn0iSnI0vQNiDJ8t9on0H4_iz-CrpXMk,92
+tfhubartifact-0.0.4.dist-info/top_level.txt,sha256=5yTD0d5USeJvkF06NwJVWGvJbsXgdxMAwGAJ3DGFYko,14
+tfhubartifact-0.0.4.dist-info/RECORD,,
