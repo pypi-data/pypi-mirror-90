@@ -1,0 +1,8 @@
+aws_cdk/aws_fms/__init__.py,sha256=Do-tLSXc7tVS7ALQCVNtXYUPymOoVmyEgKvSiAgpl-I,33338
+aws_cdk/aws_fms/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_fms/_jsii/__init__.py,sha256=-M9b3a7YVmLGs-0GMxNgrj4ptxq4HjxUCvEXC2Owxaw,363
+aws_cdk/aws_fms/_jsii/aws-fms@1.82.0.jsii.tgz,sha256=K1hlzNWMSVQa_SSsS4xp2Ykq3mFxaD5hflVIJQ_9Cwg,24555
+aws_cdk.aws_fms-1.82.0.dist-info/METADATA,sha256=mZYZI6FCK1Oona8b7F8QF0fbK_9iW6qqd1AyZxKNlK8,1676
+aws_cdk.aws_fms-1.82.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+aws_cdk.aws_fms-1.82.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_fms-1.82.0.dist-info/RECORD,,
