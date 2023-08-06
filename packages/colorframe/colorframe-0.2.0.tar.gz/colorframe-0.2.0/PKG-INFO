@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: colorframe
+Version: 0.2.0
+Summary: Python utility to add borders to my photography pictures
+Home-page: https://github.com/fsoubelet/toychain
+License: MIT
+Author: Felix Soubelet
+Author-email: felix.soubelet@protonmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: Pillow (>=7.2.0,<8.0.0)
+Requires-Dist: joblib (>=0.16.0,<0.17.0)
+Requires-Dist: loguru (>=0.5.1,<0.6.0)
+Requires-Dist: typer (>=0.3.2,<0.4.0)
+Project-URL: Repository, https://github.com/fsoubelet/toychain
+Description-Content-Type: text/markdown
+
+<h1 align="center">
+  <b>colorframe</b>
+</h1>
+
+A simple package to add a colored frame on pictures.
+
+## Install
+
+This code is compatible with `Python 3.6+`.
+Install it in your virtual enrivonment with:
+```bash
+pip install colorframe
+```
+
+## Usage
+
+With this package is installed in the activated enrivonment, it can be called through `python -m colorframe` or through a newly created `colorframe` command.
+
+Detailed usage goes as follows:
+```bash
+Usage: colorframe [OPTIONS] [PATH]
+
+  Add a colored frame on pictures, easily.
+
+Arguments:
+  [PATH]  Location, relative or absolute, to the file or directory of files to
+          add a colored border to.
+
+
+Options:
+  --vertical INTEGER    Size (width) of the whiteframe to add on the vertical
+                        image edges.  [default: 150]
+
+  --horizontal INTEGER  Size (height) of the whiteframe to add on the
+                        horizontal image edges.  [default: 150]
+
+  --color TEXT          The desired color of the added border. Should be a
+                        keyword recognized by Pillow.  [default: white]
+
+  --log-level TEXT      The base console logging level. Can be 'debug',
+                        'info', 'warning' and 'error'.  [default: info]
+
+  --install-completion  Install completion for the current shell.
+  --show-completion     Show completion for the current shell, to copy it or
+                        customize the installation.
+
+  --help                Show this message and exit.
+```
+
+The script will crawl files, add borders and export the results in a newly created `outputs` folder.
+
+You can otherwise import the high-level object from the package, and use at your convenience:
+```python
+from colorframe import BorderCreator
+
+border_api = BorderCreator(commandline_path="...", vertical_border=150, horizontal_border=100, color="blue")
+border_api.execute_target()
+```
+
+## License
+
+Copyright &copy; 2020 Felix Soubelet. [MIT License](LICENSE)
