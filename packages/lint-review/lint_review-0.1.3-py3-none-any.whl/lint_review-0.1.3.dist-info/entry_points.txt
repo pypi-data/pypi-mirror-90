@@ -1,0 +1,3 @@
+[console_scripts]
+lint_review=lint_review:main
+
