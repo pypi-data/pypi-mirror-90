@@ -1,0 +1,8 @@
+check_jsonschema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+check_jsonschema/cli.py,sha256=p6Die3aNDm6qjg1oSOjMn_sqGuXm-0jnczu8RdfhcEY,3543
+check_jsonschema-0.2.0.dist-info/LICENSE,sha256=Pl3zg6yR6SoEtjqha60yjIqeOer7fV0k4liDH4RNOcw,583
+check_jsonschema-0.2.0.dist-info/METADATA,sha256=OAk7uBNGVuyy8R99fl-wCkQnjj0IElsytv0ezJnKXjo,1911
+check_jsonschema-0.2.0.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+check_jsonschema-0.2.0.dist-info/entry_points.txt,sha256=P0oefoLIH7u9eNtearnK2nfMki_oXRXeWGO-4QH8Kh0,64
+check_jsonschema-0.2.0.dist-info/top_level.txt,sha256=9soE63E2WXBZfQX61D5EqybqDHIiupLg2bErsIzrs28,17
+check_jsonschema-0.2.0.dist-info/RECORD,,
