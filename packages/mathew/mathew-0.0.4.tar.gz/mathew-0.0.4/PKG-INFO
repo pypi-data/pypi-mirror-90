@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mathew
+Version: 0.0.4
+Summary: My personal math lib
+Home-page: https://github.com/larsvommars/mathew
+Author: LarsVomMars
+Author-email: dev@kroenner.eu
+License: MIT
+Description: # mathew [![PyPI version](https://badge.fury.io/py/mathew.svg)](https://pypi.python.org/pypi/mathew/) [![PyPI license](https://img.shields.io/pypi/l/mathew.svg)](https://pypi.python.org/pypi/mathew/)
+         
+        A collection of math function I need for several of my projects
+        
+        ## Currently supports
+        - Primes
+        - Vectorgeometry
+        - Some helper functions
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
