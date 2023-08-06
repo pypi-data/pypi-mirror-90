@@ -1,0 +1,161 @@
+Metadata-Version: 2.1
+Name: Nyahentai-API
+Version: 1.0.0
+Summary: Nyahentai Python API made using webscraping.
+Home-page: https://github.com/AlexandreSenpai/Nyahentai-API
+Author: AlexandreSenpai
+Author-email: alexandrebsramos@hotmail.com
+License: MIT
+Description: # Nyahentai API
+        A Nyahentai API made using python webscrapping
+        For update notes follow me on [Twitter](https://twitter.com/AlexandreSenpa1).
+        
+        ### Instalation
+        ```bash
+         pip install --upgrade Nyahentai-API
+         # or pip3 install --upgrade Nyahentai-API
+        ```
+        ### Library Features
+        
+        - Home page pagination,
+        - Doujin information,
+        - Random doujin,
+        - Search by id and tag,
+        - Character List
+        
+        ### Usage
+        
+        ##### Home
+        
+        ```python
+        from nyahentai import Nyahentai
+        
+        if __name__ == '__main__':
+            nyahentai = Nyahentai()
+            random_doujin: HomePage = nyahentai.get_pages(page=1)
+        ```
+        
+        the expected output is a HomePage instance:
+        ```python
+            HomePage(
+                doujins: [
+                    DoujinThumbnail(
+                        id: str, 
+                        title: str, 
+                        lang: str, 
+                        cover: str, 
+                        data_tags: List[str])], 
+                total_pages: int)
+        ```
+        
+        ##### Random
+        
+        ```python
+        from nyahentai import Nyahentai
+        
+        if __name__ == '__main__':
+            nyahentai = Nyahentai()
+            random_doujin: Doujin = nyahentai.get_random()
+        ```
+        
+        The expected output is a Doujin instance:
+        ```python
+            Doujin(
+                id: str
+                title: str
+                secondary_title: str
+                tags: List[str]
+                artists: List[str]
+                languages: List[str]
+                categories: List[str]
+                characters: List[str]
+                parodies: List[str]
+                groups: List[str]
+                images: List[str]
+                total_pages: int)
+        ```
+        
+        It's good always remember that some doujins doesnt have many properties that are listed above like artists, characters, parodies and more. This is only the default Doujin dataclass template.
+        
+        ##### Search
+        
+        ```python
+        from nyahentai import Nyahentai
+        
+        if __name__ == '__main__':
+            nyahentai = Nyahentai()
+            search_obj: SearchPage = nyahentai.search(query='naruto', sort='popular', page=1)
+            search_obj: SearchPage = nyahentai.search(query='30955', sort='popular', page=1)
+        ```
+        
+        expected output:
+        ```python
+            SearchPage(
+                query: str, 
+                sort: str, 
+                total_results: int, 
+                doujins: [
+                    DoujinThumbnail(
+                        id: str, 
+                        title: str, 
+                        lang: str, 
+                        cover: str, 
+                        data_tags: List[str])], 
+                total_pages: int)
+        ```
+        
+        ##### Doujin
+        
+        ```python
+        from nyahentai import Nyahentai
+        
+        if __name__ == '__main__':
+            nyahentai = Nyahentai()
+            doujin: Doujin = nyahentai._get_doujin(id='287167')
+        ```
+        
+        expected output:
+        ```python
+            Doujin(
+                id: str
+                title: str
+                secondary_title: str
+                tags: List[str]
+                artists: List[str]
+                languages: List[str]
+                categories: List[str]
+                characters: List[str]
+                parodies: List[str]
+                groups: List[str]
+                images: List[str]
+                total_pages: int)
+        ```
+        
+        ##### Characters
+        
+        ```python
+        from nyahentai import Nyahentai
+        
+        if __name__ == '__main__':
+            nyahentai = Nyahentai()
+            doujin: Doujin = nyahentai.get_characters(page=1)
+        ```
+        
+        expected output:
+        ```python
+            CharacterListPage(
+                            page=int,
+                            total_pages=int,
+                            characters=[
+                                CharacterLink(
+                                    section: str
+                                    title: str
+                                    url: str
+                                    total_entries: int)])
+        ```
+Keywords: nyahentai hentai AlexandreSenpai
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

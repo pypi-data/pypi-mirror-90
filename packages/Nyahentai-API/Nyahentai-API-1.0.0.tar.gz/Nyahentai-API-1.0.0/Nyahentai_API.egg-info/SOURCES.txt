@@ -1,0 +1,13 @@
+README.md
+setup.py
+Nyahentai_API.egg-info/PKG-INFO
+Nyahentai_API.egg-info/SOURCES.txt
+Nyahentai_API.egg-info/dependency_links.txt
+Nyahentai_API.egg-info/not-zip-safe
+Nyahentai_API.egg-info/requires.txt
+Nyahentai_API.egg-info/top_level.txt
+nyahentai/__init__.py
+nyahentai/entities/__init__.py
+nyahentai/entities/doujin.py
+nyahentai/entities/links.py
+nyahentai/entities/page.py
