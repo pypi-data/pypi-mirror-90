@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: opemipo
+Version: 0.0.1
+Summary: this package shows the greater or less number
+Home-page: https://github.com/kelvinace1/opemipo
+Author: Salami Samad
+License: UNKNOWN
+Download-URL: https://github.com/kelvinace1/opemipo/archive/v_01.tar.gz
+Description: This package shows the greater or less number of number specified
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
