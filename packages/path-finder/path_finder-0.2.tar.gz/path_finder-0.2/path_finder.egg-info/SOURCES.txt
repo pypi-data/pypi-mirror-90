@@ -1,0 +1,10 @@
+README.md
+__init__.py
+setup.cfg
+setup.py
+./__init__.py
+path_finder.egg-info/PKG-INFO
+path_finder.egg-info/SOURCES.txt
+path_finder.egg-info/dependency_links.txt
+path_finder.egg-info/requires.txt
+path_finder.egg-info/top_level.txt
