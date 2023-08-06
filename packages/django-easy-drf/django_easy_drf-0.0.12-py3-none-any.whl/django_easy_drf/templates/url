@@ -1,0 +1,1 @@
+router.register(r'{model_class_name_snake}', {model_class_name}ViewSet, basename='{model_class_name_snake}')

@@ -1,0 +1,3 @@
+from creator import create_serializers_and_views
+
+create_serializers_and_views()
