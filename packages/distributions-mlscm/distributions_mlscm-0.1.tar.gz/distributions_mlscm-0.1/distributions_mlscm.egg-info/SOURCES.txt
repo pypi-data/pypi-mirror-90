@@ -1,0 +1,10 @@
+setup.py
+distributions_mlscm/Binomialdistribution.py
+distributions_mlscm/Gaussiandistribution.py
+distributions_mlscm/Generaldistribution.py
+distributions_mlscm/__init__.py
+distributions_mlscm.egg-info/PKG-INFO
+distributions_mlscm.egg-info/SOURCES.txt
+distributions_mlscm.egg-info/dependency_links.txt
+distributions_mlscm.egg-info/not-zip-safe
+distributions_mlscm.egg-info/top_level.txt
