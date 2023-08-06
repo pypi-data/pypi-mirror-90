@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: create-pyproj
+Version: 0.1.4
+Summary: An easy way to start a new python project
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyfiglet (>=0.8.post1)
+Requires-Dist: PyYAML (>=5.3.1)
+Requires-Dist: pipenv (>=2018.11.26)
+
+UNKNOWN
+
+
