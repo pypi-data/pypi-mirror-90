@@ -1,0 +1,526 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Player &mdash; NHL API Wrapper  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Team" href="team.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> NHL API Wrapper
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="conference.html">Conference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="division.html">Division</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schedule.html">Schedule</a></li>
+<li class="toctree-l1"><a class="reference internal" href="game.html">Game</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Team</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Player</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#player-info">Player Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#season-stats">Season Stats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#goals-by-game-situation">Goals By Game Situation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#win-loss-record">Win Loss Record</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#home-away-stats">Home Away Stats</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stats-split-by-month">Stats Split By Month</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stats-split-by-day-of-week">Stats Split By Day of Week</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stats-split-by-division">Stats Split By Division</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stats-split-by-conference">Stats Split By Conference</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stats-split-by-team">Stats Split By Team</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stats-split-by-game">Stats Split By Game</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stats-standings">Stats Standings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#stats-on-pace-for">Stats on Pace For</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">NHL API Wrapper</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Player</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/player.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="player">
+<h1>Player<a class="headerlink" href="#player" title="Permalink to this headline">¶</a></h1>
+<p>This is the motherload. All player stats and information available from the NHL API.
+<em>Note: You need a player id to instantiate this class</em></p>
+<p>This class has 13 methods.</p>
+<div class="section" id="player-info">
+<h2>Player Info<a class="headerlink" href="#player-info" title="Permalink to this headline">¶</a></h2>
+<p>Get player information.</p>
+<p><strong>Usage</strong></p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">easy_nhl</span> <span class="kn">import</span> <span class="n">Team</span><span class="p">,</span> <span class="n">Player</span>
+
+<span class="c1"># We can use the team roster to get a player id.</span>
+<span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">Team</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">roster</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;fullName&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Jack Eichel&#39;</span><span class="p">:</span>
+        <span class="n">eichel_id</span> <span class="o">=</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+
+<span class="c1"># Now we can get Jack&#39;s info</span>
+<span class="n">eichel</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="n">eichel_id</span><span class="p">)</span>
+<span class="n">eichel_info</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">player_info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="season-stats">
+<h2>Season Stats<a class="headerlink" href="#season-stats" title="Permalink to this headline">¶</a></h2>
+<p>Get a player’s stats from the provided season.</p>
+<p>You can provide a season to search for this method, but it must be passed as ‘20192020’ for any given season.</p>
+<p><strong>Usage</strong></p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">easy_nhl</span> <span class="kn">import</span> <span class="n">Team</span><span class="p">,</span> <span class="n">Player</span>
+
+<span class="c1"># We can use the team roster to get a player id.</span>
+<span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">Team</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">roster</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;fullName&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Jack Eichel&#39;</span><span class="p">:</span>
+        <span class="n">eichel_id</span> <span class="o">=</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+
+<span class="c1"># Now we can get Jack&#39;s season stats</span>
+<span class="n">eichel</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="n">eichel_id</span><span class="p">)</span>
+<span class="n">eichel_current_season</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">season_stats</span><span class="p">()</span>
+
+<span class="c1"># Or we can check previous season_stats</span>
+<span class="n">eichel_rookie_stats</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">season_stats</span><span class="p">(</span><span class="s1">&#39;20152016&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="goals-by-game-situation">
+<h2>Goals By Game Situation<a class="headerlink" href="#goals-by-game-situation" title="Permalink to this headline">¶</a></h2>
+<p>Get goals of a given player with details of the game situation in which they were scored.</p>
+<p>You can provide a season to search for this method, but it must be passed as ‘20192020’ for any given season.</p>
+<p><strong>Usage</strong></p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">easy_nhl</span> <span class="kn">import</span> <span class="n">Team</span><span class="p">,</span> <span class="n">Player</span>
+
+<span class="c1"># We can use the team roster to get a player id.</span>
+<span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">Team</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">roster</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;fullName&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Jack Eichel&#39;</span><span class="p">:</span>
+        <span class="n">eichel_id</span> <span class="o">=</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+
+<span class="c1"># Now we can get Jack&#39;s goals by game situation</span>
+<span class="n">eichel</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="n">eichel_id</span><span class="p">)</span>
+<span class="n">eichel_current_gbgs</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">goals_by_game_situation</span><span class="p">()</span>
+
+<span class="c1"># Or we can check previous season gbgs</span>
+<span class="n">eichel_rookie_gbgs</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">goals_by_game_situation</span><span class="p">(</span><span class="s1">&#39;20152016&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="win-loss-record">
+<h2>Win Loss Record<a class="headerlink" href="#win-loss-record" title="Permalink to this headline">¶</a></h2>
+<p>Get a goalies win loss record for a current season</p>
+<p>You can provide a season to search for this method, but it must be passed as ‘20192020’ for any given season.</p>
+<p><strong>Usage</strong></p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">easy_nhl</span> <span class="kn">import</span> <span class="n">Team</span><span class="p">,</span> <span class="n">Player</span>
+
+<span class="c1"># We can use the team roster to get a player id.</span>
+<span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">Team</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">roster</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;fullName&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Linus Ullmark&#39;</span><span class="p">:</span>
+        <span class="n">ullmark_id</span> <span class="o">=</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+
+<span class="c1"># Now we can get Ullmark&#39;s win/loss record</span>
+<span class="n">ullmark</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="n">ullmark_id</span><span class="p">)</span>
+<span class="n">ullmark_win_loss</span> <span class="o">=</span> <span class="n">ullmark</span><span class="o">.</span><span class="n">win_loss_record</span><span class="p">()</span>
+
+<span class="c1"># Or we can check previous season gbgs</span>
+<span class="n">ullmark_win_loss_last</span> <span class="o">=</span> <span class="n">ullmark</span><span class="o">.</span><span class="n">win_loss_record</span><span class="p">(</span><span class="s1">&#39;20192020&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="home-away-stats">
+<h2>Home Away Stats<a class="headerlink" href="#home-away-stats" title="Permalink to this headline">¶</a></h2>
+<p>Get a players stats broken up by home and away games.</p>
+<p>You can provide a season to search for this method, but it must be passed as ‘20192020’ for any given season.</p>
+<p><strong>Usage</strong></p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">easy_nhl</span> <span class="kn">import</span> <span class="n">Team</span><span class="p">,</span> <span class="n">Player</span>
+
+<span class="c1"># We can use the team roster to get a player id.</span>
+<span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">Team</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">roster</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;fullName&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Jack Eichel&#39;</span><span class="p">:</span>
+        <span class="n">eichel_id</span> <span class="o">=</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+
+<span class="c1"># Now we can get Jack&#39;s stats by home away</span>
+<span class="n">eichel</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="n">eichel_id</span><span class="p">)</span>
+<span class="n">eichel_current_has</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">home_away_stats</span><span class="p">()</span>
+
+<span class="c1"># Or we can check previous season home away</span>
+<span class="n">eichel_rookie_has</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">home_away_stats</span><span class="p">(</span><span class="s1">&#39;20152016&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="stats-split-by-month">
+<h2>Stats Split By Month<a class="headerlink" href="#stats-split-by-month" title="Permalink to this headline">¶</a></h2>
+<p>Get a players stats broken up by month.</p>
+<p>You can provide a season to search for this method, but it must be passed as ‘20192020’ for any given season.</p>
+<p><strong>Usage</strong></p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">easy_nhl</span> <span class="kn">import</span> <span class="n">Team</span><span class="p">,</span> <span class="n">Player</span>
+
+<span class="c1"># We can use the team roster to get a player id.</span>
+<span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">Team</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">roster</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;fullName&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Jack Eichel&#39;</span><span class="p">:</span>
+        <span class="n">eichel_id</span> <span class="o">=</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+
+<span class="c1"># Now we can get Jack&#39;s stats split by month</span>
+<span class="n">eichel</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="n">eichel_id</span><span class="p">)</span>
+<span class="n">eichel_current_month_split</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">stats_split_by_month</span><span class="p">()</span>
+
+<span class="c1"># Or we can check previous season split by month</span>
+<span class="n">eichel_rookie_month_split</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">stats_split_by_month</span><span class="p">(</span><span class="s1">&#39;20152016&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="stats-split-by-day-of-week">
+<h2>Stats Split By Day of Week<a class="headerlink" href="#stats-split-by-day-of-week" title="Permalink to this headline">¶</a></h2>
+<p>Get a players stats broken up by day of week.</p>
+<p>You can provide a season to search for this method, but it must be passed as ‘20192020’ for any given season.</p>
+<p><strong>Usage</strong></p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">easy_nhl</span> <span class="kn">import</span> <span class="n">Team</span><span class="p">,</span> <span class="n">Player</span>
+
+<span class="c1"># We can use the team roster to get a player id.</span>
+<span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">Team</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">roster</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;fullName&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Jack Eichel&#39;</span><span class="p">:</span>
+        <span class="n">eichel_id</span> <span class="o">=</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+
+<span class="c1"># Now we can get Jack&#39;s stats split by day of week</span>
+<span class="n">eichel</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="n">eichel_id</span><span class="p">)</span>
+<span class="n">eichel_current_dow_split</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">stats_split_by_day_of_week</span><span class="p">()</span>
+
+<span class="c1"># Or we can check previous season split by day of week</span>
+<span class="n">eichel_rookie_daw_split</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">stats_split_by_day_of_week</span><span class="p">(</span><span class="s1">&#39;20152016&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="stats-split-by-division">
+<h2>Stats Split By Division<a class="headerlink" href="#stats-split-by-division" title="Permalink to this headline">¶</a></h2>
+<p>Get a players stats broken up by Division.</p>
+<p>You can provide a season to search for this method, but it must be passed as ‘20192020’ for any given season.</p>
+<p><strong>Usage</strong></p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">easy_nhl</span> <span class="kn">import</span> <span class="n">Team</span><span class="p">,</span> <span class="n">Player</span>
+
+<span class="c1"># We can use the team roster to get a player id.</span>
+<span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">Team</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">roster</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;fullName&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Jack Eichel&#39;</span><span class="p">:</span>
+        <span class="n">eichel_id</span> <span class="o">=</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+
+<span class="c1"># Now we can get Jack&#39;s stats split by division</span>
+<span class="n">eichel</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="n">eichel_id</span><span class="p">)</span>
+<span class="n">eichel_current_division_split</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">stats_split_by_division</span><span class="p">()</span>
+
+<span class="c1"># Or we can check previous season split by division</span>
+<span class="n">eichel_rookie_division_split</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">stats_split_by_division</span><span class="p">(</span><span class="s1">&#39;20152016&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="stats-split-by-conference">
+<h2>Stats Split By Conference<a class="headerlink" href="#stats-split-by-conference" title="Permalink to this headline">¶</a></h2>
+<p>Get a players stats broken up by Conference.</p>
+<p>You can provide a season to search for this method, but it must be passed as ‘20192020’ for any given season.</p>
+<p><strong>Usage</strong></p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">easy_nhl</span> <span class="kn">import</span> <span class="n">Team</span><span class="p">,</span> <span class="n">Player</span>
+
+<span class="c1"># We can use the team roster to get a player id.</span>
+<span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">Team</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">roster</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;fullName&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Jack Eichel&#39;</span><span class="p">:</span>
+        <span class="n">eichel_id</span> <span class="o">=</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+
+<span class="c1"># Now we can get Jack&#39;s stats split by conference</span>
+<span class="n">eichel</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="n">eichel_id</span><span class="p">)</span>
+<span class="n">eichel_current_conference_split</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">stats_split_by_conference</span><span class="p">()</span>
+
+<span class="c1"># Or we can check previous season split by conference</span>
+<span class="n">eichel_rookie_conference_split</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">stats_split_by_conference</span><span class="p">(</span><span class="s1">&#39;20152016&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="stats-split-by-team">
+<h2>Stats Split By Team<a class="headerlink" href="#stats-split-by-team" title="Permalink to this headline">¶</a></h2>
+<p>Get a players stats broken up by Team.</p>
+<p>You can provide a season to search for this method, but it must be passed as ‘20192020’ for any given season.</p>
+<p><strong>Usage</strong></p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">easy_nhl</span> <span class="kn">import</span> <span class="n">Team</span><span class="p">,</span> <span class="n">Player</span>
+
+<span class="c1"># We can use the team roster to get a player id.</span>
+<span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">Team</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">roster</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;fullName&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Jack Eichel&#39;</span><span class="p">:</span>
+        <span class="n">eichel_id</span> <span class="o">=</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+
+<span class="c1"># Now we can get Jack&#39;s stats split by team</span>
+<span class="n">eichel</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="n">eichel_id</span><span class="p">)</span>
+<span class="n">eichel_current_team_split</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">stats_split_by_team</span><span class="p">()</span>
+
+<span class="c1"># Or we can check previous season split by team</span>
+<span class="n">eichel_rookie_team_split</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">stats_split_by_team</span><span class="p">(</span><span class="s1">&#39;20152016&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="stats-split-by-game">
+<h2>Stats Split By Game<a class="headerlink" href="#stats-split-by-game" title="Permalink to this headline">¶</a></h2>
+<p>Get a players stats broken up by Game.</p>
+<p>You can provide a season to search for this method, but it must be passed as ‘20192020’ for any given season.</p>
+<p><strong>Usage</strong></p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">easy_nhl</span> <span class="kn">import</span> <span class="n">Team</span><span class="p">,</span> <span class="n">Player</span>
+
+<span class="c1"># We can use the team roster to get a player id.</span>
+<span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">Team</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">roster</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;fullName&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Jack Eichel&#39;</span><span class="p">:</span>
+        <span class="n">eichel_id</span> <span class="o">=</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+
+<span class="c1"># Now we can get Jack&#39;s stats split by game</span>
+<span class="n">eichel</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="n">eichel_id</span><span class="p">)</span>
+<span class="n">eichel_current_game_split</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">stats_split_by_game</span><span class="p">()</span>
+
+<span class="c1"># Or we can check previous season split by game</span>
+<span class="n">eichel_rookie_game_split</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">stats_split_by_game</span><span class="p">(</span><span class="s1">&#39;20152016&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="stats-standings">
+<h2>Stats Standings<a class="headerlink" href="#stats-standings" title="Permalink to this headline">¶</a></h2>
+<p>Get a players stats standings.</p>
+<p>You can provide a season to search for this method, but it must be passed as ‘20192020’ for any given season.</p>
+<p><strong>Usage</strong></p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">easy_nhl</span> <span class="kn">import</span> <span class="n">Team</span><span class="p">,</span> <span class="n">Player</span>
+
+<span class="c1"># We can use the team roster to get a player id.</span>
+<span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">Team</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">roster</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;fullName&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Jack Eichel&#39;</span><span class="p">:</span>
+        <span class="n">eichel_id</span> <span class="o">=</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+
+<span class="c1"># Now we can get Jack&#39;s stats standings</span>
+<span class="n">eichel</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="n">eichel_id</span><span class="p">)</span>
+<span class="n">eichel_current_standings</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">stats_standings</span><span class="p">()</span>
+
+<span class="c1"># Or we can check previous season stats standings</span>
+<span class="n">eichel_rookie_standings</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">stats_standings</span><span class="p">(</span><span class="s1">&#39;20152016&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="stats-on-pace-for">
+<h2>Stats on Pace For<a class="headerlink" href="#stats-on-pace-for" title="Permalink to this headline">¶</a></h2>
+<p>Get a players projected stats. Only works for current season.</p>
+<p><strong>Usage</strong></p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">easy_nhl</span> <span class="kn">import</span> <span class="n">Team</span><span class="p">,</span> <span class="n">Player</span>
+
+<span class="c1"># We can use the team roster to get a player id.</span>
+<span class="k">for</span> <span class="n">player</span> <span class="ow">in</span> <span class="n">Team</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span><span class="o">.</span><span class="n">roster</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;fullName&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Jack Eichel&#39;</span><span class="p">:</span>
+        <span class="n">eichel_id</span> <span class="o">=</span> <span class="n">player</span><span class="p">[</span><span class="s1">&#39;person&#39;</span><span class="p">][</span><span class="s1">&#39;id&#39;</span><span class="p">]</span>
+
+<span class="c1"># Now we can get Jack&#39;s pace</span>
+<span class="n">eichel</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="n">eichel_id</span><span class="p">)</span>
+<span class="n">eichel_pace</span> <span class="o">=</span> <span class="n">eichel</span><span class="o">.</span><span class="n">stats_on_pace_for</span><span class="p">()</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="team.html" class="btn btn-neutral float-left" title="Team" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Justin Branco
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
