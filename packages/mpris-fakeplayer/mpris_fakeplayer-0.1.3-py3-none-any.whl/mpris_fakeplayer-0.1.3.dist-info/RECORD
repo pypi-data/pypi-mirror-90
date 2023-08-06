@@ -1,0 +1,13 @@
+mpris_fakeplayer/__init__.py,sha256=0zbyOJ2kRcNsMt0fUS_17YJ3H2ytIhvZUjc_uAxJtc4,486
+mpris_fakeplayer/installer.py,sha256=q9J9lhhQ6j5cTIrARddKxaTNecRd180tYlKg7JMrPCQ,525
+mpris_fakeplayer/logger.py,sha256=SDuOJJSyoCom5rnFFDtyIWavKo9vLWrfcUmDbKSMJ3A,1852
+mpris_fakeplayer/media_player2_interface.py,sha256=C6AfjFi1jnpDaYSV_krs6znUPOveGzuabJ_hQPnDwRU,1178
+mpris_fakeplayer/media_player2_player_interface.py,sha256=A8Ibd6kmrNVVp6ruTLGH4TBXtMgCYkjTrncTUXim2n8,2965
+mpris_fakeplayer/mpris_fakeplayer.py,sha256=yuF_sL0PlnWtprx8wBIaGqfz5ZBBPmHKRU8Q7Bhc2CY,1061
+mpris_fakeplayer/resources/mpris-fakeplayer.service,sha256=dF6pGfV4FtG9rSaEoppgk8RlooyB2Ndw-w_lFoh-wZo,219
+mpris_fakeplayer-0.1.3.dist-info/LICENSE,sha256=7nmlfdjyzPJ5i-COllDikV1ol-JqTjCttpUrjIvOJ9o,1057
+mpris_fakeplayer-0.1.3.dist-info/METADATA,sha256=OZfhWQaZvvVIveVa1R5AE1-4i0QiJ7Bqq9g7TJieHS4,1438
+mpris_fakeplayer-0.1.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mpris_fakeplayer-0.1.3.dist-info/entry_points.txt,sha256=BEEzuKcWfBbHBGBnqWf4FkNhBDuVbcMO-lrQYEnL7vo,60
+mpris_fakeplayer-0.1.3.dist-info/top_level.txt,sha256=iRzmJ6BABVfCP1WbnUhnGiKx6WJc5aoSgeE25kwdpew,17
+mpris_fakeplayer-0.1.3.dist-info/RECORD,,
