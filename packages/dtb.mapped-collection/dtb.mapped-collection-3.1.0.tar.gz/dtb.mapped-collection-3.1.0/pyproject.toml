@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dtb.mapped-collection"
+version = "3.1.0"
+description = ""
+authors = ["Dima Doroshev <dima@doroshev.com>"]
+license = "MIT"
+packages = [
+    { include = "dtb" },
+]
+include = [
+    "*.pyi",
+    "py.typed",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.dev-dependencies]
+"dtb.dev" = {extras = ["devtools"], version = "^1.0.1"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
