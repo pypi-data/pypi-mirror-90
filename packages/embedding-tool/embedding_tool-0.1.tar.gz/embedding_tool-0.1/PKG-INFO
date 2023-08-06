@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: embedding_tool
+Version: 0.1
+Summary: An embedding toolkit that can perform multiple embedding process which are low-dimensional embedding (dimension reduction), categorical variable embedding, and financial time-series embedding.
+Home-page: https://github.com/thisisphume/embedding_tool/tree/master/
+Author: Phume Ngampornsukswadi
+Author-email: thisisphume@gmail.com
+License: Apache Software License 2.0
+Description: # Dimension Reduction
+        > The function performs dimensionality reduction, pre-processing the data and comparing the reconstruction error via PCA and autoencoder.
+        
+        
+        ## Install
+        
+        `pip install embedding-tools`
+        
+        ## How to use
+        
+        ```python
+        from short_text_analyzer.core import *
+        ```
+        
+        **Input data:**
+        The input matrix has a size of 863 $\times$ 768.
+        
+        ```python
+        print ("Data's size: ", testing_data.shape)
+        print ("Dimension:   ", testing_data.shape[1])
+        ```
+        
+            Data's size:  (863, 768)
+            Dimension:    768
+            
+        
+        **Performing dimension reduction:** we will reduce the number of dimension from 768 to 2. 
+        
+        ```python
+        dim_reducer = dimensionReducer(analyzer.embeddingRaw, 2, 0.002)
+        dim_reducer.fit()
+        ```
+        
+        
+            ---------------------------------------------------------------------------
+        
+            NameError                                 Traceback (most recent call last)
+        
+            <ipython-input-5-6ee2cf251bab> in <module>
+            ----> 1 dim_reducer = dimensionReducer(analyzer.embeddingRaw, 2, 0.002)
+                  2 dim_reducer.fit()
+            
+        
+            NameError: name 'dimensionReducer' is not defined
+        
+        
+        **Calculating the MSE of the reconstructed vectors**
+        
+        ```python
+        dim_reducer.rmse_result
+        ```
+        
+Keywords: autoencoder PCA embedding
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
