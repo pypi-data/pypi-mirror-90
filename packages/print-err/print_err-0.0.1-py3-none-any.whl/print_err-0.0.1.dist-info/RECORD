@@ -1,0 +1,11 @@
+print_err/__init__.py,sha256=uQdPx8wsXJlI2MiucYXbLCFzf30MjZBQ0-XgpHwgimk,56
+print_err/__main__.py,sha256=UQYqAntTALRoycNMGZ2Q097G8BcNZXKzEGhV2mcS9fw,225
+print_err/print_err.py,sha256=tICqXx-xk38-0l95Uw2bmkISgCenqXfPCuGhtAO2XKw,260
+print_err/version.py,sha256=GeQJ6v6kIYu04StiMqGXv1ELJiVrS0wVU6vXpIBTRTo,120
+tests/test_print_err.py,sha256=-lMfq2NV4qLrEF-DX7z-qjBE27CkEqgpKwfgPPLgrRY,798
+print_err-0.0.1.dist-info/LICENSE,sha256=U8uEVjabPIICGRTUJ4l903N1cmMhnbF3w7MbqQGQ7vA,1076
+print_err-0.0.1.dist-info/METADATA,sha256=OuSHSEUe5_MgggruX7jRBJ-Ndfh4HDE8gvLlVMx7FDA,720
+print_err-0.0.1.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+print_err-0.0.1.dist-info/entry_points.txt,sha256=_0mR2dtb7Ks3jt28TnMl5jpJNdGWaf9Gpbvz5omWM-0,55
+print_err-0.0.1.dist-info/top_level.txt,sha256=gpGEgjKXA62KfECse8Q1bt3-QfQYTUopq79p87l9WdM,16
+print_err-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+print_err = print_err.__main__:main
+
