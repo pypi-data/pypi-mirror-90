@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: discogui
+Version: 0.3
+Summary: GUI discovery
+Home-page: https://github.com/ponty/discogui
+Author: ponty
+License: BSD
+Description: Experimental Python library for discovering GUI elements.
+        
+        Documentation: https://github.com/ponty/discogui/tree/0.3
+Keywords: GUI
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/x-rst

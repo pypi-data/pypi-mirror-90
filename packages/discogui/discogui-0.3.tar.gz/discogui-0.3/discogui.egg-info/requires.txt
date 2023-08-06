@@ -1,0 +1,5 @@
+PyScreenshot
+PyUserInput
+easyprocess
+pillow
+pyvirtualdisplay
