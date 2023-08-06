@@ -1,0 +1,8 @@
+README.md
+setup.py
+fastapidi.egg-info/PKG-INFO
+fastapidi.egg-info/SOURCES.txt
+fastapidi.egg-info/dependency_links.txt
+fastapidi.egg-info/not-zip-safe
+fastapidi.egg-info/requires.txt
+fastapidi.egg-info/top_level.txt
