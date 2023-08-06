@@ -1,0 +1,3 @@
+[console_scripts]
+bobros=bobros.main:entry_point
+
