@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: VPi
+Version: 0.1.0
+Summary: Virtual Pi Library for Raspberry Pi
+Home-page: https://github.com/codenio/
+Author: Aananth K
+Author-email: aananthraj1995@gmail.com
+License: GPL-3.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+
+# Virtual Pi
+
+The easiest way to use this package is to install using pip3 for python 3
+
+```bash
+$ sudo pip3 install virtual-pi
+```
+
+To use the mock or virtual pi just type the following at the beginning of your script.
+
+```python
+try:
+      from RPi.GPIO import GPIO
+      import board
+      import busio
+except:
+      from VPi.GPIO import GPIO
+      import VPi.board as board
+      import VPi.busio as busio
+```
+
+## Works with
+
+- [python 3.6.8](https://www.python.org/downloads/release/3.6.8)
+
+
+

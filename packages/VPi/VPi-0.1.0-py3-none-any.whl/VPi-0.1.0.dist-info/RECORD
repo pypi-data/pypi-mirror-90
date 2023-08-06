@@ -1,0 +1,16 @@
+VPi/GPIO.py,sha256=lWe4a4L2NnERI-Ws44gnl6rq0tgBMmbBxfJ5lhpOVg4,7645
+VPi/__init__.py,sha256=L6zbQIZKsAP-Knhm6fBcQFPoVdIDuejxze60qX23jiw,21
+VPi/adafruit_mcp4725.py,sha256=OXg0d48x1T0NKF0SlKmsR6m26uGtNeduX4xNwqBER3s,5203
+VPi/board.py,sha256=0AVzfEdKU9LaKPk8vhc58J3-roPxXyMVyBzRwMVf5E0,658
+VPi/busio.py,sha256=omevAyHOM5RNFK2YUAn5eKXVWOkxHwTa9qTjq3JI56s,145
+raspberrypi/__init__.py,sha256=wmqrn9Iun8B6FkaS1I_QGoDvb77k4rhbx1yay-AEY0U,42
+raspberrypi/pin.py,sha256=CF48FVuCuDx2AHlLEk9-qLJnJg2JVGb7gXhMBYCv4js,3170
+raspberrypi/raspi_1b_rev1.py,sha256=6i62WsNoQnoz6gKWJcpznO1s4J0H0kAj12tDPI6J3-M,516
+raspberrypi/raspi_1b_rev2.py,sha256=IG4VIazFWi5Rlta4CvZm1wJNxMKRA7Lo6fl8icgiZ5k,516
+raspberrypi/raspi_40pin.py,sha256=vGr0ugiqchXqNRlC2mFuDNfnOqzyGP2rJEUy78Dfv0E,725
+raspberrypi/raspi_cm.py,sha256=pk0I9-1PPuFHvC-6xiT-RSUJRQUn9T5vST69AVtW-uI,1021
+VPi-0.1.0.dist-info/LICENSE,sha256=XR5CeYYpjCsdUvPNCH2a-GEuPrs8t9nXaFlPVc0kgbw,1517
+VPi-0.1.0.dist-info/METADATA,sha256=BZ8JsgsGpBz3x4urtpbwLXZWaqE45e0xany1LKqXLvs,763
+VPi-0.1.0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+VPi-0.1.0.dist-info/top_level.txt,sha256=2licDbIafGvBorM0nJ4uaAwk0PAOHd8YaEwJ6p4JrHg,16
+VPi-0.1.0.dist-info/RECORD,,
