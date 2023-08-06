@@ -1,0 +1,9 @@
+flespi_gateway/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flespi_gateway/device.py,sha256=xBg-DMk2Yo6wEfTMiLgtDEgUu0Q34IPR6Lae6LhjJLY,3798
+flespi_gateway/gateway.py,sha256=z-4Vo26TrRuMHuI32x2UKFFbk5X4Po9zOfEhf9WhGf4,6678
+flespi_gateway/utils.py,sha256=u3kgBu3rXZCuNcpcmERwBCRix0v-S4ZieNTzz2z9hBw,1192
+flespi_gateway-0.0.5.dist-info/LICENSE,sha256=84rfRi5Mm2l9-OHE-C92oPjeTVnvsGAYrvylN-fctAs,1515
+flespi_gateway-0.0.5.dist-info/METADATA,sha256=AY8PjF3g3hgZN08DK13-PtJ-tDTRaSYaxqOdT0fAT5k,1468
+flespi_gateway-0.0.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+flespi_gateway-0.0.5.dist-info/top_level.txt,sha256=zjXA4_bTHjRWphqAsnIebHTLOkRHgdGI5tlPslNSL7M,15
+flespi_gateway-0.0.5.dist-info/RECORD,,
