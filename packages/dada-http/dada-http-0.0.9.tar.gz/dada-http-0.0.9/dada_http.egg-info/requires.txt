@@ -1,0 +1,2 @@
+requests>=2.25.1
+dada-utils>=0.0.2
