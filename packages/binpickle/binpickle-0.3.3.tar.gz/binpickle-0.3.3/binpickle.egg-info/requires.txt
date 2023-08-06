@@ -1,0 +1,25 @@
+msgpack>=1.0
+
+[:python_version < "3.8"]
+pickle5
+
+[blosc]
+blosc
+
+[dev]
+flake8
+rstcheck
+twine
+
+[doc]
+sphinx
+
+[numcodecs]
+numcodecs
+
+[test]
+pytest
+pytest-cov
+hypothesis
+pandas>=1.0
+numpy>=1.17
