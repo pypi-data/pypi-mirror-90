@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: python-utils-forsythetony
+Version: 0.0.6
+Summary: A package of common utilities (vague I know...)
+Home-page: https://github.com/forsythetony/python-utilities
+Author: Anthony Forsythe
+Author-email: forsythetony+python@gmail.com
+License: UNKNOWN
+Description: # Python Utils
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
