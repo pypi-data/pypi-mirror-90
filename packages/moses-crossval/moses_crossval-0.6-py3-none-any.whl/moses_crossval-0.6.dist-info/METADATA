@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: moses-crossval
+Version: 0.6
+Summary: A tool to run cross-validation using moses
+Home-page: https://github.com/Habus/moses-crossval
+Author: Abdulrahman Semrie
+Author-email: hsamireh@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: lark-parser
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: mlxtend
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: jsonpickle
+Requires-Dist: pyyaml
+
+**MOSES Cross Validation**
+
+This package can be used to make cross-validation runs using [moses](https://github.com/opencog/moses)
+
