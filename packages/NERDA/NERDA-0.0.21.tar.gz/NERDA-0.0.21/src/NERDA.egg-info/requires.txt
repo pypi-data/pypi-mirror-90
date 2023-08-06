@@ -1,0 +1,8 @@
+torch
+transformers==3.5.1
+sklearn
+nltk
+pandas
+pyconll
+pickle_mixin
+boto3
