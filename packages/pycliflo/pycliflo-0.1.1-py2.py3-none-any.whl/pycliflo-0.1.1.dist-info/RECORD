@@ -1,0 +1,12 @@
+pycliflo/__init__.py,sha256=bqtn_WZ-DP6GDHlbCR4lRQIXNoagiG-8YXWTSbhJzI4,34
+pycliflo/core.py,sha256=Z2An3BbeQC1CzrUEqgeTeGOlJiJ74Icl0VyNJPDB8_s,17869
+pycliflo/datasets_mapping.py,sha256=cnpFmeMu9AsE--jq6BYRDfPgd5BIUk27iH7JePowQD4,5922
+pycliflo/data/adjectives.txt,sha256=mnvZ3bMsybdDod1g7wRaYp8d5pvlLoqAoGmpiwThtU0,998
+pycliflo/data/nouns.txt,sha256=OfUHb1Gk15hXyeX1xuZxfvbptamyM4ukoPK1bI129pE,1013
+pycliflo/tests/__init__.py,sha256=38pdDhEZk2RiT5kga2DPbhTYeDHdsCXNaEr7HH1-k20,208
+pycliflo/tests/test_Cliflo.py,sha256=Cey3HP3-HlVpdTa4qPzMd3s_tfqo0jJrbSikFZZiJnU,1024
+pycliflo-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pycliflo-0.1.1.dist-info/METADATA,sha256=Rww4bmG6StD9HgPbAHnAIs3fHxFgOETJ_200DAGBm-Y,856
+pycliflo-0.1.1.dist-info/WHEEL,sha256=ADKeyaGyKF5DwBNE0sRE5pvW-bSkFMJfBuhzZ3rceP4,110
+pycliflo-0.1.1.dist-info/top_level.txt,sha256=CSR_GvKr4DSANTA_hTdXgFb4idvCzPw1APcJgqcxQc8,9
+pycliflo-0.1.1.dist-info/RECORD,,
