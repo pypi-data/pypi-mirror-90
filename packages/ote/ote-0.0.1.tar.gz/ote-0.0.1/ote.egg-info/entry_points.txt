@@ -1,0 +1,3 @@
+[console_scripts]
+ote = ote.__main__:main
+

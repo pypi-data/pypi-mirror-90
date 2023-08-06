@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: ote
+Version: 0.0.1
+Summary: CLI application to generate emails and fetch OTPs
+Home-page: https://github.com/s0md3v/ote
+Author: Somdev Sangwan
+Author-email: s0md3v@gmail.com
+Maintainer: Somdev Sangwan
+Maintainer-email: s0md3v@gmail.com
+License: GNU General Public License v3 or later (GPLv3+)
+Download-URL: https://github.com/s0md3v/ote/releases
+Description: Docs: https://github.com/s0md3v/otp
+        
+        
+Keywords: otp,email
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
