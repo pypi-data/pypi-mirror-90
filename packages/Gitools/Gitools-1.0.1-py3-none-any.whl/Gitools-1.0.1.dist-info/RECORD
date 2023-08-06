@@ -1,0 +1,11 @@
+gitools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitools/__main__.py,sha256=4DyIaNppavBuw2Qas4ZBwzlvDuxZ5CpPnh8qa1dQq7A,2211
+gitools/getChar.py,sha256=YTe23lmTjmwJrgm_9DAGBJfEbjoaLbP883FoPY4d_Bk,1077
+gitools/gitools.py,sha256=6Rx68Og96FJ3YOxuj9RIgiQu2f7zqbS6hQ71lWIx9Bk,4742
+gitools/utils.py,sha256=5LDpfuvn9cRnSdhId2GaeAATxVZcojflNO5Fznz3qiI,1692
+Gitools-1.0.1.dist-info/LICENSE,sha256=VsEU9lbqK0OH0JELZ20c1QBbLAnF7jSZnuFnft0E0YE,1089
+Gitools-1.0.1.dist-info/METADATA,sha256=qyYU-66Zo7nWqhi7M1chZrlbHxTURYRoP1uDxtfOF80,422
+Gitools-1.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Gitools-1.0.1.dist-info/entry_points.txt,sha256=gv85wwVjHI3XZyjaIm1imIJbq35kPZ8icjklnHiW45g,69
+Gitools-1.0.1.dist-info/top_level.txt,sha256=hKPz68keB67_DnyaTP3h2Mpwih7hbThwGtewEDD6LyE,8
+Gitools-1.0.1.dist-info/RECORD,,
