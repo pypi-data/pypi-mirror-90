@@ -1,0 +1,6 @@
+elasticsearch
+deepmerge
+
+[tests]
+requests-mock
+oarepo[tests]
