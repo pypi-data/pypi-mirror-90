@@ -1,0 +1,12 @@
+shapecheck/__init__.py,sha256=cWSs5sGGEQRrb67PWLg9ayjaj37HIzdns-0LRzauhZ8,117
+shapecheck/_main.py,sha256=9hCUWB90QucJIi3cKXuTZ8gGdeaXWdHSnEaFb7LzrXY,429
+shapecheck/exception.py,sha256=MzDGlWeJ8KVN6qb-rnthuwbYZz39-w4v3WcXg-z_TKA,2485
+shapecheck/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shapecheck/shapecheck.py,sha256=V_4UCJ2t0ByxbCaRF_mU7lKSrs_bujAQ-9-vwaIQ3q0,9529
+shapecheck/utils.py,sha256=WIc_zQ1CN-CjdJKDSexx-zdLXK31whFnNCgXRnh1YqY,3643
+shapecheck-0.0.1.dist-info/LICENSE,sha256=gzQzu6uD7lxWJGp3cJZptO5oZB8wahRum_Qzg0sZ-Cw,1074
+shapecheck-0.0.1.dist-info/METADATA,sha256=D9N3uyX_d5nSocUs2pwFxwccO8Isq6gKMjs2djKMLAY,6208
+shapecheck-0.0.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+shapecheck-0.0.1.dist-info/top_level.txt,sha256=aUzIbABslG48ckOGavkxqubwAtqR4CGi3pxFnuvmcBg,11
+shapecheck-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+shapecheck-0.0.1.dist-info/RECORD,,
