@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+bottle_openapi_3/__init__.py
+bottle_openapi_3.egg-info/PKG-INFO
+bottle_openapi_3.egg-info/SOURCES.txt
+bottle_openapi_3.egg-info/dependency_links.txt
+bottle_openapi_3.egg-info/requires.txt
+bottle_openapi_3.egg-info/top_level.txt
