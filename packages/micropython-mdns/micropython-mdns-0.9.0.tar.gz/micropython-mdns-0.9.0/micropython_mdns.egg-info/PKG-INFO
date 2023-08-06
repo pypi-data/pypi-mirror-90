@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: micropython-mdns
+Version: 0.9.0
+Summary: MDNS for micropython with service discovery support
+Home-page: https://github.com/cbrand/micropython-mdns
+Author: Christoph Brand
+Author-email: ch.brand@gmail.com
+License: MIT
+Project-URL: GitHub, https://github.com/cbrand/micropython-mdns
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
