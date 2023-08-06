@@ -1,0 +1,11 @@
+scores/__init__.py,sha256=SCiytbDMU68qHvF_LhtkrloIiD-NXwdMzqUq-e73kUY,49
+scores/scores.py,sha256=wgDI6pKAJ7G-v1j-ZT738Y8RFTqjW1Ul3DgkjFm68xU,3595
+scores/models/__init__.py,sha256=7YLcaAUfAQtUp4TYNEncFsxPZOs_xX3g5_cNNhlw6LU,80
+scores/models/competitor.py,sha256=xCtghy2cObxcg3qfLk3vT2YT5AuX8uI_ATURj3nW9V4,1563
+scores/models/game.py,sha256=QHb_faU_AaDshjB3zRib1o2sLhZLKAK6Z3sZ0La3LcM,2159
+scores/models/enums/__init__.py,sha256=YOAet31X9L7hpWf4dBK9rHtloPoFH9ITPM0P-grspLc,24
+scores/models/enums/sport.py,sha256=hgiJtN-GcwgVeB1mEPSkHtuUf2IqvONFhJvpM65Qj80,924
+365scores-0.0.3.dist-info/METADATA,sha256=HNiD0Pjb_2vu58g_HpG366AuuxCHLR0__U9ZDhS-5KU,789
+365scores-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+365scores-0.0.3.dist-info/top_level.txt,sha256=PGZyHoFRA79FoRT5J6M9C6cPeZ7WAtI47OPasldvHc8,7
+365scores-0.0.3.dist-info/RECORD,,
