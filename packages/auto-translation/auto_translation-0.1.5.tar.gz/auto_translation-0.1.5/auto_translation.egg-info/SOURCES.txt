@@ -1,0 +1,9 @@
+README.md
+setup.py
+auto_browser/__init__.py
+auto_browser/selenium_translation.py
+auto_translation.egg-info/PKG-INFO
+auto_translation.egg-info/SOURCES.txt
+auto_translation.egg-info/dependency_links.txt
+auto_translation.egg-info/requires.txt
+auto_translation.egg-info/top_level.txt
