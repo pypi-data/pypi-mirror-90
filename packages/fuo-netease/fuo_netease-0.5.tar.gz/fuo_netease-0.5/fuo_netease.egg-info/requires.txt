@@ -1,0 +1,5 @@
+feeluown>=3.7a0
+beautifulsoup4
+pycryptodome
+marshmallow>=3.0
+requests
