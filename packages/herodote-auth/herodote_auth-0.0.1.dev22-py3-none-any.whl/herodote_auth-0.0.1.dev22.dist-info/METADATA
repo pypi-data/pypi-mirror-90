@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: herodote-auth
+Version: 0.0.1.dev22
+Summary: Auth middleware for swift and herodote
+Home-page: https://github.com/osallou/herodote
+Author: Olivier Sallou
+Author-email: olivier.sallou@irisa.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: PyJWT
+Requires-Dist: requests
+
+# About
+
+Swift auth middleware for herodote (python3 only)
+
+
+# Install
+
+    pip install -r requirements.txt
+    python setup.py install
+
+# Setup
+
+In proxy-server.conf, add herodote-auth filter in pipeline
+
+
+    pipeline = catch_errors gatekeeper healthcheck proxy-logging cache container_sync bulk tempurl ratelimit crossdomain swift3 herodoteauth authtoken keystoneauth
+
+And add filter section:
+
+    [filter:herodoteauth]
+    use = egg:herodote-auth#herodote_auth
+    # Secret to decode swift tokens (secrets.swift section of herodote config)
+    secret = aSharedSecretWithHerodote
+    herodote_url = https://myHerodoteServer
+    # Token defined in herodote to allow remote triggering (openstack.swift.tokens section)
+    token=myherodotetoken
+
+
+
