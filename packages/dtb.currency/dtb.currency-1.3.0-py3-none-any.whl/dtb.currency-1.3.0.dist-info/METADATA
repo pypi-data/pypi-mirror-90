@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dtb.currency
+Version: 1.3.0
+Summary: Simple currency package
+License: MIT
+Author: Dima Doroshev
+Author-email: dima@doroshev.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: dtb.mapped-collection (>=3.1.0,<4.0.0)
+Requires-Dist: pydantic (>=1.7.2,<2.0.0)
