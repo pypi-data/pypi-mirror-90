@@ -1,0 +1,12 @@
+paperstorage/__init__.py,sha256=GoEli7s9hzy3r3E8EAMVUaTBVJ4dSAsnSHkpcig22dA,176
+paperstorage/__main__.py,sha256=ZSqbhTxXdZLp_ep9tXhH53-clNyifb-sZXtn4MGszb8,10373
+paperstorage/paperstorage.py,sha256=NusJMD58TEanT-mPivt_Y63mDLbWCdSvNFHTBbgyryg,29310
+paperstorage/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+paperstorage/tests/test_generation.py,sha256=tMFokSg4-LQTiUfVRclAKx4JKkiHA8I2EbCq20fPgb8,2832
+paperstorage/tests/test_restoration.py,sha256=iGpKWQqd8kjax7X3yLddfkeT3HJ95U9FeENXPT24-JY,3364
+paperstorage-0.9.7.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+paperstorage-0.9.7.dist-info/METADATA,sha256=BjHMd6IQkWiQwPlZ1XHCbBAj-ZoiCFmU-WpGbZrvg38,6829
+paperstorage-0.9.7.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+paperstorage-0.9.7.dist-info/entry_points.txt,sha256=HwOtkNrNv4sxe3Ar5uuZECkWXosKObV_y7zd_NRlMPU,61
+paperstorage-0.9.7.dist-info/top_level.txt,sha256=B-KCwV9DdTQyUb6tNi6x6yr8MoNiyHiONtJdMxitbEY,13
+paperstorage-0.9.7.dist-info/RECORD,,

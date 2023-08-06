@@ -1,0 +1,3 @@
+[console_scripts]
+paperstorage = paperstorage.__main__:main
+
