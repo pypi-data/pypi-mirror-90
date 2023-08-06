@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: lomadeepy
+Version: 1.0.0
+Summary: Implementação da API de ofertas do lomadee em Python. Não Oficial.
+Home-page: https://github.com/gustavopinho/lomadeepy.git
+Author: Gustavo Pinho
+Author-email: dev@gustavopinho.com
+License: MIT License
+Description: UNKNOWN
+Keywords: api lomadee python ofertas
+Platform: UNKNOWN

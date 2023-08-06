@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+src/lomadeepy/__init__.py
+src/lomadeepy/lomadee.py
+src/lomadeepy.egg-info/PKG-INFO
+src/lomadeepy.egg-info/SOURCES.txt
+src/lomadeepy.egg-info/dependency_links.txt
+src/lomadeepy.egg-info/requires.txt
+src/lomadeepy.egg-info/top_level.txt
