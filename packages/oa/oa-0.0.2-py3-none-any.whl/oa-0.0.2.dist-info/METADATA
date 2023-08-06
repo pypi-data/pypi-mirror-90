@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: oa
+Version: 0.0.2
+Summary: From https://github.com/ryneeverett/mkcodes
+Home-page: https://github.com/thorwhalen/ut/tree/master/others/mkcodes.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# oa
+From https://github.com/ryneeverett/mkcodes
+
+
+To install:	```pip install oa```
+
+
