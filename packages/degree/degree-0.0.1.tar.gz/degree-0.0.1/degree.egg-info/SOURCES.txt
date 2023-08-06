@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+degree/__init__.py
+degree.egg-info/PKG-INFO
+degree.egg-info/SOURCES.txt
+degree.egg-info/dependency_links.txt
+degree.egg-info/not-zip-safe
+degree.egg-info/top_level.txt
