@@ -1,0 +1,3 @@
+click
+marshmallow
+pyserial-asyncio
