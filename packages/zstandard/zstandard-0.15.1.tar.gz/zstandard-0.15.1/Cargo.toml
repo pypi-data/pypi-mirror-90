@@ -1,0 +1,34 @@
+[package]
+name = "python-zstandard"
+version = "0.15.0-pre"
+authors = ["Gregory Szorc <gregory.szorc@gmail.com>"]
+edition = "2018"
+license = "BSD-3-Clause"
+description = "Python bindings to zstandard compression library"
+readme = "README.rst"
+
+[lib]
+name = "backend_rust"
+crate-type = ["cdylib"]
+path = "rust-ext/src/lib.rs"
+
+[dependencies]
+libc = "0.2"
+num_cpus = "1"
+python3-sys = "0.5"
+
+[dependencies.zstd-safe]
+#version = "2.0.4"
+git = "https://github.com/indygreg/zstd-rs.git"
+rev = "2f70a50ac5eddc716d356694de9ed46f6b6b37bb"
+features = ["experimental", "legacy", "zstdmt"]
+
+[dependencies.zstd-sys]
+#version = "1.4.16"
+git = "https://github.com/indygreg/zstd-rs.git"
+rev = "2f70a50ac5eddc716d356694de9ed46f6b6b37bb"
+features = ["experimental", "legacy", "zstdmt"]
+
+[dependencies.cpython]
+version = "0.5"
+features = ["extension-module"]
