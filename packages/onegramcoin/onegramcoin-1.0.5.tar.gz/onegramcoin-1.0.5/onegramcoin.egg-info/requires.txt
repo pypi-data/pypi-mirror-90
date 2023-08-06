@@ -1,0 +1,6 @@
+onegramlib>=1.0.7
+websockets
+appdirs
+Events
+scrypt
+pycryptodome
