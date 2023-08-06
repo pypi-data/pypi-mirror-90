@@ -1,0 +1,15 @@
+time-series-dataset
+time-series-dataset-generator
+pandas
+seaborn
+
+[dev]
+bumpversion
+twine
+wheel
+pylint
+autopep8
+
+[test]
+pytest
+pytest-cov
