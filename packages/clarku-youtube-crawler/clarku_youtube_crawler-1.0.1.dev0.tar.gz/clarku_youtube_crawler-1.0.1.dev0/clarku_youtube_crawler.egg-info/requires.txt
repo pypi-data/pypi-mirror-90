@@ -1,0 +1,6 @@
+configparser
+datetime
+pytz
+pandas
+youtube_transcript_api
+google-api-python-client
