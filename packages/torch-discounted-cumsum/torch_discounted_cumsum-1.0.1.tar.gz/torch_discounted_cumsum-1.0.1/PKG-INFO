@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: torch_discounted_cumsum
+Version: 1.0.1
+Summary: Fast discounted cumulative sums in PyTorch
+Home-page: https://www.github.com/toshas/torch-discounted-cumsum
+Author: Anton Obukhov
+License: BSD
+Description: UNKNOWN
+Keywords: pytorch,discounted,cumsum,cumulative,sum,scan,differentiable,reinforcement,learning,rewards,time,series
+Platform: UNKNOWN
+Requires-Python: >=3.6
