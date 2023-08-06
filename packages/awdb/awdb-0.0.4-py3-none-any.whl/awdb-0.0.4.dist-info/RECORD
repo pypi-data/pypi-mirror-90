@@ -1,0 +1,9 @@
+awdb/__init__.py,sha256=VKW2aQ96KKVBZOfjw0Vbqr7wkidF_ZOvMJlx2rmbFsw,29
+awdb/cli.py,sha256=3EiKgeDjk-vtmzUJH_R5zeHGllx5QX9T6yBmF7uIt20,14571
+awdb/trace.py,sha256=cXT2tXM2yYoaxFz_wjnRcTfx_E9J1_NFrGxFZkZUgfU,11389
+awdb/utils.py,sha256=t2qKHHNyzJq97XPrQiSAvv52n_GAxy227loMCHoye0g,3238
+awdb-0.0.4.dist-info/METADATA,sha256=ojn8stjN8IkifEg-UV9L5TL-3sR66eWXIt6aKTC7qq4,3722
+awdb-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+awdb-0.0.4.dist-info/entry_points.txt,sha256=brpp52ooFxOS3zPIM5P6ImcwNGiuvkz5_LEQC44f5dQ,79
+awdb-0.0.4.dist-info/top_level.txt,sha256=Elau2BK1gEOLqIQiV0Ht7gJbBPGvsKbazTU9Irq5PC8,5
+awdb-0.0.4.dist-info/RECORD,,
