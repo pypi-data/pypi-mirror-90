@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: dupy
+Version: 0.2101.8
+Summary: Find duplicate folders
+Home-page: https://github.com/davips/dupy
+Author: Davi Pereira-Santos
+Author-email: dpsabc@gmail.com
+License: GPL3
+Download-URL: https://github.com/davips/dupy/releases
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+![test](https://github.com/davips/dupy/workflows/test/badge.svg)
+[![codecov](https://codecov.io/gh/davips/dupy/branch/main/graph/badge.svg)](https://codecov.io/gh/davips/dupy)
+
+# dupy
+Find duplicate folders
+
+### Install
+```bash
+pip install dupy
+```
+
+### Usage
+```bash
+dupy folder
+dupy folder1 folder2 folder3 ...
+```
+
+
