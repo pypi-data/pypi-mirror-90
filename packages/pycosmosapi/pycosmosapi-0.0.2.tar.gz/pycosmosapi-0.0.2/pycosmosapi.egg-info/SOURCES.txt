@@ -1,0 +1,8 @@
+README.md
+setup.py
+cosmos_api/__init__.py
+pycosmosapi.egg-info/PKG-INFO
+pycosmosapi.egg-info/SOURCES.txt
+pycosmosapi.egg-info/dependency_links.txt
+pycosmosapi.egg-info/requires.txt
+pycosmosapi.egg-info/top_level.txt
