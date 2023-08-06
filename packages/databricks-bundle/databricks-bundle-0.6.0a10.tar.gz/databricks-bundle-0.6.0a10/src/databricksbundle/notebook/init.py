@@ -1,0 +1,6 @@
+from bricksflowcore.container.containerResolver import container as _container
+from databricksbundle.notebook.decorator.DuplicateColumnsChecker import DuplicateColumnsChecker
+from databricksbundle.notebook.function.ArgumentsResolver import ArgumentsResolver
+
+argumentsResolver: ArgumentsResolver = _container.get(ArgumentsResolver)
+duplicateColumnsChecker: DuplicateColumnsChecker = _container.get(DuplicateColumnsChecker)
