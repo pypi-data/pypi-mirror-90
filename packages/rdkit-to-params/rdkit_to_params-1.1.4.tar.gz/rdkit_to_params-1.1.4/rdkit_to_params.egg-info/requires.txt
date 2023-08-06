@@ -1,0 +1,6 @@
+
+[rdkit_feature]
+rdkit
+
+[testing_feature]
+pyrosetta
