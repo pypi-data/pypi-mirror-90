@@ -1,0 +1,4 @@
+
+    [trytond.modules]
+    stock_assign_manual = trytond.modules.stock_assign_manual
+    
