@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+geotopy/__init__.py
+geotopy/__main__.py
+geotopy/keywords.json
+geotopy.egg-info/PKG-INFO
+geotopy.egg-info/SOURCES.txt
+geotopy.egg-info/dependency_links.txt
+geotopy.egg-info/top_level.txt
