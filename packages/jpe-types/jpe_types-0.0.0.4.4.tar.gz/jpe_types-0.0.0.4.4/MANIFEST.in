@@ -1,0 +1,4 @@
+include jpe_types/conversions/intConversions.json
+include jpe_types/logging/loggingConfig.json
+include jpe_types/utils/Optimizations/subScripts.pyx
+include jpe_types/utils/Optimizations/jpe_typeUtilsExtentions\FileScanner.h
