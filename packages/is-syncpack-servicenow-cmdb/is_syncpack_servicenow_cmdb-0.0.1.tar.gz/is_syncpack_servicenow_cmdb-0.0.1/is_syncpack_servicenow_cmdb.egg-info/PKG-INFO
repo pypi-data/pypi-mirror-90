@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: is-syncpack-servicenow-cmdb
+Version: 0.0.1
+Summary: is_syncpack_servicenow_cmdb
+Home-page: UNKNOWN
+Author: Sciencelogic
+Author-email: UNKNOWN
+License: Sciencelogic, Inc.
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
