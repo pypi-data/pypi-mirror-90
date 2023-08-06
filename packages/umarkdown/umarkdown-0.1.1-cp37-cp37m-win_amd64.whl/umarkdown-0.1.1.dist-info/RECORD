@@ -1,0 +1,12 @@
+umarkdown/__init__.py,sha256=UQSXIU5gijnpce-MfB57CzfCG7pinZx2KkjFaFjfes0,513
+umarkdown/_internal.c,sha256=nCuitaXmrCud6BZ0J0a24gGlVmxi9RS4e4L2i9E04hs,4271
+umarkdown/_internal.cp37-win_amd64.pyd,sha256=IoFRZZoZ-ZNe3g3dnzSeu9huXERpTdwXYH6fDHDMzsg,217600
+umarkdown/_internal.pyi,sha256=Km6SNDQehdpvLM874NinvDmDjU7HPRGYwCyDALS2ZkI,1241
+umarkdown/cli.py,sha256=IzaFUmd8kNzl41YlCMvSK3GAwWGyatGqQN0vMTxYpag,2541
+umarkdown/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+umarkdown-0.1.1.dist-info/LICENSE.md,sha256=yVA2Q6R3_TegV7iQv46d1MpCaPTRqt1Xserak7Of9to,1549
+umarkdown-0.1.1.dist-info/METADATA,sha256=7yIwqwv-QvEqZW_v3lVgP4i3gmG3d3Qfl-dj3iH5Y1w,3066
+umarkdown-0.1.1.dist-info/WHEEL,sha256=zMRqF9ZfHGxBPfvcWwE-LxcVkdB1hhr8hy4cOfZGPZU,101
+umarkdown-0.1.1.dist-info/entry_points.txt,sha256=P7G7UwWo94sx1ZAPhGtDXZ_YY5rOspBC2ylzSlAdDWw,50
+umarkdown-0.1.1.dist-info/top_level.txt,sha256=mTzOfkL8mIF0RlJclkcVcdrwVO6TDxV3tc7dPKrYYIE,10
+umarkdown-0.1.1.dist-info/RECORD,,
