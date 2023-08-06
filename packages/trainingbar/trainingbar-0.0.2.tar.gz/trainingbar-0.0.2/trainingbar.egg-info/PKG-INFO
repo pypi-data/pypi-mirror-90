@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: trainingbar
+Version: 0.0.2
+Summary: trainingbar
+Home-page: http://github.com/trisongz/trainingbar
+Author: Tri Songz
+Author-email: ts@scontentenginex.com
+License: UNKNOWN
+Description: # trainingbar
+        
+         Make Training Models look a little nicer. The next evolution from TPUBar
+        
+        Don't download this..yet
+        
+        ```shell
+        # from pypi
+        pip install --upgrade trainingbar
+        
+        # from src
+        pip install --upgrade git+https://github.com/trisongz/trainingbar.git
+        
+        export GOOGLE_APPLICATION_CREDENTIALS=/path/to/adc.json
+        tbar monitor start
+        
+        # with options
+                            
+        tbar monitor start 10 [refresh time] my-gcp-project [gcp project] tpu-name [tpu name]
+        
+        ```
+Keywords: ml training,model training,tqdm,progress bar,monitoring,google cloud,tensorflow,pytorch
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Requires-Python: >3.6
+Description-Content-Type: text/markdown
+Provides-Extra: tpu
+Provides-Extra: gpu
+Provides-Extra: test

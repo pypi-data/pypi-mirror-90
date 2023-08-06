@@ -1,0 +1,16 @@
+rich
+tensorflow>=1.15.0
+psutil
+typer
+pysimdjson
+google-auth
+
+[gpu]
+gputil
+
+[test]
+pytest
+
+[tpu]
+tpunicorn
+google-cloud-monitoring
