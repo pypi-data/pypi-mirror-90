@@ -1,0 +1,9 @@
+README.md
+setup.py
+jakepdf/__init__.py
+jakepdf/pdf2image.py
+jakepdf/pdf2text.py
+jakepdf.egg-info/PKG-INFO
+jakepdf.egg-info/SOURCES.txt
+jakepdf.egg-info/dependency_links.txt
+jakepdf.egg-info/top_level.txt
