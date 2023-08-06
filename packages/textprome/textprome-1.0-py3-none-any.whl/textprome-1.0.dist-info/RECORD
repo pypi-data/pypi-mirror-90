@@ -1,0 +1,13 @@
+__init__.py,sha256=4nsHWN9MPccNRDyzpUDFNJYwwsC8rwb7Rvm8YvCSIBc,32
+examples/blackpink_logo.py,sha256=zCJDN24fosNjUtAiJafEeMzbIazYm7Wi6AdN1GUyJXc,96
+examples/pornhub_logo.py,sha256=NfQQlhx8xpZ7fLO_Ro1TH-ktLhb0oQ3uVfVMvADsK3U,107
+examples/thunder.py,sha256=EKI7S4hpR0jV5R0_IRTzvq2_Sdt4-MUfgry2Rk3TUJM,94
+source/textprome.py,sha256=D1vU7jzPoNU261vTX_HZ88oO92yWZKzPikRcL39JjbI,2827
+textprome/__init__.py,sha256=4nsHWN9MPccNRDyzpUDFNJYwwsC8rwb7Rvm8YvCSIBc,32
+textprome/textprome.py,sha256=D1vU7jzPoNU261vTX_HZ88oO92yWZKzPikRcL39JjbI,2827
+textprome-1.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+textprome-1.0.dist-info/METADATA,sha256=cCa_B_9GqozJFbUObsXPprJN4X2D7HsABKwyouujl1Y,1874
+textprome-1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+textprome-1.0.dist-info/top_level.txt,sha256=FZUGFqw_Rs1KKyBbJpKGsLHa7Qc_khZMFV077yVuOL4,25
+textprome-1.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+textprome-1.0.dist-info/RECORD,,
