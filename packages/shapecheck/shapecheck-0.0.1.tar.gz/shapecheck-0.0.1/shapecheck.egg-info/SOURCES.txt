@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+shapecheck/__init__.py
+shapecheck/exception.py
+shapecheck/py.typed
+shapecheck/shapecheck.py
+shapecheck/utils.py
+shapecheck.egg-info/PKG-INFO
+shapecheck.egg-info/SOURCES.txt
+shapecheck.egg-info/dependency_links.txt
+shapecheck.egg-info/top_level.txt
+shapecheck.egg-info/zip-safe
