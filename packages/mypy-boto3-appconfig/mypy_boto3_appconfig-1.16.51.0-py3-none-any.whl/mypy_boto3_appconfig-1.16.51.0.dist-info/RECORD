@@ -1,0 +1,13 @@
+mypy_boto3_appconfig/__init__.py,sha256=hwLH-2KC3KXtsKBqUWjwmzWkO5QMP5DSfJk8SAMCc1s,459
+mypy_boto3_appconfig/__init__.pyi,sha256=EUHot_VY3ovp3xDUnDWgiLktQ0UbgbjanLWp_kuYuk0,458
+mypy_boto3_appconfig/__main__.py,sha256=n54GHxbuEIY7ETdBOW6El_X9czv4fGhT-DpxZMRHE2Y,398
+mypy_boto3_appconfig/client.py,sha256=ITFQTApy5kvxUEW-kU7lR01fZ8kjZ6-wLlPpFUt0TqM,14954
+mypy_boto3_appconfig/client.pyi,sha256=ONQLne2aN2HML7lm8DgcplcZZ2jjj_nz-K_lc5qoWB0,14914
+mypy_boto3_appconfig/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_appconfig/type_defs.py,sha256=ceV3h1bI_zn3Gl7v-Buz5zENqOYwx8m9pYpZxIkr1Po,6576
+mypy_boto3_appconfig/type_defs.pyi,sha256=GmOcJstpTzqRSOaxkyxA8aBQlCgsKbGQ4Wvner7Y5aU,6575
+mypy_boto3_appconfig/version.py,sha256=jVi72IEAVzVJsS-ANXeh9opLo1Qo_b4YNmrSDHW3vl4,57
+mypy_boto3_appconfig-1.16.51.0.dist-info/METADATA,sha256=Rdn6mArkHBDE1EMEhiyuCVNzhBiz84h27iqUWnzPUAs,6603
+mypy_boto3_appconfig-1.16.51.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+mypy_boto3_appconfig-1.16.51.0.dist-info/top_level.txt,sha256=jJsxiRxbPJ25oekI03C8VpyjYfVzWpPE3Oz1cdCcawg,21
+mypy_boto3_appconfig-1.16.51.0.dist-info/RECORD,,
