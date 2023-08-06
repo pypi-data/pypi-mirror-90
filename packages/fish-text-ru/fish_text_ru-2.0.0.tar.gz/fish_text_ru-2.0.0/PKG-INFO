@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: fish-text-ru
+Version: 2.0.0
+Summary: Simple fish-text.ru python wrapper
+License: MIT
+Author: kiriharu
+Author-email: kiriharu@yandex.ru
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: requests (>=2.25.1,<3.0.0)
