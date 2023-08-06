@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: khl.py
+Version: 0.0.6
+Summary: SDK for kaiheila.cn in python
+Home-page: https://github.com/TWT233/khl.py
+Author: TWT233
+Author-email: TWT2333@outlook.com
+License: UNKNOWN
+Description: # khl.py
+        
+        SDK for kaiheila.cn in python
+        
+        # install
+        
+        Python requirement: >= Python 3.6
+        
+        ```shell
+        pip install khl.py
+        ```
+        
+        # short-term roadmap
+        
+        docs:
+        
+        - [x] docs init
+        
+        perf:
+        
+        - [x] check `SN`
+        
+        feat:
+        
+        T1:
+        
+        - [ ] log system
+        - [ ] command alias
+        - [ ] command & arg parse system
+        - [ ] `MsgCtx` design
+        
+        bug fix:
+        
+        # commit message rules
+        
+        only accept commits satisfying [Conventional Commits convention](https://github.com/commitizen/cz-cli)
+        
+        search plugins with keyword `commitizen` for your editor/IDE, then addict to write commit message
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
