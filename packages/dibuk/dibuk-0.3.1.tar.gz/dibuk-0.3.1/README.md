@@ -1,0 +1,157 @@
+# Dibuk Bindings for Python
+
+A Python library for [Dibuk](http://www.dibuk.eu/)'s API v2.1 to work with and order e-books in their catalogue.
+
+The bindings allow you to:
+
+1. Get book categories
+2. Get the catalogue of all books
+3. Get single books details with links to previews
+4. Check if given book has been previously bought by a given user
+5. Create order for multiple books at once
+6. Get download links for given books previously bought by a user
+
+
+## Setup
+
+You can install this package by using the pip tool and installing:
+
+	pip install dibuk
+
+See [documentation](http://www.pip-installer.org/en/latest/index.html) for instructions on installing `pip`. If you are on a system with `easy_install` but not `pip`, you can use `easy_install` instead. If you're not using [virtualenv](http://www.virtualenv.org/), you may have to prefix those commands with `sudo`.
+
+Install from source with:
+
+	python setup.py install
+
+To install via `requirements` file from your project, for this moment add the following in before updating dependencies:
+
+	git+https://github.com/palosopko/dibuk-python.git#egg=dibuk
+
+
+## Usage
+
+First off, you need to require the library and provide authentication information by providing your user handle and shared secret you got from the provider.
+
+	import dibuk
+	dibuk.api_credentials = (123, '00000000000000000000000000000000')
+
+You should also set the client's user agent string. For example when using [Django](https://www.djangoproject.com/) framework you would probably use something like `request.META['HTTP_USER_AGENT']` as the value.
+
+	dibuk.user_agent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 7_1_1 like Mac OS X) AppleWebKit/537.51.2 (KHTML, like Gecko) Version/7.0 Mobile/11D201 Safari/9537.53'
+
+**Getting categories** is accomplished by calling `dibuk.Category.all()`. The method returns dictionary with category IDs as keys and `Category` object as values. `Category` object includes `id`, `parent_id` and `name` of the category.
+
+**Getting catalogue** works analogously to previous method for getting categories. You call it with `dibuk.Catalogue.all()` with optional argument of either type `int` (UNIX timestamp) or `datetime.datetime` noting the time of last synchronization to get only changed books since that time. The method returns dictionary with book IDs as keys and `Book` object as values.
+
+To **get details of a single book**, `dibuk.Book.get()` method should be run with Dibuk's book ID as its argument. Upon success a `Book` object is returned.
+
+`dibuk.Book.available()` should be run **to check whether a book has been previously bought** by a user with Dibuk's book ID and your user identifier that you have used when creating the order.
+
+To **create a new order** you need to run `dibuk.Order.create()` with list of tuples with Dibuk's book ID and its price as the first argument, you user identifier as the second and a dictionary of required metadata as the third. The method returns dictionary with book IDs as keys and dictionaries with boolean `status` and Dibuk's `order_id` as values.
+
+_Note:_ Dibuk's API enforces 1:1 mapping between an order and an e-book so for each book that is in the list in the first argument of the method call, there would be one order created in the Dibuk's system (a.k.a. for each book there is a separate request made).
+
+	books = [(129, 4.45), (135, 5.50)]
+	orders = dibuk.Order.create(books, local_user_id, {
+	    'order_id': local_order_id,
+	    'user_email': 'istore@artforum.sk',
+	    'payment_channel': 'PayPal'
+	})
+
+If you would like **to get order details** you call `dibuk.Order.get()` with list of Dibuk's book IDs as the first argument and your local user identifier as the second argument. The method returns dictionary with book IDs as keys and dictionaries with complete list of download links to all available formats as values.
+
+
+## Contributing
+
+1. Check for open issues or open a new issue for a feature request or a bug.
+2. Fork the repository and make your changes to the master branch (or branch off of it).
+3. Send a pull request.
+
+
+## Development
+
+Run all tests on all supported Python versions:
+
+	make test
+
+Run the linter with:
+
+	make lint
+
+The client library uses Black for code formatting. Code must be formatted with Black before PRs are submitted, otherwise CI will fail. Run the formatter with:
+
+	make fmt
+
+
+## Changelog
+
+### v0.3.1: 09/01/2020
+
+Verify certificate when connecting to Dibuk. Except for being the right thing to do, it also prevents loads of warnings in logs.
+
+### v0.3.0: 09/01/2020
+
+Move over to GitHub, drop support for Python 2.
+
+### v0.2.3: 19/11/2019
+
+Expose license availability; when book might be purchased and license obtained.
+
+### v0.2.2: 30/09/2019
+
+Do not raise error when exporting books with a given timestamp and no books changed.
+
+### v0.2.1: 24/06/2019
+
+Allow signing requests with unicode strings in data in Python 2.
+
+### v0.2.0: 22/06/2019
+
+Set real book formats in `Book` instances
+
+Furthermore, Python 3 compatibility has been added for real, code formatting is covered by Black and various small fixes to make everything better and easier including first test.
+
+### v0.1.10: 19/03/2018
+
+Return both the date of publication (in `published_on`, just like it has been) and date of publication of the ebook (in `epublished_on`) in `Book` object.
+
+### v0.1.9: 10/08/2017
+
+Apart from that, allow for including preview information when asking for the whole catalogue.
+
+### v0.1.8: 20/07/2017
+
+Send information about previews in `samples` key for consistency with Audiolibrix library.
+
+### v0.1.7: 07/09/2016
+
+Send properly information about previews in `preview` key containing dictionary with general format (epub, pdf or mobi) as a key and the url to specific file as a value.
+
+### v0.1.6: 21/09/2015
+
+Fixed incorrect setting of availability status in some books.
+
+### v0.1.5: 16/09/2015
+
+Send also `subtitle` attribute to `Book` object.
+
+### v0.1.4: 16/09/2015
+
+Fixed problems with encoding non-ascii strings while signing data for request to Dibuk's API.
+
+### v0.1.3: 03/09/2015
+
+Send information of specific formats gotten from Dibuk, not normalize in the three common formats.
+
+### v0.1.2: 20/08/2015
+
+Allow sending of `user_name`, `user_surname` and `user_email` parametres to download social DRM'd books in `dibuk.Order.get()` and manual override of `is_mobile` parametre.
+
+### v0.1.1: 05/07/2015
+
+Allow installing through `pip` (fixes name collision with other package in `setup.py`)
+
+### v0.1.0: 15/02/2015
+
+Initial version with support for available API methods with minor exceptions (optional `columns` argument to `detail` API method (`dibuk.Book.get()`) etc.)
