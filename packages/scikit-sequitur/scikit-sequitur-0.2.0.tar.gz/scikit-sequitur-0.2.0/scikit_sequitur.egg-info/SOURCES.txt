@@ -1,0 +1,10 @@
+README.rst
+pyproject.toml
+setup.py
+scikit_sequitur.egg-info/PKG-INFO
+scikit_sequitur.egg-info/SOURCES.txt
+scikit_sequitur.egg-info/dependency_links.txt
+scikit_sequitur.egg-info/top_level.txt
+sksequitur/__init__.py
+sksequitur/api.py
+sksequitur/core.py
