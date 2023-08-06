@@ -1,0 +1,17 @@
+sqlblock/__init__.py,sha256=-BAXyhh4Lv52ULuKzgyvZv5qWLFqCEGIwQZmGLWMbLM,110
+sqlblock/setup.py,sha256=umxA-BNQjZArEWFxbN7C3uGvTKN7qFqT7M4KAdBZJik,372
+sqlblock/sqltext.py,sha256=N44WdTGB-qfj_NXFg3-ysSjqdSEW0wREXVyrKhLD3Rs,5559
+sqlblock/old/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlblock/old/cursor.py,sha256=VHy4E1ziQyWTxYG4BAl8-zQc-m1Lvr3XTSj7glUbRWQ,2798
+sqlblock/old/decorator.py,sha256=3my9dcUaS97LRXhDjNjGoyN73ECatnzhmPz_AxiDRzE,5417
+sqlblock/old/postgres.py,sha256=98AKDCUT9s-o5XtNPfDm3r9pdtnooPBYlvGqjwAMr48,3574
+sqlblock/postgres/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlblock/postgres/_sqlblock.py,sha256=XE1JXLmYylXj4kVx7zDBS7U9Rd9FuIJQitNnTSLMRS8,4087
+sqlblock/postgres/connection.py,sha256=chlVmFzipe0Z2_5SqV9kBqhQ0aPdCcC0kDLLekx-pr8,10521
+sqlblock/utils/__init__.py,sha256=xst1dUxzOOlLlZMzy9z4uewnGWTKX6c5gJ-uJ8PcI14,63
+sqlblock/utils/json.py,sha256=6XGBsafsSkbbctGcDl1q94tV3Gfs0yQjQ68qn_myxAY,1238
+sqlblock-0.6.5.dist-info/LICENSE,sha256=VhGjKzlmfWeOY5V_PuokspRyueuEG4vpc9iQBK2Pcso,1070
+sqlblock-0.6.5.dist-info/METADATA,sha256=YRUXHdI0VyQJwr6KZiv_nrUBUIhWw9hqL9_NVD7n7K8,813
+sqlblock-0.6.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+sqlblock-0.6.5.dist-info/top_level.txt,sha256=QKQQuG1sGRCACAThERU0nQ1xmf0vqfpP7zB2oe9Z6EY,9
+sqlblock-0.6.5.dist-info/RECORD,,
