@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: autothemewin10
+Version: 1.0.0
+Summary: Automatic Theme Changer for Windows 10(1909+)
+Home-page: https://github.com/raprocks/AutoThemeWin10
+License: UNKNOWN
+Author: Rohit Patil
+Author-email: rahulhimesh09@gmail.com
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: typer
+
+# <h1 align="center">AUTO THEME CHANGER for WINDOWS 10</h1>
+
+> Automatic Theme changing from light mode to dark mode and vice versa based on system time
+
+- only for **Windows 10** (tested on 1909)
+

@@ -1,0 +1,3 @@
+[console_scripts]
+autotheme=autothemewin10.main:app
+
