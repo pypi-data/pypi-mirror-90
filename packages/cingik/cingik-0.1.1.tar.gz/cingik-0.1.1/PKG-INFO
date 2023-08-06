@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: cingik
+Version: 0.1.1
+Summary: Describe your package in one sentence
+Home-page: https://github.com/cicingik/cingik.git
+Author: Dany Satyanegara
+Author-email: danysatyanegara@gmail.com
+License: MIT License
+Description: # cingik
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

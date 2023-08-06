@@ -1,0 +1,11 @@
+README.md
+setup.py
+_tests/__init__.py
+_tests/test_strings.py
+cingik/__init__.py
+cingik/strings.py
+cingik.egg-info/PKG-INFO
+cingik.egg-info/SOURCES.txt
+cingik.egg-info/dependency_links.txt
+cingik.egg-info/requires.txt
+cingik.egg-info/top_level.txt
