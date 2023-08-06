@@ -1,0 +1,13 @@
+algorithms_daemon/WorkerBroker_pb2.py,sha256=1t0eU_Gb1FmTieKSJdTyA-7Un7YR7RdnoAsE55ri4MU,8994
+algorithms_daemon/WorkerBroker_pb2_grpc.py,sha256=GRERaeOZ_Zlo8h-bwEBGxy-hjxiNysI-Cj4EzoJkMnI,4330
+algorithms_daemon/__init__.py,sha256=FVRdCCik0SIm_VLRqa7hcJEQ3npNyGPc2vTbYjdXZ7A,264
+algorithms_daemon/config.py,sha256=c5jpScWin8LIWfDJsKKHoQLYr32gl6hjkmqVYIMypfg,1356
+algorithms_daemon/daemon.py,sha256=OzET26x4SEQhoibEx77aT9mAQ_mBJbKPPfnSsqYrr-Y,2506
+algorithms_daemon/redis_cache.py,sha256=m-YhF708N88Si2aA_awPsgf4mTauWbTKb5L2jeJkYyE,633
+algorithms_daemon/run.py,sha256=mTfUOEa3DEKZJvOFY5L0lmEMb3UYBBOFRwRBoiQ4CRs,1168
+algorithms_daemon/slide_source.py,sha256=1EHAhSf03MORA8Gr5Zu0KBTAflBCEQD5EwV-GQI0LH8,4261
+algorithms_daemon-0.0.11.dist-info/LICENSE,sha256=16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s,1139
+algorithms_daemon-0.0.11.dist-info/METADATA,sha256=cx28A3BZIMDC4JVCGl6zDCdBtWiU6ax9Oe6krppMwjE,828
+algorithms_daemon-0.0.11.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+algorithms_daemon-0.0.11.dist-info/top_level.txt,sha256=2wXoAW_D7JjPTL1_zGA3TNbPNWa2qsDYrrtRL7nS0QE,18
+algorithms_daemon-0.0.11.dist-info/RECORD,,
