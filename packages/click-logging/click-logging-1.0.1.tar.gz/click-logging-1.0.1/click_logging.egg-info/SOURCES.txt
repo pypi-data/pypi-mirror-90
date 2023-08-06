@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+Makefile
+README.md
+setup.cfg
+setup.py
+click_logging/__init__.py
+click_logging/core.py
+click_logging/options.py
+click_logging.egg-info/PKG-INFO
+click_logging.egg-info/SOURCES.txt
+click_logging.egg-info/dependency_links.txt
+click_logging.egg-info/requires.txt
+click_logging.egg-info/top_level.txt
+click_logging.egg-info/zip-safe
+tests/test_basic.py

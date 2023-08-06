@@ -1,0 +1,12 @@
+click
+
+[ci]
+coverage
+coveralls
+
+[dev]
+pytest
+flake8
+python-semantic-release
+pre-commit
+commitizen
