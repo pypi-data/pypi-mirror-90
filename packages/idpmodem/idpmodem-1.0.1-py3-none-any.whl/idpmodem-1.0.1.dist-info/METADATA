@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: idpmodem
+Version: 1.0.1
+Summary: A library for interfacing with an Inmarsat IsatData Pro satellite modem using serial AT commands.
+Home-page: https://github.com/Inmarsat/idpmodem
+License: Apache-2.0
+Keywords: satellite,iot,idp,isatdata pro
+Author: G.Bruce-Payne
+Author-email: geoff.bruce-payne@inmarsat.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: aioserial (>=1.3.0,<2.0.0)
+Project-URL: Documentation, https://inmarsat.github.io/idpmodem
+Project-URL: Repository, https://github.com/Inmarsat/idpmodem
+Description-Content-Type: text/x-rst
+
+idp-modem
+=========
+
+Python samples for integrating with IDP satellite modem.
+
+`Documentation <https://inmarsat.github.io/idpmodem/>`_
+
+To do:
+- create install package
+- reorganize/optimize folders
+
