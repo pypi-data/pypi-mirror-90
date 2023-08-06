@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/db-mysql.py
+src/db_mysql.egg-info/PKG-INFO
+src/db_mysql.egg-info/SOURCES.txt
+src/db_mysql.egg-info/dependency_links.txt
+src/db_mysql.egg-info/top_level.txt
