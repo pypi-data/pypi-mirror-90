@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+pigment/__init__.py
+pigment/exceptions.py
+pigment/vars.py
+pigment.egg-info/PKG-INFO
+pigment.egg-info/SOURCES.txt
+pigment.egg-info/dependency_links.txt
+pigment.egg-info/top_level.txt
