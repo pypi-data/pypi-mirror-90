@@ -1,0 +1,23 @@
+Changelog
+=========
+
+1.0.4
+-----
+ - updated DataTables plug-in integration
+ - updated Select2 CSS styles
+
+1.0.3
+-----
+ - updated form group switcher state for inner switchers
+
+1.0.2
+-----
+ - updated Fanstatic library path to switch between source and egg installations
+
+1.0.1
+-----
+ - Travis update
+
+1.0.0
+-----
+ - initial release
