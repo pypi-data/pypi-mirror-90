@@ -1,0 +1,3 @@
+[console_scripts]
+chinese-english-lookup = chinese_english_lookup.__main__:main
+

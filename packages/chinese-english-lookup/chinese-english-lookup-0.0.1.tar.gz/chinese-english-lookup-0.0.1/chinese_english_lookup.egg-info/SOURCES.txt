@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+chinese_english_lookup/__init__.py
+chinese_english_lookup/__main__.py
+chinese_english_lookup/dictionary.py
+chinese_english_lookup/hsk2.py
+chinese_english_lookup/hsk3.py
+chinese_english_lookup/wordentry.py
+chinese_english_lookup.egg-info/PKG-INFO
+chinese_english_lookup.egg-info/SOURCES.txt
+chinese_english_lookup.egg-info/dependency_links.txt
+chinese_english_lookup.egg-info/entry_points.txt
+chinese_english_lookup.egg-info/top_level.txt
+chinese_english_lookup/cedict/cedict_1_0_ts_utf-8_mdbg.txt
+chinese_english_lookup/hsk/HSK2.0 wordlist [2010-2020].txt
+chinese_english_lookup/hsk/HSK3.0 wordlist [post-2020].txt
