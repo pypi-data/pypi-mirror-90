@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: exoplanet-core
+Version: 0.0.1
+Summary: The compiled backend for exoplanet
+Home-page: https://docs.exoplanet.codes
+Author: Daniel Foreman-Mackey
+Author-email: foreman.mackey@gmail.com
+Maintainer: Daniel Foreman-Mackey
+Maintainer-email: foreman.mackey@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: pybind11 (>=2.4)
+Requires-Dist: numpy (>=1.13.0)
+Provides-Extra: benchmark
+Requires-Dist: pytest ; extra == 'benchmark'
+Requires-Dist: pytest-benchmark ; extra == 'benchmark'
+Requires-Dist: radvel ; extra == 'benchmark'
+Requires-Dist: kepler.py ; extra == 'benchmark'
+Requires-Dist: batman-package ; extra == 'benchmark'
+Requires-Dist: exoplanet (==0.4.3) ; extra == 'benchmark'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.6.1) ; extra == 'test'
+
+This repository contains the compiled components for the [exoplanet](https://github.com/exoplanet-dev/exoplanet/) project.
+They are being developed here for several reasons, but the main one is that the code in this repo needs to change at a less frequent cadence than the main exoplanet modeling code and there is some cost associated with re-compiling the backend.
+I'm hoping that this separation will make it easier for people to contribute to the exoplanet project without dealing with compilation issues.
+This also means that some users can use just the computational components here without the heavy dependencies required by the exoplanet project.
+This might be useful, for example, for people who just want a high performance solver for Kepler's equation or fast quadratically limb-darkened light curves.
+
+[See benchmarks](https://exoplanet-dev.github.io/exoplanet-core/dev/bench/)
+
+
