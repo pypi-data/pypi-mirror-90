@@ -1,0 +1,48 @@
+[tool.poetry]
+name = "dbx-deploy"
+version = "0.13.0a3"
+description = "Databricks Deployment Tool"
+readme = "README.md"
+repository = "https://github.com/bricksflow/dbx-deploy"
+
+license = "MIT"
+
+authors = [
+    "Jiri Koutny <jiri.koutny@datasentics.com>"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+include = ["*.yaml", "*.tpl"]
+
+packages = [
+    { include = "dbxdeploy", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "~3.7.3"
+databricks-api = "0.3.*"
+dbx-notebook-exporter = "0.4.*"
+nbconvert = "5.6.*"
+pygit2 = "1.3.*"
+python-box = "3.4.*"
+tomlkit = "0.5.*"
+pyfony-bundles = "0.2.5a2"
+console-bundle = "0.3.0a3"
+boto3 = "^1.16.0"
+injecta = "^0.8.12"
+
+[tool.poetry.dev-dependencies]
+pylint = "2.4.*"
+pytest = "5.2.*"
+pyfony-core = "0.7.0a3"
+
+[tool.poetry.plugins."pyfony.bundle"]
+autodetect = "dbxdeploy.DbxDeployBundle:DbxDeployBundle.autodetect"
+
+[pyfony.bootstrap]
+container-init = "dbxdeploy.containerInit:initContainer"
