@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ji
+Version: 0.0.2
+Summary: An illustration of various embeddings
+Home-page: https://github.com/thorwhalen/ut/tree/master/ml/diag/multiple_two_component_manifold_learning.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# ji
+An illustration of various embeddings
+
+
+To install:	```pip install ji```
+
+
