@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: qwertywerty
+Version: 1.0.0
+Summary: A discrete event simulator
+Home-page: https://github.com/darrenkhlim/qwertywerty
+Author: NUS
+Author-email: e0426117@u.nus.edu
+License: NUS
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# O2DESPy
+
+A python package to perform discrete event simulation.
+
+## Usage
+
+
