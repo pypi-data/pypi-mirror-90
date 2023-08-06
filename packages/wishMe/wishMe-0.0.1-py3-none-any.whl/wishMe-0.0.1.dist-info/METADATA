@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: wishMe
+Version: 0.0.1
+Summary: Happy new year all of you
+Home-page: UNKNOWN
+Author: Mr.Alone
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Happy new year in different Indian state language!
+Hey! Iâ€™m Mr. Alone. and this is my first try and today i am going to give u happy new year wish to all the Indian person in different language spoken in India.
+
+Documents
+in this module u just need to install the library using pip in to your machine and you can use according to your wish.
+
+Note:
+
+you must have file.txt in your system which read all the data from the line by line and wish to us using the win32com.client module
+module that we need 1)from win32com.client import dispatch
+2)os and sys
+
