@@ -1,0 +1,10 @@
+setup.py
+guessgame/__init__.py
+guessgame/computer.py
+guessgame/game.py
+guessgame/player.py
+guessgame.egg-info/PKG-INFO
+guessgame.egg-info/SOURCES.txt
+guessgame.egg-info/dependency_links.txt
+guessgame.egg-info/not-zip-safe
+guessgame.egg-info/top_level.txt
