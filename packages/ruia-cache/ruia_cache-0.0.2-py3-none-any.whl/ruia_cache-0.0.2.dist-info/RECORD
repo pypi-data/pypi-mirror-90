@@ -1,0 +1,14 @@
+ruia_cache/__init__.py,sha256=0Bedn0cdFYMAOwM1MteJQeyvdMgBapuh5t5nIhcYy1Y,102
+ruia_cache/request.py,sha256=TrsmQm7hak1qSlTlci5QF3rroi7wLA2kKm3TL4xQoQQ,503
+ruia_cache/response.py,sha256=owTJgY2XcHDwmmxOL3n8WQUZQ6LG-fxZxEARd2X5c6M,730
+ruia_cache/serializers.py,sha256=vliupPk8spTfKdFGjFsSLB11L5FrVjxkQfaVo7Dqycs,905
+ruia_cache/spider.py,sha256=Xi7u3ZEDpFyoaUTy1A94TEgXvm5nPNyu5IaXQ-pVqt8,1645
+ruia_cache/utils.py,sha256=im6m3blGNEIE6RUoizlrY8l9zbQFG7osDzEwMTzw36A,1257
+ruia_cache/cache_patch/__init__.py,sha256=VTy27HSpfjc54mlyF4GusXPUy8ZwYyWlygGhM9ms8AQ,133
+ruia_cache/cache_patch/req_cache.py,sha256=7a9BGYWkn7LRTw9avsZWYmske2qvgsVZJ1XIl295pXc,3468
+ruia_cache/cache_patch/resp_cache.py,sha256=oObZ0ulcoCm5IoAZkTHVyOvQGLORrm4bxXNsCaA3V2A,2499
+ruia_cache-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ruia_cache-0.0.2.dist-info/METADATA,sha256=44K1Pm3fTuHc7KtCTfBbH_AV-GsQ9oynfyrFr8aFsv8,1533
+ruia_cache-0.0.2.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ruia_cache-0.0.2.dist-info/top_level.txt,sha256=dVP1Bp6xf3vX8scbYMu9IG35z-2fs7ESa-HM7Yr1gJg,11
+ruia_cache-0.0.2.dist-info/RECORD,,
