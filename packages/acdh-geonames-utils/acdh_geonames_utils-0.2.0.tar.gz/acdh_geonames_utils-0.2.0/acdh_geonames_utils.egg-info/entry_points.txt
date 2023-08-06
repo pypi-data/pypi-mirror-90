@@ -1,0 +1,3 @@
+[console_scripts]
+acdh_geonames_utils = acdh_geonames_utils.cli:main
+
