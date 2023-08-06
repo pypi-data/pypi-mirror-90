@@ -1,0 +1,9 @@
+fstelemetry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fstelemetry/__main__.py,sha256=ceaLrP32Cc0auhVvm_Lr0umOfEje17Vs6WHFoqB4mhQ,1025
+fstelemetry/telemetry.py,sha256=vZ9sY8PLqTXi8gPHI1HPPN_9qndpD6sUFxE3z0A82I4,1164
+fstelemetry-0.1.1.dist-info/LICENSE,sha256=Qv2ilebwoUtMJnRsZwRy729xS5JZQzLauJ0tQzkAkTA,1088
+fstelemetry-0.1.1.dist-info/METADATA,sha256=1qk7sBFy3hXk6-kkbCDzUIC9KhkTrfnaZd4Jv7SLIbw,2655
+fstelemetry-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+fstelemetry-0.1.1.dist-info/entry_points.txt,sha256=3n5HuFCDvdcJuQ3MsB4peVvhkFnvBeoiOOQ2HVsB-aI,59
+fstelemetry-0.1.1.dist-info/top_level.txt,sha256=yYOKZX0mmnUqzaIqq_EtjjbfOlTteumm7jmp4mXVIZE,12
+fstelemetry-0.1.1.dist-info/RECORD,,
