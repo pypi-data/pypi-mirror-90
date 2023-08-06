@@ -1,0 +1,13 @@
+json_fingerprint/__init__.py,sha256=xN3RTZ2bUpYJS5z2o873QS_OreEurOrm00QQA_P6-tY,47
+json_fingerprint/_jfpv1.py,sha256=O9llWE7IBF4G74TJIZLH_qR7nfmorHO3gfzsmeY4ldQ,3280
+json_fingerprint/_validators.py,sha256=lgSV7td0NJPkhrd8usAYMChlh8DsIRbuPBZyfELutEM,1087
+json_fingerprint/json_fingerprint.py,sha256=t9VuT8Siw_ANygJ8MaZkD31xMTWieG3ycnxjADxXEZk,786
+json_fingerprint/tests/__init__.py,sha256=-6dObXP-ho1KcPV1bM9kEyA_gRb8vYF4CydWKuDCe8E,133
+json_fingerprint/tests/test_jfpv1.py,sha256=VMklebbMOwQGXFWa4_vRnt443G348gXNSZbnBXFvcrY,9913
+json_fingerprint/tests/test_json_fingerprint.py,sha256=Q8S3fcGx0pg5bBhP5ZzONAbnZ-hUZS2ZNrUK752VHhM,3975
+json_fingerprint/tests/test_validators.py,sha256=J3MaavkVYzYkbE_f11Y_XpNc-wazr3TfuNXdmLVhjXQ,2637
+json_fingerprint-0.7.0.dist-info/LICENSE,sha256=IV4-QWWqY6UnT_qEzZbu0AyAh0qDPiimPNdhEjXzmag,1071
+json_fingerprint-0.7.0.dist-info/METADATA,sha256=UzmCMOKpyIksLd-R6XDTyzWdEkmw66P05zqu4uCUqSA,4180
+json_fingerprint-0.7.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+json_fingerprint-0.7.0.dist-info/top_level.txt,sha256=1bPPZfVFA7LZMynBY0fCxgahs7hD1axI7t1Y1diuTxo,17
+json_fingerprint-0.7.0.dist-info/RECORD,,
