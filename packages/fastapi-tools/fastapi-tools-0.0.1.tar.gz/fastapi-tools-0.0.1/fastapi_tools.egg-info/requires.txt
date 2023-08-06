@@ -1,0 +1,4 @@
+uvicorn
+fastapi
+get-port
+dir-import==0.0.3
