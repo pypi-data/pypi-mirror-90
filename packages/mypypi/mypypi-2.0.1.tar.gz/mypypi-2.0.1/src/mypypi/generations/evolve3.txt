@@ -1,0 +1,130 @@
+=========================
+Evolution to generation 3
+=========================
+
+Remove all indexes and int ids utility from default storage.
+
+  >>> from zope.component import hooks
+
+Let's open the original generation 0 database:
+
+  >>> db = getDB('tests/generation-2.fs')
+  >>> site = getRootFolder(db)
+  >>> oldSite = hooks.getSite()
+  >>> hooks.setSite(site)
+
+
+Conditions
+----------
+
+Let's get the site and test the existing storage
+
+  >>> sm = site.getSiteManager()
+
+  >>> idx = sm['default']['package.packageText']
+  >>> idx
+  <z3c.indexer.index.TextIndex object at ...>
+
+  >>> idx = sm['default']['package.isPublished']
+  >>> idx
+  <z3c.indexer.index.ValueIndex object at ...>
+
+  >>> idx = sm['default']['package.releaseText']
+  >>> idx
+  <z3c.indexer.index.TextIndex object at ...>
+
+  >>> idx = sm['default']['package.releaseClassifiers']
+  >>> idx
+  <z3c.indexer.index.TextIndex object at ...>
+
+  >>> idx = sm['default']['release.fullText']
+  >>> idx
+  <z3c.indexer.index.TextIndex object at ...>
+
+  >>> idx = sm['default']['user.fullText']
+  >>> idx
+  <z3c.indexer.index.TextIndex object at ...>
+
+  >>> idx = sm['default']['historyEntry.fullText']
+  >>> idx
+  <z3c.indexer.index.TextIndex object at ...>
+
+  >>> idx = sm['default']['errorEntry.fullText']
+  >>> idx
+  <z3c.indexer.index.TextIndex object at ...>
+
+  >>> util = sm['default']['IntIds' ]
+  >>> util
+  <zope.intid.IntIds object at ...>
+
+
+Evolve
+------
+
+Let's now evolve to generation 3:
+
+  >>> from mypypi.generations.testing import ContextStub
+  >>> context = ContextStub(site, db)
+  >>> from mypypi.generations.evolve3 import evolve
+  >>> evolve(context)
+
+
+Test
+----
+
+Check if the indexes and intid util got removed:
+
+  >>> sm = site.getSiteManager()
+
+  >>> idx = sm['default']['package.packageText']
+  Traceback (most recent call last):
+  ...
+  KeyError: 'package.packageText'
+
+  >>> idx = sm['default']['package.isPublished']
+  Traceback (most recent call last):
+  ...
+  KeyError: 'package.isPublished'
+
+  >>> idx = sm['default']['package.releaseText']
+  Traceback (most recent call last):
+  ...
+  KeyError: 'package.releaseText'
+
+  >>> idx = sm['default']['package.releaseClassifiers']
+  Traceback (most recent call last):
+  ...
+  KeyError: 'package.releaseClassifiers'
+
+  >>> idx = sm['default']['release.fullText']
+  Traceback (most recent call last):
+  ...
+  KeyError: 'release.fullText'
+
+  >>> idx = sm['default']['user.fullText']
+  Traceback (most recent call last):
+  ...
+  KeyError: 'user.fullText'
+
+  >>> idx = sm['default']['historyEntry.fullText']
+  Traceback (most recent call last):
+  ...
+  KeyError: 'historyEntry.fullText'
+
+  >>> idx = sm['default']['errorEntry.fullText']
+  Traceback (most recent call last):
+  ...
+  KeyError: 'errorEntry.fullText'
+
+  >>> util = sm['default']['IntIds' ]
+  Traceback (most recent call last):
+  ...
+  KeyError: 'IntIds'
+
+
+Cleanup
+-------
+
+  >>> hooks.setSite(oldSite)
+  >>> db.close()
+
