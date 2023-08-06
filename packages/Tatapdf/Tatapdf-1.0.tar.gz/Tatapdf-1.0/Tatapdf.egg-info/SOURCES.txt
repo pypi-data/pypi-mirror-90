@@ -1,0 +1,6 @@
+README.md
+setup.py
+Tatapdf.egg-info/PKG-INFO
+Tatapdf.egg-info/SOURCES.txt
+Tatapdf.egg-info/dependency_links.txt
+Tatapdf.egg-info/top_level.txt
