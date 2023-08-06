@@ -1,0 +1,19 @@
+Changelog
+=========
+
+1.1.0
+-----
+ - updated security manager properties edit form to display credentials plug-ins
+ - updated doctests
+
+1.0.2
+-----
+ - updated translation strings
+
+1.0.1
+-----
+ - small update in protected object roles edit form
+
+1.0.0
+-----
+ - initial release
