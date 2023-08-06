@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: notion-writer
+Version: 0.0.4
+Summary: A top level unofficial API for Notion
+Home-page: https://github.com/suakow/notion_writer
+Author: Puri Phakmongkol
+Author-email: puripmk@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4
+Requires-Dist: bs4
+Requires-Dist: cached-property
+Requires-Dist: commonmark
+Requires-Dist: dictdiffer
+Requires-Dist: notion (==0.0.27)
+Requires-Dist: python-slugify
+Requires-Dist: requests
+Requires-Dist: tzlocal
+Requires-Dist: urllib3
+
+# notion_writer
+A top level unofficial API for Notion
+
+
