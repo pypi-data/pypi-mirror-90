@@ -1,0 +1,8 @@
+numpy
+matplotlib
+scipy
+tqdm
+numba
+
+[Optimization and Inverse Design]
+cma
