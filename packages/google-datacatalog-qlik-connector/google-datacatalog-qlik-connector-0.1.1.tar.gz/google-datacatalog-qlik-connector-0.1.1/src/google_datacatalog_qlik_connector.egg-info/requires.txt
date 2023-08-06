@@ -1,0 +1,4 @@
+google-datacatalog-connectors-commons~=0.6.7
+jmespath~=0.10.0
+requests_ntlm~=1.1.0
+websockets~=8.1
