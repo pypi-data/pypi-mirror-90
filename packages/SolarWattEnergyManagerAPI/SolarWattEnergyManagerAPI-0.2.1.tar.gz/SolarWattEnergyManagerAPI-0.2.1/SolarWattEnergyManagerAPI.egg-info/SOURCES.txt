@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+SolarWattEnergyManagerAPI/SolarWatt.py
+SolarWattEnergyManagerAPI/__init__.py
+SolarWattEnergyManagerAPI/__main__.py
+SolarWattEnergyManagerAPI.egg-info/PKG-INFO
+SolarWattEnergyManagerAPI.egg-info/SOURCES.txt
+SolarWattEnergyManagerAPI.egg-info/dependency_links.txt
+SolarWattEnergyManagerAPI.egg-info/requires.txt
+SolarWattEnergyManagerAPI.egg-info/top_level.txt
