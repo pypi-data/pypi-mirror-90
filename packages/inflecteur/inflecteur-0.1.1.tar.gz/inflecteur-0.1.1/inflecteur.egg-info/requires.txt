@@ -1,0 +1,6 @@
+sacremoses
+tokenizers
+sentencepiece
+transformers
+pandas
+numpy
