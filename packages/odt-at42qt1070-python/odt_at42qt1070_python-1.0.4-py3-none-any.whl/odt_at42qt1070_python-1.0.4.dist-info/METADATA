@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: odt-at42qt1070-python
+Version: 1.0.4
+Summary: CircuitPython library for AT42QT1070 capacitive touch acorn.
+Home-page: https://github.com/skerr92/at42qt-acorn-python
+Author: Oak Development Technologies
+Author-email: hello@oakdev.tech
+License: MIT
+Keywords: odt oakdevtech at42qt1070 capacitive touch breakout hardware micropython circuitpython
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Hardware
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/x-rst
+Requires-Dist: Adafruit-Blinka
+Requires-Dist: adafruit-circuitpython-busdevice
+
+**Circuitpython driver library for AT42QT1070 Capacitive Touch Sensor**
+=======================================================================
+This is the python driver library for the AT42QT1070 Acorn by Oak Development Technologies.
+
+**Dependencies**
+----------------
+The Adafruit Bus Device Library is required.
+
+**Examples**
+------------
+Example uses of the driver code can be found under the Example folder when available.
+
+**Contributing**
+----------------
+Open an issue if you would like to add support for features or functionality not currently implemented.
+
+**Questions?**
+--------------
+Email hello@oakdev.tech with any questions you have or simply open an issue.
+
+*Licensed under MIT*
+
+
