@@ -1,0 +1,8 @@
+README.md
+setup.py
+meater/MeaterApi.py
+meater/__init__.py
+meater_python.egg-info/PKG-INFO
+meater_python.egg-info/SOURCES.txt
+meater_python.egg-info/dependency_links.txt
+meater_python.egg-info/top_level.txt
