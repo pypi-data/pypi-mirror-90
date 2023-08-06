@@ -1,0 +1,11 @@
+networkx>=2
+fsspec
+
+[dev]
+fire
+pandas
+pre-commit
+pytest
+
+[viz]
+pygraphviz
