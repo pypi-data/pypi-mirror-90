@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+tkPDFViewer/__init__.py
+tkPDFViewer/tkPDFViewer.py
+tkPDFViewer.egg-info/PKG-INFO
+tkPDFViewer.egg-info/SOURCES.txt
+tkPDFViewer.egg-info/dependency_links.txt
+tkPDFViewer.egg-info/requires.txt
+tkPDFViewer.egg-info/top_level.txt
