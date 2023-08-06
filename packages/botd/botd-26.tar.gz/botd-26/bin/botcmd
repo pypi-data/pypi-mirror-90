@@ -1,0 +1,42 @@
+#!/usr/bin/python3
+# BOTD - 24/7 channel daemon
+#
+# this file is placed in the public domain
+
+"run a cli for botd"
+
+# imports
+
+import os
+import sys
+
+from bot.hdl import Handler, cmd
+from bot.trm import execute
+from bot.utl import privilege
+
+import bot.obj
+
+# classes
+
+class Mini(Handler):
+
+    def __init__(self):
+        super().__init__()
+        self.register("cmd", cmd)
+
+    def direct(self, txt):
+        print(txt)
+
+# functions
+
+def main():
+    bot.obj.wd = "/var/lib/botd/"
+    privilege("botd")
+    h = Mini()
+    h.load("bot.cmd")
+    return h.cmd(" ".join(sys.argv[1:]))
+
+# runtime
+
+execute(main)
+os._exit(0)

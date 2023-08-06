@@ -1,0 +1,29 @@
+#!/usr/bin/python3
+# BOTD - 24/7 channel daemon (bin/botd)
+#
+# this file is placed in the public domain
+
+"run a service for systemd"
+
+# imports
+
+from bot.hdl import Handler, os
+from bot.trm import execute
+from bot.utl import privilege
+
+# functions
+
+def main():
+    import bot.obj
+    bot.obj.wd = "/var/lib/botd/"
+    privilege("botd")
+    h = Handler()
+    h.load("bot.cmd")
+    h.start()
+    h.init("irc,udp,rss")
+    h.wait()
+
+# runtime
+
+execute(main)
+os._exit(0)
