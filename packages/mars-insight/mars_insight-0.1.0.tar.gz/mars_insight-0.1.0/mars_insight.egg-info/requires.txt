@@ -1,0 +1,13 @@
+matplotlib
+numpy
+requests
+
+[dev]
+bandit
+flake8
+nox
+pylint
+pytest
+pytest-cov
+sphinx
+sphinx-press-theme
