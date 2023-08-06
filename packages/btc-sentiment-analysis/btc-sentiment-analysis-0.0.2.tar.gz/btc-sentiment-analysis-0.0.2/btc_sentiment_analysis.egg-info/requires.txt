@@ -1,0 +1,12 @@
+beautifulsoup4
+lxml
+matplotlib
+newspaper3k
+nltk
+pandas
+requests
+seaborn
+textblob
+
+[dev]
+pytest
