@@ -1,0 +1,3 @@
+[console_scripts]
+austin-tui=austin_tui.__main__:main
+
