@@ -1,0 +1,13 @@
+README.md
+setup.py
+datasets/english_words.txt
+datasets/italian_words.txt
+gibberish_score/__init__.py
+gibberish_score/gibberish_score.py
+gibberish_score.egg-info/PKG-INFO
+gibberish_score.egg-info/SOURCES.txt
+gibberish_score.egg-info/dependency_links.txt
+gibberish_score.egg-info/requires.txt
+gibberish_score.egg-info/top_level.txt
+tests/__init__.py
+tests/test_all.py
