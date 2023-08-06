@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: geotiff
+Version: 0.0.8
+Summary: A noGDAL tool for reading and writing geotiff files
+Home-page: https://github.com/Open-Source-Agriculture/geotiff
+Author: Kipling Crossing
+Author-email: kip.crossing@gmail.com
+License: UNKNOWN
+Description: # geotiff
+        
+        A noGDAL tool for reading and writing geotiff files
+        
+        ### What is noGDAL?
+        
+        **noGDAL** is a philosophy for developing geospatial programs in python without using GDAL.
+        
+        ### Usage
+        
+        Read a sections of a large tiff using a bounding box
+        
+        ```python
+        from geotiff import GeoTiff
+        
+        bounding_box = [(138.632071411, -32.447310785), (138.644218874, -32.456979174)]
+        geoTiff = GeoTiff(tiff_file)
+        array = geoTiff.read_box(bounding_box)
+        ```
+        
+        This will detect and convert coordinates into WGS 84
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
