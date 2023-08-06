@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: aioimgur
+Version: 0.1.0.post1
+Summary: Fork of the official ImgurPython library rewritten with aiohttp
+Home-page: https://github.com/hatarist/aioimgur
+Author: Igor Hatarist
+Author-email: hatarist@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: api,imgur,client
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
