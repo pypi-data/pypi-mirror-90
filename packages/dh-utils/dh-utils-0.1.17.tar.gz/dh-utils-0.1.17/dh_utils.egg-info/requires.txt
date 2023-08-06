@@ -1,0 +1,5 @@
+regex
+lxml
+anytree
+cltk
+markdown
