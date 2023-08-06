@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+ontodev_valve.egg-info/PKG-INFO
+ontodev_valve.egg-info/SOURCES.txt
+ontodev_valve.egg-info/dependency_links.txt
+ontodev_valve.egg-info/entry_points.txt
+ontodev_valve.egg-info/requires.txt
+ontodev_valve.egg-info/top_level.txt
+valve/__init__.py
+valve/parse.py
+valve/valve.py
+valve/resources/valve.json
