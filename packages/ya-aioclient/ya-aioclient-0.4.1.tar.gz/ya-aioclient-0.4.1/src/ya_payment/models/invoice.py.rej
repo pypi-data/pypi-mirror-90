@@ -1,0 +1,25 @@
+*** models/invoice.py	2020-07-21 19:59:05.000000000 +0200
+--- models/invoice.py	2020-07-21 16:04:54.000000000 +0200
+***************
+*** 434,441 ****
+          :param status: The status of this Invoice.  # noqa: E501
+          :type: InvoiceStatus
+          """
+!         if self.local_vars_configuration.client_side_validation and status is None:  # noqa: E501
+!             raise ValueError("Invalid value for `status`, must not be `None`")  # noqa: E501
+  
+          self._status = status
+  
+--- 480,491 ----
+          :param status: The status of this Invoice.  # noqa: E501
+          :type: InvoiceStatus
+          """
+!         if (
+!             self.local_vars_configuration.client_side_validation and status is None
+!         ):  # noqa: E501
+!             raise ValueError(
+!                 "Invalid value for `status`, must not be `None`"
+!             )  # noqa: E501
+  
+          self._status = status
+  
