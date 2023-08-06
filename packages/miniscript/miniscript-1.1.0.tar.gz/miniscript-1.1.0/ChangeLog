@@ -1,0 +1,77 @@
+CHANGES
+=======
+
+1.1.0
+-----
+
+* Add filters to \_\_all\_\_
+* Add assert task and expose Namespace
+* Make tasks optional for Engine()
+* Avoid Undefined in script results
+* Fix unit tests on Python 3.6
+* Never return namespace objects from scripts
+* Ansible-compatible backslash handling
+* More documentation
+* Docs: clarify what MiniScript is and is not
+* Add to\_datetime filter
+* Add set filters
+* Add urlsplit filter
+* Add regex\_\* filters
+* Add forgotten versionadded
+* Add flatten filter
+* Add ipaddr, ipv4 and ipv6 filters
+* Re-license to BSD for Jinja2 compatibility
+* Add json\_query filter
+* Add combine filter
+* New filters: bool, dict2items, items2dict, zip and zip\_longest
+* Add a missing super() call to a test
+* Drop unused JsonType
+* Add docs to the default tox list
+* A more useful example on the landing page
+* Clarify that we're not based on Ansible
+
+1.0.0
+-----
+
+* Add a longer functional test
+* Finish the documentation
+* Simplify Task by removing load()
+* Links to the docs
+* Create documentation
+* CI: update coverage
+* Move test requirements to tox.ini and update hacking
+* Finish test coverage for tasks
+* Make Block work (dict -> Mapping)
+* Nicer validation failure messages
+* Handle jinja errors when validating
+* Implement loops
+* Change Result to better match Ansible
+* Give Context a \_\_dict\_\_
+* Fix implementation of Return and Namespace
+* Finish implementation of Task (minus loops)
+* Reduce code duplication in Task loading and validation
+* Real implementation for When
+* Rework Context for actual recursive rendering
+* Fixed duplicate checks in Task
+* Unit tests for Engine
+* Separate tasks module and more logic in Task
+* Rename Action -> Task
+* Evaluate action parameters
+* Default action's name to its registred name
+* Streamline logging
+* Simplify public types
+* Add returning and failing
+* Rename set\_var -> vars
+* Add a Context object
+* Remove .stestr.conf (not used)
+* Add CI status badge
+* CI: split jobs, add Python 3.9
+* Create python-package.yml
+* Rename to miniscript
+* Organize code around modules, define public API
+* Correct params type
+* Switch to ansible-like syntax
+* First version of execute
+* Basic class structure
+* Add mypy
+* Initial structure
