@@ -1,0 +1,7 @@
+factory-boy
+
+[dev]
+django
+pytest-django
+pytest-pythonpath
+tox
