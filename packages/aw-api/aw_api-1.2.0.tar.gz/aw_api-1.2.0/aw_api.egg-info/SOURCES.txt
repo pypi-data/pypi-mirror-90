@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+aw_api/__init__.py
+aw_api/api.py
+aw_api/exceptions.py
+aw_api.egg-info/PKG-INFO
+aw_api.egg-info/SOURCES.txt
+aw_api.egg-info/dependency_links.txt
+aw_api.egg-info/requires.txt
+aw_api.egg-info/top_level.txt
