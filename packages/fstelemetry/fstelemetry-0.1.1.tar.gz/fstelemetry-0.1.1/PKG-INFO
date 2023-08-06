@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: fstelemetry
+Version: 0.1.1
+Summary: Capture FS2020 telemery to a csv file
+Home-page: https://github.com/jbencina/fstelemetry
+Author: John Bencina
+License: MIT
+Download-URL: https://github.com/jbencina/fstelemetry/archive/v0.1.1.tar.gz
+Description: # FSTelemetry
+        Python library for collecting Flight Simulator 2020 telemetry into a local csv 
+        file using SimConnect. Variables for collection are simply defined in a
+        `config.yaml` file. 
+        
+        A list of available data points can be found here at the Python-SimConnect
+        GitHub page:
+        https://github.com/odwdinc/Python-SimConnect/blob/master/SimConnect/RequestList.py#L234. 
+        
+        
+        ## Getting Started
+        Install FSTelemetry (https://pypi.org/project/fstelemetry/)
+        
+        ```bash
+        pip install fstelemetry
+        ```
+        
+        Create a `config.yaml` file in a new folder containing a list of metrics
+        you would like to track:
+        
+        ```yaml
+        keys:
+          - PLANE_ALTITUDE
+          - GROUND_VELOCITY
+          - AIRSPEED_INDICATED
+          - AIRSPEED_MACH
+          - AMBIENT_TEMPERATURE
+          - AMBIENT_PRESSURE
+          - TOTAL_WEIGHT
+          - FUEL_TOTAL_QUANTITY
+          - ENG_FUEL_FLOW_GPH:1
+          - ENG_FUEL_FLOW_GPH:2
+          - TURB_ENG_CORRECTED_N1:1
+          - TURB_ENG_CORRECTED_N2:1
+          - VERTICAL_SPEED
+          - AIRCRAFT_WIND_X
+          - AIRCRAFT_WIND_Y
+        ```
+        
+        In the same directory, simply launch the tool (Note: ensure you are in an
+        active flight)
+        
+        ```bash
+        fstelemetry
+        ```
+        
+        This will produce a log file named with the current `YYYYMMDDHHMMSS.csv` by
+        default. You can change settings such as the config & log file location if
+        needed. You can also adjust the delay in logging (default 1.0 seconds). See:
+        ```bash
+        fstelemetry --help
+        usage: fstelemetry [-h] [--config CONFIG] [--log LOG] [--interval INTERVAL]
+        
+        optional arguments:
+          -h, --help           show this help message and exit
+          --config CONFIG      Relative path to the config file
+          --log LOG            Relative path for the output log file
+          --interval INTERVAL  Polling interval in seconds
+        ```
+        
+Keywords: flight,simulator,simconnect,flightsim
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

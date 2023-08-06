@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+fstelemetry/__init__.py
+fstelemetry/__main__.py
+fstelemetry/telemetry.py
+fstelemetry.egg-info/PKG-INFO
+fstelemetry.egg-info/SOURCES.txt
+fstelemetry.egg-info/dependency_links.txt
+fstelemetry.egg-info/entry_points.txt
+fstelemetry.egg-info/requires.txt
+fstelemetry.egg-info/top_level.txt
