@@ -1,0 +1,7 @@
+easyCrawler/__init__.py
+easyCrawler/setup.py
+easyCrawler.egg-info/PKG-INFO
+easyCrawler.egg-info/SOURCES.txt
+easyCrawler.egg-info/dependency_links.txt
+easyCrawler.egg-info/entry_points.txt
+easyCrawler.egg-info/top_level.txt
