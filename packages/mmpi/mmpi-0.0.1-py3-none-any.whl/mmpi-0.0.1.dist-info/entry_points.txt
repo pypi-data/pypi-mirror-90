@@ -1,0 +1,3 @@
+[console_scripts]
+mmpi-run = mmpi.main:main
+
