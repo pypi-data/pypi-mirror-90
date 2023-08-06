@@ -1,0 +1,6 @@
+README.md
+setup.py
+interactive_data_manipulation.egg-info/PKG-INFO
+interactive_data_manipulation.egg-info/SOURCES.txt
+interactive_data_manipulation.egg-info/dependency_links.txt
+interactive_data_manipulation.egg-info/top_level.txt
