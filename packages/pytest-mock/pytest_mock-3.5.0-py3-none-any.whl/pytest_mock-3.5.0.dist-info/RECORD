@@ -1,0 +1,10 @@
+pytest_mock/__init__.py,sha256=IEHFcklNS8uG04RiGakLeUyhCmhfyl-dowWdbP-gfwo,327
+pytest_mock/_version.py,sha256=iLFBjztwsCoafzNGtksmZXb5eJgwrqzeSXDi0w_5lCs,142
+pytest_mock/plugin.py,sha256=1pWWidT58y4dilNRwH4GhFIkYdxWvSO9vihSjVSYKZE,21120
+pytest_mock/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_mock-3.5.0.dist-info/LICENSE,sha256=tc35IhAzpjNmUVvePoW1LB-y2yk8HZhXeExVY6VEGcM,1075
+pytest_mock-3.5.0.dist-info/METADATA,sha256=v-nZJEFu1t_eGKNOweR2RpmuMwynRohdQ2fdmJ9S3lk,14146
+pytest_mock-3.5.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pytest_mock-3.5.0.dist-info/entry_points.txt,sha256=8tH_HCgGZ3-IIRq9D1-jecmWQp1UemC9c31VvtFf-6c,38
+pytest_mock-3.5.0.dist-info/top_level.txt,sha256=g25fQWB0jTCpAGM1n3t-0RlLvKJIM-t7-WwhbeYf0OU,12
+pytest_mock-3.5.0.dist-info/RECORD,,
