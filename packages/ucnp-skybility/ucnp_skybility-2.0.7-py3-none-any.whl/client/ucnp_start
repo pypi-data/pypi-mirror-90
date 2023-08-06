@@ -1,0 +1,86 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+File: start.py.py
+Author: Scott Yang(Scott)
+Email: yangyingfa@skybility.com
+Copyright: Copyright (c) 2020, Skybility Software Co.,Ltd. All rights reserved.
+Description:
+"""
+import signal
+import sys
+import os
+import psutil
+from client.pywx.login_gui import LoginGui, App, MessageGui
+from client.uri.connection import PipeData, Connection
+from client.client_log.logging import logging
+
+pid_file = os.path.join(
+    os.path.expanduser("~"), '.config', 'ucnp', 'run', 'ucnp.pid')
+if not os.path.exists((os.path.dirname(pid_file))):
+    os.makedirs(os.path.dirname(pid_file), exist_ok=True)
+
+
+def stop(log_gui):
+    def act(sig, frame):
+        log_gui.stop()
+        sys.exit(1)
+
+    return act
+
+
+def check_if_running():
+    if not os.path.exists(pid_file):
+        return 0
+
+    pid = 0
+    with open(pid_file, 'r') as f:
+        try:
+            pid = int(f.read())
+        except ValueError:
+            return 0
+
+    if not pid:
+        return 0
+
+    try:
+        p = psutil.Process(pid)
+        if p.is_running():
+            logging.info(f'ucnp_start is already running with pid [{pid}]')
+            return pid
+
+    except psutil.Error as e:
+        logging.info(f'ucnp_start is not running for some reason, details: {e}')
+
+    return 0
+
+
+def write_pid_to_file():
+    pid = os.getpid()
+    with open(pid_file, 'w') as f:
+        f.write(str(pid))
+
+    logging.info(f'ucnp_start is now running with new pid [{pid}]')
+
+
+if __name__ == '__main__':
+    app = App()
+
+    ret = check_if_running()
+    if ret:
+        MessageGui(ret,None, -1, "", size=(659, 500))
+        sys.exit(0)
+
+    write_pid_to_file()
+
+    lg = LoginGui(PipeData, Connection, None, -1, "", size=(659, 500))
+
+    signal.signal(signal.SIGTERM, stop(lg))
+    signal.signal(signal.SIGABRT, stop(lg))
+    signal.signal(signal.SIGINT, stop(lg))
+    signal.signal(signal.SIGSEGV, stop(lg))
+
+    lg.cook_tray(app)
+    lg.Show()
+    app.MainLoop()
