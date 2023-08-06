@@ -1,0 +1,11 @@
+README.md
+setup.py
+beancount_allocate/__init__.py
+beancount_allocate/allocate.py
+beancount_allocate/common.py
+beancount_allocate/metaset.py
+beancount_allocate.egg-info/PKG-INFO
+beancount_allocate.egg-info/SOURCES.txt
+beancount_allocate.egg-info/dependency_links.txt
+beancount_allocate.egg-info/top_level.txt
+beancount_allocate/../README.md

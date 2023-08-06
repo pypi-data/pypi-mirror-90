@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: beancount_allocate
+Version: 0.1.2
+Summary: Plugin for Beancount to collaborate within one ledger.
+Home-page: https://github.com/Akuukis/beancount_allocate
+Author: Akuukis
+Author-email: akuukis@kalvis.lv
+License: GNU AGPLv3
+Download-URL: https://pypi.python.org/pypi/beancount_allocate
+Description: Share
+        ===============================================================================
+        
+        [![PyPI - Version](https://img.shields.io/pypi/v/beancount_allocate)](https://pypi.org/project/beancount-allocate/)
+        [![PyPI - Downloads](https://img.shields.io/pypi/dm/beancount_allocate)](https://pypi.org/project/beancount-allocate/)
+        [![PyPI - Wheel](https://img.shields.io/pypi/wheel/beancount_allocate)](https://pypi.org/project/beancount-allocate/)
+        [![License](https://img.shields.io/pypi/l/beancount_allocate)](https://choosealicense.com/licenses/agpl-3.0/)
+        [![Linting](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+        
+        A beancount plugin to collaborate within one ledger.
+        
+        TODO
+        
+Platform: UNKNOWN
+Requires: beancount (>2.0)
+Description-Content-Type: text/markdown
