@@ -1,0 +1,14 @@
+cerebellum_value_map/__init__.py,sha256=jsRj09PhIOJ2bf2LuDvHZzGzf_dsCNIM9yH_DQ5qBRs,647
+cerebellum_value_map/cerebellum.py,sha256=PsTXtomi21BSWhcRrFSKFKZCkTM29-swfBNtW_NGd78,31547
+cerebellum_value_map/colormap.txt,sha256=EZG0pxFqVaGvaojXRmWDS3kcqYDM9zH4NFZFEwoeuVU,2467
+cerebellum_value_map/colors.py,sha256=BiZI8o6mf3is-BwQVUh1DCKct_FQZrTetv6uKsyBBko,8827
+cerebellum_value_map/path_code.py,sha256=v1ZihZCY5rER19pPTtDV3XL-LaBuEJ7gWeUWm-Uelz8,2959
+cerebellum_value_map/shape.py,sha256=HtAfDMXVbwu-hmQsax-W6j7i5Aa9-ayg8-t-Qcqy34s,6342
+cerebellum_value_map/text.py,sha256=DThjgi9Z_QqW8EI8BljB1uVgSA72aBGQf0ZH3ln5H0E,2612
+cerebellum_value_map/utils.py,sha256=-_KGs-XoBhvkalZz380uG0l8a1-1Emt79nRafp-9IeU,1648
+cerebellum_value_map-0.1.0.data/scripts/show_cerebellum.py,sha256=9wMQtKtr6XMuer1SSVG2Z4V3JxkQw5SaZnPcXiPcFV8,4837
+cerebellum_value_map-0.1.0.dist-info/LICENSE.txt,sha256=gSKBVhfVs8gxzuR6P53LoblWtDkT7sYIWGlWXcgqieo,1048
+cerebellum_value_map-0.1.0.dist-info/METADATA,sha256=OZzGaru3cLCzQI3U9oI3KuVMY613wvr5hQSq3cxiz5k,1773
+cerebellum_value_map-0.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cerebellum_value_map-0.1.0.dist-info/top_level.txt,sha256=w0SLqAeVOh1Ucy9lDdBbAn1cKHVHdTpvpfzLsaPjDiQ,21
+cerebellum_value_map-0.1.0.dist-info/RECORD,,
