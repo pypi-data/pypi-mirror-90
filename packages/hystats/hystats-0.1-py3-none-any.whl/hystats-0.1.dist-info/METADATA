@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hystats
+Version: 0.1
+Summary: Calculates hydrological model's performance indices
+Home-page: UNKNOWN
+Author: UPS Bhadoriya
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+Calculates hydrological model's performance indices
+
+
