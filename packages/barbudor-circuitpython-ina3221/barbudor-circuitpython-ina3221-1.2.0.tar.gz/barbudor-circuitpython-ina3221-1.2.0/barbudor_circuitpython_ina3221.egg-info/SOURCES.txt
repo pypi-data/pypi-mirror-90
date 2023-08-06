@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+barbudor_circuitpython_ina3221.egg-info/PKG-INFO
+barbudor_circuitpython_ina3221.egg-info/SOURCES.txt
+barbudor_circuitpython_ina3221.egg-info/dependency_links.txt
+barbudor_circuitpython_ina3221.egg-info/requires.txt
+barbudor_circuitpython_ina3221.egg-info/top_level.txt
+barbudor_ina3221/__init__.py
+barbudor_ina3221/full.py
+barbudor_ina3221/lite.py
