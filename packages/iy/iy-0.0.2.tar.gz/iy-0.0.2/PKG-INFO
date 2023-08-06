@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: iy
+Version: 0.0.2
+Summary: Includes functions to diagnose duplicates in adwords elements
+Home-page: https://github.com/thorwhalen/ut/tree/master/aw/dup_diag.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # iy
+        Includes functions to diagnose duplicates in adwords elements
+        
+        
+        To install:	```pip install iy```
+        
+Platform: any
+Description-Content-Type: text/markdown
