@@ -1,0 +1,14 @@
+include LICENSE
+include *.py
+include *.txt *.md
+recursive-include src *.cxx *.h *.cmake *.txt
+recursive-include test *.xml *.txt *.pickle
+graft pybind11
+graft rapidxml
+prune doc 
+prune cmake
+prune examples
+prune lib
+prune profiling
+prune util
+prune verification
