@@ -1,0 +1,3 @@
+[console_scripts]
+janisdk = toolbuilder.main:process_args
+
