@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+wca_allauth/__init__.py
+wca_allauth/apps.py
+wca_allauth/provider.py
+wca_allauth/urls.py
+wca_allauth/views.py
+wca_django_allauth.egg-info/PKG-INFO
+wca_django_allauth.egg-info/SOURCES.txt
+wca_django_allauth.egg-info/dependency_links.txt
+wca_django_allauth.egg-info/requires.txt
+wca_django_allauth.egg-info/top_level.txt
