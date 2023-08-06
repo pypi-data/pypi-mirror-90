@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+boiler_plate/__init__.py
+boiler_plate/main.py
+bolier_plate.egg-info/PKG-INFO
+bolier_plate.egg-info/SOURCES.txt
+bolier_plate.egg-info/dependency_links.txt
+bolier_plate.egg-info/requires.txt
+bolier_plate.egg-info/top_level.txt
+tests/__init__.py
+tests/test_suma.py
