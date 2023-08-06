@@ -1,0 +1,5 @@
+[console_scripts]
+andotp_decrypt=andotp_decrypt:main
+andotp_gencode=generate_code:main
+andotp_qrcode=generate_qr_codes:main
+
