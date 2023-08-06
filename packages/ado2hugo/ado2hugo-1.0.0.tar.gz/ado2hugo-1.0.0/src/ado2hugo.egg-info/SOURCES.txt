@@ -1,0 +1,17 @@
+README.md
+setup.py
+src/ado2hugo/__init__.py
+src/ado2hugo/azure_devops.py
+src/ado2hugo/hugo.py
+src/ado2hugo/main.py
+src/ado2hugo/page.py
+src/ado2hugo/project.py
+src/ado2hugo/utilities.py
+src/ado2hugo/version.py
+src/ado2hugo/wiki.py
+src/ado2hugo.egg-info/PKG-INFO
+src/ado2hugo.egg-info/SOURCES.txt
+src/ado2hugo.egg-info/dependency_links.txt
+src/ado2hugo.egg-info/entry_points.txt
+src/ado2hugo.egg-info/requires.txt
+src/ado2hugo.egg-info/top_level.txt
