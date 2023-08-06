@@ -1,0 +1,64 @@
+[tool.poetry]
+name = "pyls-livepy"
+version = "0.1.0"
+description = "A realtime debugging and testing plugin for Palantir's Python Language Server."
+authors = ["Andrew Phillips <skeledrew@gmail.com>"]
+license = "AGPLv3"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+loguru = "^0.5.3"
+space-tracer = { version = "^4.2.0", optional = true }
+python-language-server = { version = "^0.36.1", optional = true }
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.1.2"
+pytest-cov = "^2.10.1"
+pytest-mock = "^3.3.1"
+restview = "^2.9.2"
+
+[tool.poetry.extras]
+pyls = ["python-language-server"]
+runs = ["space-tracer"]
+all  = [
+    "python-language-server",
+    "space-tracer",
+]
+
+[tool.poetry.plugins.pyls]
+pyls_livepy = "pyls_livepy.plugin"
+
+[tool.poetry.scripts]
+pyls-livepy-runner = "pyls_livepy.runner:run"
+
+[tool.pytest.ini_options]
+addopts = "--cov pyls_livepy --cov-report term-missing --verbose -rxXs"
+norecursedirs = [
+    "dist",
+    "build",
+    ".tox",
+    ".nox",
+]
+testpaths = "tests"
+
+[tool.pyls-livepy]
+env = ".nox/make_pyls_livepy_test_env"
+package = "src/pyls_livepy"
+log-level = "debug"
+
+[tool.pyls-livepy.nox]
+python = "3.7"
+deps = [
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+]
+commands = [
+    "poetry install -E all",
+    "pytest",
+]
+whitelist_externals = "poetry"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
