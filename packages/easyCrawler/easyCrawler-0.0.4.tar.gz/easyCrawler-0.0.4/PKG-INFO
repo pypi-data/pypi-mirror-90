@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: easyCrawler
+Version: 0.0.4
+Summary: An easy crawler for new hands
+Home-page: https://github.com/theCoder-WM
+Author: William Ma
+Author-email: 3327821469@qq.com
+License: UNKNOWN
+Description: ### 简易爬虫0.1.0使用手册   
+        #### easyCrawler0.1.0 User's guidance
+        [https://github.com/theCoder-WM]点击此处反馈问题_click_here_to_feedback
+        
+        ```python
+        from easyCrawler import *
+        
+        url = '***'
+        crawler = Crawler(url)
+        crawler.get_soup()
+        crawler.find_all('span', class_name='hello-world')
+        crawler.data_processing()   # data.text
+        crawler.data_processing('href')   # data.attrs['href']
+        print(crawler.data_new)
+        ```
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
