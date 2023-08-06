@@ -1,0 +1,6 @@
+README.md
+setup.py
+mplcamera.egg-info/PKG-INFO
+mplcamera.egg-info/SOURCES.txt
+mplcamera.egg-info/dependency_links.txt
+mplcamera.egg-info/top_level.txt
