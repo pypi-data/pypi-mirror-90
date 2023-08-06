@@ -1,0 +1,22 @@
+Changes in bioutils-0.2.0 (2021-01-07)
+--------------------------------------
+
+  * Support reading sequences from database-based USAs.
+  * Support SQLite-based BioSQL databases.
+  * Configure databases in $XDG_CONFIG_HOME/bioutils/databases.ini.
+  * Add documentation.
+
+
+Changes in bioutils-0.1.2 (2020-12-21)
+--------------------------------------
+
+  * Fix invocation of seqtool's blast command.
+
+
+Changes in bioutils-0.1.1 (2020-12-15)
+--------------------------------------
+
+  * Support reading from program-based USAs.
+  * Support identifier lookup when reading from a file-based USA.
+  * Support field lookup when reading from a file-based USA.
+  * seqtool>cat: Reuse first record's details when catenating sequences.
