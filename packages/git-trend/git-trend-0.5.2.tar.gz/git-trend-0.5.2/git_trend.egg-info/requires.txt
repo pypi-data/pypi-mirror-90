@@ -1,0 +1,4 @@
+termcolor
+beautifulsoup4
+requests
+prettytable
