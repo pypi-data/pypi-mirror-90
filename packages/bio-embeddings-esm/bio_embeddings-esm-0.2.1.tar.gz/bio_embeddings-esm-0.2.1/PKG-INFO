@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: bio_embeddings-esm
+Version: 0.2.1
+Summary: Pre-trained evolutionary scale models for proteins, from Facebook AI Research.
+Home-page: https://github.com/facebookresearch/esm
+Author: Facebook AI Research
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
