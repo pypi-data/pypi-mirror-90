@@ -1,0 +1,10 @@
+django
+
+[dev]
+django
+django_mock_queries
+pylint
+pytest
+pytest-cov
+pytest-pylint
+pytest-watch
