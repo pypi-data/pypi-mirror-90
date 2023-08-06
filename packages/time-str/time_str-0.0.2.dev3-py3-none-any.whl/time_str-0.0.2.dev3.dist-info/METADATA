@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: time-str
+Version: 0.0.2.dev3
+Summary: A package to convert user input into datetime.timedelta objects
+Home-page: https://github.com/BobDotCom/time_str
+Author: BobDotCom
+Author-email: bobdotcomgt@gmail.com
+License: MIT
+Project-URL: Documentation, https://time-str.readthedocs.io/en/latest/index.html
+Project-URL: Source, https://github.com/BobDotCom/time_str
+Project-URL: Tracker, https://github.com/BobDotCom/time_str/issues
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+*****
+time_str
+*****
+
+A package to convert user input into datetime.timedelta objects
+
