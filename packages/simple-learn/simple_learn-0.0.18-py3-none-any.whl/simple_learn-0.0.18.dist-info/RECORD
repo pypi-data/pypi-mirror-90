@@ -1,0 +1,11 @@
+simple_learn/__init__.py,sha256=ifXmQhQrKc-nFaVbv3YI_BI7jAX7LBSX1L7M6m508z4,1219
+simple_learn/version.py,sha256=uuxTl-iFNyzIfMVMcCEKKIvdAssL1bxHRew33gmCxXA,1121
+simple_learn/classifiers/__init__.py,sha256=cY8HNU-4n8sFidj4vZpXpyKt91HZv4tJ_JZ862F5C3Q,1296
+simple_learn/classifiers/param_grid.py,sha256=UNhvBr-r2bihrA1_23LEeUOqDUCbkPlZJRJy5CF3zq4,2966
+simple_learn/classifiers/simple_classifier.py,sha256=lJ_IgI39jhQEHX48nix_bmQD-HN6f6KWNrX2ScMIt94,5089
+simple_learn/classifiers/simple_classifier_list.py,sha256=80eEsz8TwZ4dkYp3sNeBOeBLY-8BjydF4j0nR8nTQCc,5716
+simple_learn-0.0.18.dist-info/LICENSE,sha256=PqpqewRsPyuhjgITQO3FUBVyDVQlZo1kqvHN0a2ERvw,1066
+simple_learn-0.0.18.dist-info/METADATA,sha256=AV9o91v6_OOUKxh5j5oIONACMKOhgDBg9jgwjz9CcbM,4501
+simple_learn-0.0.18.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+simple_learn-0.0.18.dist-info/top_level.txt,sha256=SdVO3PaxVRgZwVZXxATjZAE9vGU3eGUWUrjCUTgyZOg,13
+simple_learn-0.0.18.dist-info/RECORD,,
