@@ -1,0 +1,6 @@
+#!usr/bin/env/python3
+
+import cryptographer
+for attr in cryptographer.__all__:
+    globals()[attr] = getattr(cryptographer, attr)
+del cryptographer
