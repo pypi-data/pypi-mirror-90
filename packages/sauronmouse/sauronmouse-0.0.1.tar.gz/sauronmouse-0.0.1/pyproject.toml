@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "sauronmouse"
+author = "Olli Paloviita"
+author-email = "olli.paloviita@gmail.com"
+home-page = "https://github.com/ollipal/sauronmouse"
+description-file = "README.md"
+
