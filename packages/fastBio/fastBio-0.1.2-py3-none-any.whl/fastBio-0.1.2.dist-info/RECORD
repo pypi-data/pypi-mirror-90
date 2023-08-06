@@ -1,0 +1,12 @@
+fastBio/__init__.py,sha256=N0CKhJZPpNMfWMxsiJb7eXbKCasQRHYXVXtjn1ngK1c,166
+fastBio/data.py,sha256=GidZHGpq2s9JjkTm4gW5v3S71ajSdGK4UTWshfSJidQ,38122
+fastBio/distributed.py,sha256=LH1j_QB2exl-HmtCDhFuZwrri9PqBHVAT05VEkN7Y54,2012
+fastBio/iterators.py,sha256=3atWuLil8I5DKHjL1L30ZE9_Dcld_YNICu0_Ugzsb0o,4186
+fastBio/learner.py,sha256=5TDK8xpOuyN_4GAFQzHdd6nZKVfkaQ9GgaavzVR0-Z0,4804
+fastBio/models.py,sha256=6i9s06D2sMDVIyZDMntNxQeF91J35aCM8EylQ4EOayE,8396
+fastBio/transform.py,sha256=dyp_0k8-9LMn978Zsxse9pcooNHA4ZfC2QHqq7Att28,10104
+fastBio-0.1.2.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+fastBio-0.1.2.dist-info/METADATA,sha256=HzKhZ3vYZOhglFTy05Qa06IA58xqEvae87ZwImrZ5VA,1491
+fastBio-0.1.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+fastBio-0.1.2.dist-info/top_level.txt,sha256=I82IVPrm8osx1sIWF5ctrx64590qaLP9K-PTD-5-4do,8
+fastBio-0.1.2.dist-info/RECORD,,
