@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: packagit
+Version: 0.2101.10
+Summary: Increment version, create and push tag for release
+Home-page: https://github.com/davips/packagit
+Author: Davi Pereira-Santos
+Author-email: dpsabc@gmail.com
+License: GPL3
+Download-URL: https://github.com/davips/packagit/releases
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: gitpython
+
+![test](https://github.com/davips/packagit/workflows/test/badge.svg)
+[![codecov](https://codecov.io/gh/davips/packagit/branch/main/graph/badge.svg)](https://codecov.io/gh/davips/packagit)
+
+# packagit
+Increment version, create and push tag for release on github and pypi
+
+Write your first version inside setup.py in the form
+
+```python
+VERSION = "0.2101.0"  # major.YYMM.minor
+```
+
+Copy the workflow file (release.yml) to .github/workflows of your rpoject repository.
+
+Run at the shell prompt
+
+```bash
+packagit 0  # 0 is the major version number, the minor number will be automatically incremented.
+```
+
+
+
