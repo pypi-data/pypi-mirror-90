@@ -1,0 +1,12 @@
+README.md
+setup.py
+pyverse/__init__.py
+pyverse/__main__.py
+pyverse/silabeador.py
+pyverse/vars.py
+pyverse.egg-info/PKG-INFO
+pyverse.egg-info/SOURCES.txt
+pyverse.egg-info/dependency_links.txt
+pyverse.egg-info/entry_points.txt
+pyverse.egg-info/requires.txt
+pyverse.egg-info/top_level.txt
