@@ -1,0 +1,11 @@
+README.md
+setup.py
+Helsing/__init__.py
+Helsing/colour_swap.py
+Helsing/count_form.py
+Helsing/main.py
+Helsing/models.py
+Helsing.egg-info/PKG-INFO
+Helsing.egg-info/SOURCES.txt
+Helsing.egg-info/dependency_links.txt
+Helsing.egg-info/top_level.txt
