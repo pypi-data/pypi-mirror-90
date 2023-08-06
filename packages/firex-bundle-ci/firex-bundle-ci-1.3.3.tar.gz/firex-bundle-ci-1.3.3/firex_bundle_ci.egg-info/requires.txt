@@ -1,0 +1,4 @@
+firexapp
+lxml
+xunitmerge
+unittest-xml-reporting
