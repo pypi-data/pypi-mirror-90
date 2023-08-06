@@ -1,0 +1,28 @@
+Metadata-Version: 2.0
+Name: evaScanner
+Version: 1.4.0
+Summary: Find the open source vulnerabilities to get more details eva.io
+Home-page: http://packages.python.org/eva
+Author: Jayesh Patel
+Author-email: jay.net.in@gmail.com
+License: MIT
+Keywords: vulnerability scanner,sca software composition analysis
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: PyGithub
+Requires-Dist: glob2
+Requires-Dist: pexpect
+Requires-Dist: prettytable
+Requires-Dist: ptyprocess
+Requires-Dist: pyfiglet
+Requires-Dist: requests
+Requires-Dist: semantic-version
+Requires-Dist: setuptools (==44.1.1)
+Requires-Dist: termcolor
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
