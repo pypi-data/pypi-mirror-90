@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pgkit
+Version: 1.0.1
+Summary: A command-line to make postgresql operations easy
+Home-page: https://github.com/SadeghHayeri/pgkit
+Author: Sadegh Hayeri
+Author-email: hayerisadegh@gmail.com
+License: GPL 3.0
+Download-URL: https://pypi.org/project/pgkit
+Keywords: postgres,postgresql,pg,pgkit,pitr
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: click (==7.1.2)
+Requires-Dist: Jinja2 (==2.11.2)
+Requires-Dist: MarkupSafe (==1.1.1)
+Requires-Dist: tinydb (==4.3.0)
+
+# pgkit
+Postgresql KIT (Backup and PITR)
+
+
