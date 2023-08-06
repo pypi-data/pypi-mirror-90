@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: au
+Version: 0.0.2
+Summary: Filtering outliers
+Home-page: https://github.com/thorwhalen/ut/tree/master/stats/filt.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # au
+        Filtering outliers
+        
+        
+        To install:	```pip install au```
+        
+Platform: any
+Description-Content-Type: text/markdown
