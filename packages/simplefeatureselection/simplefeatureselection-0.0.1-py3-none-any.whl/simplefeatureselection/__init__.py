@@ -1,0 +1,1 @@
+from simplefeatureselection.simplefeatureselection import SimpleFeatureSelection
