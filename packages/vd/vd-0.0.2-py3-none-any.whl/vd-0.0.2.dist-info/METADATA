@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: vd
+Version: 0.0.2
+Summary: Multi classifier testing
+Home-page: https://github.com/thorwhalen/ut/tree/master/ml/testing_multiple_classifiers.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# vd
+Multi classifier testing
+
+
+To install:	```pip install vd```
+
+
