@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: drft
+Version: 0.0.0a1
+Summary: 
+License: MIT
+Author: Anthony Almarza
+Author-email: anthony.almarza@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: yasg
+Requires-Dist: Django (>=3.0,<4.0)
+Requires-Dist: django-filter (>=2.2.0,<3.0.0)
+Requires-Dist: djangorestframework (>=3.11,<4.0)
+Requires-Dist: drf-yasg (>=1.17,<2.0); extra == "yasg"
+Description-Content-Type: text/markdown
+
+# DRFT
+
+> _Django REST Framework Toolkit (DRFT)_
+
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+[![codecov](https://codecov.io/gh/anthonyalmarza/drft/branch/main/graph/badge.svg?token=JRCC98L3FG)](https://codecov.io/gh/anthonyalmarza/drft)
+
+![Build](https://github.com/anthonyalmarza/drft/workflows/Build/badge.svg)
+
+## Installation
+
+`pip install drft`
+
+## Local Development
+
+### Pyenv
+It's recommended that you use [`pyenv`](https://github.com/pyenv/pyenv)
+
+[pyenv-installer](https://github.com/pyenv/pyenv-installer)
+```bash
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+```
+
+### Install `poetry`
+
+This project uses [`poetry`](https://python-poetry.org). Install it using the following command.
+```bash
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
+```
+More instructions [here](https://python-poetry.org/docs/#installation)
+
+### Install the dependencies:
+
+`poetry install`
+
+Install pre-commit hooks:
+
+`poetry run pre-commit install`
+
+### Running Tests:
+
+`poetry run tests`
+
