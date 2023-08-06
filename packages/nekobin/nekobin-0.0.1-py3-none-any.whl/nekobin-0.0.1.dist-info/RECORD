@@ -1,0 +1,10 @@
+nekobin/__init__.py,sha256=C_XnrfGnO2hFeNrLSQGY_v48OMs1YJlDLpTv0WGWo8w,90
+nekobin/client.py,sha256=-omxETWdxOKPaBEYDwx8KIHjRCUDXv4lGkxavdIh53s,1503
+nekobin/errors.py,sha256=X0cSg38n7KrNlzC2nXhm2_dVg85BbWzg1F1yvjx5fc4,110
+nekobin/types.py,sha256=xIG4ZT9z5mFQYMa4bOZo6bcPRo2WVgPBVJk9zSFCYCk,750
+nekobin/utils.py,sha256=Kb1ZQI8C2U2AzKBawiUhygB7fBDQDpI9XXUnGbnQvIc,168
+nekobin-0.0.1.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+nekobin-0.0.1.dist-info/METADATA,sha256=6wXQ8kRxUKLigOJ4f9hLZrvv1prNi3GL6YhjjptO5Qs,501
+nekobin-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+nekobin-0.0.1.dist-info/top_level.txt,sha256=DVv82llp-bu3doPOekBPJXAU-kYcS1DdDltrvSU8LNQ,8
+nekobin-0.0.1.dist-info/RECORD,,
