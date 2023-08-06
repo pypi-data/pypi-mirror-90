@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+rvid/__init__.py
+rvid/core.py
+rvid.egg-info/PKG-INFO
+rvid.egg-info/SOURCES.txt
+rvid.egg-info/dependency_links.txt
+rvid.egg-info/top_level.txt
