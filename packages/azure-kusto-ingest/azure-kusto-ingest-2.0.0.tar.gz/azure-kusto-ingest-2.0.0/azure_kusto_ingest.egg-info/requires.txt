@@ -1,0 +1,6 @@
+azure-kusto-data==2.0.0
+azure-storage-blob<13,>=12
+azure-storage-queue<13,>=12
+
+[pandas]
+pandas
