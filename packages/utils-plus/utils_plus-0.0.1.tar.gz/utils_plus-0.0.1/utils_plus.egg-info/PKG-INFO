@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: utils-plus
+Version: 0.0.1
+Summary: Useful plugins for utils.
+Home-page: https://github.com/LeeKLTW/url_plus
+Author: KunLin Lee
+Author-email: LeeKLTW@gmail.com
+License: UNKNOWN
+Description: # utils_plus
+        Useful plugins for utils.
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
