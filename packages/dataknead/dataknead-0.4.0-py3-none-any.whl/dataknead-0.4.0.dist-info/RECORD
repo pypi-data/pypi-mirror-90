@@ -1,0 +1,17 @@
+dataknead/__init__.py,sha256=9OV9Cnpmx9bot8YdRf6z_O1lKMArhu2dTuA8sxBI_e4,59
+dataknead/baseloader.py,sha256=v2yuA9UIZRm3IzjI_YrKz9yJvO22CCfMn938peopSYU,215
+dataknead/console.py,sha256=R1q4sr9JweXNHh5gMHI8DwUTRbB9dT3-uUBCjLbW-qA,3505
+dataknead/knead.py,sha256=0IhgOS2FawA0qJ6TUGZCBmmH7IVXumXw0QVIynCGWEI,8250
+dataknead/loaders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataknead/loaders/csv.py,sha256=fF5-pwfeinAatBYV4cuchIL7bjcFYi6jUPOry6DR7TY,2421
+dataknead/loaders/excel.py,sha256=4m1bolgITOkP2Py3NN-uGlFs_0GYO-jxJlHW4rU0Srs,2428
+dataknead/loaders/json.py,sha256=ym52crL3TyNoKcHnmutHBzJWcetbZ0wxjM4Ub0agbKk,329
+dataknead/loaders/text.py,sha256=epYx4fu0RU_AggkR-Rcn80NB9-CO9uVa0CFZAd8bnEM,263
+dataknead/loaders/toml.py,sha256=ssQUySWPs23nq6hooLgmys7YPQnH6CD_GVhljwsHXqo,289
+dataknead/loaders/util.py,sha256=SFIp0BLL-L_CPHPptbBQ96AftaDTKm2dclaYgzueZrA,1018
+dataknead/loaders/xml.py,sha256=7la0XcwBnK-ZFu7qF9cwwUXylKyjDDLG7Oix_D-PNp4,322
+dataknead-0.4.0.dist-info/entry_points.txt,sha256=zO3mFbjlRzVt-EMUt_LiLlm0kGyM8LUSmtbvgrzUZxU,47
+dataknead-0.4.0.dist-info/LICENSE.txt,sha256=2Y2Jdj_qABSBhqeCTeoOF58PsSbuJgCu1mAvrRi9FrA,1061
+dataknead-0.4.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+dataknead-0.4.0.dist-info/METADATA,sha256=_ZvwLBEWQHQLRsMVtEChX9b2CrKUe95NzwBcjbyCxm8,1646
+dataknead-0.4.0.dist-info/RECORD,,

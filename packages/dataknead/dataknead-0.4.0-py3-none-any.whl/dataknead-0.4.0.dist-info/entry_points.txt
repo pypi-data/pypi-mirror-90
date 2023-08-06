@@ -1,0 +1,3 @@
+[console_scripts]
+knead=dataknead.console:run
+
