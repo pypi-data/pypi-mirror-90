@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: ranpass
+Version: 0.0.1
+Summary: random password generator
+Home-page: https://github.com/kanish671/ranpass
+Author: Anish Krishnaswamy
+Author-email: kanish671@gmail.com
+License: MIT
+Description: # ranpass
+        Simple Random Password Generator CLI Tool.
+        
+        ### Installing
+        To install this CLI tool you can clone this repo and then run 
+        ```
+        python setup.py install
+        ```
+        Or alternatively, you can do a 
+        ```
+        pip install ranpass
+        ```
+        
+        ### How to use
+        Generate a random password
+        ```
+        ranpass generate -l <length of password desired> -o <option of password type>
+        ```
+        There are four options for password type
+        1. Only lowercase alphabets
+        2. Lowercase + uppercase alphabets
+        3. Alphanumeric
+        4. Alphanumeric + Special characters (Default option, because passwords should be as secure as possible)
+        
+        If you want to see these options in the terminal, run `ranpass generate -h`. You could also run `ranpass -h` to see the available commands. (Generate is the only command right now).
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
