@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: grandiorite
+Version: 0.0.1
+Summary: Hello World in python.
+Home-page: https://github.com/tiegz/grandiorite/python
+Author: Tieg Zaharia
+Author-email: tieg.zaharia@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+### Setup
+
+`pip install -r requirements.txt`
+
+### Run
+
+`python main.py`
+
+
+
