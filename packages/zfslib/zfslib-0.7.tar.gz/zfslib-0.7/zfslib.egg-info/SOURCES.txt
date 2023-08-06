@@ -1,0 +1,9 @@
+README.md
+setup.py
+zfslib/__init__.py
+zfslib/zfslib.py
+zfslib.egg-info/PKG-INFO
+zfslib.egg-info/SOURCES.txt
+zfslib.egg-info/dependency_links.txt
+zfslib.egg-info/requires.txt
+zfslib.egg-info/top_level.txt
