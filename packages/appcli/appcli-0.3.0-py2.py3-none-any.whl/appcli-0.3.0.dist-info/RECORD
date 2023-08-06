@@ -1,0 +1,12 @@
+appcli/__init__.py,sha256=SueMtDUk2qShf2VE0tTifdyL3JwvCIrycbRglmYNp_A,301
+appcli/attrs.py,sha256=trNjyIH9bb19ef4fsFowiIqyP_7z4mn_AsrS-QpNEB0,1086
+appcli/config.py,sha256=D4zUyWn2xdDyKxD38hrwZvrW-Tv-x4QXFdgcmLGvHkk,7612
+appcli/errors.py,sha256=3pc13EQtYY3LBD-uV0xKVNOyoHGd0KNkDdnCrSG0GOE,654
+appcli/layers.py,sha256=6cK344TPeUYBx9GqrW5yaBkMA18jFOx8eE9MDMcPrsc,1536
+appcli/model.py,sha256=3i9csCA1Af68q3pdFR98VdW7aX8tFmJR0mm3q7egTcI,4316
+appcli/params.py,sha256=7HeTi1if78yp6rbuXZVzMsCDgOV90Ip5oDdBl3wmZ00,7063
+appcli/utils.py,sha256=s6oG2DhWw0IFRm3rL_PD7QC-nacZm1TIPaokb_n2BGU,750
+appcli-0.3.0.dist-info/LICENSE.txt,sha256=hV5oaBI3HIjUi61UYZf8laH_cqtaEsuXV60GtWt5Cog,1079
+appcli-0.3.0.dist-info/WHEEL,sha256=NLqmsx-ZFZ6gDavYgh2oH0ZSN-KRmpcdEXIZDnYy9Pg,99
+appcli-0.3.0.dist-info/METADATA,sha256=LKo3lT4GTCVp12aBcPwyq7WDhtc5LFxfHJvCNpgM-L4,2242
+appcli-0.3.0.dist-info/RECORD,,
