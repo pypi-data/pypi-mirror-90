@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: xl
+Version: 0.0.2
+Summary: Parsing google results
+Home-page: https://github.com/thorwhalen/ut/tree/master/parse/google.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# xl
+Parsing google results
+
+
+To install:	```pip install xl```
+
+
