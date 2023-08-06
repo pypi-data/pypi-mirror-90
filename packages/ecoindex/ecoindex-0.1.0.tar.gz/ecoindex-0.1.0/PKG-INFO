@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ecoindex
+Version: 0.1.0
+Summary: Ecoindex module provides a simple way to measure the Ecoindex (http://www.ecoindex.fr/) score based on the 3 parameters : The DOM elements of the page, the size of the page and the number of external requests of the page
+License: Creative Commons
+Author: Vincent Vatelot
+Author-email: vincent.vatelot@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
