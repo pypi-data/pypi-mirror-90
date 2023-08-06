@@ -1,0 +1,6 @@
+
+    [console_scripts]
+    microwler=microwler.cmd:microwler
+    new=microwler.cmd:add_project
+    crawler=microwler.cmd:crawler
+    
