@@ -1,0 +1,6 @@
+numpy
+scipy
+iterprinter
+cvxopt
+cvxpy
+backports.cached-property
