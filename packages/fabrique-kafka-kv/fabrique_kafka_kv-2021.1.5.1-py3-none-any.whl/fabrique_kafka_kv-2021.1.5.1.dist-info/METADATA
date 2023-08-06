@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fabrique-kafka-kv
+Version: 2021.1.5.1
+Summary: Fabrique distributed configuration storage based on kafka compaction
+Home-page: http://www.fabrique.ai
+Author: Sergey Kuzmin
+Author-email: sergey.kuzmin@fabrique.ai
+License: MIT
+Keywords: kafka
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: confluent-kafka (>=1.2.0)
+
+
+Fabrique distributed configuration storage based on kafka compaction
+
+
