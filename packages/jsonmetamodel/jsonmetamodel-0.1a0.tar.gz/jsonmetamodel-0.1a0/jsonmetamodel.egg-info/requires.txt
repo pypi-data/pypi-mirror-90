@@ -1,0 +1,4 @@
+pandas
+numpy
+augmentedtree>=0.2a0
+dicthandling>=0.1b5
