@@ -1,0 +1,2 @@
+Click>=7.0
+opencv-contrib-python>=4.0
