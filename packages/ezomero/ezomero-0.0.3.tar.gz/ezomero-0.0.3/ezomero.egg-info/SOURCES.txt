@@ -1,0 +1,9 @@
+README.md
+setup.py
+ezomero/__init__.py
+ezomero/ezomero.py
+ezomero.egg-info/PKG-INFO
+ezomero.egg-info/SOURCES.txt
+ezomero.egg-info/dependency_links.txt
+ezomero.egg-info/requires.txt
+ezomero.egg-info/top_level.txt
