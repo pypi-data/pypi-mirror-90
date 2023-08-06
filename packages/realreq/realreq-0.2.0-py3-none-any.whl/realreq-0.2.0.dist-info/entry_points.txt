@@ -1,0 +1,3 @@
+[console_scripts]
+realreq = _realreq.realreq:main
+
