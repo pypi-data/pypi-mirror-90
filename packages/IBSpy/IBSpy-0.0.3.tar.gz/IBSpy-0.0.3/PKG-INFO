@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: IBSpy
+Version: 0.0.3
+Summary: A package to detect IBS regions
+Home-page: https://github.com/Uauy-Lab/IBSpy
+Author: Ricardo H. Ramirez-Gonzalez
+Author-email: ricardo.ramirez-gonzalez@jic.ac.uk
+License: UNKNOWN
+Description: # IBSpy
+        
+        ![Python package](https://github.com/Uauy-Lab/IBSpy/workflows/Python%20package/badge.svg)
+        
+        Python library to identify Identical By State regions
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
