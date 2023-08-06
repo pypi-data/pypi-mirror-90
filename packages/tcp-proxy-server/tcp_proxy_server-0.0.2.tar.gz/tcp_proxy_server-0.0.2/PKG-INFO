@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: tcp_proxy_server
+Version: 0.0.2
+Summary: tcp proxy server to intercept tcp
+Home-page: https://github.com/ssh-mitm/tcp-proxy-server
+Author: SSH-MITM Dev-Team
+Author-email: support@ssh-mitm.at
+License: UNKNOWN
+Description: # tcp-proxy-server - intercept tcp traffic
+        
+        [![Github version](https://img.shields.io/github/v/release/manfred-kaiser/tcp-proxy-server?label=github&logo=github)](https://github.com/manfred-kaiser/tcp-proxy-server/releases)
+        [![PyPI version](https://img.shields.io/pypi/v/tcp-proxy-server.svg?logo=pypi&logoColor=FFE873)](https://pypi.org/project/tcp-proxy-server/)
+        [![Supported Python versions](https://img.shields.io/pypi/pyversions/tcp-proxy-server.svg?logo=python&logoColor=FFE873)](https://pypi.org/project/tcp-proxy-server/)
+        [![PyPI downloads](https://pepy.tech/badge/tcp-proxy-server/week)](https://pepy.tech/project/tcp-proxy-server/week)
+        [![GitHub](https://img.shields.io/github/license/manfred-kaiser/tcp-proxy-server.svg)](LICENSE)
+        
+        
+        `tcp-proxy-server` is a python library and command line utility to intercept tcp traffic.
+        
+        
+        ## Installation
+        
+        `pip install tcp-proxy-server`
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Topic :: System :: Networking
+Requires-Python: >= 3.6
+Description-Content-Type: text/markdown
