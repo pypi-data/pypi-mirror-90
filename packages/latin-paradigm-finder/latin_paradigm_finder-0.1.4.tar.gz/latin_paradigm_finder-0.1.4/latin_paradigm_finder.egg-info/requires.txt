@@ -1,0 +1,9 @@
+aiohttp==3.7.3
+beautifulsoup4==4.9.3
+clipboard==0.0.4
+pathvalidate==2.3.1
+questionary==1.9.0
+termcolor==1.1.0
+Unidecode==1.1.2
+lxml==4.6.2
+colorama==0.4.4
