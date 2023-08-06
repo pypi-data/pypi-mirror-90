@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: opensesame-extension-language-server
+Version: 0.1.7
+Summary: Adds language-server support to OpenSesame and Rapunzel
+Home-page: https://github.com/open-cogsci/opensesame-extension-language_server
+Author: Sebastiaan Mathot
+Author-email: s.mathot@cogsci.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pyqode3.langugage-server
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+
