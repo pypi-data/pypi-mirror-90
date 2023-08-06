@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: jupyter-workflow
+Version: 0.0.1
+Summary: Workflow Jupyter Kernel
+Home-page: https://github.com/alpha-unito/jupyter-workflow
+Author: Iacopo Colonnelli
+Author-email: iacopo.colonnelli@unito.it
+License: LGPLv3
+Description: # Jupyter Workflow
+        
+        Distributed workflows design and execution with Jupyter Notebooks.
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Distributed Computing
