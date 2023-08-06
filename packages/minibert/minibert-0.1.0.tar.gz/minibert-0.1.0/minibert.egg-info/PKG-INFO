@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: minibert
+Version: 0.1.0
+Summary: A simplified implementation of BERT
+Home-page: https://git-lium.univ-lemans.fr/gcaillaut/minibert
+Author: Gaëtan Caillaut
+Author-email: gaetan.caillaut@univ-lemans.fr
+License: UNKNOWN
+Description: # MiniBert
+        
+        Un modèle dérivé de Bert, simplifié à l'extrême puisque le modèle n'est constitué que d'une couche d'attention.
+        
+        ## Dépendances
+        
+        ```
+        pip install -r requirements.txt
+        ```
+        
+        ## Entrainement
+        
+        ```
+        python train_semeval
+        ```
+        
+        Le script va entrainer un modèle sur le corpus SemEval et enregistrer ses performances dans le dossier _runs_.
+        
+        ```
+        tensorboard --logdir=runs
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
