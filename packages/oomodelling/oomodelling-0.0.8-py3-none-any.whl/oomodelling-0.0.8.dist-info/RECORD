@@ -1,0 +1,12 @@
+oomodelling/Model.py,sha256=bbptmcc13qaaPF7sfh1IGAREDU7W98n2iCrMcSw9Wpg,19195
+oomodelling/ModelSolver.py,sha256=usI0_jYo9F71-ZPcbXabb1-Bevc-eALPu0edqah_too,2660
+oomodelling/TrackingSimulator.py,sha256=7OlsLdgIlJAS-c79IuFtKEzA3kTRTakeCczFj-F8KBE,5929
+oomodelling/__init__.py,sha256=QoLrt3j4cPATJcsj38YW_ccZ1b4pDsGb69fXR3Xp57U,318
+oomodelling/examples/ExampleModels.py,sha256=zT2J4YfFL6i7m2VIuZ3LulItuNux6Akk1Zn_ahs3dqU,3038
+oomodelling/examples/ExampleTrackingSimulators.py,sha256=m9Dw9sx37h7DCfUJ8P2EGwYgp2yRzkEJ4IA8xwDeutA,2949
+oomodelling/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oomodelling-0.0.8.dist-info/LICENSE,sha256=tAmpplBXqPW3-2IKRc0vhqULYcSiNokAxcRJm-KGYjU,14066
+oomodelling-0.0.8.dist-info/METADATA,sha256=KB_j7Ws1DD2hgafV6ukHax8frmeTG6aY5MQjFnTpOmc,960
+oomodelling-0.0.8.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+oomodelling-0.0.8.dist-info/top_level.txt,sha256=FebsRfuiGp3yrb18HdqyKvHAzfWKmFX68Qsu-3hoWTM,12
+oomodelling-0.0.8.dist-info/RECORD,,

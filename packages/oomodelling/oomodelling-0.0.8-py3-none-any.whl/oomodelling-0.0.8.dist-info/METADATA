@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: oomodelling
+Version: 0.0.8
+Summary: An object oriented modelling package for causal models.
+Home-page: https://gitlab.au.dk/clagms/oomodellingpython
+Author: Claudio Gomes
+Author-email: claudio.gomes@eng.au.dk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Object Oriented Modelling Framework for Causal Models
+
+# Installing from pip
+```
+pip install oomodelling
+```
+
+# Installing the package from source code
+
+Open terminal in this folder.
+
+```
+pip install -e .
+```
+
+# Publishing this package on pypi
+
+Activate virtual environment and:
+```
+python setup.py sdist
+python setup.py bdist_wheel
+python -m twine upload dist/*
+set user and password according to pypi's api token
+```
+
+## Common Issues
+
+Error:
+```
+error: invalid command 'bdist_wheel'
+```
+Solution:
+```
+pip install wheel
+```
+
