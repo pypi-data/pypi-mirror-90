@@ -1,0 +1,1 @@
+future-fstrings>=1.2
