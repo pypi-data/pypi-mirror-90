@@ -1,0 +1,10 @@
+README.md
+setup.py
+digitalguide/__init__.py
+digitalguide/generateActions.py
+digitalguide/rasa_filter.py
+digitalguide.egg-info/PKG-INFO
+digitalguide.egg-info/SOURCES.txt
+digitalguide.egg-info/dependency_links.txt
+digitalguide.egg-info/top_level.txt
+tests/__init__.py
