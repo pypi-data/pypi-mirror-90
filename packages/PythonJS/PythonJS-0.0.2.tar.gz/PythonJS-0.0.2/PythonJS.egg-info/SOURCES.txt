@@ -1,0 +1,7 @@
+README.md
+setup.py
+PythonJS.egg-info/PKG-INFO
+PythonJS.egg-info/SOURCES.txt
+PythonJS.egg-info/dependency_links.txt
+PythonJS.egg-info/top_level.txt
+pythonjs/__init__.py
