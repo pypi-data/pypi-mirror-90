@@ -1,0 +1,6 @@
+django-require-migration-name/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django-require-migration-name/management/commands/makemigrations.py,sha256=_xpSkc3QIagNniHOqhuRkUS_41AQXhvcZTCKfWnKKws,478
+django_require_migration_name-0.1.0.dist-info/LICENSE,sha256=3J7HnqmsMoIhgfqPjBJHypSeutOAZRtC1PINXaCMatM,1067
+django_require_migration_name-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+django_require_migration_name-0.1.0.dist-info/METADATA,sha256=nx3E6BdwPRsVyav_EcTjC_fmgQImtVHAJjEOFcf857M,1811
+django_require_migration_name-0.1.0.dist-info/RECORD,,
