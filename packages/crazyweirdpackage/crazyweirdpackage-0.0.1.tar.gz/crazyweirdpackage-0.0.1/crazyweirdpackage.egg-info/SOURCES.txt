@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+crazyweirdpackage/__init__.py
+crazyweirdpackage/setup.py
+crazyweirdpackage.egg-info/PKG-INFO
+crazyweirdpackage.egg-info/SOURCES.txt
+crazyweirdpackage.egg-info/dependency_links.txt
+crazyweirdpackage.egg-info/top_level.txt
