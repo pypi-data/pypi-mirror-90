@@ -1,0 +1,7 @@
+[
+  "data_program/hatchery/test_hatchery_build.py::test_create_agent_run_command_defaults",
+  "data_program/hatchery/test_hatchery_build.py::test_create_agent_run_command_with_params",
+  "data_program/hatchery/test_hatchery_config.py::test_build_config_defaults",
+  "data_program/hatchery/test_hatchery_config.py::test_runtime_config_defaults",
+  "utils/test_stopwatch.py::test_stopwatch"
+]
