@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bias
+Version: 0.0.1
+Summary: tools to track statistical bias
+Home-page: https://github.com/thorwhalen/ut/tree/master/stats/bin_est/bias
+Author: Thor Whalen
+License: mit
+Description: 
+        # bias
+        tools to track statistical bias
+        
+        
+        To install:	```pip install bias```
+        
+Keywords: statistics,bias
+Platform: any
+Description-Content-Type: text/markdown
