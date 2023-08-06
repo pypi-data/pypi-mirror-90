@@ -1,0 +1,14 @@
+README.md
+setup.py
+365scores.egg-info/PKG-INFO
+365scores.egg-info/SOURCES.txt
+365scores.egg-info/dependency_links.txt
+365scores.egg-info/requires.txt
+365scores.egg-info/top_level.txt
+scores/__init__.py
+scores/scores.py
+scores/models/__init__.py
+scores/models/competitor.py
+scores/models/game.py
+scores/models/enums/__init__.py
+scores/models/enums/sport.py
