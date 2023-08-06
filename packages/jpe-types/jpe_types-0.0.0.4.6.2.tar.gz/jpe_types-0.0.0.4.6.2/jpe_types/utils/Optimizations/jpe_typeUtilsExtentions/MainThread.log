@@ -1,0 +1,6 @@
+in thread MainThread INFO: ===============================================
+in thread MainThread INFO: ============== started execution ==============
+in thread MainThread INFO: ===============================================
+in thread MainThread DEBUG: ran function f with args ('wodka',) and kwargs {}
+in thread MainThread INFO: ran
+in thread MainThread DEBUG: function f execution ended with return val None
