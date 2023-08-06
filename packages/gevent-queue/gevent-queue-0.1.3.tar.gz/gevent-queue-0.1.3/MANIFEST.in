@@ -1,0 +1,6 @@
+include CHANGES.rst
+include LICENSE.rst
+include VERSION
+include requirements/*.txt
+graft tests
+global-exclude *.pyc
