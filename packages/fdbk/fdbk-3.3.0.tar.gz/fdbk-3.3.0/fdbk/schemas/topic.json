@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "unit": {
+      "type": "object",
+      "properties": {
+        "field": { "type": "string"},
+        "unit": { "type": "string"}
+      },
+      "required": ["field", "unit"],
+      "additionalProperties": false
+    },
+    "data_tool": {
+      "type": "object",
+      "properties": {
+        "field": { "type": "string"},
+        "method": { "type": "string"},
+        "metadata": {"type": "object"},
+        "parameters": {"type": "object"}
+      },
+      "required": ["field", "method"],
+      "additionalProperties": false
+    }
+  },
+  "type": "object",
+  "properties": {
+    "id": {"type": "string"},
+    "name": {"type": "string"},
+    "type": { "enum": ["topic", "template"]},
+    "template": {
+      "oneOf": [
+        {"type": "string"},
+        {"type": "null"}
+      ]
+    },
+    "description": {
+      "oneOf": [
+        {"type": "string"},
+        {"type": "null"}
+      ]
+    },
+    "fields": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "units": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/unit"}
+    },
+    "data_tools": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/data_tool"}
+    },
+    "metadata": {"type": "object"}
+  },
+  "required": ["id", "name", "type", "template", "description", "fields", "units", "data_tools", "metadata"],
+  "additionalProperties": false
+}
