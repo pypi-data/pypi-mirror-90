@@ -1,0 +1,3 @@
+[console_scripts]
+saturn-toolbox = saturn_toolbox.toolbox:main
+
