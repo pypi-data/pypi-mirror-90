@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: limeutils
+Version: 0.1.2
+Summary: A collection of my utility functions
+Home-page: https://github.com/enchance/limeutils.git
+Author: enchance
+Author-email: enchance@gmail.com
+License: UNKNOWN
+Description: # limeutils
+        A few utility functions for everyday use
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
