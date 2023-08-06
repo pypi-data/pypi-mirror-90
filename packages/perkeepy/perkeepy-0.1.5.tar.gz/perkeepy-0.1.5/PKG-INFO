@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: perkeepy
+Version: 0.1.5
+Summary: Python utilities for Perkeep
+Home-page: https://github.com/aviau/perkeepy
+Author: Alexandre Viau
+Author-email: alexandre@alexandreviau.net
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
