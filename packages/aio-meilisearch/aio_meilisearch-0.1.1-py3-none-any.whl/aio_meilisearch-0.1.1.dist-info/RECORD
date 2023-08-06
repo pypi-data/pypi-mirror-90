@@ -1,0 +1,10 @@
+README.md,sha256=VZXYCXansR0iScveFpi5dZm-xHmrtPfO14DBnUmajSk,1932
+aio_meilisearch/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+aio_meilisearch/common.py,sha256=q2mUOwRhWq7almEFCWU8LQnLnVY__MpK9I3N9j7uZTo,2097
+aio_meilisearch/exceptions.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aio_meilisearch/models.py,sha256=KC_Yq7w2cwfO-keFMtFW3UUkEGq4qq9WL-WWRSCXEcg,9247
+aio_meilisearch/settings.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aio_meilisearch/types.py,sha256=crqXvMXtOyZPKl-eRaNXBvSyXpqFl_L788e7aH-F7qk,1555
+aio_meilisearch-0.1.1.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+aio_meilisearch-0.1.1.dist-info/METADATA,sha256=rk012OwV4W-DasBhKSdCXO6ygyttHcaYdX17dZIRm9k,2787
+aio_meilisearch-0.1.1.dist-info/RECORD,,
