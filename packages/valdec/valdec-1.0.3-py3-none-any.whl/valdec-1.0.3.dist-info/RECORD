@@ -1,0 +1,10 @@
+valdec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+valdec/data_classes.py,sha256=1r1PkfHn9ou_eU2UYvVF-46QZ2bXd-RG7e2afyNN1rw,1977
+valdec/decorators.py,sha256=3FU9JzGOFpdEE6Se2wPtkfb-yTT7_B6DZCBlx1GRsiw,4441
+valdec/utils.py,sha256=I_WcgJqQyWzWd19RnScEepuhvmPtqQEhhvNRrWsDUdU,9426
+valdec/validators.py,sha256=G1uikwDxLjIVvVH5pBZZNXPeJ3oAaz4qQwx_5EDGQsY,7583
+valdec-1.0.3.dist-info/LICENSE,sha256=9Gu0aHsERA2IREeI5-WjhNKNGh7-juiuO_eywudp-EA,1071
+valdec-1.0.3.dist-info/METADATA,sha256=jojwMHOSiEmjosy3lzRpai3RSHoiUxDlcTxXbIG1BbE,7087
+valdec-1.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+valdec-1.0.3.dist-info/top_level.txt,sha256=50SFatPDlxr_XkjJb32AtIvby0UMd00HO5U-Qomsa_w,7
+valdec-1.0.3.dist-info/RECORD,,
