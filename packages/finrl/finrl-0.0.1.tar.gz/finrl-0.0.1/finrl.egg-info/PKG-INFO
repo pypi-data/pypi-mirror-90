@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: finrl
+Version: 0.0.1
+Summary: FinRL library, a Deep Reinforcement Learning library designed specifically for automated stock trading.
+Home-page: https://github.com/finrl/finrl-library
+Author: Hongyang Yang, Xiaoyang Liu
+Author-email: hy2500@columbia.edu
+License: MIT
+Description: UNKNOWN
+Keywords: Reinforcment Learning
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6
