@@ -1,0 +1,17 @@
+python-utils>=2.0.1
+anyjson>=0.3.0
+
+[docs]
+django
+mock
+sphinx>=1.7.2
+
+[tests]
+sphinx
+pytest
+pytest-cache
+pytest-cov
+pytest-django
+pytest-flake8
+jinja2
+pygments
