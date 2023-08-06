@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: jupyterlab-kite
+Version: 2.0.0
+Summary: Kite integration for JupyterLab
+Home-page: https://github.com/kiteco/jupyterlab-kite
+Author: Kite
+Author-email: support@kite.com
+License: UNKNOWN
+Description: # jupyterlab-kite
+        
+        Kite integration for JupyterLab 3.0+.
+        
+Keywords: Interactive,Language Server,LSP,JupyterLab,JupyterLab3
+Platform: UNKNOWN
+Classifier: Framework :: Jupyter
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
