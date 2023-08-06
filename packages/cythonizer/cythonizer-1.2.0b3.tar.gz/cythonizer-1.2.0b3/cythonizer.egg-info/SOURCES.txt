@@ -1,0 +1,15 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+cythonizer/__init__.py
+cythonizer/__main__.py
+cythonizer.egg-info/PKG-INFO
+cythonizer.egg-info/SOURCES.txt
+cythonizer.egg-info/dependency_links.txt
+cythonizer.egg-info/entry_points.txt
+cythonizer.egg-info/requires.txt
+cythonizer.egg-info/top_level.txt
