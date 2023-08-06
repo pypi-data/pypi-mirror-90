@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: scripture-burrito
+Version: 0.0.1
+Summary: Python library for the Scripture Burrito data interchange format
+Home-page: http://github.com/bible-technology/scripture-burrito-python
+Author: BT Tech Consortium
+Author-email: jtauber@jtauber.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: jsonschema
+
+UNKNOWN
+
+

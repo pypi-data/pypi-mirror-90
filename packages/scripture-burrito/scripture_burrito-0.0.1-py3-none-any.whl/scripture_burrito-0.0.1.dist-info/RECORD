@@ -1,0 +1,11 @@
+scripture_burrito/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scripture_burrito/catalog.py,sha256=bB8D9VfOIsDgVJiDu_nUFFWE5fbSGTvF4AX-7uFFmnU,4067
+scripture_burrito/generate_ingredients.py,sha256=pag8GieYx2rKLgvMVbX84XmO0IVD6iIOcCs5sHvoJ3s,1629
+scripture_burrito/validate.py,sha256=z8V8lwbihT7xhp1xii0UyMsanFHh8xZyrg5XrrQNc-I,1612
+scripture_burrito/validate_ingredients.py,sha256=mQR5Wbio3GiPm8auWUNAYcSkuihDyfUrCCnYbhKFwJk,884
+scripture_burrito-0.0.1.dist-info/LICENSE,sha256=fICf9wnfi6LiT3uWNT2xGTn-U_EGf3bZBe38jqqufxo,1075
+scripture_burrito-0.0.1.dist-info/METADATA,sha256=Kyoxl0-D6Imo3U9Ib8znkUGRlHsum-qDM7QFmdPu_jc,335
+scripture_burrito-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+scripture_burrito-0.0.1.dist-info/entry_points.txt,sha256=TdpO25ktaSEXLgR8khTDhG6fG0tDFWFsxggHZB9KMfA,65
+scripture_burrito-0.0.1.dist-info/top_level.txt,sha256=f1RsChWFIgymSPfXGQ72N3oRXhLQXmF0kTcltMyDzZk,18
+scripture_burrito-0.0.1.dist-info/RECORD,,
