@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+FiletransferApp.egg-info/PKG-INFO
+FiletransferApp.egg-info/SOURCES.txt
+FiletransferApp.egg-info/dependency_links.txt
+FiletransferApp.egg-info/requires.txt
+FiletransferApp.egg-info/top_level.txt
+app/filetransfer/__init__.py
+app/filetransfer/__main__.py
+app/filetransfer/settings.py
+app/filetransfer/urls.py
+app/filetransfer/views.py
