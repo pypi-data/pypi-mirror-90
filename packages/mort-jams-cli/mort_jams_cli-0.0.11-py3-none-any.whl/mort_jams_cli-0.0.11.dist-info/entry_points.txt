@@ -1,0 +1,4 @@
+
+            [console_scripts]
+            ptc=prodigyteams.main:cli
+        
