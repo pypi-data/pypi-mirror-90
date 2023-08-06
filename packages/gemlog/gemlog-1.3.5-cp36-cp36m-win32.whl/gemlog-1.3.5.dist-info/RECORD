@@ -1,0 +1,16 @@
+gemlog/__init__.py,sha256=20IDPqjJQBsGr49RAn0Zn6nuCR4rig6HNqiJUtldUDc,456
+gemlog/gem2ms.py,sha256=r0QRHmMi9FAz1rxsGIerVDN2BtQ5W9hyg0dwIO0EmbM,5811
+gemlog/gem_cat.py,sha256=8zzDadIcU08adXUWYmERZ2f1G7z205l9iumLnvp72bQ,8391
+gemlog/gem_network.py,sha256=b3Afdgro6sYsfvF2mGdnVQUVZKOF-5gsTtpo0qtjnqg,15539
+gemlog/gemlog.py,sha256=tjrdqw-UNcleR9twkJ2tVmXWFDmL-SklDmXHhvia4cA,55728
+gemlog/gemlog_aux.py,sha256=jCh9m79H5vY8cn-65ZzNIoLmR9-ZwBwhIT-5A_lBiyg,6571
+gemlog/huddle_test.py,sha256=ODlJBvndL85_Aul_YuNBJHnomXl8hGOa-gxda5e8eGU,12835
+gemlog/parsers.c,sha256=a-0hHYfgXontAPxUQ-ipN9NHsFSvwMdMzzjxXFyeZS8,820159
+gemlog/parsers.cp36-win32.pyd,sha256=QOao7cHVCCDMmyUCeeu2mF_8XDiIrnIZBMr9nOTXTe8,122368
+gemlog/version.py,sha256=bPBcJrKuLb4i0VP6lXIvm04GH3r2gVouVLuC9x8BoZQ,2445
+gemlog-1.3.5.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+gemlog-1.3.5.dist-info/METADATA,sha256=2OrnK-Rfm1DtZLyuswMvn6d2KKyFKpRm6gN9i07sBz4,1768
+gemlog-1.3.5.dist-info/WHEEL,sha256=AV2Nvbg-pC-zIZdxGMBky9Ya05hYOPClxAaFNPEQVgE,102
+gemlog-1.3.5.dist-info/entry_points.txt,sha256=4gjaIBDlNG8iqcBhhvDcmKjhoGNE_ChUz3bKWp75wRo,109
+gemlog-1.3.5.dist-info/top_level.txt,sha256=lBNqE4uzmA2NPmNyTGo9UtH0zKdt0mFCmMWvlJhbo_o,7
+gemlog-1.3.5.dist-info/RECORD,,
