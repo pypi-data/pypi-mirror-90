@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: simplebmi
+Version: 1.0.1
+Summary: A very basic BMI calculator
+Home-page: https://github.com/Praveenyadav26/simpleBMI
+Author: Praveen Yadav
+Author-email: praveen885127@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: BMI
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3

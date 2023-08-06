@@ -1,0 +1,10 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+simplebmi/__init__.py
+simplebmi.egg-info/PKG-INFO
+simplebmi.egg-info/SOURCES.txt
+simplebmi.egg-info/dependency_links.txt
+simplebmi.egg-info/top_level.txt
