@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+faultmaplib/__init__.py
+faultmaplib/_nbdev.py
+faultmaplib/core.py
+faultmaplib.egg-info/PKG-INFO
+faultmaplib.egg-info/SOURCES.txt
+faultmaplib.egg-info/dependency_links.txt
+faultmaplib.egg-info/entry_points.txt
+faultmaplib.egg-info/not-zip-safe
+faultmaplib.egg-info/requires.txt
+faultmaplib.egg-info/top_level.txt
