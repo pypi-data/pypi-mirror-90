@@ -1,0 +1,14 @@
+numpy
+pandas
+pyarrow
+yfinance
+scipy
+PyWavelets
+Sphinx
+rinohtype
+nbsphinx
+pytest-dependency
+scipy
+matplotlib
+sklearn
+joblib
