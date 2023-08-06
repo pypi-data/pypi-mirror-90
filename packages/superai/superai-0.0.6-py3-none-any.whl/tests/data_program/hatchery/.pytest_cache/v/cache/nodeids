@@ -1,0 +1,4 @@
+[
+  "test_hatchery_build.py::test_create_agent_run_command_defaults",
+  "test_hatchery_build.py::test_create_agent_run_command_with_params"
+]
