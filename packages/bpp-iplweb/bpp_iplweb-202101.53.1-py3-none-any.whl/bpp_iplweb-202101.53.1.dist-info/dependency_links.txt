@@ -1,0 +1,1 @@
+https://github.com/mpasternak/django-session-security/archive/jquery-noconflict.zip#egg=django-session-security==2.6.6+jquery-noconflict  # via -r requirements.in
