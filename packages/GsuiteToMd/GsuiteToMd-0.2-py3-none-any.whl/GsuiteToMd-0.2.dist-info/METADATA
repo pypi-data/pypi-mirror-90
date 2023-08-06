@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: GsuiteToMd
+Version: 0.2
+Summary: Tools to convert gsuite Documents to markdown
+Home-page: https://github.com/laurentmau/GsuiteToMd
+Author: Laurent Maumet
+Author-email: laurent@aurora-5r.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Gsuite to Markdown.
+
+Some tools to generate markdown files from Google Suite.
+
+
