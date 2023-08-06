@@ -1,0 +1,5 @@
+[arfx.io]
+.pcm_seq = src.pcmseqio:pseqfile
+.pcm_seq2 = src.pcmseqio:pseqfile
+.pcmseq2 = src.pcmseqio:pseqfile
+

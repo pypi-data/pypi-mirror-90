@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+arfx_plugin_pcmseqio.egg-info/PKG-INFO
+arfx_plugin_pcmseqio.egg-info/SOURCES.txt
+arfx_plugin_pcmseqio.egg-info/dependency_links.txt
+arfx_plugin_pcmseqio.egg-info/entry_points.txt
+arfx_plugin_pcmseqio.egg-info/requires.txt
+arfx_plugin_pcmseqio.egg-info/top_level.txt
+src/pcmseq.c
+src/pcmseqio.c
