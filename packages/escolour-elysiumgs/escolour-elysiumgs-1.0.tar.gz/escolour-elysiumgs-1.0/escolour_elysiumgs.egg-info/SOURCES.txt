@@ -1,0 +1,7 @@
+README.md
+setup.py
+escolour/__init__.py
+escolour_elysiumgs.egg-info/PKG-INFO
+escolour_elysiumgs.egg-info/SOURCES.txt
+escolour_elysiumgs.egg-info/dependency_links.txt
+escolour_elysiumgs.egg-info/top_level.txt
