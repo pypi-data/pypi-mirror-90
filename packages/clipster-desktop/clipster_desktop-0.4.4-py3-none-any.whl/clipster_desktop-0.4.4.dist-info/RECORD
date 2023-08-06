@@ -1,0 +1,13 @@
+clipster/__init__.py,sha256=CI1YEgYdHs9B0m0OgF6riwnls-6C5cKLFYO_GfA-OyA,24
+clipster/api.py,sha256=z24Rtig7QMeVLEcvHcHZpYxUyJoe7mawyGqL3QhT0Z8,6037
+clipster/clipster.py,sha256=WaT4iLvDV7AB2p4yMcbozvyNZ9hfZNK3LCtuV9Y1s_k,3567
+clipster/config.py,sha256=FTb_qhKwUBzlkMsbK2CwjXQHVUZI_6qUTIly169VQNU,7612
+clipster/crypt.py,sha256=M-0YnB2RFhGqtBC1sWUgE1QE1cq6wl6lY2rsaWPC1o4,2836
+clipster/gui.py,sha256=FydqTnwUfotbCYVTGLJZErmGIB400Ua1mFUWVP6mzIs,9298
+clipster/log_config.py,sha256=EETfmI6H3vf2Sk-CfEjbaAvCfAaqx3AOI4UBZ0mZFJI,792
+clipster_desktop-0.4.4.dist-info/LICENSE,sha256=kRHLWJwfR2YqR2K7D3-JBgCFcAq3N5T4LsQBdzD5uwk,1092
+clipster_desktop-0.4.4.dist-info/METADATA,sha256=OUFwhjpNNp6BOlhiv7U8TK_tarrbAfSjl-dxcQHlgFg,4857
+clipster_desktop-0.4.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+clipster_desktop-0.4.4.dist-info/entry_points.txt,sha256=e9LA1HCMNz2Gk-QQBvGliF_auLJyflOHi-7LoAXGl0w,53
+clipster_desktop-0.4.4.dist-info/top_level.txt,sha256=WxzTguI9AQmT0e6F_tp6YfQJHM1qm2wmhh1Z6P30F1A,9
+clipster_desktop-0.4.4.dist-info/RECORD,,
