@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+oj/__init__.py
+oj.egg-info/PKG-INFO
+oj.egg-info/SOURCES.txt
+oj.egg-info/dependency_links.txt
+oj.egg-info/not-zip-safe
+oj.egg-info/top_level.txt
