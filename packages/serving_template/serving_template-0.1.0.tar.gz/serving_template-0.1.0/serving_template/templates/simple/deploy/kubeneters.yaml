@@ -1,0 +1,133 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: proj-web-server-prod-deploy
+  labels:
+    app: proj-web-server-prod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: proj-web-server-prod
+  template:
+    metadata:
+      labels:
+        app: proj-web-server-prod
+    spec:
+      containers:
+        - name: proj-web-server
+          image: yourname/proj-web-server:0.1
+          env:
+            - name: SERVER_LISTEN
+              value: '0.0.0.0:15527'
+            - name: WEB_WORKER_NUM
+              value: '8'
+            - name: WEB_MAX_TRIES
+              value: '6000'
+            - name: WEB_SLEEP
+              value: '0.1'
+            - name: REDIS_BROKER
+              value: 'proj-redis-prod-svc'
+            - name: REDIS_QUEUE
+              value: 'proj_REDIS_QUEUE'
+          resources:
+            limits:
+              memory: '1024Mi'
+              cpu: '8'
+          ports:
+            - containerPort: 15527
+      imagePullSecrets:
+        - name: your-docker-registry
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: proj-model-server-prod-deploy
+  labels:
+    app: proj-model-server-prod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: proj-model-server-prod
+  template:
+    metadata:
+      labels:
+        app: proj-model-server-prod
+    spec:
+      nodeName: node-GPU
+      containers:
+        - name: proj-model-server
+          image: yourname/proj-model-server:0.1
+          env:
+            - name: MODEL_PATH
+              value: /nfs_path/model_path
+            - name: BATCH_SIZE
+              value: '128'
+            - name: MODEL_SLEEP
+              value: '0.1'
+            - name: REDIS_BROKER
+              value: 'proj-redis-prod-svc'
+            - name: REDIS_QUEUE
+              value: 'proj_REDIS_QUEUE'
+          volumeMounts:
+            - name: yournfs
+              mountPath: /nfs_path
+      imagePullSecrets:
+        - name: your-docker-registry
+      volumes:
+        - name: yournfs
+          nfs:
+            path: /nfs/proj
+            server: your-nfs
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: proj-redis-prod-deploy
+  labels:
+    app: proj-redis-prod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: proj-redis-prod
+  template:
+    metadata:
+      labels:
+        app: proj-redis-prod
+    spec:
+      containers:
+        - name: absa-bert-redis-redis
+          image: redis:4.0.14
+          ports:
+            - containerPort: 6379
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: proj-web-server-prod-svc
+spec:
+  selector:
+    app: proj-web-server-prod
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 15527
+      name: http
+      nodePort: 30527
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: proj-redis-prod-svc
+spec:
+  selector:
+    app: proj-redis-prod
+  ports:
+    - protocol: TCP
+      port: 6379
+      targetPort: 6379
+      name: redis

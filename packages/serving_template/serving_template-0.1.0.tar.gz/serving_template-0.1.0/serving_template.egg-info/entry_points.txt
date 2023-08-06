@@ -1,0 +1,3 @@
+[console_scripts]
+serving_template = serving_template.main:cli
+

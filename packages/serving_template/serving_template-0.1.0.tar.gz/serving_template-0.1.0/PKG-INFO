@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: serving_template
+Version: 0.1.0
+Summary: Model Serving Project Template
+Home-page: https://github.com/HughWen/ServingTemplate
+Author: wwen
+Author-email: wenwh@mail.sustech.edu.cn
+License: MIT
+Description: # ServingTemplate
+        
+        Model serving project template.
+        
+        ## Installation
+        
+        ```
+        pip install serving_template
+        ```
+        
+        ## Start
+        
+        ```
+        serving_template init [you_project_name]
+        ```
+Keywords: model serving template
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
