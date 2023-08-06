@@ -1,0 +1,12 @@
+LICENSE,sha256=qtJjYLRPpVW8j4czSKEv3g5b8_52Z2lLqqHxtwp85aY,1090
+treefrog/__init__.py,sha256=Wvy5RtxqFhoGlr8A-zU8E2GBUewVVjivsX3NOH8IXZQ,56
+treefrog/__main__.py,sha256=nXVT67gnymxXGdlHUkQhKBKVuCRWwUHA04DIzrtBIrk,1518
+treefrog/format.py,sha256=1RGZzJisIMbLWg-HXAjwPvoNB-NoNKL9U69eoC5GoM0,2634
+treefrog/hierarchy.py,sha256=Onr-QFR9XLl8p9qyTT8yThnFnylYw__kh3DHA5cukbQ,2655
+treefrog/rename.py,sha256=J0Xv4T8BINYAMNFLtRr3HUXuR5F0qRlQnqjrgNEEc08,841
+treefrog/tree.py,sha256=MoVkg2F3txmnHADkKV2lggsQH3lXfjEuswUs5gr35DQ,4082
+treefrog-0.2.0.dist-info/entry_points.txt,sha256=7GFXylCDpv1Mz2mdyL-oQquDNgiKdRjQVdRQXDlc37k,51
+treefrog-0.2.0.dist-info/LICENSE,sha256=qtJjYLRPpVW8j4czSKEv3g5b8_52Z2lLqqHxtwp85aY,1090
+treefrog-0.2.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+treefrog-0.2.0.dist-info/METADATA,sha256=6VBkPNVAikfKqfjvGDTR4_gaQ2V4b_RG4Pf89BmEzSk,7211
+treefrog-0.2.0.dist-info/RECORD,,
