@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: nlpt
+Version: 0.0.1
+Summary: Natural language processing tool for Turkish
+Home-page: https://github.com/msaidzengin/nlpt
+Author: M. Said Zengin
+Author-email: msaidzengin@gmail.com
+Maintainer: M. Said Zengin
+Maintainer-email: msaidzengin@gmail.com
+License: UNKNOWN
+Description: # nlpt
+        Natural Language Processing
+        
+Keywords: nlp,turkishnlp,python,natural language processing,language processing,dogal dil isleme
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
