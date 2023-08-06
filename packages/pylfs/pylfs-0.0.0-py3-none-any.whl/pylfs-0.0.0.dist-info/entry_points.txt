@@ -1,0 +1,3 @@
+[console_scripts]
+pylfs = pylfs.pylfs:run
+
