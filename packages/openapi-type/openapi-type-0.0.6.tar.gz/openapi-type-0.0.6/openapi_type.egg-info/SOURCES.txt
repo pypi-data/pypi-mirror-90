@@ -1,0 +1,17 @@
+CHANGELOG.rst
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+openapi_type/__init__.py
+openapi_type/custom_types.py
+openapi_type/py.typed
+openapi_type.egg-info/PKG-INFO
+openapi_type.egg-info/SOURCES.txt
+openapi_type.egg-info/dependency_links.txt
+openapi_type.egg-info/not-zip-safe
+openapi_type.egg-info/requires.txt
+openapi_type.egg-info/top_level.txt
+requirements/minimal.txt
+requirements/extras/third_party.txt
