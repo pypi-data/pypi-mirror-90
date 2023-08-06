@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: easygdf
+Version: 2.0
+Summary: A python library to make working with GDF files a breeze.
+Home-page: UNKNOWN
+Author: Christopher M. Pierce
+Author-email: contact@chris-pierce.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.6
