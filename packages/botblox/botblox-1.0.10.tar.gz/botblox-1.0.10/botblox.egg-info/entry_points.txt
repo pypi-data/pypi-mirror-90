@@ -1,0 +1,3 @@
+[console_scripts]
+botblox = manager.__main__:main
+
