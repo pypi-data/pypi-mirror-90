@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+easygTTS/__init__.py
+easygTTS/gtts.py
+easygTTS.egg-info/PKG-INFO
+easygTTS.egg-info/SOURCES.txt
+easygTTS.egg-info/dependency_links.txt
+easygTTS.egg-info/requires.txt
+easygTTS.egg-info/top_level.txt
