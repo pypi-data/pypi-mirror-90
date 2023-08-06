@@ -1,0 +1,8 @@
+click
+sympy
+
+[dev]
+check-manifest
+
+[test]
+coverage
