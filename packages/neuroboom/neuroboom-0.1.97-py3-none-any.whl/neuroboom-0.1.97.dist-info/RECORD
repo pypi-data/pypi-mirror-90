@@ -1,0 +1,17 @@
+neuroboom/__init__.py,sha256=JOl41NviMN-qDV0Z8ZPmhNIxvgyauGGJHdB4A-8MhqM,93
+neuroboom/_version.py,sha256=QLdhFHskHwBf9tl5w9OABBHFbrpzolYR5Z3xX6HYk-o,498
+neuroboom/connectivity.py,sha256=XN04lahDoYktOThUra-mgMqV2h55DS-V5mXKFblsU_Y,2873
+neuroboom/dendrogram.py,sha256=IoQ-HsSRty8QmJEV_WkB3A-XGl2FysjrN6CRspd2ymQ,23363
+neuroboom/morphoelec.py,sha256=aIYq8iAisCI8OijNYjcVmmAINtcKfsLKiWhqlhIpxEI,11103
+neuroboom/stats.py,sha256=EaLlj5Y87r1myNWly0ne8NxQrETq-x7B0ha1UBGEElA,13720
+neuroboom/utils.py,sha256=AOhSwJqcHrlmaK3t_gFagYBlS3f79hq9l_soPxNp4_s,5296
+neuroboom/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neuroboom/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neuroboom/tests/test_examples.py,sha256=Hm1x01HZ9BiYYw4dS44uo0o_ku16oFRwSMjIh8_Uu-s,99
+neuroboom-0.1.97.dist-info/AUTHORS.rst,sha256=AhQ0SjfE6pd_1LhhiR9Bt5F0R74Tiqy-xbdE96InRsY,175
+neuroboom-0.1.97.dist-info/LICENSE,sha256=hMUD2cxs2sfHcqoOL_bGoP8CphWljOZiG-dhTbtekxU,1532
+neuroboom-0.1.97.dist-info/METADATA,sha256=b8Ej7LfiYcWLxAJThyYj6CaG4pS7wqSstK_4Y0mh_W8,760
+neuroboom-0.1.97.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+neuroboom-0.1.97.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+neuroboom-0.1.97.dist-info/top_level.txt,sha256=oPbjDVX22H5ITA8lOnHCNlRqgUK4aDKPeXKHH4Td07k,10
+neuroboom-0.1.97.dist-info/RECORD,,
