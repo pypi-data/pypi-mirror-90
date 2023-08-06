@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "bugyocloudclient"
+version = "0.2.2"
+description = "Bugyo Cloud Client"
+authors = ["sengokyu <sengokyu+gh@gmail.com>"]
+license = "MIT"
+homepage = "https://github.com/sengokyu/bugyo-cloud-client"
+repository = "https://github.com/sengokyu/bugyo-cloud-client"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+beautifulsoup4 = "^4.9.3"
+requests = "^2.25.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.0"
+pytest-mock = "^3.3.1"
+
+[tool.poetry.scripts]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
