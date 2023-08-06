@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "scatsutilities"
+version = "0.1.0"
+description = "Python package providing utilities to process SCATS traffic system data"
+authors = ["John Trieu"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+geopandas = "^0.8.1"
+
+[tool.poetry.dev-dependencies]
+Sphinx = "^3.4.3"
+sphinxcontrib-napoleon = "^0.7"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

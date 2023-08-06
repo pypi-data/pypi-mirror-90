@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: scatsutilities
+Version: 0.1.0
+Summary: Python package providing utilities to process SCATS traffic system data
+License: MIT
+Author: John Trieu
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: geopandas (>=0.8.1,<0.9.0)
