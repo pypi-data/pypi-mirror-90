@@ -1,0 +1,6 @@
+
+[api]
+requests>=2.0.0
+
+[django]
+django>=1.7

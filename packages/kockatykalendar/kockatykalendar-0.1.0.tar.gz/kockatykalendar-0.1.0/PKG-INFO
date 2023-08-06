@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: kockatykalendar
+Version: 0.1.0
+Summary: API, tools and utilities for working with KockatyKalendar.sk
+Home-page: https://github.com/kockatykalendar/python
+Author: Adam Zahradník
+Author-email: adam@zahradnik.xyz
+License: MIT
+Description: # KockatýKalendár Python
+        
+        [![PyPI](https://img.shields.io/pypi/v/kockatykalendar.svg)](https://pypi.python.org/pypi/kockatykalendar)
+        
+        API, nástroje a utiltky pre prácu a integráciu s Kockatým Kalendárom pre Python.
+        
+        ## Inštalácia
+        
+        Základná verzia tejto knižnice sa dá nainštalovať pomocou pip:
+        ```shell
+        pip install kockatykalendar
+        ```
+        
+        Ak plánujete používať JSON API Kockatého Kalendára, použite:
+        ```shell
+        pip install kockatykalendar[api]
+        ```
+        
+        Ak plánujete použiť Django integráciu pre Kockatý Kalendár, použite:
+        ```shell
+        pip install kockatykalendar[django]
+        ```
+        *(Ak chcete obe veci, nainštalujte si `kockatykalendar[api,django]`)*
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Provides-Extra: django
+Provides-Extra: api
