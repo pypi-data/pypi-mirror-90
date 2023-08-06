@@ -1,0 +1,9 @@
+examplecurves/__init__.py,sha256=8d9-CEWMjk28K-nGOcUbllqr6CCg0v_i2iQr0amsXRI,33
+examplecurves/main.py,sha256=hYYz1j4C1sQD0BCr5Lgx2ytkUL-8sStiY0GK-rqjxRw,30856
+examplecurves/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+examplecurves/resources/linear_curves.json,sha256=oige7VqqjgpBbHPO2JI6ZzzkL-rNIck0gp9zZRspg6s,9109
+examplecurves-0.5a0.post1.dist-info/LICENSE,sha256=BRWSY-Jazy6aBueKK07EPlDJmUy1tFlJJUUKl1QuwQo,35757
+examplecurves-0.5a0.post1.dist-info/METADATA,sha256=VlJgT6I4QqzniKJ3nD29c70AbJ4Q-IWUTuu95d8C6b0,3217
+examplecurves-0.5a0.post1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+examplecurves-0.5a0.post1.dist-info/top_level.txt,sha256=75VI8guRWthqod_KL0OmQ8lVLY_lQgq6AVFBWeCSR1Q,14
+examplecurves-0.5a0.post1.dist-info/RECORD,,
