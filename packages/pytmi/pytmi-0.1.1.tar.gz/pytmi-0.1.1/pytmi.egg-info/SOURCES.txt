@@ -1,0 +1,16 @@
+README.md
+setup.py
+p/__init__.py
+p/irc.py
+p/parse.py
+p/s.py
+p/tmi.py
+p/utils.py
+pytmi/__init__.py
+pytmi/client.py
+pytmi/connection.py
+pytmi/message.py
+pytmi.egg-info/PKG-INFO
+pytmi.egg-info/SOURCES.txt
+pytmi.egg-info/dependency_links.txt
+pytmi.egg-info/top_level.txt
