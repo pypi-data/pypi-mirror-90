@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: pystages
+Version: 1.0
+Summary: Motorized stage control library for scientific applications
+Home-page: https://github.com/Ledger-Donjon/pystages
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.0

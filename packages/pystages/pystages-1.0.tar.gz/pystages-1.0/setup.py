@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+
+from setuptools import setup, find_packages
+import sys
+
+setup(
+    name="pystages",
+    version="1.0",
+    description="Motorized stage control library for scientific applications",
+    url="https://github.com/Ledger-Donjon/pystages",
+    # require pyserial
+    install_requires=['pyserial'],
+    packages=find_packages(),
+    python_requires='>=3.0')
