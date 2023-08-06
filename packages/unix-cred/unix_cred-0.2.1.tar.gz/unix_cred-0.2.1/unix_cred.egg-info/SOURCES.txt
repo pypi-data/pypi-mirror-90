@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+unix_cred/__init__.py
+unix_cred/constants.py
+unix_cred/ffi.py
+unix_cred/peerucred.py
+unix_cred/ucred.py
+unix_cred/util.py
+unix_cred/xucred.py
+unix_cred.egg-info/PKG-INFO
+unix_cred.egg-info/SOURCES.txt
+unix_cred.egg-info/dependency_links.txt
+unix_cred.egg-info/requires.txt
+unix_cred.egg-info/top_level.txt
