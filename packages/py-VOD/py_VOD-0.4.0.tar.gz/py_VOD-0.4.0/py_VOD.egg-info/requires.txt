@@ -1,0 +1,4 @@
+requests
+youtube-dl
+pafy
+json_database

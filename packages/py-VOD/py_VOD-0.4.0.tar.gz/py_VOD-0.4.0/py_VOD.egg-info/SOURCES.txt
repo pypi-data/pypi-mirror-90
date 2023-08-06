@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+py_VOD.egg-info/PKG-INFO
+py_VOD.egg-info/SOURCES.txt
+py_VOD.egg-info/dependency_links.txt
+py_VOD.egg-info/requires.txt
+py_VOD.egg-info/top_level.txt
+pyvod/__init__.py
+pyvod/utils.py
+pyvod/__pycache__/__init__.cpython-38.pyc
+pyvod/__pycache__/utils.cpython-38.pyc
+pyvod/res/moviesandfilms.png
