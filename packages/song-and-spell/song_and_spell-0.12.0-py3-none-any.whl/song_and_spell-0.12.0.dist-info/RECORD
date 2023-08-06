@@ -1,0 +1,15 @@
+app.py,sha256=-h2fLcCY-tJ161u_jiI90jZVoYyI2M3xZNrBsLZqe6I,3258
+util.py,sha256=bQCBPdEUfumLwj87FSffDXFzGnOi-KQlLnmm6mJkJpQ,3300
+song_and_spell/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+song_and_spell/app.py,sha256=szQn7Y0Db5QT0A1RF0CX0nuPM0FO--Azxc_yUcN7m8A,4300
+song_and_spell/util.py,sha256=rScGc9Ss8zd2J4dwMQ28DEGVzXJznR0SFHYgUa0nCtg,3554
+song_and_spell/static/templates/add_word.html,sha256=we2JD7vBsogQt54AJt47lO7V-tbZp2adBmqCMK-6xKw,1481
+song_and_spell/static/templates/base.html,sha256=hbuG_uIWRjq4ckmjWbluOSWAZQq3KxNZgSMWdNs_6Cw,346
+song_and_spell/static/templates/footer.html,sha256=5VhRZ5ltEim0WEMDLs6AuqVYJUPIK-WJFSgAc6mHPHQ,21
+song_and_spell/static/templates/header.html,sha256=B2nFTxjsliYEVu2chNgpBeRhY0R38QM2wwBoegMnyiQ,1909
+song_and_spell/static/templates/index.html,sha256=A1LHkwtm326EmnZlg4VZ0K7w0JB1VXqDI4g99uAFp6E,792
+song_and_spell-0.12.0.dist-info/METADATA,sha256=DNL-2CpMno-qY6pG6tSmVbHg7bKr8sZiMXE0gExhz44,3006
+song_and_spell-0.12.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+song_and_spell-0.12.0.dist-info/entry_points.txt,sha256=byX0bvfmjo2iAZiM9NkKozbJbzU4igmDBbYjBRLDN68,60
+song_and_spell-0.12.0.dist-info/top_level.txt,sha256=1lcIj1VisWztjksB-aXIVac4Tb1E_6T4XIuDLw1hv3g,15
+song_and_spell-0.12.0.dist-info/RECORD,,
