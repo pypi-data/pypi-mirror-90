@@ -1,0 +1,15 @@
+[Unit]
+Description=Ingresses Data by POSTing JSON
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/ingress/src
+ExecStart=/home/pi/evo-track/gui/venv/bin/python3 /home/pi/evo-track/gui/venv/lib/python3.7/site-packages/watchdog/watchmedo.py tricks /home/pi/ingress/tricks.yaml
+#ExecStart=/home/pi/EvoEco_AWD_GUI/venv/bin/python3 /home/pi/ingress/watch.py
+#ExecStart=/bin/bash /home/pi/ingress/watch.sh
+#TODO determine why script acts weird on boot up (reruns watch.sh on each file). Waiting fixes it temporarily.  
+#ExecStartPre=/bin/sleep 10
+#sdf 
+
+[Install]
+WantedBy=multi-user.target
