@@ -1,0 +1,6 @@
+gh_auth/__init__.py,sha256=suWHp5kq8T_tIxas8rScRekT0XGngy_TLC7brpm5tHA,80
+gh_auth/auth.py,sha256=B8VrJpOiZTqRl5b8FWQJGIabZovfisn2Cmk9HuyoeJs,3526
+gh_auth/exceptions.py,sha256=ECVSQd-ZSQEfD_Q3VU1qI2WHmbgcW5-c_jwRMneMEV0,158
+gh_auth-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+gh_auth-0.1.0.dist-info/METADATA,sha256=X0ljy3wY3qDcWsSj7GM1nsSKvBbz8hGrOAfjbOn9ZK4,395
+gh_auth-0.1.0.dist-info/RECORD,,
