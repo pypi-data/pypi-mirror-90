@@ -1,0 +1,11 @@
+LICENSE,sha256=yXI7Gm-zmSYBvR7eYFTRhQUPLjxMbQnVOHbraW7bcds,1070
+hypertag/__init__.py,sha256=VrXpHDu3erkzwl_WXrqINBm9xWkcyUy53IQOj042dOs,22
+hypertag/__main__.py,sha256=3Rpw7fYUSDtxV1DxfMBoIAvLxo8wnBVFoegvNXWTHM0,93
+hypertag/daemon.py,sha256=A7tYPIyNn76nUoMIZMwpWYcDvC30sgyEwnVTNVZqfYw,3314
+hypertag/graph.py,sha256=JL-wthCrmYtXsCGXsqUIUSVLnBDK-bRMuhqPl6xvaRY,1480
+hypertag/hypertag.py,sha256=EVnBjUsF7phsX1Kv1W7cqULP0Zrn_HdFHIkFJf_BNiQ,9538
+hypertag/persistor.py,sha256=dcp8IpecjC12yhk9dlLipkopKSjidFI8rHg1R5Px2Rg,13359
+hypertag-0.3.0.dist-info/LICENSE,sha256=yXI7Gm-zmSYBvR7eYFTRhQUPLjxMbQnVOHbraW7bcds,1070
+hypertag-0.3.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+hypertag-0.3.0.dist-info/METADATA,sha256=pdS9Ngwu7W1vk9qnL6RjuE3wCQvlp3i7uEaBBWRAtfc,5392
+hypertag-0.3.0.dist-info/RECORD,,
