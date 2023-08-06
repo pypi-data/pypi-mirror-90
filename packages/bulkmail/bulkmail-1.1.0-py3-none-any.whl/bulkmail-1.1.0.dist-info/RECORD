@@ -1,0 +1,11 @@
+bulkmail/__init__.py,sha256=tMhH1aRuLaPBDynJbFvCRXEy9HmC7JBfqxHljm2BHoA,28
+bulkmail/commandline.py,sha256=XenwSGoIb6EK7VO3zV7Cqt19SBLgGdKkCjAysuODicg,3627
+bulkmail/extras.py,sha256=_BeaAaB5H7hth2iyqkfJ_yVyXmTLAAw2-bT62fwUdYw,748
+bulkmail/mailer.py,sha256=LdM3yWiMuHentzp2-yXqWbN4ik5ltPq-rN1eFbp7QkM,1959
+bulkmail/mailfunctions.py,sha256=c7IbOMSabdQO7XV6ut2GKVOwdYrmKLao9nZ5NRCawhg,3934
+bulkmail-1.1.0.dist-info/LICENSE,sha256=KxRRmP9bfTHGIPNjrkrM5I9KvST9_j94F9_-vqIkp7M,1087
+bulkmail-1.1.0.dist-info/METADATA,sha256=IKbNAqRdZ02gXPiipzog3cIJWD0Pruhr-frxo95-nuU,611
+bulkmail-1.1.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+bulkmail-1.1.0.dist-info/entry_points.txt,sha256=LGdm-Hh-5M2VJ_PU7vDaVOQwVAyR90knuQnd-yxhCc4,56
+bulkmail-1.1.0.dist-info/top_level.txt,sha256=uG6k5fwyQU_jEj2LlYLzqnjaJU1V43cDcRhl9cv7HwA,9
+bulkmail-1.1.0.dist-info/RECORD,,

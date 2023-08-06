@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: bulkmail
+Version: 1.1.0
+Summary: Python package for sending bulk emails.
+Home-page: https://github.com/roughweed/csv-bulk-email
+Author: Rafeed M. Bhuiyan
+Author-email: rafeedm.bhuiyan@gmail.com
+License: MIT
+Keywords: email bulk cli mail
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv (==0.15.0)
+Requires-Dist: click (==7.1.2)
+
+Version 1.1.0
+Fixed socket connection problem
+
