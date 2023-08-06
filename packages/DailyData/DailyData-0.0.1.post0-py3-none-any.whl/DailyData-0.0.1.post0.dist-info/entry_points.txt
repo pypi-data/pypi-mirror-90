@@ -1,0 +1,4 @@
+[console_scripts]
+dailydata = DailyData:take_args
+timelog = DailyData.time_management:timelog_entry_point
+
