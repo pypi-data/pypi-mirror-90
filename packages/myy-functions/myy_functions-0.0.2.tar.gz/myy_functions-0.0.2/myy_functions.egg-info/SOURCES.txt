@@ -1,0 +1,9 @@
+setup.py
+myy_functions/Generalfunction.py
+myy_functions/Snowflakefunction.py
+myy_functions/__init__.py
+myy_functions.egg-info/PKG-INFO
+myy_functions.egg-info/SOURCES.txt
+myy_functions.egg-info/dependency_links.txt
+myy_functions.egg-info/not-zip-safe
+myy_functions.egg-info/top_level.txt
