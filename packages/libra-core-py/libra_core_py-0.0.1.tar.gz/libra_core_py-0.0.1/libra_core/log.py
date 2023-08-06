@@ -1,0 +1,130 @@
+import logging
+import logging.config
+from .config import config
+from .log_id import get_logid
+from inspect import getframeinfo, stack
+
+__log_path = '.'
+__logger = None
+__module_name = None
+__is_debug = False
+__log_name = 'root'
+
+
+def _get_file_path(root_path, module_name):
+    return root_path + '/' + module_name + '.log'
+
+
+def _get_config(root_path='.', is_console=True, module_name=''):
+    global __is_debug, __log_name
+    config = {
+        'version': 1,
+        'disable_existing_loggers': False,
+        'formatters': {
+            'verbose': {
+                'format': '{asctime} [{processName}-{threadName}] {message}',
+                'style': '{',
+            },
+        },
+        'handlers': {
+            'info': {
+                'level': 'DEBUG',
+                'class': 'logging.FileHandler',
+                'filename': _get_file_path(root_path, module_name),
+                'encoding': 'utf8',
+                'formatter': 'verbose'
+            },
+        },
+    }
+    config['root'] = {
+        'handlers': ['info'],
+        'level': 'INFO',
+    }
+    if is_console:
+        config['handlers'] = {
+            'console': {
+                'class': 'logging.StreamHandler',
+            }
+        }
+        config['root'] = {
+            'handlers': ['console'],
+            'level': 'INFO',
+        }
+    elif __is_debug:
+        config['root']['level'] = 'DEBUG'
+    return config
+
+
+def log_init_config(root_path, module_name, is_debug=None):
+    global __logger, __module_name, __is_debug
+    if is_debug is None:
+        try:
+            __is_debug = (config('log', 'logging.level.com.apus', 'info') == 'debug')
+        except Exception as ex:
+            pass
+    else:
+        __is_debug = is_debug
+    __module_name = module_name
+    logging.config.dictConfig(_get_config(root_path, root_path == 'console', module_name))
+    __logger = logging.getLogger(__log_name)
+    if not __is_debug:
+        logging.getLogger("pika").setLevel(logging.WARNING)
+
+
+def __log_id():
+    return get_logid()
+
+
+def _build_log_prefix(level):
+    return "[{}] {} {} - ".format(__log_id(), level, _build_file_part())
+
+
+def _build_file_part():
+    caller = getframeinfo(stack()[3][0])
+    return "{}[{}:{}]".format(caller.filename, caller.function, caller.lineno)
+
+
+def log_debug(msg):
+    global __is_debug
+    if not __is_debug:
+        return
+    global __logger
+    if __logger is None:
+        return
+    __logger.debug(_build_log_prefix("DEBUG") + msg)
+
+
+def log_trace(msg):
+    # TODO 内存结构保存
+    log_debug(msg)
+
+
+def log_info(msg):
+    global __logger
+    if __logger is None:
+        return
+    __logger.info(_build_log_prefix("INFO") + msg)
+
+
+def log_warn(msg):
+    global __logger
+    if __logger is None:
+        return
+    __logger.warn(_build_log_prefix("WARN") + msg)
+
+
+def log_error(msg):
+    global __logger
+    if __logger is None:
+        return
+    __logger.error(_build_log_prefix("ERROR") + msg)
+
+
+def log_exception(ex, message=""):
+    global __logger
+    if __logger is None:
+        return
+    if message:
+        message += " "
+    msg = '%s%s%s' % (_build_log_prefix("ERROR"), message, ex)
+    __logger.exception(msg)
