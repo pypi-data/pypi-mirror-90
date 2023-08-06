@@ -1,0 +1,13 @@
+README.md
+setup.py
+FastAPI_CRUDRouter.egg-info/PKG-INFO
+FastAPI_CRUDRouter.egg-info/SOURCES.txt
+FastAPI_CRUDRouter.egg-info/dependency_links.txt
+FastAPI_CRUDRouter.egg-info/requires.txt
+FastAPI_CRUDRouter.egg-info/top_level.txt
+fastapi_crudrouter/__init__.py
+fastapi_crudrouter/core/__init__.py
+fastapi_crudrouter/core/_base.py
+fastapi_crudrouter/core/databases.py
+fastapi_crudrouter/core/mem.py
+fastapi_crudrouter/core/sqlalchemy.py
