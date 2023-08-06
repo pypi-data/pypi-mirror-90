@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aw
+Version: 0.0.2
+Summary: Machine learning utils
+Home-page: https://github.com/thorwhalen/ut/tree/master/ml/utils.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# aw
+Machine learning utils
+
+
+To install:	```pip install aw```
+
+
