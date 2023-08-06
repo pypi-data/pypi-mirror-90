@@ -1,0 +1,5 @@
+python-sql>=0.4
+trytond_company<5.9,>=5.8
+trytond_party<5.9,>=5.8
+trytond_timesheet<5.9,>=5.8
+trytond<5.9,>=5.8
