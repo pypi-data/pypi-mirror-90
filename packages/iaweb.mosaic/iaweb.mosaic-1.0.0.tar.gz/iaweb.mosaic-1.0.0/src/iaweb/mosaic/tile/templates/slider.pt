@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+    xmlns:tal="http://xml.zope.org/namespaces/tal"
+    xmlns:metal="http://xml.zope.org/namespaces/metal" i18n:domain="iaweb.mosaic">
+    <body>
+        <div tal:define="results view/contents;
+                         url results/url;
+                         items results/results;
+                         options results/options;
+                         display results/display;
+                         size results/size">
+            <div class="pat-imio-slick" tal:attributes="data-pat-imio-slick options">
+                <tal:item tal:repeat="item items;">
+                    <div class="item" tal:attributes="style python:repeat.item.index > 0 and 'display:none' or ''"
+                                      tal:define="item_has_image python:item.getIcon;
+                                    item_type item/Type;
+                                    item_start item/start;
+                                    item_end item/end;
+                                    item_modified item/ModificationDate;
+                                    item_creator item/Creator;
+                                    item_url python:item.getURL()">
+                        <a href="" tal:attributes="href item_url">
+                            <div class="slick-image">
+                                <img tal:condition="item_has_image" tal:attributes="src string:${item/getURL}/@@images/image/${size/size}" />
+                            </div>
+                            <div class="title" tal:condition="display/title" tal:content="item/title"></div>
+                            <div class="description" tal:condition="display/description" tal:content="item/description"></div>
+                            <div class="slick-date" tal:condition="display/date">
+                                <tal:event condition="python: item_type == 'Event'">
+                                    <span tal:condition="python: item_type == 'Event' and item.location" i18n:translate="">
+                                        <span tal:content="string:${item/location}" class="location" i18n:name="location"></span>
+                                        , from
+                                        <abbr class="dtstart pat-moment" title="${python:item_start.isoformat()}" data-pat-moment="format:Do MMMM YYYY, H:mm;" data-date="${python: item_start.isoformat()}" i18n:name="start">
+                                        </abbr>
+                                        to
+                                        <abbr class="dtend pat-moment" title="${python:item_end.isoformat()}" data-date="${python: item_end.isoformat()}" i18n:name="end">
+                                        </abbr>
+                                    </span>
+                                    <span tal:condition="python: item_type == 'Event' and not item.location" i18n:translate="">
+                                        from
+                                        <abbr class="dtstart pat-moment" title="${python:item_start.isoformat()}" data-pat-moment="format:Do MMMM YYYY, H:mm;" data-date="${python: item_start.isoformat()}" i18n:name="start">
+                                        </abbr>
+                                        to
+                                        <abbr class="dtend pat-moment" title="${python:item_end.isoformat()}" data-pat-moment="format:Do MMMM YYYY, H:mm;" data-date="${python: item_end.isoformat()}" i18n:name="end">
+                                        </abbr>
+                                    </span>
+                                </tal:event>
+                            </div>
+                        </a>
+                    </div>
+                </tal:item>
+            </div>
+            <div class="all" tal:condition="display/all_button">
+                <a tal:attributes="href url" alt="All items">
+                    <button>
+                    All
+                    </button>
+                </a>
+            </div>
+        </div>
+    </body>
+</html>

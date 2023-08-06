@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<registry>
+
+  <records prefix="plone.app.mosaic.app_tiles.news" interface="plone.app.mosaic.interfaces.ITile">
+    <value key="name">iaweb.mosaic.tile.tiles</value>
+    <value key="label">News and Events</value>
+    <value key="category">advanced</value>
+    <value key="tile_type">app</value>
+    <value key="default_value"></value>
+    <value key="read_only">false</value>
+    <value key="settings">true</value>
+    <value key="favorite">false</value>
+    <value key="rich_text">false</value>
+    <value key="weight">10</value>
+  </records>
+
+  <records prefix="plone.app.mosaic.app_tiles.slider" interface="plone.app.mosaic.interfaces.ITile">
+    <value key="name">iaweb.mosaic.tile.slider</value>
+    <value key="label">Slider</value>
+    <value key="category">advanced</value>
+    <value key="tile_type">app</value>
+    <value key="default_value"></value>
+    <value key="read_only">false</value>
+    <value key="settings">true</value>
+    <value key="favorite">false</value>
+    <value key="rich_text">false</value>
+    <value key="weight">10</value>
+  </records>
+
+
+  <records prefix="plone.resources/iaweb-mosaic" interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="css">
+      <element>++plone++iaweb.mosaic/less/iaweb-mosaic.less</element>
+    </value>
+    <value key="js">++plone++iaweb.mosaic/js/iaweb-mosaic.js</value>
+  </records>
+
+  <records prefix="plone.bundles/iaweb-mosaic" interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="resources">
+      <element>iaweb-mosaic</element>
+    </value>
+    <value key="enabled">True</value>
+    <value key="jscompilation">++plone++iaweb.mosaic/js/iaweb-mosaic-compiled.js</value>
+    <value key="csscompilation">++plone++iaweb.mosaic/css/iaweb-mosaic-compiled.css</value>
+    <value key="last_compilation"></value>
+  </records>
+
+
+  <records prefix="plone.resources/flexslider" interface='Products.CMFPlone.interfaces.IResourceRegistry'>
+    <value key="js">++plone++iaweb.mosaic/js/jquery.flexslider.js</value>
+  </records>
+  
+  <records prefix="plone.bundles/flexslider" interface='Products.CMFPlone.interfaces.IBundleRegistry'>
+    <value key="resources">
+      <element>flexslider</element>
+    </value>
+    <value key="expression"></value>
+    <value key="merge_with"></value>
+    <value key="enabled">True</value>
+    <value key="compile">True</value>
+    <value key="jscompilation">++plone++iaweb.mosaic/js/jquery.flexslider.js</value>
+    <value key="last_compilation">2020-01-26 19:00:00</value>
+  </records>
+
+</registry>

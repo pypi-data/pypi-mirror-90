@@ -1,0 +1,33 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:i18n="http://namespaces.zope.org/i18n">
+
+    <include package="plone.app.mosaic" />
+
+    <plone:tile
+        name="iaweb.mosaic.tile.tiles"
+        title="News and Events"
+        description="A tile which displays a collection of news"
+        add_permission="cmf.ModifyPortalContent"
+        class=".tiles.NewsTile"
+        for="*"
+        permission="zope.Public"
+        schema=".tiles.INewsTile"
+        template="templates/tile_news.pt"
+        />
+
+    <plone:tile
+        name="iaweb.mosaic.tile.slider"
+        title="Slider"
+        description="A slider"
+        add_permission="cmf.ModifyPortalContent"
+        class=".slider.SliderTile"
+        for="*"
+        permission="zope.Public"
+        schema=".slider.ISliderTile"
+        template="templates/slider.pt"
+        />
+
+</configure>

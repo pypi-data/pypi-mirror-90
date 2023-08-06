@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xml:lang="en"
+      lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      i18n:domain="iaweb.mosaic">
+    <body>
+        <section class="slider slider-multiple"
+                 tal:define="data view/contents;
+                             slider_limit view/slider_limit;
+                             slider_class view/slider_class;
+                             url data/url;
+                             results data/results"
+                 tal:condition="results">
+            <h2 tal:condition="view/title" tal:content="view/title"></h2>
+            <div class="flexslider carousel"
+                 tal:attributes="data-slider slider_limit;
+                                 class slider_class"
+                 data-slider="4">
+                <ul class="slides">
+                    <tal:element tal:repeat="element results">
+                    <li class="items">
+                        <a href="" tal:attributes="href element/getURL;
+                                                   class element/portal_type;">
+                            <div class="image-background"
+                                 tal:attributes="style string:background-image:url(${element/getURL}/@@images/image)"></div>
+                        </a>
+
+                        <div class="flex-caption">
+                            <div class="flex-caption-inner">
+                                <h2>
+                                    <a class="slider_multiple_link" tal:attributes="href element/getURL">
+                                        <span class="title" tal:content="element/Title" /></a>
+                                </h2>
+                                <tal:block condition="python: element.portal_type == 'Event'">
+                                <div class="documentByLine"
+                                     tal:define="obj element/getObject;
+                                                 event_view nocall:obj/@@event_summary;"
+                                     tal:content="structure python:event_view.formatted_date(obj)"></div>
+                                </tal:block>
+                                <p>
+                                    <a tal:attributes="href element/getURL" tal:content="element/Description">
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="read-next-line">
+                            <a class="slider_multiple_link" tal:attributes="href element/getURL">
+                                Lire la suite
+                            </a>
+                        </div>
+                    </li>
+                    </tal:element>
+
+                </ul>
+
+            </div>
+            <div class="align-right">
+                <a class="voir-tout" href="#" tal:attributes="href url" i18n:translate="">
+                    View all
+                </a>
+            </div>
+        </section>
+    </body>
+</html>
