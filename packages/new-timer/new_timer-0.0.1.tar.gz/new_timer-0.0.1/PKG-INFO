@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: new_timer
+Version: 0.0.1
+Summary: Program timer.
+Home-page: https://github.com/Michael07220823/new_timer.git
+Author: Overcomer
+Author-email: newjerusalem0722@gmail.com
+License: UNKNOWN
+Description: # new_timer
+        Calculate the program elapsed time.
+        
+        ### ManualTimer Example
+            from new_timer.timer import ManualTimer
+        
+            timer1 = ManualTimer(string="Print 0 ~ 9999", decimal=2)
+        
+            for i in range(10):
+                timer1.start()
+                for i in range(99999):
+                    print(i)
+                timer1.stop()
+        
+        ### AutoTimer Example
+            from new_timer.timer import AutoTimer
+        
+            a = 0
+            with AutoTimer("Pring 0 ~ 9999999", decimal=2)
+                for i in range(9999999):
+                    a += i
+                    print(a)
+Keywords: timer
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
