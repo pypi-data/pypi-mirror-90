@@ -1,0 +1,35 @@
+<nav class="navbar is-fixed-top is-white is-bold pl-6 pr-6" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+            <img src="/static/images/logo.png" width="82" height="28">
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+           data-target="navbarBasic">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    <div id="navbarBasic" class="navbar-menu">
+        <div class="navbar-start"></div>
+        <div class="navbar-end">
+            {% if current_user.is_authenticated %}
+                <a class="navbar-item" href="/">
+                    <i class="fas fa-home"></i>
+                </a>
+                <a class="navbar-item" href="/logout">
+                    <i class="fas fa-sign-out-alt"></i>
+                </a>
+            {% else %}
+                <!--
+                <a href="/signup" class="button is-light">
+                    <i class="fas fa-user-plus"></i>
+                </a>
+                -->
+                <a class="navbar-item" href="/login">
+                    <i class="fas fa-sign-in-alt"></i>
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</nav>
