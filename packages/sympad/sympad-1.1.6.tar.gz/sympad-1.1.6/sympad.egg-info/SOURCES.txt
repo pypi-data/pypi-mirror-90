@@ -1,0 +1,11 @@
+README.md
+setup.py
+bin/sympad
+sympad/__init__.py
+sympad/__main__.py
+sympad/sympad.py
+sympad.egg-info/PKG-INFO
+sympad.egg-info/SOURCES.txt
+sympad.egg-info/dependency_links.txt
+sympad.egg-info/requires.txt
+sympad.egg-info/top_level.txt

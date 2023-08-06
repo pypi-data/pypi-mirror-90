@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sympad
+Version: 1.1.6
+Summary: Graphical symbolic math calculator / scratchpad using SymPy
+Home-page: https://github.com/Pristine-Cat/sympad
+Author: Tomasz Pytel
+Author-email: tom_pytel@yahoo.com
+License: BSD
+Description: SymPad is a simple single script graphical symbolic calculator / scratchpad using SymPy for the math, MathJax for the display in a browser and matplotlib for plotting. User input is intended to be quick, easy and intuitive and is displayed in symbolic form as it is being entered. Sympad will accept Python expressions, LaTeX formatting, unicode math symbols and a native shorthand intended for quick entry, or a mix of all of these. The input will be evaluated symbolically or numerically with the results being copy/pasteable in Python or LaTeX formats, so it acts as a translator as well.
+Keywords: Math CAS SymPy GUI
+Platform: UNKNOWN
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
