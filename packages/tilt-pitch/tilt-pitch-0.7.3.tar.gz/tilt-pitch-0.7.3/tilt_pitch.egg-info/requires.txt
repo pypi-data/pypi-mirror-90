@@ -1,0 +1,7 @@
+pybluez
+influxdb
+prometheus_client
+python-interface
+jsonpickle
+beacontools
+pyfiglet
