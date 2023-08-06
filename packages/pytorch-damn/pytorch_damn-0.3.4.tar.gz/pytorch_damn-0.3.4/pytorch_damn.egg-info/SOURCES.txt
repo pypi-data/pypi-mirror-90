@@ -1,0 +1,11 @@
+README.md
+setup.py
+pytorch_damn/__init__.py
+pytorch_damn/__main__.py
+pytorch_damn/dataset.py
+pytorch_damn/model.py
+pytorch_damn.egg-info/PKG-INFO
+pytorch_damn.egg-info/SOURCES.txt
+pytorch_damn.egg-info/dependency_links.txt
+pytorch_damn.egg-info/requires.txt
+pytorch_damn.egg-info/top_level.txt
