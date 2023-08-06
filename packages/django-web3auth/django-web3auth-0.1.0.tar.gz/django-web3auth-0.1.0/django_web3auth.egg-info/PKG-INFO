@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: django-web3auth
+Version: 0.1.0
+Summary: A pluggable Django app that enables login/signup via an Ethereum wallet.
+Home-page: https://github.com/Tao-Network/django-web3auth
+Author: Bryce Weiner
+Author-email: bryce@tao.network
+License: MIT
+Description: UNKNOWN
+Keywords: django-web3auth
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
