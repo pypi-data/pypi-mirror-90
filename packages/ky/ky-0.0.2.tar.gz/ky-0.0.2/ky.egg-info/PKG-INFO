@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ky
+Version: 0.0.2
+Summary: Utils to work with dates
+Home-page: https://github.com/thorwhalen/ut/tree/master/util/udate.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # ky
+        Utils to work with dates
+        
+        
+        To install:	```pip install ky```
+        
+Platform: any
+Description-Content-Type: text/markdown
