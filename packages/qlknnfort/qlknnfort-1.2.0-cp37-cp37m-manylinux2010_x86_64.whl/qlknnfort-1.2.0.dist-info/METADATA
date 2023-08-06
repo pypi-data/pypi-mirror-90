@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: qlknnfort
+Version: 1.2.0
+Summary: Pythonic wrappers for the IMAS Access Layer
+Home-page: https://gitlab.com/qualikiz-group/QLKNN-fortran
+Author: Karel van de Plassche
+Author-email: k.l.vandeplassche@differ.nl
+Maintainer: Karel van de Plassche
+Maintainer-email: k.l.vandeplassche@differ.nl
+License: L-GPL
+Project-URL: Bug Tracker, https://gitlab.com/qualikiz-group/QLKNN-fortran/-/issues
+Project-URL: Documentation, https://qualikiz-group.gitlab.io/QLKNN-fortran/
+Project-URL: Source Code, https://gitlab.com/qualikiz-group/QLKNN-fortran
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: f90wrap
+Provides-Extra: all
+Requires-Dist: matplotlib ; extra == 'all'
+Requires-Dist: f90nml ; extra == 'all'
+Requires-Dist: IPython ; extra == 'all'
+Provides-Extra: develop
+Requires-Dist: matplotlib ; extra == 'develop'
+Requires-Dist: f90nml ; extra == 'develop'
+Requires-Dist: IPython ; extra == 'develop'
+
+Please refer to the [wiki](https://gitlab.com/qualikiz-group/QLKNN-fortran/wikis) for more usage-type documentation. Detailed information about all methods and types defined in QLKNN-fortran can be found on the [GitLab Pages](https://qualikiz-group.gitlab.io/QLKNN-fortran/)
+
+
