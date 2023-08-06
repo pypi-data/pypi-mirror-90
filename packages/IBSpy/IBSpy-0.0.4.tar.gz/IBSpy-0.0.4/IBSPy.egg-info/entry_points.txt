@@ -1,0 +1,4 @@
+[console_scripts]
+IBSpy = IBSpy:main
+IBSpy_wcount = IBSpy.bin.IBSpy_window_count:main
+
