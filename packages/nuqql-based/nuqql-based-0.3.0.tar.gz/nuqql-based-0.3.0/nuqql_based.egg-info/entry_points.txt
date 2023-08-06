@@ -1,0 +1,3 @@
+[console_scripts]
+nuqql-based = nuqql_based.main:main
+
