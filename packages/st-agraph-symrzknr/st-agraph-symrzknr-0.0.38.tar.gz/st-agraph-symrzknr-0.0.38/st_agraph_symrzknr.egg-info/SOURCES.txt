@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+st_agraph_symrzknr/__init__.py
+st_agraph_symrzknr.egg-info/PKG-INFO
+st_agraph_symrzknr.egg-info/SOURCES.txt
+st_agraph_symrzknr.egg-info/dependency_links.txt
+st_agraph_symrzknr.egg-info/requires.txt
+st_agraph_symrzknr.egg-info/top_level.txt
