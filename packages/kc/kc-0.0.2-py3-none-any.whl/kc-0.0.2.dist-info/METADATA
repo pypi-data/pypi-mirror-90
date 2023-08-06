@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: kc
+Version: 0.0.2
+Summary: Utils for filtering
+Home-page: https://github.com/thorwhalen/ut/tree/master/util/pfilt.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# kc
+Utils for filtering
+
+
+To install:	```pip install kc```
+
+
