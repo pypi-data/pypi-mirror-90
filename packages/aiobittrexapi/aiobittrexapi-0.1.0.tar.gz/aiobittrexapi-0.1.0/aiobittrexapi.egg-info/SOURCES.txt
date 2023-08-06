@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+aiobittrexapi/__init__.py
+aiobittrexapi/api.py
+aiobittrexapi/const.py
+aiobittrexapi/errors.py
+aiobittrexapi/utils.py
+aiobittrexapi.egg-info/PKG-INFO
+aiobittrexapi.egg-info/SOURCES.txt
+aiobittrexapi.egg-info/dependency_links.txt
+aiobittrexapi.egg-info/not-zip-safe
+aiobittrexapi.egg-info/requires.txt
+aiobittrexapi.egg-info/top_level.txt

@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: aiobittrexapi
+Version: 0.1.0
+Summary: Asynchronous Python wrapper for the Bittrex API.
+Home-page: https://github.com/DevSecNinja/aiobittrexapi
+Author: Jean-Paul van Ravensberg
+Author-email: 14926452+DevSecNinja@users.noreply.github.com
+License: MIT license
+Description: # Python Async Bittrex API Wrapper
+        
+        This package is used by the Bittrex integration of Home Assistant.
+        
+        ## Example
+        
+        View the example code in `example.py`.
+        
+        ## Feedback & Pull Requests
+        
+        All feedback and Pull Requests are welcome!
+        
+        ## Development
+        
+        Don't forget to create your venv
+        
+        ```` python
+        python3 -m venv venv
+        source venv/bin/activate
+        
+        ````
+        
+Keywords: bittrex,bittrex-api,bittrex-v3,cryptocurrency,api,async,client
+Platform: UNKNOWN
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
