@@ -1,0 +1,7 @@
+ecoindex/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+ecoindex/ecoindex.py,sha256=QS8lGvkcoJgrfrya_nvJUaiF0nEm-d-tgODhI7kHGHU,1549
+ecoindex/models.py,sha256=KBjHo5O6mCfc8lUINkjKlSrkC6cxZbga8zmvDkXb_fw,127
+ecoindex/quantiles.py,sha256=rm0bSOUDlNVmSyKTUJ6gpAxClvoMEPeX3cQNR2Bc2nw,688
+ecoindex-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+ecoindex-0.1.0.dist-info/METADATA,sha256=upUmEwt8VkGrRoeXZMDx_-YdRkEmQRMhlX2KUNl1rNI,597
+ecoindex-0.1.0.dist-info/RECORD,,
