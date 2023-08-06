@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: imlazy-photo
+Version: 0.0.2
+Summary: Make directory and put in photo
+Home-page: https://github.com/cosmos2/imlazy_photo
+Author: cosmos2
+Author-email: playnstop.s@gmail.com
+License: UNKNOWN
+Description: # imlazy_photo
+        사진파일을 날짜별로 폴더에 넣는 일이 귀찮다
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
