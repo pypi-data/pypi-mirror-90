@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: inspec
+Version: 0.2
+Summary: Printing and viewing spectrograms of audio files in command line
+Home-page: https://github.com/kevinyu/inspec
+Author: Kevin Yu
+Author-email: thekevinyu@gmail.edu
+License: MIT
+Keywords: spectrogram audio visualization sound terminal
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Click
+Requires-Dist: SoundFile
+Requires-Dist: numpy
+Requires-Dist: wheel
+Requires-Dist: windows-curses ; platform_system == "Windows"
+
+# inspec
+View spectrograms of audio data files in the terminal as ascii characters. Provides printing to stdout, a terminal gui built on curses, and importable functions.
+
+## install
+
+```
+pip install inspec
+```
+
+## cli
+
+Invocation of **inspec** uses the entrypoint **python -m inspec.cli**.
+
+#### inspec open
+```
+Usage: inspec open [OPTIONS] [FILENAMES]...
+
+  Open interactive gui for viewing audio files in command line
+
+Options:
+  -r, --rows INTEGER  Number of rows in layout
+  -c, --cols INTEGER  Number of columns in layout
+  -t, --time FLOAT    Jump to time in file
+  --cmap TEXT         Choose colormap (see list-cmaps for options)
+  --help              Show this message and exit.
+```
+
+![inspec open demo](demo/inspec_open_demo.gif)
+
+#### inspec show
+```
+Usage: inspec show [OPTIONS] FILENAME
+
+  Print visual representation of audio file in command line
+
+Options:
+  --cmap TEXT           Choose colormap (see list-cmaps for options)
+  -d, --duration FLOAT
+  -t, --time FLOAT
+  --amp                 Show amplitude of signal instead of spectrogram
+  --help                Show this message and exit.
+```
+
+![inspec show demo](demo/inspec_show_demo.gif)
+
+#### importing in python
+
+The code can be imported so renders can be done dynamically in other programs. This is the current gist but would be nice to make a simpler way to do this.
+
+```python
+from inspec.plugins.audio.spectrogram_view import BaseAsciiSpectrogramPlugin
+
+# Printing to stdout
+plugin = BaseAsciiSpectrogramPlugin()
+plugin.set_cmap("plasma")
+plugin.read_file(FILENAME)
+plugin.render()
+```
+
+
