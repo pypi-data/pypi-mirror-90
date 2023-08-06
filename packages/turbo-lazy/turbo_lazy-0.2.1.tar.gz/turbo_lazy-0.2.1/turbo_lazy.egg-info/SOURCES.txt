@@ -1,0 +1,17 @@
+README.md
+setup.py
+tests/__init__.py
+tests/test_lazy.py
+turbo_lazy/__init__.py
+turbo_lazy/views.py
+turbo_lazy.egg-info/PKG-INFO
+turbo_lazy.egg-info/SOURCES.txt
+turbo_lazy.egg-info/dependency_links.txt
+turbo_lazy.egg-info/requires.txt
+turbo_lazy.egg-info/top_level.txt
+turbo_lazy/migrations/__init__.py
+turbo_lazy/templates/turbo_lazy/lazy_import.html
+turbo_lazy/templates/turbo_lazy/turbo_frame.html
+turbo_lazy/templatetags/__init__.py
+turbo_lazy/templatetags/lazy.py
+turbo_lazy/templatetags/partials.py
