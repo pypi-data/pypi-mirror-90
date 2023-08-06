@@ -1,0 +1,10 @@
+README.md
+setup.py
+interactive_data_manipulation/__init__.py
+interactive_data_manipulation/dataframe.py
+interactive_data_manipulation/idm.py
+interactive_data_manipulation/summary.py
+interactive_data_manipulation.egg-info/PKG-INFO
+interactive_data_manipulation.egg-info/SOURCES.txt
+interactive_data_manipulation.egg-info/dependency_links.txt
+interactive_data_manipulation.egg-info/top_level.txt
