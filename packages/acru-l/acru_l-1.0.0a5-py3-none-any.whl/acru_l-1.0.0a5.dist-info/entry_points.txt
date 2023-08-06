@@ -1,0 +1,3 @@
+[console_scripts]
+acrul=acru_l.cli:main
+
