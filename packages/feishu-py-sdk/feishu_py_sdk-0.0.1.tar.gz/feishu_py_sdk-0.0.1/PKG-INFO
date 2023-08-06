@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: feishu_py_sdk
+Version: 0.0.1
+Summary: feishu sdk
+Home-page: https://github.com/ilpan/feishu-sdk
+Author: ilpan
+Author-email: pna.dev@outlook.com
+License: UNKNOWN
+Description: # feishu-sdk
+        
+        ## feishu-client
+        ```python
+        from feishu_sdk import FeishuClient
+        
+        fc = FeishuClient(app_id="xxx", app_secret="xxx")
+        ```
+        
+        ## feishu-server
+        ```python
+        from feishu_sdk import FeishuServer
+        
+        class Server(FeishuServer):
+            def __init__(self, config:dict):
+                FeishuServer.__init__(config)
+            
+            def _message_callback_event_handler(self, event:dict):
+                # handle message
+        ```
+Keywords: feishu sdk client server
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
