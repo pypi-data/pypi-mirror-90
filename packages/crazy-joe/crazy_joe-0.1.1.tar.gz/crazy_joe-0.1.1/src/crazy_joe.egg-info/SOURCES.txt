@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/crazy_joe.egg-info/PKG-INFO
+src/crazy_joe.egg-info/SOURCES.txt
+src/crazy_joe.egg-info/dependency_links.txt
+src/crazy_joe.egg-info/requires.txt
+src/crazy_joe.egg-info/top_level.txt
