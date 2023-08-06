@@ -1,0 +1,11 @@
+gustave/__init__.py,sha256=TsVmewNmJxIabm_YRNLJ6U9uZHPru6pj4qFZ5GDa4KM,56
+gustave/caching.py,sha256=3RH3RrP3y075hIrVD3mVXHlZ6xacJvWHGKTG22qT2p0,88
+gustave/patchers/__init__.py,sha256=gISXWYiwOz18VsCTT7O8wPyG-DzmQ44YNAuieJXqEkk,195
+gustave/patchers/core.py,sha256=UTKPcVb_zdqghvULkdkIkMrUaKUC8Zsu1kY5byjwzGE,1975
+gustave/patchers/keras.py,sha256=FmNX8bGyku-OG55UejKljGooV9iGVuWSR9aJ11tOZ6k,273
+gustave/patchers/pandas.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gustave/patchers/sklearn.py,sha256=MFKIaZ-Lv0mJGmqksG2Ar3YXp9m-1NhVl2GvHlXf-IQ,301
+gustave/utils.py,sha256=Nq-bIrZVD-BYdkKLAsbj8kwwJ6F6MJMzii7tf1aYmsE,136
+gustave-0.1.5.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+gustave-0.1.5.dist-info/METADATA,sha256=edfcaWLZgqrKHGBAFvA0dlR3gh3HgQvHLDWKVNNRL6k,642
+gustave-0.1.5.dist-info/RECORD,,
