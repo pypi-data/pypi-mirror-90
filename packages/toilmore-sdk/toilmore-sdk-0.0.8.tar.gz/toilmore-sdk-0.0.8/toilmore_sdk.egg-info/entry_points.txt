@@ -1,0 +1,3 @@
+[console_scripts]
+toilmoresdk = toilmoresdk.entry_point:main
+
