@@ -1,0 +1,3 @@
+[console_scripts]
+photomatrix = photomatrix.__main__:main
+

@@ -1,0 +1,16 @@
+README.md
+setup.py
+photomatrix/__init__.py
+photomatrix/__main__.py
+photomatrix/arguments.py
+photomatrix/exif.py
+photomatrix/finalize.py
+photomatrix/matrix.py
+photomatrix/preprocess.py
+photomatrix/text.py
+photomatrix.egg-info/PKG-INFO
+photomatrix.egg-info/SOURCES.txt
+photomatrix.egg-info/dependency_links.txt
+photomatrix.egg-info/entry_points.txt
+photomatrix.egg-info/requires.txt
+photomatrix.egg-info/top_level.txt
