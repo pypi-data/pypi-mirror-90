@@ -1,0 +1,3 @@
+[gui_scripts]
+computerSitTimer = computerSitTimer.__main__:main
+
