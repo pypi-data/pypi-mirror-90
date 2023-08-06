@@ -1,0 +1,9 @@
+numpy
+matplotlib
+scipy
+
+[helpers]
+colorama
+pyaudio
+pyrtlsdr
+ipywidgets
