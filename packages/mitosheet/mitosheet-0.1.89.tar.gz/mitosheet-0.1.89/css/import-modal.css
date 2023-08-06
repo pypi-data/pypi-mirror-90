@@ -1,0 +1,19 @@
+
+
+.raw-python-textarea {
+    width: 100%;
+    /* Don't let users expand to big and get stuck */
+    resize: vertical;
+    max-height: 150px;
+}
+
+.import-files-select {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make the select children center themselves */
+.import-files-select > select {
+    margin: auto;
+    margin-bottom: 10px;
+}
