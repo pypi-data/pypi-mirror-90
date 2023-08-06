@@ -1,0 +1,3 @@
+twopilabs-utils-scpi>=0.3.3
+numpy
+pyyaml
