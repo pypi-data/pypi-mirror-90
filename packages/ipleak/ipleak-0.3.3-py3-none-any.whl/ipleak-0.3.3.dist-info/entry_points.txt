@@ -1,0 +1,3 @@
+[console_scripts]
+ipleak = ipleak.__main__:main
+
