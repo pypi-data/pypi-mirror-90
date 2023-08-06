@@ -1,0 +1,11 @@
+rest_framework_actions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rest_framework_actions/apps.py,sha256=7UR10FMnuiYROcIKoqamesxhPXGr3Jd8JY7YgTl78Vc,117
+rest_framework_actions/mixins.py,sha256=69jQ6g1zr9Y4oenctai3wlkR-hJ2L3EuvctnDrY3Fgk,6156
+rest_framework_actions/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+rest_framework_actions/viewsets.py,sha256=mKyIU6iIA1P99itJdRz-Rjxix6Fn5Mx7fL8WwB4lTuA,383
+rest_framework_actions/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rest_framework_actions-0.1.dist-info/LICENSE,sha256=55ezPc4qws5vIpg_62k2G11WAueIcUIa8FEhrhdYVtA,1081
+rest_framework_actions-0.1.dist-info/METADATA,sha256=ROsZCLENy_b6j5PjrQs6W-gWgN3EpJm5IhvDgOgYBpg,1988
+rest_framework_actions-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+rest_framework_actions-0.1.dist-info/top_level.txt,sha256=uYeXTz7u_DgWwAqaRq__hN24ZCD_9LbnCfXcyfnQfMY,23
+rest_framework_actions-0.1.dist-info/RECORD,,
