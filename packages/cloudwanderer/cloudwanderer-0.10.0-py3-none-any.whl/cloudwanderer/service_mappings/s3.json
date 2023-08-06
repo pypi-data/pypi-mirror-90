@@ -1,0 +1,20 @@
+{
+    "service": {
+        "globalService": true,
+        "region": "us-east-1",
+        "regionalResources": true
+    },
+    "resources": {
+        "Bucket": {
+            "type": "resource",
+            "regionRequest": {
+                "operation": "get_bucket_location",
+                "params": [
+                    { "target": "Bucket", "source": "resourceAttribute", "name": "name" }
+                ],
+                "pathToRegion": "LocationConstraint",
+                "defaultValue": "us-east-1"
+            }
+        }
+    }
+}
