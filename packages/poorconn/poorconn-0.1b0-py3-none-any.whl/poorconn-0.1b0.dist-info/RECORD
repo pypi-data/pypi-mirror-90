@@ -1,0 +1,17 @@
+poorconn/__init__.py,sha256=1zIZpXrZUaWvsqcgh_ua1qx0cv4RbQYbUpj-YecdZ7U,1298
+poorconn/_accept.py,sha256=ZyCb7rPffRrCVa9nt_9MzDP3sKcQTG4YAdyzCKn4ZuA,1255
+poorconn/_send.py,sha256=Uvkx_RqKosZVrAWtsOOm6CwMiCuGGDBSkcvVOJ7V8Dw,9850
+poorconn/_socket.py,sha256=wWylsQuT0R77hghtjw5xI5yMkLf3QN6_UFdaCVa7Pc8,3751
+poorconn/_version.py,sha256=OJPK4iYUexGCPwpdETR3NVoD0S32giBuEZL-XZ8AYpw,143
+poorconn/_wrappers.py,sha256=me1ZKWlEa6qDN9Xfav1cWtyJ3HSrOgm4d22HaYT-9jo,3333
+poorconn/pytest_plugin/__init__.py,sha256=m38sE1llylnNhBVCL5U5R7kKA0hTbTCwVlJG_vXo05I,795
+poorconn/pytest_plugin/_impl.py,sha256=OkUYjeZZlFe-sK_XqBHWthmc3rSERgjBBBghSbnKzMw,4809
+poorconn-0.1b0.data/data/COPYING,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+poorconn-0.1b0.data/data/COPYING.GPL,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+poorconn-0.1b0.dist-info/COPYING,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+poorconn-0.1b0.dist-info/COPYING.GPL,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+poorconn-0.1b0.dist-info/METADATA,sha256=FCktnvYuxLKWLRkor-ACV8UzijvAdjmZFetZG3Oo8dc,3420
+poorconn-0.1b0.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+poorconn-0.1b0.dist-info/entry_points.txt,sha256=dBjofngJ34JViqDBaywZfbkMGzRsn6uRqJ3FBSRgn_E,46
+poorconn-0.1b0.dist-info/top_level.txt,sha256=Dqr2jc4u-fXVJrBkks5brrb5rSUwk2Z5wXPdPyNvE8s,9
+poorconn-0.1b0.dist-info/RECORD,,
