@@ -1,0 +1,11 @@
+README.md
+setup.py
+adventocr/__init__.py
+adventocr/mappings.py
+adventocr/parse.py
+adventocr.egg-info/PKG-INFO
+adventocr.egg-info/SOURCES.txt
+adventocr.egg-info/dependency_links.txt
+adventocr.egg-info/top_level.txt
+tests/__init__.py
+tests/test_parse.py
