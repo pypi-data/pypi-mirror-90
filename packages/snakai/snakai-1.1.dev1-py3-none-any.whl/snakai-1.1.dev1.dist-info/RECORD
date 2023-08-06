@@ -1,0 +1,13 @@
+snakai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snakai/curses_game.py,sha256=GyzXU4PtZvdzZwxU1F_gm-1_-jkxZ41PEO-zltVj6Mw,6257
+snakai/run.py,sha256=SIgF2Gok2J7Tj5AIMmyfQlrHitPlGCSPijTrffgG9B8,830
+snakai/snake_state_machine.py,sha256=frsxNTlsiygdclxm1RcULDy8_zr-al2ceu4H4ZxpgOY,6604
+snakai/strategy/__init__.py,sha256=l3QTihLvrmD0AB0SyCQyZO8q2XBW1YaCO13Lyilo4p8,793
+snakai/strategy/base.py,sha256=3QKVME_oAV6m34I8ETV7zf2E7lQbB8ZDwGDM7BFUKNA,507
+snakai/strategy/manual_strategy.py,sha256=qo0wWi9meNVfkrZ5SB7wurAPj-trgmS1Efot2J8u0IU,1303
+snakai-1.1.dev1.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+snakai-1.1.dev1.dist-info/METADATA,sha256=4KIGRaKKHwj8Tm65svHSR-kOF1BC5S5BQKfkbZaXWYI,1740
+snakai-1.1.dev1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+snakai-1.1.dev1.dist-info/entry_points.txt,sha256=ZSxWLwQSnYBjqEP718UYetyvdNMlcEBt4E028l9oseI,47
+snakai-1.1.dev1.dist-info/top_level.txt,sha256=9BT0fPOpKGpUs0Zd6whq0Ts-QaBvik76hz7BNBc5wUo,7
+snakai-1.1.dev1.dist-info/RECORD,,
