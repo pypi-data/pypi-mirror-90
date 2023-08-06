@@ -1,0 +1,10 @@
+lambda_setuptools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lambda_setuptools/ldist.py,sha256=OtmUU6xhvHrQq7dFNhGHrjfaD50BT3_31yb_J9lMNi4,10378
+lambda_setuptools/lupdate.py,sha256=c3LVaHGczVk9RVG1ePH12np5erbmrTOiJZ2uhn6gDIk,4413
+lambda_setuptools/lupload.py,sha256=_aY8zo716_tXoTyfURmf72P0zP9nSpNF1oRXFVgsBX4,3829
+lambda_setuptools-0.5.0.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+lambda_setuptools-0.5.0.dist-info/METADATA,sha256=nYKS4MyIlXem437XEacbMn-XynCWTwMz3s1pJ-2c82I,5674
+lambda_setuptools-0.5.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+lambda_setuptools-0.5.0.dist-info/entry_points.txt,sha256=YAkp9BUrEFXWlRDC1unM80IjJ6sP3cVOkFH3bypGDb8,380
+lambda_setuptools-0.5.0.dist-info/top_level.txt,sha256=Iy8O4YgEId5xc1TY-4rdfsC56CG3SRY9CpaJ26wCv-w,18
+lambda_setuptools-0.5.0.dist-info/RECORD,,
