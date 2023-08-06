@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: awkward
+Version: 1.0.2
+Summary: Manipulate JSON-like data with NumPy-like idioms.
+Home-page: https://github.com/scikit-hep/awkward-1.0
+Author: Jim Pivarski
+Author-email: pivarski@princeton.edu
+Maintainer: Jim Pivarski
+Maintainer-email: pivarski@princeton.edu
+License: BSD 3-clause
+Download-URL: https://github.com/scikit-hep/awkward-1.0/releases
+Requires-Dist: setuptools
+Requires-Dist: numpy (>=1.13.1)
+Provides-Extra: all
+Requires-Dist: flake8 ; extra == 'all'
+Requires-Dist: PyYAML ; extra == 'all'
+Requires-Dist: pytest (>=3.9) ; extra == 'all'
+Requires-Dist: awkward-cuda-kernels (==1.0.2) ; extra == 'all'
+Requires-Dist: numba (>=0.50.0) ; (python_version >= "3.6") and extra == 'all'
+Requires-Dist: pandas (>=0.24.0) ; (python_version >= "3.6") and extra == 'all'
+Requires-Dist: numexpr ; (python_version >= "3.6") and extra == 'all'
+Requires-Dist: autograd ; (python_version >= "3.6") and extra == 'all'
+Requires-Dist: pyarrow (>=2.0.0) ; (python_version >= "3.6" and sys_platform != "win32") and extra == 'all'
+Provides-Extra: cuda
+Requires-Dist: awkward-cuda-kernels (==1.0.2) ; extra == 'cuda'
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: PyYAML ; extra == 'dev'
+Requires-Dist: numba (>=0.50.0) ; (python_version >= "3.6") and extra == 'dev'
+Requires-Dist: pandas (>=0.24.0) ; (python_version >= "3.6") and extra == 'dev'
+Requires-Dist: numexpr ; (python_version >= "3.6") and extra == 'dev'
+Requires-Dist: autograd ; (python_version >= "3.6") and extra == 'dev'
+Requires-Dist: pyarrow (>=2.0.0) ; (python_version >= "3.6" and sys_platform != "win32") and extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest (>=3.9) ; extra == 'test'
+
+<a href="https://github.com/scikit-hep/awkward-1.0"><img src="https://github.com/scikit-hep/awkward-1.0/raw/main/docs-img/logo/logo-300px.png"></a>
+
+
