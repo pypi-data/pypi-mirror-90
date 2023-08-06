@@ -1,0 +1,7 @@
+pyproject.toml
+CrappyPython/__init__.py
+CrappyPython/setup.py
+CrappyPython.egg-info/PKG-INFO
+CrappyPython.egg-info/SOURCES.txt
+CrappyPython.egg-info/dependency_links.txt
+CrappyPython.egg-info/top_level.txt
