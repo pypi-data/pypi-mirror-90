@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: molecule-vmware
+Version: 0.2.2
+Summary: Molecule VMware Plugin :: run molecule tests on VMware
+Home-page: https://github.com/sky-joker/molecule-vmware
+Author: sky-joker
+Author-email: sky.jokerxx@gmail.com
+Maintainer: sky-joker
+Maintainer-email: sky.jokerxx@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/sky-joker/molecule-vmware/issues
+Project-URL: Source Code, https://github.com/sky-joker/molecule-vmware
+Description: # Molecule VMware Plugin
+        
+        TBD
+        
+Keywords: ansible,roles,testing,molecule,plugin,vmware
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
