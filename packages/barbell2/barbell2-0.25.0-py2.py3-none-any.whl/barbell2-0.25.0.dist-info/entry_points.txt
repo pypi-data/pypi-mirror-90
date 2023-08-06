@@ -1,0 +1,5 @@
+[console_scripts]
+createh5 = barbell2.createh5.createh5:main
+dicomconverttoraw = barbell2.dicomconverttoraw.dicomconverttoraw:main
+dicomexplorer = barbell2.dicomexplorer.dicomexplorer:main
+
