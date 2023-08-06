@@ -1,0 +1,10 @@
+stagemodel/__about__.py,sha256=aJV3eVPn4VlO_ngrFGVVxWvIzangrX5cs3pbcm6sd2k,447
+stagemodel/__init__.py,sha256=TLogq_06YIPtiMB4PcRp52FTbCAEIqnaYKHhAx8a2mA,172
+stagemodel/composite_model.py,sha256=bHxApKRu0ri6gmFLwBxojNvfOqD3t-5UH4F0Ub_2CUk,4882
+stagemodel/node_model.py,sha256=J1Megi81voou8VqLe25w5Y0rJQRmVmo5_kaL0CfnAoI,13885
+stagemodel/utils.py,sha256=UmXeBETRf4MdAMFjRiL4TzTfsAq3yHG4DrK-tE2Wa8A,3614
+stagemodel-0.0.3.dist-info/LICENSE,sha256=eu-bNZWcPAS91EVBOLfxYpxYsgN9NSFEkWugcDSwK8A,1327
+stagemodel-0.0.3.dist-info/METADATA,sha256=fBVDCkK1f-SIXLDZ0e2Q8Z9gIOv3slONt5ADbmh6VOo,856
+stagemodel-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+stagemodel-0.0.3.dist-info/top_level.txt,sha256=rvQO6nNZgb_JLpu2KZj788O37CJ5mYOP1osCVhZrwpI,11
+stagemodel-0.0.3.dist-info/RECORD,,
