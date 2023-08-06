@@ -1,0 +1,10 @@
+[Unit]
+Description=Avrcp volume controller
+Requires=dbus.service bluetooth.target
+
+[Service]
+Type=simple
+ExecStart=avrcp-volume
+
+[Install]
+WantedBy=user-graphical.target

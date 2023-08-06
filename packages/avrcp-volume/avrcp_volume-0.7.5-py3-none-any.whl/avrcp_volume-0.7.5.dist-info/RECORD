@@ -1,0 +1,15 @@
+avrcp_volume/__init__.py,sha256=ma_jc7vSOdlGbE_CGueQ8eL6Gpm8A5EvhHr9QtfMrls,509
+avrcp_volume/avrcp_controller.py,sha256=cDiUxsFvuNe87NHHyT8NUjSBfdA5FzDduvFhitBr8O8,4857
+avrcp_volume/installer.py,sha256=q9J9lhhQ6j5cTIrARddKxaTNecRd180tYlKg7JMrPCQ,525
+avrcp_volume/logger.py,sha256=SDuOJJSyoCom5rnFFDtyIWavKo9vLWrfcUmDbKSMJ3A,1852
+avrcp_volume/message_bus.py,sha256=JXZU0hzafcYfzmtCGxQF74PICnnRlJkA-xxon6Uv0BQ,305
+avrcp_volume/pulse/__init__.py,sha256=wVTNQR2Nz3d3joZyWV1NBzOUJqJPnFdcP83KtQQTel4,41
+avrcp_volume/pulse/pa_controller.py,sha256=oILUiHWYcBDMqbPLvfCQ472ut8k9POdWKqqyGR7QMUo,1684
+avrcp_volume/pulse/sink.py,sha256=FFFDuNx9rAPfccEEPxTyGbI9CdwnnGwbgRiBGZyToT4,489
+avrcp_volume/resources/avrcp-volume.service,sha256=Tg3IHracO6MfQVZ-MfXwTcvx6f89cmREdiWuVRUC6RU,170
+avrcp_volume-0.7.5.dist-info/LICENSE,sha256=0WPsywqTG4id9Fkgzfm1b4n4rHXWk2TutPNPzUd2ttY,1057
+avrcp_volume-0.7.5.dist-info/METADATA,sha256=v8ghnpYLkRaFDh2Fm6HBcHOyJx7jkQk4-z280ZLrb6k,1106
+avrcp_volume-0.7.5.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+avrcp_volume-0.7.5.dist-info/entry_points.txt,sha256=3jd02vBoPGsaj-DDZlZYY-nN1gfGTskOngHwPyV4OVo,52
+avrcp_volume-0.7.5.dist-info/top_level.txt,sha256=uRrLAK9FVylrtbPq7jQ1WXfJG3WbdetStv3s_V_Ptb0,13
+avrcp_volume-0.7.5.dist-info/RECORD,,
