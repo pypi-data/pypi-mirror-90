@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: tf-transformers
+Version: 0.1.0
+Summary: Simple Python project built with Poetry.
+License: MIT
+Keywords: tensorflow,transformers,nlp,keras,bert,deep learning
+Author: Sarath R Nair
+Author-email: s4sarath@gmail.com
+Maintainer: Sarath R Nair
+Maintainer-email: s4sarath@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+
+
