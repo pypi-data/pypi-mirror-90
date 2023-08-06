@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+methylize/__init__.py
+methylize/__main__.py
+methylize/diff_meth_pos.py
+methylize/helpers.py
+methylize/progress_bar.py
+methylize/version.py
+methylize.egg-info/PKG-INFO
+methylize.egg-info/SOURCES.txt
+methylize.egg-info/dependency_links.txt
+methylize.egg-info/entry_points.txt
+methylize.egg-info/requires.txt
+methylize.egg-info/top_level.txt
+methylize/data/__init__.py
