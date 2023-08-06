@@ -1,0 +1,16 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: hetznercloud
+platforms:
+  - name: "molecule-hetznercloud-${INSTANCE_UUID}"
+    server_type: cx11
+    image: debian-10
+    volumes:
+      - name: "molecule-hetznercloud-volume-1-${INSTANCE_UUID}"
+      # - name: "molecule-hetznercloud-volume-2-${INSTANCE_UUID}"
+provisioner:
+  name: ansible
+verifier:
+  name: ansible

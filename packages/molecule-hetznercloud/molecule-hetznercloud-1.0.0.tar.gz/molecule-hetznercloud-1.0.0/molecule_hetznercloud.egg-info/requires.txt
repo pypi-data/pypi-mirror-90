@@ -1,0 +1,13 @@
+hcloud<2,>=1.10.0
+molecule<=3.3,>=3.2.1
+pyyaml<6,>=5.3.1
+
+[test]
+hcloud<2,>=1.10.0
+mock<5,>=4.0.2
+pytest-cov<3,>=2.10.1
+pytest-helpers-namespace<2020,>=2019.1.8
+pytest-mock<4,>=3.5.0
+pytest-verbose-parametrize<2,>=1.7.0
+pytest-xdist<3,>=2.2.0
+pytest<7,>=6.2.1
