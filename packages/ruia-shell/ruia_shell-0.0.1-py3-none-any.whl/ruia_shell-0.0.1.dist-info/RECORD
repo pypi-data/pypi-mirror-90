@@ -1,0 +1,10 @@
+ruia_shell/__init__.py,sha256=5GuM8JK6Q028DmoJvGUPRIM2xttMXqL_-skJee9NKX4,63
+ruia_shell/cli.py,sha256=p3rDGeG2FFK-hYrfjl-kWzvIfroaiNcnv_wpKPX7-2Y,302
+ruia_shell/config.py,sha256=TBqpOUM_HJK_sQl6BXwA0PioIJx6tP94KER3hij6cZU,789
+ruia_shell/shell.py,sha256=FFENgd2HxvrAFcdk8TtqshGSmaRHju8cbp9sjAH3x58,2965
+ruia_shell-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ruia_shell-0.0.1.dist-info/METADATA,sha256=EqGkoKzjVCOoyI5BKHd1QTTmaNIAyOHNdVdgdV2sGig,335
+ruia_shell-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+ruia_shell-0.0.1.dist-info/entry_points.txt,sha256=VikkgfRXdgSDOSKoElW8xM9IuqW9k0EErf3oPwf6ik0,55
+ruia_shell-0.0.1.dist-info/top_level.txt,sha256=We-mzeYKvQwqYBYmKjDIPRt8vvQlsCouYitIOcClFic,11
+ruia_shell-0.0.1.dist-info/RECORD,,
