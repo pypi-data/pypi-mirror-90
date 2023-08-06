@@ -1,0 +1,8 @@
+README.md
+setup.py
+pylinreg/__init__.py
+pylinreg/_pylinreg.py
+pylinreg.egg-info/PKG-INFO
+pylinreg.egg-info/SOURCES.txt
+pylinreg.egg-info/dependency_links.txt
+pylinreg.egg-info/top_level.txt
