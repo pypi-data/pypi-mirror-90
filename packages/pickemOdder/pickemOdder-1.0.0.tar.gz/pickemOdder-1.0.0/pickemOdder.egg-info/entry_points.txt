@@ -1,0 +1,4 @@
+[console_scripts]
+getOddsData = pickemOdder.get_odds_data:main
+pickemOdder = pickemOdder.cli:main
+
