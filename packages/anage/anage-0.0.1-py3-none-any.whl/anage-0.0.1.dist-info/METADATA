@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: anage
+Version: 0.0.1
+Summary: python -manage packages
+Home-page: https://github.com/McSinyx/anage
+License: GPLv3+
+Keywords: package manager
+Author: Nguyễn Gia Phong
+Author-email: mcsinyx@disroot.org
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+
+# python -manage packages
+
+anage is a package manager for Python.
+
