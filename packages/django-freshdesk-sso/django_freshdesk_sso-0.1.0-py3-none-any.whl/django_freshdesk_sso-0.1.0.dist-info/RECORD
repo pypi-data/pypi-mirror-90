@@ -1,0 +1,8 @@
+django_freshdesk_sso/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+django_freshdesk_sso/apps.py,sha256=Qsj3I20Bvon9Uk22LH5MLLPf0zmIHKPa_Gzu9PKj5ss,100
+django_freshdesk_sso/urls.py,sha256=JfLj1OgO5ix58ypJlu3Fyn0qn6ydP1sMFNZAoPO2vlc,122
+django_freshdesk_sso/views.py,sha256=tp8CfloPGzL30i0cZhdqbWuZimjGqHZjq5dwAbUGcUw,1266
+django_freshdesk_sso-0.1.0.dist-info/LICENSE,sha256=qkOaj-OnQ0NHY9eF7ZDa_QiqMXWrve_bgW8-V74tI3k,1075
+django_freshdesk_sso-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+django_freshdesk_sso-0.1.0.dist-info/METADATA,sha256=UzhDuSvhE9XkfITYYX1wPLLSZISjRKMoKSpqDKGoYns,358
+django_freshdesk_sso-0.1.0.dist-info/RECORD,,
