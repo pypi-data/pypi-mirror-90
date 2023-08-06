@@ -1,0 +1,24 @@
+# HTML2Excel Documentation
+Library to convert HTML Tables to Excel file.
+
+
+## Installation
+```pip install html2excel```
+
+
+## Usage
+
+### Running from command line
+
+```python -m html2excel input_file output_file```
+
+### Using as package
+```python
+from html2excel import ExcelParser
+
+input_file = '/tmp/text_file.html'
+output_file = '/tmp/converted_file.xlsx'
+
+parser = ExcelParser(input_file)
+parser.to_excel(output_file)
+```
