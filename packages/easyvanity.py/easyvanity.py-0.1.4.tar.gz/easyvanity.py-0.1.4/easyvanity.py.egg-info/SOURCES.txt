@@ -1,0 +1,13 @@
+README.md
+setup.py
+easyvanity/__init__.py
+easyvanity/client.py
+easyvanity.py.egg-info/PKG-INFO
+easyvanity.py.egg-info/SOURCES.txt
+easyvanity.py.egg-info/dependency_links.txt
+easyvanity.py.egg-info/requires.txt
+easyvanity.py.egg-info/top_level.txt
+easyvanity/lib/__init__.py
+easyvanity/lib/util/__init__.py
+easyvanity/lib/util/exceptions.py
+easyvanity/lib/util/objects.py
