@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: jetar-zip
+Version: 0.0.1
+Summary: A zip tar file saver in cache
+Home-page: https://github.com/jeefies/jezip-tar
+Author: jeefy
+Author-email: jeefyol@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3
+Description-Content-Type: text/markdown
+
+# python jezip-tar
+
+A package for save zip/tar file in memory buffer(not write in file)
+
+usage:
+> from jezt import ZipFile
+> MyZip = ZipFile() 
+> > The Type of the ZipFile: MyZip = ZipFile(ZipFile.BZIP) # BZIP, LZMA, DELATED, STORED(default DEFLATED)
+> MyZip.add('fn1', 'bytes or str')
+> MyZip.get('fn1') # 'bytes or str'
+> MyZip.addf('myfile.txt')
+> MyZip.get('myfile.txt') # The content of the file
+> \#Save the zip file
+> import io
+> bf = io.BytesIO() # Also can be io.FileIO(filename, 'wb')
+> MyZip.flush(bf) # if there's no IO given, return a BytesIO object
+> bf.getvalue() # The content of the file
+*The TarFile is the same*
+
+
