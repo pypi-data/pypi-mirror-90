@@ -1,0 +1,8 @@
+setup.py
+pyExSi/__init__.py
+pyExSi/signals.py
+pyExSi.egg-info/PKG-INFO
+pyExSi.egg-info/SOURCES.txt
+pyExSi.egg-info/dependency_links.txt
+pyExSi.egg-info/requires.txt
+pyExSi.egg-info/top_level.txt
