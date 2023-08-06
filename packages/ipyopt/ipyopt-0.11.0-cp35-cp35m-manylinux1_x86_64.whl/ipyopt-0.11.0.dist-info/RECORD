@@ -1,0 +1,12 @@
+ipyopt.cpython-35m-x86_64-linux-gnu.so,sha256=f23LjjaZOcFKitesWQn2IvxxyQC8RsXjBxM7PurjTWc,174080
+ipyopt.libs/libipopt-286eb6a1.so.1.10.11,sha256=fXubXc4usjHurbE2oo1RjjCqe9-k_lYNsW5DMuygqJU,3831480
+ipyopt.libs/liblapack-f0d434b3.so,sha256=-Pp_n4TcY5szur3s_l6bG2RWI_bIn0lnXFJVDPDoe_g,5695496
+ipyopt.libs/libgfortran-ed201abd.so.3.0.0,sha256=qKqgvlf0fwb_9d8LQ6xwpHV3igVXxOplo0uum9--YQg,1023960
+ipyopt.libs/libblas-88835aef.so,sha256=8Rt4rmTUjTIi2urtkSMkGxJ94JdE8phPwjn2KlJCqHY,542632
+ipyopt.libs/libcoinmetis-dbf84c80.so.1.3.5,sha256=3B0dGKo6T4aPmIrWAzguM3eF18LKMQfUX2Iij471NAk,337440
+ipyopt.libs/libcoinmumps-e5ce5691.so.1.6.0,sha256=mCUpsCH_Q-l2EjyH-EyzAIL5hpV0ZPPMod4eTZpD60M,1745968
+ipyopt-0.11.0.dist-info/RECORD,,
+ipyopt-0.11.0.dist-info/LICENSE,sha256=gTwVmPS0CxNKsksHsA3xem2HSfdsMWHfgVt2O479-ws,1499
+ipyopt-0.11.0.dist-info/WHEEL,sha256=sLKIP5jp0lY8DYwwz8V_IyeUImDOrScXXIU_9o--LhE,109
+ipyopt-0.11.0.dist-info/METADATA,sha256=TtPAwKA8ZCymbaHMvW1EjDpIXMBYluqzi_2Vz71E9xw,7885
+ipyopt-0.11.0.dist-info/top_level.txt,sha256=kpMMwnBcgqf2OvHnLI9OFeF1egeoU6hu9JPSVFHhMNg,7
