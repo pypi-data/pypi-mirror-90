@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/antenny_cdk/__init__.py
+src/antenny_cdk/py.typed
+src/antenny_cdk.egg-info/PKG-INFO
+src/antenny_cdk.egg-info/SOURCES.txt
+src/antenny_cdk.egg-info/dependency_links.txt
+src/antenny_cdk.egg-info/requires.txt
+src/antenny_cdk.egg-info/top_level.txt
+src/antenny_cdk/_jsii/__init__.py
+src/antenny_cdk/_jsii/antenny-cdk@2.0.0.jsii.tgz
