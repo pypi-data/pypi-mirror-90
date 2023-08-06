@@ -1,0 +1,11 @@
+cadcadgolem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cadcadgolem/golem_embassy.py,sha256=K57deE-Ry_qnSzsgvQkApBn_tYC21hl8pq-fq4QieoU,9259
+cadcadgolem/remote/Dockerfile,sha256=Yd_AKXbKD13XEsbhT0Q5a1DIRRGSNEM9re6tTJO0HZ0,334
+cadcadgolem/remote/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cadcadgolem/remote/golem-diplomat.py,sha256=td1AUuy7HnINOV0T8O8e8DIplgLlFTjWiQ6Md5vwpCE,1888
+cadcadgolem/remote/run-golem-diplomat.sh,sha256=9r-SCW-sl8yi01zSSXI3W0iO1fadRvbZaXYKiNWDQHk,131
+cadcadgolem-0.1.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+cadcadgolem-0.1.1.dist-info/METADATA,sha256=SFz2rBFgiTHSI6hPH9_abE9KAJMFMt_Rv4hUGWim-iQ,1927
+cadcadgolem-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cadcadgolem-0.1.1.dist-info/top_level.txt,sha256=uFixi8dmzSqPDUC_D76arA3wZz8_3xFVZFQcVMoHLT4,12
+cadcadgolem-0.1.1.dist-info/RECORD,,
