@@ -1,0 +1,10 @@
+aib2ofx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aib2ofx/aib.py,sha256=jm5dwWxYEuNJRntX0YAV0p2SzgmPnO9obuMJujoEZp8,9055
+aib2ofx/cfg.py,sha256=yjLjGWPU-u8CLTtzvLRsifCf2SsZoks1iBJR4EHVaB0,864
+aib2ofx/cli.py,sha256=KTqxF8y0B0--plUpQVVyKdaIF8XTtO8lWUh2YlzE34g,3248
+aib2ofx/ofx.py,sha256=EPNa_gWWw1MldlSTf72_glB345LgCZTpiOJXMG8nYBc,3870
+aib2ofx-0.70.0a2.dist-info/entry_points.txt,sha256=qYvwXGR2N1nT89vsGvNzqQQMHBW2A0McK7b_Iv7knKM,44
+aib2ofx-0.70.0a2.dist-info/LICENSE,sha256=VHvePgyiouJuYVQGBNsPaZL6_9JQO-gRTZmhSTlZCq0,1529
+aib2ofx-0.70.0a2.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+aib2ofx-0.70.0a2.dist-info/METADATA,sha256=bOKoCQSIs61levOWXFk9ypOqqB0OoZ093syLj2NWCao,2951
+aib2ofx-0.70.0a2.dist-info/RECORD,,
