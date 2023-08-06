@@ -1,0 +1,12 @@
+nbdev_tutorial/__init__.py,sha256=XoppFCWM_8XsGAbynKKKg7C3Mca0Kzf_ueJ_7U-l9SE,42
+nbdev_tutorial/_nbdev.py,sha256=dG5qLn_31W3o8eoV2G_wKvaWF2qTPaQhx4x8E_xKqyo,379
+nbdev_tutorial/core.py,sha256=tZt85-b89JmlY5oBH4-C-zN4csREuYsyqSAaNHx9iP0,393
+nbdev_tutorial_vb/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+nbdev_tutorial_vb/_nbdev.py,sha256=alpfoZQjXt0MjT5z1h_CIiQGYWdhy20cD821_C_y4sE,385
+nbdev_tutorial_vb/core.py,sha256=tZt85-b89JmlY5oBH4-C-zN4csREuYsyqSAaNHx9iP0,393
+nbdev_tutorial_vb-0.0.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nbdev_tutorial_vb-0.0.2.dist-info/METADATA,sha256=jzuXI9T_A7_o3f9coVF4hG9lZw0-LO1rNcbxrhYwFXc,1060
+nbdev_tutorial_vb-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+nbdev_tutorial_vb-0.0.2.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+nbdev_tutorial_vb-0.0.2.dist-info/top_level.txt,sha256=CNyrM78P9JbnHvytn13cIn8RTm4FVDN5ik0lTSm0Y-U,33
+nbdev_tutorial_vb-0.0.2.dist-info/RECORD,,
