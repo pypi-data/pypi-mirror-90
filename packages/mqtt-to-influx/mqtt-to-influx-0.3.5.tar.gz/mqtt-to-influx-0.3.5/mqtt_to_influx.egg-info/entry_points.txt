@@ -1,0 +1,3 @@
+[console_scripts]
+mqtt-to-influx = mqtt_to_influx.daemon:main
+

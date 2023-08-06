@@ -1,0 +1,4 @@
+configargparse
+configparser
+influxdb
+paho-mqtt

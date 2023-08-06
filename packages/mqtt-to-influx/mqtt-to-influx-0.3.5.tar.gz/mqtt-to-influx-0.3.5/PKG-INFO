@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: mqtt-to-influx
+Version: 0.3.5
+Summary: Collect mqtt data, apply type specific conversion and stuff that into an influx DB
+Home-page: https://none
+Author: Marcus Hardt
+Author-email: marcus@hardt-it.de
+License: MIT
+Project-URL: Bug Tracker, https://none
+Project-URL: Documentation, https://none
+Description: This is a tool that 
+        
+        - digests mqtt messages
+        - tries to detect their types
+        - applies some conversion to known types
+        - and ingests them into influx
+        
+        # Install
+        ```
+        python3 setup.py sdist 
+        pip3 install dist/mqtt-to-influx-<version>tar.gz 
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown; charset=UTF-8

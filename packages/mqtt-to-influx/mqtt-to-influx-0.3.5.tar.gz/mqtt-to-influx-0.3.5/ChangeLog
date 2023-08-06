@@ -1,0 +1,94 @@
+CHANGES
+=======
+
+v0.3.5
+------
+
+* improve ignorance
+* cater for the /tele that appeared; reset sensor on power cycle
+* remove fold marks
+* new sensor alive
+
+v0.3.4
+------
+
+* fix install note
+* get data from karlsruhe.de
+
+v0.3.3
+------
+
+* add absolute humidity
+
+v0.3.2
+------
+
+* derived from tasmota\_sensor\_ds18b20; 2 line change
+* improve pylint
+* pip->pip3
+* Run daemon in a loop, and reconnect after a short timeout, when influxdb cannot be reached
+* stop logging everything unless verbose
+* ignore negative channels
+* catch connection error; decomplicate logging
+* silence logging of useless exception
+* add --pathconf\_file
+* silence the TypeError
+* -d sets debug log level
+* add option for separate pathconf
+* process tasmota pid parameters
+* add option for config file spec on cmdline
+* add author
+* add küche vorn neu
+* make install script a bit more generic
+* only do the extensive logging when verbose is set
+* more output
+* add config libs to requirements
+* put pip build into a logfile
+
+v0.3.1
+------
+
+* add more info and also create config in /etc
+
+v0.3
+----
+
+* change user to mqttinflux
+* remove empty lines
+* ignore dist and build
+* Generated Changelog
+* improve installation
+
+v0.2
+----
+
+* pip=>${PIP}
+* add checks to find pip3 or pip
+
+v0.1
+----
+
+* add active deactive information per plugin
+* play with logging
+* add active state information
+* change to logger
+* remove x
+* change default config file location
+* add main functin
+* make sure noone writes to influx
+* change name
+* change config file locations
+* systemd..
+* install script (for root)
+* copy of main script, for use with entry point
+* add install notes
+* add mit license
+* Add exception in case something goes wrong
+* add ds18b20
+* ignore
+* redesign one
+* removed newline
+* move functionality into modules
+* Add support for homematic/homegear json
+* add homegear
+* new

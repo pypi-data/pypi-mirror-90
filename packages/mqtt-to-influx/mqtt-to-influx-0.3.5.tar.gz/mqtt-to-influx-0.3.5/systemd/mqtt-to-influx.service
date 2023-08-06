@@ -1,0 +1,16 @@
+[Unit]
+Description=MQTT To Influx
+Requires=
+After=network.target
+
+[Service]
+Type=simple
+;EnvironmentFile=%h/configs/environment
+ExecStart=mqtt-to-influx
+;--config=%h/configs/%i.json --debug
+Restart=on-failure
+RestartSec=1m
+User=mqttinflux
+
+[Install]
+WantedBy=default.target
