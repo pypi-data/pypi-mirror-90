@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+src/Serial/__init__.py
+src/Serial/version.py
+src/robotframework_serial.egg-info/PKG-INFO
+src/robotframework_serial.egg-info/SOURCES.txt
+src/robotframework_serial.egg-info/dependency_links.txt
+src/robotframework_serial.egg-info/requires.txt
+src/robotframework_serial.egg-info/top_level.txt
