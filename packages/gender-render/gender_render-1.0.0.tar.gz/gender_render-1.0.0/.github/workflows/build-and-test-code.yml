@@ -1,0 +1,66 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Build and Tests 🔧
+        run: |
+          # install test- and installation tools:
+          sudo pip3 install wheel
+          sudo pip3 install setuptools
+          sudo pip3 install setuptools_scm
+          sudo pip3 install vulture
+          sudo pip3 install coverage
+          sudo pip3 install typing_extensions
+          sudo pip3 install deepdiff[murmur]
+          sudo pip3 install pdoc3
+          sudo pip3 install wheezy.template
+          sudo pip3 install twine
+
+          # install optional dependencies of gender-render:
+          sudo pip3 install nltk
+          python3 -m nltk.downloader wordnet
+          python3 -m nltk.downloader words
+
+          # run tests:
+          pip3 install .  # <- make sure the gendered-noun-data is generated!
+          python3 -m vulture src/* test/vulture_whitelist.py
+          coverage run --branch --source=./src -m unittest discover -s test/
+          coverage report --fail-under=100 --skip-covered -m
+
+          # build download page:
+          wheezy.template -s docs spec_dl_page_blueprint.html > download_page.md
+
+          # build documentation:
+          python3 -m coverage html
+          cp -r src gender_render  # <- hacky solution
+          pdoc3 --html -f -c "sort_identifiers=False"\
+              -c "git_link_template='https://github.com/phseiff/gender-render/tree/gh-pages/{path}#L{start_line}-L{end_line}'"\
+              --output-dir docs/code-doc\
+              --template-dir docs/template-dir\
+              gender_render
+          cp docs/code-doc/gender_render/* .
+
+          # upload code to pypi:
+          python3 setup.py sdist
+          twine upload -r pypi -u phseiff -p ${{ secrets.PYPI_PASSWORD }} dist/* || 0
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: .
