@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: uj
+Version: 0.0.2
+Summary: Utils to work with lists
+Home-page: https://github.com/thorwhalen/ut/tree/master/util/ulist.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # uj
+        Utils to work with lists
+        
+        
+        To install:	```pip install uj```
+        
+Platform: any
+Description-Content-Type: text/markdown
