@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/loadmydata/__init__.py
+src/loadmydata/config.py
+src/loadmydata/container.py
+src/loadmydata/load_uea_ucr.py
+src/loadmydata/padding.py
+src/loadmydata/utils.py
+src/loadmydata.egg-info/PKG-INFO
+src/loadmydata.egg-info/SOURCES.txt
+src/loadmydata.egg-info/dependency_links.txt
+src/loadmydata.egg-info/requires.txt
+src/loadmydata.egg-info/top_level.txt
+src/loadmydata.egg-info/zip-safe
