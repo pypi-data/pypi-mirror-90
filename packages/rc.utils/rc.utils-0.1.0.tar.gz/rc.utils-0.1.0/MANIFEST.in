@@ -1,0 +1,7 @@
+
+include VERSION *.md
+
+recursive-include bin     *
+recursive-include src     *
+recursive-include tests   *
+
