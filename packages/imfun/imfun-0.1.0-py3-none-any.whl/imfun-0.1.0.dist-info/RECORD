@@ -1,0 +1,9 @@
+imfun/__init__.py,sha256=bs6EHSOwdbxjmVqay1Fq1n0XKYjjO9XK5kNHJhsQpcU,55
+imfun/app.py,sha256=4tdiW7NuU-9i8Ct4eja9-q6DadltN8JDQ2hSmLZDUZQ,2159
+imfun/lib.py,sha256=UTLkMVRahDq-_t1YEXpbFM0xwfL_2Rmv78J31LUTcnA,1688
+imfun/py.typed,sha256=AaRZ4oJWCIkmudKew93qFhTjFNRsNjTHgdAUuPxShrs,65
+imfun-0.1.0.dist-info/entry_points.txt,sha256=JgRJ1S4Up-CUOfkECC09ZiIB9XzY0YsCOZARLIAnn-Q,40
+imfun-0.1.0.dist-info/LICENSE,sha256=67YjkRVBV5up7UDB7zXRzAkB1nFBBuXHT5PtK7MbnsY,1074
+imfun-0.1.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+imfun-0.1.0.dist-info/METADATA,sha256=Do-pBOpv2Kj7xvVlpoiQU01s_EnEnOt4C0qZKMIfd9U,1823
+imfun-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+imfun=imfun.app:main
+
