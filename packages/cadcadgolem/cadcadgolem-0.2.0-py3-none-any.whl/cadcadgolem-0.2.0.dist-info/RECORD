@@ -1,0 +1,10 @@
+cadcadgolem/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cadcadgolem/async_isolation.py,sha256=EXbHsgnJTClldSz8t5N0TB3tmNejRoiyK5Qiiq17bsU,6949
+cadcadgolem/golem_embassy.py,sha256=zQsZ1eaWc3wyx_0b1IAoTRo2uEWfoAEdT6WlG19jJBI,5747
+cadcadgolem/play.py,sha256=FPUW751fl9dPIS_Nz8o_4KW-gNC36OiGpnlUQlWg9mE,80
+cadcadgolem/subplay.py,sha256=S5fsVQknXBLVBeZm-VkYfWi5md4ATx7Eej_tHoTg6Yw,55
+cadcadgolem-0.2.0.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+cadcadgolem-0.2.0.dist-info/METADATA,sha256=P8rTe4Sm7xldAUB0UI4yHcxO-Ujgk_x1iw2MuQiCuME,5923
+cadcadgolem-0.2.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+cadcadgolem-0.2.0.dist-info/top_level.txt,sha256=uFixi8dmzSqPDUC_D76arA3wZz8_3xFVZFQcVMoHLT4,12
+cadcadgolem-0.2.0.dist-info/RECORD,,
