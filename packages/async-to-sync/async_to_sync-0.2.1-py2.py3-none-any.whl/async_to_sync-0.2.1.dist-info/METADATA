@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: async-to-sync
+Version: 0.2.1
+Summary: Convert async coroutines to normal python functions
+Home-page: https://github.com/xloem/async_to_sync
+Author: Xloem
+Author-email: 0xloem@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Adaptive Technologies
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+
+
+=============
+async_to_sync
+=============
+
+Convert async coroutine functions to normal ones.
+
+Installation
+------------
+
+.. code-block:: bash
+
+    $ pip install async_to_sync
+
+Usage
+-----
+
+.. code-block:: python
+
+    import async_to_sync as sync
+
+    sync_object = sync.methods(async_class())
+    sync_function = sync.function(async_class().method)
+    sync_function = sync.coroutine(async_class().method())
+
+
