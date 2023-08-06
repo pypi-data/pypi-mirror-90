@@ -1,0 +1,15 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_lazy.py,sha256=FaqHsxXRiwodUOHj_vxjlT2XFcEEAKetzEFaxpl4mfI,190
+turbo_lazy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turbo_lazy/views.py,sha256=EeIVQoqV_ai-JVlR6xBBpni7gAMMtjmajM3etV2mkKk,964
+turbo_lazy/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turbo_lazy/templates/turbo_lazy/lazy_import.html,sha256=z0T_ihcArcpjwFcVAA4PUrx2UA7GiHf_eh67AbL2tPk,105
+turbo_lazy/templates/turbo_lazy/turbo_frame.html,sha256=ef19duoTzHTldCqSeou392JZNS9NpVuB1m05Qg9ziLI,102
+turbo_lazy/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+turbo_lazy/templatetags/lazy.py,sha256=cKIrud7LBgdW6jVl1zO4ForhBAGQSLa-6E8g_fDvs7A,3067
+turbo_lazy/templatetags/partials.py,sha256=DcIqxcLgx5R_eVDDs3kdzrs--hwU-zjU1QC-vRrodyM,1805
+turbo_lazy-0.2.1.dist-info/LICENSE,sha256=UrVoPc0OP40mAAB--IRKIlnl5M3nRfQHPUdz1ij6-Ls,1075
+turbo_lazy-0.2.1.dist-info/METADATA,sha256=2ce2xv_pwSMnr3meYyJ0i7Q_Z_P9YLntZ-MHPXfmEns,3849
+turbo_lazy-0.2.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+turbo_lazy-0.2.1.dist-info/top_level.txt,sha256=k5VzU-JRqM5EUC59imVKaIdYPUwoXr2TTes24aT7RGs,17
+turbo_lazy-0.2.1.dist-info/RECORD,,
