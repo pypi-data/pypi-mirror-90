@@ -1,0 +1,12 @@
+pyvimond/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvimond/utils.py,sha256=-pDAFwx4qWKhM3o-NUiF_7DfU5iGY2MwUGM1Eq0stes,1210
+pyvimond/vimond_client.py,sha256=ohp66rB2VX2Tj06oBcPf1y52SQS78y8SNMrs6iGRH7g,4092
+pyvimond/vimond_image_service_client.py,sha256=_h2MBOsAahUpFo8gNlyH5WbjY9jjXld7DS-s7PxvUIE,1972
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_utils.py,sha256=hpPCVRVFF88lmG9y6CdqVdn9noW896A8Rp0akG_-rAA,2448
+tests/test_vimond_client.py,sha256=HicDpB1R5LoK4KEl4C0zlsQaQ6itmNm6hOhPZuVHbhA,2516
+pyvimond-0.3.0.dist-info/LICENSE,sha256=Zn5-BPBbcc58wPuaKaN3TzbEsUz29M-N0qAh5paUdvo,21
+pyvimond-0.3.0.dist-info/METADATA,sha256=TuDjB0auZvdS_3dmvoXasBSaUgQJ1kQrtwNFCuDgaM0,3416
+pyvimond-0.3.0.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+pyvimond-0.3.0.dist-info/top_level.txt,sha256=eHBtXm9K-WYdi3szn65gppvHayBL8_uK8eCnZFpv6uo,15
+pyvimond-0.3.0.dist-info/RECORD,,
