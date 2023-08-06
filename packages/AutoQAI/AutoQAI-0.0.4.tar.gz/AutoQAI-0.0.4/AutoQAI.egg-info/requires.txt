@@ -1,0 +1,5 @@
+tensorflow
+pre-commit
+pytest
+pillow
+scipy
