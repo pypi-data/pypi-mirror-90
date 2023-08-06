@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ghrocker
+Version: 0.0.1
+Summary: Plugins for rocker that inject noVNC
+Home-page: https://github.com/tfoote/ghrocker
+Author: Tully Foote
+Author-email: tfoote@osrfoundation.org
+License: Apache 2.0
+Description: ASDF
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

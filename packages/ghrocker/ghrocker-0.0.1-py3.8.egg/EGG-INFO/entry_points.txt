@@ -1,0 +1,6 @@
+[console_scripts]
+ghrocker = ghrocker.ghrocker:main
+
+[rocker.extensions]
+ghpages = ghrocker.ghpages_extension:GHPages
+
