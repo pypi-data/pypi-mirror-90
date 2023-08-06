@@ -1,0 +1,11 @@
+README.md
+setup.py
+cryptobox/__init__.py
+cryptobox/__version__.py
+cryptobox/_build_cryptobox.py
+cryptobox/cbox.py
+python_cryptobox.egg-info/PKG-INFO
+python_cryptobox.egg-info/SOURCES.txt
+python_cryptobox.egg-info/dependency_links.txt
+python_cryptobox.egg-info/requires.txt
+python_cryptobox.egg-info/top_level.txt
