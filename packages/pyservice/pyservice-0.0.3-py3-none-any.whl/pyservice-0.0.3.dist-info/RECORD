@@ -1,0 +1,15 @@
+pyservice/__init__.py,sha256=cZowiXIUBzp8eB0YNYSVRjwrWjVPHZlCnjusoDFDOqU,190
+pyservice/action.py,sha256=gHRsFBql2E5uURuodDbxf1ZlDpNpfe606DxXoIF69xw,1135
+pyservice/context.py,sha256=YSb0FviXjPzOwjYxZoUtYzyhVnwJ_2u-l7DZ5ywdiQc,1098
+pyservice/organizer.py,sha256=Qv7nLVFOrsgGhVWhckkh0bpLKf6NypE8fY30DaKxvc0,1702
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_action.py,sha256=d5-Mdobs0Vz-NPSRFbTBFrf7lL7cJpGpo45AVuRVCuw,1272
+test/test_context.py,sha256=OreyfWc2rYrsiq-evPrByTCGL9Ly1FFaRzdLo7IILiE,879
+test/test_doubles.py,sha256=89lcw3Dkw-f0RZAZqvFKHnlgAS9WqodBhLbTWq-8u0g,631
+test/test_organizer.py,sha256=VuuGt0cnJWqU91MIh5bJTD8UI_t2eSwxqiPJDm4IXG4,3477
+test/test_pyservice.py,sha256=1P-D7iBsT8yjx7yQ_7anYYoryaavG7BpBol4pvSiISU,119
+pyservice-0.0.3.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+pyservice-0.0.3.dist-info/METADATA,sha256=H_khSQKeDKWlYCIJNtVw_AYvIfi7Si3X9pOB0jRh6Nc,694
+pyservice-0.0.3.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pyservice-0.0.3.dist-info/top_level.txt,sha256=Mq7kHrY2Trwo0HM4A76fECbKd8GnjtunUfMBFUZ9DIk,15
+pyservice-0.0.3.dist-info/RECORD,,
