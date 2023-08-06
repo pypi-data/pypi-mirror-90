@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ek
+Version: 0.0.2
+Summary: K-means clustering with weights
+Home-page: https://github.com/thorwhalen/ut/tree/master/ml/cluster/w_kmeans.py
+Author: Thor Whalen
+License: apache-2.0
+Description: 
+        # ek
+        K-means clustering with weights
+        
+        
+        To install:	```pip install ek```
+        
+Platform: any
+Description-Content-Type: text/markdown
