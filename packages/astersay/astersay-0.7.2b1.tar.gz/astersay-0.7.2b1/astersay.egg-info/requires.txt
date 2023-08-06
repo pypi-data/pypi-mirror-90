@@ -1,0 +1,10 @@
+grpcio-tools<2.0a,>=1.27.2
+pyjwt[crypto]<2.1a,>=1.6.4
+pymorphy2<1.0a,>=0.8
+python-dateutil<3.0a,>=2.6.1
+requests<3.0a,>=2.18.3
+unidecode<2.0a,>=1.0
+
+[dev]
+pyaudio<1.0a,>=0.2.11
+websocket-client<1.0a,>=0.50.0
