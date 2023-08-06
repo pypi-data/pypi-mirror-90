@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: adjdatatools
+Version: 0.4.0
+Summary: This library contains adjusted tools for data preprocessing and working with mixed data types.
+Home-page: https://github.com/newchronik/adjdatatools
+Author: Anton Kvasnitsa
+Author-email: anton.kvasnitsa@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: data preprocessing scaler
+Platform: UNKNOWN
