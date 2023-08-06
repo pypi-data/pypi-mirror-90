@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: zcoinbase
+Version: 0.0.5
+Summary: A Simple Coinbase Client for the Coinbase Pro API
+Home-page: https://github.com/Zbot21/zcoinbase
+Author: Chris Bellis
+Author-email: chris@zbots.org
+License: MIT
+Download-URL: https://github.com/Zbot21/zcoinbase/archive/v0.0.5.tar.gz
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: websocket-client
+Requires-Dist: sortedcontainers
+Requires-Dist: python-dateutil
+Requires-Dist: pandas
+
+UNKNOWN
+
+
