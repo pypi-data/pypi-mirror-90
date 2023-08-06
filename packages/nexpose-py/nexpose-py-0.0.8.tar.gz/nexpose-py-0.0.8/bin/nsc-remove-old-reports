@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+
+import nexpose.nexpose as nexpose
+import nexpose.args as nexposeargs
+
+def main():
+    """
+    Parse arguments
+    """
+    parser = nexposeargs.parser
+    parser.description = "Remove old Nexpose reports."
+    args = parser.parse_args()
+
+    config = nexpose.config(args)
+
+    pages = nexpose.reports(nlogin=config)["page"]["totalPages"]
+
+    for page in range(pages):
+        resources = nexpose.reports(nlogin=config, page=page)["resources"]
+        report_ids = [resource['id'] for resource in resources]
+        for report_id in report_ids:
+            history = nexpose.report_history(nlogin=config, report_id=report_id)
+            if len(history['resources']) == 0:
+                nexpose.delete_report(nlogin=config, report_id=report_id)
+                print(report_id)
+
+
+if __name__ == "__main__":
+    main()
