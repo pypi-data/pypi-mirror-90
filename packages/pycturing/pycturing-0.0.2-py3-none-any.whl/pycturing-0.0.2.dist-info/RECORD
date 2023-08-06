@@ -1,0 +1,12 @@
+pycturing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycturing/bezier.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycturing/util.py,sha256=nHgUT00p3Dtv62QlWCjGBYcMdH0BdhzPxNkJ2bTeMjQ,945
+pycturing/asset/__init__.py,sha256=8tKJkuNPAK-rLDc0ObV7scbZt9PqroT-yn_N5frBrLQ,704
+pycturing/asset/font.py,sha256=OSIvI2pkGoFWFTM0KlFKnq-mMq0IrMNiLJ1oJ0gh57k,17153603
+pycturing/text/__init__.py,sha256=jIGtUkzxAuXzDs4OKa3LvjZYPldfO9WwNmGSnMOAS7M,2390
+pycturing/text/util.py,sha256=o3SF4pC9Wtt8pWzZdWwQ3n7QbjGba-afppXkgfsXNxU,534
+pycturing-0.0.2.dist-info/METADATA,sha256=GH9TYyZnTdGwzWuS7ikJ3tC8UkcUcmdTNk6mRCApEDg,912
+pycturing-0.0.2.dist-info/WHEEL,sha256=D1Wh14kWDxPnrM-5t_6UCB-UuQNrEODtRa3vF4OsvQY,97
+pycturing-0.0.2.dist-info/license,sha256=Nx4bMaVBzr6ur6iKjO6oKHrZKTtRsrB8_fzO8pehMqo,1064
+pycturing-0.0.2.dist-info/top_level.txt,sha256=a-AkQFdW39UpqxfsRCGMmvLHGsO0nOtM4RTSwQvIRIQ,10
+pycturing-0.0.2.dist-info/RECORD,,
