@@ -1,0 +1,8 @@
+commitcli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commitcli/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commitcli/commitcli.py,sha256=h1AKtT7bg1s7GohVFjOYYBgU6j4pJlpo60EihfyJZ9o,4065
+commitcli-0.0.1.dist-info/METADATA,sha256=3TVKqu_VZuqSXXjVtjKXvoIlTZvRU-Endl_R7ldOl0g,1392
+commitcli-0.0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+commitcli-0.0.1.dist-info/entry_points.txt,sha256=-v08JqXlcGiRYhhimMPb9sZQtCSf6nlwRaa2QcC8OVU,56
+commitcli-0.0.1.dist-info/top_level.txt,sha256=IzQjaF8EO6lrhZz5fTKoRFjCmYq4SxPhpWCNFfW0n9s,10
+commitcli-0.0.1.dist-info/RECORD,,
