@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+upload_pkg_Sam_Gordon.egg-info/PKG-INFO
+upload_pkg_Sam_Gordon.egg-info/SOURCES.txt
+upload_pkg_Sam_Gordon.egg-info/dependency_links.txt
+upload_pkg_Sam_Gordon.egg-info/top_level.txt
