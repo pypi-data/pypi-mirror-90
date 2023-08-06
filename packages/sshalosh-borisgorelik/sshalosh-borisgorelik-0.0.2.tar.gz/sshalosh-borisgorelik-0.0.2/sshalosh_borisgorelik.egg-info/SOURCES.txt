@@ -1,0 +1,8 @@
+README.md
+setup.py
+sshalosh/__init__.py
+sshalosh/sshalosh.py
+sshalosh_borisgorelik.egg-info/PKG-INFO
+sshalosh_borisgorelik.egg-info/SOURCES.txt
+sshalosh_borisgorelik.egg-info/dependency_links.txt
+sshalosh_borisgorelik.egg-info/top_level.txt
