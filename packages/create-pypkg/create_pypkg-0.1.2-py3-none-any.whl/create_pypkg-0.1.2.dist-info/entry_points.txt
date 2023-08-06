@@ -1,0 +1,3 @@
+[console_scripts]
+create-pypkg = createpypkg.cli.main:main
+
