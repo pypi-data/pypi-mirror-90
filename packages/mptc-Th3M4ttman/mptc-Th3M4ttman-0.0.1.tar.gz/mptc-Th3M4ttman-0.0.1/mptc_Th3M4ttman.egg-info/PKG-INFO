@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mptc-Th3M4ttman
+Version: 0.0.1
+Summary: a small toolkit of functions i use
+Home-page: https://github.com/pypa/sampleproject
+Author: Th3M4ttman
+Author-email: WorkMatthewJHarros94@gmail.com
+License: UNKNOWN
+Description: # mptc
+        
+        Matt's Python Tool Chain
+        
+        ct(text,color,fe=5,p=False) colour text
+        
+        rL() reprint line
+        
+        clear() clear output
+        
+        loading_bar(c=10,dm="Done",tick=True,pct=0,s=0.02) loading bar
+        
+        lw(string="Please wait ..",c=" Complete",i=0,Anim=["|","/","-","\\","|","/","-","\\"],delay=.5) loading widget
+        Anims=spin, bubble, arrow
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
