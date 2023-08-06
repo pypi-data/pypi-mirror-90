@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: zen_grip
+Version: 1.0.0
+Summary: Grip shape builder for ZenCAD
+Home-page: https://gitlab.com/hnau_zen/grip
+Author: Mark Zorikhin
+Author-email: hnau256@gmail.com
+License: UNKNOWN
+Description: # Grip shape builder for ZenCAD
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
