@@ -1,0 +1,4 @@
+[console_scripts]
+codex = barrins_codex:main
+library = barrins_codex:build
+
