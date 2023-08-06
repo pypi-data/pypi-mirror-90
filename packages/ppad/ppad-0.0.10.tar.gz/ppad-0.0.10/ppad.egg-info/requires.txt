@@ -1,0 +1,4 @@
+progressbar2>=3
+python-dateutil>=2
+pytz>=2020
+requests>=2
