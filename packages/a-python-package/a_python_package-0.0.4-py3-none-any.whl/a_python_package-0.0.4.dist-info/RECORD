@@ -1,0 +1,11 @@
+foo/__about__.py,sha256=w8T-STzYwvNulj5FCGcChBFG2fA7C42-6VVL2SD1P_E,474
+foo/__init__.py,sha256=Rtk1em1UDBwIWKDPS9E3EKtlRYwGZVu-Hn3dckJz2Io,45
+foo/bar.py,sha256=SUUfvOygFSml8AM0a67-HJJZS2XADmd4I3O9lt5UYJ8,174
+foo/__pycache__/__about__.cpython-39.pyc,sha256=sCffX1797FC9Q-7LDrrkUvadkTaxmKRYDX8yGVTP0Bs,530
+foo/__pycache__/__init__.cpython-39.pyc,sha256=nOn27tSz-LTAzCRT8jLd9U3cqFYsHMWioBwnkhkktSw,219
+foo/__pycache__/bar.cpython-39.pyc,sha256=MoyUW8F4-SY5oBi1sAvbYfNX_8abITHGw6oEPcaQT-c,331
+a_python_package-0.0.4.dist-info/LICENSE,sha256=geiEgalOMb5eDa4adZJimdoC5sacn2cDnPwKo6BWr6Q,1091
+a_python_package-0.0.4.dist-info/METADATA,sha256=rCxs-18YRSC42lOhaPgQwhYW8Gr070irVtMZ-lr8yw0,2361
+a_python_package-0.0.4.dist-info/WHEEL,sha256=EVRjI69F5qVjm_YgqcTXPnTAv3BfSUr0WVAHuSP3Xoo,92
+a_python_package-0.0.4.dist-info/top_level.txt,sha256=tbudgBSg-bHWHiHnlteNzN8TUvI80ygS9IULh4rklEw,4
+a_python_package-0.0.4.dist-info/RECORD,,
