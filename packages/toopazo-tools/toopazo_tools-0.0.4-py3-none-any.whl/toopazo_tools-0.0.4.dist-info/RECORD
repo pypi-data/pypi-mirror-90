@@ -1,0 +1,11 @@
+toopazo_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+toopazo_tools/externalProcess.py,sha256=bVIiKUkEM9oKRaO_Fz3BbW6ermVbzGTKb6rtv6canbI,3620
+toopazo_tools/fileFolderTools.py,sha256=Dw8y-LXaBImpb4hSHNBsZbV6rjjefluOPyLtlgsQKRA,9835
+toopazo_tools/matplotlibTools.py,sha256=ktk87Wmo_wJp5RE93SrjRShYlhnJjDvNIg7ctsOfJDI,23307
+toopazo_tools/replaceDotsFromPath.py,sha256=lHAiVqExO_9NALi5GC6fRjWo-P1XNGsiSKj6ZL-01Ak,1897
+toopazo_tools/statistics.py,sha256=coPzR31wS6m-A0nX_AEs0Pxdqg4qDgTWeulJRu1NzVc,1811
+toopazo_tools-0.0.4.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+toopazo_tools-0.0.4.dist-info/METADATA,sha256=JZEX0yUQDlJp7CG_ElavhqniTo_xQK6VzzqSfcwhgio,1539
+toopazo_tools-0.0.4.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+toopazo_tools-0.0.4.dist-info/top_level.txt,sha256=0YJKUPWUx4c9dfHd3FS-znsvezrv-DXwqJaDkZek4q4,14
+toopazo_tools-0.0.4.dist-info/RECORD,,
