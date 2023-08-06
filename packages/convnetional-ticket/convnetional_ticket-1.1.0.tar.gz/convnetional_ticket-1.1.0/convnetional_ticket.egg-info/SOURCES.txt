@@ -1,0 +1,8 @@
+README.md
+cz_convnetional_ticket.py
+setup.py
+convnetional_ticket.egg-info/PKG-INFO
+convnetional_ticket.egg-info/SOURCES.txt
+convnetional_ticket.egg-info/dependency_links.txt
+convnetional_ticket.egg-info/requires.txt
+convnetional_ticket.egg-info/top_level.txt

@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: convnetional-ticket
+Version: 1.1.0
+Summary: Conventional commits with tickets in changelog
+Home-page: https://pypi.org/project/convnetional-ticket/
+Author: Gohar Anwar
+Author-email: gohar@goharanwar.com
+License: MIT
+Description: # Convnetional Ticket
+        
+        This is a template for commitizen. This is based on conventional commits. It provides extra options to enter ticket number in commit message and changelog.
+        
+        ## Prerequisite 
+        
+        You must have `commitizen` installed before installing this package.
+        To install commitizen run 
+        
+        `pip install -U commitizen`
+        
+        ## Usage
+        
+        `pip install -U conventional_ticket`
+        
+        In `.cz.toml` or project file of commmitizen use `cz_conventional_ticket` in `name` field
+        
+        Example `.cz.toml`
+        
+        ```
+        [tool.commitizen]
+        name = "cz_convnetional_ticket"
+        version = "5.2.0"
+        tag_format = "v$version"
+        ```
+        
+        ## Author
+        Gohar Anwar (gohar@goharanwar.com)
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
