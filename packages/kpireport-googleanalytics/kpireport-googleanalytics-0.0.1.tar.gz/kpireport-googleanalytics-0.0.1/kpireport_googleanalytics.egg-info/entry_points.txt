@@ -1,0 +1,3 @@
+[kpireport.datasource]
+googleanalytics = kpireport_googleanalytics:GoogleAnalyticsDatasource
+
