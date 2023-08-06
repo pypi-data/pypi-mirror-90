@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: trio-future
+Version: 0.1.1
+Summary: Capture the return values of concurrently executed trio functions
+Home-page: https://github.com/danielhfrank/trio-future
+License: MIT
+Author: Dan Frank
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: trio (>=0.17.0,<0.18.0)
+Project-URL: Repository, https://github.com/danielhfrank/trio-future
+Description-Content-Type: text/markdown
+
+# trio-future
+
+## Overview
+
+`trio-future` allows you to capture the return values of concurrently executed trio functions. It's an altnerative to using trio channels to communicate results between tasks that feels more like programming with normal functions.
+
+Consider an example with this simple echo function:
+```python
+async def echo(a: str) -> str:
+    await trio.sleep(0.5)
+    return a
+```
+We can call our function and get its result back later when we are ready:
+```python
+async with trio.open_nursery() as nursery:
+    # Call trio_future.run to synchronously get back a Future
+    future = trio_future.run(nursery, echo, "hello")
+    # When we call `await` and yield to scheduler, our function begins executing
+    await trio.sleep(0.1)
+    # We can `await` the function when we are ready
+    hello = await future.get() 
+    # hello == "hello"
+```
+A common use-case is to run several tasks concurrently and wait for them all to complete. `trio-future` has a `gather` function like `asyncio.gather` to do this:
+```python
+async with trio.open_nursery() as nursery:
+    fut_1 = run(nursery, echo, "hello")
+    fut_2 = run(nursery, echo, "world")
+    # Call `gather` to package the two Futures into a single Future object.
+    # Note that this is again a synchronous function.
+    joined_future = gather(nursery, [fut_1, fut_2])
+    # Again, when we `await` the result, we yield to the scheduler. This time, both
+    # of our futures will execute concurrently.
+    hello_world = await join_future.get()
+    # hello_world = ["hello", "world"]
+```
+
