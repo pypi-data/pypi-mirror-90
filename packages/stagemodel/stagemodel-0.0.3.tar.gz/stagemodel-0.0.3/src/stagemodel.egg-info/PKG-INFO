@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: stagemodel
+Version: 0.0.3
+Summary: stagemodel: Stagewise models.
+Home-page: https://github.com/ihmeuw-msca/stagemodel
+Author: IHME Math Sciences
+Author-email: ihme.math.sciences@gmail.com
+License: BSD-2-Clause License
+Description: .. image:: https://github.com/ihmeuw-msca/stagemodel/workflows/python-build/badge.svg
+            :target: https://github.com/ihmeuw-msca/stagemodel/actions
+        
+        Stage Model
+        ===========
+        
+        This is a package for stage-wise model.
+        Used for Goal Keepers 2020 project.
+        
+Platform: UNKNOWN
+Provides-Extra: docs
+Provides-Extra: test
+Provides-Extra: dev
