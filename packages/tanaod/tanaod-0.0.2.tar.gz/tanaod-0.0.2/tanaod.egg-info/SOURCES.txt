@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+tanaod/__init__.py
+tanaod/newschool.py
+tanaod/school.py
+tanaod.egg-info/PKG-INFO
+tanaod.egg-info/SOURCES.txt
+tanaod.egg-info/dependency_links.txt
+tanaod.egg-info/top_level.txt
