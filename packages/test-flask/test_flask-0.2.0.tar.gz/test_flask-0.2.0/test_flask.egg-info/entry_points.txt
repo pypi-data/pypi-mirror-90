@@ -1,0 +1,3 @@
+[console_scripts]
+test_flask = test_flask.main:run
+
