@@ -1,0 +1,8 @@
+README.md
+setup.py
+inflecteur/__init__.py
+inflecteur.egg-info/PKG-INFO
+inflecteur.egg-info/SOURCES.txt
+inflecteur.egg-info/dependency_links.txt
+inflecteur.egg-info/requires.txt
+inflecteur.egg-info/top_level.txt
