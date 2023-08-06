@@ -1,0 +1,12 @@
+lazuli/__init__.py,sha256=Am645wZMCRAIc_efwvCHgQdUlOcI5s66meKQxA36vzk,8683
+lazuli/account.py,sha256=S3KChqD5M9qgOfDqZcyIz6hrJ6xWkZqJmmRGTYwt-Y4,9407
+lazuli/character.py,sha256=iKLQqgPwr6lFTWhPiSRZ6qipe57Mo2f9F3AJldHZ5sA,26297
+lazuli/database.py,sha256=1-DwGrmeUZ3spMY9OUfwbnMC1cakJSAyq5jTZl0XeDc,11205
+lazuli/inventory.py,sha256=TSkyjXFDdAYoypLO1IzGySzAKnPug9miRJWgGrn2GSA,6690
+lazuli/test.py,sha256=5I8HIeMGov53fgJsNL1GjDg23n0rIFk7J2yhqC9IyaI,2258
+lazuli/utility.py,sha256=DMDxTU2gbJPAQ0vsgua1tJEfEK--u-jzijVD1gZ-Ttw,6110
+lazuli-0.0.6.dist-info/LICENSE,sha256=bx5iLIKjgAdYQ7sISn7DsfHRKkoCUm1154sJJKhgqnU,35184
+lazuli-0.0.6.dist-info/METADATA,sha256=JCB3qt8UMBX_X87m-IXzBIw0gwnwDu7_MVdh-Xrhaow,3371
+lazuli-0.0.6.dist-info/WHEEL,sha256=S6zePDbUAjzMmpYOg2cHDxuYFWw7WiOXt6ogM6hIB5Q,92
+lazuli-0.0.6.dist-info/top_level.txt,sha256=oZn6bfiyyZhl2xWl-wvSJDz83aq_zmmRj0jUOAgs8rQ,7
+lazuli-0.0.6.dist-info/RECORD,,
