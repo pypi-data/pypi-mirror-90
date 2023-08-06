@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: transitions-anyio
+Version: 0.1.0
+Summary: An extension for the transitions state machine library which runs asynchronous state machines using anyio.
+License: MIT
+Author: Alexander Neumann
+Author-email: aleneum@gmail.com
+Maintainer: Omer Katz
+Maintainer-email: omer.drow@gmail.com
+Requires-Python: >=3.6.2,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Dist: anyio (>=2.0.2,<3.0.0)
+Requires-Dist: transitions (>=0.8.6,<0.9.0)
+Description-Content-Type: text/x-rst
+
+=================
+transitions-anyio
+=================
+
+An extension for the `transitions`_ state machine library
+which runs asynchronous state machines using `anyio`_.
+
+This library provides the `AnyIOMachine`, `AnyIOGraphMachine`, `HierarchicalAnyIOMachine`
+and the `HierarchicalAnyIOGraphMachine` variants.
+They function exactly like their respective `Async*` variants.
+Please refer to transitions' documentation for usage examples.
+
+.. _transitions: https://github.com/pytransitions/transitions
+.. _anyio: https://github.com/agronholm/anyio
