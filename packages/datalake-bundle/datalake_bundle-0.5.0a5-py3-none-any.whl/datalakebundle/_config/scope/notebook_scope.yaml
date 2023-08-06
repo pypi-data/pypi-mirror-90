@@ -1,0 +1,30 @@
+services:
+  datalakebundle.logger:
+    class: logging.Logger
+    factory: ['@datalakebundle.table.logger.TableLoggerFactory', 'create']
+    arguments:
+      - '@datalakebundle.table.config.current'
+    tags:
+      - {name: 'databricksbundle.notebook.logger', alias: 'datalake_table'}
+
+  datalakebundle.notebook.NotebookParamsResolver:
+    arguments:
+      - '%datalakebundle.tables%'
+
+  datalakebundle.notebook.NotebookParams:
+    factory: ['@datalakebundle.notebook.NotebookParamsResolver', 'resolve']
+    arguments:
+      - '@datalakebundle.table.config.current'
+
+  datalakebundle.table.config.current:
+    class: datalakebundle.table.config.TableConfig
+    factory: ['@datalakebundle.table.config.TableConfigResolver', 'resolve']
+    arguments:
+      - '@databricksbundle.notebook.path'
+
+  datalakebundle.table.config.TableConfigResolver:
+    arguments:
+      - '%datalakebundle.notebook.scriptPathTemplate%'
+      - '%datalakebundle.tables%'
+
+  datalakebundle.table.logger.TableLoggerFactory:
