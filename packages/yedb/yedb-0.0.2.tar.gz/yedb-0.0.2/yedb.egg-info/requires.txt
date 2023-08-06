@@ -1,0 +1,8 @@
+icli
+msgpack
+neotermcolor
+portalocker
+pyyaml
+rapidtables
+requests
+tqdm
