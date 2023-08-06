@@ -1,0 +1,9 @@
+pybv/__init__.py,sha256=wDu50HNu-8pn0zP3klcQoiX9nkiqnUxmF83XG38ADj8,517
+pybv/io.py,sha256=iZ6iYVXmG4DiuCSMpfVDVX1iMfhsY3ugBy85tLh5BzU,18131
+pybv/tests/test_bv_writer.py,sha256=Tj0ruLa5W6urAOXhNXWyJK1PA1Hn5lE-JzJ82N7mM70,14431
+pybv-0.5.0.dist-info/LICENSE,sha256=wbm6Dk6HnHN63sWq8XnazdcLjBfcLC9YiiB3bUmG33Y,1520
+pybv-0.5.0.dist-info/METADATA,sha256=QlIjChT07jh1ksUBgE4C0m90fckzchP31X07OdWrzTc,5844
+pybv-0.5.0.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+pybv-0.5.0.dist-info/top_level.txt,sha256=XAw9xjV2gEtQioL59CpROuSRITCjsglRZQsa8MxOokc,5
+pybv-0.5.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pybv-0.5.0.dist-info/RECORD,,
