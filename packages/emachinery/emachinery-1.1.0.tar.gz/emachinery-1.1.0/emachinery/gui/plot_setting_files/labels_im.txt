@@ -1,0 +1,11 @@
+Torque [Nm]
+Load [Nm]
+Speed [rpm]
+Flux Modulus [Wb]
+Flux Ctrl Err [Wb]
+D-axis Current [A]
+Q-axis Current [A]
+Voltage [V]
+Position [rad]
+Holtz D
+Holtz Q
