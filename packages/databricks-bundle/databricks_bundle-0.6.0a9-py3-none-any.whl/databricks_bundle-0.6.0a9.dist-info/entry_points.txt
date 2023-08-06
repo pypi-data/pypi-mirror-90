@@ -1,0 +1,7 @@
+[pyfony.bundle]
+autodetect=databricksbundle.DatabricksBundle:DatabricksBundle.autodetect
+
+[pyfony.testing_scope]
+console=databricksbundle.DatabricksBundle:DatabricksBundle.createForConsoleTesting
+notebook=databricksbundle.DatabricksBundle:DatabricksBundle.createForNotebookTesting
+
