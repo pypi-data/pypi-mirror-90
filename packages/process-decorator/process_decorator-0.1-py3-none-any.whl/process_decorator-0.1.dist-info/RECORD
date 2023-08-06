@@ -1,0 +1,9 @@
+process_decorator/__init__.py,sha256=rPwjEKKPMcQmiOTF9bYwOkH4TtIh6M2-qvR7ThIB78A,2887
+process_decorator/shared/__init__.py,sha256=RTBtpDr8hcrpKSWkwaN8AMupJ63A7GC4x7_Xk1OpIP8,82
+process_decorator/shared/base.py,sha256=Yn5po2V2eyUZC9m98IGO-ULnKCnjUdjioD2b2bgYrPU,1800
+process_decorator/shared/dict.py,sha256=_k-tf94AB63CmHWsisAiI96VFEbUQtbHypMVY8tvZ5I,446
+process_decorator/shared/queue.py,sha256=IV6XVTX0V2TwQF-m4pso6hO4l0tJfkVFPR4R56dkzPM,906
+process_decorator-0.1.dist-info/METADATA,sha256=IZWMMQ7g-Zm-RqwDSqDxCPyzuXUIUMYjxbQLfbY7ps0,1771
+process_decorator-0.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+process_decorator-0.1.dist-info/top_level.txt,sha256=B92c8gSl50MzBJBlZTyidFBKurn83Xovco1U68AEHVw,18
+process_decorator-0.1.dist-info/RECORD,,
