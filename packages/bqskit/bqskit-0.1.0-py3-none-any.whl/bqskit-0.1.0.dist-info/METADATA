@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: bqskit
+Version: 0.1.0
+Summary: Berkeley Quantum Synthesis Toolkit
+Home-page: https://github.com/BQSKit/qfast
+Author: Ed Younis
+Author-email: edyounis@lbl.gov
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/BQSKit/qfast/issues
+Project-URL: Source Code, https://github.com/BQSKit/qfast
+Keywords: quantum synthesis compilation
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Software Development :: Compilers
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+Requires-Dist: qfast (>=2.1.0)
+
+# Berkeley Quantum Synthesis Toolkit
+
+
