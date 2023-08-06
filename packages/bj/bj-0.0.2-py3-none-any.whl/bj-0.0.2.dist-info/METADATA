@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bj
+Version: 0.0.2
+Summary: Generating hierarchical data
+Home-page: https://github.com/thorwhalen/ut/tree/master/stats/dgen/hierarchical_data.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# bj
+Generating hierarchical data
+
+
+To install:	```pip install bj```
+
+
