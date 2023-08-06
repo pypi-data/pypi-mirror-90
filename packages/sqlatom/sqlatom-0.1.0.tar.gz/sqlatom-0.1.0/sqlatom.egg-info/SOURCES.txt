@@ -1,0 +1,8 @@
+setup.py
+sqlatom/__init__.py
+sqlatom/db.py
+sqlatom/dbengine.py
+sqlatom.egg-info/PKG-INFO
+sqlatom.egg-info/SOURCES.txt
+sqlatom.egg-info/dependency_links.txt
+sqlatom.egg-info/top_level.txt
