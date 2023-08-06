@@ -1,0 +1,4 @@
+ConsoleQuestionPrompts
+python-docx
+pandas
+numpy
