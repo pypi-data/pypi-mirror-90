@@ -1,0 +1,17 @@
+pyscaffold<5.0a0,>=4.0b3
+wheel>=0.31
+recommonmark
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+tox
+pre-commit
+setuptools_scm
+virtualenv
+twine
+configupdater
+pytest
+pytest-cov
+pytest-xdist
