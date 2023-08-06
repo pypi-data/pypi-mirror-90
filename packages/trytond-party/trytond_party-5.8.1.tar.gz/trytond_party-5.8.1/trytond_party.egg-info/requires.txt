@@ -1,0 +1,10 @@
+python-sql>=0.4
+python-stdnum>=1.13
+trytond_country<5.9,>=5.8
+trytond<5.9,>=5.8
+
+[VIES]
+python-stdnum[soap]
+
+[phonenumbers]
+phonenumbers
