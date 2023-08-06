@@ -1,0 +1,13 @@
+load_confounds/__init__.py,sha256=fEMftQgscdBb6f4ggfD7AUcp18NbiDlESD4NLaU35Vc,380
+load_confounds/parser.py,sha256=ysjjUR-ZPvkbcVSyl0NnJK47lpAsX9cOiEWAMF3cWQ8,13535
+load_confounds/strategies.py,sha256=ZLDMGr_nNfvaOghMVYNLB0ODaCU0M0RAPWQZcqYKR-Q,7409
+load_confounds/data/__init__.py,sha256=QeiOO9TYvkteHGmNZH7yH0NR5A2d-Uvr1ZzUIGZhc5I,74
+load_confounds/data/test_desc-confounds_regressors.tsv,sha256=un6g6OfpfKQiIl_dHvWbYev9BNZELqKEvN2sSn93y5A,89601
+load_confounds/data/test_space-MNI152NLin2009cAsym_desc-preproc_bold.nii.gz,sha256=fr33KH_PLPzGy-Rac2iwJUUFgjPvwGFKZZ3K1yFEdhw,91
+load_confounds/tests/__init__.py,sha256=LopnSAiOP23BM53K1QjeOe1a4tB7Odfo6DWSXINI7i4,55
+load_confounds/tests/test_parser.py,sha256=Hn7XUFf0OhYNCAwgM5Wr1e9trwBzu9tP-jNF6RDPprU,9629
+load_confounds/tests/test_strategies.py,sha256=vG7PhqOCMz8nmhVUyYItiljI1g3E7RFHhzI9-qm-SDE,6141
+load_confounds-0.6.5.dist-info/METADATA,sha256=lbiP2d27KAzcWp6xHBrzAGCtaShz9gDq-_puAHWSZV4,6185
+load_confounds-0.6.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+load_confounds-0.6.5.dist-info/top_level.txt,sha256=mE5gqvYtPgrxZrGrbTJLLUqhDf5jDIVBJCDx81PMoBA,15
+load_confounds-0.6.5.dist-info/RECORD,,
