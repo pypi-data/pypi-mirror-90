@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+FileInspector.egg-info/PKG-INFO
+FileInspector.egg-info/SOURCES.txt
+FileInspector.egg-info/dependency_links.txt
+FileInspector.egg-info/requires.txt
+FileInspector.egg-info/top_level.txt
+fileinspector/__init__.py
+fileinspector/image/ImageInspector.py
+fileinspector/image/__init__.py

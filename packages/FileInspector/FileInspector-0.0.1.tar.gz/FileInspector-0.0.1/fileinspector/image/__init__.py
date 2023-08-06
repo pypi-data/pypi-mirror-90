@@ -1,0 +1,1 @@
+from fileinspector.image.ImageInspector import ImageInspector
