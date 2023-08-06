@@ -1,0 +1,10 @@
+atlassian-python-api==2.3.0
+typer>=0.3.2
+toml
+requests
+xdg>=5.0.1
+tomlkit==0.7.0
+
+[docs]
+jinja2
+typer-cli
