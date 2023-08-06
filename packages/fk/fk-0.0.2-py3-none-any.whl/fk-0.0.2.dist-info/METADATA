@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: fk
+Version: 0.0.2
+Summary: Based on code from Julien Palard.
+Home-page: https://github.com/thorwhalen/ut/tree/master/dacc/es/change_mapping.py
+Author: Thor Whalen
+License: apache-2.0
+Platform: any
+Description-Content-Type: text/markdown
+
+
+# fk
+Based on code from Julien Palard.
+
+
+To install:	```pip install fk```
+
+
