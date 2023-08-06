@@ -1,0 +1,13 @@
+flask_datatables/__init__.py,sha256=DXl74ygAA2fY662heJr1QicEqugl1qJ677hwD4i1-1E,761
+flask_datatables/app.py,sha256=J23M0nEqwtKnIQTUAhqJXCHIpGHrFULDciZ6mk5iKIQ,1701
+flask_datatables/database.py,sha256=ryp73LOzIjizh1zo2yC9oCqv_T9YTtPibhmpRzk4OZE,1933
+flask_datatables/fields.py,sha256=BfNMOQ43FWn7ToX73jfELOoGMDcRRVf9mQgzVbSXQV0,12856
+flask_datatables/model.py,sha256=FaIEec9ZIn_VUMkanwq1I7YjmT2dF4289_oc5Q3l_Lk,9848
+flask_datatables/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flask_datatables/typing.py,sha256=0rjuEAma-l_848NEe-iFRxyOehoH6JDRaax9Zg5U7hM,6404
+flask_datatables/utils.py,sha256=bBSXRJ_-7mIB9rmkksNQx9KDGKX2R5gskLjtd-7mc6k,6595
+Flask_DataTables_peewee-0.1.1.dist-info/LICENSE,sha256=Yzgj8JjigWWO2hDFDYXwyWzyFR5Ntzk0uPG2qeqOsoI,1518
+Flask_DataTables_peewee-0.1.1.dist-info/METADATA,sha256=uAIyFLqcoFWL38tPcy0ATI2AIuPJtZT07ct2L7anwrs,3770
+Flask_DataTables_peewee-0.1.1.dist-info/WHEEL,sha256=OqRkF0eY5GHssMorFjlbTIq072vpHpF60fIQA6lS9xA,92
+Flask_DataTables_peewee-0.1.1.dist-info/top_level.txt,sha256=zd92Qt0aApgmuRcdeFyhxCgpgYd46HhAJlaFQ-5PNic,17
+Flask_DataTables_peewee-0.1.1.dist-info/RECORD,,
