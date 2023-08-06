@@ -1,0 +1,3 @@
+[console_scripts]
+pert_estimator = pert_estimator.__main__:main
+
